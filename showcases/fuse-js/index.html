@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuse.js — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css">
+  <style>
+    /* Search input */
+    .search-input {
+      width: 100%;
+      padding: 12px 16px;
+      font-size: 1rem;
+      font-family: var(--font);
+      background: var(--bg-code);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .search-input:focus {
+      border-color: var(--accent);
+    }
+    .search-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    /* Results list */
+    .results-list {
+      list-style: none;
+      margin-top: 12px;
+    }
+    .results-list li {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.1s;
+    }
+    .results-list li:last-child {
+      border-bottom: none;
+    }
+    .result-name {
+      font-weight: 600;
+      font-size: 0.9375rem;
+      margin-bottom: 2px;
+    }
+    .result-desc {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    .result-score {
+      font-size: 0.6875rem;
+      color: var(--accent-dim);
+      margin-top: 4px;
+      font-family: var(--font-mono);
+    }
+    mark {
+      background: rgba(108, 140, 255, 0.3);
+      color: var(--text);
+      border-radius: 2px;
+      padding: 0 1px;
+    }
+    .no-match {
+      text-align: center;
+      color: var(--text-muted);
+      padding: 24px 0;
+      font-size: 0.875rem;
+    }
+
+    /* Tuning controls */
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .control-row {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .control-row label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+    .control-row label .val {
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-weight: 600;
+    }
+    .control-row input[type="range"] {
+      width: 100%;
+      accent-color: var(--accent);
+      height: 6px;
+    }
+    .control-desc {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Fuse.js</h1>
+      <a href="https://www.fusejs.io/" class="docs-link" target="_blank" rel="noopener">fusejs.io &rarr;</a>
+      <p class="description">Lightweight fuzzy-search library with zero dependencies. Perfect for client-side search without a server.</p>
+      <span class="category-tag">Utilities</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      Fuse.js brings powerful fuzzy searching to the client with no backend. It handles typos, partial matches, and weighted multi-key search. It's the go-to when you need "search that just works" for small-to-medium datasets without setting up Elasticsearch or Algolia.
+    </div>
+
+    <!-- ============ Demo 1: Live Fuzzy Search ============ -->
+    <section class="demo-section">
+      <h2>Live Fuzzy Search</h2>
+      <p class="demo-description">Type to fuzzy-search through a list of popular JS packages. Try typos — Fuse handles them.</p>
+
+      <div class="demo-area">
+        <input type="text" class="search-input" id="searchInput" placeholder="Search packages... try &quot;recat&quot; or &quot;loash&quot;">
+        <ul class="results-list" id="resultsList"></ul>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">import Fuse from "fuse.js";
+
+const fuse = new Fuse(packages, {
+  keys: ["name", "description"],
+  includeScore: true,
+  includeMatches: true,
+  threshold: 0.4
+});
+
+input.addEventListener("input", (e) => {
+  const results = fuse.search(e.target.value);
+  // results = [{ item, score, matches }, ...]
+});</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Tuning Controls ============ -->
+    <section class="demo-section">
+      <h2>Tuning Controls</h2>
+      <p class="demo-description">Adjust Fuse.js options and see how they affect search results in real-time. Helps build intuition for what each option does.</p>
+
+      <div class="demo-area">
+        <div class="controls" id="controls">
+          <div class="control-row">
+            <label>
+              <span>threshold</span>
+              <span class="val" id="thresholdVal">0.4</span>
+            </label>
+            <input type="range" id="threshold" min="0" max="1" step="0.05" value="0.4">
+            <span class="control-desc">0 = perfect match only, 1 = match everything</span>
+          </div>
+          <div class="control-row">
+            <label>
+              <span>distance</span>
+              <span class="val" id="distanceVal">100</span>
+            </label>
+            <input type="range" id="distance" min="0" max="1000" step="10" value="100">
+            <span class="control-desc">How far from the expected location a match can be</span>
+          </div>
+          <div class="control-row">
+            <label>
+              <span>minMatchCharLength</span>
+              <span class="val" id="minCharVal">1</span>
+            </label>
+            <input type="range" id="minChar" min="1" max="8" step="1" value="1">
+            <span class="control-desc">Minimum characters that must match</span>
+          </div>
+        </div>
+        <div style="margin-top: 16px;">
+          <input type="text" class="search-input" id="tuneInput" placeholder="Type here to test tuned search...">
+          <ul class="results-list" id="tuneResults"></ul>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">// Recreate Fuse with updated options
+const fuse = new Fuse(packages, {
+  keys: ["name", "description"],
+  includeScore: true,
+  includeMatches: true,
+  threshold: 0.4,     // ← adjust with slider
+  distance: 100,      // ← adjust with slider
+  minMatchCharLength: 1 // ← adjust with slider
+});</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+
+  <!-- Fuse.js via CDN (ESM) -->
+  <script type="module">
+    import Fuse from "https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.mjs";
+
+    // --- Dataset: popular JS packages ---
+    const packages = [
+      { name: "React", description: "A JavaScript library for building user interfaces" },
+      { name: "Vue.js", description: "The progressive JavaScript framework for building UIs" },
+      { name: "Svelte", description: "Cybernetically enhanced web apps, compile-time framework" },
+      { name: "Angular", description: "A platform for building mobile and desktop web applications" },
+      { name: "Lodash", description: "A modern JavaScript utility library delivering modularity" },
+      { name: "Axios", description: "Promise based HTTP client for the browser and Node.js" },
+      { name: "Express", description: "Fast, unopinionated, minimalist web framework for Node.js" },
+      { name: "Next.js", description: "The React framework for production with server rendering" },
+      { name: "Three.js", description: "JavaScript 3D library for creating WebGL experiences" },
+      { name: "D3.js", description: "Data-driven documents for dynamic data visualization" },
+      { name: "Tailwind CSS", description: "A utility-first CSS framework for rapid UI development" },
+      { name: "TypeScript", description: "Typed superset of JavaScript that compiles to plain JS" },
+      { name: "Vite", description: "Next generation frontend tooling, blazing fast dev server" },
+      { name: "Webpack", description: "A static module bundler for modern JavaScript applications" },
+      { name: "Jest", description: "Delightful JavaScript testing framework with a focus on simplicity" },
+      { name: "Prisma", description: "Next-generation Node.js and TypeScript ORM for databases" },
+      { name: "Zustand", description: "Small, fast, and scalable state management for React" },
+      { name: "Zod", description: "TypeScript-first schema validation with static type inference" },
+      { name: "Motion", description: "A tiny, performant animation library built on Web Animations API" },
+      { name: "Dexie.js", description: "A minimalistic IndexedDB wrapper for browser storage" }
+    ];
+
+    // --- Demo 1: Live Search ---
+    let fuse = new Fuse(packages, {
+      keys: ["name", "description"],
+      includeScore: true,
+      includeMatches: true,
+      threshold: 0.4
+    });
+
+    const searchInput = document.getElementById("searchInput");
+    const resultsList = document.getElementById("resultsList");
+
+    function highlightMatches(text, indices) {
+      if (!indices || indices.length === 0) return escapeHtml(text);
+      const chars = [...text];
+      const highlighted = new Array(chars.length).fill(false);
+
+      for (const [start, end] of indices) {
+        for (let i = start; i <= end; i++) {
+          highlighted[i] = true;
+        }
+      }
+
+      let result = "";
+      let inMark = false;
+      for (let i = 0; i < chars.length; i++) {
+        if (highlighted[i] && !inMark) {
+          result += "<mark>";
+          inMark = true;
+        } else if (!highlighted[i] && inMark) {
+          result += "</mark>";
+          inMark = false;
+        }
+        result += escapeHtml(chars[i]);
+      }
+      if (inMark) result += "</mark>";
+      return result;
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    function renderResults(results, container) {
+      if (results.length === 0) {
+        container.innerHTML = '<li class="no-match">No matches found</li>';
+        return;
+      }
+      container.innerHTML = results.slice(0, 10).map(r => {
+        const nameMatch = r.matches?.find(m => m.key === "name");
+        const descMatch = r.matches?.find(m => m.key === "description");
+        const name = nameMatch
+          ? highlightMatches(r.item.name, nameMatch.indices)
+          : escapeHtml(r.item.name);
+        const desc = descMatch
+          ? highlightMatches(r.item.description, descMatch.indices)
+          : escapeHtml(r.item.description);
+        return `<li>
+          <div class="result-name">${name}</div>
+          <div class="result-desc">${desc}</div>
+          <div class="result-score">score: ${r.score.toFixed(4)}</div>
+        </li>`;
+      }).join("");
+    }
+
+    function renderAll(container) {
+      container.innerHTML = packages.map(p => `<li>
+        <div class="result-name">${escapeHtml(p.name)}</div>
+        <div class="result-desc">${escapeHtml(p.description)}</div>
+      </li>`).join("");
+    }
+
+    searchInput.addEventListener("input", (e) => {
+      const query = e.target.value.trim();
+      if (!query) { renderAll(resultsList); return; }
+      const results = fuse.search(query);
+      renderResults(results, resultsList);
+    });
+
+    // Show all by default
+    renderAll(resultsList);
+
+    // --- Demo 2: Tuning Controls ---
+    const thresholdEl = document.getElementById("threshold");
+    const distanceEl = document.getElementById("distance");
+    const minCharEl = document.getElementById("minChar");
+    const thresholdVal = document.getElementById("thresholdVal");
+    const distanceVal = document.getElementById("distanceVal");
+    const minCharVal = document.getElementById("minCharVal");
+    const tuneInput = document.getElementById("tuneInput");
+    const tuneResults = document.getElementById("tuneResults");
+
+    let tuneFuse = createTunedFuse();
+
+    function createTunedFuse() {
+      return new Fuse(packages, {
+        keys: ["name", "description"],
+        includeScore: true,
+        includeMatches: true,
+        threshold: parseFloat(thresholdEl.value),
+        distance: parseInt(distanceEl.value),
+        minMatchCharLength: parseInt(minCharEl.value)
+      });
+    }
+
+    function updateTuneSearch() {
+      tuneFuse = createTunedFuse();
+      const query = tuneInput.value.trim();
+      if (!query) { renderAll(tuneResults); return; }
+      const results = tuneFuse.search(query);
+      renderResults(results, tuneResults);
+    }
+
+    thresholdEl.addEventListener("input", () => {
+      thresholdVal.textContent = parseFloat(thresholdEl.value).toFixed(2);
+      updateTuneSearch();
+    });
+    distanceEl.addEventListener("input", () => {
+      distanceVal.textContent = distanceEl.value;
+      updateTuneSearch();
+    });
+    minCharEl.addEventListener("input", () => {
+      minCharVal.textContent = minCharEl.value;
+      updateTuneSearch();
+    });
+    tuneInput.addEventListener("input", updateTuneSearch);
+
+    renderAll(tuneResults);
+  </script>
+</body>
+</html>

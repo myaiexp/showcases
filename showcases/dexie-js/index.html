@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dexie.js — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css">
+  <style>
+    /* Notes app */
+    .note-input-row {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .note-input {
+      flex: 1;
+      padding: 10px 14px;
+      font-size: 0.9375rem;
+      font-family: var(--font);
+      background: var(--bg-code);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .note-input:focus {
+      border-color: var(--accent);
+    }
+    .note-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .notes-list {
+      list-style: none;
+    }
+    .notes-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      gap: 12px;
+    }
+    .notes-list li:last-child {
+      border-bottom: none;
+    }
+    .note-text {
+      font-size: 0.9375rem;
+      flex: 1;
+      word-break: break-word;
+    }
+    .note-time {
+      font-size: 0.6875rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      white-space: nowrap;
+    }
+    .note-delete {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      cursor: pointer;
+      font-family: var(--font);
+      transition: all 0.15s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+      flex-shrink: 0;
+    }
+    .note-delete:hover {
+      color: #ff6c8c;
+      border-color: #ff6c8c;
+    }
+    .notes-empty {
+      text-align: center;
+      color: var(--text-muted);
+      padding: 24px 0;
+      font-size: 0.875rem;
+    }
+    .note-count {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+
+    /* Counter */
+    .counter-display {
+      text-align: center;
+      padding: 24px 0;
+    }
+    .counter-value {
+      font-size: 3.5rem;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      color: var(--accent);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    .counter-buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+    }
+    .counter-buttons .btn {
+      min-width: 56px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      padding: 12px 24px;
+    }
+    .counter-hint {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Dexie.js</h1>
+      <a href="https://dexie.org/docs/" class="docs-link" target="_blank" rel="noopener">dexie.org/docs &rarr;</a>
+      <p class="description">A minimalistic IndexedDB wrapper that makes browser storage effortless. Promises-based API, versioned schemas, and excellent error handling.</p>
+      <span class="category-tag">State/Data</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      IndexedDB is powerful but its raw API is callback-heavy and awkward. Dexie wraps it with a clean, promise-based interface that feels like a real database. Schema versioning, compound indexes, and transactions come built in. It's perfect when localStorage isn't enough and you need structured, queryable client-side storage.
+    </div>
+
+    <!-- ============ Demo 1: Persistent Notes ============ -->
+    <section class="demo-section">
+      <h2>Persistent Notes</h2>
+      <p class="demo-description">A mini note-taking app backed by IndexedDB. Add notes, delete them, refresh the page — they persist.</p>
+
+      <div class="demo-area">
+        <div class="note-input-row">
+          <input type="text" class="note-input" id="noteInput" placeholder="Write a note...">
+          <button class="btn btn-primary" id="addNoteBtn">Add</button>
+        </div>
+        <ul class="notes-list" id="notesList"></ul>
+        <p class="note-count" id="noteCount"></p>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">import Dexie from "dexie";
+
+const db = new Dexie("ShowcaseNotesDB");
+db.version(1).stores({
+  notes: "++id, text, createdAt"
+});
+
+// Add a note
+await db.notes.add({
+  text: "Hello world",
+  createdAt: new Date()
+});
+
+// Get all notes (newest first)
+const all = await db.notes
+  .orderBy("createdAt")
+  .reverse()
+  .toArray();
+
+// Delete a note
+await db.notes.delete(id);</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Persistent Counter ============ -->
+    <section class="demo-section">
+      <h2>Persistent Counter</h2>
+      <p class="demo-description">A counter stored in IndexedDB. Increment, decrement, refresh the page — the value survives.</p>
+
+      <div class="demo-area">
+        <div class="counter-display">
+          <div class="counter-value" id="counterValue">0</div>
+          <div class="counter-buttons">
+            <button class="btn" id="decrementBtn">&minus;</button>
+            <button class="btn" id="resetBtn">Reset</button>
+            <button class="btn btn-primary" id="incrementBtn">+</button>
+          </div>
+          <p class="counter-hint">This value is stored in IndexedDB. Refresh to verify.</p>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">import Dexie from "dexie";
+
+const db = new Dexie("ShowcaseCounterDB");
+db.version(1).stores({
+  kv: "key"  // simple key-value store
+});
+
+// Read the counter
+const entry = await db.kv.get("counter");
+let count = entry ? entry.value : 0;
+
+// Update the counter (upsert)
+await db.kv.put({ key: "counter", value: count });</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+
+  <!-- Dexie.js via CDN (ESM) -->
+  <script type="module">
+    import Dexie from "https://unpkg.com/dexie@4/dist/dexie.mjs";
+
+    // ============================
+    // Demo 1: Persistent Notes
+    // ============================
+    const notesDb = new Dexie("ShowcaseNotesDB");
+    notesDb.version(1).stores({
+      notes: "++id, text, createdAt"
+    });
+
+    const noteInput = document.getElementById("noteInput");
+    const addNoteBtn = document.getElementById("addNoteBtn");
+    const notesList = document.getElementById("notesList");
+    const noteCount = document.getElementById("noteCount");
+
+    async function renderNotes() {
+      const notes = await notesDb.notes.orderBy("createdAt").reverse().toArray();
+      noteCount.textContent = `${notes.length} note${notes.length !== 1 ? "s" : ""} stored in IndexedDB`;
+
+      if (notes.length === 0) {
+        notesList.innerHTML = '<li class="notes-empty">No notes yet. Add one above.</li>';
+        return;
+      }
+
+      notesList.innerHTML = notes.map(n => {
+        const time = new Date(n.createdAt).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+        const escaped = n.text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        return `<li>
+          <span class="note-text">${escaped}</span>
+          <span class="note-time">${time}</span>
+          <button class="note-delete" data-id="${n.id}">Delete</button>
+        </li>`;
+      }).join("");
+    }
+
+    addNoteBtn.addEventListener("click", async () => {
+      const text = noteInput.value.trim();
+      if (!text) return;
+      await notesDb.notes.add({ text, createdAt: new Date() });
+      noteInput.value = "";
+      noteInput.focus();
+      renderNotes();
+    });
+
+    noteInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") addNoteBtn.click();
+    });
+
+    notesList.addEventListener("click", async (e) => {
+      const btn = e.target.closest(".note-delete");
+      if (!btn) return;
+      const id = Number(btn.dataset.id);
+      await notesDb.notes.delete(id);
+      renderNotes();
+    });
+
+    renderNotes();
+
+    // ============================
+    // Demo 2: Persistent Counter
+    // ============================
+    const counterDb = new Dexie("ShowcaseCounterDB");
+    counterDb.version(1).stores({
+      kv: "key"
+    });
+
+    const counterValue = document.getElementById("counterValue");
+    const incrementBtn = document.getElementById("incrementBtn");
+    const decrementBtn = document.getElementById("decrementBtn");
+    const resetBtn = document.getElementById("resetBtn");
+
+    let count = 0;
+
+    async function loadCounter() {
+      const entry = await counterDb.kv.get("counter");
+      count = entry ? entry.value : 0;
+      counterValue.textContent = count;
+    }
+
+    async function saveCounter() {
+      await counterDb.kv.put({ key: "counter", value: count });
+      counterValue.textContent = count;
+    }
+
+    incrementBtn.addEventListener("click", () => { count++; saveCounter(); });
+    decrementBtn.addEventListener("click", () => { count--; saveCounter(); });
+    resetBtn.addEventListener("click", () => { count = 0; saveCounter(); });
+
+    loadCounter();
+  </script>
+</body>
+</html>

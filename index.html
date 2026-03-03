@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Package Showcase Gallery</title>
+  <link rel="stylesheet" href="css/shared.css">
+  <style>
+    /* --- Landing Page Styles --- */
+    .hero {
+      padding: 48px 0 32px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 0.9375rem;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* Category filter chips */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0 0 24px;
+      justify-content: center;
+    }
+
+    .chip {
+      padding: 6px 14px;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      font-family: var(--font);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .chip:hover {
+      border-color: var(--accent-dim);
+      color: var(--text);
+    }
+
+    .chip.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* Card grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+      padding-bottom: 64px;
+    }
+
+    .card {
+      display: block;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.15s, border-color 0.15s, transform 0.2s;
+      opacity: 0;
+      transform: translateY(16px);
+    }
+
+    .card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--accent-dim);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    .card-name {
+      font-size: 1.0625rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .card-desc {
+      font-size: 0.8375rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .card-tag {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: var(--accent-dim);
+      color: var(--text);
+    }
+
+    .no-results {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 48px 0;
+      color: var(--text-muted);
+      font-size: 0.9375rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 0;
+      color: var(--text-muted);
+      font-size: 0.8125rem;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>Package Showcase</h1>
+      <p>Interactive demos of modern JavaScript packages. Tap a card to explore.</p>
+    </header>
+
+    <nav class="filters" id="filters"></nav>
+    <main class="grid" id="grid"></main>
+
+    <footer>
+      A learning project for exploring modern JS packages.
+    </footer>
+  </div>
+
+  <!-- Motion One — used for card entrance animations -->
+  <script src="https://cdn.jsdelivr.net/npm/motion@11.18.2/dist/motion.js"></script>
+
+  <script>
+    // ========================================
+    // Showcase data — add new entries here
+    // ========================================
+    const showcases = [
+      {
+        name: "Motion One",
+        slug: "motion-one",
+        description: "A tiny, performant animation library built on the Web Animations API.",
+        category: "Animation"
+      },
+      {
+        name: "Fuse.js",
+        slug: "fuse-js",
+        description: "Lightweight fuzzy-search library with zero dependencies.",
+        category: "Utilities"
+      },
+      {
+        name: "Dexie.js",
+        slug: "dexie-js",
+        description: "A minimalistic IndexedDB wrapper that makes browser storage effortless.",
+        category: "State/Data"
+      }
+    ];
+
+    const categories = [
+      "All", "Animation", "Visual", "Interaction",
+      "Data/Viz", "State/Data", "Utilities", "Parsing", "Networking"
+    ];
+
+    // --- Build filter chips ---
+    const filtersEl = document.getElementById("filters");
+    categories.forEach(cat => {
+      const btn = document.createElement("button");
+      btn.className = "chip" + (cat === "All" ? " active" : "");
+      btn.textContent = cat;
+      btn.setAttribute("data-category", cat);
+      btn.addEventListener("click", () => filterBy(cat));
+      filtersEl.appendChild(btn);
+    });
+
+    // --- Build card grid ---
+    const gridEl = document.getElementById("grid");
+
+    function renderCards(filter) {
+      gridEl.innerHTML = "";
+      const filtered = filter === "All"
+        ? showcases
+        : showcases.filter(s => s.category === filter);
+
+      if (filtered.length === 0) {
+        gridEl.innerHTML = '<p class="no-results">No showcases in this category yet.</p>';
+        return;
+      }
+
+      filtered.forEach(s => {
+        const a = document.createElement("a");
+        a.href = `showcases/${s.slug}/`;
+        a.className = "card";
+        a.innerHTML = `
+          <div class="card-name">${s.name}</div>
+          <div class="card-desc">${s.description}</div>
+          <span class="card-tag">${s.category}</span>
+        `;
+        gridEl.appendChild(a);
+      });
+
+      animateCards();
+    }
+
+    function filterBy(cat) {
+      document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+      document.querySelector(`.chip[data-category="${cat}"]`).classList.add("active");
+      renderCards(cat);
+    }
+
+    // --- Animate cards with Motion One ---
+    function animateCards() {
+      const cards = document.querySelectorAll(".card");
+      if (typeof Motion !== "undefined" && Motion.animate) {
+        cards.forEach((card, i) => {
+          Motion.animate(
+            card,
+            { opacity: [0, 1], transform: ["translateY(16px)", "translateY(0)"] },
+            { duration: 0.4, delay: i * 0.06, easing: [0.25, 0.46, 0.45, 0.94] }
+          );
+        });
+      } else {
+        // Fallback if Motion didn't load
+        cards.forEach(card => {
+          card.style.opacity = "1";
+          card.style.transform = "translateY(0)";
+        });
+      }
+    }
+
+    // Initial render
+    renderCards("All");
+  </script>
+</body>
+</html>
