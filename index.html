@@ -185,6 +185,10 @@
         <option value="az">Name (A–Z)</option>
         <option value="za">Name (Z–A)</option>
         <option value="category">Category</option>
+        <option value="added-newest">Date Added (Newest)</option>
+        <option value="added-oldest">Date Added (Oldest)</option>
+        <option value="modified-newest">Last Modified (Newest)</option>
+        <option value="modified-oldest">Last Modified (Oldest)</option>
       </select>
     </div>
     <main class="grid" id="grid"></main>
@@ -206,19 +210,25 @@
         name: "Motion One",
         slug: "motion-one",
         description: "A tiny, performant animation library built on the Web Animations API.",
-        category: "Animation"
+        category: "Animation",
+        added: "2026-03-03",
+        modified: "2026-03-03"
       },
       {
         name: "Fuse.js",
         slug: "fuse-js",
         description: "Lightweight fuzzy-search library with zero dependencies.",
-        category: "Utilities"
+        category: "Utilities",
+        added: "2026-03-03",
+        modified: "2026-03-03"
       },
       {
         name: "Dexie.js",
         slug: "dexie-js",
         description: "A minimalistic IndexedDB wrapper that makes browser storage effortless.",
-        category: "State/Data"
+        category: "State/Data",
+        added: "2026-03-03",
+        modified: "2026-03-03"
       }
     ];
 
@@ -255,6 +265,14 @@
           return list.sort((a, b) => b.name.localeCompare(a.name));
         case "category":
           return list.sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
+        case "added-newest":
+          return list.sort((a, b) => b.added.localeCompare(a.added));
+        case "added-oldest":
+          return list.sort((a, b) => a.added.localeCompare(b.added));
+        case "modified-newest":
+          return list.sort((a, b) => b.modified.localeCompare(a.modified));
+        case "modified-oldest":
+          return list.sort((a, b) => a.modified.localeCompare(b.modified));
         default:
           return list;
       }
