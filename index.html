@@ -114,6 +114,45 @@
       color: var(--text);
     }
 
+    /* Sort controls */
+    .sort-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 0 20px;
+      justify-content: flex-end;
+    }
+
+    .sort-bar label {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .sort-select {
+      padding: 6px 28px 6px 12px;
+      font-size: 0.8125rem;
+      font-family: var(--font);
+      font-weight: 500;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg-card);
+      color: var(--text);
+      cursor: pointer;
+      transition: border-color 0.15s;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238b8b94'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+    }
+
+    .sort-select:hover,
+    .sort-select:focus-visible {
+      border-color: var(--accent-dim);
+      outline: none;
+    }
+
     .no-results {
       grid-column: 1 / -1;
       text-align: center;
@@ -139,6 +178,15 @@
     </header>
 
     <nav class="filters" id="filters"></nav>
+    <div class="sort-bar">
+      <label for="sort">Sort by:</label>
+      <select class="sort-select" id="sort">
+        <option value="default">Default</option>
+        <option value="az">Name (A–Z)</option>
+        <option value="za">Name (Z–A)</option>
+        <option value="category">Category</option>
+      </select>
+    </div>
     <main class="grid" id="grid"></main>
 
     <footer>
@@ -190,21 +238,47 @@
       filtersEl.appendChild(btn);
     });
 
+    // --- Sort logic ---
+    let currentSort = "default";
+    const sortEl = document.getElementById("sort");
+    sortEl.addEventListener("change", () => {
+      currentSort = sortEl.value;
+      renderCards(currentFilter);
+    });
+
+    function sortShowcases(items) {
+      const list = [...items];
+      switch (currentSort) {
+        case "az":
+          return list.sort((a, b) => a.name.localeCompare(b.name));
+        case "za":
+          return list.sort((a, b) => b.name.localeCompare(a.name));
+        case "category":
+          return list.sort((a, b) => a.category.localeCompare(b.category) || a.name.localeCompare(b.name));
+        default:
+          return list;
+      }
+    }
+
     // --- Build card grid ---
     const gridEl = document.getElementById("grid");
+    let currentFilter = "All";
 
     function renderCards(filter) {
+      currentFilter = filter;
       gridEl.innerHTML = "";
       const filtered = filter === "All"
         ? showcases
         : showcases.filter(s => s.category === filter);
 
-      if (filtered.length === 0) {
+      const sorted = sortShowcases(filtered);
+
+      if (sorted.length === 0) {
         gridEl.innerHTML = '<p class="no-results">No showcases in this category yet.</p>';
         return;
       }
 
-      filtered.forEach(s => {
+      sorted.forEach(s => {
         const a = document.createElement("a");
         a.href = `showcases/${s.slug}/`;
         a.className = "card";
