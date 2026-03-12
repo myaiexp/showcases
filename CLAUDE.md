@@ -2,7 +2,7 @@
 
 ## Branch
 
-Always work on the `main` branch.
+Use feature branches for new work. Merge to `main` when complete.
 
 ## Package Showcases
 
