@@ -32,7 +32,7 @@ Reference list of packages to build interactive showcase pages for.
 
 - **Hammer.js** — Touch gesture recognition (pinch, rotate, swipe, press)
 - **interact.js** — Drag, resize, snap, multi-touch element manipulation
-- **Sortable.js** — Drag-and-drop reorderable lists
+- **Sortable.js** — Drag-and-drop reorderable lists ✅ included
 - **Panzoom** — Pan and zoom elements with touch/mouse support
 - **use-gesture** — Gesture handling (works standalone, not React-only)
 
@@ -70,11 +70,11 @@ Reference list of packages to build interactive showcase pages for.
 ## Parsing & Transformation
 
 - **Cheerio** — HTML parsing and manipulation
-- **Marked** — Markdown to HTML
+- **Marked** — Markdown to HTML ✅ included
 - **markdown-it** — Markdown parser with plugin ecosystem
 - **Papa Parse** — CSV parsing and generation, handles edge cases
 - **Turndown** — HTML to Markdown conversion
-- **DOMPurify** — Sanitize HTML to prevent XSS
+- **DOMPurify** — Sanitize HTML to prevent XSS ✅ included (in Marked showcase)
 - **js-yaml** — YAML parsing and serialization
 - **Shiki** — Syntax highlighting using VS Code's engine
 

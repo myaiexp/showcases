@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marked — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha384-wFjoQjtV1y5jVHbt0p35Ui8aV8GVpEZkyF99OXWqP/eNJDU93D3Ugxkoyh6Y2I4A" crossorigin="anonymous">
+  <style>
+    /* --- Editor + preview layout --- */
+    .editor-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 760px) {
+      .editor-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .pane-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .md-input {
+      width: 100%;
+      min-height: 340px;
+      height: 100%;
+      padding: 14px 16px;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      background: var(--bg-code);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      outline: none;
+      resize: vertical;
+      tab-size: 2;
+      transition: border-color 0.15s;
+    }
+    .md-input:focus { border-color: var(--accent); }
+
+    /* --- Rendered markdown typography (scoped to .md-preview) --- */
+    .md-preview {
+      min-height: 340px;
+      padding: 16px 18px;
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow-x: auto;
+      font-size: 0.9rem;
+    }
+    .md-preview > *:first-child { margin-top: 0; }
+    .md-preview h1, .md-preview h2, .md-preview h3 {
+      line-height: 1.25;
+      margin: 1.2em 0 0.5em;
+      letter-spacing: -0.01em;
+    }
+    .md-preview h1 { font-size: 1.5rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3em; }
+    .md-preview h2 { font-size: 1.25rem; border-bottom: 1px solid var(--border); padding-bottom: 0.25em; }
+    .md-preview h3 { font-size: 1.05rem; }
+    .md-preview p, .md-preview ul, .md-preview ol, .md-preview blockquote, .md-preview table { margin: 0.7em 0; }
+    .md-preview ul, .md-preview ol { padding-left: 1.4em; }
+    .md-preview li { margin: 0.25em 0; }
+    .md-preview li input[type="checkbox"] { margin-right: 0.4em; }
+    .md-preview a { color: var(--accent); }
+    .md-preview code {
+      font-family: var(--font-mono);
+      font-size: 0.82em;
+      background: rgba(255,255,255,0.07);
+      padding: 0.12em 0.4em;
+      border-radius: 4px;
+    }
+    .md-preview pre {
+      background: #0b0c10;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      overflow-x: auto;
+    }
+    .md-preview pre code { background: none; padding: 0; font-size: 0.8rem; }
+    .md-preview blockquote {
+      border-left: 3px solid var(--accent-dim);
+      padding-left: 14px;
+      color: var(--text-muted);
+    }
+    .md-preview table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+    .md-preview th, .md-preview td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; }
+    .md-preview th { background: var(--bg-card); }
+    .md-preview img { border-radius: 6px; margin: 0.5em 0; }
+    .md-preview hr { border: none; border-top: 1px solid var(--border); margin: 1.2em 0; }
+    .md-preview del { color: var(--text-muted); }
+
+    /* --- Sanitizer demo --- */
+    .san-output { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 16px; }
+    @media (min-width: 760px) { .san-output { grid-template-columns: 1fr 1fr; } }
+    .san-col .pane-label .danger { color: #f2555a; }
+    .san-col .pane-label .safe { color: #4cc38a; }
+    .html-source {
+      margin: 0;
+      padding: 12px 14px;
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      line-height: 1.55;
+      white-space: pre-wrap;
+      word-break: break-word;
+      overflow-x: auto;
+    }
+    .html-source.danger { border-color: rgba(229,72,77,0.45); }
+    .html-source.safe { border-color: rgba(48,164,108,0.45); }
+    .live-note {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+    .stripped {
+      margin-top: 8px;
+      font-size: 0.75rem;
+      color: #f2555a;
+      font-family: var(--font-mono);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Marked</h1>
+      <a href="https://marked.js.org" class="docs-link" target="_blank" rel="noopener">marked.js.org &rarr;</a>
+      <p class="description">A fast, low-level Markdown compiler that turns Markdown into HTML in the browser or on the server — the engine behind countless live editors and docs sites.</p>
+      <span class="category-tag">Parsing</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      Marked parses GitHub-Flavored Markdown — tables, task lists, strikethrough, fenced code — in a single fast pass, with no dependencies. It's the quickest way to add a live preview or render user content. But Marked deliberately does <em>not</em> sanitize its output: any raw HTML in the source passes straight through. That's why it pairs naturally with <a href="https://github.com/cure53/DOMPurify" target="_blank" rel="noopener">DOMPurify</a> — Marked turns Markdown into HTML, DOMPurify makes that HTML safe to insert into the page.
+    </div>
+
+    <!-- ============ Demo 1: Live Markdown Editor ============ -->
+    <section class="demo-section">
+      <h2>Live Markdown Editor</h2>
+      <p class="demo-description">Type Markdown on the left, see rendered HTML on the right — re-parsed on every keystroke with <code>marked.parse()</code>, then run through DOMPurify before it touches the DOM. Try the table, the task list, and the fenced code block.</p>
+
+      <div class="demo-area">
+        <div class="editor-grid">
+          <div>
+            <div class="pane-label">Markdown</div>
+            <textarea class="md-input" id="mdInput" spellcheck="false"></textarea>
+          </div>
+          <div>
+            <div class="pane-label">Rendered preview</div>
+            <div class="md-preview" id="mdPreview"></div>
+          </div>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">// Marked (UMD global) + DOMPurify (UMD global)
+function render(markdown) {
+  const rawHtml = marked.parse(markdown);     // Markdown → HTML string
+  const safeHtml = DOMPurify.sanitize(rawHtml); // strip anything dangerous
+  preview.innerHTML = safeHtml;
+}
+
+input.addEventListener("input", () => render(input.value));</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Why You Sanitize ============ -->
+    <section class="demo-section">
+      <h2>Why You Sanitize</h2>
+      <p class="demo-description">Markdown allows inline HTML, so a hostile string can smuggle scripts through Marked untouched. Below is the exact HTML Marked emits versus what DOMPurify keeps. Edit the source to probe it — only the sanitized version is ever rendered live on this page.</p>
+
+      <div class="demo-area">
+        <div class="pane-label">Untrusted Markdown / HTML input</div>
+        <textarea class="md-input" id="xssInput" spellcheck="false" style="min-height: 150px;"></textarea>
+
+        <div class="san-output">
+          <div class="san-col">
+            <div class="pane-label">Raw <span class="danger">marked.parse()</span> — unsafe</div>
+            <pre class="html-source danger" id="rawSource"></pre>
+            <div class="live-note">Shown as text, never inserted — the <code>onerror</code> / <code>&lt;script&gt;</code> would otherwise execute.</div>
+          </div>
+          <div class="san-col">
+            <div class="pane-label">After <span class="safe">DOMPurify.sanitize()</span> — safe</div>
+            <pre class="html-source safe" id="cleanSource"></pre>
+            <div class="stripped" id="strippedNote"></div>
+          </div>
+        </div>
+
+        <div style="margin-top: 16px;">
+          <div class="pane-label">Live render of the sanitized HTML</div>
+          <div class="md-preview" id="xssPreview" style="min-height: 80px;"></div>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">const rawHtml = marked.parse(untrusted);
+const clean   = DOMPurify.sanitize(rawHtml);
+
+// Only the cleaned HTML is ever assigned to innerHTML:
+preview.innerHTML = clean;
+
+// DOMPurify removes <script>, javascript: URLs, and event
+// handlers like onerror/onclick while keeping benign markup.</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" integrity="sha384-ZM8fDxYm+GXOWeJcxDetoRImNnEAS7XwVFH5kv0pT6RXNy92Nemw/Sj7NfciXpqg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" integrity="sha384-D44bgYYKvaiDh4cOGlj1dbSDpSctn2FSUj118HZGmZEShZcO2v//Q5vvhNy206pp" crossorigin="anonymous"></script>
+
+  <!-- Marked (UMD) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked@18.0.5/lib/marked.umd.js" integrity="sha384-ZD0fTOwPMHi7zM6WTVIWJR21I07lq0ccnqz3J6WMvQKG9thh4y7TA1QE6PJu0Af8" crossorigin="anonymous"></script>
+  <!-- DOMPurify (UMD) -->
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.4.10/dist/purify.min.js" integrity="sha384-eguRoJERj8ghOpzO//Rl7+ScQsQIR1cH+ajll7+fG+IpbNPlkZsQn9h8ccr+wPXx" crossorigin="anonymous"></script>
+
+  <script>
+    // ========================================
+    // Demo 1: Live Markdown Editor
+    // ========================================
+    const mdInput = document.getElementById("mdInput");
+    const mdPreview = document.getElementById("mdPreview");
+
+    const sampleMd = `# Marked + DOMPurify 📝
+
+A **fast** Markdown parser with a *live* preview.
+
+## GitHub-Flavored Markdown
+
+- [x] Tables
+- [x] Task lists
+- [ ] ~~Procrastination~~
+
+| Package    | Job                |
+| ---------- | ------------------ |
+| Marked     | Markdown → HTML    |
+| DOMPurify  | Make the HTML safe |
+
+> Marked doesn't sanitize — so we pipe its output through DOMPurify.
+
+\`\`\`js
+const html = marked.parse("# Hello");
+document.body.innerHTML = DOMPurify.sanitize(html);
+\`\`\`
+
+Read more at [marked.js.org](https://marked.js.org).
+`;
+
+    function render(markdown) {
+      const rawHtml = marked.parse(markdown);
+      mdPreview.innerHTML = DOMPurify.sanitize(rawHtml);
+      if (window.Prism) Prism.highlightAllUnder(mdPreview);
+    }
+
+    mdInput.value = sampleMd;
+    mdInput.addEventListener("input", () => render(mdInput.value));
+    render(sampleMd);
+
+    // ========================================
+    // Demo 2: Why You Sanitize
+    // ========================================
+    const xssInput = document.getElementById("xssInput");
+    const rawSource = document.getElementById("rawSource");
+    const cleanSource = document.getElementById("cleanSource");
+    const strippedNote = document.getElementById("strippedNote");
+    const xssPreview = document.getElementById("xssPreview");
+
+    const sampleXss = `# Looks innocent 👋
+
+Normal **markdown** renders just fine.
+
+<img src=x onerror="alert('xss')">
+<a href="javascript:alert('clicked')">totally safe link</a>
+<script>alert('pwned')<\/script>
+`;
+
+    function runSanitizer(source) {
+      const rawHtml = marked.parse(source);
+      const clean = DOMPurify.sanitize(rawHtml);
+
+      // Show both as text (escaped) — never insert the raw version
+      rawSource.textContent = rawHtml.trim();
+      cleanSource.textContent = clean.trim();
+
+      // Only the sanitized HTML is rendered live
+      xssPreview.innerHTML = clean;
+
+      const removed = rawHtml.length - clean.length;
+      strippedNote.textContent = removed > 0
+        ? `DOMPurify stripped ${removed} characters of unsafe markup.`
+        : "Nothing needed removing — this input was already safe.";
+    }
+
+    xssInput.value = sampleXss;
+    xssInput.addEventListener("input", () => runSanitizer(xssInput.value));
+    runSanitizer(sampleXss);
+  </script>
+</body>
+</html>
