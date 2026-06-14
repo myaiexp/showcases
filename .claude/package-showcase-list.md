@@ -6,8 +6,8 @@ Reference list of packages to build interactive showcase pages for.
 
 ## Animation & Motion
 
-- **Motion One** — Web Animations API based, tiny and performant
-- **GSAP** — Industry standard, timelines, scroll-triggered animations
+- **Motion One** — Web Animations API based, tiny and performant ✅ included
+- **GSAP** — Industry standard, timelines, scroll-triggered animations ✅ included
 - **AutoAnimate** — Zero-config automatic child element transitions
 - **Lenis** — Smooth scrolling library, changes how a page feels
 - **Splitting.js** — Break text/elements into individually animatable pieces
@@ -49,15 +49,15 @@ Reference list of packages to build interactive showcase pages for.
 
 - **Zustand** — Tiny state management, no boilerplate
 - **Immer** — Write mutating code that produces immutable state
-- **Dexie.js** — IndexedDB wrapper that feels like a real database
+- **Dexie.js** — IndexedDB wrapper that feels like a real database ✅ included
 - **localForage** — Unified API across localStorage, IndexedDB, WebSQL
 - **RxJS** — Reactive programming with observables
 - **Nanostores** — Tiny state manager, framework agnostic
 
 ## Utilities
 
-- **Zod** — Runtime type/schema validation
-- **Fuse.js** — Fuzzy search, typo-tolerant
+- **Zod** — Runtime type/schema validation ✅ included
+- **Fuse.js** — Fuzzy search, typo-tolerant ✅ included
 - **nanoid** — Tiny unique ID generator
 - **hotkeys-js** — Keyboard shortcut binding
 - **date-fns** — Modular date utilities

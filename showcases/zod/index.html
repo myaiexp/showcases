@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zod — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha384-wFjoQjtV1y5jVHbt0p35Ui8aV8GVpEZkyF99OXWqP/eNJDU93D3Ugxkoyh6Y2I4A" crossorigin="anonymous">
+  <style>
+    /* --- Form (Demo 1) --- */
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .form-field label {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .form-field .hint {
+      font-weight: 400;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+    }
+    .field-input {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 0.9375rem;
+      font-family: var(--font);
+      background: var(--bg-code);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .field-input:focus { border-color: var(--accent); }
+    .form-field.invalid .field-input { border-color: #e5484d; }
+    .form-field.valid .field-input { border-color: #30a46c; }
+    .field-error {
+      font-size: 0.75rem;
+      color: #f2555a;
+      min-height: 1em;
+      font-family: var(--font-mono);
+    }
+
+    .verdict {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.875rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+    }
+    .verdict.ok    { background: rgba(48, 164, 108, 0.12); border-color: #30a46c; color: #4cc38a; }
+    .verdict.bad   { background: rgba(229, 72, 77, 0.10);  border-color: #e5484d; color: #f2555a; }
+    .verdict pre {
+      margin-top: 10px;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text);
+      font-weight: 400;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    /* --- JSON validator (Demo 2) --- */
+    .json-editor {
+      width: 100%;
+      min-height: 220px;
+      padding: 14px 16px;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      background: var(--bg-code);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      outline: none;
+      resize: vertical;
+      tab-size: 2;
+      transition: border-color 0.15s;
+    }
+    .json-editor:focus { border-color: var(--accent); }
+
+    .issues { list-style: none; margin-top: 14px; display: flex; flex-direction: column; gap: 6px; }
+    .issue {
+      display: flex;
+      gap: 10px;
+      align-items: baseline;
+      padding: 9px 12px;
+      background: rgba(229, 72, 77, 0.08);
+      border: 1px solid rgba(229, 72, 77, 0.35);
+      border-radius: var(--radius-sm);
+      font-size: 0.8125rem;
+    }
+    .issue .path {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: #f2555a;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .issue .msg { color: var(--text); }
+    .all-good {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      background: rgba(48, 164, 108, 0.12);
+      border: 1px solid #30a46c;
+      color: #4cc38a;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Zod</h1>
+      <a href="https://zod.dev" class="docs-link" target="_blank" rel="noopener">zod.dev &rarr;</a>
+      <p class="description">TypeScript-first schema validation with static type inference. Describe the shape of your data once, then parse and validate untrusted input at runtime.</p>
+      <span class="category-tag">Utilities</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      TypeScript types vanish at runtime, so they can't protect you from a malformed API response, a bad form submission, or a corrupted JSON blob. Zod closes that gap: you write a schema once and get both a runtime validator <em>and</em> a static TypeScript type inferred from it. <code>safeParse</code> returns a tidy success/error result with precise, path-aware messages — no exceptions to wrangle — which makes it ideal for forms, API boundaries, and config parsing.
+    </div>
+
+    <!-- ============ Demo 1: Live Form Validation ============ -->
+    <section class="demo-section">
+      <h2>Live Form Validation</h2>
+      <p class="demo-description">Every keystroke runs the input through a Zod schema with <code>safeParse</code>. Fields turn red with a precise message, or green when they pass. The success card shows the parsed object — note <code>age</code> arrives as a real number thanks to coercion.</p>
+
+      <div class="demo-area">
+        <form class="form" id="signupForm" novalidate>
+          <div class="form-field" data-field="username">
+            <label>Username <span class="hint">— 3–20 chars, letters / numbers / underscore</span></label>
+            <input class="field-input" name="username" autocomplete="off" placeholder="ada_lovelace">
+            <span class="field-error"></span>
+          </div>
+          <div class="form-field" data-field="email">
+            <label>Email</label>
+            <input class="field-input" name="email" autocomplete="off" placeholder="ada@example.com">
+            <span class="field-error"></span>
+          </div>
+          <div class="form-field" data-field="age">
+            <label>Age <span class="hint">— whole number, 13 or older</span></label>
+            <input class="field-input" name="age" autocomplete="off" placeholder="29" inputmode="numeric">
+            <span class="field-error"></span>
+          </div>
+          <div class="form-field" data-field="website">
+            <label>Website <span class="hint">— optional</span></label>
+            <input class="field-input" name="website" autocomplete="off" placeholder="https://ada.dev">
+            <span class="field-error"></span>
+          </div>
+        </form>
+        <div class="verdict" id="verdict"></div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">import { z } from "zod";
+
+const signupSchema = z.object({
+  username: z.string()
+    .min(3, "At least 3 characters")
+    .max(20, "20 characters max")
+    .regex(/^[a-zA-Z0-9_]+$/, "Letters, numbers, underscore only"),
+  email: z.email("Enter a valid email"),
+  age: z.coerce.number()        // strings → numbers
+    .int("Must be a whole number")
+    .min(13, "Must be 13 or older")
+    .max(120, "That can't be right"),
+  website: z.url("Must be a valid URL").optional()
+});
+
+// safeParse never throws — it returns a result you can branch on
+const result = signupSchema.safeParse(formData);
+if (result.success) {
+  console.log(result.data);   // fully typed & coerced
+} else {
+  for (const issue of result.error.issues) {
+    console.log(issue.path, issue.message);
+  }
+}</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Nested JSON Validator ============ -->
+    <section class="demo-section">
+      <h2>Nested JSON Validator</h2>
+      <p class="demo-description">Edit the JSON and watch Zod validate a nested schema in real time. Issues report a <em>dotted path</em> straight to the offending field — even deep inside arrays. The schema also has a <code>.refine()</code> that cross-checks <code>total</code> against the line items.</p>
+
+      <div class="demo-area">
+        <textarea class="json-editor" id="jsonEditor" spellcheck="false"></textarea>
+        <div id="jsonOutput"></div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">const orderSchema = z.object({
+  orderId: z.string().startsWith("ORD-", "Must start with ORD-"),
+  customer: z.object({
+    name: z.string().min(1, "Name is required"),
+    email: z.email()
+  }),
+  items: z.array(z.object({
+    sku: z.string(),
+    qty: z.number().int().positive("Qty must be positive"),
+    price: z.number().nonnegative()
+  })).min(1, "Order needs at least one item"),
+  total: z.number().nonnegative()
+})
+// Custom rule across multiple fields, attached to a specific path
+.refine(
+  (o) => o.total === o.items.reduce((s, i) => s + i.qty * i.price, 0),
+  { message: "total must equal the sum of items", path: ["total"] }
+);
+
+const result = orderSchema.safeParse(JSON.parse(text));
+// result.error.issues[n].path → ["items", 0, "qty"]  ⇒  "items.0.qty"</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" integrity="sha384-ZM8fDxYm+GXOWeJcxDetoRImNnEAS7XwVFH5kv0pT6RXNy92Nemw/Sj7NfciXpqg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" integrity="sha384-D44bgYYKvaiDh4cOGlj1dbSDpSctn2FSUj118HZGmZEShZcO2v//Q5vvhNy206pp" crossorigin="anonymous"></script>
+
+  <!-- Zod via CDN (bundled ESM) -->
+  <script type="module">
+    import { z } from "https://cdn.jsdelivr.net/npm/zod@4.4.3/+esm";
+
+    // ========================================
+    // Demo 1: Live Form Validation
+    // ========================================
+    const signupSchema = z.object({
+      username: z.string()
+        .min(3, "At least 3 characters")
+        .max(20, "20 characters max")
+        .regex(/^[a-zA-Z0-9_]+$/, "Letters, numbers, underscore only"),
+      email: z.email("Enter a valid email"),
+      age: z.coerce.number()
+        .int("Must be a whole number")
+        .min(13, "Must be 13 or older")
+        .max(120, "That can't be right"),
+      website: z.url("Must be a valid URL").optional()
+    });
+
+    const form = document.getElementById("signupForm");
+    const verdict = document.getElementById("verdict");
+    const fields = form.querySelectorAll(".form-field");
+
+    function readForm() {
+      const data = {
+        username: form.username.value,
+        email: form.email.value,
+        age: form.age.value
+      };
+      // website is optional — only include it when the user typed something
+      if (form.website.value.trim() !== "") {
+        data.website = form.website.value.trim();
+      }
+      return data;
+    }
+
+    function validateForm() {
+      const data = readForm();
+      const result = signupSchema.safeParse(data);
+
+      // Map issues to their top-level field name
+      const errorByField = {};
+      if (!result.success) {
+        for (const issue of result.error.issues) {
+          const key = issue.path[0];
+          if (key && !(key in errorByField)) errorByField[key] = issue.message;
+        }
+      }
+
+      const touched = form.dataset.touched === "true";
+      fields.forEach((f) => {
+        const name = f.dataset.field;
+        const errEl = f.querySelector(".field-error");
+        const hasValue = form[name].value.trim() !== "";
+        const msg = errorByField[name];
+        f.classList.remove("valid", "invalid");
+        errEl.textContent = "";
+        if (msg && (hasValue || touched)) {
+          f.classList.add("invalid");
+          errEl.textContent = msg;
+        } else if (!msg && hasValue) {
+          f.classList.add("valid");
+        }
+      });
+
+      if (!touched) {
+        verdict.className = "verdict";
+        verdict.textContent = "Start typing to validate against the schema…";
+        return;
+      }
+
+      if (result.success) {
+        verdict.className = "verdict ok";
+        verdict.innerHTML = "✓ Valid — parsed output:";
+        const pre = document.createElement("pre");
+        pre.textContent = JSON.stringify(result.data, null, 2);
+        verdict.appendChild(pre);
+      } else {
+        verdict.className = "verdict bad";
+        const count = result.error.issues.length;
+        verdict.textContent = `✗ ${count} issue${count === 1 ? "" : "s"} — fix the highlighted field${count === 1 ? "" : "s"}.`;
+      }
+    }
+
+    form.addEventListener("input", () => {
+      form.dataset.touched = "true";
+      validateForm();
+    });
+    validateForm();
+
+    // ========================================
+    // Demo 2: Nested JSON Validator
+    // ========================================
+    const orderSchema = z.object({
+      orderId: z.string().startsWith("ORD-", "Must start with ORD-"),
+      customer: z.object({
+        name: z.string().min(1, "Name is required"),
+        email: z.email()
+      }),
+      items: z.array(z.object({
+        sku: z.string(),
+        qty: z.number().int().positive("Qty must be positive"),
+        price: z.number().nonnegative()
+      })).min(1, "Order needs at least one item"),
+      total: z.number().nonnegative()
+    }).refine(
+      (o) => o.total === o.items.reduce((s, i) => s + i.qty * i.price, 0),
+      { message: "total must equal the sum of items", path: ["total"] }
+    );
+
+    const sample = {
+      orderId: "ORD-1042",
+      customer: { name: "Ada Lovelace", email: "ada@example.com" },
+      items: [
+        { sku: "BOOK-01", qty: 2, price: 12.5 },
+        { sku: "PEN-09", qty: 3, price: 1.0 }
+      ],
+      total: 28
+    };
+
+    const editor = document.getElementById("jsonEditor");
+    const output = document.getElementById("jsonOutput");
+    editor.value = JSON.stringify(sample, null, 2);
+
+    function pathLabel(path) {
+      return path.length ? path.join(".") : "(root)";
+    }
+
+    function validateJson() {
+      let parsed;
+      try {
+        parsed = JSON.parse(editor.value);
+      } catch (e) {
+        output.innerHTML = "";
+        const ul = document.createElement("ul");
+        ul.className = "issues";
+        const li = document.createElement("li");
+        li.className = "issue";
+        li.innerHTML = '<span class="path">JSON</span>';
+        const msg = document.createElement("span");
+        msg.className = "msg";
+        msg.textContent = "Invalid JSON — " + e.message;
+        li.appendChild(msg);
+        ul.appendChild(li);
+        output.appendChild(ul);
+        return;
+      }
+
+      const result = orderSchema.safeParse(parsed);
+      output.innerHTML = "";
+
+      if (result.success) {
+        const ok = document.createElement("div");
+        ok.className = "all-good";
+        ok.textContent = "✓ Valid order — passes every rule, including the total check.";
+        output.appendChild(ok);
+        return;
+      }
+
+      const ul = document.createElement("ul");
+      ul.className = "issues";
+      for (const issue of result.error.issues) {
+        const li = document.createElement("li");
+        li.className = "issue";
+        const path = document.createElement("span");
+        path.className = "path";
+        path.textContent = pathLabel(issue.path);
+        const msg = document.createElement("span");
+        msg.className = "msg";
+        msg.textContent = issue.message;
+        li.append(path, msg);
+        ul.appendChild(li);
+      }
+      output.appendChild(ul);
+    }
+
+    editor.addEventListener("input", validateJson);
+    validateJson();
+  </script>
+</body>
+</html>
