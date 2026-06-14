@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tippy.js — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha384-wFjoQjtV1y5jVHbt0p35Ui8aV8GVpEZkyF99OXWqP/eNJDU93D3Ugxkoyh6Y2I4A" crossorigin="anonymous">
+  <!-- Tippy.js core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tippy.js@6.3.7/dist/tippy.css" integrity="sha384-IBgYl+I5X6ZDZXI5zv1vsSE3VopDomz4BxSu/GlxaPHfFtcrJ3uj70z1w6srO9zU" crossorigin="anonymous">
+  <style>
+    .demo-center {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 0;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: flex-end;
+      margin-bottom: 8px;
+    }
+    .field { display: flex; flex-direction: column; gap: 4px; }
+    .field label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .ctl-select {
+      padding: 8px 28px 8px 12px;
+      font-size: 0.875rem;
+      font-family: var(--font);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg-code);
+      color: var(--text);
+      cursor: pointer;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238b8b94'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+    }
+    .ctl-select:focus-visible { outline: none; border-color: var(--accent); }
+
+    .toggle { display: inline-flex; align-items: center; gap: 8px; font-size: 0.8125rem; color: var(--text-muted); cursor: pointer; }
+
+    /* Popover content built in Demo 2 */
+    .menu { min-width: 180px; text-align: left; }
+    .menu-head {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: rgba(255,255,255,0.6);
+      padding: 4px 10px 6px;
+    }
+    .menu a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 0.875rem;
+      text-decoration: none;
+    }
+    .menu a:hover { background: rgba(255,255,255,0.12); text-decoration: none; }
+    /* Use Tippy's CSS custom prop to tint the box with our accent */
+    .tippy-box[data-theme~="accent"] { background: #2b2f45; color: #e4e4e7; }
+    .tippy-box[data-theme~="accent"] .tippy-arrow { color: #2b2f45; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Tippy.js</h1>
+      <a href="https://atomiks.github.io/tippyjs/" class="docs-link" target="_blank" rel="noopener">atomiks.github.io/tippyjs &rarr;</a>
+      <p class="description">The complete tooltip, popover, and dropdown solution. Positioned by Popper, so it flips and shifts to stay on-screen — no manual coordinate math.</p>
+      <span class="category-tag">Layout/UI</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      Positioning a floating element that never clips off-screen is a genuinely hard problem. Tippy.js sits on top of Popper and solves it: tooltips automatically flip to the opposite side when there's no room and shift to stay in the viewport. Beyond plain tooltips it does interactive popovers, click-triggered dropdowns, custom HTML, themes, and animations — all from a single function call. It's the fastest path from "I need a tooltip" to something that feels polished.
+    </div>
+
+    <!-- ============ Demo 1: Tooltips & Placement ============ -->
+    <section class="demo-section">
+      <h2>Tooltips &amp; Smart Placement</h2>
+      <p class="demo-description">Hover the button to see its tooltip. Change the placement and trigger below and the tooltip updates live via <code>setProps()</code>. Popper keeps it on-screen even near the edges.</p>
+
+      <div class="demo-area">
+        <div class="controls">
+          <div class="field">
+            <label for="placement">placement</label>
+            <select class="ctl-select" id="placement">
+              <option value="top">top</option>
+              <option value="bottom">bottom</option>
+              <option value="left">left</option>
+              <option value="right">right</option>
+              <option value="auto">auto</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="trigger">trigger</label>
+            <select class="ctl-select" id="trigger">
+              <option value="mouseenter focus">hover / focus</option>
+              <option value="click">click</option>
+            </select>
+          </div>
+          <label class="toggle"><input type="checkbox" id="arrowToggle" checked> show arrow</label>
+        </div>
+
+        <div class="demo-center">
+          <button class="btn btn-primary" id="tipTarget">Hover me</button>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">// Tippy.js needs Popper loaded first (window.Popper)
+const instance = tippy("#tipTarget", {
+  content: "I flip and shift to stay on screen ✨",
+  placement: "top",       // top | bottom | left | right | auto
+  trigger: "mouseenter focus",
+  arrow: true,
+  animation: "shift-away"
+})[0];
+
+// Update options at runtime — no re-creation needed
+select.addEventListener("change", () => {
+  instance.setProps({ placement: select.value });
+});</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Interactive Popover ============ -->
+    <section class="demo-section">
+      <h2>Interactive HTML Popover</h2>
+      <p class="demo-description">With <code>interactive: true</code> and <code>allowHTML</code>, a Tippy becomes a click-triggered dropdown you can move your mouse into. Here's a little account menu built entirely from a tooltip.</p>
+
+      <div class="demo-area">
+        <div class="demo-center">
+          <button class="btn" id="menuBtn">Account ▾</button>
+          <button class="btn" id="infoBtn">What's this? ⓘ</button>
+        </div>
+
+        <!-- Hidden template used as the popover's HTML content -->
+        <div id="menuTemplate" style="display:none">
+          <div class="menu">
+            <div class="menu-head">Signed in as Ada</div>
+            <a href="#">👤 Profile</a>
+            <a href="#">⚙️ Settings</a>
+            <a href="#">🌙 Toggle theme</a>
+            <a href="#">↩︎ Sign out</a>
+          </div>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">tippy("#menuBtn", {
+  content: document.getElementById("menuTemplate").innerHTML,
+  allowHTML: true,        // render the markup, don't escape it
+  interactive: true,      // let the mouse enter the popover
+  trigger: "click",       // open on click, close on outside click
+  placement: "bottom-end",
+  theme: "accent",
+  appendTo: () => document.body
+});</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" integrity="sha384-ZM8fDxYm+GXOWeJcxDetoRImNnEAS7XwVFH5kv0pT6RXNy92Nemw/Sj7NfciXpqg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" integrity="sha384-D44bgYYKvaiDh4cOGlj1dbSDpSctn2FSUj118HZGmZEShZcO2v//Q5vvhNy206pp" crossorigin="anonymous"></script>
+
+  <!-- Popper (Tippy's positioning engine) must load before Tippy -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <!-- Tippy.js (UMD, reads window.Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/tippy.js@6.3.7/dist/tippy.umd.min.js" integrity="sha384-pjtv4LzKGI/lGxchW/wd/upB/HsGOP/Q2iPYyDU8qo2bp4JLbN34hQkdAArvidZX" crossorigin="anonymous"></script>
+
+  <script>
+    // ========================================
+    // Demo 1: Tooltips & Smart Placement
+    // ========================================
+    const placementSel = document.getElementById("placement");
+    const triggerSel = document.getElementById("trigger");
+    const arrowToggle = document.getElementById("arrowToggle");
+
+    const tip = tippy("#tipTarget", {
+      content: "I flip and shift to stay on screen ✨",
+      placement: "top",
+      trigger: "mouseenter focus",
+      arrow: true,
+      animation: "shift-away",
+      theme: "accent"
+    })[0];
+
+    placementSel.addEventListener("change", () => {
+      tip.setProps({ placement: placementSel.value });
+      tip.show();
+    });
+    triggerSel.addEventListener("change", () => {
+      tip.setProps({ trigger: triggerSel.value });
+    });
+    arrowToggle.addEventListener("change", () => {
+      tip.setProps({ arrow: arrowToggle.checked });
+    });
+
+    // ========================================
+    // Demo 2: Interactive HTML Popover
+    // ========================================
+    tippy("#menuBtn", {
+      content: document.getElementById("menuTemplate").innerHTML,
+      allowHTML: true,
+      interactive: true,
+      trigger: "click",
+      placement: "bottom-end",
+      theme: "accent",
+      appendTo: () => document.body
+    });
+
+    tippy("#infoBtn", {
+      content: "Tooltips and popovers are the same Tippy instance — only the options differ.",
+      placement: "bottom",
+      theme: "accent"
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart.js — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha384-wFjoQjtV1y5jVHbt0p35Ui8aV8GVpEZkyF99OXWqP/eNJDU93D3Ugxkoyh6Y2I4A" crossorigin="anonymous">
+  <style>
+    .chart-wrap {
+      position: relative;
+      height: 300px;
+      width: 100%;
+    }
+
+    /* Demo 1 sliders */
+    .data-controls {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px 18px;
+      margin-top: 18px;
+    }
+    .data-row { display: flex; flex-direction: column; gap: 4px; }
+    .data-row label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+    .data-row label .v { color: var(--accent); font-weight: 600; }
+    .data-row input[type="range"] { width: 100%; accent-color: var(--accent); height: 6px; }
+
+    /* Demo 2 type switch */
+    .type-switch { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .type-switch .btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Chart.js</h1>
+      <a href="https://www.chartjs.org/docs/latest/" class="docs-link" target="_blank" rel="noopener">chartjs.org &rarr;</a>
+      <p class="description">Simple, flexible charting on an HTML canvas. Eight chart types, animated transitions, and sensible defaults — a few lines of config and you have a responsive graph.</p>
+      <span class="category-tag">Data/Viz</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      Chart.js hits the sweet spot between "too basic" and "you need a PhD in D3." It renders to a single <code>&lt;canvas&gt;</code>, so charts stay fast even with lots of points, and every update animates automatically. You describe the chart declaratively — type, data, options — and mutating the data then calling <code>chart.update()</code> tweens smoothly to the new values. It's the default reach-for when you want good-looking charts without fighting a visualization grammar.
+    </div>
+
+    <!-- ============ Demo 1: Live Data ============ -->
+    <section class="demo-section">
+      <h2>Live, Editable Data</h2>
+      <p class="demo-description">Drag the sliders to change the monthly figures. Each change mutates the dataset and calls <code>chart.update()</code> — Chart.js tweens the bars to their new heights.</p>
+
+      <div class="demo-area">
+        <div class="chart-wrap"><canvas id="barChart"></canvas></div>
+        <div class="data-controls" id="dataControls"></div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">const chart = new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    datasets: [{ label: "Revenue ($k)", data: values }]
+  },
+  options: { responsive: true, maintainAspectRatio: false }
+});
+
+// Mutate the data, then update — Chart.js animates the change
+slider.addEventListener("input", () => {
+  chart.data.datasets[0].data[month] = Number(slider.value);
+  chart.update();
+});</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Chart Types ============ -->
+    <section class="demo-section">
+      <h2>One Dataset, Many Chart Types</h2>
+      <p class="demo-description">The same numbers tell a different story depending on the chart. Switch types to see how Chart.js re-renders — bars and lines use X/Y axes, while doughnut, polar, and radar are radial.</p>
+
+      <div class="demo-area">
+        <div class="type-switch" id="typeSwitch">
+          <button class="btn active" data-type="bar">Bar</button>
+          <button class="btn" data-type="line">Line</button>
+          <button class="btn" data-type="radar">Radar</button>
+          <button class="btn" data-type="doughnut">Doughnut</button>
+          <button class="btn" data-type="polarArea">Polar Area</button>
+        </div>
+        <div class="chart-wrap"><canvas id="typeChart"></canvas></div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">let chart;
+function build(type) {
+  chart?.destroy();          // tear down the old one
+  chart = new Chart(ctx, {
+    type,                    // "bar" | "line" | "radar" | "doughnut" | "polarArea"
+    data: { labels, datasets: [{ label: "Traffic", data }] },
+    options: { responsive: true, maintainAspectRatio: false }
+  });
+}
+
+button.addEventListener("click", () => build(button.dataset.type));</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" integrity="sha384-ZM8fDxYm+GXOWeJcxDetoRImNnEAS7XwVFH5kv0pT6RXNy92Nemw/Sj7NfciXpqg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" integrity="sha384-D44bgYYKvaiDh4cOGlj1dbSDpSctn2FSUj118HZGmZEShZcO2v//Q5vvhNy206pp" crossorigin="anonymous"></script>
+
+  <!-- Chart.js (UMD, auto-registers everything) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js" integrity="sha384-jb8JQMbMoBUzgWatfe6COACi2ljcDdZQ2OxczGA3bGNeWe+6DChMTBJemed7ZnvJ" crossorigin="anonymous"></script>
+
+  <script>
+    // Theme Chart.js to match the dark gallery
+    Chart.defaults.color = "#8b8b94";
+    Chart.defaults.borderColor = "#2a2b30";
+    Chart.defaults.font.family = getComputedStyle(document.body).fontFamily;
+
+    const ACCENT = "#6c8cff";
+    const PALETTE = ["#6c8cff", "#8c6cff", "#30a46c", "#f5a623", "#e5484d", "#19b8c4"];
+
+    // ========================================
+    // Demo 1: Live, Editable Data
+    // ========================================
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun"];
+    const values = [42, 55, 48, 71, 63, 88];
+
+    const barChart = new Chart(document.getElementById("barChart"), {
+      type: "bar",
+      data: {
+        labels: months,
+        datasets: [{
+          label: "Revenue ($k)",
+          data: [...values],
+          backgroundColor: "rgba(108, 140, 255, 0.55)",
+          borderColor: ACCENT,
+          borderWidth: 1,
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: { y: { beginAtZero: true, suggestedMax: 100 } },
+        plugins: { legend: { display: false } }
+      }
+    });
+
+    // Build a slider per month
+    const dataControls = document.getElementById("dataControls");
+    months.forEach((m, i) => {
+      const row = document.createElement("div");
+      row.className = "data-row";
+      row.innerHTML = `
+        <label>${m} <span class="v" id="v-${i}">${values[i]}</span></label>
+        <input type="range" min="0" max="100" value="${values[i]}" data-month="${i}">
+      `;
+      dataControls.appendChild(row);
+    });
+
+    dataControls.addEventListener("input", (e) => {
+      const i = Number(e.target.dataset.month);
+      const val = Number(e.target.value);
+      document.getElementById(`v-${i}`).textContent = val;
+      barChart.data.datasets[0].data[i] = val;
+      barChart.update();
+    });
+
+    // ========================================
+    // Demo 2: One Dataset, Many Chart Types
+    // ========================================
+    const typeLabels = ["Direct", "Search", "Social", "Email", "Referral"];
+    const typeData = [38, 52, 24, 17, 12];
+    const typeCanvas = document.getElementById("typeChart");
+    let typeChart;
+
+    function buildTypeChart(type) {
+      typeChart?.destroy();
+      const radial = type === "doughnut" || type === "polarArea" || type === "radar";
+      typeChart = new Chart(typeCanvas, {
+        type,
+        data: {
+          labels: typeLabels,
+          datasets: [{
+            label: "Traffic (k)",
+            data: typeData,
+            backgroundColor: radial
+              ? PALETTE.map(c => c + "cc")
+              : "rgba(108, 140, 255, 0.55)",
+            borderColor: radial ? PALETTE : ACCENT,
+            borderWidth: type === "line" ? 2 : 1,
+            borderRadius: type === "bar" ? 6 : undefined,
+            fill: type === "line" ? false : true,
+            tension: 0.35
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: { legend: { display: type !== "bar" && type !== "line", position: "right" } }
+        }
+      });
+    }
+
+    buildTypeChart("bar");
+
+    document.getElementById("typeSwitch").addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-type]");
+      if (!btn) return;
+      document.querySelectorAll("#typeSwitch .btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      buildTypeChart(btn.dataset.type);
+    });
+  </script>
+</body>
+</html>
