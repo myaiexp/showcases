@@ -56,7 +56,7 @@ Reference list of packages to build interactive showcase pages for.
 
 ## Utilities
 
-- **Zod** — Runtime type/schema validation
+- **Zod** — Runtime type/schema validation ✅ included
 - **Fuse.js** — Fuzzy search, typo-tolerant ✅ included
 - **nanoid** — Tiny unique ID generator
 - **hotkeys-js** — Keyboard shortcut binding
