@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzicato.js — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha384-wFjoQjtV1y5jVHbt0p35Ui8aV8GVpEZkyF99OXWqP/eNJDU93D3Ugxkoyh6Y2I4A" crossorigin="anonymous">
+  <style>
+    .audio-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      margin-bottom: 16px;
+    }
+    .row { display: flex; flex-wrap: wrap; gap: 18px; align-items: flex-end; }
+    .field { display: flex; flex-direction: column; gap: 4px; }
+    .field label { font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); display: flex; justify-content: space-between; gap: 12px; }
+    .field label .v { color: var(--accent); font-weight: 600; }
+    .field input[type="range"] { width: 170px; accent-color: var(--accent); height: 6px; }
+    .ctl-select {
+      padding: 8px 28px 8px 12px; font-size: 0.875rem; font-family: var(--font);
+      border: 1px solid var(--border); border-radius: var(--radius-sm);
+      background: var(--bg-code); color: var(--text); cursor: pointer;
+      appearance: none; -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238b8b94'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 10px center;
+    }
+
+    .fx-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
+    @media (min-width: 620px) { .fx-grid { grid-template-columns: 1fr 1fr; } }
+    .fx {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      background: var(--bg-code);
+      transition: border-color 0.15s;
+    }
+    .fx.on { border-color: var(--accent); }
+    .fx-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+    .fx-head .name { font-weight: 600; font-size: 0.9rem; }
+    .fx .field input[type="range"] { width: 100%; }
+    .switch { display: inline-flex; align-items: center; gap: 7px; font-size: 0.78rem; color: var(--text-muted); cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Pizzicato.js</h1>
+      <a href="https://alemangui.github.io/pizzicato/" class="docs-link" target="_blank" rel="noopener">alemangui.github.io/pizzicato &rarr;</a>
+      <p class="description">A friendly wrapper over the Web Audio API. Create sounds from oscillators or files and chain effects with a clean, approachable interface.</p>
+      <span class="category-tag">Audio</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      Pizzicato simplifies the Web Audio API down to two ideas: <em>sounds</em> and <em>effects</em>. A sound can come from an oscillator wave, a file, or the microphone; effects like delay, distortion, and tremolo are objects you add and remove from the chain on the fly. Compared to a full framework it's tiny and unopinionated — perfect when you just want to generate a tone or add a quick audio effect without learning the whole Web Audio graph.
+    </div>
+
+    <div class="audio-note">🔊 Audio needs a tap to start (browsers block autoplay). Turn your volume up and press play.</div>
+
+    <!-- ============ Demo 1: Tone Generator ============ -->
+    <section class="demo-section">
+      <h2>Tone Generator</h2>
+      <p class="demo-description">A single oscillator you can shape live. Pick a waveform and sweep the frequency — Pizzicato updates the running sound in place, no restart needed.</p>
+
+      <div class="demo-area">
+        <div class="row">
+          <button class="btn btn-primary" id="playBtn">▶ Play</button>
+          <div class="field">
+            <label for="waveSel">waveform</label>
+            <select class="ctl-select" id="waveSel">
+              <option value="sine">sine</option>
+              <option value="square">square</option>
+              <option value="sawtooth" selected>sawtooth</option>
+              <option value="triangle">triangle</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>frequency <span class="v" id="freqVal">220 Hz</span></label>
+            <input type="range" id="freq" min="80" max="880" step="1" value="220">
+          </div>
+          <div class="field">
+            <label>volume <span class="v" id="volVal">0.5</span></label>
+            <input type="range" id="vol" min="0" max="1" step="0.05" value="0.5">
+          </div>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">const sound = new Pizzicato.Sound({
+  source: "wave",
+  options: { type: "sawtooth", frequency: 220 }
+});
+
+playBtn.onclick = () => {
+  Pizzicato.context.resume();   // unlock audio on the gesture
+  sound.playing ? sound.stop() : sound.play();
+};
+
+freq.oninput = () => { sound.frequency = Number(freq.value); }; // live
+vol.oninput  = () => { sound.volume = Number(vol.value); };</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Effects Rack ============ -->
+    <section class="demo-section">
+      <h2>Effects Rack</h2>
+      <p class="demo-description">A steady drone with four effects you can patch in and out while it plays. Each effect is an object — <code>addEffect()</code> inserts it into the chain, <code>removeEffect()</code> pulls it back out.</p>
+
+      <div class="demo-area">
+        <div class="row" style="margin-bottom: 16px;">
+          <button class="btn btn-primary" id="dronePlay">▶ Play drone</button>
+        </div>
+        <div class="fx-grid" id="fxGrid">
+          <div class="fx" data-fx="distortion">
+            <div class="fx-head"><span class="name">Distortion</span>
+              <label class="switch"><input type="checkbox" data-toggle> on</label></div>
+            <div class="field"><label>gain <span class="v" data-vlabel>0.40</span></label>
+              <input type="range" data-param min="0" max="1" step="0.05" value="0.4"></div>
+          </div>
+          <div class="fx" data-fx="delay">
+            <div class="fx-head"><span class="name">Delay</span>
+              <label class="switch"><input type="checkbox" data-toggle> on</label></div>
+            <div class="field"><label>feedback <span class="v" data-vlabel>0.60</span></label>
+              <input type="range" data-param min="0" max="0.9" step="0.05" value="0.6"></div>
+          </div>
+          <div class="fx" data-fx="tremolo">
+            <div class="fx-head"><span class="name">Tremolo</span>
+              <label class="switch"><input type="checkbox" data-toggle> on</label></div>
+            <div class="field"><label>speed <span class="v" data-vlabel>6</span></label>
+              <input type="range" data-param min="1" max="15" step="1" value="6"></div>
+          </div>
+          <div class="fx" data-fx="lowpass">
+            <div class="fx-head"><span class="name">Low-pass filter</span>
+              <label class="switch"><input type="checkbox" data-toggle> on</label></div>
+            <div class="field"><label>cutoff <span class="v" data-vlabel>600 Hz</span></label>
+              <input type="range" data-param min="100" max="2000" step="20" value="600"></div>
+          </div>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">const drone = new Pizzicato.Sound({
+  source: "wave", options: { type: "sawtooth", frequency: 110 }
+});
+
+const delay = new Pizzicato.Effects.Delay({ feedback: 0.6, time: 0.3, mix: 0.5 });
+
+checkbox.onchange = () => {
+  checkbox.checked ? drone.addEffect(delay) : drone.removeEffect(delay);
+};
+slider.oninput = () => { delay.feedback = Number(slider.value); }; // tweak live</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" integrity="sha384-ZM8fDxYm+GXOWeJcxDetoRImNnEAS7XwVFH5kv0pT6RXNy92Nemw/Sj7NfciXpqg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" integrity="sha384-D44bgYYKvaiDh4cOGlj1dbSDpSctn2FSUj118HZGmZEShZcO2v//Q5vvhNy206pp" crossorigin="anonymous"></script>
+
+  <!-- Pizzicato (UMD) -->
+  <script src="https://cdn.jsdelivr.net/npm/pizzicato@0.6.4/distr/Pizzicato.min.js" integrity="sha384-zF6RWY1pjFEiOhqkUiG06P2iKa5oGUCOVrvvBs9YzOFTMD//Pp7PC6QXELFKnQwA" crossorigin="anonymous"></script>
+
+  <script>
+    // ========================================
+    // Demo 1: Tone Generator
+    // ========================================
+    const playBtn = document.getElementById("playBtn");
+    const waveSel = document.getElementById("waveSel");
+    const freq = document.getElementById("freq");
+    const vol = document.getElementById("vol");
+    const freqVal = document.getElementById("freqVal");
+    const volVal = document.getElementById("volVal");
+
+    let sound = null;
+
+    function buildSound() {
+      const s = new Pizzicato.Sound({
+        source: "wave",
+        options: { type: waveSel.value, frequency: Number(freq.value) }
+      });
+      s.volume = Number(vol.value);
+      return s;
+    }
+
+    playBtn.addEventListener("click", () => {
+      Pizzicato.context.resume();
+      if (sound && sound.playing) {
+        sound.stop();
+        playBtn.textContent = "▶ Play";
+      } else {
+        sound = buildSound();
+        sound.play();
+        playBtn.textContent = "❚❚ Stop";
+      }
+    });
+
+    waveSel.addEventListener("change", () => {
+      if (sound && sound.playing) {
+        sound.stop();
+        sound = buildSound();
+        sound.play();
+      }
+    });
+    freq.addEventListener("input", () => {
+      freqVal.textContent = freq.value + " Hz";
+      if (sound) sound.frequency = Number(freq.value);
+    });
+    vol.addEventListener("input", () => {
+      volVal.textContent = Number(vol.value).toFixed(2);
+      if (sound) sound.volume = Number(vol.value);
+    });
+
+    // ========================================
+    // Demo 2: Effects Rack
+    // ========================================
+    const drone = new Pizzicato.Sound({
+      source: "wave",
+      options: { type: "sawtooth", frequency: 110 }
+    });
+    drone.volume = 0.4;
+
+    const dronePlay = document.getElementById("dronePlay");
+    dronePlay.addEventListener("click", () => {
+      Pizzicato.context.resume();
+      if (drone.playing) {
+        drone.stop();
+        dronePlay.textContent = "▶ Play drone";
+      } else {
+        drone.play();
+        dronePlay.textContent = "❚❚ Stop drone";
+      }
+    });
+
+    // Build the four effect instances and wire toggles + sliders
+    function makeEffect(kind, value) {
+      switch (kind) {
+        case "distortion": return new Pizzicato.Effects.Distortion({ gain: value });
+        case "delay":      return new Pizzicato.Effects.Delay({ feedback: value, time: 0.3, mix: 0.5 });
+        case "tremolo":    return new Pizzicato.Effects.Tremolo({ speed: value, depth: 0.8, mix: 0.9 });
+        case "lowpass":    return new Pizzicato.Effects.LowPassFilter({ frequency: value, peak: 8 });
+      }
+    }
+    function applyParam(kind, fx, value) {
+      if (kind === "distortion") fx.gain = value;
+      else if (kind === "delay") fx.feedback = value;
+      else if (kind === "tremolo") fx.speed = value;
+      else if (kind === "lowpass") fx.frequency = value;
+    }
+    function formatVal(kind, value) {
+      if (kind === "lowpass") return value + " Hz";
+      if (kind === "tremolo") return String(value);
+      return Number(value).toFixed(2);
+    }
+
+    document.querySelectorAll(".fx").forEach(card => {
+      const kind = card.dataset.fx;
+      const toggle = card.querySelector("[data-toggle]");
+      const slider = card.querySelector("[data-param]");
+      const vlabel = card.querySelector("[data-vlabel]");
+      const fx = makeEffect(kind, Number(slider.value));
+
+      toggle.addEventListener("change", () => {
+        if (toggle.checked) drone.addEffect(fx);
+        else drone.removeEffect(fx);
+        card.classList.toggle("on", toggle.checked);
+      });
+      slider.addEventListener("input", () => {
+        applyParam(kind, fx, Number(slider.value));
+        vlabel.textContent = formatVal(kind, Number(slider.value));
+      });
+    });
+  </script>
+</body>
+</html>

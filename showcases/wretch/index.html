@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wretch — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha384-wFjoQjtV1y5jVHbt0p35Ui8aV8GVpEZkyF99OXWqP/eNJDU93D3Ugxkoyh6Y2I4A" crossorigin="anonymous">
+  <style>
+    .net-note {
+      font-size: 0.78rem; color: var(--text-muted);
+      background: var(--bg-code); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 8px 12px; margin-bottom: 16px;
+    }
+    .out {
+      margin: 14px 0 0; padding: 14px 16px;
+      background: var(--bg-code); border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono); font-size: 0.78rem; line-height: 1.55;
+      white-space: pre-wrap; word-break: break-word;
+      max-height: 280px; overflow: auto;
+    }
+    .out.err { border-color: rgba(229,72,77,0.45); color: #f2555a; }
+    .row { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-end; }
+    .field { display: flex; flex-direction: column; gap: 4px; }
+    .field label { font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); }
+    .ctl-select {
+      padding: 9px 28px 9px 12px; font-size: 0.875rem; font-family: var(--font);
+      border: 1px solid var(--border); border-radius: var(--radius-sm);
+      background: var(--bg-code); color: var(--text); cursor: pointer;
+      appearance: none; -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238b8b94'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 10px center;
+    }
+    .log {
+      margin: 14px 0 0; padding: 12px 14px;
+      background: var(--bg-code); border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono); font-size: 0.78rem; line-height: 1.7;
+      min-height: 52px;
+    }
+    .log .line { display: block; }
+    .log .ok { color: #4cc38a; }
+    .log .warn { color: #f5a623; }
+    .log .dim { color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Wretch</h1>
+      <a href="https://github.com/elbywan/wretch" class="docs-link" target="_blank" rel="noopener">github.com/elbywan/wretch &rarr;</a>
+      <p class="description">A tiny wrapper around fetch with a fluent, chainable API. Build requests by chaining, and handle responses by status code with named helpers.</p>
+      <span class="category-tag">Networking</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      Wretch reads like a sentence. You chain configuration — URL, headers, query, body — then chain <em>outcome</em> handlers: <code>.json()</code> for success, and named helpers like <code>.notFound()</code>, <code>.unauthorized()</code>, or <code>.internalError()</code> for specific failure codes. Each one only fires for its status, so error handling stops being a pile of <code>if (res.status === …)</code> checks. It's immutable and composable, so you can build a configured base client and branch off it.
+    </div>
+
+    <div class="net-note">🌐 Demo 1 makes a real request to a public test API (jsonplaceholder.typicode.com) and needs an internet connection. Demo 2 runs fully offline with a simulated server.</div>
+
+    <!-- ============ Demo 1: Fluent GET ============ -->
+    <section class="demo-section">
+      <h2>Fluent Requests</h2>
+      <p class="demo-description">Configure with one chain, resolve with another. A base client holds the host; <code>.get(path).json()</code> finishes it off and returns parsed data.</p>
+
+      <div class="demo-area">
+        <button class="btn btn-primary" id="getBtn">GET a random to-do</button>
+        <pre class="out" id="getOut">Click the button to fetch.</pre>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">// Build a reusable base client, then branch off it
+const api = wretch("https://jsonplaceholder.typicode.com");
+
+const id = Math.ceil(Math.random() * 200);
+const todo = await api
+  .get(`/todos/${id}`)
+  .json();   // success resolver
+
+console.log(todo.title, todo.completed);</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Status-Based Handling ============ -->
+    <section class="demo-section">
+      <h2>Handle Responses by Status</h2>
+      <p class="demo-description">Pick a status code and a simulated server returns it. Wretch routes each code to its matching helper — only the relevant one fires. No real network involved.</p>
+
+      <div class="demo-area">
+        <div class="row">
+          <div class="field">
+            <label for="statusSel">server responds with</label>
+            <select class="ctl-select" id="statusSel">
+              <option value="200">200 OK</option>
+              <option value="400">400 Bad Request</option>
+              <option value="401">401 Unauthorized</option>
+              <option value="403">403 Forbidden</option>
+              <option value="404">404 Not Found</option>
+              <option value="500">500 Internal Server Error</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" id="sendBtn">Send request</button>
+        </div>
+        <div class="log" id="statusLog"><span class="line dim">Idle.</span></div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">wretch("https://demo.test/resource")
+  .get()
+  .badRequest(err   =&gt; log("400 handled"))
+  .unauthorized(err =&gt; log("401 handled"))
+  .forbidden(err    =&gt; log("403 handled"))
+  .notFound(err     =&gt; log("404 handled"))
+  .internalError(err =&gt; log("500 handled"))
+  .json(data        =&gt; log("200 → " + JSON.stringify(data)))
+  .catch(err        =&gt; log("unhandled: " + err.message));</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" integrity="sha384-ZM8fDxYm+GXOWeJcxDetoRImNnEAS7XwVFH5kv0pT6RXNy92Nemw/Sj7NfciXpqg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" integrity="sha384-D44bgYYKvaiDh4cOGlj1dbSDpSctn2FSUj118HZGmZEShZcO2v//Q5vvhNy206pp" crossorigin="anonymous"></script>
+
+  <!-- Wretch (UMD) -->
+  <script src="https://cdn.jsdelivr.net/npm/wretch@3.0.8/dist/bundle/wretch.min.js" integrity="sha384-GH05UAoWUVPhez2ZBPs9LNuyHyxdU7CcRmgfeTAYCtO8AL45L+PlX5XWL2HQgm9a" crossorigin="anonymous"></script>
+
+  <script>
+    // ========================================
+    // Demo 1: Fluent Requests
+    // ========================================
+    const getBtn = document.getElementById("getBtn");
+    const getOut = document.getElementById("getOut");
+    const api = wretch("https://jsonplaceholder.typicode.com");
+
+    getBtn.addEventListener("click", async () => {
+      getOut.classList.remove("err");
+      getOut.textContent = "Loading…";
+      getBtn.disabled = true;
+      try {
+        const id = Math.ceil(Math.random() * 200);
+        const todo = await api.get(`/todos/${id}`).json();
+        getOut.textContent = JSON.stringify(todo, null, 2);
+      } catch (err) {
+        getOut.classList.add("err");
+        getOut.textContent = "Request failed: " + err.message +
+          "\n(Check your connection — this demo hits a live API.)";
+      } finally {
+        getBtn.disabled = false;
+      }
+    });
+
+    // ========================================
+    // Demo 2: Handle Responses by Status (offline, simulated)
+    // ========================================
+    const statusSel = document.getElementById("statusSel");
+    const sendBtn = document.getElementById("sendBtn");
+    const statusLog = document.getElementById("statusLog");
+
+    function log(text, cls = "") {
+      const span = document.createElement("span");
+      span.className = "line " + cls;
+      span.textContent = text;
+      statusLog.appendChild(span);
+    }
+
+    // A fake fetch that returns whatever status the dropdown selects
+    function makeFetch(status) {
+      return async () => {
+        if (status === 200) {
+          return new Response(JSON.stringify({ id: 1, title: "It worked!" }),
+            { status: 200, headers: { "Content-Type": "application/json" } });
+        }
+        return new Response(JSON.stringify({ error: "simulated " + status }),
+          { status, headers: { "Content-Type": "application/json" } });
+      };
+    }
+
+    sendBtn.addEventListener("click", () => {
+      statusLog.innerHTML = "";
+      const status = Number(statusSel.value);
+      log(`→ requesting… server will respond ${status}`, "dim");
+
+      wretch("https://demo.test/resource")
+        .polyfills({ fetch: makeFetch(status) })
+        .get()
+        .badRequest(() => log("400 → .badRequest() handler fired", "warn"))
+        .unauthorized(() => log("401 → .unauthorized() handler fired", "warn"))
+        .forbidden(() => log("403 → .forbidden() handler fired", "warn"))
+        .notFound(() => log("404 → .notFound() handler fired", "warn"))
+        .internalError(() => log("500 → .internalError() handler fired", "warn"))
+        .json((data) => log("200 → .json() resolver: " + JSON.stringify(data), "ok"))
+        .catch((err) => log("unhandled: " + err.message, "warn"));
+    });
+  </script>
+</body>
+</html>

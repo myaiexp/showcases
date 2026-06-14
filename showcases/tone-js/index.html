@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tone.js — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha384-wFjoQjtV1y5jVHbt0p35Ui8aV8GVpEZkyF99OXWqP/eNJDU93D3Ugxkoyh6Y2I4A" crossorigin="anonymous">
+  <style>
+    .audio-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      margin-bottom: 16px;
+    }
+    .keys { display: flex; flex-wrap: wrap; gap: 8px; }
+    .key {
+      flex: 1 1 auto;
+      min-width: 46px;
+      padding: 22px 0;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg-card);
+      color: var(--text);
+      cursor: pointer;
+      transition: background 0.08s, transform 0.08s, border-color 0.08s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .key:hover { border-color: var(--accent-dim); }
+    .key.lit { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(2px); }
+
+    .row { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-end; margin-top: 16px; }
+    .field { display: flex; flex-direction: column; gap: 4px; }
+    .field label { font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); display: flex; justify-content: space-between; gap: 12px; }
+    .field label .v { color: var(--accent); font-weight: 600; }
+    .field input[type="range"] { width: 160px; accent-color: var(--accent); height: 6px; }
+    .ctl-select {
+      padding: 8px 28px 8px 12px; font-size: 0.875rem; font-family: var(--font);
+      border: 1px solid var(--border); border-radius: var(--radius-sm);
+      background: var(--bg-code); color: var(--text); cursor: pointer;
+      appearance: none; -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238b8b94'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 10px center;
+    }
+
+    /* Sequencer */
+    .seq { display: flex; gap: 6px; margin-top: 4px; }
+    .step {
+      flex: 1;
+      aspect-ratio: 1 / 1.4;
+      min-width: 0;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg-card);
+      cursor: pointer;
+      transition: background 0.1s, border-color 0.1s, box-shadow 0.1s;
+      touch-action: manipulation;
+    }
+    .step.on { background: var(--accent); border-color: var(--accent); }
+    .step.cursor { box-shadow: 0 0 0 2px var(--text); }
+    .transport { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Tone.js</h1>
+      <a href="https://tonejs.github.io" class="docs-link" target="_blank" rel="noopener">tonejs.github.io &rarr;</a>
+      <p class="description">A Web Audio framework for making music in the browser. Synthesizers, effects, and a musical transport for scheduling — sound generated entirely in code, no audio files.</p>
+      <span class="category-tag">Audio</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      The raw Web Audio API is powerful but low-level — you wire oscillators, gain nodes, and sample-accurate timing by hand. Tone.js wraps it in musical concepts: synths you can play with note names like <code>"C4"</code>, a <code>Transport</code> that schedules events on a musical timeline (bars, beats, BPM), and a library of effects. Everything here is synthesized live in your browser, so there's nothing to download. It's the fastest way to add real, interactive sound to a web app.
+    </div>
+
+    <div class="audio-note">🔊 Audio needs a tap to start (browsers block autoplay). Turn your volume up and click a note.</div>
+
+    <!-- ============ Demo 1: Playable Synth ============ -->
+    <section class="demo-section">
+      <h2>Playable Synth</h2>
+      <p class="demo-description">Each button triggers a note on a <code>Tone.Synth</code>. Change the oscillator waveform to hear how the timbre shifts — a sine is pure and round, a sawtooth is bright and buzzy.</p>
+
+      <div class="demo-area">
+        <div class="keys" id="keys"></div>
+        <div class="row">
+          <div class="field">
+            <label for="waveSel">oscillator</label>
+            <select class="ctl-select" id="waveSel">
+              <option value="sine">sine</option>
+              <option value="triangle" selected>triangle</option>
+              <option value="square">square</option>
+              <option value="sawtooth">sawtooth</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">const synth = new Tone.Synth({
+  oscillator: { type: "triangle" }
+}).toDestination();
+
+button.addEventListener("click", async () => {
+  await Tone.start();            // resume the AudioContext (needs a gesture)
+  synth.triggerAttackRelease("C4", "8n");  // note, duration
+});</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Step Sequencer ============ -->
+    <section class="demo-section">
+      <h2>Step Sequencer</h2>
+      <p class="demo-description">Toggle steps to program a loop, then press play. A <code>Tone.Sequence</code> walks the steps in time with the <code>Transport</code>, firing a note on each active one. Drag the tempo to feel the BPM change.</p>
+
+      <div class="demo-area">
+        <div class="seq" id="seq"></div>
+        <div class="transport">
+          <button class="btn btn-primary" id="playBtn">▶ Play</button>
+          <button class="btn" id="clearBtn">Clear</button>
+          <div class="field">
+            <label>tempo <span class="v" id="bpmVal">120 BPM</span></label>
+            <input type="range" id="bpm" min="60" max="200" step="1" value="120">
+          </div>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">const synth = new Tone.PolySynth(Tone.Synth).toDestination();
+const notes = ["C4","D4","E4","G4","A4","C5","D5","E5"];
+const active = new Array(8).fill(false);
+
+const seq = new Tone.Sequence((time, step) => {
+  if (active[step]) synth.triggerAttackRelease(notes[step], "8n", time);
+  // schedule the UI highlight on the animation frame
+  Tone.getDraw().schedule(() => highlight(step), time);
+}, [0,1,2,3,4,5,6,7], "8n").start(0);
+
+playBtn.onclick = async () => {
+  await Tone.start();
+  Tone.getTransport().toggle();   // start / stop
+};</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" integrity="sha384-ZM8fDxYm+GXOWeJcxDetoRImNnEAS7XwVFH5kv0pT6RXNy92Nemw/Sj7NfciXpqg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" integrity="sha384-D44bgYYKvaiDh4cOGlj1dbSDpSctn2FSUj118HZGmZEShZcO2v//Q5vvhNy206pp" crossorigin="anonymous"></script>
+
+  <!-- Tone.js (UMD) -->
+  <script src="https://cdn.jsdelivr.net/npm/tone@15.1.22/build/Tone.js" integrity="sha384-NWoslxaf/3dYwQk+uGziDYJFdsjBpVlU1WpFRexuDFcIk/5PJpCbpVXia2Uikeix" crossorigin="anonymous"></script>
+
+  <script>
+    // ========================================
+    // Demo 1: Playable Synth
+    // ========================================
+    const noteList = ["C4", "D4", "E4", "F4", "G4", "A4", "B4", "C5"];
+    const keysEl = document.getElementById("keys");
+    const waveSel = document.getElementById("waveSel");
+
+    const synth = new Tone.Synth({ oscillator: { type: "triangle" } }).toDestination();
+    waveSel.addEventListener("change", () => { synth.oscillator.type = waveSel.value; });
+
+    noteList.forEach(note => {
+      const btn = document.createElement("button");
+      btn.className = "key";
+      btn.textContent = note;
+      const play = async () => {
+        await Tone.start();
+        synth.triggerAttackRelease(note, "8n");
+        btn.classList.add("lit");
+        setTimeout(() => btn.classList.remove("lit"), 150);
+      };
+      btn.addEventListener("click", play);
+      keysEl.appendChild(btn);
+    });
+
+    // ========================================
+    // Demo 2: Step Sequencer
+    // ========================================
+    const STEPS = 8;
+    const seqNotes = ["C4", "D4", "E4", "G4", "A4", "C5", "D5", "E5"];
+    const active = new Array(STEPS).fill(false);
+    const seqEl = document.getElementById("seq");
+    const stepEls = [];
+
+    for (let i = 0; i < STEPS; i++) {
+      const cell = document.createElement("div");
+      cell.className = "step";
+      cell.addEventListener("click", () => {
+        active[i] = !active[i];
+        cell.classList.toggle("on", active[i]);
+      });
+      seqEl.appendChild(cell);
+      stepEls.push(cell);
+    }
+
+    const polySynth = new Tone.PolySynth(Tone.Synth).toDestination();
+    polySynth.volume.value = -6;
+
+    const sequence = new Tone.Sequence((time, step) => {
+      if (active[step]) polySynth.triggerAttackRelease(seqNotes[step], "8n", time);
+      Tone.getDraw().schedule(() => {
+        stepEls.forEach((el, i) => el.classList.toggle("cursor", i === step));
+      }, time);
+    }, [0, 1, 2, 3, 4, 5, 6, 7], "8n");
+    sequence.start(0);
+
+    const playBtn = document.getElementById("playBtn");
+    const clearBtn = document.getElementById("clearBtn");
+    const bpm = document.getElementById("bpm");
+    const bpmVal = document.getElementById("bpmVal");
+
+    playBtn.addEventListener("click", async () => {
+      await Tone.start();
+      const t = Tone.getTransport();
+      if (t.state === "started") {
+        t.stop();
+        playBtn.textContent = "▶ Play";
+        stepEls.forEach(el => el.classList.remove("cursor"));
+      } else {
+        t.start();
+        playBtn.textContent = "❚❚ Stop";
+      }
+    });
+
+    clearBtn.addEventListener("click", () => {
+      active.fill(false);
+      stepEls.forEach(el => el.classList.remove("on"));
+    });
+
+    bpm.addEventListener("input", () => {
+      Tone.getTransport().bpm.value = Number(bpm.value);
+      bpmVal.textContent = bpm.value + " BPM";
+    });
+  </script>
+</body>
+</html>
