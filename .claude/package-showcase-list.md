@@ -40,7 +40,7 @@ Reference list of packages to build interactive showcase pages for.
 
 - **D3.js** — The big data visualization library
 - **Observable Plot** — Simpler, opinionated charting from the D3 team
-- **Chart.js** — Simple, clean charts with good defaults
+- **Chart.js** — Simple, clean charts with good defaults ✅ included
 - **Vega-Lite** — Declarative visualization grammar (JSON spec)
 - **Frappe Charts** — Simple, responsive SVG charts
 - **uPlot** — Tiny, fast time series charts
@@ -95,7 +95,7 @@ Reference list of packages to build interactive showcase pages for.
 
 - **Masonry** — Cascading grid layout (Pinterest style)
 - **Muuri** — Responsive, sortable, filterable grid layouts
-- **Tippy.js** — Tooltip and popover positioning
+- **Tippy.js** — Tooltip and popover positioning ✅ included
 - **Floating UI** — Positioning engine for tooltips, popovers, dropdowns
 - **Swiper** — Modern touch slider / carousel
 
