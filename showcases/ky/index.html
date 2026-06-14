@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ky — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha384-wFjoQjtV1y5jVHbt0p35Ui8aV8GVpEZkyF99OXWqP/eNJDU93D3Ugxkoyh6Y2I4A" crossorigin="anonymous">
+  <style>
+    .net-note {
+      font-size: 0.78rem; color: var(--text-muted);
+      background: var(--bg-code); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 8px 12px; margin-bottom: 16px;
+    }
+    .out {
+      margin: 14px 0 0; padding: 14px 16px;
+      background: var(--bg-code); border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono); font-size: 0.78rem; line-height: 1.55;
+      white-space: pre-wrap; word-break: break-word;
+      max-height: 280px; overflow: auto;
+    }
+    .out.err { border-color: rgba(229,72,77,0.45); color: #f2555a; }
+    .log {
+      margin: 14px 0 0; padding: 12px 14px;
+      background: var(--bg-code); border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono); font-size: 0.76rem; line-height: 1.7;
+      min-height: 60px;
+    }
+    .log .line { display: block; }
+    .log .ok { color: #4cc38a; }
+    .log .warn { color: #f5a623; }
+    .log .dim { color: var(--text-muted); }
+    .spin { color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>ky</h1>
+      <a href="https://github.com/sindresorhus/ky" class="docs-link" target="_blank" rel="noopener">github.com/sindresorhus/ky &rarr;</a>
+      <p class="description">A tiny, elegant HTTP client built on the Fetch API. Cleaner syntax, JSON by default, timeouts, and automatic retries — in about 4&nbsp;KB.</p>
+      <span class="category-tag">Networking</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      <code>fetch</code> is built into every browser, but it's verbose: you check <code>response.ok</code> yourself, call <code>.json()</code> manually, and there's no retry or timeout. ky wraps fetch with sensible defaults — non-2xx responses throw, <code>.json()</code> is a one-liner, requests retry on transient failures with exponential backoff, and <code>hooks</code> let you tap into the request lifecycle. Same platform primitive, far less boilerplate.
+    </div>
+
+    <div class="net-note">🌐 Demo 1 makes a real request to a public test API (jsonplaceholder.typicode.com) and needs an internet connection. Demo 2 runs fully offline with a simulated server.</div>
+
+    <!-- ============ Demo 1: Clean GET ============ -->
+    <section class="demo-section">
+      <h2>JSON in One Line</h2>
+      <p class="demo-description">No <code>response.ok</code> checks, no manual <code>.json()</code> dance. <code>ky.get(url).json()</code> resolves straight to parsed data — or throws if the server returns an error status.</p>
+
+      <div class="demo-area">
+        <button class="btn btn-primary" id="getBtn">GET a random user</button>
+        <pre class="out" id="getOut">Click the button to fetch.</pre>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">import ky from "ky";
+
+const id = Math.ceil(Math.random() * 10);
+const user = await ky
+  .get(`https://jsonplaceholder.typicode.com/users/${id}`)
+  .json();   // parsed JSON, or throws HTTPError on non-2xx
+
+console.log(user.name, user.email);</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Automatic Retries ============ -->
+    <section class="demo-section">
+      <h2>Automatic Retries</h2>
+      <p class="demo-description">Here a simulated server returns <code>503</code> twice before succeeding. ky retries transient failures automatically with backoff — the <code>beforeRetry</code> hook lets us watch it happen. No real network involved.</p>
+
+      <div class="demo-area">
+        <button class="btn btn-primary" id="retryBtn">Send flaky request</button>
+        <div class="log" id="retryLog"><span class="line dim">Idle.</span></div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">// A fake fetch that fails twice, then succeeds
+let attempt = 0;
+const flakyFetch = async () => {
+  attempt++;
+  if (attempt < 3) return new Response("nope", { status: 503 });
+  return Response.json({ recovered: true, onAttempt: attempt });
+};
+
+const data = await ky.get("https://example.invalid/data", {
+  fetch: flakyFetch,
+  retry: { limit: 3, statusCodes: [503], delay: () => 350 },
+  hooks: {
+    beforeRetry: [({ retryCount }) => log(`retry #${retryCount} after 503…`)]
+  }
+}).json();</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" integrity="sha384-ZM8fDxYm+GXOWeJcxDetoRImNnEAS7XwVFH5kv0pT6RXNy92Nemw/Sj7NfciXpqg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" integrity="sha384-D44bgYYKvaiDh4cOGlj1dbSDpSctn2FSUj118HZGmZEShZcO2v//Q5vvhNy206pp" crossorigin="anonymous"></script>
+
+  <!-- ky via CDN (ESM) -->
+  <script type="module">
+    import ky from "https://cdn.jsdelivr.net/npm/ky@2.0.2/+esm";
+
+    // ========================================
+    // Demo 1: JSON in One Line
+    // ========================================
+    const getBtn = document.getElementById("getBtn");
+    const getOut = document.getElementById("getOut");
+
+    getBtn.addEventListener("click", async () => {
+      getOut.classList.remove("err");
+      getOut.textContent = "Loading…";
+      getBtn.disabled = true;
+      try {
+        const id = Math.ceil(Math.random() * 10);
+        const user = await ky
+          .get(`https://jsonplaceholder.typicode.com/users/${id}`)
+          .json();
+        getOut.textContent = JSON.stringify({
+          id: user.id,
+          name: user.name,
+          email: user.email,
+          company: user.company?.name,
+          city: user.address?.city
+        }, null, 2);
+      } catch (err) {
+        getOut.classList.add("err");
+        getOut.textContent = "Request failed: " + err.message +
+          "\n(Check your connection — this demo hits a live API.)";
+      } finally {
+        getBtn.disabled = false;
+      }
+    });
+
+    // ========================================
+    // Demo 2: Automatic Retries (offline, simulated)
+    // ========================================
+    const retryBtn = document.getElementById("retryBtn");
+    const retryLog = document.getElementById("retryLog");
+
+    function log(text, cls = "") {
+      const span = document.createElement("span");
+      span.className = "line " + cls;
+      span.textContent = text;
+      retryLog.appendChild(span);
+    }
+
+    retryBtn.addEventListener("click", async () => {
+      retryLog.innerHTML = "";
+      retryBtn.disabled = true;
+
+      let attempt = 0;
+      const flakyFetch = async () => {
+        attempt++;
+        if (attempt < 3) {
+          log(`→ attempt ${attempt}: server responded 503`, "warn");
+          return new Response("Service Unavailable", { status: 503 });
+        }
+        log(`→ attempt ${attempt}: server responded 200`, "ok");
+        return new Response(
+          JSON.stringify({ recovered: true, onAttempt: attempt }),
+          { status: 200, headers: { "Content-Type": "application/json" } }
+        );
+      };
+
+      try {
+        const data = await ky.get("https://example.invalid/data", {
+          fetch: flakyFetch,
+          retry: { limit: 3, statusCodes: [503], delay: () => 350 },
+          hooks: {
+            beforeRetry: [({ retryCount }) => log(`   ky retry #${retryCount} after backoff…`, "dim")]
+          }
+        }).json();
+        log("✓ resolved: " + JSON.stringify(data), "ok");
+      } catch (err) {
+        log("✗ gave up: " + err.message, "warn");
+      } finally {
+        retryBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>

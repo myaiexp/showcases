@@ -80,16 +80,16 @@ Reference list of packages to build interactive showcase pages for.
 
 ## Networking & HTTP
 
-- **ky** — Tiny HTTP client built on fetch, cleaner API
+- **ky** — Tiny HTTP client built on fetch, cleaner API ✅ included
 - **Socket.IO** — Real-time bidirectional communication (client side)
 - **sse.js** — Server-Sent Events client
-- **Wretch** — Tiny fetch wrapper with fluent API
+- **Wretch** — Tiny fetch wrapper with fluent API ✅ included
 
 ## Audio
 
-- **Tone.js** — Web Audio framework for music and sound synthesis
+- **Tone.js** — Web Audio framework for music and sound synthesis ✅ included
 - **Howler.js** — Audio library for games and apps
-- **Pizzicato.js** — Simplified Web Audio API with effects
+- **Pizzicato.js** — Simplified Web Audio API with effects ✅ included
 
 ## Layout & UI
 
