@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sortable.js — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha384-wFjoQjtV1y5jVHbt0p35Ui8aV8GVpEZkyF99OXWqP/eNJDU93D3Ugxkoyh6Y2I4A" crossorigin="anonymous">
+  <style>
+    /* --- Shared sortable item look --- */
+    .sortable-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .sortable-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      cursor: grab;
+      touch-action: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    .sortable-item:active { cursor: grabbing; }
+    .handle {
+      cursor: grab;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      line-height: 1;
+      letter-spacing: -2px;
+    }
+    .sortable-item .rank {
+      margin-left: auto;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 2px 8px;
+    }
+
+    /* Sortable.js state classes */
+    .sortable-ghost {
+      opacity: 0.35;
+      background: var(--accent-dim);
+      border-style: dashed;
+    }
+    .sortable-chosen { border-color: var(--accent); }
+    .sortable-drag {
+      cursor: grabbing;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+
+    .order-readout {
+      margin-top: 16px;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      word-break: break-word;
+    }
+    .order-readout b { color: var(--accent); }
+
+    /* --- Demo 2: Kanban board --- */
+    .board {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 680px) {
+      .board { grid-template-columns: repeat(3, 1fr); }
+    }
+    .column {
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px;
+    }
+    .column-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 0 2px;
+    }
+    .column-head h3 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .column-head .count {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 1px 8px;
+      min-width: 22px;
+      text-align: center;
+    }
+    .column-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-height: 56px;
+    }
+    .card-item {
+      padding: 10px 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      cursor: grab;
+      touch-action: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    .card-item:active { cursor: grabbing; }
+    .card-item .dot {
+      display: inline-block;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Sortable.js</h1>
+      <a href="https://sortablejs.github.io/Sortable/" class="docs-link" target="_blank" rel="noopener">sortablejs.github.io &rarr;</a>
+      <p class="description">Reorderable drag-and-drop lists with smooth animations and touch support — no framework required, just a plain DOM element.</p>
+      <span class="category-tag">Interaction</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      Drag-and-drop reordering is deceptively hard to build well: pointer math, touch events, auto-scroll, and animations all fight you. Sortable.js wraps the native HTML5 drag-and-drop API into one tiny, dependency-free library. Point it at a list element and items become reorderable instantly — with FLIP animations, drag handles, and transfer between lists. It's the quiet workhorse behind countless Kanban boards and playlist editors.
+    </div>
+
+    <!-- ============ Demo 1: Reorderable List ============ -->
+    <section class="demo-section">
+      <h2>Reorderable List</h2>
+      <p class="demo-description">Drag the rows by their handle to reorder this priority list. Sortable animates the shift and fires <code>onSort</code> — the readout below reflects the live order. Works with touch, too.</p>
+
+      <div class="demo-area">
+        <ul class="sortable-list" id="priorityList">
+          <li class="sortable-item"><span class="handle">⠿</span> Ship the landing page<span class="rank"></span></li>
+          <li class="sortable-item"><span class="handle">⠿</span> Fix the login bug<span class="rank"></span></li>
+          <li class="sortable-item"><span class="handle">⠿</span> Write release notes<span class="rank"></span></li>
+          <li class="sortable-item"><span class="handle">⠿</span> Review open pull requests<span class="rank"></span></li>
+          <li class="sortable-item"><span class="handle">⠿</span> Reply to user feedback<span class="rank"></span></li>
+        </ul>
+        <div class="order-readout" id="orderReadout"></div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">import Sortable from "sortablejs";
+
+const sortable = new Sortable(listEl, {
+  animation: 150,           // FLIP animation duration (ms)
+  handle: ".handle",        // only the handle starts a drag
+  ghostClass: "sortable-ghost",
+  chosenClass: "sortable-chosen",
+  onSort: () => {
+    // Read the new order straight off the DOM
+    const order = sortable.toArray();
+    console.log(order);
+  }
+});</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Drag Between Lists ============ -->
+    <section class="demo-section">
+      <h2>Drag Between Lists</h2>
+      <p class="demo-description">Give several lists the same <code>group</code> name and items flow between them — the foundation of any Kanban board. Drag cards across the columns; the counts update as items move.</p>
+
+      <div class="demo-area">
+        <div class="board" id="board">
+          <div class="column">
+            <div class="column-head"><h3>To Do</h3><span class="count" data-count>0</span></div>
+            <ul class="column-list" data-status="todo">
+              <li class="card-item"><span class="dot" style="background:#6c8cff"></span>Design empty states</li>
+              <li class="card-item"><span class="dot" style="background:#6c8cff"></span>Audit color contrast</li>
+              <li class="card-item"><span class="dot" style="background:#6c8cff"></span>Draft onboarding copy</li>
+            </ul>
+          </div>
+          <div class="column">
+            <div class="column-head"><h3>In Progress</h3><span class="count" data-count>0</span></div>
+            <ul class="column-list" data-status="doing">
+              <li class="card-item"><span class="dot" style="background:#f5a623"></span>Build settings page</li>
+              <li class="card-item"><span class="dot" style="background:#f5a623"></span>Wire up analytics</li>
+            </ul>
+          </div>
+          <div class="column">
+            <div class="column-head"><h3>Done</h3><span class="count" data-count>0</span></div>
+            <ul class="column-list" data-status="done">
+              <li class="card-item"><span class="dot" style="background:#30a46c"></span>Set up CI pipeline</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">// Every list shares the same group → items transfer between them
+document.querySelectorAll(".column-list").forEach((list) => {
+  new Sortable(list, {
+    group: "kanban",   // same name = drag between these lists
+    animation: 150,
+    ghostClass: "sortable-ghost",
+    onSort: updateCounts  // fires on reorder *and* transfer
+  });
+});</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" integrity="sha384-ZM8fDxYm+GXOWeJcxDetoRImNnEAS7XwVFH5kv0pT6RXNy92Nemw/Sj7NfciXpqg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" integrity="sha384-D44bgYYKvaiDh4cOGlj1dbSDpSctn2FSUj118HZGmZEShZcO2v//Q5vvhNy206pp" crossorigin="anonymous"></script>
+
+  <!-- Sortable.js (UMD) -->
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.7/Sortable.min.js" integrity="sha384-DgmC6Xe2bSN2WjTDXzWYbUbxyhNP+NNkGDR/g78pCXV7E7rcVTGxVg0uIVCUUcBc" crossorigin="anonymous"></script>
+
+  <script>
+    // ========================================
+    // Demo 1: Reorderable List
+    // ========================================
+    const priorityList = document.getElementById("priorityList");
+    const orderReadout = document.getElementById("orderReadout");
+
+    function labelOf(item) {
+      // The text node after the handle, trimmed
+      return item.childNodes[1].textContent.trim();
+    }
+
+    function updateReadout() {
+      const items = [...priorityList.querySelectorAll(".sortable-item")];
+      items.forEach((item, i) => {
+        item.querySelector(".rank").textContent = "#" + (i + 1);
+      });
+      orderReadout.innerHTML = "<b>Order:</b> " +
+        items.map((it, i) => `${i + 1}. ${labelOf(it)}`).join("  →  ");
+    }
+
+    new Sortable(priorityList, {
+      animation: 150,
+      handle: ".handle",
+      ghostClass: "sortable-ghost",
+      chosenClass: "sortable-chosen",
+      dragClass: "sortable-drag",
+      onSort: updateReadout
+    });
+
+    updateReadout();
+
+    // ========================================
+    // Demo 2: Drag Between Lists (Kanban)
+    // ========================================
+    const board = document.getElementById("board");
+    const lists = board.querySelectorAll(".column-list");
+
+    function updateCounts() {
+      board.querySelectorAll(".column").forEach((col) => {
+        const n = col.querySelectorAll(".card-item").length;
+        col.querySelector("[data-count]").textContent = n;
+      });
+    }
+
+    lists.forEach((list) => {
+      new Sortable(list, {
+        group: "kanban",
+        animation: 150,
+        ghostClass: "sortable-ghost",
+        chosenClass: "sortable-chosen",
+        dragClass: "sortable-drag",
+        onSort: updateCounts
+      });
+    });
+
+    updateCounts();
+  </script>
+</body>
+</html>

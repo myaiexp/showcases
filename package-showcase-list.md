@@ -32,7 +32,7 @@ Reference list of packages to build interactive showcase pages for.
 
 - **Hammer.js** — Touch gesture recognition (pinch, rotate, swipe, press)
 - **interact.js** — Drag, resize, snap, multi-touch element manipulation
-- **Sortable.js** — Drag-and-drop reorderable lists
+- **Sortable.js** — Drag-and-drop reorderable lists ✅ included
 - **Panzoom** — Pan and zoom elements with touch/mouse support
 - **use-gesture** — Gesture handling (works standalone, not React-only)
 
