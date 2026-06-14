@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zdog — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha384-wFjoQjtV1y5jVHbt0p35Ui8aV8GVpEZkyF99OXWqP/eNJDU93D3Ugxkoyh6Y2I4A" crossorigin="anonymous">
+  <style>
+    .zdog-stage {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 0;
+    }
+    .zdog-canvas {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      cursor: grab;
+      touch-action: none;
+    }
+    .zdog-canvas:active { cursor: grabbing; }
+    .hint-line {
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 6px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      align-items: flex-end;
+      margin-top: 18px;
+    }
+    .field { display: flex; flex-direction: column; gap: 4px; min-width: 140px; }
+    .field label {
+      display: flex; justify-content: space-between;
+      font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);
+    }
+    .field label .v { color: var(--accent); font-weight: 600; }
+    .field input[type="range"] { width: 100%; accent-color: var(--accent); height: 6px; }
+    .ctl-select {
+      padding: 8px 28px 8px 12px; font-size: 0.875rem; font-family: var(--font);
+      border: 1px solid var(--border); border-radius: var(--radius-sm);
+      background: var(--bg-code); color: var(--text); cursor: pointer;
+      appearance: none; -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238b8b94'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 10px center;
+    }
+    .ctl-select:focus-visible { outline: none; border-color: var(--accent); }
+    .toggle { display: inline-flex; align-items: center; gap: 8px; font-size: 0.8125rem; color: var(--text-muted); cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Zdog</h1>
+      <a href="https://zzz.dog" class="docs-link" target="_blank" rel="noopener">zzz.dog &rarr;</a>
+      <p class="description">A round, flat, designer-friendly pseudo-3D engine. Build true 3D models from simple shapes and render them with a clean, illustrative look on a single canvas.</p>
+      <span class="category-tag">Visual</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      Zdog is "3D for designers." It's only ~2,000 lines, yet it gives you a real 3D scene graph — shapes have genuine positions, rotations, and depth sorting — rendered in a soft, flat, vector style instead of photoreal lighting. You compose models from primitives (boxes, cones, ellipses), spin them with a render loop, and let users drag to orbit. It's the easiest on-ramp to 3D on the web when you want charm over realism.
+    </div>
+
+    <!-- ============ Demo 1: Spin & Drag ============ -->
+    <section class="demo-section">
+      <h2>Spin &amp; Drag</h2>
+      <p class="demo-description">A 3D box with six colored faces, auto-rotating in a render loop. Drag it to orbit — <code>dragRotate</code> handles the pointer math, including touch. Toggle the spin to inspect it from any angle.</p>
+
+      <div class="demo-area">
+        <div class="zdog-stage">
+          <canvas class="zdog-canvas" id="boxCanvas" width="760" height="600"></canvas>
+        </div>
+        <div class="hint-line">drag to rotate</div>
+        <div class="controls">
+          <label class="toggle"><input type="checkbox" id="boxSpin" checked> auto-rotate</label>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">const illo = new Zdog.Illustration({
+  element: canvas,
+  dragRotate: true,        // drag / touch to orbit
+  zoom: 4
+});
+
+new Zdog.Box({
+  addTo: illo,
+  width: 90, height: 90, depth: 90,
+  stroke: false,
+  frontFace: "#e5484d", rearFace: "#6c8cff",
+  leftFace: "#8c6cff",  rightFace: "#19b8c4",
+  topFace: "#30a46c",   bottomFace: "#f5a623"
+});
+
+function animate() {
+  if (spinning) illo.rotate.y += 0.03;
+  illo.updateRenderGraph();   // recompute depth order + draw
+  requestAnimationFrame(animate);
+}
+animate();</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Primitive Explorer ============ -->
+    <section class="demo-section">
+      <h2>Primitive Explorer</h2>
+      <p class="demo-description">Zdog ships a handful of 3D primitives. Pick one and tune the zoom and spin speed — the shape is rebuilt with a single constructor call and the loop keeps it turning.</p>
+
+      <div class="demo-area">
+        <div class="zdog-stage">
+          <canvas class="zdog-canvas" id="shapeCanvas" width="760" height="600"></canvas>
+        </div>
+        <div class="hint-line">drag to rotate</div>
+        <div class="controls">
+          <div class="field" style="min-width:160px">
+            <label for="shapeSel">shape</label>
+            <select class="ctl-select" id="shapeSel">
+              <option value="box">Box</option>
+              <option value="sphere">Sphere</option>
+              <option value="cone">Cone</option>
+              <option value="cylinder">Cylinder</option>
+              <option value="hemisphere">Hemisphere</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>zoom <span class="v" id="zoomVal">4.0</span></label>
+            <input type="range" id="zoom" min="1.5" max="7" step="0.1" value="4">
+          </div>
+          <div class="field">
+            <label>spin speed <span class="v" id="speedVal">0.03</span></label>
+            <input type="range" id="speed" min="0" max="0.1" step="0.005" value="0.03">
+          </div>
+        </div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">function build(type) {
+  current?.remove();                 // drop the previous primitive
+  const opts = { addTo: illo, color: "#6c8cff", stroke: 12 };
+  current = ({
+    box:        () => new Zdog.Box({ ...opts, width: 80, height: 80, depth: 80, stroke: false, color: "#8c6cff" }),
+    sphere:     () => new Zdog.Shape({ ...opts, stroke: 90 }),
+    cone:       () => new Zdog.Cone({ ...opts, diameter: 80, length: 90 }),
+    cylinder:   () => new Zdog.Cylinder({ ...opts, diameter: 70, length: 80 }),
+    hemisphere: () => new Zdog.Hemisphere({ ...opts, diameter: 90 })
+  })[type]();
+}</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" integrity="sha384-ZM8fDxYm+GXOWeJcxDetoRImNnEAS7XwVFH5kv0pT6RXNy92Nemw/Sj7NfciXpqg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" integrity="sha384-D44bgYYKvaiDh4cOGlj1dbSDpSctn2FSUj118HZGmZEShZcO2v//Q5vvhNy206pp" crossorigin="anonymous"></script>
+
+  <!-- Zdog (UMD) -->
+  <script src="https://cdn.jsdelivr.net/npm/zdog@1.1.3/dist/zdog.dist.min.js" integrity="sha384-uemX+7mmmdjmQ1rPunVNyPMrxre4od8DrHA0WPSFWFmdKPUpPhGM0wpCZ5MFAsHN" crossorigin="anonymous"></script>
+
+  <script>
+    // ========================================
+    // Demo 1: Spin & Drag
+    // ========================================
+    const boxSpin = document.getElementById("boxSpin");
+
+    const boxIllo = new Zdog.Illustration({
+      element: document.getElementById("boxCanvas"),
+      dragRotate: true,
+      zoom: 4
+    });
+    boxIllo.rotate.x = -0.5;
+
+    new Zdog.Box({
+      addTo: boxIllo,
+      width: 90, height: 90, depth: 90,
+      stroke: false,
+      frontFace: "#e5484d", rearFace: "#6c8cff",
+      leftFace: "#8c6cff",  rightFace: "#19b8c4",
+      topFace: "#30a46c",   bottomFace: "#f5a623"
+    });
+
+    function animateBox() {
+      if (boxSpin.checked) boxIllo.rotate.y += 0.03;
+      boxIllo.updateRenderGraph();
+      requestAnimationFrame(animateBox);
+    }
+    animateBox();
+
+    // ========================================
+    // Demo 2: Primitive Explorer
+    // ========================================
+    const shapeSel = document.getElementById("shapeSel");
+    const zoomEl = document.getElementById("zoom");
+    const speedEl = document.getElementById("speed");
+    const zoomVal = document.getElementById("zoomVal");
+    const speedVal = document.getElementById("speedVal");
+
+    const shapeIllo = new Zdog.Illustration({
+      element: document.getElementById("shapeCanvas"),
+      dragRotate: true,
+      zoom: 4
+    });
+    shapeIllo.rotate.x = -0.5;
+
+    let current = null;
+    function buildShape(type) {
+      if (current) current.remove();
+      const base = { addTo: shapeIllo };
+      const builders = {
+        box: () => new Zdog.Box({ ...base, width: 80, height: 80, depth: 80, stroke: false, color: "#8c6cff" }),
+        sphere: () => new Zdog.Shape({ ...base, stroke: 90, color: "#6c8cff" }),
+        cone: () => new Zdog.Cone({ ...base, diameter: 80, length: 95, stroke: 12, color: "#19b8c4" }),
+        cylinder: () => new Zdog.Cylinder({ ...base, diameter: 72, length: 85, stroke: 12, color: "#30a46c" }),
+        hemisphere: () => new Zdog.Hemisphere({ ...base, diameter: 95, stroke: 12, color: "#f5a623" })
+      };
+      current = builders[type]();
+    }
+    buildShape("box");
+
+    let spinSpeed = 0.03;
+    function animateShape() {
+      shapeIllo.rotate.y += spinSpeed;
+      shapeIllo.updateRenderGraph();
+      requestAnimationFrame(animateShape);
+    }
+    animateShape();
+
+    shapeSel.addEventListener("change", () => buildShape(shapeSel.value));
+    zoomEl.addEventListener("input", () => {
+      shapeIllo.zoom = parseFloat(zoomEl.value);
+      zoomVal.textContent = parseFloat(zoomEl.value).toFixed(1);
+    });
+    speedEl.addEventListener("input", () => {
+      spinSpeed = parseFloat(speedEl.value);
+      speedVal.textContent = spinSpeed.toFixed(3);
+    });
+  </script>
+</body>
+</html>

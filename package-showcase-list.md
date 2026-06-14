@@ -20,7 +20,7 @@ Reference list of packages to build interactive showcase pages for.
 ## Visual & Creative
 
 - **Three.js** — 3D rendering engine
-- **Zdog** — Pseudo-3D with flat, illustrative shapes
+- **Zdog** — Pseudo-3D with flat, illustrative shapes ✅ included
 - **Paper.js** — Vector graphics scripting framework
 - **p5.js** — Creative coding (Processing for the web)
 - **Pts.js** — Points, lines, shapes for creative coding
@@ -72,7 +72,7 @@ Reference list of packages to build interactive showcase pages for.
 - **Cheerio** — HTML parsing and manipulation
 - **Marked** — Markdown to HTML ✅ included
 - **markdown-it** — Markdown parser with plugin ecosystem
-- **Papa Parse** — CSV parsing and generation, handles edge cases
+- **Papa Parse** — CSV parsing and generation, handles edge cases ✅ included
 - **Turndown** — HTML to Markdown conversion
 - **DOMPurify** — Sanitize HTML to prevent XSS ✅ included (in Marked showcase)
 - **js-yaml** — YAML parsing and serialization

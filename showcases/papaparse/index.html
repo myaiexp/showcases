@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papa Parse — Package Showcase</title>
+  <link rel="stylesheet" href="../../css/shared.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" integrity="sha384-wFjoQjtV1y5jVHbt0p35Ui8aV8GVpEZkyF99OXWqP/eNJDU93D3Ugxkoyh6Y2I4A" crossorigin="anonymous">
+  <style>
+    .csv-input {
+      width: 100%;
+      min-height: 150px;
+      padding: 14px 16px;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      background: var(--bg-code);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      outline: none;
+      resize: vertical;
+      tab-size: 2;
+      transition: border-color 0.15s;
+    }
+    .csv-input:focus { border-color: var(--accent); }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0;
+    }
+    .pill {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px 10px;
+    }
+    .pill b { color: var(--accent); }
+    .pill.err { color: #f2555a; border-color: rgba(229,72,77,0.4); }
+
+    .table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+    table.csv { border-collapse: collapse; width: 100%; font-size: 0.8125rem; }
+    table.csv th, table.csv td {
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      padding: 7px 12px;
+      text-align: left;
+      white-space: nowrap;
+    }
+    table.csv th {
+      background: var(--bg-card);
+      position: sticky; top: 0;
+      font-weight: 600;
+      color: var(--text);
+    }
+    table.csv td:last-child, table.csv th:last-child { border-right: none; }
+    table.csv tr:last-child td { border-bottom: none; }
+    table.csv td .type-num { color: #4cc38a; }
+    table.csv td .type-bool { color: #f5a623; }
+    table.csv td .type-null { color: var(--text-muted); font-style: italic; }
+
+    .config-row { display: flex; flex-wrap: wrap; gap: 16px 20px; align-items: center; margin-bottom: 14px; }
+    .toggle { display: inline-flex; align-items: center; gap: 7px; font-size: 0.8125rem; color: var(--text-muted); cursor: pointer; }
+    .config-row .field { display: flex; flex-direction: column; gap: 4px; }
+    .config-row .field label { font-size: 0.72rem; color: var(--text-muted); font-family: var(--font-mono); }
+    .ctl-select {
+      padding: 7px 26px 7px 10px; font-size: 0.8125rem; font-family: var(--font);
+      border: 1px solid var(--border); border-radius: var(--radius-sm);
+      background: var(--bg-code); color: var(--text); cursor: pointer;
+      appearance: none; -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238b8b94'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 9px center;
+    }
+    .json-out {
+      margin: 0;
+      padding: 14px 16px;
+      background: var(--bg-code);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      line-height: 1.55;
+      max-height: 320px;
+      overflow: auto;
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="../../" class="back-link">&larr; Back to Gallery</a>
+
+    <header class="showcase-header">
+      <h1>Papa Parse</h1>
+      <a href="https://www.papaparse.com" class="docs-link" target="_blank" rel="noopener">papaparse.com &rarr;</a>
+      <p class="description">The fast, full-featured CSV parser for the browser. Handles headers, type conversion, quoted fields, and gnarly edge cases that trip up naive split-on-comma code.</p>
+      <span class="category-tag">Parsing</span>
+    </header>
+
+    <div class="why-interesting">
+      <strong>Why it's interesting:</strong>
+      Parsing CSV "by hand" works right up until a value contains a comma, a quote, or a newline — then it falls apart. Papa Parse is RFC-4180 compliant and battle-tested: it handles quoted fields with embedded delimiters, auto-detects the delimiter, converts types, skips blank lines, and can even stream gigabyte files or parse in a Web Worker. For any "let the user upload a spreadsheet" feature, it's the dependable default.
+    </div>
+
+    <!-- ============ Demo 1: CSV to Table ============ -->
+    <section class="demo-section">
+      <h2>CSV → Table</h2>
+      <p class="demo-description">Edit the CSV and watch it parse into a structured table on every keystroke. With <code>header: true</code> the first row becomes object keys, and <code>dynamicTyping</code> turns <span style="color:#4cc38a">numbers</span> and <span style="color:#f5a623">booleans</span> into real JS values — not strings.</p>
+
+      <div class="demo-area">
+        <textarea class="csv-input" id="csvInput" spellcheck="false"></textarea>
+        <div class="meta-bar" id="metaBar"></div>
+        <div class="table-wrap"><table class="csv" id="csvTable"></table></div>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">const result = Papa.parse(csvText, {
+  header: true,        // first row → object keys
+  dynamicTyping: true, // "42" → 42, "true" → true
+  skipEmptyLines: true
+});
+
+result.data;          // [{ name: "Ada", age: 36, active: true }, ...]
+result.meta.fields;   // ["name", "age", "active"]
+result.errors;        // [] when everything parsed cleanly</code></pre>
+      </details>
+    </section>
+
+    <!-- ============ Demo 2: Edge Cases & Config ============ -->
+    <section class="demo-section">
+      <h2>Edge Cases &amp; Config</h2>
+      <p class="demo-description">This messy input has quoted commas, an embedded newline, and a different delimiter. Flip the options to see how Papa Parse responds — including <code>delimiter: ""</code> for auto-detection. Output is the parsed JSON.</p>
+
+      <div class="demo-area">
+        <div class="config-row">
+          <label class="toggle"><input type="checkbox" id="optHeader" checked> header</label>
+          <label class="toggle"><input type="checkbox" id="optTyping" checked> dynamicTyping</label>
+          <label class="toggle"><input type="checkbox" id="optSkip" checked> skipEmptyLines</label>
+          <div class="field">
+            <label for="optDelim">delimiter</label>
+            <select class="ctl-select" id="optDelim">
+              <option value="">auto-detect</option>
+              <option value=",">comma ,</option>
+              <option value=";">semicolon ;</option>
+              <option value="\t">tab</option>
+              <option value="|">pipe |</option>
+            </select>
+          </div>
+        </div>
+        <textarea class="csv-input" id="messyInput" spellcheck="false" style="min-height:130px"></textarea>
+        <div class="meta-bar" id="messyMeta"></div>
+        <pre class="json-out" id="messyOut"></pre>
+      </div>
+
+      <details class="code-block" open>
+        <summary>View Code</summary>
+        <pre><code class="language-javascript">Papa.parse(text, {
+  header: true,
+  dynamicTyping: true,
+  skipEmptyLines: true,
+  delimiter: ""    // "" = auto-detect (also tries ; \t | etc.)
+});
+// meta.delimiter tells you which one Papa actually used</code></pre>
+      </details>
+    </section>
+  </div>
+
+  <!-- Prism.js for code highlighting -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js" integrity="sha384-ZM8fDxYm+GXOWeJcxDetoRImNnEAS7XwVFH5kv0pT6RXNy92Nemw/Sj7NfciXpqg" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js" integrity="sha384-D44bgYYKvaiDh4cOGlj1dbSDpSctn2FSUj118HZGmZEShZcO2v//Q5vvhNy206pp" crossorigin="anonymous"></script>
+
+  <!-- Papa Parse (UMD) -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js" integrity="sha384-Jd2/X5FXVKahwaY2nivvw4LfSTg9idSj8yNXWtT4qef0fHSYr6M7M8bJAfbFYoMc" crossorigin="anonymous"></script>
+
+  <script>
+    // ========================================
+    // Demo 1: CSV → Table
+    // ========================================
+    const csvInput = document.getElementById("csvInput");
+    const csvTable = document.getElementById("csvTable");
+    const metaBar = document.getElementById("metaBar");
+
+    const sampleCsv = `name,role,commits,active
+Ada Lovelace,Engineer,128,true
+Grace Hopper,Compiler Lead,342,true
+Alan Turing,Researcher,87,false
+Katherine Johnson,Mathematician,256,true`;
+
+    function typedCell(value) {
+      const td = document.createElement("td");
+      const span = document.createElement("span");
+      if (value === null || value === undefined || value === "") {
+        span.className = "type-null";
+        span.textContent = "(empty)";
+      } else if (typeof value === "number") {
+        span.className = "type-num";
+        span.textContent = String(value);
+      } else if (typeof value === "boolean") {
+        span.className = "type-bool";
+        span.textContent = String(value);
+      } else {
+        span.textContent = String(value);
+      }
+      td.appendChild(span);
+      return td;
+    }
+
+    function renderTable() {
+      const result = Papa.parse(csvInput.value, {
+        header: true,
+        dynamicTyping: true,
+        skipEmptyLines: true
+      });
+      const fields = result.meta.fields || [];
+
+      metaBar.innerHTML = "";
+      const pills = [
+        `<span class="pill"><b>${result.data.length}</b> rows</span>`,
+        `<span class="pill"><b>${fields.length}</b> columns</span>`,
+        `<span class="pill">delimiter <b>${result.meta.delimiter === "\t" ? "\\t" : result.meta.delimiter}</b></span>`
+      ];
+      if (result.errors.length) {
+        pills.push(`<span class="pill err"><b>${result.errors.length}</b> error(s)</span>`);
+      }
+      metaBar.innerHTML = pills.join("");
+
+      csvTable.innerHTML = "";
+      const thead = document.createElement("thead");
+      const htr = document.createElement("tr");
+      fields.forEach(f => {
+        const th = document.createElement("th");
+        th.textContent = f;
+        htr.appendChild(th);
+      });
+      thead.appendChild(htr);
+      csvTable.appendChild(thead);
+
+      const tbody = document.createElement("tbody");
+      result.data.forEach(row => {
+        const tr = document.createElement("tr");
+        fields.forEach(f => tr.appendChild(typedCell(row[f])));
+        tbody.appendChild(tr);
+      });
+      csvTable.appendChild(tbody);
+    }
+
+    csvInput.value = sampleCsv;
+    csvInput.addEventListener("input", renderTable);
+    renderTable();
+
+    // ========================================
+    // Demo 2: Edge Cases & Config
+    // ========================================
+    const messyInput = document.getElementById("messyInput");
+    const messyMeta = document.getElementById("messyMeta");
+    const messyOut = document.getElementById("messyOut");
+    const optHeader = document.getElementById("optHeader");
+    const optTyping = document.getElementById("optTyping");
+    const optSkip = document.getElementById("optSkip");
+    const optDelim = document.getElementById("optDelim");
+
+    const messyCsv = `product;price;note
+"Widget, deluxe";19.99;"Top seller"
+"Gadget";5;"Has a
+line break"
+"Bundle ""Pro""";49;cheap`;
+
+    function renderMessy() {
+      const delim = optDelim.value === "\\t" ? "\t" : optDelim.value;
+      const result = Papa.parse(messyInput.value, {
+        header: optHeader.checked,
+        dynamicTyping: optTyping.checked,
+        skipEmptyLines: optSkip.checked,
+        delimiter: delim
+      });
+
+      const used = result.meta.delimiter === "\t" ? "\\t" : result.meta.delimiter;
+      const pills = [
+        `<span class="pill"><b>${result.data.length}</b> records</span>`,
+        `<span class="pill">detected delimiter <b>${used || "?"}</b></span>`
+      ];
+      if (result.errors.length) {
+        pills.push(`<span class="pill err"><b>${result.errors.length}</b> error(s)</span>`);
+      }
+      messyMeta.innerHTML = pills.join("");
+      messyOut.textContent = JSON.stringify(result.data, null, 2);
+    }
+
+    messyInput.value = messyCsv;
+    [optHeader, optTyping, optSkip, optDelim].forEach(el =>
+      el.addEventListener("change", renderMessy));
+    messyInput.addEventListener("input", renderMessy);
+    renderMessy();
+  </script>
+</body>
+</html>
