@@ -1,4 +1,4 @@
-// Seeded sample splat objects: a torus knot, a butterfly stand-in, a garden
+// Seeded sample splat objects: knot, butterfly stand-in, garden, terrain
 import * as THREE from 'three';
 import type { PackedSplats } from '@sparkjsdev/spark';
 
@@ -121,5 +121,27 @@ export function pushGarden(splats: PackedSplats, count = 40000, seed = 11): void
       }
       splats.pushSplat(center, scales, quat, 1, color);
     }
+  }
+}
+
+/**
+ * Rolling hills on a square `size` units wide, centred on the origin at y ≈ 0: grass low,
+ * rock and snow high. Dense enough at a few hundred thousand splats to show LoD at work.
+ */
+export function pushTerrain(splats: PackedSplats, count = 200000, size = 8, seed = 13): void {
+  const rand = rng(seed);
+  const height = (x: number, z: number): number =>
+    0.45 * Math.sin(x * 0.9) * Math.cos(z * 0.7) + 0.2 * Math.sin(x * 2.3 + z * 1.7) + 0.06 * Math.cos(x * 7 - z * 5);
+  const spacing = size / Math.sqrt(count);
+  for (let i = 0; i < count; i++) {
+    const x = (rand() - 0.5) * size;
+    const z = (rand() - 0.5) * size;
+    const y = height(x, z);
+    center.set(x, y, z);
+    scales.set(spacing * 0.9, spacing * 0.3, spacing * 0.9);
+    if (y > 0.5) color.setHSL(0, 0, 0.85 + rand() * 0.1);
+    else if (y > 0.3) color.setHSL(0.08, 0.15, 0.35 + rand() * 0.1);
+    else color.setHSL(0.27 + y * 0.1 + rand() * 0.04, 0.55, 0.25 + (y + 0.7) * 0.15);
+    splats.pushSplat(center, scales, quat, 1, color);
   }
 }
