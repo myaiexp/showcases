@@ -1,0 +1,114 @@
+---
+title: Custom WebGL layers
+description: How to add custom WebGL rendering layers like contours and highlights.
+sidebar:
+  label: "WebGL layers"
+---
+
+import SigmaExample from "../../../../components/SigmaExample.astro";
+
+The `@sigma/layer-webgl` package lets you add custom WebGL rendering layers behind the graph. The most common use case
+is drawing contours around groups of nodes to highlight communities. Here are some examples:
+
+### Highlight communities
+
+Draw smooth contour shapes around groups of nodes to visualize clusters:
+
+<SigmaExample id="webgl-layers/highlight-group" height="500px" />
+
+### Multi-level contours
+
+Layered threshold fills that create a topographic effect around node groups:
+
+<SigmaExample id="webgl-layers/multi-levels" height="500px" />
+
+### Heatmap
+
+Density-based heatmap layer that visualizes node concentration:
+
+<SigmaExample id="webgl-layers/heatmap" height="500px" />
+
+## Installation
+
+```bash
+npm install @sigma/layer-webgl
+```
+
+## Drawing contours
+
+The built-in `createContoursProgram` renders smooth contour shapes around a set of nodes. That can be useful for
+visualizing communities or clusters.
+
+```typescript
+import { bindWebGLLayer, createContoursProgram } from "@sigma/layer-webgl";
+import Sigma from "sigma";
+
+const renderer = new Sigma(graph, container, {
+  primitives: {
+    depthLayers: ["edges", "community-highlight", "topEdges", "nodes", "topNodes"],
+  },
+});
+
+// Draw a red contour around a group of nodes, at the "community-highlight" depth
+// layer (the first argument must be one of the renderer's declared depthLayers):
+const communityNodes = ["node1", "node2", "node3", "node4"];
+const clean = bindWebGLLayer(
+  "community-highlight",
+  renderer,
+  createContoursProgram(communityNodes, {
+    radius: 150,
+    border: { color: "#e22653", thickness: 8 },
+    levels: [{ color: "#e2265322", threshold: 0.5 }],
+  }),
+);
+
+// Remove the layer when no longer needed:
+clean();
+```
+
+### Contours options
+
+| Option                      | Type                     | Default        | Description                              |
+| --------------------------- | ------------------------ | -------------- | ---------------------------------------- |
+| `radius`                    | `number`                 | `100`          | Influence radius of each node            |
+| `feather`                   | `number`                 | `1.5`          | Softness of the contour edges            |
+| `levels`                    | `{ color, threshold }[]` | One gray level | Fill levels, from outermost to innermost |
+| `border`                    | `{ color, thickness }`   | none           | Optional border stroke                   |
+| `zoomToRadiusRatioFunction` | `(ratio) => number`      | `Math.sqrt`    | How the radius scales with zoom          |
+
+You can define multiple fill levels to create layered contours:
+
+```typescript
+createContoursProgram(nodeIds, {
+  radius: 200,
+  levels: [
+    { color: "#e2265311", threshold: 0.3 },
+    { color: "#e2265333", threshold: 0.6 },
+    { color: "#e2265566", threshold: 0.9 },
+  ],
+  border: { color: "#e22653", thickness: 4 },
+});
+```
+
+## Multiple layers
+
+Each `bindWebGLLayer` call creates an independent layer, removed through its own cleanup function. Layers may share
+the same depth, in which case they render in registration order:
+
+```typescript
+const cleanA = bindWebGLLayer("community-highlight", renderer, createContoursProgram(groupA, optionsA));
+const cleanB = bindWebGLLayer("community-highlight", renderer, createContoursProgram(groupB, optionsB));
+
+// Remove individually:
+cleanA();
+cleanB();
+```
+
+By default, each layer gets a generated id. Pass an explicit `id` as the last argument when you want re-binding to
+replace a layer instead of stacking a new one. It can be useful when re-binding on every data change:
+
+```typescript
+// Re-running this keeps a single "heatmap" layer instead of accumulating them
+// (the "heatmap" depth must be declared in depthLayers):
+bindWebGLLayer("heatmap", renderer, createHeatmapProgram(nodes, options), "heatmap");
+```

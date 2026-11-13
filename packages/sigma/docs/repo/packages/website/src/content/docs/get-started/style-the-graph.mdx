@@ -1,0 +1,100 @@
+---
+title: "Style the graph"
+description: Use sigma's styles system to control node and edge appearance.
+---
+
+import SigmaExample from "../../../components/SigmaExample.astro";
+
+In [Part 2](/get-started/load-a-dataset/), you colored nodes by cluster and sized them by score. But the mapping was baked into the
+graph-building code. In many cases, you will want your graphology instance to be more data-focused, and decoupled from
+the actual visual variables.
+
+In this step, you will move that visual logic into sigma's **styles** system, which is more declarative, and enables
+conditional rules.
+
+## Store raw data, style separately
+
+Instead of computing `color` and `size` when building the graph, store the raw attributes and let sigma's styles do the
+mapping.
+
+Update your `index.ts`. First, change the graph-building loop to only store raw data:
+
+```typescript
+for (const node of dataset.nodes) {
+  graph.addNode(node.key, {
+    label: node.label,
+    x: node.x,
+    y: node.y,
+    // Store raw data instead of visual properties
+    cluster: node.cluster,
+    score: node.score,
+  });
+}
+```
+
+To allow sigma to properly set nodes colors and sizes, we need to extract the clusters colors and the score extreme
+values:
+
+```typescript
+// Extract cluster colors from data:
+const clusterColors = Object.fromEntries(dataset.clusters.map((c) => [c.key, c.color]));
+
+// Extract extreme score values from graph:
+const { minScore, maxScore } = dataset.nodes.reduce(
+  ({ minScore, maxScore }, { score }) => ({
+    minScore: Math.min(minScore, score),
+    maxScore: Math.max(maxScore, score),
+  }),
+  { minScore: Infinity, maxScore: -Infinity },
+);
+```
+
+Note that the `graphology-metrics` exports a [`nodeExtent`](https://graphology.github.io/standard-library/metrics#extent)
+function that makes it much simpler to extract extreme values.
+
+Then, you will need to pass a `styles` option when creating the sigma instance. We start from `DEFAULT_STYLES.nodes` to
+keep the built-in hover behaviors (label visibility, depth layers, backdrops), then override `color` and `size`.
+
+```typescript
+import { DEFAULT_STYLES } from "sigma";
+
+const renderer = new Sigma(graph, document.getElementById("container")!, {
+  styles: {
+    nodes: [
+      DEFAULT_STYLES.nodes,
+      {
+        color: { attribute: "cluster", dict: clusterColors, defaultValue: "#999" },
+        size: { attribute: "score", min: 10, max: 50, minValue: minScore, maxValue: maxScore },
+        label: { attribute: "label" },
+      },
+    ],
+    edges: [DEFAULT_STYLES.edges, { color: "#ccc", size: 5 }],
+  },
+});
+```
+
+If you use sigma through the CDN bundle instead of the npm package, `DEFAULT_STYLES` is available as
+`Sigma.DEFAULT_STYLES`. See the [Browser bundle](/reference/browser-bundle/) reference.
+
+The result looks the same, but now the styling is declared in one place. The `size` binding maps the `score` attribute
+to a 10–50 range automatically.
+
+## Style value types
+
+The styles system supports several value types:
+
+- **Literal**: `color: "#ccc"` (same value for all elements)
+- **Attribute binding**: `color: { attribute: "color" }` (reads from graph data)
+- **Numerical binding**: `size: { attribute: "score", min: 10, max: 50 }` (maps a numeric range)
+- **Categorical binding**: maps discrete values via a dictionary
+
+For the full list, see the [Style value types](/reference/style-value-types/) reference.
+
+## Full code and result
+
+<SigmaExample id="get-started/style-the-graph" height="400px" defaultTab="source" />
+
+## Next steps
+
+The graph now has declarative styles with a hover effect. In [Part 4: Add interactivity](/get-started/add-interactivity/),
+you will add neighbor highlighting and a search bar to build a fully interactive explorer.

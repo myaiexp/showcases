@@ -36,7 +36,7 @@ the gallery today are marked *(legacy in gallery)*.
 | # | Package | Vis | Line since | Docs | ~Ex | Note |
 |---|---|---|---|---|---|---|
 | 3 | Three.js (`three`) | 5 | r187 2026-10 | repo ✓ MIT | 400+ | WebGPU renderer, TSL shaders. Vendor `docs/` only, not the 639 `examples/` |
-| 4 | Sigma.js (`sigma`) | 5 | v4 2026-10 | repo ✓ MIT | 40 | WebGL graphs, 100k+ nodes (pairs with graphology) |
+| 4 | Sigma.js (`sigma`) ✅ built | 5 | v4 2026-10 | repo ✓ MIT | 70 | WebGL graphs, 100k+ nodes (pairs with graphology). Docs are the website chapters plus companion-package READMEs; the embedded SigmaExample stories stay out (pattern.md § Purity) |
 | 5 | Mermaid (`mermaid`) | 5 | v12 2026-09 | repo ✓ MIT | 250 | Text to diagrams. Huge breadth |
 | 6 | Perspective (`@perspective-dev/viewer`) | 5 | v5 2026-07 | repo ✓ Apache | 60 | Streaming pivot/visual analytics web component |
 | 7 | MapLibre GL JS (`maplibre-gl`) ✅ built | 5 | v6 2026-07 | repo ✓ BSD | 150 | Vector maps, 3D terrain, globe. Docs are the API reference and style spec (site crawl) plus repo guides; all examples run offline on Natural Earth data and computed tiles |

@@ -14,6 +14,27 @@ importers:
       '@fontsource-variable/inter':
         specifier: ^5.3.0
         version: 5.3.0
+      '@sigma/export-image':
+        specifier: ^4.0.0
+        version: 4.0.0(sigma@4.0.6(graphology-types@0.24.8))
+      '@sigma/layer-webgl':
+        specifier: ^4.0.0
+        version: 4.0.0(sigma@4.0.6(graphology-types@0.24.8))
+      '@sigma/layout-fa2-gpu':
+        specifier: ^4.0.0
+        version: 4.0.0(sigma@4.0.6(graphology-types@0.24.8))
+      '@sigma/node-border':
+        specifier: ^4.0.0
+        version: 4.0.0(sigma@4.0.6(graphology-types@0.24.8))
+      '@sigma/node-image':
+        specifier: ^4.0.2
+        version: 4.0.2(sigma@4.0.6(graphology-types@0.24.8))
+      '@sigma/node-piechart':
+        specifier: ^4.0.0
+        version: 4.0.0(sigma@4.0.6(graphology-types@0.24.8))
+      '@sigma/utils':
+        specifier: ^4.0.0
+        version: 4.0.0(sigma@4.0.6(graphology-types@0.24.8))
       chart.js:
         specifier: ^4.6.1
         version: 4.6.1
@@ -26,6 +47,18 @@ importers:
       fuse.js:
         specifier: ^7.5.0
         version: 7.5.0
+      graphology:
+        specifier: ^0.26.0
+        version: 0.26.0(graphology-types@0.24.8)
+      graphology-gexf:
+        specifier: ^0.13.2
+        version: 0.13.2(graphology-types@0.24.8)
+      graphology-layout-force:
+        specifier: ^0.2.4
+        version: 0.2.4(graphology-types@0.24.8)
+      graphology-types:
+        specifier: ^0.24.8
+        version: 0.24.8
       gsap:
         specifier: ^3.15.1
         version: 3.15.1
@@ -50,6 +83,9 @@ importers:
       prismjs:
         specifier: ^1.30.0
         version: 1.30.0
+      sigma:
+        specifier: 4.0.6
+        version: 4.0.6(graphology-types@0.24.8)
       sortablejs:
         specifier: ^1.15.7
         version: 1.15.7
@@ -292,6 +328,41 @@ packages:
   '@rolldown/pluginutils@1.1.1':
     resolution: {integrity: sha512-glFIJDvLNDtJhT9qrMFWLPbvS+skxgt4L0K8Ei2YtnhPysAJnsI7nyxSJxKj4ADeKX0OLjC4ntRkwpLOoS3rwA==}
 
+  '@sigma/export-image@4.0.0':
+    resolution: {integrity: sha512-NFLzgoY+2cVzBkkzzqTYHSKozdQ0i8BunhxZ1iShkCC0jBOYoT6TFHBOujohZntBI5OK+F7ix7VzEm7WHBcYKQ==}
+    peerDependencies:
+      sigma: ^4.0.0
+
+  '@sigma/layer-webgl@4.0.0':
+    resolution: {integrity: sha512-JkLR3KkeyY5MyJ0PQJrxgtrdK5M1gvgODpsnDw6t4VjAFfELWTOQxN8QOiLOcmGMT6kcN9TCDhhMsrPnpoLEaQ==}
+    peerDependencies:
+      sigma: ^4.0.0
+
+  '@sigma/layout-fa2-gpu@4.0.0':
+    resolution: {integrity: sha512-vmF9qolR4+UsxImPyGERMqLyUM3OKxjZGNLuBunZD/R77sStfhQobnLAG/ZlM8SPi1B9XyONF5V9ZYz5WqAXqA==}
+    peerDependencies:
+      sigma: ^4.0.0
+
+  '@sigma/node-border@4.0.0':
+    resolution: {integrity: sha512-4/HuHrflTRqJvnLg/3dW4zU46fg84Hb+Yd7EGkQshH9PQuKm6nD9CjWhman+3c74bK3B+mfog/q9g/MIjbnobA==}
+    peerDependencies:
+      sigma: ^4.0.0
+
+  '@sigma/node-image@4.0.2':
+    resolution: {integrity: sha512-6A3+kfucLov0/e/6uFvd5F+fBsm/v9a4csbZ84FPzVKwnRw+Reay/AM4bMCprCFkypZzY4AcYXz1tlDTxab6rA==}
+    peerDependencies:
+      sigma: ^4.0.0
+
+  '@sigma/node-piechart@4.0.0':
+    resolution: {integrity: sha512-DWpZlB5pIOhVRUhrZy8PmfHC24KtUZNN3PT3s9A5paCJ/3p6eSErB/a6yVjmCNEqCop4b3wWQTbyeWVsaR0Dqg==}
+    peerDependencies:
+      sigma: ^4.0.0
+
+  '@sigma/utils@4.0.0':
+    resolution: {integrity: sha512-7o0Qzmxl16JtD0tMiQJ1k6tJMUvVNS4wWylnEef6TYlO04Sr8DeWH1CiZSAL83Gc7NC7qU9PYxtnU7XLLB1mgA==}
+    peerDependencies:
+      sigma: ^4.0.0
+
   '@tybys/wasm-util@0.10.4':
     resolution: {integrity: sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A==}
 
@@ -471,6 +542,10 @@ packages:
   '@vitest/spy@5.1.0':
     resolution: {integrity: sha512-2DPO5OMHWKrBngC+fCmTQqemNF0gidRhp3lxbBmRhW+M1XJrfgPpqNqWVevXtn2f2ufD5ZaR1B6B641aAlcX5A==}
 
+  '@xmldom/xmldom@0.8.15':
+    resolution: {integrity: sha512-/5NV/vDALVFDXgLmfsy9TRCBlKwO2LNBFzpzvb9iIj+jR+eSc6DLYYvVOdivT/jm7MtU6TebYuRmzEOI7w40UA==}
+    engines: {node: '>=10.0.0'}
+
   assertion-error@2.0.1:
     resolution: {integrity: sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==}
     engines: {node: '>=12'}
@@ -520,6 +595,10 @@ packages:
   estree-walker@3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
 
+  events@3.3.0:
+    resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
+    engines: {node: '>=0.8.x'}
+
   expect-type@1.4.0:
     resolution: {integrity: sha512-KfYbmpRm0VbLjEvVa9yGwCi9GI34xvi7A/HXYWQO65CSD2u3MczUJSuwXKFIxlGsgBQizV9q5J9NHj4VG0n+pA==}
     engines: {node: '>=12.0.0'}
@@ -532,6 +611,9 @@ packages:
     peerDependenciesMeta:
       picomatch:
         optional: true
+
+  file-saver@2.0.5:
+    resolution: {integrity: sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==}
 
   framer-motion@11.18.2:
     resolution: {integrity: sha512-5F5Och7wrvtLVElIpclDT0CBzMVg3dL22B64aZwHtsIY8RB4mXICLrkajK4G9R+ieSAGcgrLeae2SeUTg2pr6w==}
@@ -558,6 +640,29 @@ packages:
 
   gl-matrix@3.4.4:
     resolution: {integrity: sha512-latSnyDNt/8zYUB6VIJ6PCh2jBjJX6gnDsoCZ7LyW7GkqrD51EWwa9qCoGixj8YqBtETQK/xY7OmpTF8xz1DdQ==}
+
+  graphology-gexf@0.13.2:
+    resolution: {integrity: sha512-7LW1em9RNCtZ7qsnTSEVl0EYGz7lzbZTW8e5xxbcrM2LojZl0x8KS2Z3Q1KNhFX2gVVQ+h0M/CTcdz+B9MQfjg==}
+    peerDependencies:
+      graphology-types: '>=0.20.0'
+
+  graphology-layout-force@0.2.4:
+    resolution: {integrity: sha512-NYZz0YAnDkn5pkm30cvB0IScFoWGtbzJMrqaiH070dYlYJiag12Oc89dbVfaMaVR/w8DMIKxn/ix9Bqj+Umm9Q==}
+    peerDependencies:
+      graphology-types: '>=0.19.0'
+
+  graphology-types@0.24.8:
+    resolution: {integrity: sha512-hDRKYXa8TsoZHjgEaysSRyPdT6uB78Ci8WnjgbStlQysz7xR52PInxNsmnB7IBOM1BhikxkNyCVEFgmPKnpx3Q==}
+
+  graphology-utils@2.5.2:
+    resolution: {integrity: sha512-ckHg8MXrXJkOARk56ZaSCM1g1Wihe2d6iTmz1enGOz4W/l831MBCKSayeFQfowgF8wd+PQ4rlch/56Vs/VZLDQ==}
+    peerDependencies:
+      graphology-types: '>=0.23.0'
+
+  graphology@0.26.0:
+    resolution: {integrity: sha512-8SSImzgUUYC89Z042s+0r/vMibY7GX/Emz4LDO5e7jYXhuoWfHISPFJYjpRLUSJGq6UQ6xlenvX1p/hJdfXuXg==}
+    peerDependencies:
+      graphology-types: '>=0.24.0'
 
   gsap@3.15.1:
     resolution: {integrity: sha512-63yjWRFWj3QRP1UOuD8kcidCcy3nxb1mMRpwHr/xJRvPfm9GtWOXFAYUiL0ro1fgPq2nY53LR+98pAgy9BumBg==}
@@ -743,6 +848,9 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
+  sigma@4.0.6:
+    resolution: {integrity: sha512-3yD7On7NLHGMkBcG2fyhIECxkliqZ+lVcTBS1Lfm/qnndQVGMB+Xp2qL1A/co1qUJAM5bKank3cSrNO5L6J9Zw==}
+
   sortablejs@1.15.7:
     resolution: {integrity: sha512-Kk8wLQPlS+yi1ZEf48a4+fzHa4yxjC30M/Sr2AnQu+f/MPwvvX9XjZ6OWejiz8crBsLwSq8GHqaxaET7u6ux0A==}
 
@@ -904,6 +1012,10 @@ packages:
       utf-8-validate:
         optional: true
 
+  xml-writer@1.7.0:
+    resolution: {integrity: sha512-elFVMRiV5jb59fbc87zzVa0C01QLBEWP909mRuWqFqrYC5wNTH5QW4AaKMNv7d6zAsuOulkD7wnztZNLQW0Nfg==}
+    engines: {node: '>=0.4.0'}
+
   zdog@1.1.3:
     resolution: {integrity: sha512-raRj6r0gPzopFm5XWBJZr/NuV4EEnT4iE+U3dp5FV5pCb588Gmm3zLIp/j9yqqcMiHH8VNQlerLTgOqL7krh6w==}
 
@@ -1047,6 +1159,35 @@ snapshots:
 
   '@rolldown/pluginutils@1.1.1': {}
 
+  '@sigma/export-image@4.0.0(sigma@4.0.6(graphology-types@0.24.8))':
+    dependencies:
+      file-saver: 2.0.5
+      sigma: 4.0.6(graphology-types@0.24.8)
+
+  '@sigma/layer-webgl@4.0.0(sigma@4.0.6(graphology-types@0.24.8))':
+    dependencies:
+      sigma: 4.0.6(graphology-types@0.24.8)
+
+  '@sigma/layout-fa2-gpu@4.0.0(sigma@4.0.6(graphology-types@0.24.8))':
+    dependencies:
+      sigma: 4.0.6(graphology-types@0.24.8)
+
+  '@sigma/node-border@4.0.0(sigma@4.0.6(graphology-types@0.24.8))':
+    dependencies:
+      sigma: 4.0.6(graphology-types@0.24.8)
+
+  '@sigma/node-image@4.0.2(sigma@4.0.6(graphology-types@0.24.8))':
+    dependencies:
+      sigma: 4.0.6(graphology-types@0.24.8)
+
+  '@sigma/node-piechart@4.0.0(sigma@4.0.6(graphology-types@0.24.8))':
+    dependencies:
+      sigma: 4.0.6(graphology-types@0.24.8)
+
+  '@sigma/utils@4.0.0(sigma@4.0.6(graphology-types@0.24.8))':
+    dependencies:
+      sigma: 4.0.6(graphology-types@0.24.8)
+
   '@tybys/wasm-util@0.10.4':
     dependencies:
       tslib: 2.9.1
@@ -1166,6 +1307,8 @@ snapshots:
 
   '@vitest/spy@5.1.0': {}
 
+  '@xmldom/xmldom@0.8.15': {}
+
   assertion-error@2.0.1: {}
 
   automation-events@7.1.19:
@@ -1207,11 +1350,15 @@ snapshots:
     dependencies:
       '@types/estree': 1.0.10
 
+  events@3.3.0: {}
+
   expect-type@1.4.0: {}
 
   fdir@6.5.0(picomatch@4.0.7):
     optionalDependencies:
       picomatch: 4.0.7
+
+  file-saver@2.0.5: {}
 
   framer-motion@11.18.2:
     dependencies:
@@ -1225,6 +1372,29 @@ snapshots:
   fuse.js@7.5.0: {}
 
   gl-matrix@3.4.4: {}
+
+  graphology-gexf@0.13.2(graphology-types@0.24.8):
+    dependencies:
+      '@xmldom/xmldom': 0.8.15
+      graphology-types: 0.24.8
+      graphology-utils: 2.5.2(graphology-types@0.24.8)
+      xml-writer: 1.7.0
+
+  graphology-layout-force@0.2.4(graphology-types@0.24.8):
+    dependencies:
+      graphology-types: 0.24.8
+      graphology-utils: 2.5.2(graphology-types@0.24.8)
+
+  graphology-types@0.24.8: {}
+
+  graphology-utils@2.5.2(graphology-types@0.24.8):
+    dependencies:
+      graphology-types: 0.24.8
+
+  graphology@0.26.0(graphology-types@0.24.8):
+    dependencies:
+      events: 3.3.0
+      graphology-types: 0.24.8
 
   gsap@3.15.1: {}
 
@@ -1396,6 +1566,13 @@ snapshots:
       '@rolldown/binding-win32-arm64-msvc': 1.2.19
       '@rolldown/binding-win32-x64-msvc': 1.2.19
 
+  sigma@4.0.6(graphology-types@0.24.8):
+    dependencies:
+      events: 3.3.0
+      graphology-utils: 2.5.2(graphology-types@0.24.8)
+    transitivePeerDependencies:
+      - graphology-types
+
   sortablejs@1.15.7: {}
 
   source-map-js@1.2.2: {}
@@ -1501,6 +1678,8 @@ snapshots:
   wretch@3.0.9: {}
 
   ws@8.23.0: {}
+
+  xml-writer@1.7.0: {}
 
   zdog@1.1.3: {}
 

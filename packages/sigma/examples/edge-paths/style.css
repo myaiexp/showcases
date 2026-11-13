@@ -1,0 +1,12 @@
+/* Edge paths: the sigma container needs an explicit size */
+[data-example='sigma/edge-paths'] {
+  .stage {
+    width: 100%;
+    height: 480px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .sc-example-card & .stage {
+    height: 100%;
+  }
+}

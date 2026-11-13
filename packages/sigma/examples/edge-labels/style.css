@@ -1,0 +1,43 @@
+/* edge-labels: stage size and control row, scoped to this example */
+[data-example='sigma/edge-labels'] {
+  .stage {
+    width: 100%;
+    height: 480px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .sc-example-card & .stage {
+    height: 100%;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .field {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  output {
+    min-width: 2.5em;
+    color: var(--fg-1);
+    font-variant-numeric: tabular-nums;
+  }
+  select,
+  button {
+    background: var(--bg-surface);
+    color: var(--fg-1);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: var(--space-1) var(--space-2);
+    font: inherit;
+  }
+  button {
+    cursor: pointer;
+  }
+}

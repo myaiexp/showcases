@@ -1,0 +1,237 @@
+{
+  "fetched": "2026-11-13T13:09:29.231Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/jacomyal/sigma.js",
+      "ref": "sigma@4.0.6",
+      "paths": [
+        "README.md",
+        "packages/website/src/content/docs/get-started",
+        "packages/website/src/content/docs/concepts",
+        "packages/website/src/content/docs/how-to",
+        "packages/website/src/content/docs/reference",
+        "packages/node-border/README.md",
+        "packages/node-image/README.md",
+        "packages/node-piechart/README.md",
+        "packages/utils/README.md",
+        "packages/export-image/README.md",
+        "packages/layer-leaflet/README.md",
+        "packages/layer-maplibre/README.md",
+        "packages/layer-webgl/README.md",
+        "packages/layout-fa2-gpu/README.md"
+      ],
+      "commit": "bdee2cf991df64bd68bd3a809c88880c57a2f358"
+    }
+  ],
+  "files": {
+    "repo/packages/export-image/README.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/export-image/README.md",
+      "sha256": "280162521587486965f384e72a20ce6f668d6432002e73cb974822984e8baab5"
+    },
+    "repo/packages/layer-leaflet/README.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/layer-leaflet/README.md",
+      "sha256": "c6bd65d11fa9c56305aee6f145c020d497bb1f50ef3e8d930942414dade0d231"
+    },
+    "repo/packages/layer-maplibre/README.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/layer-maplibre/README.md",
+      "sha256": "7149142bb36575aea8dcfdab01ac89d7965bef1b514cbf150a26ae6ff779e3ec"
+    },
+    "repo/packages/layer-webgl/README.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/layer-webgl/README.md",
+      "sha256": "335e33fb47f3dafdf72346ce3ee3f4bd9c882b626e0fa3d9ce91f21c9004807c"
+    },
+    "repo/packages/layout-fa2-gpu/README.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/layout-fa2-gpu/README.md",
+      "sha256": "82158264f3e0d2e0cbfa7d3b6a2a13ab0e74a26a6f9ef72591700b09224e94dc"
+    },
+    "repo/packages/node-border/README.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/node-border/README.md",
+      "sha256": "98fe49caf3ce5649246d70c135fc5e98d2d37e29a659ba977f99fe185ce27584"
+    },
+    "repo/packages/node-image/README.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/node-image/README.md",
+      "sha256": "7c48ec2317f105ca1e396daf2973759d762d46e3c77f67e1dd1e53ff2ca5e613"
+    },
+    "repo/packages/node-piechart/README.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/node-piechart/README.md",
+      "sha256": "e90aaa489b50a753cb4b8e4ab12b813557afb9e90846fbcc95f67865d8dbb863"
+    },
+    "repo/packages/utils/README.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/utils/README.md",
+      "sha256": "010aa1a880d78a11d642b6be2da3aaa8a5ea9895666ad8c77f40f34370c7c8a9"
+    },
+    "repo/packages/website/src/content/docs/concepts/coordinate-systems.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/concepts/coordinate-systems.md",
+      "sha256": "b725c338c622772cce1ea0fd7af85813a63812fa62911f2e0fca88eae3c94824"
+    },
+    "repo/packages/website/src/content/docs/concepts/depth-and-z-order.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/concepts/depth-and-z-order.md",
+      "sha256": "e857914ac3883ffed494aaa2f478840bf97f0bd10ab95b8a256cab57845fa085"
+    },
+    "repo/packages/website/src/content/docs/concepts/lifecycle.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/concepts/lifecycle.md",
+      "sha256": "63228cff4370594d71f8846bcff6f09fd31098ece39cbfaf781195386c100628"
+    },
+    "repo/packages/website/src/content/docs/concepts/rendering.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/concepts/rendering.md",
+      "sha256": "de77aa46c9cd35d3d9f732fcefe7a010071eda2774cd46201827801e36aa7caf"
+    },
+    "repo/packages/website/src/content/docs/concepts/sizes.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/concepts/sizes.md",
+      "sha256": "919fb0e92723fac68e5357f783d83ceaf038e6bf63b435a217311cc7026f5e77"
+    },
+    "repo/packages/website/src/content/docs/concepts/styles-and-primitives.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/concepts/styles-and-primitives.mdx",
+      "sha256": "eb8ffeb6209f42d9db089b7121cda5700e109601717b9abd28f6c7b83115d378"
+    },
+    "repo/packages/website/src/content/docs/get-started/add-interactivity.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/get-started/add-interactivity.mdx",
+      "sha256": "3d8c26811e7930751bac8447f0b388f0236d4801175c75cc086f18dac2278956"
+    },
+    "repo/packages/website/src/content/docs/get-started/load-a-dataset.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/get-started/load-a-dataset.mdx",
+      "sha256": "8a9d0a49be33ff8e82766e5a8f3f758b4f8d90d551d2ba546d5a6c5f7d61c53f"
+    },
+    "repo/packages/website/src/content/docs/get-started/quickstart.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/get-started/quickstart.mdx",
+      "sha256": "006ec0cd2771623d39cfc8a91d63beba4448c83335c61baa45d913ddd678c2b6"
+    },
+    "repo/packages/website/src/content/docs/get-started/style-the-graph.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/get-started/style-the-graph.mdx",
+      "sha256": "c6fa2840a29f3a910ba5982ba82cef3d792e0a49eda7d40d123cfca1feaed933"
+    },
+    "repo/packages/website/src/content/docs/how-to/edges/extremities.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/edges/extremities.mdx",
+      "sha256": "125722f97c3bf758860047e4708b6fd8544967a3b2c61669fc37c43fa7aa1855"
+    },
+    "repo/packages/website/src/content/docs/how-to/edges/fill-layers.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/edges/fill-layers.mdx",
+      "sha256": "3d29e34ab82924eeedf880bbdd8290c9a45a258775199f8ae0f7d9ae3e14eb73"
+    },
+    "repo/packages/website/src/content/docs/how-to/edges/parallel-edges-self-loops.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/edges/parallel-edges-self-loops.mdx",
+      "sha256": "7bef75a9f241863a36d6eefd8d7ff941ae045f652284e059a8eeb5c623da9d24"
+    },
+    "repo/packages/website/src/content/docs/how-to/edges/types-colors.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/edges/types-colors.mdx",
+      "sha256": "6b557551ec43cb3bb7c6924eaa2f3f0b9b8502f5bf4b8e8aee6a47ed58852cbb"
+    },
+    "repo/packages/website/src/content/docs/how-to/interactivity/camera-viewport.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/interactivity/camera-viewport.mdx",
+      "sha256": "b97879ed6a41b09a0f4914fff17b7af3e61287233dda2ed351455b48edfe34c7"
+    },
+    "repo/packages/website/src/content/docs/how-to/interactivity/drag-drop.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/interactivity/drag-drop.mdx",
+      "sha256": "32c1eaab6abe36d173209bdb64132fa5e6186a01a3bfa7f0cfc0906d76fa54d2"
+    },
+    "repo/packages/website/src/content/docs/how-to/interactivity/hover-search.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/interactivity/hover-search.mdx",
+      "sha256": "9a7a2e2021e1f2d6b16b85f2fae83a680e3be1009d36fb880388520d76a45329"
+    },
+    "repo/packages/website/src/content/docs/how-to/interactivity/interactions-events.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/interactivity/interactions-events.mdx",
+      "sha256": "2d0511eecccc68ff4a2c727e80456edd33af5357626bf48da3080c4e85737f78"
+    },
+    "repo/packages/website/src/content/docs/how-to/labels/attachments.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/labels/attachments.mdx",
+      "sha256": "712ff4be771d1c31bde0c501a17f60a853da0ec703987e6f116a38dd4e7d1574"
+    },
+    "repo/packages/website/src/content/docs/how-to/labels/styles-positioning.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/labels/styles-positioning.mdx",
+      "sha256": "32ce71b79f2b2d54e02b1dde4050dcf8570da587578cb996819907ceb4823519"
+    },
+    "repo/packages/website/src/content/docs/how-to/layers/map-layers.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/layers/map-layers.mdx",
+      "sha256": "0d6d680d11808e56aebdb90bdd9950749858b4bb8628e1d9e05c816a81794d00"
+    },
+    "repo/packages/website/src/content/docs/how-to/layers/sync-html-svg.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/layers/sync-html-svg.mdx",
+      "sha256": "fa59e6da0e9da4f30d7514763d24f933a19c1b111d2941beb5ed4274015afd72"
+    },
+    "repo/packages/website/src/content/docs/how-to/layers/webgl-layers.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/layers/webgl-layers.mdx",
+      "sha256": "edd34cbad0cef95eeb14ab3aac714575208559a16cf02e38d2acf617378637d3"
+    },
+    "repo/packages/website/src/content/docs/how-to/nodes/backdrops.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/nodes/backdrops.mdx",
+      "sha256": "097ca0b7b271dc3717a83017b3cdbae9cb4759a763cfd2b2475f8c780b31a83b"
+    },
+    "repo/packages/website/src/content/docs/how-to/nodes/colors-sizes.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/nodes/colors-sizes.mdx",
+      "sha256": "8ebf3776fcae8fceea2de6107305161611f29a998bc36e6209b10f367ed725f2"
+    },
+    "repo/packages/website/src/content/docs/how-to/nodes/fill-layers.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/nodes/fill-layers.mdx",
+      "sha256": "dd8ec51e5f58b3b8f067f387f239b2ab76b60e9477a4c6799eee375e6b4f5d15"
+    },
+    "repo/packages/website/src/content/docs/how-to/nodes/shapes.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/nodes/shapes.mdx",
+      "sha256": "f908a0287ee62ce258e00edd6a38d092a163d83cf6291de27b5314c5cf9cc637"
+    },
+    "repo/packages/website/src/content/docs/how-to/technical/custom-sizes.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/technical/custom-sizes.mdx",
+      "sha256": "e95cc7c4d3235459e66321f21337c1ddc50d293644e9699a359ad076730493a5"
+    },
+    "repo/packages/website/src/content/docs/how-to/technical/export-image.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/technical/export-image.mdx",
+      "sha256": "6583a9c7e147caa70a83c9f105d80fcca8d906605ef18d02c8fa2065fed34166"
+    },
+    "repo/packages/website/src/content/docs/how-to/technical/framework-integration.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/technical/framework-integration.md",
+      "sha256": "63277f6c1616c66a8343262814858860adf6a21b574eb271a142b608e86d7d72"
+    },
+    "repo/packages/website/src/content/docs/how-to/technical/loading-data.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/technical/loading-data.md",
+      "sha256": "5595e6abbf113fc0f53052a11d62deffbbafcf2a3e33af1b13a78fcdbf7168d8"
+    },
+    "repo/packages/website/src/content/docs/how-to/technical/migration-v3-v4.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/technical/migration-v3-v4.md",
+      "sha256": "98cbbf0a811c6c4c791a493605c31dc2524e264de7cb938af4f7dbe7c9584d47"
+    },
+    "repo/packages/website/src/content/docs/how-to/technical/performance.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/how-to/technical/performance.md",
+      "sha256": "4bc34767010df23d5a088ca807458958f53ca605e18a6e74e58409b5f7c9ebbc"
+    },
+    "repo/packages/website/src/content/docs/reference/browser-bundle.mdx": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/reference/browser-bundle.mdx",
+      "sha256": "0865fbc1b048942e18c435c8bf654e7d1cb0eee0e3e34f6b56bc52d6af938126"
+    },
+    "repo/packages/website/src/content/docs/reference/camera-api.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/reference/camera-api.md",
+      "sha256": "54f22565d587ce36ee9dec3642060fb8c595017294881acc716a9e3f8d1d3805"
+    },
+    "repo/packages/website/src/content/docs/reference/events.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/reference/events.md",
+      "sha256": "aef0e8c2da694704b5f3a2b848cd3ca65fc227b03c7a070df4fc37d97585cd10"
+    },
+    "repo/packages/website/src/content/docs/reference/primitives-schema.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/reference/primitives-schema.md",
+      "sha256": "f4e1f54ac1a9101cf34b7f21888c646a5533e4424ac32cf881b88683980a6dd2"
+    },
+    "repo/packages/website/src/content/docs/reference/settings.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/reference/settings.md",
+      "sha256": "8da9ecc7a6417b7a2a12d328610d81f8eb31e86ee197487386347506fa95d38b"
+    },
+    "repo/packages/website/src/content/docs/reference/sigma-api.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/reference/sigma-api.md",
+      "sha256": "7120d167afd22f00fdb70a06401c0a395120e947c1526ee2ee5ab4138f351c91"
+    },
+    "repo/packages/website/src/content/docs/reference/state-flags.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/reference/state-flags.md",
+      "sha256": "32c1231fc3f597e4052d24bdd70e179fab220fd9979d0d6737a34de3e286b2f0"
+    },
+    "repo/packages/website/src/content/docs/reference/style-properties.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/reference/style-properties.md",
+      "sha256": "77ded4f1bee3c4fc5700e9d2a4a79a48c932340eeebed1b1da9c88b3e1ecd33a"
+    },
+    "repo/packages/website/src/content/docs/reference/style-value-types.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/packages/website/src/content/docs/reference/style-value-types.md",
+      "sha256": "96a689ce969398e549641f449dec79edd254484575db1b1edb1bdeab3ebfd2b7"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/jacomyal/sigma.js/blob/bdee2cf991df64bd68bd3a809c88880c57a2f358/README.md",
+      "sha256": "0335725c9d865335394852ec2fdfcf74a2e6bfefd5a8b81c4d077568669bf9a0"
+    }
+  }
+}

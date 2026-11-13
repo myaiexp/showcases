@@ -1,0 +1,172 @@
+---
+title: Quickstart
+description: Install sigma.js and render your first graph.
+---
+
+import { Code } from "@astrojs/starlight/components";
+
+import SigmaExample from "../../../components/SigmaExample.astro";
+import { GRAPHOLOGY_VERSION, SIGMA_VERSION } from "../../../versions";
+
+:::note
+This documentation covers sigma.js v4. The v3 documentation is archived at [v3.sigmajs.org](https://v3.sigmajs.org).
+:::
+
+## Installation
+
+### Using CDN
+
+To quickly integrate sigma.js and graphology into your project, you can use CDN links. Add the following lines to the
+head section of your HTML:
+
+<Code
+  lang="html"
+  code={`<script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/${SIGMA_VERSION}/sigma.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/graphology/${GRAPHOLOGY_VERSION}/graphology.umd.min.js"></script>`}
+/>
+
+These links point to the versions this documentation was built for. Change the version numbers to pin other releases.
+
+The bundle exposes a single global `Sigma` class, which also carries everything the npm package exports. See the
+[Browser bundle](/reference/browser-bundle/) reference for how it maps to the package's imports.
+
+### Using a package manager
+
+Sigma.js requires [graphology](https://graphology.github.io/) as its graph data structure. Install both packages:
+
+```bash
+npm install sigma graphology
+# or using another package manager
+yarn add sigma graphology
+```
+
+## Minimal example
+
+### All included HTML file
+
+With the CDN links, it's possible to write a single HTML document, with minimal JavaScript code, to render some graph:
+
+<Code
+  lang="html"
+  code={`<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quick Sigma.js Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/${SIGMA_VERSION}/sigma.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/graphology/${GRAPHOLOGY_VERSION}/graphology.umd.min.js"></script>
+  </head>
+  <body style="background: lightgrey">
+    <div id="container" style="width: 800px; height: 600px; background: white"></div>
+    <script>
+      // Create a graphology graph
+      const graph = new graphology.Graph();
+      graph.addNode("1", { label: "Node 1", x: 0, y: 0, size: 1, color: "blue" });
+      graph.addNode("2", { label: "Node 2", x: 10, y: 10, size: 2, color: "red" });
+      graph.addEdge("1", "2", { size: 0.5, color: "purple" });
+
+      // Instantiate sigma.js and render the graph
+      const renderer = new Sigma(graph, document.getElementById("container"), {
+        settings: { autoRescaleContent: "nodes" },
+      });
+    </script>
+
+  </body>
+</html>`}
+/>
+
+Since sigma targets more _web applications_ than _web documents_, the rest of this documentation will be assuming it is
+used in a TypeScript environment, with modules support.
+
+### In a TypeScript application
+
+You need some container DOM element for the graph. It must have a defined width and height:
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <style>
+      #container {
+        width: 800px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>
+```
+
+Then, in your TypeScript code, you can build a graph and render it with sigma like this:
+
+```typescript
+import Graph from "graphology";
+import Sigma from "sigma";
+
+// Create a graph with graphology
+const graph = new Graph();
+
+// Add nodes with positions, sizes, colors, and labels
+graph.addNode("1", {
+  label: "Node 1",
+  x: 0,
+  y: 0,
+  size: 1,
+  color: "blue",
+});
+graph.addNode("2", {
+  label: "Node 2",
+  x: 5,
+  y: 10,
+  size: 1,
+  color: "red",
+});
+graph.addNode("3", {
+  label: "Node 3",
+  x: 10,
+  y: 0,
+  size: 1,
+  color: "green",
+});
+
+// Add edges between nodes
+graph.addEdge("1", "2", { size: 1 });
+graph.addEdge("2", "3", { size: 1 });
+graph.addEdge("3", "1", { size: 1 });
+
+// Render the graph in the container
+const renderer = new Sigma(graph, document.getElementById("container"));
+```
+
+This creates a graph with three nodes and three edges. Each node has `x` and `y` attributes that set its position in
+graph space, and sigma automatically adjusts the viewport to fit all nodes.
+
+## How it works
+
+Sigma reads node and edge attributes from the graphology graph instance. By default, it looks for:
+
+- **Nodes**: `x`, `y` (position), `size`, `color`, `label`
+- **Edges**: `size`, `color`, `label`
+
+These defaults come from sigma's built-in **styles** declaration, which maps graph attributes to visual properties. You
+can customize this mapping entirely through the [styles and primitives](/concepts/styles-and-primitives/) system.
+
+## Live result
+
+<SigmaExample id="get-started/quickstart" height="400px" />
+
+## Cleaning up
+
+When you no longer need the renderer (for example, when unmounting a component), call `kill()` to release WebGL
+resources:
+
+```typescript
+renderer.kill();
+```
+
+## Next steps
+
+Continue to [Part 2: Load a dataset](/get-started/load-a-dataset/) to replace this toy graph with a real network.

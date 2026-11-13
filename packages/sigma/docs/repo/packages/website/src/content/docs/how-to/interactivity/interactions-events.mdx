@@ -1,0 +1,103 @@
+---
+title: Interactions and events
+sidebar:
+  label: "Interactions & events"
+---
+
+import SigmaExample from "../../../../components/SigmaExample.astro";
+
+Sigma handles mouse and touch interactions out of the box and emits events you can listen to.
+
+## Built-in interactions
+
+By default, sigma supports these interactions:
+
+| Interaction | Mouse                             | Touch                |
+| ----------- | --------------------------------- | -------------------- |
+| **Pan**     | Drag the background               | Drag with one finger |
+| **Zoom**    | Scroll wheel                      | Pinch                |
+| **Rotate**  | Right-click drag                  | Two-finger rotate    |
+| **Hover**   | Move cursor over a node           | -                    |
+| **Click**   | Click a node, edge, or background | Tap                  |
+
+Some of these interactions can be enabled or disabled via settings:
+
+```typescript
+new Sigma(graph, container, {
+  settings: {
+    enableCameraZooming: true, // Scroll/pinch to zoom
+    enableCameraPanning: true, // Drag to pan
+    enableCameraRotation: true, // Right-click drag / two-finger rotate
+  },
+});
+```
+
+### Graph gestures vs. page scrolling
+
+When sigma is embedded in a scrollable page (such as all examples in this very website), wheel and touch gestures are
+ambiguous: should they zoom the graph, or scroll the page? The `gestureTarget` setting routes them:
+
+- `"graph"` (default): all gestures go to the graph. The page never scrolls over the stage. Best for full-screen
+  applications.
+- `"shared"`: plain gestures go to the page, and the graph is reached with <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + scroll, or
+  two-finger touch. A hint overlay tells users how, with its texts customizable through the `sharedGestureWheelMessage`,
+  `sharedGestureAppleWheelMessage` and `sharedGestureTouchMessage` settings. Best for graphs embedded in articles or
+  dashboards.
+- `"page"`: wheel and touch gestures all go to the page. Clicks, taps and mouse drag-panning still reach the graph.
+
+See the [settings reference](/reference/settings/#gesture-target) for details.
+
+## Listening for events
+
+Sigma emits events when users interact with nodes, edges, or the stage (background). Listen with `renderer.on()`:
+
+```typescript
+renderer.on("clickNode", ({ node, event }) => {
+  console.log("Clicked node", node);
+  console.log("Position", event.x, event.y);
+  console.log("Native event", event.original);
+});
+
+renderer.on("enterNode", ({ node }) => {
+  console.log("Entering node", node);
+});
+
+renderer.on("leaveNode", ({ node }) => {
+  console.log("Leaving node", node);
+});
+
+renderer.on("clickStage", () => {
+  // User clicked the background, e.g. deselect all
+});
+```
+
+Every event payload includes an `event` object with `x`, `y` coordinates and `original` (the native `MouseEvent` or
+`TouchEvent`).
+
+Hover events (`enterNode`, `leaveNode` and their edge and label counterparts) are resolved asynchronously from the last
+rendered frame: they fire a frame after the pointer moves, and also when the _scene_ moves under a still pointer. A
+node drifting away from the cursor during a layout animation fires `leaveNode` without any mouse movement.
+
+While a node is being dragged (with `enableNodeDrag`), hover is pinned to it: the pointer has captured the node, so it
+stays hovered and no `enterNode` or `leaveNode` fires until the drag ends, even when the pointer visually leaves it,
+as with fast drags or positions constrained through `dragPositionToAttributes`. On release, hover falls back to
+whatever actually sits under the pointer. If you need live hover during a custom drag gesture (say, to pick a target
+node), cancel the built-in drag with `preventSigmaDefault()` on `nodeDragStart` and drive the gesture yourself.
+
+## Enabling edge events
+
+Edge events are disabled by default for performance (edge hit detection requires extra GPU work). Enable them with:
+
+```typescript
+new Sigma(graph, container, {
+  settings: { enableEdgeEvents: true },
+});
+```
+
+## Live example
+
+Interact with the graph below. Every event is logged in the overlay panel.
+
+<SigmaExample id="core/events" height="500px" />
+
+For the full list of events and their payloads, see the [Events reference](/reference/events/).
