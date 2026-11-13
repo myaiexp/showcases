@@ -33,8 +33,11 @@ const mount: Mount = async (el, { preview, signal }) => {
     return p;
   });
 
+  // One layout() pass is far below the browser's timer resolution, so keep a running average
+  // over every pass timed so far; it settles within a second of dragging or animating.
+  let timedMs = 0;
+  let timedPasses = 0;
   const render = (width: number): void => {
-    // The hot path: layout() only. One pass is far below timer resolution, so average a few hundred.
     const REPEATS = preview ? 20 : 200;
     let total = 0;
     const start = performance.now();
@@ -42,15 +45,17 @@ const mount: Mount = async (el, { preview, signal }) => {
       total = 0;
       for (const p of prepared) total += layout(p, width, LINE_HEIGHT).height;
     }
-    const layoutMs = (performance.now() - start) / REPEATS;
+    timedMs += performance.now() - start;
+    timedPasses += REPEATS;
+    const layoutMs = timedMs / timedPasses;
     prepared.forEach((p, i) => {
       const box = boxes[i]!;
       box.style.width = `${width}px`;
       box.style.height = `${layout(p, width, LINE_HEIGHT).height}px`;
     });
-    const timing = `prepare ×12: ${prepareMs.toFixed(1)} ms once · layout ×12: ${(layoutMs * 1000).toFixed(0)} µs/pass`;
+    const timing = `prepare ×12: ${prepareMs.toFixed(1)} ms once · layout ×12: ${(layoutMs * 1000).toFixed(1)} µs/pass`;
     readout.textContent = preview
-      ? `prepare ${prepareMs.toFixed(0)} ms once · layout ${(layoutMs * 1000).toFixed(0)} µs/pass`
+      ? `prepare ${prepareMs.toFixed(0)} ms once · layout ${(layoutMs * 1000).toFixed(1)} µs/pass`
       : `width ${width}px · total ${total}px · ${timing}`;
   };
 

@@ -25,13 +25,20 @@ const mount: Mount = async (el, { preview, signal }) => {
   para.className = 'para';
   para.style.font = FONT;
   para.style.lineHeight = `${LINE_HEIGHT}px`;
-  para.textContent = TEXT;
+  // The card shows only the first sentence so it fits 200px.
+  const body = preview ? (TEXT.split('. ')[0] ?? TEXT) + '.' : TEXT;
+  para.textContent = body;
   stage.append(predicted, para);
 
   let width = 320;
+  // letterSpacing is a prepare() option, so a new spacing means a new prepare(): keep one per value.
+  const handles = new Map<number, ReturnType<typeof prepare>>();
   const render = (spacing: number, check: boolean): void => {
-    // letterSpacing is a prepare() option, so a new spacing means a new prepare().
-    const prepared = prepare(TEXT, FONT, { letterSpacing: spacing });
+    let prepared = handles.get(spacing);
+    if (!prepared) {
+      prepared = prepare(body, FONT, { letterSpacing: spacing });
+      handles.set(spacing, prepared);
+    }
     const { height, lineCount } = layout(prepared, width, LINE_HEIGHT);
     // The painted element gets the same value as CSS letter-spacing, in px.
     para.style.letterSpacing = `${spacing}px`;
