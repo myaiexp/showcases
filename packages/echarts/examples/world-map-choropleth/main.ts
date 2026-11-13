@@ -1,7 +1,7 @@
 // A world map series coloured by a continuous visualMap, with roam and region highlight
 import type { Mount } from '@/types.ts';
 import { createChart, echarts, every } from '../../shared/chart.ts';
-import { COUNTRIES, NAMES } from './world.ts';
+import { COUNTRIES, NAMES } from '../../shared/world.ts';
 
 // GeoJSON registered under a name; series.map refers to it.
 echarts.registerMap('world', { geoJSON: COUNTRIES as never, specialAreas: {} });

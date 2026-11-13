@@ -5,7 +5,7 @@ export default defineMeta({
   title: "Sankey: nodes, links and focus",
   summary:
     "A sankey of energy flows with orient and emphasis.focus. Nodes are highlighted in turn by dispatchAction.",
-  section: 'Option: Series',
+  section: 'Option: series.sankey',
   tags: ['sankey', 'orient', 'emphasis.focus', 'adjacency', 'nodes', 'links', 'highlight'],
   docs: ['repo/en/option/series/sankey.md', 'repo/en/api/action.md'],
   provenance: 'pure',
