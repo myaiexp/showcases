@@ -5,7 +5,7 @@ export default defineMeta({
   title: "Treemap: levels and drill-down",
   summary:
     "A treemap with per-level styling via levels and colorSaturation. Click a node to drill down, with a breadcrumb to go back.",
-  section: 'Option: Series',
+  section: 'Option: series.treemap',
   tags: ['treemap', 'levels', 'nodeClick', 'breadcrumb', 'upperLabel'],
   docs: ['repo/en/option/series/treemap.md'],
   provenance: 'pure',

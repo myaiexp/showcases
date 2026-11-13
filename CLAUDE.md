@@ -80,3 +80,5 @@ GitHub Pages. No service on the VPS.
   Babylon has page-wide registries (glTF extensions, loader plugins, `RegisterMaterialPlugin`,
   `TransformNode.BillboardUseParentOrientation`); an example that touches one undoes it on
   cleanup, or attaches per instance instead.
+- ECharts: read the trap list in `packages/echarts/shared/chart.ts` before building, and add
+  to it. The option reference has one gallery section per series type (`Option: series.<type>`).
