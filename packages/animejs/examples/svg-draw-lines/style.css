@@ -1,0 +1,36 @@
+/* Line drawing: the svg and the range sliders */
+[data-example='animejs/svg-draw-lines'] {
+  svg {
+    width: 100%;
+    max-width: 480px;
+    color: var(--accent);
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    width: 100%;
+    max-width: 480px;
+    margin-top: var(--space-3);
+  }
+  label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--fg-2);
+    font-family: monospace;
+    font-size: 0.85rem;
+  }
+  label input {
+    flex: 1;
+  }
+  .buttons {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .readout {
+    font-family: monospace;
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+}

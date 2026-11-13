@@ -1,0 +1,10 @@
+/* Keyframe forms: lanes, tracks and squares */
+[data-example='animejs/keyframes-four-forms'] {
+  .lanes { display: flex; flex-direction: column; gap: var(--space-3); width: 100%; max-width: 560px; }
+  .lane { display: grid; grid-template-columns: 9rem 1fr; align-items: center; gap: var(--space-2); }
+  .label { color: var(--fg-2); font-size: 0.8rem; }
+  .track { height: 2.2rem; display: flex; align-items: center; border-bottom: 1px solid var(--border); }
+  .square { width: 1.6rem; height: 1.6rem; background: var(--accent); border-radius: 3px; }
+  .code { grid-column: 2; margin: 0; font-size: 0.7rem; color: var(--fg-3); white-space: pre; }
+  .btn { margin-top: var(--space-4); }
+}

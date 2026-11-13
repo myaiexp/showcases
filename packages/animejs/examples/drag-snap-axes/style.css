@@ -1,0 +1,36 @@
+/* Draggable snap grid: stage, grid lines, square and panel */
+[data-example='animejs/drag-snap-axes'] {
+  .stage {
+    --cell: 56px;
+    position: relative;
+    width: 224px;
+    height: 168px;
+    border: 1px solid var(--border);
+    background-color: var(--bg-surface);
+    background-image:
+      linear-gradient(var(--border) 1px, transparent 1px),
+      linear-gradient(90deg, var(--border) 1px, transparent 1px);
+    background-size: var(--cell) var(--cell);
+  }
+  .square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background: var(--accent);
+    touch-action: none;
+  }
+  .panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+  }
+  .readout {
+    color: var(--fg-2);
+    font-variant-numeric: tabular-nums;
+  }
+}

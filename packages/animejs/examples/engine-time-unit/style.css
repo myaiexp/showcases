@@ -1,0 +1,9 @@
+/* timeUnit: two readout cards and the unit buttons */
+[data-example='animejs/engine-time-unit'] {
+  .cards { display: flex; gap: var(--space-5); justify-content: center; }
+  .card { display: flex; flex-direction: column; align-items: center; gap: var(--space-1); }
+  .label { color: var(--fg-3); font-size: 0.75rem; }
+  .value { color: var(--green); font-size: 1.8rem; font-variant-numeric: tabular-nums; font-family: monospace; }
+  .buttons { display: flex; gap: var(--space-2); margin-top: var(--space-4); }
+  .status { margin: var(--space-3) 0 0; color: var(--fg-2); font-size: 0.8rem; }
+}

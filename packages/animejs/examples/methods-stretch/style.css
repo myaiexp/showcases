@@ -1,0 +1,9 @@
+/* Stretch: readout, rows of squares and the duration slider */
+[data-example='animejs/methods-stretch'] {
+  .readout { margin: 0 0 var(--space-3); color: var(--green); font-size: 0.85rem; }
+  .stage { width: 100%; max-width: 480px; }
+  .row { height: 2.4rem; display: flex; align-items: center; border-bottom: 1px solid var(--border); }
+  .square { width: 1.6rem; height: 1.6rem; background: var(--accent); border-radius: 3px; }
+  .range { width: 100%; max-width: 480px; margin-top: var(--space-4); }
+  &.is-preview .readout { font-size: 0.65rem; }
+}

@@ -1,0 +1,14 @@
+/* Modifier and unit: two clock faces with a hand each */
+[data-example='animejs/animatable-modifier-unit'] {
+  .area { display: flex; gap: var(--space-5); justify-content: center; width: 100%; padding: var(--space-4); }
+  .col { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); }
+  .clock { position: relative; width: 5.5rem; height: 5.5rem; border-radius: 50%; border: 2px solid var(--border); background: var(--bg-surface); }
+  .clock::before { content: ''; position: absolute; left: calc(50% - 2px); top: 6%; width: 4px; height: 44%; background: var(--accent); border-radius: 2px; transform-origin: 50% 100%; }
+  .clock::after { content: ''; position: absolute; left: calc(50% - 4px); top: calc(50% - 4px); width: 8px; height: 8px; background: var(--fg-1); border-radius: 50%; }
+  .label { font-size: 10px; font-family: monospace; color: var(--fg-2); }
+  .hint { font-size: 12px; color: var(--fg-3); margin-top: var(--space-3); }
+  &.is-preview .area { gap: var(--space-3); padding: var(--space-2); box-sizing: border-box; }
+  &.is-preview .col { min-width: 0; flex: 1 1 0; max-width: 50%; }
+  &.is-preview .clock { width: 4.5rem; height: 4.5rem; }
+  &.is-preview .label { font-size: 9px; text-align: center; overflow-wrap: anywhere; white-space: normal; }
+}

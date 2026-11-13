@@ -1,0 +1,10 @@
+/* Timers and calls: a moving dot and four readouts */
+[data-example='animejs/timeline-timers-and-calls'] {
+  .track { width: 100%; max-width: 18rem; height: 2rem; background: var(--bg-surface); border: 1px solid var(--border); }
+  .dot { width: 1.8rem; height: 100%; background: var(--accent); }
+  .readouts { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-2); margin-top: var(--space-3); width: 100%; max-width: 18rem; }
+  .cell { display: flex; justify-content: space-between; padding: 4px 8px; border: 1px solid var(--border); font-size: 12px; }
+  .l { color: var(--fg-3); }
+  .v { font-family: monospace; color: var(--green); }
+  .btn { margin-top: var(--space-4); }
+}

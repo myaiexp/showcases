@@ -1,0 +1,8 @@
+/* Pointer follow: the arena, circle and readouts */
+[data-example='animejs/animatable-pointer-follow'] {
+  .area { position: relative; width: 100%; max-width: 24rem; height: 9rem; display: flex; align-items: center; justify-content: center; background: var(--bg-surface); border: 1px solid var(--border); }
+  .circle { width: 2.5rem; height: 2.5rem; border-radius: 50%; background: rgb(164, 255, 79); }
+  .readout { display: flex; gap: var(--space-4); margin-top: var(--space-2); font-family: monospace; font-size: 12px; color: var(--fg-2); }
+  .readout b { color: var(--green); font-weight: normal; }
+  .hint { margin-top: var(--space-3); font-size: 12px; color: var(--fg-3); }
+}

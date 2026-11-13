@@ -78,6 +78,9 @@ Examples are mounted into the page, not an iframe, so their CSS is global.
 Use base.css tokens (`--bg`, `--bg-surface`, `--fg-1..3`, `--accent`, `--green` …,
 `--space-1..6`) for chrome. The example's own visuals are free.
 
+No `@keyframes`: CSS nesting doesn't allow them inside the scope block, and the build
+fails on them. Animate with the library itself or `element.animate()`.
+
 ## Adding a package
 
 1. `pnpm new-package <slug> <npm> <Category>`. This reads homepage, repo and description

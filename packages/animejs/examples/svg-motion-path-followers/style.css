@@ -1,0 +1,39 @@
+/* Motion path followers: the path, arrows and offset slider */
+[data-example='animejs/svg-motion-path-followers'] {
+  svg {
+    width: 100%;
+    max-width: 480px;
+    overflow: visible;
+  }
+  .track {
+    fill: none;
+    stroke: var(--border);
+    stroke-width: 2;
+  }
+  .arrow {
+    fill: var(--fg-2);
+  }
+  .arrow.a1 {
+    fill: var(--accent);
+  }
+  .arrow.a2 {
+    fill: var(--green);
+  }
+  .arrow.lead {
+    fill: var(--fg-1);
+  }
+  .offset {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--fg-2);
+    width: 100%;
+    max-width: 480px;
+  }
+  .offset input {
+    flex: 1;
+  }
+}

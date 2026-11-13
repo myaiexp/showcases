@@ -1,0 +1,10 @@
+/* Keyframes with playbackEase: lanes, progress bars and the ease picker */
+[data-example='animejs/keyframes-playback-ease'] {
+  .lanes { display: flex; flex-direction: column; gap: var(--space-4); width: 100%; max-width: 480px; }
+  .lane { display: flex; flex-direction: column; gap: var(--space-1); }
+  .label { color: var(--fg-2); font-size: 0.8rem; }
+  .track { height: 3.4rem; display: flex; align-items: center; }
+  .square { width: 1.6rem; height: 1.6rem; background: var(--accent); border-radius: 3px; }
+  .bar { height: 3px; background: var(--green); transform-origin: left; transform: scaleX(0); }
+  .picker { display: flex; gap: var(--space-2); margin-top: var(--space-5); flex-wrap: wrap; justify-content: center; }
+}

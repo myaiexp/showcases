@@ -1,0 +1,52 @@
+/* Horizontal scroll triggering a timer: scroller, sections and timer readout */
+[data-example='animejs/scroll-axis-x-target-timer'] {
+  .scroller {
+    width: 100%;
+    max-width: 520px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+  }
+  .scroller.is-preview {
+    max-width: 240px;
+  }
+  .content {
+    display: flex;
+    width: max-content;
+  }
+  .section {
+    width: 260px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fg-3);
+  }
+  .is-preview .section {
+    width: 200px;
+    height: 120px;
+  }
+  .timer {
+    font-family: monospace;
+    text-align: center;
+    padding: var(--space-3);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    min-width: 7.5rem;
+  }
+  .timer .name {
+    display: block;
+    color: var(--fg-3);
+    font-size: 0.75rem;
+  }
+  .timer .value {
+    font-size: 1.4rem;
+  }
+  .readout {
+    margin-top: var(--space-2);
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--fg-2);
+  }
+}

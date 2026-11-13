@@ -1,0 +1,25 @@
+/* Stagger grid with from and axis: the cell board and controls */
+[data-example='animejs/stagger-grid-from-axis'] {
+  .board {
+    display: grid;
+    gap: 6px;
+    width: min(100%, 440px);
+    padding: var(--space-3);
+  }
+  .cell {
+    aspect-ratio: 1;
+    border-radius: 4px;
+    background: #4f8cff;
+    cursor: pointer;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    align-items: center;
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+  }
+  .controls label { display: flex; gap: var(--space-2); align-items: center; }
+  .hint { color: var(--fg-3); font-size: 0.85em; }
+}

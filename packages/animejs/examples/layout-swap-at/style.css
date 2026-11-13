@@ -1,0 +1,33 @@
+/* Layout swapAt: two text cards that flip between column and row */
+[data-example='animejs/layout-swap-at'] {
+  .layout-root {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: min(100%, 360px);
+    padding: var(--space-2);
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+  }
+  .layout-root.row {
+    flex-direction: row;
+  }
+  .item {
+    flex: 1;
+    padding: var(--space-3);
+    background: var(--bg);
+    border: 1px solid var(--accent);
+  }
+  p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--fg-1);
+  }
+  .panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+  }
+}

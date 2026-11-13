@@ -1,0 +1,40 @@
+/* Built-in eases compared: tracks, dots and controls */
+[data-example='animejs/easings-built-in-compared'] {
+  .tracks {
+    display: grid;
+    gap: 10px;
+    width: min(100%, 440px);
+    padding: var(--space-3);
+  }
+  .track {
+    display: grid;
+    grid-template-columns: 8.5em 1fr;
+    gap: var(--space-3);
+    align-items: center;
+    font-size: 0.75em;
+  }
+  .track code { color: var(--fg-2); }
+  .lane {
+    position: relative;
+    height: 2px;
+    margin: 0 8px;
+    background: var(--border);
+  }
+  .dot {
+    position: absolute;
+    left: 0;
+    top: -7px;
+    width: 16px;
+    height: 16px;
+    margin-left: -8px;
+    border-radius: 50%;
+    background: #4f8cff;
+  }
+  .controls {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    color: var(--fg-2);
+    margin-bottom: var(--space-3);
+  }
+}

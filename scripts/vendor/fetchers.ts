@@ -46,11 +46,7 @@ export function fetchPages(urls: readonly string[]): FetchedPage[] {
   for (let i = 0; i < urls.length; i += 10) {
     const batch = urls.slice(i, i + 10);
     for (const url of batch) if (!/^https?:\/\//.test(url)) throw new Error(`not an http(s) URL: ${url}`);
-    const out = execFileSync('tfish', ['fetch', ...batch, '--json', '--full'], {
-      encoding: 'utf8',
-      maxBuffer: 256 * 1024 * 1024,
-    });
-    const env = JSON.parse(out) as TfishEnvelope;
+    const env = JSON.parse(tfishFetch(batch)) as TfishEnvelope;
     for (const err of env.errors ?? []) console.warn(`  ! ${err.url}: ${err.error}`);
     for (const r of env.results) pages.push({ url: r.url, markdown: r.text });
     console.log(`  fetched ${Math.min(i + 10, urls.length)}/${urls.length}`);
@@ -58,17 +54,45 @@ export function fetchPages(urls: readonly string[]): FetchedPage[] {
   return pages;
 }
 
+const RATE_LIMITED = /\b429\b|RATE_LIMIT/;
+
 /**
- * Raw HTML of one official docs page, used only to discover links for a crawl:
- * tfish returns extracted content with navigation stripped, so it cannot see the links.
+ * One tfish fetch call. tfish allows 150 URLs a minute per account, shared by every
+ * session vendoring at once, so a 429 waits and retries instead of failing a long run.
  */
-export async function fetchHtml(url: string): Promise<string> {
+function tfishFetch(batch: readonly string[]): string {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return execFileSync('tfish', ['fetch', ...batch, '--json', '--full'], {
+        encoding: 'utf8',
+        maxBuffer: 256 * 1024 * 1024,
+        stdio: ['ignore', 'pipe', 'pipe'],
+      });
+    } catch (err) {
+      const stderr = String((err as { stderr?: unknown }).stderr ?? '');
+      if (attempt >= 8 || !RATE_LIMITED.test(stderr)) {
+        process.stderr.write(stderr);
+        throw err;
+      }
+      const wait = 15 * attempt;
+      console.warn(`  rate limited, retrying in ${wait}s (attempt ${attempt})`);
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, wait * 1000);
+    }
+  }
+}
+
+/**
+ * Raw HTML of one official docs page and the URL it resolved to after redirects, used
+ * only to discover links for a crawl: tfish returns extracted content with navigation
+ * stripped, so it cannot see the links. Null when the page fails to load.
+ */
+export async function fetchHtml(url: string): Promise<{ url: string; html: string } | null> {
   const res = await fetch(url, { headers: { 'user-agent': 'showcases-vendor-docs' } });
   if (!res.ok) {
     console.warn(`  ! ${url}: HTTP ${res.status}`);
-    return '';
+    return null;
   }
-  return res.text();
+  return { url: res.url || url, html: await res.text() };
 }
 
 /** Env without inherited GIT_* repo pointers, so the clone can never touch this repo. */

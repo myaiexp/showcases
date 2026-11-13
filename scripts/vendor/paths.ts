@@ -12,12 +12,24 @@ export function pageFile(url: string): string {
   return `pages/${path || u.host}${query}.md`;
 }
 
+/** Decodes the character references an href attribute may hold (`&amp;`, `&#x6D;`, `&#109;`). */
+function decodeAttr(value: string): string {
+  return value
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex: string) => String.fromCodePoint(Number.parseInt(hex, 16)))
+    .replace(/&#(\d+);/g, (_, dec: string) => String.fromCodePoint(Number(dec)))
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&');
+}
+
 /** Absolute, fragment-free URLs of every href in an HTML document. */
 export function extractLinks(html: string, base: string): string[] {
   const out = new Set<string>();
-  for (const match of html.matchAll(/href\s*=\s*["']([^"'#][^"']*)["']/gi)) {
-    const href = match[1];
-    if (!href) continue;
+  for (const match of html.matchAll(/href\s*=\s*["']([^"']*)["']/gi)) {
+    const href = decodeAttr(match[1] ?? '');
+    if (!href || href.startsWith('#')) continue;
     try {
       const u = new URL(href, base);
       u.hash = '';
@@ -36,12 +48,23 @@ export function inScope(url: string, prefix: string): boolean {
   return url.startsWith(prefix) && !ASSET.test(new URL(url).pathname);
 }
 
-/** Breadth-first crawl order over a link graph, capped at `max` pages. */
+/** One visited page: the URL it finally resolved to after redirects, and its links. */
+export interface CrawledPage {
+  url: string;
+  links: string[];
+}
+
+/**
+ * Breadth-first crawl order over a link graph, capped at `max` pages. `visit` returns
+ * null for a page that failed to load. A page that redirects out of the prefix (sites
+ * often send a mangled relative link to their home page) or onto a page already queued is
+ * not a page of its own, so it is dropped; the start page is kept wherever it lands.
+ */
 export async function crawl(
   start: string,
   prefix: string,
   max: number,
-  linksOf: (url: string) => Promise<string[]>,
+  visit: (url: string) => Promise<CrawledPage | null>,
 ): Promise<string[]> {
   const seen = new Set([start]);
   const queue = [start];
@@ -49,8 +72,14 @@ export async function crawl(
   while (queue.length > 0 && order.length < max) {
     const url = queue.shift();
     if (url === undefined) break;
-    order.push(url);
-    for (const link of await linksOf(url)) {
+    const page = await visit(url);
+    if (!page) continue;
+    if (page.url !== url && url !== start) {
+      if (!inScope(page.url, prefix) || seen.has(page.url)) continue;
+      seen.add(page.url);
+    }
+    order.push(page.url);
+    for (const link of page.links) {
       if (!seen.has(link) && inScope(link, prefix)) {
         seen.add(link);
         queue.push(link);

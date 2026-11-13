@@ -1,0 +1,27 @@
+/* Utility functions as chained modifiers: the comparison table */
+[data-example='animejs/utils-modifier-chains'] {
+  .table {
+    display: grid;
+    gap: 8px;
+    width: min(100%, 420px);
+    padding: var(--space-3);
+  }
+  .line {
+    display: grid;
+    grid-template-columns: 1fr 34px 34px;
+    gap: var(--space-3);
+    align-items: center;
+    justify-items: center;
+    font-size: 0.75em;
+  }
+  .line code { justify-self: start; color: var(--fg-2); }
+  .head span { color: var(--fg-3); }
+  .head span:first-child { justify-self: start; }
+  .sq {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+  .plain { background: var(--fg-3); }
+  .mod { background: #4f8cff; }
+}

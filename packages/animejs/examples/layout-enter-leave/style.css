@@ -1,0 +1,30 @@
+/* Layout enter/leave: wrapping tile grid */
+[data-example='animejs/layout-enter-leave'] {
+  .layout-root {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 8px;
+    width: min(100%, 360px);
+    min-height: 120px;
+    padding: var(--space-2);
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+  }
+  .item {
+    display: grid;
+    place-items: center;
+    width: 52px;
+    height: 52px;
+    background: var(--accent);
+    color: var(--bg);
+  }
+  .item.is-hidden {
+    display: none;
+  }
+  .panel {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+  }
+}
