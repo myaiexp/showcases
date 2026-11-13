@@ -1,0 +1,46 @@
+/* Grid of pre blocks that mermaid.run draws, selected by this example's own class */
+[data-example='mermaid/api-run-query-selector'] {
+  .rq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    width: 100%;
+  }
+  .rq-grid.rq-card {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    padding: 8px;
+    box-sizing: border-box;
+    height: 100%;
+    align-items: center;
+  }
+  .rq-block {
+    margin: 0;
+    padding: 8px;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: var(--fg-1);
+    background: var(--bg-surface);
+    border: 1px solid var(--border, #333);
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    white-space: pre;
+  }
+  .rq-block svg {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  .rq-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+/* Rendered Markdown with diagrams inside it */
+[data-example='mermaid/api-marked-renderer'] {
+  .md-doc {
+    width: 100%;
+    color: var(--fg-1);
+    line-height: 1.5;
+  }
+  .md-doc.md-card {
+    padding: 8px 12px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    font-size: 12px;
+  }
+  .md-doc h1 {
+    font-size: 1.2em;
+    margin: 0 0 0.4em;
+  }
+  .md-doc p {
+    margin: 0.3em 0;
+  }
+  .md-doc pre:not(.mermaid) {
+    padding: 8px;
+    background: var(--bg-surface);
+    border-radius: 6px;
+    font-family: var(--font-mono);
+    overflow: auto;
+  }
+  .md-doc .md-mermaid {
+    display: flex;
+    justify-content: center;
+    margin: 6px 0;
+    background: none;
+  }
+  .md-doc.md-card .md-mermaid svg {
+    max-height: 90px;
+    width: auto;
+  }
+}

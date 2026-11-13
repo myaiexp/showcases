@@ -1,0 +1,9 @@
+/* A page rule for the class name styleClass; classDiagram.md § CSS Classes shows the idea, and
+   flowchart.md notes that Mermaid's own rules are !important, so every property here is too */
+[data-example='mermaid/class-default-and-css-classes'] {
+  .styleClass path {
+    fill: #ff0000 !important;
+    stroke: #ffff00 !important;
+    stroke-width: 4px !important;
+  }
+}
