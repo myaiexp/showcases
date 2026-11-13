@@ -75,3 +75,8 @@ GitHub Pages. No service on the VPS.
 - `vite.config.ts` resolves the bare `three` imported by three's addons to `three/webgpu`,
   so the Three.js gallery keeps one core. A WebGL-based package that uses three's addons
   needs that plugin rethought.
+- Babylon.js loads Havok and Recast WASM once per page through
+  `packages/babylon-js/shared/{havok,recast}.ts` (Vite's dep bundling moves Havok's .wasm).
+  Babylon has page-wide registries (glTF extensions, loader plugins, `RegisterMaterialPlugin`,
+  `TransformNode.BillboardUseParentOrientation`); an example that touches one undoes it on
+  cleanup, or attaches per instance instead.

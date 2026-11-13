@@ -1,0 +1,26 @@
+/* Viewer element: sizing, and a chrome-free look for the preview card */
+[data-example='babylon-js/viewer-element-attributes'] {
+  babylon-viewer {
+    display: block;
+    width: 100%;
+    height: 440px;
+  }
+  babylon-viewer.bare {
+    height: 200px;
+  }
+  babylon-viewer.bare::part(tool-bar),
+  babylon-viewer.bare::part(progress-bar) {
+    display: none;
+  }
+  pre.log {
+    width: 100%;
+    margin: 0;
+    padding: var(--space-2) var(--space-3);
+    box-sizing: border-box;
+    background: var(--bg-surface);
+    color: var(--fg-2);
+    font-size: 0.75rem;
+    height: 7.5em;
+    overflow: auto;
+  }
+}
