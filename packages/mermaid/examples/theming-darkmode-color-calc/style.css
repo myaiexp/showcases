@@ -1,0 +1,43 @@
+/* Diagram on the left, swatches of the derived colours beside it */
+[data-example='mermaid/theming-darkmode-color-calc'] {
+  .dm-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+  }
+  .dm-wrap.dm-card {
+    height: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+  }
+  .dm-wrap.dm-card .mm-diagram {
+    min-height: 0;
+    height: 100%;
+  }
+  .dm-swatches {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--fg-2);
+  }
+  .dm-card .dm-swatches {
+    font-size: 9px;
+    gap: 3px;
+  }
+  .dm-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .dm-chip {
+    flex: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid var(--border, #333);
+  }
+}

@@ -1,0 +1,28 @@
+/* Classes the diagram's ::: lines refer to; mindmap nodes carry them on the node group */
+[data-example='mermaid/mindmap-classes-markdown-indentation'] {
+  .node.urgent .node-bkg,
+  .node.urgent path,
+  .node.urgent rect {
+    fill: #dc2626 !important;
+  }
+  .node.urgent .nodeLabel,
+  .node.urgent span,
+  .node.urgent p {
+    color: #fff !important;
+  }
+  .node.large .nodeLabel,
+  .node.large span,
+  .node.large p {
+    font-size: 22px !important;
+  }
+  .node.calm .node-bkg,
+  .node.calm path,
+  .node.calm rect {
+    fill: #0f766e !important;
+  }
+  .node.calm .nodeLabel,
+  .node.calm span,
+  .node.calm p {
+    color: #f0fdfa !important;
+  }
+}
