@@ -1,0 +1,28 @@
+/* Canvas texture: stage canvas, source canvas thumbnail and panel */
+[data-example='three-js/canvas-texture'] {
+  .stage {
+    display: block;
+    width: 100%;
+    height: 420px;
+    max-height: 100%;
+  }
+  .panel {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    background: var(--bg-surface);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .source {
+    width: 96px;
+    height: 96px;
+    border: 1px solid var(--fg-3);
+  }
+  p {
+    margin: var(--space-1) 0 0;
+    color: var(--fg-3);
+  }
+}

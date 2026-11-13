@@ -1,0 +1,17 @@
+/* Picking: stage canvas and the readout panel below it */
+[data-example='three-js/raycast-picking'] {
+  .stage {
+    display: block;
+    width: 100%;
+    height: 420px;
+    max-height: 100%;
+    touch-action: none;
+  }
+  .panel {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    background: var(--bg-surface);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+}

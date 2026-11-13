@@ -23,11 +23,17 @@ export function vendorGit(repo: string, ref: string, paths: readonly string[], d
     const commit = git('rev-parse', 'HEAD').trim();
     for (const p of paths) {
       if (isAbsolute(p) || normalize(p).startsWith('..')) throw new Error(`path escapes the repo: ${p}`);
-      const from = join(tmp, p);
-      if (!existsSync(from)) throw new Error(`${repo}@${ref} has no ${p}`);
-      const to = join(dest, p);
-      mkdirSync(join(to, '..'), { recursive: true });
-      cpSync(from, to, { recursive: true });
+      // A glob path (e.g. "docs/pages/*.md") copies only the tracked files it matches,
+      // so a repo that ships each page in two formats can vendor just one of them.
+      const files = /[*?[]/.test(p) ? git('ls-files', '-z', '--', `:(glob)${p}`).split('\0').filter(Boolean) : [p];
+      if (files.length === 0) throw new Error(`${repo}@${ref} has nothing matching ${p}`);
+      for (const f of files) {
+        const from = join(tmp, f);
+        if (!existsSync(from)) throw new Error(`${repo}@${ref} has no ${f}`);
+        const to = join(dest, f);
+        mkdirSync(join(to, '..'), { recursive: true });
+        cpSync(from, to, { recursive: true });
+      }
     }
     return commit;
   } finally {
