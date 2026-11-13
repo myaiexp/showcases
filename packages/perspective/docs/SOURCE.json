@@ -1,0 +1,20 @@
+{
+  "license": "Apache-2.0 (LICENSE.md in perspective-dev/perspective, which holds the docs book)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/perspective-dev/perspective",
+      "ref": "v5.9.1",
+      "paths": [
+        "README.md",
+        "docs/md/**/*.md",
+        "rust/perspective-viewer/README.md",
+        "rust/perspective-js/README.md",
+        "packages/viewer-datagrid/README.md",
+        "packages/viewer-charts/README.md",
+        "packages/react/README.md"
+      ]
+    }
+  ]
+}

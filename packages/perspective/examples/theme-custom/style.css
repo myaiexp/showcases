@@ -1,0 +1,50 @@
+/* A forked custom theme: Nord's colour variables, re-pointed at an ember palette */
+[data-example='perspective/theme-custom'] {
+  perspective-viewer[theme='Ember'] {
+    --psp-theme-name: "Ember";
+    /* The palette, as Nord declares its own: plain CSS custom properties. */
+    --theme-bg0: #1a1210;
+    --theme-bg1: #2a1d18;
+    --theme-bg2: #3a2820;
+    --theme-bg3: #5a3c2c;
+    --theme-fg0: #fbe9dc;
+    --theme-fg1: #e6c9b4;
+    --theme-hot: #ff7a2f;
+    --theme-gold: #f6c453;
+    --theme-ash: #9b8b80;
+    --theme-red: #e0533d;
+    --theme-wine: #a8325e;
+
+    background-color: var(--theme-bg0);
+    color: var(--theme-fg0);
+    color-scheme: dark;
+    --psp--color: var(--theme-fg1);
+    --psp--background-color: var(--theme-bg0);
+    --psp-active--color: var(--theme-hot);
+    --psp-active--background: #ff7a2f40;
+    --psp-error--color: var(--theme-red);
+    --psp-inactive--color: var(--theme-bg3);
+    --psp-inactive--border-color: var(--theme-bg2);
+    --psp-datagrid--pos-cell--color: var(--theme-gold);
+    --psp-datagrid--neg-cell--color: var(--theme-red);
+    --psp-charts--legend--color: var(--theme-fg1);
+    --psp-charts--legend--background: var(--psp--background-color);
+    --psp-charts--axis-ticks--color: var(--theme-fg1);
+    --psp-charts--axis-lines--color: var(--theme-bg3);
+    --psp-charts--gridline--color: var(--theme-bg1);
+    --psp-charts--tooltip--color: var(--theme-fg0);
+    --psp-charts--tooltip--background: var(--theme-bg1);
+    --psp-charts--tooltip--border-color: var(--theme-bg3);
+    --psp-charts--treemap--labels: var(--theme-fg0);
+    --psp-charts--series--color: var(--theme-hot);
+    --psp-charts--series-1--color: var(--theme-hot);
+    --psp-charts--series-2--color: var(--theme-gold);
+    --psp-charts--series-3--color: var(--theme-wine);
+    --psp-charts--series-4--color: var(--theme-ash);
+    --psp-charts--series-5--color: var(--theme-red);
+    --psp-charts--gradient--background: linear-gradient(var(--theme-wine) 0%, var(--theme-bg0) 50%, var(--theme-gold) 100%);
+    --psp-datagrid--series-1--color: var(--theme-hot);
+    --psp-datagrid--series-2--color: var(--theme-gold);
+    --psp-datagrid--series-3--color: var(--theme-wine);
+  }
+}

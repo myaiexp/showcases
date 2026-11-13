@@ -38,7 +38,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 3 | Three.js (`three`) ✅ built | 5 | r187 2026-10 | repo ✓ MIT | 400+ | WebGPU renderer, TSL shaders. Vendor `docs/` only, not the 639 `examples/` |
 | 4 | Sigma.js (`sigma`) ✅ built | 5 | v4 2026-10 | repo ✓ MIT | 70 | WebGL graphs, 100k+ nodes (pairs with graphology). Docs are the website chapters plus companion-package READMEs; the embedded SigmaExample stories stay out (pattern.md § Purity) |
 | 5 | **Mermaid** (`mermaid`) ✅ built | 5 | v12 2026-09 | repo ✓ MIT | 250 | Text to diagrams. Huge breadth. Docs are the site source (intro, syntax, config) plus the generated API reference; ZenUML needs the separate `@mermaid-js/mermaid-zenuml` package |
-| 6 | Perspective (`@perspective-dev/viewer`) | 5 | v5 2026-07 | repo ✓ Apache | 60 | Streaming pivot/visual analytics web component |
+| 6 | Perspective (`@perspective-dev/viewer`) ✅ built | 5 | v5 2026-07 | repo ✓ Apache | 60 | Streaming pivot/visual analytics web component. Docs are the mdbook under `docs/md` plus the package READMEs; the docs site's project gallery stays out. Examples share one Web Worker engine and must delete their tables |
 | 7 | MapLibre GL JS (`maplibre-gl`) ✅ built | 5 | v6 2026-07 | repo ✓ BSD | 150 | Vector maps, 3D terrain, globe. Docs are the API reference and style spec (site crawl) plus repo guides; all examples run offline on Natural Earth data and computed tiles |
 | 8 | Spark (`@sparkjsdev/spark`) | 5 | v2 2026-04 | unchecked | 30 | Gaussian splats on Three.js |
 | 9 | **Babylon.js** (`@babylonjs/core`) ✅ built | 5 | v9 2026-03 | repo ✓ Apache | 300+ | Full engine, PBR, WebGPU |
