@@ -1,0 +1,25 @@
+{
+  "fetched": "2026-11-13T13:08:34.204Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/chenglou/pretext",
+      "ref": "v1.0.0",
+      "paths": [
+        "README.md",
+        "CHANGELOG.md"
+      ],
+      "commit": "4a98f37b1e5396a73197f17c13f3128c15d8c17c"
+    }
+  ],
+  "files": {
+    "repo/CHANGELOG.md": {
+      "url": "https://github.com/chenglou/pretext/blob/4a98f37b1e5396a73197f17c13f3128c15d8c17c/CHANGELOG.md",
+      "sha256": "8dbf39e72bd0b2e738a125fad0aaa3ef64f6e4b0e14a3416a4b56275af1ea616"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/chenglou/pretext/blob/4a98f37b1e5396a73197f17c13f3128c15d8c17c/README.md",
+      "sha256": "7d05ae8844b4a6f5a19510237f5ecf2dbeb5395a2b1f58794dbfc0318830b1d0"
+    }
+  }
+}
