@@ -1,0 +1,432 @@
+{
+  "fetched": "2026-11-13T16:31:06.086Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/mermaid-js/mermaid",
+      "ref": "mermaid@12.3.0",
+      "paths": [
+        "README.md",
+        "packages/mermaid/src/docs/intro",
+        "packages/mermaid/src/docs/syntax",
+        "packages/mermaid/src/docs/config",
+        "docs/config/setup"
+      ],
+      "commit": "2086904e76c692331e34a45d7cc3bc30860d040e"
+    }
+  ],
+  "files": {
+    "repo/docs/config/setup/config/functions/addDirective.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/addDirective.md",
+      "sha256": "72d6e2259e5ebdae91383093bd757aab37f428ad9f2a6e4249eb7fc3f3618181"
+    },
+    "repo/docs/config/setup/config/functions/evaluate.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/evaluate.md",
+      "sha256": "5ce9d0661248e4c171c5b7a29ab0e8ac446085750f6f49082e869b91f7748c06"
+    },
+    "repo/docs/config/setup/config/functions/getConfig.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/getConfig.md",
+      "sha256": "30ccf93f760a886805641c6149a2ae692fbf7d815c1dd9f96e9f51b9926b8ca2"
+    },
+    "repo/docs/config/setup/config/functions/getEffectiveHtmlLabels.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/getEffectiveHtmlLabels.md",
+      "sha256": "f81904e700d878a489b1b68ee99fd3fcb1c1f7f03a7344ac4fad5ec03b414299"
+    },
+    "repo/docs/config/setup/config/functions/getSiteConfig.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/getSiteConfig.md",
+      "sha256": "516f87e7261c6b08074f9422cb67eb619dc9dc91638944fcfd7a5790c7c1984f"
+    },
+    "repo/docs/config/setup/config/functions/getUserDefinedConfig.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/getUserDefinedConfig.md",
+      "sha256": "78c85bfa8cb6edd88a72b3d4086ada1bd90416bdcd5a85c01e34be1c35572eff"
+    },
+    "repo/docs/config/setup/config/functions/reset.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/reset.md",
+      "sha256": "3c10145f32aa0ecddd0b2e858582e417bf17cecc6f6a6a56f13f5d077aec44e6"
+    },
+    "repo/docs/config/setup/config/functions/sanitize.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/sanitize.md",
+      "sha256": "a4824d70b4064655c5ef05974b9c926dc7d796d1a858be5bd36a3081a3c9ef58"
+    },
+    "repo/docs/config/setup/config/functions/saveConfigFromInitialize.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/saveConfigFromInitialize.md",
+      "sha256": "5c9cbae8c16b5c1005ca883b0278fb40b55f3ec5b06fe828a45d659fc5206052"
+    },
+    "repo/docs/config/setup/config/functions/setConfig.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/setConfig.md",
+      "sha256": "3dae6ba2392ed8f6d3f87c4d71f580f026da4637794071de7f7c2de6be700bea"
+    },
+    "repo/docs/config/setup/config/functions/setDiagramConfigScope.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/setDiagramConfigScope.md",
+      "sha256": "aa87eedda7752307dacc6d8a96e8a35722121d438a2650812938292bfa8dcb75"
+    },
+    "repo/docs/config/setup/config/functions/setSiteConfig.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/setSiteConfig.md",
+      "sha256": "60368d0ad40f1b3ef620a8c5a5aa7921b8fbb9fea939bcdf9baf52530310c534"
+    },
+    "repo/docs/config/setup/config/functions/updateSiteConfig.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/functions/updateSiteConfig.md",
+      "sha256": "3b83e7a9220e93d885470bd8645f6f90eee2fb5cfc2048d3dfd0becf5523a758"
+    },
+    "repo/docs/config/setup/config/README.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/README.md",
+      "sha256": "9df49c0e9f3624b7b60f4420fd523a23c6add8aa8dde62ac0653a0ee65bcc894"
+    },
+    "repo/docs/config/setup/config/variables/defaultConfig.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/config/variables/defaultConfig.md",
+      "sha256": "6341c5b6d91da8b2042e3a661327876cfef414f892fd3f89fa07951c2a1ceab7"
+    },
+    "repo/docs/config/setup/defaultConfig/README.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/defaultConfig/README.md",
+      "sha256": "bfa1783ea127f55699998dd6f18c62262168435e843f0dac95000b98fb2d1be4"
+    },
+    "repo/docs/config/setup/defaultConfig/variables/configKeys.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/defaultConfig/variables/configKeys.md",
+      "sha256": "2cae6a25eb5ff24060a0b0797fd3210f7981c2156d333bf63778bac33e07c9df"
+    },
+    "repo/docs/config/setup/defaultConfig/variables/default.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/defaultConfig/variables/default.md",
+      "sha256": "3ed4dc90cffa989e721d4370bc637df22ac3369d875ea4a8cd642e57856a8385"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/AsyncIconLoader.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/AsyncIconLoader.md",
+      "sha256": "09661e740271a0096e5cf677d981346bd828355e658f77bdf78383a772a982e2"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/DetailedError.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/DetailedError.md",
+      "sha256": "5d59433ae742d2dac55d69e4fe99e985d72e650a122f4a1fd28ff99eba606d18"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/ExternalDiagramDefinition.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/ExternalDiagramDefinition.md",
+      "sha256": "c0e8d03fb5d131c0b8cb9e11aee9478d70f9605295e5083e11b5e23f470e78be"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/LayoutData.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/LayoutData.md",
+      "sha256": "39073fb2b98319269d48872eeca67c955babce24d68807ed29c5dfad35a43a76"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/LayoutLoaderDefinition.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/LayoutLoaderDefinition.md",
+      "sha256": "ebaa09f0e53df9c65cf99251b3d3a13eb148a56cf4be6f0db2a7f66684577b06"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/Mermaid.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/Mermaid.md",
+      "sha256": "e9449b9aec97dca58b0bc169417e2153fcc5910e32d61d47ecb131c38bd9d47c"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/MermaidConfig.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/MermaidConfig.md",
+      "sha256": "f99ea78b1c9983264380e70b89ecbbcf1fa327b599acf5eade8d54e24770b865"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/ParseOptions.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/ParseOptions.md",
+      "sha256": "4db29a4b52aa00305b3e06c19bff2c853500128e9955505fffecd7ea4e5db179"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/ParseResult.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/ParseResult.md",
+      "sha256": "4883390e0718e1f274a8500d415be8e77922507a820cbc4827a43ad84905e6e7"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/RenderOptions.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/RenderOptions.md",
+      "sha256": "1c8d6b9ef70a029261f73ebbca0fe66abbfb77a15e0fa069008c74f9140f1769"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/RenderResult.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/RenderResult.md",
+      "sha256": "bab39324d33b88abf89a605a60a1492673f39f8cc0048457f5401e4c3f10f20b"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/RunOptions.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/RunOptions.md",
+      "sha256": "125314b6a454c21b0ae70c80ca4d0b8963d3395bdf22811806d3b22053515f93"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/SyncIconLoader.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/SyncIconLoader.md",
+      "sha256": "2278a0c3fc5b9bec414150961db914a049977db4549045816c758878d5321f72"
+    },
+    "repo/docs/config/setup/mermaid/interfaces/UnknownDiagramError.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/interfaces/UnknownDiagramError.md",
+      "sha256": "26cda6e5182613c8a96829bed07010a0480ccb8d4cf0799e4597373622c7e91f"
+    },
+    "repo/docs/config/setup/mermaid/README.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/README.md",
+      "sha256": "d83eb36c54475c66efebd88cb88016fd42e612b7257f482bb4df11d115f06201"
+    },
+    "repo/docs/config/setup/mermaid/type-aliases/IconLoader.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/type-aliases/IconLoader.md",
+      "sha256": "4ec2cd8b53d2c86952db24c2aed408fc72498b53dcb68aac469b278392b06f9a"
+    },
+    "repo/docs/config/setup/mermaid/type-aliases/InternalHelpers.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/type-aliases/InternalHelpers.md",
+      "sha256": "e851d8d825a82f65f4451d7a3dd94b97f17aa827a9adc6db3e5d766c46b26f24"
+    },
+    "repo/docs/config/setup/mermaid/type-aliases/ParseErrorFunction.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/type-aliases/ParseErrorFunction.md",
+      "sha256": "d81f0e06fcca50b8d73aff6da500bc163e93c988407477eda94f3c54e0d16e5e"
+    },
+    "repo/docs/config/setup/mermaid/type-aliases/SVG.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/type-aliases/SVG.md",
+      "sha256": "f506b90fe468ade4671e35252986b7fa1676a573ffad0f7a4550b3ba79358b0a"
+    },
+    "repo/docs/config/setup/mermaid/type-aliases/SVGGroup.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/type-aliases/SVGGroup.md",
+      "sha256": "dab8d47be2b832cfb42786e53da4308bbdc0632ccf9011cd67168943ea53ae2a"
+    },
+    "repo/docs/config/setup/mermaid/variables/default.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/mermaid/variables/default.md",
+      "sha256": "dbc13239f99ab9926d13b96e042301619d7e12456acac5aa9f82ec8979b72603"
+    },
+    "repo/docs/config/setup/README.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/docs/config/setup/README.md",
+      "sha256": "995b3f51083e400950676a5fd8f66bdc4e78505be0b8edc77ef9259aa7ddf8ad"
+    },
+    "repo/packages/mermaid/src/docs/config/8.6.0_docs.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/8.6.0_docs.md",
+      "sha256": "4a55e2108539e6a699ce5760ea4785a7718b0194b49d8ca5d8ba7b3f7d5f0fed"
+    },
+    "repo/packages/mermaid/src/docs/config/accessibility.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/accessibility.md",
+      "sha256": "676088f8e00cecc020f0e6eda09be85fba4dc6180e523963e7700246f78491a7"
+    },
+    "repo/packages/mermaid/src/docs/config/configuration.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/configuration.md",
+      "sha256": "a4a0e65ef2d11a2e010b5345b6a71973491ffd9ba94c0d8c740f9d3c5d03be56"
+    },
+    "repo/packages/mermaid/src/docs/config/directives.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/directives.md",
+      "sha256": "f9ff416b4877898c185373b89b08b5c92da7bc841aced8ff7ae643d532772f1f"
+    },
+    "repo/packages/mermaid/src/docs/config/faq.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/faq.md",
+      "sha256": "208f18e170307309013ce9bd1ba83ac0988571c6cd8c03e10f707dc51f270b09"
+    },
+    "repo/packages/mermaid/src/docs/config/icons.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/icons.md",
+      "sha256": "47438df4b6eaa0af955dc3cee6fe899e3949a0b74a71b36ce3ed285779e2e44c"
+    },
+    "repo/packages/mermaid/src/docs/config/img/accessibility-div-example-2.png": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/img/accessibility-div-example-2.png",
+      "sha256": "fd543bb53fd2ae07b5f55902d366188d88a224f3aebaf6ef523b2a6257921bcf"
+    },
+    "repo/packages/mermaid/src/docs/config/img/accessibility-div-example.png": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/img/accessibility-div-example.png",
+      "sha256": "f2818ee44d5fbc9ebd1f970916642e6174fdd1e682a0e908e673e10136b3131c"
+    },
+    "repo/packages/mermaid/src/docs/config/img/assignWithDepth.png": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/img/assignWithDepth.png",
+      "sha256": "1e1957c103ed274ecf15991fd4c7182944ade6560abd1f34114696de54bb0931"
+    },
+    "repo/packages/mermaid/src/docs/config/img/mathMLDifferences.png": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/img/mathMLDifferences.png",
+      "sha256": "f093578f4d8acc827c6759c6c7556246d96fb0cac215e39ecdc909e451b51bf1"
+    },
+    "repo/packages/mermaid/src/docs/config/img/object.assign without depth.png": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/img/object.assign without depth.png",
+      "sha256": "427adf37fb93272347b0756201880042ef90b237be8dd71e9c564e274d6a4f89"
+    },
+    "repo/packages/mermaid/src/docs/config/img/wrapped text.png": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/img/wrapped text.png",
+      "sha256": "b2d6a987481169317534ecae0f9898147ea33fb35cf814e6821916351801d921"
+    },
+    "repo/packages/mermaid/src/docs/config/layouts.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/layouts.md",
+      "sha256": "36e409bdfda8df32ef4c0a5577e5967398987db4433ef58ee844c1427874fb74"
+    },
+    "repo/packages/mermaid/src/docs/config/math.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/math.md",
+      "sha256": "79ecb7ef2ee348a1a9d9d16f7826843df634762f76ad5eb67e7397cdfcad8e5a"
+    },
+    "repo/packages/mermaid/src/docs/config/mermaidCLI.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/mermaidCLI.md",
+      "sha256": "9c1dd7535f9e53c597b58f1d97c406dc0c69c320aa5f84571a6c17116bc7c57d"
+    },
+    "repo/packages/mermaid/src/docs/config/theming.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/theming.md",
+      "sha256": "4c238d48f51e0074340e50edeec7f72786b33646835f39934e8daee784dd63d3"
+    },
+    "repo/packages/mermaid/src/docs/config/tidy-tree.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/tidy-tree.md",
+      "sha256": "2c0795a5aaa0a16e9b6ba4a5276b71460818b562824d9d292ec8a115ddb7c5b0"
+    },
+    "repo/packages/mermaid/src/docs/config/usage.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/config/usage.md",
+      "sha256": "c5ab2634fe4d11294130d6e8541c430b666dd143f43e4c69eea581333e4439ae"
+    },
+    "repo/packages/mermaid/src/docs/intro/examples.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/intro/examples.md",
+      "sha256": "48602d0f3f80241c77af0b48ada95ae1dbe81d40f0c6e1d0050b32dc185bf4c6"
+    },
+    "repo/packages/mermaid/src/docs/intro/getting-started.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/intro/getting-started.md",
+      "sha256": "aaea450b1bb075624d396e57c7e74c4c93dab42ea08ebd0d0bb405f4c4413e88"
+    },
+    "repo/packages/mermaid/src/docs/intro/img/book-banner-post-release.jpg": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/intro/img/book-banner-post-release.jpg",
+      "sha256": "0a6bca02dcfdec3d50f146237fc8ae41042d585e882d979d9043d459d123353b"
+    },
+    "repo/packages/mermaid/src/docs/intro/img/Code-Preview-Config.png": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/intro/img/Code-Preview-Config.png",
+      "sha256": "9018d73f0b9c731cab5d9e160bf35b3555146b169ac0c74f5e1b81c5a8c6d894"
+    },
+    "repo/packages/mermaid/src/docs/intro/img/Live-Editor-Choices.png": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/intro/img/Live-Editor-Choices.png",
+      "sha256": "cc4ac25a01aac6b6b27bda79ebde43ab066628833144e6335de4726225e7fe15"
+    },
+    "repo/packages/mermaid/src/docs/intro/index.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/intro/index.md",
+      "sha256": "4d157d2b2abfeb147e0072f651adf42e258236e2b8ae7cdce31db24e9aedc99d"
+    },
+    "repo/packages/mermaid/src/docs/intro/syntax-reference.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/intro/syntax-reference.md",
+      "sha256": "15ab8dc40d7285e4ae2f2c654039bc0a3d535430c17bba4ef9f42ac5843cd0e7"
+    },
+    "repo/packages/mermaid/src/docs/syntax/agentflow.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/agentflow.md",
+      "sha256": "32633c3c2ee513db2f20259eab4d6ccff550dfa3cdf56b1baf2f0cd99ba74671"
+    },
+    "repo/packages/mermaid/src/docs/syntax/all-examples.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/all-examples.md",
+      "sha256": "9ff789858e5554c24db4f58822d93c81d1192860754ea835652e026795dc116c"
+    },
+    "repo/packages/mermaid/src/docs/syntax/architecture.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/architecture.md",
+      "sha256": "c7bb3545d7066d7572dbc60d40ac16a35a69236ff23ed893e80dfc7c47784640"
+    },
+    "repo/packages/mermaid/src/docs/syntax/block.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/block.md",
+      "sha256": "3148ac46d46d1b13419c2b32f619b188516932b845371a133b3c73fca04c2a70"
+    },
+    "repo/packages/mermaid/src/docs/syntax/c4.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/c4.md",
+      "sha256": "58349fbef7810c06e154812b9fd78f1e377f3fb6992526bc1c3de2aad6f12365"
+    },
+    "repo/packages/mermaid/src/docs/syntax/classDiagram.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/classDiagram.md",
+      "sha256": "26c58fdf43e16ccefda1d5eb2f64fa37ca1869842ca6fce54f171488be987734"
+    },
+    "repo/packages/mermaid/src/docs/syntax/cynefin.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/cynefin.md",
+      "sha256": "718f4c921317f6010e554ff6436fcf149ea82bb3503447feb0740a807b5ae0c5"
+    },
+    "repo/packages/mermaid/src/docs/syntax/entityRelationshipDiagram.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/entityRelationshipDiagram.md",
+      "sha256": "ab06e06079a798d7e00d56eebe26bf2f37862a28b501e94e9dbddead4afb9fda"
+    },
+    "repo/packages/mermaid/src/docs/syntax/eventmodeling.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/eventmodeling.md",
+      "sha256": "ef85e6c934313348ef12311d3f71069436a54d75d03269b9c902c732d5604c56"
+    },
+    "repo/packages/mermaid/src/docs/syntax/flowchart.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/flowchart.md",
+      "sha256": "287c017d8da2242f3f0bb4ebe1667ea1ab331250879f3ad144bb12b481207be1"
+    },
+    "repo/packages/mermaid/src/docs/syntax/gantt.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/gantt.md",
+      "sha256": "df3dc79c57ca3c1f3200791bbde84477abbfadc071032e8553515006ce050b38"
+    },
+    "repo/packages/mermaid/src/docs/syntax/gitgraph.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/gitgraph.md",
+      "sha256": "018b616ddff1ebff18607867e111e84bf6fc6ae76ef29cbf15d96920d606d87a"
+    },
+    "repo/packages/mermaid/src/docs/syntax/img/Gantt-excluded-days-within.png": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/img/Gantt-excluded-days-within.png",
+      "sha256": "3ac81246305e7dbd67d7e8a4209c11c283f0fc6027391658c10cad196b48da1d"
+    },
+    "repo/packages/mermaid/src/docs/syntax/img/Gantt-long-weekend-look.png": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/img/Gantt-long-weekend-look.png",
+      "sha256": "fa8b39d369b12aa34689ac7eab84f068a4e3b9840e1cf8f2caa5aa7f98e860ae"
+    },
+    "repo/packages/mermaid/src/docs/syntax/img/zenuml-participant-annotators.png": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/img/zenuml-participant-annotators.png",
+      "sha256": "b2fbf68fc3344a89b05de0a21f14d7258a25f041f288b6cc65b0d1489c6c4b07"
+    },
+    "repo/packages/mermaid/src/docs/syntax/ishikawa.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/ishikawa.md",
+      "sha256": "dc76a5939011ee0e207d735a588c2984083a3f6051a43f788fbc8e5bb3155d81"
+    },
+    "repo/packages/mermaid/src/docs/syntax/kanban.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/kanban.md",
+      "sha256": "e597f7d1449a101a5becef31d7840a0492ca7e415d93872541c23b317b0e77f1"
+    },
+    "repo/packages/mermaid/src/docs/syntax/mindmap.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/mindmap.md",
+      "sha256": "453543248398e3560f3197638365178379d952f6f177e1f868e89243e07fd7cd"
+    },
+    "repo/packages/mermaid/src/docs/syntax/packet.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/packet.md",
+      "sha256": "2be8957a15e1c803ca4569cef993ff28abf566e61fa839ab770c8a6c6d9bb1ce"
+    },
+    "repo/packages/mermaid/src/docs/syntax/pie.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/pie.md",
+      "sha256": "46f37777b3400688f23d00da046c975edc2dda48df123bcff41e182b73fb73ff"
+    },
+    "repo/packages/mermaid/src/docs/syntax/quadrantChart.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/quadrantChart.md",
+      "sha256": "f31b2f5516def9f6f7d3635a8a8a00abf796203d7ca4ef3720f03b0568940b84"
+    },
+    "repo/packages/mermaid/src/docs/syntax/radar.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/radar.md",
+      "sha256": "ef44dc1b79a656e53ec8d47a3c2e8aee2aa62f8b7890badbad880f87762867ec"
+    },
+    "repo/packages/mermaid/src/docs/syntax/railroad.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/railroad.md",
+      "sha256": "20fea0e3bf87f6b6461315c15a5bf91e594124ff774b8d816980db0c1381e9f2"
+    },
+    "repo/packages/mermaid/src/docs/syntax/requirementDiagram.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/requirementDiagram.md",
+      "sha256": "9276383f8155c98a0d73c138b8a608f217f622e35f96b8140188631f29f8634a"
+    },
+    "repo/packages/mermaid/src/docs/syntax/sankey.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/sankey.md",
+      "sha256": "0ad698a8a50f6c0aacb17a9cd6f75fb03c32530eb548380b39ff37f4a7a7274c"
+    },
+    "repo/packages/mermaid/src/docs/syntax/sequenceDiagram.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/sequenceDiagram.md",
+      "sha256": "6a6b0b0d7e8d161cfe197e7a372dbe0c864e30b91459892e68652aca1fbe8b13"
+    },
+    "repo/packages/mermaid/src/docs/syntax/stateDiagram.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/stateDiagram.md",
+      "sha256": "bab4fd5a9bc626290517602e9cab24d9855d3dd689b65881fbc031e6b7dcd8f1"
+    },
+    "repo/packages/mermaid/src/docs/syntax/swimlanes.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/swimlanes.md",
+      "sha256": "222b134af746cba51e0081af7e9ddef72ebf9af366cd82fbb98277a6c4da00d1"
+    },
+    "repo/packages/mermaid/src/docs/syntax/timeline.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/timeline.md",
+      "sha256": "ef8cdb6db364d9ac751911fc970dda83e5d683135370571641aea9acf613ba7d"
+    },
+    "repo/packages/mermaid/src/docs/syntax/treemap.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/treemap.md",
+      "sha256": "0d645acabf85c45f8d6ca4e3cb4ec01c5cdfc0fde70a92643ab56b50e94168fe"
+    },
+    "repo/packages/mermaid/src/docs/syntax/treeView.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/treeView.md",
+      "sha256": "04b5fbd490c2819b588e3d00ca254392737d84a9e90ee0a80a4fb7efee06315d"
+    },
+    "repo/packages/mermaid/src/docs/syntax/usecase.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/usecase.md",
+      "sha256": "a45a7385ee20cbe9531ba556f690edcdeac96b97f51b7e623baef8fdef53634c"
+    },
+    "repo/packages/mermaid/src/docs/syntax/userJourney.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/userJourney.md",
+      "sha256": "c2e67193e4a3651fd347ed4d4a8ec9e6dda0fe64f420d6b8978b78ed0f49a3c0"
+    },
+    "repo/packages/mermaid/src/docs/syntax/venn.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/venn.md",
+      "sha256": "4faf91762d33a60213aa250e327bd9c1e87e05a4afc8e318a6b541cd07f38db2"
+    },
+    "repo/packages/mermaid/src/docs/syntax/wardley.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/wardley.md",
+      "sha256": "4f138aff9b82655849789c2bad0bdda0e36290e556ba9083afdcffdb82adf88f"
+    },
+    "repo/packages/mermaid/src/docs/syntax/xyChart.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/xyChart.md",
+      "sha256": "38507fbecca39bf50f939c434aeb3a047e42a77e18eca58a122f8cd266aff111"
+    },
+    "repo/packages/mermaid/src/docs/syntax/zenuml.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/packages/mermaid/src/docs/syntax/zenuml.md",
+      "sha256": "649a5349c9060d2d6880c3d7df79038de9d00acafa4fe2b61aebcf981af6ea08"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/mermaid-js/mermaid/blob/2086904e76c692331e34a45d7cc3bc30860d040e/README.md",
+      "sha256": "eae450a8a65100cb0f5a4b29b8ebfe9a1b7c57e771887e1471d6726c02cc3dd5"
+    }
+  }
+}
