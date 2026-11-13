@@ -1,0 +1,7 @@
+/* Animatable methods: stage, circle, readout */
+[data-example='animejs/animatable-methods'] {
+  .stage { position: relative; display: flex; align-items: center; justify-content: center; width: min(100%, 400px); height: 8rem; border: 1px dashed var(--fg-3); background: var(--bg-surface); }
+  .circle { width: 2rem; height: 2rem; border-radius: 50%; background: var(--accent); }
+  .readout { margin: var(--space-4) 0 var(--space-3); color: var(--green); font-size: 0.8rem; }
+  .panel { display: flex; gap: var(--space-2); flex-wrap: wrap; justify-content: center; }
+}

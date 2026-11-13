@@ -1,0 +1,52 @@
+/* Timeline add(): timers and animations: stage, shapes, controls and readouts */
+[data-example='animejs/timeline-add-method'] {
+  .stage {
+    position: relative;
+    width: min(100%, 420px);
+    height: 132px;
+    background: var(--bg-surface);
+    border: 1px solid var(--fg-3);
+  }
+  .shape {
+    position: absolute;
+    left: 8px;
+    width: 28px;
+    height: 28px;
+  }
+  .triangle {
+    top: 10px;
+    background: hsl(20 80% 60%);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  }
+  .square {
+    top: 52px;
+    background: hsl(200 70% 58%);
+  }
+  .circle {
+    top: 94px;
+    border-radius: 50%;
+    background: hsl(140 55% 52%);
+  }
+  .panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+  .readout {
+    display: inline-flex;
+    gap: var(--space-2);
+    align-items: baseline;
+    color: var(--fg-2);
+    font-variant-numeric: tabular-nums;
+  }
+  .value {
+    color: var(--accent);
+    min-width: 4ch;
+  }
+  .label {
+    color: var(--fg-2);
+  }
+}

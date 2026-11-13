@@ -1,0 +1,20 @@
+/* Getting started vanilla: stage and logo */
+[data-example='animejs/getting-started-vanilla'] {
+  .stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 360px);
+    height: 140px;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+    color: var(--accent);
+    touch-action: none;
+    cursor: grab;
+  }
+  .btn {
+    margin-top: var(--space-3);
+  }
+}

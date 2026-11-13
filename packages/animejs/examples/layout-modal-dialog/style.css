@@ -1,0 +1,94 @@
+/* Layout modal dialog: grid of buttons, in-example dialog overlay */
+[data-example='animejs/layout-modal-dialog'] {
+  .stage {
+    position: relative;
+    overflow: hidden;
+    width: min(100%, 520px);
+    height: 260px;
+    background: var(--bg-surface);
+    border: 1px solid var(--fg-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stage.small {
+    height: 190px;
+  }
+  .grid {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90px;
+    height: 70px;
+    padding: var(--space-2);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    color: var(--accent);
+    background: var(--bg);
+    text-align: left;
+    cursor: pointer;
+    p { display: none; }
+    h2 { font-size: 15px; margin: 0; white-space: nowrap; }
+    h3 { position: absolute; bottom: 6px; left: 8px; font-size: 10px; margin: 0; font-weight: 400; }
+  }
+  .grid .item.is-open {
+    visibility: hidden;
+  }
+  .dialog {
+    --overlay-alpha: 100%;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    background-color: color-mix(in srgb, black, transparent var(--overlay-alpha));
+  }
+  .dialog[open] {
+    --overlay-alpha: 40%;
+    pointer-events: auto;
+  }
+  .dialog .item {
+    visibility: hidden;
+    width: 300px;
+    height: 170px;
+    padding: var(--space-4);
+    cursor: pointer;
+    h2 { font-size: 26px; margin-bottom: var(--space-2); }
+    h3 { top: 34px; right: 16px; left: auto; bottom: auto; font-size: 13px; }
+    p {
+      display: block;
+      padding-top: var(--space-2);
+      border-top: 1px solid currentColor;
+      font-size: 13px;
+    }
+  }
+  .small .dialog .item {
+    width: 220px;
+    height: 130px;
+    padding: var(--space-3);
+    h2 { font-size: 20px; }
+    h3 { top: 24px; right: 12px; }
+    p { font-size: 11px; }
+  }
+  .dialog[open] .item {
+    visibility: visible;
+  }
+  .label {
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+  }
+}

@@ -1,0 +1,32 @@
+/* Stagger parameters overview: row of squares, picker and code line */
+[data-example='animejs/stagger-parameters-overview'] {
+  .row {
+    display: flex;
+    gap: var(--space-2);
+    align-items: flex-end;
+    height: 80px;
+  }
+  .sq {
+    width: 14px;
+    height: 14px;
+    background: hsl(calc(var(--i) * 28) 70% 60%);
+  }
+  .code {
+    margin-top: var(--space-3);
+    font-size: 11px;
+    color: var(--fg-2);
+    white-space: pre-wrap;
+    text-align: center;
+  }
+  .panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+  .btn.on {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}

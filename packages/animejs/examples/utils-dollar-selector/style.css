@@ -1,0 +1,23 @@
+/* utils.$() selector: rows of squares and the readout */
+[data-example='animejs/utils-dollar-selector'] {
+  .stage {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .row {
+    display: flex;
+    gap: var(--space-2);
+    justify-content: center;
+  }
+  .dollar-sq {
+    width: 24px;
+    height: 24px;
+    background: var(--accent);
+  }
+  .readout {
+    margin-top: var(--space-4);
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+}

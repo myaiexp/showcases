@@ -1,0 +1,43 @@
+/* releaseMass / releaseStiffness: stage and lanes */
+[data-example='animejs/drag-release-mass-stiffness'] {
+  .stage {
+    position: relative;
+    width: min(100%, 420px);
+    height: 170px;
+    border: 1px dashed var(--fg-3);
+    background: var(--bg-surface);
+  }
+  .item {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: hsl(var(--hue, 200) 70% 60%);
+    touch-action: none;
+  }
+  .tag {
+    position: absolute;
+    right: 4px;
+    font-size: 10px;
+    color: var(--fg-3);
+    pointer-events: none;
+  }
+  .panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+  }
+  .label {
+    color: var(--fg-2);
+  }
+  .readout {
+    margin-top: var(--space-2);
+    font-family: monospace;
+    color: var(--fg-2);
+    text-align: center;
+  }
+}

@@ -1,0 +1,7 @@
+/* Timer cancel: progress bar, readout, buttons */
+[data-example='animejs/timer-cancel'] {
+  .bar { width: min(100%, 360px); height: 0.6rem; background: var(--bg-surface); border: 1px solid var(--fg-3); }
+  .fill { height: 100%; background: var(--accent); transform-origin: left; transform: scaleX(0); }
+  .readout { margin: var(--space-4) 0; color: var(--green); font-size: 0.8rem; text-align: center; white-space: pre-wrap; max-width: 100%; }
+  .panel { display: flex; gap: var(--space-2); justify-content: center; }
+}

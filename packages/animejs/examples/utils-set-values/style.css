@@ -1,0 +1,24 @@
+/* utils.set(): row of squares, buttons and readout */
+[data-example='animejs/utils-set-values'] {
+  .row {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    height: 80px;
+  }
+  .sq {
+    width: 32px;
+    height: 32px;
+    background: var(--accent);
+  }
+  .panel {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+  }
+  .readout {
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+}

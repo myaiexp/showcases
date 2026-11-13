@@ -1,0 +1,10 @@
+/* Tween parameters: box, code line and option rows */
+[data-example='animejs/animation-tween-parameters'] {
+  .stage { width: min(100%, 420px); padding: var(--space-5) 0; }
+  .box { width: 2rem; height: 2rem; background: var(--accent); }
+  .code { margin: 0; color: var(--green); font-size: 0.7rem; white-space: pre-wrap; text-align: center; }
+  .info { margin: var(--space-2) 0 0; color: var(--fg-2); font-size: 0.75rem; text-align: center; }
+  .panel { display: flex; gap: var(--space-2); flex-wrap: wrap; justify-content: center; align-items: center; margin-top: var(--space-3); }
+  .label { color: var(--fg-2); font-size: 0.8rem; }
+  .note { color: var(--fg-3); font-size: 0.8rem; margin: var(--space-3) 0 0; }
+}

@@ -1,0 +1,53 @@
+/* waapi-easing: lanes, squares and controls */
+[data-example='animejs/waapi-easing'] {
+  .lanes {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    width: min(100%, 460px);
+  }
+  .lane {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: var(--space-1) var(--space-2);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+  }
+  .lane-label {
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: var(--fg-3);
+  }
+  .track {
+    padding: 2px 0;
+  }
+  .square {
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--accent);
+  }
+  .circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .is-preview .lane-label {
+    display: none;
+  }
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+  }
+  .readout {
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--fg-2);
+    margin-top: var(--space-2);
+  }
+}

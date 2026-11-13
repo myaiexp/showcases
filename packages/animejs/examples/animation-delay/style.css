@@ -1,0 +1,6 @@
+/* Delay: track, dot and slider */
+[data-example='animejs/animation-delay'] {
+  .stage { width: min(100%, 420px); padding: var(--space-4) 0; }
+  .dot { width: 1.5rem; height: 1.5rem; border-radius: 50%; background: var(--accent); }
+  .control { display: flex; flex-direction: column; gap: var(--space-2); align-items: center; color: var(--fg-2); margin-top: var(--space-4); }
+}

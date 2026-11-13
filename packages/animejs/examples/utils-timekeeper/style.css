@@ -1,0 +1,38 @@
+/* keepTime(): lanes of clocks and progress labels */
+[data-example='animejs/utils-timekeeper'] {
+  .lane {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2) var(--space-3);
+    margin-bottom: var(--space-3);
+  }
+  .clock {
+    width: 36px;
+    height: 36px;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    position: relative;
+    color: var(--fg-3);
+  }
+  .clock::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 14px;
+    background: currentColor;
+  }
+  .label {
+    font-size: 11px;
+    color: var(--fg-2);
+    /* own row under the clocks, so a lane fits a 258px preview card */
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .btn {
+    margin-top: var(--space-3);
+  }
+}

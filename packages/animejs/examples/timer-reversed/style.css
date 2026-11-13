@@ -1,0 +1,11 @@
+/* Timer reversed: two columns of progress bars */
+[data-example='animejs/timer-reversed'] {
+  .cols { display: flex; gap: var(--space-4); flex-wrap: wrap; justify-content: center; width: 100%; }
+  .col { display: flex; flex-direction: column; gap: var(--space-2); width: 11rem; }
+  .title { color: var(--fg-1); font-size: 0.8rem; }
+  .row { display: grid; grid-template-columns: 4.2rem 1fr 2.2rem; gap: var(--space-2); align-items: center; font-size: 0.7rem; color: var(--fg-2); }
+  .bar { height: 0.5rem; background: var(--bg-surface); border: 1px solid var(--fg-3); }
+  .fill { height: 100%; background: var(--accent); transform-origin: left; transform: scaleX(0); }
+  .value { color: var(--green); font-variant-numeric: tabular-nums; text-align: right; }
+  .note { color: var(--fg-3); font-size: 0.8rem; margin: var(--space-4) 0 0; text-align: center; }
+}

@@ -1,0 +1,22 @@
+/* Getting started module imports: sentence and import listing */
+[data-example='animejs/getting-started-module-imports'] {
+  .text {
+    width: min(100%, 360px);
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: center;
+    color: var(--fg-1);
+  }
+  .btn {
+    margin-top: var(--space-4);
+  }
+  .table {
+    margin: var(--space-3) 0 0;
+    max-width: 100%;
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--fg-2);
+    overflow-x: auto;
+  }
+}

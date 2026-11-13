@@ -1,0 +1,46 @@
+/* Scope addOnce(): rows of circles, readout and refresh button */
+[data-example='animejs/scope-add-once'] {
+  .stage {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    width: min(100%, 360px);
+    padding: var(--space-3);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    height: 2.5rem;
+  }
+  .row-label {
+    width: 5rem;
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: var(--fg-3);
+  }
+  .circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .readout {
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--fg-2);
+    margin-top: var(--space-2);
+    white-space: pre;
+  }
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+  }
+}

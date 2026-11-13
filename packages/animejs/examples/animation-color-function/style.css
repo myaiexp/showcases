@@ -1,0 +1,8 @@
+/* color() function: circles and labels */
+[data-example='animejs/animation-color-function'] {
+  .row { display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; }
+  .cell { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); max-width: 8rem; text-align: center; }
+  .circle { width: 3rem; height: 3rem; border-radius: 50%; background-color: var(--bg-surface); border: 1px solid var(--fg-3); }
+  .tag { color: var(--fg-2); font-size: 0.7rem; }
+  .note { color: var(--fg-3); font-size: 0.8rem; margin: var(--space-4) 0 var(--space-2); text-align: center; }
+}

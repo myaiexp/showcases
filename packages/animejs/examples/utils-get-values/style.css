@@ -1,0 +1,22 @@
+/* utils.get(): lanes, squares and value labels */
+[data-example='animejs/utils-get-values'] {
+  .lane {
+    width: min(100%, 420px);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin-bottom: var(--space-3);
+  }
+  .sq {
+    width: 24px;
+    height: 24px;
+    background: var(--accent);
+  }
+  .label {
+    font-size: 11px;
+    color: var(--fg-3);
+  }
+  .value {
+    color: var(--fg-1);
+  }
+}
