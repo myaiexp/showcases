@@ -5,7 +5,7 @@ export default defineMeta({
   title: 'Timeline & stagger',
   summary:
     'A timeline sequences many tweens with a single playhead. Play, pause and reverse it, or drag the scrubber; stagger offsets each bar automatically.',
-  section: 'Basics',
+  section: 'Timelines',
   tags: ['timeline', 'stagger', 'scrub'],
   docs: [],
   provenance: 'legacy',

@@ -5,7 +5,7 @@ export default defineMeta({
   title: 'Easing explorer',
   summary:
     'Pick an ease and a duration, then send the ball across. Race common eases side by side to feel the difference.',
-  section: 'Basics',
+  section: 'Eases',
   tags: ['ease', 'fromTo', 'killTweensOf'],
   docs: [],
   provenance: 'legacy',

@@ -1,5 +1,2037 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-13T13:13:39.307Z",
+  "sources": [
+    {
+      "kind": "pages",
+      "urls": [
+        "https://gsap.com/cheatsheet",
+        "https://gsap.com/docs/v3/",
+        "https://gsap.com/docs/v3/Eases",
+        "https://gsap.com/docs/v3/Eases/CustomBounce",
+        "https://gsap.com/docs/v3/Eases/CustomEase",
+        "https://gsap.com/docs/v3/Eases/CustomWiggle",
+        "https://gsap.com/docs/v3/Eases/ExpoScaleEase",
+        "https://gsap.com/docs/v3/Eases/RoughEase",
+        "https://gsap.com/docs/v3/Eases/SlowMo",
+        "https://gsap.com/docs/v3/Eases/SteppedEase",
+        "https://gsap.com/docs/v3/GSAP/",
+        "https://gsap.com/docs/v3/GSAP/CorePlugins/Attributes",
+        "https://gsap.com/docs/v3/GSAP/CorePlugins/CSS",
+        "https://gsap.com/docs/v3/GSAP/CorePlugins/EndArray",
+        "https://gsap.com/docs/v3/GSAP/CorePlugins/Modifiers",
+        "https://gsap.com/docs/v3/GSAP/CorePlugins/Snap",
+        "https://gsap.com/docs/v3/GSAP/gsap.config()",
+        "https://gsap.com/docs/v3/GSAP/gsap.context()",
+        "https://gsap.com/docs/v3/GSAP/gsap.defaults()",
+        "https://gsap.com/docs/v3/GSAP/gsap.delayedCall()",
+        "https://gsap.com/docs/v3/GSAP/gsap.effects",
+        "https://gsap.com/docs/v3/GSAP/gsap.exportRoot()",
+        "https://gsap.com/docs/v3/GSAP/gsap.from()",
+        "https://gsap.com/docs/v3/GSAP/gsap.fromTo()",
+        "https://gsap.com/docs/v3/GSAP/gsap.getById()",
+        "https://gsap.com/docs/v3/GSAP/gsap.getProperty()",
+        "https://gsap.com/docs/v3/GSAP/gsap.getTweensOf()",
+        "https://gsap.com/docs/v3/GSAP/gsap.globalTimeline",
+        "https://gsap.com/docs/v3/GSAP/gsap.isTweening()",
+        "https://gsap.com/docs/v3/GSAP/gsap.killTweensOf()",
+        "https://gsap.com/docs/v3/GSAP/gsap.matchMedia()",
+        "https://gsap.com/docs/v3/GSAP/gsap.matchMediaRefresh()",
+        "https://gsap.com/docs/v3/GSAP/gsap.parseEase()",
+        "https://gsap.com/docs/v3/GSAP/gsap.quickSetter()",
+        "https://gsap.com/docs/v3/GSAP/gsap.quickTo()",
+        "https://gsap.com/docs/v3/GSAP/gsap.registerEase()",
+        "https://gsap.com/docs/v3/GSAP/gsap.registerEffect()",
+        "https://gsap.com/docs/v3/GSAP/gsap.registerPlugin()",
+        "https://gsap.com/docs/v3/GSAP/gsap.set()",
+        "https://gsap.com/docs/v3/GSAP/gsap.ticker",
+        "https://gsap.com/docs/v3/GSAP/gsap.timeline()",
+        "https://gsap.com/docs/v3/GSAP/gsap.to()",
+        "https://gsap.com/docs/v3/GSAP/gsap.updateRoot()",
+        "https://gsap.com/docs/v3/GSAP/gsap.utils",
+        "https://gsap.com/docs/v3/GSAP/gsap.version",
+        "https://gsap.com/docs/v3/GSAP/Timeline",
+        "https://gsap.com/docs/v3/GSAP/Timeline/add()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/addLabel()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/addPause()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/autoRemoveChildren",
+        "https://gsap.com/docs/v3/GSAP/Timeline/call()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/clear()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/currentLabel()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/data",
+        "https://gsap.com/docs/v3/GSAP/Timeline/delay()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/duration()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/endTime()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/eventCallback()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/from()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/fromTo()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/getById()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/getChildren()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/getTweensOf()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/globalTime()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/invalidate()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/isActive()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/iteration()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/kill()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/killTweensOf()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/labels",
+        "https://gsap.com/docs/v3/GSAP/Timeline/nextLabel()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/parent",
+        "https://gsap.com/docs/v3/GSAP/Timeline/pause()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/paused()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/play()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/previousLabel()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/progress()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/recent()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/remove()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/removeLabel()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/removePause()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/repeat()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/repeatDelay()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/restart()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/resume()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/reverse()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/reversed()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/revert()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/scrollTrigger",
+        "https://gsap.com/docs/v3/GSAP/Timeline/seek()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/set()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/shiftChildren()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/smoothChildTiming",
+        "https://gsap.com/docs/v3/GSAP/Timeline/startTime()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/then()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/time()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/timeScale()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/to()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/totalDuration()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/totalProgress()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/totalTime()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/tweenFromTo()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/tweenTo()",
+        "https://gsap.com/docs/v3/GSAP/Timeline/vars",
+        "https://gsap.com/docs/v3/GSAP/Timeline/yoyo()",
+        "https://gsap.com/docs/v3/GSAP/Tween",
+        "https://gsap.com/docs/v3/GSAP/Tween/data",
+        "https://gsap.com/docs/v3/GSAP/Tween/delay()",
+        "https://gsap.com/docs/v3/GSAP/Tween/duration()",
+        "https://gsap.com/docs/v3/GSAP/Tween/endTime()",
+        "https://gsap.com/docs/v3/GSAP/Tween/eventCallback()",
+        "https://gsap.com/docs/v3/GSAP/Tween/globalTime()",
+        "https://gsap.com/docs/v3/GSAP/Tween/invalidate()",
+        "https://gsap.com/docs/v3/GSAP/Tween/isActive()",
+        "https://gsap.com/docs/v3/GSAP/Tween/iteration()",
+        "https://gsap.com/docs/v3/GSAP/Tween/kill()",
+        "https://gsap.com/docs/v3/GSAP/Tween/pause()",
+        "https://gsap.com/docs/v3/GSAP/Tween/paused()",
+        "https://gsap.com/docs/v3/GSAP/Tween/play()",
+        "https://gsap.com/docs/v3/GSAP/Tween/progress()",
+        "https://gsap.com/docs/v3/GSAP/Tween/ratio",
+        "https://gsap.com/docs/v3/GSAP/Tween/repeat()",
+        "https://gsap.com/docs/v3/GSAP/Tween/repeatDelay()",
+        "https://gsap.com/docs/v3/GSAP/Tween/restart()",
+        "https://gsap.com/docs/v3/GSAP/Tween/resume()",
+        "https://gsap.com/docs/v3/GSAP/Tween/reverse()",
+        "https://gsap.com/docs/v3/GSAP/Tween/reversed()",
+        "https://gsap.com/docs/v3/GSAP/Tween/revert()",
+        "https://gsap.com/docs/v3/GSAP/Tween/scrollTrigger",
+        "https://gsap.com/docs/v3/GSAP/Tween/seek()",
+        "https://gsap.com/docs/v3/GSAP/Tween/startTime()",
+        "https://gsap.com/docs/v3/GSAP/Tween/targets()",
+        "https://gsap.com/docs/v3/GSAP/Tween/then()",
+        "https://gsap.com/docs/v3/GSAP/Tween/time()",
+        "https://gsap.com/docs/v3/GSAP/Tween/timeScale()",
+        "https://gsap.com/docs/v3/GSAP/Tween/totalDuration()",
+        "https://gsap.com/docs/v3/GSAP/Tween/totalProgress()",
+        "https://gsap.com/docs/v3/GSAP/Tween/totalTime()",
+        "https://gsap.com/docs/v3/GSAP/Tween/vars",
+        "https://gsap.com/docs/v3/GSAP/Tween/yoyo()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/checkPrefix()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/clamp()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/distribute()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/getUnit()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/interpolate()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/mapRange()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/normalize()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/pipe()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/random()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/selector()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/shuffle()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/snap()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/splitColor()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/toArray()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/unitize()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/wrap()",
+        "https://gsap.com/docs/v3/GSAP/UtilityMethods/wrapYoyo()",
+        "https://gsap.com/docs/v3/HelperFunctions/",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/addWeightedEases",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/alignOrigins",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/anchorsToProgress",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/bgSize",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/blendEases",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/callAfterResize",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/compensatedSkew",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/easeToLinear",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/FLIP",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/formatNumber",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/getDirectionalSnapFunc",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/getNestedLabelTime",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/getScrollLookup",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/getScrollPosition",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/imageSequenceScrub",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/killChildTweensOf",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/LottieScrollTrigger",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/nestedLinesSplit",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/pluckRandomFrom",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/progressiveBuild",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/seamlessLoop",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/smoothOriginChange",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/splitArabicText",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/splitTextAnimator",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/stopOverscroll",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/tickGSAPWhileHidden",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/trackDirection",
+        "https://gsap.com/docs/v3/HelperFunctions/helpers/weightedRandom",
+        "https://gsap.com/docs/v3/Installation",
+        "https://gsap.com/docs/v3/MotionPathHelper/kill()",
+        "https://gsap.com/docs/v3/MotionPathHelper/static.editPath()",
+        "https://gsap.com/docs/v3/Plugins",
+        "https://gsap.com/docs/v3/Plugins/CSSRulePlugin/",
+        "https://gsap.com/docs/v3/Plugins/CSSRulePlugin/methods/static-getRule()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/",
+        "https://gsap.com/docs/v3/Plugins/Draggable/addEventListener()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/applyBounds()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/autoScroll",
+        "https://gsap.com/docs/v3/Plugins/Draggable/deltaX",
+        "https://gsap.com/docs/v3/Plugins/Draggable/deltaY",
+        "https://gsap.com/docs/v3/Plugins/Draggable/disable()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/enable()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/enabled()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/endDrag()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/endRotation",
+        "https://gsap.com/docs/v3/Plugins/Draggable/endX",
+        "https://gsap.com/docs/v3/Plugins/Draggable/endY",
+        "https://gsap.com/docs/v3/Plugins/Draggable/getDirection()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/isPressed",
+        "https://gsap.com/docs/v3/Plugins/Draggable/isThrowing",
+        "https://gsap.com/docs/v3/Plugins/Draggable/kill()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/lockAxis",
+        "https://gsap.com/docs/v3/Plugins/Draggable/lockedAxis",
+        "https://gsap.com/docs/v3/Plugins/Draggable/maxRotation",
+        "https://gsap.com/docs/v3/Plugins/Draggable/maxX",
+        "https://gsap.com/docs/v3/Plugins/Draggable/maxY",
+        "https://gsap.com/docs/v3/Plugins/Draggable/minRotation",
+        "https://gsap.com/docs/v3/Plugins/Draggable/minX",
+        "https://gsap.com/docs/v3/Plugins/Draggable/minY",
+        "https://gsap.com/docs/v3/Plugins/Draggable/pointerEvent",
+        "https://gsap.com/docs/v3/Plugins/Draggable/pointerX",
+        "https://gsap.com/docs/v3/Plugins/Draggable/pointerY",
+        "https://gsap.com/docs/v3/Plugins/Draggable/rotation",
+        "https://gsap.com/docs/v3/Plugins/Draggable/startDrag()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/startX",
+        "https://gsap.com/docs/v3/Plugins/Draggable/startY",
+        "https://gsap.com/docs/v3/Plugins/Draggable/static.create()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/static.get()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/static.hitTest()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/static.timeSinceDrag()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/target",
+        "https://gsap.com/docs/v3/Plugins/Draggable/tween",
+        "https://gsap.com/docs/v3/Plugins/Draggable/update()",
+        "https://gsap.com/docs/v3/Plugins/Draggable/vars",
+        "https://gsap.com/docs/v3/Plugins/Draggable/x",
+        "https://gsap.com/docs/v3/Plugins/Draggable/y",
+        "https://gsap.com/docs/v3/Plugins/Draggable/zIndex",
+        "https://gsap.com/docs/v3/Plugins/DrawSVGPlugin",
+        "https://gsap.com/docs/v3/Plugins/DrawSVGPlugin/static.getLength()",
+        "https://gsap.com/docs/v3/Plugins/DrawSVGPlugin/static.getPosition()",
+        "https://gsap.com/docs/v3/Plugins/EaselPlugin",
+        "https://gsap.com/docs/v3/Plugins/Flip/",
+        "https://gsap.com/docs/v3/Plugins/Flip/static.batch()",
+        "https://gsap.com/docs/v3/Plugins/Flip/static.fit()",
+        "https://gsap.com/docs/v3/Plugins/Flip/static.from()",
+        "https://gsap.com/docs/v3/Plugins/Flip/static.getState()",
+        "https://gsap.com/docs/v3/Plugins/Flip/static.isFlipping()",
+        "https://gsap.com/docs/v3/Plugins/Flip/static.killFlipsOf()",
+        "https://gsap.com/docs/v3/Plugins/Flip/static.makeAbsolute()",
+        "https://gsap.com/docs/v3/Plugins/Flip/static.to()",
+        "https://gsap.com/docs/v3/Plugins/GSDevTools",
+        "https://gsap.com/docs/v3/Plugins/GSDevTools/static.create()",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/static.getVelocity()",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/static.isTracking()",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/static.track()",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/static.untrack()",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.addProp()",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.get()",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.getByTarget()",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.isTracking()",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.isTrackingProp()",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.removeProp()",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.target",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.track",
+        "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.untrack()",
+        "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin",
+        "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.convertToPath",
+        "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.defaultRender",
+        "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.defaultType",
+        "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.defaultUpdateTarget",
+        "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.rawPathToString",
+        "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.stringToRawPath",
+        "https://gsap.com/docs/v3/Plugins/MotionPathHelper",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/methods/static-pointsToSegment",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.arrayToRawPath()",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.convertCoordinates()",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.convertToPath()",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getAlignMatrix()",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getGlobalMatrix()",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getLength()",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getPositionOnPath()",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getRawPath()",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getRelativePosition()",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.rawPathToString()",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.sliceRawPath()",
+        "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.stringToRawPath()",
+        "https://gsap.com/docs/v3/Plugins/Observer/",
+        "https://gsap.com/docs/v3/Plugins/Observer/deltaX",
+        "https://gsap.com/docs/v3/Plugins/Observer/deltaY",
+        "https://gsap.com/docs/v3/Plugins/Observer/disable()",
+        "https://gsap.com/docs/v3/Plugins/Observer/enable()",
+        "https://gsap.com/docs/v3/Plugins/Observer/event",
+        "https://gsap.com/docs/v3/Plugins/Observer/isDragging",
+        "https://gsap.com/docs/v3/Plugins/Observer/isEnabled",
+        "https://gsap.com/docs/v3/Plugins/Observer/isPressed",
+        "https://gsap.com/docs/v3/Plugins/Observer/kill()",
+        "https://gsap.com/docs/v3/Plugins/Observer/startX",
+        "https://gsap.com/docs/v3/Plugins/Observer/startY",
+        "https://gsap.com/docs/v3/Plugins/Observer/static.create()",
+        "https://gsap.com/docs/v3/Plugins/Observer/static.getAll()",
+        "https://gsap.com/docs/v3/Plugins/Observer/static.getById()",
+        "https://gsap.com/docs/v3/Plugins/Observer/static.isTouch",
+        "https://gsap.com/docs/v3/Plugins/Observer/target",
+        "https://gsap.com/docs/v3/Plugins/Observer/vars",
+        "https://gsap.com/docs/v3/Plugins/Observer/velocityX",
+        "https://gsap.com/docs/v3/Plugins/Observer/velocityY",
+        "https://gsap.com/docs/v3/Plugins/Observer/x",
+        "https://gsap.com/docs/v3/Plugins/Observer/y",
+        "https://gsap.com/docs/v3/Plugins/Physics2DPlugin",
+        "https://gsap.com/docs/v3/Plugins/PhysicsPropsPlugin",
+        "https://gsap.com/docs/v3/Plugins/PixiPlugin/",
+        "https://gsap.com/docs/v3/Plugins/PixiPlugin/static.registerPIXI()",
+        "https://gsap.com/docs/v3/Plugins/ScrambleTextPlugin",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/content()",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/effects()",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/getVelocity()",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/kill()",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/offset()",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/paused()",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/progress",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/scrollTo()",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/scrollTop()",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/scrollTrigger",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/smooth()",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/static.create()",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/static.get()",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/vars",
+        "https://gsap.com/docs/v3/Plugins/ScrollSmoother/wrapper()",
+        "https://gsap.com/docs/v3/Plugins/ScrollToPlugin",
+        "https://gsap.com/docs/v3/Plugins/ScrollToPlugin/config()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/animation",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/direction",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/disable()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/enable()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/end",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/getTween()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/getVelocity()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/isActive",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/kill()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/labelToScroll()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/next()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/pin",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/previous()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/progress",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/refresh()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/scroll()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/scroller",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/start",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.addEventListener()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.batch()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.clearMatchMedia()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.clearScrollMemory()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.config()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.create()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.defaults()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.getAll()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.getById()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.isInViewport()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.isScrolling()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.isTouch",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.killAll()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.matchMedia()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.maxScroll()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.normalizeScroll()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.observe()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.positionInViewport()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.refresh()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.removeEventListener()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.saveStyles()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.scrollerProxy()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.snapDirectional()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.sort()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.update()",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/trigger",
+        "https://gsap.com/docs/v3/Plugins/ScrollTrigger/vars",
+        "https://gsap.com/docs/v3/Plugins/SplitText/",
+        "https://gsap.com/docs/v3/Plugins/SplitText/chars",
+        "https://gsap.com/docs/v3/Plugins/SplitText/isSplit",
+        "https://gsap.com/docs/v3/Plugins/SplitText/kill()",
+        "https://gsap.com/docs/v3/Plugins/SplitText/lines",
+        "https://gsap.com/docs/v3/Plugins/SplitText/masks",
+        "https://gsap.com/docs/v3/Plugins/SplitText/revert()",
+        "https://gsap.com/docs/v3/Plugins/SplitText/split()",
+        "https://gsap.com/docs/v3/Plugins/SplitText/static.create()",
+        "https://gsap.com/docs/v3/Plugins/SplitText/vars",
+        "https://gsap.com/docs/v3/Plugins/SplitText/words",
+        "https://gsap.com/docs/v3/Plugins/TextPlugin",
+        "https://gsap.com/resources/a11y",
+        "https://gsap.com/resources/conflict",
+        "https://gsap.com/resources/fouc",
+        "https://gsap.com/resources/get-started",
+        "https://gsap.com/resources/getting-started/control",
+        "https://gsap.com/resources/getting-started/Easing",
+        "https://gsap.com/resources/getting-started/Staggers",
+        "https://gsap.com/resources/getting-started/timelines",
+        "https://gsap.com/resources/immediaterender",
+        "https://gsap.com/resources/keyframes",
+        "https://gsap.com/resources/mistakes",
+        "https://gsap.com/resources/position-parameter",
+        "https://gsap.com/resources/st-mistakes",
+        "https://gsap.com/resources/svg"
+      ]
+    }
+  ],
+  "files": {
+    "pages/gsap-com/cheatsheet.md": {
+      "url": "https://gsap.com/cheatsheet",
+      "sha256": "a634ab8b21ef2e0cedb9117ac73750314231c85409b78e1d95a23ac3bcd82b3f"
+    },
+    "pages/gsap-com/docs/v3.md": {
+      "url": "https://gsap.com/docs/v3/",
+      "sha256": "2156714eb6b7a2057eecbf465088d9d276faf57d87e3976978b92df229488daa"
+    },
+    "pages/gsap-com/docs/v3/Eases.md": {
+      "url": "https://gsap.com/docs/v3/Eases",
+      "sha256": "463a1032d321a49a323027ef101d0549ee4d97703dbe691ca93c5037e682a226"
+    },
+    "pages/gsap-com/docs/v3/Eases/CustomBounce.md": {
+      "url": "https://gsap.com/docs/v3/Eases/CustomBounce",
+      "sha256": "a4b96ec3e8213833c12ef840fb3469521ca95b2fe69f7444a725ef8ddd52836f"
+    },
+    "pages/gsap-com/docs/v3/Eases/CustomEase.md": {
+      "url": "https://gsap.com/docs/v3/Eases/CustomEase",
+      "sha256": "e5f6dfcae78f19551a71e5c3a1160d3d5171a46dfebc4d9abe3516d5bdaa81ed"
+    },
+    "pages/gsap-com/docs/v3/Eases/CustomWiggle.md": {
+      "url": "https://gsap.com/docs/v3/Eases/CustomWiggle",
+      "sha256": "ab4852548dcaec3cac3df070db9e422aac12a0c2f7fd410fda51aadbb018d3a9"
+    },
+    "pages/gsap-com/docs/v3/Eases/ExpoScaleEase.md": {
+      "url": "https://gsap.com/docs/v3/Eases/ExpoScaleEase",
+      "sha256": "9d7874507d8bd69150a7cff342ada257d081c180e4aa1a791439c6e82ab13cd3"
+    },
+    "pages/gsap-com/docs/v3/Eases/RoughEase.md": {
+      "url": "https://gsap.com/docs/v3/Eases/RoughEase",
+      "sha256": "64ea4907f09849feff06a2acd6dba292ead99b8ae4f4716f0a7fb78cc4a19d21"
+    },
+    "pages/gsap-com/docs/v3/Eases/SlowMo.md": {
+      "url": "https://gsap.com/docs/v3/Eases/SlowMo",
+      "sha256": "9cbb73c383431fb626da8f5bbb3f54a3d8608646b1a5726b7e8f14379421e0fa"
+    },
+    "pages/gsap-com/docs/v3/Eases/SteppedEase.md": {
+      "url": "https://gsap.com/docs/v3/Eases/SteppedEase",
+      "sha256": "e20b99f2dccbf621811637faae3252d8099a80d4c6db5452b2122216467bb440"
+    },
+    "pages/gsap-com/docs/v3/GSAP.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/",
+      "sha256": "2c6f56a3a4d51b1a7e9de5be16a6c5cda3fafa04bd86f9e2908377649173f1e0"
+    },
+    "pages/gsap-com/docs/v3/GSAP/CorePlugins/Attributes.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/CorePlugins/Attributes",
+      "sha256": "0b5de9c466e8508121ff88e5b1047a9b7669369974fdd40e0b089b9dca99e956"
+    },
+    "pages/gsap-com/docs/v3/GSAP/CorePlugins/CSS.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/CorePlugins/CSS",
+      "sha256": "ba4d17908eebff1e0151345484e2b0225d3ae1bccbc65dd7fb7622daf109d992"
+    },
+    "pages/gsap-com/docs/v3/GSAP/CorePlugins/EndArray.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/CorePlugins/EndArray",
+      "sha256": "036e87f9822abe13fe26615c2381a06648620ff2a1d4f7e577ef18aeeffd5d8e"
+    },
+    "pages/gsap-com/docs/v3/GSAP/CorePlugins/Modifiers.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/CorePlugins/Modifiers",
+      "sha256": "0fa26be92e5826125c9f0f8609d4f37d9b2074c5cbd4b419c0da0ee9dfca3dbd"
+    },
+    "pages/gsap-com/docs/v3/GSAP/CorePlugins/Snap.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/CorePlugins/Snap",
+      "sha256": "94de3f17e4684352c88b0b38279e14eda2e1cc7c051d14e640069d3b25057309"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-config-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.config()",
+      "sha256": "cea0ced476da633960d51a1664cd3025f1a5f8dce2c706b372ec0d7a6dcd25c8"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-context-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.context()",
+      "sha256": "3500070e86ae8cc2ccaab204058bc82eda115e37c04e14f11bfd2de0a74d6f2c"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-defaults-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.defaults()",
+      "sha256": "fec49aa0d56525d7e59d8fe3977a0cc21091b344c4a79a6000d9d03f12c5d444"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-delayedCall-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.delayedCall()",
+      "sha256": "eed263961051a1ab0b65cdfb1b6d63555f9237500461f5313a488c05f5050bdb"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-effects.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.effects",
+      "sha256": "66301773e3b17e24e85fe924057c3f5ea83d4e12673fb7ec89c89dce0efcde72"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-exportRoot-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.exportRoot()",
+      "sha256": "016b383bd7ca1835c92fc3781ca24504ad0b7eff6578de12ef6a6ee452d0ea7b"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-from-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.from()",
+      "sha256": "d5c66dbf33a6d17fa981d809eebde8dd81bf3773cfa246b2b0bd0ad94a43eeb8"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-fromTo-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.fromTo()",
+      "sha256": "f9944873c6fb4948073e4dbea87c6691df4413df39ed15c63b253e4618ceb747"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-getById-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.getById()",
+      "sha256": "e38b6918c62522f00d5ced7fc9530ac9631e4abba827f238639e0c2c5a6aa489"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-getProperty-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.getProperty()",
+      "sha256": "9923eddfd61db2515d341e4886f50978184a461b1f3ff2f2976d39b1311e0f00"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-getTweensOf-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.getTweensOf()",
+      "sha256": "f34a27cb5ad67f581d822944252fb435a592d2c752b215463e3ea05615ac0454"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-globalTimeline.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.globalTimeline",
+      "sha256": "39417bf8f0b350f8cf57b41d07c4e7df2361ff10940d138c5e1c1f40dcc1beac"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-isTweening-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.isTweening()",
+      "sha256": "207e20539e9da23b8a9c37ac79ac59c4e592032c90099e3ecd452bf0f57d5647"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-killTweensOf-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.killTweensOf()",
+      "sha256": "12b58b3ff580a858be63a4fc82d3c958212dae4787d224f99b2139db051227f3"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-matchMedia-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.matchMedia()",
+      "sha256": "849e911104cb54a7b219ad0ce381700dd3c483e065fa5df59ce6f7bb4805f274"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-matchMediaRefresh-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.matchMediaRefresh()",
+      "sha256": "901eb74bc80ffd8f60da5d25705e51460852ee3992da3138ea80d20a5b94bbec"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-parseEase-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.parseEase()",
+      "sha256": "64ebe671e3935a97036de0b80d6013f1d05362cc6eb31c3174e2e753faae896c"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-quickSetter-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.quickSetter()",
+      "sha256": "146ae534f8d9069978c9fad3a505e2d1f344a17ad4a9f5af8ef5f8895a3014e7"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-quickTo-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.quickTo()",
+      "sha256": "bcd1d773fc7f68c911dbd8142a114f84b6add3cf3e6d7718cabcbbf8a9e8b59c"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-registerEase-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.registerEase()",
+      "sha256": "1f1a74b31e521f7faaa8fd881de43668c7d01f7f1d2e60def661d61d79a1ccd9"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-registerEffect-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.registerEffect()",
+      "sha256": "ffaae8a1a005ac641427c4a1a31591fb16593406a41592e727eac3bf7450732a"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-registerPlugin-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.registerPlugin()",
+      "sha256": "be78b208720bc40c64e1939dfbaba2aa8d8ae420d3c7c2bc57a25b71a2560e1a"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-set-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.set()",
+      "sha256": "266afa9cb63ea8f286c78dc819bd32746d0a455e82d1ebb969b6a8a1c2e351e7"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-ticker.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.ticker",
+      "sha256": "92becc4f4fb600a952dfa16b94f45d33e7a6c50c65c69d99878448a144880cae"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-timeline-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.timeline()",
+      "sha256": "6bf26b835ba0e93e55ab947d2105ad6ded80af6ad5e7584edb4118272521ca26"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-to-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.to()",
+      "sha256": "9a29dd3ee4ea9d56f0b95f202f384fe03f5fd9dc700f8d5de37bc6082698d215"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-updateRoot-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.updateRoot()",
+      "sha256": "bc3448874daf25bb348ea717fe6bf19161228a85af599fdebbaa0f12428087dc"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-utils.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.utils",
+      "sha256": "b3ed161a3f5cf2f672fb1ae81a866d3db883bcd7cfe034140ca94ef0a0ad98e0"
+    },
+    "pages/gsap-com/docs/v3/GSAP/gsap-version.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/gsap.version",
+      "sha256": "09a194239b468fd5d292fb953b8edbc8ccc30241825e5e9c8da29a1591b47241"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline",
+      "sha256": "0136efd80ab7798a7c60a863117d864f121eaf1d529a59e2562ae86aaea4c5aa"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/add-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/add()",
+      "sha256": "73a2962033a0772680b35f1403732d7b3c97a5f108d67662d49e54493b49b570"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/addLabel-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/addLabel()",
+      "sha256": "09bf5a268b63783ce545bec9e6574d39b7d6f1b8a7b3f5dbf3a7c5d3f8bbf7c4"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/addPause-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/addPause()",
+      "sha256": "2fff0d9bcb63095f98cf25525cc51251a697719d4db9a254c55573946cf642d0"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/autoRemoveChildren.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/autoRemoveChildren",
+      "sha256": "67f6714dfa310afdeac045710ac491ba4df189ec081227160c6f0790af9dd42e"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/call-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/call()",
+      "sha256": "c8fb7760abd1ddbadc8b30bba444d40da61e52c40cd49096d0ef8d5f6ff6e702"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/clear-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/clear()",
+      "sha256": "6f0c3c706de30695306a6eed454c8cc915adad822c65e58b82e9472aab58bc70"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/currentLabel-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/currentLabel()",
+      "sha256": "1c21808d53b0c0a0b6f5ef238c739eaeb724fbffe04c55e15774bf8c24a598f3"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/data.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/data",
+      "sha256": "224af2a1102d3de17e7a055d523fa59ed6b07ceaee1972bf95b66a19873c656d"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/delay-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/delay()",
+      "sha256": "27ac2c1900aa5b344c9a51decddb91d1b68a05f4b9f2d0762ec4c49922f801fc"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/duration-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/duration()",
+      "sha256": "e888e9098ec2d3a7836af721af2685d23dfb18bbfd940307e33bf5e25016409e"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/endTime-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/endTime()",
+      "sha256": "60167d95613b0e733935a52436cb57b43d3d7b682fba3f5b562deba0d3eaec69"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/eventCallback-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/eventCallback()",
+      "sha256": "46c2947362050066f9479ff43008155bcae13e48628d2c18b19f185897583554"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/from-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/from()",
+      "sha256": "ba660e2c971b5a0a26bcdce70a1b97c0ec5274bc66368432c643d04919806b6b"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/fromTo-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/fromTo()",
+      "sha256": "cc764ba7d081935b93a0e5fb88967409537bc34eb540208d362ff9f9d195e4be"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/getById-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/getById()",
+      "sha256": "e4847cb603afcc4309e6f46a3c8fa1ba037d196d8db09aa386450acfd65ab796"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/getChildren-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/getChildren()",
+      "sha256": "6123a2da86b423da073317cf37d6adc0d21989cfde854e8a58b4e9069b535efd"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/getTweensOf-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/getTweensOf()",
+      "sha256": "edae1192d7e13786a41c8a0288c0620a34516e2319c579c49c8367e430be457e"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/globalTime-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/globalTime()",
+      "sha256": "0a4a32505ad5973d3b1fc28ef43a233ff9484b9c9a53b366d6fcce98029f1e7b"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/invalidate-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/invalidate()",
+      "sha256": "481a8a5d221a385a7c6c5e189aa87d14ab93e15ce9842226e65756476fa6c95d"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/isActive-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/isActive()",
+      "sha256": "309e834729a185b8e0eb5e2bdf908d405769bb8d17c90b799c07a20b35d5dba4"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/iteration-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/iteration()",
+      "sha256": "eafe873bb89b480b49b0c7d7f862673e3e8bd036953784b221a562e0d1ee233e"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/kill-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/kill()",
+      "sha256": "8121d449bce1c705a5c678d0eb02ec8f8170a4315a2aa40322b45e9e25baab72"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/killTweensOf-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/killTweensOf()",
+      "sha256": "529afe6d3bd1a25ceab00be7de2d02e098ea2571c18882a05441f489b1930f42"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/labels.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/labels",
+      "sha256": "266512d2a86719983a7f02e6c51155f45de6149690a2f42bf3ae41ed08e2cf8d"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/nextLabel-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/nextLabel()",
+      "sha256": "518dc40aca002f626fec790cf23ca8c293abb6317b08ea01a9f0e1b08f5803b9"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/parent.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/parent",
+      "sha256": "b377727551c1db5dcd2912a0186f1da049755d243b669887165563b0032a1b38"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/pause-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/pause()",
+      "sha256": "daec22ef913afd758be8c190bde10e9e748290e7232312636de0380e72f515fa"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/paused-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/paused()",
+      "sha256": "953b89c94b30ef958ae5a2911ddfd481dfdfc12638b9a064160615237bde2e3d"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/play-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/play()",
+      "sha256": "b744e0874587f97f75443b58d771db1bebd5307190884c10c451dca1a9a970af"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/previousLabel-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/previousLabel()",
+      "sha256": "b666524b10f0513b478e326a53356f4c47386023b82bf756ecf5e9404b4d7275"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/progress-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/progress()",
+      "sha256": "1ec9ec18462cc3047af0e2b20f6642e5b48bfb3513c52fbed61aeefae0dec106"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/recent-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/recent()",
+      "sha256": "7e6f85adae193e981e71ee2c0d2facf4744d15891caa8583c0299129dab59a6e"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/remove-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/remove()",
+      "sha256": "b4c175e7de71fc6e8b73f258fd85586201ac49f1d0da458ab3fec19bfeed4338"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/removeLabel-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/removeLabel()",
+      "sha256": "59e7d250612b5cc3cd59541190222a117f9a9d025093d0536f9eec91ebdda374"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/removePause-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/removePause()",
+      "sha256": "1b28b178e950f0f4ea48c1c11667920dc03de11315ae39f9d8c97be791501b4e"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/repeat-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/repeat()",
+      "sha256": "fefab302907fa08ca3d1ffcd8f8903dc8ada254a7db1ad7725640f6042cd3b08"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/repeatDelay-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/repeatDelay()",
+      "sha256": "f1b1ec496117dbed0745d7b3c1e64e751a187ffd2f8e164c64d1fc2ab614382d"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/restart-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/restart()",
+      "sha256": "84c81fc5a8aac79443b92b7f7a08674353eadf311206e449aec60b0a2a8541a6"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/resume-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/resume()",
+      "sha256": "f926430030b4d52573081a19b6f04374718a145713f616577e6e2d358bfe82b8"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/reverse-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/reverse()",
+      "sha256": "a48c2701c1d75fea0beaad8b0f3d66aad977bbddebdca9348168603486ac7da2"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/reversed-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/reversed()",
+      "sha256": "2e0dfa9aa89018c667339a111e8a321d644a2ba208eba0a7b36a06ab21fb3fd8"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/revert-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/revert()",
+      "sha256": "e9f29f9a4630d3b8f81c27170b185d145acdf1bcdac9565739b31c9282b3980a"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/scrollTrigger.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/scrollTrigger",
+      "sha256": "59cecc532c2f1b1a19eeaff8880e4b2b43cf8ac59d0d2f58b8b6c81fd8d44e35"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/seek-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/seek()",
+      "sha256": "d78096c718de4962aa4238b186523d754bfd12b26dbd0ba068e3da988debe89e"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/set-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/set()",
+      "sha256": "17951f6382446b6824cbccf549952af3d7287aa3ef85edcf34d03685edc9ec66"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/shiftChildren-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/shiftChildren()",
+      "sha256": "f5f2ca368ab957c591b142da3bae7c116ec045564e1a361b1e4553a1324657cb"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/smoothChildTiming.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/smoothChildTiming",
+      "sha256": "8deb6f7b4f42ce75a576598a24d1a16e4d38bee6f67ae1a8594d2e3d5617607d"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/startTime-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/startTime()",
+      "sha256": "a6e9f9000dec682ac7b0bd75fa51d351cc419b3192b39956ea22ecbbbea3f441"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/then-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/then()",
+      "sha256": "fb5f32054412214f634dd3aecc92f4e0508ea86f587b39cf6e0620bb53f5398c"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/time-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/time()",
+      "sha256": "7f665b2b9efb4928b8818267cabd97e58b5fa0972279abe8d4b52c997aeaa83a"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/timeScale-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/timeScale()",
+      "sha256": "d9e6ebf59cee51e669d067f38738b5bb72668c09e53a0c2bc2ae561310af71ee"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/to-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/to()",
+      "sha256": "10239b309402cfbb5fd81502f49371ab31a2b7695fd48b26970355c03c158539"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/totalDuration-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/totalDuration()",
+      "sha256": "46ffb852fdfc10f59bbc7c0902860f70996956ded80ef36b4b5920cb995ecd2c"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/totalProgress-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/totalProgress()",
+      "sha256": "6372b05bbaaaf11116f9f43270ec0df201fd9bb697015b1d1c92c39c12e30014"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/totalTime-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/totalTime()",
+      "sha256": "d7fb96a0481dfae8a77aeedd5269eadca20ceb273f1fdfa60eac5f8c864acd3b"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/tweenFromTo-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/tweenFromTo()",
+      "sha256": "4fad40885e1af46d30c53ad60c6e380571f6f40682015b78cbd1169e2e44ae55"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/tweenTo-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/tweenTo()",
+      "sha256": "9c4b484f23025564e8f4a04415066afcd590355412d83c4a67ac2aa247c73ad3"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/vars.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/vars",
+      "sha256": "29920ac076d675351ae2ec45fe793d9bc5b4c3585aa1bfcbb0707f45029876c6"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Timeline/yoyo-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Timeline/yoyo()",
+      "sha256": "648459888be841976db89e5a91fbfedc259544b5b3c4773d34df8658e722ef52"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween",
+      "sha256": "33544c9297daec3f5466eb17c4ab7d70edfad345a77cc2dd030d4a8bef5b61de"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/data.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/data",
+      "sha256": "1e09206d29e8efbe6ec151c4f442638db8c7d878692114eb413b410adc0a9553"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/delay-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/delay()",
+      "sha256": "e4adaf06e39e138c37c2d08cf54757d92453237d3372c1765a9d8383e6fa58b3"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/duration-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/duration()",
+      "sha256": "87dbba3c804ad822fdb98b3e9dbb7f439d07cd2ab09c1b496d18b035ada9e3b9"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/endTime-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/endTime()",
+      "sha256": "26eb5414c86e6520a6dac51a2608b6026825f4295dc830ffa4f5a1cc4c8d69ca"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/eventCallback-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/eventCallback()",
+      "sha256": "7094714dd30aed4b79f6e07e6f8c791e9a4b83b6d55e5ceee81be8159811fed3"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/globalTime-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/globalTime()",
+      "sha256": "265608d208c256e620750dcdad1a1e1fa13bc093bc6baa69ca7b677bea15fe1a"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/invalidate-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/invalidate()",
+      "sha256": "1724bfba27b10edacec14741633430b6b4e4dbaceb62a39accfe385c5c1725d3"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/isActive-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/isActive()",
+      "sha256": "548ba03811bc4a4792c988cd232afdbcace6aa0983b1c0735f2191040be4cc2d"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/iteration-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/iteration()",
+      "sha256": "c9ef754b2de7ad84540a19d315d85a7a643feaef95cfe8bbe72e9f4ea809b905"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/kill-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/kill()",
+      "sha256": "b6375fd602be76905e0d9aab0e67cf52d998939e9bed99a7a8396d6db400f211"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/pause-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/pause()",
+      "sha256": "852bc0237cc336020b35e262bef730f6c9f676ec4adb771fed1184855f9598f5"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/paused-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/paused()",
+      "sha256": "cf0db4244eb936e5981c897fa9369906cf408a5de5ca68eebc6c4b58ebe9d9f0"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/play-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/play()",
+      "sha256": "a79077eea9de1e5ffa1d9febc2842dceb3ed9f7154040492f40f97e9d09ab238"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/progress-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/progress()",
+      "sha256": "4c26b45465592da1f3e9525626ed39a60c1cd24d03111e3fa6e403c680dedf15"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/ratio.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/ratio",
+      "sha256": "faba70cff484ce09384b36a8a6961ea03092eff9e08f857dfa0ca0e15e53aaa8"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/repeat-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/repeat()",
+      "sha256": "7aba329bedcca4fd0ac63aeb4cd255b82473b5da645e31cfb6fecf08609980f2"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/repeatDelay-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/repeatDelay()",
+      "sha256": "af60ae7068167f38e1cacfb27db0424a54ad14f30ee442b8a0e76f034923e64d"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/restart-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/restart()",
+      "sha256": "34a6398533b1243f2385117611a99ef7f248ea864adb686a9760a173d8e25e17"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/resume-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/resume()",
+      "sha256": "2bbcdf41124403637d60b561d76fe81e31fe765238e91f40122fd629a6c53d74"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/reverse-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/reverse()",
+      "sha256": "3e106d28519a7d8c0118dac9809d1ee1660d4167c0d0b9611eed77ba2aecb821"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/reversed-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/reversed()",
+      "sha256": "1774cf624ec27ae1e65a02ba44cc04fdb5d20eee6b39825fa578c8f3a4dc0513"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/revert-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/revert()",
+      "sha256": "e6ef0d8f927436b7edc92baabcc9db42c4683695f7211cb0f0378a860647cc1b"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/scrollTrigger.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/scrollTrigger",
+      "sha256": "90d9b6f7438ac20f9e200e91f22545b96bd26d08d2275b8b321465a86c49972a"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/seek-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/seek()",
+      "sha256": "0d8d3d0ccda21c1252b099bbb3c5020fd46e472e8c2f93c5df3a4f4aaa6dcc6f"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/startTime-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/startTime()",
+      "sha256": "ff4a8f1eb9ff172d5014cd6d5d5d4dc8de3994f87297682300abe2b676eb39f8"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/targets-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/targets()",
+      "sha256": "88f92edc1c4465c2154c981690a9e589cfa3f1db41f3be02a1038cd50f03815d"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/then-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/then()",
+      "sha256": "7a0170d01ddee8a107faf4140cd220e0286f19b40a9a7ad9920e8f5c0382174c"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/time-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/time()",
+      "sha256": "0c99e67fa360c9f6038d2657efc34b631d360234c4a1017a3ab734ac59c489f1"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/timeScale-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/timeScale()",
+      "sha256": "cfdff807ebd383d68e63026b7ae2fc5947dcfa0fc98d0e742c8f41368a1a9a23"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/totalDuration-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/totalDuration()",
+      "sha256": "0c1949821c0fb33b8931943799c3709af489ed64e4b12e4e87ebcdea9f571a19"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/totalProgress-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/totalProgress()",
+      "sha256": "9447c7659c17d15dec67952a3b04d81939742137ec5c52ff89804ae7c8781940"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/totalTime-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/totalTime()",
+      "sha256": "c3a67874382dfd048631e1b4782787402ee490d539aa42dc96a8052910c77841"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/vars.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/vars",
+      "sha256": "5a32a73eea830705a0b338ee306ba039f09cbeb6a5162405f0d406f38a8d6ab2"
+    },
+    "pages/gsap-com/docs/v3/GSAP/Tween/yoyo-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/Tween/yoyo()",
+      "sha256": "e430f6c4444ef2eef779949a3855a844787596f54dd6cb265bbd98880018b896"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods",
+      "sha256": "87fbdf02966c238a25a96d61f344839ba9ee7dd9c14562a2d09589c3c69d1c0b"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/checkPrefix-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/checkPrefix()",
+      "sha256": "9304bff0ef07caf1dc2152acdf447e9de7e23b4743f85f07160f019ce5a47f20"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/clamp-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/clamp()",
+      "sha256": "bb5843af3ad7f45bde1c04a578ce889ee57e68e253c759a728d74ac42711ad15"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/distribute-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/distribute()",
+      "sha256": "c9deb0157c729afab26f246e1417cfe54e1d82bc5a22c5f8aff79a6d23337d8b"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/getUnit-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/getUnit()",
+      "sha256": "57c9eb97ec91ffc13cc126c6a11fc5c4c3f552ae328b1ba618803220a4d16204"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/interpolate-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/interpolate()",
+      "sha256": "73b7ff112db6327f6f25127ab1cbcce4d1bf8db15bcf46ff070221847d28fbce"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/mapRange-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/mapRange()",
+      "sha256": "90fd9af874024e9d129a1f0982aff910577d44b51f6e28f0987a422b4500fe99"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/normalize-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/normalize()",
+      "sha256": "452a98ee1786d90fbeeeb36702d16d90a8fe5116b31a2ab60ab08a1cddaecf85"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/pipe-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/pipe()",
+      "sha256": "43f3fab970d57ea3be7a161b9a1894dbd0f1d0f87e8fe66b5f6b8495cfa0722b"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/random-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/random()",
+      "sha256": "67fd72918ef32d784d60ea0714a9114966575acb6d5a5915e68cbba0ff484dae"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/selector-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/selector()",
+      "sha256": "94eb1a30fa8ae5e16ad15edc5570d901d7d75eb0a32e830ec6e0139f3c44d0d8"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/shuffle-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/shuffle()",
+      "sha256": "aeb7cfb86de28731ec04a6e71898fdfebffa1c426e374a6fbfdf710414640b65"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/snap-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/snap()",
+      "sha256": "d7750704494fba0aa083e89aabc523c35be8656d89d49e8cb1c9fa06e5eb67c0"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/splitColor-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/splitColor()",
+      "sha256": "ecb1617f329e7b4235298d573f0e3abee4ace4638ed34de26b69bcba0fd355e6"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/toArray-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/toArray()",
+      "sha256": "fde1691962ce63fe9ccccb50e85ea534a2dab8e7c4c8c5c8e4cbb60cd6decc66"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/unitize-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/unitize()",
+      "sha256": "2f860a72af196a1a0d216545f8d0231aee3bab5c60948fbee78a61d433062166"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/wrap-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/wrap()",
+      "sha256": "16bef53c8b064047ea27f1b8523631d1610eda0025bc9f6f60a381dcd2a8b5e7"
+    },
+    "pages/gsap-com/docs/v3/GSAP/UtilityMethods/wrapYoyo-.md": {
+      "url": "https://gsap.com/docs/v3/GSAP/UtilityMethods/wrapYoyo()",
+      "sha256": "2762e9f2f85a30910f4bdc62fd9dcdd881470962fe2b1d1731973d7b53b2ef53"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/",
+      "sha256": "624a27058ffa4f517e613d3d1b18b19475054c7dc59c1181d22d289455dcd072"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/addWeightedEases.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/addWeightedEases",
+      "sha256": "152c73d57dd8df630f312379e7ed3136283753e9fa71e6332453daaf45f349f5"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/alignOrigins.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/alignOrigins",
+      "sha256": "bbdefc6620dbb94503aa4aa9ad6793024666a220c200f2019d0d4491eb585280"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/anchorsToProgress.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/anchorsToProgress",
+      "sha256": "fdffd3608bf0922404bd81972a724b36a78a8fcea3a4c58b358426e3d80d9b66"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/bgSize.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/bgSize",
+      "sha256": "57602ace3a2398a3f79e947750fedcf071670ab23046245a1d13d5d789d3c6ce"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/blendEases.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/blendEases",
+      "sha256": "1d73dcde73d0d30e5e63d49b0928e4e17ba16fdc8cfb2f1b9068364a3178cea9"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/callAfterResize.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/callAfterResize",
+      "sha256": "16cd9188193635e17f2235dd61f2a1248642cf359fdc5b95888516f809aae100"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/compensatedSkew.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/compensatedSkew",
+      "sha256": "60e6d5b37ade25fea87b8196787963b4dfa246a865247f988e1239773be11ade"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/easeToLinear.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/easeToLinear",
+      "sha256": "2bec284a408d86d06fbebd536daa13e942686738c4f4c70bbc44125352673b1a"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/FLIP.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/FLIP",
+      "sha256": "6e4ffa539cd7c90c1ed2b925254c5b8c47d106c7b2b3bd8df8e37e5db92ce9ff"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/formatNumber.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/formatNumber",
+      "sha256": "4f1c0be58b9954bee9c026d3208519755ebed262001244b275d30d3490c538bf"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/getDirectionalSnapFunc.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/getDirectionalSnapFunc",
+      "sha256": "92e570848acf7f0a76e6aecd6bada009f75fc0be7d498f6f3e64419c94c9f2b4"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/getNestedLabelTime.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/getNestedLabelTime",
+      "sha256": "0dba0050d1d37e5e83b5d315e67672e641fb7f86ab9d3cf34ff832cb78b945da"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/getScrollLookup.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/getScrollLookup",
+      "sha256": "a5a6b8fd1406a3e906c6739aa95d2dd86bb8b7a82c9e81bfbaee2c5adab9ce4b"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/getScrollPosition.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/getScrollPosition",
+      "sha256": "2778730cf23e139984300de0a746344b85c0951b157a5a6b28f8aa94c42f1b63"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/imageSequenceScrub.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/imageSequenceScrub",
+      "sha256": "e203fd5f33d30e85484981fc8458cc97c565d1eb1288fbee4c317aadfc6b171f"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/killChildTweensOf.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/killChildTweensOf",
+      "sha256": "f9a4646893fb32b23525939553a314fce45c6fd3b53dbd2391e7bd3d41691dbe"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/LottieScrollTrigger.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/LottieScrollTrigger",
+      "sha256": "114cde214e64c2138ade26fe8815623496ac24e6d241ec1d828f6c5c7fa913b7"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/nestedLinesSplit.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/nestedLinesSplit",
+      "sha256": "963fe844e5506e8d593e86817ac56dba4e3c4681a3f8bf1c16ff79000395f98b"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/pluckRandomFrom.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/pluckRandomFrom",
+      "sha256": "5ee9fb65e858295d9bf3d52fc6bef0414c6db1eadbe381be8541cb61a4d1c966"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/progressiveBuild.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/progressiveBuild",
+      "sha256": "98a744e824f2ab3a4cdff0f648ad9edc2eea487e1ede341024a72d059ad61f0b"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/seamlessLoop.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/seamlessLoop",
+      "sha256": "8c14508c7fd902cfba87c6652086ccd82ab18a45f1e1eaea1e7c89141cf516de"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/smoothOriginChange.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/smoothOriginChange",
+      "sha256": "0d24050bad43d3aedc343c2daa381121459f7fa5ed4dea2503e969bcea969642"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/splitArabicText.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/splitArabicText",
+      "sha256": "cdbc4ec59eca5399051546bfb843a84505bc6085442a253cf35949fcf9ce9743"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/splitTextAnimator.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/splitTextAnimator",
+      "sha256": "5d1c6f26c5f23a52702d5891330762caba26f503a71345311aadda36510e1fb7"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/stopOverscroll.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/stopOverscroll",
+      "sha256": "fdb321943ab4be0ee89cda954c9c317070b956ed16dbf2ece171131d73acae65"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/tickGSAPWhileHidden.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/tickGSAPWhileHidden",
+      "sha256": "2d91e6f1cdee35119229fc47612b798db720187cf543d0c3950565c9418e1dd1"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/trackDirection.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/trackDirection",
+      "sha256": "4e3554bce9728356abc10f4da12ec3ed185934658c1147c4329a7279492ea9cc"
+    },
+    "pages/gsap-com/docs/v3/HelperFunctions/helpers/weightedRandom.md": {
+      "url": "https://gsap.com/docs/v3/HelperFunctions/helpers/weightedRandom",
+      "sha256": "66a30216ff413c03fadae4a6aee73472777caca24e3e56fe45106ec8c3ff0391"
+    },
+    "pages/gsap-com/docs/v3/Installation.md": {
+      "url": "https://gsap.com/docs/v3/Installation",
+      "sha256": "c1f27075d8ebf6c093a597c52e42e07ca18f3269eb97925d11252230703af9c3"
+    },
+    "pages/gsap-com/docs/v3/MotionPathHelper/kill-.md": {
+      "url": "https://gsap.com/docs/v3/MotionPathHelper/kill()",
+      "sha256": "6624c3e158255bbc969074ed0373dd649dd37336d930c9be1bcff8df2a958baa"
+    },
+    "pages/gsap-com/docs/v3/MotionPathHelper/static-editPath-.md": {
+      "url": "https://gsap.com/docs/v3/MotionPathHelper/static.editPath()",
+      "sha256": "3bef07e03bbbabcf717b5967365b4c182d3e04df572df7a2f769a4382b14c4c5"
+    },
+    "pages/gsap-com/docs/v3/Plugins.md": {
+      "url": "https://gsap.com/docs/v3/Plugins",
+      "sha256": "5e14c2765e598d526aba1be732056a03317193acad6f983a29a8ff2f669ebd07"
+    },
+    "pages/gsap-com/docs/v3/Plugins/CSSRulePlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/CSSRulePlugin/",
+      "sha256": "d89a9fb24fc747e6f1ba8570c825a3613711616600432d0781bb973767498815"
+    },
+    "pages/gsap-com/docs/v3/Plugins/CSSRulePlugin/methods/static-getRule-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/CSSRulePlugin/methods/static-getRule()",
+      "sha256": "dbd579a6183ca1a45849cb853b640b0064b825d71fff65977a0ba89502341e42"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/",
+      "sha256": "a82df0cc595610768423633cc27071552d017a27657657e0330191febcdd22ea"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/addEventListener-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/addEventListener()",
+      "sha256": "42f6d077ad67a7247aed30b02aa008b90bef2683f374cfb0c6ceaafe9d81166f"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/applyBounds-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/applyBounds()",
+      "sha256": "b7cf43a611b6d768ba6efdf6276abdbbdad72d43103cf07679d8a5af8bb88eb6"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/autoScroll.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/autoScroll",
+      "sha256": "bf5a7e530696d5c37ca732861a40f8e072cfdcf653adf3ecdbb7217046d986d9"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/deltaX.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/deltaX",
+      "sha256": "9bbd344bb1a955c93a2a541f565f8ec688beb46dd50838240bff9ddd7cfd8a05"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/deltaY.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/deltaY",
+      "sha256": "6ae3ef83a022a78e0f089eda9343fe516431aa6b0aecb0a6a02d8170d3c94b01"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/disable-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/disable()",
+      "sha256": "7d063e637a8ef319ab422bfa3f3479b54ae9971befb847a82b3f771a04fce261"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/enable-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/enable()",
+      "sha256": "ba50ad4c380dab33fae208ea4d6f8f883955bd85beb17362d0a42dfcdd35b315"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/enabled-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/enabled()",
+      "sha256": "bd066f9794dbe526fc55c2dade9495195961c79a471d5dcb5bf153034dfb12e9"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/endDrag-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/endDrag()",
+      "sha256": "807153a6735b748ab5b6f1595efdf77ccdb66c1796d8a38bff781234b96a0133"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/endRotation.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/endRotation",
+      "sha256": "ed0268192dcbe3756f3003d31a54a3fc0d2e4c81ef2f3dbaa140250b0b245b29"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/endX.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/endX",
+      "sha256": "0465b7343eac629b0ce0cfe68cf7f8aba2ceee8e4e7cfaa85cbc16d26437980b"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/endY.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/endY",
+      "sha256": "bc61c8dd86cfb333103925ae0119ff0f55e64a7319a3cabab3595b4f76940fd0"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/getDirection-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/getDirection()",
+      "sha256": "649fc1ad38f1f2ab1203e67c4c31d75b1d5a7f4df61fcca528e80cd051f0aa26"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/isPressed.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/isPressed",
+      "sha256": "66fbb1329122d5f056ed5d1d1ca7a83755ea3c8d2c7c89a2cb1926a05bde8de6"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/isThrowing.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/isThrowing",
+      "sha256": "8c5164a4661a5366d47b73e5a02d1287730f358e9216764a98631d3e10118ead"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/kill-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/kill()",
+      "sha256": "96401dfc9eb90c4e995447c2d9136bc7868a5db20a66985d1175150248675db8"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/lockAxis.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/lockAxis",
+      "sha256": "4a889e05f2e5b545ac9f89e18d2b271cecc8a804ecbae8ace92476b330b15181"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/lockedAxis.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/lockedAxis",
+      "sha256": "da79db61f93290c1cb54d07d16e6c87f692ac356f10e0d4d528f77e7764ac820"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/maxRotation.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/maxRotation",
+      "sha256": "27144391f9f063799213b82c24e4656f813fc386df89325156776b0ac9969edd"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/maxX.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/maxX",
+      "sha256": "868195b7d9984b75a7e567bbed690711477184311eed162d61bd4519549b8cc9"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/maxY.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/maxY",
+      "sha256": "79ec9974fcba749b01b73432b9eeab11bc37bc520f1cdf353f9dbba7c11d22d9"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/minRotation.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/minRotation",
+      "sha256": "4f0ccf0421f2111908ba10806276c680eea9b0e0d11afbcd77fec8a0d0259ee2"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/minX.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/minX",
+      "sha256": "3b8455e8f1e6cc09c2e196920255e1a91df3032fb29223ed6e12a59b4b953969"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/minY.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/minY",
+      "sha256": "94fc72a349aacb60cc425a54afe8dd6a8621bd558377cfd1e645d8aeeb0db467"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/pointerEvent.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/pointerEvent",
+      "sha256": "24c366d281774ec056d4f6ee46dfe613ce66630d653e5634bf060df9724e8d8a"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/pointerX.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/pointerX",
+      "sha256": "2a8fce66b49789809ee9f503de20d7da798ec2065078df7dc25b18fc6e75ecd0"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/pointerY.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/pointerY",
+      "sha256": "f626371dade7092748563af9fcb7c21e0f011ce174c8287cecc8520017ba39ed"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/rotation.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/rotation",
+      "sha256": "0316929204e665827c9b39bde36cb6eb13c0decdf935996dae9f9e3ce8f94e29"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/startDrag-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/startDrag()",
+      "sha256": "f1ce0c4ec806277cee2d4bbf138336b21a995ee92c0e93a774d448c9b8a8d800"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/startX.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/startX",
+      "sha256": "80d7150cc7718c500093d7008c34d7577c72ee6bc38e388f7c9aa856d81415ab"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/startY.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/startY",
+      "sha256": "44aa21806523089e4f1e6f9ba2e85280a3b26ba4c67ec1476c05c4af1c70118e"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/static-create-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/static.create()",
+      "sha256": "c077b6d27805c68bfc2eb5398aba9e2db943c3f69dfecddf5cac4a3145853992"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/static-get-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/static.get()",
+      "sha256": "d3fb33229a8be6ff84f5f8e0418695fe608d9907017318a01e9bd31611e16b43"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/static-hitTest-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/static.hitTest()",
+      "sha256": "0ad7da768b27179ccfa6a12d3aa32a805846712549680383cd56dda4a9fa9ac2"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/static-timeSinceDrag-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/static.timeSinceDrag()",
+      "sha256": "f4efeabaad9428c02e1d14aadfad5103d2e4dbb38d164528fbe9f9bf17f0a233"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/target.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/target",
+      "sha256": "54ef5669fdd711e8342dbfcb84b859638d8ab1b482c47798b797c93e1e5fc646"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/tween.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/tween",
+      "sha256": "bab0c19c76ccc4d5459cb3ff055cdb84c8048b73f6d48e9407dfbde436ddbd92"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/update-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/update()",
+      "sha256": "5b64f0a4f00522dbe8ec1f97a1e9f26082f63e3543884144a7a765a2e87bae7b"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/vars.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/vars",
+      "sha256": "9297282667f2c705f57f580db32b0d2e3ff781b8e6e00c0809c3fb604dd3c3b9"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/x.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/x",
+      "sha256": "887aaf1deb60b94ee9001d94807b9792110284a99325bdcb7e02f3336b72a702"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/y.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/y",
+      "sha256": "de72a353ba1592eaf18e01c677035bc1954b119b05e34746a6279de7e100f78c"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Draggable/zIndex.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Draggable/zIndex",
+      "sha256": "7d0baa4a97cf961b2b1f107c979c584c9ea83628c4e036a585b4d4beb4ad6135"
+    },
+    "pages/gsap-com/docs/v3/Plugins/DrawSVGPlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/DrawSVGPlugin",
+      "sha256": "28f8b204c200108c6d2c33d5e2b89a0419d7cbefbf083b3de5b2ece8f0a7e338"
+    },
+    "pages/gsap-com/docs/v3/Plugins/DrawSVGPlugin/static-getLength-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/DrawSVGPlugin/static.getLength()",
+      "sha256": "90b1028a2d602a7d78cf332b74467ce54e593de227e794a7abe88e5308ea3976"
+    },
+    "pages/gsap-com/docs/v3/Plugins/DrawSVGPlugin/static-getPosition-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/DrawSVGPlugin/static.getPosition()",
+      "sha256": "5d210646e222902f55010746203b3e66c5ef15afe3b46975753ae088a1e7fdee"
+    },
+    "pages/gsap-com/docs/v3/Plugins/EaselPlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/EaselPlugin",
+      "sha256": "a68a561e00890a026b9eea30a7e9f07aee5c72867a89d56e61d0bb107c2503c2"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Flip.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Flip/",
+      "sha256": "e85685ce8e5b07db4498bd0baad6d841f63efc009f159291044484e143f329df"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Flip/static-batch-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Flip/static.batch()",
+      "sha256": "46de9c2cebcb867ed9894d3d0707d4795a0f51c8b070827b3d042e7663450d5d"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Flip/static-fit-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Flip/static.fit()",
+      "sha256": "987bbe86b5be883c2761a9496c2edd0ee4de14e0adb79283ab57d0f544e7493f"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Flip/static-from-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Flip/static.from()",
+      "sha256": "313117ac62dd4a6e60e787e2c2a951287c5c557c9e011f1e18e7182b32df526e"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Flip/static-getState-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Flip/static.getState()",
+      "sha256": "458305d7d37c90f94ef70179ebcde06694cf3c601ba907bfce90f943fa95dc86"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Flip/static-isFlipping-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Flip/static.isFlipping()",
+      "sha256": "f80051b01d7595be3387377ae1de6629842c9d11bbba8b916519e310fb87a799"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Flip/static-killFlipsOf-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Flip/static.killFlipsOf()",
+      "sha256": "b197cd8348b8e5aec67f30b5521713245285fe693c0039bd9504e08cac747dc9"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Flip/static-makeAbsolute-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Flip/static.makeAbsolute()",
+      "sha256": "3af4b4e4701f6b92e432b5870b0fa362d880f620b5812ff88fb91960b8befd1a"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Flip/static-to-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Flip/static.to()",
+      "sha256": "5c6b2f625afa7b76fe1901874077ef3788ec8c01de579c4189045ac3485424d6"
+    },
+    "pages/gsap-com/docs/v3/Plugins/GSDevTools.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/GSDevTools",
+      "sha256": "c2638d0121604f7e9b1fa0568d2240bf9d0b5dc00bcbadb5bc36040fb05dee46"
+    },
+    "pages/gsap-com/docs/v3/Plugins/GSDevTools/static-create-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/GSDevTools/static.create()",
+      "sha256": "efcc733bbae7fa6f8160b3a60245fe34d2d3bea1265d2de231e6546e3010b8eb"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/",
+      "sha256": "249f42261a0dd1e4c1298dc70f6b22807f4e9d49284d76a6d280625d946b70e5"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/static-getVelocity-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/static.getVelocity()",
+      "sha256": "73abcd4f87d110f4c37bf576d0348d79d7d16628e8050d6b19b9c0c6907dd960"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/static-isTracking-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/static.isTracking()",
+      "sha256": "5cd3985065fa5b28e7cf11773ade43622bb10325061db37a34182e8b716ffe0e"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/static-track-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/static.track()",
+      "sha256": "0ef44efd8790cf16b3f5b64f93fb703847636b49bd20da7ebd0221e4b7793862"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/static-untrack-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/static.untrack()",
+      "sha256": "2fbff62c5f929c9965d4146de46786d265e55931d68722873eb610acaf0cbd8d"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/VelocityTracker.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/",
+      "sha256": "1af11ff527632a1b4798203126d00ca2df749e1c879fcab3dc4e6e3193f20977"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/-addProp-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.addProp()",
+      "sha256": "020f687042a82b0d0f24e46fdce1e904fda2890a1cec5db05eafcac39341fb87"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/-get-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.get()",
+      "sha256": "84a2d9aff53590075e06429784bd4a428ec88342a8700bfb5b866cbb3eb5a733"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/-getByTarget-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.getByTarget()",
+      "sha256": "58e00fa8610126e7e28533c194e5bf5c8429612b00087ce4937605c3210cff5f"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/-isTracking-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.isTracking()",
+      "sha256": "832bc536ada1b08b3011952d5d795f7644df961f2ae7602cfa857571fcfce3f0"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/-isTrackingProp-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.isTrackingProp()",
+      "sha256": "42cc479657e0a258b5f74854dd57e0c9efec3f879bad763fdb6ddec7f70379b5"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/-removeProp-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.removeProp()",
+      "sha256": "a6bf0353a60fb1a674b2c59a604a4217754acb7b1e844158940916ddd7528031"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/-target.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.target",
+      "sha256": "c3452ff2038a92f0e5d626d022aeb6e9578000f61a4ba76cd884924c046a90c4"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/-track.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.track",
+      "sha256": "4c2ec685686fa5c678c42f8fc647c0bcd4b5a586cd664cb8e48de52b7a70b02b"
+    },
+    "pages/gsap-com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/-untrack-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/InertiaPlugin/VelocityTracker/.untrack()",
+      "sha256": "20f42225ad83b539930f0b433d7280bd2436d7c02c2a98f835b64a0e4fbce9cf"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MorphSVGPlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin",
+      "sha256": "36eb34beca31b5970c7dec3dba8fbec11b934f7dc110ffcbc0cc44f256d90e33"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MorphSVGPlugin/static-convertToPath.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.convertToPath",
+      "sha256": "de649d77e139f60db9bb6891a1fdbc8303b99080d6000b77f821be198f57f61b"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MorphSVGPlugin/static-defaultRender.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.defaultRender",
+      "sha256": "6cfe8767debb686fd152cdd32cc7eda6d0d33805dbcc282c3ad90645b4bcbded"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MorphSVGPlugin/static-defaultType.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.defaultType",
+      "sha256": "4fa69ff236b2e72975f73813b2233e5335a6608f421effcaaf5f6aef8d54627b"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MorphSVGPlugin/static-defaultUpdateTarget.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.defaultUpdateTarget",
+      "sha256": "c2dd6099fa2d72551efd7c02bfe7d577741bff126b03de0c7f43ee9b6ec94417"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MorphSVGPlugin/static-rawPathToString.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.rawPathToString",
+      "sha256": "3b59c9e3161b42e3b22385f8729a0206289fca4eed2450a92fd5625cb3bb6737"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MorphSVGPlugin/static-stringToRawPath.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MorphSVGPlugin/static.stringToRawPath",
+      "sha256": "5403313048048fd2b585000c000b07794b62a3cc328cae6a4acc75f30fb6e233"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathHelper.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathHelper",
+      "sha256": "a1acdf0af585c1150f266c417b22db25dae1d3eac96967f88cdd2a08f0a9c18a"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin",
+      "sha256": "d6216fb150da7ccbf367568d245209e29100cbafa0efe460bbb1387441a2bf8d"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/methods/static-pointsToSegment.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/methods/static-pointsToSegment",
+      "sha256": "1936ae9811044f0b6d923211ad99af6940fe48dd672872a744f2b4f3e9cde387"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-arrayToRawPath-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.arrayToRawPath()",
+      "sha256": "5a6e65050106c9380f78152739128c2af366ba85de5a5cb6a813baf6b5982c49"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-convertCoordinates-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.convertCoordinates()",
+      "sha256": "df1f8f516b451f81c7b795cde6c4df068b61796000d04bfe534e9b7e806ca207"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-convertToPath-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.convertToPath()",
+      "sha256": "c691a4d3e07a9469ce6c5331bdaa9c322266e4dd493395d5271b601834b40cd6"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-getAlignMatrix-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getAlignMatrix()",
+      "sha256": "43e0785db3396cb1da00dd6e280e2a886ca2b8092606869ee3ca86d1d76165eb"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-getGlobalMatrix-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getGlobalMatrix()",
+      "sha256": "c80afb3536d59bd03dea1cefac8525abb56051aae660f065e4f96ada017f17d7"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-getLength-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getLength()",
+      "sha256": "8edc876783a68c8bf9582c81e8fade712e8148aae90c5c5981169d8de842c745"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-getPositionOnPath-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getPositionOnPath()",
+      "sha256": "7449c84fcc608e9e7ea9b923055ad72129e04ab45289ab31e71d42acff81120d"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-getRawPath-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getRawPath()",
+      "sha256": "6e353ff898a006644aa409606ca20e37bf1917107b3fb0cab4134023339ef0c0"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-getRelativePosition-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.getRelativePosition()",
+      "sha256": "2ac3ba05b16b9d601d25f45a55e579d560b1c003f66cdbac7edcb0e318f4d61e"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-rawPathToString-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.rawPathToString()",
+      "sha256": "00baf2c8ee9dee1b6d29d03d526dd1474229775df2a10fb8f429bd978e46d1fa"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-sliceRawPath-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.sliceRawPath()",
+      "sha256": "a4ee2fab08179eecf2b73fb0bc234a3c79c218cb7328afae4e689d554f4bd1e4"
+    },
+    "pages/gsap-com/docs/v3/Plugins/MotionPathPlugin/static-stringToRawPath-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/MotionPathPlugin/static.stringToRawPath()",
+      "sha256": "e7f1278b876e9cf7c14ee19bd467006437838cfc59a70c43c99e8b36162967bb"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/",
+      "sha256": "834b01927a6f092316842e6e6619ac817cca1355ea7a3f4f44afbc7ebed6d8a5"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/deltaX.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/deltaX",
+      "sha256": "0fb4bbf3e5c92cdb667aecadbc91b6cabd54cd381e1c53731a19592da84142bb"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/deltaY.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/deltaY",
+      "sha256": "ffc4df2c48d62d3664d9527591420506d50ba7c455507b16e376d09483e10301"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/disable-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/disable()",
+      "sha256": "0b7f0e50aacf08af036b733ce2a5905d5d475536baead8f70f117e573233e264"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/enable-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/enable()",
+      "sha256": "f4b354d4a72c3674984f31c1d3e8391e4f85e416174816b4ca90f53615964945"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/event.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/event",
+      "sha256": "1e4e6a974f825d5cd68773c51dab5b54b5884d612e98a0362c3d678111e4b170"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/isDragging.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/isDragging",
+      "sha256": "9352856e4b399d9b5f99af8cc1b6d3f18a721c5bd36460cef0ac5d7a14ee0aeb"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/isEnabled.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/isEnabled",
+      "sha256": "892a814ecffb8f148edfb96bf3b33a39f346a0ff92583e2ebda5d318b958fc9c"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/isPressed.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/isPressed",
+      "sha256": "d85b3fef65f6f944d5ab226d1364b2624a05adcac9999243fcdab43550fc1727"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/kill-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/kill()",
+      "sha256": "ad6207afc6e3f7ee19739c25501be9bdab0e57b4758494f22a48b51a676e699b"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/startX.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/startX",
+      "sha256": "3f2d867dedeb3753babf01709baceb6ed8ec36ad11f894d2b65b2eb0e1f6c21a"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/startY.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/startY",
+      "sha256": "aa1eeb320790612486bb6268a3ee924acc4a94c4e648b6ada11a3a86f1bdc079"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/static-create-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/static.create()",
+      "sha256": "be3964010e7ea8da8d75da5dd6db97ca685ec2117b59a4f8275aeb09f1fff651"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/static-getAll-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/static.getAll()",
+      "sha256": "a39ceb018bc2dbc5dfdaf08877b389043d5cc9c7ad8a015ce5e9a6e32bfdbb52"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/static-getById-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/static.getById()",
+      "sha256": "d3f10387791bbe63ef80253cd0311d6990872710d50eb85a11102d76542841e2"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/static-isTouch.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/static.isTouch",
+      "sha256": "c244924c4b7868032fc3fdc3d96eab0f3a0b6c72bc7b9011334a406e2ae98b68"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/target.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/target",
+      "sha256": "ad1f92155225398ff7a4b008287ee8f6d03904c9130461b8f4db475d60c498d6"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/vars.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/vars",
+      "sha256": "ac58dd8f1c2a6dccc5037bdc6dcda78a2ca89e291a746b3f0b6d86939d94b6fb"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/velocityX.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/velocityX",
+      "sha256": "036f43d8ec5192117c0fd261205f91c82165476b9a68921145c2fa574afb5757"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/velocityY.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/velocityY",
+      "sha256": "23b873b08eb8b18073fdff8da89f620d7dd97e1d98b15bbe33f19219b848a06f"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/x.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/x",
+      "sha256": "a5874538c3d7a100f73f12741ba9b1c89d9279e8284aa6f2475f45ec0b171bff"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Observer/y.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Observer/y",
+      "sha256": "6296d993ed3e2c30ca083eef735ef2fdc1a43ec0d9c83223bb997671867edb1b"
+    },
+    "pages/gsap-com/docs/v3/Plugins/Physics2DPlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/Physics2DPlugin",
+      "sha256": "c6e7bcf1460bcc7268929be946401af24c56c904c05439d0c86ed6592583a55a"
+    },
+    "pages/gsap-com/docs/v3/Plugins/PhysicsPropsPlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/PhysicsPropsPlugin",
+      "sha256": "819981f5154de27db691f1db6d0a49de8c6198d07d55545eb80fd9101e22eb81"
+    },
+    "pages/gsap-com/docs/v3/Plugins/PixiPlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/PixiPlugin/",
+      "sha256": "2a1c2f79b7871b3325a3e513ef112e0aefd91fdaacbb662e6995c0213ecaa5d1"
+    },
+    "pages/gsap-com/docs/v3/Plugins/PixiPlugin/static-registerPIXI-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/PixiPlugin/static.registerPIXI()",
+      "sha256": "d3632076d9dade9e274f964ecfc3516b5b5a440be65782b62bea110878a9898d"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrambleTextPlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrambleTextPlugin",
+      "sha256": "0a0b15c8eb14cc56e5267af0a5b3156d154d5947323f24029f19bf3397447db1"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/",
+      "sha256": "acb0ee6a192d2ef154a403073367ddfd98b11d6a994b8548e792c32b70b579ed"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/content-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/content()",
+      "sha256": "242409fcde3088ae58594521fb16aa8679b489bece4693872a787b558ca8a6ac"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/effects-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/effects()",
+      "sha256": "1b1801ff22916ecadaf008f0d7413c27a0b3adc46217a6c6e34e3a385014b832"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/getVelocity-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/getVelocity()",
+      "sha256": "3af2b6d2a8577d79388077ed3368247a89992c3f322387399c9d831f5d2a3ea6"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/kill-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/kill()",
+      "sha256": "ab90cc85097c77be353ec10963515d11bf3d4ac50812449e2340b1a48143078c"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/offset-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/offset()",
+      "sha256": "46d17d6f9b4ffbefd03a5cd5b86cd492267b7b75c7a5e5ba6bfc9adc616067e8"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/paused-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/paused()",
+      "sha256": "ef97aca8f2f3a5d47415a081d24958ac2aa7ac1e501d173c13a124a999e72cb2"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/progress.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/progress",
+      "sha256": "2a897deadf4e22691d5bb2944713933d57f8a4f4d44e7ecc7051a6b34b1a0821"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/scrollTo-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/scrollTo()",
+      "sha256": "f6b53221bac9d5ffff9c9b389ff7e367e388ad2686b2a1d32c737294e7b640fc"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/scrollTop-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/scrollTop()",
+      "sha256": "a3ea6191fcc291860934b1edb3322d73afb055f484d922afb6723a121946709b"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/scrollTrigger.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/scrollTrigger",
+      "sha256": "c33febc835ed29798393bb429505c0f47e2d4b6f4addf64c5e7b71f6fad7d266"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/smooth-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/smooth()",
+      "sha256": "54f4a2b1a3f714ae437b0c4bebc2a5dd247524ed931fc16b23ef2965cbf34cd0"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/static-create-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/static.create()",
+      "sha256": "c87dbe170515e249fd7314898764d9b4e66a7c375bc1d1aada2e24661c64839f"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/static-get-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/static.get()",
+      "sha256": "2175062bef028c8ae44aafbf5571a176ec66f27c82743c94cd4621fa0077963b"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/vars.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/vars",
+      "sha256": "48d8940182cd90e60f8894c4f279b829fe1d5d05e4b41708713f092286de6181"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollSmoother/wrapper-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollSmoother/wrapper()",
+      "sha256": "b2c80652b4a29c2a4a6e7660d4a88a9becea6d6e50002fd9e63e9c001818187a"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollToPlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollToPlugin",
+      "sha256": "700f3474c98277d3a91708de1a5d3763223fae8775504790ed9796240f7dbf84"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollToPlugin/config-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollToPlugin/config()",
+      "sha256": "8b8653538ecdce4e227a76131b9114d1806518d244be0069719664f3dee312d5"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/",
+      "sha256": "f512d692a2105e97d3190d35d0b73442fda3d85547a346d334ade9a9e9039b69"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/animation.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/animation",
+      "sha256": "b43f698a61b181f8cd7cb25bbe328821a17bef7a778e64b4187c92cdd05990ad"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/direction.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/direction",
+      "sha256": "855a7605fbf8d63b4e67156998f02ce7d5712c4a18ba80d6381c46c8a2ff93b0"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/disable-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/disable()",
+      "sha256": "ad8108bd648c9fedc8befc4e7df785d939a7227b2cb79c423f91e7415147c181"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/enable-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/enable()",
+      "sha256": "67cb48b858d98a3b58c7a3e5aedc484df010b9d364fe65d9d7cac12ad0b69405"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/end.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/end",
+      "sha256": "ad2539e1c3a5e25750e266695bad55bfa9b6c3716a7ea258e260155433b5dfc1"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/getTween-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/getTween()",
+      "sha256": "084dcbf60fbaa76815779664505b81d86eee538e1fd59c0df7716cb507661a62"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/getVelocity-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/getVelocity()",
+      "sha256": "e21acc32eab38e7fed01c5359557025a521c7c2e384a0e02c060830b37cb73f5"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/isActive.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/isActive",
+      "sha256": "48a35c853a85d3a3d75f5d0d9b11e3037895eb86fe7582366b2cfe1708cc2861"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/kill-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/kill()",
+      "sha256": "e3e87833f842fbbab4eb8fd3d1050d1b81767b6a1fcaf39b501cf81a9396cedf"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/labelToScroll-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/labelToScroll()",
+      "sha256": "ac287ac91461f357dc16030265a011e3a9a0f382a3de6d50674a749cf7b8d260"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/next-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/next()",
+      "sha256": "63c96c9864c066225941be5957798e5a1e05ba463f8f0c4e381ffe569cb556ff"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/pin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/pin",
+      "sha256": "352e03710bb293976f9414c5ea9e1448590e5c255c6777e2f56c0561ec4c8a9d"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/previous-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/previous()",
+      "sha256": "e7495385c43ef252f44c842c472c31cdd21eb99cdb1dfc40dc6c942fe14fd7f2"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/progress.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/progress",
+      "sha256": "35b9c04d27fd9007701dd643a08052f67554160e4444a6b11e90271d9ea8f6f8"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/refresh-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/refresh()",
+      "sha256": "1591dc1ce86e78b09b252f0521f12d090f797effbdb883c6bf4e04718b72b98d"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/scroll-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/scroll()",
+      "sha256": "ca733286ac3fe308f085fb604e82a674e0f0f1657110753916e8cc7125371889"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/scroller.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/scroller",
+      "sha256": "bb622df3210f97a858643a0a727cca3705b3168c75797115bb2e14f9ca7adf48"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/start.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/start",
+      "sha256": "e79473104c75102131eede09bdcd46785e922879215fb5714d20363b3ea3be59"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-addEventListener-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.addEventListener()",
+      "sha256": "63b9fc143652383035e07bb467c3d4f69a95e699e0002df10ca29c14e84807eb"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-batch-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.batch()",
+      "sha256": "9d6f8a536467f1718f3b3db577f4ec4c2f9886e6edf62354364aaa90f6e01242"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-clearMatchMedia-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.clearMatchMedia()",
+      "sha256": "d9d93e7d21bfc9bf86cebab20488abd6683c4ca90eaaabcef8f3720846762f8f"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-clearScrollMemory-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.clearScrollMemory()",
+      "sha256": "74da1a37a74f3b3f14dbeef2ca4d0ab49df07e074fa3d9134c71ed6f4079a276"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-config-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.config()",
+      "sha256": "4fb111ecd09360a0593665b2fbe49e268c5993a74d2754864ab20f0dba1d33b8"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-create-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.create()",
+      "sha256": "461192991d97308a750d2f1ee2b3b87e0962b47f90135cbdf943343a2ec03d4d"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-defaults-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.defaults()",
+      "sha256": "366567aed7006734bfb8cc3c8f90adbc73789974d3c051685a7f4142deca47eb"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-getAll-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.getAll()",
+      "sha256": "567f210b66cac95fea784b1bc59d1a2132961367615b077dc6371c98e8dd0341"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-getById-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.getById()",
+      "sha256": "e18d10213d4bb0140befece4ba6bce7640699d6b044534bbf66e3d35a25c9d02"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-isInViewport-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.isInViewport()",
+      "sha256": "e981e3ad5967cf1c956d29e9876eb32fd4db53f219a7b07d797eb327cb8fa300"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-isScrolling-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.isScrolling()",
+      "sha256": "2f2982b92db42ca9ac80da1f9e8e97aefc1390549954896af7335d7efca798d4"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-isTouch.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.isTouch",
+      "sha256": "1be90f1ffb13e6b41e2e70a8e0174481751e22466f7e06be892feddf3f546fce"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-killAll-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.killAll()",
+      "sha256": "e6344016760a32e150f8e0a828ac18e745d2da5028090836703b1ed42f578b0c"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-matchMedia-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.matchMedia()",
+      "sha256": "7520a78579eeff1fd046e93ce9db9c8c7e9ad79c08608a816a43bf38d5b8840c"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-maxScroll-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.maxScroll()",
+      "sha256": "115f76dd11416bbf34b36e30c431353739eaaa32b2187a4e611ba08bfcbc406a"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-normalizeScroll-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.normalizeScroll()",
+      "sha256": "12715f5d6e0afe782fb39124a736f490075e8b7923e20ca4f1a8ec589f5961c9"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-observe-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.observe()",
+      "sha256": "cdcbe95cd4a61c5eb594d0fa051e1ecd18d76ad7313a55f6165a8c8b01518f73"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-positionInViewport-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.positionInViewport()",
+      "sha256": "53606a9d31ed99285a54c334bd7fb9ce748ce0c6200d186e71d31933ca26434c"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-refresh-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.refresh()",
+      "sha256": "2acb5b157a42f0b5d4254fd66789cb9b8f092a03bcc41e47344d5bfba27da7f4"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-removeEventListener-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.removeEventListener()",
+      "sha256": "d03fa1d8f5e9113aae374f9d24e3b44fd14ec030331890ddbd98205dbc381e6e"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-saveStyles-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.saveStyles()",
+      "sha256": "fb6bbe160d9c622b622e1ec0e8ffa81df524b4174aab661bbb305ff0f9a7e7e5"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-scrollerProxy-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.scrollerProxy()",
+      "sha256": "d7761ac87142e1e869722e36fd2f1ac94ed4022164483719f0d1d613c87741f6"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-snapDirectional-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.snapDirectional()",
+      "sha256": "df17b881f2198d6fe30216fef306bc4f19fe04746a43709172abe21318bf8cfa"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-sort-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.sort()",
+      "sha256": "b19c583a46a64bfaa786bb9980caf2546f1b59adf9259b5c53ad2a348436fc69"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/static-update-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/static.update()",
+      "sha256": "d164bd712144ab4c61097e2b1363333b81ffd55a20018c35415687fe08256dcd"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/trigger.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/trigger",
+      "sha256": "3ab2a88148badc7328623005b3a469b9f27a7e1b39c18e41d9730d7b5f7f331e"
+    },
+    "pages/gsap-com/docs/v3/Plugins/ScrollTrigger/vars.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/ScrollTrigger/vars",
+      "sha256": "34772e33b0286d071a4668ab268cb44a9352dc502227b225676c38a4ba0a6791"
+    },
+    "pages/gsap-com/docs/v3/Plugins/SplitText.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/SplitText/",
+      "sha256": "62cc5bc3566a185cfbe3361439ac9946cc7ec8932b0c49f2c3302c39f38a86b4"
+    },
+    "pages/gsap-com/docs/v3/Plugins/SplitText/chars.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/SplitText/chars",
+      "sha256": "299309f46668fccf995b6984702814f2e776d1e1318ea8094c053003b5365fcb"
+    },
+    "pages/gsap-com/docs/v3/Plugins/SplitText/isSplit.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/SplitText/isSplit",
+      "sha256": "2606ae9f0e7b9b4a1cf484a8029b72cde986e9741be6ad3d9e3888df536516fd"
+    },
+    "pages/gsap-com/docs/v3/Plugins/SplitText/kill-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/SplitText/kill()",
+      "sha256": "b2b9bafe7b04fdb1b3e203274308bdf6cb4378e2780d6969cc03a2a7931d3637"
+    },
+    "pages/gsap-com/docs/v3/Plugins/SplitText/lines.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/SplitText/lines",
+      "sha256": "70881e9c4327c15f2cbea7df327e377dbe3cfbc1289e75206ec335fbef257724"
+    },
+    "pages/gsap-com/docs/v3/Plugins/SplitText/masks.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/SplitText/masks",
+      "sha256": "3214170f1f7ce876d39a1eb42862f8da61efb7e83a5eacaadb0e5b1feadea982"
+    },
+    "pages/gsap-com/docs/v3/Plugins/SplitText/revert-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/SplitText/revert()",
+      "sha256": "b7f142799c5230f7d13c4779d47ecd1c79b936247398e8958b0665cc79fbf58e"
+    },
+    "pages/gsap-com/docs/v3/Plugins/SplitText/split-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/SplitText/split()",
+      "sha256": "f3c7abd8e14b55b06b594343697872d4e2300122d0ff6c1c291ca9f01aed05fe"
+    },
+    "pages/gsap-com/docs/v3/Plugins/SplitText/static-create-.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/SplitText/static.create()",
+      "sha256": "a9175b1d629a4b393743f0a2aadbba4ac56e181fa97523e4f36ec6e63a4779d5"
+    },
+    "pages/gsap-com/docs/v3/Plugins/SplitText/vars.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/SplitText/vars",
+      "sha256": "87b49031f0812d5388edf6895b5b2ba6208a1d4549a9bc00f133755051811589"
+    },
+    "pages/gsap-com/docs/v3/Plugins/SplitText/words.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/SplitText/words",
+      "sha256": "1af1a183034ff75c0d91da320c9b02d866491cdff612dd3f77ceaaa6e6d32752"
+    },
+    "pages/gsap-com/docs/v3/Plugins/TextPlugin.md": {
+      "url": "https://gsap.com/docs/v3/Plugins/TextPlugin",
+      "sha256": "bb41e8494368547318ce75ced4282c320b612a558f46a210cb6796a9bc851bc6"
+    },
+    "pages/gsap-com/resources/a11y.md": {
+      "url": "https://gsap.com/resources/a11y",
+      "sha256": "8b6665aeb01825fa1651ae79e3d40851da72e321cf77d9c0e0c8687ecdf81ce4"
+    },
+    "pages/gsap-com/resources/conflict.md": {
+      "url": "https://gsap.com/resources/conflict",
+      "sha256": "c368e1be5f67eb45fd884d48d838114efc2715acbb60697e0f7d791fb9a44e67"
+    },
+    "pages/gsap-com/resources/fouc.md": {
+      "url": "https://gsap.com/resources/fouc",
+      "sha256": "66e51476bbb75ee91638f298c51941585f8b8b8d5e735d78105e56c55b1b4cf0"
+    },
+    "pages/gsap-com/resources/get-started.md": {
+      "url": "https://gsap.com/resources/get-started",
+      "sha256": "c808d4bb0778537d31549eac90b04b5ed9e115adec87c05b4a1241214cb12305"
+    },
+    "pages/gsap-com/resources/getting-started/control.md": {
+      "url": "https://gsap.com/resources/getting-started/control",
+      "sha256": "1bbaa55a335dcd900dda66a6d0656d848eed727d663ad4d93a51b83cf2087556"
+    },
+    "pages/gsap-com/resources/getting-started/Easing.md": {
+      "url": "https://gsap.com/resources/getting-started/Easing",
+      "sha256": "ff3c6580fcdc58b2c2f6d9aca9527c663c06d74e594920619fecf445d3fb8899"
+    },
+    "pages/gsap-com/resources/getting-started/Staggers.md": {
+      "url": "https://gsap.com/resources/getting-started/Staggers",
+      "sha256": "30bd6f2bd183fa79a0a0254229d509c71a9291463b4a016b934ccd2c144acd89"
+    },
+    "pages/gsap-com/resources/getting-started/timelines.md": {
+      "url": "https://gsap.com/resources/getting-started/timelines",
+      "sha256": "29893ff57f6420266380d973879a35b8c9bbc41f617071728d516c92629b1612"
+    },
+    "pages/gsap-com/resources/immediaterender.md": {
+      "url": "https://gsap.com/resources/immediaterender",
+      "sha256": "30f9f4bd27c91d5a4578afb37cefaa452f1c102c7af666404d2c8da329678b38"
+    },
+    "pages/gsap-com/resources/keyframes.md": {
+      "url": "https://gsap.com/resources/keyframes",
+      "sha256": "fd2c3dfba079dea45f4b22bf90be151d1ec44d0a8c2ead0c77e5a25da96db96c"
+    },
+    "pages/gsap-com/resources/mistakes.md": {
+      "url": "https://gsap.com/resources/mistakes",
+      "sha256": "3e49cba383b40f7fc88ace9edb407d6aa752a5e45af310a0d0576d6b49d4b7b0"
+    },
+    "pages/gsap-com/resources/position-parameter.md": {
+      "url": "https://gsap.com/resources/position-parameter",
+      "sha256": "b6d9fcf08ed4b7122877864ef34ff6553258747fe75d30f45e103f9d54e98125"
+    },
+    "pages/gsap-com/resources/st-mistakes.md": {
+      "url": "https://gsap.com/resources/st-mistakes",
+      "sha256": "8b2e3e8398d7bbebb0ec4d5c8fea470f1f5f51bea64871af4b23623ba8227c86"
+    },
+    "pages/gsap-com/resources/svg.md": {
+      "url": "https://gsap.com/resources/svg",
+      "sha256": "3eae886df1c9a9647cc2ccc36659fb7223e7dd826e29db81312efe5fe17d93c0"
+    }
+  }
 }
