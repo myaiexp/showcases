@@ -1,0 +1,17 @@
+/* Loop settings: lanes, circles and the settings form */
+[data-example='animejs/playback-loop-direction'] {
+  .lanes { display: flex; flex-direction: column; gap: var(--space-3); width: 100%; max-width: 480px; }
+  .lane { display: flex; flex-direction: column; gap: var(--space-1); }
+  .label { color: var(--fg-2); font-size: 0.75rem; }
+  .track { height: 2rem; display: flex; align-items: center; border-bottom: 1px solid var(--border); }
+  .circle { width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--accent); }
+  .readout { margin: 0; color: var(--green); font-size: 0.85rem; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-4); align-items: center; justify-content: center; margin-top: var(--space-5); }
+  .field { display: flex; gap: var(--space-2); align-items: center; color: var(--fg-2); font-size: 0.85rem; }
+  output { color: var(--fg-3); font-size: 0.8rem; min-width: 5ch; }
+  &.is-preview .lanes { gap: var(--space-2); }
+  &.is-preview .lane { gap: 2px; }
+  &.is-preview .label { font-size: 0.65rem; }
+  &.is-preview .track { height: 1.6rem; }
+  &.is-preview .circle { width: 1.2rem; height: 1.2rem; }
+}

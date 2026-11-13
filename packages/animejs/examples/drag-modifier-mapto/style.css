@@ -1,0 +1,37 @@
+/* Draggable modifier and mapTo: two small stages side by side */
+[data-example='animejs/drag-modifier-mapto'] {
+  .row {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    width: 100%;
+  }
+  .cell {
+    flex: 0 1 200px;
+    min-width: 0;
+  }
+  .stage {
+    position: relative;
+    height: 140px;
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+  }
+  .stage.persp {
+    perspective: 400px;
+  }
+  .square {
+    position: absolute;
+    top: calc(50% - 22px);
+    left: calc(50% - 22px);
+    width: 44px;
+    height: 44px;
+    background: var(--accent);
+    touch-action: none;
+  }
+  .caption {
+    margin-top: var(--space-2);
+    font-size: 11px;
+    text-align: center;
+    color: var(--fg-2);
+  }
+}

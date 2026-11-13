@@ -1,0 +1,8 @@
+/* Defaults and set(): three tracks and a caption */
+[data-example='animejs/timeline-defaults-and-set'] {
+  .tracks { width: 100%; max-width: 18rem; display: flex; flex-direction: column; gap: 6px; }
+  .track { height: 1.8rem; background: var(--bg-surface); border: 1px solid var(--border); }
+  .dot { width: 1.8rem; height: 100%; background: var(--accent); }
+  .caption { margin-top: var(--space-3); font-size: 12px; color: var(--fg-2); font-family: monospace; }
+  .btn { margin-top: var(--space-3); }
+}

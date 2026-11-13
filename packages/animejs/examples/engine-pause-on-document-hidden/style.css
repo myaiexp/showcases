@@ -1,0 +1,12 @@
+/* pauseOnDocumentHidden: two clocks and a toggle */
+[data-example='animejs/engine-pause-on-document-hidden'] {
+  .cards { display: flex; gap: var(--space-5); justify-content: center; }
+  .card { display: flex; flex-direction: column; align-items: center; gap: var(--space-1); }
+  .label { color: var(--fg-3); font-size: 0.75rem; }
+  .value { color: var(--green); font-size: 1.8rem; font-variant-numeric: tabular-nums; font-family: monospace; }
+  .btn { margin-top: var(--space-4); }
+  .hint { color: var(--fg-3); font-size: 0.8rem; max-width: 34ch; text-align: center; }
+  &.is-preview .cards { gap: var(--space-3); }
+  &.is-preview .label { font-size: 0.65rem; }
+  &.is-preview .value { font-size: 1.3rem; }
+}

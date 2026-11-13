@@ -1,0 +1,29 @@
+/* waapi.convertEase on a native element.animate(): lanes and converted-ease readout */
+[data-example='animejs/waapi-convert-ease-native'] {
+  .lanes {
+    display: grid;
+    gap: var(--space-2);
+    width: min(100%, 420px);
+    margin-bottom: var(--space-3);
+  }
+  .lane {
+    display: grid;
+    gap: var(--space-1);
+    padding: var(--space-2) var(--space-3);
+    border-radius: 8px;
+    background: var(--bg-surface);
+  }
+  .lane code { font-size: 0.7em; color: var(--fg-3); }
+  .sq { width: 24px; height: 24px; border-radius: 5px; background: #4f8cff; }
+  .out {
+    width: min(100%, 420px);
+    margin-top: var(--space-3);
+    padding: var(--space-3);
+    border-radius: 6px;
+    background: var(--bg-surface);
+    color: var(--fg-2);
+    font-size: 0.7em;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+}

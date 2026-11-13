@@ -1,0 +1,12 @@
+/* Function-based values: the row of squares */
+[data-example='animejs/animation-function-based-values'] {
+  .stage { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); width: 100%; }
+  .readouts { display: flex; gap: var(--space-3); flex-wrap: wrap; justify-content: center; }
+  .readout { display: flex; flex-direction: column; align-items: center; min-width: 96px; padding: var(--space-2) var(--space-3); background: var(--bg-surface); border: 1px solid var(--border); border-radius: 6px; }
+  .label { color: var(--fg-3); font-size: 0.75rem; }
+  .value { color: var(--fg-1); font-family: monospace; font-size: 1.25rem; }
+  .controls { display: flex; gap: var(--space-2); flex-wrap: wrap; justify-content: center; }
+  .slider { display: flex; align-items: center; gap: var(--space-2); }
+  .field { position: relative; width: min(100%, 360px); height: 100px; }
+  .sq { position: absolute; left: 0; top: 20px; width: 24px; height: 24px; background: var(--accent); }
+}

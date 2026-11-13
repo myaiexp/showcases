@@ -1,0 +1,11 @@
+/* Label positions: shape tracks and the label ruler */
+[data-example='animejs/timeline-label-positions'] {
+  .stage { width: 100%; max-width: 20rem; display: flex; flex-direction: column; gap: 6px; }
+  .track { height: 2rem; background: var(--bg-surface); border: 1px solid var(--border); }
+  .shape { width: 1.8rem; height: 100%; background: var(--accent); }
+  .shape.circle { border-radius: 50%; background: var(--green); }
+  .shape.triangle { background: var(--fg-2); }
+  .ruler { position: relative; height: 1.4rem; border-top: 1px solid var(--border); }
+  .tick { position: absolute; top: 2px; font-size: 11px; color: var(--fg-2); border-left: 1px solid var(--accent); padding-left: 3px; }
+  .bar { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-2); margin-top: var(--space-4); }
+}

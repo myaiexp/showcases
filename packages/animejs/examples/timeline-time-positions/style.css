@@ -1,0 +1,12 @@
+/* Time position types: lanes, dots and the playhead */
+[data-example='animejs/timeline-time-positions'] {
+  .board { width: 100%; max-width: 22rem; font-size: 12px; }
+  .tracks { position: relative; display: flex; flex-direction: column; gap: 4px; }
+  .lane { display: flex; align-items: center; gap: 8px; }
+  .lane-label { width: 5rem; text-align: right; font-family: monospace; color: var(--fg-2); }
+  .track { position: relative; width: 10rem; height: 1.6rem; background: var(--bg-surface); border: 1px solid var(--border); }
+  .dot { position: absolute; left: 2px; top: 50%; width: 1rem; height: 1rem; margin-top: -0.5rem; background: var(--accent); border-radius: 50%; }
+  .playhead { --t: 0; position: absolute; top: 0; bottom: 0; left: calc(5rem + 8px + var(--t) * 10rem); width: 2px; background: var(--green); pointer-events: none; }
+  .bar { display: flex; gap: var(--space-2); margin-top: var(--space-4); }
+  .note { color: var(--fg-3); font-size: 12px; margin-top: var(--space-2); }
+}

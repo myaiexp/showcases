@@ -1,0 +1,12 @@
+/* Synced children: three lanes and a timer readout */
+[data-example='animejs/timeline-sync-children'] {
+  .board { width: 100%; max-width: 20rem; display: flex; flex-direction: column; gap: 6px; font-size: 12px; }
+  .lane { display: flex; align-items: center; gap: 8px; }
+  .label { width: 6rem; text-align: right; color: var(--fg-2); font-family: monospace; }
+  .track { width: 11rem; height: 1.6rem; background: var(--bg-surface); border: 1px solid var(--border); }
+  .dot { width: 1.5rem; height: 100%; background: var(--accent); }
+  .timer { font-family: monospace; color: var(--green); text-align: center; margin-top: 4px; }
+  .btn { margin-top: var(--space-4); }
+  &.is-preview .label { width: 5.5rem; }
+  &.is-preview .track { width: 8rem; }
+}

@@ -1,0 +1,44 @@
+/* Layout shared id: two containers and the twin items */
+[data-example='animejs/layout-shared-id'] {
+  .layout-root {
+    display: flex;
+    align-items: stretch;
+    gap: var(--space-3);
+    width: min(100%, 360px);
+    height: 140px;
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--fg-3);
+    background: var(--bg-surface);
+  }
+  .box.small {
+    flex: 1;
+  }
+  .box.large {
+    flex: 2;
+  }
+  .item {
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    background: var(--accent);
+    color: var(--bg);
+    box-shadow: 0 0 4px var(--accent);
+  }
+  .large .item {
+    width: 120px;
+    height: 100px;
+    background: var(--green);
+    box-shadow: 0 0 20px var(--green);
+  }
+  .item.is-hidden {
+    display: none;
+  }
+  .panel {
+    margin-top: var(--space-4);
+  }
+}

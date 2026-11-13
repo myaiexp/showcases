@@ -55,6 +55,8 @@ describe.each(packageSlugs())('package %s', async (slug) => {
     for (const css of ex.cssFiles) {
       const text = readFileSync(join(ex.dir, css), 'utf8');
       expect(isScopedCss(text, `${slug}/${exSlug}`), `${css} must nest under [data-example]`).toBe(true);
+      // CSS nesting has no @keyframes inside a style rule; the minifier fails the build on it.
+      expect(text, `${css}: no @keyframes, animate with the library or element.animate()`).not.toMatch(/@keyframes/);
     }
   });
 

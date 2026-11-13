@@ -1,0 +1,37 @@
+/* Layout stagger toggle: column/row container and items */
+[data-example='animejs/layout-stagger-toggle'] {
+  .layout-root {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: min(100%, 360px);
+    padding: var(--space-2);
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+  }
+  .layout-root.row {
+    flex-direction: row;
+  }
+  .item {
+    flex: 1;
+    padding: 6px 10px;
+    background: var(--accent);
+    color: var(--bg);
+    text-align: center;
+  }
+  .row .item {
+    padding: 28px 10px;
+  }
+  .panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+  }
+  .label {
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+}

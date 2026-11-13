@@ -1,0 +1,53 @@
+/* Scroll thresholds: enter and leave syntaxes: scroller, square and mode buttons */
+[data-example='animejs/scroll-thresholds-presets'] {
+  .scroller {
+    width: 100%;
+    max-width: 520px;
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+  }
+  .scroller.is-preview {
+    height: 150px;
+    max-width: 240px;
+  }
+  .section {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    padding: 0 var(--space-4);
+  }
+  .is-preview .section {
+    height: 150px;
+  }
+  .hint {
+    justify-content: center;
+    color: var(--fg-3);
+  }
+  .square {
+    width: 2.25rem;
+    height: 2.25rem;
+    background: var(--accent);
+  }
+  .modes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+    justify-content: center;
+  }
+  .btn[aria-pressed='true'] {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .readout {
+    font-family: monospace;
+    color: var(--fg-2);
+    margin-top: var(--space-2);
+    font-size: 0.85rem;
+  }
+  .is-preview + .readout {
+    margin-top: var(--space-1);
+  }
+}

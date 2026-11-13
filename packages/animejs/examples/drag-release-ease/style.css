@@ -1,0 +1,40 @@
+/* Draggable release feel: lanes, squares and labels */
+[data-example='animejs/drag-release-ease'] {
+  .stage {
+    position: relative;
+    width: min(100%, 420px);
+    height: 170px;
+    border: 1px dashed var(--fg-3);
+    background: var(--bg-surface);
+    margin-bottom: 40px;
+  }
+  .item {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background: hsl(var(--hue) 70% 60%);
+    touch-action: none;
+  }
+  .throw-only {
+    opacity: 0.55;
+  }
+  .tag {
+    position: absolute;
+    bottom: 4px;
+    font-size: 10px;
+    color: var(--fg-3);
+    pointer-events: none;
+  }
+  .panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+  }
+  .label {
+    color: var(--fg-2);
+  }
+}

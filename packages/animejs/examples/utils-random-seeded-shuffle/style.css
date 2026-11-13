@@ -1,0 +1,62 @@
+/* Random, seeded random and shuffle: fields, tile row and controls */
+[data-example='animejs/utils-random-seeded-shuffle'] {
+  .wrap {
+    display: flex;
+    gap: var(--space-3);
+    width: 100%;
+    justify-content: center;
+  }
+  .field {
+    position: relative;
+    flex: 1;
+    max-width: 200px;
+    aspect-ratio: 1;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .cap {
+    position: absolute;
+    left: 6px;
+    bottom: 4px;
+    font-size: 0.65em;
+    color: var(--fg-3);
+    font-family: monospace;
+  }
+  .dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 50%;
+    background: #4f8cff;
+  }
+  .strip {
+    position: relative;
+    width: 16rem;
+    height: 2.4rem;
+    margin-top: var(--space-4);
+  }
+  .tile {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    font-weight: bold;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+}

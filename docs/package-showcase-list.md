@@ -28,7 +28,7 @@ the gallery today are marked *(legacy in gallery)*.
 
 | # | Package | Vis | Line since | Docs | ~Ex | Note |
 |---|---|---|---|---|---|---|
-| 1 | **anime.js** (`animejs`) | 4 | v4 2025-04 | site | 150 | Mase's favourite. Timeline, stagger, SVG, draggable, scroll observer, text split, WAAPI |
+| 1 | **anime.js** (`animejs`) ✅ built | 4 | v4 2025-04 | site | 150 | Mase's favourite. Timeline, stagger, SVG, draggable, scroll observer, text split, WAAPI |
 | 2 | **Pretext** (`@chenglou/pretext`) ✅ built | 4 | 1.0 2026-10 | repo ✓ MIT | 25 | Text layout: reflow around shapes, shrink-wrap, masonry. Docs are README + CHANGELOG; `pages/demos/` stays out (pattern.md § Purity) |
 
 ## Tier 5: striking

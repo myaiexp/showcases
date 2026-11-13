@@ -1,0 +1,9 @@
+/* Playback controls: tracks, readout and the control bar */
+[data-example='animejs/timeline-playback-controls'] {
+  .stage { width: 100%; max-width: 20rem; display: flex; flex-direction: column; gap: 6px; }
+  .track { height: 1.8rem; background: var(--bg-surface); border: 1px solid var(--border); }
+  .dot { width: 1.8rem; height: 100%; background: var(--accent); }
+  .readout { margin: var(--space-2) 0 0; font-size: 12px; color: var(--green); font-family: monospace; }
+  .bar { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: var(--space-2); margin-top: var(--space-4); }
+  .slider { display: flex; align-items: center; gap: var(--space-2); font-size: 12px; color: var(--fg-2); }
+}

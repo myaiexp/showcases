@@ -1,0 +1,43 @@
+/* Scope mediaQueries: chips for each query and the animated square */
+[data-example='animejs/scope-media-queries'] {
+  .stage {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+  }
+  .square {
+    width: 2rem;
+    height: 2rem;
+    background: var(--accent);
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+  .chip {
+    font-family: monospace;
+    font-size: 0.8rem;
+    padding: 2px var(--space-2);
+    border: 1px solid var(--border);
+    color: var(--fg-3);
+  }
+  .chip.on {
+    border-color: var(--green);
+    color: var(--green);
+  }
+  .note {
+    margin-top: var(--space-3);
+    color: var(--fg-3);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+}

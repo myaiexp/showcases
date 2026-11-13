@@ -1,0 +1,9 @@
+/* Lifecycle callbacks: a track and a counter table */
+[data-example='animejs/timeline-lifecycle-callbacks'] {
+  .track { width: 100%; max-width: 16rem; height: 1.8rem; background: var(--bg-surface); border: 1px solid var(--border); }
+  .dot { width: 1.8rem; height: 100%; background: var(--accent); }
+  .table { width: 100%; max-width: 16rem; margin-top: var(--space-3); font-size: 12px; font-family: monospace; }
+  .row { display: flex; justify-content: space-between; padding: 2px 6px; border-bottom: 1px solid var(--border); color: var(--fg-2); }
+  .v { color: var(--green); }
+  .bar { display: flex; gap: var(--space-2); margin-top: var(--space-4); }
+}

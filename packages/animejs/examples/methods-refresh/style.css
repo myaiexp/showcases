@@ -1,0 +1,7 @@
+/* Refresh: two rows with a square each */
+[data-example='animejs/methods-refresh'] {
+  .stage { width: 100%; max-width: 480px; }
+  .row { height: 4.5rem; display: flex; align-items: center; border-bottom: 1px solid var(--border); }
+  .square { width: 1.6rem; height: 1.6rem; background: var(--accent); border-radius: 3px; }
+  .btn { margin-top: var(--space-4); }
+}

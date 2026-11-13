@@ -1,0 +1,31 @@
+/* Stagger order, reversed, jitter and seed: bar list and controls */
+[data-example='animejs/stagger-order-jitter-seed'] {
+  .list {
+    display: grid;
+    gap: 6px;
+    width: min(100%, 420px);
+    padding: var(--space-3);
+  }
+  .line {
+    display: grid;
+    grid-template-columns: 1fr 9.5em;
+    gap: var(--space-3);
+    align-items: center;
+    color: var(--fg-3);
+    font-size: 0.8em;
+    font-family: monospace;
+  }
+  .bar {
+    height: 14px;
+    border-radius: 3px;
+    background: #4f8cff;
+    width: 0;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    color: var(--fg-2);
+  }
+  .controls label { display: flex; gap: var(--space-2); align-items: center; }
+}

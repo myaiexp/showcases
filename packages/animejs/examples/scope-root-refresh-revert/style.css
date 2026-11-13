@@ -1,0 +1,49 @@
+/* Scope root, refresh, revert: two circle rows with their own buttons */
+[data-example='animejs/scope-root-refresh-revert'] {
+  .rows {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    width: 100%;
+    max-width: 480px;
+  }
+  .row-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-3);
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+  }
+  .circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .label {
+    color: var(--fg-3);
+    font-size: 0.8rem;
+  }
+  .controls {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .rows.is-preview {
+    gap: var(--space-3);
+    max-width: 240px;
+  }
+  .is-preview .row {
+    padding: var(--space-2);
+  }
+  .is-preview .circle {
+    width: 1rem;
+    height: 1rem;
+  }
+}
