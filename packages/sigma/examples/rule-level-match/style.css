@@ -1,0 +1,37 @@
+/* rule-level-match: the sigma container needs an explicit size; controls sit below it */
+[data-example='sigma/rule-level-match'] {
+  .stage {
+    width: 100%;
+    height: 480px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .sc-example-card & .stage {
+    height: 100%;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+    font-size: 0.9rem;
+  }
+  .controls button,
+  .controls select {
+    padding: var(--space-1) var(--space-3);
+    background: var(--bg-surface);
+    color: var(--fg-1);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .controls output {
+    color: var(--fg-1);
+    font-variant-numeric: tabular-nums;
+  }
+  .controls input[type='range'] {
+    accent-color: var(--accent);
+  }
+}

@@ -6,7 +6,7 @@
     background: #fff;
     border-radius: 8px;
   }
-  .sc-stage-card & .stage {
+  .sc-example-card & .stage {
     height: 100%;
   }
 }

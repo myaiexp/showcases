@@ -1,0 +1,12 @@
+/* Add interactivity: the sigma container needs an explicit size */
+[data-example='sigma/add-interactivity'] {
+  .stage {
+    width: 100%;
+    height: 480px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .sc-example-card & .stage {
+    height: 100%;
+  }
+}

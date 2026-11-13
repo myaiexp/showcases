@@ -1,0 +1,25 @@
+/* Composed edge layers: stage size and the layer checkboxes */
+[data-example='sigma/edge-composed-layers'] {
+  .stage {
+    width: 100%;
+    height: 480px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .sc-example-card & .stage {
+    height: 100%;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+  }
+  .controls label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,50 @@
+/* Interaction event log: stage with a log panel overlaid on it */
+[data-example='sigma/event-log'] {
+  .wrap {
+    position: relative;
+    width: 100%;
+  }
+  .stage {
+    width: 100%;
+    height: 480px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .sc-example-card & .wrap,
+  .sc-example-card & .stage {
+    height: 100%;
+  }
+  .log {
+    position: absolute;
+    top: var(--space-2);
+    right: var(--space-2);
+    width: 260px;
+    height: 220px;
+    margin: 0;
+    padding: var(--space-2);
+    overflow-y: auto;
+    list-style: none;
+    font: 11px/1.5 ui-monospace, monospace;
+    color: #223;
+    background: rgb(255 255 255 / 0.88);
+    border: 1px solid #d6dae0;
+    border-radius: 6px;
+    pointer-events: none;
+  }
+  .log li {
+    white-space: nowrap;
+  }
+  .log b {
+    color: #6d5acf;
+  }
+  .sc-example-card & .log {
+    top: auto;
+    bottom: var(--space-2);
+    left: var(--space-2);
+    right: auto;
+    width: 56%;
+    height: 78px;
+    font-size: 10px;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,86 @@
+/* export-overrides: the sigma container needs an explicit size; controls sit below it */
+[data-example='sigma/export-overrides'] {
+  .stage {
+    width: 100%;
+    height: 480px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .sc-example-card & .stage {
+    height: 100%;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+    font-size: 0.9rem;
+  }
+  .controls button,
+  .controls select {
+    padding: var(--space-1) var(--space-3);
+    background: var(--bg-surface);
+    color: var(--fg-1);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .controls output {
+    color: var(--fg-1);
+    font-variant-numeric: tabular-nums;
+  }
+  .controls input[type='range'] {
+    accent-color: var(--accent);
+  }
+  .layout {
+    display: flex;
+    gap: var(--space-3);
+    width: 100%;
+  }
+  .sc-example-card & .layout {
+    position: relative;
+    height: 100%;
+  }
+  /* Card: show only the exported image at full width; the live stage stays mounted (sigma needs a
+     sized container) but is hidden behind it. */
+  .sc-example-card & .layout .stage {
+    position: absolute;
+    inset: 0;
+    visibility: hidden;
+  }
+  .sc-example-card & .layout .result {
+    flex: none;
+    width: 100%;
+  }
+  .layout .stage,
+  .layout .result {
+    flex: 1;
+    min-width: 0;
+  }
+  .result {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .result img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .result .caption {
+    position: absolute;
+    left: var(--space-2);
+    bottom: var(--space-2);
+    padding: 2px var(--space-2);
+    font-size: 0.75rem;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+  }
+}

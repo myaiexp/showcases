@@ -1,0 +1,45 @@
+/* HTML cluster labels: the sigma container needs an explicit size; controls sit below it */
+[data-example='sigma/html-cluster-labels'] {
+  .stage {
+    width: 100%;
+    height: 480px;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .cluster-label {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 2px 10px;
+    border: 2px solid;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1f2937;
+    font: 600 13px/1.4 sans-serif;
+    white-space: nowrap;
+  }
+  .sc-example-card & .stage {
+    height: 100%;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+    font-size: 0.875rem;
+  }
+  .controls label {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+  }
+}
