@@ -1,0 +1,12 @@
+{
+  "license": "MIT (three.js repo LICENSE covers docs/ and manual/)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/mrdoob/three.js",
+      "ref": "r187",
+      "paths": ["LICENSE", "docs/llms.txt", "docs/llms-full.txt", "docs/pages/*.md", "manual/list.json", "manual/pages"]
+    }
+  ]
+}

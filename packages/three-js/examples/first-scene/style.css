@@ -1,0 +1,9 @@
+/* Your first scene: canvas fills the card or a 4:3-ish stage in the full view */
+[data-example='three-js/first-scene'] {
+  .stage {
+    display: block;
+    width: 100%;
+    height: 420px;
+    max-height: 100%;
+  }
+}
