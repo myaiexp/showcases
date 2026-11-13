@@ -1,0 +1,945 @@
+{
+  "fetched": "2026-11-13T18:10:38.144Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/apache/echarts-handbook",
+      "ref": "master",
+      "paths": [
+        "contents/en/posts.yml",
+        "contents/en/**/*.md"
+      ],
+      "commit": "27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50"
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/apache/echarts-doc",
+      "ref": "master",
+      "paths": [
+        "en/option/**/*.md",
+        "en/api/*.md",
+        "en/tutorial/*.md",
+        "en/changelog.md"
+      ],
+      "commit": "2e15d7c7321dce0c62fda00b8d2426c171bd8b0a"
+    }
+  ],
+  "files": {
+    "repo/contents/en/basics/download.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/download.md",
+      "sha256": "e03df90fccfeec5ffe39c6334f0765f7559c81fafa1ceee1ca1f4b908cb6399f"
+    },
+    "repo/contents/en/basics/help.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/help.md",
+      "sha256": "fbb394054b6ad8a75e24cb8928fba1898369f9f9ec0ed80f41bb353776234519"
+    },
+    "repo/contents/en/basics/import.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/import.md",
+      "sha256": "40e0319f5786abe72576e3067d7db61149b019d3a4b59ce79d39bb3e6e5162bb"
+    },
+    "repo/contents/en/basics/inspiration.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/inspiration.md",
+      "sha256": "073aad1863c5082d47c22b8319ec81a5e6bd73cf6b9884ccb1aa123dab9287f3"
+    },
+    "repo/contents/en/basics/release-note/5-2-0.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/release-note/5-2-0.md",
+      "sha256": "67b6ef57515f58b4078c9f342525acf507b1721b1d641f319a060a3aee00388f"
+    },
+    "repo/contents/en/basics/release-note/5-3-0.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/release-note/5-3-0.md",
+      "sha256": "992d46c29ee0e75c73fe631c47b7b1406670ae7a2b46f84ce71e3e46c40e91df"
+    },
+    "repo/contents/en/basics/release-note/5-4-0.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/release-note/5-4-0.md",
+      "sha256": "a2f7e037c889604f1ed560b67264b79321e442e161240d989c91a4111cc42816"
+    },
+    "repo/contents/en/basics/release-note/5-5-0.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/release-note/5-5-0.md",
+      "sha256": "cf01a6420c7314fb2df3de4635c32ce46e03f7c4f713bd4b052af2a4a81115da"
+    },
+    "repo/contents/en/basics/release-note/5-6-0.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/release-note/5-6-0.md",
+      "sha256": "02ed915b4723396a47342dcdb59f34a1765bfd34e9e722293622dea0e442aa03"
+    },
+    "repo/contents/en/basics/release-note/v5-feature.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/release-note/v5-feature.md",
+      "sha256": "4c0b1681f042a3542ba3ad648498b1c7fbcc93137002b700771d22172d77c60f"
+    },
+    "repo/contents/en/basics/release-note/v5-upgrade-guide.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/release-note/v5-upgrade-guide.md",
+      "sha256": "a1fa525e9069c5a80897f4cd13fa26de34d15b0ec5ad65d898ac0f4dce27ee10"
+    },
+    "repo/contents/en/basics/release-note/v6-feature.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/release-note/v6-feature.md",
+      "sha256": "40ddb5d2d85be3ea4c9f83eb1ee3fde1d4feef834b19ed82964b6cb14ac0639a"
+    },
+    "repo/contents/en/basics/release-note/v6-upgrade-guide.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/basics/release-note/v6-upgrade-guide.md",
+      "sha256": "9e2e33687aa57e56624482a84e17fed21bcb43e0e4e7a7e0df02c270726734cd"
+    },
+    "repo/contents/en/best-practices/aria.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/aria.md",
+      "sha256": "a93cf9cc6d9e859efe2873edeaa2fe28f80302044cbf9b30498e8dd5ec3d1209"
+    },
+    "repo/contents/en/best-practices/canvas-vs-svg.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/canvas-vs-svg.md",
+      "sha256": "5ff8ed1bbeac492cc7a18741bbfe690ae0d9128512b71b4d9e7cd70b333fe0c9"
+    },
+    "repo/contents/en/best-practices/design/color-enhance.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/design/color-enhance.md",
+      "sha256": "9d3972e6b1eeca6bdf16aa60b6de6b2cd7bc20007ceb7097b30ebefcb6423299"
+    },
+    "repo/contents/en/best-practices/mobile.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/mobile.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "repo/contents/en/best-practices/security.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/security.md",
+      "sha256": "776b893a08d276fd36071b8587ecc13a4ade581a954798d222829cae59df89dd"
+    },
+    "repo/contents/en/best-practices/specification/bar/basic-bar.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/bar/basic-bar.md",
+      "sha256": "be8a3b52a5b8cf2c8096a2f4ff903421c4692c82baec850506ede20535ab5e31"
+    },
+    "repo/contents/en/best-practices/specification/bar/bi-directional-bar.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/bar/bi-directional-bar.md",
+      "sha256": "187bc9ef31b3e351df2634ae8f7e87ae7f4731d617bf65da3634f03ff27140d8"
+    },
+    "repo/contents/en/best-practices/specification/bar/grouped-bar.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/bar/grouped-bar.md",
+      "sha256": "da0ea9fb593621db7917af43fd1e1d86fdcdcc3f0dd6501158a9c71b946eb26d"
+    },
+    "repo/contents/en/best-practices/specification/bar/stacked-bar.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/bar/stacked-bar.md",
+      "sha256": "90e9c86a261e6e55c75a66bde63fd9b297ffc3a92ec8e8bf52811e4b33bf1a23"
+    },
+    "repo/contents/en/best-practices/specification/funnel.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/funnel.md",
+      "sha256": "205c82efb7ba0c5c1b7fcb10ac617c5debaa3758aee9f878a2fc8f0692ad737f"
+    },
+    "repo/contents/en/best-practices/specification/gauge.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/gauge.md",
+      "sha256": "657113bcebf94111012f279e5c6a9dcf793582cc2a421070ac2bc9411063f9bf"
+    },
+    "repo/contents/en/best-practices/specification/line/area.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/line/area.md",
+      "sha256": "2c748a46eac57d4fca86dc76b7d2a3421960cb58f789ec94e82be3ef842609ab"
+    },
+    "repo/contents/en/best-practices/specification/line/basic-line.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/line/basic-line.md",
+      "sha256": "f701a4ddd6b322f4bf4434a1d15b45ddf02bfbd0c8bbda3cc2e00b3474fbb39f"
+    },
+    "repo/contents/en/best-practices/specification/line/stacked-area.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/line/stacked-area.md",
+      "sha256": "5c0221128504664563d083c96edd7052f10a52d59e1aa3e09f496f4f78928fe3"
+    },
+    "repo/contents/en/best-practices/specification/pie/basic-pie.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/pie/basic-pie.md",
+      "sha256": "bfd0b5078dd8de52ff13695190ed2fbe48c4b37b5b1c6d0073127e6dd329c4ac"
+    },
+    "repo/contents/en/best-practices/specification/radar.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/radar.md",
+      "sha256": "28905c8eec21e066f59cb20f21fc1250558d0aafde4a5c8c14512d7ef7e825e4"
+    },
+    "repo/contents/en/best-practices/specification/scatter/bubble.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/scatter/bubble.md",
+      "sha256": "ae66fc1dae831c328f19da9e1abd84d3d8aa73e5045821ebcf1645d2ad906b7f"
+    },
+    "repo/contents/en/best-practices/specification/scatter/scatter.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/best-practices/specification/scatter/scatter.md",
+      "sha256": "124ab4dbbb6278735253ab95b4c3432a0f2857de9c036d9a542cfc64fbd20ced"
+    },
+    "repo/contents/en/concepts/axis.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/axis.md",
+      "sha256": "8832b576c8d09ac7221c8e220fca3e13a53bdaf5b7656eca9cd96f28a17a2d74"
+    },
+    "repo/contents/en/concepts/chart-size.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/chart-size.md",
+      "sha256": "7292dfbb01417596392a41fcb7f73f9883b474b8b8d39b1d1e309ef6cadbb644"
+    },
+    "repo/contents/en/concepts/coordinate.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/coordinate.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "repo/contents/en/concepts/data-transform.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/data-transform.md",
+      "sha256": "37b7f844168f5f6e8b8808d8d151b657f5b70328227ce105a4080d7c90d4f3b3"
+    },
+    "repo/contents/en/concepts/dataset.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/dataset.md",
+      "sha256": "04c8f9a5005e9684de34ba4586f50bf911bd469f9ff2dacbe9311feb9aedd492"
+    },
+    "repo/contents/en/concepts/event.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/event.md",
+      "sha256": "2056485fbd8fe8e7ef468cd23e97f7a8ae13071a3478e8b804a381028ccf1f64"
+    },
+    "repo/contents/en/concepts/legend.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/legend.md",
+      "sha256": "3d7ea1f9bba098d4bc8e1411d2e77a69e808e5430ae7410ee8fa12ed6c4811d7"
+    },
+    "repo/contents/en/concepts/options.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/options.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "repo/contents/en/concepts/series.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/series.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "repo/contents/en/concepts/style.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/style.md",
+      "sha256": "153c49bf0abbbc8cf40dff17f3494524736d60f95490c23ef76fbbe160311922"
+    },
+    "repo/contents/en/concepts/tooltip.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/tooltip.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "repo/contents/en/concepts/visual-map.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/concepts/visual-map.md",
+      "sha256": "addf302410b5698348f0d5637b30631ee1b7e7c84de5005da9ecbb3eca5792eb"
+    },
+    "repo/contents/en/get-started.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/get-started.md",
+      "sha256": "6df5b6e3e0878b0aa842f746b821c4d7cbfaea3e176ec00875da63f0057076c2"
+    },
+    "repo/contents/en/how-to/animation/transition.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/animation/transition.md",
+      "sha256": "6b5951ec26abb2c8e4ea6747862a7d014c296e14fbb375906d494796b47aeafc"
+    },
+    "repo/contents/en/how-to/chart-types/bar/bar-race.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/bar/bar-race.md",
+      "sha256": "7d1719df518cdece4473152ee2542ba7f01e560985f22df3d028322fb3a54b04"
+    },
+    "repo/contents/en/how-to/chart-types/bar/basic-bar.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/bar/basic-bar.md",
+      "sha256": "b217ca0c6db3d94577d10d82a76770d24134fadab30e0b59f2e84889601a5dd9"
+    },
+    "repo/contents/en/how-to/chart-types/bar/polar-bar.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/bar/polar-bar.md",
+      "sha256": "8ba1ee974482e4f4886f1f53c45120f4f8a4d56cd36158e0a86bf8360adb5798"
+    },
+    "repo/contents/en/how-to/chart-types/bar/stacked-bar.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/bar/stacked-bar.md",
+      "sha256": "1554ffee8c341ba428d036893e8d07aa2fda16356314d8da0e863d6fa39bd6a1"
+    },
+    "repo/contents/en/how-to/chart-types/bar/waterfall.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/bar/waterfall.md",
+      "sha256": "d85ae84e1373034a3a8cf4f91739a04138bde951f6fca1142ab018a40d30135e"
+    },
+    "repo/contents/en/how-to/chart-types/line/area-line.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/line/area-line.md",
+      "sha256": "9876032e63b8490b1e6c9e9efcdcc6c06b0321b46bc40d07e197263c286a677a"
+    },
+    "repo/contents/en/how-to/chart-types/line/basic-line.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/line/basic-line.md",
+      "sha256": "2c4130e90e4d22cdb7636366c99db9da431998780d07a80d31a15eeb31a291b6"
+    },
+    "repo/contents/en/how-to/chart-types/line/smooth-line.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/line/smooth-line.md",
+      "sha256": "26482e1c8e82dc1a368384f187e2cbc427702ec052af2c238888a69bf31cb061"
+    },
+    "repo/contents/en/how-to/chart-types/line/stacked-line.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/line/stacked-line.md",
+      "sha256": "146d2ee192d5d3804ecafbaab9222c6396d4c18a9b49453a45d808d87a0edd20"
+    },
+    "repo/contents/en/how-to/chart-types/line/step-line.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/line/step-line.md",
+      "sha256": "5351fbc28aebccc9ab52c9d015e737c2e40d439193d3a0ab78c5f7bf68d79a20"
+    },
+    "repo/contents/en/how-to/chart-types/pie/basic-pie.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/pie/basic-pie.md",
+      "sha256": "43ef7d960d42d477da8430f625dc452b85219246e1da328db514f73004dc5394"
+    },
+    "repo/contents/en/how-to/chart-types/pie/doughnut.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/pie/doughnut.md",
+      "sha256": "59a49a76126bffdae7e79ed797a574c1ce3fefe3812e3caf4415f999c51dfe00"
+    },
+    "repo/contents/en/how-to/chart-types/pie/rose.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/pie/rose.md",
+      "sha256": "c61eed353b42b91797c1864339185319fd0598502ae98a082bebea2269aad68b"
+    },
+    "repo/contents/en/how-to/chart-types/scatter/basic-scatter.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/chart-types/scatter/basic-scatter.md",
+      "sha256": "ebbf1c002ac0cd7bf67ce9b4edd52df9e74242fbe29445d364f35621889980ad"
+    },
+    "repo/contents/en/how-to/component-types/geo/svg-base-map.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/component-types/geo/svg-base-map.md",
+      "sha256": "a9ab98359bf512efd8caf4fb94481875063de27a2d2ba989aca25a3677ec8f6c"
+    },
+    "repo/contents/en/how-to/cross-platform/server.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/cross-platform/server.md",
+      "sha256": "20a876a5d1a4979b77efc6d820b09c19869f9f53b5c9b0bd43046a77150b39f6"
+    },
+    "repo/contents/en/how-to/custom-series.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/custom-series.md",
+      "sha256": "08294a88663c8b38d9a92e007e6982116c917e912aa49d7b9ba20036de337e44"
+    },
+    "repo/contents/en/how-to/data/drilldown.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/data/drilldown.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "repo/contents/en/how-to/data/dynamic-data.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/data/dynamic-data.md",
+      "sha256": "4005323d6f5c8a6e8807d1fa8b757cef64b6d79a4d8a12d1e8540cab5f2c3286"
+    },
+    "repo/contents/en/how-to/interaction/coarse-pointer.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/interaction/coarse-pointer.md",
+      "sha256": "24688028d1afe03d2ad70630030ab6598eaee5117bde9110a1b61d1b9348a4a3"
+    },
+    "repo/contents/en/how-to/interaction/drag.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/interaction/drag.md",
+      "sha256": "8d68a56d6b704bd11448f7c82a686e953c7db848b582fdfdb51965131e983f5c"
+    },
+    "repo/contents/en/how-to/label/rich-text.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/how-to/label/rich-text.md",
+      "sha256": "984ea911bd80f1990e75f21ba2c3268902e03d1247300804a88d186331b0bcaf"
+    },
+    "repo/contents/en/meta/edit-guide.md": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/meta/edit-guide.md",
+      "sha256": "a309682ab64944a092a2432e33394b75c539ce5aabe1cd8423e48a418fc5c975"
+    },
+    "repo/contents/en/posts.yml": {
+      "url": "https://github.com/apache/echarts-handbook/blob/27e5d82c72bfe0ee5ec6e1cb9c3cee8971f9da50/contents/en/posts.yml",
+      "sha256": "846bc9e7b2799cadc2a5354c2340a635c370186b673504aa1dc0882e13169723"
+    },
+    "repo/en/api/action.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/api/action.md",
+      "sha256": "54d18394cdec4ea2e95bf156b0d1307d397ff36822b34577c62b8e82332f2195"
+    },
+    "repo/en/api/api.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/api/api.md",
+      "sha256": "3cf47083471fb709a5399400644538b1316f7b919f1f2c4860615b01e721910a"
+    },
+    "repo/en/api/echarts-instance.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/api/echarts-instance.md",
+      "sha256": "06f446ad05652ffad3415302752b452100603f228c93a535be25e210f6dba00f"
+    },
+    "repo/en/api/echarts.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/api/echarts.md",
+      "sha256": "44a41d67500fb5efa7f6d780730fa7d444391155a533ec222a8f6029b666f092"
+    },
+    "repo/en/api/events.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/api/events.md",
+      "sha256": "3df91f20350c1208cb7deb315afb2def0a2fe14bfc1abccf607ad5f755cd7587"
+    },
+    "repo/en/api/graphic.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/api/graphic.md",
+      "sha256": "1d6609691d81d0a452144657aa1b66289b954e72b4d885f58ff62f90ff4e257a"
+    },
+    "repo/en/api/version.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/api/version.md",
+      "sha256": "651d031566dfbfe218482d286721d2c41b4ab6375c6b7bd7165d76fa7a53296c"
+    },
+    "repo/en/changelog.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/changelog.md",
+      "sha256": "97e9f2986520e47670a5a71df8e90f0653f227604d2f4e89e37e0885aa96d208"
+    },
+    "repo/en/option/component/angle-axis.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/angle-axis.md",
+      "sha256": "eb761b51f983e22e67c42a104dd2c6797dd4d777af3bff743d53c3e968d17772"
+    },
+    "repo/en/option/component/aria.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/aria.md",
+      "sha256": "a1b9d2684c4bf2d0c8e8c898832999841f82c0f8624dd46443e90b60d15a592d"
+    },
+    "repo/en/option/component/axis-common.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/axis-common.md",
+      "sha256": "b2a1f8d47bca5e16115451dfc71aca4b6921eadcef8dca8dd04a2e9c8447e62a"
+    },
+    "repo/en/option/component/axisPointer.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/axisPointer.md",
+      "sha256": "edaa5ba496f19367708e8b7e800a0fe7a7445cb09b3302ed74d3d7e1c0b64e24"
+    },
+    "repo/en/option/component/brush.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/brush.md",
+      "sha256": "df9cdd2d36b16734c9a12b019eb84fb884a48d1fc745aaa50c0d177251c4a8ff"
+    },
+    "repo/en/option/component/calendar.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/calendar.md",
+      "sha256": "e21041b454b3208a47798a04d15a915f26870d542e5ccd1843ae5a201fb1e1bc"
+    },
+    "repo/en/option/component/data-transform-external.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/data-transform-external.md",
+      "sha256": "741d1d22978757531c3fc58959cc740d58d8278a78232a85a58f916ebed4042e"
+    },
+    "repo/en/option/component/data-transform-filter.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/data-transform-filter.md",
+      "sha256": "9dd840ea788ec3b47b975be3feda2cebd8f945081923438c55529cf8db184a0d"
+    },
+    "repo/en/option/component/data-transform-sort.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/data-transform-sort.md",
+      "sha256": "e0544ba90a7ba2d552d0215253bc208996f150d78eb1bca9a89dbd2ac255c894"
+    },
+    "repo/en/option/component/data-zoom-inside.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/data-zoom-inside.md",
+      "sha256": "eeee913ef8015f826596f76fab5ef15e430c466aa76e894afa1be9a381a2ad28"
+    },
+    "repo/en/option/component/data-zoom-slider.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/data-zoom-slider.md",
+      "sha256": "1444e35dc9919a002fee7382a3c5e33435aebdd4047b2637c623bba5453aa821"
+    },
+    "repo/en/option/component/data-zoom.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/data-zoom.md",
+      "sha256": "fece39983349b7dd277e8c511a8de58bfce0fdc9f71478055b6e29b941675505"
+    },
+    "repo/en/option/component/dataset.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/dataset.md",
+      "sha256": "f834734f6a232a6cef4675a403fa955f1480afa40ae9b314aea6cc2739f59ad8"
+    },
+    "repo/en/option/component/geo-common.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/geo-common.md",
+      "sha256": "8728af2c376481541f5ef4f80fdb52052fa9bacc4d56d4a3488b6ebb7ea40e01"
+    },
+    "repo/en/option/component/geo.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/geo.md",
+      "sha256": "38a762d9c1a65f8f07d3c5e860576e853e2e25af2f6d3fe414060164345dbfa2"
+    },
+    "repo/en/option/component/graphic.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/graphic.md",
+      "sha256": "d9769d8ea846d991f44ab2d08e18ebe5eca6ebb8eb1f4e9df7a78663a70261bb"
+    },
+    "repo/en/option/component/grid.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/grid.md",
+      "sha256": "bf09612f6eba887550aebd0c3bd68540314679cee59b46b04f7b1affa20ce2f1"
+    },
+    "repo/en/option/component/legend.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/legend.md",
+      "sha256": "4535e5384a01867728a7577d4a4dc4ed5fe3c84d380f18747044d7e0e7bc10b1"
+    },
+    "repo/en/option/component/matrix.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/matrix.md",
+      "sha256": "a5104194a1d80b3e922e6cfd979b838eca60767fedf80b5015647e2ddab9067e"
+    },
+    "repo/en/option/component/parallel-axis.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/parallel-axis.md",
+      "sha256": "b809a0e4a0ccebdcb2701f8f576a07dc205213717fe11e4515fd1988cbf7ed1b"
+    },
+    "repo/en/option/component/parallel.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/parallel.md",
+      "sha256": "c3d3329b35ff66fba922c30627d311e14a5ea523da0fe55324529dd80db2e260"
+    },
+    "repo/en/option/component/polar.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/polar.md",
+      "sha256": "c434e3c71baf7ecc3b8c2e9c7a1d1e7d2ce79151ac8ebd7864183588d24fb2d6"
+    },
+    "repo/en/option/component/radar.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/radar.md",
+      "sha256": "989ab25e90dda2c2818ee417161da1966fecfde436ed74ed9151179c352fe05c"
+    },
+    "repo/en/option/component/radius-axis.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/radius-axis.md",
+      "sha256": "7f54ff12bce8779cb99ebbe7eff86c4a641d1055b1ff294ab67bcff032474ef4"
+    },
+    "repo/en/option/component/single-axis.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/single-axis.md",
+      "sha256": "44edcf008f5c873d4d96e15839e771d0e2c2927e2a280931870c88b2276489a6"
+    },
+    "repo/en/option/component/thumbnail.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/thumbnail.md",
+      "sha256": "0290189593dca4fa18e2bfb0617318ca0555083e00a103f3a5c10fd0d5d5121b"
+    },
+    "repo/en/option/component/timeline.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/timeline.md",
+      "sha256": "01d860c3cfe37f6d90fd85746131816ab3ad337c4f9784732c876197c7dc38e0"
+    },
+    "repo/en/option/component/title.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/title.md",
+      "sha256": "962dab514b3b93acbb251f01f6f58cf208ea93431c0c21792dbbee6789221646"
+    },
+    "repo/en/option/component/toolbox.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/toolbox.md",
+      "sha256": "cf06d2f04d8dec1311523643db03574f2c85de0d033e636bf035d01d8502c8b6"
+    },
+    "repo/en/option/component/tooltip.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/tooltip.md",
+      "sha256": "e342097c910f93c5c241c78c7a63947c73efb37ed64b1b6e181a5226ef5c2895"
+    },
+    "repo/en/option/component/visual-map-continuous.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/visual-map-continuous.md",
+      "sha256": "89755d9b60c826593ed98ac9f08727bf1042e5e3a8401994357d78a5a9c7f67f"
+    },
+    "repo/en/option/component/visual-map-piecewise.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/visual-map-piecewise.md",
+      "sha256": "f9b2e765df8b343d8dcdffbe89bf0533f63a2fd9dd2e7e50dc3ab28ee1a671ac"
+    },
+    "repo/en/option/component/visual-map.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/visual-map.md",
+      "sha256": "3170eb6f4cfb258655e60add64c2fb2e60d81008639a41d09045888f9c451ac2"
+    },
+    "repo/en/option/component/x-axis.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/x-axis.md",
+      "sha256": "ba29ce4ed410be0e0e9e8291f10d7a5357819931d5ed38d0b6bac8a2060d19a5"
+    },
+    "repo/en/option/component/y-axis.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/component/y-axis.md",
+      "sha256": "9dfc6c637e4ca2ad36f642a24b5ef675b13f24a182174a93d83656dfe1fa2af9"
+    },
+    "repo/en/option/option.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/option.md",
+      "sha256": "9897e74bef1e231a149005a3edb5f1fbc0d0c63b021110880c82aa952a7282a6"
+    },
+    "repo/en/option/partial/1d-data.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/1d-data.md",
+      "sha256": "99b9b8d7c4a5f414483b16b4ca8dcf3cb5615fba32d0e8db667f9eb377d72422"
+    },
+    "repo/en/option/partial/2d-data.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/2d-data.md",
+      "sha256": "27c33002adc29960cc6e5a383b6adc59625ddabef5425f95d36e8ff7ac171e8b"
+    },
+    "repo/en/option/partial/animation.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/animation.md",
+      "sha256": "038b735d2ef9c950110e7cf620976c5898b709dedd07c84fb965e23a646a0697"
+    },
+    "repo/en/option/partial/area-style.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/area-style.md",
+      "sha256": "f7c709d14bd910a84ed8991ef8a2dab08a1ef598e1a29f06a9388a1454871422"
+    },
+    "repo/en/option/partial/axisPointer-common.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/axisPointer-common.md",
+      "sha256": "585a5620874f40adb0e1e7868b62cde9119d0f80f06db28092137767a012481c"
+    },
+    "repo/en/option/partial/barGrid.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/barGrid.md",
+      "sha256": "d0d943b7c607c10cb02fc6e8d18ea4cebd2f0caf4818f7384c6dd37fa768b03a"
+    },
+    "repo/en/option/partial/circular-layout.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/circular-layout.md",
+      "sha256": "5ce40ccc5ad8e2c7df05911448680a19ed8e6b3cfdca6d2c6fd312bc71ce2f18"
+    },
+    "repo/en/option/partial/clip.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/clip.md",
+      "sha256": "ef130bd861213f3b3845110c6f906cedb67c2cb6941bd565fe76e7eeb86792ec"
+    },
+    "repo/en/option/partial/color-desc.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/color-desc.md",
+      "sha256": "cb69ae24f710c16239dc6f7a1603a35c283c0e05b7ab6dbcd4c553f86ba31575"
+    },
+    "repo/en/option/partial/colorBy.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/colorBy.md",
+      "sha256": "ff4c66ee0114927aee03cab40ef9bdab22301f4a47d37579bf5bf5bf69f646ed"
+    },
+    "repo/en/option/partial/component-common-style.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/component-common-style.md",
+      "sha256": "5ad8f5c7c46ae05e11b90a03ddbdce5e4e833e286b584502e02c9476f103ebb6"
+    },
+    "repo/en/option/partial/coord-sys.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/coord-sys.md",
+      "sha256": "ea4eb601790a65dc503daf45c44bfebefcc9adea8a6e7be83be3689531642a5c"
+    },
+    "repo/en/option/partial/cursor.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/cursor.md",
+      "sha256": "e4e369ffce2cf717a4b23daac11f60c01de5ab4411a61d37a17a01b520d65316"
+    },
+    "repo/en/option/partial/data-id-desc.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/data-id-desc.md",
+      "sha256": "4da97c2555e87779be7caca63ca852715dd641f973094e6feff4c7df13dec868"
+    },
+    "repo/en/option/partial/data-name-desc.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/data-name-desc.md",
+      "sha256": "61f838a40593a325ea579091cbf4314b0121a0e6e0d329a5878853754fe3325e"
+    },
+    "repo/en/option/partial/data-transform.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/data-transform.md",
+      "sha256": "311bea9f0058ee455b969c52ced0189c30775b70af2b10f5a4749ef630bd2c48"
+    },
+    "repo/en/option/partial/decal.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/decal.md",
+      "sha256": "fbb371cfde1e258bed79f1c4478f6ef864ee367fb570ec32d26ca69aaf94774c"
+    },
+    "repo/en/option/partial/emphasis-common.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/emphasis-common.md",
+      "sha256": "4271100a6e25c07d25d99c5d87164845724f9f777e204682cc2355a0a2d171f4"
+    },
+    "repo/en/option/partial/encode-dimensions.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/encode-dimensions.md",
+      "sha256": "7ceefdaf6c9a258b8ffe4910555b8e429b5b16b39144d977c8813537cdbfa9a6"
+    },
+    "repo/en/option/partial/formatter.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/formatter.md",
+      "sha256": "c74f69214fba6e9bf0cbcb6551f381768f3b4ab86d652d93cd7b776ec11b5922"
+    },
+    "repo/en/option/partial/group-id.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/group-id.md",
+      "sha256": "a11da2b54a9266aafe7a0383c8761108c20a057ef3af47436d4c5bb15a003a5f"
+    },
+    "repo/en/option/partial/icon.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/icon.md",
+      "sha256": "3701628122d8213e54e93688332c43130b27f5651e9d200fed12f633e48d2e69"
+    },
+    "repo/en/option/partial/id.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/id.md",
+      "sha256": "4ae1d45de9cb29b11921148c2151dea4f0a47577c920ad66b3b2f49aaa3c6911"
+    },
+    "repo/en/option/partial/item-style.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/item-style.md",
+      "sha256": "0ba360862b01b746de0a37e5eec0fe3f1d28ab54d767f25605fed0f39ec0eb44"
+    },
+    "repo/en/option/partial/label-layout.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/label-layout.md",
+      "sha256": "18c59c35f813735ef5a49c92f133e44f2c58325e029384859fa79bf262ac8337"
+    },
+    "repo/en/option/partial/label-line.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/label-line.md",
+      "sha256": "b60e918401177e411a1458d394902711810616054aa6d24670e864fd381a9af0"
+    },
+    "repo/en/option/partial/label-rotate-tangential.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/label-rotate-tangential.md",
+      "sha256": "148f4bc48f6aec3f9b1b8c56587a1699818968984c270ea236cff00753e5dcf7"
+    },
+    "repo/en/option/partial/label.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/label.md",
+      "sha256": "c9c976238cba0659271cb20449a5086db7b7daf3493f997d9703da9e25dd1f34"
+    },
+    "repo/en/option/partial/large.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/large.md",
+      "sha256": "692a362406f0e03854292c8a63b4c2afe6fd42356234d3a914f19563bef58646"
+    },
+    "repo/en/option/partial/legend-hover-link.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/legend-hover-link.md",
+      "sha256": "9f5949b71c579b755ac7175cea9d4196f5d4bdd6e444e9d0744653484d76bfd7"
+    },
+    "repo/en/option/partial/line-border-style.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/line-border-style.md",
+      "sha256": "07ac4c00b044fc6d0f897cbfad04acc0c2d574c9d904030a7f814c0cec9baf6d"
+    },
+    "repo/en/option/partial/line-data.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/line-data.md",
+      "sha256": "651b2bd3ebf1ea57aecba7df93729d8faf4b5641ca04d4ac1dc294441e40075b"
+    },
+    "repo/en/option/partial/line-style.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/line-style.md",
+      "sha256": "fc7e12baf444f09ef702ddf9ded01ba7ad3ffba6e6f6803802178b423f800a9e"
+    },
+    "repo/en/option/partial/mark-area.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/mark-area.md",
+      "sha256": "51df37d17b2031ea00413085cef14fbc60385f41c30f1195d133d8fdac39f7c8"
+    },
+    "repo/en/option/partial/mark-line.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/mark-line.md",
+      "sha256": "95e3dcefcd6bdb08cc7ad5906e3dbf33ff9cdc593f8f7adef908f9c91a7b5a96"
+    },
+    "repo/en/option/partial/mark-point.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/mark-point.md",
+      "sha256": "d4badfae9d1f278557e23954e21c7c68ae80f659c95d19a7f806a633585e1612"
+    },
+    "repo/en/option/partial/marker.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/marker.md",
+      "sha256": "efa830ff3d620c472d29cd0a7d2f036fd39cd321d70fc08cdda8dce673671ca4"
+    },
+    "repo/en/option/partial/matrix-body-corner.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/matrix-body-corner.md",
+      "sha256": "90e959aec13ee29dd7474710d17bd3450e65e4bbfe443792a00c8c55342c0f5f"
+    },
+    "repo/en/option/partial/matrix-header.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/matrix-header.md",
+      "sha256": "d1d8102423a0be440b913839f206f64919ade3a4f6f2088cafa4b4c5e380e872"
+    },
+    "repo/en/option/partial/matrix-region.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/matrix-region.md",
+      "sha256": "13d7a12c473b91ed3c5f105b218e250fb1e8261d9d7aeeafca1d4a1cef700fd6"
+    },
+    "repo/en/option/partial/padding.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/padding.md",
+      "sha256": "6a4f7e894a02dca5e08ac518cd897a8cb240388a209562af1539a455bf2c8769"
+    },
+    "repo/en/option/partial/parallel.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/parallel.md",
+      "sha256": "4c17915d15bcec0d77b97c6334290c3db8656a2390dac5b3fe1c875d34c7bcb9"
+    },
+    "repo/en/option/partial/progressive.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/progressive.md",
+      "sha256": "87b079fee236216d933c35c6525deb4265a01b036b70df21230defccfac4b71e"
+    },
+    "repo/en/option/partial/rect-layout-width-height.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/rect-layout-width-height.md",
+      "sha256": "5e6760e0aa52b54b093f9365e329d88e8e4ecd1d5f9686747844fc5a17efbdb7"
+    },
+    "repo/en/option/partial/rect-layout.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/rect-layout.md",
+      "sha256": "0cea3f8972122d7190836813d7c491e74f1b9e3ba60fd285cfe5ca327bccfd89"
+    },
+    "repo/en/option/partial/rich-inherit-plain-label.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/rich-inherit-plain-label.md",
+      "sha256": "bd436771387852627a4a95c1e81e19206db9028c5fc15cdc7be0eb0896c1669e"
+    },
+    "repo/en/option/partial/roam.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/roam.md",
+      "sha256": "73367cb699054cbc67da2416d64bba9c19b172be22866803caabe41ebc429567"
+    },
+    "repo/en/option/partial/sector-border-radius.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/sector-border-radius.md",
+      "sha256": "4150d5ad735f7f92ce0b013bd3482cfe07ea5ba9f2a0caad3d5d83041b9cedd8"
+    },
+    "repo/en/option/partial/security-warning.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/security-warning.md",
+      "sha256": "218fc45eb510c9f664090c09cbafa05f26ab868d13c09184bb4bdaad92c0e31d"
+    },
+    "repo/en/option/partial/select-common.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/select-common.md",
+      "sha256": "d175ec3afbcf781b1e5fc31abb0cc9a413a14a4de71038eed659566b8cb63af6"
+    },
+    "repo/en/option/partial/selected-mode.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/selected-mode.md",
+      "sha256": "5d9d5b6ccbdff9dbec711deb36eb7c6fce346f79225d28079e18302b30e96ee8"
+    },
+    "repo/en/option/partial/series-name.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/series-name.md",
+      "sha256": "977fb1a2205709f8d32319fa46c68f6fd3566df93e8b33ab44b5420ca16c9371"
+    },
+    "repo/en/option/partial/show.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/show.md",
+      "sha256": "bc2f9f61d580c3fd20846a7aa2d463032b2f3ac3a280ad5b2742567bae02805b"
+    },
+    "repo/en/option/partial/silent.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/silent.md",
+      "sha256": "e2ab3f1bc417f5dd95a69a533d87f02a7ad929a996020237af5365d6358d5c36"
+    },
+    "repo/en/option/partial/stack.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/stack.md",
+      "sha256": "09324dd2650ce3517205081ba02256bd063271647a21392221196aa5d73c4859"
+    },
+    "repo/en/option/partial/state-animation.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/state-animation.md",
+      "sha256": "7320160b988305a92637bc5e9fdea5de5e6e26d351b9942e6ac8102f79aff8d9"
+    },
+    "repo/en/option/partial/style-shadow-opacity.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/style-shadow-opacity.md",
+      "sha256": "cea0f2ac8db8da10c5b8c59506b1a040a0317f06eac821694d626b0e5a76c8b2"
+    },
+    "repo/en/option/partial/symbol.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/symbol.md",
+      "sha256": "d5397890ca19e2b3dfc228d88df01000b80cab7812177516945563ca9acfa5cd"
+    },
+    "repo/en/option/partial/text-style.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/text-style.md",
+      "sha256": "e6b8ce5992ea07eef38add01a265087563d23fbfcea59a6769b6b411b909a39a"
+    },
+    "repo/en/option/partial/tooltip-common.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/tooltip-common.md",
+      "sha256": "83ea2f15ae2eeb4480135176bd30493621e55c995ba4ae098e0519e53b23ca8b"
+    },
+    "repo/en/option/partial/universal-transition.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/universal-transition.md",
+      "sha256": "4d30d2f41415808602563b7cb4fee45e880a3fbea196f8dc481ac5639f9a3ee8"
+    },
+    "repo/en/option/partial/version.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/version.md",
+      "sha256": "de72b7c015be4f5cbd0ad8bca3035f8dc70d344d9b7c69749597e739844e284f"
+    },
+    "repo/en/option/partial/view-coord-sys.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/view-coord-sys.md",
+      "sha256": "4fac39e0c256c68f4cc6088ab493dd188ae808f9578d4175d9c08dfad5440373"
+    },
+    "repo/en/option/partial/visual-mapping.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/visual-mapping.md",
+      "sha256": "6c531b9439f819fcff1d0fa6926f173bf4370aace22853b9aae494c1083b1b21"
+    },
+    "repo/en/option/partial/z-zlevel.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/z-zlevel.md",
+      "sha256": "3c357fec6e20120e14fbc95fa0c51b4bc1cc046358a9f55d17d8a6a6ee099d3a"
+    },
+    "repo/en/option/partial/z.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/z.md",
+      "sha256": "ff50da8d257b4623543764c47939c658a71ce352fbabe24fadaa806483fee36e"
+    },
+    "repo/en/option/partial/zr-graphic.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/partial/zr-graphic.md",
+      "sha256": "cc6d9997b13703b28c58c9af872b88d6c0b0300d9436dd851996f21bed8810e1"
+    },
+    "repo/en/option/series/bar.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/bar.md",
+      "sha256": "0023e7d087976b53b9130bbbef9dc971fb5aab3b0340ac397537fbd40c64eaee"
+    },
+    "repo/en/option/series/boxplot.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/boxplot.md",
+      "sha256": "ab30114bc01920cddf978d59788553e1c39ae7e70fd52b0a81f866f5b5b159c7"
+    },
+    "repo/en/option/series/candlestick.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/candlestick.md",
+      "sha256": "80a083d681c32d023a2d571a4aabec4a7100d35cad492ed0147013092f9b24eb"
+    },
+    "repo/en/option/series/chord.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/chord.md",
+      "sha256": "e2abbea0f6d15a180dcf1a58430499613433d9dce44ef02ab08fabc20a846bb0"
+    },
+    "repo/en/option/series/custom.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/custom.md",
+      "sha256": "5d61b6eb30846172935881096ca02f27aae648440b7c90a65f674684aea0fdf0"
+    },
+    "repo/en/option/series/effectScatter.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/effectScatter.md",
+      "sha256": "7a97e98e1d595bd7ab2d47d9f9d52f392ae594a3446c45cb5ecc7d043ead441d"
+    },
+    "repo/en/option/series/funnel.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/funnel.md",
+      "sha256": "ae654a1efb418727236612afcdf671a7225a901645b03acc16de5d8e03d2c142"
+    },
+    "repo/en/option/series/gauge.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/gauge.md",
+      "sha256": "6a0f929cb2a5aa1acec9511a7a478eeace613639c5a34b8110a00dc3fb835036"
+    },
+    "repo/en/option/series/graph.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/graph.md",
+      "sha256": "f4e21ea578458dca174e6a5e5dbd291279d512c852d294c83eb97faed1f641fb"
+    },
+    "repo/en/option/series/heatmap.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/heatmap.md",
+      "sha256": "81123edbc6fca6fee9b288bf572f7174b73adfd9edd9a57391caa21e8aa02fd9"
+    },
+    "repo/en/option/series/line.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/line.md",
+      "sha256": "620d08c8cdd26528a3e263e20197be9d56157e85b8f1b14049c61d27fcc9f6d7"
+    },
+    "repo/en/option/series/lines.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/lines.md",
+      "sha256": "27c25d5efda32c872c31ad0b81de353a21879eaa4a8ecd8e6078de347dd78576"
+    },
+    "repo/en/option/series/map.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/map.md",
+      "sha256": "7303d0ff62a613f3df7b9b3bd98b6b0e1db48ff772a35c93ba78ee873b69dc8b"
+    },
+    "repo/en/option/series/parallel.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/parallel.md",
+      "sha256": "1a4ffbc45af5e1c8ad4da1862b6c02a59c3e3d47dd8b90b9401006ab663d54ee"
+    },
+    "repo/en/option/series/pictorialBar.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/pictorialBar.md",
+      "sha256": "33f75fb30d6ea08803da2b5fd8cdaef0a3a503011db8a2f691b6b2790488ee82"
+    },
+    "repo/en/option/series/pie.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/pie.md",
+      "sha256": "973a22bb6d7c48293a7946aa387fa759ed5d9819b581112ae6b7cb01f3b5f3e3"
+    },
+    "repo/en/option/series/radar.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/radar.md",
+      "sha256": "b6486f151ed7c000a5c5c95f453225255da707587d9d8c04b7efbdd126748d7d"
+    },
+    "repo/en/option/series/sankey.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/sankey.md",
+      "sha256": "426d0d0ffbff21f32ef9eddfdf6799ab32c9deeec0f3364308cb996244101295"
+    },
+    "repo/en/option/series/scatter.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/scatter.md",
+      "sha256": "ee2ce0338fb7b38e44caf534a7782e8cea607c2c2aad6f7f2970b8adaf7d0436"
+    },
+    "repo/en/option/series/series.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/series.md",
+      "sha256": "f72f52f11d6002e0d8abf32bdf043823ca7c8ab393ab3bde63602f8e1e24e287"
+    },
+    "repo/en/option/series/sunburst.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/sunburst.md",
+      "sha256": "9f3ac5c26389ca621d60138c07970451b2c863d9525b19fdd9f99ef5beee0a6d"
+    },
+    "repo/en/option/series/themeRiver.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/themeRiver.md",
+      "sha256": "d00a89cd8b192151a4774d98260837cefca07b4eaf30d9ffa5f321512fdf2521"
+    },
+    "repo/en/option/series/tree.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/tree.md",
+      "sha256": "5b9f2fa68f78313e952d38138e4eb00b105d8deb26e9a3b8d6888f2834fd83e1"
+    },
+    "repo/en/option/series/treemap.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/option/series/treemap.md",
+      "sha256": "6414e030244d596a8215fcf24e68cd7e46eeaeedf59a6d72c033cc64e125e673"
+    },
+    "repo/en/tutorial/aria.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/aria.md",
+      "sha256": "8bb58c139094626010f4cc15a35c0feacbcaf9a1d8b2ce060093fd3795583d97"
+    },
+    "repo/en/tutorial/bar-race.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/bar-race.md",
+      "sha256": "1168bdd025661b3230307007f236aa79f6ae0f908d6cd83840cfdc6f217bdb4e"
+    },
+    "repo/en/tutorial/basic-concepts-overview.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/basic-concepts-overview.md",
+      "sha256": "a10790462d1538488738c4de942682ba32f4a04e175a319e31d69bc3f628e530"
+    },
+    "repo/en/tutorial/custom-series.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/custom-series.md",
+      "sha256": "1d96cf4d4a48948abfdc873811ba8bd4e2b0d62c918a73f9aad13a11272032b2"
+    },
+    "repo/en/tutorial/data-transform.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/data-transform.md",
+      "sha256": "2a497b29c455c888d477f8fb8bef9208225a5a4006af2678a945007e84466021"
+    },
+    "repo/en/tutorial/data-zoom.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/data-zoom.md",
+      "sha256": "cdb5a44f6fa0c9c98741fd0fabc0c4b9df312ab817eb0ac083b2aa8ed65fb8bf"
+    },
+    "repo/en/tutorial/dataset.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/dataset.md",
+      "sha256": "f8f605d28ec6f96c11fd83d9d68264357a7c5022aa4fa357d4e39aa88f023db9"
+    },
+    "repo/en/tutorial/drag-example.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/drag-example.md",
+      "sha256": "18cc017e470ef75f8504bb0c86210b88c53d31037b0fc626770d57a7f5ee5e29"
+    },
+    "repo/en/tutorial/dynamic-data.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/dynamic-data.md",
+      "sha256": "117a2e1c1101fcbe4420e524273d1dc717b7cf8c9aff72a4ee8868595f3b5dbf"
+    },
+    "repo/en/tutorial/echarts-feature.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/echarts-feature.md",
+      "sha256": "7f81c21ce9e2c45fc67ae25f8416dd16b4745456ef11dc6e4b51bc40dc1da690"
+    },
+    "repo/en/tutorial/event.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/event.md",
+      "sha256": "2ddd4206dcc375f32ab95e4269df3c4c736f507d8679beb5e52b5bf8da10f066"
+    },
+    "repo/en/tutorial/geo-svg.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/geo-svg.md",
+      "sha256": "4d89e210622d50d6ee7aa0fde3ab5f20d732da00a9fae7063948459dcd8ee651"
+    },
+    "repo/en/tutorial/getting-started.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/getting-started.md",
+      "sha256": "61dfccd3d95ed1a5193c8adece7f782e393596daf55bf423278c6b4e7922a420"
+    },
+    "repo/en/tutorial/graphic.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/graphic.md",
+      "sha256": "a58f4b2f4e18d55fd1984027958d2c3f8fa72fd56112fdcbe96ffb11f7bf777a"
+    },
+    "repo/en/tutorial/headless.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/headless.md",
+      "sha256": "f4bce0c259fd37e52982aa4a8bff3c1ae83a2ab2ffd7327fa49c9687552ad8d7"
+    },
+    "repo/en/tutorial/media-query.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/media-query.md",
+      "sha256": "20c6b5e970eb7cf0d6645d106b5a9993d4738c91d246abc5a114fcf10ccbdf4b"
+    },
+    "repo/en/tutorial/renderer.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/renderer.md",
+      "sha256": "95e4f10198809296d54ce825a90dbb19a88ff22899313820bd7995c8716c44de"
+    },
+    "repo/en/tutorial/rich-text.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/rich-text.md",
+      "sha256": "222a3c093ac9474ceb69415ac1cb2fdce6649d4f51a51d6367c7ed5cc7a443b2"
+    },
+    "repo/en/tutorial/style-overview.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/style-overview.md",
+      "sha256": "4423840f24c0ce40c6f6ce25af93af04b2afc4ca42838c459041fd3b5aaa2902"
+    },
+    "repo/en/tutorial/styling.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/styling.md",
+      "sha256": "91bb30c68e427bb6466ec13667809ed8204b490fbe1b68b70b91b801cc634d14"
+    },
+    "repo/en/tutorial/tree-shaking.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/tree-shaking.md",
+      "sha256": "acd4abc4c41cc787191f22c225570e8d649336389e8db3132df62daa1210f8b2"
+    },
+    "repo/en/tutorial/tutorial.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/tutorial.md",
+      "sha256": "049e0f2b5426fb1d9c613e94b7a9a959c41d5a4f4c271c5b72f5165f38e5dfd3"
+    },
+    "repo/en/tutorial/upgrade-guide-v5.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/upgrade-guide-v5.md",
+      "sha256": "f6ca587c52159f3bc1ee18efae48b7a0c20c0efbc1e2dd1137a6f011a314baa3"
+    },
+    "repo/en/tutorial/visual-map.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/visual-map.md",
+      "sha256": "a63de44aeffa7fdf1cf0703571f63f7343fda59666d23c399954c40a9124bbaf"
+    },
+    "repo/en/tutorial/whats-new-in-echarts-v5.md": {
+      "url": "https://github.com/apache/echarts-doc/blob/2e15d7c7321dce0c62fda00b8d2426c171bd8b0a/en/tutorial/whats-new-in-echarts-v5.md",
+      "sha256": "c99686aa60ee0b6136068560ffec430668632a90c80a9314b669d5e110dbdf9d"
+    }
+  }
+}

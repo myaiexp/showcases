@@ -1,0 +1,18 @@
+{
+  "license": "Apache-2.0 (LICENSE in both apache/echarts-handbook and apache/echarts-doc)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/apache/echarts-handbook",
+      "ref": "master",
+      "paths": ["contents/en/posts.yml", "contents/en/**/*.md"]
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/apache/echarts-doc",
+      "ref": "master",
+      "paths": ["en/option/**/*.md", "en/api/*.md", "en/tutorial/*.md", "en/changelog.md"]
+    }
+  ]
+}
