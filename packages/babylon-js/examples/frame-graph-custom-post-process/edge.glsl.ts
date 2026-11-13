@@ -1,4 +1,4 @@
-// Fragment shader for the edge-detection post-process: Sobel on luminance, ink over colour
+// Edge-detection fragment shader: Sobel on luminance, ink over colour
 export const EDGE_FRAGMENT = /* glsl */ `
 precision highp float;
 varying vec2 vUV;

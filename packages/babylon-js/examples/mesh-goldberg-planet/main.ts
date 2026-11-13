@@ -1,4 +1,4 @@
-// A Goldberg polyhedron as a little planet: pole regions coloured, trees placed on faces
+// A Goldberg polyhedron planet: coloured pole regions and trees on faces
 import {
   ArcRotateCamera,
   Color3,

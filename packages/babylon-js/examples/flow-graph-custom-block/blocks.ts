@@ -1,4 +1,4 @@
-// Two hand-written flow graph blocks: a sine-wave data block and an every-Nth execution block
+// Custom flow graph blocks: a sine-wave data block, an every-Nth execution block
 import {
   FlowGraphBlock,
   FlowGraphExecutionBlock,

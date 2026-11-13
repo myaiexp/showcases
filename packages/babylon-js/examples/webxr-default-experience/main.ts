@@ -1,4 +1,4 @@
-// The default WebXR experience: enter button, teleport floor, and its state observable
+// Default WebXR experience: enter button, teleport floor, state observable
 import {
   Color3,
   FreeCamera,
@@ -37,17 +37,23 @@ const mount: Mount = async (el, ctx) => {
 
   // Teleportation targets the floor; controller meshes would be downloaded, so skip them.
   // Previews never enter XR, so their cards get no enter button.
-  const xr = await scene.createDefaultXRExperienceAsync({
-    floorMeshes: [floor],
-    disableDefaultUI: ctx.preview,
-    inputOptions: { doNotLoadControllerMeshes: true },
-  });
-
   const status: string[] = [];
-  if (!xr.baseExperience) {
+  // The enter-XR UI throws on plain http (other than localhost) instead of resolving.
+  const xr = await scene
+    .createDefaultXRExperienceAsync({
+      floorMeshes: [floor],
+      disableDefaultUI: ctx.preview,
+      inputOptions: { doNotLoadControllerMeshes: true },
+    })
+    .catch((err: unknown) => {
+      status.push(`createDefaultXRExperienceAsync failed: ${err instanceof Error ? err.message : String(err)}`);
+      return undefined;
+    });
+
+  if (xr && !xr.baseExperience) {
     // No WebXR in this browser: the helper resolves without a base experience and no button.
     status.push('WebXR unavailable: xr.baseExperience is undefined, so no enter button');
-  } else {
+  } else if (xr) {
     xr.baseExperience.onStateChangedObservable.add((state) => status.push(`state → ${WebXRState[state]}`));
     // Standing height when the first XR pose arrives.
     xr.baseExperience.onInitialXRPoseSetObservable.add((xrCamera) => (xrCamera.position.y = 1.7));
@@ -67,7 +73,7 @@ const mount: Mount = async (el, ctx) => {
   }
 
   return () => {
-    xr.dispose();
+    xr?.dispose();
     stage.dispose();
   };
 };

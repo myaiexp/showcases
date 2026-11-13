@@ -1,4 +1,4 @@
-// The docs' first physics scene: Havok, a falling sphere and a static ground, as aggregates
+// The docs' first physics scene: Havok, falling spheres, a static ground
 import {
   FreeCamera,
   HavokPlugin,

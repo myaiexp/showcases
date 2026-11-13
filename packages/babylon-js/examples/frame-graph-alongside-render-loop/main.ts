@@ -1,4 +1,4 @@
-// The scene renders as usual into a pass post-process; a frame graph adds bloom on top
+// Scene renders into a pass post-process; a frame graph adds bloom on top
 import {
   FrameGraph,
   FrameGraphBlackAndWhiteTask,

@@ -1,4 +1,4 @@
-// The fifteen numbered polyhedra, plus a geodesic and an icosphere, with per-face colours
+// The fifteen numbered polyhedra, a geodesic and an icosphere, face colours
 import {
   ArcRotateCamera,
   Color4,

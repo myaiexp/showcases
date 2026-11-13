@@ -1,4 +1,4 @@
-// HighlightLayer: outline picked meshes, with inner/outer glow and an animated blur
+// HighlightLayer: outline picked meshes, inner/outer glow, animated blur
 import {
   ArcRotateCamera,
   Color3,

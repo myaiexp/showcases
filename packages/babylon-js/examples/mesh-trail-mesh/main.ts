@@ -1,4 +1,4 @@
-// TrailMesh: ribbons that follow moving meshes, with taper, diameter and length options
+// TrailMesh: ribbons following moving meshes, taper, diameter, length
 import {
   ArcRotateCamera,
   Color3,

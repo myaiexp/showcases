@@ -6,7 +6,7 @@ export default definePackage({
   npm: '@babylonjs/core',
   tagline: 'A complete real-time 3D engine: scene graph, PBR materials, particles, physics, GUI and post-processing.',
   about:
-    'Every example imports the ES6 packages (@babylonjs/core, plus @babylonjs/gui for the GUI chapter) and renders through the WebGL Engine. The docs refer to Playground snippets for their full demos; those are a demo gallery, so these examples are built from the docs text and the API alone.',
+    'Every example imports the ES6 packages and renders through the WebGL Engine: @babylonjs/core, plus the companion packages a chapter needs (gui, havok for physics, addons with recast-navigation for crowds, loaders and serializers, viewer, smart-filters, controls). Models, textures and sounds are generated in code, so nothing is downloaded. The docs refer to Playground snippets for their full demos; those are a demo gallery, so these examples are built from the docs text and the API alone.',
   category: 'Graphics',
   homepage: 'https://www.babylonjs.com',
   docsUrl: 'https://doc.babylonjs.com',

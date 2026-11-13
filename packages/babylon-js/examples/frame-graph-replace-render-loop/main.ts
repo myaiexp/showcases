@@ -1,4 +1,4 @@
-// A hand-built frame graph replaces Scene.render: clear, draw, two post-processes, copy out
+// A hand-built frame graph replaces Scene.render: clear, draw, effects, copy
 import {
   Constants,
   FrameGraph,

@@ -1,4 +1,4 @@
-// A looping sound attached to an orbiting mesh, heard through a listener on the camera
+// A looping sound on an orbiting mesh, heard by a listener on the camera
 import {
   ArcRotateCamera,
   Color3,

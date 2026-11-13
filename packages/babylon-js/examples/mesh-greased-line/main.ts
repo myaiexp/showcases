@@ -1,4 +1,4 @@
-// GreasedLine: a camera-facing spiral with tapering widths, a colour table and animated dashes
+// GreasedLine spiral: tapering widths, a colour table and animated dashes
 import {
   ArcRotateCamera,
   Color3,

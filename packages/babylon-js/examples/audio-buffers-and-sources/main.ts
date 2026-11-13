@@ -1,4 +1,4 @@
-// One shared sound buffer, a streaming sound from a blob URL, and an OscillatorNode source
+// Shared sound buffer, a streaming blob-URL sound and an OscillatorNode source
 import {
   ArcRotateCamera,
   Color3,

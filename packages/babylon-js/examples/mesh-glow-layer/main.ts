@@ -1,4 +1,4 @@
-// GlowLayer: emissive parts of the scene glow, with per-mesh colour override and exclusions
+// GlowLayer: emissive meshes glow, with a per-mesh colour and exclusions
 import {
   ArcRotateCamera,
   Color3,

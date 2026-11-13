@@ -1,4 +1,4 @@
-// Three looping tones, each looped a different way, faded with setVolume ramp shapes
+// Three tones looped three ways and faded with setVolume ramp shapes
 import {
   ArcRotateCamera,
   AudioParameterRampShape,

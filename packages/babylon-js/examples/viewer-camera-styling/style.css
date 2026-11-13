@@ -1,0 +1,40 @@
+/* Viewer styling: CSS variables on the element, ::part() rules and the controls table */
+[data-example='babylon-js/viewer-camera-styling'] {
+  babylon-viewer {
+    display: block;
+    width: 100%;
+    height: 440px;
+    --ui-background-hue: 220;
+    --ui-background-saturation: 40%;
+    --ui-background-lightness: 20%;
+    --ui-background-opacity: 0.8;
+    --ui-foreground-color: #e8ecf8;
+  }
+  babylon-viewer.bare {
+    height: 200px;
+  }
+  babylon-viewer.pill::part(tool-bar) {
+    border-radius: 999px;
+    border: 2px solid var(--ui-foreground-color);
+    padding-inline: 18px;
+  }
+  babylon-viewer.pill::part(progress-bar) {
+    height: 6px;
+    background: var(--ui-foreground-color);
+  }
+  .controls {
+    width: 100%;
+    box-sizing: border-box;
+    padding: var(--space-2) var(--space-3);
+    background: var(--bg-surface);
+    color: var(--fg-3);
+    font-size: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2px var(--space-4);
+  }
+  .controls b {
+    color: var(--fg-2);
+    font-weight: 600;
+  }
+}

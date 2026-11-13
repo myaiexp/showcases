@@ -1,4 +1,4 @@
-// Two sounds mixed through an intermediate AudioBus with stereo pan and an analyzer
+// Two sounds mixed through an AudioBus with stereo pan and an analyzer
 import {
   ArcRotateCamera,
   Color3,

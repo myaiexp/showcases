@@ -1,4 +1,4 @@
-// GeospatialCamera orbiting a globe: center, yaw, pitch, radius, limits and clipping
+// GeospatialCamera around a globe: center, yaw, pitch, radius and limits
 import {
   DirectionalLight,
   GeospatialCamera,
