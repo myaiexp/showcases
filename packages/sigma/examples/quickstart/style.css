@@ -1,0 +1,12 @@
+/* Quickstart: the sigma container needs an explicit size */
+[data-example='sigma/quickstart'] {
+  .stage {
+    width: 100%;
+    height: 480px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .sc-stage-card & .stage {
+    height: 100%;
+  }
+}

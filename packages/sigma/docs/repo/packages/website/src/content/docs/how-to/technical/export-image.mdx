@@ -1,0 +1,130 @@
+---
+title: Export as image
+description: How to export the graph visualization as an image.
+sidebar:
+  label: "Export image"
+---
+
+import SigmaExample from "../../../../components/SigmaExample.astro";
+
+The `@sigma/export-image` package lets you export the current graph visualization as a PNG or JPEG file. It works by
+creating a temporary offscreen renderer, copying the primitives, styles and settings declarations as well as the current
+node/edge/graph states, and drawing the stage canvas onto a new output canvas.
+
+<SigmaExample id="cookbook/export-image" height="500px" controls />
+
+## Installation
+
+```bash
+npm install @sigma/export-image
+```
+
+## Download as image
+
+The simplest way to export is `downloadAsImage`, which triggers a file download in the browser:
+
+```typescript
+import { downloadAsImage } from "@sigma/export-image";
+
+downloadAsImage(renderer, {
+  fileName: "my-graph",
+  format: "png",
+  backgroundColor: "#ffffff",
+});
+```
+
+There are also shorthand functions `downloadAsPNG` and `downloadAsJPEG` that lock the format:
+
+```typescript
+import { downloadAsPNG } from "@sigma/export-image";
+
+downloadAsPNG(renderer, { fileName: "my-graph", backgroundColor: "#ffffff" });
+```
+
+## Options
+
+| Option            | Type                  | Default         | Description                                                         |
+| ----------------- | --------------------- | --------------- | ------------------------------------------------------------------- |
+| `fileName`        | `string`              | `"graph"`       | Output file name (without extension)                                |
+| `format`          | `"png" \| "jpeg"`     | `"png"`         | Image format                                                        |
+| `backgroundColor` | `string`              | `"transparent"` | Background color                                                    |
+| `width`           | `number \| null`      | `null`          | Output width in pixels (defaults to current renderer width)         |
+| `height`          | `number \| null`      | `null`          | Output height in pixels (defaults to current renderer height)       |
+| `cameraState`     | `CameraState \| null` | `null`          | Override camera state (defaults to current renderer's camera state) |
+| `sigmaOverrides`  | `object`              | `{}`            | Alter `primitives`, `styles`, and/or `settings` for the export      |
+
+## Overriding declarations
+
+The export reuses the source renderer's `primitives`, `styles` and `settings`, so a graph with custom shapes and style
+rules exports exactly as it appears. Use `sigmaOverrides` when the image should differ from the screen.
+
+Each entry accepts an object, whose top-level sections replace the source ones while the others are inherited:
+
+```typescript
+// Same styling as on screen, but without the stage padding:
+downloadAsPNG(renderer, { sigmaOverrides: { settings: { stagePadding: 0 } } });
+```
+
+Or a function, which receives the source declaration and returns the one to use as-is. Use this form to _add_ to what the
+renderer already declares, since it makes the source impossible to leave out:
+
+```typescript
+// Same styling as on screen, plus a rule forcing every label to be drawn:
+downloadAsPNG(renderer, {
+  sigmaOverrides: {
+    styles: (styles) => ({
+      ...styles,
+      nodes: [...(Array.isArray(styles.nodes) ? styles.nodes : [styles.nodes!]), { labelVisibility: "visible" }],
+    }),
+  },
+});
+```
+
+## Custom dimensions
+
+Export at a higher resolution than the current viewport:
+
+```typescript
+downloadAsImage(renderer, {
+  width: 1920,
+  height: 1080,
+  backgroundColor: "#ffffff",
+});
+```
+
+## Drawing on canvas
+
+For custom processing (like adding a watermark or feeding the image to another library), use `drawOnCanvas` to get the
+raw `HTMLCanvasElement`:
+
+```typescript
+import { drawOnCanvas } from "@sigma/export-image";
+
+const canvas = await drawOnCanvas(renderer, {
+  backgroundColor: "#ffffff",
+  width: 1920,
+  height: 1080,
+});
+
+// Use the canvas for further processing:
+const ctx = canvas.getContext("2d");
+ctx.font = "16px sans-serif";
+ctx.fillText("My Graph", 20, 30);
+
+// Convert to blob manually:
+canvas.toBlob((blob) => {
+  // Upload, display, etc...
+}, "image/png");
+```
+
+## Using a middleware
+
+The `withTempRenderer` callback gives you access to the temporary sigma instance before the stage canvas is drawn:
+
+```typescript
+downloadAsImage(renderer, {
+  withTempRenderer: async (tmpRenderer) => {
+    // ...
+  },
+});
+```

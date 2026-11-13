@@ -1,0 +1,27 @@
+{
+  "license": "MIT (sigma.js repo LICENSE.txt covers the website docs)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/jacomyal/sigma.js",
+      "ref": "sigma@4.0.6",
+      "paths": [
+        "README.md",
+        "packages/website/src/content/docs/get-started",
+        "packages/website/src/content/docs/concepts",
+        "packages/website/src/content/docs/how-to",
+        "packages/website/src/content/docs/reference",
+        "packages/node-border/README.md",
+        "packages/node-image/README.md",
+        "packages/node-piechart/README.md",
+        "packages/utils/README.md",
+        "packages/export-image/README.md",
+        "packages/layer-leaflet/README.md",
+        "packages/layer-maplibre/README.md",
+        "packages/layer-webgl/README.md",
+        "packages/layout-fa2-gpu/README.md"
+      ]
+    }
+  ]
+}

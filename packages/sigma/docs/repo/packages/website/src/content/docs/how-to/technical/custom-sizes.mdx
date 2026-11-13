@@ -1,0 +1,62 @@
+---
+title: Custom size handling
+description: How to customize how sigma handles node and edge sizes relative to zoom and positions.
+sidebar:
+  label: "Custom sizes"
+---
+
+import SigmaExample from "../../../../components/SigmaExample.astro";
+
+By default, sigma rescales node and edge sizes to fit the viewport and uses square-root zoom scaling so that elements
+grow moderately as you zoom in. These defaults work well for most graphs, but some layouts require more control.
+
+You can try changing the settings below and zoom in/out to see how each combination affects node and edge sizing:
+
+<SigmaExample id="core/custom-sizes" height="500px" />
+
+## Default behavior
+
+Out of the box, sigma does two things:
+
+1. **Auto-rescale**: Node positions are rescaled so the graph fits optimally in the viewport. Sizes are not rescaled,
+   they remain as specified in the graph data.
+2. **Square-root zoom scaling**: When you zoom in, node sizes grow proportionally to the square root of the zoom ratio.
+   This keeps nodes visible at all zoom levels without overwhelming the view.
+
+## Custom zoom-to-size function
+
+The `zoomToSizeRatioFunction` setting controls how sizes change as you zoom. The default is `Math.sqrt`:
+
+```typescript
+// Default: sizes grow with the square root of the zoom ratio
+const renderer = new Sigma(graph, container, {
+  settings: { zoomToSizeRatioFunction: Math.sqrt },
+});
+```
+
+For sizes that stay constant regardless of zoom:
+
+```typescript
+const renderer = new Sigma(graph, container, {
+  settings: { zoomToSizeRatioFunction: () => 1 },
+});
+```
+
+For sizes that scale linearly with zoom (items grow and shrink at the same rate as the camera moves):
+
+```typescript
+const renderer = new Sigma(graph, container, {
+  settings: { zoomToSizeRatioFunction: (ratio) => ratio },
+});
+```
+
+## Using screen pixels as size reference
+
+By default, sizes are in the same coordinate space as node positions (`itemSizesReference: "positions"`). If you want
+sizes to be in "screen pixels at default zoom ratio" instead, use `itemSizesReference: "screen"`:
+
+```typescript
+const renderer = new Sigma(graph, container, {
+  settings: { itemSizesReference: "screen" },
+});
+```

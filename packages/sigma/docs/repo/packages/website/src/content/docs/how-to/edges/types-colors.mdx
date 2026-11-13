@@ -1,0 +1,67 @@
+---
+title: Paths and colors
+sidebar:
+  label: "Paths & colors"
+---
+
+import SigmaExample from "../../../../components/SigmaExample.astro";
+
+Sigma v4 gives you full control over edge appearance through the **primitives** and **styles** system. You can combine
+different path geometries and [fill layers](/how-to/edges/fill-layers/).
+
+<SigmaExample id="styling/edge-styles" height="500px" />
+
+## Edge paths
+
+Sigma ships with five built-in path types:
+
+| Path               | Description                                     |
+| ------------------ | ----------------------------------------------- |
+| `pathLine()`       | Direct line between source and target           |
+| `pathCurved()`     | Quadratic Bezier curve (configurable curvature) |
+| `pathStep()`       | Right-angle step (horizontal then vertical)     |
+| `pathStepCurved()` | Step with rounded corners                       |
+| `pathCurvedS()`    | S-shaped cubic curve                            |
+
+Declare which paths your graph uses in `primitives.edges.paths`, then assign them per-edge via styles.
+
+For arrowheads and other endpoint shapes, see the [Extremities](/how-to/edges/extremities/) documentation.
+
+## Edge colors
+
+Edge colors work like node colors. Set them in the graph data and read them via styles:
+
+```typescript
+graph.addEdge("a", "b", { color: "#e63946" });
+
+new Sigma(graph, container, {
+  styles: {
+    edges: [{ color: { attribute: "color" } }],
+  },
+});
+```
+
+Edge layer color options (like `layerPlain()`'s `color`, or `layerDashed()`'s `dashColor` and `gapColor`) accept three
+forms:
+
+- A constant CSS color string (e.g. `"#e63946"`);
+- `{ attribute }` to read a per-edge color from graph data;
+- `{ node: "source" }` or `{ node: "target" }` to use an endpoint node's color.
+
+Node references are read live from the GPU: edges follow their node's color through hover effects and state changes,
+with no per-edge data to maintain.
+
+```typescript
+new Sigma(graph, container, {
+  primitives: {
+    edges: {
+      // Every edge wears its source node's color:
+      layers: [layerPlain({ color: { node: "source" } })],
+    },
+  },
+});
+```
+
+For dashed and gradient edges, and how layers compose, see [Fill layers](/how-to/edges/fill-layers/).
+
+For more on the styles and primitives system, see [Styles and primitives](/concepts/styles-and-primitives/).

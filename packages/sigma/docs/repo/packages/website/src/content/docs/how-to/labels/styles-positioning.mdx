@@ -1,0 +1,207 @@
+---
+title: Styles and positioning
+sidebar:
+  label: "Styles & positioning"
+---
+
+import SigmaExample from "../../../../components/SigmaExample.astro";
+
+Sigma renders labels for both nodes and edges on the GPU using SDF text. This page covers font styles, positioning,
+visibility, and label backgrounds for both.
+
+## Node labels
+
+:::note[Node label backgrounds vs. node backdrops]
+Both render a shape behind nodes or labels, but they sit on opposite ends of a tradeoff. **Label backgrounds**
+(`labelBackgroundColor`, `labelBackgroundPadding`) are a flat colored rect behind label text. They are cheap to render,
+intended to be always-on, and also the hit area for label events when `nodeLabelEvents` / `edgeLabelEvents` is enabled.
+[**Backdrops**](/how-to/nodes/backdrops/) are a styled GPU shape (shadow, border, corner radius, configurable area)
+around a node and/or its label. They are much more expensive, meant for a handful of elements at a time, and typically
+tied to hover or highlight states.
+:::
+
+### Positioning
+
+Labels can be placed relative to their node using the `labelPosition` style property:
+
+```typescript
+styles: {
+  nodes: [
+    {
+      label: { attribute: "label" },
+      labelPosition: "right", // "right" | "left" | "above" | "below" | "over"
+    },
+  ],
+}
+```
+
+You can also set `labelAngle` for rotated labels.
+
+### Font and color
+
+```typescript
+styles: {
+  nodes: [
+    DEFAULT_STYLES.nodes,
+    {
+      labelColor: "#333",
+      labelSize: 14,
+      labelFont: "Georgia, serif",
+    },
+  ],
+}
+```
+
+### Background
+
+A flat colored rectangle can be drawn behind each label, controlled by two style properties:
+
+| Property                 | Type     | Description                                     |
+| ------------------------ | -------- | ----------------------------------------------- |
+| `labelBackgroundColor`   | `string` | Fill color. Transparent (or omitted) = no fill. |
+| `labelBackgroundPadding` | `number` | Padding around the label text, in pixels.       |
+
+```typescript
+styles: {
+  nodes: [
+    {
+      labelBackgroundColor: "rgba(255, 255, 255, 0.8)",
+      labelBackgroundPadding: 4,
+    },
+  ],
+}
+```
+
+Label backgrounds are deliberately minimal: no border, shadow, or corner radius. Use
+[backdrops](/how-to/nodes/backdrops/) if you need a richer styled shape.
+
+The same rectangle also acts as the **hit area for label events**: when `nodeLabelEvents` is enabled, hovering or
+clicking inside it fires the corresponding `*Label` event, even when the fill is transparent. Use the
+`labelPickingPadding` setting to extend the hit area beyond the visual padding without enlarging the visible background.
+
+### Visibility
+
+By default, sigma uses density-based culling to avoid overlapping labels. You can override this per-node:
+
+- `"auto"` (default): density-based, only the most important labels are shown, and depending on the zoom level
+- `"visible"`: always displayed
+- `"hidden"`: never displayed
+
+```typescript
+styles: {
+  nodes: [
+    { labelVisibility: "auto" },
+    {
+      whenState: "isHovered",
+      then: { labelVisibility: "visible" },
+    },
+  ],
+}
+```
+
+The `labelRenderedSizeThreshold` and `labelDensity` settings control the density-based culling behavior (see
+[Settings](/reference/settings/)).
+
+### Stacking labels above other nodes
+
+A node's label is painted in the same depth bucket as the node itself, which means it can be hidden by unrelated nodes
+that sit on top. To detach a label from its node and route it into a higher bucket, set `labelDepth`:
+
+```typescript
+primitives: {
+  // Declare a higher bucket the labels will live in:
+  depthLayers: ["edges", "nodes", "topEdges", "topNodes"],
+},
+styles: {
+  nodes: [
+    DEFAULT_STYLES.nodes,
+    // Geometry stays in "nodes", but labels paint above everything else:
+    { depth: "nodes", labelDepth: "topNodes" },
+  ],
+},
+```
+
+When a rule sets `depth` without `labelDepth`, the label follows the node automatically. Set `labelDepth` explicitly
+only when you want the label to part ways with its parent. See [Depth and z-order](/concepts/depth-and-z-order/) for the
+full model.
+
+This example demonstrates label rendering at various font sizes and styles:
+
+<SigmaExample id="styling/label-rendering" height="500px" />
+
+This example shows how to play with label colors, backgrounds and positions:
+
+<SigmaExample id="styling/label-styles" height="500px" />
+
+## Edge labels
+
+Edge labels are disabled by default. Enable them with the `renderEdgeLabels` setting:
+
+```typescript
+new Sigma(graph, container, {
+  settings: { renderEdgeLabels: true },
+});
+```
+
+By default, label text comes from the edge's `label` attribute:
+
+```typescript
+graph.addEdge("a", "b", { label: "connects to" });
+```
+
+However, `label` is also an edge style property, that can be rebound to another attribute, for instance.
+
+### Position
+
+Edge labels can be placed relative to the edge path:
+
+| Position  | Description                                              |
+| --------- | -------------------------------------------------------- |
+| `"over"`  | Centered directly on the edge path (default)             |
+| `"above"` | Offset above the edge path                               |
+| `"below"` | Offset below the edge path                               |
+| `"auto"`  | Above or below, whichever is on top on screen            |
+
+```typescript
+styles: {
+  edges: [DEFAULT_STYLES.edges, { labelPosition: "above" }],
+}
+```
+
+### Font size modes
+
+Edge labels support two font size modes, configured in `primitives.edges.label`:
+
+- **`"fixed"`** (default): constant pixel size regardless of zoom
+- **`"scaled"`**: scales with camera zoom
+
+```typescript
+primitives: {
+  edges: {
+    label: { fontSizeMode: "scaled" },
+  },
+},
+```
+
+### Text border
+
+When labels are positioned `"over"` the edge, they can be hard to read. The `textBorder` option adds an outline around each character:
+
+```typescript
+primitives: {
+  edges: {
+    label: {
+      textBorder: { width: 2, color: "#ffffff" },
+    },
+  },
+},
+```
+
+### Background
+
+Edge labels accept the same `labelBackgroundColor` and `labelBackgroundPadding` properties as node labels, and similarly
+act as the hit area for edge label events when `edgeLabelEvents` is enabled.
+
+This example shows how to manipulate edge label positioning, font size modes, and text borders:
+
+<SigmaExample id="styling/edge-label-styles" height="500px" />
