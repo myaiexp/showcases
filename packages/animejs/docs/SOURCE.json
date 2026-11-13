@@ -1,0 +1,12 @@
+{
+  "license": "none found (site-only docs at animejs.com/documentation; the MIT licence covers the library package, not the site)",
+  "redistribute": false,
+  "sources": [
+    {
+      "kind": "crawl",
+      "start": "https://animejs.com/documentation/",
+      "prefix": "https://animejs.com/documentation/",
+      "max": 500
+    }
+  ]
+}

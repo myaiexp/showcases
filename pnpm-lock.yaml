@@ -35,6 +35,9 @@ importers:
       '@sigma/utils':
         specifier: ^4.0.0
         version: 4.0.0(sigma@4.0.6(graphology-types@0.24.8))
+      animejs:
+        specifier: ^4.5.0
+        version: 4.5.0
       chart.js:
         specifier: ^4.6.1
         version: 4.6.1
@@ -545,6 +548,17 @@ packages:
   '@xmldom/xmldom@0.8.15':
     resolution: {integrity: sha512-/5NV/vDALVFDXgLmfsy9TRCBlKwO2LNBFzpzvb9iIj+jR+eSc6DLYYvVOdivT/jm7MtU6TebYuRmzEOI7w40UA==}
     engines: {node: '>=10.0.0'}
+
+  animejs@4.5.0:
+    resolution: {integrity: sha512-NQimYX+lz8WaXonGS9zVVoviCIAjONeJayxacUditaivYLqyXgGjFKjuyl0aUUhFKm5MriX9ty1TGovNzoJQWA==}
+    peerDependencies:
+      '@types/three': '>=0.150.0'
+      three: '>=0.150.0'
+    peerDependenciesMeta:
+      '@types/three':
+        optional: true
+      three:
+        optional: true
 
   assertion-error@2.0.1:
     resolution: {integrity: sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==}
@@ -1308,6 +1322,8 @@ snapshots:
   '@vitest/spy@5.1.0': {}
 
   '@xmldom/xmldom@0.8.15': {}
+
+  animejs@4.5.0: {}
 
   assertion-error@2.0.1: {}
 

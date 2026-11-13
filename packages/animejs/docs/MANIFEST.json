@@ -1,0 +1,1689 @@
+{
+  "fetched": "2026-11-13T13:19:21.460Z",
+  "sources": [
+    {
+      "kind": "crawl",
+      "start": "https://animejs.com/documentation/",
+      "prefix": "https://animejs.com/documentation/",
+      "max": 500
+    }
+  ],
+  "files": {
+    "pages/animejs-com/documentation.md": {
+      "url": "https://animejs.com/documentation/",
+      "sha256": "3ff75058087ad387d8450bc422f3f93e04ceb4c3ff32e34711176568ae93593f"
+    },
+    "pages/animejs-com/documentation/adapters.md": {
+      "url": "https://animejs.com/documentation/adapters",
+      "sha256": "975c1d2caf13cb26e4eed89a8b2a26866373ff9d3a034528f4e8edb38a818061"
+    },
+    "pages/animejs-com/documentation/adapters/threejs-adapter.md": {
+      "url": "https://animejs.com/documentation/adapters/threejs-adapter",
+      "sha256": "4b27d505378336628b27157355f2d74a1354d6dca002b601f9ef56c86aec9674"
+    },
+    "pages/animejs-com/documentation/adapters/threejs-adapter/materials-and-uniforms.md": {
+      "url": "https://animejs.com/documentation/adapters/threejs-adapter/materials-and-uniforms",
+      "sha256": "883d0f0a60828646abf1858834015f8df5a80235ed9b3e0c4ef9862850f2db1c"
+    },
+    "pages/animejs-com/documentation/adapters/threejs-adapter/threejs-adapter-common-gotchas.md": {
+      "url": "https://animejs.com/documentation/adapters/threejs-adapter/threejs-adapter-common-gotchas",
+      "sha256": "6fa90205fd1b102eaf4d57f77c91def5995d99cd4d164d6f6016297fd70fb141"
+    },
+    "pages/animejs-com/documentation/adapters/threejs-adapter/threejs-instanced-and-batched-meshes.md": {
+      "url": "https://animejs.com/documentation/adapters/threejs-adapter/threejs-instanced-and-batched-meshes",
+      "sha256": "1698ce9a7f9952d0a0603e7559f9acc62b5fdb5b97f5a425d80ca084e65731a5"
+    },
+    "pages/animejs-com/documentation/adapters/threejs-adapter/threejs-object-property-adapter.md": {
+      "url": "https://animejs.com/documentation/adapters/threejs-adapter/threejs-object-property-adapter",
+      "sha256": "07112697aac7b4b11cebe0e21ea0c585c08aa99d0e4e392b50e1a3cece13bd99"
+    },
+    "pages/animejs-com/documentation/adapters/threejs-adapter/threejs-transforms-adapter.md": {
+      "url": "https://animejs.com/documentation/adapters/threejs-adapter/threejs-transforms-adapter",
+      "sha256": "9b2afc377f9575b1e81174dc9c92a9f42d864cd0c370e052e024f85cc08267b3"
+    },
+    "pages/animejs-com/documentation/animatable.md": {
+      "url": "https://animejs.com/documentation/animatable",
+      "sha256": "79eae3b121096b9b8188a5df729d1313b63863eec7c5e31b0dba3cba09d30ed5"
+    },
+    "pages/animejs-com/documentation/animatable/animatable-methods.md": {
+      "url": "https://animejs.com/documentation/animatable/animatable-methods",
+      "sha256": "26f3b7bea17c4d2e7fd96cc08e3b3b788d15cd7fe32e62e719fa4eb7d48e929f"
+    },
+    "pages/animejs-com/documentation/animatable/animatable-methods/getters.md": {
+      "url": "https://animejs.com/documentation/animatable/animatable-methods/getters",
+      "sha256": "945d8992f4e5975031563989d6ff5f0fa579bbfbc15583237db48895b50ad28c"
+    },
+    "pages/animejs-com/documentation/animatable/animatable-methods/revert.md": {
+      "url": "https://animejs.com/documentation/animatable/animatable-methods/revert",
+      "sha256": "7e2908b4107432e3236b15299c7f102afb9090356cf05d4a33c26b77e915cdb4"
+    },
+    "pages/animejs-com/documentation/animatable/animatable-methods/setters.md": {
+      "url": "https://animejs.com/documentation/animatable/animatable-methods/setters",
+      "sha256": "4aa194f0517f489199d94d0c4e653d24ad1a499e8139c0d8445039fba047cfa4"
+    },
+    "pages/animejs-com/documentation/animatable/animatable-properties.md": {
+      "url": "https://animejs.com/documentation/animatable/animatable-properties",
+      "sha256": "0d2178ec4f22cf60e3968d824923a143b1e648477d00027eea4519b55dda6e16"
+    },
+    "pages/animejs-com/documentation/animatable/animatable-settings.md": {
+      "url": "https://animejs.com/documentation/animatable/animatable-settings",
+      "sha256": "d0bfc22701fa2223d6119de20e349382855b531f30b9c216b6944c294e7c215f"
+    },
+    "pages/animejs-com/documentation/animatable/animatable-settings/duration.md": {
+      "url": "https://animejs.com/documentation/animatable/animatable-settings/duration",
+      "sha256": "2b9808068b7612e9039794b912914251b37abfb80b42f9ad9ac51411e2064696"
+    },
+    "pages/animejs-com/documentation/animatable/animatable-settings/ease.md": {
+      "url": "https://animejs.com/documentation/animatable/animatable-settings/ease",
+      "sha256": "513a891751ffedf16191f6947197e938926a755eb724075baf47da2762cb43e8"
+    },
+    "pages/animejs-com/documentation/animatable/animatable-settings/modifier.md": {
+      "url": "https://animejs.com/documentation/animatable/animatable-settings/modifier",
+      "sha256": "1a420ce7d4d254bc9f148ef46b407e726da8c4b866fc0edf1f3b479aa90eef18"
+    },
+    "pages/animejs-com/documentation/animatable/animatable-settings/unit.md": {
+      "url": "https://animejs.com/documentation/animatable/animatable-settings/unit",
+      "sha256": "0ea39bf2795a2d688b7128ef49f77d3c9f37a62cf132fe0109cf93701e692e3e"
+    },
+    "pages/animejs-com/documentation/animation.md": {
+      "url": "https://animejs.com/documentation/animation",
+      "sha256": "a589d088e901334f98414b2380e932766c6ffd6fc65672f1035c90c2eb77aa8f"
+    },
+    "pages/animejs-com/documentation/animation/animatable-properties.md": {
+      "url": "https://animejs.com/documentation/animation/animatable-properties",
+      "sha256": "f3dbb12c18af00aad3dbe311d706603a8b58fe7004dbefeb22cda25dd67dd886"
+    },
+    "pages/animejs-com/documentation/animation/animatable-properties/css-properties.md": {
+      "url": "https://animejs.com/documentation/animation/animatable-properties/css-properties",
+      "sha256": "60162c197ea078aa224872c10d428f2a34fcc0f9f18cb82bece99b2c14bfb49b"
+    },
+    "pages/animejs-com/documentation/animation/animatable-properties/css-transforms.md": {
+      "url": "https://animejs.com/documentation/animation/animatable-properties/css-transforms",
+      "sha256": "f3f46f26cbf83d6f0ca1159d3b9665cce544525f274a66f268aec83779c8a7d0"
+    },
+    "pages/animejs-com/documentation/animation/animatable-properties/css-variables.md": {
+      "url": "https://animejs.com/documentation/animation/animatable-properties/css-variables",
+      "sha256": "1089ef776a648053502eff4a3a0faa80c39602bc86699619e7e8622f203b3517"
+    },
+    "pages/animejs-com/documentation/animation/animatable-properties/html-attributes.md": {
+      "url": "https://animejs.com/documentation/animation/animatable-properties/html-attributes",
+      "sha256": "f74f3c1e86e9e81b5ad9af364b7ef3d84a65513318c0aa8988d62273b55eebf0"
+    },
+    "pages/animejs-com/documentation/animation/animatable-properties/javascript-object-properties.md": {
+      "url": "https://animejs.com/documentation/animation/animatable-properties/javascript-object-properties",
+      "sha256": "ee2781efbb165b99b5249ebe6e2ef9919539991098e4bd8082441ad186beace0"
+    },
+    "pages/animejs-com/documentation/animation/animatable-properties/svg-attributes.md": {
+      "url": "https://animejs.com/documentation/animation/animatable-properties/svg-attributes",
+      "sha256": "eeb7b6aa9bf37c4bb457d15cf3aa39e713915d758f93438bd98319024ed8bd2d"
+    },
+    "pages/animejs-com/documentation/animation/animation-callbacks.md": {
+      "url": "https://animejs.com/documentation/animation/animation-callbacks",
+      "sha256": "831fadbeffcc9fd549e4ffd3c6bb67d44e27158b1599011efdd96d94dba83583"
+    },
+    "pages/animejs-com/documentation/animation/animation-callbacks/onbeforeupdate.md": {
+      "url": "https://animejs.com/documentation/animation/animation-callbacks/onbeforeupdate",
+      "sha256": "d4607df7a7232cd008ca6b8043ad2d4036d7ef6cab7b195bdf93df79b009fc53"
+    },
+    "pages/animejs-com/documentation/animation/animation-callbacks/onbegin.md": {
+      "url": "https://animejs.com/documentation/animation/animation-callbacks/onbegin",
+      "sha256": "763807edd5c14ae1cb9db8163db895badfec28b63243e29fa019e02713c856b8"
+    },
+    "pages/animejs-com/documentation/animation/animation-callbacks/oncomplete.md": {
+      "url": "https://animejs.com/documentation/animation/animation-callbacks/oncomplete",
+      "sha256": "2142061c579d68c1d7ba500abad7c5327501112e3755ea5f67c6d62e013f6e90"
+    },
+    "pages/animejs-com/documentation/animation/animation-callbacks/onloop.md": {
+      "url": "https://animejs.com/documentation/animation/animation-callbacks/onloop",
+      "sha256": "f7241b089634ed6085753181162f848646d471cf03bb88eab74117c33998bd34"
+    },
+    "pages/animejs-com/documentation/animation/animation-callbacks/onpause.md": {
+      "url": "https://animejs.com/documentation/animation/animation-callbacks/onpause",
+      "sha256": "a0f90e64b9452296bad9263f8ab65b80e6d59c93a720dc4fea5ae1be0af63c1b"
+    },
+    "pages/animejs-com/documentation/animation/animation-callbacks/onrender.md": {
+      "url": "https://animejs.com/documentation/animation/animation-callbacks/onrender",
+      "sha256": "07a1f4481ba164c7df9c21ac4b628e68e27a8bf74491af7b0471e4f976824856"
+    },
+    "pages/animejs-com/documentation/animation/animation-callbacks/onupdate.md": {
+      "url": "https://animejs.com/documentation/animation/animation-callbacks/onupdate",
+      "sha256": "0b0679b18c25b44b72cc0778ccd4c63ca0609d8637a6a651f3dcdcc0bc8b6a1d"
+    },
+    "pages/animejs-com/documentation/animation/animation-callbacks/then.md": {
+      "url": "https://animejs.com/documentation/animation/animation-callbacks/then",
+      "sha256": "2164683b21a04781b5dca96dc31002a8876b6df9ea57206c3db32141390a5e56"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods",
+      "sha256": "fd131bfc4abff0ebb055cfacab54a4a6a6d16953fc2e6a843f37c48ee333d702"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/alternate.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/alternate",
+      "sha256": "ae42daae374aafa142614bc1de4ca61f9b3ed4ecab82ebc4d7d986ca73903ddf"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/cancel.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/cancel",
+      "sha256": "e8a71421fb58a1f0b352e13ae07c17173a4f000dfa2731bfdf98c859f310f867"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/complete.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/complete",
+      "sha256": "0cbcfc50561522740e67ccf81b947f4560c812a6c27553edb7ef69e7b3f3512e"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/pause.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/pause",
+      "sha256": "adebaf70f93ee90af0415b81e99b5464b8c0a61fbcf4004d035ed01b8912650c"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/play.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/play",
+      "sha256": "ea6287949d6559183adc05148aa59db49fa0671448a197d1325dfe8a9cab881f"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/refresh.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/refresh",
+      "sha256": "b3d970072365de22601972e9b5fc612746e9983d32746577350079c553f88a44"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/reset.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/reset",
+      "sha256": "cac493d746ef126d63392a3224399d59c7b4062a83c2b784ae731193df5313d9"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/restart.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/restart",
+      "sha256": "03a9234ecad7d7e4f1e8bfc6ea7b21ec626735602cad535f5efd02d958401712"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/resume.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/resume",
+      "sha256": "1fbabc2abcf5cffc3617517da27a6e672314839300626cce65d45bb6aca79b42"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/reverse.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/reverse",
+      "sha256": "47cd35e5e50974559611e4cdbc9809a39e3b678845eab84873a74341a2b11bb3"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/revert.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/revert",
+      "sha256": "52f91b87f8cfc4247001627bc46059f5c2db4367aea6bbdac62a856f07d3e5af"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/seek.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/seek",
+      "sha256": "fe80e4bb3167a249bccdad5995f1d6e6c6533aee55ac1bd14cb9f6f0dd325e8e"
+    },
+    "pages/animejs-com/documentation/animation/animation-methods/stretch.md": {
+      "url": "https://animejs.com/documentation/animation/animation-methods/stretch",
+      "sha256": "a0947d27453030c7ac0f85b124487410288a989afea5e3df7f8559f5955c644b"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings",
+      "sha256": "d2072f7600e47b392677df52a89e5fc0b257905d488dc07543d2847bb9c06a2f"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings/alternate.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings/alternate",
+      "sha256": "ff86023f843337f9d7aa651c77bc580ea33837a57f9067010b2f106608e1a9a1"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings/autoplay.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings/autoplay",
+      "sha256": "72f15d6dd6d05f374afdae141e8a344777489561c1e3d66c2ffd730660ccb0f9"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings/delay.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings/delay",
+      "sha256": "65eeb85fcfdfac9c189660a9deb8deb1ecfbff31733150efab990e32146ad015"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings/duration.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings/duration",
+      "sha256": "e0b9d2b947b10ed9f635594f382e6065713b817b909fec59d752c5cee35e9a97"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings/framerate.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings/framerate",
+      "sha256": "72eb46338d72d146b8d46ea6f61decbba6ee18be22807fc4e4aeebae59356b1b"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings/loop.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings/loop",
+      "sha256": "2b6ae564cc8d941ca5351cdf2857df9e1df63ebbce3203cbc6cbb46eeb736435"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings/persist.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings/persist",
+      "sha256": "6c46ed12175b6e79ec3a00fd8d7ec779f963fba51129c02dc0117acb4474f311"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings/playback-loopdelay.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings/playback-loopdelay",
+      "sha256": "16242e06f1387ef60342e7ce224d4a0bf369a38db37393ce7b2b6778781e23b2"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings/playbackease.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings/playbackease",
+      "sha256": "9d9674f5dec7c1ca44d84cbedfca2187e0241e00dafb6717fc94edc9187edb0f"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings/playbackrate.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings/playbackrate",
+      "sha256": "6281ab3e01400695757cbf025a2bfc8d0e8ba9c472fd37ad6cb39efd5fa2bf3d"
+    },
+    "pages/animejs-com/documentation/animation/animation-playback-settings/reversed.md": {
+      "url": "https://animejs.com/documentation/animation/animation-playback-settings/reversed",
+      "sha256": "0b89ef683abc76ba3110057f200bfe99fc32768f39c43fd1e66559b12ee22c77"
+    },
+    "pages/animejs-com/documentation/animation/animation-properties.md": {
+      "url": "https://animejs.com/documentation/animation/animation-properties",
+      "sha256": "2da06c5776e867313e5168f33383cea4caff0de54ddceabb9d94d4c4d4586c81"
+    },
+    "pages/animejs-com/documentation/animation/keyframes.md": {
+      "url": "https://animejs.com/documentation/animation/keyframes",
+      "sha256": "cdca4095f425d787109d28c0de96493ebffeb60595afe9351c0a5fcfa8feb45f"
+    },
+    "pages/animejs-com/documentation/animation/keyframes/duration-based-keyframes.md": {
+      "url": "https://animejs.com/documentation/animation/keyframes/duration-based-keyframes",
+      "sha256": "e3a06d98d617ba2827fd087e71c48e91f188825148821197d3fd34f01d5a883e"
+    },
+    "pages/animejs-com/documentation/animation/keyframes/percentage-based-keyframes.md": {
+      "url": "https://animejs.com/documentation/animation/keyframes/percentage-based-keyframes",
+      "sha256": "93b42aa1e22d536d3234a6bb622de4db485b76b66313e4b4f148fefa71bba9a0"
+    },
+    "pages/animejs-com/documentation/animation/keyframes/tween-parameters-keyframes.md": {
+      "url": "https://animejs.com/documentation/animation/keyframes/tween-parameters-keyframes",
+      "sha256": "162f88789a36379274a438efbf13381bc13e5d450a34060be2c31a856c597a0a"
+    },
+    "pages/animejs-com/documentation/animation/keyframes/tween-values-keyframes.md": {
+      "url": "https://animejs.com/documentation/animation/keyframes/tween-values-keyframes",
+      "sha256": "aae4dc6a4951008f84e4c3473084973f6a34621572c3d5637c54ded36402824c"
+    },
+    "pages/animejs-com/documentation/animation/targets.md": {
+      "url": "https://animejs.com/documentation/animation/targets",
+      "sha256": "de719e42fe48d1e916691142d551938806c9f600867f39e9d26bed51dc224e65"
+    },
+    "pages/animejs-com/documentation/animation/targets/array-of-targets.md": {
+      "url": "https://animejs.com/documentation/animation/targets/array-of-targets",
+      "sha256": "cf06fc1a2ea67620f4364b177a6f8f8736cb4b531b31c566640ada9b8bcb1a1a"
+    },
+    "pages/animejs-com/documentation/animation/targets/css-selector.md": {
+      "url": "https://animejs.com/documentation/animation/targets/css-selector",
+      "sha256": "209ece9a5b64f4e6c05ee1c9ab65bd51164586a2dd3315701b1ebae1fec0462b"
+    },
+    "pages/animejs-com/documentation/animation/targets/dom-elements.md": {
+      "url": "https://animejs.com/documentation/animation/targets/dom-elements",
+      "sha256": "03ec7ffac8e2f99b87cd134d533f93e6863348b9f2b230415ea34368b5525844"
+    },
+    "pages/animejs-com/documentation/animation/targets/javascript-objects.md": {
+      "url": "https://animejs.com/documentation/animation/targets/javascript-objects",
+      "sha256": "ec8017c4983ce52ce9295e7a642649ee039cb4c7878f8046065eaf2cbd2d1385"
+    },
+    "pages/animejs-com/documentation/animation/tween-parameters.md": {
+      "url": "https://animejs.com/documentation/animation/tween-parameters",
+      "sha256": "f20aab91134c1d9981dfd95cffc3b940d21e50ce42410f372c64548d22fb481b"
+    },
+    "pages/animejs-com/documentation/animation/tween-parameters/composition.md": {
+      "url": "https://animejs.com/documentation/animation/tween-parameters/composition",
+      "sha256": "9d4f333977b456566afd9a1c1cbdc9d2cb3bfd8e6b208f6a9aeaa4483ac7dfa5"
+    },
+    "pages/animejs-com/documentation/animation/tween-parameters/delay.md": {
+      "url": "https://animejs.com/documentation/animation/tween-parameters/delay",
+      "sha256": "0fb67e6fbc91d22310872ea4678d4c2104ce955c9eb76efdce43096b844f1e09"
+    },
+    "pages/animejs-com/documentation/animation/tween-parameters/duration.md": {
+      "url": "https://animejs.com/documentation/animation/tween-parameters/duration",
+      "sha256": "bcb8d4505cdb2dee5cbac169a39eaa01a200c1d319cba5c829d3ade4e4cd9183"
+    },
+    "pages/animejs-com/documentation/animation/tween-parameters/ease.md": {
+      "url": "https://animejs.com/documentation/animation/tween-parameters/ease",
+      "sha256": "4b761a979904dc7c34c97e42892a77ca42e7143cf268f479849808ba50836fe5"
+    },
+    "pages/animejs-com/documentation/animation/tween-parameters/from.md": {
+      "url": "https://animejs.com/documentation/animation/tween-parameters/from",
+      "sha256": "92a95ee758364901ff638499f9188e4f4e9f49a865522a96e742211e34d0034d"
+    },
+    "pages/animejs-com/documentation/animation/tween-parameters/modifier.md": {
+      "url": "https://animejs.com/documentation/animation/tween-parameters/modifier",
+      "sha256": "a2be68a76a73893580f347efae2b3fe186fcf852eb8bb02df56e10192922b38e"
+    },
+    "pages/animejs-com/documentation/animation/tween-parameters/to.md": {
+      "url": "https://animejs.com/documentation/animation/tween-parameters/to",
+      "sha256": "7b090a5e7f13474b4abdd9337bc92b653f30ad362b7ae87d2f4c9e31bfe4a30b"
+    },
+    "pages/animejs-com/documentation/animation/tween-value-types.md": {
+      "url": "https://animejs.com/documentation/animation/tween-value-types",
+      "sha256": "aa8983b75abcc04cb9eefb94d41a2ce2ae3d228321ef41d6d09fc3079e039fb6"
+    },
+    "pages/animejs-com/documentation/animation/tween-value-types/color-function-value.md": {
+      "url": "https://animejs.com/documentation/animation/tween-value-types/color-function-value",
+      "sha256": "20f286e972c42de714035d6a2484984d0916d64ae283740183442da81093c27e"
+    },
+    "pages/animejs-com/documentation/animation/tween-value-types/color-value.md": {
+      "url": "https://animejs.com/documentation/animation/tween-value-types/color-value",
+      "sha256": "8a691e07d00d2cb24c5095f9bb772b4e7f2f473806264e9cc9917561cd8cabd4"
+    },
+    "pages/animejs-com/documentation/animation/tween-value-types/css-variable.md": {
+      "url": "https://animejs.com/documentation/animation/tween-value-types/css-variable",
+      "sha256": "814503e2c60ac6edef4961a2dd945631e57ae26b5bf853ade57db526c8cf6397"
+    },
+    "pages/animejs-com/documentation/animation/tween-value-types/function-based.md": {
+      "url": "https://animejs.com/documentation/animation/tween-value-types/function-based",
+      "sha256": "8e7bd461bd3d5c4793beeed2196b56ffea635bf9b82f5e47c6d3d35fe90fdb9e"
+    },
+    "pages/animejs-com/documentation/animation/tween-value-types/numerical-value.md": {
+      "url": "https://animejs.com/documentation/animation/tween-value-types/numerical-value",
+      "sha256": "906450c0b2dc481d4853d7688bde08eb02309729d4c7b9c469f1a4f11af43fd7"
+    },
+    "pages/animejs-com/documentation/animation/tween-value-types/relative-value.md": {
+      "url": "https://animejs.com/documentation/animation/tween-value-types/relative-value",
+      "sha256": "561a314b3b8507c9d7e22c73d1632514660f79283c2d195701edb62b14d8e80f"
+    },
+    "pages/animejs-com/documentation/animation/tween-value-types/unit-conversion-value.md": {
+      "url": "https://animejs.com/documentation/animation/tween-value-types/unit-conversion-value",
+      "sha256": "82ba95fe532bd34a283b8f30f2bb4d4f005f2063509027d3e4551b886aa3b578"
+    },
+    "pages/animejs-com/documentation/draggable.md": {
+      "url": "https://animejs.com/documentation/draggable",
+      "sha256": "122939d6b2927afd9cfd37aaa6470a1b1880dfe16aaadc2ca43cfb4d3639114c"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-axes-parameters.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-axes-parameters",
+      "sha256": "d2a0f879c5f4c24d2789c79196567972bdf66423c683abf873cb805853eb26fd"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-axes-parameters/mapto.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-axes-parameters/mapto",
+      "sha256": "ecdf29b19aae60715ccdc4be6cf1024da9723a82acb9941fbd83504a125ecf68"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-axes-parameters/modifier.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-axes-parameters/modifier",
+      "sha256": "f0d09905f1f08be60bd10cdbf65c477364eb687e9aae8417a765ab041a6632ef"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-axes-parameters/snap.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-axes-parameters/snap",
+      "sha256": "80776d46d76415a2c1fc0314ebd267829f19dc3f9196d1c7bb4b635fe8ae4f6d"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-axes-parameters/x.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-axes-parameters/x",
+      "sha256": "4b99df181818088de5c6557684d8a085218a1f2153011aa3d57d588389805940"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-axes-parameters/y.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-axes-parameters/y",
+      "sha256": "c93142a1a6324fe174872494b380226737b0dbe759894439bac6ada31b350800"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-callbacks.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-callbacks",
+      "sha256": "b7a8e49f63fef8ef9b98a2315169487609e52da96e546bb3d6c34f99083623b3"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-callbacks/onafterresize.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-callbacks/onafterresize",
+      "sha256": "b30cf7472e12b9e77074d7791584eaf6936713a28ee214f32421acd1aa8674e4"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-callbacks/ondrag.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-callbacks/ondrag",
+      "sha256": "07faa57d862ca5c2afa7e39d7eb82a763e6b64cc512448106a6d80582d5efd97"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-callbacks/ongrab.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-callbacks/ongrab",
+      "sha256": "5ca6dd671b4dfe3ee2e731b54c9ccfa4dbb43c421321bdac328b51e4b4fe2637"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-callbacks/onrelease.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-callbacks/onrelease",
+      "sha256": "284bbda6827540b6367aaa62d774f6c33dfe6918cdf10fb0a4dded80dee6a46c"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-callbacks/onresize.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-callbacks/onresize",
+      "sha256": "bd6a704c16ee4aa9da02d6082e01c5f8947f6a4d78edc3be35c5b1f237c39bef"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-callbacks/onsettle.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-callbacks/onsettle",
+      "sha256": "71aaa23dda7f9b42ac9c59837cf20b3a8d4f1bfce1fc225e62efe491fc0d57a0"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-callbacks/onsnap.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-callbacks/onsnap",
+      "sha256": "7f256d1cf02413c82126205431325cf54ff9850441eaf12c4c8d3527256f7778"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-callbacks/onupdate.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-callbacks/onupdate",
+      "sha256": "31b22c102a76821d73ba995f92e6060465805f4b4965689038ee7a5a87e33b58"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-methods.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-methods",
+      "sha256": "454320eccfbbb63be8c95ea779ec20f8e84146ea4d65520fb79cc4aef513f83d"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-methods/animateinview.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-methods/animateinview",
+      "sha256": "bedafd20020db886e550719303eae27fd8490c4f454c454a7e64e4b917af164f"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-methods/disable.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-methods/disable",
+      "sha256": "acdd0262e1b263896e05c30174962f24b7555e3cfac1f1f539f7a46e0bec2aab"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-methods/enable.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-methods/enable",
+      "sha256": "3dec8b58be35ccab2ec95a648ccdfae703760af9e939011073fea152ebf51742"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-methods/refresh.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-methods/refresh",
+      "sha256": "0c927ab253509a87615236000d9cf4bbbe044102d12c4598b56e2ab054de4f17"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-methods/reset.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-methods/reset",
+      "sha256": "d9692404c435bb139f6f2f96da1f9edeeab92d86b2b1adb309baf5707686b20f"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-methods/revert.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-methods/revert",
+      "sha256": "fa934c4e31aaa8edbefaa4a7d9914bb69404a0eac481a3a29ac54bd9c85f4e37"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-methods/scrollinview.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-methods/scrollinview",
+      "sha256": "c56456fcd4054e115bdfdeb5dff7213fcd8b4cef6e1047bd0ee7d136e4f9ca75"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-methods/setx.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-methods/setx",
+      "sha256": "e6d8d153abe9600dc2b8e1c611d4db1b996aa2b2d40da1e2bd93fde5dffc5d38"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-methods/sety.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-methods/sety",
+      "sha256": "a18df86dd2da2a437835b06dc7f47866c4cbfb14e9ee7ac137f111e8ea678b9b"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-methods/stop.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-methods/stop",
+      "sha256": "63780e7ec53d0aaafca7349214e0f3ccedef2e9f29e095d39f3f5ab9f97d45dc"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-properties.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-properties",
+      "sha256": "9aa9dbbabd87a223d292c486d6cb0af0268bf8b83150570e5d98d31c99911d78"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings",
+      "sha256": "5bd67278ad0b5e16dfb3ee656a6b07593e6f8400287bf0667569017a35f77cbf"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/container.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/container",
+      "sha256": "b59dd377f7f079c50e47b3414776aa015012c58c9fbed6ba9e588fcadbf08a72"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/containerfriction.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/containerfriction",
+      "sha256": "d13ceaab74ad333319abaa4e2ceece62e866eaffdfc89c53aa7d0c524e44604e"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/containerpadding.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/containerpadding",
+      "sha256": "7d89c26431eb699da5dbb0eab7206b735b97e6fc5ad62dfb99edf9a740fdf042"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/cursor.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/cursor",
+      "sha256": "b52a2f0126371ffb168405ede8c3d15f290f7a05ff4b0df753862e757f271761"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/dragspeed.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/dragspeed",
+      "sha256": "995d9107cf5b41030cb3b8d3646aa281b3e7105bc04e473aa6e16592d4b7e6d6"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/dragthreshold.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/dragthreshold",
+      "sha256": "fa2fe1939541d11d2c8e0b8b14190adb8d5834c6b02e4c01ff055a79a8846af4"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/maxvelocity.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/maxvelocity",
+      "sha256": "05c5567d8a3d09c0b660f2031dfcb95b3616a99f3389b96ea9b70786de954708"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/minvelocity.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/minvelocity",
+      "sha256": "0862631fb308cee7db1cf50d9c2c37d7d72fffbef4c56cd447b53a312f16c6fa"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/releasecontainerfriction.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/releasecontainerfriction",
+      "sha256": "173ddf7b30753e67420b8a30ac3f40d8a075173c7ea89712e811ce557ee5273c"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/releasedamping.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/releasedamping",
+      "sha256": "170add1a385af0924baa16ba363173faf4834b875c0b38664570a4b910d08a5a"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/releaseease.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/releaseease",
+      "sha256": "652f01d1e49db0b4ddc7efae3687aaef1263bc210dc9f93ae91c923283278931"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/releasemass.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/releasemass",
+      "sha256": "600c8f0a31612aaa679aaff58bc42079155d632be5e307d625e1aa5d1f836368"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/releasestiffness.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/releasestiffness",
+      "sha256": "f8ccb966f201db686ffe1c296824bb6facac8610c09efed0b97b02067d6a84a0"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/scrollspeed.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/scrollspeed",
+      "sha256": "f0ca33981f4e32ef75026fb409dec98282a6908bb5e997b41a50818f8cf86c24"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/scrollthreshold.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/scrollthreshold",
+      "sha256": "13d02cc8ceaab98ad417202ef8b76018c075fa0a05313383f3f4b701dafdb982"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/trigger.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/trigger",
+      "sha256": "e367225db249dfc1fdf088f8070ac10e0a025a6c4826a5381f0aa075b38efa4f"
+    },
+    "pages/animejs-com/documentation/draggable/draggable-settings/velocitymultiplier.md": {
+      "url": "https://animejs.com/documentation/draggable/draggable-settings/velocitymultiplier",
+      "sha256": "7a0a3d6c49a9027b232d14ce2c8f0bf0a5f12f170bd6a7d50abf26a75b3c3bbe"
+    },
+    "pages/animejs-com/documentation/easings.md": {
+      "url": "https://animejs.com/documentation/easings",
+      "sha256": "7d196f50e77f1e318356923862e3c40b699ff819cdd03b29a5c9273eb52bf181"
+    },
+    "pages/animejs-com/documentation/easings/built-in-eases.md": {
+      "url": "https://animejs.com/documentation/easings/built-in-eases",
+      "sha256": "98f2677c0ce4949ae40d6f09bd651cc55073317760269caf4fbb52e34705f869"
+    },
+    "pages/animejs-com/documentation/easings/cubic-bezier-easing.md": {
+      "url": "https://animejs.com/documentation/easings/cubic-bezier-easing",
+      "sha256": "051cc9bc0467c4161ff5b260acd795c6e505ea5b1e70f4726fa89cd8ce108685"
+    },
+    "pages/animejs-com/documentation/easings/irregular-easing.md": {
+      "url": "https://animejs.com/documentation/easings/irregular-easing",
+      "sha256": "6bf9bbd5f724f06c815cd5461b0f05206bca73cacb8b5f2b675ead00c660ca61"
+    },
+    "pages/animejs-com/documentation/easings/linear-easing.md": {
+      "url": "https://animejs.com/documentation/easings/linear-easing",
+      "sha256": "878b5b5b430fa6680f878c519abecb0c1b8cdc53489fb0576eefc9b555224b79"
+    },
+    "pages/animejs-com/documentation/easings/spring.md": {
+      "url": "https://animejs.com/documentation/easings/spring",
+      "sha256": "156c796c5885fb5ba99982bed50c28557e57820f32fbe1fd9b05cd8c03cc7236"
+    },
+    "pages/animejs-com/documentation/easings/steps-easing.md": {
+      "url": "https://animejs.com/documentation/easings/steps-easing",
+      "sha256": "8ff2deecdc05691acb59b277e78637c2b45ed6ed99e22fe590aabaef1d865e26"
+    },
+    "pages/animejs-com/documentation/engine.md": {
+      "url": "https://animejs.com/documentation/engine",
+      "sha256": "b59baa88ee7f21dc130f7e93325b0834e6c95134a1e83350914db49a1cbf68a7"
+    },
+    "pages/animejs-com/documentation/engine/engine-defaults.md": {
+      "url": "https://animejs.com/documentation/engine/engine-defaults",
+      "sha256": "b41a257b2278731417327e63581aa73d6f3372440d070a6b5081e0bf335b2c0a"
+    },
+    "pages/animejs-com/documentation/engine/engine-methods.md": {
+      "url": "https://animejs.com/documentation/engine/engine-methods",
+      "sha256": "c0a6eda3a5c4ab7739598e21c47842d8816115af153eae5fb5b0e6a5e107b4f2"
+    },
+    "pages/animejs-com/documentation/engine/engine-methods/pause.md": {
+      "url": "https://animejs.com/documentation/engine/engine-methods/pause",
+      "sha256": "99ebee2d3c9f1aa9286de42ef517ba761a7785879288cba107b0b1235b98a59d"
+    },
+    "pages/animejs-com/documentation/engine/engine-methods/resume.md": {
+      "url": "https://animejs.com/documentation/engine/engine-methods/resume",
+      "sha256": "54841857646fe4b5d24da5539badecd93dfda0a0e918c3d0ccf7f4cb24d14837"
+    },
+    "pages/animejs-com/documentation/engine/engine-methods/update.md": {
+      "url": "https://animejs.com/documentation/engine/engine-methods/update",
+      "sha256": "7fac90eb8b5e06887d14cb1271a7bd78942454093752556858c7ae172caa24d6"
+    },
+    "pages/animejs-com/documentation/engine/engine-parameters.md": {
+      "url": "https://animejs.com/documentation/engine/engine-parameters",
+      "sha256": "0520dceae7c318508d1c20f77dcbcaf210c15d94827a8ac27f299958b14d8572"
+    },
+    "pages/animejs-com/documentation/engine/engine-parameters/fps.md": {
+      "url": "https://animejs.com/documentation/engine/engine-parameters/fps",
+      "sha256": "4c8412b0bf0abcb7841e695705aaeeea5e503ccb61aafccc6b970f77ebabd932"
+    },
+    "pages/animejs-com/documentation/engine/engine-parameters/pauseondocumenthidden.md": {
+      "url": "https://animejs.com/documentation/engine/engine-parameters/pauseondocumenthidden",
+      "sha256": "952eff6e494cce8f4e309c487190542ead450ecf7a3994d306fe1c55406fa080"
+    },
+    "pages/animejs-com/documentation/engine/engine-parameters/precision.md": {
+      "url": "https://animejs.com/documentation/engine/engine-parameters/precision",
+      "sha256": "bf765eb741e661da1ca2678dcc9f75d7379efe16f40456fe7c91c70b67dba1af"
+    },
+    "pages/animejs-com/documentation/engine/engine-parameters/speed.md": {
+      "url": "https://animejs.com/documentation/engine/engine-parameters/speed",
+      "sha256": "c1e891df206eb2ae5742e430a859890b7e48abbd5a5dfef39dd87f2bafdb71c0"
+    },
+    "pages/animejs-com/documentation/engine/engine-parameters/timeunit-seconds-milliseconds.md": {
+      "url": "https://animejs.com/documentation/engine/engine-parameters/timeunit-seconds-milliseconds",
+      "sha256": "2c6f91f5fd2b188a36ac9e6c45557d21920fd56ee429a752890c1b4c9f7158e6"
+    },
+    "pages/animejs-com/documentation/engine/engine-properties.md": {
+      "url": "https://animejs.com/documentation/engine/engine-properties",
+      "sha256": "f7ca1f1dbc488f9b79187351be012ce7c178fac7a2932058a894df40d73c9265"
+    },
+    "pages/animejs-com/documentation/events.md": {
+      "url": "https://animejs.com/documentation/events",
+      "sha256": "81754df950e08bffa437c1ff5e3657c332da22c88b04056752038f5c835b08f7"
+    },
+    "pages/animejs-com/documentation/events/onscroll.md": {
+      "url": "https://animejs.com/documentation/events/onscroll",
+      "sha256": "dd29006ef4b1feac5601e39c31a6ec00096a725475dac15688576558f0d57fb1"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-callbacks.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-callbacks",
+      "sha256": "57e9bba52731358ada47b17f7205931ab185751730ebb44dd43e6721fbf3c271"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-callbacks/onenter.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-callbacks/onenter",
+      "sha256": "f60c4b2e852b0939c3b2207adde86fd62661aaa37305575139367be18bf647ad"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-callbacks/onenterbackward.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-callbacks/onenterbackward",
+      "sha256": "7600e833f7502988c81fe6bcc8d6cfe66742d9122f8eb0c0cacf79a291f85314"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-callbacks/onenterforward.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-callbacks/onenterforward",
+      "sha256": "c694b1a7185d05d97ecab862b7d81577753c9b3199887d65294033bec4d4aae0"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-callbacks/onleave.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-callbacks/onleave",
+      "sha256": "956712f6ed7e685d372c31b3f6b3733375ddeeaacdac1276b1575175c1cc174d"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-callbacks/onleavebackward.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-callbacks/onleavebackward",
+      "sha256": "6610dc4740302571730606a1c506b8a2155944b229cd55f55c748e40a199db88"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-callbacks/onleaveforward.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-callbacks/onleaveforward",
+      "sha256": "36b5e63a5bcf88e18d01b762ca4c5a70461ce66322e68c24dc83df6de12dcfe9"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-callbacks/onresize.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-callbacks/onresize",
+      "sha256": "9c82093827758be9be90ea51d4fd78dfb10fcf13e66954d9a8b42555aa0356aa"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-callbacks/onsynccomplete.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-callbacks/onsynccomplete",
+      "sha256": "562791b4befc2c7e4f29614cf96d6ed2db616d88de28f2c0c19c1621d7d26f37"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-callbacks/onupdate.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-callbacks/onupdate",
+      "sha256": "00888fa8b6225a21412db313b2b19d0217b3de2f7daf727a2216c38ba2c1f146"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-methods.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-methods",
+      "sha256": "63afa340c70abf4b481ff89d1d958ebceb947bb1ebd2ac680a61be301d949089"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-methods/link.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-methods/link",
+      "sha256": "8aafe23c22449083cffac10f1d676047e19865f1a8503019a10989ab02717f9a"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-methods/refresh.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-methods/refresh",
+      "sha256": "8708143aa140f79cd0aec23947e8db87183032d49c6f99fea00fb76e36144f2d"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-methods/revert.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-methods/revert",
+      "sha256": "0f6cba55bfc04085d7f40e253edef9c0dc85f40f37915b5ac97bb2b59cef43e6"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-properties.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-properties",
+      "sha256": "01cded069ec86eb4a467da38b6681de15f76d2f527c3875c9ae4c2f64916aeee"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-settings.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-settings",
+      "sha256": "6a9d51dc653400b3ab3537fd98866f42f3a6a08e61685db05561e60e1d5c0e91"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-settings/axis.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-settings/axis",
+      "sha256": "1dbba2b748ab06770c9dcd6a04cdf388e19dfdd144a91bd4f20f1fadca332fe3"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-settings/container.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-settings/container",
+      "sha256": "d8390293e9071940936b2d9990f6d62748e8fb55d7a2e9a61480e43f7a280685"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-settings/debug.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-settings/debug",
+      "sha256": "1a865e0f6527a8bbe22f849447332c0bb53891c09ddfccafde543b411e1f53ae"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-settings/repeat.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-settings/repeat",
+      "sha256": "b9f18a94bd4e8b0c40fe4be8ff3474e139597120e3e9d56f7a1af9495b2f4a2b"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-settings/target.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-settings/target",
+      "sha256": "537361a1fb65af851785d0d805962c24bac28edae7dd7fbc5e50c7c00b3da904"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-synchronisation-modes.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-synchronisation-modes",
+      "sha256": "9d420c19f1b7edec393269b5e11ae03b821bdeb0e0c954dd2e5e7f670f8757e7"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-synchronisation-modes/eased-scroll.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-synchronisation-modes/eased-scroll",
+      "sha256": "66ae5d798e36020d6abdb1ee2b28dbcaaf01a4340fce1c31360cf9228ef77a25"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-synchronisation-modes/method-names.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-synchronisation-modes/method-names",
+      "sha256": "e426105da31fc52c3d9489a63f708015c33741c9919432352d281361f26e8faf"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-synchronisation-modes/playback-progress.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-synchronisation-modes/playback-progress",
+      "sha256": "a21b510d75257f1f9b08879713ae852eb31d3159eaddae3f98b7c122afe184b9"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-synchronisation-modes/smooth-scroll.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-synchronisation-modes/smooth-scroll",
+      "sha256": "a627443deb3e5c8f2c0bc575f1b65b575372e2dde389292ee014fe32d8af67cc"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-thresholds.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-thresholds",
+      "sha256": "31d543c4c4e34ff09ca42e51692e246105f409ad49b391ee54887c720e761998"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-thresholds/min-max.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-thresholds/min-max",
+      "sha256": "cc4af81aa5d183b460cd9aad0c845ca7defc3393bcc1073ad32fc25001856773"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-thresholds/numeric-values.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-thresholds/numeric-values",
+      "sha256": "c5ded782e5fc5c4561c04a37590b6611e2a3a0ad98c8f53ead51577d88627244"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-thresholds/positions-shorthands.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-thresholds/positions-shorthands",
+      "sha256": "7c790c80ddb2603ab13eb8204a3e887ad8442e22abde3233216a573341c9cd19"
+    },
+    "pages/animejs-com/documentation/events/onscroll/scrollobserver-thresholds/relative-position-values.md": {
+      "url": "https://animejs.com/documentation/events/onscroll/scrollobserver-thresholds/relative-position-values",
+      "sha256": "25d80a598039c686866f88140b207ff02f69b0cbd450cc1c08745d5233f37bf4"
+    },
+    "pages/animejs-com/documentation/getting-started.md": {
+      "url": "https://animejs.com/documentation/getting-started",
+      "sha256": "4de81582c5841287cf413aec6eaa4d516b3f10a0848851fdadd94c8e3d1bb353"
+    },
+    "pages/animejs-com/documentation/getting-started/installation.md": {
+      "url": "https://animejs.com/documentation/getting-started/installation",
+      "sha256": "5b8daa201e0989952b1cff527f0bd4e9f9ac5ae426e0d387f20e479c5bd19145"
+    },
+    "pages/animejs-com/documentation/getting-started/module-imports.md": {
+      "url": "https://animejs.com/documentation/getting-started/module-imports",
+      "sha256": "1db06fda227818ae579c7a634e6f749b1acac03fc9ec084b2b171d8a5ba7ab48"
+    },
+    "pages/animejs-com/documentation/getting-started/using-with-react.md": {
+      "url": "https://animejs.com/documentation/getting-started/using-with-react",
+      "sha256": "c7256be25587b3aef3d3a8b169f6841583f7aa8e088e902d9c8f7063348c4643"
+    },
+    "pages/animejs-com/documentation/getting-started/using-with-vanilla-js.md": {
+      "url": "https://animejs.com/documentation/getting-started/using-with-vanilla-js",
+      "sha256": "35cafbc19a3ab621f693beb3549fffea2a09ce7d8fe0a4895c7c798ea189dff6"
+    },
+    "pages/animejs-com/documentation/layout.md": {
+      "url": "https://animejs.com/documentation/layout",
+      "sha256": "71edcf608e2dc398cd84676a485497fafd6cd2bb0a2b60e2a5e8a6de7b7726db"
+    },
+    "pages/animejs-com/documentation/layout/common-auto-layout-gotchas.md": {
+      "url": "https://animejs.com/documentation/layout/common-auto-layout-gotchas",
+      "sha256": "b24c300ca8c8347bc0a939cc670015b8c117765c5e34a98e51664b33e7314905"
+    },
+    "pages/animejs-com/documentation/layout/layout-callbacks.md": {
+      "url": "https://animejs.com/documentation/layout/layout-callbacks",
+      "sha256": "03b1d29216ed3bb7788381c28ed239c2106df22524eebc6bfd792d1288064dd9"
+    },
+    "pages/animejs-com/documentation/layout/layout-id-attribute.md": {
+      "url": "https://animejs.com/documentation/layout/layout-id-attribute",
+      "sha256": "a7cfd542fde84bc95c7790a04f2b9100612f33ae92c921b85e3ec4d2129925a7"
+    },
+    "pages/animejs-com/documentation/layout/layout-methods.md": {
+      "url": "https://animejs.com/documentation/layout/layout-methods",
+      "sha256": "50656d0900c03394c042f9e96eb4be79a36fd5c1b1a24ba4afe8bf2a1d97d436"
+    },
+    "pages/animejs-com/documentation/layout/layout-methods/animate.md": {
+      "url": "https://animejs.com/documentation/layout/layout-methods/animate",
+      "sha256": "abd33c573f0d828af0ce27c4573be5b4ddf1145a630e15dfca71f834d597c3eb"
+    },
+    "pages/animejs-com/documentation/layout/layout-methods/record.md": {
+      "url": "https://animejs.com/documentation/layout/layout-methods/record",
+      "sha256": "d212581e5ddc9967ac959fee4ef30ab740006d0e583e16246c854ba9f5baf42c"
+    },
+    "pages/animejs-com/documentation/layout/layout-methods/revert.md": {
+      "url": "https://animejs.com/documentation/layout/layout-methods/revert",
+      "sha256": "c26f2c19ab68f2f99b67a93fdf167180b061156f8fb1bf362cb584cbc3005d5b"
+    },
+    "pages/animejs-com/documentation/layout/layout-methods/update.md": {
+      "url": "https://animejs.com/documentation/layout/layout-methods/update",
+      "sha256": "5b57497c4439c090248293c496e396d51e863a2d9006a44af28f124a1a03eb51"
+    },
+    "pages/animejs-com/documentation/layout/layout-properties.md": {
+      "url": "https://animejs.com/documentation/layout/layout-properties",
+      "sha256": "0dba93235eb886975adf9772b0f352c4ff090619161b532bc7e86b9377fbe54a"
+    },
+    "pages/animejs-com/documentation/layout/layout-settings.md": {
+      "url": "https://animejs.com/documentation/layout/layout-settings",
+      "sha256": "fd85a5066aee10f58cead7955190752cc5a06fd68871a67366df2b08bbdf9d0d"
+    },
+    "pages/animejs-com/documentation/layout/layout-settings/children.md": {
+      "url": "https://animejs.com/documentation/layout/layout-settings/children",
+      "sha256": "8886aeeb2578b5762ff17adf8bbc52272365ebb262a543a811fc9523817fc89e"
+    },
+    "pages/animejs-com/documentation/layout/layout-settings/delay.md": {
+      "url": "https://animejs.com/documentation/layout/layout-settings/delay",
+      "sha256": "2e6447abd024559e92ee294a4a236769332a5c8a546f3623f11c97d0060f2f8d"
+    },
+    "pages/animejs-com/documentation/layout/layout-settings/duration.md": {
+      "url": "https://animejs.com/documentation/layout/layout-settings/duration",
+      "sha256": "c9eba40fdc8c2fcdca8289944747c43b2ada98b8d4dea2643abb46caf727fc74"
+    },
+    "pages/animejs-com/documentation/layout/layout-settings/ease.md": {
+      "url": "https://animejs.com/documentation/layout/layout-settings/ease",
+      "sha256": "824be26e4d673f8f94f77ce77c84ed41bde356811a590782a07cf5d4172e8874"
+    },
+    "pages/animejs-com/documentation/layout/layout-settings/properties.md": {
+      "url": "https://animejs.com/documentation/layout/layout-settings/properties",
+      "sha256": "1ad600bfef2d08133425122018b8afe8f7eb16f26cb0328885f6219f92a16b7c"
+    },
+    "pages/animejs-com/documentation/layout/states-parameters.md": {
+      "url": "https://animejs.com/documentation/layout/states-parameters",
+      "sha256": "ee33f7360f786e0350cd49dc0e5e270f925f1001fe5aaa5d2ea89225a063291b"
+    },
+    "pages/animejs-com/documentation/layout/states-parameters/enterFrom.md": {
+      "url": "https://animejs.com/documentation/layout/states-parameters/enterFrom",
+      "sha256": "eb39a5e9d379bded9db1f2e4a83fdadc4423aaf968c71096b8fa3c3e25260400"
+    },
+    "pages/animejs-com/documentation/layout/states-parameters/leaveTo.md": {
+      "url": "https://animejs.com/documentation/layout/states-parameters/leaveTo",
+      "sha256": "894b33b578dcf3bdd2c2ea6ed83810cb26a46d833394f5f2c16cbe3385fc176b"
+    },
+    "pages/animejs-com/documentation/layout/states-parameters/swapAt.md": {
+      "url": "https://animejs.com/documentation/layout/states-parameters/swapAt",
+      "sha256": "410713e33fd686ebd623ef84eac6cb2b9782780656563199fe7545f1c11798b2"
+    },
+    "pages/animejs-com/documentation/layout/usage.md": {
+      "url": "https://animejs.com/documentation/layout/usage",
+      "sha256": "7fa13b48e704966d45b14549cb93f0ea7d9b44f16f546a331644867ec1e6bd18"
+    },
+    "pages/animejs-com/documentation/layout/usage/animate-modal-dialog.md": {
+      "url": "https://animejs.com/documentation/layout/usage/animate-modal-dialog",
+      "sha256": "35fbe57942db0aed11de70766bec20aadcda7f5faaff615534c4f3973236faa6"
+    },
+    "pages/animejs-com/documentation/layout/usage/css-display-property-animation.md": {
+      "url": "https://animejs.com/documentation/layout/usage/css-display-property-animation",
+      "sha256": "58c9f86f3f1fec307009b343788b3b5aa2f48af98a8ccb1ce66be20361448460"
+    },
+    "pages/animejs-com/documentation/layout/usage/dom-order-change-animation.md": {
+      "url": "https://animejs.com/documentation/layout/usage/dom-order-change-animation",
+      "sha256": "92e145d7235eba340b1e3bba3f606b6e126eb65cd0ac0719e3f9c1aef2fcc92c"
+    },
+    "pages/animejs-com/documentation/layout/usage/enter-layout-animation.md": {
+      "url": "https://animejs.com/documentation/layout/usage/enter-layout-animation",
+      "sha256": "2fb09bd8fdfa07d5762a43f2bdc34d23acf0296d000395eda13ce383ee70ff20"
+    },
+    "pages/animejs-com/documentation/layout/usage/exit-layout-animation.md": {
+      "url": "https://animejs.com/documentation/layout/usage/exit-layout-animation",
+      "sha256": "f49ec3ac94cfc5efabbb0e4e9600e2f2bd6b8efca02228f04e46552847e134cd"
+    },
+    "pages/animejs-com/documentation/layout/usage/specifying-a-root.md": {
+      "url": "https://animejs.com/documentation/layout/usage/specifying-a-root",
+      "sha256": "8353d16e715fb49fe85268cdfe1dbd90bdcbff9f8d728f59f185158c9c9295f3"
+    },
+    "pages/animejs-com/documentation/layout/usage/staggered-layout-animation.md": {
+      "url": "https://animejs.com/documentation/layout/usage/staggered-layout-animation",
+      "sha256": "be92d4b34d896bd4f077b60e49583588302e8b1358237e254a07110fb7c5d8b9"
+    },
+    "pages/animejs-com/documentation/layout/usage/swap-parent-animation.md": {
+      "url": "https://animejs.com/documentation/layout/usage/swap-parent-animation",
+      "sha256": "724f0b8a1dbcc06fc5ae3a3e7150bbdf1d33206083a5142a2539fd7f981d6430"
+    },
+    "pages/animejs-com/documentation/scope.md": {
+      "url": "https://animejs.com/documentation/scope",
+      "sha256": "f21e24339a249d5be49bf8f2512811b3fbb54a88688a6fee3115f2caf0f88126"
+    },
+    "pages/animejs-com/documentation/scope/add-constructor-function.md": {
+      "url": "https://animejs.com/documentation/scope/add-constructor-function",
+      "sha256": "7fc211e8a29a8ac3091fbb5822fe9af69ff620eebd7451ab715e43a503dab5ef"
+    },
+    "pages/animejs-com/documentation/scope/register-method-function.md": {
+      "url": "https://animejs.com/documentation/scope/register-method-function",
+      "sha256": "9ca14bf3b479d1643659926fe832b51f41bd2e973a3c76af1eb6788fb9464e1a"
+    },
+    "pages/animejs-com/documentation/scope/scope-methods.md": {
+      "url": "https://animejs.com/documentation/scope/scope-methods",
+      "sha256": "bb8b3556a029e68bc5d3bc3be5665260a9e0feaa83981a738b298ab0dc48cc2c"
+    },
+    "pages/animejs-com/documentation/scope/scope-methods/add.md": {
+      "url": "https://animejs.com/documentation/scope/scope-methods/add",
+      "sha256": "dcac811c8bc9dd5fb5d4e08281da63d0cc591774e91ae035192cfe8dd44aa4e8"
+    },
+    "pages/animejs-com/documentation/scope/scope-methods/addonce.md": {
+      "url": "https://animejs.com/documentation/scope/scope-methods/addonce",
+      "sha256": "1daec39deb795bb81855a96cdc5604af9841b473210ce34f24dd849859e5be11"
+    },
+    "pages/animejs-com/documentation/scope/scope-methods/keeptime.md": {
+      "url": "https://animejs.com/documentation/scope/scope-methods/keeptime",
+      "sha256": "549ccaa8969939b95b635fe6092472026f87b1fd02315766fac96082d33ab700"
+    },
+    "pages/animejs-com/documentation/scope/scope-methods/refresh.md": {
+      "url": "https://animejs.com/documentation/scope/scope-methods/refresh",
+      "sha256": "3671e5ccb2c9a9b41dd17bd76b5b205b53cdf09a6e280778b094e33679c17d83"
+    },
+    "pages/animejs-com/documentation/scope/scope-methods/revert.md": {
+      "url": "https://animejs.com/documentation/scope/scope-methods/revert",
+      "sha256": "3a28b1e19d873987f53e58ed25957e8b4ac2df42f00b73ca3e7dc41b70bb3e2a"
+    },
+    "pages/animejs-com/documentation/scope/scope-parameters.md": {
+      "url": "https://animejs.com/documentation/scope/scope-parameters",
+      "sha256": "b33b2089e2348d7f1862813a1d4f3027dbf7351e4e4a4202d9399092dff3238c"
+    },
+    "pages/animejs-com/documentation/scope/scope-parameters/defaults.md": {
+      "url": "https://animejs.com/documentation/scope/scope-parameters/defaults",
+      "sha256": "c6e6b3b107855bff610cb6f6ad6eb95a198e2957813d2ea9917f3a5f6f678baa"
+    },
+    "pages/animejs-com/documentation/scope/scope-parameters/mediaqueries.md": {
+      "url": "https://animejs.com/documentation/scope/scope-parameters/mediaqueries",
+      "sha256": "f086b7f70764c26aaf8069a96cd80e8dc16dda5c1f6aa927f09661f95e7fab42"
+    },
+    "pages/animejs-com/documentation/scope/scope-parameters/root.md": {
+      "url": "https://animejs.com/documentation/scope/scope-parameters/root",
+      "sha256": "bc37969e81cdbf89bc5e1a6d75117c40307f703c899ab2e50109eb4cc9cc8415"
+    },
+    "pages/animejs-com/documentation/scope/scope-properties.md": {
+      "url": "https://animejs.com/documentation/scope/scope-properties",
+      "sha256": "d37d7e7c654d5cad49ac7ffa866e936c177280c59f813bd336f09fa925835ed1"
+    },
+    "pages/animejs-com/documentation/svg.md": {
+      "url": "https://animejs.com/documentation/svg",
+      "sha256": "7d699c78f7a4a0fd1be0ffc7917210c6da32fe86748a596a247e9d74f3fe8f01"
+    },
+    "pages/animejs-com/documentation/svg/createdrawable.md": {
+      "url": "https://animejs.com/documentation/svg/createdrawable",
+      "sha256": "08988348fa10e118ce57ee94df85b66e80943e1f8d1779024c13e04f9ac074c2"
+    },
+    "pages/animejs-com/documentation/svg/createmotionpath.md": {
+      "url": "https://animejs.com/documentation/svg/createmotionpath",
+      "sha256": "f3cef5327247499a63450a5d6aa607f2ebd82cb88d8daafea4967276ec627e0c"
+    },
+    "pages/animejs-com/documentation/svg/morphto.md": {
+      "url": "https://animejs.com/documentation/svg/morphto",
+      "sha256": "f3174c24f32fb62bcf64efc086ecd7497caeac109351f43df1604c85af3149e8"
+    },
+    "pages/animejs-com/documentation/text.md": {
+      "url": "https://animejs.com/documentation/text",
+      "sha256": "2c9ca334bf4083837c1eb1a57ec2ac841682f6a8355721622923de4b5f654feb"
+    },
+    "pages/animejs-com/documentation/text/scrambletext.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext",
+      "sha256": "1da2e1493416f52d7582fa4a378753ddda8c088463cb4597220bb015af1a499e"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-callbacks.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-callbacks",
+      "sha256": "d09098a5b766f489a87e585e852a39c070ef133e96b48567272f6f0f19fb6cee"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-callbacks/onchange.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-callbacks/onchange",
+      "sha256": "68a137112b6105d5b81a0b9b50fc9dc17942f0fa1308ff12cd107be6a3f8d5a3"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters",
+      "sha256": "53af5d82d41024822054db22b6ca07b9cf196522a8494fdd3772c3f728d78257"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/chars.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/chars",
+      "sha256": "cf682ea73267f27113079b70dbbdadf361b391cca1f549f1132dd206561810d3"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/cursor.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/cursor",
+      "sha256": "533495a5714275e005b459bc7e8f1024a7df9118fba39a8ac399ad0389880a7b"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/delay.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/delay",
+      "sha256": "a0a35a384a562fca27ba1cd34bcb9357232195abae9b3b109f9f73a874d89345"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/duration.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/duration",
+      "sha256": "da801113e17222fd91aa689e6ed85fd5cc87060ddeb85ba5a32b824a41a8b1b7"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/ease.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/ease",
+      "sha256": "12ddd1bb5aa9ec9fa86a607704a43e87e86e6188bd3e4644e1602e56c5aaf26a"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/from.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/from",
+      "sha256": "e5d6b42982982abe9955f009d156e51361260126f974b283b6d8d9530c8dd820"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/override.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/override",
+      "sha256": "767236fc5a804613f191f42df90fb205fd6e4d9a7d5b847c58338cee14cc261a"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/perturbation.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/perturbation",
+      "sha256": "59b9d8800d6a81685c35f1bc830e3e2d5a85d60b4470aee35872cd6f3b4a0372"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/revealdelay.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/revealdelay",
+      "sha256": "5049d549bd254b26deecf4ca2c06bf34f1e5bbfff66a9b0a4cf039ef42b7b013"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/revealrate.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/revealrate",
+      "sha256": "4ad9b73d44da3078195aa15230e9db4257a62103e8eac8cfcd04dab217fd9796"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/reversed.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/reversed",
+      "sha256": "4da187d37c4b9aeff4a24a77ddff1782d8453ac0d84bde45b4c79f96ecfe7c3b"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/seed.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/seed",
+      "sha256": "00ef31ca4675614dc2f3e48f6276bfe40e54dc65896471b1ddb4cb4e6e03c964"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/settleduration.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/settleduration",
+      "sha256": "7ab8f2e54d39709145625edd7411f1e1d8555e695b883fc43dfad142b9abf8c5"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/settlerate.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/settlerate",
+      "sha256": "83392106fa2107e5d91b58bb15a0d0f6b9cb16f46eec396cf8fe533f401fb32f"
+    },
+    "pages/animejs-com/documentation/text/scrambletext/scrambletext-parameters/text.md": {
+      "url": "https://animejs.com/documentation/text/scrambletext/scrambletext-parameters/text",
+      "sha256": "9b92e82a241a0e6b15e7013679be88880015986dc5143297b1e82d9f8a59dcc2"
+    },
+    "pages/animejs-com/documentation/text/splittext.md": {
+      "url": "https://animejs.com/documentation/text/splittext",
+      "sha256": "f3e4ff2c378f7e15627b43afa900c3327e9f5f5cc7c9b3bdac4b4d5c3beab517"
+    },
+    "pages/animejs-com/documentation/text/splittext/html-template.md": {
+      "url": "https://animejs.com/documentation/text/splittext/html-template",
+      "sha256": "011e36b89de3885ac8cf414cb8ca4a2911755817520ff170b111c934232774f4"
+    },
+    "pages/animejs-com/documentation/text/splittext/split-parameters.md": {
+      "url": "https://animejs.com/documentation/text/splittext/split-parameters",
+      "sha256": "35854c67c25d189e8b7706ff81808c34142c4ec781b3ccfce2c7268b500f7f07"
+    },
+    "pages/animejs-com/documentation/text/splittext/split-parameters/class.md": {
+      "url": "https://animejs.com/documentation/text/splittext/split-parameters/class",
+      "sha256": "0d613905bb21f29c6231147a349b0ee7aabbac581e824ba74450912520b89551"
+    },
+    "pages/animejs-com/documentation/text/splittext/split-parameters/clone.md": {
+      "url": "https://animejs.com/documentation/text/splittext/split-parameters/clone",
+      "sha256": "15768cfd236788a84c0f13b7036ae27ef5633f5d805f2a128792c12e7dae6bf8"
+    },
+    "pages/animejs-com/documentation/text/splittext/split-parameters/wrap.md": {
+      "url": "https://animejs.com/documentation/text/splittext/split-parameters/wrap",
+      "sha256": "b814f527b1c2508d93c2ce2e712f525b27466eb81ba6069ba19ffd56eeaf495e"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-methods.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-methods",
+      "sha256": "18aee89a8793a7c22941a5523555a16a2f5d88a28c37c6397fc8be3b16896144"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-methods/addeffect.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-methods/addeffect",
+      "sha256": "22a922a8a2660d334f031a536127c8d5a1699b255758b9dcfad868d05041051d"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-methods/refresh.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-methods/refresh",
+      "sha256": "ce74d67777d068f4cb6ad28d33c42b20bf71af075c7698bc6afedac762e3128d"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-methods/revert.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-methods/revert",
+      "sha256": "d8c736e71f9c110500e0c27d0d830d08636ba493ef8b35868720beb040d2a0de"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-properties.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-properties",
+      "sha256": "fa0110b55f481caca2d20abcf14787ae359ad6dc25aed3c5916ce6ad59d8399a"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-settings.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-settings",
+      "sha256": "6235a8018e34385d421bb66d84ba3f0b36399448d431f0784f3b79547de3924c"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-settings/accessible.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-settings/accessible",
+      "sha256": "1c0623a3e34cd00c6c24015e067e05aac161705dac495aa1b3fae19f5939a378"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-settings/chars.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-settings/chars",
+      "sha256": "6439da74732d988156ebbbb305541149f6eba54767d56cfbac61eba01973fd27"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-settings/debug.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-settings/debug",
+      "sha256": "95020b0ea86aa5f5b3ac71669a14d579d271722bba73fe8982c035679dc96ab5"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-settings/includespaces.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-settings/includespaces",
+      "sha256": "9145868fcb4326e0c4c63ea92f67feb00486b48bb30ae819149dc85139f1bf26"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-settings/lines.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-settings/lines",
+      "sha256": "fa7a7f4fe2add4aaadefb18dc1142b4e3ce2e6cde6c8d104afc8d0722a96e611"
+    },
+    "pages/animejs-com/documentation/text/splittext/textsplitter-settings/words.md": {
+      "url": "https://animejs.com/documentation/text/splittext/textsplitter-settings/words",
+      "sha256": "c0abec56847a2c222317e8b858c031eff19c2ba297cb849286bc5c9d7b23592c"
+    },
+    "pages/animejs-com/documentation/timeline.md": {
+      "url": "https://animejs.com/documentation/timeline",
+      "sha256": "92bff1e8094c8dda9db5b94da80a557a81a0e7c2dec95e44825f9050464fc5bf"
+    },
+    "pages/animejs-com/documentation/timeline/add-animations.md": {
+      "url": "https://animejs.com/documentation/timeline/add-animations",
+      "sha256": "235dc4d5a16fd636261cda153684c3b133ac550d1b47906cee7ece748d7f9505"
+    },
+    "pages/animejs-com/documentation/timeline/add-timers.md": {
+      "url": "https://animejs.com/documentation/timeline/add-timers",
+      "sha256": "357ce625c82ccaa701cf91142a07226b5eb318cf46ae516108372c0f9bc0dae5"
+    },
+    "pages/animejs-com/documentation/timeline/call-functions.md": {
+      "url": "https://animejs.com/documentation/timeline/call-functions",
+      "sha256": "9fc1596bad0fe45f998a294c10eccd85e8510b629dbb0fdeafac91bfa37fd413"
+    },
+    "pages/animejs-com/documentation/timeline/sync-timelines.md": {
+      "url": "https://animejs.com/documentation/timeline/sync-timelines",
+      "sha256": "1ce8e7d4a40ac989bb80d0122a83fb08a27864877ecffeb9f38969f2852af5fd"
+    },
+    "pages/animejs-com/documentation/timeline/sync-waapi-animations.md": {
+      "url": "https://animejs.com/documentation/timeline/sync-waapi-animations",
+      "sha256": "53e7ae2be877d92e1b12b1dad92cb7bebb1e2ac03b1346c5c3dccc0f3e87fd31"
+    },
+    "pages/animejs-com/documentation/timeline/time-position.md": {
+      "url": "https://animejs.com/documentation/timeline/time-position",
+      "sha256": "33f3b63b6832acb882551813c59f1e2355861d3e44e5ee759bf47acb44cca451"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-callbacks.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-callbacks",
+      "sha256": "2c8680a1078e7add4cdb2d35601846c15cfbf239ce8d4efbf3574e5f998b9953"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-callbacks/onbeforeupdate.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-callbacks/onbeforeupdate",
+      "sha256": "cb9c91112627b3d3a09c6bd4038f7325d3c1812b6af879f86da3c5061ce673ef"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-callbacks/onbegin.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-callbacks/onbegin",
+      "sha256": "cbd2735bd7c6a081d62019f7274597a68de95e69492718720d8d4363ffa2c1fd"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-callbacks/oncomplete.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-callbacks/oncomplete",
+      "sha256": "22c5739173fbf72e9b4ae1ef5fa8790044c5ea01e644f6482dc2dfd407862839"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-callbacks/onloop.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-callbacks/onloop",
+      "sha256": "ae32b24fbfb679a2f8761801cbad96cd079e91288fc3810035d927f257cedf9c"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-callbacks/onpause.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-callbacks/onpause",
+      "sha256": "87279a2f937d9bbb0a7bd402d28e952bc629426191d3145fe62bf2dcf46e3952"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-callbacks/onrender.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-callbacks/onrender",
+      "sha256": "af1db90e6a3ca7bbbcb0ee52a829a106dc46874cd0cdff32d95af9c396e43778"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-callbacks/onupdate.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-callbacks/onupdate",
+      "sha256": "b3e0b7a3634c426952678d6221c907d926d9ed3db7da2383363b5e4ea487c864"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-callbacks/then.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-callbacks/then",
+      "sha256": "93d3713e7abb535cbb84b40d41f1d659b0490239b040471034f4f4b30411cbf7"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods",
+      "sha256": "b5e9e300789174c29c1c44979d6053294633f2ef7e291fc0b3eaac746fd291b4"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/add.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/add",
+      "sha256": "3533404261c1448d667190dffdd83176339bc384f0141390fcc434a5f957ca8e"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/alternate.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/alternate",
+      "sha256": "4dd919e119931462a84047bd135d7d6142b459f171de5ef185f70dd24e1f2252"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/call.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/call",
+      "sha256": "a5c683e92bfd9ff2288a27928a09dc570be1044137722b160b7cc9a4ccfa234e"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/cancel.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/cancel",
+      "sha256": "56aa0340a7b0acb116eae10496b388794a0609378c605f7d4b6e23db7bf0dd36"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/complete.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/complete",
+      "sha256": "05002657de3ad86d4149c743f82cd785445a473e15603f6443d06405aeff6445"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/init.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/init",
+      "sha256": "7a91db3de1c25eea6877ae3b15863d4cf95f2929d3c62732eeb6e2cfec9660cc"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/label.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/label",
+      "sha256": "4e3a3bfdb31e747164594203ca0221d6ea30516d6eb8b1391e3359f9849bc410"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/pause.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/pause",
+      "sha256": "ed10add9a9561f6e44179668919e4f15b10cccbb218aa868f04d86ab76e293d2"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/play.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/play",
+      "sha256": "e59c442990b003967e7bd8af7ec001766f2cdbcebc07e66d0222f12ada681a3a"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/refresh.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/refresh",
+      "sha256": "33a98c6b02de0b6e718362266b13a4cd3786421a4c01abad71e4f9547ba01185"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/remove.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/remove",
+      "sha256": "fb93054bfd41d89f18d0c9278866517f75928c22f9184e8f70d5f7647117a072"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/reset.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/reset",
+      "sha256": "5c7db98f46d62a488bb5d9083da4cc4578fa5bdcea85fd16400783201a124133"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/restart.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/restart",
+      "sha256": "4f957774e77428a3da125bd416745a7ae89061903a06b110b442348945eda56c"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/resume.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/resume",
+      "sha256": "3c2eaafccf628d2ac459c500ab9d8e20e51a28bc4e7d463226a14a4543f5fc3f"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/reverse.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/reverse",
+      "sha256": "c1ee316ec495f8e3b581b39f8deb7d92cf62a10cf7c732b9b7fe0a6be5b7e513"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/revert.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/revert",
+      "sha256": "bf99c2833a04bb4c554e9167c57aac766a17da86e9f52bb7d556db1dffec9437"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/seek.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/seek",
+      "sha256": "0c3e7579b76bc57ed251dd26fd66fbc4f269ad91fb34cb5b63b6b62415723bbd"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/set.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/set",
+      "sha256": "701af30b13b5f316f4535ff7363660141aeb1391752f66ff741a3c04a4add14d"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/stretch.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/stretch",
+      "sha256": "7037df3ce2eacfed7847d663e56613d42fd9f12dfaee33145948c51507b20571"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-methods/sync.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-methods/sync",
+      "sha256": "b461360eb6b875fe51b5d7607488e2f7f6d810fef2da6be8b169da03896bda93"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-playback-settings.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-playback-settings",
+      "sha256": "788833769548fcdb86236e5ea2f5d75da13a49aa62e14360e29011f419ea5204"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-playback-settings/alternate.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-playback-settings/alternate",
+      "sha256": "e765c0f78375f7722da487709c987bf6a4cfd78c7b071bfd0b916e057a400c91"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-playback-settings/autoplay.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-playback-settings/autoplay",
+      "sha256": "7d3b9e5243fc34f0d4ed01afd3a926ec449b615832d1f0f8f6b7d820f84f1949"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-playback-settings/defaults.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-playback-settings/defaults",
+      "sha256": "0b6456412d4aa037e992e7589562fb9d7a48a03a46921fd36ccac19c08d3fca8"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-playback-settings/delay.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-playback-settings/delay",
+      "sha256": "7947e47769976defc86b8f87f6dfdd96dbc31bd41380d9fdd39ccd6e6a37576e"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-playback-settings/framerate.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-playback-settings/framerate",
+      "sha256": "390fcca78de88b8a4c5ee29ee0ce763b62dac9fcc478387824ab37c2ce2094ce"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-playback-settings/loop.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-playback-settings/loop",
+      "sha256": "90853b976f1f9b81c214f9e8e30760e650fbba3cf6590df4329f57cd65c08114"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-playback-settings/playback-loopdelay.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-playback-settings/playback-loopdelay",
+      "sha256": "67537990068a41f366c143af12b6c9bb70ce7d22f969fd9cf2feffa9445d8c21"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-playback-settings/playbackease.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-playback-settings/playbackease",
+      "sha256": "36cc9de6cdcb4a01c1e11d0e90153894f48d032723ffca8be00c1533a0101d0d"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-playback-settings/playbackrate.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-playback-settings/playbackrate",
+      "sha256": "1f5259875ced3f26ff31bb282a4bc76912d4dc9d94c3bb7367f2c8c9a9ccc9c3"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-playback-settings/reversed.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-playback-settings/reversed",
+      "sha256": "cf870622bfc9f908c75db5d95aee80f469defcd589226abf182aaf3221846cf7"
+    },
+    "pages/animejs-com/documentation/timeline/timeline-properties.md": {
+      "url": "https://animejs.com/documentation/timeline/timeline-properties",
+      "sha256": "fda4b7f96168fa905e8539a34d86fb06a7d6dca97c863a7a2521e31d9f9d8500"
+    },
+    "pages/animejs-com/documentation/timer.md": {
+      "url": "https://animejs.com/documentation/timer",
+      "sha256": "bf3eab057167f6f20720a05553801da2fabc8907cb42ba712feadc6c3951831b"
+    },
+    "pages/animejs-com/documentation/timer/timer-callbacks.md": {
+      "url": "https://animejs.com/documentation/timer/timer-callbacks",
+      "sha256": "bb9fac8a73339c7ed13012ad536580aa90b93fdc5ad4351288c3cad517152fc1"
+    },
+    "pages/animejs-com/documentation/timer/timer-callbacks/onbegin.md": {
+      "url": "https://animejs.com/documentation/timer/timer-callbacks/onbegin",
+      "sha256": "06291a3fe71ae71f9e79f14f2eabc7156b355e228d597b3d72ea2b4f3a3149bc"
+    },
+    "pages/animejs-com/documentation/timer/timer-callbacks/oncomplete.md": {
+      "url": "https://animejs.com/documentation/timer/timer-callbacks/oncomplete",
+      "sha256": "42b30bd48da1990951196e47754871459c506ab265a7d413e5694e9042ca0400"
+    },
+    "pages/animejs-com/documentation/timer/timer-callbacks/onloop.md": {
+      "url": "https://animejs.com/documentation/timer/timer-callbacks/onloop",
+      "sha256": "34fd2f9573067b300c8562d80afd95088f94416f99e9ec7b6f7fde104bd38e60"
+    },
+    "pages/animejs-com/documentation/timer/timer-callbacks/onpause.md": {
+      "url": "https://animejs.com/documentation/timer/timer-callbacks/onpause",
+      "sha256": "b0ac3987148a20ea85919705a2660068649319ce6ae82e202326ff880f4698f9"
+    },
+    "pages/animejs-com/documentation/timer/timer-callbacks/onupdate.md": {
+      "url": "https://animejs.com/documentation/timer/timer-callbacks/onupdate",
+      "sha256": "e6a716f1737cd92b405b204f6e8ab4c77cea9e51bdcc39e153efa4b4eab2305d"
+    },
+    "pages/animejs-com/documentation/timer/timer-callbacks/then.md": {
+      "url": "https://animejs.com/documentation/timer/timer-callbacks/then",
+      "sha256": "8efe5ee452ac6837aa4b719912502e9e7530faa4082b97f1a6a397b9bdede12d"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods",
+      "sha256": "75eb7af5b738609f59eaf4fd199956efaa585acab6b82bbddef87f603d6cf9f5"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/alternate.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/alternate",
+      "sha256": "1737c4640210d45b21fab1c54daa88b275bd71eb6c849435aad9ba752cef3368"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/cancel.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/cancel",
+      "sha256": "e794b27406e611b447f2574a754ae6a619e1f09ea61ab1c66e728fe2d141f418"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/complete.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/complete",
+      "sha256": "8ee4b4e34e99a4ae7264e46d487eb2187aeb13d2a35d07c0ae63cf50ba67ce37"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/pause.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/pause",
+      "sha256": "c83348a646654ca671200badb22e09a49302ec97be0b0460f8bf8b257d2aed7d"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/play.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/play",
+      "sha256": "46c71fa5fcb78c7bee2505351d26f5e60a107a537a6b9f651cc55713417701b1"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/reset.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/reset",
+      "sha256": "d842678a58d70f7f1b5a3afb13bd950151075c79ed573f1c293e480d95076566"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/restart.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/restart",
+      "sha256": "34aafef8e367440c376af3690b0e8550b3c74944530dc801bb121d72d5886a3a"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/resume.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/resume",
+      "sha256": "3f2988c46ebd4b3fbbb6d59ed08ef5cf06d90c41823903f7960c842839577b14"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/reverse.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/reverse",
+      "sha256": "72997698bc09af31f71026152cd5104c737acc6d1313b1c357a18547fd71d4e0"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/revert.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/revert",
+      "sha256": "01820a658f23fabdf72281c213d64134d303fe14a93824666e0b6adddccf3581"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/seek.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/seek",
+      "sha256": "551728a821178d8774d8efd63cfeeb741ce6348aed40e1daf4df7e56570af13b"
+    },
+    "pages/animejs-com/documentation/timer/timer-methods/stretch.md": {
+      "url": "https://animejs.com/documentation/timer/timer-methods/stretch",
+      "sha256": "76573efdbdb623993380d6d10adcf676591db5772d01e9698433349655a30f97"
+    },
+    "pages/animejs-com/documentation/timer/timer-playback-settings.md": {
+      "url": "https://animejs.com/documentation/timer/timer-playback-settings",
+      "sha256": "d6e7d1ba2f27faf20dd3dfbcec941e3b96df140172aae3ecc97955118763ccd6"
+    },
+    "pages/animejs-com/documentation/timer/timer-playback-settings/alternate.md": {
+      "url": "https://animejs.com/documentation/timer/timer-playback-settings/alternate",
+      "sha256": "15797fe5ddbad69569328588d6ea436ac04929784a340e0acf2d4c8957f33f06"
+    },
+    "pages/animejs-com/documentation/timer/timer-playback-settings/autoplay.md": {
+      "url": "https://animejs.com/documentation/timer/timer-playback-settings/autoplay",
+      "sha256": "ff580a197db0d19216b504a605b780f283c69d86b54109962b7bad8eadc2c992"
+    },
+    "pages/animejs-com/documentation/timer/timer-playback-settings/delay.md": {
+      "url": "https://animejs.com/documentation/timer/timer-playback-settings/delay",
+      "sha256": "5db6815f699fc3036976559f76d776b4ca28191ff70111c00c2fa8fea7a420a8"
+    },
+    "pages/animejs-com/documentation/timer/timer-playback-settings/duration.md": {
+      "url": "https://animejs.com/documentation/timer/timer-playback-settings/duration",
+      "sha256": "928eabbfaad4f6823e15b480c7a4f5bc1cc18d24f84ee8b63f894542d64126d9"
+    },
+    "pages/animejs-com/documentation/timer/timer-playback-settings/framerate.md": {
+      "url": "https://animejs.com/documentation/timer/timer-playback-settings/framerate",
+      "sha256": "3b5bb60408944c02f4a61e9b69d9221e892f8147da34ac907722f655b93fc602"
+    },
+    "pages/animejs-com/documentation/timer/timer-playback-settings/loop.md": {
+      "url": "https://animejs.com/documentation/timer/timer-playback-settings/loop",
+      "sha256": "61d3a5091a8d8009065639ceda00acf35cb420e318503476c0cfbea52f619a04"
+    },
+    "pages/animejs-com/documentation/timer/timer-playback-settings/playback-loopdelay.md": {
+      "url": "https://animejs.com/documentation/timer/timer-playback-settings/playback-loopdelay",
+      "sha256": "48fb9fb6b2d23e47d7fd9538f5fd307198f57528528a7d3c1bef38e9d5279c40"
+    },
+    "pages/animejs-com/documentation/timer/timer-playback-settings/playbackrate.md": {
+      "url": "https://animejs.com/documentation/timer/timer-playback-settings/playbackrate",
+      "sha256": "6a611d670701046feb9b82fd792cd5983243a265716b5392280370d99447d7e7"
+    },
+    "pages/animejs-com/documentation/timer/timer-playback-settings/reversed.md": {
+      "url": "https://animejs.com/documentation/timer/timer-playback-settings/reversed",
+      "sha256": "615520a46037654d4fb136121c9f8dbe624542a80d00eb38b66c0a63bef0a8f9"
+    },
+    "pages/animejs-com/documentation/timer/timer-properties.md": {
+      "url": "https://animejs.com/documentation/timer/timer-properties",
+      "sha256": "d7d7a5f5deec32a69e569b34e97eeef965637c892734bef118d0345c0e672d6c"
+    },
+    "pages/animejs-com/documentation/utilities.md": {
+      "url": "https://animejs.com/documentation/utilities",
+      "sha256": "179426b4ba340f034d21d88cac1a2b2aa3a1e8b4cfa053f51e62d3ec7af25f6d"
+    },
+    "pages/animejs-com/documentation/utilities/chain-able-utility-functions.md": {
+      "url": "https://animejs.com/documentation/utilities/chain-able-utility-functions",
+      "sha256": "2536b2fd3dd67121841fe1b26464d0b2ba7d9b1b387755fbbab05a2782c41846"
+    },
+    "pages/animejs-com/documentation/utilities/clamp.md": {
+      "url": "https://animejs.com/documentation/utilities/clamp",
+      "sha256": "8e98e0b05d85e10a436c7195b6be62a64615425c145ae0095a0c584a0e5a5849"
+    },
+    "pages/animejs-com/documentation/utilities/clean-inline-styles.md": {
+      "url": "https://animejs.com/documentation/utilities/clean-inline-styles",
+      "sha256": "34cd989c15cc303d600f8c2bf7411d74f26674accaf028f794ff22965e310a85"
+    },
+    "pages/animejs-com/documentation/utilities/createseededrandom.md": {
+      "url": "https://animejs.com/documentation/utilities/createseededrandom",
+      "sha256": "f92c076060c2b65a29d37774dfaf269e1e530ba76899ad31ccd3ada9763502b7"
+    },
+    "pages/animejs-com/documentation/utilities/createtimekeeper.md": {
+      "url": "https://animejs.com/documentation/utilities/createtimekeeper",
+      "sha256": "90ec386a2e8f69f5b6ad1342337faf7a8224b3afe45710c668216673b54aa842"
+    },
+    "pages/animejs-com/documentation/utilities/damp.md": {
+      "url": "https://animejs.com/documentation/utilities/damp",
+      "sha256": "58ca0381e277a3caadbb9b32cfeec392f02a0fcc4facea65a01168a012829353"
+    },
+    "pages/animejs-com/documentation/utilities/deg-to-rad.md": {
+      "url": "https://animejs.com/documentation/utilities/deg-to-rad",
+      "sha256": "57fc43958829edb956eb5f95bf17e30629fc9a8bc6e36bc6a79525dc02cf4b81"
+    },
+    "pages/animejs-com/documentation/utilities/dollar-sign.md": {
+      "url": "https://animejs.com/documentation/utilities/dollar-sign",
+      "sha256": "2363324bf25c0475091004b70a58df1bf5f8e867cf873a5bd3dca7c1669f7b86"
+    },
+    "pages/animejs-com/documentation/utilities/get.md": {
+      "url": "https://animejs.com/documentation/utilities/get",
+      "sha256": "66f2c6ec9c80c4f568cbf08b11413f54a0651b941574e862a3fa85e42957931d"
+    },
+    "pages/animejs-com/documentation/utilities/lerp.md": {
+      "url": "https://animejs.com/documentation/utilities/lerp",
+      "sha256": "62dac4b26917b6d0c161906e95d3da5318bad1f870d7195f1725cf0731f7ec70"
+    },
+    "pages/animejs-com/documentation/utilities/map-range.md": {
+      "url": "https://animejs.com/documentation/utilities/map-range",
+      "sha256": "dd5b41362cbc2d9eeb29c9555f046e2eed2295c01c94c8cd0bbc53f16131406c"
+    },
+    "pages/animejs-com/documentation/utilities/pad-end.md": {
+      "url": "https://animejs.com/documentation/utilities/pad-end",
+      "sha256": "db99c086993668f89ef44d1f21666bd5acaccd95c9bfee81bd038e418640bbed"
+    },
+    "pages/animejs-com/documentation/utilities/pad-start.md": {
+      "url": "https://animejs.com/documentation/utilities/pad-start",
+      "sha256": "b54db1af1e00ddbffac7958088fb2aeeb04e4331b6e0a3d3d0a8035f0ed667d1"
+    },
+    "pages/animejs-com/documentation/utilities/rad-to-deg.md": {
+      "url": "https://animejs.com/documentation/utilities/rad-to-deg",
+      "sha256": "109b46e9d86050db6f881006742ae9d79eb92a7254d160996b6800146a9eaa65"
+    },
+    "pages/animejs-com/documentation/utilities/random-pick.md": {
+      "url": "https://animejs.com/documentation/utilities/random-pick",
+      "sha256": "30d080e94ae53186656ab52c2e0fbbdf5515552b01b604d2bade314b894d0248"
+    },
+    "pages/animejs-com/documentation/utilities/random.md": {
+      "url": "https://animejs.com/documentation/utilities/random",
+      "sha256": "3a9ace1a37972f13e1ca5c555260d2d4b077a819ddedd83ccc18d3a702a28d28"
+    },
+    "pages/animejs-com/documentation/utilities/remove.md": {
+      "url": "https://animejs.com/documentation/utilities/remove",
+      "sha256": "5449aa7547c435e946f76b576f3df6114c01f7f6433517124e530baf6f119e13"
+    },
+    "pages/animejs-com/documentation/utilities/round-pad.md": {
+      "url": "https://animejs.com/documentation/utilities/round-pad",
+      "sha256": "9d90880e23542cd25e08001c4794e8607a2f54c1517fe5c926e44cafe9efd4d5"
+    },
+    "pages/animejs-com/documentation/utilities/round.md": {
+      "url": "https://animejs.com/documentation/utilities/round",
+      "sha256": "07c22506b648011db279e9d37f2e82668ee33de0e42d04ce150624e65acc0bbc"
+    },
+    "pages/animejs-com/documentation/utilities/set.md": {
+      "url": "https://animejs.com/documentation/utilities/set",
+      "sha256": "e736e20773998b5b632f816a67866a80e12b660bd402ad30011fecf5bfc0ab0f"
+    },
+    "pages/animejs-com/documentation/utilities/shuffle.md": {
+      "url": "https://animejs.com/documentation/utilities/shuffle",
+      "sha256": "26c68512746032d698b0542a122a57e10df7fd0c2b71e2b764cb8d6b40b8e32a"
+    },
+    "pages/animejs-com/documentation/utilities/snap.md": {
+      "url": "https://animejs.com/documentation/utilities/snap",
+      "sha256": "4e8e50dbe17b6404e1a4ea38e5b60244d81cbd331db83e304fcbd186f5665db4"
+    },
+    "pages/animejs-com/documentation/utilities/stagger.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger",
+      "sha256": "f36ec7dcaa5c19255e9f7e1f6ad894f91fab87d9837e0ec17f28e6b648dcc726"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-parameters.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-parameters",
+      "sha256": "dadf91ba6ea5e15e095ea7194dc8bdf3f1ec106e31590ad2826f0e7470a5f90d"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-parameters/stagger-ease.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-parameters/stagger-ease",
+      "sha256": "a500872716dd9cd673c7220874b192df5c0a8d85fbbe3a8fef9ab8a0bd01df0a"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-parameters/stagger-from.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-parameters/stagger-from",
+      "sha256": "ea314f2e13808b455533f17f18f84452bb736fdb694f50dcc72ad0f042b63878"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-parameters/stagger-grid-axis.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-parameters/stagger-grid-axis",
+      "sha256": "69ba4645a51979c4da05efc57ee6a260c11c688acb2858a25870d63fcfa48c59"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-parameters/stagger-grid.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-parameters/stagger-grid",
+      "sha256": "c810600ee680b90d789772433798b07427b3b9794b115a176a3e923a8d3ca294"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-parameters/stagger-jitter.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-parameters/stagger-jitter",
+      "sha256": "bbd08d22b3c34611b94e03f1d79099fe3e3952bb8d4e02397240ee9d775f1456"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-parameters/stagger-modifier.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-parameters/stagger-modifier",
+      "sha256": "d4e87cc57d40a1f3d0ed232b3d07f78503d666b0f0f3e9166c21b5561776e095"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-parameters/stagger-reversed.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-parameters/stagger-reversed",
+      "sha256": "79762bb6b7755f391f6fce2e796fe070996e19fb3af1d18c87d4517214b8e32e"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-parameters/stagger-start.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-parameters/stagger-start",
+      "sha256": "2e6e6e7c5b4fbaa686a0745a145363ae3b16fa1e9236263f091032418b9e911a"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-parameters/stagger-total.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-parameters/stagger-total",
+      "sha256": "63df606fbdba57537fa8219e251f3522ca5353a698c8655a24a670109575a030"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-parameters/stagger-use.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-parameters/stagger-use",
+      "sha256": "e2b7b282b8fb1486aa2b337d60cd4fafc66000800c4a13ba555cf8efa665a42f"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-value-types.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-value-types",
+      "sha256": "b422831eeb378b68942791f8a9633c785cdfc2d776f27e5dc7dc349387a88272"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-value-types/numerical-value.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-value-types/numerical-value",
+      "sha256": "fb6e352e2b8d0831e8a7372bd44b0dcf243c7d539b2b14155bbf3bb707c15839"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/stagger-value-types/range-value.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/stagger-value-types/range-value",
+      "sha256": "b05d62c3394bc104be2c7c0709e70f25856ad7715ae811602b30446a3a041860"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/time-staggering.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/time-staggering",
+      "sha256": "009f01a2a111c87bcecda1203c83271304683c1f38fb5c9ea4af086ed63d1c5c"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/timeline-positions-staggering.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/timeline-positions-staggering",
+      "sha256": "c425f905211bb07167e8972a2753a8e4ed50c0237345c304d289d6e36a4e97e2"
+    },
+    "pages/animejs-com/documentation/utilities/stagger/values-staggering.md": {
+      "url": "https://animejs.com/documentation/utilities/stagger/values-staggering",
+      "sha256": "339487dcc28a2b3f9bbe2cce76fb3250c795d51cc6370862a2a4177cb38d2555"
+    },
+    "pages/animejs-com/documentation/utilities/sync.md": {
+      "url": "https://animejs.com/documentation/utilities/sync",
+      "sha256": "980707d9cd53f0e409e77aa6302353af309ed8c2f3131d84ff226569ff0ec51d"
+    },
+    "pages/animejs-com/documentation/utilities/wrap.md": {
+      "url": "https://animejs.com/documentation/utilities/wrap",
+      "sha256": "c50cea804e3cc618365e3279f79fb6ec6361dc267635452fc954f99cb12ad5f1"
+    },
+    "pages/animejs-com/documentation/web-animation-api.md": {
+      "url": "https://animejs.com/documentation/web-animation-api",
+      "sha256": "9489c35a3cb455cf90838bcff68082b8bdedeb7e52660917077b06c03094b844"
+    },
+    "pages/animejs-com/documentation/web-animation-api/api-differences-with-native-waapi.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/api-differences-with-native-waapi",
+      "sha256": "2324f640da7141072b2e5f6a803db253c307bf8e9f3a7ed3cebeead452fab860"
+    },
+    "pages/animejs-com/documentation/web-animation-api/api-differences-with-native-waapi/direction.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/api-differences-with-native-waapi/direction",
+      "sha256": "219ef7bd641f41750d1ab5a17f4e0da711c882ba405e685e30779bc18a3596e0"
+    },
+    "pages/animejs-com/documentation/web-animation-api/api-differences-with-native-waapi/easing.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/api-differences-with-native-waapi/easing",
+      "sha256": "3387ce593c06c51bef7ffe3ddadf124aadd5c91c40ddf3a5595359874d622db8"
+    },
+    "pages/animejs-com/documentation/web-animation-api/api-differences-with-native-waapi/finished.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/api-differences-with-native-waapi/finished",
+      "sha256": "ba42e155b98435ef09804d2bc28af97976ed92f624f3796210c6a898e7e8bbac"
+    },
+    "pages/animejs-com/documentation/web-animation-api/api-differences-with-native-waapi/iterations.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/api-differences-with-native-waapi/iterations",
+      "sha256": "78277ba83c2404fd7479cb1c261c22aa2f8de13cecb9ae363887205b6fc1e182"
+    },
+    "pages/animejs-com/documentation/web-animation-api/hardware-accelerated-animations.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/hardware-accelerated-animations",
+      "sha256": "c06a87c13b0c8632ea3e5c48f3ebb78399be7132299a6ef9f3f13f4f64adc090"
+    },
+    "pages/animejs-com/documentation/web-animation-api/improvements-to-the-web-animation-api.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/improvements-to-the-web-animation-api",
+      "sha256": "ec399ba7ae8b52c2c98839957de8bf9984ca34f1cd0c2969c533a121087254c4"
+    },
+    "pages/animejs-com/documentation/web-animation-api/improvements-to-the-web-animation-api/default-units.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/improvements-to-the-web-animation-api/default-units",
+      "sha256": "5c53ce7824400b46d2ff070737f217f6dd402b323cfbf5762f09c5b7fb88e7be"
+    },
+    "pages/animejs-com/documentation/web-animation-api/improvements-to-the-web-animation-api/function-based-values.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/improvements-to-the-web-animation-api/function-based-values",
+      "sha256": "dc6565e511eadbcd93e9580c169a2da9b920cc4b01ca906bb1205a4c49d05e56"
+    },
+    "pages/animejs-com/documentation/web-animation-api/improvements-to-the-web-animation-api/individual-css-transforms.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/improvements-to-the-web-animation-api/individual-css-transforms",
+      "sha256": "df3ce731be8f8ad68261da00f73a2dc05615a1f5a8689f219a8eabb9fd6e1ee6"
+    },
+    "pages/animejs-com/documentation/web-animation-api/improvements-to-the-web-animation-api/individual-property-parameters.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/improvements-to-the-web-animation-api/individual-property-parameters",
+      "sha256": "23d0343b85258504f69cfcc626a80f3b0311437c2d887146186531cf0bba5835"
+    },
+    "pages/animejs-com/documentation/web-animation-api/improvements-to-the-web-animation-api/multi-targets-animation.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/improvements-to-the-web-animation-api/multi-targets-animation",
+      "sha256": "c70e859f4daa772e0355ff08872ab0b49cceda1646c893850c0300471223ab7d"
+    },
+    "pages/animejs-com/documentation/web-animation-api/improvements-to-the-web-animation-api/sensible-defaults.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/improvements-to-the-web-animation-api/sensible-defaults",
+      "sha256": "d53bca83bfab3db213227b7d1f4b4d45e5b7aca4fb43e71dde3a52e2e54b551e"
+    },
+    "pages/animejs-com/documentation/web-animation-api/improvements-to-the-web-animation-api/spring-and-custom-easings.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/improvements-to-the-web-animation-api/spring-and-custom-easings",
+      "sha256": "96ce9e284c73b97e10fd7ca484523b2e292fffd6e75261da3d26a444a61fdc88"
+    },
+    "pages/animejs-com/documentation/web-animation-api/waapi-convertease.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/waapi-convertease",
+      "sha256": "2ac80584de0b78c276f601414cd0c9a12ad779e3fe9c8d24ef08c8907ecbc4d0"
+    },
+    "pages/animejs-com/documentation/web-animation-api/when-to-use-waapi.md": {
+      "url": "https://animejs.com/documentation/web-animation-api/when-to-use-waapi",
+      "sha256": "0a668e689b7ac8cae104cce62e1da0a1cd6314d00dc707ab2283600a3f9e2cdd"
+    }
+  }
+}
