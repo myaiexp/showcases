@@ -1,0 +1,42 @@
+/* Readout of the accessibility attributes read back from the rendered SVG */
+[data-example='mermaid/a11y-title-description-readout'] {
+  .a11y-form {
+    display: grid;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .a11y-form label {
+    display: grid;
+    gap: 2px;
+    font-size: 13px;
+    color: var(--fg-2);
+  }
+  .a11y-form input,
+  .a11y-form textarea,
+  .a11y-form select {
+    font: inherit;
+    padding: 6px 8px;
+    color: var(--fg-1);
+    background: var(--bg);
+    border: 1px solid var(--border, #333);
+    border-radius: 6px;
+  }
+  .a11y-readout {
+    width: 100%;
+    margin: 8px 0 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 4px 12px;
+    font-size: 13px;
+  }
+  .a11y-readout dt {
+    font-family: var(--font-mono);
+    color: var(--fg-2);
+  }
+  .a11y-readout dd {
+    margin: 0;
+    color: var(--fg-1);
+    overflow-wrap: anywhere;
+  }
+}

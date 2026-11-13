@@ -1,0 +1,14 @@
+/* Layout name tag over the preview card */
+[data-example='mermaid/layouts-select-engine'] {
+  position: relative;
+  .layout-tag {
+    position: absolute;
+    top: 4px;
+    left: 8px;
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--fg-2);
+    pointer-events: none;
+  }
+}

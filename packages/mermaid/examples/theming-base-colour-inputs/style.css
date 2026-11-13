@@ -1,0 +1,22 @@
+/* Colour input row for the base theme variables */
+[data-example='mermaid/theming-base-colour-inputs'] {
+  .base-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: var(--fg-2);
+  }
+  .base-inputs input[type='color'] {
+    vertical-align: middle;
+    width: 36px;
+    height: 26px;
+    padding: 0;
+    border: 1px solid var(--border, #333);
+    border-radius: 4px;
+    background: none;
+  }
+}
