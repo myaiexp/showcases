@@ -38,6 +38,7 @@
     "@sigma/node-image": "^4.0.2",
     "@sigma/node-piechart": "^4.0.0",
     "@sigma/utils": "^4.0.0",
+    "@sparkjsdev/spark": "2.4.0",
     "animejs": "^4.5.0",
     "chart.js": "^4.6.1",
     "dexie": "^4.4.7",

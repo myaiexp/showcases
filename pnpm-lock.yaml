@@ -59,6 +59,9 @@ importers:
       '@sigma/utils':
         specifier: ^4.0.0
         version: 4.0.0(sigma@4.0.6(graphology-types@0.24.8))
+      '@sparkjsdev/spark':
+        specifier: 2.4.0
+        version: 2.4.0(three@0.187.0)
       animejs:
         specifier: ^4.5.0
         version: 4.5.0(@types/three@0.187.0)(three@0.187.0)
@@ -620,6 +623,11 @@ packages:
     resolution: {integrity: sha512-7o0Qzmxl16JtD0tMiQJ1k6tJMUvVNS4wWylnEef6TYlO04Sr8DeWH1CiZSAL83Gc7NC7qU9PYxtnU7XLLB1mgA==}
     peerDependencies:
       sigma: ^4.0.0
+
+  '@sparkjsdev/spark@2.4.0':
+    resolution: {integrity: sha512-aUjgBfhwDRcF3nUwiAD6Nh7IwvxEmW9liz2qrAXIm2BlPYBmn81QbXIpGFLBSr/o0TKGvEXbNIsKujgPGV/7QQ==}
+    peerDependencies:
+      three: '>=0.180.0'
 
   '@swc/helpers@0.5.24':
     resolution: {integrity: sha512-6tcXo4kA8HgGO7AVmawB57RYi/piBPYVHVcO6dXjX+SZw8GoHmi262sp4v2Ha2kNP9Cx84qei27yT+fjS1lxgg==}
@@ -2229,6 +2237,10 @@ snapshots:
   '@sigma/utils@4.0.0(sigma@4.0.6(graphology-types@0.24.8))':
     dependencies:
       sigma: 4.0.6(graphology-types@0.24.8)
+
+  '@sparkjsdev/spark@2.4.0(three@0.187.0)':
+    dependencies:
+      three: 0.187.0
 
   '@swc/helpers@0.5.24': {}
 
