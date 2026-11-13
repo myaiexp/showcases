@@ -22,7 +22,8 @@ Purity rule).
   clone at `ref` (a tag matching the installed version, ideally) and copies `paths` into
   `docs/repo/`. A path may be a glob (`docs/pages/*.md`, `**` for any depth) to take one
   format when the repo ships each page twice. MANIFEST pins the resolved commit and
-  links each file to its blob URL.
+  links each file to its blob URL. Several `git` sources share `docs/repo/`, each file
+  keeping its own repo's URL; two repos shipping the same path fail the run.
 - **`pages`**: a fixed list of docs pages, fetched with `tfish fetch` as markdown into
   `docs/pages/<host>/<path>.md`. The first line of each file is its source URL.
 - **`crawl`**: starts at `start` and follows links under `prefix`, breadth-first, up to
