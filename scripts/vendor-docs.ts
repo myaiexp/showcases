@@ -54,12 +54,20 @@ async function vendorInto(docs: string, source: DocsSourceFile): Promise<void> {
   for (const s of source.sources) {
     if (s.kind === 'git') {
       console.log(`git ${s.repo}@${s.ref}`);
-      const dest = join(docs, 'repo');
-      const commit = vendorGit(s.repo, s.ref, s.paths, dest);
-      for (const file of walk(dest)) {
-        const rel = relative(dest, file);
-        urlOf.set(relative(docs, file), `${s.repo.replace(/\.git$/, '')}/blob/${commit}/${rel}`);
+      // Each repo is cloned into its own staging dir and then moved into repo/, so with
+      // several git sources every file keeps the blob URL of the repo it came from, and
+      // two repos shipping the same path fail loudly instead of overwriting each other.
+      const staging = join(docs, '.git-source');
+      const commit = vendorGit(s.repo, s.ref, s.paths, staging);
+      for (const file of walk(staging)) {
+        const rel = relative(staging, file);
+        const to = join(docs, 'repo', rel);
+        if (existsSync(to)) throw new Error(`${s.repo} and an earlier git source both ship ${rel}`);
+        mkdirSync(dirname(to), { recursive: true });
+        renameSync(file, to);
+        urlOf.set(relative(docs, to), `${s.repo.replace(/\.git$/, '')}/blob/${commit}/${rel}`);
       }
+      rmSync(staging, { recursive: true, force: true });
       resolved.push({ ...s, commit });
       continue;
     }

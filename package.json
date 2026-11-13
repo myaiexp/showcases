@@ -37,6 +37,7 @@
     "chart.js": "^4.6.1",
     "dexie": "^4.4.7",
     "dompurify": "^3.4.17",
+    "echarts": "6.1.0",
     "fuse.js": "^7.5.0",
     "graphology": "^0.26.0",
     "graphology-gexf": "^0.13.2",
