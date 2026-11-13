@@ -1,4 +1,4 @@
-// Perspective example: a first viewer bound to a client and restored onto a named table
+// Perspective example: a first viewer restored onto a named table
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

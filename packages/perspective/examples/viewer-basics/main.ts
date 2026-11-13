@@ -1,4 +1,4 @@
-// load() a Client, then restore() picks the table and the initial query in one render
+// load() a Client, then restore() the table and query in one render
 import type { Mount } from '@/types.ts';
 import { worker, uniqueName, createViewer, teardown, cycle } from '../../shared/setup.ts';
 import { orders } from '../../shared/data.ts';

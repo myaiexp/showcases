@@ -8,6 +8,7 @@ import type { HTMLPerspectiveViewerElement, ViewerConfigUpdate } from '@perspect
 import '@perspective-dev/viewer/dist/css/themes.css';
 import SERVER_WASM from '@perspective-dev/server/dist/wasm/perspective-server.wasm?url';
 import CLIENT_WASM from '@perspective-dev/viewer/dist/wasm/perspective-viewer.wasm?url';
+import MIGRATE_WASM from '@perspective-dev/client/dist/wasm/perspective-migrate.wasm?url';
 import type { MountContext } from '@/types.ts';
 
 export { perspective };
@@ -15,11 +16,16 @@ export type { Client, Table, HTMLPerspectiveViewerElement, ViewerConfigUpdate };
 
 /**
  * The bootstrap from importing.md § Vite. init() registers the binaries for the page and
- * can run once, so every example shares this promise.
+ * can run once, so every example shares this promise. The migrate binary is a thunk, so
+ * only the first migrate() or validate() call downloads it (migrate.md).
  */
 let booted: Promise<void> | null = null;
 export function boot(): Promise<void> {
-  booted ??= perspective_viewer.init({ server: fetch(SERVER_WASM), viewer: fetch(CLIENT_WASM) });
+  booted ??= perspective_viewer.init({
+    server: fetch(SERVER_WASM),
+    viewer: fetch(CLIENT_WASM),
+    migrate: () => fetch(MIGRATE_WASM),
+  });
   return booted;
 }
 
