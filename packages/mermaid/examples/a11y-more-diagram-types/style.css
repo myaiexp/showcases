@@ -1,0 +1,26 @@
+/* Multi-line toggle and the readout of attributes read back from the SVG */
+[data-example='mermaid/a11y-more-diagram-types'] {
+  .a11y-more-multi {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: var(--fg-2);
+  }
+  .a11y-more-readout {
+    width: 100%;
+    margin: 8px 0 0;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 4px 12px;
+    font-size: 13px;
+  }
+  .a11y-more-readout dt {
+    font-family: var(--font-mono);
+    color: var(--fg-2);
+  }
+  .a11y-more-readout dd {
+    margin: 0;
+    color: var(--fg-1);
+    overflow-wrap: anywhere;
+  }
+}

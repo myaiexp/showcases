@@ -6,6 +6,12 @@
   align-items: center;
   min-height: 160px;
 }
+/* While measuring, render() draws inside a temporary div with id "d<id>" in this box. Gantt
+   takes its width from that div's offsetWidth, and a flex child shrinks to its content, so
+   without this every Gantt came out 300px wide. */
+.mm-diagram > div[id^='dmm-'] {
+  flex: 0 0 100%;
+}
 .mm-diagram svg {
   max-height: 560px;
   height: auto;

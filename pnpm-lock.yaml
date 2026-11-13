@@ -20,6 +20,15 @@ importers:
       '@fontsource-variable/inter':
         specifier: ^5.3.0
         version: 5.3.0
+      '@iconify-json/fa6-brands':
+        specifier: 1.2.6
+        version: 1.2.6
+      '@iconify-json/fa6-solid':
+        specifier: 1.2.4
+        version: 1.2.4
+      '@mermaid-js/layout-tidy-tree':
+        specifier: 1.0.1
+        version: 1.0.1(mermaid@12.3.0)
       '@mermaid-js/mermaid-zenuml':
         specifier: ^1.0.1
         version: 1.0.1(mermaid@12.3.0)(tailwindcss@4.3.5)
@@ -98,6 +107,9 @@ importers:
       gsap:
         specifier: ^3.15.1
         version: 3.15.1
+      katex:
+        specifier: 0.18.10
+        version: 0.18.10
       ky:
         specifier: ^2.2.0
         version: 2.2.0
@@ -289,6 +301,12 @@ packages:
     peerDependencies:
       tailwindcss: ^3.0 || ^4.0
 
+  '@iconify-json/fa6-brands@1.2.6':
+    resolution: {integrity: sha512-twL3X4KWcxAhbc1vz/mIDsVr+CAItk1/EIfxKUVQtpv6O4eydk5KNYqTZWdvJNHGInUgd6vKg21aWfVgb5DXEg==}
+
+  '@iconify-json/fa6-solid@1.2.4':
+    resolution: {integrity: sha512-LmDNNdJVyvF5mPm1yxWvL8KjCc/E8LzoqnF1LNTVpyY2ZJRUlGOWuPIThdbuFBF2IovgttkIyumhyqfmlHdwKg==}
+
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
@@ -345,6 +363,12 @@ packages:
 
   '@maplibre/vt-pbf@4.3.3':
     resolution: {integrity: sha512-dEe5XUd64RQbxNxy2OzIkJnwNDWjVmSXjCd0A7zLirm7QJ/WWbmtDFIkfsiM4yt1cplqzG6oSivRYeWx1SM1yg==}
+
+  '@mermaid-js/layout-tidy-tree@1.0.1':
+    resolution: {integrity: sha512-suZgFgQQHYuAxiEiNVgPJwOoXi/keXV6DghCL3rT4K9DmX7xYQ2XZI2suiBVs/fj1gn/OoXIWB2DFSmeY7trvw==}
+    engines: {node: '>=22.12.0'}
+    peerDependencies:
+      mermaid: ^11.0.2 || ^12.0.0
 
   '@mermaid-js/mermaid-zenuml@1.0.1':
     resolution: {integrity: sha512-O5DiRODoFVNgugOVloxcDXmd+bXe/sbGlDh3onnzuE4EWtgTWwaAlWuPPOXbU9QESsztnD4Gtnu7dr+tYLFE0A==}
@@ -1959,6 +1983,14 @@ snapshots:
     dependencies:
       tailwindcss: 4.3.5
 
+  '@iconify-json/fa6-brands@1.2.6':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/fa6-solid@1.2.4':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify/types@2.0.0': {}
 
   '@iconify/utils@3.1.7':
@@ -2026,6 +2058,11 @@ snapshots:
       '@mapbox/point-geometry': 1.1.0
       '@types/geojson': 7946.0.16
       pbf: 5.1.2
+
+  '@mermaid-js/layout-tidy-tree@1.0.1(mermaid@12.3.0)':
+    dependencies:
+      d3: 7.9.2
+      mermaid: 12.3.0
 
   '@mermaid-js/mermaid-zenuml@1.0.1(mermaid@12.3.0)(tailwindcss@4.3.5)':
     dependencies:

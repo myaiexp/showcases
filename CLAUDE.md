@@ -69,6 +69,9 @@ GitHub Pages. No service on the VPS.
 - Perspective examples share one Web Worker engine (`packages/perspective/shared/setup.ts`),
   so a table left behind outlives its example. Delete views, then viewers, then tables; an
   example that builds derived tables through the viewer gets its own worker and terminates it.
+- Mermaid: `test/mermaid-definitions.test.ts` runs `mermaid.parse()` on every definition an
+  example renders (first state and every playground variant). It catches syntax, not layout.
+  Live-config examples share `packages/mermaid/shared/controls.ts` (`liveDiagram`).
 - `vite.config.ts` resolves the bare `three` imported by three's addons to `three/webgpu`,
   so the Three.js gallery keeps one core. Spark (WebGL) imports the `Pass.js` addon and so
   gets `three/webgpu` too; it works because both builds share `three.core.js`.
