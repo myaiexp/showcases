@@ -1,0 +1,26 @@
+/* Rendering on demand: stage with the frame counter overlaid */
+[data-example='three-js/render-on-demand'] {
+  .wrap {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    max-height: 100%;
+  }
+  .stage {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .readout {
+    position: absolute;
+    left: var(--space-2);
+    top: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+    background: color-mix(in srgb, var(--bg-surface) 80%, transparent);
+    color: var(--fg-1);
+    font: 0.8rem/1.4 monospace;
+    pointer-events: none;
+  }
+  .loop { color: var(--fg-3); }
+  .count { color: var(--accent); }
+}

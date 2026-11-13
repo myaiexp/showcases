@@ -1,0 +1,23 @@
+/* Morph targets between datasets: stage and dataset buttons */
+[data-example='three-js/morph-datasets'] {
+  .stage {
+    display: block;
+    width: 100%;
+    height: 420px;
+    max-height: 100%;
+  }
+  .panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2) var(--space-3);
+    width: 100%;
+    padding: var(--space-3);
+    background: var(--bg-surface);
+    color: var(--fg-2);
+  }
+  .panel button.selected {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}

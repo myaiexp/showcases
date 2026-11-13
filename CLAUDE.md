@@ -63,3 +63,6 @@ GitHub Pages. No service on the VPS.
   fresh worktree before building that package's examples.
 - Slugs (package and example dir names) are permanent once published: URLs and
   comparisons point at them.
+- `vite.config.ts` resolves the bare `three` imported by three's addons to `three/webgpu`,
+  so the Three.js gallery keeps one core. A WebGL-based package that uses three's addons
+  needs that plugin rethought.

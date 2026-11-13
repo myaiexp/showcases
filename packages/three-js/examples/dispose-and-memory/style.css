@@ -1,0 +1,43 @@
+/* Disposing objects: canvas with a readout overlay, and a control panel */
+[data-example='three-js/dispose-and-memory'] {
+  .stage {
+    display: block;
+    width: 100%;
+    height: 420px;
+    max-height: 100%;
+  }
+  .panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    align-items: center;
+    width: 100%;
+    padding: var(--space-3);
+    background: var(--bg-surface);
+    color: var(--fg-2);
+    font-size: 0.875rem;
+  }
+  .wrap {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    max-height: 100%;
+  }
+  .stage {
+    height: 100%;
+  }
+  .readout {
+    position: absolute;
+    top: var(--space-2);
+    left: var(--space-2);
+    margin: 0;
+    color: var(--fg-1);
+    font-size: 0.75rem;
+    pointer-events: none;
+  }
+  .note {
+    flex-basis: 100%;
+    margin: 0;
+    color: var(--fg-3);
+  }
+}
