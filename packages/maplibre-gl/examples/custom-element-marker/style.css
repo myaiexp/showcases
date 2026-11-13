@@ -1,0 +1,22 @@
+/* Custom element marker: badge and flag elements */
+[data-example='maplibre-gl/custom-element-marker'] {
+  .badge {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    color: #fff;
+    font: 700 13px/22px sans-serif;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .flag {
+    padding: 2px 8px;
+    background: #fff;
+    color: #111;
+    border-radius: 3px 3px 3px 0;
+    font: 600 12px sans-serif;
+    white-space: nowrap;
+  }
+}

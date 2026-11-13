@@ -39,7 +39,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 4 | Sigma.js (`sigma`) | 5 | v4 2026-10 | repo ✓ MIT | 40 | WebGL graphs, 100k+ nodes (pairs with graphology) |
 | 5 | Mermaid (`mermaid`) | 5 | v12 2026-09 | repo ✓ MIT | 250 | Text to diagrams. Huge breadth |
 | 6 | Perspective (`@perspective-dev/viewer`) | 5 | v5 2026-07 | repo ✓ Apache | 60 | Streaming pivot/visual analytics web component |
-| 7 | MapLibre GL JS (`maplibre-gl`) | 5 | v6 2026-07 | repo ✓ BSD | 150 | Vector maps, 3D terrain, globe |
+| 7 | MapLibre GL JS (`maplibre-gl`) ✅ built | 5 | v6 2026-07 | repo ✓ BSD | 150 | Vector maps, 3D terrain, globe. Docs are the API reference and style spec (site crawl) plus repo guides; all examples run offline on Natural Earth data and computed tiles |
 | 8 | Spark (`@sparkjsdev/spark`) | 5 | v2 2026-04 | unchecked | 30 | Gaussian splats on Three.js |
 | 9 | Babylon.js (`@babylonjs/core`) | 5 | v9 2026-03 | repo ✓ Apache | 300+ | Full engine, PBR, WebGPU |
 | 10 | cobe (`cobe`) | 5 | v2 2026-03 | README MIT | 10 | Small WebGL dotted globe |

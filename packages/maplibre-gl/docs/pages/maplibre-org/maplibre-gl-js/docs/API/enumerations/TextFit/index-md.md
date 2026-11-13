@@ -1,0 +1,20 @@
+<!-- source: https://maplibre.org/maplibre-gl-js/docs/API/enumerations/TextFit/index.md -->
+
+# TextFit
+Defined in: [style/style\\_image.ts:37]()
+Enumeration of possible values for StyleImageMetadata.textFitWidth and textFitHeight.
+## Enumeration Members
+### proportional
+> \*\*proportional\*\*: `"proportional"`
+Defined in: [style/style\\_image.ts:52]()
+The image will be resized on the specified axis to fit the content rectangle to the target text and will resize the other axis to maintain the aspect ratio of the content rectangle.
+---
+### stretchOnly
+> \*\*stretchOnly\*\*: `"stretchOnly"`
+Defined in: [style/style\\_image.ts:47]()
+The image will be resized on the specified axis to fit the content rectangle to the target text, but will not fall below the aspect ratio of the original content rectangle if the other axis is set to proportional.
+---
+### stretchOrShrink
+> \*\*stretchOrShrink\*\*: `"stretchOrShrink"`
+Defined in: [style/style\\_image.ts:42]()
+The image will be resized on the specified axis to tightly fit the content rectangle to target text. This is the same as not being defined.

@@ -1,0 +1,1942 @@
+{
+  "fetched": "2026-11-13T13:16:42.692Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/maplibre/maplibre-gl-js",
+      "ref": "v6.18.0",
+      "paths": [
+        "README.md",
+        "docs/index.md",
+        "docs/guides"
+      ],
+      "commit": "7ff68855dcea2c37ffa2f02932073613714692cd"
+    },
+    {
+      "kind": "crawl",
+      "start": "https://maplibre.org/maplibre-gl-js/docs/API/",
+      "prefix": "https://maplibre.org/maplibre-gl-js/docs/API/",
+      "max": 500
+    },
+    {
+      "kind": "crawl",
+      "start": "https://maplibre.org/maplibre-style-spec/",
+      "prefix": "https://maplibre.org/maplibre-style-spec/",
+      "max": 80
+    }
+  ],
+  "files": {
+    "pages/maplibre-org/maplibre-gl-js/docs/API.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/",
+      "sha256": "06b8773c16a0b69f43e599e6f7a13cd0f39735297d06a863a42f15ef64c752f6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/AJAXError.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/AJAXError/",
+      "sha256": "2c0d4c8f1f424447b02874631985caede9d7af928b8a90c56fe8b1dec5a47b42"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/AJAXError/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/AJAXError/index.md",
+      "sha256": "584694378405021a17d515239932295bfc1218ecf4597967ea9cfe63b0de08fa"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/AttributionControl.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/AttributionControl/",
+      "sha256": "c7445d8709c51c2998abf28f0506845e5c30f1d81443652103645b67cffb53c2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/AttributionControl/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/AttributionControl/index.md",
+      "sha256": "a5db3d766be2c59b0d5d52afc48b19c5bc39c8ce114b68cfecac2cb5eca1990b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/BoxZoomHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/BoxZoomHandler/",
+      "sha256": "b841719fedaa571a80d9b07c9ede471142c0a42271a0cc8d9e4a3770a21a3230"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/BoxZoomHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/BoxZoomHandler/index.md",
+      "sha256": "202c69a26b203ab173ad421177e60022eb18322754a368dfc695790923c72c6a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/CanvasSource.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/CanvasSource/",
+      "sha256": "71e03ef3e6c20557404e2fa05c489850d8f9c440d79e1a299a5235c2acfc0f20"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/CanvasSource/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/CanvasSource/index.md",
+      "sha256": "c9c925bf6455f3e8de3f972f890bece9ebda4ee7b62b31aaf36c4bba45ab6649"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/CooperativeGesturesHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/CooperativeGesturesHandler/",
+      "sha256": "d6caafaf24140cc80b06ca4f0119d9294731feae77b16ad7312b28fc6b9cdcb0"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/CooperativeGesturesHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/CooperativeGesturesHandler/index.md",
+      "sha256": "57759dc410762719760b9720bf32b48d31312aa4b920ebb6aa866c67ec9880c1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/DoubleClickZoomHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/DoubleClickZoomHandler/",
+      "sha256": "789737a2136e4a4fc881284cdd79afd7830b0d90a1e339c27f1d7a4567a80ebc"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/DoubleClickZoomHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/DoubleClickZoomHandler/index.md",
+      "sha256": "39536e75accbbcd7e21701d1025e0d1ec8737fd869b199274693f9944ca3c8f8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/DragPanHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/DragPanHandler/",
+      "sha256": "2cf93ab3dcdf2f952fc0ff6571076f453cf4401405e4e82080cc4cfb54a1c7b1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/DragPanHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/DragPanHandler/index.md",
+      "sha256": "c657934737cc4e14aa8f6677ccfd2b350da0ad0101d57f75b9f31ff4b6d855b0"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/DragRotateHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/DragRotateHandler/",
+      "sha256": "a7cad70311e15cd046cd9102c249298839f018a4faabd6c280dbdaf5addb743a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/DragRotateHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/DragRotateHandler/index.md",
+      "sha256": "94398fa62f4dbba5e397f901b285d332a27b499d828f73e6c2bde4bfe8dab7cc"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/EdgeInsets.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/EdgeInsets/",
+      "sha256": "802424ad5a4017d97e5466786c9e660a551cc22086925cb5a0f22fae887aa7d9"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/EdgeInsets/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/EdgeInsets/index.md",
+      "sha256": "2f647d0e7806ac0c835266fa5c65b16871ce59f2259978f276e050663ea4cdc3"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/ErrorEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/ErrorEvent/",
+      "sha256": "76f12b0cbaa938d488e6dbd6c2cfbac395742266640f473297b9cda56a23487b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/ErrorEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/ErrorEvent/index.md",
+      "sha256": "6a412dee64d361b271cb77ebdc4d100e87ea7b5067d29bd0e9b4a1263f9f808e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Event.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Event/",
+      "sha256": "6c3c11272729d4a6342a3afe11383219d5170d4ef5b1c5af410948dd14d51997"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Event/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Event/index.md",
+      "sha256": "c2ffce67e3ce7f6ff9979c810c551afb8373f6e8de84c7785f13c9a42523b00c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Evented.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Evented/",
+      "sha256": "376a62c3e61f0e0ff9990654bf0325615fe4966bb45fe698e8772f9f6a5932a8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Evented/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Evented/index.md",
+      "sha256": "5aa759fbbd0b384e4793eb06c27522fe8473fb50d90eb8aed039b60dd607edaa"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/FullscreenControl.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/FullscreenControl/",
+      "sha256": "0ee6f03d29e3ffad56f9f91097123ec881b6be42b87bf1e02d49469e31029b6e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/FullscreenControl/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/FullscreenControl/index.md",
+      "sha256": "0126d54b5578d5dd358bd1caff843d866737757b4f23ff4f6335b643b509bb05"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/FullscreenEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/FullscreenEvent/",
+      "sha256": "719b308d6c432f7acfecf93db33cafb47dab849c33a81a35eea232158cd5aec2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/FullscreenEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/FullscreenEvent/index.md",
+      "sha256": "4bc25958070f37735e11ffd03551862a512cd5b4a2ac59df5c20917cc9eea541"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GeoJSONSource.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GeoJSONSource/",
+      "sha256": "a1940db2bcc03dfb02ac5fbd42d1820164b41ad8895f27679e2cd19c79cff9b0"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GeoJSONSource/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GeoJSONSource/index.md",
+      "sha256": "8a5c9c7a06723340112fe9668418310058ad3367d63b80397b055f35cf499a36"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GeolocateControl.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GeolocateControl/",
+      "sha256": "c35e4c2c70852cb9eae8c10a6c0bd7f2b66f5c9e0ed572eef75cf7737417acd8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GeolocateControl/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GeolocateControl/index.md",
+      "sha256": "700086f0897aa36932e87f511b75f3a954ff42076bfce3b8d3b89db379cd0280"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GeolocateErrorEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GeolocateErrorEvent/",
+      "sha256": "3b26aedf0d3cec5804c5ff8b2eeb99f5f817be91169c68c6f26c3d2680030f3a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GeolocateErrorEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GeolocateErrorEvent/index.md",
+      "sha256": "d9d55995740df2f0807cf6beb491834333fd1ea7ae29c1cfdd646f2ec16353e6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GeolocateEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GeolocateEvent/",
+      "sha256": "4a497e3f93b284cbea8deddf6a3bda171af33d84b0e40f3063b00f3d2cc53e04"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GeolocateEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GeolocateEvent/index.md",
+      "sha256": "e2684733e80b539456d5ec8673a216e2698641f383c923fc145e4765d460cd8b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GeolocatePositionEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GeolocatePositionEvent/",
+      "sha256": "6b887ba201bea984bf520d94299d8e35600315e84d7ff3619c3c2e41c183dc0f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GeolocatePositionEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GeolocatePositionEvent/index.md",
+      "sha256": "2bf5c1d29c2d8637d7500b68ad64d74f1df3187699cf53d81079677b8894f368"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GlobeControl.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GlobeControl/",
+      "sha256": "e8b3466553f09aeccf94514cbda87813f17b283b5dcc1f50282d669d83616e67"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GlobeControl/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GlobeControl/index.md",
+      "sha256": "978f9c839985791fb54f00a097fa6fdf14e5ad75266fe56ec1a21fde472d04e0"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GPUInitializationError.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GPUInitializationError/",
+      "sha256": "4acb098bada421c060261b335eeb6cfdeebb3f1635e09290514e5a9b318b7bc4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/GPUInitializationError/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/GPUInitializationError/index.md",
+      "sha256": "b596e6a1b43d9887503680bf278d1adb1f3dee5be90752fa5425bd0af911a275"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Hash.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Hash/",
+      "sha256": "5cbf7eb5989d6f826e7e6d21940730f56246123b30d8802c4ff80506d0b17db6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Hash/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Hash/index.md",
+      "sha256": "54c0f5d8a4e344698a2f96bf6cecc7f5ecfd6e5977f2f1395ce80177219100f8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/ImageSource.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/ImageSource/",
+      "sha256": "34cc0e3989836ac4a5d502d0bf454ae06593207103812d570f52b42f2ef5fe5e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/ImageSource/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/ImageSource/index.md",
+      "sha256": "617c144803580be5e829240cbf20b24b0cbda7fbaeeaefd85188c909f222e5f6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/KeyboardHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/KeyboardHandler/",
+      "sha256": "50ac9b7db37921490bf4a03502abfd1e6de30907b2609e058f3ecd7373da931f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/KeyboardHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/KeyboardHandler/index.md",
+      "sha256": "7ab17c80760b275a65cf738d501bd13dbe54b588a234a78c5f973094ba5a35d7"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/LngLat.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/LngLat/",
+      "sha256": "cac307926edfe5887011a1231021df048c04203e4b3c5c64982634d133d1e814"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/LngLat/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/LngLat/index.md",
+      "sha256": "a113369247c2756e1631c108f5a621bff330fb8fc19ba005f573c4b8c409b377"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/LngLatBounds.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/LngLatBounds/",
+      "sha256": "156b2e4418e98240daa30d5372bdfed0cb8e17732ade98dea3910634cf426ee5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/LngLatBounds/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/LngLatBounds/index.md",
+      "sha256": "7b17e42479607d79ea09b36cebf0d32d6dbe8ede2f3e42cc19eeeef75573c00c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/LogoControl.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/LogoControl/",
+      "sha256": "fea2aa9594543e0f88939cf847d7a314972872e5d63ac2bb2aa27ea37f4e18c8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/LogoControl/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/LogoControl/index.md",
+      "sha256": "c83a9d560512f2539a391d485a18265a62fad02a90ff9643178a0534b1fdb168"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Map.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Map/",
+      "sha256": "35c65a2501169cf1425fa75057b3933624d32b1c48ba0658f2d90efe4614458e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Map/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Map/index.md",
+      "sha256": "c3aa44f0e13079f35b73ae8224dd9b65b81429c269a5a7e91ed6668fbcc31e12"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapBoxZoomEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapBoxZoomEvent/",
+      "sha256": "d17aa4ade1597397f9e18dcdde8473bdc1118997572bfd94711754cd43374aa3"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapBoxZoomEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapBoxZoomEvent/index.md",
+      "sha256": "01ca5f17c7396a69448d0ba358252a405b45db77241ced32018ccae0b5966bd9"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapContextEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapContextEvent/",
+      "sha256": "d0aa9f6789c4380c1f876c75e214508dd173841fe3aa112a8161b54d53444f39"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapContextEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapContextEvent/index.md",
+      "sha256": "9923e9546080eb7f959f7fb9b6169130756018f47e21294c542a091211786b53"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapLibreEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapLibreEvent/",
+      "sha256": "ed1be110f0b21e856b08040db31a1489c73dd744f10cbd8a6e2bc2ab0312b8ee"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapLibreEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapLibreEvent/index.md",
+      "sha256": "302e10269c20552a16581c006e9fd0313c8372e520bd24e812303f7694a61aab"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapMouseEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapMouseEvent/",
+      "sha256": "cb069369fbc699a5647861abe9bbdc47ae89a17dbfb2b63df39a3747fc551989"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapMouseEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapMouseEvent/index.md",
+      "sha256": "4180b15cf9661e56af787128a07443e30c2f78d25edf0e46bfc45899b2b675a4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapMovementEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapMovementEvent/",
+      "sha256": "8bd7c8b7691cc333d22c4ac8253b8f09f7577df352e4b2ef0c92fe163a94f89c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapMovementEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapMovementEvent/index.md",
+      "sha256": "fdebe7ba9be1cfc5605ee259af3ed9db67ed7572e570b0990ef3f8e6a4ecfd42"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapProjectionEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapProjectionEvent/",
+      "sha256": "b768446d377c8b6646bb3d760d309da7d5b31aa02684863198baebf5d58709b8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapProjectionEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapProjectionEvent/index.md",
+      "sha256": "7f338742fcf254edb66fa4273d18712797a9bf0f87e3eeff8bbdead0e8c88c7c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapSourceDataEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapSourceDataEvent/",
+      "sha256": "0d87682ebd4bed6cbc76b5dbac21f5a4fc653c176a4de5d0d8e601ad38e450e6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapSourceDataEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapSourceDataEvent/index.md",
+      "sha256": "a545af6b62ba0bceb3703454331946166d2f4d86f778cf2b38fd930a3d7b9e17"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapStyleDataEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapStyleDataEvent/",
+      "sha256": "558e0b99f0a72e89bfa4dd905cc7741c5fec90c83bc8e9fd12ff9fdb16bec8c7"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapStyleDataEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapStyleDataEvent/index.md",
+      "sha256": "edc4d1da6c8d71fedaa72929adf83f0417fce9b21c99d46b880524a858ad017b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapStyleImageMissingEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapStyleImageMissingEvent/",
+      "sha256": "4d893e80ab5a10749e21a822facc46d4f4b91f51e6031a6160895e1b4c28e4c2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapStyleImageMissingEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapStyleImageMissingEvent/index.md",
+      "sha256": "1e3723a6bed0b2320606f8163357fa92851af73083e9651bc791b91d845f6460"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapStyleLoadEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapStyleLoadEvent/",
+      "sha256": "0f0e5252a4cede0063ae1c180cb61ca47827db625e14d7398ca6fce05c78b366"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapStyleLoadEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapStyleLoadEvent/index.md",
+      "sha256": "eeed13eb78987b0b7064626b369419b590736037eccd8d1964f639fa8e5051fb"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapTerrainEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapTerrainEvent/",
+      "sha256": "19185c45ca54ef0648c951eb59aad9eb51af289eb65eb81cd0adeee22dd9debb"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapTerrainEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapTerrainEvent/index.md",
+      "sha256": "03724461b14679ffb311866f7d15867e2e0b04cf9eca276cd0eae2e51ef26dbe"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapTouchEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapTouchEvent/",
+      "sha256": "d66ada2c51c288f8ba3026f3a448e33ec186b3a018a169307af4094ac239d26a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapTouchEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapTouchEvent/index.md",
+      "sha256": "0a811f4a7be9e69fa144ea5223d4f1bac5a5633d90548338587ac8e7beb34db3"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapWheelEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapWheelEvent/",
+      "sha256": "f85ae48658c52b736d413c57c9d5b536799cf0677c0305d0764775ac0010375e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MapWheelEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MapWheelEvent/index.md",
+      "sha256": "bde9d3ee59ddf515ecedeaa2227460b364ff5384b0bc0b9de9df5507f09cc4c4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Marker.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Marker/",
+      "sha256": "0c45ab443c6e94452980e406202cb2f7029132f9deec8cfe7699966c9ea6fcc5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Marker/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Marker/index.md",
+      "sha256": "679dd99f204d15703430ec4439d6757b1f87fbca5f2ae6477620c9c9d2f0a21b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MarkerClickEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MarkerClickEvent/",
+      "sha256": "fc4f837cbd9944765be97fdfd02c13e0292a28001d17a982233dc4ba859e18a4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MarkerClickEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MarkerClickEvent/index.md",
+      "sha256": "4b61918d1dc8d667ca06da1e89b01f7919a187f831e06cf83d60d489102d5917"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MarkerDragEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MarkerDragEvent/",
+      "sha256": "99f58e77625a005d4005bddf97f242e6d15e84d9e67f6d17e009a9e82a8bb84c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MarkerDragEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MarkerDragEvent/index.md",
+      "sha256": "441b819e0c77e556ce86e0322c33fa41cd57ec4d9e6ea8b67a05778fff23da0d"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MercatorCoordinate.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MercatorCoordinate/",
+      "sha256": "1d11dc18ee7cfb03a3f302b4df100e1417d8ef9ca137c77341dc6eb784fb5fcb"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/MercatorCoordinate/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/MercatorCoordinate/index.md",
+      "sha256": "3c743a61e2b8182038502405f5b8ea08bb2a559a27517645e8d0017ba263d732"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/NavigationControl.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/NavigationControl/",
+      "sha256": "a95d93096a1354d654224c72cfe690b81e6667ec765622a441b6ca2d9958c798"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/NavigationControl/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/NavigationControl/index.md",
+      "sha256": "4fd6dd11077bfe94461f78797af987778e1db8fb4c032be53f3365b451a2cee4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Popup.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Popup/",
+      "sha256": "cf0cfa5436ff203bebaea7e96e60e7fa895a9ac9851a9e96b08311056a528eab"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Popup/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Popup/index.md",
+      "sha256": "cf3bcdff84682f6c3841a116681c9acf42f8d8a21cbfbe35464de1146f0c9d33"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/PopupEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/PopupEvent/",
+      "sha256": "037f18f7810d43b4eb0772109c89df39fa9b512d74b662a763f59ecab360e097"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/PopupEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/PopupEvent/index.md",
+      "sha256": "cfb2abfae813c15bf22159d7cde113cab16d2b1599c190dc2281ca568cf1913f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/RasterDEMTileSource.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/RasterDEMTileSource/",
+      "sha256": "88e57c83ad23d677ad10cacb15577c9d019da7741e56ec8637008e82137d8958"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/RasterDEMTileSource/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/RasterDEMTileSource/index.md",
+      "sha256": "5d946510bd91f832e03562f23d81e47c4fa380cc3c1a4b0af0b196d9c2791210"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/RasterTileSource.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/RasterTileSource/",
+      "sha256": "47c3b6262d0b0ba717adefebe580fccdde023d110c2a1eb19b87ebf2055d9485"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/RasterTileSource/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/RasterTileSource/index.md",
+      "sha256": "e03131770ca8587115f00912142d60f87a8c558a8be9cea23a7c57d66a391a7e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/ScaleControl.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/ScaleControl/",
+      "sha256": "96b5c40dd4179debd3eb3e6d2248373837185ea831d8a7eed2822c1bd76a8e52"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/ScaleControl/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/ScaleControl/index.md",
+      "sha256": "abc995329c48d00802c455f0fece04ee77a9b94e5ee7a1bef6ee584abf8c8677"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/ScrollZoomHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/ScrollZoomHandler/",
+      "sha256": "f7de74ad61103dea6b53bd9b643b1150f7ed250bdf2c61e07eed74e47a38b9fb"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/ScrollZoomHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/ScrollZoomHandler/index.md",
+      "sha256": "b9de0cb6ed79958eed078731622cf832c09d2e343744ebacfe33ca24b4df1e95"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Style.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Style/",
+      "sha256": "097eeeb49a9261f6f83ab1e29fd79cfd35bd7740a60758f7b3116f840b24f1f6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/Style/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/Style/index.md",
+      "sha256": "9a0d6f9617a860eb53ff3b70128843c23729fa6371edf2b62ab812e0c56fcb5c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/TerrainControl.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/TerrainControl/",
+      "sha256": "dd687062cd29e704d76502e843128f6bf3cc362776baaa110e10ad3c63ddc601"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/TerrainControl/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/TerrainControl/index.md",
+      "sha256": "ce9b7fd21134679ca9f05b2e52899985a0949558a7559c62d7567eae1f0c2728"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/TwoFingersTouchPitchHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/TwoFingersTouchPitchHandler/",
+      "sha256": "e585a00f54f91afda4c4d9affc79ef57a2a6e1e406bf27b638316226e4188731"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/TwoFingersTouchPitchHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/TwoFingersTouchPitchHandler/index.md",
+      "sha256": "a5dd447bc96b28ee1d74a60bd0b83877d7d15593934a93c7822b39307ae39a7b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/TwoFingersTouchRotateHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/TwoFingersTouchRotateHandler/",
+      "sha256": "c17280df27bc5ecfb82a4c839ac5a6fa727f8a031f2f4d3d9884b836c61f2ddc"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/TwoFingersTouchRotateHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/TwoFingersTouchRotateHandler/index.md",
+      "sha256": "5ea74cbfba1fd3885b3fb37b1ada08db079ff03d5740ad524019e84480ab0ccc"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/TwoFingersTouchZoomHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/TwoFingersTouchZoomHandler/",
+      "sha256": "4b2e4a5ced3ca3f63eaaca728f0fb14b9d3fddca9eb44886c1fa505bc704b6da"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/TwoFingersTouchZoomHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/TwoFingersTouchZoomHandler/index.md",
+      "sha256": "6908e86194b58685fe843e6bd6a5581a7b020d8492a8b52141802920181f3344"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/TwoFingersTouchZoomRotateHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/TwoFingersTouchZoomRotateHandler/",
+      "sha256": "4a4f38aa83edcad50a6f020307dc196dabc5e75e119a82746bd052650c405561"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/TwoFingersTouchZoomRotateHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/TwoFingersTouchZoomRotateHandler/index.md",
+      "sha256": "c479bc3bee7cf2f8d03640092d7f94af25f3aa59737beaa22116f878d4c9fb6f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/VectorTileSource.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/VectorTileSource/",
+      "sha256": "c6204b2c9a8839612e5f657a5a57aad6cab261c80b56ed6637ab859f2f2efec4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/VectorTileSource/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/VectorTileSource/index.md",
+      "sha256": "bd8f0fba768f1d7f903f44eef6f1678fd7ccc033c89cd61cb992a6110e2b49d7"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/VideoSource.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/VideoSource/",
+      "sha256": "f8c56cb29300ce80f94a6b0f0ae3c81420079d08502cb38bf447131d768b4bdd"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/classes/VideoSource/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/classes/VideoSource/index.md",
+      "sha256": "f1269bfab95bd8f0876698e93faad607ea4b7bccf41d041c4d9d5427bc97b130"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/enumerations/MessageType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/enumerations/MessageType/",
+      "sha256": "1f175bfc2fc605f77bbfff76fdacb6ff8fd4e6f70313484480c4a670772f0ce8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/enumerations/MessageType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/enumerations/MessageType/index.md",
+      "sha256": "ae782cfff8cedd7705cafafc1df404d582c9b798075ec132283a6690553340e4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/enumerations/ResourceType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/enumerations/ResourceType/",
+      "sha256": "764f6f54ebafc4e96a5d6b0cdc01e7a23a7ffaafe119fe9dbb5aefb032b31c85"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/enumerations/ResourceType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/enumerations/ResourceType/index.md",
+      "sha256": "07612cb8d69930d42ab7c8e7a3b0fd3460cfb8317a2e51a07d983e3e7b20f0e2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/enumerations/TextFit.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/enumerations/TextFit/",
+      "sha256": "8a52db4dace44771146df92ffa0d8e3284d5ce6ac8703f0558787db7ad0cfabf"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/enumerations/TextFit/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/enumerations/TextFit/index.md",
+      "sha256": "e612d8d8388d7100fab4dbcc8e2d5b4e0d47fccf615bc8199fa55f3712a68ec3"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/addProjection.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/addProjection/",
+      "sha256": "4b862d0dd36abb1e47a4910ceb530eadb6a1d7478f80130eb60e1938262efe1c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/addProjection/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/addProjection/index.md",
+      "sha256": "b08e0f9aff3ba35aef9ddf601b04f52a64243510080510ef6d0a1a6c88057c22"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/addProtocol.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/addProtocol/",
+      "sha256": "5a9d0769dd8b5b0461b1f2f90acdbf86f0babeeca0c29e365b5facdbb6eb7123"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/addProtocol/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/addProtocol/index.md",
+      "sha256": "d9e2a34d017c58e94fe5cee3520e2d68591b4665c7151b03231811f54e9504aa"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/addSourceType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/addSourceType/",
+      "sha256": "21e4d1cf9b2e3d371c79a33102d220d8115be6d56127d077916cee03ee672c6f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/addSourceType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/addSourceType/index.md",
+      "sha256": "c47aea390a4fa161905331934ebe89589f33024347907a1f6c43e73ed4b07924"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/clearPrewarmedResources.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/clearPrewarmedResources/",
+      "sha256": "9f1794607fb2073c974b4792bce7ee6655c1e69a0c4868c977de9412bb73a648"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/clearPrewarmedResources/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/clearPrewarmedResources/index.md",
+      "sha256": "35954d0a74883cea5ebe09a4b4acbbf217b5a6ffee120d37d8092441ea9c996b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/createTileMesh.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/createTileMesh/",
+      "sha256": "f36705acecf162c0b8a5792f717ae8174c19d66be2d5fb0051c79ea6b9293cd2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/createTileMesh/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/createTileMesh/index.md",
+      "sha256": "e4d5fb735addb5a8663ad5df357a3b489980ebb170176916b8b44055cc1a8081"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getGlobalDispatcher.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getGlobalDispatcher/",
+      "sha256": "f378dd34b88ef437fa30aeea158ac4ea0d821b3a8800ca49835ddb13b612c1dd"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getGlobalDispatcher/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getGlobalDispatcher/index.md",
+      "sha256": "a3b39edc93570c272747fb02688ee49cc60c0d2116a2846cdef040c9040a15ae"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getMaxParallelImageRequests.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getMaxParallelImageRequests/",
+      "sha256": "96d5b108afadf725b57e21fe6c403c7beed03e1aacbf77f5d578d6921db92d90"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getMaxParallelImageRequests/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getMaxParallelImageRequests/index.md",
+      "sha256": "2e30b472c3af1dd689713d5d7190d43767eded522dddb009009c4c338f7637dc"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getRTLTextPluginStatus.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getRTLTextPluginStatus/",
+      "sha256": "abe311284ea9e54fbc476d96850b32d1104c6a8093537456efcac51bc35f9201"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getRTLTextPluginStatus/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getRTLTextPluginStatus/index.md",
+      "sha256": "ec701790ae84d04e338462705d387b2665fbc72dfbb06bfd4fcec766ac568787"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getVersion.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getVersion/",
+      "sha256": "1456db19829d6bcca76072275851b6a0547d0bef49cd426eb4318d4585ed985a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getVersion/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getVersion/index.md",
+      "sha256": "24e95d58c25b2e6f8846c2316e3f8016792584e3d07f17f90469be1bd2dc3750"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getWorkerCount.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getWorkerCount/",
+      "sha256": "23c6a95e565f96b6bb7e2b2c2a1490d32f8658fdd997795c2e2dc409ae960af1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getWorkerCount/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getWorkerCount/index.md",
+      "sha256": "afb2175d7ebd3a55b87a19a9f4f232e7d97b64eeb2d261c85b2c82bcb53bbed8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getWorkerUrl.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getWorkerUrl/",
+      "sha256": "2349c45a21604b082890fc3685b6e266e0c988eaee9ebcb586132e55386a4af5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/getWorkerUrl/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/getWorkerUrl/index.md",
+      "sha256": "883926ffeb3c968670efb82928c2134a345de146cef2e126fb54afbadde835e2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/importScriptInWorkers.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/importScriptInWorkers/",
+      "sha256": "fe4e6ede6b4216cce3ee8195511d39eacb638ca3662444e92f2890f8647b4b83"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/importScriptInWorkers/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/importScriptInWorkers/index.md",
+      "sha256": "1eb66f3aad55c1c93baecf6816f05cea5b339f43bbccb4129f8b5cb859059a3d"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/isTimeFrozen.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/isTimeFrozen/",
+      "sha256": "4ac509e5a91930ae9ac93ed90a2f9ed91f2f966abdfd2bacbed48f0045eba9d4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/isTimeFrozen/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/isTimeFrozen/index.md",
+      "sha256": "e187366faf35b72cf13f648037dfd22c352968d88801dc138088054ecac9e6ba"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/now.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/now/",
+      "sha256": "3f4599ebe1b833675275b7c70a02b53a55dd257fd801a68f37a841ca6e49fb1a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/now/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/now/index.md",
+      "sha256": "c31050691ee91cc98629e72f75fd9b1fe8926e6537ef8be8dc77e1bf713cfa69"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/prewarm.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/prewarm/",
+      "sha256": "c421354d8e751440ca380ae6e84dbc33b288d235a2d1f67855254e7b9a10b4a2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/prewarm/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/prewarm/index.md",
+      "sha256": "96fdcfa73290953bc807e65e4692780e8e79d5e46badeeb6e26a80869c4d5a70"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/removeProjection.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/removeProjection/",
+      "sha256": "486228ea5eea4085e2974b2f8eb98d32867a4273925d0f3988d767318f288444"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/removeProjection/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/removeProjection/index.md",
+      "sha256": "e14b51a40928e4040504cce9438bc1ed9bd53fa7760d63fecb11124086e05820"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/removeProtocol.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/removeProtocol/",
+      "sha256": "dc63fe0a910a399f22a80c69c9689a214b40ea3fca6228c64e529e1dc3a9198e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/removeProtocol/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/removeProtocol/index.md",
+      "sha256": "fc38c0a89ce445a80e26c30db67bbdc75e97b750151a6054d358d09a66e11c92"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/restoreNow.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/restoreNow/",
+      "sha256": "fa8aa6cc5886a87443f28542a49d06726f80cf4f1d689f33428aca7050fa0a48"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/restoreNow/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/restoreNow/index.md",
+      "sha256": "51aab99555a153abe22287be90ca9fc1d31e776bf27b269a893e39dce5b8d616"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/setMaxParallelImageRequests.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/setMaxParallelImageRequests/",
+      "sha256": "42c908e13948674f789a0cc3ddf30a3ee95bb6b69c00fb74702209ab90e403c8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/setMaxParallelImageRequests/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/setMaxParallelImageRequests/index.md",
+      "sha256": "05e98c932cc82155eec4e9c6d229865fa5be90f6b2095b36810268255513156b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/setNow.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/setNow/",
+      "sha256": "ecfc4836873d2c26af6d597d611c1ccc3b8cb5350fc920ca6ca910720633f12c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/setNow/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/setNow/index.md",
+      "sha256": "dacf298668eab3cfee069f8733ff8687af984542deb1e0f3ddd9f06ac13c5df5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/setRTLTextPlugin.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/setRTLTextPlugin/",
+      "sha256": "0d417752bf0c0972ea30ccc0a90e63221ad391c935466be8a35f183d0a7b8ce0"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/setRTLTextPlugin/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/setRTLTextPlugin/index.md",
+      "sha256": "732f1d24dbfdd940c96e63a0acec45ac406df11042f7d3491f9fcf6ef523d4e4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/setWorkerCount.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/setWorkerCount/",
+      "sha256": "d84441dcd9abc7c9f87b3c95fe3863baa3b5c29ec2680135bef55a253ff25841"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/setWorkerCount/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/setWorkerCount/index.md",
+      "sha256": "8f3db1ca1732c7ff9777b3e61dd611fdadcef1023067666e3c8dfdd629ea1469"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/setWorkerUrl.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/setWorkerUrl/",
+      "sha256": "0a31ff3bca0eda200ee3ab7c7479f03219551f3b62240f1896a357c93a650b1e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/functions/setWorkerUrl/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/functions/setWorkerUrl/index.md",
+      "sha256": "071922a64e12ecd32f02ba3279ea5651833cdd477cfbf42e191cf7ba4d3603bb"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/index.md",
+      "sha256": "a7b3343864fcd4ce195333b4ac02ca0373f691c732869b7e60d192207201ef89"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Actor.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Actor/",
+      "sha256": "70738bea53c8080cf1fb33548b1f08716ed2a7a6aa9ca90dc25e1b8eb7d3665a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Actor/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Actor/index.md",
+      "sha256": "44fe6e83317bd799fdbfbbfc92ed4084d050346ad3474d752429c7658634f336"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/AlphaImage.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/AlphaImage/",
+      "sha256": "ce6e7e977a51b0bdbdce389ff28262185fe00d64ff2fb30e3805c64284442635"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/AlphaImage/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/AlphaImage/index.md",
+      "sha256": "2cbffe2451ca18f40c46377b3a825e618e43cac1774135220a1b120e8fb8aa5b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/CustomLayerInterface.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/CustomLayerInterface/",
+      "sha256": "99fdbb45e891728f1170f863c8f78a0f7ed2abd0819a9ff9b417f7fdbf5b849e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/CustomLayerInterface/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/CustomLayerInterface/index.md",
+      "sha256": "e925c2c5cd0e52d3f345053e556349d9f0065f55790cffb727bffa8a9d513a8a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Dispatcher.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Dispatcher/",
+      "sha256": "0ac85f738db54dbdf47e11f67ff53898201b1b8739d9a50651368901ade460ef"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Dispatcher/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Dispatcher/index.md",
+      "sha256": "302c61e042753fc416045a6fc55920e6cb1e0db36d142477eb7e9ea51f11ebf6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/FeatureIndex.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/FeatureIndex/",
+      "sha256": "164e5c616646122226d3b013339a1d517cde2517f528d25b875a6d6254816420"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/FeatureIndex/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/FeatureIndex/index.md",
+      "sha256": "1cf509ce6d5bfc23127e2fe874fce14b60a19a493eaf1216d081056a91e577ba"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/GeoJSONFeature.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/GeoJSONFeature/",
+      "sha256": "54f3c5adec4a33dcd3bfea12ff52f55771e193ba9abfeb98a45ec817080c8b9c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/GeoJSONFeature/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/GeoJSONFeature/index.md",
+      "sha256": "52e0294ffd99bf52f069c2c5588ba32b71a46bf3db68f9c1bbc1f3d95be800eb"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/GlobalDispatcher.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/GlobalDispatcher/",
+      "sha256": "604f1669b6e0d290f87b57d0532bf55d6a745aa1d0ec87e746776a64be7a66d1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/GlobalDispatcher/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/GlobalDispatcher/index.md",
+      "sha256": "05db02bf56960f16ffeca6c170d0a044fcca30652e733949a961e35511b3558c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Handler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Handler/",
+      "sha256": "92913268b71c14e3bd897191308200cc72535833bb995c389d0fc4ba7dfba591"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Handler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Handler/index.md",
+      "sha256": "49c7bcc6b72b6d2442f93b578f3e8395e7ccd28c523c2898d597bfe02fe2b907"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/IActor.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/IActor/",
+      "sha256": "81bd3bcfa92632480415982bae6343fdf8bd55390f96368c7a1d75086bd0b797"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/IActor/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/IActor/index.md",
+      "sha256": "8250bf71f4444d70bceaec7cef2f6da7ea43ef511bcfb2d0c1e5e092dfebba81"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/IControl.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/IControl/",
+      "sha256": "251db282082e49d01841c568c456f749915040cd5c416acc0bf84f5fde0f2be6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/IControl/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/IControl/index.md",
+      "sha256": "f1d90a6fd08cc1fbf3a257f9df2ddebb4327e8ca93802ac565b36bd1f165dcdd"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/OverscaledTileID.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/OverscaledTileID/",
+      "sha256": "13c724e0f1646f111da264e0af4566094437cfa906fc077002f82731a22d55e5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/OverscaledTileID/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/OverscaledTileID/index.md",
+      "sha256": "1119738a5b822e1160e7f62e90ab0c1ec04b893200aba2360e2b67edb6d030fc"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Source.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Source/",
+      "sha256": "37b89b788a3e7c29112b77a82e420a7d39bc463d62a054cba636fa505e3716e0"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Source/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Source/index.md",
+      "sha256": "bc525679695b3c796cd529af45b83865a8159994451666c6041728b471cd4753"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/StyleImageInterface.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/StyleImageInterface/",
+      "sha256": "4ca9dfaaf72cc835c76abc7287b03e0f8cfde0ff400971f03f5d4cdfa068df73"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/StyleImageInterface/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/StyleImageInterface/index.md",
+      "sha256": "06151dc4e77300076d26b54bebc20988298d529e029d8bde7c108fb2c18bcfb8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/StyleLayer.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/StyleLayer/",
+      "sha256": "095c8b930c84b0e53faca47b3b04c9397617eb0afe8623f0586979f2c7262f6e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/StyleLayer/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/StyleLayer/index.md",
+      "sha256": "a8b30fea3afaa509ae44f5c664ccff2be5c934bd5e2608d190f7e9eeed8a29c9"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Subscription.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Subscription/",
+      "sha256": "ead044aa4cd5d18167393f2369801fe01765e01be7c13f4a0413938b2f8f1010"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Subscription/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Subscription/index.md",
+      "sha256": "e3f4288fd2e40c5b8cf6636e2eba23609ead0f12e8ec6d4c12095d485beeb6af"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Tile.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Tile/",
+      "sha256": "4a6014bd501ee4cb3673d4309966f8fe89c4b0bb9142a27c9d37ef1617c8e4af"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/interfaces/Tile/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/interfaces/Tile/index.md",
+      "sha256": "e7a5abaeeaf26b74edf8cf5ea53d05f868f616e91319a32aaf6051bcf793f29c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ActorMessage.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ActorMessage/",
+      "sha256": "46c5abcdb22e827c8b39ef3a4199a97ead32c361eab84be16b2ca008c952536c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ActorMessage/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ActorMessage/index.md",
+      "sha256": "4782a13bb83df22d8c33bcb31d32478c04704ad1dd8de40defa0bb9aeaae6fd2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AddLayerObject.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AddLayerObject/",
+      "sha256": "78a3062fa2e97f8fd8f5853c6753d36f72e57fb56cfcdbb10decb0103530b6a4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AddLayerObject/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AddLayerObject/index.md",
+      "sha256": "518d3a40c892a1b8511547793fdf3d85334b663dbed1b9651a941cd54ff8b414"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AddProtocolAction.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AddProtocolAction/",
+      "sha256": "aa505c89200fc03c934017bf1270efe2a5efc2f595aa142bf7169fabfb31310f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AddProtocolAction/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AddProtocolAction/index.md",
+      "sha256": "1ece99976753f110d5579ad78c9cc0e5acf0a3d445beac7a262c37d68fc57333"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AddProtocolResponseData.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AddProtocolResponseData/",
+      "sha256": "08d7e2446b3165978846b3963f63fffff36e4acc20958ba44b4a83a8833f0240"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AddProtocolResponseData/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AddProtocolResponseData/index.md",
+      "sha256": "9d03458fa90ecc6d2c804a02582a89fcc31e19d63e5f7540574eb6b0640f4d5d"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Alignment.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Alignment/",
+      "sha256": "b0ff401c34719ba4eb15aab6d93c62dfb9ab380dec0e306426dee3fcd2e0c66b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Alignment/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Alignment/index.md",
+      "sha256": "d18963bba1faaa46927113a3d061228c50fce02a3804174f96ebdf9897f002fc"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AnchoredCameraOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AnchoredCameraOptions/",
+      "sha256": "c351ce1b78198dfcec642db4680a8a15f98669e3c50028f021fcf534e86f09d2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AnchoredCameraOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AnchoredCameraOptions/index.md",
+      "sha256": "020c2d7adfd3b07fdc49f7328849991889edd6e785efb8f65b9cfeb58646d733"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AnimationOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AnimationOptions/",
+      "sha256": "96b2aecc00980563b4ce628eb94e7757e1947eea27598c2471e779034407c6a5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AnimationOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AnimationOptions/index.md",
+      "sha256": "78598610da5e38a769e5c040a2b27dc3175c8cd360387038478d5bdb0e35c66e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AroundCenterOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AroundCenterOptions/",
+      "sha256": "cec8555b0114d574bb6d5b973f74b5256610396baf3f14f8911de391aa9d98a3"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AroundCenterOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AroundCenterOptions/index.md",
+      "sha256": "563a114f9e5a1d0ab8de52559db9edf3a71069bd7ae012c4a8402c15da36d20c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AttributionControlOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AttributionControlOptions/",
+      "sha256": "e2e8e265b51e55b7b8d6dbb24cfd34b62c7a9d03b119c55416aef09f0c0d2adf"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/AttributionControlOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/AttributionControlOptions/index.md",
+      "sha256": "08ee56df0a7a7884f23572368e9a38f881082fe71d8b0f96d69a01880cd1c121"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/BoxZoomEndHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/BoxZoomEndHandler/",
+      "sha256": "ccf09a65744601d7196b14e8121fa4435bc9c7e60ca988ad8f74304207fd515a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/BoxZoomEndHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/BoxZoomEndHandler/index.md",
+      "sha256": "37c41a7c7d8b0e1e6d2ae007e2ce9a360c5fec378a323c0d9ae556c3e3e6efe5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/BoxZoomHandlerOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/BoxZoomHandlerOptions/",
+      "sha256": "9d0d490cc991ff3625b82563af6a9a7a74923abe113656e5c046e361a50b3eb3"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/BoxZoomHandlerOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/BoxZoomHandlerOptions/index.md",
+      "sha256": "45c608306c954cc633e9c83157d917496e9d77fe5b9e6977c5a0ef473d179c48"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CalculateTileZoomFunction.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CalculateTileZoomFunction/",
+      "sha256": "c68785edf2786eef272c68fc234e8838deec79a119aed8ef06926f61ff7b47a1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CalculateTileZoomFunction/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CalculateTileZoomFunction/index.md",
+      "sha256": "6428ad476b0b2165bb1503a70c4f23fd8d4e1ec3b0c2caa123dbc562b4c80f73"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CameraForBoundsOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CameraForBoundsOptions/",
+      "sha256": "d73f21a30e4ab58b3c8093e0de2c6087f547e5347fe03e7aeed43cfbaf8b417e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CameraForBoundsOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CameraForBoundsOptions/index.md",
+      "sha256": "a2dca978ba7af5ad4300ce773be2fbd74ed591b80bb91380ab321f678c01d66b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CameraOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CameraOptions/",
+      "sha256": "cc910167d3febbbdab28517b8bf0e552bb797f325d8a29ebf81ee80700125832"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CameraOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CameraOptions/index.md",
+      "sha256": "e55a3d57eeb2b50d92fd03b4f6c86ff7cae60255b52d4f5ce28018eea35a521e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CameraUpdateTransformFunction.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CameraUpdateTransformFunction/",
+      "sha256": "cdd258391065a028dc82c32cc06c04f8cd2afaf2e2afeef54ac3c9b1e6c62e20"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CameraUpdateTransformFunction/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CameraUpdateTransformFunction/index.md",
+      "sha256": "dfe4f4558fbe2bfca97fbfffa0777eba51d7863a4d167302cf1000065307c339"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CanvasSourceSpecification.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CanvasSourceSpecification/",
+      "sha256": "745e36e85a536f4c5fdc701da118ac6c9c0b33f17eaf3e93d8ccce09d5349df4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CanvasSourceSpecification/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CanvasSourceSpecification/index.md",
+      "sha256": "46cfb9e682f380ac4f825d4a5778db4f7cad008f7578b0e24c0dd3ba3010817e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CenterZoomBearing.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CenterZoomBearing/",
+      "sha256": "db86d4fc86eba79e113d728782c45f3f7a286470884dd6e1febe5d7ad01fddb2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CenterZoomBearing/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CenterZoomBearing/index.md",
+      "sha256": "47f0dfbdca3d354932409964f5d138294e1300da7b51c38e3725ca238ab5965b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Complete.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Complete/",
+      "sha256": "a3af4083bd8492e5e5017e2e103f1673eea4a0b27c41e9094a2c0c17b39e23fa"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Complete/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Complete/index.md",
+      "sha256": "aab4e18f35e4b77aa28e706ca7960ab36dd9b2cf0a92237377459acbc6c02a2f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ControlPosition.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ControlPosition/",
+      "sha256": "32a64d61ee829f4c93921598885fc8cca11bd5c20b1eb5264589c0b11e05c315"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ControlPosition/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ControlPosition/index.md",
+      "sha256": "95f1d59d0bed84793e96363c0ca3f81b48bb8aa00356d79be5f8438203c094d7"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Coordinates.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Coordinates/",
+      "sha256": "f4aa898a5862323904df376435a314df0ff59f519e9b0997cd6458260f7c9c79"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Coordinates/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Coordinates/index.md",
+      "sha256": "fd4cbae76f8feef926856b17aaa6a9a326e224976efc1bc1cd020d41acfe1a6f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CreateTileMeshOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CreateTileMeshOptions/",
+      "sha256": "b5d4d493e5c55a8a5e050da42a79b27f15137b4b8d6286765b29485a929c8775"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CreateTileMeshOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CreateTileMeshOptions/index.md",
+      "sha256": "3324a176b848c7ce22f8723d3a8375110f251c91abc42082881c9cb1190bc2da"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CRS.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CRS/",
+      "sha256": "73bbb3767abaf276948bc72b3e6bd9803a1be204adb2d98f472e0e16144e3e49"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CRS/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CRS/index.md",
+      "sha256": "95c433d206e8e9c0b595e35b08859048fde6df07534894e9f32f1ee5b0b35cda"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomLayerProjectionData.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomLayerProjectionData/",
+      "sha256": "5954c74c302b517257b006c9f3f629864349f6181e33491d97927bb33fd1101c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomLayerProjectionData/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomLayerProjectionData/index.md",
+      "sha256": "4801ebb5d591e36e2b4e314002f58b023185316cd548fbddccdd640352a074ec"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomLayerProjectionDataParams.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomLayerProjectionDataParams/",
+      "sha256": "66887e013cb7d63e1ef7e62e87b1731df4ffedac1b31f3e25ce780b0e0078467"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomLayerProjectionDataParams/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomLayerProjectionDataParams/index.md",
+      "sha256": "9ef2d5e60b331b501738db3c2b50367af107c42e3f8e4af6919866b10ec04897"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomMessageHandler.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomMessageHandler/",
+      "sha256": "9e99808c74a5bd386398560148c9d02822a92fdce35c9660df2b33d3f0d8283c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomMessageHandler/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomMessageHandler/index.md",
+      "sha256": "7e736a7e7ab758b7410485425ebef4d4d78da5a86559132d8537a6ed4389e450"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomRenderMethod.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomRenderMethod/",
+      "sha256": "7018870de16871fc99934d232c27dddcdd08fcfbec6a645d3cf99da78f510f20"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomRenderMethod/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomRenderMethod/index.md",
+      "sha256": "c9ae001d4c2c1a662d664c6419e9123e180046b7b4c5ee800c9468a22fed8524"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomRenderMethodInput.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomRenderMethodInput/",
+      "sha256": "350ba376a7fcb71091afdc2fe6fe2bd3da497e32f647b8613db4bab872282843"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomRenderMethodInput/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomRenderMethodInput/index.md",
+      "sha256": "182191038630a1df16f88c05abddcc67962d1065de4bb4a773c87aa37379ea61"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomTerrainRenderInput.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomTerrainRenderInput/",
+      "sha256": "6894a1bea60b51665e376a41e9a515f0c73c32b81920f26bec3a86a27950bf76"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/CustomTerrainRenderInput/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomTerrainRenderInput/index.md",
+      "sha256": "6576934a3242568d0a643869b08c4be6bea73d936b3e47b251f6036ac6d9bf10"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/DashEntry.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/DashEntry/",
+      "sha256": "d6f09c2af14a8762a4c22c277696d42cbef87a1d986beb215abb1d036bdbd4b0"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/DashEntry/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/DashEntry/index.md",
+      "sha256": "4797eaa34ac22018a10678e61f2ea84da326498a86507dd97cf9ba43234c1849"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/DistributiveKeys.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/DistributiveKeys/",
+      "sha256": "edf8c2cbfaa534d6c6e68fb2727f556578cac15ea467ff1555be43ba42d16a6f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/DistributiveKeys/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/DistributiveKeys/index.md",
+      "sha256": "115351002a068a7bf2a015e12ac6bcb7472c2e88032755f2355dd472adc0ce32"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/DistributiveOmit.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/DistributiveOmit/",
+      "sha256": "79b81b7bd9739ec9bba72127f81ba6a5b11e08a2ac5198e1c9a853a6a1e14673"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/DistributiveOmit/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/DistributiveOmit/index.md",
+      "sha256": "769915ad4b2e4086d496975dff7c1f525ebc2f9f4a84856c477d94403f0c1d93"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/DragPanOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/DragPanOptions/",
+      "sha256": "b1b10c76da6485226744527e479667685a0699f29415331514b0a99723e5a29e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/DragPanOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/DragPanOptions/index.md",
+      "sha256": "f2ab52f2f9cdf1b6ff4b36d5d859d6028816e9455f7530faaeaa1d95debeef5c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/DragRotateOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/DragRotateOptions/",
+      "sha256": "95d9abfcb510c056782683fccefdcf70a5a30021ffd2cf30c80e8ec0a5b9ccdc"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/DragRotateOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/DragRotateOptions/index.md",
+      "sha256": "7e5a2861291618ca041c22e7acd7129a530ab3775e3ba1f41129b55fb5f229e6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/EaseToOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/EaseToOptions/",
+      "sha256": "219ef83665ae2a38af75219cef2e221a7d053c4dbbb83083294c70a2e148cf08"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/EaseToOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/EaseToOptions/index.md",
+      "sha256": "d5ff381e0af71ea81e708fe94a7ad6ace8585192bf5fff6edeba5d14066aa67a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ErrorEventType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ErrorEventType/",
+      "sha256": "35c4b73d531f73cf6a4ffd426c0673974770c7d4fc66f220e93014b2ef7a0570"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ErrorEventType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ErrorEventType/index.md",
+      "sha256": "ee3a41055077b890096b08ccb228aaa3aaa72a02d8973751b999723cda5e0190"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/EventedParentData.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/EventedParentData/",
+      "sha256": "137683088c721c23e627d82c66101c76a73d3c5f1d606e01a2c93ce12b50ffd1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/EventedParentData/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/EventedParentData/index.md",
+      "sha256": "ad752d51034f3c82279d13fc1902b0218ff99f1e33b5e94927ee02c4465920d4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/EventTypeMap.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/EventTypeMap/",
+      "sha256": "5836e2e47c7b808bbc1b537840ea0f1389a03ed786505342f3dccb9a3e6d4f5d"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/EventTypeMap/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/EventTypeMap/index.md",
+      "sha256": "0b56802c9b21041a17d879a7425c7e1c20ee7b931550f7737560bcc86b8b1190"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ExpiryData.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ExpiryData/",
+      "sha256": "2f2f221fdff556d1ef4b73786921cb1a0b95fbbf05cad6063fa3f71a7c0e9f06"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ExpiryData/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ExpiryData/index.md",
+      "sha256": "b7ec0bf806f703f24ce4cb8b7231e8a53c9a3faa196fb9a5b7d25ecc9f3ee6b5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/FeatureIdentifier.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/FeatureIdentifier/",
+      "sha256": "f98ba058343bcb37f600bf8393727b91eb3fdafd223e725efe198b84eaebd3b2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/FeatureIdentifier/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/FeatureIdentifier/index.md",
+      "sha256": "e734b6e0a8d81d76b226eefd8682dae0fdc03d11ab9d85f0d3e8232893c14d62"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/FitBoundsOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/FitBoundsOptions/",
+      "sha256": "5595d9aebe7093aa2983c7b926334b891e97104688d5d3c3f5f7d26e4ba40896"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/FitBoundsOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/FitBoundsOptions/index.md",
+      "sha256": "e39c329b3ae5b03185503841829bd0f0ca034fc8e55ff7713b2d7fb5eb750f22"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/FlyToOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/FlyToOptions/",
+      "sha256": "857a449688b192726b28eac72b8650bce19c43ddb6a207222883a9f4464c8ef5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/FlyToOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/FlyToOptions/index.md",
+      "sha256": "9b825762a8db9a5da3c4f70ee3df079c96f75cf227c3485269fe9c3545a0b04f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/FullscreenControlEventType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/FullscreenControlEventType/",
+      "sha256": "891d37e4ae23e0680fda8ec7d09de4e94e7ae876e005ccab8e02a108431706c1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/FullscreenControlEventType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/FullscreenControlEventType/index.md",
+      "sha256": "54db6cd01aa11a6d99d1819f1288a223303ef288a90627bf8829dc52aa589df2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/FullscreenControlOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/FullscreenControlOptions/",
+      "sha256": "e64510eb4795348c37d866d494d3a1ece322269a617522822a3ae9d9f2292843"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/FullscreenControlOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/FullscreenControlOptions/index.md",
+      "sha256": "e06304ec10a4911bcb882a2ea1f916a45469ea81d5d1e21b6feeed69046c758a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GeoJSONFeatureDiff.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GeoJSONFeatureDiff/",
+      "sha256": "c878b5367f57675acdfa3ccebbe9fcc3fa454a7b4676e74b4231103ba878eb6e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GeoJSONFeatureDiff/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GeoJSONFeatureDiff/index.md",
+      "sha256": "3d605be91131168f5d484003f6f98994f0217145d8720ea4bd7548912e391ccb"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GeoJSONFeatureId.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GeoJSONFeatureId/",
+      "sha256": "1cb247eb0af6da2fac4e381cfe4ce409c7c284b3832f4337e7720ecb43f5a7a5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GeoJSONFeatureId/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GeoJSONFeatureId/index.md",
+      "sha256": "b6cc527654425db1efcece8d9ed8fee382501c66d5bc1acb0a948459f6df6ad1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GeoJSONSourceDiff.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GeoJSONSourceDiff/",
+      "sha256": "d3d6abd5aef70ac8732010db6d90ddba88997bf1f2ceeba32aea4e24c714c27b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GeoJSONSourceDiff/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GeoJSONSourceDiff/index.md",
+      "sha256": "b2583961b6d9f5bf57af2f43bd1dbf3b084767994d44d4fffcb55fd1a6bdd0c9"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GeolocateControlEventType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GeolocateControlEventType/",
+      "sha256": "b7cd9825e03a595cfce48f41517d2eb282647fe7fd939a3b7e61d015e5eafbc0"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GeolocateControlEventType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GeolocateControlEventType/index.md",
+      "sha256": "f81d9f2dd2fe4c34c4701c63260226094f82088107c19d29e13a0c4c4b950f5c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GeolocateControlOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GeolocateControlOptions/",
+      "sha256": "2ee30923c424438b0d1bff12ac21a77d7dbf097fc0b405b0662afe3a3ffa7230"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GeolocateControlOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GeolocateControlOptions/index.md",
+      "sha256": "2dc61157f2d02ae3df53b1227f9b83b6051c2e975b0436e99bee1e91ea8fd0cc"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GestureOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GestureOptions/",
+      "sha256": "d85472beef0e10d10381dd3d5be5776b775183feaa13e42c872eeff662eff018"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GestureOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GestureOptions/index.md",
+      "sha256": "ffb9eff3a5fce084d07e05c8e48c582115a0d787ef3d8e02bab36005fdff01a4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GetClusterOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GetClusterOptions/",
+      "sha256": "1fd73f09d705f6e1a908fe31eeb36fe9950070f2e92e56e0a55f09aea3937a7c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GetClusterOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GetClusterOptions/index.md",
+      "sha256": "f9506bed6f3b03b7d1769735c68f05369566a06c4297eacac325ac555763a557"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GetResourceResponse.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GetResourceResponse/",
+      "sha256": "71849ca46f20c8b15c87273070aad7ae84b223feb840a2a11ab313a7917c7444"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GetResourceResponse/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GetResourceResponse/index.md",
+      "sha256": "4f10c3ad984ef0d1f144da8d910507ab9ec5f6c95c47ba74c3c89012cd73171b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GlyphMap.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GlyphMap/",
+      "sha256": "0067c24dd5bd6308fea1498ef78fc1899f6af45a47c339838e26167f587a5f4b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GlyphMap/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GlyphMap/index.md",
+      "sha256": "a2154df1ee474402432802b6ebecfd62c8e23d715c30b8d7d01ccd4dad672594"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GlyphPosition.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GlyphPosition/",
+      "sha256": "8d60d3de82169ea71aa07bccb7d99dbfd6eb52ad66ea0d9f2729eccc96238a28"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GlyphPosition/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GlyphPosition/index.md",
+      "sha256": "dd60f2c3365274a8045c6b7ea43ebe4709bb687b6d867630047cca39620a8e4d"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GlyphPositions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GlyphPositions/",
+      "sha256": "7024bef77f7930350784a0b029e3d221ca7d5d40bb59b0e25789a11c410a26f4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/GlyphPositions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/GlyphPositions/index.md",
+      "sha256": "d00f8f93f7f751148b742d772f44316d66141f92c0aacc9553bfe2147bde1ff6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/HandlerResult.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/HandlerResult/",
+      "sha256": "f4ee5e55927ab0854a2198436e8f5b615f670094ae7a457bae9812d52998275c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/HandlerResult/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/HandlerResult/index.md",
+      "sha256": "a873dd489515288591e7f301c1f1b1ddfebb29843926ed554576480b9af8c99c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ImageSourceImage.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ImageSourceImage/",
+      "sha256": "f2c0552538aa2eb2d6351289326997bc22a24f75e3016ae6fe02ed17788c9634"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ImageSourceImage/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ImageSourceImage/index.md",
+      "sha256": "7fd1931fc9d63702d272514d13ac0d8b6ec0bdaa6734891473127d8a91cdbe43"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ImageSourceWarp.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ImageSourceWarp/",
+      "sha256": "85fb2df8b296281657154342c015509fa5e253931fbb0034404b8a2c6e8653b4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ImageSourceWarp/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ImageSourceWarp/index.md",
+      "sha256": "bea907cddf52f3bad1e3fda7fbcc24d63f9844fede7e751dc51906d0ef9203ed"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/IndicesType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/IndicesType/",
+      "sha256": "e95714e720edbd13eb64447b82c0c7093ffe0cc708b02f76d4440f2a7c034a69"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/IndicesType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/IndicesType/index.md",
+      "sha256": "bdb0dedc40242c92ce016f27b8a65c4573e84e7f3d84565ef6ad00b99e974ace"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/JumpToOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/JumpToOptions/",
+      "sha256": "4415b0270209d769c5f81378aad6621ea21ebb2c452bcc9b79cc61c61b0b7e0f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/JumpToOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/JumpToOptions/index.md",
+      "sha256": "81188787aa479ec72f9b909671e26fdf7f3b77a001490b03b2152d096982c500"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Listener.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Listener/",
+      "sha256": "aa3b5c8b4dbaec26dc008d35982ed661cfb70b58bea223dfb8ca0f5923b9a77c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Listener/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Listener/index.md",
+      "sha256": "3c4653b48ed6cf0e1fdbf5a4aa44a48d9106521a49503a1cf6288808b91912a2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/LngLatBoundsLike.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/LngLatBoundsLike/",
+      "sha256": "7ea810188e3d53bd383225b04339d16ca2538edac3162948d0ae4f00fac5d69a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/LngLatBoundsLike/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/LngLatBoundsLike/index.md",
+      "sha256": "72d6dbc0c6eacff528158c60d686d45170582321b82d3221563adb0769671381"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/LngLatLike.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/LngLatLike/",
+      "sha256": "4ffc6eab3a59590daed9c7a6f06c4930b2269eff701b6aed33575530d8b21bd5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/LngLatLike/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/LngLatLike/index.md",
+      "sha256": "19e0a8921d915e8e80e8c1c1b50be3dbcdc365a7253db3fdc32f3c2ebf5b3a82"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/LogoControlOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/LogoControlOptions/",
+      "sha256": "aa1c21ed1e7f73c10603aaaa15204e43a2f094e5e9ee7098319851b48d4e1f27"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/LogoControlOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/LogoControlOptions/index.md",
+      "sha256": "4b2cd4facae3c79e0a044435b7397b18f3e631c9b961964551ea5c25ff25d5e1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapEventType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapEventType/",
+      "sha256": "5c6c2a2a416e640fa95ade2d15534f12520aba5429c4d829a23736baa28115cf"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapEventType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapEventType/index.md",
+      "sha256": "2d265abf68081439550cc7fb12f0f6f8defcc457c9125fc83747e1513fd75134"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapGeoJSONFeature.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapGeoJSONFeature/",
+      "sha256": "5ca99832a04e589888e39529908f56e5aa12edacfc0d1448b8607524637688b5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapGeoJSONFeature/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapGeoJSONFeature/index.md",
+      "sha256": "19a980d3fd723cfb71979f3854910e57968a4271db1d6eeeec4ea51ec617f3eb"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapLayerEventType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapLayerEventType/",
+      "sha256": "13a6a56c693df6704551b92bddfa0d8f356726efa9de0cb5f23b54e7f47a9878"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapLayerEventType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapLayerEventType/index.md",
+      "sha256": "95ed7b6f586fe726b1e11417034859a47b8da3703e71f023500a1d2d063e75bd"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapLayerMouseEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapLayerMouseEvent/",
+      "sha256": "df6d5d3fe10bf324e1004aacec2f1cbd4b4c9528cbd9e9ea8188461516f61132"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapLayerMouseEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapLayerMouseEvent/index.md",
+      "sha256": "7e34163f1f7ce2562feda767a0d8385fdc4802a5cee8f4ef6fcf3d2fcc830d2c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapLayerTouchEvent.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapLayerTouchEvent/",
+      "sha256": "3632873ba61769b87ed089075f1baa375c0f86a93f884daf5c3f28190cdee026"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapLayerTouchEvent/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapLayerTouchEvent/index.md",
+      "sha256": "eb86138f25534d107c99160e6bc7e782d17c5ab5fbd18b8f896f0776253f45db"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapOptions/",
+      "sha256": "d183de9bafbbca3f0aec7b26a72f5cd4c8cfcd2bda233e575c511e36a32dd549"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapOptions/index.md",
+      "sha256": "bd63146c1b42eaaebd3671905ebae35c5f791828b6d5ab114e2edef2270241fb"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapSourceDataType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapSourceDataType/",
+      "sha256": "e4ff6d8fb03fd98386772d6ce52a49512ff55fd4f8bdee6ee6ce9eaa67515115"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MapSourceDataType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapSourceDataType/index.md",
+      "sha256": "411d4b6c53695408520cc6c62a18201a0311921f67bde54f24c3af86de1a463d"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MarkerEventType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MarkerEventType/",
+      "sha256": "5d5df9e7a094e1b2475346a86df205718d6e280504c271d736a46cec164c6aa2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MarkerEventType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MarkerEventType/index.md",
+      "sha256": "bf0bea93fbef2b8f92590d90f2295c841501bd68a3185467cbb1de37048da5a7"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MarkerOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MarkerOptions/",
+      "sha256": "6372ef49d2b4f5c19cfb124f04e3cece1182565372d0f28fbbdbda20da712a39"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MarkerOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MarkerOptions/index.md",
+      "sha256": "5307f22765f22bbe8160fe3209ed57d1a8efb6be128fd7e28aa56d3d65d28696"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Mat4f32.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Mat4f32/",
+      "sha256": "0692880da2c40a60d276f247e0ae05d3e5052141e41fb575d54d0903b99b488a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Mat4f32/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Mat4f32/index.md",
+      "sha256": "81af5402b184d9a6a0962566960934a3159dc6f9f62ea79aab582cf9095cddac"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Mat4f64.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Mat4f64/",
+      "sha256": "55f688bcd29175ed55df41542a383db51f4606658dd787c3d55ba9cce523ace8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Mat4f64/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Mat4f64/index.md",
+      "sha256": "371a11a2b308404698c5163488097395b4a20854dfa6b9a934e53c78b9a47a85"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MissingStyleImageResolver.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MissingStyleImageResolver/",
+      "sha256": "493235f6ec701742fba325e5519a0f261600033b0b73c7bce03d7d929909870f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/MissingStyleImageResolver/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MissingStyleImageResolver/index.md",
+      "sha256": "ae0757390eb113b68af861624904edb13fd3ce5b6c6645c4c72bdc363de9b222"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/NavigationControlOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/NavigationControlOptions/",
+      "sha256": "a0b2dd5b61a2c885f5f1c713a268e5c08ad5792970c358927e952b01f9ac2055"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/NavigationControlOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/NavigationControlOptions/index.md",
+      "sha256": "5daf90922d021c8c3cfb4a618368bd8eaf4b32e055eefd633d364d9e490ec92b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Offset.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Offset/",
+      "sha256": "0be0625f1fab12e479dd3cb94039d542dd29a68f1c72626a3bb2bfb4681023eb"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Offset/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Offset/index.md",
+      "sha256": "49b374c022b53876e4bc8664f8dcfe73a11135ad8d31aee99b24565b2033a8c8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/PaddingOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/PaddingOptions/",
+      "sha256": "f0d562d803472f8b76ca7e9494cff738935edb7416d21d62a03ed07ff6c5b63f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/PaddingOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/PaddingOptions/index.md",
+      "sha256": "74d42df965b75c4f743ec74135858b01f88d1611df25c31836e90d385be46b14"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/PointLike.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/PointLike/",
+      "sha256": "fa0fa4a59c2e144a253d72a6a9b6fc6aefdc9f31156416e06053f627d48b00d7"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/PointLike/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/PointLike/index.md",
+      "sha256": "bbe82be3626e2cd469e0890db060cae7fb94de65853c5b84a7ccd498ba00e17b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/PopupEventType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/PopupEventType/",
+      "sha256": "09db3a474a97e085f73844c7d1e92fe0067c01611d7992d8124f60f63e9398ea"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/PopupEventType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/PopupEventType/index.md",
+      "sha256": "aee67772bae49f7455bd61161b46190fb41682e021a70b002435595089532b62"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/PopupOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/PopupOptions/",
+      "sha256": "c9ad76c39147f80666b4bea0761ebb6ea4c6322cf7b6a87a8bd2d3b7679416b7"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/PopupOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/PopupOptions/index.md",
+      "sha256": "1beaf5ee1dea62fda01f7858fbeed0dfdbf5d4c0c1c8dd9162b88c3f81929d8b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/PositionAnchor.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/PositionAnchor/",
+      "sha256": "eeab161509de02b4d952aeb461ef35e6b604560fce002e6653b52da1313bbcb1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/PositionAnchor/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/PositionAnchor/index.md",
+      "sha256": "30c9a93fd18eae13a71edfa7dcc64a06f50912c10c175823b49e2fde6f9a0e80"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ProjectionData.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ProjectionData/",
+      "sha256": "42a9343ca503f2f6265af91011b3f4c1ed691315f571c582738cafb6214913f3"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ProjectionData/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ProjectionData/index.md",
+      "sha256": "269759ea05d3b35b6af22f86d5b3c385fe9083dacb9100b07f3920454fc563f7"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ProjectionDataParams.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ProjectionDataParams/",
+      "sha256": "b13cf3abc799aa1601f031503034a9f22f7e618cc7271e9223004d7896f926b6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ProjectionDataParams/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ProjectionDataParams/index.md",
+      "sha256": "378fb46d4b8bb8bda07ce3090ca360671066664049d723f1d98c7e00645abba0"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/QueryRenderedFeaturesOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/QueryRenderedFeaturesOptions/",
+      "sha256": "bc0876d77e777dcf1a746efcf5197ea1ee7963cc6e0f9d85f09568cccdfef176"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/QueryRenderedFeaturesOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/QueryRenderedFeaturesOptions/index.md",
+      "sha256": "38abe24dcbd4ebb9c8d3f9852300ae760a7d3e444c08bfbca48cf1371fda87ca"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/QuerySourceFeatureOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/QuerySourceFeatureOptions/",
+      "sha256": "3dfccccbcb144a5d9c4ced85bb9137e94e5419b91460cf439f9436af1c6652f1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/QuerySourceFeatureOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/QuerySourceFeatureOptions/index.md",
+      "sha256": "de8dd5ae6f39d4afea8c0c4f53d4deaa485008d75b7eb891ebcb1ee3de5481c4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/RendererProjectionData.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/RendererProjectionData/",
+      "sha256": "81b6d09f428ee1636f2ebe3e88fe1a2490066861eb5385e6d4b557121746f50e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/RendererProjectionData/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/RendererProjectionData/index.md",
+      "sha256": "d5582ba29c7ef1add542cd37e255213e44b25bae1ba36ee3e61b3c1448da9f96"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/RequestParameters.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/RequestParameters/",
+      "sha256": "7514b8cc1acf1ee503ab6ce00b127ab7cab7c396fd05c797f2eaa103e7664bff"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/RequestParameters/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/RequestParameters/index.md",
+      "sha256": "eea6d18018eb9b92bc19fc0b2de3cd50964432cd0a2d4e104ca4830261a6663f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/RequestResponseMessageMap.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/RequestResponseMessageMap/",
+      "sha256": "9ecb3ce737a61008ee80183b9bb989c7e1f4d3b83d2613de0c13e66cb713ff03"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/RequestResponseMessageMap/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/RequestResponseMessageMap/index.md",
+      "sha256": "a4e9fb5da78451e773648852529ffbe85cdc7d52e2d45f0ae3f33ceba9d2e004"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/RequestTransformFunction.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/RequestTransformFunction/",
+      "sha256": "7bc7bcd084188f9666f8e4da99af095be59638be693d9f2fd97218ea1fca6247"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/RequestTransformFunction/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/RequestTransformFunction/index.md",
+      "sha256": "fe522b961cc65beffd67a0931e2896926e359154c425fb56a5590c518de0d10e"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/RequireAtLeastOne.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/RequireAtLeastOne/",
+      "sha256": "9bc3912e1449be6c2633da8b9d12635133b25f2b40a0fef4adc99989cd4b9009"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/RequireAtLeastOne/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/RequireAtLeastOne/index.md",
+      "sha256": "5b17cedb86069666a546e91fcc6253133bee9e4af08dafde3a0d7cff0d633dd1"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ScaleControlOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ScaleControlOptions/",
+      "sha256": "795bd183a09a5d6510c1a989c374cc98a6285fb9a1c0fc0c00efe0e592a25766"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/ScaleControlOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/ScaleControlOptions/index.md",
+      "sha256": "2c129833a3ac23beda36577865b76493c55a71c8c3b6e4fed45f93cca846f916"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/SetClusterOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/SetClusterOptions/",
+      "sha256": "f113878a39d42ef44050a57e856f92edc70e8cfbdc31898cb4c2e4778903ffe0"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/SetClusterOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/SetClusterOptions/index.md",
+      "sha256": "c6faac47d3d737751c66df6ebf57a9bbc14344d912fad26371e18dd659ad7bc5"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/SourceClass.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/SourceClass/",
+      "sha256": "cd6651d14e40caa69f5dfa334ed5115eb9d5ca49c2a73ec7da3474b953c2291c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/SourceClass/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/SourceClass/index.md",
+      "sha256": "f45abce6c4e2edc6e3547ff7bf6eeb6c97cc8b623cb6f6c16ae35090ca36265f"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/SourceEventType.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/SourceEventType/",
+      "sha256": "49abdaff72916793525cb8ec3004e4d85c48b143ad30140c6ee6933daf00f522"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/SourceEventType/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/SourceEventType/index.md",
+      "sha256": "cd8e8f411543041032e0d4d5523c4b59135993b2f3be5cbbc82520a4d9f90995"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleGlyph.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleGlyph/",
+      "sha256": "b426b0033f7cef5649be9294a5897fd93f34fbd8571725c501ad1b54d036eb35"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleGlyph/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleGlyph/index.md",
+      "sha256": "930153082a571a1ad7cf989560a454d6b37cb189322f5f8825a54ad501445bb0"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImage.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImage/",
+      "sha256": "1373b03eee2c53046f5c6d1bd6fc123d9f4210d52a63516f96124cc364c92f05"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImage/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImage/index.md",
+      "sha256": "8f30acccf49ecd758985603de762cd3acb4a30b74b7b9fec0b9d5dcb2c54aaac"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImageData.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImageData/",
+      "sha256": "1a1323e6dd774255357ab3dac87810621f7c45689a634820a4d2c89bd42dcde6"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImageData/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImageData/index.md",
+      "sha256": "2c552e0639f50c01472cb87a0597fa97470b131e18d6979bd63a6239e88722e8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImageMetadata.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImageMetadata/",
+      "sha256": "d63122d974f03a8caa32c0192a2243a9dadfb48d5e9c2dc3b895e8aa95775258"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImageMetadata/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImageMetadata/index.md",
+      "sha256": "789a739c89e7545dc13e62e9b16bf14e63d2d1db3e66e37d3aed2529ae358d7c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImageSource.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImageSource/",
+      "sha256": "7b4b730af83321c995ffa00c95bbfabafabc86ffc05e9ea8441ba8b48e21ecb4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImageSource/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImageSource/index.md",
+      "sha256": "791b1bf2a91ede0d76e8b4ef443352d3203101086b115035884141e3b0397983"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImageWebGLData.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImageWebGLData/",
+      "sha256": "3a7caf6bdca078b2710713c2c40bfa9c4ebe5d4c7975c380d387d8b2cccb2d10"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImageWebGLData/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImageWebGLData/index.md",
+      "sha256": "2a66e59777b2ab0106f165f31911e312497668b134a499d69c32101051b774f4"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImageWebGLTarget.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImageWebGLTarget/",
+      "sha256": "4e2a535c02fe1ab1d517afc8da4a251a3a914d38670d8dac41c2341ae6545c07"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleImageWebGLTarget/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleImageWebGLTarget/index.md",
+      "sha256": "de26fda53301b253e1f014f9bc79726736b682b9f8966a76bfb97b7a17576eec"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleOptions/",
+      "sha256": "3b25a67c8f74e739bf96292eb0e952139b942e6258e25342a749ea26ef89a59c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleOptions/index.md",
+      "sha256": "462521997cc9483358401a11b70fc47d5af6f33949eac908aeba858ffb727cbf"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleSetterOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleSetterOptions/",
+      "sha256": "7496ecb1cdafcc936af5b5784d2dbd58feecceb2f4a47d7096033dcab287c34c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleSetterOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleSetterOptions/index.md",
+      "sha256": "f47427efdada96f309e3333efe3479cf531e9fb40a65bcb939918697aef63393"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleSwapOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleSwapOptions/",
+      "sha256": "47e274a5579078747d2f0635b4f78bb8498f31547ff2c41a1f6c7f42856844c2"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/StyleSwapOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/StyleSwapOptions/index.md",
+      "sha256": "cf4497fc863864e73e42db00c8867167b3a57c6b98affcf42c877421aa992316"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/TerrainHeightMapTarget.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/TerrainHeightMapTarget/",
+      "sha256": "80231b6212ca9a2ca5635836ecf312f665d9fe770ad7ce664b67ea9c271b275b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/TerrainHeightMapTarget/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/TerrainHeightMapTarget/index.md",
+      "sha256": "bc8cc1cb48881d98998c3cc0691bf2a8946967c538772637c8261e214feac054"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/TileMatrixSet.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/TileMatrixSet/",
+      "sha256": "548d8d6c31852dd2bdf5773361273cc31dccbd92be1fe19ad2006bdab0524f56"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/TileMatrixSet/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/TileMatrixSet/index.md",
+      "sha256": "f9b756e526066adf0a979b6b3f3ef0fc373afde8cc0e340f85b09bb064531f2b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/TileMesh.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/TileMesh/",
+      "sha256": "22768fe8170dcf78e6a53aa154e4ff3490fd0b11fa27acb6ac47c8b28a2c830b"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/TileMesh/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/TileMesh/index.md",
+      "sha256": "03b8d5940c0cdf66c0ae08a32b3193baec1d18928dbb807d21534a36d82dd91c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/TransformConstrainFunction.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/TransformConstrainFunction/",
+      "sha256": "6b5cf9ecfd2c40505b7d31343281dae3b42a88c1296a6cbda075c66900bc7c3c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/TransformConstrainFunction/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/TransformConstrainFunction/index.md",
+      "sha256": "3ca3d5323944c007e9d0284e43f1cae802c366df90773d754aaca4987dc5a1a8"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/TransformStyleFunction.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/TransformStyleFunction/",
+      "sha256": "c1d179cf2cf422a5257ea4483b3484bd9d6ee399501de255505a98ae9d9a719a"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/TransformStyleFunction/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/TransformStyleFunction/index.md",
+      "sha256": "c39eaceca962487601d7df59e8707e79010b4331eff4ab26fef7140f0b68c26c"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Unit.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Unit/",
+      "sha256": "d22594583c691e64fae74df83d6ec650063e9f7c3be39556650ceaecba8c7282"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/Unit/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/Unit/index.md",
+      "sha256": "2b25becdd3db6897f15476c639bc28f07658646c587443af18f792dce03d3351"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/UnwrappedTileIDLiteral.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/UnwrappedTileIDLiteral/",
+      "sha256": "eded08288729963d021ac20c74d026a4fa236d24d160e39003de543b53e00cb3"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/UnwrappedTileIDLiteral/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/UnwrappedTileIDLiteral/index.md",
+      "sha256": "27e7022cc1b577853df73e7ad6dfa62ae29346d5e4daf61120c9e02452c02aa7"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/UpdateImageOptions.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/UpdateImageOptions/",
+      "sha256": "020fc81e61806b402d42c286ecf87b896965b429ef07407a01bc321bfd55bb08"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/type-aliases/UpdateImageOptions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/UpdateImageOptions/index.md",
+      "sha256": "15723968f9688c86b700cb9f7ae27e4a8780c70bf1d1aa5bdd7297cb74e61a63"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/variables/EXTENT.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/variables/EXTENT/",
+      "sha256": "76720ccd393e30e71c0d7d6c911b754217ec8d8d0651896036a42b2bff3c6a03"
+    },
+    "pages/maplibre-org/maplibre-gl-js/docs/API/variables/EXTENT/index-md.md": {
+      "url": "https://maplibre.org/maplibre-gl-js/docs/API/variables/EXTENT/index.md",
+      "sha256": "adc7d57d14f533d790f2a80cddcd01b4f8232b3ef1d59523348fc92673299fec"
+    },
+    "pages/maplibre-org/maplibre-style-spec.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/",
+      "sha256": "eb84f53719faf0952bf5f211ff2007d858e0d30438c0bb69519b98d7c2b07087"
+    },
+    "pages/maplibre-org/maplibre-style-spec/deprecations.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/deprecations/",
+      "sha256": "9781d4a10bbeb792b0ea7d5e47934feb01842a23b5b8dffd23d6b07d47df43ac"
+    },
+    "pages/maplibre-org/maplibre-style-spec/deprecations/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/deprecations/index.md",
+      "sha256": "897919ff7f1ea2fb8589019882c6d70e8e143c934166ed8a60a05a21a15ac94b"
+    },
+    "pages/maplibre-org/maplibre-style-spec/expressions.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/expressions/",
+      "sha256": "9a5d85ed834e0a7fe9e35d6da580a0638172317a847c5949bbe779e0048b6c1a"
+    },
+    "pages/maplibre-org/maplibre-style-spec/expressions/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/expressions/index.md",
+      "sha256": "1199ccf82b4c5a923765bee34043f6fb674b5ef331d19b2e6f7ee74af830a2ae"
+    },
+    "pages/maplibre-org/maplibre-style-spec/font-faces.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/font-faces/",
+      "sha256": "81c2836fc1eddc95e823df5b6b15c756d242a716e458316fc7fc7ae466deba47"
+    },
+    "pages/maplibre-org/maplibre-style-spec/font-faces/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/font-faces/index.md",
+      "sha256": "ce6b23706fc350a1fef3505ef7e8eeaa4ffa02fd30fa547e0a4b57ae6725f89d"
+    },
+    "pages/maplibre-org/maplibre-style-spec/glyphs.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/glyphs/",
+      "sha256": "d1c8e175383ed01e2d1dc14dd2095f974fb2576f8a8e611c2e27b7ed721cf366"
+    },
+    "pages/maplibre-org/maplibre-style-spec/glyphs/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/glyphs/index.md",
+      "sha256": "319fd990a2159ee60dded58546a3d3c57aa6ff3da47eab1342185dbbcb754d54"
+    },
+    "pages/maplibre-org/maplibre-style-spec/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/index.md",
+      "sha256": "da5f490fecae771022bd16216583a58ebf5108546a35539451cd4b0860ebebb7"
+    },
+    "pages/maplibre-org/maplibre-style-spec/layers.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/layers/",
+      "sha256": "4b9a7c6eca7f4b44b5d0aa0f6b22138cdbc34fe2951cb6413ec5560a8816acb9"
+    },
+    "pages/maplibre-org/maplibre-style-spec/layers/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/layers/index.md",
+      "sha256": "495b8399320212b11588ec3461c3b15558ba6ee016091f675b408cc723ca0d92"
+    },
+    "pages/maplibre-org/maplibre-style-spec/light.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/light/",
+      "sha256": "09c1297c805d578e30434cf70a3c7c195fe865fdb8be093f0fe6b4b80d3da12c"
+    },
+    "pages/maplibre-org/maplibre-style-spec/light/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/light/index.md",
+      "sha256": "e77ea1a8451d751b51d1dc80bd97bf60c93288c40001a09089dd94d9787e7f19"
+    },
+    "pages/maplibre-org/maplibre-style-spec/llms-txt.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/llms.txt",
+      "sha256": "3d1410f08223c05a5da3468b82d79dc826396aa2229889a3b4fd210f660757c3"
+    },
+    "pages/maplibre-org/maplibre-style-spec/projection.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/projection/",
+      "sha256": "5f02a7eecc19ecde4f073dfa1ae1de289e459e9b23397286e3f55740e9553bec"
+    },
+    "pages/maplibre-org/maplibre-style-spec/projection/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/projection/index.md",
+      "sha256": "78ebdc57022061ad128bfd08d07da124273a1bfaad02fdf351878ef6446949be"
+    },
+    "pages/maplibre-org/maplibre-style-spec/root.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/root/",
+      "sha256": "6168d221d0279e5866a4aeec03fd1a383b98d2d6595453561830e58747bc734f"
+    },
+    "pages/maplibre-org/maplibre-style-spec/root/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/root/index.md",
+      "sha256": "3a71a0993c46a36b55db78e1fa68c38e011a9417ff3cb13a09bac92e7b59ad20"
+    },
+    "pages/maplibre-org/maplibre-style-spec/sky.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/sky/",
+      "sha256": "3a37262519ec4a5a340d779c80cf8f5edcd4b6efe4be61e0222b4a0f4fc5de48"
+    },
+    "pages/maplibre-org/maplibre-style-spec/sky/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/sky/index.md",
+      "sha256": "d12335debd4e916921d9fdd70bb3081eb258c2e6ab53a8c1fdc54fb6da08d12c"
+    },
+    "pages/maplibre-org/maplibre-style-spec/sources.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/sources/",
+      "sha256": "c44e5d3c0c12d517f4696acfcee7b9a035032d18ea45136232447254123e5a52"
+    },
+    "pages/maplibre-org/maplibre-style-spec/sources/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/sources/index.md",
+      "sha256": "a5e350ba086b6301e839f06d9eae69300771c8d88eaf6ab00bb9ed904739e4e5"
+    },
+    "pages/maplibre-org/maplibre-style-spec/sprite.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/sprite/",
+      "sha256": "9e7b5af7a4da77560c4b204e76d375a3100638b28232aadee7756c725f5710e9"
+    },
+    "pages/maplibre-org/maplibre-style-spec/sprite/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/sprite/index.md",
+      "sha256": "7b83fda0271e981a689317dcb7f3f32197963f069ed7275763428c4207576b3b"
+    },
+    "pages/maplibre-org/maplibre-style-spec/state.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/state/",
+      "sha256": "9b5cf33acddcbd53bd8e5c17ddfa614dcba05f63a023de76b130492250120565"
+    },
+    "pages/maplibre-org/maplibre-style-spec/state/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/state/index.md",
+      "sha256": "6b280df26f852d7b7e0e1c452f200ccc8819d8c6904ae45c2b1a4f2ba6fa263a"
+    },
+    "pages/maplibre-org/maplibre-style-spec/terrain.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/terrain/",
+      "sha256": "b9b5bf48492d77be4019104a95ca7e9dafc13fab06ae5e85da682c4d127d8202"
+    },
+    "pages/maplibre-org/maplibre-style-spec/terrain/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/terrain/index.md",
+      "sha256": "b2d1790b886fbcad5f84110357b78623831350d30a868cec9c8f3dfdb875a738"
+    },
+    "pages/maplibre-org/maplibre-style-spec/tilejson.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/tilejson/",
+      "sha256": "bbc8a99d9578fb1aa66f31747a1a20ef971e45a0276f985757f3359722a6f3da"
+    },
+    "pages/maplibre-org/maplibre-style-spec/tilejson/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/tilejson/index.md",
+      "sha256": "17d99f6632909ac3a29f67498a8f30a0f97682cfd1f0f2ff6300b994e9deb54f"
+    },
+    "pages/maplibre-org/maplibre-style-spec/transition.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/transition/",
+      "sha256": "9508a92df959a0f29079969b10b91b5ece50e21986ea0aa5c42b75addb947b42"
+    },
+    "pages/maplibre-org/maplibre-style-spec/transition/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/transition/index.md",
+      "sha256": "8189710c987a63af4898f639b1c550c02cd67387ee8f604cb92bc03cdb3787d7"
+    },
+    "pages/maplibre-org/maplibre-style-spec/types.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/types/",
+      "sha256": "c55fc13173d74ff469720eec27cfb8f2ee9e05eed7a0c0a06c62a6412d45b745"
+    },
+    "pages/maplibre-org/maplibre-style-spec/types/index-md.md": {
+      "url": "https://maplibre.org/maplibre-style-spec/types/index.md",
+      "sha256": "45708b448433ce47909ade1773fec09a7cac77c5f56531963068e537786ccbeb"
+    },
+    "repo/docs/guides/custom-crs.md": {
+      "url": "https://github.com/maplibre/maplibre-gl-js/blob/7ff68855dcea2c37ffa2f02932073613714692cd/docs/guides/custom-crs.md",
+      "sha256": "28e228685414a9191bd81254a28ba10453182febe59c262f78a2fba7fd9459f2"
+    },
+    "repo/docs/guides/index.md": {
+      "url": "https://github.com/maplibre/maplibre-gl-js/blob/7ff68855dcea2c37ffa2f02932073613714692cd/docs/guides/index.md",
+      "sha256": "f7084b772f038e5d1483b6b753b0716b605436f2bb86fc34e5c3fa925b7cfe57"
+    },
+    "repo/docs/guides/large-data.md": {
+      "url": "https://github.com/maplibre/maplibre-gl-js/blob/7ff68855dcea2c37ffa2f02932073613714692cd/docs/guides/large-data.md",
+      "sha256": "2948352ac4409e319078bb93fb7cbf065a72fa1baa1e84d70681e7245b827bec"
+    },
+    "repo/docs/guides/leaflet-migration-guide.md": {
+      "url": "https://github.com/maplibre/maplibre-gl-js/blob/7ff68855dcea2c37ffa2f02932073613714692cd/docs/guides/leaflet-migration-guide.md",
+      "sha256": "60fcf99f43c52739426d5b89f3c8998e494ca1f4e9d3d49142d99b351747f03a"
+    },
+    "repo/docs/guides/mapbox-migration-guide.md": {
+      "url": "https://github.com/maplibre/maplibre-gl-js/blob/7ff68855dcea2c37ffa2f02932073613714692cd/docs/guides/mapbox-migration-guide.md",
+      "sha256": "c3cb88e505c38ead72afafaa6367c348822cc37595eed99d6cee0307c231aa15"
+    },
+    "repo/docs/guides/openlayers-migration-guide.md": {
+      "url": "https://github.com/maplibre/maplibre-gl-js/blob/7ff68855dcea2c37ffa2f02932073613714692cd/docs/guides/openlayers-migration-guide.md",
+      "sha256": "d91638c2468001654a2d88a1f9b3fe07bef99610bb5f1d185be8b64874e76a72"
+    },
+    "repo/docs/guides/v5-to-v6-migration-guide.md": {
+      "url": "https://github.com/maplibre/maplibre-gl-js/blob/7ff68855dcea2c37ffa2f02932073613714692cd/docs/guides/v5-to-v6-migration-guide.md",
+      "sha256": "36521ff54f41367cd1613ffcf2cf01c9ed5c78e64b0a26cfacc7da28770fcb1a"
+    },
+    "repo/docs/index.md": {
+      "url": "https://github.com/maplibre/maplibre-gl-js/blob/7ff68855dcea2c37ffa2f02932073613714692cd/docs/index.md",
+      "sha256": "5fa64dec38ae989437560ae6a05e67c11e7c77cfde8863774078d7663cd64be9"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/maplibre/maplibre-gl-js/blob/7ff68855dcea2c37ffa2f02932073613714692cd/README.md",
+      "sha256": "f293e4b84fcabba75a923fe54ff861b6bd4e7f2cddaf09082bcee97f57c0847b"
+    }
+  }
+}

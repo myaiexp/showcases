@@ -1,0 +1,7 @@
+/* Popups: content of the country popup */
+[data-example='maplibre-gl/popups'] {
+  .box {
+    color: #111;
+    font: 13px/1.4 sans-serif;
+  }
+}

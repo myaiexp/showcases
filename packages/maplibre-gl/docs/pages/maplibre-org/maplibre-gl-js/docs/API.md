@@ -1,0 +1,94 @@
+<!-- source: https://maplibre.org/maplibre-gl-js/docs/API/ -->
+
+# Intro
+
+This file is intended as a reference for the important and public classes of this API. We recommend looking at the examples as they will help you the most to start with MapLibre.
+
+Most of the classes written here have an "Options" object for initialization, it is recommended to check which options exist.
+
+It is recommended to import what you need and then use it. Some examples for classes assume you did that.
+For example, import the
+
+```
+Map
+```
+
+class like this:
+
+Import declarations are omitted from the examples for brevity.
+
+## Main
+
+## Markers and Controls
+
+* AttributionControl
+* FullscreenControl
+* GeolocateControl
+* GlobeControl
+* Hash
+* LogoControl
+* Marker
+* NavigationControl
+* Popup
+* ScaleControl
+* TerrainControl
+
+## Geography and Geometry
+
+* EdgeInsets
+* LngLat
+* LngLatBounds
+* MercatorCoordinate
+* LngLatBoundsLike
+* LngLatLike
+* PaddingOptions
+* PointLike
+
+## Handlers
+
+* BoxZoomHandler
+* CooperativeGesturesHandler
+* DoubleClickZoomHandler
+* DragPanHandler
+* DragRotateHandler
+* KeyboardHandler
+* ScrollZoomHandler
+* TwoFingersTouchPitchHandler
+* TwoFingersTouchRotateHandler
+* TwoFingersTouchZoomHandler
+* TwoFingersTouchZoomRotateHandler
+
+## Sources
+
+## Event Related
+
+* Evented
+* FullscreenEvent
+* GeolocateErrorEvent
+* GeolocateEvent
+* GeolocatePositionEvent
+* MapBoxZoomEvent
+* MapContextEvent
+* MapLibreEvent
+* MapMouseEvent
+* MapMovementEvent
+* MapProjectionEvent
+* MapSourceDataEvent
+* MapStyleDataEvent
+* MapStyleImageMissingEvent
+* MapStyleLoadEvent
+* MapTerrainEvent
+* MapTouchEvent
+* MapWheelEvent
+* MarkerClickEvent
+* MarkerDragEvent
+* PopupEvent
+* FullscreenControlEventType
+* GeolocateControlEventType
+* MapEventType
+* MapLayerEventType
+* MapLayerMouseEvent
+* MapLayerTouchEvent
+* MarkerEventType
+* PopupEventType
+* SourceEventType

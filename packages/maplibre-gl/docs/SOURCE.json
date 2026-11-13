@@ -1,0 +1,9 @@
+{
+  "license": "BSD-3-Clause (maplibre-gl-js and maplibre-style-spec repo LICENSE.txt; the API reference is generated from maplibre-gl-js source)",
+  "redistribute": true,
+  "sources": [
+    { "kind": "git", "repo": "https://github.com/maplibre/maplibre-gl-js", "ref": "v6.18.0", "paths": ["README.md", "docs/index.md", "docs/guides"] },
+    { "kind": "crawl", "start": "https://maplibre.org/maplibre-gl-js/docs/API/", "prefix": "https://maplibre.org/maplibre-gl-js/docs/API/", "max": 500 },
+    { "kind": "crawl", "start": "https://maplibre.org/maplibre-style-spec/", "prefix": "https://maplibre.org/maplibre-style-spec/", "max": 80 }
+  ]
+}

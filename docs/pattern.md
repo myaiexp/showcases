@@ -17,6 +17,7 @@ packages/<pkg>/
     meta.ts               defineMeta({...}): metadata only, imports nothing heavy
     main.ts               export default mount: the running code
     style.css, *.ts       optional scoped styles and helpers
+  shared/*.ts             optional setup and sample data every example of the package imports
   comparisons/<entry>.ts  defineComparison({...}), written in the comparison phase
 ```
 
@@ -43,6 +44,9 @@ The example view shows every file in the example folder as its source, so the co
 reader sees is the code that runs. Keep `main.ts` readable: setup first, then the
 library calls the example is about. Move DOM scaffolding and sample data into helper
 files when it would bury them. Every file stays ≤300 lines with a one-line header.
+`shared/` is for what would otherwise be copied into every example (library setup, a
+basemap, a sample dataset) and is not shown as source, so the feature an example is
+about never lives there.
 
 ## Preview cards
 

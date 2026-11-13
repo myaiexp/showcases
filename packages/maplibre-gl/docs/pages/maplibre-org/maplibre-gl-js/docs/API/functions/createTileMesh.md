@@ -1,0 +1,41 @@
+<!-- source: https://maplibre.org/maplibre-gl-js/docs/API/functions/createTileMesh/ -->
+
+# createTileMesh()
+
+> **createTileMesh**(`options`: `CreateTileMeshOptions`, `forceIndicesSize?`: `IndicesType`): `TileMesh`
+
+Defined in: util/create\_tile\_mesh.ts:117
+
+Creates a mesh of a quad that covers the entire tile (covering positions in range 0..EXTENT),
+is optionally subdivided into finer quads, optionally includes a border
+and optionally extends to the north and/or special pole vertices.
+Additionally the resulting mesh indices type can be specified using `forceIndicesSize`.
+
+## Parameters
+
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `options` | `CreateTileMeshOptions` | Specify options for tile mesh creation such as granularity or border. |
+| `forceIndicesSize?` | `IndicesType` | Specifies what indices type to use. The values '32bit' and '16bit' force their respective indices size. If undefined, the mesh may use either size, and will pick 16 bit indices if possible. If '16bit' is specified and the mesh exceeds 65536 vertices, an exception is thrown. |
+
+## Returns
+
+`TileMesh`
+
+Typed arrays of the mesh vertices and indices.
+
+## Example
+
+```
+// Creating a mesh for a tile that can be used for raster layers, hillshade, etc.
+const meshBuffers = createTileMesh({
+    granularity: map.style.projection.subdivisionGranularity.tile.getGranularityForZoomLevel(tileID.z),
+    generateBorders: true,
+    extendToNorthPole: tileID.y === 0,
+    extendToSouthPole: tileID.y === (1 << tileID.z) - 1,
+}, '16bit');
+```
+
+## See
+
+Add a custom layer with tiles to a globe

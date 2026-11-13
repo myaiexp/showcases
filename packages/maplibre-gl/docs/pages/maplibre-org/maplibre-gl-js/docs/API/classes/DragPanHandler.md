@@ -1,0 +1,92 @@
+<!-- source: https://maplibre.org/maplibre-gl-js/docs/API/classes/DragPanHandler/ -->
+
+# DragPanHandler
+
+Defined in: ui/handler/shim/drag\_pan.ts:37
+
+The `DragPanHandler` allows the user to pan the map by clicking and dragging
+the cursor.
+
+## Methods
+
+### disable()
+
+> **disable**(): `void`
+
+Defined in: ui/handler/shim/drag\_pan.ts:81
+
+Disables the "drag to pan" interaction.
+
+#### Returns
+
+`void`
+
+#### Example
+
+```
+map.dragPan.disable();
+```
+
+---
+
+### enable()
+
+> **enable**(`options?`: `boolean` | `DragPanOptions`): `void`
+
+Defined in: ui/handler/shim/drag\_pan.ts:66
+
+Enables the "drag to pan" interaction.
+
+#### Parameters
+
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `options?` | `boolean` | `DragPanOptions` | Options object |
+
+#### Returns
+
+`void`
+
+#### Example
+
+```
+  map.dragPan.enable();
+  map.dragPan.enable({
+     linearity: 0.3,
+     easing: bezier(0, 0, 0.3, 1),
+     maxSpeed: 1400,
+     deceleration: 2500,
+  });
+```
+
+---
+
+### isActive()
+
+> **isActive**(): `boolean`
+
+Defined in: ui/handler/shim/drag\_pan.ts:101
+
+Returns a Boolean indicating whether the "drag to pan" interaction is active, i.e. currently being used.
+
+#### Returns
+
+`boolean`
+
+`true` if the "drag to pan" interaction is active.
+
+---
+
+### isEnabled()
+
+> **isEnabled**(): `boolean`
+
+Defined in: ui/handler/shim/drag\_pan.ts:92
+
+Returns a Boolean indicating whether the "drag to pan" interaction is enabled.
+
+#### Returns
+
+`boolean`
+
+`true` if the "drag to pan" interaction is enabled.

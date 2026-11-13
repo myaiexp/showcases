@@ -1,0 +1,26 @@
+<!-- source: https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/CustomLayerProjectionDataParams/index.md -->
+
+# CustomLayerProjectionDataParams
+> \*\*CustomLayerProjectionDataParams\*\* = `object`
+Defined in: [style/style\\_layer/custom\\_style\\_layer.ts:34]()
+Parameters object for the [CustomRenderMethodInput.getProjectionData]() function. Contains the requested tile ID and more.
+## Properties
+### aligned?
+> `optional` \*\*aligned?\*\*: `boolean`
+Defined in: [style/style\\_layer/custom\\_style\\_layer.ts:43]()
+Set to true if a pixel-aligned matrix should be used, if possible. This flag is mostly used for raster tiles under mercator projection.
+---
+### applyGlobeMatrix?
+> `optional` \*\*applyGlobeMatrix?\*\*: `boolean`
+Defined in: [style/style\\_layer/custom\\_style\\_layer.ts:51]()
+Set to true if the globe matrix should be applied when using globe projection.
+---
+### applyTerrainMatrix?
+> `optional` \*\*applyTerrainMatrix?\*\*: `boolean`
+Defined in: [style/style\\_layer/custom\\_style\\_layer.ts:47]()
+Set to true if the terrain matrix should be applied when pre-rendering tiles into textures for 3D terrain.
+---
+### tileID
+> \*\*tileID\*\*: [`UnwrappedTileIDLiteral`]() | `null`
+Defined in: [style/style\\_layer/custom\\_style\\_layer.ts:38]()
+The coordinates of the current tile.
