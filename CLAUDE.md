@@ -70,5 +70,7 @@ GitHub Pages. No service on the VPS.
   so a table left behind outlives its example. Delete views, then viewers, then tables; an
   example that builds derived tables through the viewer gets its own worker and terminates it.
 - `vite.config.ts` resolves the bare `three` imported by three's addons to `three/webgpu`,
-  so the Three.js gallery keeps one core. A WebGL-based package that uses three's addons
-  needs that plugin rethought.
+  so the Three.js gallery keeps one core. Spark (WebGL) imports the `Pass.js` addon and so
+  gets `three/webgpu` too; it works because both builds share `three.core.js`.
+- Spark examples must not fetch in cards: the only captured splat is the docs' `butterfly.spz`,
+  loaded in full views, with `pushButterfly` as the card stand-in (`packages/spark/shared/`).
