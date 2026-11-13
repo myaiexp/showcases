@@ -1,0 +1,20 @@
+/* Timeline shiftChildren: layout, controls and readouts */
+[data-example='gsap/timeline-shift-children'] {
+  .wrap { width: 100%; max-width: 480px; display: flex; flex-direction: column; align-items: center; gap: var(--space-3); }
+  .wrap.pv { max-width: 250px; gap: var(--space-2); }
+  .track { position: relative; width: 100%; height: 48px; border-bottom: 1px solid var(--fg-3); }
+  .pv .track { height: 40px; }
+  .box { width: 36px; height: 36px; background: var(--accent); border-radius: 6px; }
+  .bar { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-3); align-items: center; justify-content: center; color: var(--fg-2); font-size: 0.85rem; }
+  .chk { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--fg-2); font-size: 0.8rem; }
+  .readout { margin: 0; width: 100%; padding: var(--space-2) var(--space-3); background: var(--bg-surface); border-radius: 6px; color: var(--fg-2); font: 0.72rem/1.5 ui-monospace, monospace; white-space: pre-wrap; }
+  .note { margin: 0; color: var(--fg-3); font-size: 0.78rem; text-align: center; }
+  .ruler { position: relative; width: 100%; display: flex; flex-direction: column; gap: 6px; }
+  .rrow { position: relative; height: 22px; background: var(--bg-surface); border-radius: 4px; overflow: hidden; }
+  .rrow b { position: absolute; top: 0; height: 100%; border-radius: 4px; background: var(--accent); opacity: 0.85; }
+  .rrow:nth-child(even) b { background: var(--green); }
+  .tick { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px dashed var(--fg-1); z-index: 1; }
+  .tick i { position: absolute; top: 0; left: 4px; font-size: 0.62rem; color: var(--fg-1); font-style: normal; }
+  .head { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--fg-1); z-index: 2; }
+  .pv .rrow { height: 18px; }
+}

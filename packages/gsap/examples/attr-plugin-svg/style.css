@@ -1,0 +1,11 @@
+/* Attr plugin on SVG geometry: stage, shapes and readout */
+[data-example='gsap/attr-plugin-svg'] {
+  .demo { width: 100%; max-width: 480px; display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; }
+  .demo.compact { padding: var(--space-2); }
+  .stage { width: 100%; height: auto; background: var(--bg-surface); border-radius: 8px; }
+  .compact .stage { max-height: 180px; }
+  .ghost { fill: none; stroke: var(--fg-3); stroke-dasharray: 4 3; }
+  .shape { fill: var(--accent); }
+  .meter { fill: var(--green); }
+  .readout { margin: 0; color: var(--fg-1); font-family: var(--font-mono); font-size: 0.85rem; }
+}

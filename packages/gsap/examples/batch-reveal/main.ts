@@ -46,14 +46,15 @@ const mount: Mount = (el, { preview }) => {
         batchMax,
         onEnter: (batch) => {
           readout.textContent = `onEnter: batch of ${batch.length} (batchMax ${batchMax})`;
-          // Reveal tweens are made outside the context (ignore) so they aren't recorded in ctx.data
-          ctx.ignore(() => {
+          // Reveal tweens are made outside the context (ignore) so they aren't recorded in its data.
+          // self, not ctx: a card already in view fires onEnter while gsap.context() is still running.
+          self.ignore(() => {
             gsap.to(batch, { opacity: 1, duration: 0.4, stagger: 0.12, overwrite: true });
             gsap.to(batch.map((c) => c.firstElementChild), { y: 0, duration: 0.6, stagger: 0.12, ease: 'power2.out', overwrite: true });
           });
         },
         onLeaveBack: (batch) => {
-          ctx.ignore(() => {
+          self.ignore(() => {
             gsap.set(batch, { opacity: 0, overwrite: true });
             gsap.set(batch.map((c) => c.firstElementChild), { y: 40, overwrite: true });
           });

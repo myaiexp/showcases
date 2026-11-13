@@ -1,0 +1,16 @@
+/* Creating to() logic issues: four lanes with a dot each, stuck to the top of a scroll box */
+[data-example='gsap/st-mistakes-creating-to'] {
+  .wrap { width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: var(--space-2); }
+  .scroller { height: 190px; overflow: auto; background: var(--bg-surface); border-radius: 8px; }
+  .pv .scroller { height: 200px; border-radius: 0; }
+  .stage { position: sticky; top: 0; z-index: 1; padding: var(--space-2) var(--space-3); display: flex; flex-direction: column; gap: var(--space-2); background: var(--bg-surface); }
+  .content { height: 650px; }
+  .lane { display: grid; grid-template-columns: 8.5em 1fr; align-items: center; gap: var(--space-2); }
+  .pv .lane { grid-template-columns: 7.5em 1fr; }
+  .label { color: var(--fg-3); font: 0.64rem ui-monospace, monospace; }
+  .lane.bad .label { color: var(--red); }
+  .track { height: 22px; border-bottom: 1px solid var(--border); }
+  .dot { width: 16px; height: 16px; border-radius: 50%; background: var(--accent); }
+  .lane.bad .dot { background: var(--red); }
+  .readout { margin: 0; color: var(--fg-2); font-size: 0.76rem; }
+}

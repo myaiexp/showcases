@@ -1,0 +1,13 @@
+/* Align origins: stage, box and the pivot dot */
+[data-example='gsap/align-origins'] {
+  .root { width: 100%; display: flex; flex-direction: column; align-items: center; }
+  .stage { position: relative; width: 100%; max-width: 420px; height: 260px; background: var(--bg-surface); border-radius: 8px; overflow: hidden; }
+  .compact .stage { height: 190px; max-width: 240px; }
+  .stage.clickable { cursor: crosshair; }
+  .box { position: absolute; left: 50%; top: 50%; width: 80px; height: 80px; margin: -40px 0 0 -40px; background: var(--accent); border-radius: 8px; display: grid; place-items: center; color: #111; font-weight: 700; }
+  .compact .box { width: 56px; height: 56px; margin: -28px 0 0 -28px; }
+  .dot { position: absolute; width: 12px; height: 12px; margin: -6px 0 0 -6px; border-radius: 50%; background: var(--fg-1); box-shadow: 0 0 0 4px var(--bg-surface), 0 0 0 5px var(--fg-1); pointer-events: none; }
+  .readout { margin: var(--space-2) 0 0; font: 0.8rem ui-monospace, monospace; color: var(--fg-2); }
+  .controls { display: flex; gap: var(--space-3); align-items: center; margin-top: var(--space-2); }
+  .hint { color: var(--fg-3); font-size: 0.8rem; }
+}

@@ -1,0 +1,14 @@
+/* Horizontal strip in a pinned stage: panels, chips and the active highlight */
+[data-example='gsap/container-animation-horizontal'] {
+  .wrap { width: 100%; max-width: 520px; display: flex; flex-direction: column; gap: var(--space-2); }
+  .scroller { width: 100%; height: 220px; overflow: auto; position: relative; background: var(--bg-surface); border-radius: 8px; }
+  .pv .scroller { height: 160px; }
+  .stage { height: 220px; overflow: hidden; }
+  .pv .stage { height: 160px; }
+  .track { display: flex; width: 400%; height: 100%; }
+  .panel { width: 25%; height: 100%; display: grid; place-items: center; border-right: 1px dashed var(--border); }
+  .chip { padding: var(--space-3) var(--space-5); border-radius: 10px; background: var(--bg-raised); color: var(--fg-2); font-weight: 600; transition: background 0.2s; }
+  .panel.active .chip { background: var(--accent); color: var(--bg); }
+  .bar { color: var(--fg-2); font-size: 0.85rem; }
+  .readout { margin: 0; color: var(--fg-2); font: 0.78rem ui-monospace, monospace; }
+}

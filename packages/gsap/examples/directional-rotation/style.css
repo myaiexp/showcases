@@ -1,0 +1,12 @@
+/* Directional rotation: dials, arrows and labels */
+[data-example='gsap/directional-rotation'] {
+  .demo { width: 100%; max-width: 520px; display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; }
+  .demo.compact { gap: var(--space-1); padding: var(--space-2); }
+  .cell { display: flex; flex-direction: column; align-items: center; gap: var(--space-1); color: var(--fg-1); font-size: 0.8rem; }
+  .compact .cell { font-size: 0.6rem; }
+  .dial { position: relative; width: 84px; height: 84px; border-radius: 50%; background: var(--bg-surface); border: 2px solid var(--border); }
+  .compact .dial { width: 52px; height: 52px; }
+  .arrow { position: absolute; left: calc(50% - 2px); top: 6px; width: 4px; height: calc(50% - 6px); border-radius: 2px; background: var(--accent); }
+  .read { color: var(--fg-2); font-family: var(--font-mono); font-size: 0.7rem; text-align: center; }
+  .compact .read { font-size: 0.55rem; }
+}

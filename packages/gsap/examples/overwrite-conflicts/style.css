@@ -1,0 +1,16 @@
+/* overwrite modes: three lanes */
+[data-example='gsap/overwrite-conflicts'] {
+  .demo { width: 100%; max-width: 480px; display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; align-items: flex-start; }
+  .demo.compact { gap: var(--space-2); padding: var(--space-2); }
+  .lane { width: 100%; display: flex; flex-direction: column; gap: 3px; }
+  .lane code { color: var(--fg-1); font-family: var(--font-mono); font-size: 0.78rem; }
+  .compact .lane code { font-size: 0.58rem; }
+  .track { height: 34px; background: var(--bg-surface); border-radius: 8px; }
+  .compact .track { height: 26px; }
+  .box { width: 26px; height: 26px; margin: 4px; border-radius: 6px; background: var(--accent); }
+  .compact .box { width: 18px; height: 18px; margin: 4px; }
+  .note { color: var(--fg-2); font-size: 0.75rem; }
+  .compact .note { display: none; }
+  .btn { background: var(--bg-raised); color: var(--fg-1); border: 1px solid var(--border); border-radius: 6px; padding: 4px 12px; cursor: pointer; font: inherit; }
+  .btn:hover { border-color: var(--accent); }
+}

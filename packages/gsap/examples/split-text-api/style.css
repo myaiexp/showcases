@@ -1,0 +1,15 @@
+/* SplitText instance API: text box with outlined parts and readouts */
+[data-example='gsap/split-text-api'] {
+  .box { padding: var(--space-3); background: var(--bg-surface); border-radius: 8px; box-sizing: border-box; max-width: 100%; }
+  .box.small { width: 240px; }
+  .text { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--fg-1); }
+  .small .text { font-size: 0.9rem; }
+  .c { outline: 1px solid rgba(255, 135, 9, 0.5); }
+  .w { outline: 1px solid rgba(10, 228, 72, 0.5); }
+  .l { outline: 1px solid rgba(157, 149, 255, 0.7); }
+  .cap { color: var(--fg-2); font-size: 0.8rem; margin: var(--space-2) 0 0; max-width: 460px; text-align: center; font-variant-numeric: tabular-nums; }
+  .info { color: var(--fg-2); font-size: 0.7rem; white-space: pre-wrap; word-break: break-all; max-width: 460px; margin: var(--space-2) 0 0; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; align-items: center; margin-top: var(--space-3); color: var(--fg-2); font-size: 0.85rem; }
+  .chk { display: flex; align-items: center; gap: var(--space-2); }
+  .note { color: var(--fg-2); font-size: 0.85rem; max-width: 460px; margin: var(--space-3) 0 0; }
+}

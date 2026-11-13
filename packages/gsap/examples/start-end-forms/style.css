@@ -1,0 +1,12 @@
+/* Start and end forms: the scroll box, the trigger element and the readout */
+[data-example='gsap/start-end-forms'] {
+  .wrap { width: 100%; max-width: 520px; display: flex; flex-direction: column; gap: var(--space-2); }
+  .scroller { position: relative; width: 100%; height: 240px; overflow: auto; background: var(--bg-surface); border-radius: 8px; }
+  .pv .scroller { height: 130px; }
+  .content { position: relative; height: 1100px; }
+  .target { position: absolute; top: 100px; left: 20%; width: 50%; height: 70px; display: grid; place-items: center; border-radius: 8px; background: var(--bg-raised); color: var(--fg-2); overflow: hidden; }
+  .fill { position: absolute; inset: auto 0 0 0; height: 6px; background: var(--accent); transform-origin: left; }
+  .bar { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; color: var(--fg-2); font-size: 0.85rem; }
+  .readout { margin: 0; color: var(--fg-2); font: 0.72rem/1.5 ui-monospace, monospace; white-space: pre-wrap; }
+  .pv .readout { font-size: 0.64rem; }
+}

@@ -1,0 +1,18 @@
+/* getTweensOf inspector: tracks, boxes, buttons and the readout panel */
+[data-example='gsap/tweens-of-inspector'] {
+  .demo { width: 100%; max-width: 520px; display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-3); box-sizing: border-box; }
+  .demo.compact { gap: var(--space-1); padding: var(--space-2); }
+  .track { height: 34px; background: var(--bg-surface); border-radius: 6px; }
+  .compact .track { height: 28px; }
+  .box { width: 28px; height: 28px; margin: 3px; border-radius: 6px; display: grid; place-items: center; color: #111; font-weight: 700; font-size: 0.8rem; }
+  .compact .box { width: 22px; height: 22px; font-size: 0.65rem; }
+  .a { background: var(--accent); }
+  .b { background: var(--green); }
+  .panel { margin: var(--space-2) 0 0; padding: var(--space-2) var(--space-3); background: var(--bg-surface); border-radius: 6px; color: var(--fg-1); font-family: var(--font-mono); font-size: 0.8rem; }
+  .compact .panel { margin: 4px 0 0; padding: 4px 8px; font-size: 0.62rem; }
+  .log { min-height: 1.2em; color: var(--fg-2); font-family: var(--font-mono); font-size: 0.75rem; }
+  .compact .log { font-size: 0.62rem; }
+  .bar { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-2); }
+  .btn { background: var(--bg-raised); color: var(--fg-1); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; font: 0.75rem var(--font-mono); }
+  .btn:hover { border-color: var(--accent); }
+}

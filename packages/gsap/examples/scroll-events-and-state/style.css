@@ -1,0 +1,13 @@
+/* Scroll events and state: the scroll box, the isScrolling lamp and the event log */
+[data-example='gsap/scroll-events-and-state'] {
+  .wrap { width: 100%; max-width: 540px; display: grid; grid-template-columns: 1fr 1.5fr; gap: var(--space-2) var(--space-3); }
+  .scroller { height: 190px; overflow: auto; background: var(--bg-surface); border-radius: 8px; }
+  .pv .scroller { height: 170px; }
+  .content { height: 700px; background: repeating-linear-gradient(180deg, var(--bg-raised) 0 2px, transparent 2px 50px); }
+  .side { display: flex; flex-direction: column; gap: var(--space-2); min-width: 0; }
+  .lamp { padding: var(--space-1) var(--space-3); border-radius: 6px; border: 1px solid var(--border); color: var(--fg-3); font: 0.74rem ui-monospace, monospace; }
+  .lamp.on { border-color: var(--green); color: var(--green); }
+  .log { margin: 0; flex: 1; padding: var(--space-2); background: var(--bg-surface); border-radius: 6px; color: var(--fg-2); font: 0.68rem/1.5 ui-monospace, monospace; overflow: hidden; }
+  .bar { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-3); align-items: center; color: var(--fg-2); font-size: 0.8rem; }
+  .chk { display: inline-flex; align-items: center; gap: var(--space-1); }
+}

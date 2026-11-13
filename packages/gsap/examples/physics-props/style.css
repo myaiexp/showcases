@@ -1,0 +1,15 @@
+/* PhysicsProps: lanes with a ball each */
+[data-example='gsap/physics-props'] {
+  .stage { width: 100%; max-width: 440px; background: var(--bg-surface); border-radius: 8px; padding: var(--space-3); box-sizing: border-box; }
+  .lane { position: relative; height: 38px; border-bottom: 1px dashed var(--fg-3); }
+  .lane.tall { height: 150px; padding-top: 0; }
+  .tag { position: absolute; right: 4px; top: 2px; font-size: 0.7rem; color: var(--fg-3); }
+  .ball { position: absolute; left: 0; bottom: 4px; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); }
+  .stage.small { padding: var(--space-2); }
+  .small .lane { height: 28px; }
+  .small .lane.tall { height: 86px; }
+  .small .tag { display: none; }
+  .small .ball { width: 16px; height: 16px; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; justify-content: center; margin-top: var(--space-4); color: var(--fg-2); font-size: 0.85rem; }
+  .chk { display: flex; align-items: center; gap: var(--space-2); }
+}

@@ -1,0 +1,21 @@
+/* Flip.batch: grid/list tiles and reordering chips */
+[data-example='gsap/flip-batch'] {
+  .row { display: flex; gap: var(--space-5); align-items: flex-start; justify-content: center; }
+  .comp { position: relative; padding: var(--space-2); background: var(--bg-surface); border-radius: 8px; }
+  .a { display: grid; grid-template-columns: repeat(3, 44px); gap: 6px; }
+  .a.list { grid-template-columns: 140px; }
+  .tile { height: 44px; border-radius: 6px; background: var(--accent); color: var(--bg); display: flex; align-items: center; justify-content: center; font-weight: 600; }
+  .a.list .tile { height: 26px; }
+  .b { display: flex; flex-direction: column; gap: 6px; width: 80px; }
+  .chip { height: 26px; border-radius: 13px; background: var(--green); color: var(--bg); display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.8rem; }
+  .small { gap: var(--space-4); }
+  .small .a { grid-template-columns: repeat(3, 34px); }
+  .small .a.list { grid-template-columns: 110px; }
+  .small .tile { height: 30px; }
+  .small .a.list .tile { height: 18px; }
+  .small .b { width: 60px; }
+  .small .chip { height: 20px; }
+  .log { width: 100%; max-width: 360px; height: 8.4em; margin: var(--space-3) 0 0; padding: var(--space-2); background: var(--bg-surface); border-radius: 6px; color: var(--fg-2); font-size: 0.72rem; overflow: hidden; box-sizing: border-box; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; margin-top: var(--space-3); }
+  .note { color: var(--fg-2); font-size: 0.85rem; max-width: 420px; margin: var(--space-3) 0 0; }
+}

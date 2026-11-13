@@ -1,0 +1,12 @@
+/* endArray: bar chart stage and buttons */
+[data-example='gsap/end-array-values'] {
+  .demo { width: 100%; max-width: 480px; display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; color: var(--fg-2); font-size: 0.85rem; }
+  .demo.compact { padding: var(--space-2); }
+  .stage { width: 100%; height: auto; background: var(--bg-surface); border-radius: 8px; }
+  .compact .stage { max-height: 180px; }
+  .stage rect { fill: var(--accent); }
+  .bar { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .btn { background: var(--bg-raised); color: var(--fg-1); border: 1px solid var(--border); border-radius: 6px; padding: 4px 12px; cursor: pointer; font: inherit; }
+  .btn:hover { border-color: var(--accent); }
+  .note { margin: 0; min-height: 2.6em; }
+}

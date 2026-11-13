@@ -1,0 +1,15 @@
+/* MotionPath RawPath utilities: svg stage and readout */
+[data-example='gsap/motion-path-raw-path'] {
+  .stage { width: 100%; max-width: 520px; background: var(--bg-surface); border-radius: 8px; }
+  .base { fill: none; stroke: var(--fg-3); stroke-width: 3; }
+  .slice { fill: none; stroke: var(--accent); stroke-width: 5; stroke-linecap: round; }
+  .thru { fill: none; stroke: var(--green); stroke-width: 2.5; }
+  .anchor { fill: var(--fg-1); }
+  .shape { fill: none; stroke: var(--fg-3); stroke-width: 3; }
+  .converted { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 4 3; }
+  .dot { fill: var(--fg-1); }
+  .tangent { stroke: var(--fg-1); stroke-width: 2; }
+  .readout { color: var(--fg-2); font-size: 0.7rem; white-space: pre-wrap; max-width: 520px; margin: var(--space-2) 0 0; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; margin-top: var(--space-2); color: var(--fg-2); font-size: 0.8rem; }
+  .chk { display: flex; align-items: center; gap: var(--space-2); }
+}

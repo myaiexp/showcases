@@ -1,0 +1,8 @@
+/* ScrollTrigger.matchMedia: the resizable iframe, buttons and readout */
+[data-example='gsap/scrolltrigger-match-media-legacy'] {
+  .gsap-frame { width: 100%; max-width: 560px; height: 230px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); transition: width 0.25s; }
+  .gsap-frame.preview { height: 150px; max-width: none; border: 0; border-radius: 0; }
+  .bar { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-3); align-items: center; margin-top: var(--space-2); color: var(--fg-2); font-size: 0.8rem; }
+  .chk { display: inline-flex; align-items: center; gap: var(--space-1); }
+  .readout { margin: var(--space-2) 0 0; width: 100%; max-width: 560px; color: var(--fg-2); font: 0.68rem/1.5 ui-monospace, monospace; white-space: pre-wrap; }
+}

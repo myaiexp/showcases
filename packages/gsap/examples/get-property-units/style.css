@@ -1,0 +1,14 @@
+/* getProperty: the resizing box and the readout table */
+[data-example='gsap/get-property-units'] {
+  .demo { width: 100%; max-width: 520px; display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; color: var(--fg-2); font-size: 0.85rem; }
+  .demo.compact { gap: var(--space-2); padding: var(--space-2); font-size: 0.65rem; }
+  .stage { width: 100%; height: 56px; background: var(--bg-surface); border-radius: 8px; }
+  .compact .stage { height: 36px; }
+  .box { height: 36px; margin: 10px 0 0 0; border-radius: 6px; background: var(--accent); }
+  .compact .box { height: 20px; margin-top: 8px; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 2px 6px; border-bottom: 1px solid var(--border); }
+  .code { color: var(--fg-1); font-family: var(--font-mono); }
+  .val { color: var(--green); font-family: var(--font-mono); text-align: right; font-variant-numeric: tabular-nums; }
+  .pick { display: flex; align-items: center; gap: var(--space-2); }
+}

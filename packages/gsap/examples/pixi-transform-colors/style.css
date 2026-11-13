@@ -1,0 +1,6 @@
+/* PixiPlugin transforms and colours: canvas and caption */
+[data-example='gsap/pixi-transform-colors'] {
+  .cv { width: 100%; max-width: 480px; height: auto; border-radius: 8px; }
+  .caption { color: var(--fg-2); font-size: 0.85rem; max-width: 480px; margin: var(--space-3) 0 0; }
+  .controls { display: flex; gap: var(--space-3); margin-top: var(--space-3); }
+}

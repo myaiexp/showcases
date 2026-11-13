@@ -1,0 +1,16 @@
+/* Kill child tweens: a group of two lanes plus one outside lane */
+[data-example='gsap/kill-child-tweens-of'] {
+  .root { width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: var(--space-2); }
+  .group { position: relative; border: 1px dashed var(--fg-3); border-radius: 8px; padding: var(--space-3) var(--space-2) var(--space-2); display: flex; flex-direction: column; gap: var(--space-2); }
+  .cap { position: absolute; top: -9px; left: 10px; padding: 0 6px; background: var(--bg); font: 0.7rem ui-monospace, monospace; color: var(--fg-2); }
+  .lane { height: 34px; display: flex; align-items: center; background: var(--bg-surface); border-radius: 6px; }
+  .root > .lane { margin-top: var(--space-1); }
+  .box { width: 30px; height: 30px; border-radius: 6px; }
+  .blue { background: var(--cyan); }
+  .green { background: var(--green); }
+  .red { background: var(--red); }
+  .compact .lane { height: 28px; }
+  .compact .box { width: 24px; height: 24px; }
+  .readout { margin: var(--space-2) 0 0; font: 0.8rem ui-monospace, monospace; color: var(--fg-2); }
+  .controls { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+}

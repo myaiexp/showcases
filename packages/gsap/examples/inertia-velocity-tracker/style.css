@@ -1,0 +1,10 @@
+/* InertiaPlugin velocity tracker: arena, ball and velocity arrow */
+[data-example='gsap/inertia-velocity-tracker'] {
+  .arena { position: relative; background: var(--bg-surface); border-radius: 8px; overflow: hidden; touch-action: none; cursor: crosshair; }
+  .ball { position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); }
+  .arrow { position: absolute; left: 0; top: 0; width: 1px; height: 3px; margin-top: -1px; background: var(--fg-1); transform-origin: 0 50%; opacity: 0; pointer-events: none; }
+  .readout { color: var(--fg-2); font-size: 0.72rem; white-space: pre; margin: var(--space-2) 0 0; font-variant-numeric: tabular-nums; }
+  .controls { display: flex; gap: var(--space-4); margin-top: var(--space-2); color: var(--fg-2); font-size: 0.85rem; }
+  .chk { display: flex; align-items: center; gap: var(--space-2); }
+  .note { color: var(--fg-2); font-size: 0.85rem; max-width: 420px; margin: var(--space-2) 0 0; }
+}

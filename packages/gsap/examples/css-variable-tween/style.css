@@ -1,0 +1,15 @@
+/* CSS variable tween: card and dots read --tone and --gap */
+[data-example='gsap/css-variable-tween'] {
+  .demo { --tone: #00bae2; --gap: 6px; width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; }
+  .demo.compact { gap: var(--space-2); padding: var(--space-2); }
+  .card { border: 3px solid var(--tone); border-radius: 10px; padding: var(--space-3); }
+  .compact .card { padding: var(--space-2); }
+  .card h4 { margin: 0 0 var(--space-1); color: var(--tone); }
+  .card p { margin: 0 0 var(--space-2); color: var(--fg-2); font-size: 0.85rem; }
+  .compact .card p { display: none; }
+  .pill { display: inline-block; padding: 2px 12px; border-radius: 99px; background: var(--tone); color: #111; font-family: var(--font-mono); font-size: 0.8rem; }
+  .dots { display: flex; gap: var(--gap); justify-content: center; }
+  .dots i { width: 18px; height: 18px; border-radius: 50%; background: var(--tone); }
+  .readout { margin: 0; color: var(--fg-1); font-family: var(--font-mono); font-size: 0.8rem; }
+  .compact .readout { font-size: 0.65rem; }
+}

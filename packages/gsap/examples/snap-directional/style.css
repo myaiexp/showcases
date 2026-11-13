@@ -1,0 +1,13 @@
+/* Snap directional: rail with snap ticks, the scroll box and the readout */
+[data-example='gsap/snap-directional'] {
+  .wrap { width: 100%; max-width: 480px; display: flex; flex-direction: column; gap: var(--space-2); }
+  .rail { position: relative; height: 28px; margin: 0 14px; border-bottom: 2px solid var(--fg-3); }
+  .ball { position: absolute; top: 0; left: 0; width: 20px; height: 20px; margin-left: -10px; border-radius: 50%; background: var(--accent); }
+  .tick { position: absolute; bottom: -6px; width: 2px; height: 12px; margin-left: -1px; background: var(--fg-2); }
+  .scroller { width: 100%; height: 150px; overflow: auto; background: var(--bg-surface); border-radius: 8px; }
+  .pv .scroller { height: 100px; }
+  .content { height: 900px; background: repeating-linear-gradient(180deg, var(--bg-raised) 0 2px, transparent 2px 60px); }
+  .bar { color: var(--fg-2); font-size: 0.85rem; }
+  .readout { margin: 0; color: var(--fg-2); font: 0.72rem/1.5 ui-monospace, monospace; white-space: pre-wrap; }
+  .pv .readout { font-size: 0.66rem; }
+}

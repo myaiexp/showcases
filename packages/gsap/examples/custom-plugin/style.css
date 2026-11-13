@@ -1,0 +1,11 @@
+/* Counter plugin: stat cards */
+[data-example='gsap/custom-plugin'] {
+  .demo { width: 100%; max-width: 520px; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; }
+  .demo.compact { gap: var(--space-2); padding: var(--space-2); }
+  .card { background: var(--bg-surface); border-radius: 10px; padding: var(--space-3); text-align: center; }
+  .num { color: var(--accent); font-family: var(--font-mono); font-size: 1.4rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .compact .num { font-size: 0.95rem; }
+  .label { color: var(--fg-2); font-size: 0.8rem; margin-top: var(--space-1); }
+  .info { grid-column: 1 / -1; margin: 0; color: var(--fg-3); font-family: var(--font-mono); font-size: 0.75rem; text-align: center; }
+  .compact .info { font-size: 0.6rem; }
+}

@@ -1,0 +1,18 @@
+/* unit helpers: looping strip, results table and prefix line */
+[data-example='gsap/unit-helpers'] {
+  .demo { width: 100%; max-width: 560px; display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-3); box-sizing: border-box; color: var(--fg-1); }
+  .demo.compact { gap: 4px; padding: var(--space-2); }
+  .strip { width: 440px; max-width: 100%; height: 36px; background: var(--bg-surface); border-radius: 8px; overflow: hidden; }
+  .compact .strip { width: 220px; height: 28px; }
+  .box { width: 28px; height: 28px; margin: 4px 0 0; border-radius: 6px; background: var(--accent); }
+  .compact .box { margin-top: 2px; }
+  .cap { color: var(--fg-2); font-family: var(--font-mono); font-size: 0.72rem; }
+  .compact .cap { font-size: 0.5rem; }
+  table { border-collapse: collapse; font-family: var(--font-mono); font-size: 0.78rem; }
+  .compact table { font-size: 0.55rem; }
+  th { color: var(--fg-2); font-weight: 500; text-align: left; padding: 2px 10px 2px 0; border-bottom: 1px solid var(--border); }
+  td { padding: 2px 10px 2px 0; color: var(--green); }
+  td:first-child { color: var(--fg-1); }
+  .prefix { margin: 0; color: var(--fg-2); font-family: var(--font-mono); font-size: 0.72rem; }
+  .field { background: var(--bg-surface); color: var(--fg-1); border: 1px solid var(--border); border-radius: 6px; padding: 5px 10px; font: inherit; font-family: var(--font-mono); max-width: 22rem; }
+}

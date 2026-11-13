@@ -1,0 +1,14 @@
+/* Draggable lockAxis and trigger: arena with three title-bar windows */
+[data-example='gsap/draggable-lock-axis-trigger'] {
+  .arena { position: relative; width: 100%; max-width: 460px; height: 260px; background: var(--bg-surface); border-radius: 8px; overflow: hidden; touch-action: none; }
+  .arena.small { height: 170px; max-width: 260px; }
+  .win { position: absolute; width: 140px; border-radius: 8px; overflow: hidden; background: #2a2a2e; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); }
+  .small .win { width: 90px; }
+  .bar { padding: 5px 8px; font-size: 0.72rem; font-weight: 600; color: #111; cursor: grab; user-select: none; }
+  .a .bar { background: #0ae448; }
+  .b .bar { background: #ff8709; }
+  .c .bar { background: #9d95ff; }
+  .body { padding: 8px; height: 46px; font-size: 0.72rem; color: var(--fg-2); }
+  .small .body { height: 36px; }
+  .note { color: var(--fg-2); font-size: 0.85rem; max-width: 460px; margin: var(--space-3) 0 0; }
+}
