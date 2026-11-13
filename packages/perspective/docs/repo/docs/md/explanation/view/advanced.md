@@ -1,0 +1,330 @@
+# Advanced View Operations
+
+Beyond the standard query configuration, `View` provides additional methods for
+interacting with hierarchical results and introspecting data.
+
+## Tree Hierarchy Operations
+
+When a `View` has `group_by` applied, the results form a tree hierarchy.
+Perspective provides methods to control which levels of the tree are expanded or
+collapsed:
+
+<div class="javascript">
+
+```javascript
+const view = await table.view({ group_by: ["Region", "Country", "City"] });
+
+// Collapse the tree at row index 5
+await view.collapse(5);
+
+// Expand the tree at row index 5
+await view.expand(5);
+
+// Set the expansion depth (0 = fully collapsed, 1 = first level, etc.)
+await view.set_depth(1);
+```
+
+</div>
+<div class="python">
+
+Using the sync API
+
+```python
+view = table.view(group_by=["Region", "Country", "City"])
+
+view.collapse(5)
+view.expand(5)
+view.set_depth(1)
+```
+
+</div>
+<div class="rust">
+
+```rust
+let view = table.view(Some(ViewConfigUpdate {
+    group_by: Some(vec!["Region".into(), "Country".into(), "City".into()]),
+    ..ViewConfigUpdate::default()
+})).await?;
+
+view.collapse(5).await?;
+view.expand(5).await?;
+view.set_depth(1).await?;
+```
+
+</div>
+
+<span class="warning">Perspective's built-in engine is lazy — aggregates for
+collapsed rows are not recalculated when the underlying `Table` is updated.
+Updates are only computed for rows that are currently visible (expanded). When a
+collapsed row is later expanded, its aggregates are calculated at that
+point.</span>
+
+## Column Range Queries
+
+`View::get_min_max` returns the minimum and maximum values for a given column,
+which is useful for setting up scales in custom visualizations:
+
+<div class="javascript">
+
+```javascript
+const [min, max] = await view.get_min_max("Sales");
+```
+
+</div>
+<div class="python">
+
+```python
+min_val, max_val = view.get_min_max("Sales")
+```
+
+</div>
+
+## Describing a View Config
+
+`Table::describe` validates a complete view config against a table and reports
+the schema a `View` built from it would have - without creating one. `describe`
+reports a `view_schema` if and only if `Table::view` with the same config would
+succeed, and the two schemas are equal. It costs no engine resources, so it is
+the right way to check a config before applying it.
+
+<div class="javascript">
+
+```javascript
+const verdict = await table.describe({
+    columns: ["Sales", "margin"],
+    group_by: ["Region"],
+    expressions: { margin: '"Profit" / "Sales"' },
+    aggregates: { margin: "avg" },
+});
+
+if ("view_schema" in verdict) {
+    // { expression_schema: { margin: "float" },
+    //   view_schema: { Sales: "float", margin: "float" } }
+} else if ("expression_errors" in verdict) {
+    // { expression_schema: {...}, expression_errors: { margin: { error_message, line, column } } }
+} else {
+    // { config_error: "Invalid column 'Sales' found in View columns." }
+}
+```
+
+</div>
+<div class="python">
+
+```python
+verdict = table.describe(
+    columns=["Sales", "margin"],
+    group_by=["Region"],
+    expressions={"margin": '"Profit" / "Sales"'},
+    aggregates={"margin": "avg"},
+)
+
+if "view_schema" in verdict:
+    ...
+elif "expression_errors" in verdict:
+    ...
+else:
+    verdict["config_error"]
+```
+
+</div>
+
+## Expression Validation
+
+`Table::validate_expressions` is a specialization of `Table::describe` over a
+config that selects no columns, so only the expressions are checked. It returns
+which expressions are valid and their inferred types, plus an `expression_alias`
+map echoing the request:
+
+<div class="javascript">
+
+```javascript
+const result = await table.validate_expressions({
+    expr1: '"Sales" + "Profit"',
+    expr2: "invalid_column + 1",
+});
+// result.expression_schema contains valid expressions and their types
+// result.errors contains invalid expressions and error messages
+```
+
+</div>
+<div class="python">
+
+```python
+result = table.validate_expressions({
+    "expr1": '"Sales" + "Profit"',
+    "expr2": "invalid_column + 1",
+})
+```
+
+</div>
+
+## View Dimensions
+
+`View::dimensions` returns the number of rows and columns in the current view,
+including information about group-by header rows:
+
+<div class="javascript">
+
+```javascript
+const dims = await view.dimensions();
+// { num_view_rows, num_view_columns, num_table_rows, num_table_columns, ... }
+```
+
+</div>
+<div class="python">
+
+```python
+dims = view.dimensions()
+```
+
+</div>
+
+## View Configuration Introspection
+
+`View::get_config` returns the full configuration used to create the view:
+
+<div class="javascript">
+
+```javascript
+const config = await view.get_config();
+// { group_by: [...], split_by: [...], sort: [...], filter: [...], ... }
+```
+
+</div>
+<div class="python">
+
+```python
+config = view.get_config()
+```
+
+</div>
+
+## Update Callbacks
+
+Register a callback to be notified whenever the underlying `Table` is updated
+and the `View` has been recalculated:
+
+<div class="javascript">
+
+```javascript
+view.on_update(
+    (updated) => {
+        console.log("View updated", updated.port_id);
+    },
+    { mode: "row" },
+);
+
+// Later, remove the callback
+view.remove_update(callback);
+```
+
+</div>
+<div class="python">
+
+```python
+def on_update(port_id, delta, reset):
+    print("View updated", port_id)
+
+view.on_update(on_update, mode="row")
+view.remove_update(on_update)
+```
+
+</div>
+
+When `mode` is set to `"row"`, the callback receives a delta of only the rows
+that changed (as Apache Arrow), which is useful for efficiently synchronizing
+tables across clients. For a `View` with `group_by`, each delta row also carries
+the `group_by` columns, named and typed as `to_arrow()` emits them and `null`
+below the row's depth, so the delta can be applied with `update()` to a replica
+indexed on those columns. The callback also receives `reset`, which is `true`
+when the update step began with `clear()` or `replace()`; the delta is then
+relative to an empty `Table`, so a replica should apply it with `replace()`
+rather than `update()`. In Python, a callback that does not declare `reset`,
+positionally or as a keyword, is called without it.
+
+## Remove Callbacks
+
+Register a callback to be notified whenever rows leave this `View`. The callback
+receives the `port_id`, the rows' keys as an Apache Arrow, and a `cause` naming
+the rule they left under. For a `View` without `group_by`, the keys are the
+`index` column values, one column per index column named after it, and it
+requires an `index`: `cause` is `"key"` when the row was removed from the
+`Table` (`remove()`; `replace()` reports the keys it does not re-supply and
+`clear()` every key) and `"filter"` when an `update()` moved the row outside the
+View's `filter`. For a `View` with `group_by`, `cause` is `"group"` and the keys
+are one column per `group_by` column named after it, `null` below the group's
+depth, for each group which no longer has any rows. A flat `View` of a
+[derived `Table`](../derived_table.md) made from a `group_rollup_mode: "flat"`
+`View` reports dissolved groups the same way but under `"key"`, since that
+`Table` is indexed on its `group_by` columns. In every case a replica indexed on
+those columns can pass the Arrow to `remove()` unchanged. It fires once per
+cause per update step, `"key"` first, only for rows which existed before that
+step:
+
+<div class="javascript">
+
+```javascript
+const callback = await view.on_remove(({ indices, port_id, cause }) => {
+    replica.remove(indices);
+});
+
+// Later, remove the callback
+await view.remove_remove(callback);
+```
+
+</div>
+<div class="python">
+
+```python
+def on_remove(port_id, indices, cause):
+    replica.remove(indices)
+
+callback = view.on_remove(on_remove)
+view.remove_remove(callback)
+```
+
+A callback that does not declare `cause`, positionally or as a keyword, is
+called without it.
+
+</div>
+
+## Constructing a `Table` from a `View`
+
+A `Table` can be constructed on a `View`, producing a read-only `Table` of that
+`View`'s output which the engine keeps current as the source is updated. See
+[Derived `Table`s](../derived_table.md) for its columns, its constraints and
+what it is good for.
+
+<div class="javascript">
+
+```javascript
+const worker = await perspective.worker();
+const table = await worker.table(data);
+const view = await table.view({ filter: [["State", "==", "Texas"]] });
+const table2 = await worker.table(view);
+table.update([{ State: "Texas", City: "Austin" }]);
+```
+
+</div>
+<div class="python">
+
+```python
+table = client.table(data)
+view = table.view(filter=[["State", "==", "Texas"]])
+table2 = client.table(view)
+table.update([{"State": "Texas", "City": "Austin"}])
+```
+
+</div>
+<div class="rust">
+
+```rust
+let opts = TableInitOptions::default();
+let data = TableData::Update(UpdateData::Csv("x,y\n1,2\n3,4".into()));
+let table = client.table(data, opts).await?;
+let view = table.view(None).await?;
+let table2 = client.table(TableData::View(view), TableInitOptions::default()).await?;
+table.update(data).await?;
+```
+
+</div>

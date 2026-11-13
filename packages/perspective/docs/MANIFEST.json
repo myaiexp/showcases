@@ -1,0 +1,402 @@
+{
+  "fetched": "2026-11-13T19:07:14.536Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/perspective-dev/perspective",
+      "ref": "v5.9.1",
+      "paths": [
+        "README.md",
+        "docs/md/**/*.md",
+        "rust/perspective-viewer/README.md",
+        "rust/perspective-js/README.md",
+        "packages/viewer-datagrid/README.md",
+        "packages/viewer-charts/README.md",
+        "packages/react/README.md"
+      ],
+      "commit": "70e80b5de3b00ad42686d8cd07c0dea8e882086b"
+    }
+  ],
+  "files": {
+    "repo/docs/md/api_reference.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/api_reference.md",
+      "sha256": "35f123b4f4a43856515124ae58388a09cbba851c055273a5c2ef6c3e3048acb2"
+    },
+    "repo/docs/md/benchmarks.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/benchmarks.md",
+      "sha256": "dfb8287192bae23781816c189331daca19333d2c54da4fe89849a2c9232080e9"
+    },
+    "repo/docs/md/explanation.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation.md",
+      "sha256": "e0ca290ab9e8f3e955b241731a8b8d45cde60a5a76559ad1292631ef40b047a5"
+    },
+    "repo/docs/md/explanation/architecture.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/architecture.md",
+      "sha256": "dc90a7bbfbc03abebb9a3b3e73566acf98efa0aa71a647fe4addfe43ec9edc73"
+    },
+    "repo/docs/md/explanation/architecture/client_only.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/architecture/client_only.md",
+      "sha256": "26af3df4f98ce335506cf95b8ff17c79cce5be4cd3db764b7a708e92966f72d6"
+    },
+    "repo/docs/md/explanation/architecture/client_server.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/architecture/client_server.md",
+      "sha256": "5100059be76c6b5977206a128ae35f651b93b7ac936e874dc171f6ae1675449a"
+    },
+    "repo/docs/md/explanation/architecture/server_only.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/architecture/server_only.md",
+      "sha256": "f3282b0c61dc1116667c4b51608e854e3d2343bc3db270b18ce5155642acc4bb"
+    },
+    "repo/docs/md/explanation/derived_table.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/derived_table.md",
+      "sha256": "1aae3fe64915ab88ece4cc6a784e2791b5c55723c123c12f2d4643ee1c47c643"
+    },
+    "repo/docs/md/explanation/join.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/join.md",
+      "sha256": "61fc3df3978a6ff4e726c4c7faf88f953d2cee5a5e56d2d80027cec81bfbbcb8"
+    },
+    "repo/docs/md/explanation/join/join_types.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/join/join_types.md",
+      "sha256": "eee7146dea37bc647af0c7260adba540d2b4fddbb2c284ccdc219a43a4574cef"
+    },
+    "repo/docs/md/explanation/join/options.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/join/options.md",
+      "sha256": "406a1489a85ccfd1b2479627d67112005773e4383d9fc5dfe181525580669f39"
+    },
+    "repo/docs/md/explanation/join/reactivity.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/join/reactivity.md",
+      "sha256": "375c9c5c15a12f99918bc5dfdc7bc9f7ba48eace35311f5f223cb741088e738b"
+    },
+    "repo/docs/md/explanation/python.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/python.md",
+      "sha256": "f505120a2900845f413054189bf729dbe82cf49046533d0eb4b270fdd93a2911"
+    },
+    "repo/docs/md/explanation/table.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/table.md",
+      "sha256": "409719b2283aa6d5d88e438d9fd4e943170a3f81bf40b4d4573784631bc810a0"
+    },
+    "repo/docs/md/explanation/table/clear_and_replace.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/table/clear_and_replace.md",
+      "sha256": "9ed581400bb340e9a91b15065bfcb1f526bfa19fec7b583b293536223a5c08a1"
+    },
+    "repo/docs/md/explanation/table/constructing_schema.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/table/constructing_schema.md",
+      "sha256": "347a29bce09eb2764536c06a994bd8009f1654a2bdee1adb8183ee40461ba312"
+    },
+    "repo/docs/md/explanation/table/loading_data.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/table/loading_data.md",
+      "sha256": "7f794b82437709e32cf99260abea3a1ba250e7a02eab2e1f5f053ce49395fbde"
+    },
+    "repo/docs/md/explanation/table/options.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/table/options.md",
+      "sha256": "1c1e65865df16f9e3f5b466be71cf033fa258098fb1d515b6339f6d429830e9c"
+    },
+    "repo/docs/md/explanation/table/schema.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/table/schema.md",
+      "sha256": "4a4d6ae93fd9fd66c7df96f1e01abc3fbc8fed7688c93d26fab1f71757b9f741"
+    },
+    "repo/docs/md/explanation/table/update_and_remove.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/table/update_and_remove.md",
+      "sha256": "9d20559f48496249262a8f7e92e68f19c7bb95a793a68e1aa57a590460661466"
+    },
+    "repo/docs/md/explanation/view.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/view.md",
+      "sha256": "54ac8e96a603df60078201a398489c9f1ca88d9fcab4af19e1583a35998616fc"
+    },
+    "repo/docs/md/explanation/view/advanced.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/view/advanced.md",
+      "sha256": "09e7cb2798cf44c275856da2f0b5f6589cb042a19ae25ec2b7b564ccc2861889"
+    },
+    "repo/docs/md/explanation/view/config/expressions.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/view/config/expressions.md",
+      "sha256": "51d00597842cb58278ef867775bfd61180045beb8e5e4021d2b13edbe990618d"
+    },
+    "repo/docs/md/explanation/view/config/grouping_and_pivots.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/view/config/grouping_and_pivots.md",
+      "sha256": "43eba2d6ac6116973c41b5de84e7880731086ae6c735032d336761e00ce778fb"
+    },
+    "repo/docs/md/explanation/view/config/selection_and_ordering.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/view/config/selection_and_ordering.md",
+      "sha256": "aacdddeac7447154fed8ce297c327f6bb14eaeb70d26ed3049f8964aeefc127e"
+    },
+    "repo/docs/md/explanation/view/config/windows.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/view/config/windows.md",
+      "sha256": "aad7cf6209ca47f3b5d441dc0f823f688e4e9f5917c8a64328c2323f7c46d894"
+    },
+    "repo/docs/md/explanation/view/querying.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/view/querying.md",
+      "sha256": "b1bb47f95370dce6d4fced7a15edc5c44174738f62cac9ee3f2bd0d14dfdc3b8"
+    },
+    "repo/docs/md/explanation/virtual_servers.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/explanation/virtual_servers.md",
+      "sha256": "e91b427279dc1bceffd394a311c536556a05c5b3cb81758a5e7b9751a0bdb586"
+    },
+    "repo/docs/md/FAQ.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/FAQ.md",
+      "sha256": "17f6ae27a6316093448046dfa758a6b0f2e5850b0bf6d665e521fd9d15f770d9"
+    },
+    "repo/docs/md/getting_started.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/getting_started.md",
+      "sha256": "cedcfef5c7e1dbab4e4e4616b04f04f2f43327217d67f2c097afd6c52664350a"
+    },
+    "repo/docs/md/glossary.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/glossary.md",
+      "sha256": "325e13eb8944b351cbc1deb53544681b9d08c012751a2a6d644c92ff4c9ff494"
+    },
+    "repo/docs/md/how_to.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to.md",
+      "sha256": "91c086129b922dacf9056258cfb7ce2526a86b0d163dbca19b7f9af98d61575e"
+    },
+    "repo/docs/md/how_to/javascript.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript.md",
+      "sha256": "26ec7cd1cb6e69c34c1f2f29f41d21d28964b769ac5d13a51d9a6735ea986bff"
+    },
+    "repo/docs/md/how_to/javascript/agent.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/agent.md",
+      "sha256": "b01c160ae959b16d69f074421505ecbc3dbeadd51204915c2d9bbee0bb6dbd8e"
+    },
+    "repo/docs/md/how_to/javascript/config_defaults.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/config_defaults.md",
+      "sha256": "50b84d7c31997275dc4eff7c765121732bc846544804f6998a9fb98161dc61be"
+    },
+    "repo/docs/md/how_to/javascript/custom_worker.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/custom_worker.md",
+      "sha256": "f9210e36ab69b0ceae2574bd1fbf59950de3959adce3a76a50dffe668d7ed500"
+    },
+    "repo/docs/md/how_to/javascript/deleting.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/deleting.md",
+      "sha256": "c3e675896b0c6e60a7ce44bb0ab947142df5cae0ce5b2f07b5fe41e66ce68dd0"
+    },
+    "repo/docs/md/how_to/javascript/events.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/events.md",
+      "sha256": "bb8f1adb87a458a285da16edf82361dcaf2a24aaece2c9aa55077d94beb45df9"
+    },
+    "repo/docs/md/how_to/javascript/importing.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/importing.md",
+      "sha256": "b378e459dfabbf09993ea24f7598970c56e06f8ec6ff9a74c771ecb4cdbdec7d"
+    },
+    "repo/docs/md/how_to/javascript/installation.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/installation.md",
+      "sha256": "504f9f19cf9698491313d87c3dc70efcc5561d1bc7a040e48376b54970760ef1"
+    },
+    "repo/docs/md/how_to/javascript/join.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/join.md",
+      "sha256": "b6c6fa71d41831b8590ad8c133b043129510c39949ce0f33ffc15aafc09b261c"
+    },
+    "repo/docs/md/how_to/javascript/layout.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/layout.md",
+      "sha256": "672d244371f04e777a5d6df37e0ec0d2cc1d87dfd2483867c096ba9f76df617f"
+    },
+    "repo/docs/md/how_to/javascript/loading_data.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/loading_data.md",
+      "sha256": "63182fcd5d84adde5812e0d4c2cb75d258c7e97858dcd74e1d764596f247e99a"
+    },
+    "repo/docs/md/how_to/javascript/map_tile_sources.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/map_tile_sources.md",
+      "sha256": "6bead9ff40d5c10db9e88269a8d0758948a5b41016bcd5da2772a4e04aac4509"
+    },
+    "repo/docs/md/how_to/javascript/nodejs_server.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/nodejs_server.md",
+      "sha256": "a20f0a7cd5a2f17b734721137a7b96fc6b9bc3f04fb82c56a534e55aca5f4a9f"
+    },
+    "repo/docs/md/how_to/javascript/plugin_settings.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/plugin_settings.md",
+      "sha256": "91abe4f1da6e99a5293c891ab370399dbe04dd69a87d330f6fb72cf340e0bbc4"
+    },
+    "repo/docs/md/how_to/javascript/react.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/react.md",
+      "sha256": "31e20d6ffb63a0fd48398e91ab876323e496081f6951c46bc789de68a4015088"
+    },
+    "repo/docs/md/how_to/javascript/save_restore.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/save_restore.md",
+      "sha256": "6c7c0c7938fbd2187ef4e41b200b53b0d87cadf20c8cfb16468f7d1c68dda59b"
+    },
+    "repo/docs/md/how_to/javascript/serializing.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/serializing.md",
+      "sha256": "5ef39a5e218c431884c552298a411a8e5801d2da384a1e61a58ee792aab9fba8"
+    },
+    "repo/docs/md/how_to/javascript/theming.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/theming.md",
+      "sha256": "36f6f4905fde2057c94208747d7b14a31632aa1517ba2983ccf53054c21c6ac9"
+    },
+    "repo/docs/md/how_to/javascript/viewer.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/viewer.md",
+      "sha256": "b4fd391544b0d9ce77cf199f5fd5b9f7bde6452e6318f1b7253e4d6776ca896b"
+    },
+    "repo/docs/md/how_to/javascript/virtual_server.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/virtual_server.md",
+      "sha256": "d80e8b831bdea33c59ffa73d9b57b899f42e8360163963e2b44090047b80a93a"
+    },
+    "repo/docs/md/how_to/javascript/virtual_server/clickhouse.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/virtual_server/clickhouse.md",
+      "sha256": "3641a4b96cf6f999383facd47e7de8c8d5609a539151914aa2bb4eae37323fc5"
+    },
+    "repo/docs/md/how_to/javascript/virtual_server/custom.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/virtual_server/custom.md",
+      "sha256": "cd8ca62470f7fcabeb66280dead05d012237470e8879cf907629eebe209a9621"
+    },
+    "repo/docs/md/how_to/javascript/virtual_server/duckdb.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/virtual_server/duckdb.md",
+      "sha256": "eff13ef1e0c33e9500916630f9ce4cb526dae0e1fca11e82302793b9a37b2cae"
+    },
+    "repo/docs/md/how_to/javascript/worker.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/javascript/worker.md",
+      "sha256": "6c300cee3fd7c639d0021ce7aecf399642a3daacba2b559315bf91177d52a5e8"
+    },
+    "repo/docs/md/how_to/python.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python.md",
+      "sha256": "36965cb2012d4eefcdc4bf9788d118b0f58d4c8bf9ef01fdaa6aa9272deb74a3"
+    },
+    "repo/docs/md/how_to/python/callbacks.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/callbacks.md",
+      "sha256": "b5d6f7aeb21f09bb35cbdb834658b3de1b8c519fc2a8cd19e830e11ba8a7fa21"
+    },
+    "repo/docs/md/how_to/python/installation.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/installation.md",
+      "sha256": "1e6eec4fe39747030ed86473808accbfe45db0212d536e0d2a9d9cfa1a8a7e7e"
+    },
+    "repo/docs/md/how_to/python/join.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/join.md",
+      "sha256": "bf94058096c93869c00cdd2976cac9db79b35004702caf7a51582b4948ffdb88"
+    },
+    "repo/docs/md/how_to/python/jupyterlab.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/jupyterlab.md",
+      "sha256": "b211f984b4f063958de6f73da39171a2d51535a04056c38f8ecb2eaf5530af89"
+    },
+    "repo/docs/md/how_to/python/multithreading.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/multithreading.md",
+      "sha256": "e17c05157341ab653afa1c6c85a4803c3ab47a3583bc3a5f50265490d5d1f4d2"
+    },
+    "repo/docs/md/how_to/python/table_data.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/table_data.md",
+      "sha256": "7ac1dbb9058445d0c501871918c3c81adc54915900046238d68e7a802aff7673"
+    },
+    "repo/docs/md/how_to/python/table.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/table.md",
+      "sha256": "06f423bb2330f36531755407aa128f10fca76cebeae3a5cfdf6a116c2f46a9aa"
+    },
+    "repo/docs/md/how_to/python/virtual_server.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/virtual_server.md",
+      "sha256": "0552f714412a3375b8846e817d7c9c08e69dde03f44be6bc71ba967ec9046b1b"
+    },
+    "repo/docs/md/how_to/python/virtual_server/clickhouse.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/virtual_server/clickhouse.md",
+      "sha256": "bd762cba2d6b8733905cc1bdd8172d5c2a7cd530855ac520e0194c250ccfb77a"
+    },
+    "repo/docs/md/how_to/python/virtual_server/custom.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/virtual_server/custom.md",
+      "sha256": "6b4deca04d6990e17f081b4b4f93aef7a9d4b6c008bb526fe9faaa93f7953f77"
+    },
+    "repo/docs/md/how_to/python/virtual_server/duckdb.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/virtual_server/duckdb.md",
+      "sha256": "831d7b9df09f1d19036aef62f3f484ba26537b5d9ded55b8e506fdd00ae49646"
+    },
+    "repo/docs/md/how_to/python/virtual_server/polars.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/virtual_server/polars.md",
+      "sha256": "b4d0b4179cbbb2521e83accd9b468869bd9cf3260ecde61d084dc5aa46283b21"
+    },
+    "repo/docs/md/how_to/python/virtual_server/postgres.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/virtual_server/postgres.md",
+      "sha256": "0b44681dc979c10679735fe7bdfc8d630e2258bd6b1efc3b4bc50b2942c0483a"
+    },
+    "repo/docs/md/how_to/python/websocket.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/python/websocket.md",
+      "sha256": "9ca79669b3fe6683638dafb2b337163597ca85bc9bf037f7c36c69cffe2e0994"
+    },
+    "repo/docs/md/how_to/rust.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/rust.md",
+      "sha256": "ec6834fa7b339495599b75010bd7a9e22d1bf95b2528e5fe6cb11f4b7d9f5611"
+    },
+    "repo/docs/md/how_to/rust/migrate.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/how_to/rust/migrate.md",
+      "sha256": "6960b674da8870d942906185f992c1ae1ae2ba4152a094b7f73946544f16a02f"
+    },
+    "repo/docs/md/integrations/fastapi.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/integrations/fastapi.md",
+      "sha256": "b347439dad3123f9abd16d979700c267385a644fc51015e54fb69d7e853f883e"
+    },
+    "repo/docs/md/integrations/frameworks.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/integrations/frameworks.md",
+      "sha256": "2264d96106065e30e705e0e727e6a2e3c0976677d1a20e35e6283f13d5f219b6"
+    },
+    "repo/docs/md/integrations/kafka.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/integrations/kafka.md",
+      "sha256": "db97c12d3944bd50aa7a36075419318d84ed562aeb7d61a343e7b5243e6c4ace"
+    },
+    "repo/docs/md/javascript.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/javascript.md",
+      "sha256": "b54298b83c3a039c48118bde6c9d4d19d64175372b5f32fc69d1ed758e62f04e"
+    },
+    "repo/docs/md/perspective.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/perspective.md",
+      "sha256": "b56e4e555bfa0feaa68c9038153b92a57e3e6c26aee87fdcdecf225dc374603e"
+    },
+    "repo/docs/md/SUMMARY.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/SUMMARY.md",
+      "sha256": "62177352a258f98d7d2130e2eb2e091a21e167b9c6097e474dad641b2b78cada"
+    },
+    "repo/docs/md/tutorials/python/tornado.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/tutorials/python/tornado.md",
+      "sha256": "4584f677ada9b8d244d05a27abe78fcf422dd4e59d2f2ab914b2e2455319c91e"
+    },
+    "repo/docs/md/use_cases/agent.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/use_cases/agent.md",
+      "sha256": "21adc0614d4fcb23b6d75ba42d7ac671c375c014eadfb09a49366e14a46f22a3"
+    },
+    "repo/docs/md/use_cases/database_ui.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/use_cases/database_ui.md",
+      "sha256": "99ab3e65ccbc7e0d53909fb05eaefb5e7fdc4c18efa1e2db70e3e3877fd33d7e"
+    },
+    "repo/docs/md/use_cases/ducklake.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/use_cases/ducklake.md",
+      "sha256": "fa4322423f5a5ef26fa45fcab1210e0d1d423fba0cd69f717833ece9b403c96d"
+    },
+    "repo/docs/md/use_cases/embedded_analytics.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/use_cases/embedded_analytics.md",
+      "sha256": "241d5c63ecc71d3173f645aba73c4bb99f99ec46160924634f155fabd22deae1"
+    },
+    "repo/docs/md/use_cases/jupyter.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/use_cases/jupyter.md",
+      "sha256": "58eaffa51834d94c6f2677f169605f3e67679bf53893fc82b9c105c58fa2d4af"
+    },
+    "repo/docs/md/use_cases/large_datasets.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/use_cases/large_datasets.md",
+      "sha256": "6893e935e9e4ddd62a38876c23f52ee7471cf6632539b52dac4bcd94409b56fc"
+    },
+    "repo/docs/md/use_cases/market_data.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/use_cases/market_data.md",
+      "sha256": "b573befe2efcca94473d20f98fb854f0380bf261bc9d6b07234600651aa4840b"
+    },
+    "repo/docs/md/use_cases/real_time_dashboard.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/use_cases/real_time_dashboard.md",
+      "sha256": "83a17214c8ddf5f9ef8637bdb8b2f3e4eedb59d9bf03c2dd0faaa4e1bb72e64f"
+    },
+    "repo/docs/md/use_cases/streaming_pivot_table.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/docs/md/use_cases/streaming_pivot_table.md",
+      "sha256": "59c127f772418cc6933d25ba4e7420052d631724fc9c41660e2b8f7a28df2a13"
+    },
+    "repo/packages/react/README.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/packages/react/README.md",
+      "sha256": "cb653119799cd9164bbc37cc2aa1568dd01b2e5b7e9ccb056131e2327b903849"
+    },
+    "repo/packages/viewer-charts/README.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/packages/viewer-charts/README.md",
+      "sha256": "76524bd03b8dc400d7d1eb5b8232b7726207c71121d0e0d3b40c767686fdba49"
+    },
+    "repo/packages/viewer-datagrid/README.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/packages/viewer-datagrid/README.md",
+      "sha256": "f3cdc75ea0f1736558ae21f61e424744eecf41e037569ede8dca808eee52b852"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/README.md",
+      "sha256": "4d9aece391904f34f592e2bc821bb856e0ac8f1dfc13066fd64467da649685c1"
+    },
+    "repo/rust/perspective-js/README.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/rust/perspective-js/README.md",
+      "sha256": "8e3e0008e98afd0cac7514afb958abab83f5249f01f1bc61c7cc2271f2f7f8b1"
+    },
+    "repo/rust/perspective-viewer/README.md": {
+      "url": "https://github.com/perspective-dev/perspective/blob/70e80b5de3b00ad42686d8cd07c0dea8e882086b/rust/perspective-viewer/README.md",
+      "sha256": "522d5dd0fd42eb676e281cfc0f40594136243acbffc09cc798c4dd7a081750c2"
+    }
+  }
+}
