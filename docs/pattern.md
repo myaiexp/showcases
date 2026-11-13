@@ -107,10 +107,12 @@ The rule is in CLAUDE.md. Why it is shaped this way:
 - **The point** is to see what each package's own docs make possible, unprompted by how
   others have used it. The comparison phase measures that gap later, so leaking
   community examples into the build would make the comparison meaningless.
-- **Allowed inputs**: `packages/<pkg>/docs/` and, from `node_modules/<npm>/`, only the
-  type definitions and the README. Official docs pages with inline snippets count as
-  docs. A standalone gallery of demos counts as examples, even an official one (a repo's
-  `examples/`, threejs.org/examples), so it isn't vendored.
+- **Allowed inputs**: `packages/<pkg>/docs/` and the package's own published code in
+  `node_modules/<npm>/`: source, type definitions and README all count as documentation,
+  because they describe the library, not how anyone used it. Official docs pages with
+  inline snippets count as docs. A standalone gallery of demos counts as examples, even
+  an official one (a repo's `examples/`, threejs.org/examples), so it isn't vendored, and
+  an `examples/` or demo folder shipped inside the npm package is off limits the same way.
 - **`docs` refs are a declaration, not proof.** The test checks only that they resolve.
   Whoever reviews a batch of new examples samples a few and confirms that each one's API
   usage appears in its cited docs.

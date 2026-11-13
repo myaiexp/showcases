@@ -17,8 +17,9 @@ enforces this. You do:
   package's vendored docs folder** `packages/<pkg>/docs/` (through `pnpm vendor-docs`).
 - **Builders never search for or read other people's examples**: no blog posts,
   CodePens, GitHub repos, Stack Overflow, AI-generated galleries, or the official site's
-  own standalone demo gallery. Read `packages/<pkg>/docs/` plus the type definitions and
-  README in `node_modules/<npm>/`, nothing else.
+  own standalone demo gallery. Read `packages/<pkg>/docs/` plus the package's own
+  published code in `node_modules/<npm>/` (source, type definitions, README), nothing
+  else. Any examples or demos shipped inside the package stay off limits.
 - **The comparison phase is the only exception.** It may search the web for community
   examples, and it writes only `packages/<pkg>/comparisons/`. It never edits an example.
 - Every pure example lists the docs files it was built from in `meta.ts` `docs`.
