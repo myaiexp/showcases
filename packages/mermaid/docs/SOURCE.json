@@ -1,0 +1,18 @@
+{
+  "license": "MIT (mermaid repo LICENSE covers the docs site source)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/mermaid-js/mermaid",
+      "ref": "mermaid@12.3.0",
+      "paths": [
+        "README.md",
+        "packages/mermaid/src/docs/intro",
+        "packages/mermaid/src/docs/syntax",
+        "packages/mermaid/src/docs/config",
+        "docs/config/setup"
+      ]
+    }
+  ]
+}
