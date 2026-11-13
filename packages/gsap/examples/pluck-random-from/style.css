@@ -1,0 +1,12 @@
+/* Pluck random: two rows of letter tiles */
+[data-example='gsap/pluck-random-from'] {
+  .root { width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: var(--space-4); }
+  .rowwrap { display: flex; flex-direction: column; gap: var(--space-2); }
+  .row { display: flex; gap: var(--space-2); }
+  .tile { flex: 1; aspect-ratio: 1; max-width: 48px; display: grid; place-items: center; border-radius: 8px; background: var(--bg-raised); color: var(--fg-1); font-weight: 700; border: 2px solid transparent; transition: opacity 0.25s, border-color 0.25s; }
+  .tile.hot { border-color: var(--accent); }
+  .tile.used { opacity: 0.25; }
+  .compact .tile { max-width: 26px; font-size: 0.8rem; }
+  .tag { font: 0.75rem ui-monospace, monospace; color: var(--fg-2); }
+  .note { font: 0.75rem ui-monospace, monospace; color: var(--fg-3); min-height: 1em; }
+}

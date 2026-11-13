@@ -1,0 +1,13 @@
+/* Smooth origin change: two boxes side by side */
+[data-example='gsap/smooth-origin-change'] {
+  .root { width: 100%; display: flex; flex-direction: column; align-items: center; }
+  .row { display: flex; gap: var(--space-5); justify-content: center; }
+  .cell { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); }
+  .slot { width: 140px; height: 140px; border: 1px dashed var(--border); border-radius: 12px; display: grid; place-items: center; }
+  .box { width: 100px; height: 100px; background: var(--accent); border-radius: 10px; opacity: 0.9; }
+  .compact .slot { width: 100px; height: 100px; }
+  .compact .box { width: 70px; height: 70px; }
+  .compact .row { gap: var(--space-3); }
+  .tag { font: 0.7rem ui-monospace, monospace; color: var(--fg-2); text-align: center; max-width: 130px; }
+  .readout { margin: var(--space-3) 0 0; font: 0.85rem ui-monospace, monospace; color: var(--fg-2); }
+}

@@ -1,0 +1,11 @@
+/* Weighted eases: curves, dots and legend */
+[data-example='gsap/weighted-eases'] {
+  .root { width: 100%; display: flex; flex-direction: column; align-items: center; }
+  .graph { width: 100%; max-width: 420px; height: 260px; overflow: visible; }
+  .compact .graph { height: 190px; }
+  .guide { stroke: var(--border); stroke-dasharray: 6 4; }
+  .curve { fill: none; stroke-width: 2; opacity: 0.85; }
+  .legend { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; font: 0.75rem ui-monospace, monospace; }
+  .controls { margin-top: var(--space-3); }
+  .chk { color: var(--fg-2); font-size: 0.85rem; }
+}

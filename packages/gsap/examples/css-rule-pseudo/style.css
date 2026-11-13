@@ -1,0 +1,7 @@
+/* CSSRule pseudo-element: row of badges and the readout */
+[data-example='gsap/css-rule-pseudo'] {
+  .row { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; }
+  .info { color: var(--fg-2); font-size: 0.85rem; max-width: 520px; margin: var(--space-3) 0 0; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; margin-top: var(--space-3); }
+  .readout { display: block; white-space: pre-wrap; max-width: 520px; margin-top: var(--space-3); color: var(--fg-2); font-size: 0.75rem; }
+}

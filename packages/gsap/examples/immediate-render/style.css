@@ -1,0 +1,14 @@
+/* immediateRender: two lanes of the same stacked from() tweens */
+[data-example='gsap/immediate-render'] {
+  .demo { width: 100%; max-width: 480px; display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; align-items: flex-start; }
+  .demo.compact { gap: var(--space-2); padding: var(--space-2); }
+  .lane { width: 100%; display: flex; flex-direction: column; gap: 4px; }
+  .lane code { color: var(--fg-2); font-family: var(--font-mono); font-size: 0.75rem; }
+  .compact .lane code { font-size: 0.55rem; }
+  .track { height: 36px; background: var(--bg-surface); border-radius: 8px; }
+  .compact .track { height: 30px; }
+  .box { width: 28px; height: 28px; margin: 4px; border-radius: 6px; background: var(--green); }
+  .compact .box { width: 22px; height: 22px; }
+  .btn { background: var(--bg-raised); color: var(--fg-1); border: 1px solid var(--border); border-radius: 6px; padding: 4px 12px; cursor: pointer; font: inherit; }
+  .btn:hover { border-color: var(--accent); }
+}

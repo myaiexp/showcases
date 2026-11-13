@@ -1,0 +1,9 @@
+/* getById and exportRoot: the iframe, controls and readout */
+[data-example='gsap/get-by-id-export-root'] {
+  .gsap-frame { width: 100%; max-width: 560px; height: 220px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg); }
+  .gsap-frame.preview { height: 200px; border: 0; border-radius: 0; }
+  .controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-2); margin-top: var(--space-3); color: var(--fg-2); font-size: 0.8rem; }
+  .btn { background: var(--bg-raised); color: var(--fg-1); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; font: inherit; }
+  .btn:hover { border-color: var(--accent); }
+  .panel { margin: var(--space-2) 0 0; color: var(--fg-1); font-family: var(--font-mono); font-size: 0.78rem; }
+}

@@ -1,0 +1,12 @@
+/* Track direction: spinning boxes with direction readouts */
+[data-example='gsap/track-direction'] {
+  .root { width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: var(--space-3); }
+  .row { display: flex; align-items: center; gap: var(--space-4); background: var(--bg-surface); border-radius: 8px; padding: var(--space-3); }
+  .box { flex: none; width: 56px; height: 56px; border-radius: 10px; background: var(--accent); }
+  .compact .box { width: 64px; height: 64px; }
+  .col { display: flex; flex-direction: column; gap: var(--space-1); }
+  .tag { font: 0.7rem ui-monospace, monospace; color: var(--fg-3); }
+  .out { font: 600 1rem ui-monospace, monospace; color: var(--fg-1); }
+  .controls { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+  .readout { margin: 0; color: var(--fg-2); font-size: 0.85rem; }
+}

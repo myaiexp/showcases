@@ -1,0 +1,13 @@
+/* Draggable liveSnap: arena with snap markers, grid and rings per mode */
+[data-example='gsap/draggable-live-snap'] {
+  .arena { position: relative; background: var(--bg-surface); border-radius: 8px; overflow: hidden; touch-action: none; }
+  .ring { position: absolute; border-radius: 50%; border: 1px dashed var(--fg-3); display: none; }
+  .m-points .ring { display: block; }
+  .dot { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: var(--fg-2); }
+  .m-grid { background-image: linear-gradient(var(--fg-3) 1px, transparent 1px), linear-gradient(90deg, var(--fg-3) 1px, transparent 1px); background-size: 40px 40px; background-position: 15px 15px; }
+  .m-polar { background-image: repeating-radial-gradient(circle at center, transparent 0 39px, var(--fg-3) 39px 40px); }
+  .box { position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 8px; background: var(--accent); cursor: grab; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; margin-top: var(--space-3); color: var(--fg-2); font-size: 0.85rem; }
+  .chk { display: flex; align-items: center; gap: var(--space-2); }
+  .readout { color: var(--fg-2); font-size: 0.85rem; margin: var(--space-2) 0 0; }
+}

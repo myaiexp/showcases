@@ -1,0 +1,16 @@
+/* random(): rows of chips and the string-form dots */
+[data-example='gsap/random-forms'] {
+  .demo { width: 100%; max-width: 560px; display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-3); box-sizing: border-box; align-items: flex-start; }
+  .demo.compact { gap: 4px; padding: var(--space-2); }
+  .row { width: 100%; display: grid; grid-template-columns: 15rem 1fr; align-items: center; gap: var(--space-2); }
+  .compact .row { grid-template-columns: 8.5rem 1fr; }
+  .row code { color: var(--fg-1); font-family: var(--font-mono); font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .compact .row code { font-size: 0.55rem; }
+  .chips { display: flex; gap: 4px; }
+  .chip { flex: 1; min-width: 0; padding: 3px 0; text-align: center; background: var(--bg-surface); border-radius: 5px; color: var(--accent); font-family: var(--font-mono); font-size: 0.7rem; font-variant-numeric: tabular-nums; }
+  .compact .chip { font-size: 0.5rem; padding: 2px 0; }
+  .dots { justify-content: center; height: 22px; align-items: center; }
+  .dots i { width: 10px; height: 10px; border-radius: 50%; background: var(--green); }
+  .btn { background: var(--bg-raised); color: var(--fg-1); border: 1px solid var(--border); border-radius: 6px; padding: 4px 12px; cursor: pointer; font: inherit; }
+  .btn:hover { border-color: var(--accent); }
+}

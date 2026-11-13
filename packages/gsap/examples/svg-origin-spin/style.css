@@ -1,0 +1,11 @@
+/* svgOrigin versus transformOrigin: two canvases side by side */
+[data-example='gsap/svg-origin-spin'] {
+  .demo { width: 100%; max-width: 640px; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; }
+  .demo.compact { gap: var(--space-2); padding: var(--space-2); }
+  .fig { margin: 0; display: flex; flex-direction: column; gap: var(--space-1); }
+  .stage { width: 100%; height: auto; background: var(--bg-surface); border-radius: 8px; }
+  .stage rect { fill: var(--accent); fill-opacity: 0.85; }
+  .pin { fill: var(--fg-1); }
+  figcaption { color: var(--fg-2); font-family: var(--font-mono); font-size: 0.75rem; text-align: center; }
+  .compact figcaption { font-size: 0.6rem; }
+}

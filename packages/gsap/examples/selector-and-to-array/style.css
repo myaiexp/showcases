@@ -1,0 +1,14 @@
+/* Scoped selector: three look-alike components */
+[data-example='gsap/selector-and-to-array'] {
+  .demo { width: 100%; max-width: 560px; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; }
+  .demo.compact { gap: var(--space-2); padding: var(--space-2); }
+  .comp { background: var(--bg-surface); border: 1px solid var(--border); border-radius: 10px; padding: var(--space-2); cursor: pointer; }
+  .comp h4 { margin: 0 0 var(--space-2); color: var(--fg-2); font-size: 0.8rem; font-weight: 500; }
+  .compact .comp h4 { font-size: 0.6rem; margin-bottom: 4px; }
+  .boxes { display: flex; gap: 4px; justify-content: center; padding-top: 18px; }
+  .box { width: 28px; height: 28px; border-radius: 6px; background: var(--accent); display: grid; place-items: center; color: #111; font-size: 0.65rem; font-weight: 700; }
+  .compact .box { width: 20px; height: 20px; font-size: 0.5rem; }
+  .panel { grid-column: 1 / -1; margin: 0; color: var(--fg-1); font-family: var(--font-mono); font-size: 0.72rem; white-space: pre-wrap; }
+  .compact .panel { font-size: 0.5rem; }
+  .hint { grid-column: 1 / -1; margin: 0; color: var(--fg-2); font-size: 0.8rem; }
+}

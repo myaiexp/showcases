@@ -1,0 +1,13 @@
+/* Ease to linear: curve, crosshair and controls */
+[data-example='gsap/ease-to-linear'] {
+  .root { width: 100%; display: flex; flex-direction: column; align-items: center; }
+  .graph { width: 100%; max-width: 420px; height: 260px; overflow: visible; }
+  .compact .graph { height: 190px; }
+  .frame { fill: none; stroke: var(--border); stroke-dasharray: 6 4; }
+  .curve { fill: none; stroke: var(--accent); stroke-width: 3; }
+  .cross { stroke: var(--orange); stroke-width: 1.5; stroke-dasharray: 4 3; }
+  .hit { fill: var(--orange); }
+  .readout { margin: var(--space-2) 0; font: 0.8rem ui-monospace, monospace; color: var(--fg-2); text-align: center; max-width: 420px; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-4); align-items: center; justify-content: center; }
+  .chk { display: flex; gap: var(--space-2); align-items: center; color: var(--fg-2); font-size: 0.85rem; }
+}

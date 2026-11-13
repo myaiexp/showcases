@@ -1,0 +1,15 @@
+/* Function-based values mistake: two trigger boxes that change size */
+[data-example='gsap/st-mistakes-function-values'] {
+  .wrap { width: 100%; max-width: 480px; display: flex; flex-direction: column; gap: var(--space-2); }
+  .scroller { height: 200px; overflow: auto; background: var(--bg-surface); border-radius: 8px; padding: 0 14px; }
+  .pv .scroller { height: 130px; }
+  .title { margin-top: 90px; padding-bottom: 4px; color: var(--fg-2); font: 0.64rem ui-monospace, monospace; }
+  .title.bad { color: var(--red); }
+  .box { height: 50px; width: 70%; border-radius: 8px; background: var(--bg-raised); display: flex; align-items: center; padding: 0 6px; box-sizing: border-box; }
+  .box.bad { background: color-mix(in srgb, var(--red) 25%, var(--bg-raised)); }
+  .big .box { height: 110px; width: 100%; }
+  .ball { flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); }
+  .tail { height: 140px; }
+  .bar { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+  .readout { margin: 0; color: var(--fg-2); font: 0.68rem/1.55 ui-monospace, monospace; white-space: pre-wrap; }
+}

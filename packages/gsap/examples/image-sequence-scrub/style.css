@@ -1,0 +1,13 @@
+/* Image sequence scrub: scroll box with a sticky canvas */
+[data-example='gsap/image-sequence-scrub'] {
+  .root { width: 100%; display: flex; flex-direction: column; align-items: center; }
+  .scroller { width: 100%; max-width: 380px; height: 240px; overflow: auto; background: var(--bg-surface); border-radius: 8px; }
+  .compact .scroller { height: 160px; max-width: 240px; overflow: hidden; }
+  .content { height: 800px; }
+  .compact .content { height: 480px; }
+  .stage { position: sticky; top: 0; display: grid; place-items: center; height: 240px; }
+  .compact .stage { height: 160px; }
+  .hint { position: absolute; right: 10px; top: 8px; font: 0.7rem ui-monospace, monospace; color: var(--fg-3); }
+  canvas { border-radius: 6px; max-width: 100%; }
+  .readout { margin: var(--space-2) 0 0; font: 0.8rem ui-monospace, monospace; color: var(--fg-2); }
+}

@@ -1,0 +1,11 @@
+/* Draggable readouts: arena and a two-column list of values */
+[data-example='gsap/draggable-readouts'] {
+  .arena { position: relative; width: 100%; max-width: 380px; height: 170px; background: var(--bg-surface); border-radius: 8px; overflow: hidden; touch-action: none; }
+  .arena.small { height: 130px; max-width: 250px; }
+  .box { position: absolute; left: 0; top: 0; width: 40px; height: 40px; border-radius: 8px; background: var(--accent); cursor: grab; }
+  .strip { display: flex; gap: var(--space-4); color: var(--fg-2); font-size: 0.85rem; margin: var(--space-3) 0 0; font-variant-numeric: tabular-nums; }
+  .grid { display: grid; grid-template-columns: repeat(2, auto 1fr); gap: 2px var(--space-3); width: 100%; max-width: 560px; margin: var(--space-3) 0 0; font-size: 0.75rem; }
+  .grid dt { color: var(--fg-3); }
+  .grid dd { margin: 0; color: var(--fg-1); font-variant-numeric: tabular-nums; }
+  .note { color: var(--fg-2); font-size: 0.85rem; margin: var(--space-3) 0 0; }
+}

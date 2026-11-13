@@ -1,0 +1,6 @@
+/* EaselPlugin color filters: the canvas and captions */
+[data-example='gsap/easel-color-filters'] {
+  .cv { width: 100%; max-width: 450px; height: auto; background: var(--bg-surface); border-radius: 8px; }
+  .caption { color: var(--fg-2); font-size: 0.85rem; max-width: 450px; margin: var(--space-3) 0 0; }
+  .controls { display: flex; gap: var(--space-3); margin-top: var(--space-3); }
+}

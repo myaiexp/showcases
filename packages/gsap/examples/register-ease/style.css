@@ -1,0 +1,16 @@
+/* registerEase: rows with a sampled curve and a moving box */
+[data-example='gsap/register-ease'] {
+  .demo { width: 100%; max-width: 520px; display: flex; flex-direction: column; gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; }
+  .demo.compact { gap: var(--space-1); padding: var(--space-2); }
+  .row { display: grid; grid-template-columns: 9rem 56px 1fr; align-items: center; gap: var(--space-3); }
+  .compact .row { grid-template-columns: 5.5rem 40px 1fr; gap: var(--space-2); }
+  .row code { color: var(--fg-1); font-family: var(--font-mono); font-size: 0.8rem; }
+  .compact .row code { font-size: 0.6rem; }
+  .curve { width: 100%; height: auto; background: var(--bg-surface); border-radius: 6px; overflow: visible; }
+  .curve polyline { fill: none; stroke: var(--fg-3); stroke-width: 2; }
+  .curve circle { fill: var(--accent); }
+  .track { height: 30px; background: var(--bg-surface); border-radius: 6px; }
+  .compact .track { height: 24px; }
+  .box { width: 24px; height: 24px; margin: 3px; border-radius: 5px; background: var(--accent); }
+  .compact .box { width: 18px; height: 18px; }
+}

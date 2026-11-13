@@ -1,0 +1,19 @@
+/* Timeline convenience methods and vars: layout, controls and readouts */
+[data-example='gsap/timeline-convenience-methods'] {
+  .wrap { width: 100%; max-width: 480px; display: flex; flex-direction: column; align-items: center; gap: var(--space-3); }
+  .wrap.pv { max-width: 250px; gap: var(--space-2); }
+  .track { position: relative; width: 100%; height: 48px; border-bottom: 1px solid var(--fg-3); }
+  .pv .track { height: 40px; }
+  .box { width: 36px; height: 36px; background: var(--accent); border-radius: 6px; }
+  .bar { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-3); align-items: center; justify-content: center; color: var(--fg-2); font-size: 0.85rem; }
+  .chk { display: inline-flex; align-items: center; gap: var(--space-2); color: var(--fg-2); font-size: 0.8rem; }
+  .readout { margin: 0; width: 100%; padding: var(--space-2) var(--space-3); background: var(--bg-surface); border-radius: 6px; color: var(--fg-2); font: 0.72rem/1.5 ui-monospace, monospace; white-space: pre-wrap; }
+  .note { margin: 0; color: var(--fg-3); font-size: 0.78rem; text-align: center; }
+  .track { height: 70px; }
+  .pv .track { height: 56px; }
+  .track .box { position: absolute; left: 0; bottom: 4px; }
+  .steps { display: flex; flex-wrap: wrap; gap: var(--space-2); justify-content: center; }
+  .step { padding: 2px 8px; border-radius: 6px; background: var(--bg-surface); color: var(--fg-3); font: 0.7rem ui-monospace, monospace; }
+  .step.on { background: var(--accent); color: var(--bg); }
+  .pv .step { font-size: 0.6rem; padding: 1px 5px; }
+}

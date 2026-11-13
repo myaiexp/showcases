@@ -1,0 +1,17 @@
+/* CustomWiggle types: tile grid with an ease plot and a swinging bar */
+[data-example='gsap/custom-wiggle-types'] {
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); width: 100%; max-width: 520px; }
+  .grid.small { grid-template-columns: repeat(3, 1fr); gap: var(--space-2); padding: 0 var(--space-3); }
+  .tile { background: var(--bg-surface); border-radius: 8px; padding: var(--space-2); display: flex; flex-direction: column; align-items: center; gap: var(--space-1); min-width: 0; }
+  svg { width: 100%; height: auto; overflow: visible; }
+  .mid { stroke: var(--fg-3); stroke-width: 0.5; stroke-dasharray: 2 2; }
+  .curve { fill: none; stroke: var(--accent); stroke-width: 1.5; }
+  .swing { height: 46px; width: 100%; display: flex; align-items: center; justify-content: center; }
+  .bar { width: 56px; height: 8px; border-radius: 4px; background: var(--fg-1); }
+  .small .swing { height: 30px; }
+  .small .bar { width: 40px; }
+  .label { color: var(--fg-2); font-size: 0.7rem; text-align: center; }
+  .small .label { display: none; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; justify-content: center; margin-top: var(--space-4); color: var(--fg-2); font-size: 0.85rem; }
+  .chk { display: flex; align-items: center; gap: var(--space-2); }
+}

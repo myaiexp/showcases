@@ -1,0 +1,15 @@
+/* Blended eases: graph, curves and controls */
+[data-example='gsap/blend-eases'] {
+  .root { width: 100%; display: flex; flex-direction: column; align-items: center; }
+  .graph { width: 100%; max-width: 420px; height: 280px; overflow: visible; }
+  .compact .graph { height: 190px; }
+  .guide { stroke: var(--border); stroke-dasharray: 6 4; stroke-width: 1; }
+  .p-start, .p-end, .p-blend { fill: none; }
+  .p-start { stroke: var(--cyan); stroke-width: 2; }
+  .p-end { stroke: var(--orange); stroke-width: 2; }
+  .p-blend { stroke: var(--green); stroke-width: 4; }
+  .ball { fill: var(--green); }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; margin-top: var(--space-2); }
+  .chk { display: flex; gap: var(--space-2); align-items: center; color: var(--fg-2); font-size: 0.85rem; }
+  .readout { color: var(--fg-2); font-size: 0.85rem; max-width: 420px; text-align: center; margin: var(--space-2) 0 0; }
+}

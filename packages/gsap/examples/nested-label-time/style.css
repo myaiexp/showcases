@@ -1,0 +1,15 @@
+/* Nested label time: lanes, parent ruler and controls */
+[data-example='gsap/nested-label-time'] {
+  .root { width: 100%; max-width: 420px; display: flex; flex-direction: column; gap: var(--space-3); }
+  .lanes { display: flex; flex-direction: column; gap: var(--space-2); background: var(--bg-surface); border-radius: 8px; padding: var(--space-2); }
+  .lane { height: 32px; display: flex; align-items: center; }
+  .box { width: 28px; height: 28px; border-radius: 6px; }
+  .compact .lane { height: 24px; }
+  .compact .box { width: 22px; height: 22px; }
+  .ruler { position: relative; height: 34px; background: var(--bg-surface); border-radius: 6px; overflow: hidden; }
+  .block { position: absolute; top: 8px; height: 18px; opacity: 0.45; border-radius: 3px; }
+  .tick { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--fg-1); }
+  .playhead { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--orange); z-index: 2; }
+  .readout { margin: 0; font: 0.75rem ui-monospace, monospace; color: var(--fg-2); }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+}

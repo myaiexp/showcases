@@ -1,0 +1,12 @@
+/* GSDevTools panel: stage that contains the panel at its bottom edge */
+[data-example='gsap/gs-devtools-panel'] {
+  .stage { position: relative; width: 100%; max-width: 560px; height: 250px; background: var(--bg-surface); border-radius: 8px; overflow: hidden; }
+  .stage.small { height: 170px; max-width: 260px; }
+  .field { padding: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); }
+  .box { width: 44px; height: 30px; border-radius: 6px; }
+  .small .box { height: 24px; }
+  .orange { background: #ff8709; }
+  .green { background: #0ae448; }
+  .grey { background: var(--fg-2); }
+  .note { color: var(--fg-2); font-size: 0.85rem; max-width: 560px; margin: var(--space-3) 0 0; }
+}

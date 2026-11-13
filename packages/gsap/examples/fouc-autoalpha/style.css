@@ -1,0 +1,17 @@
+/* FOUC: two panels, the second hidden in CSS */
+[data-example='gsap/fouc-autoalpha'] {
+  .demo { width: 100%; max-width: 520px; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); padding: var(--space-3); box-sizing: border-box; }
+  .demo.compact { gap: var(--space-2); padding: var(--space-2); }
+  .panel { background: var(--bg-surface); border-radius: 10px; padding: var(--space-3); display: flex; flex-direction: column; gap: var(--space-2); }
+  .compact .panel { padding: var(--space-2); gap: 4px; }
+  .panel code { color: var(--fg-1); font-family: var(--font-mono); font-size: 0.72rem; }
+  .compact .panel code { font-size: 0.55rem; }
+  .cards { display: flex; gap: 6px; }
+  .card { flex: 1; height: 54px; border-radius: 8px; background: var(--accent); }
+  .compact .card { height: 40px; }
+  .card.hidden { visibility: hidden; }
+  .status { color: var(--fg-2); font-size: 0.75rem; min-height: 2.4em; }
+  .compact .status { font-size: 0.55rem; }
+  .btn { grid-column: 1 / -1; justify-self: start; background: var(--bg-raised); color: var(--fg-1); border: 1px solid var(--border); border-radius: 6px; padding: 4px 12px; cursor: pointer; font: inherit; }
+  .btn:hover { border-color: var(--accent); }
+}

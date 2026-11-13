@@ -13,7 +13,8 @@ export default definePackage({
   repo: 'https://github.com/greensock/GSAP',
   added: '2026-06-14',
   // Core (docs/v3/GSAP) first, then the plugin groups in the docs overview's order
-  // (Scroll, Text, SVG, Other), then Eases and the Helper functions chapter.
+  // (Scroll, Text, SVG, Other), then Eases, the Helper functions chapter and the
+  // gsap.com/resources guides.
   sections: [
     'Getting started',
     'Tweens',
@@ -22,6 +23,7 @@ export default definePackage({
     'Utility methods',
     'Core plugins',
     'ScrollTrigger',
+    'ScrollSmoother',
     'ScrollTo',
     'Observer',
     'SplitText',
@@ -34,8 +36,13 @@ export default definePackage({
     'Draggable',
     'Inertia',
     'Physics',
+    'GSDevTools',
+    'CSSRule',
+    'Easel',
+    'Pixi',
     'Eases',
     'Custom eases',
     'Helper functions',
+    'Resources',
   ],
 });

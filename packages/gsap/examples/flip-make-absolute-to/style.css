@@ -1,0 +1,16 @@
+/* Flip.to and makeAbsolute: a lane of cards that switches layout, with lamps */
+[data-example='gsap/flip-make-absolute-to'] {
+  .lane { display: flex; gap: 8px; padding: 10px; background: var(--bg-surface); border-radius: 8px; width: 330px; box-sizing: border-box; }
+  .lane.alt { flex-direction: column; width: 140px; }
+  .card { width: 64px; height: 64px; border-radius: 8px; background: var(--accent); color: var(--bg); display: flex; align-items: center; justify-content: center; font-weight: 600; flex: none; }
+  .alt .card { width: 120px; height: 26px; }
+  .lane.small { width: 230px; gap: 6px; padding: 8px; }
+  .small .card { width: 48px; height: 48px; }
+  .small.alt .card { width: 100px; height: 20px; }
+  .small.alt { width: 120px; }
+  .lamps { display: flex; gap: var(--space-2); margin-top: var(--space-3); }
+  .lamp { width: 10px; height: 10px; border-radius: 50%; background: var(--fg-3); }
+  .lamp.on { background: var(--green); }
+  .info { color: var(--fg-2); font-size: 0.72rem; white-space: pre-wrap; max-width: 420px; margin: var(--space-3) 0 0; min-height: 5em; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; margin-top: var(--space-3); }
+}
