@@ -41,6 +41,14 @@ export interface Chart {
  * - The option docs list gauge as placeable on a matrix, but 6.1 gauges ignore
  *   coordinateSystem and centre on the canvas.
  * - Panning dataZoom faster than its update animation piles up moving axis labels.
+ * - leaveTo/leaveAnimation on a custom series element throws in 6.1.0 when its data item
+ *   is removed; the graphic component's leave transitions work.
+ * - A circular graph layout bends edges toward the centre, so an edge between opposite
+ *   nodes can't curve; place nodes with layout 'none' (and preserveAspect) instead.
+ * - Funnel label 'top'/'bottom' need orient horizontal, 'left'/'right' vertical; the
+ *   other combination warns and falls back.
+ * - Heatmap points on geo add up: set the visualMap range above one point's weight.
+ * - Re-sending a geo option resets the reader's roam; replaceMerge on geo needs `map`.
  *
  * What chart-size.md describes by hand: a container with a defined width and height, an
  * instance from echarts.init, resize() whenever the container's size changes (the
