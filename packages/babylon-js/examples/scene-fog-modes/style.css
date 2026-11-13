@@ -1,0 +1,40 @@
+/* Fog example: mode buttons and sliders under the canvas */
+[data-example='babylon-js/scene-fog-modes'] {
+  .panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: var(--bg-surface);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .panel button {
+    cursor: pointer;
+  }
+  .panel input[type='range'] {
+    accent-color: var(--accent);
+  }
+  .sliders {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2) var(--space-4);
+  }
+  .sliders .buttons {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .sliders label {
+    display: grid;
+    grid-template-columns: 11rem 1fr 3rem;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .panel button.on {
+    background: var(--accent);
+    color: var(--bg);
+  }
+}

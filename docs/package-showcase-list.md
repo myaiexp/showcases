@@ -41,7 +41,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 6 | Perspective (`@perspective-dev/viewer`) | 5 | v5 2026-07 | repo ✓ Apache | 60 | Streaming pivot/visual analytics web component |
 | 7 | MapLibre GL JS (`maplibre-gl`) ✅ built | 5 | v6 2026-07 | repo ✓ BSD | 150 | Vector maps, 3D terrain, globe. Docs are the API reference and style spec (site crawl) plus repo guides; all examples run offline on Natural Earth data and computed tiles |
 | 8 | Spark (`@sparkjsdev/spark`) | 5 | v2 2026-04 | unchecked | 30 | Gaussian splats on Three.js |
-| 9 | Babylon.js (`@babylonjs/core`) | 5 | v9 2026-03 | repo ✓ Apache | 300+ | Full engine, PBR, WebGPU |
+| 9 | **Babylon.js** (`@babylonjs/core`) ✅ built | 5 | v9 2026-03 | repo ✓ Apache | 300+ | Full engine, PBR, WebGPU |
 | 10 | cobe (`cobe`) | 5 | v2 2026-03 | README MIT | 10 | Small WebGL dotted globe |
 | 11 | AntV Infographic (`@antv/infographic`) | 5 | 0.1 2025-11 | unchecked | 40 | New, infographic templates |
 | 12 | Apache ECharts (`echarts`) | 5 | v6 2025-07 | repo ✓ Apache | 400 | Biggest chart breadth, animated, 3D |

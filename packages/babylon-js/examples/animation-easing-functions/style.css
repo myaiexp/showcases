@@ -1,0 +1,19 @@
+/* Easing example: mode buttons under the canvas */
+[data-example='babylon-js/animation-easing-functions'] {
+  .panel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: var(--bg-surface);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .panel button {
+    cursor: pointer;
+  }
+  .panel input[type='range'] {
+    accent-color: var(--accent);
+  }
+}
