@@ -1,0 +1,29 @@
+/* Shaped paragraph: row guides and centred lines */
+[data-example='pretext/shaped-paragraph'] {
+  .controls {
+    display: block;
+    margin-bottom: var(--space-2);
+    color: var(--fg-2);
+    font-size: 13px;
+  }
+  .readout {
+    margin: 0 0 var(--space-3);
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .page {
+    position: relative;
+    max-width: 100%;
+    color: var(--fg-1);
+    flex: none;
+  }
+  .guide {
+    position: absolute;
+    height: 18px;
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+  }
+  .line {
+    position: absolute;
+    white-space: pre;
+  }
+}

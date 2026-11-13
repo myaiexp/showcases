@@ -11,6 +11,9 @@ export default defineConfig({
   },
   // Relative asset URLs + hash routing: the build runs under any subpath with no rewrites.
   base: './',
+  // Examples start workers with { type: 'module' }; the default 'iife' rejects a worker's
+  // top-level await and dynamic import().
+  worker: { format: 'es' },
   build: {
     target: 'es2022',
     rolldownOptions: {

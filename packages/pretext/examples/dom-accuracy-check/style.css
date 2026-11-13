@@ -1,0 +1,61 @@
+/* Check predictions against the DOM: pass/fail grid */
+[data-example='pretext/dom-accuracy-check'] {
+  .root {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .controls {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .summary {
+    margin: 0;
+    color: var(--fg-1);
+    font-size: 13px;
+  }
+  .note {
+    margin: 0;
+    color: var(--fg-3);
+    font-size: 11px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: auto repeat(var(--cols), minmax(0, 1fr));
+    gap: 2px;
+    font-size: 11px;
+    font-variant-numeric: tabular-nums;
+  }
+  .grid .head {
+    color: var(--fg-3);
+    padding: 2px 4px;
+  }
+  .grid .cell {
+    padding: 2px 4px;
+    text-align: center;
+    background: var(--bg-surface);
+    color: var(--fg-3);
+  }
+  .grid .cell.pass {
+    background: color-mix(in srgb, var(--green, #4caf50) 28%, transparent);
+    color: var(--fg-1);
+  }
+  .grid .cell.fail {
+    background: color-mix(in srgb, var(--red, #e5534b) 32%, transparent);
+    color: var(--fg-1);
+  }
+  .probe {
+    left: 0;
+    top: 0;
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    margin: 0;
+    overflow-wrap: break-word;
+  }
+}

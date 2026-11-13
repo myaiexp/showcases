@@ -1,0 +1,45 @@
+/* Shrink-wrapped chat bubbles: shrink-wrapped bubble over the naive full-width one */
+[data-example='pretext/shrink-wrap-bubbles'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .chat {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 100%;
+  }
+  .naive {
+    display: flex;
+    background: color-mix(in srgb, var(--fg-3) 12%, transparent);
+    border-radius: 14px;
+  }
+  .bubble {
+    box-sizing: content-box;
+    flex: none;
+    padding: 8px var(--pad-x);
+    background: var(--accent);
+    color: var(--bg);
+    border-radius: 14px;
+    font: var(--font);
+    line-height: var(--lh);
+    overflow-wrap: break-word;
+  }
+  .waste {
+    flex: none;
+    background: repeating-linear-gradient(
+      -45deg,
+      color-mix(in srgb, var(--fg-3) 35%, transparent) 0 3px,
+      transparent 3px 7px
+    );
+  }
+}

@@ -1,0 +1,40 @@
+/* Auto-growing textarea: padding-free textarea inside a padded frame */
+[data-example='pretext/textarea-autosize'] {
+  .root {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .frame {
+    padding: 10px 12px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    resize: horizontal;
+  }
+  .area {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    resize: none;
+    overflow: hidden;
+    background: transparent;
+    color: var(--fg-1);
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .preview .frame {
+    resize: none;
+  }
+}

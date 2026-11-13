@@ -1,0 +1,28 @@
+/* Wrap around circle: page, disc and absolutely positioned lines */
+[data-example='pretext/wrap-around-circle'] {
+  .readout {
+    margin: 0 0 var(--space-3);
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .page {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    color: var(--fg-1);
+    touch-action: none;
+  }
+  .disc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, var(--accent), color-mix(in srgb, var(--accent) 35%, var(--bg-surface)));
+  }
+  .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: pre;
+  }
+}

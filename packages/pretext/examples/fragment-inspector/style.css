@@ -1,0 +1,77 @@
+/* Fragment inspector: a table of fragments and the painted paragraph above it */
+[data-example='pretext/fragment-inspector'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  input[type='range'] {
+    width: 100%;
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .stage {
+    color: var(--fg-1);
+    overflow-wrap: break-word;
+  }
+  .line {
+    white-space: pre;
+  }
+  .mention {
+    padding-block: 1px;
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    color: var(--accent);
+  }
+  .code {
+    padding-block: 2px;
+    border-radius: 4px;
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+  }
+  .badge {
+    border-radius: 6px;
+    background: linear-gradient(135deg, #f6b84a, #e0584a);
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 11px;
+    color: var(--fg-2);
+  }
+  th,
+  td {
+    padding: 2px 6px;
+    text-align: left;
+    white-space: pre;
+    border-bottom: 1px solid var(--border);
+    font-variant-numeric: tabular-nums;
+  }
+  th {
+    color: var(--fg-3);
+    font-weight: 500;
+  }
+  tr.odd td {
+    background: var(--bg-surface);
+  }
+  .compact th:nth-child(1),
+  .compact td:nth-child(1),
+  .compact th:nth-child(6),
+  .compact td:nth-child(6) {
+    display: none;
+  }
+  code {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--fg-3);
+  }
+  mark {
+    background: color-mix(in srgb, var(--accent) 35%, transparent);
+    color: var(--fg-1);
+  }
+}

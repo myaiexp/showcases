@@ -1,0 +1,43 @@
+/* Auto-sized table columns: absolutely positioned cells inside a sized table box */
+[data-example='pretext/natural-width-columns'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+    overflow: hidden;
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .table {
+    position: relative;
+    flex: none;
+    border: 1px solid var(--border);
+  }
+  .cell {
+    position: absolute;
+    box-sizing: content-box;
+    margin: 0;
+    padding: var(--pad-y) var(--pad-x);
+    font: 14px 'Inter Variable';
+    line-height: var(--lh);
+    color: var(--fg-1);
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    border-top: 1px solid var(--border);
+    margin-top: -1px;
+  }
+  .head {
+    font-weight: 600;
+    color: var(--fg-2);
+    border-top: 0;
+    margin-top: 0;
+  }
+  .capped {
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+  }
+}

@@ -1,0 +1,52 @@
+/* Prepare and lay out in a worker: message column with worker-height bars */
+[data-example='pretext/layout-in-a-worker'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .controls {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .controls input {
+    width: 240px;
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 10px;
+    font: 16px/22px 'Inter Variable', sans-serif;
+  }
+  .msg {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: var(--fg-1);
+    overflow-wrap: break-word;
+    font-family: 'Inter Variable', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  /* The bar's height is the number the worker posted back. */
+  .bar {
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 3px;
+    background: var(--accent);
+  }
+  .bar.off {
+    background: var(--red, #e5534b);
+  }
+}
