@@ -32,9 +32,18 @@ export interface Rendered {
  * Renders `code` with mermaid.render() and puts the SVG into `target`, replacing what was
  * there, then calls bindFunctions so click handlers and tooltips work (usage.md § Binding
  * events). Throws Mermaid's parse error for invalid code.
+ *
+ * `measureIn` is render()'s svgContainingElement: Mermaid draws there while it measures.
+ * Diagrams that size themselves from their container (Gantt takes its width from it) need
+ * the visible box here when `target` is a detached staging element.
  */
-export async function renderInto(target: HTMLElement, code: string, signal?: AbortSignal): Promise<Rendered> {
-  const { svg, bindFunctions, diagramType } = await mermaid.render(nextId(), code);
+export async function renderInto(
+  target: HTMLElement,
+  code: string,
+  signal?: AbortSignal,
+  measureIn?: Element,
+): Promise<Rendered> {
+  const { svg, bindFunctions, diagramType } = await mermaid.render(nextId(), code, measureIn);
   if (signal?.aborted) return { svg: null, diagramType };
   // The SVG string comes from mermaid.render(), which sanitizes labels itself at the
   // default 'strict' securityLevel; this is the insertion the usage docs show.

@@ -47,7 +47,7 @@ export function playground(el: HTMLElement, { preview, signal }: MountContext, o
     const mine = ++ticket;
     const staging = document.createElement('div');
     try {
-      const { diagramType } = await renderInto(staging, code, signal);
+      const { diagramType } = await renderInto(staging, code, signal, box);
       if (mine !== ticket || signal.aborted) return;
       box.replaceChildren(...staging.childNodes);
       report?.(`Rendered as ${diagramType}`);
