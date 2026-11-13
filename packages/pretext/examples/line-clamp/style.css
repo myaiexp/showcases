@@ -1,0 +1,24 @@
+/* Line clamp: the clamped box and its controls */
+[data-example='pretext/line-clamp'] {
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    margin-bottom: var(--space-3);
+    color: var(--fg-2);
+    font-size: 13px;
+  }
+  .readout {
+    margin: 0 0 var(--space-3);
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .box {
+    max-width: 100%;
+    color: var(--fg-1);
+    border-right: 1px dashed var(--accent);
+  }
+  .box div {
+    white-space: pre;
+  }
+}

@@ -1,0 +1,53 @@
+/* Prepend without layout shift: a flowing feed with the anchor row outlined */
+[data-example='pretext/prepend-without-jump'] {
+  .root {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .controls {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    font-size: 13px;
+    color: var(--fg-2);
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .scroller {
+    height: 340px;
+    overflow-y: auto;
+    /* The browser's own scroll anchoring would fight the manual re-anchor. */
+    overflow-anchor: none;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+  }
+  .row {
+    box-sizing: border-box;
+    padding: 4px 12px;
+  }
+  .bubble {
+    box-sizing: border-box;
+    padding: 8px 12px;
+    color: var(--fg-1);
+    overflow-wrap: break-word;
+    background: var(--bg-surface);
+    border-radius: 10px;
+  }
+  .anchor .bubble {
+    outline: 2px solid var(--accent);
+  }
+  .preview .scroller {
+    height: 150px;
+    scrollbar-width: none;
+  }
+  .preview .readout {
+    font-size: 11px;
+  }
+}

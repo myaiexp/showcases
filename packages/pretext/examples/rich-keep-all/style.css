@@ -1,0 +1,41 @@
+/* Korean mentions with keep-all: default and keep-all columns */
+[data-example='pretext/rich-keep-all'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3) var(--space-5);
+    justify-content: center;
+  }
+  input[type='range'] {
+    width: 100%;
+  }
+  .root.compact {
+    flex-wrap: nowrap;
+    gap: var(--space-3);
+  }
+  h4 {
+    margin: 0 0 var(--space-2);
+    color: var(--fg-3);
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .readout {
+    margin: var(--space-2) 0 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .stage {
+    color: var(--fg-1);
+    overflow-wrap: break-word;
+  }
+  .line {
+    white-space: pre;
+  }
+  .mention {
+    padding-block: 1px;
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    color: var(--accent);
+  }
+}

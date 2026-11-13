@@ -1,0 +1,33 @@
+/* Mixed fonts: body, bold and padded code runs painted per line */
+[data-example='pretext/mixed-fonts'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+  }
+  input[type='range'] {
+    width: 100%;
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+    align-self: flex-start;
+  }
+  .stage {
+    color: var(--fg-1);
+    overflow-wrap: break-word;
+    align-self: flex-start;
+  }
+  .line {
+    white-space: pre;
+  }
+  .code {
+    padding-block: 2px;
+    background: color-mix(in srgb, var(--accent) 16%, transparent);
+    color: var(--accent);
+    border-radius: 4px;
+  }
+}

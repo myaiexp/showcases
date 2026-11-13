@@ -1,0 +1,51 @@
+/* Lay out under another locale: side-by-side line columns */
+[data-example='pretext/set-locale'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    align-items: center;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .controls input[type='range'] {
+    width: 220px;
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .cols {
+    display: grid;
+    grid-template-columns: repeat(var(--cols, 4), minmax(0, 1fr));
+    gap: var(--space-2);
+  }
+  .col h4 {
+    margin: 0 0 var(--space-1);
+    font-size: 11px;
+    color: var(--fg-3);
+    font-weight: 600;
+  }
+  .lines {
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+    overflow: hidden;
+  }
+  .line {
+    white-space: pre;
+    color: var(--fg-1);
+    overflow: hidden;
+  }
+  .line.differs {
+    background: color-mix(in srgb, var(--accent) 22%, transparent);
+    outline: 1px solid var(--accent);
+    outline-offset: -1px;
+  }
+}

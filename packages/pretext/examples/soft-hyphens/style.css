@@ -1,0 +1,42 @@
+/* Soft hyphens: two columns of painted lines */
+[data-example='pretext/soft-hyphens'] {
+  .controls {
+    display: block;
+    margin-bottom: var(--space-3);
+    color: var(--fg-2);
+    font-size: 13px;
+  }
+  .readout {
+    margin: 0 0 var(--space-3);
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .grid {
+    display: flex;
+    gap: var(--space-5);
+    align-items: flex-start;
+    color: var(--fg-1);
+  }
+  .col h4 {
+    margin: 0 0 var(--space-2);
+    color: var(--fg-3);
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .body {
+    border-right: 1px dashed var(--accent);
+  }
+  .line {
+    white-space: pre;
+  }
+  .hy {
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .probe {
+    position: absolute;
+    visibility: hidden;
+    overflow-wrap: break-word;
+    pointer-events: none;
+  }
+}

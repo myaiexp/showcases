@@ -1,0 +1,35 @@
+/* Fit text to a box: controls, readout and the box with its text */
+[data-example='pretext/fit-text-to-box'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    width: 100%;
+  }
+  .controls textarea {
+    width: 100%;
+    resize: vertical;
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .box {
+    max-width: 100%;
+    overflow: hidden;
+    outline: 1px dashed var(--accent);
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+  }
+  .para {
+    color: var(--fg-1);
+    overflow-wrap: break-word;
+  }
+}

@@ -1,0 +1,45 @@
+/* word-break: keep-all: two painted panels, default and keep-all */
+[data-example='pretext/keep-all'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .controls {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+  }
+  .panels {
+    display: flex;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .panel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 11px;
+  }
+  .para {
+    margin: 0;
+    color: var(--fg-1);
+    overflow-wrap: break-word;
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+  }
+  .preview .panels {
+    flex-wrap: nowrap;
+    gap: var(--space-2);
+    max-height: 190px;
+    overflow: hidden;
+  }
+  .preview .readout {
+    font-size: 10px;
+  }
+}

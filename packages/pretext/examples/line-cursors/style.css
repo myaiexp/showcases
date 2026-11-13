@@ -1,0 +1,53 @@
+/* Line cursors: controls and the table of lines */
+[data-example='pretext/line-cursors'] {
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    align-items: center;
+    margin-bottom: var(--space-2);
+    color: var(--fg-2);
+    font-size: 13px;
+  }
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .title {
+    margin: var(--space-2) 0;
+    color: var(--fg-1);
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .note {
+    margin: 0 0 var(--space-3);
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  table {
+    border-collapse: collapse;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--fg-1);
+  }
+  th {
+    padding: 2px 8px 2px 0;
+    text-align: left;
+    color: var(--fg-3);
+    font-weight: 500;
+  }
+  td {
+    padding: 2px 8px 2px 0;
+    white-space: pre;
+    border-top: 1px solid var(--border);
+  }
+  td.text {
+    font-family: 'Inter Variable', sans-serif;
+    font-size: 13px;
+    color: var(--accent);
+  }
+  td.mid {
+    color: var(--accent);
+    font-weight: 700;
+  }
+}

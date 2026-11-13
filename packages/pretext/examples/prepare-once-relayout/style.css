@@ -1,0 +1,33 @@
+/* Prepare once, relayout: stacked paragraphs boxed at their predicted heights */
+[data-example='pretext/prepare-once-relayout'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .stage {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 520px;
+    overflow: hidden;
+  }
+  .preview .stage {
+    max-height: 130px;
+  }
+  .para {
+    flex-shrink: 0;
+    margin: 0;
+    color: var(--fg-1);
+    overflow-wrap: break-word;
+    overflow: hidden;
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    outline: 1px dashed var(--accent);
+  }
+}

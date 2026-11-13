@@ -1,0 +1,34 @@
+/* Letter spacing: painted paragraph over its predicted box */
+[data-example='pretext/letter-spacing'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .stage {
+    position: relative;
+  }
+  .predicted {
+    position: absolute;
+    inset: 0 auto auto 0;
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    outline: 1px dashed var(--accent);
+  }
+  .para {
+    position: relative;
+    margin: 0;
+    color: var(--fg-1);
+    overflow-wrap: break-word;
+  }
+}

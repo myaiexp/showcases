@@ -1,0 +1,63 @@
+/* Label overflow check: buttons at one width, wrapping ones flagged red */
+[data-example='pretext/label-overflow-check'] {
+  .root {
+    width: 100%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 64px auto 1fr;
+    align-items: start;
+    gap: var(--space-3);
+    font-size: 11px;
+    color: var(--fg-3);
+  }
+  .button {
+    box-sizing: border-box;
+    text-align: center;
+    overflow-wrap: break-word;
+    color: var(--bg);
+    background: var(--accent);
+    border-radius: 6px;
+  }
+  .bad .button {
+    background: #d6453d;
+    color: #fff;
+    box-shadow: 0 0 0 2px color-mix(in srgb, #d6453d 40%, transparent);
+  }
+  .bad .note {
+    color: #ef6a62;
+  }
+  .lang {
+    padding-top: 10px;
+  }
+  .note {
+    padding-top: 10px;
+    white-space: nowrap;
+  }
+  .preview .row {
+    grid-template-columns: auto;
+    gap: 2px;
+  }
+  .preview .lang,
+  .preview .note {
+    display: none;
+  }
+  .preview .list {
+    gap: 6px;
+    align-items: center;
+  }
+}

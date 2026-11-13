@@ -1,0 +1,7 @@
+{
+  "license": "MIT (repo LICENSE, covers README and CHANGELOG)",
+  "redistribute": true,
+  "sources": [
+    { "kind": "git", "repo": "https://github.com/chenglou/pretext", "ref": "v1.0.0", "paths": ["README.md", "CHANGELOG.md"] }
+  ]
+}

@@ -1,0 +1,28 @@
+/* Column continuation: three fixed-height columns with a cursor note under each */
+[data-example='pretext/column-continuation'] {
+  .controls {
+    display: block;
+    margin-bottom: var(--space-3);
+    color: var(--fg-2);
+    font-size: 13px;
+  }
+  .grid {
+    display: flex;
+    align-items: flex-start;
+    color: var(--fg-1);
+  }
+  .col {
+    overflow: hidden;
+    border-top: 2px solid var(--accent);
+  }
+  .col div {
+    white-space: pre;
+  }
+  .note {
+    margin-top: var(--space-2);
+    color: var(--fg-2);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    line-height: 1.3;
+  }
+}

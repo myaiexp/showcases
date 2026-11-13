@@ -1,0 +1,50 @@
+/* Resolve rem sizes to px: scoped root, painted paragraphs and readout */
+[data-example='pretext/rem-to-px'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .controls {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: var(--space-2) var(--space-3);
+    align-items: center;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+    white-space: pre-line;
+    font-variant-numeric: tabular-nums;
+  }
+  /* This block plays the part of <html>: its font-size is the "root" the em below resolves against. */
+  .scope {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .box {
+    position: relative;
+  }
+  .predicted {
+    position: absolute;
+    inset: 0 auto auto 0;
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    outline: 1px dashed var(--accent);
+  }
+  .para {
+    position: relative;
+    margin: 0;
+    color: var(--fg-1);
+    overflow-wrap: break-word;
+  }
+  .tag {
+    font-size: 11px;
+    color: var(--fg-3);
+    margin: 0;
+  }
+}

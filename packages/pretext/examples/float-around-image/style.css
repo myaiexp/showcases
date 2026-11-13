@@ -1,0 +1,38 @@
+/* Float around image: the page, the floated box and absolutely positioned lines */
+[data-example='pretext/float-around-image'] {
+  .root {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    max-width: 100%;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    color: var(--fg-2);
+    font-size: 13px;
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .page {
+    position: relative;
+    color: var(--fg-1);
+    line-height: 22px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .float-box {
+    position: absolute;
+    top: 0;
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 30%, var(--bg-surface)));
+  }
+  .line {
+    position: absolute;
+    white-space: pre;
+  }
+}

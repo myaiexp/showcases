@@ -1,0 +1,40 @@
+/* Measure without a browser canvas: a monospace terminal grid */
+[data-example='pretext/custom-measurer'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .controls textarea {
+    width: 100%;
+    resize: vertical;
+  }
+  .controls input[type='range'] {
+    width: 240px;
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .term {
+    margin: 0;
+    padding: var(--space-2);
+    background: #0d1117;
+    color: #7ee787;
+    border: 1px solid var(--border);
+    font: 400 13px/16px 'JetBrains Mono', monospace;
+    white-space: pre;
+    overflow: hidden;
+    width: max-content;
+    max-width: 100%;
+  }
+}

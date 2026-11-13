@@ -1,0 +1,51 @@
+/* Rich text around a float: absolutely positioned lines and a floated block */
+[data-example='pretext/rich-around-float'] {
+  .root {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: center;
+  }
+  .controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-2);
+    width: 100%;
+    font-size: 12px;
+    color: var(--fg-2);
+  }
+  .controls label {
+    display: flex;
+    flex-direction: column;
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 12px;
+    align-self: flex-start;
+  }
+  .stage {
+    position: relative;
+    color: var(--fg-1);
+    overflow-wrap: break-word;
+    align-self: flex-start;
+  }
+  .line {
+    white-space: pre;
+  }
+  .float {
+    position: absolute;
+    top: 0;
+    border-radius: 8px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 55%, transparent), color-mix(in srgb, var(--accent) 15%, transparent));
+    border: 1px solid var(--accent);
+    box-sizing: border-box;
+  }
+  .mention {
+    padding-block: 1px;
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    color: var(--accent);
+  }
+}
