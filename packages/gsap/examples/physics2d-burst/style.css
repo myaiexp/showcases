@@ -1,0 +1,37 @@
+/* Physics2D burst: a dark stage with a point that sprays dots */
+[data-example='gsap/physics2d-burst'] {
+  .stage {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 8px;
+    background: var(--bg-surface);
+  }
+  .origin {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 0;
+    height: 0;
+  }
+  .dot {
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+}

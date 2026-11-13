@@ -1,0 +1,41 @@
+/* Keyframes three forms: the three stages and their captions */
+[data-example='gsap/keyframes-three-forms'] {
+  .stages {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    max-width: 180px;
+    text-align: center;
+  }
+  .col code {
+    color: var(--fg-3);
+    font-size: 0.7rem;
+  }
+  .col strong {
+    color: var(--fg-1);
+    font-size: 0.85rem;
+  }
+  .stage {
+    position: relative;
+    width: var(--stage);
+    height: var(--stage);
+    border: 1px dashed var(--fg-3);
+    border-radius: 4px;
+  }
+  .box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: var(--box);
+    height: var(--box);
+    background: var(--accent);
+    border-radius: 4px;
+  }
+}

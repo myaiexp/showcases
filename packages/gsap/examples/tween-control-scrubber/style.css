@@ -1,0 +1,30 @@
+/* Tween control scrubber: track, box, control bars and the readout */
+[data-example='gsap/tween-control-scrubber'] {
+  .track {
+    width: 230px;
+    height: 48px;
+    border-bottom: 1px solid var(--fg-3);
+  }
+  .box {
+    width: 44px;
+    height: 44px;
+    background: var(--accent);
+    border-radius: 6px;
+  }
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2) var(--space-3);
+    align-items: center;
+    justify-content: center;
+    margin-top: var(--space-4);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .readout {
+    margin-top: var(--space-4);
+    color: var(--fg-3);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}

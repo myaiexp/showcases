@@ -1,0 +1,50 @@
+/* Repeat, yoyo and repeatRefresh: three tracks with a ball each */
+[data-example='gsap/repeat-yoyo-refresh'] {
+  .rows {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .rows.compact { gap: var(--space-2); }
+  .rows.compact .row { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .rows.compact .track { width: 240px; }
+  .row {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    min-width: 110px;
+    max-width: 220px;
+    font-size: 0.8rem;
+    color: var(--fg-1);
+  }
+  .title code {
+    color: var(--fg-3);
+    font-size: 0.68rem;
+  }
+  .track {
+    position: relative;
+    width: 200px;
+    height: 24px;
+    border-bottom: 1px solid var(--fg-3);
+  }
+  .ball {
+    position: absolute;
+    left: calc(50% - 11px);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .delay {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    margin-top: var(--space-4);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,38 @@
+/* Tween types compared: one labelled track per tween type */
+[data-example='gsap/tween-types-compared'] {
+  .rows {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+  .row {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+  }
+  .label {
+    display: flex;
+    flex-direction: column;
+    min-width: 64px;
+    color: var(--fg-2);
+    font-size: 0.8rem;
+  }
+  .label strong { color: var(--fg-1); }
+  .label code, .label span {
+    color: var(--fg-3);
+    font-size: 0.7rem;
+  }
+  .track {
+    position: relative;
+    width: 190px;
+    height: 24px;
+    border-bottom: 1px solid var(--fg-3);
+  }
+  .dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .btn { margin-top: var(--space-4); }
+}

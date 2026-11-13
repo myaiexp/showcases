@@ -1,0 +1,38 @@
+/* ScrollTrigger.batch reveal: scroller and the grid of cards */
+[data-example='gsap/batch-reveal'] {
+  .scroller {
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    position: relative;
+    background: var(--bg-surface);
+    border-radius: 8px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+  }
+  .card {
+    height: 64px;
+  }
+  .face {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #fff;
+    background: hsl(var(--hue) 60% 45%);
+  }
+  .bar {
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+  }
+  .readout {
+    margin: var(--space-2) 0 0;
+    font-size: 0.85rem;
+    color: var(--fg-2);
+  }
+}

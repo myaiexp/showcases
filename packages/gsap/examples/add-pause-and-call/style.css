@@ -1,0 +1,8 @@
+/* Pauses and callbacks: track, box and event log */
+[data-example='gsap/add-pause-and-call'] {
+  .track { height: 44px; padding: 8px 0; border-bottom: 2px solid var(--fg-3); box-sizing: content-box; }
+  .box { width: 36px; height: 36px; border-radius: 6px; background: #4f9cff; }
+  .status { color: var(--fg-1); font-size: 0.9rem; margin: var(--space-2) 0; min-height: 1.4em; }
+  .log { list-style: none; margin: 0; padding: 0; color: var(--fg-2); font-size: 0.8rem; min-height: 6em; }
+  .row { display: flex; gap: var(--space-2); margin-top: var(--space-3); }
+}

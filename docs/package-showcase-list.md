@@ -46,7 +46,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 11 | AntV Infographic (`@antv/infographic`) | 5 | 0.1 2025-11 | unchecked | 40 | New, infographic templates |
 | 12 | Apache ECharts (`echarts`) | 5 | v6 2025-07 | repo ✓ Apache | 400 | Biggest chart breadth, animated, 3D |
 | 13 | VChart (`@visactor/vchart`) | 5 | v2 2025-06 | unchecked | 150 | Narrative/animated charts |
-| 14 | GSAP (`gsap`) *(legacy in gallery)* | 5 | 3.x, plugins free since 2025 | site | 250 | SplitText, MorphSVG, ScrollTrigger, Flip. Non-OSI licence |
+| 14 | GSAP (`gsap`) ✅ built | 5 | 3.x, plugins free since 2025 | site | 250 | SplitText, MorphSVG, ScrollTrigger, Flip. Non-OSI licence |
 | 15 | Paper Shaders (`@paper-design/shaders`) | 5 | 0.0.x 2024-10 | unchecked | 30 | Shader-effect pack, vanilla build alongside React |
 | 16 | PlayCanvas (`playcanvas`) | 5 | v2 2024-08 | repo ✓ MIT | 200+ | Engine with Gaussian splats |
 | 17 | AntV G6 (`@antv/g6`) | 5 | v5 2024-06 | unchecked MIT | 120 | Graph visualisation |

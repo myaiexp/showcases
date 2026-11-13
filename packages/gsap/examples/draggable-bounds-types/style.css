@@ -1,0 +1,49 @@
+/* Draggable bounds and types: three small demo areas side by side */
+[data-example='gsap/draggable-bounds-types'] {
+  .row {
+    display: flex;
+    gap: var(--space-4);
+    justify-content: center;
+    width: 100%;
+  }
+  .panel { flex: 1 1 0; min-width: 0; max-width: 160px; }
+  .area {
+    position: relative;
+    height: 120px;
+    border: 1px solid var(--fg-3);
+    border-radius: 8px;
+    background: var(--bg-surface);
+  }
+  .knob {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--accent);
+    cursor: grab;
+  }
+  .axis .knob { top: 42px; }
+  .dial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dial .knob {
+    position: static;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--bg);
+  }
+  .out {
+    margin: var(--space-2) 0 0;
+    color: var(--fg-2);
+    font-size: 0.8rem;
+    min-height: 2.4em;
+  }
+}

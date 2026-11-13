@@ -1,0 +1,59 @@
+/* Draggable hitTest: stage with two drop zones and a tray of chips */
+[data-example='gsap/draggable-hit-test-drop'] {
+  .stage {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 170px;
+    border-radius: 8px;
+    background: var(--bg-surface);
+  }
+  .zone {
+    position: absolute;
+    top: 12px;
+    width: 38%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--fg-3);
+    border-radius: 8px;
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .zone:nth-child(1) { left: 4%; }
+  .zone:nth-child(2) { right: 4%; }
+  .zone.hit {
+    border-color: var(--green);
+    border-style: solid;
+    color: var(--green);
+  }
+  .tray {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    gap: var(--space-3);
+  }
+  .chip {
+    padding: var(--space-2) var(--space-3);
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 0.85rem;
+    cursor: grab;
+  }
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+}

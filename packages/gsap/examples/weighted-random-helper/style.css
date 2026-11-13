@@ -1,0 +1,43 @@
+/* Weighted random histogram: six bars scaled from the bottom */
+[data-example='gsap/weighted-random-helper'] {
+  .chart {
+    display: flex;
+    align-items: flex-end;
+    gap: var(--space-2);
+    width: 100%;
+    max-width: 360px;
+    height: 150px;
+  }
+  .col {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--fg-2);
+    font-size: 0.8rem;
+  }
+  .bar {
+    width: 100%;
+    flex: 1;
+    border-radius: 4px 4px 0 0;
+    background: var(--accent);
+    transform-origin: bottom;
+    transform: scaleY(0);
+  }
+  .col span { margin-top: 4px; }
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .readout {
+    margin: var(--space-2) 0 0;
+    color: var(--fg-2);
+    font-size: 0.8rem;
+  }
+}

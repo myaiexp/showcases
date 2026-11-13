@@ -1,0 +1,24 @@
+/* Flip filter: colour-coded tile grid and filter buttons */
+[data-example='gsap/flip-filter-enter-leave'] {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    justify-content: center;
+    width: 100%;
+    max-width: 360px;
+  }
+  .tile {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+  }
+  .tile.red { background: #e5484d; }
+  .tile.green { background: #30a46c; }
+  .tile.blue { background: #3e63dd; }
+  .controls {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+  }
+}

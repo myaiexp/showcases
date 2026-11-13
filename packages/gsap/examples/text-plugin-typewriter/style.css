@@ -1,0 +1,27 @@
+/* Typewriter with TextPlugin: the sentence and its controls */
+[data-example='gsap/text-plugin-typewriter'] {
+  .line {
+    max-width: 24rem;
+    min-height: 3.2em;
+    margin: 0 0 var(--space-4);
+    padding: 0 var(--space-3);
+    color: var(--fg-1);
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3) var(--space-4);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .readout {
+    margin: var(--space-3) 0 0;
+    color: var(--fg-3);
+    font-size: 0.8rem;
+  }
+}

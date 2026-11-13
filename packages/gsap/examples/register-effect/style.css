@@ -1,0 +1,7 @@
+/* Reusable effects: row of boxes and the control strip */
+[data-example='gsap/register-effect'] {
+  .row { display: flex; gap: 12px; justify-content: center; padding: var(--space-4) 0; }
+  .box { width: 46px; height: 46px; border-radius: 8px; background: #4f9cff; cursor: pointer; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-2); justify-content: center; }
+  .readout { color: var(--fg-2); font-size: 0.85rem; margin: var(--space-3) 0 0; text-align: center; }
+}

@@ -1,0 +1,35 @@
+/* Draw SVG segments: the faint template, the animated stroke and the value buttons */
+[data-example='gsap/draw-svg-segments'] {
+  .stage {
+    width: 100%;
+    max-width: 480px;
+    overflow: visible;
+    margin-bottom: var(--space-3);
+  }
+  .template,
+  .stroke {
+    fill: none;
+  }
+  .template {
+    stroke: var(--fg-3);
+    stroke-width: 4px;
+    opacity: 0.4;
+  }
+  .stroke {
+    stroke: var(--accent);
+    stroke-width: 14px;
+    stroke-linecap: round;
+  }
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+  }
+  .readout {
+    margin: var(--space-3) 0 0;
+    color: var(--fg-2);
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 0.9rem;
+  }
+}

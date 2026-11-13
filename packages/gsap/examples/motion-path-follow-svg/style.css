@@ -1,0 +1,34 @@
+/* Motion path follow SVG: the track, the arrow and the controls */
+[data-example='gsap/motion-path-follow-svg'] {
+  .stage {
+    width: 100%;
+    max-width: 480px;
+    overflow: visible;
+    margin-bottom: var(--space-3);
+  }
+  .track {
+    fill: none;
+    stroke: var(--fg-3);
+    stroke-width: 2;
+  }
+  .arrow {
+    fill: var(--accent);
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3) var(--space-4);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .readout {
+    margin: var(--space-3) 0 0;
+    max-width: 32rem;
+    color: var(--fg-3);
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}
