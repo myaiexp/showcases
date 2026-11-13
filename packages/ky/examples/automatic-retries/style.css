@@ -1,0 +1,45 @@
+/* Automatic retries: button and coloured attempt log */
+[data-example='ky/automatic-retries'] {
+  .root {
+    width: 100%;
+    min-width: 0;
+  }
+  .btn {
+    padding: 8px 16px;
+    font: inherit;
+    font-weight: 600;
+    color: var(--accent-text);
+    background: var(--accent);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+  .log {
+    margin-top: var(--space-3);
+    padding: var(--space-3);
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 0.76rem;
+    line-height: 1.7;
+    min-height: 60px;
+    white-space: pre-wrap;
+  }
+  .line {
+    display: block;
+  }
+  .ok {
+    color: var(--green);
+  }
+  .warn {
+    color: var(--orange);
+  }
+  .dim {
+    color: var(--fg-3);
+  }
+}

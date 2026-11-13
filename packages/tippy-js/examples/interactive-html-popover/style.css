@@ -1,0 +1,42 @@
+/* Interactive HTML popover: button row, menu content and the themed tip */
+[data-example='tippy-js/interactive-html-popover'] {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-6) 0;
+  }
+  .menu {
+    min-width: 180px;
+    text-align: left;
+  }
+  .menu-head {
+    padding: var(--space-1) var(--space-3) var(--space-2);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--fg-3);
+  }
+  .menu-item {
+    display: block;
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    border: 0;
+    background: transparent;
+    color: var(--fg-1);
+    text-align: left;
+    cursor: pointer;
+  }
+  .menu-item:hover {
+    background: var(--border);
+  }
+  .tippy-box[data-theme~='accent'] {
+    background: var(--bg-raised);
+    color: var(--fg-1);
+    border: 1px solid var(--border);
+  }
+  .tippy-box[data-theme~='accent'] > .tippy-arrow {
+    color: var(--bg-raised);
+  }
+}

@@ -1,0 +1,17 @@
+/* Stagger entrance: the row of squares that animate in */
+[data-example='motion/stagger-entrance'] {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: var(--space-4);
+  }
+  .item {
+    width: 48px;
+    height: 48px;
+    background: var(--accent);
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "license": "none found (zzz.dog site; the zdog repo has no docs licence)",
+  "redistribute": false,
+  "sources": [
+    { "kind": "crawl", "start": "https://zzz.dog/", "prefix": "https://zzz.dog/", "max": 40 }
+  ]
+}

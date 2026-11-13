@@ -1,0 +1,47 @@
+/* Playable synth: key buttons and the waveform selector */
+[data-example='tone-js/playable-synth'] {
+  .keys {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .key {
+    flex: 1 1 auto;
+    min-width: 46px;
+    padding: 22px 0;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-surface);
+    color: var(--fg-1);
+    cursor: pointer;
+    transition: background 0.08s, transform 0.08s, border-color 0.08s;
+    touch-action: manipulation;
+  }
+  .key:hover {
+    border-color: var(--accent);
+  }
+  .key.lit {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    transform: translateY(2px);
+  }
+  .field {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--fg-2);
+  }
+  .select {
+    padding: 6px 10px;
+    background: var(--bg-raised);
+    color: var(--fg-1);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,36 @@
+/* Tooltips & smart placement: control row and the themed tip */
+[data-example='tippy-js/tooltips-and-smart-placement'] {
+  .center {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-6) 0;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    align-items: flex-end;
+    margin-bottom: var(--space-2);
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    color: var(--fg-2);
+  }
+  .toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    color: var(--fg-2);
+    cursor: pointer;
+  }
+  .tippy-box[data-theme~='accent'] {
+    background: var(--bg-raised);
+    color: var(--fg-1);
+    border: 1px solid var(--border);
+  }
+  .tippy-box[data-theme~='accent'] > .tippy-arrow {
+    color: var(--bg-raised);
+  }
+}

@@ -1,0 +1,56 @@
+/* Step sequencer: step cells, cursor highlight and transport row */
+[data-example='tone-js/step-sequencer'] {
+  .seq {
+    display: flex;
+    gap: 6px;
+  }
+  .step {
+    flex: 1;
+    min-width: 0;
+    aspect-ratio: 1 / 1.4;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-surface);
+    cursor: pointer;
+    transition: background 0.1s, border-color 0.1s, box-shadow 0.1s;
+    touch-action: manipulation;
+  }
+  .step.on {
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .step.cursor {
+    box-shadow: 0 0 0 2px var(--fg-1);
+  }
+  .transport {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+  }
+  .btn {
+    padding: 6px 14px;
+    background: var(--bg-raised);
+    color: var(--fg-1);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .field {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--fg-2);
+  }
+  .field span {
+    min-width: 64px;
+    color: var(--accent-text);
+  }
+  .field input {
+    width: 160px;
+    accent-color: var(--accent);
+  }
+}

@@ -1,0 +1,35 @@
+/* Tap to animate: a 3x2 grid of coloured tap targets */
+[data-example='motion/tap-to-animate'] {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .grid.small {
+    max-width: 200px;
+  }
+  .box {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg);
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+  }
+  .blue { background: var(--blue); }
+  .red { background: var(--red); }
+  .green { background: var(--green); }
+  .orange { background: var(--orange); }
+  .purple { background: var(--purple); }
+  .cyan { background: var(--cyan); }
+  .hint {
+    margin-top: var(--space-3);
+    text-align: center;
+    color: var(--fg-3);
+  }
+}

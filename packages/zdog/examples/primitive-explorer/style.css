@@ -1,0 +1,36 @@
+/* Primitive explorer: canvas sizing and the slider row */
+[data-example='zdog/primitive-explorer'] {
+  .canvas {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    max-height: 100%;
+    aspect-ratio: 760 / 600;
+    margin: 0 auto;
+    cursor: grab;
+    touch-action: none;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+  }
+  .controls .select {
+    width: auto;
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 140px;
+    color: var(--fg-2);
+  }
+  .value {
+    color: var(--accent-text);
+  }
+  input[type='range'] {
+    accent-color: var(--accent);
+  }
+}

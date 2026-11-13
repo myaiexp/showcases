@@ -1,0 +1,78 @@
+/* Nested JSON validator: editor and issue list */
+[data-example='zod/nested-json-validator'] {
+  .root {
+    width: 100%;
+    min-width: 0;
+  }
+  .editor {
+    width: 100%;
+    min-height: 220px;
+    padding: var(--space-3);
+    font-family: monospace;
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    background: var(--bg-raised);
+    color: var(--fg-1);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    outline: none;
+    resize: vertical;
+    tab-size: 2;
+  }
+  .editor:focus {
+    border-color: var(--accent);
+  }
+  .issues {
+    list-style: none;
+    margin: var(--space-3) 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .issue {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    padding: 8px 12px;
+    border: 1px solid var(--red);
+    border-radius: 6px;
+    font-size: 0.8125rem;
+    color: var(--fg-1);
+  }
+  .path {
+    font-family: monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--red);
+    white-space: nowrap;
+  }
+  .all-good {
+    margin-top: var(--space-3);
+    padding: var(--space-3);
+    border: 1px solid var(--green);
+    border-radius: 6px;
+    color: var(--green);
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .preview .editor {
+    min-height: 110px;
+    height: 110px;
+    font-size: 0.65rem;
+    resize: none;
+  }
+  .preview .issues {
+    margin-top: 6px;
+    gap: 3px;
+  }
+  .preview .issue {
+    padding: 3px 8px;
+    font-size: 0.65rem;
+  }
+  .preview .all-good {
+    margin-top: 6px;
+    padding: 6px 8px;
+    font-size: 0.7rem;
+  }
+}

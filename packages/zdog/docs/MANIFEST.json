@@ -1,0 +1,37 @@
+{
+  "fetched": "2026-11-13T12:59:22.445Z",
+  "sources": [
+    {
+      "kind": "crawl",
+      "start": "https://zzz.dog/",
+      "prefix": "https://zzz.dog/",
+      "max": 40
+    }
+  ],
+  "files": {
+    "pages/zzz-dog.md": {
+      "url": "https://zzz.dog/",
+      "sha256": "25f69914ddc5fb2824c56d55ef290502ac0edd6e859057c27d8a8e1d4819f6bf"
+    },
+    "pages/zzz-dog/api.md": {
+      "url": "https://zzz.dog/api",
+      "sha256": "997556d0e7dc736344ef0437f4c3136a25c4d2eac0429d590f39e61ed5d41764"
+    },
+    "pages/zzz-dog/extras.md": {
+      "url": "https://zzz.dog/extras",
+      "sha256": "a61fa78d0a28a65aedf7b429a68e8964575b355917c4ea6133be2582888a5544"
+    },
+    "pages/zzz-dog/getting-started.md": {
+      "url": "https://zzz.dog/getting-started",
+      "sha256": "a2f0c5373af5a1d7190dd4b458b47ef729a3fe092123519298f92dda1921ce4b"
+    },
+    "pages/zzz-dog/modeling.md": {
+      "url": "https://zzz.dog/modeling",
+      "sha256": "5ca4729471e8ff7e6a96134be1be3b582eb812d9065c87bc650968e22da0a561"
+    },
+    "pages/zzz-dog/shapes.md": {
+      "url": "https://zzz.dog/shapes",
+      "sha256": "29de68f3b1ffa3fc8ea6cffaf4c6de5216be076efc0cd0088445900bfd05a795"
+    }
+  }
+}

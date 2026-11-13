@@ -1,0 +1,60 @@
+/* Easing explorer: controls, the ball track and the race lanes */
+[data-example='gsap/easing-explorer'] {
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    align-items: flex-end;
+    margin-bottom: var(--space-4);
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    color: var(--fg-2);
+  }
+  .buttons {
+    margin: var(--space-3) 0;
+  }
+  .track {
+    position: relative;
+    height: 44px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    margin-bottom: var(--space-1);
+  }
+  .ball {
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    width: 28px;
+    height: 28px;
+    margin-top: -14px;
+    border-radius: 50%;
+    background: var(--accent);
+    will-change: transform;
+  }
+  .ease-name {
+    position: absolute;
+    top: 50%;
+    right: var(--space-3);
+    transform: translateY(-50%);
+    color: var(--fg-3);
+    pointer-events: none;
+  }
+  /* Preview: five lanes squeezed into a 200px card */
+  .race.compact {
+    width: 100%;
+    padding: 0 var(--space-3);
+    box-sizing: border-box;
+  }
+  .race.compact .track {
+    height: 30px;
+    margin-bottom: 4px;
+  }
+  .race.compact .ball {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+  }
+}

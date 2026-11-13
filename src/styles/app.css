@@ -1,0 +1,267 @@
+/* Gallery chrome on mase.fi/base.css tokens; examples style themselves */
+
+:root {
+  --accent: #6c8cff;
+  --accent-text: #8ea6ff;
+  --card-min: 280px;
+  --stage-h: 200px;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-5) 64px;
+}
+
+.sc-page-head h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--fg-1);
+}
+
+.sc-h2 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin: var(--space-6) 0 var(--space-4);
+  color: var(--fg-1);
+}
+
+
+.sc-page-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5) 0 var(--space-6);
+}
+
+.sc-back {
+  color: var(--fg-2);
+}
+.sc-back:hover {
+  color: var(--accent);
+}
+
+.sc-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  align-items: center;
+}
+.sc-links a {
+  color: var(--accent-text);
+}
+.sc-links a:hover {
+  text-decoration: underline;
+}
+.sc-links code {
+  color: var(--fg-2);
+  background: var(--bg-raised);
+  padding: var(--space-1) var(--space-3);
+}
+
+/* --- Home toolbar and filters --- */
+
+.sc-toolbar {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+.sc-toolbar .input {
+  flex: 1;
+}
+.sc-toolbar .select {
+  width: auto;
+}
+
+.sc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+}
+.sc-chip {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg-2);
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition);
+}
+.sc-chip:hover {
+  border-color: var(--border-hover);
+  color: var(--fg-1);
+}
+.sc-chip.active {
+  border-color: var(--accent);
+  color: var(--accent-text);
+  background: var(--accent-glow);
+}
+
+/* --- Cards --- */
+
+.sc-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  transition: border-color var(--transition), background var(--transition);
+}
+.sc-card:hover {
+  border-color: var(--accent);
+  background: var(--bg-raised);
+}
+.sc-card-title {
+  font-size: var(--text-md);
+  font-weight: 600;
+  color: var(--fg-1);
+}
+.sc-card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.sc-tag {
+  background: var(--accent-glow);
+  color: var(--accent-text);
+  align-self: flex-start;
+}
+.sc-tag-quiet {
+  background: var(--bg-raised);
+  color: var(--fg-2);
+}
+.sc-tag-legacy {
+  background: var(--orange-bg);
+  color: var(--orange);
+}
+.sc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* --- Stages: where examples mount --- */
+
+.sc-stage {
+  position: relative;
+  height: var(--stage-h);
+  overflow: hidden;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* A card preview is a picture of the example: clicks go to the card's link. */
+.sc-example-card .sc-stage {
+  pointer-events: none;
+}
+.sc-example-card .sc-stage > * {
+  max-width: 100%;
+}
+/* Each run's own container (src/preview/run.ts): the element an example mounts into. */
+.sc-mount {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.sc-stage-full > .sc-mount {
+  display: block;
+  height: auto;
+  overflow: visible;
+}
+.sc-stage-static {
+  color: var(--fg-3);
+}
+.sc-stage-full {
+  height: auto;
+  min-height: 360px;
+  padding: var(--space-5);
+  display: block;
+  overflow: visible;
+}
+
+.sc-example-error {
+  color: var(--red);
+  background: var(--red-bg);
+  padding: var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.sc-sentinel {
+  height: 1px;
+}
+
+/* --- Example view --- */
+
+.sc-pager {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: var(--space-4) 0;
+}
+
+.sc-docs-refs ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.sc-docs-refs a {
+  color: var(--accent-text);
+}
+
+.sc-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+}
+.sc-tab {
+  padding: var(--space-3) var(--space-4);
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  color: var(--fg-2);
+  cursor: pointer;
+}
+.sc-tab.active {
+  color: var(--fg-1);
+  border-bottom-color: var(--accent);
+}
+
+.sc-code {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-top: 0;
+  padding: var(--space-5);
+  overflow-x: auto;
+  font-size: var(--text-base);
+  line-height: 1.6;
+  tab-size: 2;
+}
+
+/* Prism token colours, on base.css's palette */
+.token.comment { color: var(--fg-3); font-style: italic; }
+.token.keyword, .token.atrule { color: var(--purple); }
+.token.string, .token.attr-value, .token.template-string { color: var(--green); }
+.token.number, .token.boolean, .token.constant { color: var(--orange); }
+.token.function, .token.class-name { color: var(--blue); }
+.token.property, .token.selector { color: var(--cyan); }
+.token.punctuation, .token.operator { color: var(--fg-2); }
+
+.sc-about {
+  max-width: 80ch;
+  color: var(--fg-2);
+}
