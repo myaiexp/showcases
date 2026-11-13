@@ -1,0 +1,7 @@
+/* Timeline speed and direction: row of bars and the control strip */
+[data-example='gsap/timeline-time-scale'] {
+  .row { display: flex; gap: 10px; align-items: flex-end; height: 90px; padding-top: 40px; }
+  .bar { width: 28px; height: 28px; border-radius: 6px; background: #4f9cff; }
+  .readout { color: var(--fg-2); font-size: 0.8rem; margin: var(--space-2) 0 0; font-variant-numeric: tabular-nums; }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center; justify-content: center; margin-top: var(--space-3); color: var(--fg-2); }
+}

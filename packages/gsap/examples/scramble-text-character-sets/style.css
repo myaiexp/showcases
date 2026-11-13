@@ -1,0 +1,20 @@
+/* Scramble text character sets: the line and its controls */
+[data-example='gsap/scramble-text-character-sets'] {
+  .line {
+    margin-bottom: var(--space-5);
+    color: var(--fg-1);
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 1.5rem;
+    text-align: center;
+    min-height: 2em;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3) var(--space-4);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+}

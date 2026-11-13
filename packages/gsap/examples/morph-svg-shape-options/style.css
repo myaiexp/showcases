@@ -1,0 +1,37 @@
+/* Morph SVG shape options: the morphing shape, its target outline and the controls */
+[data-example='gsap/morph-svg-shape-options'] {
+  .stage {
+    width: 100%;
+    max-width: 220px;
+    height: 150px;
+    overflow: visible;
+    margin-bottom: var(--space-3);
+  }
+  .target {
+    fill: none;
+    stroke: var(--fg-3);
+    stroke-width: 0.8;
+    stroke-dasharray: 2 2;
+  }
+  .shape {
+    fill: var(--accent);
+    fill-opacity: 0.85;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3) var(--space-4);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .readout {
+    margin: var(--space-3) 0 0;
+    max-width: 30rem;
+    color: var(--fg-3);
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}

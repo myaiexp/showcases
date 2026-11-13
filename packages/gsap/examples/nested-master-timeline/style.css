@@ -1,0 +1,13 @@
+/* Nested master timeline: stage with four dots and a ring */
+[data-example='gsap/nested-master-timeline'] {
+  .stage { position: relative; width: 240px; height: 110px; }
+  .dot { position: absolute; left: 50%; top: 50%; width: 28px; height: 28px; margin: -14px 0 0 -14px; border-radius: 6px; }
+  .a { background: #4f9cff; }
+  .b { background: #34c38f; }
+  .c { background: #f2a33a; }
+  .d { background: #d05bd0; }
+  .ring { position: absolute; left: 50%; top: 50%; width: 40px; height: 40px; margin: -20px 0 0 -20px; border: 2px solid var(--accent); border-radius: 50%; opacity: 0; }
+  .readout { color: var(--fg-2); font-size: 0.85rem; margin: 0; }
+  .row { display: flex; gap: var(--space-2); align-items: center; margin-top: var(--space-3); }
+  .row input { width: 160px; }
+}

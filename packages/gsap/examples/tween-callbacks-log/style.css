@@ -1,0 +1,38 @@
+/* Tween callbacks log: moving box, update counter and the event list */
+[data-example='gsap/tween-callbacks-log'] {
+  .track {
+    width: 220px;
+    height: 36px;
+    border-bottom: 1px solid var(--fg-3);
+  }
+  .box {
+    width: 34px;
+    height: 34px;
+    background: var(--accent);
+    border-radius: 6px;
+  }
+  .ticks {
+    margin-top: var(--space-2);
+    color: var(--fg-3);
+    font-family: monospace;
+    font-size: 0.75rem;
+  }
+  .bar {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+  }
+  .log {
+    list-style: none;
+    margin: var(--space-3) 0 0;
+    padding: 0;
+    width: 220px;
+    min-height: 4.5em;
+    font-family: monospace;
+    font-size: 0.75rem;
+    color: var(--fg-2);
+  }
+  .log li.onStart { color: var(--green); }
+  .log li.onRepeat { color: var(--accent); }
+  .log li.onComplete, .log li.onReverseComplete { color: var(--fg-1); font-weight: bold; }
+}

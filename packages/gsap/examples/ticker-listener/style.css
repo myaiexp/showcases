@@ -1,0 +1,10 @@
+/* Ticker listener: lane with two balls */
+[data-example='gsap/ticker-listener'] {
+  .lane { position: relative; height: 70px; background: var(--bg-surface); border-radius: 8px; transition: outline-color 0.1s; outline: 2px solid transparent; }
+  .lane.flash { outline-color: var(--accent); }
+  .ball { position: absolute; left: 6px; width: 18px; height: 18px; border-radius: 50%; }
+  .fixed { top: 10px; background: #f2a33a; }
+  .ratio { bottom: 10px; background: #4f9cff; }
+  .readout { color: var(--fg-2); font-size: 0.8rem; margin: var(--space-3) 0 0; font-variant-numeric: tabular-nums; max-width: 380px; text-align: center; }
+  .btn { margin-top: var(--space-3); }
+}

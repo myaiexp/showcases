@@ -1,0 +1,24 @@
+/* Interpolate with a slider: blended shape, colour bar and readout */
+[data-example='gsap/interpolate-slider'] {
+  .stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+  }
+  .shape { width: 40px; height: 40px; }
+  .bar {
+    width: min(100%, 320px);
+    height: 16px;
+    border-radius: 8px;
+    margin: var(--space-3) 0;
+  }
+  input[type='range'] { width: min(100%, 320px); }
+  .readout {
+    margin: var(--space-3) 0 0;
+    color: var(--fg-3);
+    font-family: ui-monospace, monospace;
+    font-size: 0.75rem;
+  }
+}

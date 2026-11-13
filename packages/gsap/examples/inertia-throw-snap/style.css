@@ -1,0 +1,35 @@
+/* Inertia throw and snap: a grid stage with one tossable box */
+[data-example='gsap/inertia-throw-snap'] {
+  .stage {
+    position: relative;
+    outline: 1px solid var(--fg-3);
+    background-image:
+      linear-gradient(to right, var(--fg-3) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--fg-3) 1px, transparent 1px);
+  }
+  .box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 0.8rem;
+    cursor: grab;
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .readout { margin: 0; }
+}

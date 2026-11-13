@@ -1,0 +1,32 @@
+/* Observer section navigation: the clipped box and its stacked panels */
+[data-example='gsap/observer-sections'] {
+  .box {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    touch-action: none;
+    cursor: grab;
+    user-select: none;
+  }
+  .panel {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #fff;
+    background: hsl(var(--hue) 55% 40%);
+  }
+  .bar {
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+  }
+  .readout {
+    margin: var(--space-2) 0 0;
+    font: 0.8rem ui-monospace, monospace;
+    color: var(--fg-2);
+  }
+}

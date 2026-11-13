@@ -1,0 +1,61 @@
+/* Snap plugin modes: tracks with tick marks, a raw ghost dot and a snapped dot */
+[data-example='gsap/snap-plugin-modes'] {
+  .rows {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .rows.compact { gap: var(--space-2); }
+  .rows.compact .row { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .row {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    min-width: 90px;
+    max-width: 230px;
+    font-size: 0.8rem;
+    color: var(--fg-1);
+  }
+  .title code {
+    color: var(--fg-3);
+    font-size: 0.68rem;
+  }
+  .track {
+    position: relative;
+    width: 222px;
+    height: 22px;
+    flex: none;
+    border-bottom: 1px solid var(--fg-3);
+  }
+  .track i {
+    position: absolute;
+    bottom: 0;
+    width: 1px;
+    height: 22px;
+    background: var(--fg-3);
+    margin-left: 10px;
+  }
+  .dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .dot.ghost {
+    background: transparent;
+    border: 1px solid var(--fg-2);
+    box-sizing: border-box;
+  }
+  .note {
+    margin-top: var(--space-4);
+    color: var(--fg-3);
+    font-size: 0.8rem;
+  }
+}

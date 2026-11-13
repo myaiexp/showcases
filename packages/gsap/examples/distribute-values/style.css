@@ -1,0 +1,32 @@
+/* Distribute values: the tile grid, controls and config readout */
+[data-example='gsap/distribute-values'] {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 4px;
+    width: min(100%, 360px);
+  }
+  .grid.small { width: 200px; }
+  .tile {
+    aspect-ratio: 1;
+    border-radius: 4px;
+    background: var(--accent);
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: center;
+    margin-top: var(--space-4);
+    color: var(--fg-2);
+  }
+  .readout {
+    margin: var(--space-3) 0 0;
+    max-width: 100%;
+    color: var(--fg-3);
+    font-family: ui-monospace, monospace;
+    font-size: 0.75rem;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+}

@@ -1,0 +1,17 @@
+/* Ease curve gallery: the grid of small ease plots */
+[data-example='gsap/ease-curve-gallery'] {
+  .curves {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: var(--space-2);
+    width: 100%;
+  }
+  .curves.small { grid-template-columns: repeat(2, 1fr); }
+  .curves.small svg { height: 88px; }
+  svg { width: 100%; background: var(--bg-surface); border-radius: 6px; }
+  .guide { stroke: var(--fg-3); stroke-width: 0.5; stroke-dasharray: 2 2; }
+  .curve { fill: none; stroke: var(--accent); stroke-width: 1.6; }
+  .dot { fill: var(--green); }
+  .name { fill: var(--fg-2); font-size: 7px; font-family: ui-monospace, monospace; }
+  .types { display: flex; gap: var(--space-2); margin-bottom: var(--space-3); }
+}

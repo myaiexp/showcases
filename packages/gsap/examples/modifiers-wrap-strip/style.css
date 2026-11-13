@@ -1,0 +1,36 @@
+/* Modifiers wrap strip: the strip, its boxes and the readout */
+[data-example='gsap/modifiers-wrap-strip'] {
+  .wrapper {
+    position: relative;
+    width: 240px;
+    height: 30px;
+    overflow: hidden;
+    background: var(--bg-surface);
+    outline: 1px solid var(--fg-3);
+  }
+  .wrapper.overflow {
+    overflow: visible;
+  }
+  .box {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #111;
+  }
+  .info {
+    display: flex;
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+    color: var(--fg-2);
+    font-family: monospace;
+    font-size: 0.8rem;
+  }
+  label {
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+}

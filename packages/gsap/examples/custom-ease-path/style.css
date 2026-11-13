@@ -1,0 +1,26 @@
+/* CustomEase from a path: curve graph, ball lane and the data editor */
+[data-example='gsap/custom-ease-path'] {
+  .stage { display: flex; align-items: flex-end; justify-content: center; gap: var(--space-5); }
+  svg { width: 180px; overflow: visible; }
+  .frame { fill: var(--bg-surface); stroke: var(--fg-3); stroke-width: 1; }
+  .curve { fill: none; stroke: var(--accent); stroke-width: 2.5; }
+  .lane {
+    position: relative;
+    width: 24px;
+    height: 150px;
+    border-radius: 12px;
+    background: var(--bg-surface);
+  }
+  .ball {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--green);
+  }
+  select, textarea { width: min(100%, 460px); margin-top: var(--space-3); }
+  textarea { font-family: ui-monospace, monospace; font-size: 0.75rem; }
+  .status { margin: var(--space-2) 0 0; color: var(--fg-3); font-size: 0.8rem; }
+}

@@ -1,0 +1,33 @@
+/* Scroll a box to targets: scroller, coloured sections, buttons */
+[data-example='gsap/scroll-to-targets'] {
+  .scroller {
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    position: relative;
+    background: var(--bg-surface);
+    border-radius: 8px;
+  }
+  .section {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #fff;
+    background: hsl(var(--hue) 55% 40%);
+  }
+  .bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    align-items: center;
+    margin-top: var(--space-3);
+    color: var(--fg-2);
+  }
+  .readout {
+    margin: var(--space-2) 0 0;
+    font: 0.8rem ui-monospace, monospace;
+    color: var(--fg-2);
+  }
+}

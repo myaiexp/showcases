@@ -1,0 +1,41 @@
+/* Wrap and wrapYoyo: tracks, balls and colour strips */
+[data-example='gsap/wrap-and-wrap-yoyo'] {
+  .row { width: 100%; max-width: 420px; margin-bottom: var(--space-4); }
+  .caption {
+    color: var(--fg-3);
+    font-family: ui-monospace, monospace;
+    font-size: 0.75rem;
+    margin-bottom: var(--space-1);
+  }
+  .track {
+    position: relative;
+    height: 28px;
+    border-radius: 14px;
+    background: var(--bg-surface);
+  }
+  .ball {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .ball.b { background: var(--green); }
+  .strip {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: var(--space-3);
+  }
+  .strip span {
+    flex: 1;
+    padding: 6px 0;
+    border-radius: 4px;
+    color: #111;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}

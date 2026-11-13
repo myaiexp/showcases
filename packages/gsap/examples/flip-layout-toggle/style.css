@@ -1,0 +1,42 @@
+/* Flip layout toggle: grid and list layouts, tiles coloured by index */
+[data-example='gsap/flip-layout-toggle'] {
+  .box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-2);
+    width: 100%;
+    max-width: 420px;
+    padding: var(--space-2);
+  }
+  .box.list {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    border-radius: 8px;
+    background: hsl(var(--hue) 70% 55%);
+    color: #fff;
+    font-weight: 600;
+  }
+  .box.list .item {
+    height: 18px;
+    justify-content: flex-start;
+    padding-left: var(--space-3);
+    font-size: 0.7rem;
+  }
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-top: var(--space-3);
+  }
+  .readout {
+    margin: 0;
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+}

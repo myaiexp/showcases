@@ -1,0 +1,30 @@
+/* Motion path through points: the plotted curve, anchors and the moving dot */
+[data-example='gsap/motion-path-curved-points'] {
+  .stage {
+    width: 100%;
+    max-width: 520px;
+    overflow: visible;
+    margin-bottom: var(--space-3);
+  }
+  .curve {
+    fill: none;
+    stroke: var(--fg-3);
+    stroke-width: 3;
+  }
+  .anchor {
+    fill: var(--fg-2);
+  }
+  .dot {
+    fill: var(--accent);
+  }
+  .controls {
+    color: var(--fg-2);
+    font-size: 0.85rem;
+  }
+  .readout {
+    margin: var(--space-3) 0 0;
+    color: var(--fg-3);
+    font-family: ui-monospace, Menlo, monospace;
+    font-size: 0.75rem;
+  }
+}

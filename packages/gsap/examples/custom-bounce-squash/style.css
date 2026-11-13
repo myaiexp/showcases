@@ -1,0 +1,18 @@
+/* CustomBounce with squash: floor, ball, and the two ease curves */
+[data-example='gsap/custom-bounce-squash'] {
+  .stage { display: flex; align-items: flex-end; justify-content: center; gap: var(--space-5); width: 100%; }
+  .floor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 120px;
+    height: 170px;
+    border-bottom: 3px solid var(--fg-3);
+  }
+  .ball { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); }
+  svg { width: 140px; background: var(--bg-surface); border-radius: 6px; }
+  .curve { fill: none; stroke: var(--accent); stroke-width: 2; }
+  .curve.squash { stroke: var(--green); }
+  .controls { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-top: var(--space-4); color: var(--fg-2); }
+}
