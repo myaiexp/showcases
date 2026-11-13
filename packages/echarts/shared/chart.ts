@@ -49,6 +49,9 @@ export interface Chart {
  *   other combination warns and falls back.
  * - Heatmap points on geo add up: set the visualMap range above one point's weight.
  * - Re-sending a geo option resets the reader's roam; replaceMerge on geo needs `map`.
+ * - getOption() returns undefined until the first setOption.
+ * - An option key set to undefined replaces the default (handleIcon: undefined makes the
+ *   dataZoom slider throw): leave the key out instead.
  *
  * What chart-size.md describes by hand: a container with a defined width and height, an
  * instance from echarts.init, resize() whenever the container's size changes (the
@@ -75,10 +78,23 @@ export function createChart(el: HTMLElement, { preview }: MountContext, options:
     container,
     dispose() {
       observer.disconnect();
+      cancelPendingPaint(chart);
       chart.dispose();
       container.remove();
     },
   };
+}
+
+/**
+ * zrender 6.1's canvas painter splits a progressive (large-data) paint across animation
+ * frames; the next frame's _paintList bails out only if _redrawId has changed, and
+ * dispose() leaves it alone while nulling the layers, so disposing mid-paint throws
+ * "Cannot read properties of null (reading 'layerStack')" one frame later. Changing the
+ * id first makes that pending frame return. A private field, hence the guard.
+ */
+function cancelPendingPaint(chart: EChartsType): void {
+  const painter = chart.getZr().painter as unknown as { _redrawId?: unknown } | undefined;
+  if (painter && '_redrawId' in painter) painter._redrawId = undefined;
 }
 
 /** A row for an example's controls, placed above the chart. Not used in previews. */
