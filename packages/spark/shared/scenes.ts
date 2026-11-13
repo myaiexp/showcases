@@ -1,7 +1,7 @@
-// Sample splat scenes for the SparkRenderer examples: blob shells, easing
+// Sample splat scenes: blob shells, plus an easing helper
 import * as THREE from 'three';
 import type { PackedSplats } from '@sparkjsdev/spark';
-import { rng } from '../shared/subjects.ts';
+import { rng } from './subjects.ts';
 
 const center = new THREE.Vector3();
 const scales = new THREE.Vector3();

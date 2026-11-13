@@ -3,7 +3,7 @@ import { SplatMesh } from '@sparkjsdev/spark';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { controlBar, slider, overlay } from '../../shared/controls.ts';
-import { pushBlobShell, pingPong } from '../../renderer-kit/scenes.ts';
+import { pushBlobShell, pingPong } from '../../shared/scenes.ts';
 
 const mount: Mount = (el, ctx) => {
   const stage = createStage(el, ctx, { position: [0, 0.4, 3], spark: { falloff: 1 }, orbit: 0.2 });

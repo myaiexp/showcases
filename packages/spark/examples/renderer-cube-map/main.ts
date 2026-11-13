@@ -5,7 +5,7 @@ import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { controlBar, button, select, overlay } from '../../shared/controls.ts';
 import { pushTorusKnot } from '../../shared/subjects.ts';
-import { pushBlobShell } from '../../renderer-kit/scenes.ts';
+import { pushBlobShell } from '../../shared/scenes.ts';
 
 const mount: Mount = (el, ctx) => {
   const stage = createStage(el, ctx, { position: [0, 0, 0], orbit: false, fov: 70 });

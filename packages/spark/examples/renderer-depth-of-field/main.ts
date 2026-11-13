@@ -3,7 +3,7 @@ import { SplatMesh } from '@sparkjsdev/spark';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { controlBar, slider, overlay } from '../../shared/controls.ts';
-import { pushBlobShell, pingPong } from '../../renderer-kit/scenes.ts';
+import { pushBlobShell, pingPong } from '../../shared/scenes.ts';
 
 const DEPTHS = [3, 4.5, 6, 7.5, 9];
 const ANGLES = [-0.42, -0.21, 0, 0.21, 0.42];

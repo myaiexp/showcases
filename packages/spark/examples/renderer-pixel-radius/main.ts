@@ -4,7 +4,7 @@ import { SplatMesh, type PackedSplats } from '@sparkjsdev/spark';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { controlBar, slider, overlay } from '../../shared/controls.ts';
-import { pingPong } from '../../renderer-kit/scenes.ts';
+import { pingPong } from '../../shared/scenes.ts';
 import { rng } from '../../shared/subjects.ts';
 
 const quat = new THREE.Quaternion();

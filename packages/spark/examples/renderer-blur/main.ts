@@ -4,7 +4,7 @@ import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { controlBar, slider, select, overlay } from '../../shared/controls.ts';
 import { pushTorusKnot } from '../../shared/subjects.ts';
-import { pingPong } from '../../renderer-kit/scenes.ts';
+import { pingPong } from '../../shared/scenes.ts';
 
 type Mode = 'preBlurAmount' | 'blurAmount';
 
