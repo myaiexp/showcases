@@ -66,7 +66,10 @@ async function vendorInto(docs: string, source: DocsSourceFile): Promise<void> {
     const urls =
       s.kind === 'pages'
         ? [...s.urls]
-        : await crawl(s.start, s.prefix, s.max, async (u) => extractLinks(await fetchHtml(u), u));
+        : await crawl(s.start, s.prefix, s.max, async (u) => {
+            const page = await fetchHtml(u);
+            return page && { url: page.url, links: extractLinks(page.html, page.url) };
+          });
     console.log(`${s.kind}: ${urls.length} pages`);
     for (const page of fetchPages(urls)) {
       const file = pageFile(page.url);
