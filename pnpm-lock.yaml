@@ -8,6 +8,18 @@ importers:
 
   .:
     dependencies:
+      '@babylonjs/core':
+        specifier: 9.36.0
+        version: 9.36.0
+      '@babylonjs/gui':
+        specifier: 9.36.0
+        version: 9.36.0(@babylonjs/core@9.36.0)
+      '@babylonjs/loaders':
+        specifier: 9.36.0
+        version: 9.36.0(@babylonjs/core@9.36.0)(babylonjs-gltf2interface@9.36.0)
+      '@babylonjs/materials':
+        specifier: 9.36.0
+        version: 9.36.0(@babylonjs/core@9.36.0)
       '@chenglou/pretext':
         specifier: ^1.0.0
         version: 1.0.0
@@ -171,6 +183,25 @@ packages:
   '@babel/runtime@7.29.14':
     resolution: {integrity: sha512-Y5tqevQaUAZhhj82BpYMNC1ssvLQTVAfwKdm8iy8qwmhvC2/CpcAu8OC+QEtjM7pMk7knx83u1Qj8gzkicyelw==}
     engines: {node: '>=6.9.0'}
+
+  '@babylonjs/core@9.36.0':
+    resolution: {integrity: sha512-PCrCshQ6hhvyxsp/FAq7GMPrmX8asloy+fXs1+mF2SCREx0hqCb4xtfbIoyID43rqX8+1UTw5RtodixXowRp7w==}
+
+  '@babylonjs/gui@9.36.0':
+    resolution: {integrity: sha512-MDVWx+vAWud/1Wm9HiSHEBko3WRri39y+Inn2ofyCpKT8mo92n/w9OuZAGqUtJRx4VSiKqjLxM9M3HcaH9njzg==}
+    peerDependencies:
+      '@babylonjs/core': ^9.0.0
+
+  '@babylonjs/loaders@9.36.0':
+    resolution: {integrity: sha512-jjTbfUztgiuBQ4I2lX4JJHJmZ8oB9yLVq8NLn9HVq8VGzn5HdpKQmK0knw4wCX+Nq+QYAT/WXmHbopyOAHk2CA==}
+    peerDependencies:
+      '@babylonjs/core': ^9.0.0
+      babylonjs-gltf2interface: ^9.0.0
+
+  '@babylonjs/materials@9.36.0':
+    resolution: {integrity: sha512-VxJ0KWLzmchzFz2CIb/+ESUFcD26xzkX9//V2gO1LXLD/0Um8eLlcm713RHAU/ke4afM1Y1XbbGMqUZosctgrQ==}
+    peerDependencies:
+      '@babylonjs/core': ^9.0.0
 
   '@braintree/sanitize-url@7.1.2':
     resolution: {integrity: sha512-jigsZK+sMF/cuiB7sERuo9V7N9jx+dhmHHnQyDSVdpZwVutaBu7WvNYqMDLSgFgfB30n452TP3vjDAvFC973mA==}
@@ -898,6 +929,9 @@ packages:
   automation-events@7.1.19:
     resolution: {integrity: sha512-cD+TLhJTI0q4AI3ktd353lrGZiVa9AchowSDzQzzGjSoYe22js4vlS32VUtWuaulghi1Yq0KYNWKk9wWuGymPA==}
     engines: {node: '>=18.2.0'}
+
+  babylonjs-gltf2interface@9.36.0:
+    resolution: {integrity: sha512-FFt9u17MasOdMNlevIJFkqKiIlRayT4zf+XMD0cTAyrhxCkjORPfRfZMEEtpUSveJiovcE7f2gg7tCfuyQtZEg==}
 
   bidi-js@1.1.0:
     resolution: {integrity: sha512-fX1Onk0tdVPC7obPWB5EbJ1z7NVhLq4m2xZLq2YXBkxzMXIGRpNMU88n0EPgWseKl12J7zXs7qrDxPK4sRs2fg==}
@@ -1726,6 +1760,21 @@ snapshots:
 
   '@babel/runtime@7.29.14': {}
 
+  '@babylonjs/core@9.36.0': {}
+
+  '@babylonjs/gui@9.36.0(@babylonjs/core@9.36.0)':
+    dependencies:
+      '@babylonjs/core': 9.36.0
+
+  '@babylonjs/loaders@9.36.0(@babylonjs/core@9.36.0)(babylonjs-gltf2interface@9.36.0)':
+    dependencies:
+      '@babylonjs/core': 9.36.0
+      babylonjs-gltf2interface: 9.36.0
+
+  '@babylonjs/materials@9.36.0(@babylonjs/core@9.36.0)':
+    dependencies:
+      '@babylonjs/core': 9.36.0
+
   '@braintree/sanitize-url@7.1.2': {}
 
   '@chenglou/pretext@1.0.0': {}
@@ -2366,6 +2415,8 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.29.14
       tslib: 2.9.1
+
+  babylonjs-gltf2interface@9.36.0: {}
 
   bidi-js@1.1.0:
     dependencies:

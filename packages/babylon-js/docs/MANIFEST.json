@@ -1,0 +1,1992 @@
+{
+  "fetched": "2026-11-13T16:39:02.457Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/BabylonJS/Documentation",
+      "ref": "master",
+      "paths": [
+        "license.md",
+        "configuration/structure.json",
+        "content/features.md",
+        "content/features/**/*.md",
+        "content/setup/frameworkPackages/**/*.md"
+      ],
+      "commit": "24c6dc953f85bf21f4b924c1d65921933819f942"
+    }
+  ],
+  "files": {
+    "repo/configuration/structure.json": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/configuration/structure.json",
+      "sha256": "2a11bcb63c08f46c23275633a9ebbedaadc26d9e8c4856c2ea95562fa89783a7"
+    },
+    "repo/content/features.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features.md",
+      "sha256": "94fc5b11bc00de05c58a5d99e83ac88e052645a92340098143e3ef4133c328eb"
+    },
+    "repo/content/features/featuresDeepDive.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive.md",
+      "sha256": "af5a71c7dc7a5e1154db88d13bab9478c6156764edfaf8c51051b8296a86d217"
+    },
+    "repo/content/features/featuresDeepDive/animation.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation.md",
+      "sha256": "40e65de3b35c8c14fdda980ec38205fa082b7bf3a3393b5419b20dd9560642b4"
+    },
+    "repo/content/features/featuresDeepDive/animation/advanced_animations.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/advanced_animations.md",
+      "sha256": "56307f5423c4612d6d8f1ea5b1b85917743ecc96840588ba52443cfac97f902a"
+    },
+    "repo/content/features/featuresDeepDive/animation/animatedCharacter.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/animatedCharacter.md",
+      "sha256": "8929eb9e9149458fdde584a2839dd6947183ae354ff2532154ad1c1ee6605c84"
+    },
+    "repo/content/features/featuresDeepDive/animation/animation_design.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/animation_design.md",
+      "sha256": "a5d9bb4421bd7a935d96517ca586ea0274981503f8730614ec2d4a119abedeec"
+    },
+    "repo/content/features/featuresDeepDive/animation/animation_introduction.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/animation_introduction.md",
+      "sha256": "15bcff811e7e45c0c4149f28474b54e5d8080836039a4738b3197426b836f078"
+    },
+    "repo/content/features/featuresDeepDive/animation/animation_method.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/animation_method.md",
+      "sha256": "9364f7821ca17c10769f28eef1afd1258858df1340b3d8a5356b5ef7b56fe241"
+    },
+    "repo/content/features/featuresDeepDive/animation/animationRetargeting.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/animationRetargeting.md",
+      "sha256": "e23fcd46d3c2400ebc96a945173ba0102bd3bb112175317dff5933dbd9d281a1"
+    },
+    "repo/content/features/featuresDeepDive/animation/baked_texture_animations.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/baked_texture_animations.md",
+      "sha256": "3fd7a061207e9b98dac351f5b66e8a5ef2270cc6fa15d9822e420ba7c8216ade"
+    },
+    "repo/content/features/featuresDeepDive/animation/combineAnimations.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/combineAnimations.md",
+      "sha256": "d3f48dc5d23cd4e235fe679a25b59718aa526fb110d2ac368441ed658b199e4e"
+    },
+    "repo/content/features/featuresDeepDive/animation/groupAnimations.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/groupAnimations.md",
+      "sha256": "87f765b4f7927643389e810a41fd2a8cd46de4c42a8f1bfe975ddd87b04075ec"
+    },
+    "repo/content/features/featuresDeepDive/animation/render_frame_animation.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/render_frame_animation.md",
+      "sha256": "6e5898cfc030d76f6b91fae6215d8322c8b37b4175e6c5d6f6bab2e95a1f4b57"
+    },
+    "repo/content/features/featuresDeepDive/animation/rootMotion.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/rootMotion.md",
+      "sha256": "aa0dfec2074179858556cdc67e7f664a71ea47538e26d0166395938584b819a3"
+    },
+    "repo/content/features/featuresDeepDive/animation/sequenceAnimations.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/animation/sequenceAnimations.md",
+      "sha256": "34a0dd4a7f8cb5b62041f31922669158d0a3fa55dccda7c23c2900c83d03b7a7"
+    },
+    "repo/content/features/featuresDeepDive/audio.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/audio.md",
+      "sha256": "487431b0b45753791b6636eca78007c593e4c2227811a0f0e7dcf78f7b83295f"
+    },
+    "repo/content/features/featuresDeepDive/audio/v1/playingSoundsMusic.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/audio/v1/playingSoundsMusic.md",
+      "sha256": "3e01854c1ba3a5ca70fd36936c56e26f033f5b8ef9f7726952a5f5accfdfd4f3"
+    },
+    "repo/content/features/featuresDeepDive/audio/v2/migrateFromV1.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/audio/v2/migrateFromV1.md",
+      "sha256": "3db39590f402183b13e36223d66a559b1682c2d63f6eebe1720d6197b47cd909"
+    },
+    "repo/content/features/featuresDeepDive/audio/v2/playingSoundsMusic.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/audio/v2/playingSoundsMusic.md",
+      "sha256": "76a274e6fc58f95db5984cf34fd6ca311cbdc6544895a6eca1e620138a743607"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer.v1.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer.v1.md",
+      "sha256": "84c9197b4b93939e10a87ad3ca6c441f52ce913930dcfe55f98d4b3ade3b9026"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer.v2.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer.v2.md",
+      "sha256": "38f4de1ed1564a7a9aaa7e3813040030608d0898f8ac4c3e456cae6bf5cc02aa"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v1/advancedViewerUsage.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v1/advancedViewerUsage.md",
+      "sha256": "e16a7d43c4b50e4473daa30580c597a67cd1b054c69a90577f4e4aa31f61000b"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v1/configuringViewer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v1/configuringViewer.md",
+      "sha256": "a7a7306d50170fa3e557a79ec506ad8b0a8a202841c600b9ad97a07707ab6263"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v1/defaultViewerConfig.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v1/defaultViewerConfig.md",
+      "sha256": "93ca3130a327819a372598480e6e0448b1a3e3453cbed317bf65e9d4747813c1"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v1/viewerExamples.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v1/viewerExamples.md",
+      "sha256": "5ef15ca9e9110ca2e5235d0caf52dd484761a84da69871b6e891749347c2b87f"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v1/viewerTemplatingSystem.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v1/viewerTemplatingSystem.md",
+      "sha256": "ed05a4241996205ae038486e5b5d10df94a526c13a390099c3da430f1f4d0ebd"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v2/advancedUsage.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v2/advancedUsage.md",
+      "sha256": "314481baa0a5bb86f05c895c219c52b350327b2c5b2cd108580d85dc7bf8eca3"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v2/cameraControls.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v2/cameraControls.md",
+      "sha256": "518b6b40096dc26e90e9ad2acd050e92d26823d79ea3ceb551419d04456b1f14"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v2/defaultUI.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v2/defaultUI.md",
+      "sha256": "61a99191c7b0d2520e1d21e852b55bea7833c95b534b0b0f40104f1737e53112"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v2/elementInterface.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v2/elementInterface.md",
+      "sha256": "9c87bc9ef9ea8a49bd8981a71c987205714e908e69f27057c84deb00f31d5932"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v2/elementStyling.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v2/elementStyling.md",
+      "sha256": "4e5e67ffb5efe96769139c362c4b2598a6792ad88f16cea03de22b41c2d4ab2e"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v2/hotspots.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v2/hotspots.md",
+      "sha256": "2ed56b582b2b0873ae1b332adb8207f887026453193da6f620cebdccbefbabe8"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v2/migrationGuide.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v2/migrationGuide.md",
+      "sha256": "3c2b76b32ba707d01cc85c1924a708b7081be61af3d10f8531d1d7ed1cb86770"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v2/react.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v2/react.md",
+      "sha256": "7761a1f20d5fa2673745d64d93affc62c12a46d8405351b0d382766a93725cce"
+    },
+    "repo/content/features/featuresDeepDive/babylonViewer/v2/viewerLite.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/babylonViewer/v2/viewerLite.md",
+      "sha256": "cd74d1382374b636a929bbdc916c0b051fca1cf65519d36a189e88641e6af643"
+    },
+    "repo/content/features/featuresDeepDive/behaviors.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/behaviors.md",
+      "sha256": "d55ff18c9d235dc05bb87272b9671c6bfe7a43cd9ae91aec5d428bf0b0a7b79a"
+    },
+    "repo/content/features/featuresDeepDive/behaviors/cameraBehaviors.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/behaviors/cameraBehaviors.md",
+      "sha256": "099c879d11b183b2605e1192fe2055fe55cc3f714adac3e6c1f5eef1d1d351f0"
+    },
+    "repo/content/features/featuresDeepDive/behaviors/meshBehaviors.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/behaviors/meshBehaviors.md",
+      "sha256": "248bfad93a1f6fdb5554a7d0077bcad5bbece498692b425e143a70bce5a6f2a4"
+    },
+    "repo/content/features/featuresDeepDive/cameras.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/cameras.md",
+      "sha256": "1c38cf73526ff887ee8aa9cbf57f6668b493bbdcaca5708b003922736d01541e"
+    },
+    "repo/content/features/featuresDeepDive/cameras/camera_collisions.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/cameras/camera_collisions.md",
+      "sha256": "400d3384276b0c460ce1d382e8de248f5f030ab7ad84ae345355be33ce6eaf37"
+    },
+    "repo/content/features/featuresDeepDive/cameras/camera_introduction.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/cameras/camera_introduction.md",
+      "sha256": "a6e632dde349856f35d65a2a0e89a5189a890dcf4391eeb98739edf728fb5472"
+    },
+    "repo/content/features/featuresDeepDive/cameras/cameraMovementSystem.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/cameras/cameraMovementSystem.md",
+      "sha256": "d580ad8713e833f155528a7529a465948eb0aa55e5f0a1d1a91337a8f3db1a83"
+    },
+    "repo/content/features/featuresDeepDive/cameras/customizingCameraInputs.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/cameras/customizingCameraInputs.md",
+      "sha256": "2666f434c5c330e3c2b5dea845f9188cca84ecd78a3f58cdd543b1e959608373"
+    },
+    "repo/content/features/featuresDeepDive/cameras/layerMasksAndMultiCam.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/cameras/layerMasksAndMultiCam.md",
+      "sha256": "dc9c46a50ba23d20757920a3cf5ca75de21f39728cd714e215b01e0a3cc3597e"
+    },
+    "repo/content/features/featuresDeepDive/cameras/multiViewsPart1.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/cameras/multiViewsPart1.md",
+      "sha256": "7279fc5920297f9a7ceb3d7deffe655690486226e26ddf979e72975b01edc203"
+    },
+    "repo/content/features/featuresDeepDive/cameras/multiViewsPart2.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/cameras/multiViewsPart2.md",
+      "sha256": "227d254b02bd869ec927a21b8ec3f0fc8c3c5aedc1196a16fb5bd4ed8673099d"
+    },
+    "repo/content/features/featuresDeepDive/cameras/webVRCamera.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/cameras/webVRCamera.md",
+      "sha256": "da8343db2d18dd8ce6583142d152617df931316c5acafe6402d3a484fe31acd6"
+    },
+    "repo/content/features/featuresDeepDive/cameras/webVRHelper.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/cameras/webVRHelper.md",
+      "sha256": "1bba351f2667cca571aeaa6e2bc06285dd2c1f2c0823dd8c6427b88b0adbad14"
+    },
+    "repo/content/features/featuresDeepDive/controls.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/controls.md",
+      "sha256": "cfb159d019a165ca0e82e6497a56e95aa46c0cce76fda3ab89355b53e542cdb0"
+    },
+    "repo/content/features/featuresDeepDive/controls/imageFilter.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/controls/imageFilter.md",
+      "sha256": "9083674b0177dcf2bf8c2b556d14bd8fcda237b4c4bcacea03eb8c13aead9ab3"
+    },
+    "repo/content/features/featuresDeepDive/controls/resizer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/controls/resizer.md",
+      "sha256": "8ae03dcae8c0f2389cd7d33d4d99a8576dc5df86b3ad7a258ce926ddbf4fa8e8"
+    },
+    "repo/content/features/featuresDeepDive/controls/timeline.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/controls/timeline.md",
+      "sha256": "5ce8b8c901f4d6b04f5ae73b6e5a450e421860245ed99a36725cadf425e9ec3a"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation.md",
+      "sha256": "e6d11f4b8215f15c77b67d9923867a1440e77c8a4af0a74634fc3f6e8cff5924"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/createNavMesh.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/createNavMesh.md",
+      "sha256": "1b264f8c658d47bf70584946993093f8964f49e15d3bd63f873d172f9e343616"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/crowdAgents.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/crowdAgents.md",
+      "sha256": "95a78b391f4f8ca4a96094655784d6ac026881d71202c47ac878f0842676f925"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/obstacles.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/obstacles.md",
+      "sha256": "2a1745828aea8eb8cb4f6349ec6eb2f39cc879b6bb2388006df6e75b8b0e3e85"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/v2/intro.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/v2/intro.md",
+      "sha256": "dc7667dcc34eb720223e95055fb172ec03f119bde3f89865e95efd480d1be2f9"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/debugger.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/debugger.md",
+      "sha256": "2aa2e960527f0d3fc5d45a95cdb6a2d2e194eb09de0867e6b0bc7acaa85614f3"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/examples.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/examples.md",
+      "sha256": "4058c62250904ba57e18e33e7c6006255925e67a9c1100a9ca5f98c3404fcb01"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/intro.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/intro.md",
+      "sha256": "16d1cfe0726a6a4099a24178321a2583dfbb90a658edf729bab5157753c044fb"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/navParameters.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/navParameters.md",
+      "sha256": "01b4b63538dcad1f85821853a04b0f78e6ce190119ddd511a44206f789b97719"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/offMeshConnections.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/offMeshConnections.md",
+      "sha256": "227b088b90df186dcc961a0ad1230a0e05c81f760d195e671c01df13958ca487"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/options.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/options.md",
+      "sha256": "01e95fb7cd2dab1cd13f24f6d8f69ea902044bedc99c24802f72eeb559bffae5"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/tileCache.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/tileCache.md",
+      "sha256": "9aef3e019f61e102e43a2a3b902ee4fb31c75558a1f8be778804aadaaaa2abe3"
+    },
+    "repo/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/utility.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/crowdNavigation/v2/whatsNew/utility.md",
+      "sha256": "a2137a9fc191e632a0071b1c2c9933badfd8b182f75db6eb20da97b507a85473"
+    },
+    "repo/content/features/featuresDeepDive/environment.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/environment.md",
+      "sha256": "025fda281cc0c318fa1834c88d9fbf3c070162f90fed01f467e8ef11bc18a5db"
+    },
+    "repo/content/features/featuresDeepDive/environment/360PhotoDome.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/environment/360PhotoDome.md",
+      "sha256": "bf1e9075a48d42d18802cf508af913f127a6a9f5cefb253c3142238c937fd09f"
+    },
+    "repo/content/features/featuresDeepDive/environment/360VideoDome.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/environment/360VideoDome.md",
+      "sha256": "8fd71cb152984e3749dc502cd877eff16ae3d65a01d93a792423727f7865fd81"
+    },
+    "repo/content/features/featuresDeepDive/environment/backgroundMaterial.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/environment/backgroundMaterial.md",
+      "sha256": "9b4e28206f39b5495f93502bd37c8c3b0d660e5cad05f3a029f57630008dbe4e"
+    },
+    "repo/content/features/featuresDeepDive/environment/environment_introduction.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/environment/environment_introduction.md",
+      "sha256": "b617b90dda1965196dc6a0001f2e7df5b4f47888c82df19cfc4611f2a0b08180"
+    },
+    "repo/content/features/featuresDeepDive/environment/lenseFlare.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/environment/lenseFlare.md",
+      "sha256": "1bca8259a83320da0216ea1ab1daa6c07f1509eacc290ec73996e2ef95520cfe"
+    },
+    "repo/content/features/featuresDeepDive/environment/reflectionProbes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/environment/reflectionProbes.md",
+      "sha256": "985a75d2198f69da2a31127210ef3ea459a88a5b6e97a7aae310c9705ab199ea"
+    },
+    "repo/content/features/featuresDeepDive/environment/skybox.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/environment/skybox.md",
+      "sha256": "d98e02e4b9fd3249928dad013e26b3e77887535ef76e42e87534069c1ad0caae"
+    },
+    "repo/content/features/featuresDeepDive/events.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/events.md",
+      "sha256": "ec8b47bdb30cfb7516ce5958758858b05cf687258a74297858e17b84efde922a"
+    },
+    "repo/content/features/featuresDeepDive/events/actions.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/events/actions.md",
+      "sha256": "a1ff8fd396d48032ca02963207d9a58d3e4190db6e503c6a701f8e1803820e6c"
+    },
+    "repo/content/features/featuresDeepDive/events/coroutines.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/events/coroutines.md",
+      "sha256": "a7df3bdc83e2e5e350d4b555b33ccc0ce81d60ffabe884e05f28ff273ff4e8af"
+    },
+    "repo/content/features/featuresDeepDive/events/observables.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/events/observables.md",
+      "sha256": "6be78e014ed67a379252d50d88f9840cdc8de6de68c010f35d4dbd481d2385cc"
+    },
+    "repo/content/features/featuresDeepDive/events/promises.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/events/promises.md",
+      "sha256": "4d675af0daf957d53639aea96e64e94e0bc19083cfae21a35c706062913cac16"
+    },
+    "repo/content/features/featuresDeepDive/Exporters.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters.md",
+      "sha256": "fe21fc1221ce46feb24e16e9492cb89be4ccefb61a343bb3d599f124c66ad877"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/3DSMax_to_glTF.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/3DSMax_to_glTF.md",
+      "sha256": "6c232c3ded67f3bb8bab28db896fa9c1daa7632d8fe851376ea07c4c954693c9"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/3DSMax.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/3DSMax.md",
+      "sha256": "907d26d8b07f8a80dda3774622eeccafc4e54b4f10e938ca8e6b0e7fe7bd5d76"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/Blender_Tips.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/Blender_Tips.md",
+      "sha256": "21313790c1affc221e56325f420e7ac5a2f6f1a10371186f11f0341b09ead2cd"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/Blender_to_glTF.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/Blender_to_glTF.md",
+      "sha256": "186665a0a1271db5abfe39013bfa277ccc8a64d9a6df1a87a2d769d02dce4c28"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/Blender.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/Blender.md",
+      "sha256": "dbedfa784aa94277cb9236030df1bebddabcb637d67ceed208c276e3faede5fb"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/Bones_influences_per_vertex.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/Bones_influences_per_vertex.md",
+      "sha256": "b114b39f49171f375db644c1d8c66c565fdb80502155deed9bd0e95559dfe3c2"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/Cheetah3D.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/Cheetah3D.md",
+      "sha256": "93a8a8d8b53aaf04e680c1d25ce9b172f3d8bbee4f4f7e51f423c9dcd4c25e1b"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/exportingTo3MF.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/exportingTo3MF.md",
+      "sha256": "e76e1e91ffc2670eb9a59a19a0a47cb384e9d9cc2491818679b7677fac167ef3"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/glTFExporter.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/glTFExporter.md",
+      "sha256": "5e8dda693eb6e431937a84c2e093c6c809a0274f18e4a537b4e681085685817a"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/Maya_to_glTF.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/Maya_to_glTF.md",
+      "sha256": "6cb7014e1a9b8133792fffb1a276f00c5db30d2f30c44200ff80c5c2fbbc51c3"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/Maya.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/Maya.md",
+      "sha256": "20c819dcc0ef6795bb81b9ea37cbd4fb382b7b34dfca79d540004ba60e3610f5"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/Mixamo_to_Babylon.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/Mixamo_to_Babylon.md",
+      "sha256": "de3694fbfe997101af61879757394bf2d6d0a42ee07a50a093efdbbc535e1f5b"
+    },
+    "repo/content/features/featuresDeepDive/Exporters/Save_Babylon.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/Exporters/Save_Babylon.md",
+      "sha256": "8dc76f0bbfc183e2605256bbc7935084386fdb62d680a284f37da06e5e45c412"
+    },
+    "repo/content/features/featuresDeepDive/flowGraph.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/flowGraph.md",
+      "sha256": "0fbb5e7168a2e2be458df3adb85a98a20cb2f9230441887f908301966a110669"
+    },
+    "repo/content/features/featuresDeepDive/flowGraph/flowGraphAdvancedUsage.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/flowGraph/flowGraphAdvancedUsage.md",
+      "sha256": "217844796f229521711ef513aa55e77b31c08b6acb34cc105cd07682de303b39"
+    },
+    "repo/content/features/featuresDeepDive/flowGraph/flowGraphBasicConcepts.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/flowGraph/flowGraphBasicConcepts.md",
+      "sha256": "1d5f43ae47617b05eb02c74b4f1e2569911ca1892fd6e368e39afc054ac1b7ed"
+    },
+    "repo/content/features/featuresDeepDive/flowGraph/flowGraphBlocks.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/flowGraph/flowGraphBlocks.md",
+      "sha256": "a348200d6e526b26e1bd4985a4029ba5f6b6924b770428ccaa8d3b00e734cd7a"
+    },
+    "repo/content/features/featuresDeepDive/flowGraph/flowGraphExamples.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/flowGraph/flowGraphExamples.md",
+      "sha256": "8298e8a8687f8f654064069c12d5a1a7e0e978c2d950efe806aa9b31abffab69"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph.md",
+      "sha256": "8d9ff346bbcb7f43c3717a224defc97c7302935d449fe68ee9b6d1e68faefe43"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphBasicConcepts.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphBasicConcepts.md",
+      "sha256": "31739892ebb89421f125ed9adc93075ca54b5c9cdcb1c3627541dda7d3a770ab"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphBasicConcepts/frameGraphInAdditionToRenderLoop.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphBasicConcepts/frameGraphInAdditionToRenderLoop.md",
+      "sha256": "9e269dfa39e305f693df4fd03438d7b8977cbe0f8ebd3eb68cb98838da127057"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphBasicConcepts/frameGraphReplaceRenderLoop.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphBasicConcepts/frameGraphReplaceRenderLoop.md",
+      "sha256": "1783fe9ed61ffeab00c63c68c3470231118a184642bd540ad5e2aecdbf747419"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphBlocks.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphBlocks.md",
+      "sha256": "7d0be9c019131779fd2673fc3e25560c8c1006909ca6b0ac8bb3bc02ab8bda65"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphBlocks/frameGraphBlocksDescription.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphBlocks/frameGraphBlocksDescription.md",
+      "sha256": "24966348e465df15d88d697ea047c857adeae3997816325131b87e94217d7194"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphBlocks/frameGraphBlocksGeneralNotes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphBlocks/frameGraphBlocksGeneralNotes.md",
+      "sha256": "739e63bfc0bd801b0fcf67cae095d4bbaeb0e81a9a503b5ed92d272cd5a32f9b"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphClassFramework.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphClassFramework.md",
+      "sha256": "56faab43652411a1edd492a875b716b00ffc26f53545082f138b668801f036e2"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphClassFramework/frameGraphClassOverview.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphClassFramework/frameGraphClassOverview.md",
+      "sha256": "098a9d775c726751443f95a83cc7890706c232b520a6e8830b1064cefc9c592f"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphClassFramework/frameGraphTaskList.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphClassFramework/frameGraphTaskList.md",
+      "sha256": "ae7ee83ff783c64793ec46fe2497341d929855606d68650b6c0cdb9a6c7b76c9"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphClassFramework/frameGraphWritingTasks.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphClassFramework/frameGraphWritingTasks.md",
+      "sha256": "f3e6493b9456d7232f16903693fab76bddfc6c60fd4f6b33a7e18d795e94feb8"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphExamples.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphExamples.md",
+      "sha256": "8ae6b1c57a6761f164c0d607820404de4f4e8ac26f06378078ee059527dae02e"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphExamples/frameGraphExampleCustomPostProcess.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphExamples/frameGraphExampleCustomPostProcess.md",
+      "sha256": "e853a12eb3af16718f30d85712e3339d4c0e6a7d8ada4a39b1ab1617f920e998"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphExamples/frameGraphExampleGeometryVAT.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphExamples/frameGraphExampleGeometryVAT.md",
+      "sha256": "abeb16e2bbfc6d3e007cbf83f62a23bdaaa015944f63ac5e3be931d62e203e6a"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphExamples/frameGraphExampleHistoryTexture.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphExamples/frameGraphExampleHistoryTexture.md",
+      "sha256": "41de05fb53f7a8c4c1b06c6df765454481ac330db1eadc2d830ee1be788236b1"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphExamples/frameGraphExampleTransmission.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphExamples/frameGraphExampleTransmission.md",
+      "sha256": "a65673513bd1cc464d5a9b102cc2df3b89b18a9f6d77763c00677f6cf5a05718"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphExamples/frameGraphExampleVolumetricLighting.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphExamples/frameGraphExampleVolumetricLighting.md",
+      "sha256": "49c82faadf07fb9c743a353d8f0a7944f5578538fa6b0ea4b709b130c428d762"
+    },
+    "repo/content/features/featuresDeepDive/frameGraph/frameGraphFAQ.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/frameGraph/frameGraphFAQ.md",
+      "sha256": "0583a71c2a037d7e5561126ca7bbd76f8d530441e15d22ec4b439da92c4085a9"
+    },
+    "repo/content/features/featuresDeepDive/geospatial.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/geospatial.md",
+      "sha256": "17a1661518c205d74349e8588b3bb108ecd29ea51b4fbbf0817da3ca96e1a88f"
+    },
+    "repo/content/features/featuresDeepDive/geospatial/geospatialCamera.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/geospatial/geospatialCamera.md",
+      "sha256": "042b35228a840a004a3ef366698275eb65701c0bafa54912e506d23b7c6fdfa5"
+    },
+    "repo/content/features/featuresDeepDive/geospatial/loading3dTiles.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/geospatial/loading3dTiles.md",
+      "sha256": "69667ef43ceb502d47340f61e01ad8d2349dedc7fcdf1f12dd4f5c28f006b46c"
+    },
+    "repo/content/features/featuresDeepDive/gui.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/gui.md",
+      "sha256": "57748ef1f8bcf87dea64dd65730e5ec9f7ce7d9d4fa64fc9a5b1b82a252aabd4"
+    },
+    "repo/content/features/featuresDeepDive/gui/gui.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/gui/gui.md",
+      "sha256": "ca0c4a08df76c72318396cd75dc83c35c1b80d0a34248b8279354c109adbe453"
+    },
+    "repo/content/features/featuresDeepDive/gui/gui3D.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/gui/gui3D.md",
+      "sha256": "6d9fb6b4c138f398fe11107df742a427466ba138e7d6e500a721151322aaf2b6"
+    },
+    "repo/content/features/featuresDeepDive/gui/mrtk.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/gui/mrtk.md",
+      "sha256": "70585e2b95c569b1f86b33b8455ead3104bdc1eeced86f15bf1e585119fd3387"
+    },
+    "repo/content/features/featuresDeepDive/gui/scrollViewer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/gui/scrollViewer.md",
+      "sha256": "0ff3f64b7d542b0f0c1d318b342da06cb3a67760a2c9ac029a277a2c53cb9917"
+    },
+    "repo/content/features/featuresDeepDive/gui/selector.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/gui/selector.md",
+      "sha256": "5713174fa034b8032b66c6d967b6019ce34a88c1fdee1ac87f6fc22f07a60168"
+    },
+    "repo/content/features/featuresDeepDive/gui/xmlLoader.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/gui/xmlLoader.md",
+      "sha256": "e8793bf3e752aea267738df322b719258d0284a06d741c33b7a26d34eacdb5fa"
+    },
+    "repo/content/features/featuresDeepDive/importers.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers.md",
+      "sha256": "ca78722ff6a2d9dc05bd864ff207aea66bf2c7fc38ddf1ae4544405049fdc1f3"
+    },
+    "repo/content/features/featuresDeepDive/importers/assetContainers.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/assetContainers.md",
+      "sha256": "6603f10a1d630be2213aab6424879b43eb8ea82210854905f4a7e23b0997b70f"
+    },
+    "repo/content/features/featuresDeepDive/importers/assetManager.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/assetManager.md",
+      "sha256": "9ae544a03addd944c264755752a071f4624ddd9c38b7fae4016b040ef2b5162d"
+    },
+    "repo/content/features/featuresDeepDive/importers/createImporters.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/createImporters.md",
+      "sha256": "97acdddb8e5dd0d9bd8759d01ee0fe093be693675de8f889164b81d6678beb94"
+    },
+    "repo/content/features/featuresDeepDive/importers/gaussianSplatting.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/gaussianSplatting.md",
+      "sha256": "e06e3cd1c3b3f53800851887da1c0711b1fd95eb5f40f15db129cff3d9fd0236"
+    },
+    "repo/content/features/featuresDeepDive/importers/glTF.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/glTF.md",
+      "sha256": "8bcbee3e776859347d0f624b1d49a15927172514e5adfcd6fdb6b9b5351f8ad7"
+    },
+    "repo/content/features/featuresDeepDive/importers/glTF/createExtensions.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/glTF/createExtensions.md",
+      "sha256": "ae46a1482e906d07eba15a6daa1a8c38c4c98498fd5a528929cb807b9ad9ec7f"
+    },
+    "repo/content/features/featuresDeepDive/importers/glTF/glTFSkinning.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/glTF/glTFSkinning.md",
+      "sha256": "6ddab274bafa2cc9643ea1b44a7442f3cc3f9e6429a77cc1ab186aa301369c31"
+    },
+    "repo/content/features/featuresDeepDive/importers/glTF/khrInteractivity.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/glTF/khrInteractivity.md",
+      "sha256": "21c2644bc5184d39e8432b89c1ff272fcbf5cbdfeb9b9f8b2278b4a3e92bce22"
+    },
+    "repo/content/features/featuresDeepDive/importers/glTF/progressiveglTFLoad.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/glTF/progressiveglTFLoad.md",
+      "sha256": "3a3a215ab5e5bf7b5e4ebbf735cd5fd030cea8d9505acc22f9a8fe75b75e64f6"
+    },
+    "repo/content/features/featuresDeepDive/importers/incrementalLoading.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/incrementalLoading.md",
+      "sha256": "98469518a344a3f5079a92092f0668c902f34db5babb854dd8225ed15dedfc76"
+    },
+    "repo/content/features/featuresDeepDive/importers/legacy.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/legacy.md",
+      "sha256": "debba02e39d83593d282ff733f9340360af5fa1f24e3fe6e727c45bf9c9ee771"
+    },
+    "repo/content/features/featuresDeepDive/importers/loadFromMemory.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/loadFromMemory.md",
+      "sha256": "f3d090304c209b8d6567ed5d1b52945e0011b35d4e3ca993275ad00398031932"
+    },
+    "repo/content/features/featuresDeepDive/importers/loadingFileTypes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/loadingFileTypes.md",
+      "sha256": "8d5a9a2c8af58daa5e8963d3067462783021ba253ae7ee5c10709e7a283f813c"
+    },
+    "repo/content/features/featuresDeepDive/importers/oBJ.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/oBJ.md",
+      "sha256": "6fab636f63ffe60f310263cf74872723c3267a84b9dd931f69d4debc6923b06f"
+    },
+    "repo/content/features/featuresDeepDive/importers/smartAssets.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/smartAssets.md",
+      "sha256": "6b841666062b34d47409049936ad365018f479954790eecbec5df15b8d558cb2"
+    },
+    "repo/content/features/featuresDeepDive/importers/stl.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/stl.md",
+      "sha256": "e5b8941af7dc2bd1d688293b48ecd0eea0b681a2a6ac5eddd229ceccfa5efa39"
+    },
+    "repo/content/features/featuresDeepDive/importers/usd.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/importers/usd.md",
+      "sha256": "e3d7d90955a4ba337f1d56518949250bfe97cf8edee95e11dadc9c667deb1fa3"
+    },
+    "repo/content/features/featuresDeepDive/input.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/input.md",
+      "sha256": "3cfb2fafc3cec59a3caacb7ff62ba958c46013e1d24e6934a54b520bb927f3f4"
+    },
+    "repo/content/features/featuresDeepDive/input/deviceSourceManager.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/input/deviceSourceManager.md",
+      "sha256": "ef1d53fadeb0eb5ffc40e077fd3045e8937382e5b9fb3ad20c40a3cd8f3030cd"
+    },
+    "repo/content/features/featuresDeepDive/input/gamepads.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/input/gamepads.md",
+      "sha256": "0d0fa64b6f3a693833b2d333ebd67cbab86a155e25e3c9eba40a25e106db0cbb"
+    },
+    "repo/content/features/featuresDeepDive/input/virtualJoysticks.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/input/virtualJoysticks.md",
+      "sha256": "ba8ef4d8c6912d337a2d28ba3e0434239c51f43ecf3c3b7ad5a8f13d7c0bd641"
+    },
+    "repo/content/features/featuresDeepDive/lights.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/lights.md",
+      "sha256": "807825355249f6b30c38b5bae71b0e6943ffba77ebe97e365c0c43b9bc79c0cb"
+    },
+    "repo/content/features/featuresDeepDive/lights/clusteredLighting.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/lights/clusteredLighting.md",
+      "sha256": "231781891d6a1be20a87e76260db9f7e70258e8c5a96cab3576a79e0b23a3a96"
+    },
+    "repo/content/features/featuresDeepDive/lights/lights_introduction.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/lights/lights_introduction.md",
+      "sha256": "61fd97e16c741606d1e7bdbf6056590cb4a45da01d1fd1874079d095766dff61"
+    },
+    "repo/content/features/featuresDeepDive/lights/mathShadows.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/lights/mathShadows.md",
+      "sha256": "0d6e63fa064fc974ee46e20e5945fcbc18ad6974c53e69200a38e4fd18269e4c"
+    },
+    "repo/content/features/featuresDeepDive/lights/rsmgi.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/lights/rsmgi.md",
+      "sha256": "504497fbca93f88eedbee9575b74f9339b88f678bdd06cc10e89175b8ebad45b"
+    },
+    "repo/content/features/featuresDeepDive/lights/shadows_csm.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/lights/shadows_csm.md",
+      "sha256": "7ff224c3b8a20456c02eca04b2e236f87d458a6568308f1bf20a8d0fcfa077c7"
+    },
+    "repo/content/features/featuresDeepDive/lights/shadows.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/lights/shadows.md",
+      "sha256": "312a07897a5d4c2a215efa80e2e2b82503bb9522aa98db04d893c6e9dade4757"
+    },
+    "repo/content/features/featuresDeepDive/lights/volumetricLightScattering.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/lights/volumetricLightScattering.md",
+      "sha256": "5ca50c81ac4354693f6dcd9e92a1c41bfdcb9cb88f81235c8aacce021c77fee4"
+    },
+    "repo/content/features/featuresDeepDive/materials.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials.md",
+      "sha256": "df0372cc3c9d9eef89ce3603e75f866d21cfebd695376df622869791a92e2c98"
+    },
+    "repo/content/features/featuresDeepDive/materials/advanced.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/advanced.md",
+      "sha256": "9f75e9476e2e4f0f784e677b5998f6c569ae80c1efab64fd222f38cba7d01366"
+    },
+    "repo/content/features/featuresDeepDive/materials/advanced/custom_procedural_textures.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/advanced/custom_procedural_textures.md",
+      "sha256": "231f63befd059430d1d9158108de5da8192b49307d5715d6232310381515ee4c"
+    },
+    "repo/content/features/featuresDeepDive/materials/advanced/depthValuesDepthRenderer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/advanced/depthValuesDepthRenderer.md",
+      "sha256": "8cce630c5e0f3cee56ec38b1e72789f3e5653891e0109ecf31621fb06e785917"
+    },
+    "repo/content/features/featuresDeepDive/materials/advanced/facet_uvs.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/advanced/facet_uvs.md",
+      "sha256": "1e242f39da97172947d5dd163a28d3dddaca88fe8ed7304a9b17812b648f3d7c"
+    },
+    "repo/content/features/featuresDeepDive/materials/advanced/logarithmicDepthBuffer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/advanced/logarithmicDepthBuffer.md",
+      "sha256": "4267e023b27aacfd6eb3192aeb2ba04da7bb79b5d4c51f7fde4a04c78232111c"
+    },
+    "repo/content/features/featuresDeepDive/materials/advanced/mutliPlatTextures.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/advanced/mutliPlatTextures.md",
+      "sha256": "ec97f1ce2f8c534289cb50b25cf6e56acd5267b9e2aff8aeea7dace547233348"
+    },
+    "repo/content/features/featuresDeepDive/materials/advanced/rawTexture.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/advanced/rawTexture.md",
+      "sha256": "eed73fd08d913912d8252cd5a291b90b58d98d6e3c9eb30c59bc061ffba45c85"
+    },
+    "repo/content/features/featuresDeepDive/materials/advanced/renderPasses.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/advanced/renderPasses.md",
+      "sha256": "fac2979e7485e87bad2a9382081259f9bb4b89e89591e8bfeb7fe240d9bd6648"
+    },
+    "repo/content/features/featuresDeepDive/materials/advanced/texturePackage.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/advanced/texturePackage.md",
+      "sha256": "ec80f308dc28df4ab5c484a1ad7b56b56a2c2b82c055a0ea36290353c1fa77da"
+    },
+    "repo/content/features/featuresDeepDive/materials/advanced/transparent_rendering.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/advanced/transparent_rendering.md",
+      "sha256": "9c4de781b690c1474b0555feab914ba29d602b910544e3d5a6c5990b7b29b28f"
+    },
+    "repo/content/features/featuresDeepDive/materials/advanced/work.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/advanced/work.md",
+      "sha256": "3f4583a25a1224d27a82f85f07156aff4b91f761305055be2c8e72d9c4e121d4"
+    },
+    "repo/content/features/featuresDeepDive/materials/node_material.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/node_material.md",
+      "sha256": "ed330c90c080d12340d967faba6655d0e942c1b3359c0557940beed2fb86235e"
+    },
+    "repo/content/features/featuresDeepDive/materials/node_material/availableNodeBlocks.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/node_material/availableNodeBlocks.md",
+      "sha256": "39130a4ac55a9363eedbfe8dca15ad19299276cf67eb322f3dac59bc064eb5fa"
+    },
+    "repo/content/features/featuresDeepDive/materials/node_material/NMEParticleShaders.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/node_material/NMEParticleShaders.md",
+      "sha256": "155ca2a880752275c5e9fd510984afae4f8da90011ef3ecc49bee06e07ee6d7d"
+    },
+    "repo/content/features/featuresDeepDive/materials/node_material/NMEPBR.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/node_material/NMEPBR.md",
+      "sha256": "33718c6f1a192d165336e6ee84515f9a5041c91c72282bf670fae4a4e4bb5c69"
+    },
+    "repo/content/features/featuresDeepDive/materials/node_material/NMEPostProcesses.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/node_material/NMEPostProcesses.md",
+      "sha256": "1c69f0a05fe9ef0bde31ecaacc80a6a7bc2c1b2fdfb696379b3d22182b5d4cf4"
+    },
+    "repo/content/features/featuresDeepDive/materials/node_material/NMEProceduralTexture.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/node_material/NMEProceduralTexture.md",
+      "sha256": "f0cf3fc06e6fedda411c3e6d412e2fa1cb1293261ccde5a9892ead748ab45d73"
+    },
+    "repo/content/features/featuresDeepDive/materials/node_material/nodeMaterial.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/node_material/nodeMaterial.md",
+      "sha256": "09249ebf9e08c744c0f286b836103aa3a017a8ece8e60969f140d2acb0c31b1e"
+    },
+    "repo/content/features/featuresDeepDive/materials/node_material/particles_and_nme.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/node_material/particles_and_nme.md",
+      "sha256": "31d0245c315eef9a345e815976cc9b1315b3f77bbc6577bdf66893d0d245e2c9"
+    },
+    "repo/content/features/featuresDeepDive/materials/shaders.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/shaders.md",
+      "sha256": "441d2f547c027dc376a846b2aec5731525b98e29a70acbeec5e29811c13c60b6"
+    },
+    "repo/content/features/featuresDeepDive/materials/shaders/computeShader.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/shaders/computeShader.md",
+      "sha256": "d9bb963ab2946823ec503bb9cfe6e564b4a2e469dd1e76e41e0799f35d227952"
+    },
+    "repo/content/features/featuresDeepDive/materials/shaders/Fog+ShaderMat.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/shaders/Fog+ShaderMat.md",
+      "sha256": "8b3228e4910b1b23a20cc0cb2a342fe1bbc31389db140806329d1f637c5ee694"
+    },
+    "repo/content/features/featuresDeepDive/materials/shaders/image_processing.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/shaders/image_processing.md",
+      "sha256": "a305bd703f9460b4a6e075b898207e252f69d0ab027f5cfb29083314d423bf14"
+    },
+    "repo/content/features/featuresDeepDive/materials/shaders/introToShaders.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/shaders/introToShaders.md",
+      "sha256": "23d072b0456a70cf9072fb76b02c31515a6d6acf372e912975c0737d2bed4bb7"
+    },
+    "repo/content/features/featuresDeepDive/materials/shaders/shaderCodeInBjs.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/shaders/shaderCodeInBjs.md",
+      "sha256": "d79b7f68500315523fa7546c51b3db90274f77a96a3318ff14cb8646f56698e8"
+    },
+    "repo/content/features/featuresDeepDive/materials/shaders/shaderMaterial.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/shaders/shaderMaterial.md",
+      "sha256": "17c0e2eb078061a4a107221d18560ca29b38bbd2fedcf29cc8a96f3d782cb015"
+    },
+    "repo/content/features/featuresDeepDive/materials/using.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using.md",
+      "sha256": "3157584fc5aa7202204d2a76f0aec20111579b37e0ebba1459c017629f67378c"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/blendModes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/blendModes.md",
+      "sha256": "9ab28c92e473df79a42699fc1249f532711222ee3cf294a016dcf78411336df3"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/dynamicTexture.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/dynamicTexture.md",
+      "sha256": "d7aae1490c78dbf6aac79fb1bda73067904c75553e5ac71606695c0b6f9010b6"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/fresnelParameters.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/fresnelParameters.md",
+      "sha256": "1bb0795a96a0aa3266be48afb107f18f46534baa96536eb63ac1ae1d3a679140"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/frontAndBackUVs.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/frontAndBackUVs.md",
+      "sha256": "2b5ca0cf6cbb4bd222f7acd489d10e700218bd8b2c93e0cbf866954e7438ea31"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/HDREnvironment.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/HDREnvironment.md",
+      "sha256": "2c0a480e7bda4a3f3535114a4ee6884d25e9b5456600c628d1d4da86c91b8644"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/htmlTexture.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/htmlTexture.md",
+      "sha256": "a62715d306092a1e704193d3db2aeea1feacc96eeadce5c492ce7bb3024548c3"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/introToPBR.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/introToPBR.md",
+      "sha256": "451af26f8cc2a1d58173746dced9c705c5237a674d7826b78b600950239740ef"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/ktx2Compression.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/ktx2Compression.md",
+      "sha256": "70e33441e8502222e50196ac94a8ae70a7738392a9988ef3198c8a72728302e3"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/masterPBR.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/masterPBR.md",
+      "sha256": "07f9e76cb8e9846cafbf04399c43b74dfdbaf4631f43f509850799025b0cf990"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/materialPlugins.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/materialPlugins.md",
+      "sha256": "12cd91c631cd4928288d91ad104636f670c13a3cf7b533f9ff4f1ebfb098d0fa"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/materials_introduction.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/materials_introduction.md",
+      "sha256": "387b996553512eeccd587ab90040ec674ee91ee9dc1ddfe4ed2030749713e440"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/moreMaterials.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/moreMaterials.md",
+      "sha256": "ea868fd731bd1041f8ef1eb687797cb39a8590687f2e1c06a46edd1f2e20ddb2"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/multiMaterials.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/multiMaterials.md",
+      "sha256": "198f25a94bd9a3666acd65f4828ec3652b82d26a3cc10ccb74c05f38d22d7d5a"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/normalMaps.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/normalMaps.md",
+      "sha256": "eb0d0f529d63518ac2ec17327813ac35d1b709a7346f49acfc1fd216e6c9217b"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/OpenPBR.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/OpenPBR.md",
+      "sha256": "56c04c829d43bc110e80f042d65d5e24aab6fbfbfe3918731caf628118d8cb23"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/parallaxMapping.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/parallaxMapping.md",
+      "sha256": "da35173aae79c8a62172fb387866b76bbbb57a133a1abbb8f9f8ab6e9715a901"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/proceduralTextures.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/proceduralTextures.md",
+      "sha256": "83e01c444473288abfdaa9c78f0102460f449c8eb4b3fddb906c967c20d3f9f1"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/reflectionTexture.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/reflectionTexture.md",
+      "sha256": "b043056c16a805c9515713dfa38af9f57802637885320a35973db546c5c630a2"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/texturePerBoxFace.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/texturePerBoxFace.md",
+      "sha256": "3fc1c3889b784d057cda0b4f4023621dd2e75acd138529bd472c44beec17b14f"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/textureRepetition.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/textureRepetition.md",
+      "sha256": "dbf4243c845f87b36e97323a7c0a5e2751c22e651a949632ebfa721b90108b39"
+    },
+    "repo/content/features/featuresDeepDive/materials/using/videoTexture.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/materials/using/videoTexture.md",
+      "sha256": "384ed3d7e214280d91269a3656d56595abed2ee20d524af542ee14f1dfd1895a"
+    },
+    "repo/content/features/featuresDeepDive/mesh.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh.md",
+      "sha256": "ccb91d84901e630c43f562b2160385b6a46d5ca31bcccdaef7b881ed56b150db"
+    },
+    "repo/content/features/featuresDeepDive/mesh/billboard.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/billboard.md",
+      "sha256": "228fcd51414f162c730f75db962f51ae23f24628455da4ae5975822223441687"
+    },
+    "repo/content/features/featuresDeepDive/mesh/boneInternals.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/boneInternals.md",
+      "sha256": "c8c9c36f8aed3defc1fb685b2f06a8d833e9fdab6b1ac0a6a88c471e2fb77af3"
+    },
+    "repo/content/features/featuresDeepDive/mesh/bonesSkeletons.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/bonesSkeletons.md",
+      "sha256": "1b288425e01768ffd74824fa0f4f634d1671218ff62fa733ad7c28f561aa5eb4"
+    },
+    "repo/content/features/featuresDeepDive/mesh/copies.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/copies.md",
+      "sha256": "fe8cfc9081606ebda8af352b3001405d362f80d15b00572e72698ccccfb2acb1"
+    },
+    "repo/content/features/featuresDeepDive/mesh/copies/clones.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/copies/clones.md",
+      "sha256": "888a875fcb175ce72e61f44a4599df889f01a58ecf58f8ed9916d0602395fc8d"
+    },
+    "repo/content/features/featuresDeepDive/mesh/copies/instances.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/copies/instances.md",
+      "sha256": "32e3c87fbd7681493f2c291c2e034b1956fb2986976375feb4577787cfea5cfd"
+    },
+    "repo/content/features/featuresDeepDive/mesh/copies/sps_as_clone.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/copies/sps_as_clone.md",
+      "sha256": "b2189cf418d227e19729ee3b0f3e9395eb8fad8bf4371dcafb747f5b2dc8a258"
+    },
+    "repo/content/features/featuresDeepDive/mesh/copies/thinInstances.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/copies/thinInstances.md",
+      "sha256": "080c13f72b35bab7a84ea4f11de85f209521a06c321edc98b1d138414cb3cc09"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation.md",
+      "sha256": "eaa41d91aafaca790f0bee04b21359c529a8db042e24a68feaf38652c7b2f8d3"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/custom.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/custom.md",
+      "sha256": "36de8547e8cb90fd19ee067a2e2e2344a283d135a2b821b70ea681305bb27b73"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/custom/custom.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/custom/custom.md",
+      "sha256": "9ebaa3ad79fd779d30d5715e56975bc8b42677799c167742e85859f906f8d58b"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/custom/updatingVertices.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/custom/updatingVertices.md",
+      "sha256": "1f6074392a2e326fb51c9394d4266d453d25a04f620d70522f27d73e15fd48aa"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/custom/vertexNormals.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/custom/vertexNormals.md",
+      "sha256": "a8d3a1294b3f9c424f610ff7bd3ed034c9a931c9003b8739babc5a00500a24a7"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param.md",
+      "sha256": "54ad568a106b32c891673dba445fee73d5349925b1fb7761cd69462c07ee7ba8"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/custom_extrude.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/custom_extrude.md",
+      "sha256": "c28431977c6ec916577eb0efcef2c9c6754db5c380f0e602c3edbbbb4005c249"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/dashed.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/dashed.md",
+      "sha256": "479ba320aa4226418f1f13c3d50dffe3a1b5b5885957d88efa952b0285d646c3"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/extrude_polygon.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/extrude_polygon.md",
+      "sha256": "34613eae2e9014546495475acf0988975969ea8df2b9115e9377c83de6bf61e9"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/extrude_shape.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/extrude_shape.md",
+      "sha256": "da041391a93d1e8ca4473f7e079326dcf6dfaed447762b76908bac681b340e9f"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/greased_line_advanced/examples.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/greased_line_advanced/examples.md",
+      "sha256": "e9026e850deffb6d5aa922b8c887e618c9417b7b1ee5c7ec50e94edc29d6f25f"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/greased_line_ribbon/greased_line_ribbon.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/greased_line_ribbon/greased_line_ribbon.md",
+      "sha256": "6cc655cf3e8ab34dd4abecfb93b8abd68ae3cfe44fbe47377c23e1bde724a2fc"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/greased_line.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/greased_line.md",
+      "sha256": "1c1c42cf15b7a97b4b05854ba2d106a44e7cee6840ecf1c23a09edb7a2341b03"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/lathe.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/lathe.md",
+      "sha256": "1aa6a59fa6c6bd02f56161db44c9e97b52bfd7e1d853a6f949ba7ca28f9ce04a"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/line_system.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/line_system.md",
+      "sha256": "e5ab7f0aa59f4504f2fcfe9c18d3576ca108e8ace98a2374ff07c59a5fa48aa7"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/lines.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/lines.md",
+      "sha256": "eae89ebb965c81b7788b2514d3177c235c3bec0a80b698d0eec86cc01dd618aa"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/polygon.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/polygon.md",
+      "sha256": "dfd6a0574829a165e27a21099b353cb9b86d3748117ef0caa2588aade7e05c20"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/polyMeshBuilder.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/polyMeshBuilder.md",
+      "sha256": "ed35bcb50998c0579fe9731ba8126dd8255b527a59a99754f6c954c54ca1c2fc"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/ribbon_extra.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/ribbon_extra.md",
+      "sha256": "18100c341e981181272d87ed04b2760f06ec1716004568df81836d088f6017fd"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/ribbon_maths.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/ribbon_maths.md",
+      "sha256": "84c547f342614ee07bac904a8655f3f243e97d76e6f796c0b9524853a1d3035c"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/ribbon.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/ribbon.md",
+      "sha256": "2d04000e677084bc0c39d7220e1490145ebd174b8c85d860ce47da0508b8c5e9"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/param/tube.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/param/tube.md",
+      "sha256": "b3bd05d47ab35b0833b31ec52b15e6a59ea718e8ba7323f09c2ba6b36e763ed5"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/polyhedra.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/polyhedra.md",
+      "sha256": "3c3e7f81642ffb49be7abe05b1c73bdb2a7dccbd811ac258e5e3bd68bd620a2b"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/polyhedra/custom_poly.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/polyhedra/custom_poly.md",
+      "sha256": "0dd4d93e2c528fe551796c36b8e8e899e667da8be4dc6d2bd8f88495983a401b"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/polyhedra/geodesic_poly.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/polyhedra/geodesic_poly.md",
+      "sha256": "18cf216fdf15c82d530339caddcba3428c53f85364f64fff98a3f74ad206e8f5"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/polyhedra/goldberg_poly.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/polyhedra/goldberg_poly.md",
+      "sha256": "ba6a1c9e44aab5ebbf7f9e06d45fe85c42c9afd4769b19b6d1ffa0190fc6f953"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/polyhedra/icosphere.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/polyhedra/icosphere.md",
+      "sha256": "741ee600832c443ba9f9c735f21b1263867d6516db82399864e4bb81964196c6"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/polyhedra/polyhedra_by_numbers.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/polyhedra/polyhedra_by_numbers.md",
+      "sha256": "aa1db8b355b6fc435e1a831abdc8fdc997e3973c6171b2da515412db0653ad75"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set.md",
+      "sha256": "d525be0ad6d16b6c7ba857d5ae52544275d2648acaa27a6e78559369868ec976"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/box.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/box.md",
+      "sha256": "4cbad60855e76b7950901d384269c85aa85b8675f978a90aabd075221d5e16ee"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/capsule.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/capsule.md",
+      "sha256": "1e0bc229c16751b5b3f03538fd0cb00bc1a370b2b168561a53a3d18a988ea7de"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/cylinder.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/cylinder.md",
+      "sha256": "c77ac14d0afc9cf31a6d30f71266442fe7eb6abe085d0de0587a283143827e04"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/disc.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/disc.md",
+      "sha256": "fc367def80b4664acc9be68bdfbf1eb365b8b679226f330fbc7e92c4d44f0291"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/ground_hmap.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/ground_hmap.md",
+      "sha256": "586e305f43d9af53e6fa1642ea1a2fcc3baefc25c2ccc34b96d2295b6130e100"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/ground.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/ground.md",
+      "sha256": "fa2a315ddabed54e4c0fd94f2ff6ad8812672358527f94f93973b197154ea79d"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/height_map.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/height_map.md",
+      "sha256": "fb87918985c5e503574ff82498abd70d4dff8914e4bdb1909686f5b60d89b9e0"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/plane.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/plane.md",
+      "sha256": "f373bc05f420faa8cae3f6dcf77238008d6bb9f5705ee2392861e869a3b856ff"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/sphere.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/sphere.md",
+      "sha256": "535c9e9996fb93dcbe27f5f886cbb443687b8b2fbb68a51fd724e56eb7949fd1"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/text.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/text.md",
+      "sha256": "aad2154a773ac40ea0f8077e7eed3193c4f000fb680aa61c959813a7422b312b"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/tiled_box.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/tiled_box.md",
+      "sha256": "99ebd3f086595a36739c735e0c95ca978a1391aa7fc789f009e84b9d1bc3b861"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/tiled_ground.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/tiled_ground.md",
+      "sha256": "ac4e5c6d528e04ba18301e36e0b077001ce3e506004b889f3807736ea29add18"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/tiled_plane.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/tiled_plane.md",
+      "sha256": "5f112cc870b495f646aa222a8fd9944cc254c5a93fecf2df802ada39f35ed6cb"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/torus_knot.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/torus_knot.md",
+      "sha256": "9312f85ecc23baf44ec4a4fb54162bcca4bec1c4b11da0508cc4420f3372a174"
+    },
+    "repo/content/features/featuresDeepDive/mesh/creation/set/torus.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/creation/set/torus.md",
+      "sha256": "4a947a2861b447f1ce9e7094ce062efc2110b6b70735108b39e5dfa79eb4c523"
+    },
+    "repo/content/features/featuresDeepDive/mesh/decals.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/decals.md",
+      "sha256": "dec5725920b66759a27801e72a26fbed1894dac13c4a65d7b6461d11b0733089"
+    },
+    "repo/content/features/featuresDeepDive/mesh/displayBoundingBoxes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/displayBoundingBoxes.md",
+      "sha256": "e800ad527c98014bd365417ba0e35f180cae0d654f3eb94c5a4cbf4edbb5cb46"
+    },
+    "repo/content/features/featuresDeepDive/mesh/drawCurves.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/drawCurves.md",
+      "sha256": "cee8d0c38b1edae804dd87ae5a636584fd9d3f10706d1ea196e678442a88555b"
+    },
+    "repo/content/features/featuresDeepDive/mesh/dynamicMeshMorph.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/dynamicMeshMorph.md",
+      "sha256": "6350dec33975adbc8fd470aa2f39098143039a43b9e4298473e9d4a72799aead"
+    },
+    "repo/content/features/featuresDeepDive/mesh/edgeRenderer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/edgeRenderer.md",
+      "sha256": "1d50f92c23613f044c970f209b3025f73c2f4d2f02cad1c6aef8a84554b99ca5"
+    },
+    "repo/content/features/featuresDeepDive/mesh/facetData.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/facetData.md",
+      "sha256": "5c575ab9d0376d505a28e1ff634b33665349fc3cc745d3b8875fca8126ea8379"
+    },
+    "repo/content/features/featuresDeepDive/mesh/gaussianSplatting.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/gaussianSplatting.md",
+      "sha256": "e738ca1dcd61527984275c771b7e0f01e8a8583b1966f8930689457c300798b0"
+    },
+    "repo/content/features/featuresDeepDive/mesh/gizmo.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/gizmo.md",
+      "sha256": "c71a718366a5e59e81ba5ce9641264196565429bbf6e8fb9dd727919e906bbd2"
+    },
+    "repo/content/features/featuresDeepDive/mesh/glowLayer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/glowLayer.md",
+      "sha256": "8b0c345c3f293575a401b0300ffd92d780dc815235765d4d339cc758d19e940a"
+    },
+    "repo/content/features/featuresDeepDive/mesh/highlightLayer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/highlightLayer.md",
+      "sha256": "8567e8dee0fd758049746b2e350807a3fa0dfdac096f7119c24896a5639873ba"
+    },
+    "repo/content/features/featuresDeepDive/mesh/hotspot.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/hotspot.md",
+      "sha256": "783b3d0cc54a35c3ededd309ca2dbb73d1c9d8c076744fa3b51ca6ce7f2d1bd8"
+    },
+    "repo/content/features/featuresDeepDive/mesh/interactions.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/interactions.md",
+      "sha256": "76697ff07d74e08ffb1d0abc39a633b4b01a0a191d0ce3cf440fe17180e01b07"
+    },
+    "repo/content/features/featuresDeepDive/mesh/interactions/mesh_intersect.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/interactions/mesh_intersect.md",
+      "sha256": "41659cd574741556e0f5a25f30016e496a7664319a63a2d1b9df62686c0d90c7"
+    },
+    "repo/content/features/featuresDeepDive/mesh/interactions/picking_collisions.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/interactions/picking_collisions.md",
+      "sha256": "753060b92c083dbe89461e4a5b0cf4be5316e88054845745f20721dc417fb28a"
+    },
+    "repo/content/features/featuresDeepDive/mesh/LOD.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/LOD.md",
+      "sha256": "0388638bb76268dff1804aa3f48bb52527ebeb0e4d78d637b53f4cb5a01abc3f"
+    },
+    "repo/content/features/featuresDeepDive/mesh/mergeMeshes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/mergeMeshes.md",
+      "sha256": "f33385c7325fe2f5deaf01d15a04a56377e65dcf1d44a315f0dce0bf744dd9a4"
+    },
+    "repo/content/features/featuresDeepDive/mesh/meshExploder.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/meshExploder.md",
+      "sha256": "04424e6ea0fad6058718ea64b8e53000301820795161bd8dbbce0a89ba8b112c"
+    },
+    "repo/content/features/featuresDeepDive/mesh/morphTargets.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/morphTargets.md",
+      "sha256": "b57d4f3e725006f39b81c553bf6e81936f71d289145c4fd8681f1aed2de28080"
+    },
+    "repo/content/features/featuresDeepDive/mesh/nodeGeometry.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/nodeGeometry.md",
+      "sha256": "e6c9026bfe7918400f0abb1671bbe1d9da369fc82ea49401b6853a375fbf5254"
+    },
+    "repo/content/features/featuresDeepDive/mesh/path3D.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/path3D.md",
+      "sha256": "0dc16af8cf0f44d7871601a029268533376d76d0f8801ca9418160f037074918"
+    },
+    "repo/content/features/featuresDeepDive/mesh/selectionOutlineLayer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/selectionOutlineLayer.md",
+      "sha256": "25a26191b516064ceec9905d1dc0f93ff00c62b29c1ad007e4b49de4cde5f21b"
+    },
+    "repo/content/features/featuresDeepDive/mesh/simplifyingMeshes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/simplifyingMeshes.md",
+      "sha256": "b3386a2c99b305c25ff8cdf90b9adfe647d5f30575010312917b7bf87bb65f29"
+    },
+    "repo/content/features/featuresDeepDive/mesh/trailMesh.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/trailMesh.md",
+      "sha256": "a86af1fd78765fbedde85a61a2f5d8ff51f7d77a76936f67561870347f4bdd6f"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms.md",
+      "sha256": "89203ef3173d7162f9abde6faed966ee8736145d9d1a3e955a6e132159e8777e"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/center_origin.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/center_origin.md",
+      "sha256": "b7ea6f9ded1569f831e3ec8284aed0135da6be7f22367ccb37570dcfbd7a9c65"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/center_origin/add_rotations.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/center_origin/add_rotations.md",
+      "sha256": "7124a9d371072cdb5591c4fc3804233dfa38eaf4bedd5ee720f73c002cd28f6f"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/center_origin/bakingTransforms.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/center_origin/bakingTransforms.md",
+      "sha256": "70fcf3631c900bc209e3e8d4ed0b0e018347dc848b46921e2201ea97986adeca"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/center_origin/position.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/center_origin/position.md",
+      "sha256": "18cecc86d218e85ee068fa51ef82f1d91dda10a028c6e9ab09ae9fc75d2fea61"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/center_origin/ref_frame.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/center_origin/ref_frame.md",
+      "sha256": "b246d880f13ead51696314e25f9fc226f2d54ceedbac5de22d4df1c59b7e39bb"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/center_origin/rotation_conventions.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/center_origin/rotation_conventions.md",
+      "sha256": "3fceb1acb42f323287f90185ef275903bf8419ffb5e8c6229ad2dfbd9f16e2f0"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/center_origin/rotation_quaternions.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/center_origin/rotation_quaternions.md",
+      "sha256": "74b0a278874a965d8b735b72c42565cc78a7eea8ced921fcbddceeac8095569b"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/center_origin/rotation.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/center_origin/rotation.md",
+      "sha256": "78cccef165770f002bb598d0e9b55e53f2aa78e35edd8dc5522a544d0ec4802a"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/center_origin/target_align.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/center_origin/target_align.md",
+      "sha256": "d579061fa17b973c017006dba4c8021fd29c1447543d38c8098333bb7258811d"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/center_origin/transform_coords.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/center_origin/transform_coords.md",
+      "sha256": "d30409c4669c78e18881db0a91e8d1acfc7078bfe5b1d0c20d03c262d4923907"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/coordinateSystems.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/coordinateSystems.md",
+      "sha256": "139de9b6cc484115450755fbc952f9fd07ede91183b207e20c30aaaa4daa9519"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/lattice.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/lattice.md",
+      "sha256": "d3accde106213ccd720031b15da6b6738bc8a1db3136aa97e8bd50a09c6db831"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/parent_pivot.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/parent_pivot.md",
+      "sha256": "1cb5e2fed21a2538f394f4da6424240a630b5997513dede1c9754438563f7e3b"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/parent_pivot/parent.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/parent_pivot/parent.md",
+      "sha256": "bbb6d2bfb945e0367b1429eeee17d71d924af77514131bf83465031b15be5e70"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/parent_pivot/pivot.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/parent_pivot/pivot.md",
+      "sha256": "8405bc48054f88c873acb2bb3e8dcf7c3cf32f47e8e85b1a28fb29351cfdf600"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/parent_pivot/pivots.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/parent_pivot/pivots.md",
+      "sha256": "8b25c2ddbafd55c241c2c3df154695a9575aa26af874eecad4ddd99f02db491e"
+    },
+    "repo/content/features/featuresDeepDive/mesh/transforms/parent_pivot/transform_node.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/transforms/parent_pivot/transform_node.md",
+      "sha256": "3e3339b137ee0aedb1510b412247b1af3e5713f83a9fb42d26628ad83836668d"
+    },
+    "repo/content/features/featuresDeepDive/mesh/utilityLayerRenderer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/utilityLayerRenderer.md",
+      "sha256": "4862fcb8c7859145398832ab24679bcf2938aa78dbdd3d1a92640f6419486dcb"
+    },
+    "repo/content/features/featuresDeepDive/mesh/visualizeMeshData.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/mesh/visualizeMeshData.md",
+      "sha256": "5d76c084bd6f6325bd29e0708baa70a09cf4aab33160da9bc7b7d778778f06d1"
+    },
+    "repo/content/features/featuresDeepDive/occlusionQueries.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/occlusionQueries.md",
+      "sha256": "c2ed88146777fdfa45e7342eb4c40fed533e04ac650a1871b5611dc00671c939"
+    },
+    "repo/content/features/featuresDeepDive/particles.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles.md",
+      "sha256": "20c69aaa1d8eb77b4b2d83b905b51ccea366cbb257a94780dae1af2e96c6022c"
+    },
+    "repo/content/features/featuresDeepDive/particles/fluid_renderer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/fluid_renderer.md",
+      "sha256": "5b6ab8ff82e117a442be5cf48f4e63585b713c1edad8e2f69d07bbc138ccb5f7"
+    },
+    "repo/content/features/featuresDeepDive/particles/fluid_renderer/demos.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/fluid_renderer/demos.md",
+      "sha256": "822977e974ba6326c478109d03d023be02ef36596102d6b69a19a3f18faacfab"
+    },
+    "repo/content/features/featuresDeepDive/particles/fluid_renderer/gui.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/fluid_renderer/gui.md",
+      "sha256": "a92a611ecd864d698fee7aef8db9e7890dc4040feaa6d4c7e367536a684f14a7"
+    },
+    "repo/content/features/featuresDeepDive/particles/fluid_renderer/implementation_details.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/fluid_renderer/implementation_details.md",
+      "sha256": "75193eff6eb85357430433d75f4c23eb492727530bf591455ab5c65d79903481"
+    },
+    "repo/content/features/featuresDeepDive/particles/fluid_renderer/using_fluid_renderer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/fluid_renderer/using_fluid_renderer.md",
+      "sha256": "15bb807b51b3fe499873f6825bec51fc7f51f6bf6623a59eda8becef3a399792"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system.md",
+      "sha256": "2d8370e389a84b2a96f207f42255b6c0936bd78fa22b05e19ad4464081a63850"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/animation.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/animation.md",
+      "sha256": "73b4980b81e864dc91e97178b2004d8c5fb1d7de8881c3a1764cf44ce59c620a"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/attractors.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/attractors.md",
+      "sha256": "3c130b47f53143302b728d95ec1ca9a20e3fe9813a07235671a8709fadbb20fd"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/customizingParticles.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/customizingParticles.md",
+      "sha256": "1ac7a4fa4658fb70442ef545d981fbb27b553aeba7122486f217be93bf476afb"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/flowMap.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/flowMap.md",
+      "sha256": "da3aa50ea8a874115296a1ccdc9ec4bde1adea30f5a5c4a96f4f836b7d53d959"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/gpu_particles.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/gpu_particles.md",
+      "sha256": "2ed23ae0bc0b7281205c900c52dd231fbb7792e51da608c2a3c972cc2312d825"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/node_particle_editor.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/node_particle_editor.md",
+      "sha256": "b07327be1b6ca3b705866185ff9a4842f3195d46f0707c3ccd180d62d6062d8c"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/particle_snippets.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/particle_snippets.md",
+      "sha256": "5da15998e9b01b29973543595155100c40af86e9923acbdff7e5eb1bef3829b6"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/particle_system_intro.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/particle_system_intro.md",
+      "sha256": "7b85ec2716b91c56c29b067b138d3903daf31c44f585b35adb81ace88949edf9"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/particleHelper.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/particleHelper.md",
+      "sha256": "3baa35a2e98e6f14ea5cff4c29af693a225f92056f2fe084398a040c111d88bb"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/particles_loadFromFile.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/particles_loadFromFile.md",
+      "sha256": "822807105b8d3ffd604cc47e76944172d106ee3192b02788748ec82a59062fc6"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/particles_tuning.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/particles_tuning.md",
+      "sha256": "5aebbb4768f26deabc04e1a2fef6ebf442c956a64c96381ad6890675ac7f64a0"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/ramps_and_blends.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/ramps_and_blends.md",
+      "sha256": "f774672978ab68138bf52b91c581f11dc0243ea281311a61686a48a6c98808b7"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/shape_emitters.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/shape_emitters.md",
+      "sha256": "607a58c6ed5a1e800d93444cafd5744df404272025caf2f9a0ba31a39052aa6c"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/subEmitters.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/subEmitters.md",
+      "sha256": "cdf1905c7b488bd0373782747ff1cf10bd75bff400b5273fa1ca9024bb04062f"
+    },
+    "repo/content/features/featuresDeepDive/particles/particle_system/tuning_gradients.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/particle_system/tuning_gradients.md",
+      "sha256": "3481f1a427bdd0c668e1f9c0feb59afefe111d13e8d3e8e55634079f9c67de26"
+    },
+    "repo/content/features/featuresDeepDive/particles/point_cloud_system.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/point_cloud_system.md",
+      "sha256": "573c6478ebf7ef8c0537d82e91309d3a7dbfb56d43a570d25f1d0f1dbd41367f"
+    },
+    "repo/content/features/featuresDeepDive/particles/point_cloud_system/pcs_creation.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/point_cloud_system/pcs_creation.md",
+      "sha256": "13f5bda2c04416e4c2053e9302eb0e6fa624e832b990fdd8f1a1cc2ada2f4c2c"
+    },
+    "repo/content/features/featuresDeepDive/particles/point_cloud_system/pcs_intro.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/point_cloud_system/pcs_intro.md",
+      "sha256": "615c891e843e3a0031cffd78a625fcc7f6cff80480ce0973a456b52b452cb7f2"
+    },
+    "repo/content/features/featuresDeepDive/particles/point_cloud_system/pcs_manage_particles.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/point_cloud_system/pcs_manage_particles.md",
+      "sha256": "b5d768b41ccccbcf24d63267f409d881fdaf299d96eadd9fe50e967838756ff7"
+    },
+    "repo/content/features/featuresDeepDive/particles/point_cloud_system/pcs_manage.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/point_cloud_system/pcs_manage.md",
+      "sha256": "0809447b4e9c914d8f30a419b43a1e3b55fec3a3f17ae362d9cc44913c1eaf1c"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system.md",
+      "sha256": "033a028bcc88ad75a2f42eda12ea07d54dbfaf48c959666c15063cf6d87a9203"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/expandable_sps.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/expandable_sps.md",
+      "sha256": "1345a45c1073796505edfbda087ed24d9de01fdd74b1d0d5637d0b2f2c8f994a"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/immutable_sps.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/immutable_sps.md",
+      "sha256": "706f81dfaa4ee8bd8b8ddab0d42d44f97f2a1ab6c10f3cdcc280c7fe73a5c165"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/manage_sps_particles.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/manage_sps_particles.md",
+      "sha256": "0c689b9b3c42264baa25fd7208f03f0b0575fa4b2a3eabfdcd6eaf23ce2b7ac7"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/manage_sps.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/manage_sps.md",
+      "sha256": "ca62c2690e4e019a87c0abf2fdc41aab97d5f36006de88c16bb57a5ec89ec9cf"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/optimize_sps.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/optimize_sps.md",
+      "sha256": "2105c933c5ddc713128914b1ed242c3efa8f6e69a094a0eb9eb9cd98ffa14084"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/picking_sps.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/picking_sps.md",
+      "sha256": "bd504c6c30552de6f58e64dd71411e8acbf56d6395b44532fafc32c42cb6e2ad"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/sps_animate.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/sps_animate.md",
+      "sha256": "5d9cd6a0ab7b04ecc4edb5b4cd096dd89442a8c7c4e05f590c132532848580e3"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/sps_digest.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/sps_digest.md",
+      "sha256": "cbdd0d01d36f6ecc10cf373c83acbfc4793a7a91eb979e4b95b859ee4300b465"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/sps_intro.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/sps_intro.md",
+      "sha256": "a33703d1b9c3ee62ae200e1b2c8825485ba8bb8397897ee8df6fad9efe8293a0"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/sps_material.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/sps_material.md",
+      "sha256": "1419904add81e1aa878faabdb18ad96694e36c26ff5084c05f8438ed6c7dfeb7"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/sps_physics.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/sps_physics.md",
+      "sha256": "d14567a15e2c2f5094e04de33acd105755cc7e7f81da40d89d129851b83f0522"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/sps_transparency.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/sps_transparency.md",
+      "sha256": "0ab657d40dfe6afc0144dcdc01f70f3975c9d92e65e486da07c61e60a5f69666"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/sps_vertices.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/sps_vertices.md",
+      "sha256": "f60de13d105e1bc6123db3e303dc76f5d9f6e3ef15316432d700d58d1a16ed2c"
+    },
+    "repo/content/features/featuresDeepDive/particles/solid_particle_system/sps_visibility.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/particles/solid_particle_system/sps_visibility.md",
+      "sha256": "d30036fb06c0004415d6c84d2de68dc0831184cba53c2e1af9e198370240f351"
+    },
+    "repo/content/features/featuresDeepDive/physics.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics.md",
+      "sha256": "0b9fdf896ad39f4580c848cae850bc14c2b68892ca1a37ca090836191a59e61b"
+    },
+    "repo/content/features/featuresDeepDive/physics/v1/advancedPhysicsFeatures.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v1/advancedPhysicsFeatures.md",
+      "sha256": "1e30db43311cdf6d0b43fbd7fbf9c9225058c510a308d2679261e69c118258e6"
+    },
+    "repo/content/features/featuresDeepDive/physics/v1/compoundBodies.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v1/compoundBodies.md",
+      "sha256": "f1342f53b6138a01a2ce5a5d2d899ea490a2a118bdafbc4523cece854bc2fff1"
+    },
+    "repo/content/features/featuresDeepDive/physics/v1/forces.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v1/forces.md",
+      "sha256": "4e2771b020b472ede530cf539cc980f2435dcbdb35dfa75cb1bf3ec27af0f3f8"
+    },
+    "repo/content/features/featuresDeepDive/physics/v1/joints.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v1/joints.md",
+      "sha256": "f09b02039e4f3a42677dc91ccb555d6319a0d00d674194a0ea9830c8a2b2fd2d"
+    },
+    "repo/content/features/featuresDeepDive/physics/v1/pivotsAxes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v1/pivotsAxes.md",
+      "sha256": "9652a5e633bfe909c9c2a0b89bae2d7363fb5cf445a9d5cf485c3854152626f7"
+    },
+    "repo/content/features/featuresDeepDive/physics/v1/softBodies.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v1/softBodies.md",
+      "sha256": "bf209a4ed0ba4b2d759ade9a879570d5afef0f8ff0a02b62f2a43a228fdddfb6"
+    },
+    "repo/content/features/featuresDeepDive/physics/v1/usingPhysicsEngine.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v1/usingPhysicsEngine.md",
+      "sha256": "0c2351e904deb3c631620331033b5729c8391bb90b646b9cb77bc4f77ac74bb4"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/aggregates.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/aggregates.md",
+      "sha256": "7fe25444714fd2605867cfe15fd47a6949f91ed50e63cff4704ddbc704a3b3ec"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/characterController.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/characterController.md",
+      "sha256": "0bcef497b4582a4aa543146968ee478986d3162b82bd01830321107669642717"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/collisionEvents.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/collisionEvents.md",
+      "sha256": "34d8b1eb80a4da9c6dac1cd7e7c30c87ac0221f20922f973673d0166822fe5ab"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/compounds.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/compounds.md",
+      "sha256": "6ac07f0b4f38b0fe3817d53244c927e7838b272862116e0ebfd8e75f6a0694c5"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/constraints.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/constraints.md",
+      "sha256": "f740be5ab620dce31c5c6dac015042b920d0447af117841d7cb5e2a857807cbd"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/forces.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/forces.md",
+      "sha256": "6e2f6572e8cf9db9bd561a3b7687c40b4995d3aafbd11d148da98f4d97ee7dd1"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/migrateFromV1.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/migrateFromV1.md",
+      "sha256": "0690d394a9d412a1b9e0355146c1a31cf114b7b7173a3cdbb5c85dcab109bc74"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/perfTips.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/perfTips.md",
+      "sha256": "ac310a4a2ea041f3d100beefab7fa3d5624ba9590f21a4821335036ac3ba4082"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/prestep.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/prestep.md",
+      "sha256": "2536a3deb380e60baee60ecc0d19dd75bd350d94666948f2ac323bbb0537e365"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/ragdolls.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/ragdolls.md",
+      "sha256": "535474515430c71c9f9c23af649cbacec22d157fa9ad1077a8a7189a39ac2746"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/raycast.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/raycast.md",
+      "sha256": "348e44629eb76d32629d08fc0df3a07f518862a268408268534b5b208826fa16"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/rigidBodies.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/rigidBodies.md",
+      "sha256": "260d7663b4de5599cbbe9659f68f923b9e8f5a8ca5a20f48dd01853693d446bc"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/shapeCast.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/shapeCast.md",
+      "sha256": "3792e9fb168e3c5e14ef04f221d14528c2d79de6ea62fda5e3fd89d71d52a9d0"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/shapes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/shapes.md",
+      "sha256": "229d40bd84134e4ff0fdf4bfffb5cd1e37474a34f7b8385577d6c01b7af2266e"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/usingHavok.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/usingHavok.md",
+      "sha256": "0abe2f027475cd5b1c91d028ad38e593fa54c1cfba354cd195ade0c1cdd52e7f"
+    },
+    "repo/content/features/featuresDeepDive/physics/v2/usingPhysicsEngine.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/physics/v2/usingPhysicsEngine.md",
+      "sha256": "44166911b6f5559e52227c27791bfb8a57c84dcd4216652409b3177a84852acf"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses.md",
+      "sha256": "76c372af93bf15a9d58fbaa2afd3f6717da2fb62e438f47b8d7e6c3f2d3e9621"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/defaultRenderingPipeline.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/defaultRenderingPipeline.md",
+      "sha256": "fd9ab70d8824d9242c29e6cd8f54ba7e6c99bb2909246195534fd6fba1573362"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/dofLenseEffects.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/dofLenseEffects.md",
+      "sha256": "5cc409837bf9aaa195125b32d8f6ea53e3a03c3c93554dec4cfb77cb5481523b"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/fsr1RenderingPipeline.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/fsr1RenderingPipeline.md",
+      "sha256": "8167691481b13c37ddac7a2048093be29691a1145cf5922b7c0ed466acde789e"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/IBLShadowsRenderingPipeline.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/IBLShadowsRenderingPipeline.md",
+      "sha256": "6478cf5ad67c99ab8881c4013224e08c36da82ab78c512630e09b76794bb2a0f"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/meshBlending.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/meshBlending.md",
+      "sha256": "0cfc1cc9d92572da4a329158b012d5f5dc9579237d4eba6b189c21c6ad7fdfef"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/motionBlurPostProcess.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/motionBlurPostProcess.md",
+      "sha256": "5d20e99fcebd1c29869b51fb7dd50e39f8dc282ec3836b546775152ad11a0712"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/postProcessRenderPipeline.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/postProcessRenderPipeline.md",
+      "sha256": "4e74bc0c6fd3d2a6a79936d1e08b822a369cf266327496f299a4f7227bdd9641"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/renderTargetTextureMultiPass.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/renderTargetTextureMultiPass.md",
+      "sha256": "7b91d1975fc5dbe3155053b01063abea02c0b331ed3e3872409891c155c85ac9"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/screenSpaceReflectionsPostProcess.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/screenSpaceReflectionsPostProcess.md",
+      "sha256": "5af70c55fce1e931dab8f3a0031673080b539acb6175cbe86096ba51655cdbae"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/SSAORenderPipeline.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/SSAORenderPipeline.md",
+      "sha256": "462d8ac4819764b0d7c7e5f01cc58a7a1cad36f7f11e4056fbfbc7f746588a03"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/ssrRenderingPipeline.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/ssrRenderingPipeline.md",
+      "sha256": "2a72c1c53a6701bf61ee53d95f9ab1e56f1e9fe994bbc5a6e6c02aca0d2f19ce"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/standardRenderingPipeline.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/standardRenderingPipeline.md",
+      "sha256": "fb81f8acdcf93fc4ac3b947b815bb3349cc8e5bf10d97370afc2fcf18cf5beaf"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/taaRenderingPipeline.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/taaRenderingPipeline.md",
+      "sha256": "a98e0a35420eac2104c475c8ab67ad50eed7d6974c2834e7c4d7c3a35312febb"
+    },
+    "repo/content/features/featuresDeepDive/postProcesses/usePostProcesses.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/postProcesses/usePostProcesses.md",
+      "sha256": "e5f9fda59fa5c5f08adc370263fa99a90d3e84f5a71f969c03f7adcbefc2769c"
+    },
+    "repo/content/features/featuresDeepDive/scene.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene.md",
+      "sha256": "e1c9b1c7ac27e5c3bedaf56e8cd2ca016458de77bb052a6ea7f0cc9d38de42d9"
+    },
+    "repo/content/features/featuresDeepDive/scene/clipPlanes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/clipPlanes.md",
+      "sha256": "45bf1596997fb824dc8331a417624add9caf1c53f19a74ee4da073005fc18401"
+    },
+    "repo/content/features/featuresDeepDive/scene/customLoadingScreen.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/customLoadingScreen.md",
+      "sha256": "f02918b7d69639e5b7bb75d2c391b8a9123fba2346d16e172c7c551f250c1881"
+    },
+    "repo/content/features/featuresDeepDive/scene/deltaFiles.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/deltaFiles.md",
+      "sha256": "5c81044437ceaeca13750e3be82de3e0ce9bb66ae9978533c052796ad055b6e2"
+    },
+    "repo/content/features/featuresDeepDive/scene/fastBuildWorld.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/fastBuildWorld.md",
+      "sha256": "be11ceb87e135ad8b03eb73177a0b0cc6a4fecb320a4873a0bfcb016ba6583f7"
+    },
+    "repo/content/features/featuresDeepDive/scene/floating_origin.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/floating_origin.md",
+      "sha256": "55e6293fc433cd5fd6b5d4d38ce91033851d576038d415876a7f27072b5f8c88"
+    },
+    "repo/content/features/featuresDeepDive/scene/interactWithScenes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/interactWithScenes.md",
+      "sha256": "89a0bcb232266509fd0fe3dfdc2816dbb644dc71aa50840251cb8232be70ae45"
+    },
+    "repo/content/features/featuresDeepDive/scene/large_world.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/large_world.md",
+      "sha256": "3f6411893fb4ae8b8aff2b4fea3e82f1a16fd6aa8f998f19d91f5557d405045f"
+    },
+    "repo/content/features/featuresDeepDive/scene/layermask.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/layermask.md",
+      "sha256": "05a2dce7d2869fcd68b24d8c8738c2a284e46129e42f1c45dec9b93b68e23a77"
+    },
+    "repo/content/features/featuresDeepDive/scene/multiCanvas.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/multiCanvas.md",
+      "sha256": "434f6acad1a94c83f580ed012b472be3d67236a57fb8f53623f30fef88c3793e"
+    },
+    "repo/content/features/featuresDeepDive/scene/multiScenes.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/multiScenes.md",
+      "sha256": "5c5dbe1509fb67de11874e3228a2ba1d555d7534230dbba54ac4f41c8ce82d66"
+    },
+    "repo/content/features/featuresDeepDive/scene/offscreenCanvas.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/offscreenCanvas.md",
+      "sha256": "fc9a5921131d6480bce3ba23643e750009d3142cfdbd3d895ebd4b46bc39d26c"
+    },
+    "repo/content/features/featuresDeepDive/scene/optimize_your_scene.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/optimize_your_scene.md",
+      "sha256": "3e72e7a009419584b2f20a786e2e6d52e56008763f1a5291d23449b49a939bf7"
+    },
+    "repo/content/features/featuresDeepDive/scene/optimizeCached.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/optimizeCached.md",
+      "sha256": "cf3ba65a6cee827869f160a37bb71a70431b472b8890a721bc2663ddb878a86c"
+    },
+    "repo/content/features/featuresDeepDive/scene/optimizeOctrees.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/optimizeOctrees.md",
+      "sha256": "7b097b1857b7619d0cdb96ae9d800369ce88bcf8aa811d3fc609ffc491264c5b"
+    },
+    "repo/content/features/featuresDeepDive/scene/reducingMemoryUsage.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/reducingMemoryUsage.md",
+      "sha256": "c3643487419459118653365537922e306f7f7e83d4c41567b96e3671fc4ce7f7"
+    },
+    "repo/content/features/featuresDeepDive/scene/renderRemoteScreenshot.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/renderRemoteScreenshot.md",
+      "sha256": "62bee19041cbce5b742f16a820e72a41df0c40730bed52162394d32d4877e4de"
+    },
+    "repo/content/features/featuresDeepDive/scene/renderToPNG.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/renderToPNG.md",
+      "sha256": "4bee82cc688fd3a2c4c6a562f3596594665e0ded88f549084354310850c39bc4"
+    },
+    "repo/content/features/featuresDeepDive/scene/renderToVideo.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/renderToVideo.md",
+      "sha256": "733cf37f1a759cd40054e023c617b6b871296d8c59d3b83d769f294fa921e925"
+    },
+    "repo/content/features/featuresDeepDive/scene/sceneOptimizer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/scene/sceneOptimizer.md",
+      "sha256": "ad97c71bd2ee359a9908f7d9ced7fd32c9d73a8b8c0cb4b3048eb24c2e0e504f"
+    },
+    "repo/content/features/featuresDeepDive/smartFilters.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/smartFilters.md",
+      "sha256": "1b64f1263121691999bd5c1aae4bcd8c4de6558addafce113d2ae05eb5b32b6f"
+    },
+    "repo/content/features/featuresDeepDive/smartFilters/creatingNewBlocks.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/smartFilters/creatingNewBlocks.md",
+      "sha256": "cd16f33684f986b3c799defcd292146bfc07ec441d5d429f6bda3403fc31f764"
+    },
+    "repo/content/features/featuresDeepDive/smartFilters/howSmartFiltersWork.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/smartFilters/howSmartFiltersWork.md",
+      "sha256": "8b06b36d645c90f2113ff44c73af38f8820c869c15dee5f1b0ff41d9da89a8a6"
+    },
+    "repo/content/features/featuresDeepDive/smartFilters/howToUseSmartFilters.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/smartFilters/howToUseSmartFilters.md",
+      "sha256": "d6ac7852322a19ec403333db3a35b2b05e96008179b4018cf635b21607852b00"
+    },
+    "repo/content/features/featuresDeepDive/smartFilters/introductionToSmartFilters.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/smartFilters/introductionToSmartFilters.md",
+      "sha256": "6a8d4819bbd78255cf35a24609a6242ed7e3b5612a9fa9a5d3b67e4fc0fae733"
+    },
+    "repo/content/features/featuresDeepDive/sprites.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/sprites.md",
+      "sha256": "ebaecb84f9d296ce100d975fb9a796dbd6ac06bc04062d325ff4372a38951f20"
+    },
+    "repo/content/features/featuresDeepDive/sprites/packed_manager.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/sprites/packed_manager.md",
+      "sha256": "2d3a0e4cb23ab2b2322b9de8413a4e7319e9ed336e4a899fc9bb393541a5e6eb"
+    },
+    "repo/content/features/featuresDeepDive/sprites/picking_sprites.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/sprites/picking_sprites.md",
+      "sha256": "db963ff98c381be7f691c697e0da657174d5bb6950cb251d22e331fe8944965f"
+    },
+    "repo/content/features/featuresDeepDive/sprites/sprite_manager.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/sprites/sprite_manager.md",
+      "sha256": "dcd5d17ed52c397b7f7c1d7deca0ed795733f2a5b8af5d571987e99e17fdcc20"
+    },
+    "repo/content/features/featuresDeepDive/sprites/sprite_map_animations.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/sprites/sprite_map_animations.md",
+      "sha256": "8b47574ba27bf5f91eff15fef0f490dd8c6b4ee4dc17376205898c76bd967c61"
+    },
+    "repo/content/features/featuresDeepDive/sprites/sprite_map_example.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/sprites/sprite_map_example.md",
+      "sha256": "604b91d50a93ee5c62d20f6d6b4fbef958276680249cd1eafaf8b16fa16be452"
+    },
+    "repo/content/features/featuresDeepDive/sprites/sprite_map_options.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/sprites/sprite_map_options.md",
+      "sha256": "2384cd9f7310974274d4cada03aa89d8dc0d894fed67a5919c87db2c201b8cab"
+    },
+    "repo/content/features/featuresDeepDive/sprites/sprite_map_tiles.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/sprites/sprite_map_tiles.md",
+      "sha256": "d94c3598cd6d85931a68eb1d37e8f4ed293d7852ba4933ad272a77cca99a9b82"
+    },
+    "repo/content/features/featuresDeepDive/sprites/sprite_map.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/sprites/sprite_map.md",
+      "sha256": "b10c66ad0814bc1dcd679ae91b96c8450875393789fa8cf710de28aede15cce2"
+    },
+    "repo/content/features/featuresDeepDive/sprites/sprite_snippets.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/sprites/sprite_snippets.md",
+      "sha256": "3683b2fe64bc923c35ee01fc172b68904a493ee50343e48c5df0318e2de2aa9d"
+    },
+    "repo/content/features/featuresDeepDive/sprites/sprites_introduction.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/sprites/sprites_introduction.md",
+      "sha256": "10a6b58e13a03e8f680091a87aa6aa3e88a83bee08bbfaee9593e178021144e5"
+    },
+    "repo/content/features/featuresDeepDive/tags.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/tags.md",
+      "sha256": "d4386648544e30b3e8f648b8fb42941d87da1dec228846e884218fea200ccb91"
+    },
+    "repo/content/features/featuresDeepDive/webXR.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR.md",
+      "sha256": "27c88ebead19b2a0ed987f71a3dac31542b7df52dfc04506d100ad44bed1540f"
+    },
+    "repo/content/features/featuresDeepDive/webXR/introToWebXR.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/introToWebXR.md",
+      "sha256": "1514836203b1efa484ee0c7b415d6b25a6c94df15711542a6c3954932c69e992"
+    },
+    "repo/content/features/featuresDeepDive/webXR/webGPUXR.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/webGPUXR.md",
+      "sha256": "37c08a629f08feb3314ff5c61be6b5a61b26bc91228a9945e5261b6a77f12e1c"
+    },
+    "repo/content/features/featuresDeepDive/webXR/webXRARFeatures.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/webXRARFeatures.md",
+      "sha256": "9d8212a6755243013a13bfbc26436f525cdfbf53496134c618c462dae5509de1"
+    },
+    "repo/content/features/featuresDeepDive/webXR/WebXRBodyTracking.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/WebXRBodyTracking.md",
+      "sha256": "09b33c8656bbef46992435e154bc6d10f9fa62c83f8c7517eeb884a854c9504e"
+    },
+    "repo/content/features/featuresDeepDive/webXR/webXRCamera.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/webXRCamera.md",
+      "sha256": "bc282bff2c8f2f6d3db5a26442988542a1c963280603c94939631e2f60bcf5bc"
+    },
+    "repo/content/features/featuresDeepDive/webXR/webXRDemos.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/webXRDemos.md",
+      "sha256": "e929a1f785878a52da5f989a4a8ea5c7cf75f69de8b098523343020ad3509726"
+    },
+    "repo/content/features/featuresDeepDive/webXR/webXRExperienceHelpers.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/webXRExperienceHelpers.md",
+      "sha256": "f882426b6fecb71fe7de467fc5245d166339c6a1cd7640655003f2a0cc665796"
+    },
+    "repo/content/features/featuresDeepDive/webXR/webXRFeaturesManager.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/webXRFeaturesManager.md",
+      "sha256": "763346c95271abc3af5c5b97d65bb1c4c90d69aabcd5a7449d81439425e76c1e"
+    },
+    "repo/content/features/featuresDeepDive/webXR/WebXRHandTracking.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/WebXRHandTracking.md",
+      "sha256": "53f7169caa12f6052d22c0a230779ec1b66a13a72739994deb477624eef120e2"
+    },
+    "repo/content/features/featuresDeepDive/webXR/webXRInputControllerSupport.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/webXRInputControllerSupport.md",
+      "sha256": "25621941fc8f78a812da58b430685f5cde1bcbeb5d1b9873acbd9b3759159145"
+    },
+    "repo/content/features/featuresDeepDive/webXR/WebXRLayers.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/WebXRLayers.md",
+      "sha256": "3dad611dc395175e9015dbab83ec9c7835e15fc26458994eda71ca58d59271e8"
+    },
+    "repo/content/features/featuresDeepDive/webXR/WebXRMovement.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/WebXRMovement.md",
+      "sha256": "934fabac2163ff866d338e24429efb30495c70a551d25577f1c6bb558ff20faa"
+    },
+    "repo/content/features/featuresDeepDive/webXR/WebXRSelectedFeatures.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/WebXRSelectedFeatures.md",
+      "sha256": "01063998c3021dc4d8cdb731e4af6e9ca174ecd2b1f41bf614b9fa78e59e7506"
+    },
+    "repo/content/features/featuresDeepDive/webXR/webXRSessionManagers.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/webXRSessionManagers.md",
+      "sha256": "59f7c6a7d6093b32b19e349f0483f3c8e69bfe19c392eb5e46588961f1b98c85"
+    },
+    "repo/content/features/featuresDeepDive/webXR/WebXRTeleportation.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/featuresDeepDive/webXR/WebXRTeleportation.md",
+      "sha256": "7a5ba668959fa85ad095ef76be4f829d6d3459e23924d1fcf162c8bde36d7549"
+    },
+    "repo/content/features/introductionToFeatures.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures.md",
+      "sha256": "66da52eee82bbadf05328ab6130c4d5daa9c3a9a0d9f0b01df1299a9160f9840"
+    },
+    "repo/content/features/introductionToFeatures/chap1.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap1.md",
+      "sha256": "d41f3e3157b7de23833de065aeceb83e136931be1bdeee891b06b601d9eff114"
+    },
+    "repo/content/features/introductionToFeatures/chap1/first_app.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap1/first_app.md",
+      "sha256": "a6c9c60841db7773b349101b45ec2d0460452b2fe34a83a5e05dc5a2c511cae4"
+    },
+    "repo/content/features/introductionToFeatures/chap1/first_import.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap1/first_import.md",
+      "sha256": "8f1ff33924330a4a0844eff70b440f283214fc6c9764cad583f56a84a6ca75b9"
+    },
+    "repo/content/features/introductionToFeatures/chap1/first_scene.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap1/first_scene.md",
+      "sha256": "a8f48256b2221cbe3b4c70bd67b6a4f4f4a4983baac51981f0f0184908b44506"
+    },
+    "repo/content/features/introductionToFeatures/chap1/first_viewer.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap1/first_viewer.md",
+      "sha256": "e60298828a61a35ec552f95bea5c8e7c07f10ecdf4ae411698963d6731d97f19"
+    },
+    "repo/content/features/introductionToFeatures/chap2.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap2.md",
+      "sha256": "c89b8c46acdae6d89e7e93700503958bf22ea509c4dc3c0860d761315738fcdb"
+    },
+    "repo/content/features/introductionToFeatures/chap2/app2.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap2/app2.md",
+      "sha256": "c45725f7242b28ff32904f6560041510cc6f425959ba18f5b9fbadd293c6748f"
+    },
+    "repo/content/features/introductionToFeatures/chap2/combine.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap2/combine.md",
+      "sha256": "444594056fb31e6c39f9b8c4f7913b7cb4b73acf26aa3ad44fc8a019736ab9b7"
+    },
+    "repo/content/features/introductionToFeatures/chap2/copies.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap2/copies.md",
+      "sha256": "f8194bafb11a8e5814117e81b53e646766798dd70616b04aa94da462bedf944e"
+    },
+    "repo/content/features/introductionToFeatures/chap2/face_material.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap2/face_material.md",
+      "sha256": "37eb8669c4b3e671acccb085ad77ee1f68921a0304d078726560c39dfc57cf5e"
+    },
+    "repo/content/features/introductionToFeatures/chap2/ground.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap2/ground.md",
+      "sha256": "d804b4856632cec947370310822037badc78b7eb0333ace647869f3e6a947c5d"
+    },
+    "repo/content/features/introductionToFeatures/chap2/material.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap2/material.md",
+      "sha256": "7d24a56905a506ba29085962f1667240180e5c0ff1d893fb3f51f3c7968266a0"
+    },
+    "repo/content/features/introductionToFeatures/chap2/placement.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap2/placement.md",
+      "sha256": "512d5f97a1c416d28e63d8bf96cc5c8f8ddc9e153bb343260326bf6fe94c2b0d"
+    },
+    "repo/content/features/introductionToFeatures/chap2/sound.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap2/sound.md",
+      "sha256": "014cbc2a236abc12dd332de7fa0920227285b481e1cb1981941e7d4e45c7c967"
+    },
+    "repo/content/features/introductionToFeatures/chap2/variation.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap2/variation.md",
+      "sha256": "e07ff575b4abbb52cd5ba111fe68876fc5303e59610cf2d897d94c09bbf17b99"
+    },
+    "repo/content/features/introductionToFeatures/chap2/viewer2.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap2/viewer2.md",
+      "sha256": "6465bc3f7a1066aaea2684ec4f52bd12a912fcee2eb9becc10f3ba27c107eda9"
+    },
+    "repo/content/features/introductionToFeatures/chap3.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap3.md",
+      "sha256": "a46b2c3d955541ef6603b876b40d4232188829ee6169657d366f49516f251b7d"
+    },
+    "repo/content/features/introductionToFeatures/chap3/animation.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap3/animation.md",
+      "sha256": "6366c58e0df1db0239535b9332afcca90ce726329119d19d48f66a6ff4212e11"
+    },
+    "repo/content/features/introductionToFeatures/chap3/caranimation.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap3/caranimation.md",
+      "sha256": "a94de21f336083966fe291d05f4b4cb0764f6bddfb7cc96a602298c0f763de39"
+    },
+    "repo/content/features/introductionToFeatures/chap3/carmat.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap3/carmat.md",
+      "sha256": "c3ce36b81e2ec1a78a8cff2dd14c53219f48dcdb5f71c11dabd8c9e3b083ac75"
+    },
+    "repo/content/features/introductionToFeatures/chap3/import_character.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap3/import_character.md",
+      "sha256": "d613314f44a0cc6af6cdb45009cc57264f64d217349236d71eaa228d0cda0ce9"
+    },
+    "repo/content/features/introductionToFeatures/chap3/parent.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap3/parent.md",
+      "sha256": "d2cf2ec11b093aff02f57df9cf846f604b89c00b6fa287b50ea3213fc0e92f17"
+    },
+    "repo/content/features/introductionToFeatures/chap3/polycar.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap3/polycar.md",
+      "sha256": "a2dc70a01124d4353ae2013a62c87f679714b60ffb1db85ca5c25c259848c88b"
+    },
+    "repo/content/features/introductionToFeatures/chap3/walkpath.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap3/walkpath.md",
+      "sha256": "47a102d323ff92efbccbf09bfa97b4c8b34eee4b0d9dfbefbf3281e498a00895"
+    },
+    "repo/content/features/introductionToFeatures/chap4.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap4.md",
+      "sha256": "e64243a93a15bbd14aaedb337a1ea63de601a01971544e53c9c39f1f68139d99"
+    },
+    "repo/content/features/introductionToFeatures/chap4/mesh_intersect.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap4/mesh_intersect.md",
+      "sha256": "d08be2775e573d30efe9df376d0e60a48537ca5bf05fd3682150a6b8ef6a6a8e"
+    },
+    "repo/content/features/introductionToFeatures/chap5.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap5.md",
+      "sha256": "3f34c0241bdf97c1ccd1e218cb546ab428fad6b0eb5c6cec2b7f1f3325c7f655"
+    },
+    "repo/content/features/introductionToFeatures/chap5/hills.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap5/hills.md",
+      "sha256": "67ba217749d20bbf3a96c40f189ad55cf4360e7051a182a9c33c844428be0125"
+    },
+    "repo/content/features/introductionToFeatures/chap5/sky.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap5/sky.md",
+      "sha256": "8980c615187ae92e6963da9251432496eb1b4c2105d6cc90426bccdee9b834f1"
+    },
+    "repo/content/features/introductionToFeatures/chap5/trees.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap5/trees.md",
+      "sha256": "42d897f78374097b0033e68adf9509fde6829c02182beb63f7a938e8f440d838"
+    },
+    "repo/content/features/introductionToFeatures/chap6.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap6.md",
+      "sha256": "d87edd27b69cee407b24ff2e2b0588e4ac120a0f64f4ce28a8a016b6ae838e47"
+    },
+    "repo/content/features/introductionToFeatures/chap6/fountain.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap6/fountain.md",
+      "sha256": "f71db3442f9d3c4fb8d864fe5ec0e2ad0cb99485c8abec22bc3787cbe1268232"
+    },
+    "repo/content/features/introductionToFeatures/chap6/onoff.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap6/onoff.md",
+      "sha256": "9c779a384adf95d1358cc8fda66e6a43cd478dbd72c542416ffb836e77cef028"
+    },
+    "repo/content/features/introductionToFeatures/chap6/particlespray.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap6/particlespray.md",
+      "sha256": "261253b577b323ae5909a9d0b5edd7c329d5629759bb562ce613f0ad38c9d0c5"
+    },
+    "repo/content/features/introductionToFeatures/chap7.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap7.md",
+      "sha256": "0db2877498d8bb506c05783c31e982e0793e066c4352489fb08c47fc9e608bff"
+    },
+    "repo/content/features/introductionToFeatures/chap7/light_gui.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap7/light_gui.md",
+      "sha256": "1f8024314732146bcb9b6e0ed8c0faef5edfc594d18d29853a92940da42030a3"
+    },
+    "repo/content/features/introductionToFeatures/chap7/lights.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap7/lights.md",
+      "sha256": "554a7bde1e9ae324027bb9c64f1d16d51751028d0510cd1e16b8888af3f85f5c"
+    },
+    "repo/content/features/introductionToFeatures/chap7/shadows.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap7/shadows.md",
+      "sha256": "47ac3b05f887a5a4c5d845ebf2df6edc89b2fc79cb1ba66cb8e20a53cacac2e6"
+    },
+    "repo/content/features/introductionToFeatures/chap8.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap8.md",
+      "sha256": "c9b9873c9ef9f0633c4702904635303686abc4667e57c758f7109d4983192368"
+    },
+    "repo/content/features/introductionToFeatures/chap8/camera.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap8/camera.md",
+      "sha256": "d2a22fbd024956ca7689272da47e108f24615cbc09bd08485c462aa72dde299d"
+    },
+    "repo/content/features/introductionToFeatures/chap8/follow.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap8/follow.md",
+      "sha256": "31efee87d61b7ac0351f1e0413f90696475a3ab8dbe25b8d914042dd0be996cc"
+    },
+    "repo/content/features/introductionToFeatures/chap8/vr.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap8/vr.md",
+      "sha256": "80bef75b9b2e66fc1d54dba606aea8dcb372b8f0f06e79464e1c87fec1a7966a"
+    },
+    "repo/content/features/introductionToFeatures/chap9.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap9.md",
+      "sha256": "e7755a0a9d46cd1a59e9359b1761a194a65fd294082decff3c0896eb2d918910"
+    },
+    "repo/content/features/introductionToFeatures/chap9/physics.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/introductionToFeatures/chap9/physics.md",
+      "sha256": "6e76f2fdbe983733192532b12632eae46fe8d3cee83003cf083c4c948c78267c"
+    },
+    "repo/content/features/starterSceneCode.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/features/starterSceneCode.md",
+      "sha256": "717e2d2fafb6a9f8442d9cb002be8356651643cf72dba4c9a3da0cc238a72dd0"
+    },
+    "repo/content/setup/frameworkPackages/CDN.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/setup/frameworkPackages/CDN.md",
+      "sha256": "ddd2b0933751ff0cbb00899f8fd3c0f8bbd22b68f45bb60b73394c92cb72f8eb"
+    },
+    "repo/content/setup/frameworkPackages/es6Support.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/setup/frameworkPackages/es6Support.md",
+      "sha256": "d9fb20c01553ef7507a1266d5f6326dd9a62e62db922e5bc3ebe268bfd38dfc5"
+    },
+    "repo/content/setup/frameworkPackages/es6Support/treeShaking.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/setup/frameworkPackages/es6Support/treeShaking.md",
+      "sha256": "2adc1d7481c303e6b708a766b8c157ad1e6e6a246fd27ad54d4512283670dc9d"
+    },
+    "repo/content/setup/frameworkPackages/es6Support/treeShaking/contributing.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/setup/frameworkPackages/es6Support/treeShaking/contributing.md",
+      "sha256": "b915ef7b32a120760d583e1b0744d2ac485093c86fdc808c3773da99c0e5af3e"
+    },
+    "repo/content/setup/frameworkPackages/es6Support/treeShaking/registeringSideEffects.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/setup/frameworkPackages/es6Support/treeShaking/registeringSideEffects.md",
+      "sha256": "ec8c27957e8de28b7136ce797fdb2dc9d4332995fb319e7625beabfdd644070b"
+    },
+    "repo/content/setup/frameworkPackages/es6Support/treeShaking/troubleshooting.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/setup/frameworkPackages/es6Support/treeShaking/troubleshooting.md",
+      "sha256": "c43c81ffcfde5fb61d9643aeb41c093af9bdf36a57f3e0be185f1f3d3f806882"
+    },
+    "repo/content/setup/frameworkPackages/es6Support/treeShaking/usingPureImports.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/setup/frameworkPackages/es6Support/treeShaking/usingPureImports.md",
+      "sha256": "9b14763598c41b10967651b784e74b38dc5551d567d168a885c393299df4d95f"
+    },
+    "repo/content/setup/frameworkPackages/frameworkVers.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/setup/frameworkPackages/frameworkVers.md",
+      "sha256": "043889a9377fd7a33743b099cedfe17a694d6312b40e01ce9f911d24bac4c802"
+    },
+    "repo/content/setup/frameworkPackages/nativeBrowserESM.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/setup/frameworkPackages/nativeBrowserESM.md",
+      "sha256": "cf159949d90ab364522f997a5e75f4e1789ab53225794b2120cb45d7f347cb7e"
+    },
+    "repo/content/setup/frameworkPackages/npmSupport.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/content/setup/frameworkPackages/npmSupport.md",
+      "sha256": "167dd82fa46bd7e64e9d06ccafd341935d5d41ae633ab1864326887a87794cbd"
+    },
+    "repo/license.md": {
+      "url": "https://github.com/BabylonJS/Documentation/blob/24c6dc953f85bf21f4b924c1d65921933819f942/license.md",
+      "sha256": "9362ea9ea17cb221a20cbbd63f404710834cc273d2a9a7b60314fd68ab702cd6"
+    }
+  }
+}

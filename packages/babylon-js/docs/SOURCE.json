@@ -1,0 +1,18 @@
+{
+  "license": "Apache-2.0 (BabylonJS/Documentation repo license.md)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/BabylonJS/Documentation",
+      "ref": "master",
+      "paths": [
+        "license.md",
+        "configuration/structure.json",
+        "content/features.md",
+        "content/features/**/*.md",
+        "content/setup/frameworkPackages/**/*.md"
+      ]
+    }
+  ]
+}
