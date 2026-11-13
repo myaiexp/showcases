@@ -1,0 +1,37 @@
+{
+  "license": "MIT (spark repo LICENSE covers docs/)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/sparkjsdev/spark",
+      "ref": "v2.4.0",
+      "paths": [
+        "LICENSE",
+        "README.md",
+        "mkdocs.yml",
+        "docs/index.md",
+        "docs/docs/index.md",
+        "docs/docs/new-features-2.0.md",
+        "docs/docs/0.1-2.0-migration-guide.md",
+        "docs/docs/lod-getting-started.md",
+        "docs/docs/overview.md",
+        "docs/docs/system-design.md",
+        "docs/docs/spark-renderer.md",
+        "docs/docs/on-demand-rendering.md",
+        "docs/docs/splat-mesh.md",
+        "docs/docs/packed-splats.md",
+        "docs/docs/ext-splats.md",
+        "docs/docs/loading-splats.md",
+        "docs/docs/procedural-splats.md",
+        "docs/docs/splat-editing.md",
+        "docs/docs/dyno-overview.md",
+        "docs/docs/dyno-stdlib.md",
+        "docs/docs/new-spark-renderer.md",
+        "docs/docs/controls.md",
+        "docs/docs/performance.md",
+        "docs/docs/images"
+      ]
+    }
+  ]
+}
