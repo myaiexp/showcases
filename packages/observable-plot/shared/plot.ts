@@ -16,6 +16,9 @@ import './plot.css';
  *   type: Plot.binX<Plot.RectYOptions>({y: 'count'}, {x: 'weight', fill: 'sex'}).
  * - An explicit `figure: false` beats title, subtitle, caption and legends (they vanish);
  *   pass `figure: undefined` for "not forced".
+ * - A text mark given a data array but no x, y or frameAnchor turns its strings into an ordinal
+ *   position scale and wrecks the axes: give decoration text a frameAnchor.
+ * - Plot.legend types `columns` as a CSS string: pass String(n).
  *
  * Every example writes its whole Plot.plot({...}) spec in its own main.ts; this file only
  * sizes, places, re-renders and tears down what that spec returns.
