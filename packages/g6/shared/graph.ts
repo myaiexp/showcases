@@ -58,6 +58,14 @@ import './graph.css';
  *   The toolbar adds one hidden icon sprite (#g6-toolbar-svgicon) to body, shared and kept.
  * - Cards drive tooltip/contextmenu through the plugin's show() with an event built from the
  *   element's screen position, and lenses through their pointer handler (plugin-drive.ts).
+ * - getElementRenderBounds returns G's AABB (min, max, center, halfExtents), not { x, y,
+ *   width, height }. A graph has four canvases; the first in the DOM is the background one.
+ * - Keyboard events come from the container, which needs tabIndex = 0 to take focus.
+ *   node:drop and friends fire only when the dragged item follows the pointer (drag-element
+ *   with shadow: true). A synthetic DOM contextmenu event never reaches G6's handlers.
+ * - setNode, setEdge and setLayout replace the whole option: pass the full object each time.
+ *   zoomTo without an origin scales about the viewport centre. Coordinate conversions return
+ *   [x, y, z]: destructure with defaults under noUncheckedIndexedAccess.
  * - A card unmounted mid-animation can log one "reading 'getData'" TypeError from G6's own
  *   animation callback after destroy; it is harmless and not catchable from here.
  *
