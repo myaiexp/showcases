@@ -1,7 +1,6 @@
-// Users, events and links for the sequenceAnalysis examples, plus a typed spec builder
+// Users, events and links for the sequenceAnalysis examples, plus the registration and card helpers
 import VChart from '@visactor/vchart';
 import { registerSequenceAnalysis } from '@visactor/vchart-extension';
-import type { ISpec } from './chart.ts';
 
 // Since VChart 2.2 sequenceAnalysis comes from the extension; it registers its own dot and link series.
 registerSequenceAnalysis({ VChart });
@@ -34,8 +33,8 @@ interface Dot {
 }
 
 /** Each user does one event per step; the medium and the action rotate so the three modes all have something to show. */
-export function eventData(shift = 0): { user_id: string; user_image: string; dots: Dot[] }[] {
-  return USERS.map((user, u) => ({
+export function eventData(shift = 0, userCount = USERS.length): { user_id: string; user_image: string; dots: Dot[] }[] {
+  return USERS.slice(0, userCount).map((user, u) => ({
     user_id: user,
     user_image: USER_IMAGES[user] as string,
     dots: STEPS.map((step, s): Dot => ({
@@ -81,39 +80,29 @@ export const STEP_MEDIUM = {
 
 export const PALETTE = ['#5470c6', '#26a69a', '#f6bd16', '#e8684a'];
 
-export interface AnalysisOptions {
-  mode: 'time' | 'step';
-  mediumConnection?: boolean;
-  actionTarget?: boolean;
-  shift?: number;
-  /** Step mode, straight links: extend each link's end into its band (patternData.isExtend). */
-  extend?: 'left' | 'right';
-  height: number;
-  /** Mutates the generated common-chart spec (the guide's customTransformSpec). */
-  tweak?: (converted: Record<string, unknown>) => void;
+/** Card helper: keep only the links whose both ends belong to the first `userCount` users. */
+export function keepLinks<T extends { from: string; to: string }>(links: T[], userCount: number): T[] {
+  const names = USERS.slice(0, userCount).map((u) => u.toLowerCase());
+  return links.filter((l) => names.includes(l.from.split('_')[0] as string) && names.includes(l.to.split('_')[0] as string));
 }
 
-/** The complete extension spec; keep it, since updateSpec needs the whole thing (the guide's "Updates" section). */
-export function analysisSpec(o: AnalysisOptions): ISpec {
-  return {
-    type: 'sequenceAnalysis',
-    mode: o.mode,
-    mediumConnection: o.mediumConnection ?? false,
-    actionTarget: o.actionTarget ?? false,
-    height: o.height,
-    animation: false,
-    eventData: eventData(o.shift ?? 0),
-    actionData: o.mode === 'time' ? actionData(o.actionTarget ?? false) : [],
-    patternData: o.mode === 'step' ? patternData(o.extend) : [],
-    userImageMap: USER_IMAGES,
-    stepMediumMap: o.mode === 'step' && !o.mediumConnection ? STEP_MEDIUM : {},
-    customTransformSpec(converted: Record<string, unknown>) {
-      converted['color'] = PALETTE;
-      (converted['scrollBar'] as { start: number; end: number }[] | undefined)?.forEach((bar) => {
-        bar.start = 0;
-        bar.end = 1;
-      });
-      o.tweak?.(converted);
-    },
-  } as unknown as ISpec;
+/**
+ * customTransformSpec body shared by the examples: the palette, scroll bars opened to the full range, and in a
+ * 260x200 card no scroll bars, zoom or long time labels.
+ */
+export function tuneConverted(converted: Record<string, unknown>, preview: boolean): void {
+  converted['color'] = PALETTE;
+  const bars = converted['scrollBar'] as { start: number; end: number }[] | undefined;
+  bars?.forEach((bar) => {
+    bar.start = 0;
+    bar.end = 1;
+  });
+  if (!preview) return;
+  converted['scrollBar'] = [];
+  converted['dataZoom'] = [];
+  for (const axis of (converted['axes'] as { id?: string; label?: Record<string, unknown> }[]) ?? []) {
+    // The rich step labels ("IP... +2") collide at card width; the medium names of mediumConnection stay.
+    const richStepLabels = axis.id === 'top_medium' && axis.label !== undefined;
+    if (axis.id === 'bottom_time' || richStepLabels) axis.label = { ...axis.label, visible: false };
+  }
 }

@@ -1,8 +1,10 @@
 // sequenceAnalysis in step mode: users as rows, steps as columns, patternData links and their isExtend
 import type { Mount } from '@/types.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { select } from '../../shared/chart.ts';
-import { analysisSpec } from '../../shared/ext-sequence-data.ts';
+import { select, type ISpec } from '../../shared/chart.ts';
+import {
+  STEP_MEDIUM, USER_IMAGES, eventData, keepLinks, patternData, tuneConverted,
+} from '../../shared/ext-sequence-data.ts';
 
 type Extend = 'both ends' | 'left' | 'right';
 const OPTIONS: Extend[] = ['both ends', 'left', 'right'];
@@ -12,7 +14,24 @@ const mount: Mount = (el, ctx) =>
   mountLive<{ extend: Extend }>(el, ctx, {
     initial: { extend: 'both ends' },
     // The full extension spec is rebuilt on every change: updateSpec needs the whole thing, never getSpec().
-    build: (s, preview) => analysisSpec({ mode: 'step', height: preview ? 200 : 380, extend: toProp(s.extend) }),
+    build: (s, preview) =>
+      ({
+        type: 'sequenceAnalysis',
+        mode: 'step',
+        mediumConnection: false,
+        actionTarget: false,
+        height: preview ? 200 : 380,
+        animation: false,
+        eventData: eventData(0, preview ? 2 : 3),
+        actionData: [],
+        // Each link may set isExtend: 'left' or 'right' to stretch only that end into its band.
+        patternData: keepLinks(patternData(toProp(s.extend)), preview ? 2 : 3),
+        userImageMap: USER_IMAGES,
+        stepMediumMap: STEP_MEDIUM,
+        customTransformSpec(converted: Record<string, unknown>) {
+          tuneConverted(converted, preview);
+        },
+      }) as unknown as ISpec,
     controls(bar, live) {
       select(bar, 'patternData.isExtend', OPTIONS, (v) => live.set({ extend: v as Extend }));
     },
