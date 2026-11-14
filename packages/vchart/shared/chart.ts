@@ -57,6 +57,13 @@ export interface Chart {
  * - A gaugePointer series needs radiusField, and a gauge's radius axis must stay a band
  *   axis (a linear one throws "step is not a function").
  * - A pie indicator with trigger 'select' does not follow setSelected.
+ * - mosaic needs registerMosaicChart(); sequence needs registerSequenceChart({ VChart })
+ *   from @visactor/vchart-extension.
+ * - A sequence dot series without subTitle.style, or a dataZoom with start 0 and end 1,
+ *   leaves the chart blank with no error. Dot rows have a fixed ~28px pitch.
+ * - Sankey nodeSortBy/linkSortBy receive node and link objects, not data fields.
+ * - Treemap nonLeafLabel text is dark by default; set style.fill.
+ * - Series drillDown(path) and drillUp() work from code once drill and drillField are set.
  * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
  * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
  * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
