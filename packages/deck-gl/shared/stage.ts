@@ -18,6 +18,17 @@ import type { MountContext } from '@/types.ts';
  * - A view state set from code (`viewState`) is not normalized the way a controller's is:
  *   at a longitude past ±180° the MapView draws nothing. Wrap a drifting longitude with
  *   ((lng + 180) % 360) - 180.
+ * - GeoJsonLayer draws circle points with its fill: filled: false hides them.
+ * - Billboarded icons and text at a high pitch sink into a ground layer's depth; give the
+ *   layer parameters: { depthCompare: 'always' }.
+ * - TextLayer builds its glyph atlas once per characterSet / fontFamily / fontSettings: when
+ *   a control changes one, give the layer a new id so the atlas is rebuilt.
+ * - IconLayer.iconAtlas is typed string | Texture although the docs allow a canvas: pass
+ *   canvas.toDataURL().
+ * - GeoJsonLayer's prefixed accessors (getIcon, getText) take an untyped feature: annotate
+ *   it as Feature<Geometry, Props>.
+ * - Layers in an OrbitView or OrthographicView need coordinateSystem: CARTESIAN.
+ * - Accessors that read changing state need updateTriggers, or a fresh layer per change.
  */
 
 /** Stage heights: a gallery card is 200px; the full view gets room to explore. */
