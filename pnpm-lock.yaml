@@ -176,6 +176,9 @@ importers:
       sortablejs:
         specifier: ^1.15.7
         version: 1.15.7
+      sync-ammo:
+        specifier: 0.1.2
+        version: 0.1.2
       three:
         specifier: 0.187.0
         version: 0.187.0
@@ -1804,6 +1807,9 @@ packages:
 
   stylis@4.4.0:
     resolution: {integrity: sha512-5Z9ZpRzfuH6l/UAvCPAPUo3665Nk2wLaZU3x+TLHKVzIz33+sbJqbtrYoC3KD4/uVOr2Zp+L0LySezP9OHV9yA==}
+
+  sync-ammo@0.1.2:
+    resolution: {integrity: sha512-Itf3EYf9ab8/cSVcT3ntE+do4Y57fN2fjsNXNj2RgxW58WjkXeBzL26HkPEJsFc6ly759JXU6ewVupiIH51clg==}
 
   tabbable@6.5.1:
     resolution: {integrity: sha512-dMCuwDUY6Noz3zVKLefBC4wq+aJV20yc7vWmM7uTNGwtQSFF5kX7OUIUsxuVajz/bdt5Xqdah3/0NLjth+cM5A==}
@@ -3469,6 +3475,8 @@ snapshots:
   stoppable@1.1.0: {}
 
   stylis@4.4.0: {}
+
+  sync-ammo@0.1.2: {}
 
   tabbable@6.5.1: {}
 
