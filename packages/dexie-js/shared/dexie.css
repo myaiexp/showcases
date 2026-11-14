@@ -277,3 +277,11 @@
   padding: 0 2px;
   font-size: 8px;
 }
+/* A card has no room for badge text: the badge shrinks to a coloured tick (orange key, blue index). */
+.dx-card .dx-th .dx-badge {
+  width: 3px;
+  height: 0.9em;
+  padding: 0;
+  font-size: 0;
+  vertical-align: -0.1em;
+}
