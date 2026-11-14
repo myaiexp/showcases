@@ -1,0 +1,18 @@
+/* Product card that adapts to its own width: a resizable box holding a card with three layouts */
+[data-example='motion/responsive-card-size'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .box { width: 240px; max-width: 100%; height: 150px; overflow: hidden; border: 1px dashed var(--fg-3); border-radius: 8px; padding: 6px; }
+  .box.full { resize: both; overflow: auto; width: 300px; height: 230px; min-width: 120px; min-height: 120px; max-width: 100%; padding: 8px; }
+  .item { position: relative; height: 100%; display: flex; flex-direction: column; gap: 6px; padding: 8px; background: var(--bg-surface); border: 1px solid var(--border); overflow: hidden; }
+  .pic { flex: 1; min-height: 28px; border-radius: 8px; background: linear-gradient(135deg, #3a2a6a, #c0507a 60%, #f0a050); }
+  .name { font-weight: 600; font-size: 0.85rem; color: var(--fg-1); }
+  .desc, .price { display: none; font-size: 0.75rem; color: var(--fg-2); }
+  .price { color: var(--green); font-weight: 600; }
+  .size { position: absolute; top: 6px; left: 6px; padding: 1px 6px; border-radius: 8px; background: rgba(0, 0, 0, 0.55); font-family: var(--font-mono); font-size: 0.65rem; color: #fff; }
+  .item[data-layout='cozy'] .price { display: block; }
+  .item[data-layout='wide'] { flex-direction: row; align-items: stretch; }
+  .item[data-layout='wide'] .pic { flex: 0 0 40%; }
+  .item[data-layout='wide'] .text { display: grid; align-content: center; gap: 4px; }
+  .item[data-layout='wide'] .desc, .item[data-layout='wide'] .price { display: block; }
+  .item[data-layout='compact'] .name { font-size: 0.7rem; }
+}

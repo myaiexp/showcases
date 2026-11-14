@@ -1,0 +1,12 @@
+/* Upload progress ring: an SVG ring with its percentage printed from a data attribute */
+[data-example='motion/progress-ring-attr-effect'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .ring { position: relative; width: 150px; height: 150px; }
+  .ring.big { width: 200px; height: 200px; }
+  .ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .ring circle { fill: none; stroke-width: 8; stroke-linecap: round; }
+  .ring .back { stroke: var(--bg-raised); }
+  .ring::after { content: attr(data-pct) '%'; position: absolute; inset: 0; display: grid; place-items: center; font-size: 1.6rem; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--fg-1); }
+  .ring.big::after { font-size: 2.2rem; }
+  .file { margin-top: var(--space-2); font-size: 0.78rem; color: var(--fg-2); }
+}

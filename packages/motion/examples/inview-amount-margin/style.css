@@ -1,0 +1,13 @@
+/* Ad viewability: a scroll window inside a padded stage that also draws the detection zone */
+[data-example='motion/inview-amount-margin'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .label { margin: 0 0 var(--space-1); font-family: var(--font-mono); font-size: 0.72rem; color: var(--fg-2); }
+  .stage { position: relative; padding: 24px; width: min(100%, 240px); }
+  .stage.full { width: min(100%, 320px); padding: 40px; }
+  .view { height: 110px; overflow-y: auto; scrollbar-width: none; display: flex; flex-direction: column; gap: 10px; padding: 0; border: 1px solid var(--fg-3); border-radius: 6px; background: var(--bg-surface); }
+  .full .view { height: 200px; }
+  .zone { position: absolute; border: 1px dashed var(--accent); border-radius: 6px; pointer-events: none; }
+  .ad { flex: none; height: 48px; display: grid; place-items: center; border-radius: 6px; border: 1px solid var(--border); background: var(--bg-raised); color: var(--fg-3); font-size: 0.72rem; margin: 0 8px; }
+  .full .ad { height: 64px; font-size: 0.8rem; }
+  .ad.in { border-color: var(--green); color: var(--green); background: color-mix(in srgb, var(--green) 14%, var(--bg-raised)); }
+}

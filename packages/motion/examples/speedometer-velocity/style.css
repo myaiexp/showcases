@@ -1,0 +1,14 @@
+/* Speedometer for any value: a track with a handle and a half-circle gauge */
+[data-example='motion/speedometer-velocity'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .rig { width: min(100%, 240px); display: grid; gap: var(--space-3); justify-items: center; }
+  .rig.big { width: min(100%, 360px); }
+  .gauge { position: relative; width: 150px; height: 80px; overflow: hidden; }
+  .rig.big .gauge { width: 220px; height: 118px; }
+  .gauge::before { content: ''; position: absolute; left: 0; right: 0; top: 0; aspect-ratio: 1; border-radius: 50%; background: conic-gradient(from 270deg, var(--green) 0deg, #f5d142 90deg, var(--red) 180deg, transparent 180deg); mask: radial-gradient(circle closest-side, transparent 68%, #000 70%); }
+  .needle { position: absolute; left: calc(50% - 1.5px); bottom: 0; width: 3px; height: 88%; border-radius: 2px; background: var(--fg-1); transform-origin: 50% 100%; }
+  .hub { position: absolute; left: calc(50% - 6px); bottom: -6px; width: 12px; height: 12px; border-radius: 50%; background: var(--fg-1); }
+  .track { position: relative; width: 100%; height: 6px; border-radius: 3px; background: var(--bg-raised); }
+  .handle { position: absolute; top: -9px; left: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); }
+  .read { font-family: var(--font-mono); font-size: 0.72rem; color: var(--fg-2); font-variant-numeric: tabular-nums; }
+}

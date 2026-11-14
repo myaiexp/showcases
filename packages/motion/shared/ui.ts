@@ -29,6 +29,13 @@
 //   the first animation explicit [from, to] keyframes.
 // - SVG shapes animated with rotate get `transform-box: fill-box`, so `transform-origin` is relative to the
 //   shape's own box: a clock hand drawn from the centre up rotates correctly with `transform-origin: 50% 100%`.
+// - svgEffect's rotate/scale write `transform-box: fill-box` but SVG shapes default to `transform-origin: 0 0`
+//   (the top-left of that box), so a gear orbits its corner. Give the shape `transform-origin: 50% 50%` in CSS.
+// - attrEffect only re-cases aria*/data* keys: write other attribute names as the DOM has them ('stroke-dashoffset'),
+//   and its values must be motion values (a plain number is a type error: set it with setAttribute).
+// - inView/resize callbacks and delay() fired from them run outside the scope: wrap them with s.bind(...).
+// - Window-level resize(cb) does not call back on registration (the element form does): call it once yourself.
+// - animate(motionValue, 1) is skipped when the value is already 1: jump() it back before replaying.
 // - The exported `scroll()` option type omits `trackContentSize` (scroll.md documents it): cast the options.
 // - Not verified that `motion/mini` animations join a scope: keep their controls and stop() them yourself.
 

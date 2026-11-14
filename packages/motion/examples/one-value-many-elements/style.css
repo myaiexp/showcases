@@ -1,0 +1,12 @@
+/* One dimmer for every lamp: a row of lamps above a level bar */
+[data-example='motion/one-value-many-elements'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .panel { width: min(100%, 240px); padding: var(--space-3); border-radius: 14px; border: 1px solid var(--border); background: var(--bg-surface); display: grid; gap: var(--space-3); }
+  .panel.big { width: min(100%, 340px); padding: var(--space-4); }
+  .lamps { display: flex; justify-content: space-between; }
+  .lamp { width: 36px; height: 36px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #fff8c8, #ffc83a 60%, #c88a10); box-shadow: 0 0 18px 4px rgba(255, 200, 60, 0.45); }
+  .panel.big .lamp { width: 52px; height: 52px; }
+  .track { height: 8px; border-radius: 4px; background: var(--bg-raised); overflow: hidden; }
+  .fill { height: 100%; width: 100%; transform-origin: left; background: #ffc83a; }
+  .name { font-size: 0.75rem; color: var(--fg-2); display: flex; justify-content: space-between; }
+}

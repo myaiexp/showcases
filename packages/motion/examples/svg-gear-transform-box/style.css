@@ -1,0 +1,10 @@
+/* Gears turning about their own centres: one SVG with two gear paths */
+[data-example='motion/svg-gear-transform-box'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  svg { width: min(100%, 230px); border: 1px solid var(--border); border-radius: 12px; background: var(--bg-surface); overflow: hidden; }
+  svg.big { width: min(100%, 340px); }
+  /* SVG shapes default to transform-origin 0 0: 50% 50% makes it the middle of whichever box transform-box picks. */
+  path { transform-origin: 50% 50%; stroke: var(--bg-surface); stroke-width: 1; }
+  .a { fill: var(--accent); }
+  .b { fill: var(--orange); }
+}

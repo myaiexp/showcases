@@ -1,0 +1,11 @@
+/* Lazy-loading photo grid: placeholders that become painted canvases */
+[data-example='motion/lazy-load-images'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .count { margin: 0 0 var(--space-2); font-size: 0.78rem; color: var(--fg-2); font-variant-numeric: tabular-nums; }
+  .grid { width: min(100%, 240px); height: 150px; overflow-y: auto; scrollbar-width: none; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; padding: 6px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-surface); align-content: start; }
+  .grid.full { width: min(100%, 360px); height: 320px; gap: 8px; padding: 8px; }
+  .photo { position: relative; height: 0; padding-bottom: 100%; border-radius: 8px; overflow: hidden; background: var(--bg-raised); }
+  .photo canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
+  .photo::after { content: 'loading'; position: absolute; inset: 0; display: grid; place-items: center; font-size: 0.6rem; color: var(--fg-3); opacity: 0.8; }
+  .photo.loaded::after { display: none; }
+}

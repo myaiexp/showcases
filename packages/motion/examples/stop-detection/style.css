@@ -1,0 +1,14 @@
+/* Read receipts: a chat panel with an unread badge */
+[data-example='motion/stop-detection'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .head { width: min(100%, 240px); display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-2); font-size: 0.78rem; color: var(--fg-2); }
+  .head.full, .chat.full { width: min(100%, 340px); }
+  .badge { min-width: 22px; padding: 1px 8px; border-radius: 10px; background: var(--accent); color: var(--accent-text, #fff); text-align: center; font-variant-numeric: tabular-nums; }
+  .badge.zero { background: var(--bg-raised); color: var(--fg-3); }
+  .chat { width: min(100%, 240px); height: 140px; overflow-y: auto; scrollbar-width: none; display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-2); border: 1px solid var(--border); border-radius: 12px; background: var(--bg-surface); }
+  .chat.full { height: 280px; }
+  .msg { flex: none; max-width: 85%; padding: 6px 10px; border-radius: 12px 12px 12px 3px; background: var(--bg-raised); font-size: 0.78rem; color: var(--fg-1); display: flex; gap: 8px; align-items: flex-end; }
+  .msg .tick { font-size: 0.7rem; color: var(--fg-3); letter-spacing: -2px; transition: none; }
+  .msg.read .tick { color: var(--cyan); }
+  .msg.full { padding: 10px 14px; font-size: 0.85rem; }
+}

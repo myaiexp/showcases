@@ -1,0 +1,6 @@
+/* Day and night canvas scene: one canvas */
+[data-example='motion/prop-effect-canvas-scene'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  canvas { display: block; width: 240px; height: 150px; border-radius: 12px; border: 1px solid var(--border); }
+  canvas.big { width: min(100%, 400px); height: 250px; }
+}

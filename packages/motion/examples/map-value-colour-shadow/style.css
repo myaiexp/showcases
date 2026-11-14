@@ -1,0 +1,12 @@
+/* Thermostat that glows with the temperature: a tile with a thermometer and a reading */
+[data-example='motion/map-value-colour-shadow'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .tile { display: flex; align-items: center; gap: var(--space-4); width: 200px; padding: var(--space-4); border-radius: 18px; border: 2px solid transparent; background: var(--bg-surface); }
+  .tile.big { width: 280px; padding: var(--space-5); }
+  .therm { position: relative; width: 14px; height: 90px; border-radius: 7px; background: var(--bg-raised); overflow: hidden; }
+  .tile.big .therm { height: 120px; }
+  .mercury { position: absolute; inset: 0; transform-origin: 50% 100%; background: #fff; }
+  .num { font-size: 2.4rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--fg-1); }
+  .tile.big .num { font-size: 3rem; }
+  .cap { font-size: 0.75rem; color: var(--fg-2); }
+}

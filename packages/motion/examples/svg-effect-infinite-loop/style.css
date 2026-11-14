@@ -1,0 +1,11 @@
+/* Marching loading outline: an SVG pill drawn around a label */
+[data-example='motion/svg-effect-infinite-loop'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .pill { position: relative; width: 200px; }
+  .pill.big { width: 280px; }
+  .pill svg { display: block; width: 100%; overflow: visible; }
+  .pill rect { fill: var(--bg-surface); stroke-width: 3; }
+  .pill .track { stroke: var(--border); }
+  .pill .runner { fill: none; stroke: var(--accent); stroke-linecap: round; }
+  .pill span { position: absolute; inset: 0; display: grid; place-items: center; font-size: 0.85rem; color: var(--fg-1); }
+}
