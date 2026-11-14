@@ -1,4 +1,4 @@
-// Sync visuals with Draw: each step's light is scheduled with Tone.Draw at the note's time
+// Sync visuals with Draw: each light is scheduled with Tone.Draw at its note
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { toneStage } from '../../shared/stage.ts';

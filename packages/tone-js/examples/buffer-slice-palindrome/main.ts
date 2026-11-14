@@ -1,4 +1,4 @@
-// Buffer slice: ToneAudioBuffer.slice cuts a piece and a reversed copy plays it back
+// Buffer slice: ToneAudioBuffer.slice cuts a piece; a reversed copy plays it back
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

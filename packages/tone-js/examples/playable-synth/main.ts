@@ -1,4 +1,4 @@
-// Playable synth: a Tone.Synth on a keyboard, with its oscillator waveform switchable
+// Playable synth: a Tone.Synth on a keyboard, with a switchable waveform
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

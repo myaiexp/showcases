@@ -1,4 +1,4 @@
-// Omni oscillator: one class switches between plain, fm, am, fat, pwm and pulse waves
+// Omni oscillator: one class switches between plain, fm, am, fat, pwm, pulse
 import * as Tone from 'tone';
 import { select } from '../../shared/controls.ts';
 import { oscMount } from '../../shared/osc-line.ts';

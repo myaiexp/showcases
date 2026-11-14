@@ -1,4 +1,4 @@
-// Loop points: setLoopPoints chops a short repeating phrase out of a longer recording
+// Loop points: setLoopPoints chops a short loop out of a longer recording
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

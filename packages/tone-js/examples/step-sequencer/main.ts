@@ -1,4 +1,4 @@
-// Step sequencer: Tone.Sequence walks 16 steps and plays the cells switched on in each
+// Step sequencer: Tone.Sequence walks 16 steps, playing the cells switched on
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

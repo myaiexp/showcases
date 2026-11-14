@@ -1,4 +1,4 @@
-// Hold a note: triggerAttack starts a note, triggerRelease one second later ends it
+// Hold a note: triggerAttack starts a note, triggerRelease a second later ends it
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { toneStage } from '../../shared/stage.ts';

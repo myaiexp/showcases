@@ -1,4 +1,4 @@
-// Helpers for effect examples: a test source, a signal-flow picture, and the spec plumbing
+// Helpers for effect examples: a test source, a signal-flow picture, the spec
 import * as Tone from 'tone';
 import { sample } from './samples.ts';
 import type { Stage, ToneSpec } from './stage.ts';

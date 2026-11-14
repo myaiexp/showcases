@@ -1,4 +1,4 @@
-// Tone.js example: the context's lookAhead trades a delay after a click for steadier timing
+// Tone.js example: lookAhead trades a delay after a tap for steadier timing
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

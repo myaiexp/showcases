@@ -1,4 +1,4 @@
-// Fat oscillator: count detuned copies spread apart in cents beat against each other
+// Fat oscillator: detuned copies spread apart in cents beat against each other
 import * as Tone from 'tone';
 import { slider } from '../../shared/controls.ts';
 import { oscMount } from '../../shared/osc-line.ts';

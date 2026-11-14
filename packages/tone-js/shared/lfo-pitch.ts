@@ -1,4 +1,4 @@
-// An LFO steering an oscillator's pitch, with its curve drawn: shared by the LFO examples
+// An LFO steering an oscillator's pitch with its curve drawn, for LFO examples
 import * as Tone from 'tone';
 import { slider } from './controls.ts';
 import { burst, sampleFn, trace, voice, wave, type WaveType } from './signal-kit.ts';

@@ -1,4 +1,4 @@
-// Waveform partial counts: "sawtooth8" keeps only the first 8 harmonics of a sawtooth
+// Partial counts: "sawtooth8" keeps only the first 8 harmonics of a sawtooth
 import * as Tone from 'tone';
 import { select, slider } from '../../shared/controls.ts';
 import { oscMount } from '../../shared/osc-line.ts';

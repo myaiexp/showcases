@@ -1,4 +1,4 @@
-// Grain size and overlap: the two GrainPlayer settings that decide how smooth a stretch sounds
+// Grain size and overlap: the GrainPlayer settings that smooth a stretch
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

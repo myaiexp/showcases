@@ -1,4 +1,4 @@
-// Render offline: Tone.Offline records an arpeggio into a buffer, then a Player plays it
+// Render offline: Tone.Offline records an arpeggio, then a Player plays it
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { toneStage } from '../../shared/stage.ts';

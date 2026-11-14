@@ -1,4 +1,4 @@
-// Fade in and out: Player fadeIn and fadeOut soften a recording's start and cut-off
+// Fade in and out: Player fadeIn and fadeOut soften a recording's ends
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

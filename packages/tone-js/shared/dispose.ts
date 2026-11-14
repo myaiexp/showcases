@@ -1,4 +1,4 @@
-// Disposes whatever an example's build() returned: nodes, arrays and objects of them
+// Disposes what an example's build() returned: nodes, arrays and objects
 
 /**
  * Disposes `g`: a node, or every node reachable through arrays and plain objects inside it.

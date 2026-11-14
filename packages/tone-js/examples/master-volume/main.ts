@@ -1,4 +1,4 @@
-// One volume knob: Tone.getDestination() volume and mute act on every sound at once
+// One volume knob: the Destination volume and mute act on every sound at once
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { button, checkbox, slider } from '../../shared/controls.ts';

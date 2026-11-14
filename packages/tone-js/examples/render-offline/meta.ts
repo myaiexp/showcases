@@ -1,4 +1,4 @@
-// Tone.js example: Tone.Offline renders a phrase into a buffer, then a Player plays it
+// Tone.js example: Tone.Offline renders a phrase into a buffer to play back
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

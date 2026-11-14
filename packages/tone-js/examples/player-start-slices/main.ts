@@ -1,4 +1,4 @@
-// Slices: Player.start(time, offset, duration) plays one note-sized piece at a time
+// Slices: Player.start(time, offset, duration) plays one piece at a time
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { strip } from '../../shared/buffer-strip.ts';

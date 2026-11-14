@@ -1,4 +1,4 @@
-// Shared Tone.js stage: one spec, played live in full view, rendered silently for cards
+// Shared Tone.js stage: one spec, played live in full view, silent in cards
 import type { Cleanup, MountContext } from '@/types.ts';
 import { runCard } from './stage-card.ts';
 import { runLive } from './stage-live.ts';

@@ -1,4 +1,4 @@
-// FM oscillator: a modulator wobbling the carrier's pitch adds harmonics as the index grows
+// FM oscillator: a modulator bending the carrier's pitch adds harmonics
 import * as Tone from 'tone';
 import { select, slider } from '../../shared/controls.ts';
 import { oscMount } from '../../shared/osc-line.ts';

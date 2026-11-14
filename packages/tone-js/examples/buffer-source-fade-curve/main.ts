@@ -1,4 +1,4 @@
-// ToneBufferSource one-shots: each strike is a fresh source with its own fades and curve
+// ToneBufferSource one-shots: a fresh source per strike, with its own fades
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { select, slider } from '../../shared/controls.ts';

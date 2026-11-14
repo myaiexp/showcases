@@ -1,4 +1,4 @@
-// Microphone input: UserMedia opens the mic behind a button; cards show a voice stand-in
+// Microphone input: UserMedia opens the mic on a click; cards show a stand-in
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { button, checkbox, readout } from '../../shared/controls.ts';

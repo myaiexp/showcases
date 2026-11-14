@@ -1,4 +1,4 @@
-// Buffer from an array: ToneAudioBuffer.fromArray turns numbers computed in code into a sound
+// From an array: ToneAudioBuffer.fromArray turns computed numbers into sound
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';
