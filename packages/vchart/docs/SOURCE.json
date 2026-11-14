@@ -1,0 +1,19 @@
+{
+  "license": "MIT (LICENSE at the root of VisActor/VChart, which holds the docs under docs/assets)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/VisActor/VChart",
+      "ref": "v2.2.2",
+      "paths": [
+        "docs/assets/guide/menu.json",
+        "docs/assets/guide/en/**/*.md",
+        "docs/assets/option/en/**/*.md",
+        "docs/assets/api/en/**/*.md",
+        "docs/assets/changelog/en/*.md",
+        "docs/assets/faq/en/**/*.md"
+      ]
+    }
+  ]
+}

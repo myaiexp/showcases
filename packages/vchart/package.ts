@@ -1,0 +1,56 @@
+// VChart: VisActor's declarative chart library with narrative and animated charts
+import { definePackage } from '@/types.ts';
+
+export default definePackage({
+  name: 'VChart',
+  npm: '@visactor/vchart',
+  tagline: 'Declarative charts from one spec: dozens of chart types, rich animation choreography and components, on canvas.',
+  about:
+    'A chart is one spec object passed to new VChart(): data, series, axes and components are all described as configuration, drawn by the VRender engine. Every example runs on VChart 2.2 with its built-in dark theme; the 3D charts and the chart extensions come from @visactor/vchart-extension. The official site has its own demo gallery; that gallery is off limits here, so these examples are built from the guide, the option reference, the API reference and the FAQ alone.',
+  category: 'Data/Viz',
+  homepage: 'https://www.visactor.io/vchart',
+  docsUrl: 'https://www.visactor.io/vchart/guide/tutorial_docs/Getting_Started',
+  repo: 'https://github.com/VisActor/VChart',
+  added: '2026-11-14',
+  // The guide's chapter order (docs/assets/guide/menu.json), its Chart Types chapter split
+  // into groups of related types, then the option reference, the API reference and the FAQ.
+  // The guide's Cross-terminal chapter is framework and mini-app wrappers (React, Vue, Lynx,
+  // Node, the 0.0.x SVG plugin), so it has no section here.
+  sections: [
+    'Quick Start',
+    'Basic',
+    'Concepts: Series, Marks and Data',
+    'Concepts: Axes',
+    'Concepts: Components',
+    'Bar',
+    'Line and Area',
+    'Scatter, Heatmap and BoxPlot',
+    'Pie, Rose and Radar',
+    'Gauge, Progress and Liquid',
+    'Funnel',
+    'Hierarchy',
+    'Flow and Relation',
+    'Map',
+    'Word Cloud and Pictogram',
+    'Combination',
+    '3D Charts',
+    'Animation',
+    'Layout',
+    'Custom Extension',
+    'Theme',
+    'Self-adaption',
+    'Progressive Rendering',
+    'Load on Demand',
+    'Events',
+    'Functions',
+    'Plugins',
+    'Extensions',
+    'Option: Common',
+    'Option: Components',
+    'Option: Marks and Graphics',
+    'Option: Series',
+    'Option: Animation',
+    'API',
+    'FAQ',
+  ],
+});

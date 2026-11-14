@@ -1,0 +1,2229 @@
+{
+  "fetched": "2026-11-14T00:06:48.950Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/VisActor/VChart",
+      "ref": "v2.2.2",
+      "paths": [
+        "docs/assets/guide/menu.json",
+        "docs/assets/guide/en/**/*.md",
+        "docs/assets/option/en/**/*.md",
+        "docs/assets/api/en/**/*.md",
+        "docs/assets/changelog/en/*.md",
+        "docs/assets/faq/en/**/*.md"
+      ],
+      "commit": "7b224143672a8fcc2d620f05cef1fdf3de179793"
+    }
+  ],
+  "files": {
+    "repo/docs/assets/api/en/API/event.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/api/en/API/event.md",
+      "sha256": "3c1db19d211fe2d813f6ce05a5a5bedeeaaaf182fd000354fa1976622b1860c8"
+    },
+    "repo/docs/assets/api/en/API/function.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/api/en/API/function.md",
+      "sha256": "b2b8df945a24ddeca1a9a724375f93ccaebe51e00f29833204109abaa77d406c"
+    },
+    "repo/docs/assets/api/en/API/theme.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/api/en/API/theme.md",
+      "sha256": "73c7f1620c6eb4c1ae82bc6fdb16da81ceb0d14a2da2c6580a09e8069978ba3d"
+    },
+    "repo/docs/assets/api/en/API/vchart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/api/en/API/vchart.md",
+      "sha256": "1a5def33e904dd722776c299fbe33f54297463de758b1546f0e2ad2215159afd"
+    },
+    "repo/docs/assets/changelog/en/release-v1.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/changelog/en/release-v1.md",
+      "sha256": "8b771ca49830782cb0f43501e587eaba5ef4c4a2a1289fe00e1b8cc3d429ef07"
+    },
+    "repo/docs/assets/changelog/en/release.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/changelog/en/release.md",
+      "sha256": "4cb7a5caab083c8bc5ee97659ac7d8cd0f6e67581987e82d61047fa05e23d5f8"
+    },
+    "repo/docs/assets/changelog/en/v2-upgrade-guide.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/changelog/en/v2-upgrade-guide.md",
+      "sha256": "a2ebec77d87e8823476aefd1b158d7883e4301b0675db169a80a8a7b25ef3def"
+    },
+    "repo/docs/assets/faq/en/0-template.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/0-template.md",
+      "sha256": "480c83b9da8e37b028d5267b82460cc35de880e95f0a2ee9f24b59622e8822ea"
+    },
+    "repo/docs/assets/faq/en/1- Does the tooltip support changing the background color.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/1- Does the tooltip support changing the background color.md",
+      "sha256": "e0b22b1cda9a7df0fbe9c40524227fdb87da60465d7fa8104f199fa9f629b329"
+    },
+    "repo/docs/assets/faq/en/10- How to change the color of the legend.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/10- How to change the color of the legend.md",
+      "sha256": "45eb7be770b56e7f3b677599e8fd9be05a8baf9fb08172dbc4dceada69737b41"
+    },
+    "repo/docs/assets/faq/en/100-How can Tooltip achieve multi column display in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/100-How can Tooltip achieve multi column display in VChart.md",
+      "sha256": "2c3fd1c1ec77732b742f64fef9e6b8d2bce8bbf3972d507ad216c4b6f51ac688"
+    },
+    "repo/docs/assets/faq/en/101- How to configure nested pie charts in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/101- How to configure nested pie charts in VChart.md",
+      "sha256": "545adb0efb3145552f1b3378af850fcd02a5f6aae127592bf09596feba164d88"
+    },
+    "repo/docs/assets/faq/en/102-How to automatically update chart data in React components.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/102-How to automatically update chart data in React components.md",
+      "sha256": "57a11803094b75e77f8999c6d39c6b40f57706b67b0fc57efab05b88af768be1"
+    },
+    "repo/docs/assets/faq/en/103-How to change the hover display content when the mouse is moved into the chart area.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/103-How to change the hover display content when the mouse is moved into the chart area.md",
+      "sha256": "0860f5c34b1e4ae3ec6b0e958389ff07a50c63b49bbcfab83cf6821b80487fe0"
+    },
+    "repo/docs/assets/faq/en/104- Issues with x-axis data overlapping and y-axis data not displaying when using the vchart library.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/104- Issues with x-axis data overlapping and y-axis data not displaying when using the vchart library.md",
+      "sha256": "869b153bf0941384e183c8f1689cd05b75d2dc6b7bb724f083cd6577a99be131"
+    },
+    "repo/docs/assets/faq/en/105- How to customize Tooltip shapes.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/105- How to customize Tooltip shapes.md",
+      "sha256": "418da9fdd5f02b03eb53914690d4e7f8b82087e776aabdd8eefd5d68edf944e8"
+    },
+    "repo/docs/assets/faq/en/106- How to set a default selection for a sector in a VChart pie chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/106- How to set a default selection for a sector in a VChart pie chart.md",
+      "sha256": "bf90b6c5abdf678b82dec492d3f917149862bd22e8817bf08683439ccba3a731"
+    },
+    "repo/docs/assets/faq/en/107-How can we still make data points respond to hover events without displaying point graphics in area chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/107-How can we still make data points respond to hover events without displaying point graphics in area chart.md",
+      "sha256": "4b2b2716999f564fe4f4a4e09357220c41e3e438e6029c6a9a417714bcdd4dab"
+    },
+    "repo/docs/assets/faq/en/108-How to configure the axis scale alignment of a two-axis graph.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/108-How to configure the axis scale alignment of a two-axis graph.md",
+      "sha256": "c562d76d48cdfa183d64b13ea63b086b2d288cb92d5aea40ccae282c83e1f634"
+    },
+    "repo/docs/assets/faq/en/109-How to implement a combination of line chart and stacked bar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/109-How to implement a combination of line chart and stacked bar chart.md",
+      "sha256": "da04c24e66b7f8f9bd2988aa8e6bc7f295d5fcdf2c6144f5505d6340faa97a32"
+    },
+    "repo/docs/assets/faq/en/11- How to display a color block area within a specified x-axis range in the chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/11- How to display a color block area within a specified x-axis range in the chart.md",
+      "sha256": "066d70e8b6f21b354a45ee4101cc876ea85315ece03fd233d458d1a353c68621"
+    },
+    "repo/docs/assets/faq/en/110-How to customize pointer style in a gauge chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/110-How to customize pointer style in a gauge chart.md",
+      "sha256": "215d7d5b88e0787c86b2555b058d8ee55dec7a4e8563c673061b99228219d46c"
+    },
+    "repo/docs/assets/faq/en/111- How to sort x-axis labels in a combination chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/111- How to sort x-axis labels in a combination chart.md",
+      "sha256": "002e0395a7cadcab1c5dddf91ece39e0c8fba018b2dd27cfdddd3db5ccfdea76"
+    },
+    "repo/docs/assets/faq/en/112-How to add transition animations when clicking the legend of a funnel chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/112-How to add transition animations when clicking the legend of a funnel chart.md",
+      "sha256": "147a83bb60ec521a31997a52e417f2492b747cfd6915947dbab3a649d4bc5b9b"
+    },
+    "repo/docs/assets/faq/en/113- How to change bar width in a bar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/113- How to change bar width in a bar chart.md",
+      "sha256": "bc3ec154eaf20104e9712568639687a9d3e36c0fa8420fcc606b2a35d7511f90"
+    },
+    "repo/docs/assets/faq/en/114-How to add a title and subtitle to a chart in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/114-How to add a title and subtitle to a chart in VChart.md",
+      "sha256": "e05b8063c4e30796918460bebf095739202711b5286ea9aaec780ae0cbd4ce9f"
+    },
+    "repo/docs/assets/faq/en/115-How to modify the text color of the percentage of the funnel chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/115-How to modify the text color of the percentage of the funnel chart.md",
+      "sha256": "363a8d28ca69ab93e27894ef5e395b00529de792c3729f36ab790d11d3421fc7"
+    },
+    "repo/docs/assets/faq/en/116-How to add background color to the bottom of ring chart when it is set with gaps.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/116-How to add background color to the bottom of ring chart when it is set with gaps.md",
+      "sha256": "b645a01a116f4024e8314c5bdfed41b00a06874bce5274e90e34ed84d0db8488"
+    },
+    "repo/docs/assets/faq/en/117-How to modify the style of the legend element when the mouse is hovering over the legend.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/117-How to modify the style of the legend element when the mouse is hovering over the legend.md",
+      "sha256": "69490634f7f2e2d09f6204c410fa9353a455ff04c861eacdf3a87c2185251aab"
+    },
+    "repo/docs/assets/faq/en/118- How to implement point hover effects in the vchart library.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/118- How to implement point hover effects in the vchart library.md",
+      "sha256": "b423088ab7ac4e80f28d72c720e8771659e11366abd878f0c2b37b1a2f0fb6aa"
+    },
+    "repo/docs/assets/faq/en/119- How to bind click events to pie chart labels.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/119- How to bind click events to pie chart labels.md",
+      "sha256": "a28d400b6f7e3f11c589849a9c92afcd2dc69bf981d906273cd8f6042f07c262"
+    },
+    "repo/docs/assets/faq/en/12- How to set grid lines on VChart axes to dashed lines.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/12- How to set grid lines on VChart axes to dashed lines.md",
+      "sha256": "377a57edbf02c964d21bd1148a8b3d28c8c7ceb69963d0be2f20b91bc561b581"
+    },
+    "repo/docs/assets/faq/en/120- How to set an adaptive y-axis range in a line chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/120- How to set an adaptive y-axis range in a line chart.md",
+      "sha256": "49856565413252ca643ec22b336bd5a778b456a16df7d0fa716529dfce4f6abe"
+    },
+    "repo/docs/assets/faq/en/121- How to customize the rich text axis label style in radar charts.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/121- How to customize the rich text axis label style in radar charts.md",
+      "sha256": "17cc4009b21ae51435095352a9f7b5e6eb1ebda1d5f2f0686b34917a6a491215"
+    },
+    "repo/docs/assets/faq/en/122-How to customize the theme for a chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/122-How to customize the theme for a chart.md",
+      "sha256": "435fff8462b7749899bd38ed50ee580bff6e58359fd1e12c5b34401402ed30b5"
+    },
+    "repo/docs/assets/faq/en/123-Can we add a horizontal line for the average value to the data.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/123-Can we add a horizontal line for the average value to the data.md",
+      "sha256": "a8968fddb6cfbb7928e4f8497d66b6eaaa439f1941c48c1f5a90e3802157762e"
+    },
+    "repo/docs/assets/faq/en/124-Is there an API on the mini program that prompts the location of data points when touching the screen with your finger.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/124-Is there an API on the mini program that prompts the location of data points when touching the screen with your finger.md",
+      "sha256": "7f1212e3a292b8ef19ba2686b6ddf8055d6c7971120a58617a5c45155c5817ef"
+    },
+    "repo/docs/assets/faq/en/125- How to make the word cloud fully fill the outer container.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/125- How to make the word cloud fully fill the outer container.md",
+      "sha256": "b427751e6a6d8078f8c80b3bb1bd4638f7bfcbfe3dcedc9af6e630e7263efdd5"
+    },
+    "repo/docs/assets/faq/en/126- Line chart in combo chart is obscured, preventing tooltip hover.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/126- Line chart in combo chart is obscured, preventing tooltip hover.md",
+      "sha256": "aae48de45d9e6515a3561a077c2a9ec39ff4bfa49b39db8cd7beb0f6af58beb4"
+    },
+    "repo/docs/assets/faq/en/127- How to set the x and y axis labels and bar size in vchart bar charts.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/127- How to set the x and y axis labels and bar size in vchart bar charts.md",
+      "sha256": "f778d8093850192f385a48ff71c9ed7416b0fa4e7ca2e26196c48cdff89e0305"
+    },
+    "repo/docs/assets/faq/en/128- How to achieve overlap of bar chart data in the same dimension rather than stacking.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/128- How to achieve overlap of bar chart data in the same dimension rather than stacking.md",
+      "sha256": "3e4faa48e048f6481bd7b46f716130553c7b5c73994f618399b2fb661458136e"
+    },
+    "repo/docs/assets/faq/en/129-How to customize Tooltip in dual axis chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/129-How to customize Tooltip in dual axis chart.md",
+      "sha256": "d6f1dc3a19cdaa6083b733bb54ad1f95aaec851ed25458277c1067c5d7c50522"
+    },
+    "repo/docs/assets/faq/en/13-How does the label of the auxiliary line automatically change lines.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/13-How does the label of the auxiliary line automatically change lines.md",
+      "sha256": "20035bc6e5e6fc41052a1c04e137f487a7f24b66e68f4184b781e6602d5906cf"
+    },
+    "repo/docs/assets/faq/en/130-How to configure the colors of different line segments in a line chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/130-How to configure the colors of different line segments in a line chart.md",
+      "sha256": "14952b2aeef39078fef72fcd4928f143a69746c8e403891a398cf57756c0b258"
+    },
+    "repo/docs/assets/faq/en/131- Can the tick range of a continuous axis be configured to closely match the data range.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/131- Can the tick range of a continuous axis be configured to closely match the data range.md",
+      "sha256": "2d0c188faaca5e2e80eef2f45f703fc36c2e748d622645929ab458ec5da7cfc7"
+    },
+    "repo/docs/assets/faq/en/132- How to customize slice colors in VChart pie charts.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/132- How to customize slice colors in VChart pie charts.md",
+      "sha256": "e93d9294415ed519f1e8ce389233479c65624148af1dfb155bb16c5414e16063"
+    },
+    "repo/docs/assets/faq/en/133-How to control the display order of discrete legends.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/133-How to control the display order of discrete legends.md",
+      "sha256": "2934873c69957b4bfd267369602dbb57d2091977c26a6f25616daa2faefcccbc"
+    },
+    "repo/docs/assets/faq/en/134-How does the Ring with Indicator Card dynamically update indicator values.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/134-How does the Ring with Indicator Card dynamically update indicator values.md",
+      "sha256": "7a331cc0d914bee779c4058f7a801027349597a145eab3ebf29341d56ce6e0b1"
+    },
+    "repo/docs/assets/faq/en/135-How to customize the colors of bars based on values in a bar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/135-How to customize the colors of bars based on values in a bar chart.md",
+      "sha256": "2a5cc1bcc4bf65efa5bc64fdb44a5315e54da796bafe32dcc5bca0ad9ff949e4"
+    },
+    "repo/docs/assets/faq/en/136- How to prevent the stroke from being obscured when hovering over pie chart sectors.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/136- How to prevent the stroke from being obscured when hovering over pie chart sectors.md",
+      "sha256": "7f3770239733685290aa2c352b5f16b99d6d2e35cde83e9c4936f3d6bcbb8491"
+    },
+    "repo/docs/assets/faq/en/137- Does the bar chart support setting colors for individual columns.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/137- Does the bar chart support setting colors for individual columns.md",
+      "sha256": "655093d665af1f349e03091a5362061e989eb45fb4391908b8a7440fb9c88fa2"
+    },
+    "repo/docs/assets/faq/en/138-How to customize the font size of words in Word Cloud Chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/138-How to customize the font size of words in Word Cloud Chart.md",
+      "sha256": "cf80dc989b5024e354d20133e307426f43f44afa20380d181273016ee65af4d7"
+    },
+    "repo/docs/assets/faq/en/139-How to configure chart adaptive container width and height.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/139-How to configure chart adaptive container width and height.md",
+      "sha256": "9847f44a8f6a9dcc7aa651b97d5c6c31d7354058c3f50947659148238d362422"
+    },
+    "repo/docs/assets/faq/en/14-How to customize the label text content, color, and layout of a pie chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/14-How to customize the label text content, color, and layout of a pie chart.md",
+      "sha256": "dda46454340eccf8065d05f76cdc4d9875e8f9a6d777d9ee4b84eecc8125f92e"
+    },
+    "repo/docs/assets/faq/en/140- How to configure the highlight effect in a Sankey diagram.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/140- How to configure the highlight effect in a Sankey diagram.md",
+      "sha256": "ce45a2922c16adab08e2e0cd6a0e41948570c6399eea8d08ad16f805443b14ef"
+    },
+    "repo/docs/assets/faq/en/141- How to draw a multi-row layout line chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/141- How to draw a multi-row layout line chart.md",
+      "sha256": "f16235cab78776ab1b79c816d0e3393e6d4363b7ce7baf9268e7770039c53dbe"
+    },
+    "repo/docs/assets/faq/en/142- How to add tracking points in VChart based on Tooltip behavior.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/142- How to add tracking points in VChart based on Tooltip behavior.md",
+      "sha256": "42eef2d1b84e500eb6a838c504663c7795dbce4ca81b0db876c66442b0501f82"
+    },
+    "repo/docs/assets/faq/en/143- How to set the maximum number of labels on the X and Y axes.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/143- How to set the maximum number of labels on the X and Y axes.md",
+      "sha256": "3e32099f1aea5d6e949f3607f0390595e4bd83b9816a2a01a5184a926c93ffbb"
+    },
+    "repo/docs/assets/faq/en/144- How does the tooltip layer support the display of total data.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/144- How does the tooltip layer support the display of total data.md",
+      "sha256": "8316622b889f4d458b075eab894bfb8909a30b81b6c038fac47594e2a3235854"
+    },
+    "repo/docs/assets/faq/en/146-How to configure the transform width of the funnel chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/146-How to configure the transform width of the funnel chart.md",
+      "sha256": "a29791f2b22d7857290a100903c08230e8f057aaa62ba74feb10a420b32a7627"
+    },
+    "repo/docs/assets/faq/en/147-How to achieve background segmentation and rounded corner effect in a gauge chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/147-How to achieve background segmentation and rounded corner effect in a gauge chart.md",
+      "sha256": "d5a54945159d2124c9569ffcd34dcd132ae762d3e4258c2bee269841fda03891"
+    },
+    "repo/docs/assets/faq/en/148-How to configure horizontal scrollbars when there is too much data in a bar chart in an applet.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/148-How to configure horizontal scrollbars when there is too much data in a bar chart in an applet.md",
+      "sha256": "0b054c65c4c02b2d3dfbe1825270b6e216290ba97613b06f1f4be1913ff97235"
+    },
+    "repo/docs/assets/faq/en/149- How to obtain the relative position of the brush in the coordinate system in the vchart library.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/149- How to obtain the relative position of the brush in the coordinate system in the vchart library.md",
+      "sha256": "61c8c35f1656dcb62ed97cb2da0d7865784d852a398afbf863c1d9ce8e6f9cb8"
+    },
+    "repo/docs/assets/faq/en/15- How to implement line breaks in pie chart labels.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/15- How to implement line breaks in pie chart labels.md",
+      "sha256": "c4fba4d0f31fbb4add0f3bfac7d649969c1644f473bd9abe388844c84829d4ee"
+    },
+    "repo/docs/assets/faq/en/150- How to format axis labels.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/150- How to format axis labels.md",
+      "sha256": "e7b5d5af26e4167f72a36ab3da9bd5c52a62d36b0c88f06e8d93a6f6f29931c6"
+    },
+    "repo/docs/assets/faq/en/151-How does the legend component limit the width of the graph.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/151-How does the legend component limit the width of the graph.md",
+      "sha256": "3364c3578f919bd2ed2c5f02941d32d744589cfd88298a7fb51ecbc64ad65fee"
+    },
+    "repo/docs/assets/faq/en/152- How to display labels on multiple lines.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/152- How to display labels on multiple lines.md",
+      "sha256": "e4c261adcf99ce191f0156799f8bb158a79d547f98ac607d4ef9cc18dcc5da00"
+    },
+    "repo/docs/assets/faq/en/153- How to sort data by specified fields.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/153- How to sort data by specified fields.md",
+      "sha256": "aedd7d346723e4e6af43b7c65c69fb9bb9b5599ea0e46eb629b89ae206764c13"
+    },
+    "repo/docs/assets/faq/en/154- Segmented display of bar progress chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/154- Segmented display of bar progress chart.md",
+      "sha256": "438d9d5b3ec69067b06c6dbea7bdb4062b3147cbcc9c93053aa685add747907c"
+    },
+    "repo/docs/assets/faq/en/155- How to adjust the spacing between axis labels in vchart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/155- How to adjust the spacing between axis labels in vchart.md",
+      "sha256": "0fa188e08b7e12af14a5819439a695e606aff5e04d99d3d26fbcdee6e645cd85"
+    },
+    "repo/docs/assets/faq/en/156- How to assign different colors to multiple lines in a line chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/156- How to assign different colors to multiple lines in a line chart.md",
+      "sha256": "23cad3f1393c8e8e841a2d987c508a7af75bf0632728c35b592ef3750b87614f"
+    },
+    "repo/docs/assets/faq/en/157- How to individually configure legend styles and change graphic shapes in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/157- How to individually configure legend styles and change graphic shapes in VChart.md",
+      "sha256": "01e9c2f02d3473f526a009e6dbc4dedb1a209253b4615fb81fb600374ed8f6d6"
+    },
+    "repo/docs/assets/faq/en/158- How to configure the hover state of graphical elements.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/158- How to configure the hover state of graphical elements.md",
+      "sha256": "7524b29ed53edd3368d59f9b409d04dd409915965a2ec8bf5a52e99d2f29ac70"
+    },
+    "repo/docs/assets/faq/en/159-How to configure Tooltip to automatically wrap text.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/159-How to configure Tooltip to automatically wrap text.md",
+      "sha256": "80129287486e720cf1ccee83f932dfd3614b9c72b670e55da49415abf88d4654"
+    },
+    "repo/docs/assets/faq/en/16-How to achieve permanent display of chart tooltips.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/16-How to achieve permanent display of chart tooltips.md",
+      "sha256": "c5b134ff9f9a53258c7c43873a458a9f45e3739c7dcba6179ef548ea91a36394"
+    },
+    "repo/docs/assets/faq/en/160-How to disable the default interactive behavior of legends.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/160-How to disable the default interactive behavior of legends.md",
+      "sha256": "9ea4a747f12383f7723e2065b08a8c74c9d3f2abf34252f84f334e866b3c7c60"
+    },
+    "repo/docs/assets/faq/en/161-How to customize the axis label display spacing.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/161-How to customize the axis label display spacing.md",
+      "sha256": "c30dff793d6431027dd002b336b73369023f08a5d12cdca6584ade27c8087b9f"
+    },
+    "repo/docs/assets/faq/en/162-How to define the mapping relationship of the axes for the combination of line chart and stacked column chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/162-How to define the mapping relationship of the axes for the combination of line chart and stacked column chart.md",
+      "sha256": "150c87d40ba1618618415943403ce59a1c27503c1e1aa3c5df082749a1725ed6"
+    },
+    "repo/docs/assets/faq/en/163- How to limit the number of lines in a Tooltip.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/163- How to limit the number of lines in a Tooltip.md",
+      "sha256": "d38ad00bf8a9e1796a913670a22efc34b40c2111c6ad7e5f47192e553925bc9f"
+    },
+    "repo/docs/assets/faq/en/164-How to use vchart to display charts in Notebook.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/164-How to use vchart to display charts in Notebook.md",
+      "sha256": "782d86de0a56e4be738d55f1b600e7fc74cea9641fbf121926d84c5221058484"
+    },
+    "repo/docs/assets/faq/en/165-How to configure the default selection effect of the legend component.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/165-How to configure the default selection effect of the legend component.md",
+      "sha256": "a17e318f4b29ee44b2bc91f725503473925d5decdb60c9aa8cbb2f1dd0f36b3d"
+    },
+    "repo/docs/assets/faq/en/166- Does VChart's multi-group bar chart support multi-layer axis labels.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/166- Does VChart's multi-group bar chart support multi-layer axis labels.md",
+      "sha256": "4a09fd058f4286fdeb20c4e7219564ad21f67e9c2c1270c1f3274391dde6c15c"
+    },
+    "repo/docs/assets/faq/en/167-How to combine percentage bar and TGI chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/167-How to combine percentage bar and TGI chart.md",
+      "sha256": "5512e8f3e47c0d0c3cec6cc694b5e4d7411b07e20b4c3686816ec2b27640522b"
+    },
+    "repo/docs/assets/faq/en/168-How do I set up some lines to follow the left axis, while the others follow the right axis in a line chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/168-How do I set up some lines to follow the left axis, while the others follow the right axis in a line chart.md",
+      "sha256": "5494e5a14b4dd7beaf2e653fb39be3f2cdca31d41cb5bbe5015be2decd69c70d"
+    },
+    "repo/docs/assets/faq/en/169-How to set the order of the chart tooltip display content.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/169-How to set the order of the chart tooltip display content.md",
+      "sha256": "bdcc666a88653cad43bed1a60d8882458ced0844c08f9cc01b29321ed61cf35d"
+    },
+    "repo/docs/assets/faq/en/17- How to use tooltips and the x-axis in the vchart library.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/17- How to use tooltips and the x-axis in the vchart library.md",
+      "sha256": "1708709c938258588954f35cc829bc4d40d16ee9660ee4f2c8962e3d88e3e0bb"
+    },
+    "repo/docs/assets/faq/en/170- How to set different colors for each bar in a bar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/170- How to set different colors for each bar in a bar chart.md",
+      "sha256": "95df42226f2aa162a79f99f7e19671fd010ca1234694b0a07bbde720e6c6c783"
+    },
+    "repo/docs/assets/faq/en/171- How to achieve multi-group bar charts and highlight interactions based on grouping dimensions.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/171- How to achieve multi-group bar charts and highlight interactions based on grouping dimensions.md",
+      "sha256": "cad941d91ed6cdacdaec345db776c26216d195467d11527f7f06971479f16ef9"
+    },
+    "repo/docs/assets/faq/en/172- Can the bar series listen to event callbacks.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/172- Can the bar series listen to event callbacks.md",
+      "sha256": "35ae25296560eb4960201aa127b177d05cd6e91b3789724eb78f02153a9442ad"
+    },
+    "repo/docs/assets/faq/en/173- How to remove axis tick values.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/173- How to remove axis tick values.md",
+      "sha256": "ffc7726552959c46b5220c52479668ce31879a8f2cda7e73426d9861bbf39c86"
+    },
+    "repo/docs/assets/faq/en/174-How to achieve a bar chart similar to the stacked column chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/174-How to achieve a bar chart similar to the stacked column chart.md",
+      "sha256": "49cebe9dca62432b457acd8157aa50f1095b2f379c280c2a53f8ba64bf8ab5f1"
+    },
+    "repo/docs/assets/faq/en/175-How to define the number of decimal places of a value displayed by a label in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/175-How to define the number of decimal places of a value displayed by a label in VChart.md",
+      "sha256": "63817589643eb0387a254f88fb91f7227b62ed54488eb84fcae8fb83e2217db6"
+    },
+    "repo/docs/assets/faq/en/176-How to listen to the click event of the histogram to customize the style of the column.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/176-How to listen to the click event of the histogram to customize the style of the column.md",
+      "sha256": "580b680aed9966d9118e68669715513358698321a704a9fca2d1178e2150b532"
+    },
+    "repo/docs/assets/faq/en/177-How to get the data point information in a click event using react-vchart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/177-How to get the data point information in a click event using react-vchart.md",
+      "sha256": "954ae5f598891fe6805fa03f4c7613d2583e973c661dc6da1e1b8150d69a2ea9"
+    },
+    "repo/docs/assets/faq/en/178- How to set different fill colors based on groups in a radar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/178- How to set different fill colors based on groups in a radar chart.md",
+      "sha256": "2d97c3f2c2950f8db2e6a997d660e25ec39e48305d70822ec135ea4c1b7b4e45"
+    },
+    "repo/docs/assets/faq/en/179- Bar chart value labels aligned to the right display.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/179- Bar chart value labels aligned to the right display.md",
+      "sha256": "88b726801d8c3b2476fb59d55f108cfce9ad1ed8a069be7c81270c75ed30b7a9"
+    },
+    "repo/docs/assets/faq/en/18-How to truncate, wrap, or perform other formatting effects on axis labels in charts.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/18-How to truncate, wrap, or perform other formatting effects on axis labels in charts.md",
+      "sha256": "154b65ad87639cce874a734b959c6cd5c99ac740628f342448040ba5b6c00617"
+    },
+    "repo/docs/assets/faq/en/180-How to use charts libraries in Vue.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/180-How to use charts libraries in Vue.md",
+      "sha256": "5b4711b2c297c814205eb3deffc422a47d27f63f33db2736d8932e76121dddb0"
+    },
+    "repo/docs/assets/faq/en/181- How to format the tooltip in a VChart radar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/181- How to format the tooltip in a VChart radar chart.md",
+      "sha256": "2892ad5a11bd3b8cd95ad284daf673e63df4e26359c2f7cbcffd63f2b4f02226"
+    },
+    "repo/docs/assets/faq/en/182- How to assign different colors to a line in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/182- How to assign different colors to a line in VChart.md",
+      "sha256": "ff6bb96643e2edc0b0c99d2de8b466748b69a8785f3462d4a1285aec625045d7"
+    },
+    "repo/docs/assets/faq/en/183- Can the unit of the y-axis be configured without a function.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/183- Can the unit of the y-axis be configured without a function.md",
+      "sha256": "c56b4b630e33f45c0bdd6fa00cf671719c45070bc0d01b1ecaaf2b0345e28fdb"
+    },
+    "repo/docs/assets/faq/en/184-How to customize the shape and text style of the legend.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/184-How to customize the shape and text style of the legend.md",
+      "sha256": "254554efc5fde0fce501d9134ab4ea4d5f2199a70f01a162442dbf964ad30c47"
+    },
+    "repo/docs/assets/faq/en/185- How to set the title font size to semi's heading-4 in vchart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/185- How to set the title font size to semi's heading-4 in vchart.md",
+      "sha256": "f47e339f47466c1ded65c82469de639056ec2125fa1859cbd9fe59bc84ce8282"
+    },
+    "repo/docs/assets/faq/en/187- How to listen to events on data dimensions and retrieve corresponding data.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/187- How to listen to events on data dimensions and retrieve corresponding data.md",
+      "sha256": "375f764d75f3d2aa4faff46d6bcd1669ff92d4a2b365d036b76e4fa156330aed"
+    },
+    "repo/docs/assets/faq/en/188- In vchart, how to set the legend not to follow gradient colors and draw legends with rounded rectangles.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/188- In vchart, how to set the legend not to follow gradient colors and draw legends with rounded rectangles.md",
+      "sha256": "0276af8a43741f6cf3fad25f97f8f02ed513739f1386c627d39e3434ff6d1a56"
+    },
+    "repo/docs/assets/faq/en/189-How to customize the axis scale value of a gauge chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/189-How to customize the axis scale value of a gauge chart.md",
+      "sha256": "45702704f622ba96ddacfbe060816d9da34a53c8b043abfedb84862679fcada0"
+    },
+    "repo/docs/assets/faq/en/19-How to configure gradient colors for area charts.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/19-How to configure gradient colors for area charts.md",
+      "sha256": "119d0fd383b278d0e58f5be7e00640c41d12f71920b47bd19a43d8f3edbb0077"
+    },
+    "repo/docs/assets/faq/en/190- How to draw a dual-axis chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/190- How to draw a dual-axis chart.md",
+      "sha256": "f51d63b5e5b148f6b74ba206d32a92cc8512bcccdc769096e9e8fbf0bc5fa1a7"
+    },
+    "repo/docs/assets/faq/en/191-How to customize the position of gauge indicator in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/191-How to customize the position of gauge indicator in VChart.md",
+      "sha256": "f2a3ef3b3ca8cd3d4df5ea3fd02c7d32899ab0ddac385ec3f28f44ef7dda8742"
+    },
+    "repo/docs/assets/faq/en/192-How can I customize colors based on data values in a map chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/192-How can I customize colors based on data values in a map chart.md",
+      "sha256": "88a74fe0c380ac69d5f790c43c51e5306364f20ccfe309e4ad7c6ed28dc0e52d"
+    },
+    "repo/docs/assets/faq/en/193-How to clear charts and data.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/193-How to clear charts and data.md",
+      "sha256": "83d8e0bc217c0cf0119c6f28cd6baf6cd11569fbccf8f3fd9aedd28a1db998d8"
+    },
+    "repo/docs/assets/faq/en/194-How to customize the text content of the legend.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/194-How to customize the text content of the legend.md",
+      "sha256": "a9b91c51e379c7eef09ca23f63e31266962723cac83a2901cdc4a2a71bf50bb0"
+    },
+    "repo/docs/assets/faq/en/195- How to display all labels on the x-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/195- How to display all labels on the x-axis.md",
+      "sha256": "f850b4415110b4ce1c3a4cbbed968796b009e35cd6ffe51820e9ce20c38a38e4"
+    },
+    "repo/docs/assets/faq/en/196-How to customize legend shapes.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/196-How to customize legend shapes.md",
+      "sha256": "cd07dcbcee06e607f16959553223507e98027034f1ceb703b7b3fbbfc36ab6cd"
+    },
+    "repo/docs/assets/faq/en/197- How to configure animations in VChart combination charts.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/197- How to configure animations in VChart combination charts.md",
+      "sha256": "08dbf86d6661cefc6d4414a8e52a77d8accb610676d3ebf21fcadce767f7eb23"
+    },
+    "repo/docs/assets/faq/en/198- How to set the shape type of Legend and Tooltip in VChart line charts.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/198- How to set the shape type of Legend and Tooltip in VChart line charts.md",
+      "sha256": "f5fabbd60ea25b811df918e0cdf6a7e31f9bde762133cdc08baba8af9575d5a6"
+    },
+    "repo/docs/assets/faq/en/199-Can users click on data points within the VChart to show a list of actions.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/199-Can users click on data points within the VChart to show a list of actions.md",
+      "sha256": "01db0f89459e3b66a271fe00e53a8b047cb748c44ff4060fb5a03e34f8242a77"
+    },
+    "repo/docs/assets/faq/en/2-How can I customize the display of fields in data in Tooltip in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/2-How can I customize the display of fields in data in Tooltip in VChart.md",
+      "sha256": "269faeb6b6f5beaf0181239be411c733a7982c70f213dbc4b1c81f6f183f7b01"
+    },
+    "repo/docs/assets/faq/en/20- How to add graphics to axis labels.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/20- How to add graphics to axis labels.md",
+      "sha256": "89940301ce7412e43488f9f211c645a75dcf319095d815d37bbb0e432788ba16"
+    },
+    "repo/docs/assets/faq/en/200-When hovering over a donut chart, how to configure the style of donut chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/200-When hovering over a donut chart, how to configure the style of donut chart.md",
+      "sha256": "322deb4c1949bf96fdfb1e3ed30000fd44327727519a463ad972080c0aa09ab1"
+    },
+    "repo/docs/assets/faq/en/201-How to configure the scope of the crosshair auxiliary line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/201-How to configure the scope of the crosshair auxiliary line.md",
+      "sha256": "a785ac3b0354084fe0237bd32b1ec537ee13437468d414422f10f40631486698"
+    },
+    "repo/docs/assets/faq/en/202- Does VChart support setting graphical elements to the selected state.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/202- Does VChart support setting graphical elements to the selected state.md",
+      "sha256": "2ae15dfb0e0600a9bd724ea68b84485710c7bf70dc398a27ea07ee8b157a22d7"
+    },
+    "repo/docs/assets/faq/en/203- How to limit the width of tooltip content.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/203- How to limit the width of tooltip content.md",
+      "sha256": "6a65ebc89aaaf62904032d39f68f7e01ce9d6162c01c3bb27edb57759f148f85"
+    },
+    "repo/docs/assets/faq/en/204-How to set the color and transparency of individual words inside the word cloud based on their values.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/204-How to set the color and transparency of individual words inside the word cloud based on their values.md",
+      "sha256": "80f1b93e456f22f9d423290de1d95d05eb39c1d53dc497fa00db6ac251951fb9"
+    },
+    "repo/docs/assets/faq/en/205-How can chart tooltips be configured to display dimensions and measures as single or multiple rows.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/205-How can chart tooltips be configured to display dimensions and measures as single or multiple rows.md",
+      "sha256": "8948a8c4b2cb7c14c2d241b31de928749e5497654a1827d940ddcecd883bcabd"
+    },
+    "repo/docs/assets/faq/en/206- Can vchart multi-line charts limit the default rendered lines.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/206- Can vchart multi-line charts limit the default rendered lines.md",
+      "sha256": "8427a59222b45be7be120f3bbd7f793dd0a37b00d271e75358271f4f2893059e"
+    },
+    "repo/docs/assets/faq/en/207- How to trigger chart tooltips on mobile devices.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/207- How to trigger chart tooltips on mobile devices.md",
+      "sha256": "7ca83e026c71a24478f6a2c9ef4f9b331483d09f83cba8f5888e792f5e01c405"
+    },
+    "repo/docs/assets/faq/en/208-How to configure the position of the markLine text label, can it be configured to display at the starting point, end point or in the middle of the line segment.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/208-How to configure the position of the markLine text label, can it be configured to display at the starting point, end point or in the middle of the line segment.md",
+      "sha256": "fa1189ea1965e9c7de3220169f9e44fb737fb98bb0f8ec335a94e990f02eebc0"
+    },
+    "repo/docs/assets/faq/en/209- Can the tip displayed above an overly long label when hovering be configured to change background and text colors.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/209- Can the tip displayed above an overly long label when hovering be configured to change background and text colors.md",
+      "sha256": "03c225ee32a8109aa3caf1426bc883f3831d7e8203a6e5fc9dc1291d5d57155f"
+    },
+    "repo/docs/assets/faq/en/21- How to adjust the display order of contents in the Tooltip of a VChart stacked bar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/21- How to adjust the display order of contents in the Tooltip of a VChart stacked bar chart.md",
+      "sha256": "9fb6982b0a50d8815dfebdf5507d4504849e197081f13856d949771ff9eec493"
+    },
+    "repo/docs/assets/faq/en/210- How to set the time interval in a timeline.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/210- How to set the time interval in a timeline.md",
+      "sha256": "5ac3869bb243d1ff23f722f83e214c42fa29e5a409c5398cdf0235496095c669"
+    },
+    "repo/docs/assets/faq/en/211-How to configure it to ignore part of the display content.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/211-How to configure it to ignore part of the display content.md",
+      "sha256": "1c0e7ef948936afc29620fc83e6a8b79310df589a62d38ea12e69770932c74f4"
+    },
+    "repo/docs/assets/faq/en/212- What are the methods for data sampling in VChart charts.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/212- What are the methods for data sampling in VChart charts.md",
+      "sha256": "1e710dba5cf56f22dd8218f0dfd30e5c2101e71820ce77ea12ecabd3f35d841c"
+    },
+    "repo/docs/assets/faq/en/22- How to center the labels in a bar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/22- How to center the labels in a bar chart.md",
+      "sha256": "510ca52b369fd9afb7c5b12ff36864b47b71338e3a96454eca169dc29c3abef1"
+    },
+    "repo/docs/assets/faq/en/23- How to customize legend shapes.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/23- How to customize legend shapes.md",
+      "sha256": "b7bec9ca336fd284d111b981c4432a62b6469afb2c74e726fde092c6e671a85f"
+    },
+    "repo/docs/assets/faq/en/24- How to configure a custom theme in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/24- How to configure a custom theme in VChart.md",
+      "sha256": "07164d0ede371bc83ab221256ace1a28f16c1389ec32e001026582f3fcdb6c4b"
+    },
+    "repo/docs/assets/faq/en/25- How to listen to DataZoom operations.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/25- How to listen to DataZoom operations.md",
+      "sha256": "653ba6e2ccb6e33a2ebdd207743c49c204eb1bc71a8c3d0c1ac937c715438e58"
+    },
+    "repo/docs/assets/faq/en/26- How to render axis labels using HTML.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/26- How to render axis labels using HTML.md",
+      "sha256": "affb58a6b993f557dfccc8499a61d75b0b4a60139096a73e51d92e9cc1e911e3"
+    },
+    "repo/docs/assets/faq/en/27-How to customize the mounting node of the tooltip component in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/27-How to customize the mounting node of the tooltip component in VChart.md",
+      "sha256": "794a9ce7b8d0847067a5141e095ec8075f46f118d4eaaca06183978c767e3252"
+    },
+    "repo/docs/assets/faq/en/28- How to configure a correlation scatterplot in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/28- How to configure a correlation scatterplot in VChart.md",
+      "sha256": "4f482ca24aa09141bc957869faf41587297f04df61327333f855b59b53cb781a"
+    },
+    "repo/docs/assets/faq/en/29- How to control layout spacing of charts and components within the chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/29- How to control layout spacing of charts and components within the chart.md",
+      "sha256": "57be3c536c8060ce7c5e251d6d30485512f4c4b420f53bd860037c2cc94b22f2"
+    },
+    "repo/docs/assets/faq/en/3- How to solve the issue of line chart bifurcation after combining with stacked line and bidirectional bar charts.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/3- How to solve the issue of line chart bifurcation after combining with stacked line and bidirectional bar charts.md",
+      "sha256": "7ab7fdd3fb2d81eaf53284ef3b631fae81748bf81dfd26fcf3f9d2798454c2ee"
+    },
+    "repo/docs/assets/faq/en/30-How to add prompt information to the legend.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/30-How to add prompt information to the legend.md",
+      "sha256": "6a856981634d2b9b39728ee3fc08d4ac9c8fc11cd2b4eca2eb9f292ea9eac72a"
+    },
+    "repo/docs/assets/faq/en/31- Can VChart be server-side rendered.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/31- Can VChart be server-side rendered.md",
+      "sha256": "9c033106335e6c73e0ed8f90a14778ac696856a4312344b8eb69b692220fa034"
+    },
+    "repo/docs/assets/faq/en/32- How to configure the points in a line chart to be sparser in vchart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/32- How to configure the points in a line chart to be sparser in vchart.md",
+      "sha256": "d3cab0fdbd6ec062ce4da432aadbc511a0dbe9589dbb62c7c93e63bf98bb4eb1"
+    },
+    "repo/docs/assets/faq/en/33-How to customize the tooltip display content in a dual axis chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/33-How to customize the tooltip display content in a dual axis chart.md",
+      "sha256": "d144bc6cb4361674d2d370bbc14312fd4901b3320646f59d5680f4915db3af0b"
+    },
+    "repo/docs/assets/faq/en/34- How to left-align bar chart labels and keep the style consistent.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/34- How to left-align bar chart labels and keep the style consistent.md",
+      "sha256": "a2912a93abe19e34cd9f1ced2fb5d054e7a93ba35089d32577a0210dcb6f3796"
+    },
+    "repo/docs/assets/faq/en/35- How to disable chart interaction.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/35- How to disable chart interaction.md",
+      "sha256": "3a67a7b2b009ea9548501128ca35d8e2f0b38e5dafb9a32f28cb0640f92833dc"
+    },
+    "repo/docs/assets/faq/en/36-How to configure a DataZoom component in a chart that can be used on a mobile device.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/36-How to configure a DataZoom component in a chart that can be used on a mobile device.md",
+      "sha256": "39180a456f6e7d6191b2217c50c80945456821b681bac558389bf1d6413843b3"
+    },
+    "repo/docs/assets/faq/en/37-When the data is all 0, how to configure the position of the x-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/37-When the data is all 0, how to configure the position of the x-axis.md",
+      "sha256": "e3e798ad3bb66438dcfa9627fb333318b9d359c267c915d529c2658be9c44f4c"
+    },
+    "repo/docs/assets/faq/en/38-How does the label at the center of the ring chart adapt to the size of the ring.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/38-How does the label at the center of the ring chart adapt to the size of the ring.md",
+      "sha256": "5d48b9b0e596327b74a2935c55a0f7ad1385c14a1f6594bb5007b2ca9ba1d916"
+    },
+    "repo/docs/assets/faq/en/39-How to customize the length of the pie chart guide line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/39-How to customize the length of the pie chart guide line.md",
+      "sha256": "1427d4a33327543e52dde46c3670223520a5ae4a43dbbbd9c904ef61d02fe1aa"
+    },
+    "repo/docs/assets/faq/en/4-The time interval of the coordinate axis scale is given.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/4-The time interval of the coordinate axis scale is given.md",
+      "sha256": "621c3db638adc5ec99f349b2f2646caeca38c6f19b26e46890e87ea98eb2ee19"
+    },
+    "repo/docs/assets/faq/en/41- Does the line chart support setting background colors based on Y-axis segments.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/41- Does the line chart support setting background colors based on Y-axis segments.md",
+      "sha256": "db8d0995892f43b4ba8261bdea50ed8119ae373cbd6199e3017a017724a2f86b"
+    },
+    "repo/docs/assets/faq/en/42-How can VChart set the number of display bars for Tooltip, and support effects such as scrolling, pagination, and merged display when there is too much data.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/42-How can VChart set the number of display bars for Tooltip, and support effects such as scrolling, pagination, and merged display when there is too much data.md",
+      "sha256": "e93dcd398f1aae91572147fe97f602cd7607d8f877db920233e8a0a6ad9e6fd9"
+    },
+    "repo/docs/assets/faq/en/43- Does the thumbnail axis handle shape support SVG.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/43- Does the thumbnail axis handle shape support SVG.md",
+      "sha256": "1fdf01a510f00201feb727dddd4d3a3bb51e98a961cc8d8544196c614a9300ca"
+    },
+    "repo/docs/assets/faq/en/44-How to customize the image and color of a legend.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/44-How to customize the image and color of a legend.md",
+      "sha256": "deca6b8de0d89d1a5e12e06401940129b882b627375cf2a7f457b444d4a676c8"
+    },
+    "repo/docs/assets/faq/en/45-How to control the display order of stacking and legends and add display of total information on the tooltip.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/45-How to control the display order of stacking and legends and add display of total information on the tooltip.md",
+      "sha256": "5477220e84e51662b7d54997497732b53f5b91b0e3f2d26a6912b0c97cbea6b2"
+    },
+    "repo/docs/assets/faq/en/46- How to display all words in a word cloud on a small canvas.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/46- How to display all words in a word cloud on a small canvas.md",
+      "sha256": "dbaaf1052737b38cc48dffa9e70c22309fafa43ae243ef6571ef23b7f491a668"
+    },
+    "repo/docs/assets/faq/en/47- How to configure tooltip and legend shapes as rounded rectangles.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/47- How to configure tooltip and legend shapes as rounded rectangles.md",
+      "sha256": "7ab566fa6701bce455e403860ec08bcfcfaada99b8b9396127f81044a76c05a0"
+    },
+    "repo/docs/assets/faq/en/48-How to customize the position and offset of the tooltip in the chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/48-How to customize the position and offset of the tooltip in the chart.md",
+      "sha256": "5db3b8888e08f8700af0bdd3e96b136c010763bb737707a0639c4d3f54eabeeb"
+    },
+    "repo/docs/assets/faq/en/49- How to configure the hierarchy in a combination chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/49- How to configure the hierarchy in a combination chart.md",
+      "sha256": "7529bdd4dbfc771aac2fc30645b2c3e499e07c641fae94a0923905d38275d002"
+    },
+    "repo/docs/assets/faq/en/5- How to position the chart on the far left of the canvas.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/5- How to position the chart on the far left of the canvas.md",
+      "sha256": "70a86c9a1356e3a9361e596471edb2c28cb12a2702fae68d4b9054119dd70c09"
+    },
+    "repo/docs/assets/faq/en/50- How to adjust the layer order of lines in a line chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/50- How to adjust the layer order of lines in a line chart.md",
+      "sha256": "613f86019e63363bdf931e472eb55af28c79f28c656042fae80d9a213fd12664"
+    },
+    "repo/docs/assets/faq/en/51-How to use charts libraries in React.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/51-How to use charts libraries in React.md",
+      "sha256": "fff5a32a1412b037627f537e28e51bf2544d4baa528e2b086743b43c11d6e0b4"
+    },
+    "repo/docs/assets/faq/en/52- Can the legend shape be set to a rectangle.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/52- Can the legend shape be set to a rectangle.md",
+      "sha256": "d9f85602fb0cd650787291719b8c92fa6627edb9dfb862b4f30a67a77e451fc3"
+    },
+    "repo/docs/assets/faq/en/53- How to configure axis unit display on the axes of a line chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/53- How to configure axis unit display on the axes of a line chart.md",
+      "sha256": "7c441b2229a8993a46d86496a8bc1ee9ccf736e9fd2a9b41ff94271553f831e7"
+    },
+    "repo/docs/assets/faq/en/54- How to configure the outer border of graphical elements when hovering on a bar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/54- How to configure the outer border of graphical elements when hovering on a bar chart.md",
+      "sha256": "08e0bc09820afad5738bbc78f7ab605e3e17605d7df5799da372d7e9d76c9137"
+    },
+    "repo/docs/assets/faq/en/55- How to modify the marker graphic of tooltip content items.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/55- How to modify the marker graphic of tooltip content items.md",
+      "sha256": "93125cde4ec1f198fc9cddd676c3c2e997485ae8a3e3e1dab3d32f5a4e52ddc4"
+    },
+    "repo/docs/assets/faq/en/56- How to set the bar width in a bar chart in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/56- How to set the bar width in a bar chart in VChart.md",
+      "sha256": "7fbec47a0d0eae6231c6fa323edcfd1fd002751a98288ec04512c60260bc95f9"
+    },
+    "repo/docs/assets/faq/en/57-When listening to events at the Chart level, is it possible to get the type of element that was clicked via the event parameter, similar to the target parameter in dom.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/57-When listening to events at the Chart level, is it possible to get the type of element that was clicked via the event parameter, similar to the target parameter in dom.md",
+      "sha256": "0108eed23d4718f455b4153b90de5900602eedf55b709123fa54d94395b4f83b"
+    },
+    "repo/docs/assets/faq/en/58- How to clear the selection in the onbrushEnd event when using vchart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/58- How to clear the selection in the onbrushEnd event when using vchart.md",
+      "sha256": "3d11c803d3386474b4b25e5dff10a0c35dfb2861f12bb37c72a22665c1aff931"
+    },
+    "repo/docs/assets/faq/en/59- What are the methods for formatting chart labels in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/59- What are the methods for formatting chart labels in VChart.md",
+      "sha256": "d6d27aa8a210de35203cdc0b2c4cdc94100899f5d147e5e65b2442d2e0d8a6e7"
+    },
+    "repo/docs/assets/faq/en/6- How to export charts as images.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/6- How to export charts as images.md",
+      "sha256": "7c7bebb9b1c1b9db8658fbbab7dca70f74b12e4bd76a55c7dd838acbbe66f321"
+    },
+    "repo/docs/assets/faq/en/60- How to configure the size of a pie chart in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/60- How to configure the size of a pie chart in VChart.md",
+      "sha256": "748c9c5274f71939242c47010a7dcf50794080cca683d225e69a65f6088a7708"
+    },
+    "repo/docs/assets/faq/en/61-How to generate a simplified mini line chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/61-How to generate a simplified mini line chart.md",
+      "sha256": "3f499e2c7c314e8a2fdbec12cccbc2ef5625b67d9d40f3608156937920c51276"
+    },
+    "repo/docs/assets/faq/en/62-How to achieve reverse y-axis effect.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/62-How to achieve reverse y-axis effect.md",
+      "sha256": "de747bedc993cf0ee2d6bb6ed0d863484afe305f36d967f8bdafc756ede51bc4"
+    },
+    "repo/docs/assets/faq/en/63-How to configure the range of the axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/63-How to configure the range of the axis.md",
+      "sha256": "35849f6ad6965082698a69825b2c399b962097e9f90201726473de2b4c961e87"
+    },
+    "repo/docs/assets/faq/en/64-How to display the center value when selecting an arc in a pie chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/64-How to display the center value when selecting an arc in a pie chart.md",
+      "sha256": "b1d0e5997c0a091c2371ac1f101f6dcdb0ab969951ddd58be3bdbe145cac28e9"
+    },
+    "repo/docs/assets/faq/en/65- How to prevent displaying abbreviated tooltips when custom tooltips are already set.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/65- How to prevent displaying abbreviated tooltips when custom tooltips are already set.md",
+      "sha256": "b5bff172a48c7fa8c442747085c0fb0cf71b4b74942f51f824cd48737514d026"
+    },
+    "repo/docs/assets/faq/en/66-How do I customize the position of the tooltip to avoid occlusion.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/66-How do I customize the position of the tooltip to avoid occlusion.md",
+      "sha256": "6ab9d890b1791a90c53a0e816173eb5cb191bba02985332e9d01e7eac1e703be"
+    },
+    "repo/docs/assets/faq/en/67- How to set the axis width in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/67- How to set the axis width in VChart.md",
+      "sha256": "5e4d9551b870af8a8d87eb4b994ef6361ebf9d3d34c8cc95a0d5ca404067ec09"
+    },
+    "repo/docs/assets/faq/en/68- Is there a way to deselect all line chart contents currently set to display by default (e.g., a button to hide all).md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/68- Is there a way to deselect all line chart contents currently set to display by default (e.g., a button to hide all).md",
+      "sha256": "477d440b9381b8c4416cdd6831d110c351661da92adf66481df0a8c07bec4fd5"
+    },
+    "repo/docs/assets/faq/en/69- How to select only the current item when clicking a legend.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/69- How to select only the current item when clicking a legend.md",
+      "sha256": "d8a8f8530eb345523942f0e12dfedbb974227a8a5bc51b4b06cd86272eac74b5"
+    },
+    "repo/docs/assets/faq/en/7- How to draw combination charts in React.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/7- How to draw combination charts in React.md",
+      "sha256": "18adb7fb3dbf4c9c7825cdf2d40497897a17c33648f19876d812c031d5302c71"
+    },
+    "repo/docs/assets/faq/en/70-How can line and bar charts be displayed at the same time.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/70-How can line and bar charts be displayed at the same time.md",
+      "sha256": "23485069c2f80e182ea7ef05519f946547c9d1db098bd87116434871ba9151ed"
+    },
+    "repo/docs/assets/faq/en/71- Does the tree map support configuring the style when hovering.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/71- Does the tree map support configuring the style when hovering.md",
+      "sha256": "579f202d25d6bd62338a9fcc9c9deafb3c838835e7a30af333078cb339e65cea"
+    },
+    "repo/docs/assets/faq/en/72-How to set column width in bar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/72-How to set column width in bar chart.md",
+      "sha256": "799ef478ab4854ac62e3866d657767ca63ae51b69cc02976f75c21953e7190a6"
+    },
+    "repo/docs/assets/faq/en/73- In the vchart library, why does the area chart's Y-axis display lower values higher.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/73- In the vchart library, why does the area chart's Y-axis display lower values higher.md",
+      "sha256": "ac7fb3016e67b30ce0e80efd80245972221b62d548c3944f5cabe6e4756c96f5"
+    },
+    "repo/docs/assets/faq/en/74- How to adjust bar spacing in a bar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/74- How to adjust bar spacing in a bar chart.md",
+      "sha256": "3d2549d19c53d23dfb2164731846600801b3c74c70272695452eb4f7b1df0579"
+    },
+    "repo/docs/assets/faq/en/75-How to display the legend title and legend with left-right separation in the same row.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/75-How to display the legend title and legend with left-right separation in the same row.md",
+      "sha256": "f52b9e61073b2477467c041d85e39e86d0e95f83516ec753690858598ba1c52d"
+    },
+    "repo/docs/assets/faq/en/76-How do I set the scrollbars for the common chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/76-How do I set the scrollbars for the common chart.md",
+      "sha256": "5665141661676c8ba1d851d6d97cf6213dc97497bf81bcb13a6a105157012a8d"
+    },
+    "repo/docs/assets/faq/en/77-How to customize the display text content of the funnel chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/77-How to customize the display text content of the funnel chart.md",
+      "sha256": "8ba4c9efca6138ddbc2cf157a9aeb556a218c6cbbbb3973490f2eae6fdef878f"
+    },
+    "repo/docs/assets/faq/en/78-How do I configure the default scroll position for chart scrollbars.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/78-How do I configure the default scroll position for chart scrollbars.md",
+      "sha256": "938fef1c59772f546839c94937f09288337a5308935e5da240c36b0e2302d85a"
+    },
+    "repo/docs/assets/faq/en/79- How to achieve coordinated display of positions in other charts when moving the mouse in the vchart library.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/79- How to achieve coordinated display of positions in other charts when moving the mouse in the vchart library.md",
+      "sha256": "a25299d78dac37f07f2598e795579120d232340a72e571a7b494fbfbd2d1c833"
+    },
+    "repo/docs/assets/faq/en/8- Does the tooltip support custom two-line display content.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/8- Does the tooltip support custom two-line display content.md",
+      "sha256": "0d0bd318811c4a0c77cc4ecc0d5612ef6f9fbf9bc382d884ba16505326868f05"
+    },
+    "repo/docs/assets/faq/en/80-How can the background color of the funnel chart's conversion layers be modified.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/80-How can the background color of the funnel chart's conversion layers be modified.md",
+      "sha256": "b0a8f89fb0fb660049e574c70bae80aa00b845f8ba321dbdb5ab44dcefb7acb3"
+    },
+    "repo/docs/assets/faq/en/81- How to solve the issue of the upper area chart obscuring the lower point chart in a combo chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/81- How to solve the issue of the upper area chart obscuring the lower point chart in a combo chart.md",
+      "sha256": "07c824205bd72086232738c8c403eb4436da7688eda87270165304ceb245f89c"
+    },
+    "repo/docs/assets/faq/en/82-How to use chart components in Taro.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/82-How to use chart components in Taro.md",
+      "sha256": "632641101820c6a8ced0ea00f3df1147fe23e4984ad4f2fa0371052a2fd653fd"
+    },
+    "repo/docs/assets/faq/en/83-How to Customize Colors for Different Series in Dual-Axis Chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/83-How to Customize Colors for Different Series in Dual-Axis Chart.md",
+      "sha256": "22b941e9ec31da35c453a92def9a61983bb2342663630a4ab381009c323c9955"
+    },
+    "repo/docs/assets/faq/en/84- How to configure the style of legend pager arrows in VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/84- How to configure the style of legend pager arrows in VChart.md",
+      "sha256": "7f7009cdd06b044175187e42f9f5e810fa4fd6567d28e0cc53f86268cf2f8015"
+    },
+    "repo/docs/assets/faq/en/85-How to display scales at several points on the x-axis of an area chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/85-How to display scales at several points on the x-axis of an area chart.md",
+      "sha256": "f5281a7e6484093a7ec9d49949f60bf2348947d445b281664aa4ad696f173cb6"
+    },
+    "repo/docs/assets/faq/en/86- How to emphasize a specific point in a vchart line chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/86- How to emphasize a specific point in a vchart line chart.md",
+      "sha256": "21704231cfeffc145a76cdf871763f9452a226193934ff8ee67b69ad7a93a23d"
+    },
+    "repo/docs/assets/faq/en/87- How to handle incomplete label display in VChart pie charts.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/87- How to handle incomplete label display in VChart pie charts.md",
+      "sha256": "6f89c80e146c45284b8ac144783aeac490b8e1bdded7ed80355708a36d30377c"
+    },
+    "repo/docs/assets/faq/en/88- How to customize pie chart labels.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/88- How to customize pie chart labels.md",
+      "sha256": "cbacafe9b1f164f59e162c50e434b07e49e6063faf8580b715f56d44cae32e25"
+    },
+    "repo/docs/assets/faq/en/89- How to retrieve all data of the same dimension as the clicked bar in a stacked bar chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/89- How to retrieve all data of the same dimension as the clicked bar in a stacked bar chart.md",
+      "sha256": "f8755456459b829c2a8d21fb2267e8ed81e97175b2d61fac34f6ef3a09f7e2cc"
+    },
+    "repo/docs/assets/faq/en/9- How to display 'sum' in the tooltip of a line chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/9- How to display 'sum' in the tooltip of a line chart.md",
+      "sha256": "03d64ea4e9cce429a3c2cd666fecf3c467b6dd87b6de5b2625feac58dc9e31f0"
+    },
+    "repo/docs/assets/faq/en/90-How can VChart achieve a profile effect similar to ECharts.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/90-How can VChart achieve a profile effect similar to ECharts.md",
+      "sha256": "1e350eaecee82c6ded21bc541122b0c7f927b67ad79156a34900d9615f1caede"
+    },
+    "repo/docs/assets/faq/en/91- How to add custom items to a tooltip.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/91- How to add custom items to a tooltip.md",
+      "sha256": "0fd60b73ca0b01dfc7f33abd8866a85b9396cc4c2de0719669e0a6eb82b6c744"
+    },
+    "repo/docs/assets/faq/en/92- How to set a segment of a dashed line in a line chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/92- How to set a segment of a dashed line in a line chart.md",
+      "sha256": "1f7a5235fd6914e2b106b8e10749fb6a8d273139c09c95ee6331795c76ba10e7"
+    },
+    "repo/docs/assets/faq/en/93-How to set the style of the line segments in a line chart, such as dashed at the end.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/93-How to set the style of the line segments in a line chart, such as dashed at the end.md",
+      "sha256": "fc34feb8136ab677945b327861f1063853e9629bbe5dfb90bb766bf9a94d1292"
+    },
+    "repo/docs/assets/faq/en/94- How to set the background width during bar chart interaction.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/94- How to set the background width during bar chart interaction.md",
+      "sha256": "6d6ce17d558e0d97898c961c5c844e311eaddf63ba66089ff63f4ab35a7b1faf"
+    },
+    "repo/docs/assets/faq/en/95- How to achieve edge-aligned x-axis labels in a trend chart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/95- How to achieve edge-aligned x-axis labels in a trend chart.md",
+      "sha256": "37d294f624d66d3157b430389f5a206b18c0c58cdda409a4c12e3d6216a66f35"
+    },
+    "repo/docs/assets/faq/en/96-How to display the complete information of the legend when hovering.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/96-How to display the complete information of the legend when hovering.md",
+      "sha256": "08bbaddef1e0b355a1e7bfc5b77ebeacf7cf27ce214e3a540da773211e0a831a"
+    },
+    "repo/docs/assets/faq/en/97-How to use chart library in mini program.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/97-How to use chart library in mini program.md",
+      "sha256": "c245357cba744ea5bd633f09905a2216d888059d35975e6f403c0f651d152acc"
+    },
+    "repo/docs/assets/faq/en/98- How to customize legends in React.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/98- How to customize legends in React.md",
+      "sha256": "a5f79ff626b0507c2615b4f30910e4b913f9dcf71c69604121a91e02a4d5e404"
+    },
+    "repo/docs/assets/faq/en/99- Can a line chart be segmented.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/faq/en/99- Can a line chart be segmented.md",
+      "sha256": "a1151e4b140a70b36dde1fdac1fb77bf3e86ca58618c5ce8cd032a2ab69a7a9a"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Animation/Animation_Attributes_and_Settings.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Animation/Animation_Attributes_and_Settings.md",
+      "sha256": "8020580f4e2d11a97bb9f330594581bd06408238acf7acd02f26e838e9ac1652"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Animation/Animation_Cases.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Animation/Animation_Cases.md",
+      "sha256": "01e6457f3a390201531d4689c2d074a3dd5b77fae5afdd82d5f75998541f9069"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Animation/Animation_Types.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Animation/Animation_Types.md",
+      "sha256": "a5f0149009f1e9677d942640e3b111ba39a437921d812b6ff033de162697d156"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Animation/Configuration_and_Choreography_of_Complex_Animations.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Animation/Configuration_and_Choreography_of_Complex_Animations.md",
+      "sha256": "8e24b9e04f77f9d55cbf9a60573e68bccddd5b68dc1269d0062222020c273395"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Basic/A_Basic_Spec.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Basic/A_Basic_Spec.md",
+      "sha256": "8a185367eb35fe189078c2880b2978af0805eabe3a9c09966620cc1820e4d149"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Basic/DeepSeek_with_Cursor.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Basic/DeepSeek_with_Cursor.md",
+      "sha256": "3ee61c7071cb03d8160e83afafefeda76750dac8cf9c06f0cb2fc642d8fa77c1"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Basic/How_to_Get_VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Basic/How_to_Get_VChart.md",
+      "sha256": "0835e0d51a5aca558d4840e52e57ec2f9cf4fdec1e99fefbdf2b93875a2bc686"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Basic/How_to_Import_VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Basic/How_to_Import_VChart.md",
+      "sha256": "b0722b024ff5e13100ef2320ed556b0eae579560581937dfbfedbfa40771301b"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Basic/Quickly_Get_Started_with_VisActor_Using_Trae_Context_Doc.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Basic/Quickly_Get_Started_with_VisActor_Using_Trae_Context_Doc.md",
+      "sha256": "bb64aecf340a96d8800bf38e40c1227dcb902db16452ecf393cf0d33d7b12f53"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Axes.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Axes.md",
+      "sha256": "2ef2eda549f12171f1837334c93953a9880ee8c8624163e78361267a063a8597"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Brush.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Brush.md",
+      "sha256": "fe4605e06222694f0b4afaf89eeed0ae40e73ce111042d04e00749c4662871b7"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Crosshair.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Crosshair.md",
+      "sha256": "9dabc3b8fa26792fbb300f094d902780cda2222909d1380a688a29781e0619e5"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Data/Data_Types_and_Interface.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Data/Data_Types_and_Interface.md",
+      "sha256": "6729f41c4e7c8691f0541773f33e94253f33ea37cf641d8724298efc825867fc"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Data/Dataset_and_Data_Processing.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Data/Dataset_and_Data_Processing.md",
+      "sha256": "637137f7b15e4e4c8c745c10e47b1b799d6b97240e8dd0f5e8ca770c9c13a964"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Datazoom.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Datazoom.md",
+      "sha256": "324506d88dd7dd240b259f386a4c2e2393f8c84cad47c4eb7dc7ed79e438257b"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Indicator.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Indicator.md",
+      "sha256": "d751d57f14d6613b5eb8c1ba03c314db5c2d5f0b164dcf6495c636f2ee2bca1f"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Legend.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Legend.md",
+      "sha256": "9c68e1e9d0e22d4052c5fde5788781443e70cfb1a003a20b45496490d1bf1ca6"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/marker.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/marker.md",
+      "sha256": "e848f42b751b5b7f16dee86124e0a88e4b6290c134c30a943573928e218c16e2"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Player.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Player.md",
+      "sha256": "5cae25c02d835f2bbe5201a766fa39e97945bdc09b7c6d32e8e50af60636abff"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Scrollbar.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Scrollbar.md",
+      "sha256": "041932192da07bed42de5aeb09fca97157954d57f2416240faf98b4582d50b47"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Series/Composition_and_Effect_of_Series.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Series/Composition_and_Effect_of_Series.md",
+      "sha256": "4ae990399a41374a017f411063afa2a1af5b613975930f2f2d13355f180b1d80"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Series/Label.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Series/Label.md",
+      "sha256": "9686fe00c6966c7da55af810d3b3a459d7551c212c95d360a7ff7b64dbec7dd3"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Series/Mark.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Series/Mark.md",
+      "sha256": "be2aeac2fe58ac2af2ad20ec36be9bdc44cb3509b0aad74203acaaf12ea30545"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Title.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Title.md",
+      "sha256": "2eada3e68537371680df7500c795b6e602597145e46f144dac8eb56be7331c80"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Tooltip.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Tooltip.md",
+      "sha256": "3bd6b259e3c6ba597a8fb49dbb9b4b67416e9f6dc9804318deff5e7a56fc4d4b"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Understanding_VChart.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Concepts/Understanding_VChart.md",
+      "sha256": "d4e4b9c2827dec586676b37cf79b1586f17e566036182ee95eecb861f4408364"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Extensions/about_extensions.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Extensions/about_extensions.md",
+      "sha256": "729acbbf8165e5e1b307b39b02e3c3f73aeec3666bd434d2badcce01b97211ac"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Extensions/candlestick.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Extensions/candlestick.md",
+      "sha256": "9f439372509baa587d42aff523f63d0cfd573f88860d0c0c27b5f2d344b21a33"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Extensions/conversion_funnel.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Extensions/conversion_funnel.md",
+      "sha256": "2130a95426de0ecb7742891cae1eaa50aaf4ffb577f036a9f790e984e76418d9"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Extensions/extension_mark_sync_state.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Extensions/extension_mark_sync_state.md",
+      "sha256": "d7d3a10395f3ff8b472609b87d70ea0109ec1ab1363dfd126beeb8752e157bc6"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Extensions/map_label.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Extensions/map_label.md",
+      "sha256": "f57856123703bcefbf0d6e55a216886da730f320be745c5e602641473b17897a"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Extensions/regression_line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Extensions/regression_line.md",
+      "sha256": "3e69b692abb415ce37e180c1c290318cea16109296fd21f29b3944d9616f2e0f"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Extensions/sequence_analysis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Extensions/sequence_analysis.md",
+      "sha256": "7a2fd2d7aafaf9a8eeae3be32d627926d8814d6597e9e69d109bcab1049b939d"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Extensions/series_break.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Extensions/series_break.md",
+      "sha256": "72c3e488108d2de187fe53ead49275196cf2000fc230683ae235ed12eb0e8242"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Extensions/storyline.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Extensions/storyline.md",
+      "sha256": "9bad2b9a6cdc5acbfd0cf08ee8992730f4ff5eb43999697a66130c305dbd0580"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Extensions/timeline.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Extensions/timeline.md",
+      "sha256": "aeed7512f0e494fa819c342ba52ed0bd6d79703307767f4590e0486d6ec1c928"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Plugins/Formatter.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Plugins/Formatter.md",
+      "sha256": "9870175efc8f0611a2f5b17d93478b8b1179aebc2d3f98254543edc022258cb9"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_Area.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_Area.md",
+      "sha256": "2df6148ab7bc8e44d80deba6696581cc4e4900d5b4b7c06f0a7043d6ad021cb6"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_Bar.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_Bar.md",
+      "sha256": "19eb42d6317450250d3d7b09dad31e5f04d0f21b2af0c5f5381bd34868b840a7"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_Funnel.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_Funnel.md",
+      "sha256": "e441aac6c911fdd5f376da8802a2807a799aeedc7c488ec375982bed93456aaf"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_Line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_Line.md",
+      "sha256": "20e6c30e776ffe753d95ed68e0ed4dbd8f58ec9da693b3f1531876acf06d79f0"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_Scatter.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_Scatter.md",
+      "sha256": "ea011a35a51908e3758f2dba1d92bca28f4a51ee13d0ed221ac257c8c5a2f669"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_WordCloud.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/3d_WordCloud.md",
+      "sha256": "b8effbdf1342b108430e792534d1f531ae7930df152352608a80684230a3795b"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Area.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Area.md",
+      "sha256": "cfb466fd21f67ef1b6179448688f3570ccdaa90f6f083176efe9213c91dbfaec"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Bar.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Bar.md",
+      "sha256": "fd6df5be660223e39d22bbfdb26e1e0ff99c2ad97d647cb97a9e32170e0d2842"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/BoxPlot.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/BoxPlot.md",
+      "sha256": "dd819aab8e6202f5103fcab40d418f9a2f52ec7a03231670cebd8ed4a3a6cddf"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/chart_types.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/chart_types.md",
+      "sha256": "67ba0b6a287ce1547cd221f0ad8b03042dfb038748c00338808ef8ad5adb6ed1"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/CirclePacking.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/CirclePacking.md",
+      "sha256": "a950c7b177c3bf95d69da066d57c69d503fc1d7af0d447e009b34aa0f04a67b2"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Combination.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Combination.md",
+      "sha256": "fd15662e0be6f07191ae6400b264e986ed21fd18a1287e570d845e3ca0b653fe"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Correlation.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Correlation.md",
+      "sha256": "160c0d5f559fa2795c1902cda9130c4977882be0da352e75aa3be7767e4887f4"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Funnel.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Funnel.md",
+      "sha256": "d1cf4e982f2b2b5fdaea9abee639e4e9a9c99ca0588687135dabd4b41c97e3d1"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Gauge.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Gauge.md",
+      "sha256": "9e517817732934c197473e4a5105c05b74a9f77e73db06521308d0002b0b231a"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Heatmap.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Heatmap.md",
+      "sha256": "73e0a315991e20766e14a0e874f30a4dac1db5f208eb223a71c227bc1fa5ff14"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Histogram.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Histogram.md",
+      "sha256": "bc8cb9ece7792fb3c3d7c852615a217906bb36fc70ed7972e0a58d41bb6d5dee"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Line.md",
+      "sha256": "bb6781817c0004eb162ca7b27d6bab3ca7529d8b55f51a63ac7e49af4db04b22"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Liquid.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Liquid.md",
+      "sha256": "f00ce6f664b256508fd8b0a4be2f8381acb436721373472247353ea327ad4827"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Map.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Map.md",
+      "sha256": "96a5bb126dba892a9070c44e3134296563fa48d80405bdd91369d66cbf4bf631"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Mosaic.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Mosaic.md",
+      "sha256": "fdb7059ed92bae30c5c76dffea065d0e13a7f8a3e1cb5c23cadab626f623439d"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Pictogram.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Pictogram.md",
+      "sha256": "97b05551300c76c663ca9b03dfce000b60bf6a443ef674263d8353bbb39517b6"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Pie.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Pie.md",
+      "sha256": "5a87c3caf4e52a716a5765c7bd4127c560e2a531122124d0227a088e44f503d9"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Progress.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Progress.md",
+      "sha256": "e357da88b6475296b9d082f8b5c175703e7a1edabd776ecd8f4ef95120d10091"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Radar.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Radar.md",
+      "sha256": "f92f73d473361d38f6f8289eeeba95a51a072bf4df2d99e73eab7ddbaaa310a3"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/RangeArea.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/RangeArea.md",
+      "sha256": "3a807d968498800ec822da37ebfce505cf2d01e59b5e51ad83bad32e1e9f2b68"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/RangeColumn.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/RangeColumn.md",
+      "sha256": "2d1c485fb42b20ecfd1b50420a1d474af2d4f4cf4ca491a83d9a658b1a23b28a"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Rose.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Rose.md",
+      "sha256": "7916676bf84678319b11646d00e266dbcb3b6b63d1cd51648a33269d3db8420d"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Sankey.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Sankey.md",
+      "sha256": "a33a065a9a215cfafbd9c62cdc490889b12c85ccf32ae94cf293dbb994964184"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Scatter.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Scatter.md",
+      "sha256": "43ccabfd9f1251ab185ba8a9fd77404bcc8f45a8996784d618f80859e60af3b1"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Sequence.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Sequence.md",
+      "sha256": "84975e7f9ee630abcdd38f30d1fa80fd508662d946562af06c735213fca8bb55"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Sunburst.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Sunburst.md",
+      "sha256": "a5a1543467ddde3dc9f26353b8740bb6f89f7a710eb81f8f6734273c103d7869"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Treemap.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Treemap.md",
+      "sha256": "dfa9db4e795457f09f4956e1fc050654b6bf64dffcc9241da2ae5fcecbb97e45"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/Waterfall.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/Waterfall.md",
+      "sha256": "fe2eff0129d543af3b50e343ee8d0f064966d1372845b9351390357a12d42b6d"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Chart_Types/WordCloud.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Chart_Types/WordCloud.md",
+      "sha256": "adeaa679a1542b2672d75327c559812e70142b78c1d96145e0dc29d4dd6be73e"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Contribution_Guide.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Contribution_Guide.md",
+      "sha256": "b04a091e0ce073393b9023c6ab0fa58471c3617fb0934e615d191d083e0a1ec1"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/Arco_Design.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/Arco_Design.md",
+      "sha256": "b3e747c2474b96329fd063e4c93566edbd4dcbd7175ea68bc60b18940db113c6"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/harmony.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/harmony.md",
+      "sha256": "787973995343217f089c4691ec0780788e4cdb332f0922a82065176c5b42c8ce"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/lynx.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/lynx.md",
+      "sha256": "9d1d2a97eaab3a352284c3ae2d370b9670599026f5cafe35bf9355f3b4427aae"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/midscene.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/midscene.md",
+      "sha256": "9673f25a7dfd77b816a1252f681b4c4f52fd6170727db482023f16846672f44a"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/mini-app/block.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/mini-app/block.md",
+      "sha256": "455fc0789eac198f0d1792eff639e13b028e34fe798b6476de3a145c10aea40d"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/mini-app/how.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/mini-app/how.md",
+      "sha256": "fa72cd14b12d78020bc2d68bf560086ded34683ab12a7c9d5edd7e960d81ebfa"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/mini-app/lark.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/mini-app/lark.md",
+      "sha256": "f1dc1af1e14c1e09472265939196a6fb2e51e2aceb25dfa03fa0a48ea316f53a"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/mini-app/tt.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/mini-app/tt.md",
+      "sha256": "9c680baad8fde5535a9c5acbd17cada17eb24e723ffac6e2272885438b245f30"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/mini-app/wx.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/mini-app/wx.md",
+      "sha256": "2b316b5f06625f9a8e15d931064f62d57f15c06c17f356f433f66f185868e9d9"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/node.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/node.md",
+      "sha256": "71c38e6e0f254982bf37dfec65dd2dd691c26243c0d5cc0b705548e8def5825e"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/omi.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/omi.md",
+      "sha256": "68e395f044dac5d8b330ad23c169afc1f0781fc4ac497b98194ec793b187eb80"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/openinula.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/openinula.md",
+      "sha256": "93167eea0d7d747a75b38b541f085dade899348b0eebfae5a05885d6562c08b3"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/python.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/python.md",
+      "sha256": "969e2ed08c69c022864c0e79d9c7d509d801c12abdcb8bc2fc25d84a6f0c76d1"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/react-lynx.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/react-lynx.md",
+      "sha256": "560b34aa82c83155cda9bb5087e755c7a344476a13865ec3aaed354d6824691f"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/react.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/react.md",
+      "sha256": "0f31639c2a85df65301461f03ae0b164ee13ebf043de48a9159f9acab2044104"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/Semi_Design.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/Semi_Design.md",
+      "sha256": "1a2d543c7efc7aff6b31c649e2d0a8e754952d624bbcf9ef9645d6720d359bc8"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/svg.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/svg.md",
+      "sha256": "6b842b64473829c682bda8dbeec6f2813ccaa6efc18441aeeaee76b7af339ef3"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/taro.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/taro.md",
+      "sha256": "125fc970f58ac6381fe7f7c22a1ccdf1c35ced1a81bc5a2f6e70d9907537102d"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/univer.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/univer.md",
+      "sha256": "12128c06bc582e24393be45435b1ab90e1e5945c4d4a9dd49b6ce89c169886d6"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/vue.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Cross-terminal_and_Developer_Ecology/vue.md",
+      "sha256": "240f22eee17db24685d965d2d9437fbd12d48144b5f6a08558fdcda974141989"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Event.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Event.md",
+      "sha256": "0a12e3f0ad328092c43c3b3e9deb0c1e8440cd36ad1842304594f120999e2ede"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/extend/custom_animation.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/extend/custom_animation.md",
+      "sha256": "2d631a8401562917bd692d9910855a51b92bb96232de12068a7d16ef4d10e25b"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/extend/custom_layout.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/extend/custom_layout.md",
+      "sha256": "9a17a3165d9c72a3865aafabb6b47f7ff27d052f47667e6d823921642a216085"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/extend/custom_mark.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/extend/custom_mark.md",
+      "sha256": "dd7531294a15696fbe0ecb2834a327aee9bb6e3fe21db9e07696d67e3e6186af"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/extend/Richtext_and_Dom.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/extend/Richtext_and_Dom.md",
+      "sha256": "4aa357989fff041fb11093b2ac1c207430a5ee72a9c5e25b89da77285b60946d"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Function.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Function.md",
+      "sha256": "021603590e481ad6f9eb471a192eaad4a7bd7b0b25aa5e86efc06de1b1df7825"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Getting_Started.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Getting_Started.md",
+      "sha256": "9180ec0ffdaeef66f6b83c2b0715dda5cc149c0732f978363eac2c4d9cbd3161"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Intelligent_Visualization/Getting_Started_with_Data_Video.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Intelligent_Visualization/Getting_Started_with_Data_Video.md",
+      "sha256": "6b1144ca0d1c90c1074cf2914819eb8ea855466465be5d4d95afba85ed59bad4"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Intelligent_Visualization/VMind_Getting_Started.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Intelligent_Visualization/VMind_Getting_Started.md",
+      "sha256": "ee2bd33e2aa2df5b2b7aaea948ce2890044e79dedef28a243f2f75a0842341d5"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Layout/Layout_Cases/example-custom.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Layout/Layout_Cases/example-custom.md",
+      "sha256": "fd9fbb17f9d1428373139f2d91bf5708bfe1907e4d194b7c7e9b2d9c78bee924"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Layout/Layout_Cases/example-grid.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Layout/Layout_Cases/example-grid.md",
+      "sha256": "dba6f94c5fe2a7d5e0ce4b246672b908a6d0d2e0a368adaa5a07dda8ac520331"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Layout/Layout_Strategy.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Layout/Layout_Strategy.md",
+      "sha256": "2d8e6807fd7fec82ef318c6b0de9513f82ca8d6b486835b2577366dec5561ff2"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Load_on_Demand.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Load_on_Demand.md",
+      "sha256": "2dddf817a5ca388a57f89ecbb21144c076a778cb313ca1b0ec83a99ea3d7b17e"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Progressive_Render.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Progressive_Render.md",
+      "sha256": "cebadab496c42bcca7891fb750ff5292b56ca368f7ae48401ee66493794845d1"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Self-adaption/Media_Query.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Self-adaption/Media_Query.md",
+      "sha256": "e59b69addb46e784ca2087473c15ecb660c9eeed068b1d817f80ae79493c9110"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Theme/Apply_Theme.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Theme/Apply_Theme.md",
+      "sha256": "675a7e5f4fc90a3adcf03ab83e7d33c6eb64acd668fe566498a2cc5de9827e62"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Theme/Arco_Design.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Theme/Arco_Design.md",
+      "sha256": "93464bf2320e2c8586dc594749068374c2b0252d26f8a769c55dab169ade3cd5"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Theme/Color_Theme.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Theme/Color_Theme.md",
+      "sha256": "a58e63c6aab6d5989f7f7281d99df4603daeb1a78eddf676463d2df8771c63b5"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Theme/Customize_Theme.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Theme/Customize_Theme.md",
+      "sha256": "69a02911dda8f7556801aebfa5e13f5c21db07bb4c195074d0cd6ea98d113830"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Theme/Semi_Design.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Theme/Semi_Design.md",
+      "sha256": "eb7afe090968b99b2f021362ebeab497acb9537460eea10c929afc7b581bfbb9"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Theme/Theme_Concept_and_Design_Rules.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Theme/Theme_Concept_and_Design_Rules.md",
+      "sha256": "927693092fec49e079cf54318d62e8160a1702ace938cd30244f044383da3398"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Theme/Theme_Extension.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Theme/Theme_Extension.md",
+      "sha256": "1809618ebfd252754c525681289d13cadbd714e0ddc97f3d50e18c86c6e765ff"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Theme/Theme.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Theme/Theme.md",
+      "sha256": "5e1b9737873ffd7d8464fae51bbd9f6c07dac4a15daf3790d4e49769fefe40e3"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/Theme/Ve_O_Design.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/Theme/Ve_O_Design.md",
+      "sha256": "61fc871d01ddce7f6b3bf73e6d80f457aebdb071f2c5aa5eae5c3221b999e830"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/VChart_Skill_Usage.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/VChart_Skill_Usage.md",
+      "sha256": "e4c7cdad3b30938327cc1c84c6df7cae2562aad51afd6d91c7c0d9d51a56cf28"
+    },
+    "repo/docs/assets/guide/en/tutorial_docs/VChart_Website_Guide.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/en/tutorial_docs/VChart_Website_Guide.md",
+      "sha256": "a35df7553262004bd9f0559dce6f66a15137de7eb7765a2bb684f900a365e469"
+    },
+    "repo/docs/assets/guide/menu.json": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/guide/menu.json",
+      "sha256": "258cd17f87795e53fd3ede1504febdf2db5f52a1968ecb14c72573d26aafa983"
+    },
+    "repo/docs/assets/option/en/animate/animation.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/animate/animation.md",
+      "sha256": "5fcdfd7c6b995ae6fd32f5843c9d33ea5cac3d137e8c8f2b48eb5449570d7bb8"
+    },
+    "repo/docs/assets/option/en/animate/mark-animate.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/animate/mark-animate.md",
+      "sha256": "81a57359da14792e18132a7466eed555d7a37e284aac17c00bee299d0fa402ce"
+    },
+    "repo/docs/assets/option/en/animate/state-animate.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/animate/state-animate.md",
+      "sha256": "b4e6d4c72951aff6d73324496d19517dbde8a8f02bc31dd6d8cb74ce486a4130"
+    },
+    "repo/docs/assets/option/en/chart/area.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/area.md",
+      "sha256": "729929b80a7bfda4e58026ca8a05bbae88b71331e48b16dd11fa757b90435375"
+    },
+    "repo/docs/assets/option/en/chart/bar.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/bar.md",
+      "sha256": "4e679d9ba6ab45df76911bf02e003a6f95bcaeb69f003d814719f6e7b7036532"
+    },
+    "repo/docs/assets/option/en/chart/bar3d.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/bar3d.md",
+      "sha256": "2850eb50a73102349325deb33872dea2624b2d04666053d80b4b3c113b4d21ff"
+    },
+    "repo/docs/assets/option/en/chart/box-plot.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/box-plot.md",
+      "sha256": "9fc4cd22658ea1d00742e8142011c2d1f6ef9797189dafbf9ae17f4f112ddf49"
+    },
+    "repo/docs/assets/option/en/chart/circle-packing.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/circle-packing.md",
+      "sha256": "9e4ed6290f3e90efc1a81b9d6fcb80f1fe78bfc9c0708615be500be57b2fa0f7"
+    },
+    "repo/docs/assets/option/en/chart/circular-progress.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/circular-progress.md",
+      "sha256": "655c6e491e82c5011a8391f70bea05011e4a774bbb7e3e2a3ffb468fbfdbeee9"
+    },
+    "repo/docs/assets/option/en/chart/common.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/common.md",
+      "sha256": "dd4bb639bf9763512a7116e84dc65dabeb846ba3654091f9d8c9a98a8cce49a0"
+    },
+    "repo/docs/assets/option/en/chart/correlation.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/correlation.md",
+      "sha256": "45d66f6f21c7faf410112a52f17280417ae99281fc295b87f434631b235717cd"
+    },
+    "repo/docs/assets/option/en/chart/funnel.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/funnel.md",
+      "sha256": "4bb0c74fc5c9669f5923ac159b7287de54f921962862ff7ef7ab579beeda14e5"
+    },
+    "repo/docs/assets/option/en/chart/funnel3d.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/funnel3d.md",
+      "sha256": "d27ad435b8384387e0883a30ea6e91e87dabe24244c840f078bb315370ae3df1"
+    },
+    "repo/docs/assets/option/en/chart/gauge.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/gauge.md",
+      "sha256": "255453b007549502006248eb29dbc9b2a3192b4adeb5f62456133e8e9bf00df7"
+    },
+    "repo/docs/assets/option/en/chart/heatmap.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/heatmap.md",
+      "sha256": "6a319ada26d989f284ad2beafc9ca7c79b702d56c434339e152070b023f6b1c9"
+    },
+    "repo/docs/assets/option/en/chart/histogram.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/histogram.md",
+      "sha256": "9125202050597531339aafb59b383beb1c11ec054128ea07eabff3cfc9a4cb60"
+    },
+    "repo/docs/assets/option/en/chart/image-cloud.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/image-cloud.md",
+      "sha256": "126e752cbf7212cc7bf1cc90ee30d8bc90cc77f909bd665ce0752376a293190f"
+    },
+    "repo/docs/assets/option/en/chart/line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/line.md",
+      "sha256": "203e6e27e3b1bbcd7a0f133a2a592072cceba9b80695aac3b83b469d089804f7"
+    },
+    "repo/docs/assets/option/en/chart/linear-progress.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/linear-progress.md",
+      "sha256": "a70a857fae394d94617fb3700b5b552f758c3abab8446335924fe0af3adc76f7"
+    },
+    "repo/docs/assets/option/en/chart/liquid.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/liquid.md",
+      "sha256": "c9b8158380c2cc9e473bd8c6fd1751abeff63df25d4d381b5265aba1deec732c"
+    },
+    "repo/docs/assets/option/en/chart/map.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/map.md",
+      "sha256": "18d0655fe20ebb86bd9e65a80944f596a12c50780a53f95326ac711414614f02"
+    },
+    "repo/docs/assets/option/en/chart/mosaic.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/mosaic.md",
+      "sha256": "c20c76e66658d6de68971151ffd65ed9d31b77777ad4661e75af0659d99fa7e2"
+    },
+    "repo/docs/assets/option/en/chart/pictogram.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/pictogram.md",
+      "sha256": "615d302dfd9cf57e8dd31f28313f95bed1d8c042e3a5000daa1e70b6d62eacd3"
+    },
+    "repo/docs/assets/option/en/chart/pie.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/pie.md",
+      "sha256": "596cca75a4b3736ba888073147892d51a453a9b171eaea46b9cc39a11f52513a"
+    },
+    "repo/docs/assets/option/en/chart/radar.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/radar.md",
+      "sha256": "2d24addb2be07786b6b7998fd29096ca2df37f199ae43da3297fb6de17d47629"
+    },
+    "repo/docs/assets/option/en/chart/range-area.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/range-area.md",
+      "sha256": "a2cf90bc09a8fd893635dc624e03c49de77d4be9e835b1e60de59d1feedc6921"
+    },
+    "repo/docs/assets/option/en/chart/range-column.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/range-column.md",
+      "sha256": "a44862632ea98c547dabe33ec5386d97c55996ca8ba54fabd1a912ccad79ad83"
+    },
+    "repo/docs/assets/option/en/chart/rose.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/rose.md",
+      "sha256": "f089c4558a4cfa19df0445a6670da53b17195769b2778650d34e753c1ec39952"
+    },
+    "repo/docs/assets/option/en/chart/sankey.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/sankey.md",
+      "sha256": "dc1524f286d7cd1cb01422a75d6773265f44a3422cd734d8e1987e24bea8e6de"
+    },
+    "repo/docs/assets/option/en/chart/scatter.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/scatter.md",
+      "sha256": "294c738bf003b165e705aebc20067a7bc1963286432e9eb271881bcd6b02686a"
+    },
+    "repo/docs/assets/option/en/chart/sequence-analysis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/sequence-analysis.md",
+      "sha256": "a481c4742634d6d22769e9450c510ab7dd7fa8c612b7277115abf7311f6b43d6"
+    },
+    "repo/docs/assets/option/en/chart/sequence.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/sequence.md",
+      "sha256": "24b2709f70244ef5b88840a517c17914125840f633c3cc4754375d0dc8a80b95"
+    },
+    "repo/docs/assets/option/en/chart/storyline.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/storyline.md",
+      "sha256": "c759f4be9ee00abf28aa91512b89faddc4a9de462f7f9327c1fdd635a42fcfd5"
+    },
+    "repo/docs/assets/option/en/chart/sunburst.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/sunburst.md",
+      "sha256": "9884c91b25a26fde0ca5ce924edc1eb7681be663739df9c21faaa724cb1e3a19"
+    },
+    "repo/docs/assets/option/en/chart/treemap.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/treemap.md",
+      "sha256": "5e2f687de4a9f837fe0a987f288a7cf5c786fcaff967aaf201127ff0574fd9cd"
+    },
+    "repo/docs/assets/option/en/chart/venn.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/venn.md",
+      "sha256": "c81a794b3a4a2c175802e0b9388d8bbe37022101f7203c6ab9d6628a56fc3619"
+    },
+    "repo/docs/assets/option/en/chart/waterfall.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/waterfall.md",
+      "sha256": "5ba3acf74c8f4a56ae37c8ddc9e2a4da5b39a52ad21ade923524bb8d602be599"
+    },
+    "repo/docs/assets/option/en/chart/word-cloud.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/word-cloud.md",
+      "sha256": "b6d0a16734fecdbb1cc77432bf1b33ec938deff3236b8626cbe362b4ecc2278f"
+    },
+    "repo/docs/assets/option/en/chart/word-cloud3d.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/chart/word-cloud3d.md",
+      "sha256": "25fc8c49c6442b7dd667fb6c886b2faa22d55e9d03617e9a6fe24f66fdbc6f54"
+    },
+    "repo/docs/assets/option/en/common/background.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/background.md",
+      "sha256": "79dfe6b9bc0a3b4f687fffea1be03b7e6e1dfe5aae3c3bd221c4576e5c3d1fd4"
+    },
+    "repo/docs/assets/option/en/common/cartesian-series.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/cartesian-series.md",
+      "sha256": "5ad4c511932368d2e8a63d6821b59831ddd021e70643261f8bdbdb95bd0058a8"
+    },
+    "repo/docs/assets/option/en/common/chart-component.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/chart-component.md",
+      "sha256": "1c8e5df8bef67a652620082daa87adfc35d31c45854d8e29800c06ad955b8fd8"
+    },
+    "repo/docs/assets/option/en/common/chart-spec.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/chart-spec.md",
+      "sha256": "e88734b246d356228806ab99fac8ab03d886dd0b81ac643d757a1e2bb37ae909"
+    },
+    "repo/docs/assets/option/en/common/custom-mark-base.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/custom-mark-base.md",
+      "sha256": "2a3690466eb418f65955786633508914b3d7bd95112efa1ed10a77779f9e9a70"
+    },
+    "repo/docs/assets/option/en/common/custom-mark.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/custom-mark.md",
+      "sha256": "227a76a2a1373e2e5f9cb7cfc7a6694c03e443d047e8eef7219d01a379b46263"
+    },
+    "repo/docs/assets/option/en/common/data.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/data.md",
+      "sha256": "4d252a5889d7e45dbafcb39c6821ea37608044db7f1118d62d62cf6bbe0654ba"
+    },
+    "repo/docs/assets/option/en/common/direction.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/direction.md",
+      "sha256": "47984acd53deb26b45b28e32a2532ad3a9ec5097e782ea06d858069c1bc78767"
+    },
+    "repo/docs/assets/option/en/common/drill.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/drill.md",
+      "sha256": "208a08201f49f789f17f4c097258133e0b452556239497615683ab261e3ae8ae"
+    },
+    "repo/docs/assets/option/en/common/element-active-trigger.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/element-active-trigger.md",
+      "sha256": "24b7c908bc6b4a2b6b8ee9af0b5f9ca35b6bd1eeb888cc818a3dfefeb066af0c"
+    },
+    "repo/docs/assets/option/en/common/event-type.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/event-type.md",
+      "sha256": "acf87c6327a8e5a23121053e7b5c75ee6b81930b6ce38393a406cb9d99765fbf"
+    },
+    "repo/docs/assets/option/en/common/extension-mark.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/extension-mark.md",
+      "sha256": "912fe71677a2310628cc924d0d4d94d0ad91cfa879f8f7327388ac8e7ad42aa1"
+    },
+    "repo/docs/assets/option/en/common/hover.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/hover.md",
+      "sha256": "35417a029dbb9525d3124ac6c9c8fac936555dc782f7213c3e07d27c326bd861"
+    },
+    "repo/docs/assets/option/en/common/id.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/id.md",
+      "sha256": "2d4e135a86c26346f836df3ec2f23371ec40b28b8126681d082c708e4cb2f1ed"
+    },
+    "repo/docs/assets/option/en/common/interaction.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/interaction.md",
+      "sha256": "ec966a731d6f6e86f50b0c5250cdbbcf09f327c7304b9d77f649d279657b7fcc"
+    },
+    "repo/docs/assets/option/en/common/layout-item.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/layout-item.md",
+      "sha256": "c24258a8e6a5c8636683a60147bb116ddabd2600566a3aa2011f35f0edd64854"
+    },
+    "repo/docs/assets/option/en/common/layout-number.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/layout-number.md",
+      "sha256": "eae0fe011cf6643c82ac5cc02ede044419e4a72168e71471bbbac6d8abf77bc6"
+    },
+    "repo/docs/assets/option/en/common/layout-padding.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/layout-padding.md",
+      "sha256": "143c2bfd359d4d533132bd919c002461f9e60998ff3406e9d115937d0652595b"
+    },
+    "repo/docs/assets/option/en/common/layout.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/layout.md",
+      "sha256": "32cc2a75c40c239af0151ddf92ab2b358068f6221d62ec53c77ecf05669315d3"
+    },
+    "repo/docs/assets/option/en/common/mark-progressive-config.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/mark-progressive-config.md",
+      "sha256": "2f0b52adb6fc60afc83e210bef6342a7e13d8741688afbb413b79f7a2630af57"
+    },
+    "repo/docs/assets/option/en/common/mark-state-style.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/mark-state-style.md",
+      "sha256": "90f1256b13156be8c298aa3a2cbdc9b6730696c52aa466e3b97a2598bf24bc11"
+    },
+    "repo/docs/assets/option/en/common/mark-style.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/mark-style.md",
+      "sha256": "e5b775f8fed1db2d6a4a7e4b3a1f5c84c1ddc124a8c80bcd33711cce5364a7c7"
+    },
+    "repo/docs/assets/option/en/common/padding.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/padding.md",
+      "sha256": "27eb381a2bf58bb4cad1d2ec2474afc4f98df204fdb68a19dc68d2390bcbf855"
+    },
+    "repo/docs/assets/option/en/common/polar-series.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/polar-series.md",
+      "sha256": "8dc931aad05ab447628a7dd0c60272c2c5599040eb9c6f8779f81dab8157e76f"
+    },
+    "repo/docs/assets/option/en/common/region-and-series-filter.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/region-and-series-filter.md",
+      "sha256": "c20482702cd1782115867e834e5c729b06eda9f8a590e1508283ce0edc11755d"
+    },
+    "repo/docs/assets/option/en/common/region.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/region.md",
+      "sha256": "947be2ee5cccd81403b9bc30eb0b308e64d7ae3eb109ff8e5608a17f3b412f44"
+    },
+    "repo/docs/assets/option/en/common/scale.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/scale.md",
+      "sha256": "7d310a97eb479975b119828ed95c07746377e19649413198c76c706487c01e97"
+    },
+    "repo/docs/assets/option/en/common/select.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/select.md",
+      "sha256": "cd9d993723d45acd0fa49839b804d7889bd44e884e831eae5af18ee3cd01977b"
+    },
+    "repo/docs/assets/option/en/common/series-style.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/series-style.md",
+      "sha256": "f4581a0e33ca1fcbca6a23d3fd2685acf23ce5e48fd0f0da5477236885912cdc"
+    },
+    "repo/docs/assets/option/en/common/series.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/series.md",
+      "sha256": "bcfebe33320709e5d49b9f64dfa41abd1f3b2211427a990202cd5e054cb8b7bb"
+    },
+    "repo/docs/assets/option/en/common/theme.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/theme.md",
+      "sha256": "51ec4c640cc885305477f05b30303f70e3947700e4c19d805d013703ac288f92"
+    },
+    "repo/docs/assets/option/en/common/trigger.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/trigger.md",
+      "sha256": "4c7f7a0b37cf6ac043f2f94b9b8de53a1f7ab12ca791084c25886e64cc6d4c48"
+    },
+    "repo/docs/assets/option/en/common/visual-scale-spec.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/visual-scale-spec.md",
+      "sha256": "2d998dffebc717634e858254d049905e98c58176126390dfff968d65f505e56f"
+    },
+    "repo/docs/assets/option/en/common/visual-scale.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/visual-scale.md",
+      "sha256": "43703ae8bf4adb6517c3db4425ef59bbf10881ff22e6077eb2e373c3ea359751"
+    },
+    "repo/docs/assets/option/en/common/xy-pos.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/common/xy-pos.md",
+      "sha256": "b63f8f7e39b5b882d63fc21b1b8ca39ac5ea285c07976e83f969b682c558442f"
+    },
+    "repo/docs/assets/option/en/component/axis-common/axis-domain-line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/axis-domain-line.md",
+      "sha256": "8036ce607d667c0082fcb05cc8986a0888209d0d772d9a87ea5e358e87f8efa6"
+    },
+    "repo/docs/assets/option/en/component/axis-common/axis-grid.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/axis-grid.md",
+      "sha256": "5d0fc56677450755f4dcd3ff689978774275dd262df59d05ebf7775e65bcb610"
+    },
+    "repo/docs/assets/option/en/component/axis-common/axis-label.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/axis-label.md",
+      "sha256": "5b209c31bc79b468aa76762823909068254b6dbdbd490517f5d7a656e5caeaf8"
+    },
+    "repo/docs/assets/option/en/component/axis-common/axis-title.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/axis-title.md",
+      "sha256": "073221442d9806e63e964d97d258e2ba247f073fa094b063958f789439c03c57"
+    },
+    "repo/docs/assets/option/en/component/axis-common/band-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/band-axis.md",
+      "sha256": "4fb60e45f6c465024275c1b0cdb8895c766d1f21148f6e7ad2a558fa34bced39"
+    },
+    "repo/docs/assets/option/en/component/axis-common/base-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/base-axis.md",
+      "sha256": "84750ce40ae05c0b9f5a81b291a4588fccebfb58795b71edb1384d8fef282d4d"
+    },
+    "repo/docs/assets/option/en/component/axis-common/cartesian-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/cartesian-axis.md",
+      "sha256": "0a399060824fa3aea052102b3f6472075a45a4b80a84ed16f5e8403c84023568"
+    },
+    "repo/docs/assets/option/en/component/axis-common/linear-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/linear-axis.md",
+      "sha256": "2d963ea4848a728f07557ea0e9a458652570b896839506fa3ec368f9aade60c1"
+    },
+    "repo/docs/assets/option/en/component/axis-common/log-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/log-axis.md",
+      "sha256": "17b17bfb21432fec0a3e48b4908a0f13b2a81658d99cd6c452d664b950952fa8"
+    },
+    "repo/docs/assets/option/en/component/axis-common/polar-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/polar-axis.md",
+      "sha256": "33ae4fa8f809671ac2583a7131610b1bab3a33e4b3938c678be05744f570b64d"
+    },
+    "repo/docs/assets/option/en/component/axis-common/style-callback.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/style-callback.md",
+      "sha256": "779b50bd411c70d0f34344162049409576aad7eeb4c5d1849cd6d0a35d6c25d2"
+    },
+    "repo/docs/assets/option/en/component/axis-common/symlog-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/symlog-axis.md",
+      "sha256": "735de056968e2c87fe6e355c2ffb9ac4934343240813c2499946f2a4ad7b0c32"
+    },
+    "repo/docs/assets/option/en/component/axis-common/time-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/axis-common/time-axis.md",
+      "sha256": "5bed5c7f436a29b684c4084f242aad441fbd83b66baf72fbaabe69cc755cee47"
+    },
+    "repo/docs/assets/option/en/component/brush-common/brush-selected-item-style.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/brush-common/brush-selected-item-style.md",
+      "sha256": "db35c2cebc92195c8dac8634189876650fdd90314bcad90742c9cd6708ef9855"
+    },
+    "repo/docs/assets/option/en/component/brush.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/brush.md",
+      "sha256": "3a2a8ac4c6b8dd7238858980358ccc7d9354561f5bffc278f9874b0dfc009116"
+    },
+    "repo/docs/assets/option/en/component/cartesian-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/cartesian-axis.md",
+      "sha256": "5b8f19c72deac9954ca073312c1ff58831961b55cb6c876c6a9b2e6f331d97ae"
+    },
+    "repo/docs/assets/option/en/component/crosshair-common/crosshair-data-bind.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/crosshair-common/crosshair-data-bind.md",
+      "sha256": "e93c80f193fbad687ce6646b7517594f0fa3456564ce6d723ae331ab9941a354"
+    },
+    "repo/docs/assets/option/en/component/crosshair-common/crosshair-label.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/crosshair-common/crosshair-label.md",
+      "sha256": "b548a9d2e31e9bea470b54ffc1a604f2146609c2a5e0fd5ce9fb37426c88d163"
+    },
+    "repo/docs/assets/option/en/component/crosshair-common/crosshair-line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/crosshair-common/crosshair-line.md",
+      "sha256": "7a29c6b378552d856326778f769a505845e2981acb68f183c10b09b5db02363f"
+    },
+    "repo/docs/assets/option/en/component/crosshair-common/crosshair-x-field.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/crosshair-common/crosshair-x-field.md",
+      "sha256": "3ba8d7433320bcd2f81fccaf5845dea6fa5e53eba3b65265a27770913175abc5"
+    },
+    "repo/docs/assets/option/en/component/crosshair.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/crosshair.md",
+      "sha256": "998c7f044dec909c3782f4ddd1065e05f08a72ec2c75ae5e72e88685c83cac7a"
+    },
+    "repo/docs/assets/option/en/component/data-filter-component-common/data-filter-base-component.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/data-filter-component-common/data-filter-base-component.md",
+      "sha256": "7cbec8c650f68f73fa63d03c6de269b0c030b14fd4713cfcb64f8f6573b69243"
+    },
+    "repo/docs/assets/option/en/component/data-filter-component-common/roam-spec.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/data-filter-component-common/roam-spec.md",
+      "sha256": "29c43995f3d530b7ecade2c80c9f97badfad489f21c689a2e19e2ad0e953dbb8"
+    },
+    "repo/docs/assets/option/en/component/data-filter-component-common/text-format-callback.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/data-filter-component-common/text-format-callback.md",
+      "sha256": "ae16d5e86f43f5c927a01ae5f4b7604cbec603a06bf78c40409507bfffaccf1d"
+    },
+    "repo/docs/assets/option/en/component/data-zoom.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/data-zoom.md",
+      "sha256": "818faa7f4fdf9a057a4e82c5bb8b325847841f24de824e1b46cc98aea15c4043"
+    },
+    "repo/docs/assets/option/en/component/indicator/indicator-item.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/indicator/indicator-item.md",
+      "sha256": "7467968900e036572999396f31134d09c2b96646f4d0fb238fb352c1ac3e522a"
+    },
+    "repo/docs/assets/option/en/component/indicator/indicator.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/indicator/indicator.md",
+      "sha256": "5ea978a8416e6fb6c7643408ba4ed464688437aa539c75e5535adc90e0566145"
+    },
+    "repo/docs/assets/option/en/component/label.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/label.md",
+      "sha256": "8887b35acbbcf9f16fba9a83694d1e444d129f0cf3af782838de673a26128d3d"
+    },
+    "repo/docs/assets/option/en/component/legend-color.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/legend-color.md",
+      "sha256": "c580f91a91e33beeee101f1866eca68c3f20ddc8b2a8d0947e6743670da38b41"
+    },
+    "repo/docs/assets/option/en/component/legend-common/base-legend.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/legend-common/base-legend.md",
+      "sha256": "cb0798e39da0fabd0fc5137bab7308aa86aacdf6fdd2f3694109f022cddeb72c"
+    },
+    "repo/docs/assets/option/en/component/legend-common/continuous-legend.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/legend-common/continuous-legend.md",
+      "sha256": "35018752c6d3cbda7c251f142349dfd0b65f10649f44584533932eac38a67b7b"
+    },
+    "repo/docs/assets/option/en/component/legend-discrete.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/legend-discrete.md",
+      "sha256": "2ca918592ef187b9a27ade398b14de09f0b9a1819f187e56fd76a8e68969c274"
+    },
+    "repo/docs/assets/option/en/component/legend-size.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/legend-size.md",
+      "sha256": "88e720bdf106ddbe3387b52c242fb49f764ef822ec72bcc6b4ad64eebf51b175"
+    },
+    "repo/docs/assets/option/en/component/legend.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/legend.md",
+      "sha256": "35dbfaf699d057900377f5640ed449952b59ac1fc7adbf67b7c3899f7e747122"
+    },
+    "repo/docs/assets/option/en/component/mark-area.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/mark-area.md",
+      "sha256": "8e3929480210384a48b75926a59449a9227597f74891768bf04ca60e0ac1cb43"
+    },
+    "repo/docs/assets/option/en/component/mark-line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/mark-line.md",
+      "sha256": "b959b531f3232daee3931dd729dd7f1fea4d7ae7fcf0719c8499d98fb41fba11"
+    },
+    "repo/docs/assets/option/en/component/mark-point.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/mark-point.md",
+      "sha256": "f77223a297d7c6124b50329c0a3ad96e5865bbbdaea30c84ca5684b56fc599c9"
+    },
+    "repo/docs/assets/option/en/component/marker-common/base-marker.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/base-marker.md",
+      "sha256": "7bd46eef87fb6dc9bf216113e34de3af602b4c07ce29c58cf25ac7141750481c"
+    },
+    "repo/docs/assets/option/en/component/marker-common/marker-aggregation.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/marker-aggregation.md",
+      "sha256": "341756975358459a40017efb92adb79b5a12d0c9dd2903641c42c41754ef5337"
+    },
+    "repo/docs/assets/option/en/component/marker-common/marker-animation.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/marker-animation.md",
+      "sha256": "42d04f2937694bef3607e92d10a63fb79e72acaf440d587da50843026b0548eb"
+    },
+    "repo/docs/assets/option/en/component/marker-common/marker-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/marker-axis.md",
+      "sha256": "db5d4e3bc1a8c52f2a96622e6663eebce900ac4ff2ecd087c2931db3e8ede445"
+    },
+    "repo/docs/assets/option/en/component/marker-common/marker-data-point-offset.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/marker-data-point-offset.md",
+      "sha256": "4ee981f5fb25b03c30b36a37a06394120d4ecfc0e75f2acda8d60a3e19e9e756"
+    },
+    "repo/docs/assets/option/en/component/marker-common/marker-data-point.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/marker-data-point.md",
+      "sha256": "3fdf4076b4d8cdc095b7075e7c9af7b0679fda407aa1ecbbe125480fec6cf5ba"
+    },
+    "repo/docs/assets/option/en/component/marker-common/marker-label.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/marker-label.md",
+      "sha256": "9d8a394e6312739d71e1ab2a18161a7fa460618397e15459733f325dd4661b07"
+    },
+    "repo/docs/assets/option/en/component/marker-common/marker-positions.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/marker-positions.md",
+      "sha256": "6b9d7ebd905d6a4ddec3e664cfbf736d8a8aa4269b0ddeba6f0d551fdf85bd03"
+    },
+    "repo/docs/assets/option/en/component/marker-common/marker-ref.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/marker-ref.md",
+      "sha256": "a878276ba1aa8e7067a85f024eedc707f349328c92333c589b661b6882336161"
+    },
+    "repo/docs/assets/option/en/component/marker-common/marker-state.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/marker-state.md",
+      "sha256": "0d0973bc349d060c625442ec271fa0eedb74ffa30f6ce28e8dc763916932c7dd"
+    },
+    "repo/docs/assets/option/en/component/marker-common/marker-style-callback.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/marker-style-callback.md",
+      "sha256": "fe36bc4baf8400355f7e887ed3beb0237863365b0ce77036b3942b4eae8a03aa"
+    },
+    "repo/docs/assets/option/en/component/marker-common/marker-symbol.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/marker-common/marker-symbol.md",
+      "sha256": "3e2efd454932c1331cdcd023fb357bf6fb81efafbbb2b7a191b7f77471edc7c0"
+    },
+    "repo/docs/assets/option/en/component/player-common/player-controller-common.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/player-common/player-controller-common.md",
+      "sha256": "97a54598203dcfba33c66830eee3aa7ca93153d64cbc9e31b4caeaff6b909755"
+    },
+    "repo/docs/assets/option/en/component/player.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/player.md",
+      "sha256": "40be33bfce759440fee1419af1e108538181e5c918364324a78b0044e6e83221"
+    },
+    "repo/docs/assets/option/en/component/polar-axis.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/polar-axis.md",
+      "sha256": "d5e59a0e34256140f6fde0fc558bde251815d3ec43f991530c4ac958ab72621c"
+    },
+    "repo/docs/assets/option/en/component/scrollbar.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/scrollbar.md",
+      "sha256": "c6f43115efbae2a1ae5ef326d7a0eaa7a3f8c9f36d818b23789739e9c1d0dc1e"
+    },
+    "repo/docs/assets/option/en/component/title.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/title.md",
+      "sha256": "dfa5e70e4e17885bc7069a447cb8064190fb644fddb433627c8874a0fb9743ff"
+    },
+    "repo/docs/assets/option/en/component/tooltip-common/tooltip-line-pattern.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/tooltip-common/tooltip-line-pattern.md",
+      "sha256": "6607d1ed0f9bb8b4beebf1d0c9182076f13590799953d90a1b921bf0bb7343b0"
+    },
+    "repo/docs/assets/option/en/component/tooltip-common/tooltip-pattern.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/tooltip-common/tooltip-pattern.md",
+      "sha256": "e71c8ad5075289a40c9bf0b28e642d08cd6829f1841ca766e42025688e311e09"
+    },
+    "repo/docs/assets/option/en/component/tooltip-common/tooltip-position-callback.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/tooltip-common/tooltip-position-callback.md",
+      "sha256": "f2f1311e3a1ead7bfac482cf93f4d901f879b43fe35152ea862043a403bc36f4"
+    },
+    "repo/docs/assets/option/en/component/tooltip-common/tooltip-position-fixed-mode.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/tooltip-common/tooltip-position-fixed-mode.md",
+      "sha256": "1ce19b004876d079af729cb22a06abd13c1dae3dfee29a79e70fd6ff54cb4a30"
+    },
+    "repo/docs/assets/option/en/component/tooltip-common/tooltip-position-fixed-type.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/tooltip-common/tooltip-position-fixed-type.md",
+      "sha256": "b5a15d87a8adbd4a3f12cf080357f074dfef2ebaaba9f5c5221e630108c6484e"
+    },
+    "repo/docs/assets/option/en/component/tooltip-common/tooltip-position-fixed.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/tooltip-common/tooltip-position-fixed.md",
+      "sha256": "78ccafa6bf7e5557020df226a6a843f631124fcff1ed7464d6b96ec31525e144"
+    },
+    "repo/docs/assets/option/en/component/tooltip-common/tooltip-shape-pattern.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/tooltip-common/tooltip-shape-pattern.md",
+      "sha256": "c370828342fa1e0e93ac5c223bd188aa68142df743e616aff183992c69006721"
+    },
+    "repo/docs/assets/option/en/component/tooltip-common/tooltip-text-theme.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/tooltip-common/tooltip-text-theme.md",
+      "sha256": "adb55e33b4904a7b53b65e87ecd2407a4060cada25240149d033cbf03c396d19"
+    },
+    "repo/docs/assets/option/en/component/tooltip-common/tooltip-theme.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/tooltip-common/tooltip-theme.md",
+      "sha256": "cc5ac86587d4cdbe82eb2683bda33624cc7c8e77a734bb32ed40473f15508bc2"
+    },
+    "repo/docs/assets/option/en/component/tooltip.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/tooltip.md",
+      "sha256": "0a161f360c030ac31024971ea1e14ab2aec0c4f9b905288dfecca9ed2010034e"
+    },
+    "repo/docs/assets/option/en/component/total-label.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/component/total-label.md",
+      "sha256": "11a6b71a88bc20ed9c05f10a2fbcfe64953acf5c6e6a04efc49c0c1d9ab81094"
+    },
+    "repo/docs/assets/option/en/graphic/arc.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/arc.md",
+      "sha256": "1861f9070767564c2616459d5fd1673933d68123909bf702c71128c91a9bd28a"
+    },
+    "repo/docs/assets/option/en/graphic/attribute.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/attribute.md",
+      "sha256": "246f9f73be05bcf962cd4d970924590bd3f8ed2ea2265f2fa5226b942f473e41"
+    },
+    "repo/docs/assets/option/en/graphic/border-style.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/border-style.md",
+      "sha256": "c376964e0e34921ab4023af6cedc3e72579035b1bba8ea158c50c7bf45cfe109"
+    },
+    "repo/docs/assets/option/en/graphic/dom-attributes.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/dom-attributes.md",
+      "sha256": "7ead5ef221e5442d8cd84d4a9b85ecbefd08fe2e5ee014f719486f78fbe597c2"
+    },
+    "repo/docs/assets/option/en/graphic/fill-style.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/fill-style.md",
+      "sha256": "e003bc314fd96ee44ff8a2935d129db716aadeac27d421bbc23f311c27823e8e"
+    },
+    "repo/docs/assets/option/en/graphic/gradient.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/gradient.md",
+      "sha256": "5c9dd28f803e08030acbe65d3a5077fe9aa2e08c9178ae8ac0538802355ed80c"
+    },
+    "repo/docs/assets/option/en/graphic/image.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/image.md",
+      "sha256": "3f10d288ba52cf29e6b1ce614945722604ec6cf9e551049293cb06348873b8c4"
+    },
+    "repo/docs/assets/option/en/graphic/line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/line.md",
+      "sha256": "da3dc5213c846b70313905a6acd2190347b98c4b6e22b8ddd84e89709c45d676"
+    },
+    "repo/docs/assets/option/en/graphic/partial-stroke-style.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/partial-stroke-style.md",
+      "sha256": "c9abcb2deedf5a58ac2a4694040fe5bef71f862e68669437e45332f6802eb931"
+    },
+    "repo/docs/assets/option/en/graphic/path.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/path.md",
+      "sha256": "ba23172e77166c9223deb23994a65d08b87f301e8a809d095ef9aceab03556f2"
+    },
+    "repo/docs/assets/option/en/graphic/polygon.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/polygon.md",
+      "sha256": "fc9234ab54978fe1333f5fc2694ae54a6154efe9bffa1ca82bf619845da142f8"
+    },
+    "repo/docs/assets/option/en/graphic/rect.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/rect.md",
+      "sha256": "be74b706865ac797232e1d1edf3bce6c73b017f097070c7c00ba3b358cea6ebe"
+    },
+    "repo/docs/assets/option/en/graphic/rect3d.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/rect3d.md",
+      "sha256": "bb2e266788bcc247cb490dd837354a46e6beebd9e9d76f9ab9404ebe37e4fe7e"
+    },
+    "repo/docs/assets/option/en/graphic/rich-text/rich-text-character.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/rich-text/rich-text-character.md",
+      "sha256": "82fccf6c1780328e236a71dd4a59d545f84c876c5ae12dc05321bdbe33bd5a90"
+    },
+    "repo/docs/assets/option/en/graphic/rich-text/rich-text.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/rich-text/rich-text.md",
+      "sha256": "d63edb71b155a3631b7ffd60c6e5f49537b4ffb725d823e5ecb07575fe2203f0"
+    },
+    "repo/docs/assets/option/en/graphic/rule.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/rule.md",
+      "sha256": "bb2d91108aa6ff370a0d4942ed4b4f1c7f93345e46312a653b67a263674f1c09"
+    },
+    "repo/docs/assets/option/en/graphic/segment-symbol.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/segment-symbol.md",
+      "sha256": "f93f7752287df544ee5865d9d9310b434417ce7df80f9676c9367b772959e9b1"
+    },
+    "repo/docs/assets/option/en/graphic/stroke-style.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/stroke-style.md",
+      "sha256": "4dcb0a8af1221977738ad0b5096bf6189ec94a5ba8d1a701d8f933525671d3d1"
+    },
+    "repo/docs/assets/option/en/graphic/symbol.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/symbol.md",
+      "sha256": "fa9d69d9dae8489ff0f7973224a0b31df7d7cbf400f88f5119a6a28394f353a4"
+    },
+    "repo/docs/assets/option/en/graphic/text-font.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/text-font.md",
+      "sha256": "8e61511697bd0a7df2cb2091fc85db3bf7080313dbf16e43eac0c79f0ec3effe"
+    },
+    "repo/docs/assets/option/en/graphic/text-poptip.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/text-poptip.md",
+      "sha256": "d3e45609ce4e5c58f97164e45f7c077e6a07e6bf1371dfebf2aede83c01839a7"
+    },
+    "repo/docs/assets/option/en/graphic/text.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/graphic/text.md",
+      "sha256": "b28cd2687c276d8ea6c51acc298566ae844fe31d47bfca474f8e049c6595753e"
+    },
+    "repo/docs/assets/option/en/mark/arc.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/arc.md",
+      "sha256": "6ee228b5e8e431942cbd0f176df6b72f20bb445e92b78af2c4ffaa7545b21643"
+    },
+    "repo/docs/assets/option/en/mark/area.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/area.md",
+      "sha256": "2f50f237302692edf3d84f3d6c4a2697978149b51b3e203114eb58005e6ff8c6"
+    },
+    "repo/docs/assets/option/en/mark/box-plot.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/box-plot.md",
+      "sha256": "bf1d6192bffbcca50d6002d830e3a8f1e494bb8d0b0552bbdcc6a07fadb22f39"
+    },
+    "repo/docs/assets/option/en/mark/common-mark.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/common-mark.md",
+      "sha256": "cfb8b26679da8b3d7d2ddce3c5f8fb52a2133c68327a0747d5ddb49e2d65c653"
+    },
+    "repo/docs/assets/option/en/mark/group.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/group.md",
+      "sha256": "3fd9317f6d357872d9169b320b5f241ba386ac765a7e87f01d0c4cdb73c36f96"
+    },
+    "repo/docs/assets/option/en/mark/line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/line.md",
+      "sha256": "3e0d1624fd6032f3fe69b8686034c4fdc56fa21e80a0814c5e6dfe8e5162fd85"
+    },
+    "repo/docs/assets/option/en/mark/link-path.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/link-path.md",
+      "sha256": "be203c229a3bbb6f8b2fe10c2519e5c7247db2aac05063b43d8914b483d5657c"
+    },
+    "repo/docs/assets/option/en/mark/liquid.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/liquid.md",
+      "sha256": "c5abd0cb778140dc2bee618d515a53e59b6d03b6c08ef84f5626ee2d6f82a06f"
+    },
+    "repo/docs/assets/option/en/mark/path.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/path.md",
+      "sha256": "fd4f8080c2875ea58651ce0f6a734c3ce77f15b2ad21708ea68770ffd860a68e"
+    },
+    "repo/docs/assets/option/en/mark/point.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/point.md",
+      "sha256": "9416619eb87f5e71d3cb51a0347f8e885a468eec885a78afdb6e44c6f7555301"
+    },
+    "repo/docs/assets/option/en/mark/polygon.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/polygon.md",
+      "sha256": "355bdf1d459d1ac0858c9b8911fb67e816f3603dd7c6b46d1110a127b030fb72"
+    },
+    "repo/docs/assets/option/en/mark/rect.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/rect.md",
+      "sha256": "dbf67452327069cc64dd15a62f2ef5cdfbb76ac4f1643727011deb32f705ec6f"
+    },
+    "repo/docs/assets/option/en/mark/rect3d.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/rect3d.md",
+      "sha256": "53bfcfdbffb23ff1e21b8b5c70810c8c5a128e8f017730e2a4b349a296b00f03"
+    },
+    "repo/docs/assets/option/en/mark/ripple.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/ripple.md",
+      "sha256": "3f85f3cbc3bc7249140308e3c201be85d9f23ba048a4f6f43f99e24e2752820c"
+    },
+    "repo/docs/assets/option/en/mark/symbol.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/symbol.md",
+      "sha256": "020f27c0eda9ed9acf774b9f5686f9bc72fa1bf041fcf3f0adde4fdcaa319e88"
+    },
+    "repo/docs/assets/option/en/mark/text.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/mark/text.md",
+      "sha256": "3d561975517bb119eb31c7c2460f64a920e717e38617a4bd08e91c7085efe04f"
+    },
+    "repo/docs/assets/option/en/option.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/option.md",
+      "sha256": "988b4f89d39023b3002edd7a378302c7a0da8adf3e3db6392d56ee3711645231"
+    },
+    "repo/docs/assets/option/en/region/region.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/region/region.md",
+      "sha256": "e160e3c7deb405d74dc678dc9e306b8f2c4185399b24e77082f3c51378cf97db"
+    },
+    "repo/docs/assets/option/en/series/area.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/area.md",
+      "sha256": "a50d00c3cba0effcc13199139b1daa3a563e5a16048334419a89d659718805e3"
+    },
+    "repo/docs/assets/option/en/series/bar-style.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/bar-style.md",
+      "sha256": "b840227bed62ac1e55ce13932048cfee620681e0f92b5f68acbf9c30c789d961"
+    },
+    "repo/docs/assets/option/en/series/bar.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/bar.md",
+      "sha256": "e16ed9c1f7e75d9e05878238b021be20d1c19282560c5929dd5cd8065119b90e"
+    },
+    "repo/docs/assets/option/en/series/bar3d.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/bar3d.md",
+      "sha256": "9a5c019db1f577189ef854c3eed8e2bde33c728f0347d62ced339388d97441ca"
+    },
+    "repo/docs/assets/option/en/series/box-plot.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/box-plot.md",
+      "sha256": "eb539328af0e307ffba53ec1777fd52a4989d98ac4614b87ba5316fb052371f0"
+    },
+    "repo/docs/assets/option/en/series/circle-packing.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/circle-packing.md",
+      "sha256": "897555400304421a3e070760c4d04c7681bb9bdaa2919485e93acf94bee1b6f2"
+    },
+    "repo/docs/assets/option/en/series/circular-progress.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/circular-progress.md",
+      "sha256": "215de65b6c09f4ff24cad4d845a4a9ce2988796a4ce251500d53a4135e2b438c"
+    },
+    "repo/docs/assets/option/en/series/correlation.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/correlation.md",
+      "sha256": "398534932ef5c115b8ee900e0f8a0b6a0418f6bc94b12b30a8fad571e8182413"
+    },
+    "repo/docs/assets/option/en/series/dot.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/dot.md",
+      "sha256": "4c722fb8e8daf67107fee4693de8a465e9b16d12dfa03a05918926fadf992dae"
+    },
+    "repo/docs/assets/option/en/series/funnel.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/funnel.md",
+      "sha256": "90bb7a963a943ade284631aa4ebfe92f3f47a2d6b14c2b031b8ab158cb9a1e89"
+    },
+    "repo/docs/assets/option/en/series/funnel3d.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/funnel3d.md",
+      "sha256": "35a2364c7801f6d7b619a5f141a9cb7a4028f69d556228ce415b2c08f4b6e24f"
+    },
+    "repo/docs/assets/option/en/series/gauge-pointer.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/gauge-pointer.md",
+      "sha256": "31a27ed9b1f013ced6d2236f08d4d39e85024f9076d406adcc1c9450664fe42f"
+    },
+    "repo/docs/assets/option/en/series/gauge.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/gauge.md",
+      "sha256": "41fd4c25c444d4a09162db53681cc664f5beae1e61fcdbb6428570eeef33ff8d"
+    },
+    "repo/docs/assets/option/en/series/heatmap.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/heatmap.md",
+      "sha256": "7ff5d85cddfb5efd571678dcdd2f9e8e833d8dfeb805834e9a4b84ae91772b61"
+    },
+    "repo/docs/assets/option/en/series/image-cloud.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/image-cloud.md",
+      "sha256": "5c872793bdab066323ca32bb5892a40453464d485713281ac19ac2289b28d96c"
+    },
+    "repo/docs/assets/option/en/series/line.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/line.md",
+      "sha256": "51e62a7a9bfe4402e2b5ca2ce69efbaccac24bba759a5224d334065963cc245c"
+    },
+    "repo/docs/assets/option/en/series/linear-progress.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/linear-progress.md",
+      "sha256": "21836766a1a8b02646d9693fd4f74ea21670083b50f5845004c6764415d7cb8b"
+    },
+    "repo/docs/assets/option/en/series/link.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/link.md",
+      "sha256": "6847a30f82839e0438325cae67b7b8fb790fb31f59ee4a13868a5aba6f6f3445"
+    },
+    "repo/docs/assets/option/en/series/liquid.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/liquid.md",
+      "sha256": "dd38b26e1d9b96bb0df7f281c470bb6ce6ac6b5c07edb27a3ff6c982dc6d554f"
+    },
+    "repo/docs/assets/option/en/series/map.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/map.md",
+      "sha256": "cc4473ae9108bfbb4fadca732302ad7a653a91009aa3cb6a22642121eaa73d27"
+    },
+    "repo/docs/assets/option/en/series/mosaic.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/mosaic.md",
+      "sha256": "506353ff1fcf5dde17d1689265eae6a418af8a167e9ac50c5a340c50ac60f914"
+    },
+    "repo/docs/assets/option/en/series/pictogram.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/pictogram.md",
+      "sha256": "aa90cbfa2416eadd99e8f2aa64105cde33b5d8d51f07808e0acded65a42d1795"
+    },
+    "repo/docs/assets/option/en/series/pie.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/pie.md",
+      "sha256": "0d06a4511fdc818ede008cb1dcb51abf99773bd61871944db868e4dc2a98c7e3"
+    },
+    "repo/docs/assets/option/en/series/progress-like.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/progress-like.md",
+      "sha256": "2d342ae810dce9e71f23708d9f2b48a476ffa0cf745cf47160e38637bee84988"
+    },
+    "repo/docs/assets/option/en/series/radar.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/radar.md",
+      "sha256": "c006bf5a21ac4816c4be3f7c90a161abf562df84eab3d379c5333c88648287b8"
+    },
+    "repo/docs/assets/option/en/series/range-area.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/range-area.md",
+      "sha256": "6171aba773eb782707128ad5d81d00ab7977aa2817f05d2b15c2f83fd46ceebb"
+    },
+    "repo/docs/assets/option/en/series/range-column.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/range-column.md",
+      "sha256": "48895efb23a370ab44e24dab35e141f9083fe9163e7ebde34b77b33cc72b012a"
+    },
+    "repo/docs/assets/option/en/series/rose.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/rose.md",
+      "sha256": "b72f57e79552fc2b2f8754b7c630e28b0fb60a9ddfa7e581de96e370e3769ba4"
+    },
+    "repo/docs/assets/option/en/series/sankey.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/sankey.md",
+      "sha256": "f7875d9933148ae9f2c23bd87fcdd5cdaa695614db1ac0249dad7c94a7fea400"
+    },
+    "repo/docs/assets/option/en/series/scatter.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/scatter.md",
+      "sha256": "0869f80f9ec895f9232676c18835be83344e99b83e182fb81c52759ffe2e6407"
+    },
+    "repo/docs/assets/option/en/series/sunburst.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/sunburst.md",
+      "sha256": "9690a437d0b3ce1ef6dee9e3f9c3545f66bd377e1b6733a063376b7ab6752bd1"
+    },
+    "repo/docs/assets/option/en/series/treemap.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/treemap.md",
+      "sha256": "8400ff6a428f8be1cd2e75fec37a50157337763e3e0131d41f518e2119dd1a54"
+    },
+    "repo/docs/assets/option/en/series/venn.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/venn.md",
+      "sha256": "8ebe5ee1fb02f7260797254e8ad4415a59c3ebc8941e66d69040781f33b60388"
+    },
+    "repo/docs/assets/option/en/series/waterfall.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/waterfall.md",
+      "sha256": "042146c083d292ed06cd03e3620596701ddb61500a3c21d6039c12c1bdf56d35"
+    },
+    "repo/docs/assets/option/en/series/word-cloud.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/word-cloud.md",
+      "sha256": "3aeacec1a3a2aaea3fcb4f5116fb582389f904fd54523ce7a50a5f1da7996c93"
+    },
+    "repo/docs/assets/option/en/series/word-cloud3d.md": {
+      "url": "https://github.com/VisActor/VChart/blob/7b224143672a8fcc2d620f05cef1fdf3de179793/docs/assets/option/en/series/word-cloud3d.md",
+      "sha256": "7d04f72b4f0838aa577be673cb4ae47bff1c3708427a37fd56e8ffc5cb0c2f74"
+    }
+  }
+}
