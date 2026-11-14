@@ -6,7 +6,9 @@ import './date-adapter.ts';
  * Registration and Chart.defaults are page-wide (configuration/index.md § Global
  * Configuration), so they happen once, here. Every Chart.js example imports this through
  * stage.ts. The gallery is dark, so text and grid lines default to light colours
- * (general/colors.md § Default colors).
+ * (general/colors.md § Default colors). Changing these colours makes the Colors plugin
+ * stand aside (it only colours charts that name no colour, defaults included); keeping
+ * the stock ones would leave any element without a border colour near-invisible here.
  */
 Chart.register(...registerables);
 

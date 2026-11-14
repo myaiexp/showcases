@@ -54,6 +54,15 @@ export { INK, GRID } from './setup.ts';
  * - Cards fake a pointer with config-data.ts ghostCursor(): non-bubbling events on the
  *   canvas. A bubbling click would reach the card's <a> and open the example.
  * - A card legend with 3+ entries wraps at 260px: boxWidth ~20 and font size 10 there.
+ * - The Colors plugin stands aside when Chart.defaults colours differ from stock, which
+ *   setup.ts does: use plugins.colors.forceOverride. It writes colours into the datasets.
+ * - Decimation reads only the chart-level options.parsing (false) and needs a linear or
+ *   time x scale; a dataset-level parsing: false leaves it silently off.
+ * - Fonts resolve from Chart.defaults.font on every update and there is no per-chart
+ *   options.font: set fonts on the chart's own elements in cards.
+ * - devicePixelRatio applies after resize(); resizeDelay only at construction.
+ * - Typed custom plugin options: cast options.plugins to
+ *   NonNullable<ChartOptions['plugins']> & {…}.
  * - Scriptable and segment functions that read a closure variable need chart.update()
  *   after it changes.
  */
