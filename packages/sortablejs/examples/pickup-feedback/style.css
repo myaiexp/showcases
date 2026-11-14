@@ -1,0 +1,19 @@
+/* Pick-up feedback: status line, lifted message and the highlighted archive */
+[data-example='sortablejs/pickup-feedback'] {
+  .mail { width: min(100%, 440px); }
+  .info { margin: 0 0 8px; text-align: center; font: 12px ui-monospace, monospace; color: var(--fg-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  section { background: var(--bg-surface); border: 1px solid var(--border); border-radius: 6px; padding: 6px; transition: border-color 0.2s, background 0.2s; }
+  h3 { margin: 0 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--fg-3); }
+  h3 em { font-style: normal; text-transform: none; letter-spacing: 0; color: var(--accent); opacity: 0; transition: opacity 0.2s; }
+  .msgs { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 3px; min-height: 100px; }
+  .msg { padding: 5px 8px; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; color: var(--fg-1); font-size: 12px; cursor: grab; user-select: none; transition: box-shadow 0.15s; }
+  .msg.lifted { border-color: var(--accent); box-shadow: 0 4px 12px rgb(0 0 0 / 0.35); }
+  .dragging .zone { border: 1px dashed var(--accent); background: var(--bg); }
+  .dragging .zone h3 em { opacity: 1; }
+  .ghost { opacity: 0.35; border-style: dashed; }
+  .hint { color: var(--fg-3); font-size: 13px; text-align: center; margin: 10px 0 0; }
+  &.compact .msgs{ gap: 2px; min-height: 0 }
+  &.compact .msg{ padding: 3px 6px; font-size: 11px }
+  &.compact .info{ margin-bottom: 4px }
+}

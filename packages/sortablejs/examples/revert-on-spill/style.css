@@ -1,0 +1,59 @@
+/* Revert on spill: a toolbar above a canvas drop area */
+[data-example='sortablejs/revert-on-spill'] {
+  .app {
+    width: min(100%, 340px);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .toolbar {
+    list-style: none;
+    margin: 0;
+    padding: 6px;
+    display: flex;
+    gap: 6px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .tool {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0 3px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: grab;
+    user-select: none;
+  }
+  .tool span {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .tool small {
+    font-size: 9px;
+    color: var(--fg-3);
+  }
+  .canvas {
+    height: 100px;
+    display: grid;
+    place-items: center;
+    border: 2px dashed var(--border);
+    border-radius: 8px;
+  }
+  .msg {
+    margin: 0;
+    font: 11px ui-monospace, monospace;
+    color: var(--fg-2);
+  }
+  .hint {
+    margin: 8px auto 0;
+    max-width: 440px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--fg-3);
+  }
+}

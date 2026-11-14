@@ -10,7 +10,7 @@ const ROWS = ['Sunrise run', 'Team stand-up', 'Lunch with Ines', 'Piano lesson']
 
 const mount: Mount = (el, { preview, signal }) => {
   const status = document.createElement('div');
-  status.className = 'status';
+  status.className = 'readline';
   const list = document.createElement('ul');
   list.className = 'rows';
   for (const r of preview ? ROWS.slice(0, 3) : ROWS) {

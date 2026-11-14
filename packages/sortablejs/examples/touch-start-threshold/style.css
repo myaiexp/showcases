@@ -1,6 +1,6 @@
 /* Schedule rows: a status line above rows with a held-state outline */
 [data-example='sortablejs/touch-start-threshold'] {
-  .status {
+  .readline {
     text-align: center;
     font: 12px ui-monospace, monospace;
     color: var(--accent);

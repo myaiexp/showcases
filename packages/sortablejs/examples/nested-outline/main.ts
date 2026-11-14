@@ -51,7 +51,6 @@ const mount: Mount = (el, { preview, signal }) => {
     Sortable.create(ul, {
       group: 'tree',
       animation: 150,
-      fallbackOnBody: true,
       swapThreshold: 0.65,
       dragoverBubble: false,
       ghostClass: 'hole',

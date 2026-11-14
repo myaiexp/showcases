@@ -1,0 +1,60 @@
+/* Swap lineup: runners in a lane and the trade report */
+[data-example='sortablejs/swap-lineup'] {
+  .team {
+    margin-inline: auto;
+    width: min(100%, 440px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .lane {
+    display: flex;
+    gap: 6px;
+    padding: 8px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .runner {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 2px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-bottom: 3px solid var(--shirt);
+    border-radius: 6px;
+    color: var(--fg-1);
+    font-size: 12px;
+    cursor: grab;
+    user-select: none;
+  }
+  .bib {
+    font: 10px ui-monospace, monospace;
+    color: var(--fg-3);
+  }
+  .name {
+    font-weight: 600;
+  }
+  .next-to-trade {
+    background: color-mix(in srgb, var(--shirt) 28%, var(--bg));
+    border-color: var(--shirt);
+  }
+  .news {
+    min-height: 3.2em;
+    padding: 6px 10px;
+    border-left: 3px solid var(--accent);
+    font: 11px/1.5 ui-monospace, monospace;
+    color: var(--fg-2);
+  }
+  .hint {
+    margin: 4px auto 0;
+    max-width: 440px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--fg-3);
+  }
+}

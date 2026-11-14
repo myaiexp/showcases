@@ -13,7 +13,7 @@ const mount: Mount = (el, { preview, signal }) => {
   const lists = [false, true].map((inverted) => {
     const col = document.createElement('section');
     col.innerHTML = '<h3></h3><ul class="list"></ul>';
-    col.querySelector('h3')!.textContent = inverted ? 'invertSwap: true' : 'default';
+    col.querySelector('h3')!.textContent = inverted ? 'Drop in between' : 'Swap at the middle';
     const list = col.querySelector('ul')!;
     list.classList.toggle('inverted', inverted);
     for (const name of preview ? PATIENTS : [...PATIENTS, 'Elm']) {

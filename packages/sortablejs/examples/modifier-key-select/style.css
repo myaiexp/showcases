@@ -1,0 +1,60 @@
+/* Modifier key select: file rows, selection highlight and the key chip */
+[data-example='sortablejs/modifier-key-select'] {
+  .files {
+    margin-inline: auto;
+    width: min(100%, 330px);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .keychip {
+    align-self: flex-start;
+    font: 11px ui-monospace, monospace;
+    color: var(--fg-3);
+    border: 1px dashed var(--border);
+    border-radius: 4px;
+    padding: 2px 8px;
+  }
+  .keychip.down {
+    color: var(--bg);
+    background: var(--accent);
+    border-color: var(--accent);
+  }
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .file {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 4px 8px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--fg-1);
+    font-size: 12px;
+    cursor: grab;
+    user-select: none;
+  }
+  .chosen-file {
+    background: color-mix(in srgb, var(--accent) 22%, var(--bg-surface));
+    border-color: var(--accent);
+  }
+  .bar {
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+  }
+  .hint {
+    margin: 6px auto 0;
+    max-width: 440px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--fg-3);
+  }
+}

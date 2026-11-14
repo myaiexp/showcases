@@ -1,0 +1,13 @@
+/* DOM helpers: checklist rows with a ticked look */
+[data-example='sortablejs/dom-utils'] {
+  .pack { list-style: none; margin: 0; padding: 0; width: min(100%, 320px); display: flex; flex-direction: column; gap: 3px; }
+  .row { padding: 6px 10px; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 6px; color: var(--fg-1); font-size: 13px; cursor: grab; user-select: none; transition: border-color 0.2s; }
+  .row.packed { color: var(--fg-3); text-decoration: line-through; }
+  .row.packed::before { content: '✓ '; color: var(--green); }
+  .ghost { opacity: 0.35; border-style: dashed; }
+  .info { margin: 8px 0 0; font: 11px ui-monospace, monospace; color: var(--fg-2); text-align: center; max-width: 320px; }
+  .bar { display: flex; justify-content: center; padding-top: 6px; }
+  .hint { color: var(--fg-3); font-size: 13px; text-align: center; margin: 6px 0 0; }
+  &.compact .pack{ gap: 2px }
+  &.compact .row{ padding: 3px 10px; font-size: 12px }
+}

@@ -1,0 +1,57 @@
+/* Drag out to delete: tag box and the note line below it */
+[data-example='sortablejs/drag-out-to-delete'] {
+  .wrap {
+    width: min(100%, 320px);
+    margin-inline: auto;
+    padding-bottom: 6px;
+  }
+  .title {
+    margin: 0 0 4px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--fg-3);
+  }
+  .tags {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    min-height: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-content: flex-start;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .tag {
+    padding: 3px 11px;
+    background: color-mix(in srgb, var(--accent) 18%, var(--bg));
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    font-size: 12px;
+    color: var(--fg-1);
+    cursor: grab;
+    user-select: none;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    min-height: 26px;
+  }
+  .note {
+    font: 11px ui-monospace, monospace;
+    color: var(--fg-2);
+    margin-right: auto;
+  }
+  .hint {
+    margin: 8px auto 0;
+    max-width: 440px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--fg-3);
+  }
+}

@@ -41,7 +41,11 @@ const mount: Mount = (el, { preview, signal }) => {
       const from = Sortable.dragged;
       if (!copy || !from) return;
       const look = getComputedStyle(from);
-      for (const p of ['background-color', 'color', 'font', 'padding', 'border', 'border-radius']) {
+      // Longhands only: computed shorthands like `font` or `border` can read back empty in some browsers.
+      const sides = ['top', 'right', 'bottom', 'left'];
+      const props = ['background-color', 'color', 'font-family', 'font-size', 'font-weight', 'line-height', 'border-radius',
+        ...sides.flatMap((s) => [`padding-${s}`, `border-${s}-width`, `border-${s}-style`, `border-${s}-color`])];
+      for (const p of props) {
         copy.style.setProperty(p, look.getPropertyValue(p));
       }
       copy.style.boxShadow = '0 10px 20px rgb(0 0 0 / 0.4)';

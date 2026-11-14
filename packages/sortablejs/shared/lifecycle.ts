@@ -2,8 +2,9 @@
 //
 // Traps for Sortable examples (add to this list when you hit a new one):
 // - Sortable holds ONE drag per page in module-level state. destroy() calls _onDrop(), which
-//   ends whatever drag is in flight anywhere on the page, another card's included. Tear down
-//   with release(...instances), which waits for a foreign drag to finish first.
+//   ends whatever drag is in flight anywhere on the page, another card's included (leaving its
+//   AutoScroll running against a null Sortable.active). Tear down with release(...instances),
+//   which destroys in a gap of drive.ts's queue, never under another card's drag.
 // - Cards have no pointer. Script drags with shared/drive.ts (drive / loopDrive); never
 //   dispatch pointer events yourself, since the queue there is what keeps cards apart.
 // - A scripted drag is a touch drag, so it always uses the fallback (floating ghost with
@@ -43,9 +44,31 @@
 //   destroy() and create again on the same element; release() may defer, and a late destroy()
 //   would unregister the new instance.
 // - Sortable.utils.detectDirection is documented but missing from @types/sortablejs: cast.
+// - Sortable.active / dragged / ghost / clone are page-wide: a card reading them sees other cards'
+//   drags too. Check that the element is inside this example before showing it.
+// - The clone event (onClone) fires on every drag, not only when copying: Sortable always makes a
+//   stand-in copy.
+// - A scripted element.click() inside a card bubbles to the card's link and opens the full view:
+//   call the handler directly in cards. Never loop forever inside drive(): it holds the page queue.
+// - base.css styles .label, .btn, .card, .status (adds a dot) and .icon (a 14px box): don't use them
+//   as an example's own class names.
+// - MultiDrag keeps ONE selection for the whole page: a card that leaves items selected hands
+//   them to the next multi-drag list's drag. Deselect everything (utils.deselect) at the end of
+//   each card round and on cleanup.
+// - AutoScroll listens for pointermove only when the instance is not native-draggable, so a
+//   scripted (touch) drag never autoscrolls unless the list is created with forceFallback.
+// - A plugin's drop/dropGlobal also fire from destroy() with no dragEl: guard them, or release()
+//   throws. The plugins README calls the event hook eventOptions; 1.15.7 reads eventProperties,
+//   which runs for every Sortable on the page (this undefined where not initialised): guard it.
+//   The MultiDrag index objects hold multiDragElement, not the README's element.
 import Sortable from 'sortablejs';
+import { betweenDrags } from './drive.ts';
 
-/** Destroys `sortables`, waiting (up to 5 s) while another example's drag is in flight. */
+/**
+ * Destroys `sortables` now when no other example is dragging; otherwise in the next gap between
+ * scripted drags (cards loop back to back, so a gap may never come on its own), after any real
+ * drag still in flight has ended.
+ */
 export function release(...sortables: Sortable[]): void {
   const destroy = (): void => {
     for (const s of sortables) {
@@ -58,12 +81,23 @@ export function release(...sortables: Sortable[]): void {
     return !!dragged && !sortables.some((s) => s.el && s.el.contains(dragged));
   };
   if (!foreignDrag()) return destroy();
-  const started = performance.now();
-  const id = window.setInterval(() => {
-    if (foreignDrag() && performance.now() - started < 5000) return;
-    window.clearInterval(id);
-    destroy();
-  }, 100);
+  betweenDrags(
+    () =>
+      new Promise<void>((done) => {
+        // Inside the gap no scripted drag runs, so a drag still in flight is a visitor's own.
+        const id = window.setInterval(() => {
+          if (foreignDrag()) return;
+          window.clearInterval(id);
+          destroy();
+          done();
+        }, 100);
+        if (!foreignDrag()) {
+          window.clearInterval(id);
+          destroy();
+          done();
+        }
+      }),
+  );
 }
 
 type Plugin = Parameters<typeof Sortable.mount>[0];

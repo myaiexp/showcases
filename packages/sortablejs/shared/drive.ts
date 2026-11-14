@@ -10,8 +10,10 @@
 // - gives the card a no-op transform while it runs. The floating copy is position: fixed, and a
 //   transformed ancestor becomes its containing block (Sortable measures against it), so the copy
 //   scrolls and clips with its own card instead of hanging over other cards when the page moves.
-// - sends a mousemove beside every pointermove, as a real pointer does: the drop-into-empty-list
-//   detection (emptyInsertThreshold) listens for mousemove/touchmove only, never pointermove.
+// - sends a mousemove beside every pointermove and a mouseup after the pointerup, as a real
+//   pointer does: the drop-into-empty-list detection (emptyInsertThreshold) listens for
+//   mousemove/touchmove only, and MultiDrag's click-away deselect for mouseup/touchend only.
+// - ends the script (not only the drag) if the card moves under it, see cardMoved below.
 // - drops the visitor's real pointermove and mousemove events while it runs. Sortable does not
 //   filter by pointerId, so a real mouse crossing the page would steer the scripted drag.
 // - turns AutoScroll off (or only its bubbling, with `autoScroll: true`) so a drag near an
@@ -43,6 +45,17 @@ export interface DriveOptions {
 
 let queue: Promise<void> = Promise.resolve();
 
+/**
+ * Thrown into a script whose card moved mid-drag, or whose next point is off-screen (a partly
+ * visible card): the loop simply starts its next round. A real finger can't touch off-screen, and
+ * Sortable's fallback breaks there (elementFromPoint returns null, which AutoScroll dereferences).
+ */
+class CardMoved extends Error {}
+
+function onScreen(at: { x: number; y: number }): boolean {
+  return at.x >= 0 && at.y >= 0 && at.x < window.innerWidth && at.y < window.innerHeight;
+}
+
 /** Runs `script` once every earlier scripted gesture on the page has finished. */
 export function drive(root: HTMLElement, signal: AbortSignal, script: (hand: Hand) => Promise<void>, opts: DriveOptions = {}): Promise<void> {
   const run = queue.then(async () => {
@@ -54,13 +67,19 @@ export function drive(root: HTMLElement, signal: AbortSignal, script: (hand: Han
       );
       await Promise.race([script(session.hand), aborted]);
     } catch (err) {
-      if (!signal.aborted) throw err;
+      if (!signal.aborted && !(err instanceof CardMoved)) throw err;
     } finally {
       session.close();
     }
   });
-  queue = run.catch((err: unknown) => console.error('Sortable card script failed', err));
+  queue = run.catch((err: unknown) => console.error(`Sortable card script failed (${root.dataset['example'] ?? '?'})`, err));
   return run;
+}
+
+/** Runs `task` in the next gap between scripted drags: no card's drag is in flight while it runs. */
+export function betweenDrags(task: () => void | Promise<void>): void {
+  const run = queue.then(task);
+  queue = run.catch((err: unknown) => console.error('Sortable card teardown failed', err));
 }
 
 /** Repeats `script` through the queue, `gap` seconds apart, until `signal` aborts. */
@@ -93,6 +112,7 @@ function point(root: HTMLElement, spot: Spot): { x: number; y: number } {
     return { x: r.left + spot.x, y: r.top + spot.y };
   }
   const el = spot instanceof Element ? spot : spot.el;
+  if (!el) throw new Error('drive: a drag target is missing (the script assumed an element that is not there)');
   const fx = spot instanceof Element ? 0.5 : (spot.fx ?? 0.5);
   const fy = spot instanceof Element ? 0.5 : (spot.fy ?? 0.5);
   const r = el.getBoundingClientRect();
@@ -139,7 +159,8 @@ function open(root: HTMLElement, signal: AbortSignal, opts: DriveOptions): { han
   // Where the card was at the press. Sortable places the floating copy by the pointer's travel in
   // viewport coordinates since the press, so a page scroll mid-drag throws the copy off by the
   // scroll distance. A finger would stay put while the page moved under it; the script cannot
-  // match that, so it drops the item as soon as the card moves and the next loop starts afresh.
+  // match that, so it drops the item as soon as the card moves and ends the script (the rest of
+  // it assumed the drag had finished), and the loop starts its next round afresh.
   let origin = { x: 0, y: 0 };
   const cardMoved = (): boolean => {
     const r = root.getBoundingClientRect();
@@ -176,28 +197,43 @@ function open(root: HTMLElement, signal: AbortSignal, opts: DriveOptions): { han
 
   const hand: Hand = {
     down(item, at = item) {
-      pressed = true;
       const r = root.getBoundingClientRect();
       origin = { x: r.left, y: r.top };
-      fire(item, 'pointerdown', point(root, at));
+      const p = point(root, at);
+      if (!onScreen(p)) throw new CardMoved();
+      pressed = true;
+      fire(item, 'pointerdown', p);
     },
     glide(to, seconds) {
       const from = last;
       return new Promise((resolve, reject) => {
         const start = performance.now();
         let id = 0;
+        // A throw inside a frame callback would leave this promise pending forever and hold the
+        // page-wide queue, so every frame's work turns errors into a rejection.
         const tick = (now: number): void => {
+          try {
+            frame(now);
+          } catch (err) {
+            reject(err);
+          }
+        };
+        const frame = (now: number): void => {
           if (signal.aborted) return reject(signal.reason);
           if (!pressed) return resolve();
           if (cardMoved()) {
             hand.up();
-            return resolve();
+            return reject(new CardMoved());
           }
           const t = Math.min(1, (now - start) / (seconds * 1000));
           const k = ease(t);
           // Re-read the target every frame: items slide while Sortable animates the reorder.
           const end = point(root, to);
           const at = { x: from.x + (end.x - from.x) * k, y: from.y + (end.y - from.y) * k };
+          if (!onScreen(at)) {
+            hand.up();
+            return reject(new CardMoved());
+          }
           fire(document, 'pointermove', at);
           document.dispatchEvent(new MouseEvent('mousemove', { bubbles: true, cancelable: true, clientX: at.x, clientY: at.y, buttons: 1 }));
           clearClickFlag();
@@ -214,7 +250,9 @@ function open(root: HTMLElement, signal: AbortSignal, opts: DriveOptions): { han
     up() {
       if (!pressed) return;
       pressed = false;
-      fire(document.elementFromPoint(last.x, last.y) ?? document, 'pointerup', last);
+      const target = document.elementFromPoint(last.x, last.y) ?? document;
+      fire(target, 'pointerup', last);
+      target.dispatchEvent(new MouseEvent('mouseup', { bubbles: true, cancelable: true, clientX: last.x, clientY: last.y, button: 0 }));
       clearClickFlag();
     },
     async drag(item, to, seconds = 0.9, o = {}) {
