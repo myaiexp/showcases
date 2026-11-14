@@ -39,6 +39,11 @@
 // - Extended search: the docs' "'^hello world" reads as include '^hello' AND fuzzy 'world'
 //   (matches nothing); a phrase needs quotes ('"hello world"). A query mixing a positive
 //   term with a ! term over several keys returns nothing. Patterns are lowercased.
+// - Logical: $or does not short-circuit in 7.5.0 (the docs say it does). A bare
+//   { $path, $val } as the whole query throws; wrap it in $and or $or. Two clauses on the
+//   same key in one object literal keep only the last: that is why $and exists.
+// - fuse.remove() replaces Fuse's internal array (the one passed in stops mirroring it);
+//   removeAt shifts every later refIndex and throws "Invalid doc index" out of range.
 // - Plain Fuse on a big list blocks the page: cards keep lists small (a few thousand items)
 //   and never time main-thread work on 10,000+ items.
 import type { MountContext } from '@/types.ts';

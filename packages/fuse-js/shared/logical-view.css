@@ -1,0 +1,122 @@
+/* Logical queries drawn: the query text, a truth table, a tree with a lit strip per node */
+.fz-lq {
+  margin: 0;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-surface);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--accent-text, var(--accent));
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+.fz-lt {
+  display: grid;
+  gap: 1px 6px;
+  align-items: center;
+  font-size: 0.9em;
+}
+.fz-card .fz-lt {
+  gap: 0 4px;
+  font-size: 10px;
+  line-height: 13px;
+}
+.fz-lt-h {
+  color: var(--fg-3);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fz-lt-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: opacity 0.25s;
+}
+.fz-lt-c {
+  text-align: center;
+  border-radius: 3px;
+  color: var(--fg-3);
+  transition: background 0.25s, color 0.25s;
+}
+.fz-lt-c[data-on] {
+  background: color-mix(in srgb, var(--green) 28%, transparent);
+  color: var(--green);
+}
+.fz-lt-c.fz-lt-res[data-on] {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+  color: var(--fg-1);
+}
+.fz-lt-dim {
+  opacity: 0.3;
+}
+.fz-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-height: 0;
+}
+.fz-tn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 1px 6px;
+  border-left: 2px solid var(--border);
+  border-radius: 3px;
+  background: var(--bg-surface);
+}
+.fz-card .fz-tn {
+  padding: 0 5px;
+  gap: 5px;
+}
+.fz-tn-label {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fz-tn-op {
+  color: var(--accent-text, var(--accent));
+  font-weight: 700;
+}
+.fz-tn-strip {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.fz-tn-cell {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: var(--bg-raised);
+  border: 1px solid var(--border);
+  box-sizing: border-box;
+  transition: background 0.25s;
+}
+.fz-full .fz-tn-cell {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.fz-tn-cell[data-on] {
+  background: var(--green);
+  border-color: var(--green);
+}
+.fz-tn-cell[data-follow] {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+.fz-full .fz-lt {
+  max-width: 560px;
+}
+.fz-full .fz-tree {
+  max-width: 560px;
+}
