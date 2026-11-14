@@ -8,6 +8,7 @@ export default defineMeta({
   section: 'Prop modifications',
   tags: ['add()', 'update()', 'get()', 'put()', 'consistency'],
   docs: [
+    'repo/docs/Table/Table.bulkPut().md',
     'repo/docs/PropModification/add().md',
     'repo/docs/Table/Table.update().md',
     'repo/docs/Table/Table.get().md',

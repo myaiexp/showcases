@@ -34,8 +34,14 @@ export function rawFindAdults(dbName: string, friends: Friend[]): Promise<string
         db.close();
         resolve(names);
       };
-      tx.onerror = () => reject(tx.error);
-      tx.onabort = () => reject(tx.error);
+      tx.onerror = () => {
+        db.close();
+        reject(tx.error);
+      };
+      tx.onabort = () => {
+        db.close();
+        reject(tx.error);
+      };
     };
   });
 }

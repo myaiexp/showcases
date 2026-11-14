@@ -7,16 +7,18 @@ import { tableView } from '../../shared/table-view.ts';
 import AppDB from './AppDB.ts';
 import Friend from './Friend.ts';
 
+const START = [
+  { name: 'Simon', age: 16 },
+  { name: 'Sara', age: 63 },
+  { name: 'Josephine', age: 21 },
+];
+
 const mount: Mount = async (el, ctx) => {
   const stage = createStage(el, ctx, { hint: 'Each button calls a method on the Friend object itself.' });
   const db = stage.own(new AppDB(stage.dbName('FriendsDB')));
 
   // add() takes plain objects: EntityTable makes the id optional and leaves methods out.
-  await db.friends.bulkAdd([
-    { name: 'Simon', age: 16 },
-    { name: 'Sara', age: 63 },
-    { name: 'Josephine', age: 21 },
-  ]);
+  await db.friends.bulkAdd(START);
 
   const say = caption(stage.root);
   const [left, right] = columns(stage.root, 3, 2);
@@ -41,7 +43,7 @@ const mount: Mount = async (el, ctx) => {
       const all = await db.friends.toArray();
       await birthday(all[turn++ % all.length]!);
       await wait(1600);
-      if (turn % 6 === 0) await db.friends.bulkPut([{ id: 1, name: 'Simon', age: 16 }, { id: 2, name: 'Sara', age: 63 }]);
+      if (turn % 6 === 0) await db.friends.bulkPut(START.map((f, i) => ({ id: i + 1, ...f })));
     });
   } else {
     for (const friend of await db.friends.toArray()) button(stage, `${friend.name}.birthday()`, () => birthday(friend));

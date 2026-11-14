@@ -3,10 +3,14 @@ import Dexie from 'dexie';
 import type { Mount } from '@/types.ts';
 import { objectDemo } from '../../shared/class-kit.ts';
 
+// Read once when the module loads, before any example changes it, so overlapping mounts
+// (a card and the full view) all restore the page's real value.
+const PAGE_DEBUG = Dexie.debug;
+
 const mount: Mount = (el, ctx) => {
   const d = objectDemo(el, ctx, { log: true, hint: 'The effect shows in your browser developer tools. This page is put back afterwards.' });
   const { stage, log } = d;
-  const original = Dexie.debug;
+  const original = PAGE_DEBUG;
   const restore = (): void => {
     Dexie.debug = original;
   };

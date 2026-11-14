@@ -162,6 +162,11 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
       return `showcase-dexie-${label}-${suffix}`;
     },
     own(db, o = {}) {
+      if (disposed) {
+        if (o.keep) db.close();
+        else db.delete().catch((err: unknown) => console.warn('dexie cleanup:', err));
+        return db;
+      }
       dbs.push({ db, keep: o.keep ?? false });
       // A middleware can only join before the database opens; the bug it fixes needs a live query.
       if (!db.isOpen()) scrubNullOptimisticOps(db);
@@ -183,10 +188,13 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
         }
       };
     },
+    // An async mount can resume after its card was disposed: nothing new may start then.
     every(ms, fn) {
+      if (disposed) return;
       timers.add(window.setInterval(fn, ms));
     },
     after(ms, fn) {
+      if (disposed) return;
       const t = window.setTimeout(() => {
         timers.delete(t);
         fn();
@@ -195,6 +203,7 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
     },
     fail,
     onDispose(fn) {
+      if (disposed) return void fn();
       disposers.push(fn);
     },
     dispose() {
