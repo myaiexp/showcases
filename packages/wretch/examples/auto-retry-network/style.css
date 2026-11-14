@@ -1,0 +1,6 @@
+/* Retry when the connection drops: the timeline keeps room for four attempts */
+[data-example='wretch/auto-retry-network'] {
+  .wr-timeline {
+    min-height: 90px;
+  }
+}

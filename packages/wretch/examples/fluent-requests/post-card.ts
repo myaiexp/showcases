@@ -1,4 +1,4 @@
-// The app's view of a post: title, author and text, faded in when a new one arrives
+// The app's view of a post: title, author and text, faded in on arrival
 import type { Post } from '../../shared/data.ts';
 
 export interface PostCard {

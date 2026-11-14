@@ -1,4 +1,4 @@
-// One request, many possible answers: each status goes to the catcher named after it
+// One request, many answers: each status goes to the catcher named after it
 import wretch from 'wretch';
 import type { Mount } from '@/types.ts';
 import { chips } from '../../shared/chips.ts';

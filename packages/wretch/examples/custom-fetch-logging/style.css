@@ -1,0 +1,6 @@
+/* Wrap fetch to log and time: the console keeps a steady height as lines scroll */
+[data-example='wretch/custom-fetch-logging'] {
+  .wr-pane-body {
+    min-height: 6.5em;
+  }
+}

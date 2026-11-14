@@ -1,0 +1,6 @@
+/* When a post is missing: the screen pane keeps a steady height */
+[data-example='wretch/not-found-handled'] {
+  .wr-pane-body {
+    min-height: 2.8em;
+  }
+}

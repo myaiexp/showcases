@@ -26,6 +26,16 @@
 //   not stringified by wretch (core.ts `fetch`): fetch gets the object and writes "[object Object]".
 //   `server` shows exactly that as a text body. Options like `cache` or a `context` object never
 //   become headers: read them from `req.init`.
+// - formData `recursive: ['ignored']` does not drop the listed keys, as its JSDoc and the README claim:
+//   they are appended as the text "[object Object]". The list matches key names at any depth.
+//   README § Query's comments also drop an "&" ("b=2c=3"): the real string is a=1&b=2&c=3&d=4&d=5.
+// - With `.signal(controller)` the abort addon's own controller is not on the request, so a bare
+//   `.setTimeout(ms)` aborts nothing; pass `.setTimeout(ms, { controller })`.
+// - Upload progress: the progress addon hands fetch a streamed Request. Firefox cannot do that and the
+//   addon falls back silently (the callback is never called): check for zero calls and say so.
+// - `.perfs()` entries are named after the URL, and the callback map and `clearMeasures` are shared
+//   page-wide: give each mount its own query (`?r=<id>`) so cards do not take each other's entries.
+// - `.onDownload()` / `.progress()` only fire while the body is read (`.blob()`, `.json()`...), not for `.res()`.
 import type { MountContext } from '@/types.ts';
 import './wretch.css';
 

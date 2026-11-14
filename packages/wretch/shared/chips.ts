@@ -1,4 +1,4 @@
-// A row of handler names that light up when that handler runs, so you see which one fired
+// A row of handler names that light up when that handler runs
 import type { Tone } from './wire.ts';
 import './chips.css';
 

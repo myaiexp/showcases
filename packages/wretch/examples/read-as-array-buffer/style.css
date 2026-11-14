@@ -1,0 +1,30 @@
+/* Read raw bytes: a hex dump with the identifying bytes highlighted */
+[data-example='wretch/read-as-array-buffer'] {
+  .hex-dump {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-surface);
+    padding: 4px 8px;
+    color: var(--fg-3);
+  }
+  .hex-row {
+    display: flex;
+    gap: 6px;
+    white-space: pre;
+  }
+  .hex-off {
+    color: var(--fg-3);
+  }
+  .hex-b {
+    color: var(--fg-1);
+  }
+  .hex-magic {
+    color: var(--accent);
+    background: var(--accent-bg);
+    border-radius: 2px;
+  }
+  .hex-ascii {
+    color: var(--cyan);
+    margin-left: 4px;
+  }
+}

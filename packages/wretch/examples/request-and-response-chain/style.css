@@ -1,0 +1,6 @@
+/* The two halves of a chain: a little air between the three rows */
+[data-example='wretch/request-and-response-chain'] {
+  .wr-chips {
+    margin-top: 2px;
+  }
+}

@@ -1,0 +1,6 @@
+/* A REST client that returns data: the list keeps room for a few rows */
+[data-example='wretch/rest-api-client'] {
+  .wr-pane-body {
+    min-height: 4.5em;
+  }
+}

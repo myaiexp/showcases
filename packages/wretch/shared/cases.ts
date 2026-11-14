@@ -1,4 +1,4 @@
-// Runs a list of cases: a card loops through them, the full view has a button for each
+// Runs a list of cases: cards loop through them, full views get a button each
 import { button } from './controls.ts';
 import type { Stage } from './stage.ts';
 

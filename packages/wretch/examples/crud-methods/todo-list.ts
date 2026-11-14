@@ -1,4 +1,4 @@
-// The to-do list as the app shows it, with a badge for the method that last changed it
+// The to-do list as the app shows it, badged with the method that last changed it
 export interface Todo {
   id: number;
   title: string;

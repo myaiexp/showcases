@@ -1,4 +1,4 @@
-// Shows an answer the way the app would: a table for JSON, plain text for CSV, source for HTML
+// The answer as the app shows it: a table for JSON, text for CSV, source for HTML
 export interface AnswerView {
   show(contentType: string, text: string): void;
 }
