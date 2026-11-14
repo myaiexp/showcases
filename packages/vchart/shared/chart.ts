@@ -88,6 +88,13 @@ export interface Chart {
  *   functions and 'initialized'/'rendered' listeners must exist before renderSync, so those
  *   examples construct the VChart themselves instead of calling createChart.
  * - An event query { id } matches the spec id, not the model id.
+ * - Candlestick fill is boxFill and the default doji is black; the series does not feed
+ *   the value axis its high/low, so give the axis min/max when adding a line.
+ * - updateModelSpec on an axis throws without forceMerge (third argument true).
+ * - Timeline icons are hidden by default and events are spaced by order, not by time.
+ * - A storyline title is dark with a white stroke by default; restyle it for dark pages.
+ * - A hand-made GeoJSON polygon must wind clockwise for registerMap; getMap returns a DataView.
+ * - 'rendered' does not fire on updateData; 'layoutEnd' does (re-pin overlays there).
  * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
  * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
  * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
