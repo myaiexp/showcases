@@ -32,6 +32,13 @@ import type { MountContext } from '@/types.ts';
  * - landLayer() is for world and country scale. At city zoom it is one flat fill that
  *   z-fights with coplanar polygons (they vanish in some frames): leave it out and pass
  *   createStage a land-coloured background instead.
+ * - TerrainLayer's loader fetches its worker from unpkg unless loadOptions.terrain.workerUrl
+ *   points at the bundled one: spread shared/geo-layers-terrain.ts terrainLoadOptions.
+ * - Tiles are ~170-340px wide whatever tileSize says, so a card shows one or two: use
+ *   tileSize: 64 in cards. Coarse H3 cells across the antimeridian or a pole wrap the world.
+ * - With an array of views, viewState is a map keyed by view id ({left: s, right: s}).
+ * - GlobeViewport.project puts far-side points on screen: hide them with an angle test.
+ * - Flat ground under a road in a FirstPersonView z-fights: lower the ground slightly.
  * - getTooltip hides with null, not undefined.
  * - dataComparator, dataTransform and _dataDiff are typed generically: take unknown and
  *   narrow inside. onDataLoad does not fire per batch of an async-iterable `data`.
