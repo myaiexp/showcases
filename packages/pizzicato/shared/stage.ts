@@ -28,6 +28,27 @@ import { runLive } from './stage-live.ts';
  *   copies it onto its offline master after every step.
  * - Pizzicato replaces AudioNode.prototype.connect page-wide; vite.config.ts routes the
  *   import through entry.ts, which reinstalls one that keeps output and input indices.
+ * - A card renders every step of every variant before it replays any: a show() closure that
+ *   reads a mutable value sees the last variant's. Capture it in a const first. A variant's
+ *   apply() is synchronous, so anything that loads (files, Convolver impulses) loads in build().
+ * - Only gain nodes made through Pizzicato.context are rerouted in a card: a hand-built chain
+ *   ends in Pizzicato.context.createGain() before it connects to Pizzicato.masterGainNode.
+ * - Pizzicato.context.sampleRate is 22050 in a card and the device's rate live; filter cutoffs
+ *   above 11025 Hz read back clamped in cards.
+ * - play() does nothing while a sound plays: stop() first to retrigger. Retune with
+ *   `frequency` right after play(), which makes a new oscillator.
+ * - clone() of a wave sound throws on its first play() in 0.6.4 (no gainSuccessor on the
+ *   clone's oscillator; clone-a-sound shows the fix). A wave's `type` is fixed at creation.
+ * - stop() on a file sound fires 'end' too; guard handlers that start the next track.
+ * - The file loader shift()s the `path` array it is given: pass a fresh array per sound. A
+ *   failed decode also logs an uncaught decodeAudioData rejection, though the callback runs.
+ * - File sounds default to attack and release 0.04 in the source, whatever the README says,
+ *   and attack is a setTargetAtTime with a time constant of 2 × attack: keep attacks short.
+ * - Group.addSound() does not start the sound; removeSound() neither stops it nor keeps it
+ *   in the group's reach: it goes back to the master gain, still playing.
+ * - The Compressor has no `mix` in the source, though the README lists one.
+ * - A microphone Sound keeps the mic open after stop() and disconnect(): mic.ts stops the
+ *   stream's tracks.
  */
 
 export type At = (seconds: number, fn: () => void) => void;

@@ -113,6 +113,10 @@ GitHub Pages. No service on the VPS.
 - Tone.js: build on `packages/tone-js/shared/stage.ts` (`toneStage`, trap list). One spec runs live
   in the full view and through a queued `Tone.Offline` render in cards, which stay silent and
   animate the rendered waveform; `shared/samples.ts` renders stand-in recordings, so nothing fetches.
+- Pizzicato: build on `packages/pizzicato/shared/stage.ts` (`pzStage`, trap list). Cards render
+  silently by pointing the page-wide `Pizzicato.context` at an OfflineAudioContext (`render.ts`);
+  timed steps go through `at()`, never timers. `vite.config.ts` resolves `pizzicato` to
+  `shared/entry.ts`, which undoes the library's page-wide `AudioNode.connect` patch.
 - Zdog: build on `packages/zdog/shared/stage.ts` (`createStage`, trap list), which sizes the
   canvas or svg before the example's own `new Zdog.Illustration({ element: stage.element })`
   reads it. Docs are the zzz.dog source (`metafizzy/zdog-docs`); its `demos/` folder stays out.
