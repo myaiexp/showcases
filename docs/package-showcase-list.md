@@ -64,7 +64,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 26 | Rive (`@rive-app/canvas`) | 5 | v2 2023-07 | repo ✗lic | 40 | State-machine art; needs `.riv` assets |
 | 27 | Galacean (`@galacean/engine`) | 5 | 1.0 2023-04 | repo ✓ MIT | 150 | Full WebGL engine; `docs/en` has ~185 pages. Pages that assume the Editor or embed playgrounds stay out. 2.0 is in alpha, so the line may move |
 | 28 | AntV G2 (`@antv/g2`) | 5 | v5 2023-03 | repo ✓ MIT | 150 | Grammar-of-graphics charts. Docs in `site/docs` |
-| 29 | Observable Plot (`@observablehq/plot`) | 5 | 0.6 (2026-11) | repo ✓ ISC | 150 | Polished charts, minimal code |
+| 29 | Observable Plot (`@observablehq/plot`) ✅ built | 5 | 0.6 (2026-11) | repo ✓ ISC | 544 | Polished charts, minimal code. Docs are the repo's `docs/` pages plus the `test/data` files they load, so every example runs on the docs' own datasets offline; the notebooks and gallery the docs link stay out |
 | 30 | D3 (`d3`) | 5 | v7 2021-06 | repo ✓ ISC | 300 | Bespoke graphics |
 | 31 | AntV L7 (`@antv/l7`) | 5 | 2.x 2020 (2.29 2026-07) | repo ✓ MIT | 80 | WebGL geospatial layers: heatmaps, 3D bars, flows. Docs in `site/docs` (prose, en and zh); `site/examples` stays out. Runs without a basemap: `Map` from `@antv/l7-maps` needs no tiles or token (`site/docs/api/map/map.en.md`). Cards set `logoVisible: false`, since the default logo loads from alipayobjects.com, and skip the `water`/`ocean` polygon shapes and raster tile layers, which fetch too |
 | 32 | A-Frame (`aframe`) | 5 | 1.0 2019-12 (1.8 2026-06) | repo ✓ MIT | 100 | HTML 3D and XR on a bundled three.js; 105 pages in `docs/`. Primitives and shaders need no assets; XR needs a headset |

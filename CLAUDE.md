@@ -93,3 +93,6 @@ GitHub Pages. No service on the VPS.
 - VChart: read the trap list in `packages/vchart/shared/chart.ts` before building, and add to
   it. Never call `VChart.ThemeManager.setCurrentTheme` (it restyles every card); register
   themes, maps and functions under unique prefixed names (`showcase-…`, `vchart-…`), and leave them.
+- Observable Plot: build on `packages/observable-plot/shared/plot.ts` (`mountPlot`, trap list) and
+  load data with `shared/data.ts`, which bundles the docs' own `test/data` files as lazy text
+  chunks, so cards never fetch. Each example writes its whole `Plot.plot` spec in its main.ts.
