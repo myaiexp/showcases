@@ -43,6 +43,18 @@
 //   deleting hook that writes an audit row needs `db.transaction('rw', t, audit, ...)`.
 // - hook('creating') returning a value uses it as the key whenever the row came without one (also on
 //   '++id' tables): hook bodies that only stamp fields use a block body so they return undefined.
+// - A grid (liveQuery) over a database that gets closed or deleted errors into `stage.fail`: hide
+//   or unsubscribe it first (shared/era.ts `hide()`).
+// - Rollbacks never show in the grid: it only sees committed data. Narrate the values seen inside
+//   a transaction in an event log instead.
+// - `blocked` only fires when a versionchange handler returns false; otherwise Dexie's default
+//   handler closes the old connection (and console.warns). Handlers run newest-subscribed first.
+// - `db.vip(fn)` from the docs is gone in v4 (db.vip is a proxy instance): use `Dexie.vip(fn)`.
+// - Missing from dexie.d.ts though present at runtime: Collection.desc, Table.defineClass,
+//   Dexie.derive/extend/async/spawn/Events, Dexie.Promise.PSD (shared/class-kit.ts, zone-kit.ts cast).
+// - Dexie.debug has no visible effect in 4.4.7 (console.debug and devtools async stacks only).
+// - Dexie never fires `unhandledrejection` itself in 4.4.7; only native promises reach it.
+// - getDatabaseNames() lists the whole origin: filter it to this mount's `stage.dbName` prefix.
 // - Dexie events registered with db.on(...) belong to that Dexie instance only; page-wide
 //   ones (Dexie.on('storagemutated'), Dexie.debug, Dexie.addons, Promise.on.error) must be
 //   restored or unsubscribed on dispose, because the whole gallery shares them.
