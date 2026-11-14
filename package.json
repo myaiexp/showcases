@@ -69,6 +69,7 @@
     "@sparkjsdev/spark": "2.4.0",
     "@visactor/vchart": "2.2.2",
     "@visactor/vchart-extension": "2.2.2",
+    "a5-js": "0.10.1",
     "animejs": "^4.5.0",
     "chart.js": "^4.6.1",
     "deck.gl": "9.4.1",
