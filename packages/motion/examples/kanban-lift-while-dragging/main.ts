@@ -36,6 +36,8 @@ const mount: Mount = (el, { preview, signal }) => {
     if (status) status.textContent = t;
   };
 
+  const custom = new Set<HTMLElement>(); // cards whose own re-parent spring is still running
+
   const scope = scopeMotion(el, ({ bind }) => {
     // One drag() per card, so each callback closes over its own card.
     for (const card of el.querySelectorAll<HTMLElement>('.kcard')) {
@@ -60,11 +62,21 @@ const mount: Mount = (el, { preview, signal }) => {
           if (!target) return;
           // Re-parent, then keep the card visually where it was so snapToOrigin glides it into the new slot (snapToOrigin alone does not take over after a re-parent).
           target.append(card);
+          // Both rects were measured with the drag translate applied, so add it back to get the offset from the new layout slot.
+          const m = new DOMMatrix(getComputedStyle(card).transform);
           const a = card.getBoundingClientRect();
-          animate(card, { x: b.left - a.left, y: b.top - a.top }, { duration: 0 });
-          animate(card, { x: 0, y: 0 }, { type: 'spring', bounce: 0.25, visualDuration: 0.4 }).then(bind(() => setStatus('at rest')));
+          animate(card, { x: m.e + b.left - a.left, y: m.f + b.top - a.top }, { duration: 0 });
+          custom.add(card);
+          animate(card, { x: 0, y: 0 }, { type: 'spring', bounce: 0.25, visualDuration: 0.4 }).then(
+            bind(() => {
+              custom.delete(card);
+              setStatus('at rest');
+            }),
+          );
         }),
-        onTransitionEnd: () => setStatus('at rest'),
+        onTransitionEnd: () => {
+          if (!custom.has(card)) setStatus('at rest');
+        },
       });
     }
   });
@@ -72,13 +84,15 @@ const mount: Mount = (el, { preview, signal }) => {
   if (preview) {
     let i = 0;
     loopGesture(el, signal, async (g) => {
-      const from_ = i % 2 === 0 ? 0 : 1;
+      // Next non-empty column as the source; its card goes one column to the right (the last wraps to the first).
+      let from_ = i % 3;
+      for (let k = 0; k < 3 && !cols[from_]!.querySelector('.kcard'); k++) from_ = (from_ + 1) % 3;
       const src = cols[from_]!.querySelector<HTMLElement>('.kcard');
+      i = from_ + 1;
       if (!src) return;
-      const dest = cols[from_ + 1]!;
+      const dest = cols[(from_ + 1) % 3]!;
       const a = at(el, src);
       const d = at(el, dest, 0.5, 0.6);
-      i++;
       await g.drag(src, a, { x: d.x, y: d.y }, 0.7);
       await g.wait(0.8);
     }, 0.2);

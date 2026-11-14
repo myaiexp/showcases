@@ -17,9 +17,10 @@ const mount: Mount = (el, { preview }) => {
         <button class="card" data-layout-id="crossfade-card-${i}" style="--c:${c}"><i></i><b>${n}</b><span>${s}</span></button>`).join('')}</div>
       <div class="sheet"></div>
     </div>`;
-  if (!preview) hint(el, 'Open a card, then click the sheet to close it. The card never leaves the page: leaving it in place is what makes the crossfade work.');
+  if (!preview) hint(el, 'Open a card, then click the sheet or press Escape to close it. Opening crossfades because the card stays in the page; closing just fades the sheet away, since a crossfade back is not something vanilla Motion can do yet.');
   const sheet = el.querySelector('.sheet') as HTMLElement;
   let openId = -1;
+  let removeKey: VoidFunction | undefined;
 
   const scope = scopeMotion(el, () => {
     const open = (i: number): void => {
@@ -55,8 +56,16 @@ const mount: Mount = (el, { preview }) => {
     }
     el.querySelectorAll<HTMLElement>('.card').forEach((card, i) => card.addEventListener('click', () => scope.run(() => open(i))));
     sheet.addEventListener('click', () => scope.run(close));
+    const onKey = (e: KeyboardEvent): void => {
+      if (e.key === 'Escape' && openId >= 0) scope.run(close);
+    };
+    document.addEventListener('keydown', onKey);
+    removeKey = () => document.removeEventListener('keydown', onKey);
   });
-  return () => scope.cancel();
+  return () => {
+    removeKey?.();
+    scope.cancel();
+  };
 };
 
 export default mount;

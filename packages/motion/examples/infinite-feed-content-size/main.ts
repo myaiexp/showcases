@@ -1,5 +1,5 @@
 // A feed that grows as you read it: scroll() with trackContentSize keeps its progress bar honest
-import { scopeMotion, scroll } from 'motion';
+import { delay, scopeMotion, scroll } from 'motion';
 import type { Mount } from '@/types.ts';
 import { autoScroll } from '../../shared/autoscroll.ts';
 import { hint, panel } from '../../shared/ui.ts';
@@ -45,23 +45,30 @@ const mount: Mount = (el, { preview }) => {
     }, { container: scroller, trackContentSize: track } as NonNullable<Parameters<typeof scroll>[1]>);
   };
 
-  // The infinite part: near the bottom, load more.
+  // The infinite part: near the bottom, load more (full view). The card instead adds a post on a timer
+  // while the auto-scroller reads the growing height, so batches never pile up.
   const onScroll = (): void => {
-    if (scroller.scrollTop + scroller.clientHeight > scroller.scrollHeight - 12) {
-      if (preview && count > 36) {
-        scroller.replaceChildren();
-        count = 0;
-        addPosts(8);
-        scroller.scrollTop = 0;
-      } else addPosts(5);
-    }
+    if (!preview && scroller.scrollTop + scroller.clientHeight > scroller.scrollHeight - 12) addPosts(5);
     updateActual();
   };
   scroller.addEventListener('scroll', onScroll);
 
   const scope = scopeMotion(el, () => {
     attach();
-    if (preview) autoScroll(scroller, { duration: 5 });
+    if (preview) {
+      autoScroll(scroller, { duration: 8 });
+      const grow = (): void => {
+        if (count < 30) addPosts(1);
+        else if (scroller.scrollTop < 40) {
+          // back at the top (the scroller reverses there), so the reset is invisible
+          scroller.replaceChildren();
+          count = 0;
+          addPosts(8);
+        }
+        delay(grow, 0.5);
+      };
+      delay(grow, 0.5);
+    }
   });
 
   if (controls) {

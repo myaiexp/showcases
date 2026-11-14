@@ -16,6 +16,9 @@ const mount: Mount = (el, { preview }) => {
   const ring = el.querySelector<HTMLElement>('.ring')!;
   const arc = el.querySelector<SVGElement>('.arc')!;
   arc.setAttribute('stroke-dasharray', String(C));
+  // Set up front so the label shows 0% before the first effect frame.
+  ring.setAttribute('aria-valuenow', '0');
+  ring.setAttribute('data-pct', '0');
   const progress = motionValue(0);
   const cancels: VoidFunction[] = [];
   let p: ReturnType<typeof panel> | undefined;

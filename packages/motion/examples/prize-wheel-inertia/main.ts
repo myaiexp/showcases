@@ -64,7 +64,7 @@ const mount: Mount = (el, { preview }) => {
     if (preview) {
       const tick = (): void => {
         spin(500 + Math.random() * 700);
-        delay(tick, 4);
+        delay(tick, 6);
       };
       delay(tick, 0.6);
       return;

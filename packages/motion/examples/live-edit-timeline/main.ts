@@ -8,6 +8,7 @@ import './style.css';
 const mount: Mount = (el, { preview }) => {
   el.innerHTML = `<div class="rack">${[1, 2, 3, 4].map((n) => `<div class="tile t${n}">${n}</div>`).join('')}</div><div class="info"></div>`;
   const info = el.querySelector<HTMLElement>('.info')!;
+  if (preview) info.style.display = 'none'; // the jargon line is for the full view
 
   const scope = scopeMotion(el, (s) => {
     let timeline!: ReturnType<typeof animate>;

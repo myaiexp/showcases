@@ -66,7 +66,7 @@ const mount: Mount = (el, { preview }) => {
       hint(el, 'The orbits run in a function Motion calls every frame (frame.update with true). Stop it by hand, or set it to stop itself after N frames.');
       p = panel(el);
       status = p.readout('loop', 'stopped');
-      p.button('Start', start);
+      p.button('Start', () => { limit = Infinity; start(); });
       p.button('Stop', stop);
       p.button('Run 120 frames', () => { stop(); limit = 120; start(); });
       p.button('Run forever', () => { stop(); limit = Infinity; start(); });

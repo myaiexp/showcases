@@ -6,6 +6,7 @@ export default defineMeta({
   summary: 'A plus and minus counter: one click is one step, and holding a button makes it keep counting until you let go, like a shopping cart quantity.',
   section: 'Gestures',
   tags: ['press', 'hold', 'repeat', 'onRepeat'],
+  // hold and repeat are documented in the type definitions (PressOptions), next to press.md;
   docs: ['pages/motion-dev/docs/press.md', 'pages/motion-dev/docs/animate.md', 'pages/motion-dev/docs/scope-motion.md'],
   provenance: 'pure',
   added: '2026-11-14',

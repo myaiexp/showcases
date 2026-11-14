@@ -96,6 +96,9 @@ GitHub Pages. No service on the VPS.
 - Observable Plot: build on `packages/observable-plot/shared/plot.ts` (`mountPlot`, trap list) and
   load data with `shared/data.ts`, which bundles the docs' own `test/data` files as lazy text
   chunks, so cards never fetch. Each example writes its whole `Plot.plot` spec in its main.ts.
+- Motion: read the trap list in `packages/motion/shared/ui.ts`. Clean up through `scopeMotion(el, …)`
+  (effects and `frame` loops excepted). Card gestures go through `shared/pointer.ts`, one page-wide
+  queue, because drag/press/pinch listen on window; `animateView` runs in `shared/view.ts`'s iframe.
 - G6: build on `packages/g6/shared/graph.ts` (`mountGraph`, trap list); every example writes its
   whole `new Graph({...})` spec with `theme: 'dark'`. Data comes from `shared/data.ts` (the repo's
   test datasets, the files the docs fetch from their CDN); images from `shared/images.ts`.

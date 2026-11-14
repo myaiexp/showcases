@@ -32,7 +32,7 @@ const mount: Mount = (el, { preview }) => {
         animate('.like path', { fill: '#ff4d6d', stroke: '#ff4d6d' }, { duration: 0.2 });
       } else {
         animate('.like svg', { scale: [0.85, 1] }, { type: 'spring', bounce: 0.5, visualDuration: 0.3 });
-        animate('.like path', { fill: 'rgba(0,0,0,0)', stroke: '#c8c8d0' }, { duration: 0.2 });
+        animate('.like path', { fill: 'rgba(255,77,109,0)', stroke: '#c8c8d0' }, { duration: 0.2 });
       }
       // A plain number animates too: onUpdate receives every in-between value.
       const from = count;

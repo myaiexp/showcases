@@ -14,7 +14,7 @@
   .h2 { background: var(--orange); }
   .rail { width: 22px; }
   .rail .base { position: absolute; left: 10px; width: 2px; top: 0; bottom: 0; background: var(--border); }
-  .ball { position: absolute; left: 2px; bottom: calc(100% * 0.35 / 1.7 - 9px); width: 18px; height: 18px; border-radius: 50%; background: var(--accent); }
+  .ball { position: absolute; left: 2px; bottom: calc(100% * 0.6 / 2.2 - 9px); width: 18px; height: 18px; border-radius: 50%; background: var(--accent); }
   .nums { font-size: 0.75rem; color: var(--fg-2); }
   .editor.full .nums { font-size: 0.9rem; }
 }

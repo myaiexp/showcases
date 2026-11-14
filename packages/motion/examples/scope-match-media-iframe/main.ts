@@ -72,7 +72,14 @@ const mount: Mount = async (el, { preview, signal }) => {
         else Motion.animate('.burger', { scale: [0.5, 1] }, { type: 'spring', bounce: 0.5, visualDuration: 0.4 });
         Motion.animate('.hero', { scale: [0.94, 1] }, { type: 'spring', bounce: 0.4, visualDuration: 0.4 });
       }
-      return () => { delete app.dataset.layout; };
+      return () => {
+        delete app.dataset.layout;
+        if (!named) {
+          // Shorthand mode: below the breakpoint no setup runs, so do not leave the last layout's text behind.
+          where.textContent = 'condition not met: setup stopped';
+          info.textContent = 'media.matches = false';
+        }
+      };
     }, options);
     if (!preview) {
       showQuery?.(toMediaQuery(mode === 'named conditions' ? `>=${BREAK}` : SHORT));

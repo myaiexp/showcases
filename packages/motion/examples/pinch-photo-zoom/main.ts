@@ -25,7 +25,7 @@ const mount: Mount = (el, { preview, signal }) => {
       ),
     ];
     // Drag and pinch on the same element: lifting one finger hands over to a drag without a jump.
-    if (withDrag) stops.push(drag(photo, { momentum: false }));
+    if (withDrag) stops.push(drag(photo, { momentum: false, constraints: viewer, elastic: 0.1 }));
   };
   scope.run(arm);
 

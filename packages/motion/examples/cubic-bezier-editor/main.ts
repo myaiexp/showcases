@@ -11,14 +11,14 @@ const PRESETS: Record<string, Curve> = {
   'ease': START,
   'ease in-out': [0.42, 0, 0.58, 1],
   'snappy out': [0.1, 0.9, 0.2, 1],
-  'overshoot': [0.3, 1.6, 0.5, 1],
-  'wind-up': [0.6, -0.5, 0.7, 1],
+  'overshoot': [0.3, 1.4, 0.5, 1],
+  'wind-up': [0.6, -0.4, 0.7, 1],
 };
 
-const MARGIN = 0.35; // extra room above and below the unit square, so y values can leave 0..1
+const MARGIN = 0.6; // extra room above and below the unit square, so y values can leave 0..1
 
 const mount: Mount = (el, { preview, signal }) => {
-  const size = preview ? 100 : 200;
+  const size = preview ? 80 : 180;
   const fieldH = size * (1 + 2 * MARGIN);
   el.innerHTML = `
     <div class="editor">
@@ -87,7 +87,7 @@ const mount: Mount = (el, { preview, signal }) => {
   const watch = (): void => {
     const next = read();
     if (next.some((n, i) => Math.abs(n - curve[i]!) > 0.004)) {
-      next.forEach((n, i) => (curve[i] = Math.min(i % 2 === 0 ? 1 : 2, Math.max(i % 2 === 0 ? 0 : -1, n))));
+      next.forEach((n, i) => (curve[i] = Math.min(i % 2 === 0 ? 1 : 1 + MARGIN, Math.max(i % 2 === 0 ? 0 : -MARGIN, n))));
       draw();
       scope.run(restartBall);
     }

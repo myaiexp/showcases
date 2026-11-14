@@ -35,12 +35,17 @@ const mount: Mount = (el, { preview }) => {
   };
 
   const scope = scopeMotion(el, ({ bind }) => {
+    // isAnimating() is still true inside the complete/cancel handlers, so read it a tick later.
+    const refresh = (): void => {
+      delay(() => { state.textContent = `isAnimating() ${x.isAnimating()}`; }, 0.05);
+    };
     const build = (): void => {
       teardown.forEach((t) => t());
       rig.classList.remove('dead');
+      right = false;
       x = motionValue(0);
       teardown = [
-        styleEffect('.ball', { x }),
+        styleEffect(el.querySelector<HTMLElement>('.ball')!, { x }),
         x.on('change', (v) => {
           // change fires every frame, so one line counts them instead of flooding the log
           changes++;
@@ -54,8 +59,8 @@ const mount: Mount = (el, { preview }) => {
           state.textContent = `isAnimating() ${x.isAnimating()}`;
         }),
         x.on('animationStart', () => write('animationStart', 'animationStart')),
-        x.on('animationComplete', () => { write('animationComplete', 'animationComplete'); state.textContent = `isAnimating() ${x.isAnimating()}`; }),
-        x.on('animationCancel', () => { write('animationCancel', 'animationCancel'); state.textContent = `isAnimating() ${x.isAnimating()}`; }),
+        x.on('animationComplete', () => { write('animationComplete', 'animationComplete'); refresh(); }),
+        x.on('animationCancel', () => { write('animationCancel', 'animationCancel'); refresh(); }),
       ];
       state.textContent = 'isAnimating() false';
       log.replaceChildren();
@@ -85,7 +90,7 @@ const mount: Mount = (el, { preview }) => {
       p.button('Move', move);
       p.button('Stop', () => x.stop());
       p.button('Destroy', destroy);
-      p.button('Rebuild', build);
+      p.button('Rebuild', () => scope.run(build));
     }
   });
   return () => { scope.cancel(); teardown.forEach((t) => t()); p?.dispose(); };

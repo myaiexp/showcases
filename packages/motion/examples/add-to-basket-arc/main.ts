@@ -38,6 +38,7 @@ const mount: Mount = (el, { preview }) => {
       animate(ghost, { x: [0, dx], y: [0, dy], scale: [1, 0.3] }, { duration: 0.7, ease: 'easeIn', path: arc({ strength, rotate: 0.3 }) }).then(
         s.bind(() => {
           ghost.remove();
+          if (preview && count >= 4) count = 0; // the card's badge starts over every few adds
           badge.textContent = String(++count);
           animate(cart, { scale: [1, 1.3, 1] }, { duration: 0.35 });
           animate(badge, { scale: [0.4, 1] }, { type: 'spring', bounce: 0.6, visualDuration: 0.35 });
