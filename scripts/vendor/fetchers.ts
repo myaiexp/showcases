@@ -11,7 +11,8 @@ export interface FetchedPage {
 
 /**
  * Sparse, shallow clone of `repo` at `ref`; copies `paths` into `dest`. Returns the commit
- * the ref resolved to, so MANIFEST pins exactly what was read.
+ * the ref resolved to, so MANIFEST pins exactly what was read. A path starting with `!` is
+ * an exclude glob applied to every other path, e.g. to leave a repo's test files out.
  */
 export function vendorGit(repo: string, ref: string, paths: readonly string[], dest: string): string {
   const tmp = mkdtempSync(join(tmpdir(), 'vendor-docs-'));
@@ -19,13 +20,21 @@ export function vendorGit(repo: string, ref: string, paths: readonly string[], d
     const git = (...args: string[]): string =>
       execFileSync('git', args, { cwd: tmp, env: cleanGitEnv(), encoding: 'utf8', stdio: ['ignore', 'pipe', 'inherit'] });
     git('clone', '--quiet', '--depth=1', '--filter=blob:none', '--sparse', '--branch', ref, '--', repo, '.');
-    git('sparse-checkout', 'set', '--no-cone', ...paths.map((p) => `/${p}`));
-    const commit = git('rev-parse', 'HEAD').trim();
-    for (const p of paths) {
+    const includes = paths.filter((p) => !p.startsWith('!'));
+    const excludes = paths.filter((p) => p.startsWith('!')).map((p) => p.slice(1));
+    for (const p of [...includes, ...excludes]) {
       if (isAbsolute(p) || normalize(p).startsWith('..')) throw new Error(`path escapes the repo: ${p}`);
+    }
+    git('sparse-checkout', 'set', '--no-cone', ...includes.map((p) => `/${p}`));
+    const commit = git('rev-parse', 'HEAD').trim();
+    const excluded = excludes.map((x) => `:(exclude,glob)${x}`);
+    for (const p of includes) {
       // A glob path (e.g. "docs/pages/*.md") copies only the tracked files it matches,
       // so a repo that ships each page in two formats can vendor just one of them.
-      const files = /[*?[]/.test(p) ? git('ls-files', '-z', '--', `:(glob)${p}`).split('\0').filter(Boolean) : [p];
+      // Directories are listed through ls-files too whenever there are excludes to apply.
+      const listed = /[*?[]/.test(p) || excluded.length > 0;
+      const pathspec = /[*?[]/.test(p) ? `:(glob)${p}` : p;
+      const files = listed ? git('ls-files', '-z', '--', pathspec, ...excluded).split('\0').filter(Boolean) : [p];
       if (files.length === 0) throw new Error(`${repo}@${ref} has nothing matching ${p}`);
       for (const f of files) {
         const from = join(tmp, f);

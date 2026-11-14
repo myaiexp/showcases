@@ -21,7 +21,9 @@ Purity rule).
 - **`git`**: docs that live in a repo as markdown or MDX. This does a shallow sparse
   clone at `ref` (a tag matching the installed version, ideally) and copies `paths` into
   `docs/repo/`. A path may be a glob (`docs/pages/*.md`, `**` for any depth) to take one
-  format when the repo ships each page twice. MANIFEST pins the resolved commit and
+  format when the repo ships each page twice. A path starting with `!` excludes what it
+  matches from every other path (`"!src/**/*.test.ts"`); anchor it at a directory, since
+  git ignores an exclude that starts with `**/`. MANIFEST pins the resolved commit and
   links each file to its blob URL. Several `git` sources share `docs/repo/`, each file
   keeping its own repo's URL; two repos shipping the same path fail the run.
 - **`pages`**: a fixed list of docs pages, fetched with `tfish fetch` as markdown into
