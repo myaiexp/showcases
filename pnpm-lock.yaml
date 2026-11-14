@@ -80,6 +80,12 @@ importers:
       '@iconify-json/fa6-solid':
         specifier: 1.2.4
         version: 1.2.4
+      '@loaders.gl/core':
+        specifier: 4.5.4
+        version: 4.5.4
+      '@loaders.gl/gltf':
+        specifier: 4.5.4
+        version: 4.5.4(@loaders.gl/core@4.5.4)(texture-compressor@1.0.2)
       '@loaders.gl/terrain':
         specifier: 4.5.4
         version: 4.5.4(@loaders.gl/core@4.5.4)
