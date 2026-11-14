@@ -206,7 +206,7 @@ These are better as compact, text-output examples. Build them after the visual t
 | 151 | Marked + DOMPurify *(legacy in gallery)* | v18 2026-04 | repo ✓ | Markdown |
 | 152 | ky *(legacy in gallery)* | v2 2026-04 | README MIT | HTTP |
 | 153 | Wretch *(legacy in gallery)* | v3 2025-10 | README MIT | HTTP |
-| 154 | Tone.js *(legacy in gallery)* | v15 2024-05 | TypeDoc site | Audio; `next` tag far ahead of `latest` |
+| 154 | **Tone.js** (`tone`) ✅ built | v15 2024-05 | repo ✗lic (wiki) + source | Audio; `next` tag far ahead of `latest` |
 | 155 | Fuse.js *(legacy in gallery)* | v7 2023-10 | repo ✓ Apache | Fuzzy search. VitePress `docs/`, 9 pages |
 | 156 | Dexie.js *(legacy in gallery)* | v4 2024-03 | site | IndexedDB |
 | 157 | Papa Parse *(legacy in gallery)* | v5 2019 | site | CSV |

@@ -34,6 +34,15 @@ import { runLive } from './stage-live.ts';
  * - Never call renderOffline() inside build(): it waits for the queue it is running in.
  * - Channel.send()/receive() buses are page-wide statics, never freed, owned by the first
  *   context that names them: use a bus name unique to the mount.
+ * - A card calls play()'s stop function right after play(), before the clock runs, to book
+ *   the stop at `seconds`: only Transport.stop(end) belongs there. Undo work goes in stop().
+ * - Transport position, seconds, ticks and progress read the current time, which a card's
+ *   clock lacks: inside callbacks use getTicksAtTime(time); seek with start(time, offset).
+ * - A Loop or Part built before timeSignature changes keeps the old "1m": build it after.
+ * - humanize can hand a callback a negative time for an event at 0: start such events later.
+ * - A monophonic synth throws when two notes start at the same time (quantized or "@" hits
+ *   landing together): use a PolySynth or drop the duplicate.
+ * - Signals connected into a Param add up: an idle Scale still adds its minimum.
  * - Tone.Analyser, Meter and friends work live: the stage itself taps the Destination
  *   with an Analyser for the scope, so connecting another one there is fine.
  */
