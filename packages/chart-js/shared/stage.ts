@@ -31,7 +31,14 @@ export { INK, GRID } from './setup.ts';
  *   type of options.scales.r: cast it to RadialLinearScaleOptions.
  * - A mixed chart with no chart-level type rejects line-only keys (tension) on a dataset
  *   and types scatter `data.push` as never: cast to ChartDataset<'line'> or the point type.
- * - A card's monospace caption holds about 36 characters; use previewHeight 164 for two lines.
+ * - A card's monospace caption holds about 34 characters; use previewHeight 160 for two lines.
+ * - spanGaps as a number never bridges nulls: it only breaks the line where neighbouring
+ *   points sit further apart than that. On null data it acts like false.
+ * - skipNull is typed on the chart options, not the bar dataset; hoverBorderRadius works
+ *   but is missing from the dataset type (narrow cast).
+ * - Changing indexAxis on a live chart is unsafe: destroy and rebuild.
+ * - Scriptable and segment functions that read a closure variable need chart.update()
+ *   after it changes.
  */
 export interface Stage {
   /** The relatively positioned box that holds only the canvas (responsive.md). */
