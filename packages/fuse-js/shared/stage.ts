@@ -30,6 +30,12 @@
 // - With includeScore, an empty query still returns every item, without a score.
 // - FuseWorker.terminate() rejects searches still in flight ("FuseWorker terminated"):
 //   ignore that rejection when the example is the one that terminated it.
+// - fuse.add() pushes into the array passed to the constructor or setCollection: copy the
+//   array first if the example reuses it.
+// - A one- or two-letter query word fuzzy-matches many unrelated words: raise
+//   minMatchCharLength or the threshold in token and fuzzy examples alike.
+// - tokenize as a regex without the g flag only shortens the query (to its first token);
+//   fields are still matched whole. Fuse logs a one-time console.warn in dev builds.
 // - Plain Fuse on a big list blocks the page: cards keep lists small (a few thousand items)
 //   and never time main-thread work on 10,000+ items.
 import type { MountContext } from '@/types.ts';

@@ -1,0 +1,37 @@
+/* Per-word colours for the token search examples */
+.fz-wrap {
+  --fz-w0: 210;
+  --fz-w1: 35;
+  --fz-w2: 150;
+  --fz-w3: 320;
+}
+.fz-wrap mark.fz-w0 { background: hsl(var(--fz-w0) 70% 50% / 0.4); }
+.fz-wrap mark.fz-w1 { background: hsl(var(--fz-w1) 85% 50% / 0.4); }
+.fz-wrap mark.fz-w2 { background: hsl(var(--fz-w2) 60% 45% / 0.4); }
+.fz-wrap mark.fz-w3 { background: hsl(var(--fz-w3) 65% 55% / 0.4); }
+.fz-wchips {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  vertical-align: middle;
+}
+.fz-wrow {
+  display: flex;
+  flex-shrink: 0;
+}
+.fz-wchip {
+  padding: 0 6px;
+  border-radius: 8px;
+  font-size: 0.85em;
+  font-family: var(--font-mono);
+  border: 1px solid transparent;
+  transition: opacity 0.25s;
+}
+.fz-wchip.fz-w0 { background: hsl(var(--fz-w0) 70% 50% / 0.35); }
+.fz-wchip.fz-w1 { background: hsl(var(--fz-w1) 85% 50% / 0.35); }
+.fz-wchip.fz-w2 { background: hsl(var(--fz-w2) 60% 45% / 0.35); }
+.fz-wchip.fz-w3 { background: hsl(var(--fz-w3) 65% 55% / 0.35); }
+.fz-wchip[data-on='false'] {
+  opacity: 0.35;
+  text-decoration: line-through;
+}
