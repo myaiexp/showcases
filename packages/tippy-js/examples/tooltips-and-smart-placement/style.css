@@ -1,36 +1,19 @@
-/* Tooltips & smart placement: control row and the themed tip */
+/* Smart placement: nine buttons pinned around the scene's edges */
 [data-example='tippy-js/tooltips-and-smart-placement'] {
-  .center {
-    display: flex;
-    justify-content: center;
-    padding: var(--space-6) 0;
+  .scene {
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
   }
-  .controls {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-4);
-    align-items: flex-end;
-    margin-bottom: var(--space-2);
+  .spot {
+    position: absolute;
+    width: 40px;
+    padding: 0;
+    font-size: 16px;
   }
-  .field {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-1);
-    color: var(--fg-2);
-  }
-  .toggle {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-2);
-    color: var(--fg-2);
-    cursor: pointer;
-  }
-  .tippy-box[data-theme~='accent'] {
-    background: var(--bg-raised);
-    color: var(--fg-1);
-    border: 1px solid var(--border);
-  }
-  .tippy-box[data-theme~='accent'] > .tippy-arrow {
-    color: var(--bg-raised);
-  }
+  .top-left, .top, .top-right { top: 6px; }
+  .left, .middle, .right { top: calc(50% - 16px); }
+  .bottom-left, .bottom, .bottom-right { bottom: 6px; }
+  .top-left, .left, .bottom-left { left: 6px; }
+  .top, .middle, .bottom { left: calc(50% - 20px); }
+  .top-right, .right, .bottom-right { right: 6px; }
 }

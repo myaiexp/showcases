@@ -1,5 +1,98 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T13:44:11.603Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/atomiks/tippyjs",
+      "ref": "master",
+      "paths": [
+        "README.md",
+        "website/src/pages/index.mdx",
+        "website/src/pages/v6/*.mdx"
+      ],
+      "commit": "ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1"
+    }
+  ],
+  "files": {
+    "repo/README.md": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/README.md",
+      "sha256": "424d2540d82f847c02f947e162fc0775f35252f4df25637160e0b9fb46e1a2b0"
+    },
+    "repo/website/src/pages/index.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/index.mdx",
+      "sha256": "29c892cf077df97effd60fd8cbac2596de94a64603f9b34878d2255ffef7aefc"
+    },
+    "repo/website/src/pages/v6/accessibility.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/accessibility.mdx",
+      "sha256": "f0badcb5f7b38ead84eb1499b6182e9510f3172b62ef5d792f8813acccfd8fff"
+    },
+    "repo/website/src/pages/v6/addons.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/addons.mdx",
+      "sha256": "eb419e848505a9cb57a2dc78905131273d3b69f131f4fe47300ce117d743cb0a"
+    },
+    "repo/website/src/pages/v6/ajax.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/ajax.mdx",
+      "sha256": "bbfe24c02bf058811634c3f3891e67cd1f3460e7921388c7bd1a96dfced24b8b"
+    },
+    "repo/website/src/pages/v6/all-props.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/all-props.mdx",
+      "sha256": "bfa686944e6fced3957b5d709dc8a75d4d96d072cad7bce0ff63da72302c26fa"
+    },
+    "repo/website/src/pages/v6/animations.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/animations.mdx",
+      "sha256": "8a1ffa787620e0dce9526483037d58ffd7ca30519671fdc04f2dd7272c3a5c47"
+    },
+    "repo/website/src/pages/v6/browser-support.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/browser-support.mdx",
+      "sha256": "b5abdc3693e9edb0ed04d5f6bbadc86726b05331ab493d7f9955a6556532627f"
+    },
+    "repo/website/src/pages/v6/constructor.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/constructor.mdx",
+      "sha256": "cfef46dc62d6a4bb074c609f699be970835555b2e371c5422b3631618d98c035"
+    },
+    "repo/website/src/pages/v6/customization.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/customization.mdx",
+      "sha256": "d2d2836888d41c7a598fb7e20997bdac97c23914852f8d9f803b8a52da924a9f"
+    },
+    "repo/website/src/pages/v6/faq.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/faq.mdx",
+      "sha256": "0830dfdbd02b61885c9797c609925f154f633c91df6b24046e5b2e02fb2f6741"
+    },
+    "repo/website/src/pages/v6/getting-started.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/getting-started.mdx",
+      "sha256": "361b3fe55a4a6bdafa0e1b23d3f41dc3c22ede547969f1adce00bfafa6b96e5a"
+    },
+    "repo/website/src/pages/v6/headless-tippy.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/headless-tippy.mdx",
+      "sha256": "a4f28498ea4986b32fe8a71fde6c6aedb7fa9d1ac48c8a1050070b9ebda05f51"
+    },
+    "repo/website/src/pages/v6/html-content.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/html-content.mdx",
+      "sha256": "38babcb8ce082644af2f8458cae55f221b553154b418d6d0fc1a1c2ede28151a"
+    },
+    "repo/website/src/pages/v6/methods.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/methods.mdx",
+      "sha256": "2d2804ccd59c4663a4b8688216d52f03eb13dde37edf7924d58891d46ec4143b"
+    },
+    "repo/website/src/pages/v6/misc.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/misc.mdx",
+      "sha256": "6ce1a14a406e15e524cbebfadb6ba73bcf013620d965b2b97c025ff654d443cc"
+    },
+    "repo/website/src/pages/v6/motivation.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/motivation.mdx",
+      "sha256": "bf2d1269cb047eeab41ede276ec514be53bd4f6c8fde727fd017a03da53c5848"
+    },
+    "repo/website/src/pages/v6/plugins.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/plugins.mdx",
+      "sha256": "799cd15fe8d0d3b0ec0ebea0260fe1c32f455a40286b3a236a175229f53eb342"
+    },
+    "repo/website/src/pages/v6/themes.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/themes.mdx",
+      "sha256": "a0bc31a3a10634416987d20495c41efa43d7f62c7ee072d7a2af385bd56b2f9b"
+    },
+    "repo/website/src/pages/v6/tippy-instance.mdx": {
+      "url": "https://github.com/atomiks/tippyjs/blob/ad85f6feb79cf6c5853c43bf1b2a50c4fa98e7a1/website/src/pages/v6/tippy-instance.mdx",
+      "sha256": "344c161becb20d89ac57d07b72f691337ac7944a70223db4936bf0235a360769"
+    }
+  }
 }

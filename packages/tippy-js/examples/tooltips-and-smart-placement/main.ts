@@ -1,85 +1,88 @@
-// Tippy tooltip with live placement, trigger and arrow controls
-import tippy from 'tippy.js';
+// Tooltips that flip and shift to stay inside the box, wherever their button sits
+import tippy, { type Instance, type Placement } from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
-import 'tippy.js/animations/shift-away.css';
-import type { Placement } from 'tippy.js';
 import type { Mount } from '@/types.ts';
+import { createStage } from '../../shared/stage.ts';
+import { checkbox, select } from '../../shared/controls.ts';
 import './style.css';
 
-const PLACEMENTS: readonly Placement[] = ['top', 'bottom', 'left', 'right', 'auto'];
-const TRIGGERS: readonly (readonly [string, string])[] = [
-  ['hover / focus', 'mouseenter focus'],
-  ['click', 'click'],
-];
+// Nine buttons pinned to the corners, edges and middle of the scene.
+const SPOTS = [
+  ['↖', 'top-left'], ['↑', 'top'], ['↗', 'top-right'],
+  ['←', 'left'], ['•', 'middle'], ['→', 'right'],
+  ['↙', 'bottom-left'], ['↓', 'bottom'], ['↘', 'bottom-right'],
+] as const;
 
-function field(label: string, control: HTMLElement): HTMLElement {
-  const wrap = document.createElement('label');
-  wrap.className = 'field';
-  wrap.append(label, control);
-  return wrap;
-}
-
-const mount: Mount = (el, { preview }) => {
-  const target = document.createElement('button');
-  target.className = 'btn btn-primary';
-  target.textContent = preview ? 'Tooltip' : 'Hover me';
-  const center = document.createElement('div');
-  center.className = 'center';
-  center.append(target);
-
-  const tip = tippy(target, {
-    content: preview ? 'Smart placement' : 'I flip and shift to stay on screen',
-    placement: 'top',
-    trigger: preview ? 'manual' : 'mouseenter focus',
-    arrow: true,
-    animation: 'shift-away',
-    theme: 'accent',
-    // Inside the example root so its scoped theme styles apply and cleanup is local.
-    appendTo: el,
+const mount: Mount = (el, ctx) => {
+  const stage = createStage(el, ctx, {
+    height: 340,
+    hint: 'Every tip prefers the side you pick. Hover the edge buttons to watch it flip or slide.',
   });
 
-  if (!preview) {
-    const placement = document.createElement('select');
-    for (const p of PLACEMENTS) placement.append(new Option(p, p));
-    const trigger = document.createElement('select');
-    for (const [label, value] of TRIGGERS) trigger.append(new Option(label, value));
-    const arrow = document.createElement('input');
-    arrow.type = 'checkbox';
-    arrow.checked = true;
-    const toggle = document.createElement('label');
-    toggle.className = 'toggle';
-    toggle.append(arrow, ' show arrow');
+  const buttons = SPOTS.map(([icon, spot]) => {
+    const b = document.createElement('button');
+    b.className = `btn spot ${spot}`;
+    b.textContent = icon;
+    stage.root.append(b);
+    return b;
+  });
 
-    const controls = document.createElement('div');
-    controls.className = 'controls';
-    controls.append(field('placement', placement), field('trigger', trigger), toggle);
-    el.append(controls, center);
+  let preferred: Placement = 'top';
+  // `flip` jumps to the opposite side when the preferred one has no room;
+  // `preventOverflow` slides the tip along its side to keep it inside the box.
+  const popperOptions = (flip: boolean, shift: boolean) => ({
+    modifiers: [
+      { name: 'flip', enabled: flip },
+      { name: 'preventOverflow', enabled: shift },
+    ],
+  });
 
-    placement.addEventListener('change', () => {
-      tip.setProps({ placement: placement.value as Placement });
-      tip.show();
+  const tips: Instance[] = stage.own(
+    tippy(buttons, {
+      content: `Prefers ${preferred}`,
+      placement: preferred,
+      popperOptions: popperOptions(true, true),
+      appendTo: stage.root,
+    }),
+  );
+
+  if (stage.bar) {
+    let flip = true;
+    let shift = true;
+    const update = (): void => {
+      for (const t of tips) {
+        t.setProps({ placement: preferred, popperOptions: popperOptions(flip, shift) });
+        t.setContent(`Prefers ${preferred}`);
+      }
+    };
+    const sides: Placement[] = ['top', 'bottom', 'left', 'right', 'auto'];
+    select(stage.bar, 'preferred side', sides, (v) => {
+      preferred = v;
+      update();
     });
-    trigger.addEventListener('change', () => tip.setProps({ trigger: trigger.value }));
-    arrow.addEventListener('change', () => tip.setProps({ arrow: arrow.checked }));
-    return () => tip.destroy();
+    checkbox(stage.bar, 'flip when there is no room', true, (v) => {
+      flip = v;
+      update();
+    });
+    checkbox(stage.bar, 'slide to stay inside', true, (v) => {
+      shift = v;
+      update();
+    });
+  } else {
+    // Card: the pointer visits the top edge (the tip flips below), the bottom edge
+    // (it stays on top) and the right edge (it slides left to stay inside).
+    const tour = [buttons[1]!, buttons[7]!, buttons[2]!, buttons[4]!];
+    stage.play(async (wait) => {
+      for (const b of tour) {
+        await stage.ghost.hover(b, 600);
+        await wait(1300);
+      }
+      stage.ghost.leave();
+      await wait(400);
+    });
   }
 
-  el.append(center);
-  // A preview takes no input, so it opens the tip on a timer, turning through placements.
-  const timers: number[] = [];
-  let i = 0;
-  const cycle = (): void => {
-    tip.setProps({ placement: i++ % 2 === 0 ? 'top' : 'bottom' });
-    tip.show();
-    timers.push(window.setTimeout(() => tip.hide(), 1500));
-  };
-  timers.push(window.setTimeout(cycle, 300));
-  const interval = window.setInterval(cycle, 2200);
-  return () => {
-    window.clearInterval(interval);
-    for (const t of timers) window.clearTimeout(t);
-    tip.destroy();
-  };
+  return stage.dispose;
 };
 
 export default mount;

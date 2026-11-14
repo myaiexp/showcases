@@ -1,0 +1,21 @@
+/* Follow-cursor chart: the chart fills the lower part of the scene */
+[data-example='tippy-js/follow-cursor-chart'] {
+  .chart {
+    position: absolute;
+    left: 6%;
+    right: 6%;
+    bottom: 10%;
+    width: 88%;
+    height: 62%;
+    overflow: visible;
+  }
+  .area {
+    fill: color-mix(in srgb, var(--accent) 22%, transparent);
+  }
+  .line {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 2.5;
+    vector-effect: non-scaling-stroke;
+  }
+}
