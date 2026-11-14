@@ -45,6 +45,15 @@ export { INK, GRID } from './setup.ts';
  * - tick.major reaches scriptable tick options only with ticks.major.enabled. On a time
  *   axis, month starts become major ticks with unit 'day' (week is not a "common" unit).
  * - ticks.callback may return null to drop a tick and its grid line.
+ * - Replacing chart.options.interaction leaves options.hover on the old object: assign
+ *   its keys in place. options.events can change live; update() rebinds the listeners.
+ * - A scriptable animation.delay also runs for non-data contexts: guard c.type === 'data'.
+ *   chart.reset() then update() replays the entry animation without a rebuild.
+ * - Tooltip.positioners, Interaction.modes, custom controllers and scales need module
+ *   augmentation (TooltipPositionerMap, InteractionModeMap, ChartTypeRegistry) to type-check.
+ * - Cards fake a pointer with config-data.ts ghostCursor(): non-bubbling events on the
+ *   canvas. A bubbling click would reach the card's <a> and open the example.
+ * - A card legend with 3+ entries wraps at 260px: boxWidth ~20 and font size 10 there.
  * - Scriptable and segment functions that read a closure variable need chart.update()
  *   after it changes.
  */
