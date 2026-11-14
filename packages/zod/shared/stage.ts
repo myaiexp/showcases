@@ -32,6 +32,13 @@
 //   overflows the stack. .required() reports "expected nonoptional, received undefined".
 // - Cards mount slowly in a loaded headless browser: scroll a card into view and wait
 //   several seconds before calling it "not mounted".
+// - Plain z.union of objects already narrows by a matching literal; it differs from
+//   z.discriminatedUnion only for an unknown or missing kind ("Invalid discriminator value").
+// - z.xor with two matches: errors [] and matches [i, j], "more than one option matched".
+// - z.set: a bad member's issue has path [], so it cannot be pinned. z.map paths use the key.
+// - z.properties() returns an array of checks: spread it into .check(...).
+// - z.instanceof(Date) accepts an Invalid Date; z.date() rejects it.
+// - An over-long array reports only too_big, not its elements' issues.
 import type { MountContext } from '@/types.ts';
 import './zod.css';
 

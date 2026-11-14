@@ -70,7 +70,8 @@ export function leaf(v: unknown, types = false): HTMLElement {
   return span;
 }
 
-export function leafText(v: unknown): string {
+/** One value as text: a list or object is written inline (see inlineText). */
+export function leafText(v: unknown, depth = 0): string {
   if (typeof v === 'string') return JSON.stringify(v);
   if (typeof v === 'bigint') return `${v}n`;
   if (typeof v === 'symbol') return v.toString();
@@ -85,11 +86,20 @@ export function leafText(v: unknown): string {
   if (v instanceof URL) return `URL ${v.href}`;
   if (v instanceof Uint8Array) return `bytes [${[...v.slice(0, 8)].join(' ')}${v.length > 8 ? ' …' : ''}]`;
   if (typeof File !== 'undefined' && v instanceof File) return `file ${v.name} (${v.size} B)`;
-  if (Array.isArray(v)) return '[]';
-  if (v instanceof Map) return 'Map {}';
-  if (v instanceof Set) return 'Set {}';
-  if (v !== null && typeof v === 'object') return '{}';
+  if (v instanceof Error) return `${v.constructor.name}("${v.message}")`;
+  if (v !== null && typeof v === 'object') return inlineText(v, depth);
   return String(v);
+}
+
+/** A list, object, Map or Set written on one line, nested up to three levels: ["a", 2]. */
+function inlineText(v: object, depth: number): string {
+  if (depth > 2) return '…';
+  const part = (x: unknown): string => leafText(x, depth + 1);
+  if (Array.isArray(v)) return `[${v.map(part).join(', ')}]`;
+  if (v instanceof Set) return `Set {${[...v].map(part).join(', ')}}`;
+  if (v instanceof Map) return `Map {${[...v].map(([k, x]) => `${part(k)} → ${part(x)}`).join(', ')}}`;
+  const entries = Reflect.ownKeys(v).map((k) => `${typeof k === 'symbol' ? `[${k.toString()}]` : k}: ${part((v as Record<PropertyKey, unknown>)[k])}`);
+  return entries.length ? `{ ${entries.join(', ')} }` : '{}';
 }
 
 function keyText(k: PropertyKey, parent: object): string {
