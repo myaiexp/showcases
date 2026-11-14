@@ -11,7 +11,9 @@
 //   queues every scripted gesture on the page, because drag/press/pinch listen on window and
 //   would steer each other.
 // - animateView() uses document.startViewTransition, which snapshots the whole page and runs one
-//   transition at a time. Run it inside shared/frame.ts (an iframe with its own Motion) only.
+//   transition at a time. Run it inside shared/frame.ts (an iframe with its own Motion) only;
+//   shared/view.ts (viewStage) sets that up. The d.ts types `await animateView(...)` as void, but it
+//   resolves to playback controls. Under interrupt: 'immediate' the interrupted promises never settle.
 // - scopeMotion matchMedia and window-level resize()/scroll() read the window: use the iframe too.
 // - CSS is global; no @keyframes (the build fails). Animate with Motion.
 // - A card is 260x200 and must not fetch or play sound.

@@ -1,0 +1,14 @@
+/* Store cards and the modal sheet */
+[data-example='motion/card-to-modal-crossfade'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .store { position: relative; width: min(100%, 320px); height: 170px; }
+  .cards { display: flex; gap: 8px; height: 100%; align-items: center; }
+  .card { flex: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 8px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-raised); color: var(--fg-1); font-size: 0.7rem; text-align: left; cursor: pointer; }
+  .card i, .modal i { display: block; width: 28px; height: 28px; margin-bottom: 4px; border-radius: 8px; background: var(--c); }
+  .card span, .modal span { color: var(--fg-3); }
+  .sheet { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none; }
+  .sheet.open { pointer-events: auto; background: rgba(0, 0, 0, 0.35); border-radius: 12px; }
+  .modal { width: 88%; padding: 12px; border-radius: 16px; border: 1px solid var(--border); background: var(--bg-surface); color: var(--fg-1); font-size: 0.8rem; display: flex; flex-direction: column; gap: 2px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); }
+  .modal i { width: 40px; height: 40px; border-radius: 10px; }
+  .modal p { margin: 6px 0 0; font-size: 0.72rem; color: var(--fg-2); }
+}

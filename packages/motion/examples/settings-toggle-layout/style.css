@@ -1,0 +1,9 @@
+/* Settings switches: rows, track and handle */
+[data-example='motion/settings-toggle-layout'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .list { display: flex; flex-direction: column; gap: var(--space-3); width: min(100%, 220px); }
+  .row { display: flex; justify-content: space-between; align-items: center; color: var(--fg-1); font-size: 0.9rem; }
+  .switch { display: flex; justify-content: flex-start; width: 52px; height: 30px; padding: 3px; border: 0; border-radius: 15px; background: #4a4f5c; cursor: pointer; transition: background 0.2s; }
+  .switch[aria-checked='true'] { background: var(--green); }
+  .handle { display: block; width: 24px; height: 24px; border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
+}
