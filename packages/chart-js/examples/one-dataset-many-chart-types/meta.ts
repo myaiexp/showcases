@@ -4,10 +4,17 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'One dataset, many chart types',
   summary:
-    'The same numbers tell a different story depending on the chart. Switch between bar, line, radar, doughnut and polar area; bars and lines use X/Y axes, the rest are radial.',
-  section: 'Basics',
-  tags: ['bar', 'line', 'radar', 'doughnut', 'polarArea'],
-  docs: [],
-  provenance: 'legacy',
+    'The same five traffic figures drawn five ways. Only the chart type changes: bars and lines compare sizes on axes, the radar shows a shape, doughnut and polar area show shares of a whole.',
+  section: 'Chart types',
+  tags: ['type', 'bar', 'line', 'radar', 'doughnut', 'polarArea'],
+  docs: [
+    'repo/docs/configuration/index.md',
+    'repo/docs/charts/bar.md',
+    'repo/docs/charts/line.md',
+    'repo/docs/charts/radar.md',
+    'repo/docs/charts/doughnut.md',
+    'repo/docs/charts/polar.md',
+  ],
+  provenance: 'pure',
   added: '2026-06-14',
 });

@@ -1,84 +1,83 @@
-// Bar chart with one slider per month that mutates data and calls update()
-import { Chart, registerables } from 'chart.js';
+// Monthly sales you can edit: change, add or remove months and the bars animate
 import type { Mount } from '@/types.ts';
-import './style.css';
+import { Chart, createStage, every } from '../../shared/stage.ts';
+import { button, controlBar, slider } from '../../shared/controls.ts';
+import { C, MONTHS, alpha, numbers, seeded } from '../../shared/data.ts';
 
-Chart.register(...registerables);
+const mount: Mount = (el, ctx) => {
+  const bar = ctx.preview ? null : controlBar(el);
+  const stage = createStage(el, ctx);
+  const rand = seeded(7);
 
-const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
-const VALUES = [42, 55, 48, 71, 63, 88];
-
-const mount: Mount = (stage, { preview }) => {
-  const el = document.createElement('div');
-  el.className = 'root';
-  stage.append(el);
-  const wrap = document.createElement('div');
-  wrap.className = preview ? 'chart-wrap preview' : 'chart-wrap';
-  const canvas = document.createElement('canvas');
-  wrap.append(canvas);
-  el.append(wrap);
-
-  const style = getComputedStyle(el);
-  const fg = style.getPropertyValue('--fg-2').trim() || '#8b8b94';
-  const grid = style.getPropertyValue('--border').trim() || '#2a2b30';
-
-  const data = [...VALUES];
-  const chart = new Chart(canvas, {
+  const chart = new Chart(stage.canvas, {
     type: 'bar',
     data: {
-      labels: MONTHS,
+      labels: MONTHS.slice(0, 6),
       datasets: [
         {
-          label: 'Revenue ($k)',
-          data,
-          backgroundColor: 'rgba(108, 140, 255, 0.55)',
-          borderColor: '#6c8cff',
+          label: 'Sales (k€)',
+          data: numbers(6, 30, 90, rand),
+          backgroundColor: alpha(C.blue, 0.6),
+          borderColor: C.blue,
           borderWidth: 1,
-          borderRadius: 6,
+          borderRadius: 4,
         },
       ],
     },
     options: {
-      responsive: true,
       maintainAspectRatio: false,
-      color: fg,
-      scales: {
-        x: { ticks: { color: fg }, grid: { color: grid } },
-        y: { beginAtZero: true, suggestedMax: 100, ticks: { color: fg }, grid: { color: grid } },
-      },
-      plugins: { legend: { display: false } },
+      scales: { y: { beginAtZero: true, suggestedMax: 100 } },
+      plugins: { legend: { display: !ctx.preview } },
     },
   });
+  const values = chart.data.datasets[0]!.data as number[];
+  const labels = chart.data.labels as string[];
 
-  if (!preview) {
-    const controls = document.createElement('div');
-    controls.className = 'data-controls';
-    MONTHS.forEach((month, i) => {
-      const row = document.createElement('div');
-      row.className = 'data-row';
-      const label = document.createElement('label');
-      const value = document.createElement('span');
-      value.className = 'v';
-      value.textContent = String(VALUES[i]);
-      label.append(`${month} `, value);
-      const slider = document.createElement('input');
-      slider.type = 'range';
-      slider.min = '0';
-      slider.max = '100';
-      slider.value = String(VALUES[i]);
-      slider.addEventListener('input', () => {
-        const v = Number(slider.value);
-        value.textContent = String(v);
-        data[i] = v;
-        chart.update();
-      });
-      row.append(label, slider);
-      controls.append(row);
+  // updates.md § Adding or Removing Data: change the arrays, then call update().
+  const addMonth = (): void => {
+    if (labels.length >= MONTHS.length) return;
+    labels.push(MONTHS[labels.length]!);
+    values.push(Math.round(30 + rand() * 60));
+    chart.update();
+  };
+  const removeMonth = (): void => {
+    if (labels.length <= 1) return;
+    labels.pop();
+    values.pop();
+    chart.update();
+  };
+  const shuffle = (): void => {
+    for (let i = 0; i < values.length; i++) values[i] = Math.round(20 + rand() * 75);
+    chart.update();
+  };
+
+  if (bar) {
+    button(bar, 'Add month', addMonth);
+    button(bar, 'Remove month', removeMonth);
+    button(bar, 'New figures', shuffle);
+    slider(bar, 'Last month', [0, 100, 1], values.at(-1) ?? 0, (v) => {
+      values[values.length - 1] = v;
+      chart.update();
     });
-    el.append(controls);
   }
 
-  return () => chart.destroy();
+  // A card has no buttons, so it grows the year, then starts over with new figures.
+  let step = 0;
+  const stop = ctx.preview
+    ? every(1600, () => {
+        step++;
+        if (labels.length < MONTHS.length) addMonth();
+        else if (step % 8 === 0) {
+          while (labels.length > 6) removeMonth();
+          shuffle();
+        }
+      })
+    : () => {};
+
+  return () => {
+    stop();
+    stage.release(chart);
+  };
 };
 
 export default mount;

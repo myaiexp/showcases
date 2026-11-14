@@ -106,6 +106,10 @@ GitHub Pages. No service on the VPS.
   `createStage`'s device (`new Deck({device: stage.device})`) and clean up with `stage.release(deck)`:
   `Deck.finalize()` never frees the WebGL context. MapLibre examples use `shared/base-maps.ts`
   instead. No network in cards or full views: tiles, terrain and glTF are generated in code.
+- Chart.js: build on `packages/chart-js/shared/stage.ts` (`createStage`, trap list); `shared/setup.ts`
+  registers everything and sets dark `Chart.defaults` once, so an example that changes defaults or
+  registries restores them. Re-read `chart.options.scales.*` after `update()` (it re-merges them).
+  Cards fake the pointer with `shared/hover.ts` or `config-data.ts` `ghostCursor()` (non-bubbling).
 - Tone.js: build on `packages/tone-js/shared/stage.ts` (`toneStage`, trap list). One spec runs live
   in the full view and through a queued `Tone.Offline` render in cards, which stay silent and
   animate the rendered waveform; `shared/samples.ts` renders stand-in recordings, so nothing fetches.

@@ -1,5 +1,12 @@
 {
-  "license": "none found",
-  "redistribute": false,
-  "sources": []
+  "license": "MIT (LICENSE.md in chartjs/Chart.js, which holds the docs/ folder)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/chartjs/Chart.js",
+      "ref": "v4.6.1",
+      "paths": ["README.md", "LICENSE.md", "docs/**/*.md", "!docs/samples"]
+    }
+  ]
 }
