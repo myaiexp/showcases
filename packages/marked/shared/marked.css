@@ -1,0 +1,312 @@
+/* Shared Marked chrome: scene, panes, rendered-document typography, HTML and token views */
+.mk-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.mk-scene {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+}
+.mk-card {
+  gap: 5px;
+  overflow: hidden;
+  padding: 4px;
+}
+.mk-hint {
+  font-size: 13px;
+  color: var(--fg-3);
+}
+.mk-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 16px;
+  max-width: 720px;
+}
+.mk-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  min-height: 0;
+}
+.mk-card .mk-row {
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 5px;
+  flex: 1;
+}
+.mk-pane {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+.mk-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  color: var(--fg-2);
+  margin-bottom: 4px;
+}
+.mk-card .mk-label {
+  font-size: 9px;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mk-src,
+.mk-html,
+.mk-text,
+.mk-doc {
+  margin: 0;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--fg-1);
+  overflow: auto;
+}
+.mk-src,
+.mk-html,
+.mk-text {
+  font: 13px/1.55 ui-monospace, monospace;
+  padding: 10px 12px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+textarea.mk-src {
+  width: 100%;
+  min-height: 260px;
+  resize: vertical;
+  outline: none;
+}
+textarea.mk-src:focus {
+  border-color: var(--accent);
+}
+.mk-pane-src-top textarea.mk-src {
+  min-height: 140px;
+}
+.mk-html,
+.mk-text {
+  max-height: 260px;
+  font-size: 12px;
+  color: var(--fg-2);
+}
+.mk-tag {
+  color: var(--accent-text);
+}
+.mk-card .mk-src,
+.mk-card .mk-html,
+.mk-card .mk-text {
+  font-size: 10px;
+  line-height: 1.4;
+  padding: 5px 6px;
+  flex: 1;
+  overflow: hidden;
+}
+.mk-card .mk-pane-src-top .mk-src {
+  flex: none;
+  height: 52px;
+}
+.mk-caret {
+  display: inline-block;
+  width: 6px;
+  height: 1.1em;
+  vertical-align: text-bottom;
+  background: var(--accent);
+}
+.mk-note,
+.mk-readout {
+  font-size: 13px;
+  color: var(--fg-2);
+}
+.mk-readout {
+  font: 12px/1.4 ui-monospace, monospace;
+  white-space: pre-wrap;
+}
+.mk-card .mk-note,
+.mk-card .mk-readout {
+  font-size: 10px;
+}
+.mk-error {
+  color: var(--red);
+  font-family: ui-monospace, monospace;
+}
+
+/* The rendered document */
+.mk-doc {
+  padding: 12px 16px;
+  font-size: 14px;
+  line-height: 1.55;
+  min-height: 120px;
+}
+.mk-card .mk-doc {
+  flex: 1;
+  min-height: 0;
+  padding: 5px 8px;
+  font-size: 10.5px;
+  line-height: 1.4;
+  overflow: hidden;
+}
+.mk-doc > :first-child {
+  margin-top: 0;
+}
+.mk-doc h1,
+.mk-doc h2,
+.mk-doc h3,
+.mk-doc h4,
+.mk-doc h5,
+.mk-doc h6 {
+  line-height: 1.25;
+  margin: 0.9em 0 0.4em;
+}
+.mk-doc h1 {
+  font-size: 1.6em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.2em;
+}
+.mk-doc h2 {
+  font-size: 1.35em;
+}
+.mk-doc h3 {
+  font-size: 1.15em;
+}
+.mk-doc h4,
+.mk-doc h5,
+.mk-doc h6 {
+  font-size: 1em;
+  color: var(--fg-2);
+}
+.mk-doc p,
+.mk-doc ul,
+.mk-doc ol,
+.mk-doc blockquote,
+.mk-doc table,
+.mk-doc pre,
+.mk-doc dl {
+  margin: 0.6em 0;
+}
+.mk-doc ul,
+.mk-doc ol {
+  padding-left: 1.4em;
+}
+.mk-doc li {
+  margin: 0.15em 0;
+}
+.mk-doc li > p {
+  margin: 0.2em 0;
+}
+.mk-doc li input[type='checkbox'] {
+  margin: 0 0.4em 0 0;
+  vertical-align: middle;
+}
+.mk-doc a {
+  color: var(--accent-text);
+}
+.mk-doc code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.88em;
+  background: var(--bg-raised);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+.mk-doc pre {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.7em 0.9em;
+  overflow-x: auto;
+}
+.mk-doc pre code {
+  background: none;
+  padding: 0;
+}
+.mk-doc blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 0.8em;
+  margin-left: 0;
+  color: var(--fg-2);
+}
+.mk-doc table {
+  border-collapse: collapse;
+}
+.mk-doc th,
+.mk-doc td {
+  border: 1px solid var(--border);
+  padding: 0.25em 0.6em;
+}
+.mk-doc th {
+  background: var(--bg-raised);
+}
+.mk-doc hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1em 0;
+}
+.mk-doc img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.mk-card .mk-doc img {
+  max-height: 60px;
+}
+.mk-doc del {
+  color: var(--fg-3);
+}
+.mk-doc dt {
+  font-weight: 600;
+}
+.mk-doc dd {
+  margin: 0 0 0.4em 1.2em;
+  color: var(--fg-2);
+}
+
+/* Token trees (shared/token-tree.ts) */
+.mk-tokens {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px;
+  overflow: auto;
+  max-height: 420px;
+  font: 12px/1.35 ui-monospace, monospace;
+}
+.mk-card .mk-tokens {
+  flex: 1;
+  max-height: none;
+  padding: 4px;
+  font-size: 9.5px;
+  overflow: hidden;
+}
+.mk-tok {
+  border-left: 3px solid hsl(var(--hue) 60% 55%);
+  background: hsl(var(--hue) 40% 50% / 0.1);
+  border-radius: 3px;
+  padding: 2px 4px 2px 6px;
+  margin: 3px 0 3px 0;
+}
+.mk-tok .mk-tok {
+  margin-left: 8px;
+}
+.mk-tok-head {
+  display: flex;
+  gap: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.mk-tok-type {
+  color: hsl(var(--hue) 70% 70%);
+  font-weight: 600;
+}
+.mk-tok-text {
+  color: var(--fg-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

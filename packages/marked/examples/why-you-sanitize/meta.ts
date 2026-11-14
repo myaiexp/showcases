@@ -1,13 +1,13 @@
-// Marked example: raw Marked output versus DOMPurify-cleaned HTML
+// marked example: Why you sanitize
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
   title: 'Why you sanitize',
   summary:
-    'Markdown allows inline HTML, so a hostile string passes through Marked untouched. Compare the exact HTML Marked emits with what DOMPurify keeps; only the sanitized version is rendered.',
-  section: 'Basics',
+    'A comment with hidden HTML (an image whose onerror runs code, a script tag, a javascript: link) passes through Marked untouched, painted red here. DOMPurify.sanitize() on the output removes it before anything reaches the page.',
+  section: 'Usage',
   tags: ['XSS', 'DOMPurify', 'sanitize'],
-  docs: [],
-  provenance: 'legacy',
+  docs: ['repo/docs/INDEX.md', 'repo/README.md'],
+  provenance: 'pure',
   added: '2026-06-14',
 });

@@ -1,74 +1,41 @@
-// Two-pane Markdown editor: marked.parse then DOMPurify then innerHTML
+// Type Markdown, see the page it becomes: marked.parse() on every keystroke
 import { marked } from 'marked';
-import DOMPurify from 'dompurify';
 import type { Mount } from '@/types.ts';
-import './style.css';
+import { createStage } from '../../shared/stage.ts';
+import { liveDemo } from '../../shared/demo.ts';
 
-const SAMPLE_MD = `# Marked + DOMPurify 📝
+const NOTE = `# Trip notes
 
-A **fast** Markdown parser with a *live* preview.
+Packed **light** this time:
 
-## GitHub-Flavored Markdown
+- passport
+- *two* jumpers
+- charger
 
-- [x] Tables
-- [x] Task lists
-- [ ] ~~Procrastination~~
+> Leave by 7:00!`;
 
-| Package    | Job                |
-| ---------- | ------------------ |
-| Marked     | Markdown → HTML    |
-| DOMPurify  | Make the HTML safe |
+const RECIPE = `## Pancakes
 
-> Marked doesn't sanitize, so we pipe its output through DOMPurify.
+1. Mix flour, milk, egg
+2. Rest **10 min**
+3. Fry in butter
 
-\`\`\`js
-const html = marked.parse("# Hello");
-document.body.innerHTML = DOMPurify.sanitize(html);
-\`\`\`
+Serve with \`jam\`.`;
 
-Read more at [marked.js.org](https://marked.js.org).
-`;
+const mount: Mount = (el, ctx) => {
+  const stage = createStage(el, ctx, { hint: 'Edit the Markdown on the left' });
 
-const pane = (label: string, child: HTMLElement): HTMLDivElement => {
-  const box = document.createElement('div');
-  const l = document.createElement('div');
-  l.className = 'pane-label';
-  l.textContent = label;
-  box.append(l, child);
-  return box;
-};
+  liveDemo(stage, {
+    samples: [
+      { label: 'Trip notes', text: NOTE },
+      { label: 'Recipe', text: RECIPE },
+    ],
+    // The whole library call: Markdown string in, HTML string out.
+    render: (markdown) => marked.parse(markdown, { async: false }),
+    caption: 'marked.parse() runs on every keystroke and returns an HTML string; the pane shows it.',
+  });
 
-const mount: Mount = (stage, { preview }) => {
-  const el = document.createElement('div');
-  el.className = 'root';
-  stage.append(el);
-  const output = document.createElement('div');
-  output.className = preview ? 'md-preview compact' : 'md-preview';
-
-  const render = (markdown: string): void => {
-    const rawHtml = marked.parse(markdown, { async: false });
-    output.innerHTML = DOMPurify.sanitize(rawHtml);
-  };
-
-  if (preview) {
-    render(SAMPLE_MD);
-    el.append(output);
-    return () => {};
-  }
-
-  const input = document.createElement('textarea');
-  input.className = 'md-input';
-  input.spellcheck = false;
-  input.value = SAMPLE_MD;
-  const onInput = (): void => render(input.value);
-  input.addEventListener('input', onInput);
-  const grid = document.createElement('div');
-  grid.className = 'editor-grid';
-  grid.append(pane('Markdown', input), pane('Rendered preview', output));
-  el.append(grid);
-  render(SAMPLE_MD);
-
-  return () => input.removeEventListener('input', onInput);
+  return () => stage.dispose();
 };
 
 export default mount;

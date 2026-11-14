@@ -1,5 +1,12 @@
 {
-  "license": "none found",
-  "redistribute": false,
-  "sources": []
+  "license": "MIT (repo LICENSE.md: covers the docs folder and the library source)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/markedjs/marked",
+      "ref": "v18.2.0",
+      "paths": ["README.md", "LICENSE*", "docs/INDEX.md", "docs/USING_ADVANCED.md", "docs/USING_PRO.md", "docs/broken.md", "src/**/*.ts"]
+    }
+  ]
 }
