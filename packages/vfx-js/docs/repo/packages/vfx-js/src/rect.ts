@@ -1,0 +1,195 @@
+/**
+ * @internal
+ */
+type Tetra = {
+    left: number;
+    right: number;
+    top: number;
+    bottom: number;
+};
+
+/** @internal */
+function createTetra(r: MarginOpts): Tetra {
+    if (typeof r === "number") {
+        return {
+            top: r,
+            right: r,
+            bottom: r,
+            left: r,
+        };
+    }
+    if (Array.isArray(r)) {
+        return {
+            top: r[0],
+            right: r[1],
+            bottom: r[2],
+            left: r[3],
+        };
+    }
+    return {
+        top: r.top ?? 0,
+        right: r.right ?? 0,
+        bottom: r.bottom ?? 0,
+        left: r.left ?? 0,
+    };
+}
+
+/**
+ * top-left origin rect.
+ * Subset of DOMRect, which is returned by `HTMLElement.getBoundingClientRect()`.
+ * @internal
+ */
+export type Rect = Tetra & { readonly __brand: unique symbol };
+
+export const RECT_ZERO: Rect = { top: 0, right: 0, bottom: 0, left: 0 } as Rect;
+
+/**
+ * @internal
+ */
+export type Margin = Tetra & { readonly __brand: unique symbol };
+
+/**
+ * Values for margin, padding, overflow etc.
+ */
+export type MarginOpts =
+    | number
+    | [top: number, right: number, bottom: number, left: number]
+    | { top?: number; right?: number; bottom?: number; left?: number };
+
+export function createMargin(r: MarginOpts): Margin {
+    return createTetra(r) as Margin;
+}
+
+export const MARGIN_ZERO: Margin = {
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+} as Margin;
+
+/**
+ * Values to determine a rectangle area for margin, padding etc.
+ */
+export type RectOpts = MarginOpts;
+
+export function createRect(r: RectOpts): Rect {
+    return createTetra(r) as Rect;
+}
+
+export function toRect(r: DOMRect): Rect {
+    return {
+        top: r.top,
+        right: r.right,
+        bottom: r.bottom,
+        left: r.left,
+    } as Rect;
+}
+
+/**
+ * Like {@link toRect} but ceils width and height to integer CSS pixels while
+ * keeping the left/top origin. Used by text-path elements: their texture is
+ * captured at ceil(rect.width) × ceil(rect.height) in dom-to-canvas (a tiny
+ * sub-pixel buffer that absorbs DOM-vs-foreignObject text-metric mismatches),
+ * so the on-screen quad must use the same ceiled dimensions to map the
+ * texture 1:1 without any scaling/squish.
+ * @internal
+ */
+export function toCeiledRect(r: DOMRect): Rect {
+    return {
+        top: r.top,
+        left: r.left,
+        right: r.left + Math.ceil(r.right - r.left),
+        bottom: r.top + Math.ceil(r.bottom - r.top),
+    } as Rect;
+}
+
+export function growRect(a: Rect, b: Margin): Rect {
+    return {
+        top: a.top - b.top,
+        right: a.right + b.right,
+        bottom: a.bottom + b.bottom,
+        left: a.left - b.left,
+    } as Rect;
+}
+
+export function shrinkRect(a: Rect, b: Margin): Rect {
+    return {
+        top: a.top + b.top,
+        right: a.right - b.right,
+        bottom: a.bottom - b.bottom,
+        left: a.left + b.left,
+    } as Rect;
+}
+
+function clamp(x: number, xmin: number, xmax: number): number {
+    return Math.min(Math.max(x, xmin), xmax);
+}
+
+/**
+ * Rect in element-local physical px, bottom-left origin (matches GL UV
+ * convention and `elementRectOnCanvasPx`).
+ *
+ * `x: 0` = element's left edge, `y: 0` = element's bottom edge.
+ * Negative coords / oversized w/h extend past the element.
+ *
+ * @internal
+ */
+export type ElementRect = readonly [x: number, y: number, w: number, h: number];
+
+/**
+ * `inner`'s position and size as bottom-left UV within `outer`.
+ * Returns `[(inner.x - outer.x)/outer.w, (inner.y - outer.y)/outer.h,
+ * inner.w/outer.w, inner.h/outer.h]`.
+ *
+ * @internal
+ */
+export function rectInRect(
+    inner: ElementRect,
+    outer: ElementRect,
+): [number, number, number, number] {
+    const [ix, iy, iw, ih] = inner;
+    const [ox, oy, ow, oh] = outer;
+    if (ow <= 0 || oh <= 0) {
+        return [0, 0, 1, 1];
+    }
+    return [(ix - ox) / ow, (iy - oy) / oh, iw / ow, ih / oh];
+}
+
+/**
+ * Calculate how much of `target` is visible in `container`, from 0 to 1.
+ * Each axis divides by the smaller of the two sizes,
+ * so a target larger than the container can still reach 1.
+ */
+export function getIntersection(container: Rect, target: Rect): number {
+    const w = getAxisRatio(
+        container.left,
+        container.right,
+        target.left,
+        target.right,
+    );
+    const h = getAxisRatio(
+        container.top,
+        container.bottom,
+        target.top,
+        target.bottom,
+    );
+    return w * h;
+}
+
+function getAxisRatio(
+    containerStart: number,
+    containerEnd: number,
+    targetStart: number,
+    targetEnd: number,
+): number {
+    const size = Math.min(
+        targetEnd - targetStart,
+        containerEnd - containerStart,
+    );
+    if (size <= 0) {
+        return 0;
+    }
+    const start = clamp(targetStart, containerStart, containerEnd);
+    const end = clamp(targetEnd, containerStart, containerEnd);
+    return (end - start) / size;
+}

@@ -1,0 +1,180 @@
+/* Shared VFX-JS chrome: stage, control bar, caption, sample subjects */
+.vx-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font);
+  /* Keeps the VFX canvas's z-index (9999 by default) local to the stage. */
+  isolation: isolate;
+}
+.vx-card {
+  height: 100%;
+  padding: 6px 8px;
+  gap: 4px;
+  font-size: 11px;
+  line-height: 1.3;
+}
+.vx-full {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.vx-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  font-size: 13px;
+}
+.vx-bar:empty {
+  display: none;
+}
+.vx-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.vx-bar input[type='range'] {
+  width: 120px;
+}
+.vx-scene {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  min-height: 0;
+  flex: 1;
+}
+.vx-full .vx-scene {
+  min-height: 300px;
+  padding: 24px 0;
+}
+.vx-card .vx-scene {
+  gap: 8px;
+  overflow: hidden;
+}
+.vx-layer {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+.vx-caption {
+  color: var(--fg-2);
+  min-height: 1.4em;
+}
+.vx-card .vx-caption {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+.vx-caption:empty {
+  display: none;
+}
+.vx-caption[data-tone='ok'] {
+  color: var(--green);
+}
+.vx-caption[data-tone='warn'] {
+  color: var(--orange);
+}
+.vx-caption[data-tone='bad'] {
+  color: var(--red);
+}
+.vx-hint {
+  color: var(--fg-3);
+  font-size: 12px;
+}
+
+/* --- Sample subjects (shared/subjects.ts) --- */
+.vx-pic {
+  display: block;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.vx-title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: #fff;
+  font-size: 72px;
+  margin: 0;
+  padding: 4px 8px;
+}
+.vx-card .vx-title {
+  font-size: 44px;
+}
+.vx-panel {
+  background: #1f2a44;
+  color: #e8ecf6;
+  border-radius: 8px;
+  padding: 14px 18px;
+  max-width: 320px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.vx-card .vx-panel {
+  padding: 8px 10px;
+  font-size: 11px;
+  max-width: 200px;
+}
+.vx-panel h3 {
+  margin: 0 0 6px;
+  font-size: 1.2em;
+  color: #fff;
+}
+.vx-readout {
+  font-family: var(--font-mono, monospace);
+  color: var(--fg-2);
+  font-size: 12px;
+}
+
+/* --- Slide box for transitions (shared/slides.ts) --- */
+.vx-slides {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #000;
+}
+.vx-slide {
+  position: absolute;
+  inset: 0;
+}
+.vx-slide[hidden] {
+  display: none;
+}
+.vx-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.vx-slide h3 {
+  position: absolute;
+  left: 12px;
+  bottom: 8px;
+  margin: 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+.vx-card .vx-slide h3 {
+  font-size: 18px;
+}
+
+/* --- Scroll room for the full view of scroll reveals (shared/scroll-sim.ts) --- */
+.vx-scroll-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.vx-scroll-room {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  color: var(--fg-3);
+}

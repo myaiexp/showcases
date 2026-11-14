@@ -142,3 +142,6 @@ GitHub Pages. No service on the VPS.
   the pretend server via Ky's own `fetch` option (`ky.extend({fetch: server.fetch})`) to an
   `https://*.example` URL; a guard rejects *.example requests that skip it. The wire picture and
   timeline read the server's events, so what travelled is always visible.
+- VFX-JS: build on `packages/vfx-js/shared/stage.ts` (`createStage`, trap list). Every `new VFX()` spreads
+  `stage.vfxOpts` and goes through `stage.own()`, which clips its window-sized canvas to the stage and frees
+  the WebGL context. Cards scroll-reveal through `shared/scroll-sim.ts` and fake the mouse with `shared/pointer.ts`.

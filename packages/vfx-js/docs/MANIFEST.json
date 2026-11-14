@@ -1,0 +1,555 @@
+{
+  "fetched": "2026-11-14T20:44:40.338Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/fand/vfx-js",
+      "ref": "@vfx-js/core@1.6.0",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "docs/*.md",
+        "skills/vfx-js/**",
+        "packages/vfx-js/README.md",
+        "packages/vfx-js/CHANGELOG.md",
+        "packages/vfx-js/src/**",
+        "!packages/vfx-js/src/**/*.test.ts",
+        "!packages/vfx-js/src/gifuct-js/**",
+        "packages/effects/README.md",
+        "packages/effects/src/*.ts",
+        "!packages/effects/src/*.test.ts",
+        "packages/transitions/README.md",
+        "packages/transitions/src/*.ts",
+        "!packages/transitions/src/*.test.ts"
+      ],
+      "commit": "d00de1629fd0cb2cd14852bcd53646466847de60"
+    },
+    {
+      "kind": "pages",
+      "urls": [
+        "https://amagi.dev/vfx-js/getting-started/",
+        "https://amagi.dev/vfx-js/how-it-works/",
+        "https://amagi.dev/vfx-js/effects/",
+        "https://amagi.dev/vfx-js/shaders/",
+        "https://amagi.dev/vfx-js/custom-effects/",
+        "https://amagi.dev/vfx-js/ai/",
+        "https://amagi.dev/vfx-js-transitions/getting-started",
+        "https://amagi.dev/vfx-js-transitions/how-it-works",
+        "https://amagi.dev/vfx-js-transitions/limitations",
+        "https://amagi.dev/vfx-js-transitions/presets",
+        "https://amagi.dev/vfx-js-transitions/custom",
+        "https://amagi.dev/vfx-js-transitions/api"
+      ]
+    }
+  ],
+  "files": {
+    "pages/amagi-dev/vfx-js-transitions/api.md": {
+      "url": "https://amagi.dev/vfx-js-transitions/api",
+      "sha256": "3addaa6471ac3a374d70d6bff85c0417d667871225ac00479f2560d2aede7793"
+    },
+    "pages/amagi-dev/vfx-js-transitions/custom.md": {
+      "url": "https://amagi.dev/vfx-js-transitions/custom",
+      "sha256": "f8003b620a6db63668fa5f03304c7f859ef28a4e3fc6ef02c66484c3da219b1e"
+    },
+    "pages/amagi-dev/vfx-js-transitions/getting-started.md": {
+      "url": "https://amagi.dev/vfx-js-transitions/getting-started",
+      "sha256": "ab62cfde5cd8cbfc36b0ef5b49eaf5cee92df8c6c8a0c8b913b87993e29d67bf"
+    },
+    "pages/amagi-dev/vfx-js-transitions/how-it-works.md": {
+      "url": "https://amagi.dev/vfx-js-transitions/how-it-works",
+      "sha256": "5af834b5c5953299a9f4091c19bfde501025a3164c0deca6586fbcf57e80da7c"
+    },
+    "pages/amagi-dev/vfx-js-transitions/limitations.md": {
+      "url": "https://amagi.dev/vfx-js-transitions/limitations",
+      "sha256": "5fe5a7e6ac5f1a445067183e8d79cadc21345db37d95c7793dc7724dea35a420"
+    },
+    "pages/amagi-dev/vfx-js-transitions/presets.md": {
+      "url": "https://amagi.dev/vfx-js-transitions/presets",
+      "sha256": "0e41356d484216cc4bea3de415094142477506faca59571a14e1e407639d465d"
+    },
+    "pages/amagi-dev/vfx-js/ai.md": {
+      "url": "https://amagi.dev/vfx-js/ai/",
+      "sha256": "546e2455ba017786049ee756937233935eca53808b3df36cbe167455dca2c29b"
+    },
+    "pages/amagi-dev/vfx-js/custom-effects.md": {
+      "url": "https://amagi.dev/vfx-js/custom-effects/",
+      "sha256": "5d98172af92a25dc2e9af5d0d8a7844895d291f82913f01ec497eb4ebcfb864c"
+    },
+    "pages/amagi-dev/vfx-js/effects.md": {
+      "url": "https://amagi.dev/vfx-js/effects/",
+      "sha256": "3b9d642a9ada65baa470ff144edec892d2d4898705b419b8a476e76237a484e8"
+    },
+    "pages/amagi-dev/vfx-js/getting-started.md": {
+      "url": "https://amagi.dev/vfx-js/getting-started/",
+      "sha256": "81362a5f0a6bffbe2650ec60debd415a66d367a7574d4682823394d88ee008b5"
+    },
+    "pages/amagi-dev/vfx-js/how-it-works.md": {
+      "url": "https://amagi.dev/vfx-js/how-it-works/",
+      "sha256": "72ad1db0166e1ee6f197a44be59811d42b67c9697a10e35b6802814d1db81245"
+    },
+    "pages/amagi-dev/vfx-js/shaders.md": {
+      "url": "https://amagi.dev/vfx-js/shaders/",
+      "sha256": "573099440a0c0ba7eb692163783e9e19063178e07a42e76a9026ce1f670b4fcf"
+    },
+    "repo/docs/EFFECT.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/docs/EFFECT.md",
+      "sha256": "e0166f8917d771cf21f3a43a2e70560d3672a9c4fb0ae3c7607e8c895717f304"
+    },
+    "repo/docs/html-in-canvas.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/docs/html-in-canvas.md",
+      "sha256": "f554344540bcb94427ca3ad77e4c6c14292c713db4848c18d8273e4316102d52"
+    },
+    "repo/docs/MULTIPASS.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/docs/MULTIPASS.md",
+      "sha256": "f375692fa945fdb9ceeb7406af3f74a6349fc06c576c36a1807e45d4caa18db9"
+    },
+    "repo/docs/POSTEFFECT_EXAMPLE.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/docs/POSTEFFECT_EXAMPLE.md",
+      "sha256": "6d1fa425a2c9891899d9ac34a2300734ceaaffacd7c1b4cb916a5a79e3aa22c5"
+    },
+    "repo/docs/TRANSITION.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/docs/TRANSITION.md",
+      "sha256": "48c4be239ff2bf64194feb9be3c8f8c2969e796c5408de85e70328b92ed0ac1f"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/LICENSE",
+      "sha256": "9b73789c416397f9b6ad15a2ce8668e351d44d4ef35c2b0d6bb81b76956b185d"
+    },
+    "repo/packages/effects/README.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/README.md",
+      "sha256": "28b45224c8c5b92bc4d75da5dd38ea3b043a3ece1aa6c4075a2308159459e89b"
+    },
+    "repo/packages/effects/src/_capture.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/_capture.ts",
+      "sha256": "5c38ad42c6565daa812fae1093f317b0424fd0728e1a213212c78adce91a79aa"
+    },
+    "repo/packages/effects/src/_curl-noise.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/_curl-noise.ts",
+      "sha256": "c0ccc613d2a9ee5a1de380567c1dfd0bde5ffbae60d650901d0dcc70f80c48dc"
+    },
+    "repo/packages/effects/src/_figma-common.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/_figma-common.ts",
+      "sha256": "d55a209a4fb6bd45f0e86dcb26c75ac6e5e73e209873b417a9dd62705eb10c9c"
+    },
+    "repo/packages/effects/src/_pad.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/_pad.ts",
+      "sha256": "a9147369942d96ca34c91bf5bd158e266655df49de320c6c68c8fd340f37c327"
+    },
+    "repo/packages/effects/src/_particle-common.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/_particle-common.ts",
+      "sha256": "798ed196ab19f8c7cf159536f2ca748784adf7712868a8bec350e496a492a26b"
+    },
+    "repo/packages/effects/src/ascii.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/ascii.ts",
+      "sha256": "200347551b9ac356db3bbdd89db5da2b3a7269ba943c1f884a50159d23142cea"
+    },
+    "repo/packages/effects/src/bad-jpeg.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/bad-jpeg.ts",
+      "sha256": "dcb5adca39bc2d87579503b08570cb486671558badd8faed9a39e7ff03f937eb"
+    },
+    "repo/packages/effects/src/bloom.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/bloom.ts",
+      "sha256": "690c355b3b09d593864a8ddae33c55e7fe4f0dcee2d335abd55868aac8dc083b"
+    },
+    "repo/packages/effects/src/chromatic.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/chromatic.ts",
+      "sha256": "94800fe07680ee3bc7e39aaf2f15d55705ed755708d06f7989d64172f947a39e"
+    },
+    "repo/packages/effects/src/colored-edges.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/colored-edges.ts",
+      "sha256": "cf871f324b41b91bb5add998fb04e80bc019f2ffbc561f5c7d8b4248fdabcc2d"
+    },
+    "repo/packages/effects/src/datamosh.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/datamosh.ts",
+      "sha256": "e58a7790aee261a3727bb416fb0ef4a333f472d301595316eaba2efc5080898c"
+    },
+    "repo/packages/effects/src/dither.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/dither.ts",
+      "sha256": "3ff85f542d8a5f0ee34ac41e7b5d56aa870f67384cb083861310ecda96c9545a"
+    },
+    "repo/packages/effects/src/duotone.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/duotone.ts",
+      "sha256": "dc9307c5cf1fff2820ad3fab7852c7c009cf570b9d625f151b3ba0e57cdf5bfc"
+    },
+    "repo/packages/effects/src/fluid.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/fluid.ts",
+      "sha256": "77e8aa737971c61735ffc47e0380739447e58d633fd7cb1560bff01f9e218b47"
+    },
+    "repo/packages/effects/src/glitch.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/glitch.ts",
+      "sha256": "a09da638276b1b85ff18b483bcb7457f574247bb5ee9a70953e1131648682ed6"
+    },
+    "repo/packages/effects/src/gradient-map.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/gradient-map.ts",
+      "sha256": "4d20da488755f297b5b92e12f8f1ede743fd1cacb2787b8bece0dea468943874"
+    },
+    "repo/packages/effects/src/halftone.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/halftone.ts",
+      "sha256": "9ac18f3c37764376f02aa8f55a3e0d968e3c909efddf87dffdd1919509706782"
+    },
+    "repo/packages/effects/src/hue-shift.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/hue-shift.ts",
+      "sha256": "63a8f33f7a6f9f377a91d45e30e7af02097136de75fa822aa17c5d00afdd175a"
+    },
+    "repo/packages/effects/src/index.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/index.ts",
+      "sha256": "f42d5e21c9ec230385898fee93dca14f7de88b01d0d7767b07f292e0e6f0068e"
+    },
+    "repo/packages/effects/src/jpeg-glitch.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/jpeg-glitch.ts",
+      "sha256": "d83dff9659dc22c79983e676a0159fff414e5eb2060f9706a29ea98d7659005d"
+    },
+    "repo/packages/effects/src/light-streak.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/light-streak.ts",
+      "sha256": "53d32a5c31ac94dfde88ce5d0fa987cfb070caf5e805e887ca8129d619686aae"
+    },
+    "repo/packages/effects/src/matrix.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/matrix.ts",
+      "sha256": "1aa5dcd8e8e2491cc9c2fb8769af67ecf49daafd594bdc00ba6f80b2d11a5847"
+    },
+    "repo/packages/effects/src/particle-explode.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/particle-explode.ts",
+      "sha256": "301671a94bab4d928ca6758b7570d29ead43ca9f21127dc831e5dd7c850ba181"
+    },
+    "repo/packages/effects/src/particle.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/particle.ts",
+      "sha256": "9b820f8a57fe3bf3f873a825131efdda9859950132c746c3920815488231c053"
+    },
+    "repo/packages/effects/src/pattern-refraction.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/pattern-refraction.ts",
+      "sha256": "d5520fd4d6d118630287cce3459fe97a8ee9b5f2adb3dd89c1df28a560b10f56"
+    },
+    "repo/packages/effects/src/pixel-stretch.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/pixel-stretch.ts",
+      "sha256": "dff38fc54392a47ed8f00556d4c336630098d18c8134c51fb4f31064a90ab05d"
+    },
+    "repo/packages/effects/src/pixelate.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/pixelate.ts",
+      "sha256": "65bfca369895362a4d884dcc72d694941dd8e584f5ea22c84641a8ad51296405"
+    },
+    "repo/packages/effects/src/pixelsort.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/pixelsort.ts",
+      "sha256": "38226b971052a6dafc9c5e60e78ae3a069bb7fed394ede2262b473752fbe4f91"
+    },
+    "repo/packages/effects/src/rainbow.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/rainbow.ts",
+      "sha256": "f40d172da5899ae5e6015db1c9fed37bac9a0e484e55f293cac38f53dcf6d3b8"
+    },
+    "repo/packages/effects/src/rgb-glitch.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/rgb-glitch.ts",
+      "sha256": "6a1749338209685a1d773c4ead93ee43ed46fbf267b9689f128a41f3c46b7508"
+    },
+    "repo/packages/effects/src/rgb-shift.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/rgb-shift.ts",
+      "sha256": "cf647c6c2fc1ceafb7343a0ceca6ca77e889541a1e26f05b2d47de0d5f810b55"
+    },
+    "repo/packages/effects/src/scanline.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/scanline.ts",
+      "sha256": "35403768fab7820925a44ac80dc2c26663044c509987e3b09698029141395eac"
+    },
+    "repo/packages/effects/src/sinewave.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/sinewave.ts",
+      "sha256": "2294018477bd9ab9b746a5964ded06e7842875d03b779d50305a9b236b8e154c"
+    },
+    "repo/packages/effects/src/slice-shift.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/slice-shift.ts",
+      "sha256": "58f2f4f6e65fa0bf78a9b4f69b8df24308b9cdf546ed2d22d36db16d9af86a04"
+    },
+    "repo/packages/effects/src/tile-pixelate.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/tile-pixelate.ts",
+      "sha256": "bca88d00587bb957533bbf7dfd3d6fcecbe4e3ec523870cfd66dfc4a6ddec595"
+    },
+    "repo/packages/effects/src/tritone.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/tritone.ts",
+      "sha256": "b9643b7e9074d41ac101ccb8356c4a5c8182877bb24fc7b4b9bf9d0c60ec25ac"
+    },
+    "repo/packages/effects/src/vignette.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/vignette.ts",
+      "sha256": "812c896b89a20686a9dd04446e8c6238b18168fa030446302af51b29de58e8d9"
+    },
+    "repo/packages/effects/src/voronoi.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/voronoi.ts",
+      "sha256": "d386e44975cd39905afcef0aa2540f9d4038c2f22138aafed40c7cc1cef31393"
+    },
+    "repo/packages/effects/src/warp.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/effects/src/warp.ts",
+      "sha256": "770dcdf7a039f40092966df0eacf5c49511faaf23a8a7c010e8a3a63f91e0db3"
+    },
+    "repo/packages/transitions/README.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/README.md",
+      "sha256": "14e6033c4736166ce3a2675a7fda466ec0527ba92dfd9f391d536fc7717d8c9f"
+    },
+    "repo/packages/transitions/src/_shared.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/_shared.ts",
+      "sha256": "963b36d09100e5c6e5749b2fa81294c0883ac7a577b81be296da9590bf7c0ecc"
+    },
+    "repo/packages/transitions/src/crosszoom.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/crosszoom.ts",
+      "sha256": "1b7d1ac2a949ddfdd948e0bdfb3a2eb4d2dc57accee97b13f51c2866f9cfab2b"
+    },
+    "repo/packages/transitions/src/datamosh.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/datamosh.ts",
+      "sha256": "8b3fb5ea5f0860d291b756a61df5de196a8338fd7dd741e99284e76fb39e9535"
+    },
+    "repo/packages/transitions/src/distort-fade.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/distort-fade.ts",
+      "sha256": "46b08be08f57fcb5a9b847f8f889f691d56aca78577701aa4ef181e38dfbe44c"
+    },
+    "repo/packages/transitions/src/gl-transition.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/gl-transition.ts",
+      "sha256": "e5883e76a9875675bc9e1e5456da26be7aaac2516ae721115dd7e9caa7008e6f"
+    },
+    "repo/packages/transitions/src/glitch-slide.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/glitch-slide.ts",
+      "sha256": "7a9d43a3aac5895f85574637d66aa76cabdc542f26336da37acd0311c2498b72"
+    },
+    "repo/packages/transitions/src/glitch.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/glitch.ts",
+      "sha256": "97a9cf11bbc0408bb62aae77647e63a8718380f37115a5ed2f899afdbd147f1a"
+    },
+    "repo/packages/transitions/src/index.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/index.ts",
+      "sha256": "023f68e035760a8fa3d4b5aaccb2c5c73fb06baf512c26611fdd496b2cbca46a"
+    },
+    "repo/packages/transitions/src/jpeg-glitch.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/jpeg-glitch.ts",
+      "sha256": "5e066ef802f3ea82419545e7f07913f3b947893fed3702acf7ce4593669cc150"
+    },
+    "repo/packages/transitions/src/lens-distortion.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/lens-distortion.ts",
+      "sha256": "2629d5410d526ee203418628b7eb914fcf024b4bb3af0bdbd8feb5f63bd25578"
+    },
+    "repo/packages/transitions/src/pixel-scan.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/pixel-scan.ts",
+      "sha256": "3e5023450da954a9843ff5b70cf36a286b0b54ff418cff441ac2df4ab20d5358"
+    },
+    "repo/packages/transitions/src/pixel-stretch.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/pixel-stretch.ts",
+      "sha256": "d79535330dbe83484d72801797815ed837ab304492f84741464335dfca13155a"
+    },
+    "repo/packages/transitions/src/pixelsort.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/pixelsort.ts",
+      "sha256": "4ef27910a7d55371e3144e20a498e034576edecca2161ad30a2d8c67b1cb126c"
+    },
+    "repo/packages/transitions/src/slit-scan.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/slit-scan.ts",
+      "sha256": "d4eb9477a1542e91304c6df8fb898cf33abdc2b099ea8e4fd51401cdc9f745ad"
+    },
+    "repo/packages/transitions/src/swipe.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/swipe.ts",
+      "sha256": "0514e90253696a649fdeb5505e701077769c68aed36741e819a1c6f60a9476f5"
+    },
+    "repo/packages/transitions/src/tile.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/tile.ts",
+      "sha256": "e2c385713a74b4188094b63b1ebde34582eaf7b9fc22c4941cec8cafb2465c5d"
+    },
+    "repo/packages/transitions/src/zoom-blur.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/zoom-blur.ts",
+      "sha256": "c6647b3e654faa117cedab138684efeffad96fadb1e31c9c6782c08299e8253f"
+    },
+    "repo/packages/transitions/src/zoom.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/transitions/src/zoom.ts",
+      "sha256": "ea211845ec42ab617ef538bb83eaea2d75626a496ca98ad3fc04b71724a5d15e"
+    },
+    "repo/packages/vfx-js/CHANGELOG.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/CHANGELOG.md",
+      "sha256": "9ace420bbf913b5a55815c69c0da74e6f5be5f73f3d305e54700cf8e93fb3de4"
+    },
+    "repo/packages/vfx-js/README.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/README.md",
+      "sha256": "6d18f9dda6e0e60abae09afae01cd2758fae6491bd362807966d50906554b345"
+    },
+    "repo/packages/vfx-js/src/backbuffer.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/backbuffer.ts",
+      "sha256": "e0c35c5698209eb0a4eb1b1be6ae936d78250392835eaf64533856dbb55b596a"
+    },
+    "repo/packages/vfx-js/src/constants.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/constants.ts",
+      "sha256": "34cf58e89a5ecaebcaeafa44ef154ed35facc3b0d25a5c6011718d57ee547c23"
+    },
+    "repo/packages/vfx-js/src/copy-pass.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/copy-pass.ts",
+      "sha256": "aaa8a2f22227292dc7596e8c02821efaeec28358f8a1916099fd2e51900635e2"
+    },
+    "repo/packages/vfx-js/src/dom-to-canvas.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/dom-to-canvas.ts",
+      "sha256": "532fd2a953b51a2aeaa204c22e69c6c4ce9c9c81879bbf189ccd3f7b10f86e92"
+    },
+    "repo/packages/vfx-js/src/effect-chain.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/effect-chain.ts",
+      "sha256": "d3cdef63a0e22e4e815c015961158f1e9edc5f782734c28420cd676be39176f8"
+    },
+    "repo/packages/vfx-js/src/effect-geometry.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/effect-geometry.ts",
+      "sha256": "b5c77b23e0c4294237f9291e87e2b551c3965fba9af26792e75c1871dfd745ca"
+    },
+    "repo/packages/vfx-js/src/effect-host.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/effect-host.ts",
+      "sha256": "d4a510030d94b76e258ed54cf1ec26af7e4f797963b86aad48105e8c84242c8f"
+    },
+    "repo/packages/vfx-js/src/freeze.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/freeze.ts",
+      "sha256": "26ee0b43e02f8019cfb72ced1317e49f17e70349687bf7a605706af3cf223313"
+    },
+    "repo/packages/vfx-js/src/gif.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/gif.ts",
+      "sha256": "449cd24f73b2a4c093e7cbce15e046e28faefdfde5df0efba8434b596b013d2a"
+    },
+    "repo/packages/vfx-js/src/gl-rect.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/gl-rect.ts",
+      "sha256": "798ead297d7850f0804d528ab4f577c8b12261557000f988e8e13f154a1286ce"
+    },
+    "repo/packages/vfx-js/src/gl/context.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/gl/context.ts",
+      "sha256": "4a1c732437787da0ff8719d7819605c0aea4a0ad0b2d01951028130d7b158a1f"
+    },
+    "repo/packages/vfx-js/src/gl/framebuffer.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/gl/framebuffer.ts",
+      "sha256": "744db738fa4356539854d56b2c91f146d117fd1e78452470d001868e732fa230"
+    },
+    "repo/packages/vfx-js/src/gl/index.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/gl/index.ts",
+      "sha256": "05770820d60e65c1ee070fa6e21af1b24807f8e7b05dca1807e0419a9927830d"
+    },
+    "repo/packages/vfx-js/src/gl/pass.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/gl/pass.ts",
+      "sha256": "0b7ee785eb65e81d2eb82a675bbddf2bd060aa81538c210d34438144b9c4de76"
+    },
+    "repo/packages/vfx-js/src/gl/program.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/gl/program.ts",
+      "sha256": "4721b6ceefbd085868d2a411789be65a65c54b8ad957805668f6d99653e695a8"
+    },
+    "repo/packages/vfx-js/src/gl/quad.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/gl/quad.ts",
+      "sha256": "e36ce60b9a4e0397d5832862f28ffd587936ff2c34d99507ea37d35a14784484"
+    },
+    "repo/packages/vfx-js/src/gl/texture.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/gl/texture.ts",
+      "sha256": "d36687aceedd7b601f6795551bf2a3e4476a8a711daae49e5170ad338e33d9f9"
+    },
+    "repo/packages/vfx-js/src/gl/vec.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/gl/vec.ts",
+      "sha256": "9f8dfa039729ac18a8e479ecb2d26dd982e107bf97c4acb64b963b11b424dc5a"
+    },
+    "repo/packages/vfx-js/src/hic-canvas.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/hic-canvas.ts",
+      "sha256": "3b3a8b822739bacf7f4ef588fe889408e04912a288bf164786752d9afc97d137"
+    },
+    "repo/packages/vfx-js/src/html-in-canvas-support.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/html-in-canvas-support.ts",
+      "sha256": "e80ce59b0b33d13221c876bad67d89ec057cdedb08d58821409c09333c928616"
+    },
+    "repo/packages/vfx-js/src/html-in-canvas.d.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/html-in-canvas.d.ts",
+      "sha256": "30416ed247ee562c87cb2d63e69150470922745c1f815cdc60b60d24e34e55d5"
+    },
+    "repo/packages/vfx-js/src/html-in-canvas.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/html-in-canvas.ts",
+      "sha256": "0f25f74e6144ffb05339b3f495184d9d178a343c1e4bc1ea86bbffe423694308"
+    },
+    "repo/packages/vfx-js/src/image-source.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/image-source.ts",
+      "sha256": "93acf5798c0fccf94c0f629f8221ee37fecefd0fb9ae471976bd18ae9035d4f1"
+    },
+    "repo/packages/vfx-js/src/index.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/index.ts",
+      "sha256": "5ae43979e00a9662b79730d58f047f3229e5401c4c2153f3326661f1776dcbef"
+    },
+    "repo/packages/vfx-js/src/intersection-state.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/intersection-state.ts",
+      "sha256": "bfcabea7551ebf451fc0639af4b1457ee9ebca5521664c54740dd4a4c706b3bb"
+    },
+    "repo/packages/vfx-js/src/post-effect-pass.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/post-effect-pass.ts",
+      "sha256": "b592bff114729ae5a00b0361daced5e19562d014237b15d8b5600c8368d25c03"
+    },
+    "repo/packages/vfx-js/src/program-cache.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/program-cache.ts",
+      "sha256": "f77b809b4f13bb25e4567ed17ba311cb58268d5673a61d7401ff2c66e645355d"
+    },
+    "repo/packages/vfx-js/src/rect.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/rect.ts",
+      "sha256": "c2e576a5bc313b01401ee481e63d4c44f50a2b6ab03f83bc2e3295e4ac41f763"
+    },
+    "repo/packages/vfx-js/src/reduced-motion.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/reduced-motion.ts",
+      "sha256": "18a4b7b8b3bd90ab051f9df04b4ae1412b9a2bcb1f58d71c4e9d05f0bae2d546"
+    },
+    "repo/packages/vfx-js/src/render-target.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/render-target.ts",
+      "sha256": "492a5cd054605d4f187a1991cae5a2b50b3e180ae953484b8882043d5c140b2b"
+    },
+    "repo/packages/vfx-js/src/still-clone.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/still-clone.ts",
+      "sha256": "ec39e01c6126d5f26f6a73339376f02e98bf1962ed59a93fb2166c3f9a784526"
+    },
+    "repo/packages/vfx-js/src/transition/crossfade.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/transition/crossfade.ts",
+      "sha256": "dac74a6760ad5906835c22e3dde69a38ee8ed1315a1e4bd80b25ca966625f648"
+    },
+    "repo/packages/vfx-js/src/transition/effect.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/transition/effect.ts",
+      "sha256": "0a9326aab4b293ab46e73d8e334d31dbfc8ed496f217430cbd3d3f61efe76f01"
+    },
+    "repo/packages/vfx-js/src/transition/glsl.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/transition/glsl.ts",
+      "sha256": "7fe1e45ac88e44fa0aff7184148f9736430734104749d5680c6df425f9a92c8f"
+    },
+    "repo/packages/vfx-js/src/transition/history.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/transition/history.ts",
+      "sha256": "6a663b683c3c3922defb402691353d4d64a487ac64cb4ea054b67c4c05e5cf29"
+    },
+    "repo/packages/vfx-js/src/transition/shader.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/transition/shader.ts",
+      "sha256": "a613ebc316e5279b09b763e62b39f3dbb302173137cf10ab112aea468eb98cd3"
+    },
+    "repo/packages/vfx-js/src/transition/transition.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/transition/transition.ts",
+      "sha256": "2dbf384c673348b1d0612528f08b7b21fc14a365ad8f14cdacedb473bbea0966"
+    },
+    "repo/packages/vfx-js/src/transition/types.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/transition/types.ts",
+      "sha256": "29c2c53c822fbedbffc7c7a1d0ce23a22799f5cb0abb21ce30716c1ab98f4161"
+    },
+    "repo/packages/vfx-js/src/transition/ua-transition.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/transition/ua-transition.ts",
+      "sha256": "65053db013ed6331fc27b798c26bb2a5521f1dbe78c4fd3e2c151126975b8e2c"
+    },
+    "repo/packages/vfx-js/src/types.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/types.ts",
+      "sha256": "221315563b0aea4848e56d93f64e07ef2e0d8ef3eb550c52d53d8590106ecd6b"
+    },
+    "repo/packages/vfx-js/src/vfx-player.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/vfx-player.ts",
+      "sha256": "15795f1f43cc292d21a1bafee725ffd8ddf6c61705d9e43a4c98de1f04eb3ee7"
+    },
+    "repo/packages/vfx-js/src/vfx.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/vfx.ts",
+      "sha256": "0c2bf0f788f619ab0beaf013a6231f9783f515a27000aab508c107e6eb72c5b4"
+    },
+    "repo/packages/vfx-js/src/webgl-support.ts": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/packages/vfx-js/src/webgl-support.ts",
+      "sha256": "457bebbdb145eea1a80408efbc7e8eac840af22bd0ab811469b4184d50119eb9"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/README.md",
+      "sha256": "eca6723deb72997a048ee75a2264237531a9f90988243b5286b46eb7b5159a46"
+    },
+    "repo/skills/vfx-js/references/effects.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/skills/vfx-js/references/effects.md",
+      "sha256": "480cd535ddac04c6f65a92291e219b8148339902ba11dca703990db933f4d4f6"
+    },
+    "repo/skills/vfx-js/references/shader.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/skills/vfx-js/references/shader.md",
+      "sha256": "1daa005c309885530ac1dc443e7b2b54ce7f5b23c32e57923ba4d67d0ca00062"
+    },
+    "repo/skills/vfx-js/references/transitions.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/skills/vfx-js/references/transitions.md",
+      "sha256": "aff1985e4ec652dcac3ed4d3cf19bb234c2b822d1891883e99444d3c800bc4eb"
+    },
+    "repo/skills/vfx-js/SKILL.md": {
+      "url": "https://github.com/fand/vfx-js/blob/d00de1629fd0cb2cd14852bcd53646466847de60/skills/vfx-js/SKILL.md",
+      "sha256": "45a5499d557431366575d06b6ae43020686907a9c041e0f316a6ee7d608d5927"
+    }
+  }
+}

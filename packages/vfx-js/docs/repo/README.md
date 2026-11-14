@@ -1,0 +1,75 @@
+<div align="center">
+  <a href="https://amagi.dev/vfx-js/" target="_blank"><img alt="VFX-JS" src="packages/docs/public/og_image.jpg" width="100%"/></a>
+  <h1>VFX-JS: Visual Effects Framework for Web</h1>
+  <a href="https://github.com/fand/vfx-js" target="_blank"><img src="https://img.shields.io/github/stars/fand/vfx-js" alt="Star on GitHub"></a>
+  <br/>
+  <br/>
+</div>
+
+VFX-JS is a JavaScript library to add WebGL-powered effects to your website.
+You can easily attach it to normal `<img>`, `<video>` elements etc.
+
+
+Bindings:
+
+- [`@vfx-js/react`](https://www.npmjs.com/package/@vfx-js/react) for React
+- [`@vfx-js/vue`](packages/vue/README.md) for Vue and Nuxt
+- [`@vfx-js/svelte`](packages/svelte/README.md) for Svelte and SvelteKit
+
+
+## Usage
+
+Install via npm:
+
+```
+npm i @vfx-js/core
+```
+
+Then create `VFX` object in your script:
+
+```js
+import { VFX } from '@vfx-js/core';
+
+const img = document.querySelector('#img');
+
+const vfx = new VFX();
+vfx.add(img, { shader: "glitch", overflow: 100 });
+```
+
+Or compose prebuilt effects from [`@vfx-js/effects`](https://www.npmjs.com/package/@vfx-js/effects):
+
+```js
+import { VFX } from '@vfx-js/core';
+import { BloomEffect, PixelateEffect } from '@vfx-js/effects';
+
+const vfx = new VFX();
+vfx.add(img, {
+    effect: [new PixelateEffect({ size: 10 }), new BloomEffect({ intensity: 5 })],
+});
+```
+
+## Use with AI agents
+
+Install the VFX-JS skill for Claude Code, Codex, Cursor and other agents:
+
+```
+npx skills add fand/vfx-js
+```
+
+Or point your agent to [llms.txt](https://amagi.dev/vfx-js/llms.txt) / [llms-full.txt](https://amagi.dev/vfx-js/llms-full.txt).
+
+## Examples
+
+You can find basic examples on the VFX-JS website.
+Or visit `VFX-JS Examples` for more advanced use cases.
+
+- https://amagi.dev/vfx-js/
+- https://amagi.dev/vfx-js/examples
+
+## Author
+
+[AMAGI](https://twitter.com/amagitakayosi)
+
+## LICENSE
+
+MIT

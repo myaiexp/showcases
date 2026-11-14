@@ -1,0 +1,45 @@
+{
+  "license": "MIT (fand/vfx-js LICENSE covers the repo: README, docs/, skills/, the package sources and the amagi.dev/vfx-js and amagi.dev/vfx-js-transitions site sources in packages/docs and packages/docs-transitions)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/fand/vfx-js",
+      "ref": "@vfx-js/core@1.6.0",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "docs/*.md",
+        "skills/vfx-js/**",
+        "packages/vfx-js/README.md",
+        "packages/vfx-js/CHANGELOG.md",
+        "packages/vfx-js/src/**",
+        "!packages/vfx-js/src/**/*.test.ts",
+        "!packages/vfx-js/src/gifuct-js/**",
+        "packages/effects/README.md",
+        "packages/effects/src/*.ts",
+        "!packages/effects/src/*.test.ts",
+        "packages/transitions/README.md",
+        "packages/transitions/src/*.ts",
+        "!packages/transitions/src/*.test.ts"
+      ]
+    },
+    {
+      "kind": "pages",
+      "urls": [
+        "https://amagi.dev/vfx-js/getting-started/",
+        "https://amagi.dev/vfx-js/how-it-works/",
+        "https://amagi.dev/vfx-js/effects/",
+        "https://amagi.dev/vfx-js/shaders/",
+        "https://amagi.dev/vfx-js/custom-effects/",
+        "https://amagi.dev/vfx-js/ai/",
+        "https://amagi.dev/vfx-js-transitions/getting-started",
+        "https://amagi.dev/vfx-js-transitions/how-it-works",
+        "https://amagi.dev/vfx-js-transitions/limitations",
+        "https://amagi.dev/vfx-js-transitions/presets",
+        "https://amagi.dev/vfx-js-transitions/custom",
+        "https://amagi.dev/vfx-js-transitions/api"
+      ]
+    }
+  ]
+}
