@@ -10,6 +10,16 @@
 //   `idPrefix: stage.id()`, or two cards emit the same resource ids.
 // - The DOM host listens for pointer events on the container itself. Cards fake input with
 //   `stage.ghost(...)`, which dispatches non-bubbling PointerEvents on that container only.
+// - A mark-level canvas renderer (`renderer: canvasChartRenderer`) gives the host root
+//   `height: 100%`, and the stage box has no height of its own, so the chart collapses to 0px:
+//   set `stage.box.style.height = \`${stage.height}px\`` in that example.
+// - `onRender` fires inside `mountChart`, before `const host = …` is assigned: read the
+//   callback's own `scene`, never `host`, there.
+// - `scene.scales.x` / `.y` are typed as possibly undefined: `scene.scales.x?.invert`.
+// - The grammar page's `tickRotate` and `labelOffset` do not exist in 1.5.0: use
+//   `axis.tickLabels.rotate` and `axis.label.offset`.
+// - Gradient ids written as `url(#id)` are scoped by `idPrefix` automatically: pass
+//   `idPrefix: stage.id()` and keep the id itself unprefixed.
 import type { MountContext } from '@/types.ts';
 import './stage.css';
 
