@@ -1,0 +1,21 @@
+/* Pinned items: chat rows, avatars and the red flash on a pinned row */
+[data-example='sortablejs/pinned-items'] {
+  .threads { list-style: none; margin: 0; padding: 0; width: min(100%, 340px); display: flex; flex-direction: column; gap: 3px; }
+  .thread { display: flex; align-items: center; gap: 10px; padding: 5px 10px; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 6px; color: var(--fg-1); font-size: 13px; cursor: grab; user-select: none; transition: border-color 0.15s, background 0.15s; }
+  .thread.pinned { cursor: default; background: var(--bg); border-color: var(--accent); }
+  .thread.refused { border-color: var(--red); background: var(--bg-surface); }
+  .avatar { width: 26px; height: 26px; border-radius: 50%; background: var(--blue); color: var(--bg); display: grid; place-items: center; font-weight: 600; flex: none; }
+  .pinned .avatar { background: var(--accent); }
+  .who { display: flex; flex-direction: column; min-width: 0; flex: 1; }
+  .who b { font-weight: 600; }
+  .who small { color: var(--fg-3); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .pin { visibility: hidden; font-size: 11px; }
+  .pinned .pin { visibility: visible; }
+  .ghost { opacity: 0.35; border-style: dashed; }
+  &.compact .threads { gap: 2px; }
+  &.compact .thread { padding: 2px 8px; font-size: 12px; }
+  &.compact .avatar { width: 20px; height: 20px; font-size: 11px; }
+  &.compact .who small { display: none; }
+  &.compact .note { margin-top: 4px; }
+  .note { color: var(--fg-3); font-size: 12px; text-align: center; margin: 8px 0 0; max-width: 340px; }
+}

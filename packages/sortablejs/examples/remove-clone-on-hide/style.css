@@ -1,0 +1,50 @@
+/* Hidden clone stays in the DOM: a menu, an order tray and a DOM count */
+[data-example='sortablejs/remove-clone-on-hide'] {
+  .wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 118px);
+    gap: var(--space-3);
+  }
+  h3 {
+    margin: 0 0 4px;
+    font-size: 11px;
+    color: var(--fg-3);
+  }
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 6px;
+    min-height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .dish {
+    padding: 6px 8px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--fg-1);
+    font-size: 12px;
+    cursor: grab;
+    user-select: none;
+  }
+  .hole {
+    opacity: 0.35;
+  }
+  .info {
+    margin-top: var(--space-3);
+    color: var(--accent);
+  }
+  .hint {
+    margin: var(--space-2) 0 0;
+    max-width: 380px;
+    text-align: center;
+    color: var(--fg-3);
+    font-size: 12px;
+  }
+}

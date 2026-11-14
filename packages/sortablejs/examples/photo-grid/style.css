@@ -1,0 +1,31 @@
+/* Photo grid: painted tiles in a wrapping grid */
+[data-example='sortablejs/photo-grid'] {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    width: min(100%, 360px);
+  }
+  .tile {
+    aspect-ratio: 1;
+    display: grid;
+    place-items: end start;
+    padding: 4px 6px;
+    border-radius: 6px;
+    background: linear-gradient(var(--tilt), hsl(var(--hue) 60% 45%), hsl(calc(var(--hue) + 40) 65% 30%));
+    color: rgb(255 255 255 / 0.85);
+    font: 11px ui-monospace, monospace;
+    cursor: grab;
+    user-select: none;
+  }
+  .ghost {
+    opacity: 0.35;
+    outline: 2px dashed var(--accent);
+  }
+  .hint {
+    margin: var(--space-3) 0 0;
+    color: var(--fg-3);
+    font-size: 12px;
+    text-align: center;
+  }
+}

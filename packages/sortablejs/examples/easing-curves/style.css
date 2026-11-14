@@ -1,0 +1,42 @@
+/* Easing curves: lanes of tokens, each next to its curve graph */
+[data-example='sortablejs/easing-curves'] {
+  .lanes {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: min(100%, 360px);
+  }
+  .lane {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+  svg {
+    flex: none;
+  }
+  .name {
+    flex: 0 0 66px;
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 6px;
+  }
+  .token {
+    width: 28px;
+    height: 24px;
+    border-radius: 6px;
+    cursor: grab;
+  }
+  .hint {
+    margin: var(--space-3) 0 0;
+    max-width: 380px;
+    text-align: center;
+    color: var(--fg-3);
+    font-size: 12px;
+  }
+}

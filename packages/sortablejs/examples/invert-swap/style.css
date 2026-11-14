@@ -1,0 +1,75 @@
+/* Drop in between: two queues with their swap zones shaded */
+[data-example='sortablejs/invert-swap'] {
+  .pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-4);
+    width: min(100%, 480px);
+  }
+  h3 {
+    margin: 0 0 6px;
+    font: 11px ui-monospace, monospace;
+    color: var(--fg-3);
+    text-align: center;
+  }
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 34px;
+    padding: 0 var(--space-3);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--fg-1);
+    font-size: 13px;
+    cursor: grab;
+    user-select: none;
+  }
+  .name {
+    position: relative;
+  }
+  .zone {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: color-mix(in srgb, var(--accent) 28%, transparent);
+    pointer-events: none;
+  }
+  /* default: one band across the middle half of the row */
+  .a {
+    top: 25%;
+    bottom: 25%;
+  }
+  .b {
+    display: none;
+  }
+  /* invertSwap: two bands, the top and bottom quarter of the row */
+  .inverted .a {
+    top: 0;
+    bottom: 75%;
+  }
+  .inverted .b {
+    display: block;
+    top: 75%;
+    bottom: 0;
+  }
+  .ghost {
+    opacity: 0.45;
+  }
+  .hint {
+    margin: var(--space-3) 0 0;
+    max-width: 440px;
+    text-align: center;
+    color: var(--fg-3);
+    font-size: 12px;
+  }
+}

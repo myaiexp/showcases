@@ -1,0 +1,37 @@
+/* Press and hold to pick up: line-up rows and the picked-up highlight */
+[data-example='sortablejs/chosen-class'] {
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: min(100%, 320px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .player {
+    padding: 8px var(--space-3);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--fg-1);
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s, color 0.2s;
+  }
+  .picked {
+    background: var(--red);
+    border-color: var(--red);
+    color: #fff;
+  }
+  .slot {
+    opacity: 0.5;
+  }
+  .status {
+    height: 18px;
+    margin-bottom: 8px;
+    color: var(--fg-3);
+    font: 12px ui-monospace, monospace;
+  }
+}

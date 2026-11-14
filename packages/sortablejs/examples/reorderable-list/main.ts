@@ -1,77 +1,49 @@
-// Sortable.js priority list with drag handles and an order readout
+// A priority list reordered by drag handles, with ranks that follow every drop
 import Sortable from 'sortablejs';
 import type { Mount } from '@/types.ts';
+import { loopDrive } from '../../shared/drive.ts';
+import { release } from '../../shared/lifecycle.ts';
 import './style.css';
 
-const TASKS = [
-  'Ship the landing page',
-  'Fix the login bug',
-  'Write release notes',
-  'Review open pull requests',
-  'Reply to user feedback',
-] as const;
+const TASKS = ['Fix the login bug', 'Ship the landing page', 'Write release notes', 'Review pull requests', 'Reply to feedback'];
 
-const mount: Mount = (el, { preview }) => {
+const mount: Mount = (el, { preview, signal }) => {
   const list = document.createElement('ul');
   list.className = 'list';
   for (const task of TASKS) {
     const item = document.createElement('li');
     item.className = 'item';
     item.dataset['id'] = task;
-    const handle = document.createElement('span');
-    handle.className = 'handle';
-    handle.textContent = '⠿';
-    const label = document.createElement('span');
-    label.textContent = task;
-    const rank = document.createElement('span');
-    rank.className = 'rank';
-    item.append(handle, label, rank);
+    item.innerHTML = '<span class="handle" aria-hidden="true">⠿</span><span class="text"></span><span class="rank"></span>';
+    item.querySelector('.text')!.textContent = task;
     list.append(item);
   }
   el.append(list);
 
-  const readout = document.createElement('div');
-  readout.className = 'readout';
-  if (!preview) el.append(readout);
-
-  const update = (): void => {
-    const items = [...list.querySelectorAll<HTMLElement>('.item')];
-    const names = items.map((it) => it.dataset['id'] ?? '');
-    items.forEach((it, i) => {
-      const rank = it.querySelector('.rank');
-      if (rank) rank.textContent = `#${i + 1}`;
+  // Re-number the rows after every change.
+  const rank = (): void => {
+    [...list.children].forEach((row, i) => {
+      row.querySelector('.rank')!.textContent = `#${i + 1}`;
     });
-    const label = document.createElement('b');
-    label.textContent = 'Order:';
-    readout.replaceChildren(label, ` ${names.map((n, i) => `${i + 1}. ${n}`).join('  →  ')}`);
   };
+  rank();
 
-  const sortable = new Sortable(list, {
-    animation: 150,
-    handle: '.handle',
-    ghostClass: 'ghost',
-    chosenClass: 'chosen',
-    dragClass: 'dragging',
-    onSort: update,
+  const sortable = Sortable.create(list, {
+    handle: '.handle', // only the grip starts a drag, so the text stays selectable
+    animation: 150, // other rows slide out of the way instead of jumping
+    ghostClass: 'ghost', // the dashed slot where the row will land
+    onSort: rank, // fires on any change to the list's order
   });
-  update();
 
-  // A preview takes no input, so it rotates the order on a timer (animated by Sortable).
-  let timer = 0;
   if (preview) {
-    timer = window.setInterval(() => {
-      const order = sortable.toArray();
-      const first = order.shift();
-      if (first !== undefined) order.splice(2, 0, first);
-      sortable.sort(order, true);
-      update();
-    }, 1400);
+    // Pull the last task up to the top by its handle, again and again.
+    loopDrive(el, signal, async (hand) => {
+      const last = list.lastElementChild!;
+      await hand.drag(last.querySelector('.handle')!, { el: list.firstElementChild!, fy: 0.2 }, 1.1);
+    });
   }
 
-  return () => {
-    window.clearInterval(timer);
-    sortable.destroy();
-  };
+  return () => release(sortable);
 };
 
 export default mount;

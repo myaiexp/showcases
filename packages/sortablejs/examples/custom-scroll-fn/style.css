@@ -1,0 +1,66 @@
+/* Custom scroll function: agenda box with a drawn scrollbar */
+[data-example='sortablejs/custom-scroll-fn'] {
+  .frame {
+    position: relative;
+    width: min(100%, 300px);
+    margin-inline: auto;
+    display: flex;
+    gap: 6px;
+  }
+  .agenda {
+    flex: 1;
+    height: 176px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+  .meetings {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .meeting {
+    flex: none;
+    display: flex;
+    gap: 10px;
+    padding: 5px 8px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--blue);
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--fg-1);
+    cursor: grab;
+    user-select: none;
+  }
+  .meeting time {
+    color: var(--fg-3);
+    font: 11px ui-monospace, monospace;
+  }
+  .rail {
+    flex: none;
+    width: 8px;
+    border-radius: 4px;
+    background: var(--border);
+    overflow: hidden;
+  }
+  .thumb {
+    width: 100%;
+    background: var(--accent);
+    border-radius: 4px;
+  }
+  .hint {
+    margin: 4px auto 0;
+    max-width: 440px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--fg-3);
+  }
+}

@@ -1,0 +1,13 @@
+/* Live rank preview: the rank badge above a numbered list */
+[data-example='sortablejs/live-rank-preview'] {
+  .badge { min-width: 180px; text-align: center; padding: 5px 12px; margin-bottom: 8px; border-radius: 999px; background: var(--bg-surface); border: 1px solid var(--border); color: var(--fg-2); font-size: 13px; transition: background 0.15s, color 0.15s; }
+  .badge.live { background: var(--accent); border-color: var(--accent); color: var(--bg); font-weight: 600; }
+  &.compact .badge { margin-bottom: 4px; padding: 2px 12px; font-size: 12px; }
+  &.compact .ranking { gap: 2px; }
+  &.compact .pizza { padding: 3px 10px; font-size: 12px; }
+  .ranking { list-style: none; margin: 0; padding: 0; width: min(100%, 320px); display: flex; flex-direction: column; gap: 3px; }
+  .pizza { display: flex; gap: 12px; align-items: center; padding: 5px 10px; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 6px; color: var(--fg-1); font-size: 13px; cursor: grab; user-select: none; }
+  .pos { width: 1.4em; color: var(--accent); font: 600 13px ui-monospace, monospace; }
+  .ghost { opacity: 0.35; border-style: dashed; }
+  .hint { color: var(--fg-3); font-size: 13px; text-align: center; margin: 8px 0 0; }
+}

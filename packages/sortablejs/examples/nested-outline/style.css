@@ -1,0 +1,47 @@
+/* Nested outline: folder tree with indented sub-lists */
+[data-example='sortablejs/nested-outline'] {
+  .tree {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: min(100%, 320px);
+  }
+  .sub {
+    margin: 2px 0 0 14px;
+    padding: 2px 0 2px 8px;
+    min-height: 8px;
+    width: auto;
+    border-left: 1px solid var(--border);
+  }
+  .node {
+    margin-bottom: 2px;
+  }
+  .entry {
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: var(--fg-1);
+    font: 12px ui-monospace, monospace;
+    cursor: grab;
+    user-select: none;
+  }
+  .folder > .entry {
+    color: var(--orange);
+    background: var(--bg-surface);
+  }
+  .folder > .entry::before {
+    content: '\25B8  ';
+  }
+  .file > .entry:hover {
+    background: var(--bg-surface);
+  }
+  .hole {
+    opacity: 0.35;
+  }
+  .hint {
+    margin: var(--space-3) 0 0;
+    color: var(--fg-3);
+    font-size: 12px;
+    text-align: center;
+  }
+}

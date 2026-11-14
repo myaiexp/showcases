@@ -1,0 +1,13 @@
+/* Insert before or after: queue rows coloured by fare class */
+[data-example='sortablejs/insert-before-after'] {
+  .queue { list-style: none; margin: 0; padding: 0; width: min(100%, 320px); display: flex; flex-direction: column; gap: 4px; }
+  .pax { display: flex; justify-content: space-between; align-items: center; padding: 6px 10px; background: var(--bg-surface); border: 1px solid var(--border); border-left: 4px solid var(--blue); border-radius: 6px; color: var(--fg-1); font-size: 13px; cursor: grab; user-select: none; }
+  .pax.priority { border-left-color: var(--orange); }
+  .fare { font: 11px ui-monospace, monospace; color: var(--fg-3); text-transform: uppercase; }
+  .ghost { opacity: 0.35; border-style: dashed; }
+  &.compact .queue { gap: 2px; }
+  &.compact .pax { padding: 3px 8px; font-size: 12px; }
+  &.compact .readout { margin-top: 4px; }
+  .readout { font: 11px ui-monospace, monospace; color: var(--fg-2); margin: 8px 0 0; text-align: center; }
+  .hint { color: var(--fg-3); font-size: 13px; text-align: center; margin: 4px 0 0; }
+}

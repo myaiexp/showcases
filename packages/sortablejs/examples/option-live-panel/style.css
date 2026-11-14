@@ -1,0 +1,13 @@
+/* Live option panel: menu rows, the locked look and the settings readout */
+[data-example='sortablejs/option-live-panel'] {
+  .menu { list-style: none; margin: 0; padding: 0; width: min(100%, 320px); display: flex; flex-direction: column; gap: 3px; transition: opacity 0.2s; }
+  .menu.locked { opacity: 0.55; }
+  .menu.locked .dish { cursor: not-allowed; }
+  .dish { display: flex; gap: 12px; padding: 5px 10px; background: var(--bg-surface); border: 1px solid var(--border); border-radius: 6px; color: var(--fg-1); font-size: 13px; cursor: grab; user-select: none; }
+  .day { width: 2.4em; color: var(--accent); font: 600 12px ui-monospace, monospace; }
+  .ghost { opacity: 0.35; border-style: dashed; }
+  .state { margin: 8px 0 0; font: 11px ui-monospace, monospace; color: var(--fg-2); text-align: center; }
+  .hint { color: var(--fg-3); font-size: 13px; text-align: center; margin: 4px 0 0; }
+  &.compact .menu{ gap: 2px }
+  &.compact .dish{ padding: 3px 10px; font-size: 12px }
+}

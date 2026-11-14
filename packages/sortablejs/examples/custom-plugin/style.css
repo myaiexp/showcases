@@ -1,0 +1,66 @@
+/* Custom plugin: two chore columns, move badges and the lifted state */
+[data-example='sortablejs/custom-plugin'] {
+  .wall {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: min(100%, 460px);
+    margin-inline: auto;
+  }
+  .col {
+    flex: 1;
+    min-width: 0;
+    max-width: 230px;
+  }
+  h3 {
+    margin: 0;
+    font-size: 12px;
+    color: var(--accent);
+  }
+  .note {
+    margin: 0 0 6px;
+    font: 10px ui-monospace, monospace;
+    color: var(--fg-3);
+  }
+  .chores {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .chore {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 12px;
+    color: var(--fg-1);
+    cursor: grab;
+    user-select: none;
+  }
+  /* The plugin only writes attributes; the badge is drawn from them here. */
+  .chore[data-moves]::after {
+    content: '↻ ' attr(data-moves);
+    color: var(--accent);
+    font: 11px ui-monospace, monospace;
+  }
+  .chore[data-lifted] {
+    border-color: var(--accent);
+  }
+  .total {
+    margin: 6px 0 0;
+    font: 11px ui-monospace, monospace;
+    color: var(--fg-2);
+  }
+  .hint {
+    margin: 10px auto 0;
+    max-width: 460px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--fg-3);
+  }
+}

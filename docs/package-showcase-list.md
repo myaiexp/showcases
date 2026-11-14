@@ -191,7 +191,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 143 | uPlot (`uplot`) | v1 2020 | README MIT | 30 | Fast time series |
 | 144 | Splitting (`splitting`) | v1 2018 | README MIT | 12 | Text/grid splitting into CSS vars |
 | 145 | Chart.js (`chart.js`) ✅ built | v4 2022 | repo ✓ MIT | 154 | Canvas charts. Docs are the repo's `docs/` markdown at v4.6.1; `docs/samples` (the official sample gallery) stays out. Time axes run on a small in-repo date adapter |
-| 146 | Sortable.js (`sortablejs`) *(legacy in gallery)* | v1 | README MIT | 25 | Drag-sort lists |
+| 146 | Sortable.js (`sortablejs`) ✅ built | v1 | README MIT | 25 | Drag-sort lists. Docs are the README and `plugins/*/README.md` at the release tag; `index.html` and `st/` are the demo site and stay out |
 | 147 | Muuri (`muuri`) | 0.9 2021 | repo ✓ MIT | 30 | Animated grids. Abandoned |
 
 ## Tier 1–2: little to look at

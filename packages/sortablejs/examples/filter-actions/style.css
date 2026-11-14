@@ -1,0 +1,40 @@
+/* File list: draggable rows with rename and delete buttons */
+[data-example='sortablejs/filter-actions'] {
+  .files {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: min(100%, 320px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .file {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 5px 6px 5px 10px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--fg-1);
+    font-size: 13px;
+    cursor: grab;
+  }
+  .name { flex: 1; min-width: 0; user-select: none; }
+  .name[contenteditable='true'] { user-select: text; outline: 1px solid var(--accent); border-radius: 3px; padding: 0 3px; cursor: text; }
+  .js-edit, .js-remove {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--fg-3);
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .js-edit:hover { color: var(--accent); background: var(--bg); }
+  .js-remove:hover { color: var(--red); background: var(--bg); }
+  .ghost { opacity: 0.35; border-style: dashed; }
+  .hint { color: var(--fg-3); font-size: 13px; text-align: center; margin: var(--space-3) 0 0; max-width: 360px; }
+}

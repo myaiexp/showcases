@@ -1,0 +1,49 @@
+/* Horizontal tab strip: tabs in a row above a page */
+[data-example='sortablejs/horizontal-tabs'] {
+  .strip {
+    display: flex;
+    align-items: flex-end;
+    width: min(100%, 440px);
+    border-bottom: 1px solid var(--border);
+  }
+  .tabs {
+    display: flex;
+    gap: 2px;
+    min-width: 0;
+  }
+  .tab {
+    padding: 7px 14px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-bottom: none;
+    border-top: 3px solid var(--tone);
+    border-radius: 6px 6px 0 0;
+    color: var(--fg-2);
+    font-size: 13px;
+    cursor: grab;
+    user-select: none;
+  }
+  .tab.active {
+    background: var(--bg);
+    color: var(--fg-1);
+  }
+  .plus {
+    padding: 6px 10px;
+    color: var(--fg-3);
+  }
+  .page {
+    width: min(100%, 440px);
+    box-sizing: border-box;
+    height: 90px;
+    display: grid;
+    place-items: center;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-top: none;
+    color: var(--fg-3);
+    font-size: 13px;
+  }
+  .ghost {
+    opacity: 0.4;
+  }
+}

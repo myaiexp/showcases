@@ -1,0 +1,73 @@
+/* Move to folder: inbox, folder boxes and mail rows */
+[data-example='sortablejs/move-to-folder'] {
+  .layout {
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 8px;
+    width: min(100%, 520px);
+  }
+  .folders {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .box {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px;
+    min-width: 0;
+    --tone: var(--accent);
+    border-top: 3px solid var(--tone);
+  }
+  h3 {
+    margin: 0 0 4px;
+    font-size: 11px;
+    color: var(--fg-3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .mails {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-height: 32px;
+  }
+  .inbox .mails {
+    min-height: 120px;
+  }
+  .mail {
+    display: flex;
+    gap: 6px;
+    padding: 3px 6px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 11px;
+    color: var(--fg-1);
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+  }
+  .mail span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--fg-3);
+  }
+  .ticked {
+    background: color-mix(in srgb, var(--accent) 22%, var(--bg));
+    border-color: var(--accent);
+  }
+  .hint {
+    margin: 8px auto 0;
+    max-width: 480px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--fg-3);
+  }
+}

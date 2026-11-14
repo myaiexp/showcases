@@ -1,0 +1,57 @@
+/* Squads with a size limit: bench, squad columns and the FULL badge */
+[data-example='sortablejs/capacity-limits'] {
+  .league {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    width: min(100%, 520px);
+  }
+  .bench, .squad {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px;
+    min-width: 0;
+  }
+  .squads {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: var(--space-2);
+  }
+  .squad { border-top: 3px solid var(--blue); }
+  .squad.full { border-top-color: var(--red); }
+  h3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--fg-3);
+  }
+  .count { font-family: ui-monospace, monospace; color: var(--blue); }
+  .full .count { color: var(--red); font-weight: bold; }
+  .players {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    min-height: 28px;
+  }
+  .squad .players { flex-direction: column; flex-wrap: nowrap; min-height: 90px; }
+  .player {
+    padding: 4px 10px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--fg-1);
+    font-size: 12px;
+    cursor: grab;
+    user-select: none;
+  }
+  .squad .player { border-radius: 4px; }
+  .ghost { opacity: 0.35; border-style: dashed; }
+  .hint { color: var(--fg-3); font-size: 13px; text-align: center; margin: var(--space-3) 0 0; }
+}

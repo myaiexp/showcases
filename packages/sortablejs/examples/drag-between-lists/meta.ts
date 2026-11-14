@@ -1,13 +1,13 @@
-// Sortable.js example: a three-column Kanban board sharing one group
+// Sortable.js example: a three-column task board sharing one group
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
   title: 'Drag between lists',
   summary:
-    'Lists sharing a group name let items flow between them, the foundation of a Kanban board. Drag cards across columns and the counts follow.',
-  section: 'Basics',
-  tags: ['group', 'kanban', 'transfer'],
-  docs: [],
-  provenance: 'legacy',
+    'A task board: drag a card from "To do" into "Doing" or "Done". Columns that share a group name trade items, and each column\'s count updates as cards arrive and leave.',
+  section: 'Groups',
+  tags: ['group', 'kanban', 'onSort'],
+  docs: ['repo/README.md'],
+  provenance: 'pure',
   added: '2026-06-14',
 });

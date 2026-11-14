@@ -1,0 +1,39 @@
+/* Lifted card: sticky notes and the tilted floating copy */
+[data-example='sortablejs/drag-class'] {
+  .board {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: min(100%, 300px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .note {
+    padding: 9px var(--space-3);
+    background: var(--paper);
+    border-radius: 3px;
+    color: #2d2d2d;
+    font-size: 13px;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.25);
+    cursor: grab;
+    user-select: none;
+  }
+  /* The floating copy has inline opacity and transform from Sortable, so use the independent
+     rotate and scale properties, and !important for the opacity. */
+  .lifted {
+    rotate: 4deg;
+    scale: 1.06;
+    opacity: 1 !important;
+    box-shadow: 0 14px 22px rgb(0 0 0 / 0.45);
+    cursor: grabbing;
+  }
+  .hole {
+    opacity: 0.3;
+  }
+  .hint {
+    margin: var(--space-3) 0 0;
+    color: var(--fg-3);
+    font-size: 12px;
+  }
+}

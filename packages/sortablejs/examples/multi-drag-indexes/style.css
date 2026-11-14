@@ -1,0 +1,50 @@
+/* Multi-drag indexes: route list and the event report */
+[data-example='sortablejs/multi-drag-indexes'] {
+  .layout {
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 108px minmax(0, 190px);
+    gap: 10px;
+    align-items: start;
+  }
+  .route {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .stop {
+    padding: 4px 8px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--blue);
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--fg-1);
+    cursor: grab;
+    user-select: none;
+  }
+  .ticked {
+    background: color-mix(in srgb, var(--accent) 22%, var(--bg-surface));
+    border-color: var(--accent);
+  }
+  .report {
+    margin: 0;
+    padding: 6px 8px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font: 10px/1.5 ui-monospace, monospace;
+    color: var(--fg-2);
+    min-height: 60px;
+  }
+  .hint {
+    margin: 10px auto 0;
+    max-width: 380px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--fg-3);
+  }
+}

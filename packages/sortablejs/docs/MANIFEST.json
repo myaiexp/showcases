@@ -1,5 +1,42 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T15:11:03.217Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/SortableJS/Sortable",
+      "ref": "1.15.7",
+      "paths": [
+        "README.md",
+        "plugins/README.md",
+        "plugins/*/README.md"
+      ],
+      "commit": "031649b8116565e02419e8aa2d252d7d8c82b9da"
+    }
+  ],
+  "files": {
+    "repo/plugins/AutoScroll/README.md": {
+      "url": "https://github.com/SortableJS/Sortable/blob/031649b8116565e02419e8aa2d252d7d8c82b9da/plugins/AutoScroll/README.md",
+      "sha256": "120b07a381c19a4779d2d7c03e6259f876d317e1a6f348948206990e09fe1d4a"
+    },
+    "repo/plugins/MultiDrag/README.md": {
+      "url": "https://github.com/SortableJS/Sortable/blob/031649b8116565e02419e8aa2d252d7d8c82b9da/plugins/MultiDrag/README.md",
+      "sha256": "51f670689e554a791bc709e6d77062ac2b14ffe77437036c541c4ff9b0c9ba95"
+    },
+    "repo/plugins/OnSpill/README.md": {
+      "url": "https://github.com/SortableJS/Sortable/blob/031649b8116565e02419e8aa2d252d7d8c82b9da/plugins/OnSpill/README.md",
+      "sha256": "8b42708a49771fe1ba5afabb44f3c82667e205a5efee3b036df7e46baf53ce51"
+    },
+    "repo/plugins/README.md": {
+      "url": "https://github.com/SortableJS/Sortable/blob/031649b8116565e02419e8aa2d252d7d8c82b9da/plugins/README.md",
+      "sha256": "fb60f2662be4dc6784ad278037b45577f34e0d50ce7e75c101f40f36212f145c"
+    },
+    "repo/plugins/Swap/README.md": {
+      "url": "https://github.com/SortableJS/Sortable/blob/031649b8116565e02419e8aa2d252d7d8c82b9da/plugins/Swap/README.md",
+      "sha256": "e98b5f1a74e6a1c076086aa01eb75b0f6ba633becde6861319a967ce84249a18"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/SortableJS/Sortable/blob/031649b8116565e02419e8aa2d252d7d8c82b9da/README.md",
+      "sha256": "4a9d58be14898e3b14754688fc595f855f730f6fb51c02e62e96645407dd79f6"
+    }
+  }
 }

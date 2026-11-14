@@ -1,0 +1,39 @@
+/* Shopping basket: rows with a quantity field and a line total */
+[data-example='sortablejs/inputs-inside-items'] {
+  .basket {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: min(calc(100% - 8px), 320px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 10px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--fg-1);
+    font-size: 13px;
+    cursor: grab;
+  }
+  .name { flex: 1; user-select: none; }
+  .qty {
+    width: 52px;
+    padding: 2px 4px;
+    background: var(--bg);
+    color: var(--fg-1);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font: inherit;
+    cursor: text;
+  }
+  .sum { width: 36px; text-align: right; color: var(--green); font-family: ui-monospace, monospace; font-size: 12px; }
+  .total { width: min(calc(100% - 8px), 320px); text-align: right; margin-top: 6px; color: var(--fg-1); font-weight: 600; font-size: 13px; }
+  .ghost { opacity: 0.35; border-style: dashed; }
+  .hint { color: var(--fg-3); font-size: 13px; text-align: center; margin: var(--space-3) 0 0; max-width: 360px; }
+}

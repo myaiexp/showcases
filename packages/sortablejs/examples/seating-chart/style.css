@@ -1,0 +1,66 @@
+/* Seating chart: table grid, guest tiles and the highlighted seat */
+[data-example='sortablejs/seating-chart'] {
+  .table {
+    margin-inline: auto;
+    padding: 10px;
+    border: 2px solid var(--border);
+    border-radius: 18px;
+    background: var(--bg-surface);
+    width: min(100%, 420px);
+  }
+  .seats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    counter-reset: seat;
+  }
+  .guest {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 8px 4px 6px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--fg-1);
+    font-size: 11px;
+    cursor: grab;
+    user-select: none;
+    counter-increment: seat;
+  }
+  .guest::before {
+    content: counter(seat);
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    font: 10px ui-monospace, monospace;
+    color: var(--fg-3);
+  }
+  .face {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .who {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+  .target-seat {
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 22%, var(--bg));
+  }
+  .lifted {
+    opacity: 0.4;
+    border-style: dashed;
+  }
+  .hint {
+    margin: 6px auto 0;
+    max-width: 420px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--fg-3);
+  }
+}

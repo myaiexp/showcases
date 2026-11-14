@@ -1,0 +1,38 @@
+/* Animation speed: three swatch columns */
+[data-example='sortablejs/animation-speed'] {
+  .cols {
+    display: grid;
+    grid-template-columns: repeat(3, 72px);
+    gap: var(--space-5);
+    justify-content: center;
+  }
+  h3 {
+    margin: 0 0 6px;
+    text-align: center;
+    font: 12px ui-monospace, monospace;
+    color: var(--fg-3);
+  }
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .chip {
+    height: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 6px;
+    color: rgb(0 0 0 / 0.7);
+    font: 600 13px ui-monospace, monospace;
+    cursor: grab;
+    user-select: none;
+  }
+  .hint {
+    margin: var(--space-3) 0 0;
+    color: var(--fg-3);
+    font-size: 12px;
+  }
+}
