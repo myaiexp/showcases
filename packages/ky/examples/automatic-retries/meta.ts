@@ -1,13 +1,13 @@
-// Automatic retries example metadata for the ky package
+// ky example: automatic retries with growing pauses on a flaky server
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
   title: 'Automatic retries',
   summary:
-    'A simulated server returns 503 twice before succeeding. ky retries with backoff and the beforeRetry hook lets you watch it happen. No real network involved.',
-  section: 'Basics',
-  tags: ['retry', 'hooks', 'fetch'],
-  docs: [],
-  provenance: 'legacy',
-  added: '2026-06-14',
+    'Servers hiccup. When one answers "busy" (503), Ky waits a moment and asks again, then waits twice as long and asks once more. The timeline shows each try and each pause; your code only ever sees the final success.',
+  section: 'Retry',
+  tags: ['retry', '503', 'backoff', 'limit'],
+  docs: ['repo/readme.md'],
+  provenance: 'pure',
+  added: '2026-11-14',
 });

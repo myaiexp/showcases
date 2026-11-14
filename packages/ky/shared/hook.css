@@ -1,0 +1,98 @@
+/* Hooks chapter: the lane of hook chips and the hook gantt */
+.hook-lane {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.hook-chip {
+  flex: 1 1 0;
+  min-width: 56px;
+  display: flex;
+  flex-direction: column;
+  padding: 1px 6px;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  color: var(--fg-3);
+  overflow: hidden;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+.ky-card .hook-chip {
+  padding: 0 4px;
+  min-width: 72px;
+  font-size: 0.9em;
+}
+.hook-chip[data-state='ran'] {
+  border-style: solid;
+  border-color: var(--border);
+  color: var(--fg-2);
+}
+.hook-chip[data-state='lit'] {
+  border-style: solid;
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 22%, var(--bg-surface));
+  color: var(--fg-1);
+}
+.hook-name {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  white-space: nowrap;
+}
+.hook-name > span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+.hook-count {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.hook-note {
+  color: var(--tone, var(--fg-2));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 1.35em;
+  font-size: 0.9em;
+}
+.ky-card .hook-note {
+  font-size: 0.85em;
+}
+.hook-gantt {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.hook-gantt-row {
+  position: relative;
+  height: 20px;
+}
+.ky-card .hook-gantt-row {
+  height: 14px;
+}
+.hook-gantt-row > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.8em;
+  color: var(--fg-3);
+  z-index: 1;
+  padding-left: 2px;
+}
+.hook-bar {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  min-width: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fg-1);
+  background: color-mix(in srgb, var(--tone, var(--accent)) 35%, var(--bg-surface));
+  border: 1px solid var(--tone, var(--accent));
+}

@@ -1,5 +1,12 @@
 {
-  "license": "none found",
-  "redistribute": false,
-  "sources": []
+  "license": "MIT (sindresorhus/ky license covers the repo: the readme and the TypeScript source with its TSDoc)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/sindresorhus/ky",
+      "ref": "v2.2.0",
+      "paths": ["readme.md", "license", "source/types/*.ts", "source/errors/*.ts"]
+    }
+  ]
 }

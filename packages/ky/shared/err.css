@@ -1,0 +1,73 @@
+/* HTTP errors and Error classes chapters: checklists, status chips, friendly toast */
+.err-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.err-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--tone, var(--accent)) 28%, transparent) var(--fill, 0%),
+    transparent var(--fill, 0%)
+  );
+}
+.err-label {
+  flex-shrink: 0;
+  color: var(--fg-1);
+  white-space: nowrap;
+}
+.err-verdict {
+  min-width: 0;
+  color: var(--tone, var(--fg-3));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.err-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+.err-grid[data-wide] {
+  grid-template-columns: repeat(6, 1fr);
+}
+.err-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px 2px;
+  font: inherit;
+  color: var(--fg-2);
+  background: var(--bg-surface);
+  border: 1px solid var(--tone, var(--border));
+  border-radius: 5px;
+  cursor: default;
+}
+button.err-chip {
+  cursor: pointer;
+}
+.err-chip b {
+  font-weight: 600;
+  color: var(--fg-1);
+}
+.err-chip small {
+  font-size: 0.85em;
+  color: var(--tone, var(--fg-3));
+}
+.err-chip[data-now] {
+  outline: 2px solid var(--accent);
+}
+.err-chip[data-tone] {
+  background: color-mix(in srgb, var(--tone) 14%, var(--bg-surface));
+}
+.err-toast {
+  padding: 2px 6px;
+  border-left: 3px solid var(--tone, var(--border));
+  color: var(--fg-1);
+  background: color-mix(in srgb, var(--tone, var(--fg-3)) 12%, transparent);
+}

@@ -1,70 +1,56 @@
-// ky.get(url).json() demo: static sample in previews, live request on click
+// ky.get(url).json(): ask the server for a user and get plain data back in one line
 import ky from 'ky';
 import type { Mount } from '@/types.ts';
-import './style.css';
+import { button } from '../../shared/controls.ts';
+import { resultView, requestView } from '../../shared/panels.ts';
+import { createStage } from '../../shared/stage.ts';
 
-interface User {
-  id: number;
-  name: string;
-  email: string;
-  company?: { name?: string };
-  address?: { city?: string };
-}
+const USERS = [
+  { id: 1, name: 'Aino', city: 'Tampere', plan: 'pro' },
+  { id: 2, name: 'Bashir', city: 'Lyon', plan: 'free' },
+  { id: 3, name: 'Chen', city: 'Taipei', plan: 'pro' },
+  { id: 4, name: 'Dalia', city: 'Lima', plan: 'team' },
+];
 
-const pick = (u: User): string =>
-  JSON.stringify({ id: u.id, name: u.name, email: u.email, company: u.company?.name, city: u.address?.city }, null, 2);
-
-const SAMPLE: User = {
-  id: 3,
-  name: 'Clementine Bauch',
-  email: 'Nathan@yesenia.net',
-  company: { name: 'Romaguera-Jacobson' },
-  address: { city: 'McKenziehaven' },
-};
-
-const mount: Mount = (el, { preview, signal }) => {
-  const root = document.createElement('div');
-  root.className = preview ? 'root preview' : 'root';
-  el.append(root);
-  const request = document.createElement('div');
-  request.className = 'request';
-  const out = document.createElement('pre');
-  out.className = 'out';
-
-  if (preview) {
-    request.textContent = 'GET https://jsonplaceholder.typicode.com/users/3';
-    out.textContent = pick(SAMPLE);
-    root.append(request, out);
-    return () => undefined;
-  }
-
-  const button = document.createElement('button');
-  button.className = 'btn';
-  button.textContent = 'GET a random user';
-  out.textContent = 'Click the button to fetch.';
-  root.append(button, request, out);
-
-  button.addEventListener('click', async () => {
-    const id = Math.ceil(Math.random() * 10);
-    const url = `https://jsonplaceholder.typicode.com/users/${id}`;
-    request.textContent = `GET ${url}`;
-    out.classList.remove('err');
-    out.textContent = 'Loading...';
-    button.disabled = true;
-    try {
-      const user = await ky.get(url, { signal }).json<User>();
-      out.textContent = pick(user);
-    } catch (err) {
-      if (signal.aborted || (err instanceof DOMException && err.name === 'AbortError')) return;
-      out.classList.add('err');
-      out.textContent =
-        'Request failed: ' + (err instanceof Error ? err.message : String(err)) +
-        '\n(Check your connection: this demo hits a live API.)';
-    } finally {
-      if (!signal.aborted) button.disabled = false;
-    }
+const mount: Mount = (el, ctx) => {
+  const stage = createStage(el, ctx, { hint: 'Each press asks the pretend server for the next user.' });
+  const server = stage.server({
+    '/users/*': (req) => {
+      const id = Number(req.url.pathname.split('/').pop());
+      const user = USERS.find((u) => u.id === id);
+      return user ? { json: user } : { status: 404, json: { error: 'No such user' } };
+    },
   });
-  return () => undefined;
+  stage.wire(server);
+  const row = stage.row();
+  const seen = requestView(row, 'Server received', { headers: ['accept'], mark: ['accept'] });
+  const result = resultView(row, 'const user =');
+  server.on((e) => e.kind === 'arrive' && seen.show(e.req));
+
+  // The pretend server stands in for the network: Ky sends through it via the `fetch` option.
+  const api = ky.extend({ fetch: server.fetch });
+
+  let next = 0;
+  const load = async (): Promise<void> => {
+    const id = USERS[next++ % USERS.length]!.id;
+    result.pending();
+    stage.say(`ky.get('…/users/${id}').json()`);
+    // One line: send the request, check the status, parse the JSON.
+    const user = await api.get(`https://api.example/users/${id}`).json<(typeof USERS)[number]>();
+    result.value(user);
+    stage.say(`Got ${user.name} from ${user.city}: a plain object, ready to use.`, 'ok');
+  };
+
+  if (stage.preview) {
+    stage.play(async (wait) => {
+      await load();
+      await wait(1600);
+    });
+  } else {
+    button(stage.bar!, 'Load next user', () => stage.task(load));
+    stage.task(load);
+  }
+  return stage.dispose;
 };
 
 export default mount;
