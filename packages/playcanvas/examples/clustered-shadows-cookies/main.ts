@@ -104,9 +104,9 @@ const mount: Mount = async (el, ctx) => {
 
   return () => {
     orbit.dispose();
-    stage.dispose();
     star.destroy();
     grille.destroy();
+    stage.dispose();
   };
 };
 

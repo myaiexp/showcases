@@ -67,8 +67,8 @@ const mount: Mount = async (el, ctx) => {
   return () => {
     material.getShaderChunks('glsl').delete('gsplatModifyVS');
     material.getShaderChunks('wgsl').delete('gsplatModifyVS');
-    scene.dispose();
     lookup.destroy();
+    scene.dispose();
   };
 };
 

@@ -92,8 +92,8 @@ const mount: Mount = async (el, ctx) => {
 
   return () => {
     orbit.dispose();
-    stage.dispose();
     checker.destroy();
+    stage.dispose();
   };
 };
 

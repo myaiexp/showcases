@@ -57,9 +57,9 @@ const mount: Mount = async (el, ctx) => {
 
   return () => {
     orbit.dispose();
-    stage.dispose();
     renderTarget.destroy();
     colorBuffer.destroy();
+    stage.dispose();
   };
 };
 

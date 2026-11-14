@@ -9,8 +9,13 @@ import { createLog } from '../../shared/scripting.ts';
 const brief = (v: unknown): string => {
   if (v === null || v === undefined) return String(v);
   if (v instanceof pc.Texture) return `Texture ${v.width}x${v.height}`;
-  if (typeof v === 'object') return JSON.stringify(v).replace(/blob:[^"]+/, 'blob:...').slice(0, 54);
-  return String(v);
+  if (typeof v !== 'object') return String(v);
+  // Values can hold engine objects with cycles (app.destroy unloads the asset), which JSON can't print.
+  try {
+    return JSON.stringify(v).replace(/blob:[^"]+/, 'blob:...').slice(0, 54);
+  } catch {
+    return Object.prototype.toString.call(v);
+  }
 };
 
 const mount: Mount = async (el, ctx) => {
@@ -90,6 +95,7 @@ const mount: Mount = async (el, ctx) => {
   }
   return () => {
     disposed = true;
+    asset.off();
     urls.dispose();
     scene.dispose();
   };

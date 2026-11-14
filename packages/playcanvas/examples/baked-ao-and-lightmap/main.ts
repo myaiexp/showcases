@@ -85,9 +85,9 @@ const mount: Mount = async (el, ctx) => {
 
   return () => {
     orbit.dispose();
-    stage.dispose();
     aoTexture.destroy();
     lightTexture.destroy();
+    stage.dispose();
   };
 };
 

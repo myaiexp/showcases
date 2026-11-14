@@ -70,8 +70,8 @@ const mount: Mount = async (el, ctx) => {
   }
 
   return () => {
-    scene.dispose();
     sky.destroy();
+    scene.dispose();
   };
 };
 
