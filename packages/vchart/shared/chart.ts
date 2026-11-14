@@ -51,6 +51,12 @@ export interface Chart {
  * - Waterfall stackLabel text is dark even on the dark theme; set stackLabel.style.fill.
  * - The histogram `bin` transform works but is missing from the transform types (cast the spec).
  * - inverse on an untyped left axis does not reverse a horizontal bar chart; sort the data.
+ * - The default import does not register the liquid chart: call registerLiquidChart() first.
+ * - tickMask is hidden by the theme; it needs tickMask.visible: true.
+ * - A gauge segment's value is its end position: draw the longest band first, no stack.
+ * - A gaugePointer series needs radiusField, and a gauge's radius axis must stay a band
+ *   axis (a linear one throws "step is not a function").
+ * - A pie indicator with trigger 'select' does not follow setSelected.
  * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
  * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
  * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
