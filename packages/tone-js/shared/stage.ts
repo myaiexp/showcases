@@ -21,6 +21,14 @@ import { runLive } from './stage-live.ts';
  *   Tone.getTransport() or a new node there.
  * - That clock runs before any audio is rendered, so an analyser (Meter, FFT, Waveform,
  *   Follower) reads silence in a card. Cards draw meters from stage.samples() instead.
+ * - A card disposes what build() returned as soon as the render ends, before any cue fires:
+ *   read node values (asArray(), response curves, buffers) in play() and let the cue draw.
+ * - play() returning a stop function runs one pass until Stop (right for a started
+ *   Transport); return nothing for a phrase the full view should repeat.
+ * - A variant's apply() is synchronous: await anything async (Reverb.ready) in build().
+ * - ToneAudioBuffer.reverse flips the buffer in place, which is why sample() hands out copies.
+ * - LowpassCombFilter's feedback delay cannot go below one 128-sample block (5.8 ms at the
+ *   card rate), so keep its notes low enough that cards and the full view agree.
  * - Tone.Analyser, Meter and friends work live: the stage itself taps the Destination
  *   with an Analyser for the scope, so connecting another one there is fine.
  */
