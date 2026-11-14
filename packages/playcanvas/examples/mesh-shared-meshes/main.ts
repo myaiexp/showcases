@@ -1,4 +1,4 @@
-// One mesh, many mesh instances: change its vertices and every placement changes with it
+// One mesh, many mesh instances: change its vertices and all placements follow
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addSun, colorMaterial } from '../../shared/graphics-basics.ts';

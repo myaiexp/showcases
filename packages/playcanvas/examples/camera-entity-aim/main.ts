@@ -1,4 +1,4 @@
-// A camera is an entity: setPosition moves it and lookAt aims its -Z axis at a target
+// A camera is an entity: setPosition moves it and lookAt aims it at a target
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addGround, addSceneryRing, addShape, addSun } from '../../shared/graphics-basics.ts';

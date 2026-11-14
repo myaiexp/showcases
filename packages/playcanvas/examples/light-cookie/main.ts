@@ -1,4 +1,4 @@
-// Spot light cookie: a texture projected through the light, with angle, scale and offset
+// Spot light cookie: a texture projected through the light, with angle, scale
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene } from '../../shared/components.ts';

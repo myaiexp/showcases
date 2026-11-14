@@ -1,4 +1,4 @@
-// Picker: render IDs to a pick buffer, read the mesh instance and world point under a pixel
+// Picker: render IDs to a pick buffer, read the mesh instance under a pixel
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addShape, addSun, colorMaterial } from '../../shared/graphics-basics.ts';

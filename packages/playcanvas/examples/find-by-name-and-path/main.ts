@@ -1,4 +1,4 @@
-// Finding entities by name and path: findByName, find('name', ...), findByPath and path
+// Finding entities by name and path: findByName, find, findByPath and path
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene } from '../../shared/components.ts';

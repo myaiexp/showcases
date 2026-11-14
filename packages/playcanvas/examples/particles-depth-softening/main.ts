@@ -1,4 +1,4 @@
-// Particle depthSoftening: soft edges where particles meet geometry, via a depth grab pass
+// Particle depthSoftening: soft edges where particles meet geometry
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

@@ -1,4 +1,4 @@
-// Entity clone(): a deep copy with components, tags and children, outside the scene until added
+// Entity clone(): a deep copy with components, tags and children
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

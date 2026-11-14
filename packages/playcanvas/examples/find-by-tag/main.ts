@@ -1,4 +1,4 @@
-// Finding entities by tag: any of several tags, all of an array of tags, and tags.has
+// Finding entities by tag: any of several tags, all of an array, and tags.has
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene } from '../../shared/components.ts';

@@ -1,4 +1,4 @@
-// Runtime lightmaps: baked lights, lightmapped render components and app.lightmapper.bake()
+// Runtime lightmaps: baked lights, lightmapped renders, app.lightmapper.bake()
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, colorMaterial } from '../../shared/graphics-basics.ts';

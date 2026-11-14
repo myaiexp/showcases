@@ -1,4 +1,4 @@
-// Build a mesh from raw vertex streams: positions, normals, uvs, colours and indices
+// Build a mesh from raw vertex streams: positions, normals, uvs, colours
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addSun } from '../../shared/graphics-basics.ts';

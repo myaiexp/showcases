@@ -1,4 +1,4 @@
-// ammo.js physics: gravity, slow motion and pause with timeScale, stepping by hand
+// ammo.js physics: gravity, slow motion and pause with timeScale, manual steps
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { loadAmmo } from '../../shared/ammo.ts';

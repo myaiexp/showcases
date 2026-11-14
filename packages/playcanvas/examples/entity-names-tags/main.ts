@@ -1,4 +1,4 @@
-// Entity names and tags: add, remove, list and has, with one tag driving a colour
+// Entity names and tags: add, remove, list and has, with a tag driving colour
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

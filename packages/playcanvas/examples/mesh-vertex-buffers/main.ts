@@ -1,4 +1,4 @@
-// A mesh from your own VertexBuffer and IndexBuffer: interleaved float positions + 8-bit colours
+// A mesh from your own VertexBuffer and IndexBuffer: float positions, bytes
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera } from '../../shared/graphics-basics.ts';

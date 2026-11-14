@@ -1,4 +1,4 @@
-// pc.version and the device createGraphicsDevice settled on (WebGPU first, else WebGL 2)
+// pc.version and the device createGraphicsDevice chose (WebGPU, else WebGL 2)
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

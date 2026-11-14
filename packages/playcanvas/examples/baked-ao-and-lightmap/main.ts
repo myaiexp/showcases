@@ -1,4 +1,4 @@
-// Baked textures: an aoMap multiplies ambient light, a lightMap adds pre-computed light on UV1
+// Baked maps: an aoMap multiplies ambient light, a lightMap adds baked light
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addShape, addSun, colorMaterial } from '../../shared/graphics-basics.ts';

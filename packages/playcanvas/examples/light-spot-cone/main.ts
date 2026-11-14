@@ -1,4 +1,4 @@
-// Spot light innerConeAngle and outerConeAngle: where the light fades and where it ends
+// Spot light innerConeAngle and outerConeAngle: where light fades and ends
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene, material } from '../../shared/components.ts';

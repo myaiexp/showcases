@@ -1,4 +1,4 @@
-// Projection: perspective or orthographic, fov, orthoHeight and the aspect ratio
+// Projection: perspective or orthographic, fov, orthoHeight and aspect ratio
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addShape, addSun } from '../../shared/graphics-basics.ts';

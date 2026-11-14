@@ -1,4 +1,4 @@
-// Particle localSpace and wrap: a moving emitter leaves a trail, or carries its cloud along
+// Particle localSpace and wrap: a moving emitter leaves a trail or carries it
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

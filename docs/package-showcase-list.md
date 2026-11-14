@@ -48,7 +48,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 13 | VChart (`@visactor/vchart`) | 5 | v2 2025-06 | unchecked | 150 | Narrative/animated charts |
 | 14 | GSAP (`gsap`) ✅ built | 5 | 3.x, plugins free since 2025 | site | 250 | SplitText, MorphSVG, ScrollTrigger, Flip. Non-OSI licence |
 | 15 | Paper Shaders (`@paper-design/shaders`) | 5 | 0.0.x 2024-10 | unchecked | 30 | Shader-effect pack, vanilla build alongside React |
-| 16 | PlayCanvas (`playcanvas`) | 5 | v2 2024-08 | repo ✓ MIT | 200+ | Engine with Gaussian splats |
+| 16 | PlayCanvas (`playcanvas`) ✅ built | 5 | v2 2024-08 | repo ✓ MIT | 350 | Engine with Gaussian splats. Docs are the developer-site user manual (engine chapters plus the component reference); the Editor-based tutorials stay out because each embeds a demo project. Physics loads sync-ammo; splats, models and textures are generated in code |
 | 17 | AntV G6 (`@antv/g6`) | 5 | v5 2024-06 | unchecked MIT | 120 | Graph visualisation |
 | 18 | deck.gl (`deck.gl`) | 5 | v9 2024-03 | repo ✓ MIT | 150 | GPU geospatial layers |
 | 19 | Rive (`@rive-app/canvas`) | 5 | v2 2023-07 | repo ✗lic | 40 | State-machine art; needs `.riv` assets |

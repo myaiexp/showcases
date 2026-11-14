@@ -1,4 +1,4 @@
-// Camera stacking: later cameras draw over earlier ones, steered by priority and clear flags
+// Camera stacking: later cameras draw over earlier ones, by priority
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addSceneryRing, addShape, addSun } from '../../shared/graphics-basics.ts';

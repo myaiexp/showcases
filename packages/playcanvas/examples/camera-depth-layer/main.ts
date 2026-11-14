@@ -1,4 +1,4 @@
-// requestSceneDepthMap exposes uSceneDepthMap, which a water plane reads to foam where it meets objects
+// requestSceneDepthMap exposes uSceneDepthMap, used by a water plane for foam
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addShape, addSun } from '../../shared/graphics-basics.ts';

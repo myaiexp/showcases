@@ -1,4 +1,4 @@
-// worldToScreen pins HTML name tags on 3D entities; a negative z means behind the camera
+// worldToScreen pins HTML name tags on 3D entities; negative z is behind
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addShape, addSun } from '../../shared/graphics-basics.ts';

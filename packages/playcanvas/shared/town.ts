@@ -1,4 +1,4 @@
-// A small named, tagged entity tree for the finding-entities examples, with match highlighting
+// A small named, tagged entity tree for the finding-entities examples
 import * as pc from 'playcanvas';
 import { addShape, material } from './components.ts';
 

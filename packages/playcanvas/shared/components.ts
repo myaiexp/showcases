@@ -1,4 +1,4 @@
-// Scene setup for the Engine, Components and ECS chapters: camera, orbit, sun, materials
+// Scene setup for the Engine, Components and ECS chapters: camera, orbit, sun
 import * as pc from 'playcanvas';
 import type { MountContext } from '@/types.ts';
 import { createOrbit, type Orbit } from './orbit.ts';

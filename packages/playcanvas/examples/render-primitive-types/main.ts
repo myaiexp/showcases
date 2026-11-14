@@ -1,4 +1,4 @@
-// Render component: the six primitive types, shadows cast and received, a material each
+// Render component: the six primitive types, shadows cast and received
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createOrbit } from '../../shared/orbit.ts';

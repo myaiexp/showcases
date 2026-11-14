@@ -1,4 +1,4 @@
-// Particle stretch and alignToMotion: streaks along velocity and arrows that face their flight
+// Particle stretch and alignToMotion: streaks along velocity, facing flight
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene } from '../../shared/components.ts';

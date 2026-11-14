@@ -1,4 +1,4 @@
-// The coordinate system: +Y up, right-handed, and forward, right and up of a turned entity
+// The coordinate system: +Y up, right-handed, and forward, right and up vectors
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

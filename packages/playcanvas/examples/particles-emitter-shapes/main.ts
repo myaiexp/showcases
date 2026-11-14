@@ -1,4 +1,4 @@
-// Particle emitter shape: box extents or sphere radius, with an inner volume left empty
+// Particle emitter shape: box extents or sphere radius, with a hollow core
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene } from '../../shared/components.ts';

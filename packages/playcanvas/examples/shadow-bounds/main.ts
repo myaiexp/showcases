@@ -1,4 +1,4 @@
-// shadowBounds: fit a directional light's one shadow map to a box that follows a character
+// shadowBounds: fit a directional light's shadow map to a box on a character
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addShape, addSun } from '../../shared/graphics-basics.ts';

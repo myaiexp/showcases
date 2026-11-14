@@ -1,4 +1,4 @@
-// Shadow types on a directional light: PCF kernels, variance shadow maps and PCSS
+// Shadow types on a directional light: PCF kernels, variance maps and PCSS
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addCanvasLabels, addGround, addShape, addSun } from '../../shared/graphics-basics.ts';

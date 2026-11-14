@@ -1,4 +1,4 @@
-// Synthesised sounds as in-memory WAV blobs, loaded as audio assets with no network
+// Synthesised sounds as in-memory WAV blobs, loaded as audio assets offline
 import * as pc from 'playcanvas';
 
 const RATE = 22050;

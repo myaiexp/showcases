@@ -1,4 +1,4 @@
-// The ECS in one scene: an entity tree under app.root, the components on each, and app.systems
+// The ECS in one scene: an entity tree under app.root, components, app.systems
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

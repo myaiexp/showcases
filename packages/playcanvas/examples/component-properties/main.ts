@@ -1,4 +1,4 @@
-// Reading and changing component properties at runtime: a lamp's light component
+// Reading and changing component properties at runtime: a lamp's light
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

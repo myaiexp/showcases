@@ -138,8 +138,8 @@ const mount: Mount = async (el, ctx) => {
     if (registered && app.xr?.imageTracking.images.includes(registered as pc.XrTrackedImage)) app.xr.imageTracking.remove(registered as pc.XrTrackedImage);
     live = null;
     entry?.dispose();
-    scene.dispose();
     marker.destroy();
+    scene.dispose();
   };
 };
 

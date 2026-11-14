@@ -1,4 +1,4 @@
-// Finding with a test of your own, or by component: find(fn), findOne(fn), findComponents, forEach
+// Finding entities with a test function or by component: find, findComponents
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene, material } from '../../shared/components.ts';

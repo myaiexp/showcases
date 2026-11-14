@@ -1,4 +1,4 @@
-// AppOptions: input devices and other features stay null on the app unless you set them
+// AppOptions: input devices and other features stay null unless you set them
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createBaseApp, type BaseApp } from '../../shared/appbase.ts';

@@ -1,4 +1,4 @@
-// Edit a Geometry's positions before uploading it: a displaced plane becomes terrain
+// Edit a Geometry's positions before uploading it: a displaced plane as terrain
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addSun, colorMaterial } from '../../shared/graphics-basics.ts';

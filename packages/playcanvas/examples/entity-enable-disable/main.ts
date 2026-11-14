@@ -1,4 +1,4 @@
-// Entity enabled: disabling a parent switches off its children, and enabled reports the result
+// Entity enabled: disabling a parent switches off its children too
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

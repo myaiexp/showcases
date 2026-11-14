@@ -1,4 +1,4 @@
-// A camera's renderTarget sends its image to a texture, here the screen of an in-world monitor
+// A camera's renderTarget draws to a texture: the screen of an in-world monitor
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addShape, addSun, colorMaterial } from '../../shared/graphics-basics.ts';

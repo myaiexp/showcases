@@ -1,4 +1,4 @@
-// Light shadowUpdateMode: Realtime redraws shadows every frame, Once keeps the first one
+// Light shadowUpdateMode: Realtime redraws shadows every frame, Once keeps one
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

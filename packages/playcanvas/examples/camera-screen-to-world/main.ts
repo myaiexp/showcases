@@ -1,4 +1,4 @@
-// screenToWorld turns a 2D screen point into a 3D point at a chosen distance from the camera
+// screenToWorld turns a 2D screen point into a 3D point at a set distance
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addShape, addSun } from '../../shared/graphics-basics.ts';
