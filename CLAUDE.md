@@ -77,3 +77,12 @@ GitHub Pages. No service on the VPS.
   gets `three/webgpu` too; it works because both builds share `three.core.js`.
 - Spark examples must not fetch in cards: the only captured splat is the docs' `butterfly.spz`,
   loaded in full views, with `pushButterfly` as the card stand-in (`packages/spark/shared/`).
+- Babylon.js loads Havok and Recast WASM once per page through
+  `packages/babylon-js/shared/{havok,recast}.ts` (Vite's dep bundling moves Havok's .wasm).
+  Babylon has page-wide registries (glTF extensions, loader plugins, `RegisterMaterialPlugin`,
+  `TransformNode.BillboardUseParentOrientation`); an example that touches one undoes it on
+  cleanup, or attaches per instance instead.
+- ECharts: read the trap list in `packages/echarts/shared/chart.ts` before building, and add
+  to it. The option reference has one gallery section per series type (`Option: series.<type>`).
+  Tags are option paths: `test/echarts-citations.test.ts` fails when a tag's name is not in the
+  cited docs, usually a partial reached through `{{ use: }}` that `meta.docs` leaves out.

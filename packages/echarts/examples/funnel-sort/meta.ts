@@ -5,7 +5,7 @@ export default defineMeta({
   title: "Funnel: sort, gap and labels",
   summary:
     "A funnel of conversion stages. Selects change sort order, gap, label position and funnelAlign; the preview cycles through the variants.",
-  section: 'Option: Series',
+  section: 'Option: series.funnel',
   tags: ['funnel', 'sort', 'gap', 'label.position', 'funnelAlign'],
   docs: ['repo/en/option/series/funnel.md'],
   provenance: 'pure',

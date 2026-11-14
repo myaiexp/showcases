@@ -12,6 +12,7 @@ export default defineMeta({
     'repo/en/option/partial/group-id.md',
     'repo/contents/en/how-to/animation/transition.md',
     'repo/en/api/echarts-instance.md',
+    'repo/contents/en/concepts/event.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

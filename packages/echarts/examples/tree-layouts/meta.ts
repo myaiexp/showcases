@@ -5,7 +5,7 @@ export default defineMeta({
   title: "Tree: orthogonal and radial",
   summary:
     "A tree series in orthogonal or radial layout, with orient, initialTreeDepth and click-to-collapse.",
-  section: 'Option: Series',
+  section: 'Option: series.tree',
   tags: ['tree', 'layout', 'orient', 'radial', 'initialTreeDepth', 'expandAndCollapse'],
   docs: ['repo/en/option/series/tree.md'],
   provenance: 'pure',

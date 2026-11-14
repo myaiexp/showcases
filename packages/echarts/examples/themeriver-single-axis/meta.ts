@@ -5,9 +5,15 @@ export default defineMeta({
   title: "ThemeRiver on a singleAxis",
   summary:
     "A themeRiver of five streams on a time singleAxis, with the data drifting so the rivers flow.",
-  section: 'Option: Series',
+  section: 'Option: series.themeRiver',
   tags: ['themeRiver', 'singleAxis', 'boundaryGap', 'axisPointer'],
-  docs: ['repo/en/option/series/themeRiver.md', 'repo/en/option/component/single-axis.md'],
+  docs: [
+    'repo/en/option/series/themeRiver.md',
+    'repo/en/option/component/single-axis.md',
+    'repo/en/option/component/axis-common.md',
+    'repo/en/option/partial/axisPointer-common.md',
+    'repo/en/option/component/tooltip.md',
+  ],
   provenance: 'pure',
   added: '2026-11-13',
 });

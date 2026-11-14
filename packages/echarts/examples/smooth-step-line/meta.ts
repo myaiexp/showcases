@@ -11,6 +11,7 @@ export default defineMeta({
     'repo/contents/en/how-to/chart-types/line/smooth-line.md',
     'repo/contents/en/how-to/chart-types/line/step-line.md',
     'repo/en/option/series/line.md',
+    'repo/en/option/partial/symbol.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

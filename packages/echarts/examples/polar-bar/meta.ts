@@ -13,6 +13,7 @@ export default defineMeta({
     'repo/en/option/component/polar.md',
     'repo/en/option/component/angle-axis.md',
     'repo/en/option/component/radius-axis.md',
+    'repo/en/option/partial/coord-sys.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

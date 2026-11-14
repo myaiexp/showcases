@@ -8,12 +8,36 @@ importers:
 
   .:
     dependencies:
+      '@babylonjs/addons':
+        specifier: 9.36.0
+        version: 9.36.0(@babylonjs/core@9.36.0)
+      '@babylonjs/controls':
+        specifier: 2.0.0-alpha.1
+        version: 2.0.0-alpha.1(@babylonjs/core@9.36.0)
       '@babylonjs/core':
         specifier: 9.36.0
         version: 9.36.0
       '@babylonjs/gui':
         specifier: 9.36.0
         version: 9.36.0(@babylonjs/core@9.36.0)
+      '@babylonjs/havok':
+        specifier: ^1.3.14
+        version: 1.3.14
+      '@babylonjs/loaders':
+        specifier: 9.36.0
+        version: 9.36.0(@babylonjs/core@9.36.0)(babylonjs-gltf2interface@9.36.0)
+      '@babylonjs/serializers':
+        specifier: 9.36.0
+        version: 9.36.0(@babylonjs/core@9.36.0)(babylonjs-gltf2interface@9.36.0)
+      '@babylonjs/smart-filters':
+        specifier: 9.36.0
+        version: 9.36.0(@babylonjs/core@9.36.0)
+      '@babylonjs/smart-filters-blocks':
+        specifier: 9.36.0
+        version: 9.36.0(@babylonjs/core@9.36.0)
+      '@babylonjs/viewer':
+        specifier: 9.36.0
+        version: 9.36.0(@babylonjs/core@9.36.0)(@babylonjs/loaders@9.36.0(@babylonjs/core@9.36.0)(babylonjs-gltf2interface@9.36.0))
       '@chenglou/pretext':
         specifier: ^1.0.0
         version: 1.0.0
@@ -47,6 +71,12 @@ importers:
       '@perspective-dev/viewer-datagrid':
         specifier: 5.9.1
         version: 5.9.1
+      '@recast-navigation/core':
+        specifier: ^0.44.0
+        version: 0.44.0
+      '@recast-navigation/generators':
+        specifier: ^0.44.0
+        version: 0.44.0
       '@sigma/export-image':
         specifier: ^4.0.0
         version: 4.0.0(sigma@4.0.6(graphology-types@0.24.8))
@@ -217,6 +247,16 @@ packages:
     resolution: {integrity: sha512-Y5tqevQaUAZhhj82BpYMNC1ssvLQTVAfwKdm8iy8qwmhvC2/CpcAu8OC+QEtjM7pMk7knx83u1Qj8gzkicyelw==}
     engines: {node: '>=6.9.0'}
 
+  '@babylonjs/addons@9.36.0':
+    resolution: {integrity: sha512-uXSaqyS0WKgO0DfNI5ZuW5ewFv4mWzv62DyTQa91nCM7398xLHYeCIcBn8jpzEoWfmJlQMHHSWg5B+JjbHlaFw==}
+    peerDependencies:
+      '@babylonjs/core': ^9.0.0
+
+  '@babylonjs/controls@2.0.0-alpha.1':
+    resolution: {integrity: sha512-aiL3kvy9A5RH+RYtngNdWpfDDbq/yGEKSCtj6TwInl0qY36XdlgPs832OVMlpT97CSY5c3nG7BSWnBoFIPg5qQ==}
+    peerDependencies:
+      '@babylonjs/core': '>=5.0.0-alpha.54'
+
   '@babylonjs/core@9.36.0':
     resolution: {integrity: sha512-PCrCshQ6hhvyxsp/FAq7GMPrmX8asloy+fXs1+mF2SCREx0hqCb4xtfbIoyID43rqX8+1UTw5RtodixXowRp7w==}
 
@@ -224,6 +264,41 @@ packages:
     resolution: {integrity: sha512-MDVWx+vAWud/1Wm9HiSHEBko3WRri39y+Inn2ofyCpKT8mo92n/w9OuZAGqUtJRx4VSiKqjLxM9M3HcaH9njzg==}
     peerDependencies:
       '@babylonjs/core': ^9.0.0
+
+  '@babylonjs/havok@1.3.14':
+    resolution: {integrity: sha512-+j2FDwLtkh5Gb//KizE8Ks3GIB/3vH8Yx9cQsMvZQpsKkH5gn089wIlJ9Yt8dJxbwBmWKGpMTIXxZE7YdOHUnQ==}
+
+  '@babylonjs/loaders@9.36.0':
+    resolution: {integrity: sha512-jjTbfUztgiuBQ4I2lX4JJHJmZ8oB9yLVq8NLn9HVq8VGzn5HdpKQmK0knw4wCX+Nq+QYAT/WXmHbopyOAHk2CA==}
+    peerDependencies:
+      '@babylonjs/core': ^9.0.0
+      babylonjs-gltf2interface: ^9.0.0
+
+  '@babylonjs/serializers@9.36.0':
+    resolution: {integrity: sha512-2MJwBg3yaR9SR0HoiZfCKMRv3XZSX0V6rxci7sLE3XeMWgMEA4TyEXUb2g4icRrNC2pEt8OjdWxzyupmb4cmsg==}
+    peerDependencies:
+      '@babylonjs/core': ^9.0.0
+      babylonjs-gltf2interface: ^9.0.0
+
+  '@babylonjs/smart-filters-blocks@9.36.0':
+    resolution: {integrity: sha512-KHfqohmQZnNJnQfJBMotl/Q9AKCuH97KTb8iEvfwESotXlIm4G/1mlXUHMnue9sgogd7qEUpe4wdyV0O2udeHA==}
+    peerDependencies:
+      '@babylonjs/core': ^7.47.3 || ^8.0.1 || ^9.0.0
+
+  '@babylonjs/smart-filters@9.36.0':
+    resolution: {integrity: sha512-sYFk8Ty1NPKtizymfnvBUC5XOJtpCQ1BlShZ+NHgD1LUfu0WWyv/HcLOKYRHLF1AoHkjzIwwVSHpD0E+Nr675w==}
+    peerDependencies:
+      '@babylonjs/core': ^7.47.3 || ^8.0.1 || ^9.0.0
+
+  '@babylonjs/viewer@9.36.0':
+    resolution: {integrity: sha512-IMJaEnpIQ+blb0nvqz0uhAh+G7Cob+7opTVmDf6c0um2TtAYFeMlb6b5IvXnAQod+HtWSfXPOfz0aV9Eq6ISwA==}
+    peerDependencies:
+      '@babylonjs/core': ^9.0.0
+      '@babylonjs/lite': ^1.23.0
+      '@babylonjs/loaders': ^9.0.0
+    peerDependenciesMeta:
+      '@babylonjs/lite':
+        optional: true
 
   '@braintree/sanitize-url@7.1.2':
     resolution: {integrity: sha512-jigsZK+sMF/cuiB7sERuo9V7N9jx+dhmHHnQyDSVdpZwVutaBu7WvNYqMDLSgFgfB30n452TP3vjDAvFC973mA==}
@@ -334,6 +409,12 @@ packages:
 
   '@kurkle/color@0.3.4':
     resolution: {integrity: sha512-M5UknZPHRu3DEDWoipU6sE8PdkZ6Z/S+v4dD+Ke8IaNlpdSQah50lz1KtcFBa2vsdOnwbbnxJwVM4wty6udA5w==}
+
+  '@lit-labs/ssr-dom-shim@1.6.0':
+    resolution: {integrity: sha512-VHb0ALPMTlgKjM6yIxxoQNnpKyUKLD04VzeQdsiXkMqkvYlAHxq9glGLmgbb889/1GsohSOAjvQYoiBppXFqrQ==}
+
+  '@lit/reactive-element@2.1.2':
+    resolution: {integrity: sha512-pbCDiVMnne1lYUIaYNN5wrwQXDtHaYtg7YEFPeW+hws6U47WeFvISGUWekPGKWOP1ygrs0ef0o1VJMk1exos5A==}
 
   '@mapbox/jsonlint-lines-primitives@2.0.3':
     resolution: {integrity: sha512-0SElaV0uMxEnxzBhhX9WTuPyUeMsAN/SS0i16tjuba4/mio63MG9khjC1a0JAiPGXAwvwm4UfHJURCN7nyudQg==}
@@ -508,6 +589,15 @@ packages:
     resolution: {integrity: sha512-VNlZuifu4tHdxWPfHvoMfKsHA9kVTCGkduv5vKVTdinm8wHFJNhyVB5RzIMiRFj0q3RKoCbP68u2zaoBSiFueg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
+
+  '@recast-navigation/core@0.44.0':
+    resolution: {integrity: sha512-N4YO9JBXrGFf3LkrhXmABa7pEwLHvq/gq6o7pLKKu5A4JAp+A5y/9424ps3cVpO1m7ibh3zlXmeewTut9LeXQw==}
+
+  '@recast-navigation/generators@0.44.0':
+    resolution: {integrity: sha512-i2N/sCfuq7IJcSuMmHuX2Uer6oonr9PzFZTrPpwS/e2t+ZpVLHb3DHFY9evKrL2X8diO7sDUDBOpTfW/4Nwucw==}
+
+  '@recast-navigation/wasm@0.44.0':
+    resolution: {integrity: sha512-VNv7xv50cFCdsGd2LdQWZqtLcWXB7nyi4Ilq9t5GMn3GEfCmJEbbeZWSXX5Mgdc4yj71QueTv15V7hPDAQ9gaw==}
 
   '@rolldown/binding-android-arm-eabi@1.2.19':
     resolution: {integrity: sha512-e+Ebe0WT+9tbXmNKPIiC8YrWAHYwug3m6i4p3rZGGulfZri1jtI4HslT+OZnFf/OIHowWF71DTlHwXBP2SiA7A==}
@@ -774,6 +864,9 @@ packages:
     resolution: {integrity: sha512-I688mi107oflZOpzhs4EwasCN4ycLlZHf7XAGhM6EQIHEJkRTEuTL08lemIZOQ1YAACJoNoCzAiSDCJujpJLHA==}
     deprecated: This is a stub types definition. earcut provides its own type definitions, so you do not need this installed.
 
+  '@types/emscripten@1.41.6':
+    resolution: {integrity: sha512-uN+9i8bFT5CUcZfyIEYDrSueACEyKGbUs5kC/72DGlZZoinh84sJfVV0i8UOJD1asdzkvLPBRrKs41kZ8MdEXg==}
+
   '@types/estree@1.0.10':
     resolution: {integrity: sha512-lTyOMnOcmRBzdCv6/4zUZCrEhV0xrqQiUZBZtVcbmLHBXKLnN8q89v/wKRF/Q0HbwVsqbIG3o5HDoFl9sduM+g==}
 
@@ -999,6 +1092,9 @@ packages:
   automation-events@7.1.19:
     resolution: {integrity: sha512-cD+TLhJTI0q4AI3ktd353lrGZiVa9AchowSDzQzzGjSoYe22js4vlS32VUtWuaulghi1Yq0KYNWKk9wWuGymPA==}
     engines: {node: '>=18.2.0'}
+
+  babylonjs-gltf2interface@9.36.0:
+    resolution: {integrity: sha512-FFt9u17MasOdMNlevIJFkqKiIlRayT4zf+XMD0cTAyrhxCkjORPfRfZMEEtpUSveJiovcE7f2gg7tCfuyQtZEg==}
 
   bidi-js@1.1.0:
     resolution: {integrity: sha512-fX1Onk0tdVPC7obPWB5EbJ1z7NVhLq4m2xZLq2YXBkxzMXIGRpNMU88n0EPgWseKl12J7zXs7qrDxPK4sRs2fg==}
@@ -1490,6 +1586,15 @@ packages:
     resolution: {integrity: sha512-WkUDrojuJs0xkgGf2udWxa3yGBRxPtxUkB79i6aCZLRgc7PM8fZe9TosfPDcvEpQZbuFASnHYmRLBLUbmLOIIA==}
     engines: {node: '>= 12.0.0'}
 
+  lit-element@4.2.2:
+    resolution: {integrity: sha512-aFKhNToWxoyhkNDmWZwEva2SlQia+jfG0fjIWV//YeTaWrVnOxD89dPKfigCUspXFmjzOEUQpOkejH5Ly6sG0w==}
+
+  lit-html@3.3.3:
+    resolution: {integrity: sha512-el8M6jK2o3RXBnrSHX3ZKrsN8zEV63pSExTO1wYJz7QndGYZ8353e2a5PPX+qHe2aGayfnchQmkAojaWAREOIA==}
+
+  lit@3.3.3:
+    resolution: {integrity: sha512-fycuvZg/hkpozL00lm1pEJH5nN/lr9ZXd6mJI2HSN4+Bzc+LDNdEApJ6HFbPkdFNHLvOplIIuJvxkS4XUxqirw==}
+
   lodash-es@4.18.1:
     resolution: {integrity: sha512-J8xewKD/Gk22OZbhpOVSwcs60zhd95ESDwezOFuA3/099925PdHJ7OFHNTGtajL3AlZkykD32HykiMo+BIBI8A==}
 
@@ -1891,11 +1996,49 @@ snapshots:
 
   '@babel/runtime@7.29.14': {}
 
+  '@babylonjs/addons@9.36.0(@babylonjs/core@9.36.0)':
+    dependencies:
+      '@babylonjs/core': 9.36.0
+
+  '@babylonjs/controls@2.0.0-alpha.1(@babylonjs/core@9.36.0)':
+    dependencies:
+      '@babylonjs/core': 9.36.0
+      tslib: 2.9.1
+
   '@babylonjs/core@9.36.0': {}
 
   '@babylonjs/gui@9.36.0(@babylonjs/core@9.36.0)':
     dependencies:
       '@babylonjs/core': 9.36.0
+
+  '@babylonjs/havok@1.3.14':
+    dependencies:
+      '@types/emscripten': 1.41.6
+
+  '@babylonjs/loaders@9.36.0(@babylonjs/core@9.36.0)(babylonjs-gltf2interface@9.36.0)':
+    dependencies:
+      '@babylonjs/core': 9.36.0
+      babylonjs-gltf2interface: 9.36.0
+
+  '@babylonjs/serializers@9.36.0(@babylonjs/core@9.36.0)(babylonjs-gltf2interface@9.36.0)':
+    dependencies:
+      '@babylonjs/core': 9.36.0
+      babylonjs-gltf2interface: 9.36.0
+
+  '@babylonjs/smart-filters-blocks@9.36.0(@babylonjs/core@9.36.0)':
+    dependencies:
+      '@babylonjs/core': 9.36.0
+      '@babylonjs/smart-filters': 9.36.0(@babylonjs/core@9.36.0)
+
+  '@babylonjs/smart-filters@9.36.0(@babylonjs/core@9.36.0)':
+    dependencies:
+      '@babylonjs/core': 9.36.0
+
+  '@babylonjs/viewer@9.36.0(@babylonjs/core@9.36.0)(@babylonjs/loaders@9.36.0(@babylonjs/core@9.36.0)(babylonjs-gltf2interface@9.36.0))':
+    dependencies:
+      '@babylonjs/core': 9.36.0
+      '@babylonjs/loaders': 9.36.0(@babylonjs/core@9.36.0)(babylonjs-gltf2interface@9.36.0)
+      lit: 3.3.3
 
   '@braintree/sanitize-url@7.1.2': {}
 
@@ -2021,6 +2164,12 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.6.0
 
   '@kurkle/color@0.3.4': {}
+
+  '@lit-labs/ssr-dom-shim@1.6.0': {}
+
+  '@lit/reactive-element@2.1.2':
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.6.0
 
   '@mapbox/jsonlint-lines-primitives@2.0.3': {}
 
@@ -2191,6 +2340,17 @@ snapshots:
   '@react-types/shared@3.37.0(react@19.3.1)':
     dependencies:
       react: 19.3.1
+
+  '@recast-navigation/core@0.44.0':
+    dependencies:
+      '@recast-navigation/wasm': 0.44.0
+
+  '@recast-navigation/generators@0.44.0':
+    dependencies:
+      '@recast-navigation/core': 0.44.0
+      '@recast-navigation/wasm': 0.44.0
+
+  '@recast-navigation/wasm@0.44.0': {}
 
   '@rolldown/binding-android-arm-eabi@1.2.19':
     optional: true
@@ -2424,6 +2584,8 @@ snapshots:
     dependencies:
       earcut: 3.2.4
 
+  '@types/emscripten@1.41.6': {}
+
   '@types/estree@1.0.10': {}
 
   '@types/geojson@7946.0.16': {}
@@ -2460,8 +2622,7 @@ snapshots:
     dependencies:
       '@types/geojson': 7946.0.16
 
-  '@types/trusted-types@2.0.7':
-    optional: true
+  '@types/trusted-types@2.0.7': {}
 
   '@types/webxr@0.5.24': {}
 
@@ -2595,6 +2756,8 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.29.14
       tslib: 2.9.1
+
+  babylonjs-gltf2interface@9.36.0: {}
 
   bidi-js@1.1.0:
     dependencies:
@@ -3037,6 +3200,22 @@ snapshots:
       lightningcss-linux-x64-musl: 1.33.0
       lightningcss-win32-arm64-msvc: 1.33.0
       lightningcss-win32-x64-msvc: 1.33.0
+
+  lit-element@4.2.2:
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.6.0
+      '@lit/reactive-element': 2.1.2
+      lit-html: 3.3.3
+
+  lit-html@3.3.3:
+    dependencies:
+      '@types/trusted-types': 2.0.7
+
+  lit@3.3.3:
+    dependencies:
+      '@lit/reactive-element': 2.1.2
+      lit-element: 4.2.2
+      lit-html: 3.3.3
 
   lodash-es@4.18.1: {}
 

@@ -5,7 +5,7 @@ export default defineMeta({
   title: "EffectScatter: ripple effect",
   summary:
     "Plain scatter points with a few effectScatter points that ripple. Choose showEffectOn and the ripple brushType.",
-  section: 'Option: Series',
+  section: 'Option: series.effectScatter',
   tags: ['effectScatter', 'rippleEffect', 'showEffectOn', 'brushType'],
   docs: ['repo/en/option/series/effectScatter.md'],
   provenance: 'pure',
