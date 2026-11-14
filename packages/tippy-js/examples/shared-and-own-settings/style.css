@@ -1,0 +1,28 @@
+/* Photo-editor toolbar: a centred row of tool buttons and a legend */
+[data-example='tippy-js/shared-and-own-settings'] {
+  .toolbar {
+    position: absolute;
+    left: 50%;
+    top: 22%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 3px;
+    padding: var(--space-1);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .toolbar .btn {
+    padding: 4px 6px;
+    font-size: 11px;
+  }
+  .legend {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: var(--space-3);
+    text-align: center;
+    color: var(--fg-3);
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,23 @@
+/* Media player: a dark screen with a control bar underneath */
+[data-example='tippy-js/show-hide-speed'] {
+  .screen {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+  }
+  .controls {
+    position: absolute;
+    left: 50%;
+    bottom: var(--space-3);
+    transform: translateX(-50%);
+    display: flex;
+    gap: var(--space-2);
+    padding: var(--space-2);
+    background: #0008;
+    border-radius: var(--radius);
+  }
+  .controls .btn {
+    width: 40px;
+    padding: 4px 0;
+  }
+}
