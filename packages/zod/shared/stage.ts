@@ -39,6 +39,14 @@
 // - z.properties() returns an array of checks: spread it into .check(...).
 // - z.instanceof(Date) accepts an Invalid Date; z.date() rejects it.
 // - An over-long array reports only too_big, not its elements' issues.
+// - An object refine is skipped only after a type error in a field, not after any issue
+//   (the docs say any): a too-short password still lets the match check run.
+// - .check() without continue: true skips only the checks after it. z.coerce.number()
+//   turns "" into 0. z.date().min() words its message in epoch milliseconds.
+// - z.string().pipe(z.coerce.number()) fails to type-check: write z.coerce.number<string>().
+// - safeParse on an async transform or refine throws "Encountered Promise during
+//   synchronous parse"; use safeParseAsync.
+// - objectLab: a card plan with one entry never cycles; list every [variant, sample] pair.
 import type { MountContext } from '@/types.ts';
 import './zod.css';
 

@@ -1,0 +1,27 @@
+[data-example='zod/password-rule-checklist'] {
+  .pw-rules {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+  }
+  .pw-rules li {
+    padding: 3px 8px;
+    background: var(--bg-surface);
+    border-left: 2px solid var(--red);
+    color: var(--fg-3);
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .pw-rules li::before {
+    content: '○ ';
+  }
+  .pw-rules li[data-ok='true'] {
+    border-left-color: var(--green);
+    color: var(--green);
+  }
+  .pw-rules li[data-ok='true']::before {
+    content: '● ';
+  }
+}
