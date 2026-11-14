@@ -1,0 +1,43 @@
+/* Quick-note button, the saved note, and the form inside the tip */
+[data-example='tippy-js/unsaved-changes-guard'] {
+  .scene {
+    padding: 14px 12px;
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+    font-size: 12px;
+  }
+  .saved {
+    color: var(--fg-2);
+    padding-top: 6px;
+    overflow-wrap: anywhere;
+  }
+  .note {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 200px;
+  }
+  .note textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    font: inherit;
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+  .note .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+  }
+  .note .hint {
+    color: var(--orange);
+    font-size: 11px;
+  }
+  .note .btn {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+}

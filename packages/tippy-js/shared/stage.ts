@@ -24,6 +24,12 @@
 //   place, so copy it (`{...tippy.defaultProps}`) before changing it.
 // - The page font is monospace: tip text runs about 8px per character, and a card is about
 //   284px wide, so card tips need short text (or a smaller `maxWidth`).
+// - `hideWithInteractivity(event)` adds a document mousemove listener unless the event is
+//   already outside the tip: in a card, move the ghost away before `ghost.leave()`.
+// - `content(reference)` receives an `Element`: read data attributes with getAttribute.
+//   Newlines in text content need `white-space: pre-line` on `.tippy-box`.
+// - To shake an open tip, animate `translate` on the box, which composes with the transform
+//   Popper writes on the root.
 // - To aim `getReferenceClientRect` at a point on an SVG drawing, map it to the viewport with
 //   `svg.getScreenCTM()`.
 // - `delay` applies to trigger events only: `show()` and `hide()` ignore it, so a card that

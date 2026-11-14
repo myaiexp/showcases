@@ -1,0 +1,30 @@
+/* A toolbar, a text box, and a line saying what the tips are doing */
+[data-example='tippy-js/cancel-pending-show'] {
+  .scene {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding: 14px 12px;
+    font-size: 12px;
+    color: var(--fg-2);
+  }
+  .tools {
+    display: flex;
+    gap: 6px;
+  }
+  .tools .btn {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+  .scene input[type='text'] {
+    font: inherit;
+    font-size: 12px;
+    padding: 4px 8px;
+    width: 220px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .tippy-box {
+    font-size: 12px;
+  }
+}
