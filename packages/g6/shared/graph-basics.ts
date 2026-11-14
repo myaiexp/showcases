@@ -1,7 +1,7 @@
 // Small data builders and a rebuild helper for the Graph, Data and Element examples
 import type { Graph, GraphData, IElementEvent, LayoutOptions } from '@antv/g6';
 import { button, readout } from './controls.ts';
-import type { Stage } from './graph.ts';
+import { releaseShortcuts, type Stage } from './graph.ts';
 
 /** n nodes placed on a circle, joined in a ring: fixed positions, so no layout is needed. */
 export function ring(n: number, prefix = 'n', radius = 100): Required<Pick<GraphData, 'nodes' | 'edges'>> {
@@ -22,12 +22,12 @@ export function rebuildable(stage: Stage, make: () => Graph) {
   let current: Graph | undefined;
   let queue: Promise<unknown> = Promise.resolve();
   stage.onCleanup(() => {
-    if (current && !current.destroyed) current.destroy();
+    if (current && !current.destroyed) { releaseShortcuts(current); current.destroy(); }
   });
   const rebuild = (): Promise<Graph> => {
     const next = queue.then(async () => {
       if (!stage.alive) return current!;
-      if (current && !current.destroyed) current.destroy();
+      if (current && !current.destroyed) { releaseShortcuts(current); current.destroy(); }
       current = make();
       await current.render();
       return current;

@@ -48,6 +48,11 @@ import './graph.css';
  *   fail postMessage); antv-dagre radial/focusNode do nothing in @antv/layout 2.0.0; d3-force
  *   callbacks get simulation nodes (G6 data under d._original); a string sortBy or getMass is
  *   an @antv/expr expression, not a field name; preLayout runs only on the first draw.
+ * - brush-select, lasso-select, click-select and drag-element never destroy their Shortcut,
+ *   which listens on window: teardown calls releaseShortcuts() first. A graph destroyed
+ *   anywhere else must do the same (graph-basics rebuildable does).
+ * - updateBehavior deep-merges and ignores undefined, so it cannot unset an option: rebuild
+ *   with setBehaviors. Behavior selection states need an explicit node.state style to show.
  * - A card unmounted mid-animation can log one "reading 'getData'" TypeError from G6's own
  *   animation callback after destroy; it is harmless and not catchable from here.
  *
@@ -165,7 +170,9 @@ export async function mountGraph(
     }
     for (const g of graphs) {
       try {
-        if (!g.destroyed) g.destroy();
+        if (g.destroyed) continue;
+        releaseShortcuts(g);
+        g.destroy();
       } catch (err) {
         console.error(err);
       }
@@ -194,4 +201,20 @@ function reveal(box: HTMLElement): void {
     duration: 1400,
     easing: 'cubic-bezier(.3,.7,.3,1)',
   });
+}
+
+/**
+ * G6 5.1.1's brush-select, lasso-select, click-select and drag-element each make a Shortcut
+ * that adds keydown, keyup and focus listeners to window, and never destroy it: every
+ * unmounted graph would stay reachable from window. Destroys those Shortcuts before
+ * graph.destroy(). This reads G6 internals (context.behavior/plugin.extensionMap), so it
+ * checks every step and does nothing if they move.
+ */
+export function releaseShortcuts(graph: Graph): void {
+  type Ext = { shortcut?: { destroy?: () => void } };
+  const ctx = (graph as unknown as { context?: Record<string, { extensionMap?: Record<string, Ext> } | undefined> })
+    .context;
+  for (const controller of [ctx?.['behavior'], ctx?.['plugin']]) {
+    for (const ext of Object.values(controller?.extensionMap ?? {})) ext.shortcut?.destroy?.();
+  }
 }
