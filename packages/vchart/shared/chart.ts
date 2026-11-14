@@ -72,6 +72,13 @@ export interface Chart {
  * - Once a 3D chart is registered (shared/chart3d.ts), the 3D plugin treats every chart
  *   on the page as 3D and sets a camera; 2D charts checked afterwards still drew normally.
  *   getStage().set3dOptions() replaces the whole option object: resend center each time.
+ * - animationAppear plays once per chart; replaying it needs a release and a rebuild.
+ * - A custom animation's onUpdate `out` argument is ignored in VRender 1.1.15 (custom_animation.md
+ *   writes to it); set attributes on this.target, and animate a bar's height with y and y1.
+ * - A custom layout function gets every layout item, axes and legends included: filter
+ *   layoutType 'region'. updateLayoutAttribute (custom_layout.md) is missing from the types.
+ * - Custom mark style callbacks draw in canvas pixels; series.valueToPosition is relative to
+ *   the region and returns a band's start.
  * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
  * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
  * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
