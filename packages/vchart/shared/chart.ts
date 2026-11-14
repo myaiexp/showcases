@@ -46,6 +46,11 @@ export interface Chart {
  * - A time axis needs numeric timestamps, and timeFormat/tickStep work only inside `layers`.
  * - The filter/fold transforms read options.callback, not the guide's option.callBack.
  * - `common` chart series with data: { fromDataId } do not type-check against ISpec.
+ * - rangeColumn label.minLabel/maxLabel exist only with label.position 'bothEnd', and their
+ *   text takes the bar colour: give them a style.fill.
+ * - Waterfall stackLabel text is dark even on the dark theme; set stackLabel.style.fill.
+ * - The histogram `bin` transform works but is missing from the transform types (cast the spec).
+ * - inverse on an untyped left axis does not reverse a horizontal bar chart; sort the data.
  * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
  * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
  * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
