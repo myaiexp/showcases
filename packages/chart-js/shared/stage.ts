@@ -37,6 +37,14 @@ export { INK, GRID } from './setup.ts';
  * - skipNull is typed on the chart options, not the bar dataset; hoverBorderRadius works
  *   but is missing from the dataset type (narrow cast).
  * - Changing indexAxis on a live chart is unsafe: destroy and rebuild.
+ * - update() re-merges options.scales into new objects (initOptions → mergeScaleConfig), so
+ *   a `chart.options.scales.x` reference cached before it writes to a stale copy after it.
+ *   Re-read scale options in every handler. Plugin options are not re-merged.
+ * - To reset a scale option to its default, assign undefined through Partial<…Options>.
+ *   To change a scale's type, replace the whole scale object and update().
+ * - tick.major reaches scriptable tick options only with ticks.major.enabled. On a time
+ *   axis, month starts become major ticks with unit 'day' (week is not a "common" unit).
+ * - ticks.callback may return null to drop a tick and its grid line.
  * - Scriptable and segment functions that read a closure variable need chart.update()
  *   after it changes.
  */
