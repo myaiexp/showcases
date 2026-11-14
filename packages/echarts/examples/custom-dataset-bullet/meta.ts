@@ -11,6 +11,8 @@ export default defineMeta({
     'repo/en/option/series/custom.md',
     'repo/en/option/partial/zr-graphic.md',
     'repo/en/tutorial/custom-series.md',
+    'repo/en/option/component/dataset.md',
+    'repo/en/option/partial/encode-dimensions.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

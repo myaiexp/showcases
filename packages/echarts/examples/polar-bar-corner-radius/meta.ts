@@ -7,7 +7,15 @@ export default defineMeta({
     'Two stacked series of polar bar sectors. Pick the itemStyle.borderRadius form (one number, a percentage, an inner/outer pair, or four corners from the inside out) and the border width.',
   section: 'Option: series.bar',
   tags: ['bar', 'polar', 'itemStyle.borderRadius', 'borderWidth', 'stack', 'angleAxis'],
-  docs: ['repo/en/option/series/bar.md', 'repo/en/option/partial/sector-border-radius.md', 'repo/en/option/partial/stack.md', 'repo/contents/en/basics/release-note/5-3-0.md'],
+  docs: [
+    'repo/en/option/series/bar.md',
+    'repo/en/option/partial/sector-border-radius.md',
+    'repo/en/option/partial/stack.md',
+    'repo/contents/en/basics/release-note/5-3-0.md',
+    'repo/en/option/component/polar.md',
+    'repo/en/option/component/angle-axis.md',
+    'repo/en/option/component/radius-axis.md',
+  ],
   provenance: 'pure',
   added: '2026-11-13',
 });

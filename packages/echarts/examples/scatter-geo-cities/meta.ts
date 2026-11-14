@@ -14,6 +14,7 @@ export default defineMeta({
     'repo/en/option/partial/coord-sys.md',
     'repo/en/option/partial/label.md',
     'repo/en/api/echarts.md',
+    'repo/en/option/partial/symbol.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

@@ -14,6 +14,8 @@ export default defineMeta({
     'repo/en/option/partial/mark-area.md',
     'repo/en/option/partial/marker.md',
     'repo/en/option/series/line.md',
+    'repo/en/option/component/data-zoom-inside.md',
+    'repo/en/option/component/data-zoom-slider.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

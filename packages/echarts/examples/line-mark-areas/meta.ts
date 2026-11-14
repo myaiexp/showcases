@@ -7,7 +7,14 @@ export default defineMeta({
     'Shaded regions behind an hourly temperature line: night hours as an xAxis range, a comfort band as a yAxis range, a rectangle between two data coords and a band from the average to the maximum. Toggle each, set the opacity and label position.',
   section: 'Option: series.line',
   tags: ['markArea', 'xAxis', 'yAxis', 'coord', 'type', 'itemStyle.opacity', 'label.position', 'silent'],
-  docs: ['repo/en/option/series/line.md', 'repo/en/option/partial/mark-area.md', 'repo/en/option/partial/marker.md'],
+  docs: [
+    'repo/en/option/series/line.md',
+    'repo/en/option/partial/mark-area.md',
+    'repo/en/option/partial/marker.md',
+    'repo/en/option/partial/item-style.md',
+    'repo/en/option/partial/style-shadow-opacity.md',
+    'repo/en/option/partial/label.md',
+  ],
   provenance: 'pure',
   added: '2026-11-13',
 });

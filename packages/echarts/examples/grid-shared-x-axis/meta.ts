@@ -15,6 +15,7 @@ export default defineMeta({
     'repo/en/option/component/axisPointer.md',
     'repo/en/option/partial/rect-layout-width-height.md',
     'repo/contents/en/concepts/axis.md',
+    'repo/en/option/partial/encode-dimensions.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

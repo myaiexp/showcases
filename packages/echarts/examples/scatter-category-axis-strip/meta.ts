@@ -12,6 +12,7 @@ export default defineMeta({
     'repo/en/option/series/scatter.md',
     'repo/en/option/partial/symbol.md',
     'repo/contents/en/concepts/axis.md',
+    'repo/en/option/component/axis-common.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

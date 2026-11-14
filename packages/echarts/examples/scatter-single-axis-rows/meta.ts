@@ -11,6 +11,7 @@ export default defineMeta({
     'repo/en/option/series/scatter.md',
     'repo/en/option/component/single-axis.md',
     'repo/en/option/partial/coord-sys.md',
+    'repo/en/option/partial/symbol.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

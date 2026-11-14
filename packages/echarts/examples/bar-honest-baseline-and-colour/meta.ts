@@ -11,6 +11,8 @@ export default defineMeta({
     'repo/contents/en/best-practices/specification/bar/basic-bar.md',
     'repo/en/option/series/bar.md',
     'repo/en/option/component/axis-common.md',
+    'repo/en/option/partial/barGrid.md',
+    'repo/en/option/partial/colorBy.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

@@ -13,6 +13,7 @@ export default defineMeta({
     'repo/en/option/partial/label-layout.md',
     'repo/en/option/partial/item-style.md',
     'repo/en/option/component/visual-map-continuous.md',
+    'repo/en/option/partial/component-common-style.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

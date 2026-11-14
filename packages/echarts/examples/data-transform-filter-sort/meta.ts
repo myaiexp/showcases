@@ -12,6 +12,7 @@ export default defineMeta({
     'repo/en/option/component/data-transform-filter.md',
     'repo/en/option/component/data-transform-sort.md',
     'repo/en/option/component/dataset.md',
+    'repo/en/option/partial/encode-dimensions.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

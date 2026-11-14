@@ -13,6 +13,8 @@ export default defineMeta({
     'repo/en/option/component/grid.md',
     'repo/en/option/component/data-zoom.md',
     'repo/contents/en/basics/release-note/v6-feature.md',
+    'repo/en/option/component/x-axis.md',
+    'repo/en/option/component/y-axis.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',

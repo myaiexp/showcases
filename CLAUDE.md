@@ -82,3 +82,5 @@ GitHub Pages. No service on the VPS.
   cleanup, or attaches per instance instead.
 - ECharts: read the trap list in `packages/echarts/shared/chart.ts` before building, and add
   to it. The option reference has one gallery section per series type (`Option: series.<type>`).
+  Tags are option paths: `test/echarts-citations.test.ts` fails when a tag's name is not in the
+  cited docs, usually a partial reached through `{{ use: }}` that `meta.docs` leaves out.

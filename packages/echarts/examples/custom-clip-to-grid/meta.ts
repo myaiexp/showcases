@@ -12,6 +12,7 @@ export default defineMeta({
     'repo/en/option/partial/zr-graphic.md',
     'repo/en/option/component/data-zoom-slider.md',
     'repo/en/tutorial/custom-series.md',
+    'repo/en/api/graphic.md',
   ],
   provenance: 'pure',
   added: '2026-11-13',
