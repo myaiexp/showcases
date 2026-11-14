@@ -36,6 +36,16 @@ import './graph.css';
  * - map-node-size in 5.1.1 takes centrality/minSize/maxSize (the docs' field/min/max do
  *   nothing), and the graph option is `transforms`, not `transform`.
  * - A custom state's icon uses flat props (icon: true, iconText), not icon: { show, text }.
+ * - A combo with children takes its box from its children plus padding; `size` only applies
+ *   to an empty combo, and collapsedSize to a collapsed one.
+ * - Custom elements: onCreate/onUpdate/onDestroy take no `override` (TS4113); read
+ *   attributes.states through a cast; getKeyPath returns `as never` (@antv/util's PathArray
+ *   is not importable here); default destructured sizes (`[w = 0, h = 0]`).
+ * - A labelled polyline edge rotates its label along the first segment: labelAutoRotate: false.
+ * - Style callbacks under `edge.style` need a typed parameter (`d: EdgeData`): the index
+ *   signature on EdgeStyle leaves it an implicit any.
+ * - A card unmounted mid-animation can log one "reading 'getData'" TypeError from G6's own
+ *   animation callback after destroy; it is harmless and not catchable from here.
  *
  * Every example writes its whole `new Graph({...})` spec in its own main.ts; this file only
  * sizes the box, repeats card steps, resizes and destroys what the example made.
