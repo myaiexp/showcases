@@ -19,6 +19,26 @@
 //   works from the Vite bundle with no worker file. Pause and resume do not exist there.
 // - A textarea normalises \r\n to \n, so examples about line endings use read-only views.
 // - The page font is monospace at ~8px per character in a 280px card: keep card CSV short.
+// - Papa.unparse ends lines with \r\n by default; parse inputs here use \n, so a round trip
+//   changes the line endings. unparse throws on unreadable input (an empty `columns`):
+//   wrap full-view re-runs in `attempt()` from unparse-kit.ts.
+// - A banned delimiter (Papa.BAD_DELIMITERS) is replaced by ',' in parse and unparse with no
+//   error. Papa.parse ignores a `newline` other than \r, \n, \r\n. A leading BOM is stripped.
+// - Single-column text adds an UndetectableDelimiter error, and a trailing newline adds an
+//   empty row unless skipEmptyLines is set: neither means the option being shown failed.
+// - An error's `row` counts records for quote errors (header = 0) and data rows for field
+//   count errors; result-kit.ts `problemRecords` maps both to text lines and table rows.
+// - A quoted line break spans two text lines: map lines to rows with unparse-kit `lineRows`.
+// - Whitespace is invisible in table cells: show trimmed values with JSON.stringify.
+// - With header: true, duplicate headers log a console line on every parse.
+// - In a worker, rows come back per chunk: `step` over a string arrives in one burst. Stream a
+//   File with `chunkSize` for visible progress. abort() ends the worker and calls complete.
+// - chunkSize, LocalChunkSize and RemoteChunkSize do nothing without step or chunk (no Range).
+//   Range and chunkSize cut by bytes, so a multi-byte letter on a boundary breaks: keep ASCII.
+// - meta.cursor restarts after pause()/resume(): count rows yourself.
+// - A fake-server URL that is not served falls through to the real network: serve a 404.
+// - element.animate runs on the compositor and keeps moving while the main thread is frozen:
+//   drive a "the page froze" picture from requestAnimationFrame.
 import type { MountContext } from '@/types.ts';
 import './papa.css';
 

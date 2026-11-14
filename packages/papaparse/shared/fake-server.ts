@@ -175,7 +175,7 @@ function answer(xhr: XMLHttpRequest, p: Pending): void {
   xhr.dispatchEvent(new ProgressEvent('loadend'));
 }
 
-const STATUS_TEXT: Record<number, string> = { 200: 'OK', 206: 'Partial Content', 403: 'Forbidden', 404: 'Not Found', 500: 'Internal Server Error' };
+const STATUS_TEXT: Record<number, string> = { 200: 'OK', 206: 'Partial Content', 401: 'Unauthorized', 403: 'Forbidden', 404: 'Not Found', 500: 'Internal Server Error' };
 
 export function fakeServer(initial: Record<string, ServedFile> = {}): FakeServer {
   // Each live server gets its own host, so two examples on one page never share a URL.

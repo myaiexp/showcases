@@ -1,0 +1,40 @@
+/* A heartbeat the script draws every frame: it stops when the page freezes */
+[data-example='papaparse/worker-keeps-page-responsive'] {
+  .beat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 2px 0;
+  }
+  .ring {
+    width: 1.8em;
+    height: 1.8em;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+  }
+  .lane {
+    position: relative;
+    flex: 1;
+    height: 0.9em;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+  }
+  .dot {
+    position: absolute;
+    top: -1px;
+    width: 0.9em;
+    height: 0.9em;
+    margin-left: -0.45em;
+    border-radius: 50%;
+    background: var(--green);
+  }
+  .frames {
+    min-width: 7em;
+    color: var(--fg-3);
+    white-space: nowrap;
+  }
+}

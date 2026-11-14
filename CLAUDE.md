@@ -123,3 +123,6 @@ GitHub Pages. No service on the VPS.
 - Tippy.js: build on `packages/tippy-js/shared/stage.ts` (`createStage`, trap list). Cards drive tips
   with `stage.ghost`, which sends events to the element only, never to the document (other cards'
   tips listen there). Pass elements, never selector strings, and `appendTo: stage.root`.
+- Papa Parse: build on `packages/papaparse/shared/stage.ts` (`createStage`, trap list) and its
+  views (`csvView`/`csvEditor`, `dataTable`, `flow`). Downloads go to `shared/fake-server.ts`
+  (an XMLHttpRequest subclass answering https://data.example in memory); never with `worker`.
