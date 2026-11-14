@@ -1,0 +1,4 @@
+/* The page text is light and the menu background is white: give the items dark text */
+[data-example='g6/plugin-contextmenu-basic'] {
+  .g6-contextmenu { color: #1f2937; }
+}

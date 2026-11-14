@@ -1,0 +1,1044 @@
+{
+  "fetched": "2026-11-14T08:18:25.866Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/antvis/g6",
+      "ref": "5.1.1",
+      "paths": [
+        "LICENSE",
+        "packages/site/.dumirc.ts",
+        "packages/site/docs/**/*.en.md",
+        "packages/site/common/**/*.md",
+        "packages/g6/__tests__/dataset/*.json"
+      ],
+      "commit": "5a5551cea13d021d12c90a87116e3c6092d53210"
+    }
+  ],
+  "files": {
+    "repo/LICENSE": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/LICENSE",
+      "sha256": "d296127a77fae081300d5b18fcfa5ccda75cd16670c1b46dc890a8903ca95128"
+    },
+    "repo/packages/g6/__tests__/dataset/algorithm-category.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/algorithm-category.json",
+      "sha256": "6beda041490a5d502eb296984a3a638f322e5e8d77c4193252172099ae5db55a"
+    },
+    "repo/packages/g6/__tests__/dataset/circular.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/circular.json",
+      "sha256": "e57b7f694db652570a2f267e8bfeea95492c949ece4c99f102b85c03b507f3be"
+    },
+    "repo/packages/g6/__tests__/dataset/cluster.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/cluster.json",
+      "sha256": "7154de9993d81bf6f4cd1427bfc3362a2c45d278c593b7707c8083b71a474f98"
+    },
+    "repo/packages/g6/__tests__/dataset/combo.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/combo.json",
+      "sha256": "534e51e3fb2f09415fa4644d9770e1ed35b4a1c0c97b69dee31dc266530bfb88"
+    },
+    "repo/packages/g6/__tests__/dataset/dagre-combo.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/dagre-combo.json",
+      "sha256": "4440a228fcbf9a2a62b07b0ed597010526439d3a8832b39f1412208e18afd592"
+    },
+    "repo/packages/g6/__tests__/dataset/dagre.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/dagre.json",
+      "sha256": "fedd1964daece283fce471dc699b0be40cd20fae3fcc79aaf082cf70ca401d1d"
+    },
+    "repo/packages/g6/__tests__/dataset/decision-tree.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/decision-tree.json",
+      "sha256": "6193de7078cb88dd07e44f37e9cc8d43c7baacfa7a013007d13307ea0818dcf9"
+    },
+    "repo/packages/g6/__tests__/dataset/element-edges.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/element-edges.json",
+      "sha256": "2efcc46ce870e02cb9b6804a26ce5024edd827dee9e10cbf602929f3a0020821"
+    },
+    "repo/packages/g6/__tests__/dataset/element-nodes.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/element-nodes.json",
+      "sha256": "89041822467fa3024ce2c2bd0c8f4cfda8569d43609145db9c0d6132ddd58bbe"
+    },
+    "repo/packages/g6/__tests__/dataset/file-system.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/file-system.json",
+      "sha256": "c1c4deda93c2adc9cd2a7999050815f55293b6ffe9718a466bf427e3e05f1ae8"
+    },
+    "repo/packages/g6/__tests__/dataset/flare.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/flare.json",
+      "sha256": "84a3034dc8bfcacbf9673d8a6597e8702128457cc8be5d475155117cd46b8c08"
+    },
+    "repo/packages/g6/__tests__/dataset/force.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/force.json",
+      "sha256": "8c377df633b650e2b5c4937e9538e1166b1c344484d585542a5ad6f7bf31fe77"
+    },
+    "repo/packages/g6/__tests__/dataset/gene.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/gene.json",
+      "sha256": "611529e8b94736ec211db29fe00019c9eaa43c1b0798f4c04e7fa7e1d7be3e86"
+    },
+    "repo/packages/g6/__tests__/dataset/language-tree.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/language-tree.json",
+      "sha256": "0f31a0f3633bfca4ad4aa1ea4124a7f5408cc81461c3623a58ab75563d301041"
+    },
+    "repo/packages/g6/__tests__/dataset/organization-chart.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/organization-chart.json",
+      "sha256": "36b0aad75924f4a0d8a2002593845dab6a34d844a180a5e70403c814ecda085b"
+    },
+    "repo/packages/g6/__tests__/dataset/parallel-edges.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/parallel-edges.json",
+      "sha256": "573c52efd9e62ed03efeb82342c9d899ff68600fddad8bccadb0ab1017ad256e"
+    },
+    "repo/packages/g6/__tests__/dataset/radial.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/radial.json",
+      "sha256": "b4ad6c254330d91fe238edb4ce45143c63688af1fdf0a2bd9e1189a50e2cf937"
+    },
+    "repo/packages/g6/__tests__/dataset/relations.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/relations.json",
+      "sha256": "ba325236c4c1acbd9318869e0ce2d6310a83dec4b78c75443213e71c6089584f"
+    },
+    "repo/packages/g6/__tests__/dataset/soccer.json": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/g6/__tests__/dataset/soccer.json",
+      "sha256": "f0e5af925283d3c345a64422b41a050d5fd62213955dc7f4fec96ea83e548df6"
+    },
+    "repo/packages/site/.dumirc.ts": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/.dumirc.ts",
+      "sha256": "55a23bbe532bf7a4abfc7de67eab8d2d7daac9c36330c1d3278229e408364c9e"
+    },
+    "repo/packages/site/common/angular-snippet.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/angular-snippet.md",
+      "sha256": "ce0ec9b92475c2907674ecf4ecbc92abd18fb0b047365705e778a7f5ca73d21e"
+    },
+    "repo/packages/site/common/api/behaviors/auto-adapt-label.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/auto-adapt-label.md",
+      "sha256": "f8eeb4adc5f8d833f5870037b4102254c4cdcc153be47d8cbb4f3b8a37061c82"
+    },
+    "repo/packages/site/common/api/behaviors/brush-select.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/brush-select.md",
+      "sha256": "3c41ac1e1a5fb2320e64fb1fa11efb7b379791eba1cc970f656e4666a2064e27"
+    },
+    "repo/packages/site/common/api/behaviors/click-element.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/click-element.md",
+      "sha256": "f85d00b7fccbaf09ececdadbdf8a19c2874662e25b1eb6e9944949d52d818054"
+    },
+    "repo/packages/site/common/api/behaviors/collapse-expand.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/collapse-expand.md",
+      "sha256": "1f8a23966dda600313f96e6e6eebedaa2bfc7aa70b45acf60957c0b08e3d83dd"
+    },
+    "repo/packages/site/common/api/behaviors/create-edge.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/create-edge.md",
+      "sha256": "04b7fed4262cfc1f1c24fbbf117e31f7675e64e605daf59bc71d90ebc074215b"
+    },
+    "repo/packages/site/common/api/behaviors/drag-canvas.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/drag-canvas.md",
+      "sha256": "67b3aff2940e31d674c32ab0c145df7050a2f596f70f2f60dc8a390d35e6e901"
+    },
+    "repo/packages/site/common/api/behaviors/drag-element.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/drag-element.md",
+      "sha256": "c289edff8e033322e3aa81232972569a953ae393a3c5b83d3258e464e4ef5c26"
+    },
+    "repo/packages/site/common/api/behaviors/fix-element-size.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/fix-element-size.md",
+      "sha256": "28ccd63aba5f1dfd782a213add9954a5d0b5cff13bf4e1f5795a9178ddc76fbb"
+    },
+    "repo/packages/site/common/api/behaviors/focus-element.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/focus-element.md",
+      "sha256": "26a94ad2ed143240ac1c3225f2b181ae48f68111816c2d682f746dda4f68df13"
+    },
+    "repo/packages/site/common/api/behaviors/hover-activate.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/hover-activate.md",
+      "sha256": "c00a9498e7898b849c23fa49d552f9d4ea50cde28327b30d3b55988fecd21022"
+    },
+    "repo/packages/site/common/api/behaviors/hover-element.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/hover-element.md",
+      "sha256": "70c99647b123521501d86163884d723d5eab92bbcd489675e64e6d24c39927d4"
+    },
+    "repo/packages/site/common/api/behaviors/lasso-select.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/lasso-select.md",
+      "sha256": "2ef201adedc2384f13ee83a1db7f64edce6c2345816a429ee13103a6d0be2509"
+    },
+    "repo/packages/site/common/api/behaviors/scroll-canvas.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/scroll-canvas.md",
+      "sha256": "00d94a73e732171117b91162b879a41a2a6a32e54dd2182c073fe857ac18da52"
+    },
+    "repo/packages/site/common/api/behaviors/zoom-canvas.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/behaviors/zoom-canvas.md",
+      "sha256": "4db4c46609512e8b77ab7fd68921600978956777b7868599e176a6649bb7ea25"
+    },
+    "repo/packages/site/common/api/elements/combos/base-combo.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/combos/base-combo.md",
+      "sha256": "ccf9b5905269f5dde4fcd603db2e475af1a2ff7f7aeabc0903c81fc180cd80e6"
+    },
+    "repo/packages/site/common/api/elements/combos/circle-combo-interest.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/combos/circle-combo-interest.md",
+      "sha256": "286ea51121a75b0395128fa2be5d632a6f669f8a8c55593aafc625c003b6d808"
+    },
+    "repo/packages/site/common/api/elements/combos/circle-combo.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/combos/circle-combo.md",
+      "sha256": "b4ed6cd06234e246f58f459da5c1a7a9a4377df36d3e3575bc040558f1f312ea"
+    },
+    "repo/packages/site/common/api/elements/combos/rect-combo-architecture.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/combos/rect-combo-architecture.md",
+      "sha256": "787aa61b949146a9de6791d5f984305d1a422b919d3225adef4e7efd353d6d5f"
+    },
+    "repo/packages/site/common/api/elements/combos/rect-combo.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/combos/rect-combo.md",
+      "sha256": "d370eb4d7d68a0dc14551762258001b7e095fd4eb48f8d35be5523c0196ce5ee"
+    },
+    "repo/packages/site/common/api/elements/edges/base-edge.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/edges/base-edge.md",
+      "sha256": "633c6c1d880fbc08b66bedd1ed342479957ac3ae2f3ddd6b831d614dd0bbf41d"
+    },
+    "repo/packages/site/common/api/elements/edges/cubic-horizontal.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/edges/cubic-horizontal.md",
+      "sha256": "e583f7ca4bfb46690bc91e1c0ff83ea9e070a39554b1263334be6c5c5f4aa908"
+    },
+    "repo/packages/site/common/api/elements/edges/cubic-vertical.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/edges/cubic-vertical.md",
+      "sha256": "510ae618ee815e6993b5e18f9723c421472563ea3572487e74ceda7f09577b38"
+    },
+    "repo/packages/site/common/api/elements/edges/cubic.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/edges/cubic.md",
+      "sha256": "fdb0ea9f0f21abf2d85c49a2ab9685075e164f28993487746524a5c0d67e1e18"
+    },
+    "repo/packages/site/common/api/elements/edges/line.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/edges/line.md",
+      "sha256": "26debfd765eadacadc9fc7ae286597af8b3530c1916d0a77b4fd5a503e90a8a7"
+    },
+    "repo/packages/site/common/api/elements/edges/polyline.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/edges/polyline.md",
+      "sha256": "5ec1bb1f83c93478cd104a982ef6d449e241534fd80c03029fc930a4b17c4b36"
+    },
+    "repo/packages/site/common/api/elements/edges/quadratic.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/edges/quadratic.md",
+      "sha256": "181535cb006cab114445868d2d60a3a51b3507fc534e170ebc1c00e789539f0c"
+    },
+    "repo/packages/site/common/api/elements/nodes/base-node.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/nodes/base-node.md",
+      "sha256": "22d976f1c31a3b7a09462692dec96a5230462dd7253cfb1fa538d4d3d63a600a"
+    },
+    "repo/packages/site/common/api/elements/nodes/circle.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/nodes/circle.md",
+      "sha256": "4c6f37ddea7aec424d15c3236f1e47887449602891e4beb0e1e98a974cd97f58"
+    },
+    "repo/packages/site/common/api/elements/nodes/diamond.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/nodes/diamond.md",
+      "sha256": "3da224d2daa1856d4f4aeb5952d47236b028e811b12599ef3d154fa33d139798"
+    },
+    "repo/packages/site/common/api/elements/nodes/donut.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/nodes/donut.md",
+      "sha256": "ddf997227ccac2a9303c4a930ed6fb7d299b3fdfed4d393ea3829fd93b5fc589"
+    },
+    "repo/packages/site/common/api/elements/nodes/ellipse.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/nodes/ellipse.md",
+      "sha256": "96742ebeea6ccea429452068d5ee92120b5562bcd9a2b2002b5e8d08494bc19a"
+    },
+    "repo/packages/site/common/api/elements/nodes/hexagon.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/nodes/hexagon.md",
+      "sha256": "ff670a6093e2cac5f58c1be246e660bbdc9fca872c365b3798143d8cadd99986"
+    },
+    "repo/packages/site/common/api/elements/nodes/html.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/nodes/html.md",
+      "sha256": "8186afb21ee263f557ae3ccb9831d1436a85efe0f623d05255fb8fd34d6f6c82"
+    },
+    "repo/packages/site/common/api/elements/nodes/image.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/nodes/image.md",
+      "sha256": "2e3d48fdf311e2b40348fe44dfe4295c6a77504dafc37090948d1ed8b9c38c73"
+    },
+    "repo/packages/site/common/api/elements/nodes/rect.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/nodes/rect.md",
+      "sha256": "183ae234741fec10d093be543e04ae00c5c865e2e0318f2a144312bfe222a2be"
+    },
+    "repo/packages/site/common/api/elements/nodes/star.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/nodes/star.md",
+      "sha256": "d54e1dc397a52b7ab05f486a664732389ad3f77201a274ac73893233425dfd72"
+    },
+    "repo/packages/site/common/api/elements/nodes/triangle.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/elements/nodes/triangle.md",
+      "sha256": "fefa220191a647411dfe1fa4f97d60842bfd81f689cd25b71b1d92fe3b9289ab"
+    },
+    "repo/packages/site/common/api/layout/fishbone.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/layout/fishbone.md",
+      "sha256": "487716f28e1df45fbaa8dfe656eead4d82219c3c422bc3bd28a8af16bae351ac"
+    },
+    "repo/packages/site/common/api/layout/force-atlas2.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/layout/force-atlas2.md",
+      "sha256": "58081d83acfe3a146f5555fce8a8f8cbe3be4f15d27e86e893b2da8a6fb89920"
+    },
+    "repo/packages/site/common/api/layouts/radial.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/layouts/radial.md",
+      "sha256": "9b82f8ee219db2f2ee68dafe834c73422f8a1b3e2cfbebf60774bdcdb2e3b3ab"
+    },
+    "repo/packages/site/common/api/layouts/snake.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/layouts/snake.md",
+      "sha256": "9cf3ac1f74fb0b3b973e59fcaa66927e769560eecf49a6c8b11a6115724a4522"
+    },
+    "repo/packages/site/common/api/plugins/background.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/background.md",
+      "sha256": "57234fd8cf17410bc8a22ffb55f94bbd3effac9871154a4d9ef2b09b413a8fa4"
+    },
+    "repo/packages/site/common/api/plugins/bubble-sets.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/bubble-sets.md",
+      "sha256": "c0c7799d900d524fc598ad488a0db21d2849bdaff1905567aa72093f87537917"
+    },
+    "repo/packages/site/common/api/plugins/contextmenu.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/contextmenu.md",
+      "sha256": "6c058d53df25d0e9195cab97e60d95477268e634b25c3b8b06559d4fac995f05"
+    },
+    "repo/packages/site/common/api/plugins/edge-bundling.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/edge-bundling.md",
+      "sha256": "d3b6851f9a5933135c9af9093051898d1e72e9097252adde3a736a255acbcd17"
+    },
+    "repo/packages/site/common/api/plugins/edge-filter-lens.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/edge-filter-lens.md",
+      "sha256": "eac4560ee8b466108c85a9a97aff431d92656ca349568541286d3e256b7e84fd"
+    },
+    "repo/packages/site/common/api/plugins/fisheye.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/fisheye.md",
+      "sha256": "ac1eb1792fe46c2b6a56a02c7961a1499d087d63b4915fb01e3d873e8213b8e6"
+    },
+    "repo/packages/site/common/api/plugins/fullscreen.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/fullscreen.md",
+      "sha256": "420c51858e51cae4b63a17efd6f40c34bfa7ce1f2ae2e03216c80464bd004bb2"
+    },
+    "repo/packages/site/common/api/plugins/grid-line.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/grid-line.md",
+      "sha256": "a5277ee639e9f45986abaaca54dfdee4a95be8a0cb8e1abfe25b4e269673adda"
+    },
+    "repo/packages/site/common/api/plugins/history.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/history.md",
+      "sha256": "1ac72dd8a3ab910570fc7905f4fbb38ecce78d868c783138ad5a965e46d51a31"
+    },
+    "repo/packages/site/common/api/plugins/hull.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/hull.md",
+      "sha256": "475acb235cd9d75624d99bb7b3835cf935ffb1c1e79869687e22f00817be2181"
+    },
+    "repo/packages/site/common/api/plugins/legend.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/legend.md",
+      "sha256": "a6255f458a614882189774bde0a9593b995d25dc976ea2f97634b42aef414f52"
+    },
+    "repo/packages/site/common/api/plugins/minimap.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/minimap.md",
+      "sha256": "e99fcbc738711d2a8ad70d26079edc83f5cbaf21bff9eed77b9d70ea60ffbcaf"
+    },
+    "repo/packages/site/common/api/plugins/snapline.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/snapline.md",
+      "sha256": "e75d69e7177b1fcfa952ec6fc1c206b02e8e876068d9cf4d284d37b8f6b9d1c1"
+    },
+    "repo/packages/site/common/api/plugins/timebar.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/timebar.md",
+      "sha256": "157d4398aaf044643d5e47814a99c26ee71d2cced57f68513908a848392406b1"
+    },
+    "repo/packages/site/common/api/plugins/toolbar.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/toolbar.md",
+      "sha256": "5f486a31af5771d0f49e2414daeea3a18ef2004c53e8e6860849b7d78021e49d"
+    },
+    "repo/packages/site/common/api/plugins/tooltip.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/tooltip.md",
+      "sha256": "6b4ca7edbc51aa75b564707927f1324c4a8aaa6153dc607aef2a1960763dbe87"
+    },
+    "repo/packages/site/common/api/plugins/watermark.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/plugins/watermark.md",
+      "sha256": "720714729cce051fa2b660cfd923a133a159a2b411683596ba32113d57d56ca7"
+    },
+    "repo/packages/site/common/api/transforms/map-node-size-centrality.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/transforms/map-node-size-centrality.md",
+      "sha256": "64debd2953eb29360df837b452e88eab92e7aa2938a4ed2d87c8bcf9cd3cfbc4"
+    },
+    "repo/packages/site/common/api/transforms/map-node-size-scale.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/api/transforms/map-node-size-scale.md",
+      "sha256": "e29eafd35dbfe59b513a57f550fc73b7a1028f21a734f18fba8bf6645258a576"
+    },
+    "repo/packages/site/common/manual/core-concept/animation/ant-line.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/core-concept/animation/ant-line.md",
+      "sha256": "77cab09f69ea6b4812b09002ffe787425419f0ef5a3f96f44b98698d143972e5"
+    },
+    "repo/packages/site/common/manual/core-concept/animation/breathing-circle.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/core-concept/animation/breathing-circle.md",
+      "sha256": "a1296d6c1c81cd935a3bfede1fd0f2081cd99e6e46801773e3700da1d830a60b"
+    },
+    "repo/packages/site/common/manual/core-concept/palette/continuous-palette.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/core-concept/palette/continuous-palette.md",
+      "sha256": "60e8e0f4d5986be6199ed1f7327a2f92e55125b04c1d50cfdc05bb7fcd3f3f6b"
+    },
+    "repo/packages/site/common/manual/core-concept/palette/default-config.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/core-concept/palette/default-config.md",
+      "sha256": "de05b661ff1a071798dc3512bc6b188042decaf42e6ffc808cd2c27f9be43acc"
+    },
+    "repo/packages/site/common/manual/core-concept/palette/standard-config.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/core-concept/palette/standard-config.md",
+      "sha256": "d78153fdf9ca958002e62da66b82bf3dcedac6f2e58ba0e69771fc5a830c3f3e"
+    },
+    "repo/packages/site/common/manual/custom-extension/animation/composite-animation-1.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/custom-extension/animation/composite-animation-1.md",
+      "sha256": "43cef059ecc6254085b9dce5e9870486747e5f101de1361314ae563711f7de20"
+    },
+    "repo/packages/site/common/manual/custom-extension/animation/composite-animation-2.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/custom-extension/animation/composite-animation-2.md",
+      "sha256": "1986c1ef99d2d801dd2aae37bd2c8c05a6f4b9eafdf7b3ba2c1c4c9b5b41e369"
+    },
+    "repo/packages/site/common/manual/custom-extension/animation/implement-animation.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/custom-extension/animation/implement-animation.md",
+      "sha256": "38b57eed8ed92695683f75479a75c8e39ded4168f0e92e55a42dbc75fb3ed009"
+    },
+    "repo/packages/site/common/manual/custom-extension/behavior/implement-behaviors.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/custom-extension/behavior/implement-behaviors.md",
+      "sha256": "7e1539e5db6585d07d1e4f0506d8bf40271da6b7741f241a2d69efa39a4e94fc"
+    },
+    "repo/packages/site/common/manual/custom-extension/layout/iterative-layout.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/custom-extension/layout/iterative-layout.md",
+      "sha256": "5d42c46002f7b882abd4b7364276811afc5aad8b489a79781eb39c0158b77972"
+    },
+    "repo/packages/site/common/manual/custom-extension/layout/non-iterative-layout.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/custom-extension/layout/non-iterative-layout.md",
+      "sha256": "666c214becb57d72424241be2e66f3054fd8f38c36c3c7c7baf77d99284b232b"
+    },
+    "repo/packages/site/common/manual/custom-extension/plugin/implement-plugin.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/custom-extension/plugin/implement-plugin.md",
+      "sha256": "b1522692f872282a5447d0026bdf8d6ed95e4065d7de1d7691bfec12ae9a73b0"
+    },
+    "repo/packages/site/common/manual/custom-extension/transform/circular-radial-labels.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/custom-extension/transform/circular-radial-labels.md",
+      "sha256": "efb8c0837aaa4c11692258644bf4a41c47eaac181bb73a37c53790b6af1ff16e"
+    },
+    "repo/packages/site/common/manual/custom-extension/transform/hide-free-node.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/custom-extension/transform/hide-free-node.md",
+      "sha256": "99c75bd4158e0f9b7c94ea1537657eb08079a5d09b401b449da23b70090c9656"
+    },
+    "repo/packages/site/common/manual/feature/treeToGraphData.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/feature/treeToGraphData.md",
+      "sha256": "33a4b6efa7b8e7793d83d23535275839f7c18e63162b51f45e93eceb40979847"
+    },
+    "repo/packages/site/common/manual/feature/webpack4.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/feature/webpack4.md",
+      "sha256": "a60f39624c4485046e05632e3d96e00fe860559f354bafac4b0ffb7b321f7f1c"
+    },
+    "repo/packages/site/common/manual/getting-started/extensions/palettes.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/getting-started/extensions/palettes.md",
+      "sha256": "086f2411c053115093c9314ebf8d6d55c47387b1c2a770f070a9a5af68b45de6"
+    },
+    "repo/packages/site/common/manual/getting-started/quick-start/simple-graph.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/getting-started/quick-start/simple-graph.md",
+      "sha256": "d5344c953ab7bbbbcd5ed1651f1fb17b85f3ad19e0bc1f3210e605f4a9876f21"
+    },
+    "repo/packages/site/common/manual/getting-started/step-by-step/behaviors.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/getting-started/step-by-step/behaviors.md",
+      "sha256": "ac8e33fdd6c9597bb9f6389f5e0d9a1b19675f2fd054c83e027d548d35f3a04d"
+    },
+    "repo/packages/site/common/manual/getting-started/step-by-step/create-chart.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/getting-started/step-by-step/create-chart.md",
+      "sha256": "f08396e3e155d5926fcf15aeddc91ee1adebcda0065b7036d029c7840510d12c"
+    },
+    "repo/packages/site/common/manual/getting-started/step-by-step/elements-1.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/getting-started/step-by-step/elements-1.md",
+      "sha256": "c7085c459fb3129755201bff9af560630ed45144b64293a740b725d98db08353"
+    },
+    "repo/packages/site/common/manual/getting-started/step-by-step/elements-2.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/getting-started/step-by-step/elements-2.md",
+      "sha256": "5dd759799fa40aad36c7b96222de2f36dcd78f8b02e326bc82cbb46ea124ca1c"
+    },
+    "repo/packages/site/common/manual/getting-started/step-by-step/layout.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/getting-started/step-by-step/layout.md",
+      "sha256": "83fdf1631d2a4993510b71890742d990a14eaebff9d4640ac9d434924d47c48f"
+    },
+    "repo/packages/site/common/manual/getting-started/step-by-step/palette.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/getting-started/step-by-step/palette.md",
+      "sha256": "7511b66fd369cb286561d1fcc0e5db0d841d5b2269044a4d2e3ea559ea06adeb"
+    },
+    "repo/packages/site/common/manual/getting-started/step-by-step/plugins-1.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/getting-started/step-by-step/plugins-1.md",
+      "sha256": "541fa90b332ad16590a1a242b83f1501452213ad66d71334931fc3cbe829ea0a"
+    },
+    "repo/packages/site/common/manual/getting-started/step-by-step/plugins-2.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/manual/getting-started/step-by-step/plugins-2.md",
+      "sha256": "88b6941604ef10a9d0c9eaad1b96f635ad670885c101cc0a89a0ffdefd816750"
+    },
+    "repo/packages/site/common/react-snippet-strict.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/react-snippet-strict.md",
+      "sha256": "d8ce6d7320f1956633d309b1362b0220fe93963b0403cd57b154d732ac00dfd2"
+    },
+    "repo/packages/site/common/react-snippet.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/react-snippet.md",
+      "sha256": "6a2bb6406f0cb3243ad0009ec6c5d810b7f78a6992f476bad6c01ada09154292"
+    },
+    "repo/packages/site/common/vue-snippet.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/common/vue-snippet.md",
+      "sha256": "0de32f48482c781d838387329209b92344e89bb99290f100d0ba4b2201410adb"
+    },
+    "repo/packages/site/docs/api/behavior.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/behavior.en.md",
+      "sha256": "93b85076aebd8d25941a2fc082ceda7ce72bd0f4c63d9a2154901e8d9e8eb148"
+    },
+    "repo/packages/site/docs/api/canvas.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/canvas.en.md",
+      "sha256": "332f49ce5a9c3a14372a96d044a185b6ef970365fd6df1ac25b5d5df2f052119"
+    },
+    "repo/packages/site/docs/api/coordinate.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/coordinate.en.md",
+      "sha256": "e96e3c57b709e05f5339ed41dfa3263cf5ce0fcd33c62f89738ea10a50ef7a45"
+    },
+    "repo/packages/site/docs/api/data.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/data.en.md",
+      "sha256": "7e9c9b522da5209f1a916d81cbbc598181db555b7dab76e095e6515478bb7b83"
+    },
+    "repo/packages/site/docs/api/element.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/element.en.md",
+      "sha256": "68a6a1a88be11ac63e88b366bb941ad450b2bf0ab3e35d68721c0d4eb210434d"
+    },
+    "repo/packages/site/docs/api/event.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/event.en.md",
+      "sha256": "0d9f32d6b310bfd28831c0a2f7bec6f2a567567f4384efc217346d07be9e7488"
+    },
+    "repo/packages/site/docs/api/export-image.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/export-image.en.md",
+      "sha256": "e5d853598187b0bf9f85d29b1fdbe1c9512c9611acff50b7e98ace5b182e23e1"
+    },
+    "repo/packages/site/docs/api/graph.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/graph.en.md",
+      "sha256": "01c37332a36bd98ef020452b43a1f25d67cd14510665847b5ef9f7e275442fc3"
+    },
+    "repo/packages/site/docs/api/layout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/layout.en.md",
+      "sha256": "f8c6212bf42ddc9f1b454c01a2c3173719b528618f6b3e49bc822f82a129f298"
+    },
+    "repo/packages/site/docs/api/option.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/option.en.md",
+      "sha256": "9ed3a3dce8efa83148647aa5de569e579c647e8db4c59a7da847fb32bd0c7b95"
+    },
+    "repo/packages/site/docs/api/plugin.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/plugin.en.md",
+      "sha256": "d49722b374241f632349bb88eb0e4da208f52ba1c77cfcf4c0efc8d936cc8129"
+    },
+    "repo/packages/site/docs/api/render.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/render.en.md",
+      "sha256": "7852a32a0d91ae92265daca8e9f64ab809ff3c8fb2d98d2dfcf37d5aabee6c11"
+    },
+    "repo/packages/site/docs/api/theme.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/theme.en.md",
+      "sha256": "c0cb843f686b5a932438b83416ed9f5bd4ea83ddeb4c4ce817eb066c4c3249b9"
+    },
+    "repo/packages/site/docs/api/transform.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/transform.en.md",
+      "sha256": "b810eb5be12926a30e43518463d2cbbff38caca2d621794844636c703952250c"
+    },
+    "repo/packages/site/docs/api/viewport.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/api/viewport.en.md",
+      "sha256": "e9a316fbcfba607ec50e8c7593c0a4074d293294ca1934beaa375b053d797ab9"
+    },
+    "repo/packages/site/docs/backup/CameraSetting.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/backup/CameraSetting.en.md",
+      "sha256": "abc9a388359418aa7ad1d2f44adf198954dd94255034b5e855196b92d472f0dc"
+    },
+    "repo/packages/site/docs/manual/animation/animation.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/animation/animation.en.md",
+      "sha256": "7ca86d51968d723ec1723f3949fc8102bae7ba2566172994cd5fb0f3729ba4dc"
+    },
+    "repo/packages/site/docs/manual/animation/custom-animation.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/animation/custom-animation.en.md",
+      "sha256": "99687f42cdd432fafe869a9fb375e7858bc92c691b29af77860d708483122800"
+    },
+    "repo/packages/site/docs/manual/behavior/AutoAdaptLabel.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/AutoAdaptLabel.en.md",
+      "sha256": "61a25410d158059bb4ef6281f844132943380bba61f4f86222f6dfa9968ce07f"
+    },
+    "repo/packages/site/docs/manual/behavior/BrushSelect.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/BrushSelect.en.md",
+      "sha256": "4b13ed7dca02740e19c5d086f656a963a1625095c1eb07a495fded8fc9dd2804"
+    },
+    "repo/packages/site/docs/manual/behavior/ClickSelect.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/ClickSelect.en.md",
+      "sha256": "09194cdbf83f53a9abbeb7497cc56d7799cf5e0e0410dd72a0474911e53fb6c1"
+    },
+    "repo/packages/site/docs/manual/behavior/CollapseExpand.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/CollapseExpand.en.md",
+      "sha256": "2b5e74141ba8c5d05f1703efde3d02b52c6c049a26c990abe0aade5505618653"
+    },
+    "repo/packages/site/docs/manual/behavior/CreateEdge.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/CreateEdge.en.md",
+      "sha256": "c1784e0cec857566112320449941d0a4763c2d182f9747371a68c71aa0c6877c"
+    },
+    "repo/packages/site/docs/manual/behavior/custom-behavior.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/custom-behavior.en.md",
+      "sha256": "71cebc0d5466c11e742cc6d73e8a1a520084688eac04d9d893a5d8344dfe4feb"
+    },
+    "repo/packages/site/docs/manual/behavior/DragCanvas.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/DragCanvas.en.md",
+      "sha256": "7a228e413a3799f4e67b71090eb3e9b16f8b4d20c9c0297c33683a6660e63df7"
+    },
+    "repo/packages/site/docs/manual/behavior/DragElement.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/DragElement.en.md",
+      "sha256": "17f098d71e8810fc834efd3c2c0ef887e343b4a364a080f2704dc69729c68460"
+    },
+    "repo/packages/site/docs/manual/behavior/DragElementForce.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/DragElementForce.en.md",
+      "sha256": "dd81824e0789c5a081408e20961544a2c38e43993aa87681c109922ce14283af"
+    },
+    "repo/packages/site/docs/manual/behavior/FixElementSize.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/FixElementSize.en.md",
+      "sha256": "7f1ae1149c1d7d5895b41c070eafa46cc1809e8dfae0ee28a2c16ef4e405ee54"
+    },
+    "repo/packages/site/docs/manual/behavior/FocusElement.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/FocusElement.en.md",
+      "sha256": "b4d2872fe3a91286c3816216f0b2474e21958c0858a089c99f3e6354026da79c"
+    },
+    "repo/packages/site/docs/manual/behavior/HoverActivate.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/HoverActivate.en.md",
+      "sha256": "d42988845337addb6394828e47b3555d8aa284aeea7e55cf7db042c74b91f8f7"
+    },
+    "repo/packages/site/docs/manual/behavior/LassoSelect.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/LassoSelect.en.md",
+      "sha256": "0a4c4fb3c317a8b63c1fe8c2a61886b3dfaf7dcefb40d4735b3fdc2b6722dade"
+    },
+    "repo/packages/site/docs/manual/behavior/OptimizeViewportTransform.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/OptimizeViewportTransform.en.md",
+      "sha256": "cedf685b2e850edd5536ce5a6b5875d60a7d7398c6a1f6d46b1690747e4f76ac"
+    },
+    "repo/packages/site/docs/manual/behavior/overview.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/overview.en.md",
+      "sha256": "bf965fba4dfe6753a0e3c6cc9cf595fdcb9295847281f78093eebab3f8427e43"
+    },
+    "repo/packages/site/docs/manual/behavior/ScrollCanvas.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/ScrollCanvas.en.md",
+      "sha256": "f5eac1ab2cebded0719c657a962b2904d424b79622b7ed92dba590f3a3b07202"
+    },
+    "repo/packages/site/docs/manual/behavior/ZoomCanvas.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/behavior/ZoomCanvas.en.md",
+      "sha256": "6989d2fb30f5b445e6c26418e1e087f2772f15ee49fa5f8989de288eadc70f85"
+    },
+    "repo/packages/site/docs/manual/contribute.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/contribute.en.md",
+      "sha256": "23418db5c212ede8d4a3bad71c0e790f38af3ccdce266a2bdca0a654a55e7eb2"
+    },
+    "repo/packages/site/docs/manual/data.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/data.en.md",
+      "sha256": "22df144bcb533d1f856ad51128adacf8ce76c214ac7cc6911fdf1101c98e89a4"
+    },
+    "repo/packages/site/docs/manual/element/combo/BaseCombo.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/combo/BaseCombo.en.md",
+      "sha256": "362f95bfc03256ab057349a30af5bcfaa576a7d8ecca4cb866d2ad6aeee6afc8"
+    },
+    "repo/packages/site/docs/manual/element/combo/CircleCombo.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/combo/CircleCombo.en.md",
+      "sha256": "84645f30b5ec2b1ba4b4490a1ff91e1e13ce1b7e54d805fb59913969fc20b12b"
+    },
+    "repo/packages/site/docs/manual/element/combo/custom-combo.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/combo/custom-combo.en.md",
+      "sha256": "c949f42ae0bb3fc64462b2c2e3db13263d4313c88e8583a785b08e3d0427e6b9"
+    },
+    "repo/packages/site/docs/manual/element/combo/overview.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/combo/overview.en.md",
+      "sha256": "ab2e9829dcfbc13fc14c5345f8987ba2264642f829497ca9757117373821a14d"
+    },
+    "repo/packages/site/docs/manual/element/combo/RectCombo.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/combo/RectCombo.en.md",
+      "sha256": "d9a019f6f066714a8a25593075c5287557ca353656f080d5d69c0bdca1975e38"
+    },
+    "repo/packages/site/docs/manual/element/edge/BaseEdge.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/edge/BaseEdge.en.md",
+      "sha256": "fea59c27cac13fcdd64b68b65ad4c9b71534435142b431ef59003df40489a6e1"
+    },
+    "repo/packages/site/docs/manual/element/edge/Cubic.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/edge/Cubic.en.md",
+      "sha256": "8227a46ef105195bced47e6692437b1f1070086d0dabfb0fbbad97e647a56415"
+    },
+    "repo/packages/site/docs/manual/element/edge/CubicHorizontal.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/edge/CubicHorizontal.en.md",
+      "sha256": "feefa949492a5d280b0167c641c7fabab71a2d0a48decf182a9aeff1650d77b9"
+    },
+    "repo/packages/site/docs/manual/element/edge/CubicVertical.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/edge/CubicVertical.en.md",
+      "sha256": "bb3f5aaadc17aa4ebca8cdff81825b686747c6c59aae92862190ca6b174d57bb"
+    },
+    "repo/packages/site/docs/manual/element/edge/custom-edge.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/edge/custom-edge.en.md",
+      "sha256": "db8adf4b69e517aeaf5d3900e29cb38f38953212be06116abfef5158734ffc62"
+    },
+    "repo/packages/site/docs/manual/element/edge/Line.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/edge/Line.en.md",
+      "sha256": "cca4df9eca15db21cd68905f6ada00bb12dcfbe4b5bf05ac542ef4c7fa966203"
+    },
+    "repo/packages/site/docs/manual/element/edge/overview.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/edge/overview.en.md",
+      "sha256": "a04216e5c17f97edd005d37e75ef52b670f619d8e898791ca410b581d73fb2a6"
+    },
+    "repo/packages/site/docs/manual/element/edge/Polyline.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/edge/Polyline.en.md",
+      "sha256": "99b952b0a8c6353c2dfaa0efb0390817f0d40a3551cdad2bd7d5748b1e42f314"
+    },
+    "repo/packages/site/docs/manual/element/edge/Quadratic.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/edge/Quadratic.en.md",
+      "sha256": "6a93b236e63499ec49d88474d4239d35895f2aa194c1b8ed553f22d65779a9d0"
+    },
+    "repo/packages/site/docs/manual/element/node/BaseNode.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/BaseNode.en.md",
+      "sha256": "7fcce6e285a8236481814ae4a7872fa099fc977955892ca18b05b95dc875a31e"
+    },
+    "repo/packages/site/docs/manual/element/node/Circle.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/Circle.en.md",
+      "sha256": "d65b7613ad268a404323a356f8061693472f537b47ab6dd3d90d39bc04efc564"
+    },
+    "repo/packages/site/docs/manual/element/node/custom-node.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/custom-node.en.md",
+      "sha256": "ac901fab1550bcf8f06f4f34d3391bf44d6c5019c987466ab8c2d678d63b7e0f"
+    },
+    "repo/packages/site/docs/manual/element/node/Diamond.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/Diamond.en.md",
+      "sha256": "1370ba6ab15c282f9a8000a5689e46f0a4c1ba04d558419ee5c977a2177eb0f7"
+    },
+    "repo/packages/site/docs/manual/element/node/Donut.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/Donut.en.md",
+      "sha256": "d1271fad34621d3486e4ddda70da7eff3f83e8b37ee9626d915f91b15d43543a"
+    },
+    "repo/packages/site/docs/manual/element/node/Ellipse.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/Ellipse.en.md",
+      "sha256": "72efe3c3a2f01e491c0a7656425b15d52323888600b7eb31e82261dc9fc378eb"
+    },
+    "repo/packages/site/docs/manual/element/node/Hexagon.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/Hexagon.en.md",
+      "sha256": "6566031884833bc286438aede398f37a53389a76c3f6d39bb20946b2e3d68bfc"
+    },
+    "repo/packages/site/docs/manual/element/node/Html.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/Html.en.md",
+      "sha256": "404ffd0788b3426a954fdb7d35ab643c16e983179a3a07011086cec14c253b49"
+    },
+    "repo/packages/site/docs/manual/element/node/Image.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/Image.en.md",
+      "sha256": "0a5cd9134b869d4b99fff0b15ef6d02dff22fa0681e765044d1758cde7c1af35"
+    },
+    "repo/packages/site/docs/manual/element/node/overview.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/overview.en.md",
+      "sha256": "9ad3d8ea246fabd627471677b4e06658db417c35f5874291a23f13d96b298c52"
+    },
+    "repo/packages/site/docs/manual/element/node/react-node.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/react-node.en.md",
+      "sha256": "9ab369f9ae49103d8295514083edf4558fe7dd06e652714ae2b4a95da7e6dbe4"
+    },
+    "repo/packages/site/docs/manual/element/node/Rect.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/Rect.en.md",
+      "sha256": "582910de64fecde5a334250fc2415e43324ca0f2b7133e58ee6141bfdaec557a"
+    },
+    "repo/packages/site/docs/manual/element/node/Star.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/Star.en.md",
+      "sha256": "d35bd462872a0c7b2c9811d1662edd79237010416698cd70890b8fee0f93b979"
+    },
+    "repo/packages/site/docs/manual/element/node/Triangle.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/Triangle.en.md",
+      "sha256": "032350dbb77d43504869710e4965ba9b27d1d03414923e638545dfa64def2366"
+    },
+    "repo/packages/site/docs/manual/element/node/vue-node.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/node/vue-node.en.md",
+      "sha256": "3c45308d0bf9f67f0e91eaff2b29cc60bd9fc9e9b76f22d9343cb304767bbf2e"
+    },
+    "repo/packages/site/docs/manual/element/overview.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/overview.en.md",
+      "sha256": "058af2daccbc3f6f157f8679176cd03d57fb2da4bd59d9ad7f35d87b50061d84"
+    },
+    "repo/packages/site/docs/manual/element/shape/label-shape.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/shape/label-shape.en.md",
+      "sha256": "a23c4326b73e1f9ea51b7964d5b6d20bd47905e277d4b10cd970eeb0f2ac79ba"
+    },
+    "repo/packages/site/docs/manual/element/shape/overview.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/shape/overview.en.md",
+      "sha256": "e2960585f25652a8ac7aabef3af084d853f70a108a31b34e77d12a3d9b3ddf74"
+    },
+    "repo/packages/site/docs/manual/element/shape/properties.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/shape/properties.en.md",
+      "sha256": "2035e8f071c6468678d14cfac4a889fece66a60d0eb03499f22509355f0c195b"
+    },
+    "repo/packages/site/docs/manual/element/state.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/element/state.en.md",
+      "sha256": "5b5bfdabb0ee5207ee6202db8e4087d628c313f2d8a469f900e15864a9c379c2"
+    },
+    "repo/packages/site/docs/manual/extension/3d.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/extension/3d.en.md",
+      "sha256": "f91719fcc61bb9ff0693a0f9e1de1f258ac01e2026addb883092ad1c9982c516"
+    },
+    "repo/packages/site/docs/manual/faq.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/faq.en.md",
+      "sha256": "3b90a726088167ac6a44c6a7a0b7f3a279e894dd3006d838ea9484e62508b189"
+    },
+    "repo/packages/site/docs/manual/further-reading/3d.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/further-reading/3d.en.md",
+      "sha256": "ddb27e1d8e867100c51804dd5bff24bc1983738928c87095a67d6083b37e281d"
+    },
+    "repo/packages/site/docs/manual/further-reading/bundle.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/further-reading/bundle.en.md",
+      "sha256": "078d4552e87e3a39d3b906a768ad5b0469d854ee34ab34d7e8dd1325cfbb8fd0"
+    },
+    "repo/packages/site/docs/manual/further-reading/coordinate.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/further-reading/coordinate.en.md",
+      "sha256": "6cf61874a74ad4f275480c69572ef089441f7bff8beba39c1790c5a4429e7ca1"
+    },
+    "repo/packages/site/docs/manual/further-reading/download-image.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/further-reading/download-image.en.md",
+      "sha256": "c55637f9c7aa217bb430d79b9576c0ed082f51412023950e16576670bf9dc871"
+    },
+    "repo/packages/site/docs/manual/further-reading/event.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/further-reading/event.en.md",
+      "sha256": "63b05209a3e4e94a3be845ce12ce3186012bffeb71328797d156687a20b25a29"
+    },
+    "repo/packages/site/docs/manual/further-reading/iconfont.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/further-reading/iconfont.en.md",
+      "sha256": "c91c4b9da7e7780fdb60d9d44d628cb551ebb1276d3a9b5ffd004cff66434938"
+    },
+    "repo/packages/site/docs/manual/further-reading/renderer.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/further-reading/renderer.en.md",
+      "sha256": "f4adf544b1b6e2812ee89593faa7be7e483713e0c83e3cab574033d875410f67"
+    },
+    "repo/packages/site/docs/manual/getting-started/installation.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/getting-started/installation.en.md",
+      "sha256": "eb4e061020c5cc6fc07f078ea5204b4a831dda1b2406cd4329ed8d33b32fe997"
+    },
+    "repo/packages/site/docs/manual/getting-started/integration/angular.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/getting-started/integration/angular.en.md",
+      "sha256": "0ccf35d4e99a393f7c0055b376fa4a286a942d8f3608ab7d96f0928a9f52a439"
+    },
+    "repo/packages/site/docs/manual/getting-started/integration/react.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/getting-started/integration/react.en.md",
+      "sha256": "04ffb7833f3259c7f65a936bb622f480e59af9d6b2455cbce3bc20d6c8fe2174"
+    },
+    "repo/packages/site/docs/manual/getting-started/integration/vue.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/getting-started/integration/vue.en.md",
+      "sha256": "20987109347b82eecb203f1a77779ff63817a1a787267366f3002ab4cdcfcc3a"
+    },
+    "repo/packages/site/docs/manual/getting-started/quick-start.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/getting-started/quick-start.en.md",
+      "sha256": "9f47ffada74c83acbaccea9bddea022c40e9bb52fae87088490eed2ac74d603b"
+    },
+    "repo/packages/site/docs/manual/getting-started/step-by-step.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/getting-started/step-by-step.en.md",
+      "sha256": "17378a00da1723d2ede553faa789ae40aee1db66c103060e2f96c4a3ecad66aa"
+    },
+    "repo/packages/site/docs/manual/graph/extension.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/graph/extension.en.md",
+      "sha256": "32eae7fee3355fe5de7df0b74f1020c800245a7267bfdbd8d28e45acf01e7548"
+    },
+    "repo/packages/site/docs/manual/graph/extensions.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/graph/extensions.en.md",
+      "sha256": "be055970f7825ed8f5c82e4b1d3e7fbf8cb5606c4c0955daaddd4b7054d0490d"
+    },
+    "repo/packages/site/docs/manual/graph/graph.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/graph/graph.en.md",
+      "sha256": "4c4a4739969b60a245196353c073922fc29f77f0605cd075d312de8ed19fb00e"
+    },
+    "repo/packages/site/docs/manual/graph/option.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/graph/option.en.md",
+      "sha256": "0f1052ce8b65447c869632eba6d15ee03cce0d96e3788e7df01ad3a9d486eac5"
+    },
+    "repo/packages/site/docs/manual/introduction.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/introduction.en.md",
+      "sha256": "48175bc9c889b59e4c4ddcfa128bfd05703c68a5729d9360e747c991e18c7280"
+    },
+    "repo/packages/site/docs/manual/layout/AntvDagreLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/AntvDagreLayout.en.md",
+      "sha256": "f670915c6a4005ed3d399321c1eae1dbc732b5f8862dc13c4f6af774532f58d4"
+    },
+    "repo/packages/site/docs/manual/layout/BaseLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/BaseLayout.en.md",
+      "sha256": "84f06108653bf606b9b6f5c9d091641d67a796198a31e7586e597b127de0e101"
+    },
+    "repo/packages/site/docs/manual/layout/CircularLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/CircularLayout.en.md",
+      "sha256": "8a70057345e492843c35fd64f865b7e868a669f7df0b1f5106c3cae9a193f282"
+    },
+    "repo/packages/site/docs/manual/layout/ComboCombinedLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/ComboCombinedLayout.en.md",
+      "sha256": "147d2355ab4914958a7b4785255ec78e3ead11c0022fcc088b78537ef09e0f28"
+    },
+    "repo/packages/site/docs/manual/layout/CompactBoxLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/CompactBoxLayout.en.md",
+      "sha256": "2edd38729ca90ab660b6b6083aceb5d9377d66a6aef5f2a47b4320e73c80c79a"
+    },
+    "repo/packages/site/docs/manual/layout/ConcentricLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/ConcentricLayout.en.md",
+      "sha256": "a8d2458315b07055203b4ecc53528e0f6fd3f41fd982f7478ed9f0e80305c066"
+    },
+    "repo/packages/site/docs/manual/layout/custom-layout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/custom-layout.en.md",
+      "sha256": "41fc0ef643ebd587803192d8e02545eb24b5e6e506784af2619a80e0076cc839"
+    },
+    "repo/packages/site/docs/manual/layout/D3Force3DLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/D3Force3DLayout.en.md",
+      "sha256": "838566becf98be44ed8e023f54048b3d63258e82c214b46e44123b1c1dd13a7f"
+    },
+    "repo/packages/site/docs/manual/layout/D3ForceLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/D3ForceLayout.en.md",
+      "sha256": "9f2ca37c39e40dab06862dd7e62d5c3f1d4b45f035325c9163dba9213d4c275b"
+    },
+    "repo/packages/site/docs/manual/layout/DagreLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/DagreLayout.en.md",
+      "sha256": "604babba977507f2286d5b79844bfb8478127b655f84c52e03e7003aa958f4b5"
+    },
+    "repo/packages/site/docs/manual/layout/DendrogramLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/DendrogramLayout.en.md",
+      "sha256": "9d6f83024cd2c8409d3698429e14ed18bcd934e0014e5a511a0f2f9e7f644514"
+    },
+    "repo/packages/site/docs/manual/layout/Fishbone.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/Fishbone.en.md",
+      "sha256": "5f58e6a0dd14a6408be2804a2b09959e5d47e89b15b7acef1ad3ad1b15ae7eb4"
+    },
+    "repo/packages/site/docs/manual/layout/ForceAtlas2Layout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/ForceAtlas2Layout.en.md",
+      "sha256": "687acf009ce1ec3c44e29885ed31d0986f524a042ea7fe882d147cf2fa30af49"
+    },
+    "repo/packages/site/docs/manual/layout/ForceLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/ForceLayout.en.md",
+      "sha256": "5a93cd2fa35564424e2da9b2fea553c51ca7b05223f3b4b5080a0933666fa45b"
+    },
+    "repo/packages/site/docs/manual/layout/FruchtermanLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/FruchtermanLayout.en.md",
+      "sha256": "0a231e68e0ff832529cf090a7b5280624cbef7c4a944786b4d453a68113d3153"
+    },
+    "repo/packages/site/docs/manual/layout/GridLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/GridLayout.en.md",
+      "sha256": "1efc3dd6d59347a143fae4c4015d0eb66a6696cc3b6669502a4dc16b34035aae"
+    },
+    "repo/packages/site/docs/manual/layout/IndentedLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/IndentedLayout.en.md",
+      "sha256": "4a8943cd0dd2c1b633c8be178cfff7ccc1c4855f9497748f1c7834771e96cc16"
+    },
+    "repo/packages/site/docs/manual/layout/MdsLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/MdsLayout.en.md",
+      "sha256": "9def3935fe104bf67cd7e4a6a5eae59c952e77ba3f5206b9359d78af5b72c061"
+    },
+    "repo/packages/site/docs/manual/layout/MindmapLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/MindmapLayout.en.md",
+      "sha256": "358d80190d67a18e0b0eb29b2029eaf7108d98f8d4e684b5836aa2eb17ea0c04"
+    },
+    "repo/packages/site/docs/manual/layout/overview.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/overview.en.md",
+      "sha256": "18db6dc3efd902a4814356c0d78f0c5da0d1db4983e4a861b29e10bc77112345"
+    },
+    "repo/packages/site/docs/manual/layout/RadialLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/RadialLayout.en.md",
+      "sha256": "464d329f732bdc799e50ee21e705a8dadab62a3fd74e2ce51739e32915a73c7f"
+    },
+    "repo/packages/site/docs/manual/layout/RandomLayout.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/RandomLayout.en.md",
+      "sha256": "9819d30f689f71952d4f6ac6da1c5105399b4f59f2eef03a025cabfeb0f10b1b"
+    },
+    "repo/packages/site/docs/manual/layout/Snake.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/layout/Snake.en.md",
+      "sha256": "4e806d664003f3ab334eae953517266f9591f8802f9e06a796c4a851604c36b5"
+    },
+    "repo/packages/site/docs/manual/plugin/Background.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Background.en.md",
+      "sha256": "b214f8b78428d4488a62b686d493c2be2f72ecc1d882ea8ce09259bdc131c739"
+    },
+    "repo/packages/site/docs/manual/plugin/BubbleSets.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/BubbleSets.en.md",
+      "sha256": "3ced02cee432b740c2c1caad36240dc1f6d2cf9700b3be770eec6a839ec06fe4"
+    },
+    "repo/packages/site/docs/manual/plugin/Contextmenu.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Contextmenu.en.md",
+      "sha256": "80fef6ef89579eddeb41ff13e654b30988c7dbc9834af4c879fd6a6eb4881f92"
+    },
+    "repo/packages/site/docs/manual/plugin/custom-plugin.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/custom-plugin.en.md",
+      "sha256": "e0749f80d761fc6f4c1c4f70f5d70a8bc42b97db0fee343022190d47681d50c8"
+    },
+    "repo/packages/site/docs/manual/plugin/EdgeBundling.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/EdgeBundling.en.md",
+      "sha256": "7da3bbd153f55ecd22123766b468241793c4708fa64c1bad9e3ef75a58628c45"
+    },
+    "repo/packages/site/docs/manual/plugin/EdgeFilterLens.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/EdgeFilterLens.en.md",
+      "sha256": "43ff81cf3cafbfe2740bdfcc224b617bc284bc3715a4f52264569a93bc8c9f5c"
+    },
+    "repo/packages/site/docs/manual/plugin/Fisheye.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Fisheye.en.md",
+      "sha256": "0caed06647c209305f8e692ec7cda38f92e0d191e31711c9625bc99e2bc7df66"
+    },
+    "repo/packages/site/docs/manual/plugin/Fullscreen.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Fullscreen.en.md",
+      "sha256": "c641546e509dbee30414d0ff165eb8ceb45d1a37fd27a87acddaabdbff9938f1"
+    },
+    "repo/packages/site/docs/manual/plugin/GridLine.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/GridLine.en.md",
+      "sha256": "3dfa5331998a20ecce9a9e75a04bc0a439a0cd8621dfcc21f9a7b6b1ae9df11d"
+    },
+    "repo/packages/site/docs/manual/plugin/History.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/History.en.md",
+      "sha256": "f16f1c58a0630e6b14522412403e1f1a048e421be0c8a1e70c247a73d207c119"
+    },
+    "repo/packages/site/docs/manual/plugin/Hull.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Hull.en.md",
+      "sha256": "818f667bd4a9d5e3fbee5239af8a4692b50b694d3c8d0e8bf27a2c86bd77fe39"
+    },
+    "repo/packages/site/docs/manual/plugin/Legend.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Legend.en.md",
+      "sha256": "6c77783d9d7841a1e4bf5da6811ccbb7da44f23eb042d593da968f2c79d1b049"
+    },
+    "repo/packages/site/docs/manual/plugin/Minimap.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Minimap.en.md",
+      "sha256": "5d36d5e9fb4893a5aed3e1ac115793814f7346db89a842f4df23c9c9502c5764"
+    },
+    "repo/packages/site/docs/manual/plugin/overview.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/overview.en.md",
+      "sha256": "edb55042e1bc15cc1dd29cb7b2a28090c421b8ca4fccda8d964cb987093dee22"
+    },
+    "repo/packages/site/docs/manual/plugin/Snapline.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Snapline.en.md",
+      "sha256": "b7034eff432b808df54fa0de2d9b67ee22305ac16897532296bf2c086edbec99"
+    },
+    "repo/packages/site/docs/manual/plugin/Timebar.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Timebar.en.md",
+      "sha256": "e1301ada3f7b26f8170fce5a19b1cfaeb790d8ff185a31fb5c75f4bd5d0613bf"
+    },
+    "repo/packages/site/docs/manual/plugin/Title.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Title.en.md",
+      "sha256": "0e5d073be87cc8fc601ec3d774f7a69070891002b4cff402e287075128723c2e"
+    },
+    "repo/packages/site/docs/manual/plugin/Toolbar.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Toolbar.en.md",
+      "sha256": "d865365139cf5e7cc1d1b7a8410a034e073622d45d64cb928555e2ce7539b66c"
+    },
+    "repo/packages/site/docs/manual/plugin/Tooltip.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Tooltip.en.md",
+      "sha256": "edb0eebb24db48bdbbecfba2603d51e091e288dc30e5db22f77dc89877b160ff"
+    },
+    "repo/packages/site/docs/manual/plugin/Watermark.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/plugin/Watermark.en.md",
+      "sha256": "3a08a77340d88a9b435bfe6bc97f40d8ba28b57860d5f0ea387fa7b14368b094"
+    },
+    "repo/packages/site/docs/manual/theme/custom-palette.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/theme/custom-palette.en.md",
+      "sha256": "5561912fd8f183498804e693b1f725d495a972d633d3add30235b51a2cb86b4e"
+    },
+    "repo/packages/site/docs/manual/theme/custom-theme.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/theme/custom-theme.en.md",
+      "sha256": "93a0c4fc2fc68ea28c91e98b0f76ba02bc22f54058959657ccbfaec2ff668a08"
+    },
+    "repo/packages/site/docs/manual/theme/overview.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/theme/overview.en.md",
+      "sha256": "d72abfd7acd49590d3ef15e005e331ab0b4dd20c92439cdc697952a4ed0b3972"
+    },
+    "repo/packages/site/docs/manual/theme/palette.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/theme/palette.en.md",
+      "sha256": "84fa157b2bf8bc53fabb55c4d49e3726e4b34beae1abc0152234343102405317"
+    },
+    "repo/packages/site/docs/manual/transform/custom-transform.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/transform/custom-transform.en.md",
+      "sha256": "aa083203034af566571a6babaffb2975ecccb24af52a843b1eaccaec02d2e2dc"
+    },
+    "repo/packages/site/docs/manual/transform/MapNodeSize.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/transform/MapNodeSize.en.md",
+      "sha256": "0f296abaa8a8651780c2890e7873af791f7245bf64ce30977f31998989c6a557"
+    },
+    "repo/packages/site/docs/manual/transform/overview.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/transform/overview.en.md",
+      "sha256": "eb268da7341951f9c7e2df40a3368c8402ad8b048dee3123e71fb0c30fbf93e6"
+    },
+    "repo/packages/site/docs/manual/transform/PlaceRadialLabels.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/transform/PlaceRadialLabels.en.md",
+      "sha256": "3bd8eb999cd387bfe9b876ea2bf83dda72131c61b01a645db3feb6c463ba18df"
+    },
+    "repo/packages/site/docs/manual/transform/ProcessParallelEdges.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/transform/ProcessParallelEdges.en.md",
+      "sha256": "5386bd63214831520ffd4abb1430649a134ccfa616b43a769430d2fe23ee1a53"
+    },
+    "repo/packages/site/docs/manual/whats-new/feature.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/whats-new/feature.en.md",
+      "sha256": "d179e2a8c9f1a01d8cc54fb45636dd4a561382db848cfbb3cd6f6460132dec03"
+    },
+    "repo/packages/site/docs/manual/whats-new/upgrade.en.md": {
+      "url": "https://github.com/antvis/g6/blob/5a5551cea13d021d12c90a87116e3c6092d53210/packages/site/docs/manual/whats-new/upgrade.en.md",
+      "sha256": "1624c4bfd8085740316aca0d49e7428bbd9e85e348e28ea31860237c3d764eba"
+    }
+  }
+}
