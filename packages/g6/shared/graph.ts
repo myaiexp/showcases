@@ -15,6 +15,27 @@ import './graph.css';
  *   dataset() hands out a fresh copy on every call.
  * - Without width and height G6 reads the container's size once, at construction: the box
  *   is sized before setup runs, and stage.keep() resizes the graph with the full view.
+ * - Every function inside a `style` object is called as a datum callback, so an event handler
+ *   cannot travel through style (the docs' onButtonClick): keep it in a module variable.
+ * - Two edges between the same nodes need explicit ids, or G6 throws "Edge already exists".
+ * - A node's `transform` style replaces the translate that places it. The string form loses
+ *   the position; G's array form with the translate last keeps it (node-transform).
+ * - Custom elements: `override render(attributes = this.parsedAttributes as Attrs, container = this)`
+ *   (noImplicitOverride; G types container as optional). register() takes 3 arguments.
+ *   Inside a node, a custom Circle shape is placed with cx/cy, not x/y.
+ * - `graph.on('node:click', (e: IElementEvent) => …)`: the bare event type has no target.
+ * - autoFit: 'view' fits the key shapes, so badges, ports and labels at the rim get clipped:
+ *   add `padding`.
+ * - Style callbacks for literal-union props (pointerEvents, cursor…) must return the literal type.
+ * - zoom, x, y, rotation, devicePixelRatio, background, autoResize and canvas options are read
+ *   at construction only; setOptions ignores them, so those examples rebuild the graph.
+ *   background fills the canvas only as a top-level option (canvas.background is overwritten).
+ * - register() of a taken name overrides it with a warning: use unique showcase- names.
+ * - addComboData([{ id, children }]) does not move nodes into the combo: set `combo` on the
+ *   node data. removeNodeData also removes the node's edges.
+ * - map-node-size in 5.1.1 takes centrality/minSize/maxSize (the docs' field/min/max do
+ *   nothing), and the graph option is `transforms`, not `transform`.
+ * - A custom state's icon uses flat props (icon: true, iconText), not icon: { show, text }.
  *
  * Every example writes its whole `new Graph({...})` spec in its own main.ts; this file only
  * sizes the box, repeats card steps, resizes and destroys what the example made.
