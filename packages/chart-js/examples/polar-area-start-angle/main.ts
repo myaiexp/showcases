@@ -38,11 +38,12 @@ const mount: Mount = (el, ctx) => {
       plugins: { legend: { display: !ctx.preview, position: 'right' } },
     },
   });
-  const r = chart.options.scales!.r!;
+  // Read scales.r on every change: update() re-merges the scale options into new objects.
+  const r = (): object => chart.options.scales!.r!;
 
   const setAngle = (deg: number): void => {
     // The shared scale type has no startAngle in its union; the radial scale does.
-    (r as { startAngle?: number }).startAngle = deg;
+    (r() as { startAngle?: number }).startAngle = deg;
     chart.update();
     label.textContent = `scales.r.startAngle: ${deg}`;
   };
@@ -51,7 +52,7 @@ const mount: Mount = (el, ctx) => {
   if (bar) {
     slider(bar, 'startAngle (°)', [0, 360, 5], 0, setAngle);
     toggle(bar, 'Angle lines', true, (on) => {
-      (r as { angleLines?: { display: boolean } }).angleLines = { display: on };
+      (r() as { angleLines?: { display: boolean } }).angleLines = { display: on };
       chart.update();
     });
   }

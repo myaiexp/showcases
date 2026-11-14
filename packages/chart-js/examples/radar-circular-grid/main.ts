@@ -40,10 +40,11 @@ const mount: Mount = (el, ctx) => {
       plugins: { legend: { display: false } },
     },
   });
-  const r = chart.options.scales!.r as RadialLinearScaleOptions;
+  // Read scales.r on every change: update() re-merges the scale options into new objects.
+  const r = (): RadialLinearScaleOptions => chart.options.scales!.r as RadialLinearScaleOptions;
 
   const setCircular = (on: boolean): void => {
-    r.grid.circular = on;
+    r().grid.circular = on;
     chart.update();
     label.textContent = `grid.circular: ${on}`;
   };

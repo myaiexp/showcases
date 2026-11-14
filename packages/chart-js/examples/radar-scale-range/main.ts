@@ -50,12 +50,13 @@ const mount: Mount = (el, ctx) => {
     },
   });
   // scales.r is the radial linear scale: its options are in axes/radial/linear.md.
-  const r = chart.options.scales!.r as RadialLinearScaleOptions;
+  // Read scales.r on every change: update() re-merges the scale options into new objects.
+  const r = (): RadialLinearScaleOptions => chart.options.scales!.r as RadialLinearScaleOptions;
 
   const apply = (range: Range): void => {
-    r.beginAtZero = range.beginAtZero;
-    r.suggestedMax = range.suggestedMax as number;
-    r.ticks.stepSize = range.stepSize as number;
+    r().beginAtZero = range.beginAtZero;
+    r().suggestedMax = range.suggestedMax as number;
+    r().ticks.stepSize = range.stepSize as number;
     chart.update();
     label.textContent = describe(range);
   };
