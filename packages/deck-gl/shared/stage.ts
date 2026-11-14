@@ -29,6 +29,17 @@ import type { MountContext } from '@/types.ts';
  *   it as Feature<Geometry, Props>.
  * - Layers in an OrbitView or OrthographicView need coordinateSystem: CARTESIAN.
  * - Accessors that read changing state need updateTriggers, or a fresh layer per change.
+ * - getTooltip hides with null, not undefined.
+ * - dataComparator, dataTransform and _dataDiff are typed generically: take unknown and
+ *   narrow inside. onDataLoad does not fire per batch of an async-iterable `data`.
+ * - A card can drive real picking without a pointer: deck.pickObject at a
+ *   viewport.project() point. getViewports() is empty until the first render.
+ * - Aggregation bins are sized in metres (pixels for ScreenGridLayer): a card at a lower
+ *   zoom needs bigger bins, and ContourLayer thresholds scale with cell area.
+ * - HexagonLayer/GridLayer fall back to CPU (with a warning) when a getColorValue,
+ *   getElevationValue or custom aggregator is set: pass gpuAggregation: false.
+ * - A standalone Attribute (outside a layer) needs noAlloc: true plus setData(), and
+ *   delete() on cleanup.
  */
 
 /** Stage heights: a gallery card is 200px; the full view gets room to explore. */
