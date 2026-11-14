@@ -37,6 +37,15 @@ export interface Chart {
  *   constructor runs. autoFit (default true) then follows container resizes itself.
  * - Calling a method on a released instance throws; timers must stop before release().
  * - updateSpec rebuilds component instances: look a component up on each tick, never cache it.
+ * - updateSpec merges into the old spec, so a key you drop can linger; release and rebuild
+ *   the chart when a control removes keys.
+ * - The constructor clones the spec: mutating it before renderSync does nothing.
+ * - A DataSet gets the 'dataview' parser only once a VChart is constructed on it.
+ * - DataView.updateRawData with a CSV string breaks the chart; parseNewData(csv, { type: 'csv' }) works.
+ * - axes.breaks must be an array; an object (the option docs allow one) is ignored.
+ * - A time axis needs numeric timestamps, and timeFormat/tickStep work only inside `layers`.
+ * - The filter/fold transforms read options.callback, not the guide's option.callBack.
+ * - `common` chart series with data: { fromDataId } do not type-check against ISpec.
  * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
  * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
  * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
