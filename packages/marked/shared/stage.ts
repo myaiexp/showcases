@@ -19,6 +19,19 @@
 //   works only in a `function` or method, never in an arrow function.
 // - Tokenizer and renderer overrides: return `false` to fall back to the built-in one; return
 //   `undefined` (nothing) and the built-in is skipped too, which switches a syntax off.
+// - An extension named like a built-in (`extensions: [{ name: 'heading', renderer }]`) does
+//   replace it, and runs before a `renderer: { heading }` override whatever the use() order;
+//   its `false` falls back to the renderer object, then the built-in.
+// - `text`, `del` and `codespan` renderers receive already-escaped text (`->` arrives as `-&gt;`).
+//   A tight list item's `text` token wraps inline `text` tokens: check `token.tokens` first.
+// - `doc.show()`'s DOMPurify drops `target="_blank"`; it shows only in the HTML pane.
+// - An `image` renderer runs inside a paragraph, so returning a <figure> leaves an empty <p>
+//   after the browser repairs the nesting (`p:empty { display: none }`).
+// - With `async: true`, Marked rewraps a rejection's message, so a `STOPPED` rejection from an
+//   awaited walkTokens no longer equals STOPPED: ignore errors once `stage.disposed` is true.
+// - `.mk-pane` is `display: flex`, so the `hidden` attribute does nothing on a pane.
+// - A worker's time limit starts after the worker has loaded Marked: in Vite dev the module load
+//   alone can take hundreds of milliseconds.
 // - The page font is monospace; a card is about 284px wide, so a split card has ~16 characters
 //   per pane line. Keep card samples short and line-broken by hand.
 import type { MountContext } from '@/types.ts';

@@ -1,0 +1,31 @@
+/* Images as figures: framed picture with a caption */
+[data-example='marked/image-figures'] {
+  .photo {
+    display: inline-block;
+    margin: 0.4em 0;
+    padding: 6px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-raised);
+  }
+  .photo img {
+    display: block;
+  }
+  .photo figcaption {
+    margin-top: 4px;
+    font-size: 0.85em;
+    font-style: italic;
+    color: var(--fg-2);
+    text-align: center;
+  }
+  .mk-doc p:empty {
+    display: none;
+  }
+  .mk-card .photo {
+    margin: 0;
+    padding: 3px;
+  }
+  .mk-card .photo figcaption {
+    margin-top: 1px;
+  }
+}

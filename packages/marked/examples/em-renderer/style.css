@@ -1,0 +1,9 @@
+/* Italics as glossary terms: dotted underline, no slant */
+[data-example='marked/em-renderer'] {
+  .term {
+    font-style: normal;
+    color: var(--accent-text);
+    border-bottom: 1px dotted var(--accent);
+    cursor: help;
+  }
+}

@@ -1,0 +1,9 @@
+/* Emoticons and search highlights: the found word gets a marker stroke */
+[data-example='marked/text-renderer'] {
+  .mk-doc mark {
+    background: color-mix(in srgb, gold 55%, transparent);
+    color: var(--fg-1);
+    border-radius: 2px;
+    padding: 0 0.1em;
+  }
+}

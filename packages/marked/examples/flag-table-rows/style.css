@@ -1,0 +1,8 @@
+/* Flagged table rows: late rows turn red */
+[data-example='marked/flag-table-rows'] {
+  .mk-doc tr.late td {
+    background: color-mix(in srgb, var(--red) 22%, transparent);
+    color: var(--red);
+    font-weight: 600;
+  }
+}

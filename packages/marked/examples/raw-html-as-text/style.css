@@ -1,0 +1,8 @@
+/* Raw HTML as text: shown tags look like code */
+[data-example='marked/raw-html-as-text'] {
+  .raw {
+    color: var(--accent-text);
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}

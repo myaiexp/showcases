@@ -1,0 +1,36 @@
+/* Tickable checkboxes: clickable boxes and a progress bar */
+[data-example='marked/interactive-checkboxes'] {
+  .tick {
+    cursor: pointer;
+    accent-color: var(--accent);
+  }
+  .progress {
+    position: relative;
+    height: 18px;
+    margin-top: 6px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    background: var(--bg-surface);
+    overflow: hidden;
+  }
+  .progress .fill {
+    height: 100%;
+    background: color-mix(in srgb, var(--accent) 45%, transparent);
+    transition: width 0.3s;
+  }
+  .progress span {
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    font-size: 11px;
+    line-height: 16px;
+    color: var(--fg-1);
+  }
+  .mk-card .progress {
+    height: 13px;
+  }
+  .mk-card .progress span {
+    font-size: 9px;
+    line-height: 11px;
+  }
+}

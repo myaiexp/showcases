@@ -1,0 +1,27 @@
+/* Tables with a row count: scroll wrapper and a footer line */
+[data-example='marked/table-with-caption'] {
+  .table-box {
+    margin: 0.6em 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .table-scroll {
+    overflow-x: auto;
+  }
+  .table-box table {
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table-box th,
+  .table-box td {
+    border-width: 0 0 1px;
+  }
+  .table-count {
+    padding: 0.2em 0.7em;
+    font-size: 0.8em;
+    color: var(--fg-3);
+    background: var(--bg-raised);
+  }
+}

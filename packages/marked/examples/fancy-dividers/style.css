@@ -1,0 +1,11 @@
+/* Fancy dividers: a centred ornament instead of a line */
+[data-example='marked/fancy-dividers'] {
+  .divider {
+    text-align: center;
+    color: var(--accent-text);
+    letter-spacing: 0.4em;
+    margin: 0.8em 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}

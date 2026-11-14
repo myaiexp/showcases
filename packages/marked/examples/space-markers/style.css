@@ -1,0 +1,13 @@
+/* Blank line markers: a dashed gap that says how many lines it was */
+[data-example='marked/space-markers'] {
+  .gap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px dashed var(--fg-3);
+    border-bottom: 1px dashed var(--fg-3);
+    color: var(--fg-3);
+    font-size: 0.75em;
+    overflow: hidden;
+  }
+}

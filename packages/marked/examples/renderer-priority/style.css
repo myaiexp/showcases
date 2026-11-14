@@ -1,0 +1,9 @@
+/* Renderer priority: the banner that the later override draws */
+[data-example='marked/renderer-priority'] {
+  .banner {
+    background: color-mix(in srgb, var(--accent) 20%, transparent);
+    border: 0;
+    border-radius: 4px;
+    padding: 0.2em 0.5em;
+  }
+}

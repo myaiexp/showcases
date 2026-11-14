@@ -1,0 +1,13 @@
+/* Renderer fallback: icon chips for phone and e-mail links only */
+[data-example='marked/renderer-fallback'] {
+  .contact {
+    display: inline-block;
+    padding: 0 0.5em 0 0.3em;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    text-decoration: none;
+  }
+  .contact .icon {
+    margin-right: 0.3em;
+  }
+}
