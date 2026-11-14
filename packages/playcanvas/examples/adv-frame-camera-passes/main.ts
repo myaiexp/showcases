@@ -1,4 +1,4 @@
-// Replacing a camera's rendering with framePasses: forward pass, then a tint quad
+// Replacing a camera's rendering with framePasses: forward pass, tint quad
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createAdvScene } from '../../shared/advanced.ts';

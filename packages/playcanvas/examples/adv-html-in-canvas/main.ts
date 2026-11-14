@@ -73,7 +73,6 @@ const mount: Mount = async (el, ctx) => {
     for (let i = 0; i < 8; i++) {
       const bar = document.createElement('div');
       bar.style.cssText = `width:44px;background:hsl(${200 + i * 20} 80% 65%);animation:adv-bar 1.4s ${i * -0.17}s ease-in-out infinite alternate`;
-      bar.style.setProperty('height', '30px');
       bars.append(bar);
     }
     const style = document.createElement('style');
