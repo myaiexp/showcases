@@ -1,5 +1,12 @@
 {
-  "license": "none found",
-  "redistribute": false,
-  "sources": []
+  "license": "MIT (SortableJS/Sortable LICENSE covers the repo, README and plugin READMEs included)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/SortableJS/Sortable",
+      "ref": "1.15.7",
+      "paths": ["README.md", "plugins/README.md", "plugins/*/README.md"]
+    }
+  ]
 }

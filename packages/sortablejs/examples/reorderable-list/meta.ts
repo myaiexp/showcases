@@ -1,13 +1,13 @@
-// Sortable.js example: a drag-handle priority list with a live order readout
+// Sortable.js example: a priority list reordered by drag handles
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
   title: 'Reorderable list',
   summary:
-    'Drag rows by their handle to reorder a priority list. Sortable animates the shift and fires onSort, which drives the live order readout.',
-  section: 'Basics',
-  tags: ['list', 'handle', 'onSort'],
-  docs: [],
-  provenance: 'legacy',
+    'The everyday job: a to-do list you rearrange by grabbing a row\'s grip. Other rows slide aside, a dashed slot shows where it will land, and the rank numbers update on drop.',
+  section: 'Getting started',
+  tags: ['Sortable.create', 'handle', 'animation', 'ghostClass', 'onSort'],
+  docs: ['repo/README.md'],
+  provenance: 'pure',
   added: '2026-06-14',
 });
