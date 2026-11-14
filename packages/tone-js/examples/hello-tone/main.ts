@@ -1,26 +1,21 @@
-// Hello Tone: a Synth plugged into the speakers plays middle C, then a short tune
+// Hello Tone: a Synth plugged into the speakers plays middle C for an eighth note
 import * as Tone from 'tone';
 import type { Mount } from '@/types.ts';
 import { toneStage } from '../../shared/stage.ts';
 import { keyboard } from '../../shared/widgets.ts';
 
-const TUNE = ['C4', 'E4', 'G4', 'C5'];
-
 const mount: Mount = (el, ctx) => {
-  const stage = toneStage(el, ctx, { seconds: 2.4 });
+  const stage = toneStage(el, ctx, { seconds: 1 });
   const keys = keyboard(stage.visual, 'C4', 'C5');
 
   return stage.run({
     // A synth connected to the main output (your speakers).
     build: () => new Tone.Synth().toDestination(),
 
-    // Middle C for an eighth note, then three more notes half a second apart.
+    // Middle C for the length of an eighth note.
     play: (synth, time) => {
-      TUNE.forEach((note, i) => {
-        const at = time + i * 0.5;
-        synth.triggerAttackRelease(note, '8n', at);
-        stage.show(at, () => keys.press(note));
-      });
+      synth.triggerAttackRelease('C4', '8n', time);
+      stage.show(time, () => keys.press('C4'));
     },
 
     controls: (synth) => {

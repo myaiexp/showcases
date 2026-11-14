@@ -59,12 +59,17 @@ export async function runCard<G>(parts: StageParts, spec: ToneSpec<G>): Promise<
   const sc = scope(scopeBox);
   const label = document.createElement('div');
   label.style.cssText =
-    'position:absolute;right:8px;top:8px;z-index:2;padding:2px 6px;border-radius:4px;background:rgba(10,12,18,0.8);font:600 11px/1.2 ui-monospace,monospace;color:#e8ecf2;pointer-events:none';
+    'position:absolute;left:10px;bottom:10px;z-index:2;padding:2px 6px;border-radius:4px;background:rgba(10,12,18,0.8);font:600 11px/1.2 ui-monospace,monospace;color:#e8ecf2;pointer-events:none';
   parts.root.style.position = 'relative';
   parts.root.append(label);
 
   let current: Float32Array[] = [new Float32Array(WINDOW)];
   parts.setSamples(() => current[0]!);
+
+  // One gain for every variant, so a quieter variant is drawn quieter.
+  let peak = 0.02;
+  for (const p of passes) for (const ch of p.audio.channels) for (const v of ch) peak = Math.max(peak, Math.abs(v));
+  const gain = 0.92 / peak;
 
   const t0 = performance.now();
   let lastPass = -1;
@@ -90,7 +95,7 @@ export async function runCard<G>(parts: StageParts, spec: ToneSpec<G>): Promise<
     const end = Math.min(Math.floor(time * rate), pass.audio.channels[0]!.length);
     const start = Math.max(0, end - WINDOW);
     current = pass.audio.channels.map((ch) => ch.subarray(start, end));
-    sc.draw(current);
+    sc.draw(current, gain);
     spec.frame?.(time);
   };
   raf = requestAnimationFrame(tick);

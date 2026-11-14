@@ -4,8 +4,11 @@ const HISTORY = 120;
 
 export interface Scope {
   readonly canvas: HTMLCanvasElement;
-  /** Draws one frame from per-channel sample windows. */
-  draw(windows: readonly Float32Array[]): void;
+  /**
+   * Draws one frame from per-channel sample windows. `gain` scales the samples; without it
+   * the scope adapts to the loudest recent sound, slowly, so fades still read as fades.
+   */
+  draw(windows: readonly Float32Array[], gain?: number): void;
   /** Forgets the loudness history (when a card's loop wraps to a new variant). */
   clear(): void;
   dispose(): void;
@@ -35,7 +38,7 @@ export function scope(parent: HTMLElement): Scope {
       hold = 0.02;
     },
     dispose: () => ro.disconnect(),
-    draw(windows) {
+    draw(windows, fixed) {
       fit();
       const { width: w, height: h } = canvas;
       const mid = h / 2;
@@ -44,9 +47,9 @@ export function scope(parent: HTMLElement): Scope {
       // Loudness history, newest on the right: how the sound has moved over the last seconds.
       let peak = 0;
       for (const win of windows) for (let i = 0; i < win.length; i++) peak = Math.max(peak, Math.abs(win[i]!));
-      // Auto-gain: quiet sounds are drawn as large as loud ones, so the shape is readable.
-      hold = Math.max(peak, hold * 0.995, 0.02);
-      const gain = 0.92 / hold;
+      // Auto-gain: quiet sounds are drawn large enough to read, with a ~10 s memory.
+      hold = Math.max(peak, hold * 0.999, 0.02);
+      const gain = fixed ?? 0.92 / hold;
       history.push(Math.min(1, peak * gain));
       if (history.length > HISTORY) history.shift();
       const bw = w / HISTORY;
