@@ -46,6 +46,12 @@ import type { MountContext } from '@/types.ts';
  * - A change to an extension's constructor options (filterSize, fp64, dashMode) needs a new
  *   layer id. CollisionFilterExtension tests the anchor pixel: a label whose anchor falls
  *   outside its own glyphs is always hidden.
+ * - TimelineWidget with autoPlay: true calls onTimeChange inside the Deck constructor, so a
+ *   callback that uses `deck` overflows the stack: leave autoPlay off, call play() after.
+ * - Widgets move the camera through onViewStateChange: a card that drifts the view needs a
+ *   controlled viewState that onViewStateChange also stores. Button widgets can be pressed
+ *   from code with .click().
+ * - ScaleWidget draws black text and lines whatever the theme: give it a light plate.
  * - getTooltip hides with null, not undefined.
  * - dataComparator, dataTransform and _dataDiff are typed generically: take unknown and
  *   narrow inside. onDataLoad does not fire per batch of an async-iterable `data`.

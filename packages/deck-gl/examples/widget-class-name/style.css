@@ -1,0 +1,12 @@
+[data-example='deck-gl/widget-class-name'] {
+  .neon {
+    --button-size: 40px;
+    --button-corner-radius: 4px;
+    --button-background: #10002b;
+    --button-icon-idle: #ff4fd8;
+    --button-icon-hover: #fff;
+    --button-shadow: 0 0 10px #ff4fd8;
+    --button-stroke: #ff4fd8;
+    --tooltip-max-width: 160px;
+  }
+}
