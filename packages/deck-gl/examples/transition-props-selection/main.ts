@@ -8,8 +8,9 @@ import { CITIES, type City } from '../../shared/data.ts';
 import { createStage } from '../../shared/stage.ts';
 import { landLayer } from '../../shared/world.ts';
 
-const A: MapViewState = { longitude: -5, latitude: 40, zoom: 3, bearing: 0, pitch: 0 };
-const B: MapViewState = { longitude: 40, latitude: 30, zoom: 5, bearing: 60, pitch: 50 };
+// Both ends frame several cities even in a 260px card: western Europe, then Cairo and Istanbul.
+const A: MapViewState = { longitude: 0, latitude: 42, zoom: 2.5, bearing: 0, pitch: 0 };
+const B: MapViewState = { longitude: 30, latitude: 34, zoom: 2.8, bearing: 60, pitch: 45 };
 
 const PROP_SETS: Record<string, string[]> = {
   'zoom only': ['zoom'],

@@ -1,0 +1,6 @@
+/* SimpleMeshLayer: Mesh Built in Code: styles, all nested under this example's own selector */
+[data-example='deck-gl/simple-mesh-custom-mesh'] {
+  .box {
+    color: var(--fg-1);
+  }
+}

@@ -93,3 +93,7 @@ GitHub Pages. No service on the VPS.
 - VChart: read the trap list in `packages/vchart/shared/chart.ts` before building, and add to
   it. Never call `VChart.ThemeManager.setCurrentTheme` (it restyles every card); register
   themes, maps and functions under unique prefixed names (`showcase-…`, `vchart-…`), and leave them.
+- deck.gl: read the trap list in `packages/deck-gl/shared/stage.ts` and add to it. Render on
+  `createStage`'s device (`new Deck({device: stage.device})`) and clean up with `stage.release(deck)`:
+  `Deck.finalize()` never frees the WebGL context. MapLibre examples use `shared/base-maps.ts`
+  instead. No network in cards or full views: tiles, terrain and glTF are generated in code.

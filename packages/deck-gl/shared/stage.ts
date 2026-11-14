@@ -58,6 +58,13 @@ import type { MountContext } from '@/types.ts';
  *   clamp it. Extension hooks run with `this` = the layer: declare `this: Layer` in TS.
  * - widget.setProps does not move a widget: pass a new widget with the same id through
  *   deck.setProps({widgets}).
+ * - MapboxOverlay on MapLibre 6 throws every frame: use @deck.gl/maplibre's MapLibreOverlay.
+ *   An overlaid (interleaved: false) overlay's own context is freed by releaseMap in
+ *   shared/base-maps.ts; an interleaved one shares the map's.
+ * - ScenegraphLayer: a .gltf data URL with an embedded buffer fails ("Could not determine
+ *   vertex count"); pass a .glb data URL or a glTF parsed with GLTFLoader. _animations needs
+ *   _animate: true on the Deck. SimpleMeshLayer mesh attributes are {size, value} objects.
+ * - JSONConverter.convert() caches by input: pass a fresh object or string to reconvert.
  * - getTooltip hides with null, not undefined.
  * - dataComparator, dataTransform and _dataDiff are typed generically: take unknown and
  *   narrow inside. onDataLoad does not fire per batch of an async-iterable `data`.

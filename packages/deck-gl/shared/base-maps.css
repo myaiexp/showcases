@@ -1,0 +1,4 @@
+/* MapLibre popups have a white box but inherit the page's light text; give them dark text */
+.maplibregl-popup-content {
+  color: #18181b;
+}
