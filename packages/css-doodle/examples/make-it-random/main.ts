@@ -1,4 +1,4 @@
-// css-doodle example: @p and @r pick a shape and a scale per cell; a new seed redraws
+// @p and @r pick a shape and a scale per cell; a new seed redraws
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

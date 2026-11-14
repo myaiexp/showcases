@@ -18,6 +18,12 @@
 //   '@css-doodle/addons/<name>' first (the addons README documents this), so nothing fetches.
 //   Addons and CSSDoodle.use() register page-wide: use unique names and leave them.
 // - @google-font fetches from Google Fonts: full views only, never in cards.
+// - A card is a link, so a scripted click() inside it would open the example. The stage stops
+//   clicks at its wrapper in cards; the doodle's own click handlers still run.
+// - Page CSS on the frame sets the host's width and height and beats a size in the doodle
+//   code. Examples about a size use `frame: 'free'` (and a px size) or a box of their own.
+// - Rules stored in a custom property (for `use` / `@use`) need parentheses around them to
+//   be a valid custom property value: `--rule: (background: red; scale: .5;)`.
 import 'css-doodle';
 import type { MountContext } from '@/types.ts';
 import { attachEditor, type Editor } from './editor.ts';
@@ -121,6 +127,14 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
     wrap.append(notes);
   }
   el.append(wrap);
+  // A card is a link: a scripted click on a cell or doodle (click:update, click:cell) would
+  // bubble to it and open the example. The doodle's own listeners have run by then.
+  if (preview) {
+    wrap.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+    });
+  }
 
   const abort = new AbortController();
   const timers = new Set<ReturnType<typeof setTimeout>>();

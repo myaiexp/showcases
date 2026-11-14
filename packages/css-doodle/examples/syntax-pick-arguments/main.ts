@@ -1,4 +1,4 @@
-// css-doodle example: [a-z] ranges, an index before a colon, xN weights and --name lists in picks
+// [a-z] ranges, an index before a colon, xN weights and --name lists in picks
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

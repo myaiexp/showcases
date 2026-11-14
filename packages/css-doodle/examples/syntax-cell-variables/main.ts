@@ -1,4 +1,4 @@
-// css-doodle example: rings whose size and hue come from $(...), @i and the custom property --n
+// Rings whose size and hue come from $(...), @i and the custom property --n
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

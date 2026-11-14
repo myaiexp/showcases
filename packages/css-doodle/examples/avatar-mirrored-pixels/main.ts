@@ -1,4 +1,4 @@
-// css-doodle example: GitHub-style 5 × 5 avatars, mirrored, drawn from a name as the seed
+// GitHub-style 5 × 5 avatars, mirrored, drawn from a name as the seed
 import type { Mount } from '@/types.ts';
 import { textInput } from '../../shared/controls.ts';
 import { createStage } from '../../shared/stage.ts';

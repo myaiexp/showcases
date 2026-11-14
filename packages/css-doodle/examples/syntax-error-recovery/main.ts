@@ -1,4 +1,4 @@
-// css-doodle example: broken code still draws; css-doodle reports what it could not read
+// Broken code still draws; css-doodle reports what it could not read
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

@@ -1,4 +1,4 @@
-// css-doodle example: @svg's body: blocks are elements, declarations attributes, circle*8 repeats
+// @svg's body: blocks are elements, declarations attributes, circle*8 repeats
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

@@ -1,4 +1,4 @@
-// The syntax overview's first doodle: @grid in :doodle, a @cell random block, :hover
+// The syntax overview's first doodle: :doodle, a @cell random block, :hover
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

@@ -1,4 +1,4 @@
-// css-doodle example: 2400 SVG circles placed along a curve with @Plot, sized by a sine
+// 2400 SVG circles placed along a curve with @Plot, sized by a sine
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

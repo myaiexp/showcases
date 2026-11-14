@@ -1,4 +1,4 @@
-// css-doodle example: @p.cycle(...) composes two functions; the rightmost runs first
+// @p.cycle(...) composes two functions; the rightmost runs first
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

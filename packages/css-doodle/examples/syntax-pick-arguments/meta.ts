@@ -1,4 +1,4 @@
-// Pick-function arguments: ranges, @pick(index: ...), xN copies, custom property lists
+// Pick arguments: ranges, @pick(index: …), xN copies, custom property lists
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

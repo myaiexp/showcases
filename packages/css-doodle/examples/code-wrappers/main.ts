@@ -1,4 +1,4 @@
-// css-doodle example: the same doodle from a <template>, a <style> and the use attribute
+// The same doodle from a <template>, a <style> and the use attribute
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

@@ -1,4 +1,4 @@
-// css-doodle example: $() comparisons give 1 or 0; (x-1) & (y-1) draws a Sierpinski triangle
+// $() comparisons give 1 or 0; (x-1) & (y-1) draws a Sierpinski triangle
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

@@ -1,4 +1,4 @@
-// css-doodle example: a quilt avatar, one random quarter flipped into the other three
+// A quilt avatar, one random quarter flipped into the other three
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

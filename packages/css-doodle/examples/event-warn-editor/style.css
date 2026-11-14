@@ -1,0 +1,30 @@
+/* Catching warn events: a tiny code panel with its warnings */
+[data-example='css-doodle/event-warn-editor'] {
+  .mini {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: var(--font-mono, monospace);
+    font-size: 12px;
+    max-width: 320px;
+  }
+  .cd-card .mini {
+    font-size: 8px;
+    max-width: 120px;
+  }
+  .mini pre {
+    margin: 0;
+    padding: 6px 8px;
+    background: var(--bg-surface);
+    border-radius: 4px;
+    white-space: pre-wrap;
+    color: var(--fg-1);
+  }
+  .out {
+    white-space: pre-wrap;
+    color: var(--green);
+  }
+  .out[data-bad='true'] {
+    color: var(--orange);
+  }
+}

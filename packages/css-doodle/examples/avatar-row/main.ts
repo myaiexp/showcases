@@ -1,4 +1,4 @@
-// css-doodle example: a row of 48px avatars, one per name, set with the seed attribute
+// A row of 48px avatars, one per name, set with the seed attribute
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

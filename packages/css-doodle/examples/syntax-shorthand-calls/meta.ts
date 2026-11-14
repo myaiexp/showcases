@@ -1,4 +1,4 @@
-// Call shorthands: no parentheses without arguments, digits after the name as an argument
+// Call shorthands: optional parentheses, digits after the name as an argument
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

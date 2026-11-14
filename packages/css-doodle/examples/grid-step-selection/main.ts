@@ -1,4 +1,4 @@
-// css-doodle example: direct attention with cell selectors, from the Start from a grid guide
+// Direct attention with cell selectors, from the Start from a grid guide
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

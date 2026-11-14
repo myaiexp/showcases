@@ -1,4 +1,4 @@
-// css-doodle example: let each cell know where it is, from the Start from a grid guide
+// Let each cell know where it is, from the Start from a grid guide
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

@@ -1,4 +1,4 @@
-// Conditional values inside $(): match() picks by the first true test, pick() by an index
+// Values inside $(): match() by the first true test, pick() by an index
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

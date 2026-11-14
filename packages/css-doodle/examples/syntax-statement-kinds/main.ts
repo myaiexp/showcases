@@ -1,4 +1,4 @@
-// css-doodle example: the three kinds of statement: declarations, selector blocks, conditional blocks
+// The three kinds of statement: declarations, selector blocks, conditional blocks
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

@@ -1,4 +1,4 @@
-// css-doodle example: match(test, value, ..., else) and pick(k: a, b, c) evaluate only what they return
+// match(test, value, …, else) and pick(k: a, b, c) choose values inside $()
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

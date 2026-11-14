@@ -1,4 +1,4 @@
-// css-doodle example: $(@t / 10)deg: math around a live value is written out as calc()
+// $(@t / 10)deg: math around a live value is written out as calc()
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

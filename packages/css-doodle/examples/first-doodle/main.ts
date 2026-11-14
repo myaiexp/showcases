@@ -1,4 +1,4 @@
-// css-doodle example: the getting-started doodle, a grid of leaves facing alternate ways
+// The getting-started doodle, a grid of leaves facing alternate ways
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

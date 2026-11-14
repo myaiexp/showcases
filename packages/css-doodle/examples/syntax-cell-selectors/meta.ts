@@ -1,4 +1,4 @@
-// The overview's @cell example: both diagonals, then everything not near the centre
+// The overview's @cell example: both diagonals, then cells far from the centre
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

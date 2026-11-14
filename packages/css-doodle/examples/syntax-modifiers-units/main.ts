@@ -1,4 +1,4 @@
-// css-doodle example: @i(*10px) and @x(-1): a leading operator on a cell function modifies it
+// @i(*10px) and @x(-1): a leading operator on a cell function modifies it
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

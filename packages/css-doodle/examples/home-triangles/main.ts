@@ -1,4 +1,4 @@
-// css-doodle example: a 16 × 9 grid of half-square triangles in four colours, redrawn
+// A 16 × 9 grid of half-square triangles in four colours, redrawn
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

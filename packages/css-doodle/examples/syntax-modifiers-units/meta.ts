@@ -1,4 +1,4 @@
-// Units on arguments carry to the result; a leading operator modifies a cell function
+// Units carry to the result; a leading operator modifies a cell function
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

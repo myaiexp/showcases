@@ -1,4 +1,4 @@
-// css-doodle example: @cell(x = y, x + y = 10) and @cell not (dr < 3) pick cells by expression
+// @cell(x = y, x + y = 10) and @cell not (dr < 3) pick cells by expression
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

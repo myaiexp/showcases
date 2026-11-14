@@ -1,4 +1,4 @@
-// css-doodle example: repeat a sequence of shapes, from the Start from a grid guide
+// Repeat a sequence of shapes, from the Start from a grid guide
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

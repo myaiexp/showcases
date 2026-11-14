@@ -1,4 +1,4 @@
-// css-doodle example: @i means @i(); a number stuck to the name is the first argument
+// @i means @i(); a number stuck to the name is the first argument
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

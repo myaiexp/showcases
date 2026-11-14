@@ -1,4 +1,4 @@
-// Error recovery: unknown function, unclosed parenthesis, a function that calls itself
+// Error recovery: unknown function, unclosed (, a function that calls itself
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

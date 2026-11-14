@@ -1,4 +1,4 @@
-// css-doodle example: image() from css-doodle/generator renders avatars to SVG files
+// image() from css-doodle/generator renders avatars to SVG files
 import { image } from 'css-doodle/generator';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

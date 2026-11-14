@@ -1,4 +1,4 @@
-// css-doodle example: make randomness intentional, from the Start from a grid guide
+// Make randomness intentional, from the Start from a grid guide
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 
