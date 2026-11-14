@@ -37,7 +37,8 @@ export function tour(stage: Stage, steps: readonly Step[], opts: TourOptions = {
   }
   if (!stage.preview) {
     ready.catch(stage.fail);
-    for (const step of steps) button(stage, step.label, async () => {
+    // A step listed twice (to repeat it in the card loop) still gets one button.
+    for (const step of new Set(steps)) button(stage, step.label, async () => {
       await ready;
       await step.run();
     });

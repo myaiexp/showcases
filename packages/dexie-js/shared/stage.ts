@@ -13,8 +13,20 @@
 //   sentinel from `wait`). `play` and `action` swallow anything thrown after dispose and
 //   show anything else in the scene, so a script never has to catch for cleanup's sake.
 // - Writes from an example and the table view's own liveQuery race: when a step must show
-//   the table's new state before the next caption, `await view.settled()` first.
+//   the table's new state before the next caption, `await view.refresh()` first.
 // - Cards have no pointer and run no network: every step a card shows is scripted in `play`.
+// - Collection.desc() is documented but missing from dexie's published type definitions; reverse()
+//   is typed and does the same (shared/collection-kit.ts `desc` casts for the one example about it).
+// - Collection.modify() with a function that throws aborts the whole call; a ModifyError (failures,
+//   failedKeys, successCount) needs a write that fails, e.g. a unique-index clash.
+// - Table.hook('reading') also reshapes what the table view's own liveQuery reads; keep hook-added
+//   fields out of the grid columns.
+// - Table.defineClass() exists at runtime but not in dexie.d.ts (cast to call it). mapToClass() is
+//   permanent for that table, so an example that compares mapped and plain rows uses two tables.
+// - With '++id', clear() does not reset the counter: ids keep growing across card loops.
+// - A table with an outbound key (stores ', name') has no key path, so the grid cannot read the key
+//   from the row: give tableView a `read` that pairs keys and values (shared/demo.ts `withKeys`).
+// - IndexedDB booleans are not indexable: store 0/1 in a field you want to query with where().
 // - Dexie events registered with db.on(...) belong to that Dexie instance only; page-wide
 //   ones (Dexie.on('storagemutated'), Dexie.debug, Dexie.addons, Promise.on.error) must be
 //   restored or unsubscribed on dispose, because the whole gallery shares them.

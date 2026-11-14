@@ -31,7 +31,7 @@ export interface TableViewOptions {
 export interface TableView {
   el: HTMLElement;
   /** Renders `rows`, animating only what differs from the last render. */
-  show(rows: readonly Row[]): void;
+  show(rows: readonly object[]): void;
   /** Re-reads the followed table and renders it; resolves when the grid shows it. */
   refresh(): Promise<void>;
   /** Highlights the rows whose keys (or predicate) match; others dim with `dimRest`. */
@@ -97,7 +97,8 @@ export function tableView(stage: Stage, parent: HTMLElement, opts: TableViewOpti
     }
   };
 
-  const show = (rows: readonly Row[]): void => {
+  const show = (records: readonly object[]): void => {
+    const rows = records as readonly Row[];
     const seen = new Set<string>();
     let prev: HTMLElement | null = null;
     for (const row of rows) {
