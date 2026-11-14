@@ -27,6 +27,9 @@
 //   still has the old value. reverse() toggles direction; use playTo(0) / playTo(duration) to close.
 // - A single-value target can fail to animate from a CSS-set start (opacity: 0 in style.css): give
 //   the first animation explicit [from, to] keyframes.
+// - SVG shapes animated with rotate get `transform-box: fill-box`, so `transform-origin` is relative to the
+//   shape's own box: a clock hand drawn from the centre up rotates correctly with `transform-origin: 50% 100%`.
+// - The exported `scroll()` option type omits `trackContentSize` (scroll.md documents it): cast the options.
 // - Not verified that `motion/mini` animations join a scope: keep their controls and stop() them yourself.
 
 export interface Panel {

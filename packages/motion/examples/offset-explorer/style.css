@@ -1,0 +1,20 @@
+/* Offset explorer: a scroll panel with a target box, marker lines for the offset and a progress meter */
+[data-example='motion/offset-explorer'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .explorer { width: min(100%, 240px); }
+  .explorer.full { width: min(100%, 400px); }
+  .view { position: relative; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--bg-surface); }
+  .scroller { position: relative; height: 150px; overflow-y: auto; scrollbar-width: none; }
+  .explorer.full .scroller { height: 260px; }
+  .gap { height: 150px; background: repeating-linear-gradient(transparent 0 19px, var(--border) 19px 20px); opacity: 0.5; }
+  .explorer.full .gap { height: 260px; }
+  .target { position: relative; height: 70px; display: grid; place-items: center; background: var(--bg-raised); color: var(--fg-2); font-size: 0.8rem; }
+  .line { position: absolute; left: 0; right: 0; height: 0; border-top: 2px solid; pointer-events: none; }
+  .line span { position: absolute; right: 4px; top: 2px; font-size: 0.7rem; font-weight: 700; }
+  .tick { position: absolute; left: 0; right: 0; height: 0; border-top: 2px dashed; }
+  .a { color: var(--cyan); }
+  .b { color: var(--orange); }
+  .meter { position: relative; height: 22px; margin-top: var(--space-2); border-radius: 6px; overflow: hidden; background: var(--bg-raised); }
+  .fill { position: absolute; inset: 0; background: var(--accent); opacity: 0.45; transform-origin: left; transform: scaleX(0); }
+  .num { position: relative; display: block; text-align: center; line-height: 22px; font-size: 0.75rem; color: var(--fg-1); }
+}

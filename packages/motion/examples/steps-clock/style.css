@@ -1,0 +1,13 @@
+/* Ticking clock: a round face with sixty marks and one hand */
+[data-example='motion/steps-clock'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .clock { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); }
+  svg { width: 150px; height: 150px; }
+  .clock.full svg { width: 260px; height: 260px; }
+  .face { fill: var(--bg-surface); stroke: var(--border); stroke-width: 2; }
+  .major { stroke: var(--fg-2); stroke-width: 2; }
+  .minor { stroke: var(--fg-3); stroke-width: 1; }
+  .hand { stroke: var(--red); stroke-width: 2; stroke-linecap: round; transform-origin: 50% 100%; /* Motion sets transform-box: fill-box on SVG shapes: the hand's bottom is the face centre */ }
+  .pin { fill: var(--red); }
+  .code { font-size: 0.8rem; color: var(--fg-2); }
+}

@@ -1,0 +1,11 @@
+/* Infinite feed: a list of posts under a progress bar */
+[data-example='motion/infinite-feed-content-size'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .feed { width: min(100%, 240px); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--bg-surface); }
+  .feed.full { width: min(100%, 400px); }
+  .bar { height: 4px; background: var(--bg-raised); }
+  .bar i { display: block; height: 100%; background: var(--accent); transform-origin: left; transform: scaleX(0); }
+  .scroller { height: 170px; overflow-y: auto; scrollbar-width: thin; }
+  .feed.full .scroller { height: 280px; }
+  .post { padding: var(--space-3) var(--space-3); border-bottom: 1px solid var(--border); font-size: 0.8rem; color: var(--fg-2); }
+}

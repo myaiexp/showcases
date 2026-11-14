@@ -1,0 +1,15 @@
+/* Shrinking header: a sticky bar over a long page of colour blocks */
+[data-example='motion/scroll-cancel-toggle'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .site { width: min(100%, 240px); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--bg-surface); }
+  .site.full { width: min(100%, 440px); }
+  .scroller { height: 180px; overflow-y: auto; position: relative; scrollbar-width: none; }
+  .site.full .scroller { height: 300px; }
+  .head { position: sticky; top: 0; z-index: 1; height: 76px; }
+  .bar { height: 76px; display: flex; align-items: center; gap: var(--space-3); padding: 0 var(--space-4); }
+  .logo { flex: none; width: 20px; height: 20px; border-radius: 6px; background: var(--accent); }
+  .name { color: var(--fg-1); font-size: 1.2rem; white-space: nowrap; }
+  .status { margin-left: auto; font-size: 0.65rem; color: var(--fg-3); white-space: nowrap; }
+  .body { padding: 0 var(--space-3) var(--space-3); display: flex; flex-direction: column; gap: var(--space-3); }
+  .block { height: 90px; border-radius: 10px; }
+}

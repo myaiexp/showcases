@@ -1,0 +1,13 @@
+/* Percent-read counter: a header with the numbers above a scrolling article */
+[data-example='motion/percent-read-callback'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .reader { width: min(100%, 240px); border-radius: 12px; overflow: hidden; background: var(--bg-surface); border: 1px solid var(--border); }
+  .reader.full { width: min(100%, 460px); }
+  .head { display: flex; justify-content: space-between; align-items: baseline; padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--border); font-size: 0.75rem; color: var(--fg-3); }
+  .pct { font-size: 1.1rem; color: var(--fg-1); font-variant-numeric: tabular-nums; }
+  .scroller { height: 140px; overflow-y: auto; scrollbar-width: thin; padding: var(--space-2) var(--space-3); }
+  .reader.full .scroller { height: 280px; padding: var(--space-3) var(--space-4); }
+  h3 { margin: 0 0 var(--space-2); font-size: 1rem; color: var(--fg-1); }
+  p { margin: 0 0 var(--space-2); font-size: 0.78rem; line-height: 1.5; color: var(--fg-2); }
+  .reader.full p { font-size: 0.9rem; }
+}

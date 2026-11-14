@@ -1,0 +1,22 @@
+/* Pinned steps: a tall track holding one sticky stage with three stacked panels */
+[data-example='motion/sticky-pinned-steps'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .pinned { --h: 180px; width: min(100%, 240px); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--bg-surface); }
+  .pinned.full { --h: 300px; width: min(100%, 440px); }
+  .scroller { height: var(--h); overflow-y: auto; position: relative; scrollbar-width: none; }
+  .outro { height: 70px; display: grid; place-items: center; font-size: 0.8rem; color: var(--fg-3); }
+  .track { height: calc(var(--h) * 4); }
+  .pin { position: sticky; top: 0; height: var(--h); }
+  .cue { position: absolute; top: var(--space-3); left: 0; right: 0; text-align: center; font-size: 0.7rem; color: var(--fg-3); }
+  .panels { position: absolute; inset: 0; }
+  .panel { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-2); padding: 0 var(--space-4); text-align: center; opacity: 0; }
+  .panel h4 { margin: 0; font-size: 1.1rem; color: var(--fg-1); }
+  .panel p { margin: 0; font-size: 0.8rem; color: var(--fg-2); }
+  .art { width: 64px; height: 64px; border-radius: 16px; margin-bottom: var(--space-1); }
+  .pinned.full .art { width: 96px; height: 96px; border-radius: 24px; }
+  .p0 .art { background: repeating-linear-gradient(#8aa4ff 0 8px, transparent 8px 16px); }
+  .p1 .art { border-radius: 50%; background: conic-gradient(var(--green) 0 70%, var(--bg-raised) 0); }
+  .p2 .art { background: radial-gradient(circle at 30% 50%, #ff7a59 0 22%, transparent 23%), radial-gradient(circle at 70% 50%, #ffd166 0 22%, transparent 23%), var(--bg-raised); }
+  .dots { position: absolute; left: 0; right: 0; bottom: var(--space-3); display: flex; justify-content: center; gap: var(--space-2); }
+  .dots b { width: 7px; height: 7px; border-radius: 50%; background: var(--fg-1); opacity: 0.4; }
+}
