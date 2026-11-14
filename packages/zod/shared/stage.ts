@@ -64,6 +64,12 @@
 // - toJSONSchema: looseObject gives additionalProperties: {}; fromJSONSchema objects keep
 //   extra keys when additionalProperties is unset, so a round trip turns strict into loose.
 // - A card fits about 10 lines of JSON.
+// - Classic Zod puts English into z.config() when its first schema is built, so Mini on the
+//   same page speaks English too: shared/mini-locale.ts noLocale() shows Mini's bare words.
+// - $ZodError extends Error in 4.6.7 (core.mdx says not). Only _zod (not _def) tells Zod 4
+//   from Zod 3. StandardSchemaV1 is not exported from zod/v4/core: declare ~standard locally.
+// - z.getDiscriminatedOption(union, unknownKind) returns undefined (types allow known kinds).
+// - .isOptional()/.isNullable() are both true for .catch(), z.any() and z.unknown().
 import type { MountContext } from '@/types.ts';
 import './zod.css';
 
