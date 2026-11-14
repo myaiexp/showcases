@@ -52,6 +52,12 @@ import type { MountContext } from '@/types.ts';
  *   controlled viewState that onViewStateChange also stores. Button widgets can be pressed
  *   from code with .click().
  * - ScaleWidget draws black text and lines whatever the theme: give it a light plate.
+ * - A PostProcessEffect is bound to one shader module: swapping the effect needs a new one.
+ *   Effect centres are 0..1, y from the bottom for swirl/bulgePinch, from the top for magnify.
+ * - Custom layers: an attribute update() gets endRow = Infinity on a full invalidate, so
+ *   clamp it. Extension hooks run with `this` = the layer: declare `this: Layer` in TS.
+ * - widget.setProps does not move a widget: pass a new widget with the same id through
+ *   deck.setProps({widgets}).
  * - getTooltip hides with null, not undefined.
  * - dataComparator, dataTransform and _dataDiff are typed generically: take unknown and
  *   narrow inside. onDataLoad does not fire per batch of an async-iterable `data`.

@@ -1,0 +1,22 @@
+/* Custom widget: CSS variables: the widget's own rules read variables an app can override */
+[data-example='deck-gl/custom-widget-css-variables'] {
+  .deck-widget-badge {
+    padding: var(--badge-padding, 8px 14px);
+    background: var(--badge-background, var(--button-background, #fff));
+    color: var(--badge-color, var(--button-text, rgb(24, 24, 26)));
+    border-radius: var(--badge-radius, var(--button-corner-radius, 8px));
+    box-shadow: var(--button-shadow, 0 0 8px rgba(0, 0, 0, 0.25));
+    font: 600 13px/1.2 var(--font-mono, monospace);
+  }
+  /* A class an app adds through the className prop. */
+  .badge-loud {
+    --badge-background: #ffcf40;
+    --badge-color: #3a2a00;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  /* Every widget type in this deck: a CSS variable the stylesheet defines. */
+  .deck-widget {
+    --widget-margin: 14px;
+  }
+}

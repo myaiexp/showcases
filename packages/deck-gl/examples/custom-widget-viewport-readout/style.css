@@ -1,0 +1,12 @@
+/* Custom widget: viewport readout: the widget's own look, nested under this example */
+[data-example='deck-gl/custom-widget-viewport-readout'] {
+  .deck-widget-viewport-readout {
+    padding: 6px 10px;
+    background: rgba(12, 20, 32, 0.88);
+    color: #cfe0f4;
+    border: 1px solid rgba(120, 160, 210, 0.4);
+    border-radius: 6px;
+    font: 12px/1.45 var(--font-mono, monospace);
+    white-space: pre;
+  }
+}

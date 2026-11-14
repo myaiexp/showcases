@@ -1,0 +1,11 @@
+/* Custom widget: Hello: the widget's own look, nested under this example */
+[data-example='deck-gl/custom-widget-hello'] {
+  .deck-widget-hello {
+    padding: 8px 14px;
+    background: rgba(12, 20, 32, 0.88);
+    color: #e6eef8;
+    border: 1px solid rgba(120, 160, 210, 0.45);
+    border-radius: 8px;
+    font: 600 14px/1.2 var(--font-mono, monospace);
+  }
+}
