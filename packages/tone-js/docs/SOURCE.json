@@ -1,5 +1,18 @@
 {
-  "license": "none found",
+  "license": "MIT for the Tone.js repo (LICENSE.md: README and the JSDoc'd source the TypeDoc API site is generated from); none found for the GitHub wiki, so the whole folder stays out of git",
   "redistribute": false,
-  "sources": []
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/Tonejs/Tone.js",
+      "ref": "15.1.22",
+      "paths": ["README.md", "LICENSE.md", "Tone/**/*.ts", "!Tone/**/*.test.ts"]
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/Tonejs/Tone.js.wiki",
+      "ref": "master",
+      "paths": ["*.md"]
+    }
+  ]
 }

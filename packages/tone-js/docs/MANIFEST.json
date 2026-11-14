@@ -1,5 +1,884 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T10:20:10.877Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/Tonejs/Tone.js",
+      "ref": "15.1.22",
+      "paths": [
+        "README.md",
+        "LICENSE.md",
+        "Tone/**/*.ts",
+        "!Tone/**/*.test.ts"
+      ],
+      "commit": "d2d52ffa8803b35debd9f19f2da08ad1c3540de0"
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/Tonejs/Tone.js.wiki",
+      "ref": "master",
+      "paths": [
+        "*.md"
+      ],
+      "commit": "259cc7427185906d65764d7fe6d9b83cffb1d51f"
+    }
+  ],
+  "files": {
+    "repo/_Footer.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/_Footer.md",
+      "sha256": "0301844ccd8e9ca705291e7aacd1053a4cf9987d4843d6d5c91985df9c3f96ab"
+    },
+    "repo/_Sidebar.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/_Sidebar.md",
+      "sha256": "8cce75ebe331c4c1707d6fca41eaf38178feff62ed5a50bfe72bba03558c9f3e"
+    },
+    "repo/Accurate-Timing.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Accurate-Timing.md",
+      "sha256": "5f5a1508378bbdd79e39d5bc4602c2da05841625ae6d2a4ff6d63313a95b31b7"
+    },
+    "repo/Arpeggiator.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Arpeggiator.md",
+      "sha256": "d90f693ebf83563bd86461f907dbe1d2b4f166140d2f10bb6ceb43cc97570a9b"
+    },
+    "repo/AudioContext.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/AudioContext.md",
+      "sha256": "8862a57f39ce1ae8bdc4333313f5b08983a3cd7151f195dc70cc1003a556bd59"
+    },
+    "repo/Autoplay.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Autoplay.md",
+      "sha256": "8f681ab10472612159d76622deddfe5264baec7e96c1b3c7091d8f270cc5a57c"
+    },
+    "repo/BasicSynth.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/BasicSynth.md",
+      "sha256": "9e2a8b638e6fa853108242faf9f164fb2d7601e630816bea58faa2c2442fcba5"
+    },
+    "repo/Building.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Building.md",
+      "sha256": "77cd5659a6c5cd95e9eb76328ddf6d1979fe01187f933f7effe10de6333e3ca7"
+    },
+    "repo/Connections.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Connections.md",
+      "sha256": "24f43541e4f697f3e5fab1bae5f3f2d635061be60664a5f327e7bf44e51f8d90"
+    },
+    "repo/Contributing.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Contributing.md",
+      "sha256": "2f7605885db508796a4bf9c8927838eeeb042cdd8a9094774fb0fdc7a77c11bb"
+    },
+    "repo/Effects.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Effects.md",
+      "sha256": "6c5b65b61537c3eecbacf9d8ae68ae3573f88897effbf76529cf165808e724a9"
+    },
+    "repo/Envelope.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Envelope.md",
+      "sha256": "586dfe94a665b494c0c642774d33da9a69ba52ce667a4df133f922058badb63a"
+    },
+    "repo/Events.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Events.md",
+      "sha256": "40de5c52539490812ddbff37634dd0ff20255d4182b324f81d5fdc4980a048f9"
+    },
+    "repo/Glossary.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Glossary.md",
+      "sha256": "2eabaa9742a4cb4db5bdaccaa3d297ce3b5fc8b2dfa649b46dffa2891efde542"
+    },
+    "repo/Home.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Home.md",
+      "sha256": "d1eac117e86ebe6d542c1edfeae4c92feac6059bf279db2a99986b5bede904e8"
+    },
+    "repo/Installation.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Installation.md",
+      "sha256": "834725832fdb283673e870d490b32ccf8413fe0c282599eb45feceefcc471c57"
+    },
+    "repo/Instruments.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Instruments.md",
+      "sha256": "d660053f2c74557b931fe82f823b40222fa38909868fb1f64e41f6d5519e7bbc"
+    },
+    "repo/LICENSE.md": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/LICENSE.md",
+      "sha256": "391ed5af60b7b5d1f74b31040c5fa645e6e238f3d9b4c971941a262a675bbdcd"
+    },
+    "repo/Performance.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Performance.md",
+      "sha256": "cf088726d053a5ff309106d242cbbc20260d4e4e314c2c3d59404775bbe899fe"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/README.md",
+      "sha256": "e5d6ca90282d44617b8411a312243566d82ef0fba2e8f7fb3d5f23fe3ae708f4"
+    },
+    "repo/Repeater.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Repeater.md",
+      "sha256": "b5d8b2e8d1fd87bf724443f58e6e1fd6be99bc70bfe7ae79d4ad4410b1798b1c"
+    },
+    "repo/Signals.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Signals.md",
+      "sha256": "ae7a55d7be3ac31bdf3563cd7f84dd08f44e3befbc818bafc04abf82975c102c"
+    },
+    "repo/Sources.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Sources.md",
+      "sha256": "0b2495194aea7d2095232f7458560594c88a3b03819d332091cc10e67dec9f32"
+    },
+    "repo/Testing.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Testing.md",
+      "sha256": "404789f452923bb48a29d5846cbc00f8665eb5f0678844e83452155a3d601182"
+    },
+    "repo/Time.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Time.md",
+      "sha256": "2a26f8f75b7b84a87e2c26560a08d088ffd9aeacbcbb5add40003dd940e7e76b"
+    },
+    "repo/Tone/classes.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/classes.ts",
+      "sha256": "bf7eb7652b37c9893116895595e2e2882d1191551974947090d8a1725862368c"
+    },
+    "repo/Tone/component/analysis/Analyser.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/analysis/Analyser.ts",
+      "sha256": "4a053a87a858860cf2ddbf70c1d094907676b6e52a61668bddca088d7f2387d3"
+    },
+    "repo/Tone/component/analysis/DCMeter.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/analysis/DCMeter.ts",
+      "sha256": "92fb862ae5712388dd268b77567c99f86fee1b7d2be47944a1e78da344741ddd"
+    },
+    "repo/Tone/component/analysis/FFT.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/analysis/FFT.ts",
+      "sha256": "8d54326563f351360edca0ac600edc76252883a64cd74343d5a26d7c5e80b067"
+    },
+    "repo/Tone/component/analysis/Follower.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/analysis/Follower.ts",
+      "sha256": "a09da2d392cf9c2e6d4bcfafaf7d19c4a7a483e4c68f51dacfa0ace8599bd43b"
+    },
+    "repo/Tone/component/analysis/Meter.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/analysis/Meter.ts",
+      "sha256": "d590a106d727ae46770f1ec947c4352afbfb4216bcdb5ca7e813b27edf086d71"
+    },
+    "repo/Tone/component/analysis/MeterBase.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/analysis/MeterBase.ts",
+      "sha256": "e1f4b7897122a912b7242ef0dd9141d27a175ff7c66f9791516bef7726e32e55"
+    },
+    "repo/Tone/component/analysis/Waveform.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/analysis/Waveform.ts",
+      "sha256": "00b4997f90d2365eaa1b1b2b174c1758e4c82b92fffbf25b5cbc3ec0b5c22dd8"
+    },
+    "repo/Tone/component/channel/Channel.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/Channel.ts",
+      "sha256": "0f123d921688100877ce22ecdffdb6e4ff2a15aaa4f71d177bfb60102256b8ee"
+    },
+    "repo/Tone/component/channel/CrossFade.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/CrossFade.ts",
+      "sha256": "4f08e2d5caffcb9d4c3408d15eab7319e683bc0c840d7ab76cbfb24334ba26dc"
+    },
+    "repo/Tone/component/channel/Merge.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/Merge.ts",
+      "sha256": "619b6dda50034fd14552e929b7367e8a318659dff0401f80df47658166097fdb"
+    },
+    "repo/Tone/component/channel/MidSideMerge.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/MidSideMerge.ts",
+      "sha256": "886eb0654c9983d4b7c90f95bbe317518202b45c03b834e85f59e5cf0154b766"
+    },
+    "repo/Tone/component/channel/MidSideSplit.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/MidSideSplit.ts",
+      "sha256": "a0a84d693b48c7d671f605d32ff5728432753d13853f95f59d0ba6d74b118fa1"
+    },
+    "repo/Tone/component/channel/Mono.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/Mono.ts",
+      "sha256": "9d449cbb94cf32a092929e78d9db9ae849e4d8aed7306970f7c9f8c1c22d3248"
+    },
+    "repo/Tone/component/channel/MultibandSplit.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/MultibandSplit.ts",
+      "sha256": "8eb48186cbc3e6495ec569d1eda29d1001dfde7fb0d71c380d2e061f0862021b"
+    },
+    "repo/Tone/component/channel/Panner.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/Panner.ts",
+      "sha256": "218cec229cdbc06454507239e49b1e2e8303ed0178a8e960a0dceaa8d6f962bd"
+    },
+    "repo/Tone/component/channel/Panner3D.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/Panner3D.ts",
+      "sha256": "47e398f5e4ceaeb83bc3057155dfc9193fe73477f07c8cd18397db3c675ea6c8"
+    },
+    "repo/Tone/component/channel/PanVol.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/PanVol.ts",
+      "sha256": "b4d432bac542cd5dca421d68830e716487ad01957076ea67b74d39f79fadc820"
+    },
+    "repo/Tone/component/channel/Recorder.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/Recorder.ts",
+      "sha256": "32fab90840f3f95ea5adf8476790a13c463d02fdac2e4f66ff02b0c1a8cb41be"
+    },
+    "repo/Tone/component/channel/Solo.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/Solo.ts",
+      "sha256": "17dd2e9103cf3b9a458a7e6ed9407e05aaeb51d401b30ad4b7c550348950d15c"
+    },
+    "repo/Tone/component/channel/Split.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/Split.ts",
+      "sha256": "94755f97db75b8e04f52400e9cf66f4c298a88ee8e6d49463326473be9289994"
+    },
+    "repo/Tone/component/channel/Volume.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/channel/Volume.ts",
+      "sha256": "a8ee2bc759d3b246c4dec39291bef37090eabdd1f939a4cbdaf60de1c9c80610"
+    },
+    "repo/Tone/component/dynamics/Compressor.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/dynamics/Compressor.ts",
+      "sha256": "6354967ee5bc7404b0f51160aaab2584c6bddad825368ef9d19b17cd7ccb7d4d"
+    },
+    "repo/Tone/component/dynamics/Gate.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/dynamics/Gate.ts",
+      "sha256": "bb4da3465d834b4af0bb22bb95c145f5fa2573d47da6ed8798f6491def3e71ae"
+    },
+    "repo/Tone/component/dynamics/Limiter.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/dynamics/Limiter.ts",
+      "sha256": "d14f2ba16a378ffa1dd288a3ddc3cd59783327e7b9c030c258ecbceaea034913"
+    },
+    "repo/Tone/component/dynamics/MidSideCompressor.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/dynamics/MidSideCompressor.ts",
+      "sha256": "bdc60c2aec90919e797c8aefd47d4c3b45dd450ad4847464e94110ffd4926d88"
+    },
+    "repo/Tone/component/dynamics/MultibandCompressor.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/dynamics/MultibandCompressor.ts",
+      "sha256": "5d4877fe01e94c1be17bed0ad20417f28e0c0664e6532defc415c1268f411cae"
+    },
+    "repo/Tone/component/envelope/AmplitudeEnvelope.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/envelope/AmplitudeEnvelope.ts",
+      "sha256": "dc9fe46d72dbc18c1417eb785fd5128e7dbdc6aa0429dd3217ac43db823b16b7"
+    },
+    "repo/Tone/component/envelope/Envelope.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/envelope/Envelope.ts",
+      "sha256": "b298e5156c44a53fb052e23861bd0ed60ee1c0e197a58bc2b8e6eb132b4f0362"
+    },
+    "repo/Tone/component/envelope/FrequencyEnvelope.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/envelope/FrequencyEnvelope.ts",
+      "sha256": "716fe1ec31781db0d22531704b0d3d956fe9580bb08ad82a9dc4103f5c4e529c"
+    },
+    "repo/Tone/component/filter/BiquadFilter.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/filter/BiquadFilter.ts",
+      "sha256": "35161664931607e37158b6ea723551512ff659de41467041cec15f4e7d0398b8"
+    },
+    "repo/Tone/component/filter/Convolver.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/filter/Convolver.ts",
+      "sha256": "07df30e04801e23743e622d99d1566643151290540deb130e9a44b296bdcbf94"
+    },
+    "repo/Tone/component/filter/EQ3.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/filter/EQ3.ts",
+      "sha256": "08f293f3052c1b8fcee7cd37d826fb7fee6b90e77f1afdcd9294ec09b011b6cb"
+    },
+    "repo/Tone/component/filter/FeedbackCombFilter.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/filter/FeedbackCombFilter.ts",
+      "sha256": "513e7a6d8cc6bd2a49fd377b27b32226332b782f10d8550cb118abf38d7b0686"
+    },
+    "repo/Tone/component/filter/FeedbackCombFilter.worklet.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/filter/FeedbackCombFilter.worklet.ts",
+      "sha256": "73c1ab01e2821a8beb2738cfad61724fea15748bb93068d1c4c868e25e0b9f12"
+    },
+    "repo/Tone/component/filter/Filter.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/filter/Filter.ts",
+      "sha256": "441aff106c6f4e73904e517591af0ed626dd8d760a26256f68b990d98a496bb5"
+    },
+    "repo/Tone/component/filter/LowpassCombFilter.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/filter/LowpassCombFilter.ts",
+      "sha256": "fbedde2888e959ef9070da7b48be48aec7f9f9d7cc7780dc19ec702f2d7cb990"
+    },
+    "repo/Tone/component/filter/OnePoleFilter.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/filter/OnePoleFilter.ts",
+      "sha256": "4ee9e3823522fe5c5419bcf528ec3fc0a30f6db39d7500029793aa616493a7b9"
+    },
+    "repo/Tone/component/filter/PhaseShiftAllpass.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/filter/PhaseShiftAllpass.ts",
+      "sha256": "9094efec662b0fd5f0708d7878b1fd383591db5af80fd5065e3cd2da21b1165f"
+    },
+    "repo/Tone/component/index.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/component/index.ts",
+      "sha256": "a9103f6b3f0e61c08b09644323866800fe45b31958a172c385b60bcfffc42e83"
+    },
+    "repo/Tone/core/clock/Clock.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/clock/Clock.ts",
+      "sha256": "fbd2d70a698eb05171d7efa32c110a2bdbb8bdb54fa5aaef7004ad8323dfb070"
+    },
+    "repo/Tone/core/clock/Ticker.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/clock/Ticker.ts",
+      "sha256": "6bf9b69770ba51c3a93ccfac01dca9111addaa9593a0d38ce88a37d81381e30b"
+    },
+    "repo/Tone/core/clock/TickParam.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/clock/TickParam.ts",
+      "sha256": "c1ce2e963ec226d8ddb37155469ecc3e5dcd29d2258b79728ce1ac55e5697bf8"
+    },
+    "repo/Tone/core/clock/TickSignal.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/clock/TickSignal.ts",
+      "sha256": "de6e7410d702cb5d0239bce8ca4c84cae81278eb9a95d75bba57108617c4dc97"
+    },
+    "repo/Tone/core/clock/TickSource.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/clock/TickSource.ts",
+      "sha256": "cee14402c7f7784a1c8e949c3d1b0ab22996c5c887957736c3caa7e4fdb2badf"
+    },
+    "repo/Tone/core/clock/Transport.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/clock/Transport.ts",
+      "sha256": "ec5db066d8a8c3f92d3449db498fbb998a41eabec8589ea333fb60cfc6946453"
+    },
+    "repo/Tone/core/clock/TransportEvent.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/clock/TransportEvent.ts",
+      "sha256": "ae79aa795ce1e81769ad9bf73f7625a752c6f2991f37363b67c7ad3ec1491058"
+    },
+    "repo/Tone/core/clock/TransportRepeatEvent.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/clock/TransportRepeatEvent.ts",
+      "sha256": "5c376f9df5569989bc7130b211eef888fa90fbef6ccb262a6bd73e539d914749"
+    },
+    "repo/Tone/core/context/AbstractParam.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/AbstractParam.ts",
+      "sha256": "3d97d21b51ae00d9157f5399e78df1001259458e6a66b05f6dbdda9a40477e0f"
+    },
+    "repo/Tone/core/context/AudioContext.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/AudioContext.ts",
+      "sha256": "4f4463f4a91ac1c7ff51647b664a37f48e307595c9f9daf3c0e800eb3c2d4c23"
+    },
+    "repo/Tone/core/context/BaseContext.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/BaseContext.ts",
+      "sha256": "8f47d58bf3a5d42a4a0d5dc3303acf40e281643f145bcbbb3c8cc20297073244"
+    },
+    "repo/Tone/core/context/Context.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/Context.ts",
+      "sha256": "92febe49efeaf2a6071eb58d4bfc5090405cd48d2b47923a6c4f5ade0ac22c23"
+    },
+    "repo/Tone/core/context/ContextInitialization.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/ContextInitialization.ts",
+      "sha256": "ccf49f266ddfeb0cd619f2c2b6e98384215516cc96bdf1c7dcbd16129eb9373d"
+    },
+    "repo/Tone/core/context/Delay.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/Delay.ts",
+      "sha256": "00648f35b96b7f045e280932d293772df9b2a8dcf1bdc3aa096b5dc39739a256"
+    },
+    "repo/Tone/core/context/Destination.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/Destination.ts",
+      "sha256": "fc75be0390d1e4782c73f7c164e8a51f9e2d0dad1ae9450b99107a2218a128c1"
+    },
+    "repo/Tone/core/context/DummyContext.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/DummyContext.ts",
+      "sha256": "050a8b9b167e4ca8119658ebab061fe1a8abcdedfd877bdbdabb21871b65cbb7"
+    },
+    "repo/Tone/core/context/Gain.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/Gain.ts",
+      "sha256": "608802a6f1d6343efa9d9197315783a51bcac482fe5473af0cb7e240a4f4d943"
+    },
+    "repo/Tone/core/context/Listener.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/Listener.ts",
+      "sha256": "e5bd68654da19c80063991da81de8a6ee7e348ff2b6c00145384f1c5d3fb05be"
+    },
+    "repo/Tone/core/context/Offline.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/Offline.ts",
+      "sha256": "e31ef58e4db88660b909cd46cdcbbfad264f729538ecb65db7a9c0bd3c0a8f1c"
+    },
+    "repo/Tone/core/context/OfflineContext.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/OfflineContext.ts",
+      "sha256": "897b2172b62b380f2264d5ba66a2e6fc9acce25d3e7b4b473f2777da2d58945c"
+    },
+    "repo/Tone/core/context/Param.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/Param.ts",
+      "sha256": "050e996709b838185019da03b50945ef9fe37af69daf189e00f2eee15f859d16"
+    },
+    "repo/Tone/core/context/ToneAudioBuffer.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/ToneAudioBuffer.ts",
+      "sha256": "6a4890725ec0fe83114981bccb93e62db02216a4dc2ab50fc0d55a24b851d032"
+    },
+    "repo/Tone/core/context/ToneAudioBuffers.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/ToneAudioBuffers.ts",
+      "sha256": "69ea9065a5a6110eb71a9b85f1091b0315338f57702747a75438d5208c5f1918"
+    },
+    "repo/Tone/core/context/ToneAudioNode.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/ToneAudioNode.ts",
+      "sha256": "2681a5ef9652af5d4ec7df53569b6ddd485611a8bf6d8c0903238a569554428d"
+    },
+    "repo/Tone/core/context/ToneWithContext.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/context/ToneWithContext.ts",
+      "sha256": "66d89db874f5c7f473827ea189a057638153d6b4874bb233fe61ce073a2a6c3c"
+    },
+    "repo/Tone/core/Global.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/Global.ts",
+      "sha256": "29f65bcb1113c693aea6ad9d1faef2804f91a81c01e3eb4c4a6b9565d0df108c"
+    },
+    "repo/Tone/core/index.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/index.ts",
+      "sha256": "96c4f5dcadc662080bd5d188c1af3fe2d0a5a9e6ace31d6f874dfa22d0e6de6f"
+    },
+    "repo/Tone/core/Tone.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/Tone.ts",
+      "sha256": "029d546f14a90692db62a71500ece23e771d0aa940166c0a6cda6e1af46d3557"
+    },
+    "repo/Tone/core/type/Conversions.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/type/Conversions.ts",
+      "sha256": "eb63ba2ed236c909df747f484e93482f095c6f0140f836594d8eaa2002f11f73"
+    },
+    "repo/Tone/core/type/Frequency.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/type/Frequency.ts",
+      "sha256": "6535621b587b0360d1fb11f3c2d3b9f2ca7b9b2d24ab68700f716b9fe8517ac3"
+    },
+    "repo/Tone/core/type/Midi.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/type/Midi.ts",
+      "sha256": "637a7b55b42d4ed455a3043752140df0abbba90e227bed2284495034e874bce2"
+    },
+    "repo/Tone/core/type/NoteUnits.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/type/NoteUnits.ts",
+      "sha256": "dd053193f0e65ae8bc8a2656d62e82c0e84d94f4f5627afc28ca80cb90b7818e"
+    },
+    "repo/Tone/core/type/Ticks.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/type/Ticks.ts",
+      "sha256": "8d47770e068ff9af4497dbb065e6f9ffac0251d1fec351a315eb7f8e389fd103"
+    },
+    "repo/Tone/core/type/Time.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/type/Time.ts",
+      "sha256": "ffabdf3423f58fd7e3a8b01055f4d125826eef0da232707a8d740ca41c303140"
+    },
+    "repo/Tone/core/type/TimeBase.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/type/TimeBase.ts",
+      "sha256": "57e9ff2de0284344fb69ff0292420630c2a16beaf76334bb07ec65a2f3afa48e"
+    },
+    "repo/Tone/core/type/TransportTime.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/type/TransportTime.ts",
+      "sha256": "f940397779bc28802a1777f17b0bcf26c5e0c6f18342ccd6345c2e95895345c9"
+    },
+    "repo/Tone/core/type/Units.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/type/Units.ts",
+      "sha256": "effde41d8f4e590106ba7e88c6dab02254be08947fb886962c767014a8532bbb"
+    },
+    "repo/Tone/core/util/AdvancedTypeCheck.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/AdvancedTypeCheck.ts",
+      "sha256": "826d38fbcccf1544b0e57ff2c3eca42c9e05db54a1c8f679b83c3e2f6310adec"
+    },
+    "repo/Tone/core/util/Debug.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/Debug.ts",
+      "sha256": "47a9d0ad1a4b4b26a9742fadd14f7da2620d1194da581697f00a504f74b4c927"
+    },
+    "repo/Tone/core/util/Decorator.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/Decorator.ts",
+      "sha256": "af15e6dbbb2086762d9b86e15b3a7ebcb5b9206b46891eb7aeab8b0057125c0c"
+    },
+    "repo/Tone/core/util/Defaults.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/Defaults.ts",
+      "sha256": "2bb0477ef196f4dc06d7e05a601ce3bf4a925549cb814fec1b71ebd5f21aabae"
+    },
+    "repo/Tone/core/util/Draw.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/Draw.ts",
+      "sha256": "5074a6dacf24f8ccd4d980a07505c7bcaa4cc3b614f66e782c989cb1b1f9f5a4"
+    },
+    "repo/Tone/core/util/Emitter.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/Emitter.ts",
+      "sha256": "3945281227ea97757f481867a557f3abecad11ff5c0ce1364de7a967aa1a96b9"
+    },
+    "repo/Tone/core/util/global.d.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/global.d.ts",
+      "sha256": "62fcb0fda855f97464c85fea3dfe673048a23e3119045f63349e39c80ec247e5"
+    },
+    "repo/Tone/core/util/Interface.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/Interface.ts",
+      "sha256": "873c8132e4836ea2a1a906ba73c6bdc22d4e1e757ab697b489a132b38efe7e5d"
+    },
+    "repo/Tone/core/util/IntervalTimeline.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/IntervalTimeline.ts",
+      "sha256": "4f19f55e08cc8df66f2e3634247f883fd957665c9aa3f26cd47b670706f914fb"
+    },
+    "repo/Tone/core/util/Math.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/Math.ts",
+      "sha256": "520260ddb2f8e820aa3105adf4f36e7562a0dbeaaa327755606436651dbdc02d"
+    },
+    "repo/Tone/core/util/StateTimeline.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/StateTimeline.ts",
+      "sha256": "2aa1ec950ecfd886b4af4fee8d7b1b0a269bea7b13aadcfd968f115050e09b99"
+    },
+    "repo/Tone/core/util/Timeline.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/Timeline.ts",
+      "sha256": "35edfdf7fd80b170a9d8356b5cea37ebfe35b7bb2869e1044499ee881f5b1e78"
+    },
+    "repo/Tone/core/util/TimelineValue.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/TimelineValue.ts",
+      "sha256": "1d059eda5fe12cb9ce6c684284c018049efd79837ec03def819c25551f18d585"
+    },
+    "repo/Tone/core/util/TypeCheck.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/util/TypeCheck.ts",
+      "sha256": "a0f697c32743e88d3fc78346310db2f9619cd5c5b25c483df3b0dd726e076935"
+    },
+    "repo/Tone/core/worklet/DelayLine.worklet.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/worklet/DelayLine.worklet.ts",
+      "sha256": "26fb1683086137c76f7852355867599f0353b77e09a63100b10f0c117750efed"
+    },
+    "repo/Tone/core/worklet/SingleIOProcessor.worklet.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/worklet/SingleIOProcessor.worklet.ts",
+      "sha256": "52e38ebe0d5e0ea7fdc1b81059635edcf6c7814ad469bd33d4d68f8a4050b551"
+    },
+    "repo/Tone/core/worklet/ToneAudioWorklet.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/worklet/ToneAudioWorklet.ts",
+      "sha256": "4dd4c20c548c5881f78d4eadb7fc175eae04072648b4dc7e063d3c47934bfa50"
+    },
+    "repo/Tone/core/worklet/ToneAudioWorkletProcessor.worklet.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/worklet/ToneAudioWorkletProcessor.worklet.ts",
+      "sha256": "1527c6ec7666750e8fc4341b9a06f7d854a6b0c1eae09d6ea86e3b30ac6a3290"
+    },
+    "repo/Tone/core/worklet/WorkletGlobalScope.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/core/worklet/WorkletGlobalScope.ts",
+      "sha256": "58abd0d3c765c7913c452e6428983a36991594ba5a24b35c49e40302b66179b7"
+    },
+    "repo/Tone/effect/AutoFilter.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/AutoFilter.ts",
+      "sha256": "2484f99761457e930178ed1ebea9762db138aa0fe105cce47f223f93069d9c95"
+    },
+    "repo/Tone/effect/AutoPanner.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/AutoPanner.ts",
+      "sha256": "945065b4a9eacb8f517cfbf60e93f451d9faf842dc33b28c69da6768cd8a93b3"
+    },
+    "repo/Tone/effect/AutoWah.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/AutoWah.ts",
+      "sha256": "55000626e80f4563443ad5d15396f4b0eee13bc7cc4bf4cf89e08de45f9d1715"
+    },
+    "repo/Tone/effect/BitCrusher.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/BitCrusher.ts",
+      "sha256": "495baaa63abe4c4a19c5b5add7118f32271e5d0f731b12ebdcc41155fac7797e"
+    },
+    "repo/Tone/effect/BitCrusher.worklet.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/BitCrusher.worklet.ts",
+      "sha256": "838287f655e42da80eb34d6e80366f337eb0313270bbff887c7d53a0cbad246a"
+    },
+    "repo/Tone/effect/Chebyshev.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/Chebyshev.ts",
+      "sha256": "9a3dfdf37211a21b751dfbc668ec5d739e3f80fcb8367265841cd68d9fb0f1a2"
+    },
+    "repo/Tone/effect/Chorus.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/Chorus.ts",
+      "sha256": "83cc39f6c59342276ba3e2a096ef19bfc1fe082fdeee3c94bd73f128e4d44b3d"
+    },
+    "repo/Tone/effect/Distortion.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/Distortion.ts",
+      "sha256": "e7d557877153ca10a61d4048f38fc40dbe1f8312b521400795aee837733a6ef6"
+    },
+    "repo/Tone/effect/Effect.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/Effect.ts",
+      "sha256": "522f960437d71f905a6ee20a32884f8623aeaba182cb6866648564214568db23"
+    },
+    "repo/Tone/effect/FeedbackDelay.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/FeedbackDelay.ts",
+      "sha256": "1487583038f8093c6eee3c4ea62fa1f02875ea99d6438c30df7988a4b21e8222"
+    },
+    "repo/Tone/effect/FeedbackEffect.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/FeedbackEffect.ts",
+      "sha256": "814dcd78be3bdf9edc096e1b466948e1b74be1ea0ce89f0f78bf8a7eaef1b9f7"
+    },
+    "repo/Tone/effect/Freeverb.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/Freeverb.ts",
+      "sha256": "5787ab7f227b843f4d2b74a37957ec61c86371b3d54b2808251f117bd4cf2292"
+    },
+    "repo/Tone/effect/FrequencyShifter.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/FrequencyShifter.ts",
+      "sha256": "588b83c92d73f3075d3e4191efaecb5a85db3fd0a2cd5cf785464ff51e5cf612"
+    },
+    "repo/Tone/effect/index.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/index.ts",
+      "sha256": "2abfe983a105d0b74991b00a1030098c3e96395b818c73a609fc457a35bc6578"
+    },
+    "repo/Tone/effect/JCReverb.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/JCReverb.ts",
+      "sha256": "ab982da19bbbe92d4a761cfcc1d352f84ede979671f547bf33667dd95ca9ff2b"
+    },
+    "repo/Tone/effect/LFOEffect.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/LFOEffect.ts",
+      "sha256": "06ee63872670c5cd14b1c19bf23337fe00cb91f2879bdf832ece8197a373494c"
+    },
+    "repo/Tone/effect/MidSideEffect.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/MidSideEffect.ts",
+      "sha256": "81f993fd4d9cdf728b03dbfad3b1358c547d485e7dfb27598405262f58fdff71"
+    },
+    "repo/Tone/effect/Phaser.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/Phaser.ts",
+      "sha256": "505a151e3dda36d3792a47c65b73d042a572737b0d9bb411a9346289ffffb7bb"
+    },
+    "repo/Tone/effect/PingPongDelay.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/PingPongDelay.ts",
+      "sha256": "60c65668d58e1f88ba82ec2db104114b1a45b63d1b1d044807ca4859a4448ef7"
+    },
+    "repo/Tone/effect/PitchShift.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/PitchShift.ts",
+      "sha256": "f17411cb6ef1335d5c1afe8f277248f72f0981d22aad18b65b303e8f9124724f"
+    },
+    "repo/Tone/effect/Reverb.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/Reverb.ts",
+      "sha256": "4446ad5c170d5b5b81a4dd1d905088dfb6c467e9c61e6c4e94cdd8e397fe0b8f"
+    },
+    "repo/Tone/effect/StereoEffect.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/StereoEffect.ts",
+      "sha256": "f15ff07d36c46e2b251ee169968a8a165e96c4dc38ab0ed648a83cb83a76e84d"
+    },
+    "repo/Tone/effect/StereoFeedbackEffect.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/StereoFeedbackEffect.ts",
+      "sha256": "dc13fa1eba911bc2369b7652294cc76320de4e712b157340fcb861f728b6df54"
+    },
+    "repo/Tone/effect/StereoWidener.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/StereoWidener.ts",
+      "sha256": "e98620a8862fc90a83346dad262f750a7ce4685f33f4d443c855ed56fa2e25c7"
+    },
+    "repo/Tone/effect/StereoXFeedbackEffect.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/StereoXFeedbackEffect.ts",
+      "sha256": "4959104469f2cbafc23d220470861e275663cd75499a8ec0e54c11c87b23d5b6"
+    },
+    "repo/Tone/effect/Tremolo.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/Tremolo.ts",
+      "sha256": "4d05c26e6d2cae8723a18aab0957f6786fa236fbfb6a8b8bc1203050ecc72ae6"
+    },
+    "repo/Tone/effect/Vibrato.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/effect/Vibrato.ts",
+      "sha256": "a965294d64093ffc30ec98e77085a9291112bea52348d878b8e9c62d1e6487fe"
+    },
+    "repo/Tone/event/index.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/event/index.ts",
+      "sha256": "90ec0fb55c059ad019bdd6fdba65ce59e94b6280b31ed4a891f1fce556a24158"
+    },
+    "repo/Tone/event/Loop.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/event/Loop.ts",
+      "sha256": "80959316885562b936882e5c1e261392d1220dc7a15399ab7eb9ad3802286aeb"
+    },
+    "repo/Tone/event/Part.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/event/Part.ts",
+      "sha256": "76e15cb4fe1effc36f60c6974aff56ce00525b93a823a2adaf91c204377f0406"
+    },
+    "repo/Tone/event/Pattern.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/event/Pattern.ts",
+      "sha256": "8154e449908037f2515894bea16e818960d5edff08ab417a07d3257ab6a33c05"
+    },
+    "repo/Tone/event/PatternGenerator.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/event/PatternGenerator.ts",
+      "sha256": "c5bfe2bf2fb1be1235e6623476b0af153e7817a4377bc59dcf3228a8d0c37fff"
+    },
+    "repo/Tone/event/Sequence.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/event/Sequence.ts",
+      "sha256": "f909a59752cd2d5864bc661372bef61eb723be44c4a39330d10332ae33472d1d"
+    },
+    "repo/Tone/event/ToneEvent.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/event/ToneEvent.ts",
+      "sha256": "fa1f8e949e60296b97c7b120ca00bed0207e211e9a4f2b11e651807974cdd0c3"
+    },
+    "repo/Tone/fromContext.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/fromContext.ts",
+      "sha256": "24fbc9c43c8ed5753698f02afb61077e811adf53cd653dcfc6cd7ab92d6176c2"
+    },
+    "repo/Tone/index.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/index.ts",
+      "sha256": "ae9465901c7b44045a74b137ab57ef8849fb63e806278437d12e4259273c6f2c"
+    },
+    "repo/Tone/instrument/AMSynth.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/AMSynth.ts",
+      "sha256": "8ea1b56f989c6c47b0b2c333a5d9a2a3e9c52980f75b58f304185bbb210119fd"
+    },
+    "repo/Tone/instrument/DuoSynth.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/DuoSynth.ts",
+      "sha256": "e51866849fde196f1059e0ace582e32c56f8e76af2cf0658457c1ce3cd8127bb"
+    },
+    "repo/Tone/instrument/FMSynth.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/FMSynth.ts",
+      "sha256": "3030fdef1576b0c53dd66c57214b07537252ba618093da3a7850837eb72b7d8f"
+    },
+    "repo/Tone/instrument/index.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/index.ts",
+      "sha256": "9349ba7345c337bb04a1db4273265ffc23a5258043beff38f1314bbed681bd06"
+    },
+    "repo/Tone/instrument/Instrument.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/Instrument.ts",
+      "sha256": "5375db4ac4d434b3ca0a8bbb8a9b850be3a0989dfeaed6439a8ca721630a3927"
+    },
+    "repo/Tone/instrument/MembraneSynth.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/MembraneSynth.ts",
+      "sha256": "d2e7e45e192a13396b82d599446fc974ede484434817f8370c3ae1812ddbe1cc"
+    },
+    "repo/Tone/instrument/MetalSynth.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/MetalSynth.ts",
+      "sha256": "648d6a397143419b12e805ed400bdad55bb91198970efb0872fdd230f483a2cd"
+    },
+    "repo/Tone/instrument/ModulationSynth.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/ModulationSynth.ts",
+      "sha256": "e7e92ee53448f6c196b25a363e461610f5bf16c25801c505761e5425972c3df3"
+    },
+    "repo/Tone/instrument/Monophonic.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/Monophonic.ts",
+      "sha256": "a12b73a16b78926bc67a814708354efa8cf1d68ae600dac227e84d619b67a8c3"
+    },
+    "repo/Tone/instrument/MonoSynth.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/MonoSynth.ts",
+      "sha256": "6c282efd9d8414280d5da6a6af29d3a0b72df525fcf1b2777c2dae379639c20a"
+    },
+    "repo/Tone/instrument/NoiseSynth.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/NoiseSynth.ts",
+      "sha256": "6f8cf0bba8ec83245a50b9002d678f399d4edbec894f8d0971bfc0f6f01224e8"
+    },
+    "repo/Tone/instrument/PluckSynth.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/PluckSynth.ts",
+      "sha256": "7f645b3728ce7b6dcac78341c1a145dae978eeacca2ee7d7160020f4a97eb595"
+    },
+    "repo/Tone/instrument/PolySynth.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/PolySynth.ts",
+      "sha256": "4666024c2d250dde54c5cf0ce4c3695cdc6c0750080c073e3d7e2890cdb33443"
+    },
+    "repo/Tone/instrument/Sampler.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/Sampler.ts",
+      "sha256": "b8e85027b9270f2af4da326c34bc461fea3284f72c95b42b1be9ff6c3e748378"
+    },
+    "repo/Tone/instrument/Synth.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/instrument/Synth.ts",
+      "sha256": "2f5ce6d9bc345ca0f369d5c5133c95ac5ebfc6e9d1682ba5de3bcb580a7eb7b1"
+    },
+    "repo/Tone/signal/Abs.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/Abs.ts",
+      "sha256": "40d9450378fbab24f0ef66d1bc57c75e825a2eaf582b5773e13466f685004a46"
+    },
+    "repo/Tone/signal/Add.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/Add.ts",
+      "sha256": "2240307a8a68a5de0923e80158c1e59a6809391b5fd0dacf3902a7b9d7c57135"
+    },
+    "repo/Tone/signal/AudioToGain.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/AudioToGain.ts",
+      "sha256": "2088c7460b61eacb105fd28c9b8c9d115de0947b86d992781b02a98a802e6aa6"
+    },
+    "repo/Tone/signal/GainToAudio.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/GainToAudio.ts",
+      "sha256": "89b6c9ac2d642c955c4e82a882a13fa4f00ad7db1d3b4dc5071f0257c39a0748"
+    },
+    "repo/Tone/signal/GreaterThan.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/GreaterThan.ts",
+      "sha256": "be54d6071201fb11c4e09a389535825dd987f27905cd65812d9dcd0128ae96f3"
+    },
+    "repo/Tone/signal/GreaterThanZero.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/GreaterThanZero.ts",
+      "sha256": "dc27508906323a4d26135460475f133f6780ed729c8e71bd6a7d321edcaeaa60"
+    },
+    "repo/Tone/signal/index.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/index.ts",
+      "sha256": "81c7016415deb23c0f5bc5a73a8e86483182ad12fcfa68d752e809d19693424e"
+    },
+    "repo/Tone/signal/Multiply.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/Multiply.ts",
+      "sha256": "a42bfeebce03f69b5ffaf1055e6d18800d4f3d3d427e7f92506c6710414c9c7b"
+    },
+    "repo/Tone/signal/Negate.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/Negate.ts",
+      "sha256": "ee46fde39849350204622a34c153ad83dde79efa7ffaff4508dd03652335f8f4"
+    },
+    "repo/Tone/signal/Pow.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/Pow.ts",
+      "sha256": "dfafe58a8e793fbd83c869fb4090d26cabfd5cd0337c4e6dbc48e83e98ef5627"
+    },
+    "repo/Tone/signal/Scale.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/Scale.ts",
+      "sha256": "2c61aa0f35bf0467e453e82a688c3587bb004496c4ce2f68f31847cec48c5a06"
+    },
+    "repo/Tone/signal/ScaleExp.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/ScaleExp.ts",
+      "sha256": "e1d73b24020abeb2b9f0d1f3a038a1ef69ef8c79050669f6c83fcb837cdc526d"
+    },
+    "repo/Tone/signal/Signal.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/Signal.ts",
+      "sha256": "429638f89d4a4dd077022b5870eaffc84e09cd428f14bc98e68f750d859eafb7"
+    },
+    "repo/Tone/signal/SignalOperator.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/SignalOperator.ts",
+      "sha256": "bcfdc202de773dd4d10f472dcde0af38dcbda33ae50ed3f169fe83a8ecfff87e"
+    },
+    "repo/Tone/signal/Subtract.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/Subtract.ts",
+      "sha256": "466f8a3238c06d9f5f277284147970109eddbdac5074c6d7dbbaf15fde5686c2"
+    },
+    "repo/Tone/signal/SyncedSignal.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/SyncedSignal.ts",
+      "sha256": "bcee6a8097c1e8c93f5a21a667be48e8c93370ba59a0b5e96c939f0adefb5a90"
+    },
+    "repo/Tone/signal/ToneConstantSource.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/ToneConstantSource.ts",
+      "sha256": "721bbf61d0a49d783eca8ec25cde7e044595d250aa03c5fad0b11a2645d72157"
+    },
+    "repo/Tone/signal/WaveShaper.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/WaveShaper.ts",
+      "sha256": "df8ac28dc032ce9292ceea54a1a2b66efb86ac9ad9e084a1206075efd22a0241"
+    },
+    "repo/Tone/signal/Zero.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/signal/Zero.ts",
+      "sha256": "2e2f5113c83046c4b6702b4e10444e86367d3919f82c7823d2c6872a8951ee1e"
+    },
+    "repo/Tone/source/buffer/GrainPlayer.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/buffer/GrainPlayer.ts",
+      "sha256": "ea35631ac01f59f1447e9155d71ac80735eacde06cf8270755448b73d5c1f365"
+    },
+    "repo/Tone/source/buffer/Player.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/buffer/Player.ts",
+      "sha256": "5d10841f123a261b017c174ba7b3c6191c2c33de301b103b20b0dbbe0a4f09a9"
+    },
+    "repo/Tone/source/buffer/Players.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/buffer/Players.ts",
+      "sha256": "962d80b0b00ba679493356102b40eb03065d8d9396db9fa0eac08ba31eb399fd"
+    },
+    "repo/Tone/source/buffer/ToneBufferSource.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/buffer/ToneBufferSource.ts",
+      "sha256": "8c6f5e6c3c14d4f8b5df9dc8dac1ddbda0516708cff0d2f15e181549b6c52ff7"
+    },
+    "repo/Tone/source/index.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/index.ts",
+      "sha256": "6b43ccd8754a7a02f81dead63fe0e718a248be79f52c393dbbf699670c15afac"
+    },
+    "repo/Tone/source/Noise.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/Noise.ts",
+      "sha256": "a42cda8879aad7b06d21ff0ac63d43f049b01abffeb7884b0eb6d98de4787646"
+    },
+    "repo/Tone/source/OneShotSource.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/OneShotSource.ts",
+      "sha256": "38e975be57cc9d9b238646c255a6e2607d7e85504389c606b93a74fc2ad896d9"
+    },
+    "repo/Tone/source/oscillator/AMOscillator.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/oscillator/AMOscillator.ts",
+      "sha256": "cea2ee52db025c79d61f8d5604ff1934da6aeacda7672f079558c6f7c6e3f4cb"
+    },
+    "repo/Tone/source/oscillator/FatOscillator.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/oscillator/FatOscillator.ts",
+      "sha256": "0a212bee5fad6786d79dc124a785e6a8deef0fe5bd4428035caea1c8c8200088"
+    },
+    "repo/Tone/source/oscillator/FMOscillator.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/oscillator/FMOscillator.ts",
+      "sha256": "069c2f2881c06ed9d97df88c0a553ee7d8aba863a4aee4e6b0df8f50e237d139"
+    },
+    "repo/Tone/source/oscillator/LFO.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/oscillator/LFO.ts",
+      "sha256": "ae2baf2941dc4dd35836fc99ae17471be4f049ceed3afb1300e092a29780840d"
+    },
+    "repo/Tone/source/oscillator/OmniOscillator.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/oscillator/OmniOscillator.ts",
+      "sha256": "b645f79474b2afc24f24fa3fddbcadbe2aa8983d1572c55f485304833e9dbb19"
+    },
+    "repo/Tone/source/oscillator/Oscillator.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/oscillator/Oscillator.ts",
+      "sha256": "c53cbf5b9301f9498fe74879ada4d8a65dfcd7ca8b88e225132223bc0290a598"
+    },
+    "repo/Tone/source/oscillator/OscillatorInterface.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/oscillator/OscillatorInterface.ts",
+      "sha256": "37cb0e894c4618e5b255f513ba477592606e442d4ed33ef78b99736702470ab0"
+    },
+    "repo/Tone/source/oscillator/PulseOscillator.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/oscillator/PulseOscillator.ts",
+      "sha256": "59f0edaaae5609aa23ed3f3f3573805ecabd2833127a546d3e6e8fb4b184e25a"
+    },
+    "repo/Tone/source/oscillator/PWMOscillator.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/oscillator/PWMOscillator.ts",
+      "sha256": "a305d13826eb94f55d3e3a1b527b9a8fb1606928c85c52d4fed4db21c0376db3"
+    },
+    "repo/Tone/source/oscillator/ToneOscillatorNode.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/oscillator/ToneOscillatorNode.ts",
+      "sha256": "0313759501fb25e525c945a9c3126102f8b782f9350ca90becfc6348e06c9e29"
+    },
+    "repo/Tone/source/Source.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/Source.ts",
+      "sha256": "10dff221577d5ab1dc023e94d603d588ba965ca74f45a379c67a00ff9596e178"
+    },
+    "repo/Tone/source/UserMedia.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/source/UserMedia.ts",
+      "sha256": "23e41ee7c10001248ca9c9490dda737a2a864eb67ca096114657feccad04f49c"
+    },
+    "repo/Tone/version.ts": {
+      "url": "https://github.com/Tonejs/Tone.js/blob/d2d52ffa8803b35debd9f19f2da08ad1c3540de0/Tone/version.ts",
+      "sha256": "179589f040cfddd01702e74d7bc9e323edc33feab82b87be36afa0a2663a6fb1"
+    },
+    "repo/Transport.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Transport.md",
+      "sha256": "828321addbe7d5c778766e4d0e02216788e3097f74aea5d6afa841c09f5470cd"
+    },
+    "repo/TransportTime.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/TransportTime.md",
+      "sha256": "60ad4266320e2b5bfd38366440e56a285e958cf7a0633be7c43f17389e75ea32"
+    },
+    "repo/Using-Tone.js-with-React-or-Vue.md": {
+      "url": "https://github.com/Tonejs/Tone.js.wiki/blob/259cc7427185906d65764d7fe6d9b83cffb1d51f/Using-Tone.js-with-React-or-Vue.md",
+      "sha256": "681eb79690a5c60acfd0f56e32987fa791e52afc26b8b9c164695ebe6447b120"
+    }
+  }
 }

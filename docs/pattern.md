@@ -34,7 +34,9 @@ directory names: kebab-case, and permanent once published.
   - `docs`: the vendored files used, as keys of `docs/MANIFEST.json`.
   - `provenance`: `'pure'` for examples built from the docs, `'legacy'` for the 15
     migrated pages.
-  - `audio: true` for examples that make sound; they never mount in a preview card.
+  - `audio: true` for examples that make sound and have no silent preview; such a card
+    never mounts. A sound example that can render its card silently (Tone.js renders
+    offline and draws the waveform) leaves it unset.
 - **`mount(el, { preview, signal })`**: builds into `el` and returns a cleanup. It may be
   async. `signal` aborts on unmount: pass it to `fetch` and to loaders, and stop work
   when it fires. The host runs a late cleanup itself if the mount resolves after

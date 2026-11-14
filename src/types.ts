@@ -58,7 +58,7 @@ export interface ExampleMeta {
   docs: readonly string[];
   provenance: Provenance;
   added: IsoDate;
-  /** Makes sound. Previews never mount it; it only runs in the example view after a click. */
+  /** Makes sound and has no silent preview: cards never mount it, only the example view does. */
   audio?: boolean;
 }
 
