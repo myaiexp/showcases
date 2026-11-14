@@ -33,6 +33,13 @@ const mount: Mount = (el, ctx) => {
 
   const run = async (): Promise<void> => {
     const ticket = ++latest;
+    if (!box.value.trim()) {
+      // An empty query returns everyone unscored: there is no ranking to split.
+      strip.replaceChildren();
+      list.show([], 'Type a name, a hobby or a job');
+      stage.say('');
+      return;
+    }
     // The docs: the dataset is split evenly, each worker gets one contiguous shard.
     const size = Math.ceil(docs.length / numWorkers);
     const shardOf = (refIndex: number): number => Math.floor(refIndex / size);

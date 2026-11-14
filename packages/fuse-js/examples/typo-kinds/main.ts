@@ -15,7 +15,8 @@ const KINDS: [string, (w: string, i: number) => string][] = [
   ['wrong letter', (w, i) => w.slice(0, i) + 'x' + w.slice(i + 1)],
   ['extra letter', (w, i) => w.slice(0, i) + w[i] + w.slice(i)],
   ['missing letter', (w, i) => w.slice(0, i) + w.slice(i + 1)],
-  ['swapped letters', (w, i) => (i + 1 < w.length ? w.slice(0, i) + w[i + 1] + w[i] + w.slice(i + 2) : w)],
+  // Swaps letter i with the next one; at the last letter it swaps with the one before.
+  ['swapped letters', (w, i) => (i + 1 < w.length ? w.slice(0, i) + w[i + 1] + w[i] + w.slice(i + 2) : w.slice(0, i - 1) + w[i] + w[i - 1])],
 ];
 
 const mount: Mount = (el, ctx) => {

@@ -64,12 +64,12 @@ const mount: Mount = (el, ctx) => {
   box.onInput((query) => {
     eagerLine.tick('key');
     calmLine.tick('key');
-    eagerLine.tick('search');
+    if (query) eagerLine.tick('search');
     eagerList.show(query ? search(query) : [], '…');
     clearTimeout(timer);
     timer = setTimeout(() => {
       if (stage.disposed) return;
-      calmLine.tick('search');
+      if (query) calmLine.tick('search');
       calmList.show(query ? search(query) : [], '…');
     }, 200);
   });

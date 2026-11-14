@@ -41,7 +41,7 @@ const mount: Mount = (el, ctx) => {
   const state: Filters = { ...STEPS[0]! };
   const apply = (): void => {
     // Chips become terms: folder -> "^folder", extension -> ".ext$", tests -> "!test".
-    const terms = [state.folder && `^${state.folder}`, state.ext && `${state.ext}$`, state.noTests && '!test'].filter(Boolean);
+    const terms = [state.folder && `^${state.folder}`, state.ext && `${state.ext}$`, state.noTests && '!test'].filter((t): t is string => Boolean(t));
     const query = terms.join(' ');
     call.set(query ? `fuse.search('${query}')` : 'no chips: no query');
     read.set(query);
@@ -51,7 +51,12 @@ const mount: Mount = (el, ctx) => {
       return;
     }
     const results = fuse.search(query);
-    lightUp(tiles, results, { nodes: (r) => highlight(r.item, r.matches?.[0]?.indices) });
+    // An inverse term (!test) reports the whole name as matched, which would swamp the
+    // highlight, so the letters to mark come from Fuse.match with the positive terms only.
+    const positive = terms.filter((t) => !t.startsWith('!')).join(' ');
+    const marks = (item: string) =>
+      positive ? Fuse.match(positive, item, { useExtendedSearch: true, includeMatches: true }).indices : undefined;
+    lightUp(tiles, results, { nodes: (r) => highlight(r.item, marks(r.item)) });
     stage.say(`${results.length} of ${FILES.length} files match`, results.length ? 'ok' : 'warn');
   };
 

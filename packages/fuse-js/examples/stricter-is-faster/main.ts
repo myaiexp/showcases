@@ -19,6 +19,10 @@ const mount: Mount = (el, ctx) => {
   const fuses = THRESHOLDS.map((threshold) => new Fuse(docs, { keys: KEYS, threshold }));
 
   const runAll = async (): Promise<void> => {
+    if (!box.value.trim()) {
+      stage.say('Type a query to time', 'warn'); // an empty query just returns every doc
+      return;
+    }
     chart.clear();
     for (const [i, fuse] of fuses.entries()) {
       await stage.wait(40);

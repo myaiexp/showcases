@@ -4,7 +4,7 @@ import type { Mount } from '@/types.ts';
 import { people } from '../../shared/big-data.ts';
 import { marked } from '../../shared/highlight.ts';
 import { resultList } from '../../shared/results.ts';
-import { searchBox, typeLoop } from '../../shared/search-box.ts';
+import { searchBox } from '../../shared/search-box.ts';
 import { createStage } from '../../shared/stage.ts';
 import { columns, pills } from '../../shared/widgets.ts';
 
@@ -18,7 +18,7 @@ const mount: Mount = (el, ctx) => {
   const allList = stage.preview ? null : resultList(all!.body, { scores: false });
   const topList = resultList(top!.body, { max: stage.preview ? 3 : 20, scores: false });
 
-  const docs = people(stage.preview ? 3000 : 20000, 5);
+  const docs = people(stage.preview ? 1500 : 20000, 5);
   const fuse = new Fuse(docs, { keys: ['name', 'description'], threshold: 0.4, includeMatches: true });
   const rows = (rs: ReturnType<typeof fuse.search>) => rs.map((r) => ({ id: r.refIndex, title: marked(r, 'name', r.item.name), sub: r.item.description }));
 
@@ -43,9 +43,19 @@ const mount: Mount = (el, ctx) => {
     topInfo.set('ms drawing', Math.round(performance.now() - t0), 'ok');
     stage.say(`"${query}" matches ${every.length.toLocaleString('en')} of ${docs.length.toLocaleString('en')} people; the top 20 are the same either way`, 'ok');
   };
-  box.onInput(run);
-  run(box.value);
-  typeLoop(stage, box, ['ana', 'chef', 'nora']);
+  if (stage.preview) {
+    // A card shows whole queries one after another instead of searching on every letter.
+    stage.cycle(['ana', 'chef', 'nora'], 2600, (q) => (box.set(q), run(q)), true);
+  } else {
+    // Each keystroke can draw thousands of rows on the left: wait for a pause in typing.
+    let timer: ReturnType<typeof setTimeout> | undefined;
+    stage.onDispose(() => clearTimeout(timer));
+    box.onInput((q) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => run(q), 250);
+    });
+    run(box.value);
+  }
   return stage.dispose;
 };
 

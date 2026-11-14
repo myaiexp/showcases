@@ -32,6 +32,12 @@ const mount: Mount = (el, ctx) => {
 
   const run = async (note: string): Promise<void> => {
     const ticket = ++latest;
+    if (!box.value.trim()) {
+      info.set('people', docs.length);
+      list.show([], 'Type a name or a company');
+      stage.say(note);
+      return;
+    }
     const results = await fuse.search(box.value);
     if (ticket !== latest || stage.disposed) return;
     info.set('people', docs.length);
@@ -40,11 +46,12 @@ const mount: Mount = (el, ctx) => {
   };
 
   const add = async (): Promise<void> => {
-    const person = NEWCOMERS[sent % NEWCOMERS.length]!;
+    const n = sent++; // counted before the await, so two quick clicks add two people
+    const person = NEWCOMERS[n % NEWCOMERS.length]!;
     // add() goes to the workers round-robin: worker 1, worker 2, worker 1, …
     await fuse.add(person);
     docs = [...docs, person];
-    await run(`Added ${person.name} (to worker ${(sent++ % numWorkers) + 1})`);
+    await run(`Added ${person.name} (to worker ${(n % numWorkers) + 1})`);
   };
   const keepOnly = async (company: string): Promise<void> => {
     // No remove() in FuseWorker: filter the array yourself and hand over the result.

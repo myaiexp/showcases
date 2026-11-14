@@ -39,10 +39,16 @@ const mount: Mount = (el, ctx) => {
   const run = (): void => {
     // The window reaches threshold × distance letters either side of `location`.
     const reach = dials.ignoreLocation ? SENTENCE.length : Math.round(dials.threshold * dials.distance * 1e6) / 1e6;
-    const at = word ? SENTENCE.indexOf(word) : -1;
+    // Fuse ignores case, so look for the word the same way.
+    const at = word ? SENTENCE.toLowerCase().indexOf(word.toLowerCase()) : -1;
     // The one Fuse call this example is about: one sentence, searched for one word.
     const fuse = new Fuse([SENTENCE], { ...dials, includeMatches: true });
-    const found = word ? fuse.search(word)[0] : undefined;
+    const hit = word ? fuse.search(word)[0] : undefined;
+    // Short words can also match loosely somewhere else in the sentence, nearer `location`:
+    // the word itself only counts as found when it starts inside the window.
+    const inWindow = dials.ignoreLocation || (at >= dials.location - reach && at <= dials.location + reach);
+    const found = hit && at >= 0 && inWindow ? hit : undefined;
+    const stray = hit && !found;
     line.draw({
       window: [Math.ceil(dials.location - reach), Math.floor(dials.location + reach)],
       location: dials.location,
@@ -53,14 +59,15 @@ const mount: Mount = (el, ctx) => {
     info?.set('distance', dials.distance);
     info?.set('location', dials.location);
     if (dials.ignoreLocation) info?.set('ignoreLocation', 'true');
-    else info?.set('window', `${Math.max(0, Math.ceil(dials.location - reach))}-${Math.floor(dials.location + reach)}`);
+    else info?.set('window', `${Math.max(0, Math.ceil(dials.location - reach))}-${Math.min(SENTENCE.length - 1, Math.floor(dials.location + reach))}`);
     if (at < 0) stage.say(word ? `"${word}" is not in the sentence` : 'Type a word from the sentence', 'warn');
     else if (found) {
       stage.say(
         dials.ignoreLocation ? `Found: with ignoreLocation the whole sentence counts` : `Found: "${word}" starts at ${at}, inside the window`,
         'ok',
       );
-    } else stage.say(`Not found: "${word}" starts at ${at}, but the window ends at ${Math.floor(dials.location + reach)}`, 'bad');
+    } else if (stray) stage.say(`"${word}" at ${at} is outside the window; Fuse matched other letters nearer ${dials.location} instead`, 'warn');
+    else stage.say(`Not found: "${word}" starts at ${at}, but the window ends at ${Math.floor(dials.location + reach)}`, 'bad');
   };
 
   if (stage.preview) {

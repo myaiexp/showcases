@@ -44,7 +44,11 @@ const mount: Mount = (el, ctx) => {
     plainList.show(a.map(row));
     customList.show(b.map(row));
     stage.say(
-      a.length ? `${a.length} books tie on score. By default they keep shelf order; with the custom sortFn the newest comes first` : `No genre is close to "${query}"`,
+      !a.length
+        ? `No genre is close to "${query}"`
+        : new Set(a.map((r) => r.score)).size === 1
+          ? `${a.length} books tie on score. By default they keep shelf order; with the custom sortFn the newest comes first`
+          : `${a.length} books found; wherever scores tie, the custom sortFn puts the newest first`,
       a.length ? 'ok' : 'warn',
     );
   };
