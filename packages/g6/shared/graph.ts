@@ -44,6 +44,10 @@ import './graph.css';
  * - A labelled polyline edge rotates its label along the first segment: labelAutoRotate: false.
  * - Style callbacks under `edge.style` need a typed parameter (`d: EdgeData`): the index
  *   signature on EdgeStyle leaves it an implicit any.
+ * - Layouts: enableWorker falls back to the main thread (function-valued node/edge options
+ *   fail postMessage); antv-dagre radial/focusNode do nothing in @antv/layout 2.0.0; d3-force
+ *   callbacks get simulation nodes (G6 data under d._original); a string sortBy or getMass is
+ *   an @antv/expr expression, not a field name; preLayout runs only on the first draw.
  * - A card unmounted mid-animation can log one "reading 'getData'" TypeError from G6's own
  *   animation callback after destroy; it is harmless and not catchable from here.
  *
