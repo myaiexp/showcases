@@ -3,6 +3,8 @@
 import type { Cleanup, Mount } from '../types.ts';
 
 export interface Running {
+  /** Settles when the mount has finished, failed or been aborted. Never rejects. */
+  ready: Promise<void>;
   /** Unmounts: aborts a pending async mount, or runs the cleanup of a finished one. */
   stop(): void;
 }
@@ -43,13 +45,14 @@ export function runExample(
     else cleanup = result;
   };
 
-  start().catch((err: unknown) => {
+  const ready = start().catch((err: unknown) => {
     if (abort.signal.aborted) return;
     console.error(`Example ${id} failed`, err);
     showError(el, err);
   });
 
   return {
+    ready,
     stop() {
       abort.abort();
       if (cleanup) safely(cleanup);

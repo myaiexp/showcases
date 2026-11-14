@@ -1,0 +1,18 @@
+{
+  "license": "MIT (LICENSE at the root of antvis/g6, which holds the docs under packages/site/ and the datasets under packages/g6/__tests__/dataset/)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/antvis/g6",
+      "ref": "5.1.1",
+      "paths": [
+        "LICENSE",
+        "packages/site/.dumirc.ts",
+        "packages/site/docs/**/*.en.md",
+        "packages/site/common/**/*.md",
+        "packages/g6/__tests__/dataset/*.json"
+      ]
+    }
+  ]
+}

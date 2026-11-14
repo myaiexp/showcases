@@ -1,0 +1,49 @@
+/* Shared Plot chrome: plot box, dark plot background, card fit, control bar */
+.op-plot {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--fg-1);
+}
+/* Plot sets --plot-background: white through :where(), which any class selector outranks.
+   Tips, halos and area outlines read it, so it follows the stage colour. */
+.op-plot svg,
+.op-plot figure {
+  --plot-background: var(--bg);
+}
+.op-plot figure {
+  margin: 0;
+  max-width: 100%;
+}
+.op-plot-card {
+  height: 200px;
+  justify-content: center;
+  overflow: hidden;
+}
+/* A plot taller than the card keeps its viewBox and scales down to fit. */
+.op-plot-card > svg {
+  max-height: 200px;
+  width: auto;
+}
+.op-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 10px;
+  font-size: 13px;
+}
+.op-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.op-readout {
+  margin: 8px 0 0;
+  font-size: 12px;
+  white-space: pre-wrap;
+  width: 100%;
+  color: var(--fg-2);
+}

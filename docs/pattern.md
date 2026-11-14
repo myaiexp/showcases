@@ -51,8 +51,12 @@ about never lives there.
 ## Preview cards
 
 Gallery cards are 200px tall and have `pointer-events: none`; a click opens the full view.
-At most 6 run at once, mounted nearest to the viewport centre first. A card unmounts
-800 ms after leaving view. So in `ctx.preview`:
+`src/preview/host.ts` mounts them one at a time, nearest to the viewport centre first,
+once a card has been in view for 150 ms, and unmounts a card 800 ms after it leaves view.
+At most 6 run at once. When the page drops under ~20 fps the cap falls (to 1 at worst)
+and climbs back once frames recover, and a card whose own mount turned a healthy page
+slow is skipped for the rest of the visit (its stage gets `data-preview="benched"`). A
+heavy card therefore stays blank on slow devices. So in `ctx.preview`:
 
 - look alive with no input: autoplay or loop, or cycle sample inputs on a timer;
 - skip control panels; fit about 260×200;

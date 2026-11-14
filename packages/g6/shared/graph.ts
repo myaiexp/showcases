@@ -1,0 +1,233 @@
+// Shared G6 mount: sized graph box, control bar, card timers, resize and teardown
+import type { Graph } from '@antv/g6';
+import type { Cleanup, MountContext } from '@/types.ts';
+import { controlBar } from './controls.ts';
+import './graph.css';
+
+/**
+ * G6 5.1.1 traps found while building this gallery, for whoever adds the next example:
+ * - Every example passes theme: 'dark'. The dark theme paints the canvas #000 and sets
+ *   label and stroke colours for it; without it labels are near-black on the dark page.
+ * - graph.render(), draw(), layout() and the viewport calls are async. A card timer that
+ *   calls them can still be running when the card unmounts, and G6 throws on a destroyed
+ *   graph: run them through stage.every(), which drops errors once the mount is gone.
+ * - G6 writes into the data objects it is given (layout positions land in style.x/y), so
+ *   dataset() hands out a fresh copy on every call.
+ * - Without width and height G6 reads the container's size once, at construction: the box
+ *   is sized before setup runs, and stage.keep() resizes the graph with the full view.
+ * - Every function inside a `style` object is called as a datum callback, so an event handler
+ *   cannot travel through style (the docs' onButtonClick): keep it in a module variable.
+ * - Two edges between the same nodes need explicit ids, or G6 throws "Edge already exists".
+ * - A node's `transform` style replaces the translate that places it. The string form loses
+ *   the position; G's array form with the translate last keeps it (node-transform).
+ * - Custom elements: `override render(attributes = this.parsedAttributes as Attrs, container = this)`
+ *   (noImplicitOverride; G types container as optional). register() takes 3 arguments.
+ *   Inside a node, a custom Circle shape is placed with cx/cy, not x/y.
+ * - `graph.on('node:click', (e: IElementEvent) => …)`: the bare event type has no target.
+ * - autoFit: 'view' fits the key shapes, so badges, ports and labels at the rim get clipped:
+ *   add `padding`.
+ * - Style callbacks for literal-union props (pointerEvents, cursor…) must return the literal type.
+ * - zoom, x, y, rotation, devicePixelRatio, background, autoResize and canvas options are read
+ *   at construction only; setOptions ignores them, so those examples rebuild the graph.
+ *   background fills the canvas only as a top-level option (canvas.background is overwritten).
+ * - register() of a taken name overrides it with a warning: use unique showcase- names.
+ * - addComboData([{ id, children }]) does not move nodes into the combo: set `combo` on the
+ *   node data. removeNodeData also removes the node's edges.
+ * - map-node-size in 5.1.1 takes centrality/minSize/maxSize (the docs' field/min/max do
+ *   nothing), and the graph option is `transforms`, not `transform`.
+ * - A custom state's icon uses flat props (icon: true, iconText), not icon: { show, text }.
+ * - A combo with children takes its box from its children plus padding; `size` only applies
+ *   to an empty combo, and collapsedSize to a collapsed one.
+ * - Custom elements: onCreate/onUpdate/onDestroy take no `override` (TS4113); read
+ *   attributes.states through a cast; getKeyPath returns `as never` (@antv/util's PathArray
+ *   is not importable here); default destructured sizes (`[w = 0, h = 0]`).
+ * - A labelled polyline edge rotates its label along the first segment: labelAutoRotate: false.
+ * - Style callbacks under `edge.style` need a typed parameter (`d: EdgeData`): the index
+ *   signature on EdgeStyle leaves it an implicit any.
+ * - Layouts: enableWorker falls back to the main thread (function-valued node/edge options
+ *   fail postMessage); antv-dagre radial/focusNode do nothing in @antv/layout 2.0.0; d3-force
+ *   callbacks get simulation nodes (G6 data under d._original); a string sortBy or getMass is
+ *   an @antv/expr expression, not a field name; preLayout runs only on the first draw.
+ * - brush-select, lasso-select, click-select and drag-element never destroy their Shortcut,
+ *   which listens on window: teardown calls releaseShortcuts() first. A graph destroyed
+ *   anywhere else must do the same (graph-basics rebuildable does).
+ * - updateBehavior deep-merges and ignores undefined, so it cannot unset an option: rebuild
+ *   with setBehaviors. Behavior selection states need an explicit node.state style to show.
+ * - Fullscreen: destroy() leaves document and window listeners, and a trigger key calls an
+ *   unbound method: shared/plugin-drive.ts has releaseFullscreen and bindFullscreenKeys.
+ *   The toolbar adds one hidden icon sprite (#g6-toolbar-svgicon) to body, shared and kept.
+ * - Cards drive tooltip/contextmenu through the plugin's show() with an event built from the
+ *   element's screen position, and lenses through their pointer handler (plugin-drive.ts).
+ * - getElementRenderBounds returns G's AABB (min, max, center, halfExtents), not { x, y,
+ *   width, height }. A graph has four canvases; the first in the DOM is the background one.
+ * - Keyboard events come from the container, which needs tabIndex = 0 to take focus.
+ *   node:drop and friends fire only when the dragged item follows the pointer (drag-element
+ *   with shadow: true). A synthetic DOM contextmenu event never reaches G6's handlers.
+ * - setNode, setEdge and setLayout replace the whole option: pass the full object each time.
+ *   zoomTo without an origin scales about the viewport centre. Coordinate conversions return
+ *   [x, y, z]: destructure with defaults under noUncheckedIndexedAccess.
+ * - A card unmounted mid-animation can log one "reading 'getData'" TypeError from G6's own
+ *   animation callback after destroy; it is harmless and not catchable from here.
+ *
+ * Every example writes its whole `new Graph({...})` spec in its own main.ts; this file only
+ * sizes the box, repeats card steps, resizes and destroys what the example made.
+ */
+
+export interface Stage {
+  /** The graph's container: 200px tall in a card, `height` tall in the full view. */
+  container: HTMLDivElement;
+  preview: boolean;
+  /** Full view only: the row above the graph for controls (null in a card). */
+  bar: HTMLDivElement | null;
+  signal: AbortSignal;
+  readonly alive: boolean;
+  /** Registers a graph: resized with the full view, destroyed on unmount. */
+  keep<G extends Graph>(graph: G): G;
+  /**
+   * Calls `fn` every `ms` while mounted; errors after unmount are dropped. A card that
+   * registers no timer (every or after) replays a wipe-in reveal instead.
+   */
+  every(ms: number, fn: (i: number) => unknown): void;
+  /** Calls `fn` once after `ms` unless the mount is gone by then. */
+  after(ms: number, fn: () => unknown): void;
+  /** Runs `fn` on unmount, before kept graphs are destroyed. */
+  onCleanup(fn: () => void): void;
+}
+
+export interface StageOptions {
+  /** Full-view height in px (default 460). Cards are always 200. */
+  height?: number;
+}
+
+/** Builds the stage, runs `setup`, and returns the cleanup that undoes both. */
+export async function mountGraph(
+  el: HTMLElement,
+  ctx: MountContext,
+  setup: (stage: Stage) => unknown,
+  options: StageOptions = {},
+): Promise<Cleanup> {
+  const { preview, signal } = ctx;
+  const bar = preview ? null : controlBar(el);
+  const container = document.createElement('div');
+  container.className = preview ? 'g6-stage g6-stage-card' : 'g6-stage';
+  container.style.height = `${preview ? 200 : (options.height ?? 460)}px`;
+  el.append(container);
+
+  let alive = true;
+  const graphs: Graph[] = [];
+  const cleanups: (() => void)[] = [];
+  const timers: ReturnType<typeof setTimeout>[] = [];
+  const quiet = (err: unknown): void => {
+    if (alive) console.error(err);
+  };
+  const guard = (fn: () => unknown): void => {
+    if (!alive) return;
+    try {
+      const out = fn();
+      if (out instanceof Promise) out.catch(quiet);
+    } catch (err) {
+      quiet(err);
+    }
+  };
+
+  const stage: Stage = {
+    container,
+    preview,
+    bar,
+    signal,
+    get alive() {
+      return alive;
+    },
+    keep(graph) {
+      graphs.push(graph);
+      return graph;
+    },
+    every(ms, fn) {
+      let i = 0;
+      timers.push(setInterval(() => guard(() => fn(++i)), ms));
+    },
+    after(ms, fn) {
+      timers.push(setTimeout(() => guard(fn), ms));
+    },
+    onCleanup(fn) {
+      cleanups.push(fn);
+    },
+  };
+
+  let ro: ResizeObserver | null = null;
+  if (!preview) {
+    let frame = 0;
+    let last = container.clientWidth;
+    ro = new ResizeObserver(() => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const w = container.clientWidth;
+        if (!alive || Math.abs(w - last) < 8) return;
+        last = w;
+        for (const g of graphs) guard(() => g.resize(w, container.clientHeight));
+      });
+    });
+    ro.observe(container);
+  }
+
+  const cleanup = (): void => {
+    alive = false;
+    ro?.disconnect();
+    for (const t of timers) clearInterval(t);
+    for (const fn of cleanups.reverse()) {
+      try {
+        fn();
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    for (const g of graphs) {
+      try {
+        if (g.destroyed) continue;
+        releaseShortcuts(g);
+        g.destroy();
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    container.remove();
+    bar?.remove();
+  };
+
+  try {
+    await setup(stage);
+  } catch (err) {
+    cleanup();
+    throw err;
+  }
+  // A card whose example started no timer of its own replays a reveal, so it never sits still.
+  if (preview && timers.length === 0) {
+    reveal(container);
+    timers.push(setInterval(() => reveal(container), 4200));
+  }
+  return cleanup;
+}
+
+/** Wipes the graph in from left to right with element.animate (no CSS keyframes). */
+function reveal(box: HTMLElement): void {
+  box.animate([{ clipPath: 'inset(0 100% 0 0)' }, { clipPath: 'inset(0 0 0 0)' }], {
+    duration: 1400,
+    easing: 'cubic-bezier(.3,.7,.3,1)',
+  });
+}
+
+/**
+ * G6 5.1.1's brush-select, lasso-select, click-select and drag-element each make a Shortcut
+ * that adds keydown, keyup and focus listeners to window, and never destroy it: every
+ * unmounted graph would stay reachable from window. Destroys those Shortcuts before
+ * graph.destroy(). This reads G6 internals (context.behavior/plugin.extensionMap), so it
+ * checks every step and does nothing if they move.
+ */
+export function releaseShortcuts(graph: Graph): void {
+  type Ext = { shortcut?: { destroy?: () => void } };
+  const ctx = (graph as unknown as { context?: Record<string, { extensionMap?: Record<string, Ext> } | undefined> })
+    .context;
+  for (const controller of [ctx?.['behavior'], ctx?.['plugin']]) {
+    for (const ext of Object.values(controller?.extensionMap ?? {})) ext.shortcut?.destroy?.();
+  }
+}
