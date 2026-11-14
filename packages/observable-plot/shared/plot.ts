@@ -19,6 +19,9 @@ import './plot.css';
  * - A text mark given a data array but no x, y or frameAnchor turns its strings into an ordinal
  *   position scale and wrecks the axes: give decoration text a frameAnchor.
  * - Plot.legend types `columns` as a CSS string: pass String(n).
+ * - tickFormat is typed (d, i) but Plot also passes the ticks array third; cast to use it.
+ * - The scheme is PiYG (the docs write PiYg). The docs' var(--vp-c-bg) is the docs site's
+ *   background: use var(--plot-background) here.
  *
  * Every example writes its whole Plot.plot({...}) spec in its own main.ts; this file only
  * sizes, places, re-renders and tears down what that spec returns.
