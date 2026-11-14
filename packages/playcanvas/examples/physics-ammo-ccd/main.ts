@@ -51,7 +51,7 @@ const mount: Mount = async (el, ctx) => {
     if (readout) {
       const v = lanes[1]!.bullet.rigidbody!.body?.getLinearVelocity();
       const native = v ? Math.hypot(v.x(), v.y(), v.z()) : 0;
-      readout.textContent = `native getLinearVelocity of the CCD bullet: ${native.toFixed(1)} m/s, ${physics.dynamicsWorld?.getNumCollisionObjects() ?? 0} collision objects in the btDiscreteDynamicsWorld`;
+      readout.textContent = `native getLinearVelocity of the CCD bullet: ${native.toFixed(1)} m/s`;
     }
   });
 
