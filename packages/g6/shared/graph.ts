@@ -53,6 +53,11 @@ import './graph.css';
  *   anywhere else must do the same (graph-basics rebuildable does).
  * - updateBehavior deep-merges and ignores undefined, so it cannot unset an option: rebuild
  *   with setBehaviors. Behavior selection states need an explicit node.state style to show.
+ * - Fullscreen: destroy() leaves document and window listeners, and a trigger key calls an
+ *   unbound method: shared/plugin-drive.ts has releaseFullscreen and bindFullscreenKeys.
+ *   The toolbar adds one hidden icon sprite (#g6-toolbar-svgicon) to body, shared and kept.
+ * - Cards drive tooltip/contextmenu through the plugin's show() with an event built from the
+ *   element's screen position, and lenses through their pointer handler (plugin-drive.ts).
  * - A card unmounted mid-animation can log one "reading 'getData'" TypeError from G6's own
  *   animation callback after destroy; it is harmless and not catchable from here.
  *
