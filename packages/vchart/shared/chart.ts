@@ -107,6 +107,10 @@ export interface Chart {
  *   gradient over valueField.
  * - Sankey setNodeLayer gets the original node row; an unmatched return blanks the chart.
  * - legends[].rail width/height are drawn horizontally; a markLine label at 'end' is clipped.
+ * - A custom tooltip handler gets one entry per series, each with a datum array of every row
+ *   at that dimension: flatten them for a stacked series.
+ * - symbolType takes an <svg> string only when it holds a single <path>.
+ * - markOverlap and pointDis are read at creation: rebuild the chart to change them.
  * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
  * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
  * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
