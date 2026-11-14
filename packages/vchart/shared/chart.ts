@@ -64,6 +64,14 @@ export interface Chart {
  * - Sankey nodeSortBy/linkSortBy receive node and link objects, not data fields.
  * - Treemap nonLeafLabel text is dark by default; set style.fill.
  * - Series drillDown(path) and drillUp() work from code once drill and drillField are set.
+ * - registerPictogramChart and VChart.registerSVG come from @visactor/vchart-extension in
+ *   2.2, not the main package. Unnamed pictogram elements take color.specified's
+ *   `undefined` key; a linear fill scale needs changeDomain: 'replace' and no domain.
+ * - A map series without seriesField paints every region one colour; registerMap's
+ *   `rewind` showed no visible effect.
+ * - Once a 3D chart is registered (shared/chart3d.ts), the 3D plugin treats every chart
+ *   on the page as 3D and sets a camera; 2D charts checked afterwards still drew normally.
+ *   getStage().set3dOptions() replaces the whole option object: resend center each time.
  * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
  * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
  * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
