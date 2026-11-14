@@ -1,0 +1,91 @@
+/* JSON to CSV examples: JSON editor, editable grid, spreadsheet picture */
+.pp-json {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pp-json textarea {
+  width: 100%;
+  min-height: 9em;
+  box-sizing: border-box;
+  resize: vertical;
+  font: inherit;
+  line-height: 1.4;
+  white-space: pre;
+  background: var(--bg-surface);
+  color: var(--fg-1);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 8px;
+  outline: none;
+}
+.pp-json textarea:focus {
+  border-color: var(--accent);
+}
+.pp-json-status {
+  min-height: 1.4em;
+  color: var(--fg-3);
+  font-size: 0.85em;
+}
+.pp-json-status.pp-bad {
+  color: var(--red);
+}
+.pp-grid input {
+  font: inherit;
+  color: var(--fg-1);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px dashed var(--border);
+  padding: 0;
+  outline: none;
+  min-width: 3ch;
+}
+.pp-grid input:focus {
+  border-bottom-color: var(--accent);
+}
+.pp-sheet {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+.pp-sheet th,
+.pp-sheet td {
+  border: 1px solid var(--border);
+  padding: 1px 5px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pp-sheet th {
+  background: var(--bg-raised);
+  color: var(--fg-3);
+  font-weight: 400;
+  text-align: center;
+}
+.pp-sheet th:first-child {
+  width: 2.2em;
+}
+.pp-full .pp-sheet th,
+.pp-full .pp-sheet td {
+  padding: 3px 8px;
+}
+.pp-sheet td.pp-sheet-num {
+  text-align: right;
+  color: var(--green);
+}
+.pp-sheet td.pp-sheet-run {
+  background: var(--red-bg);
+  color: var(--red);
+}
+.pp-sheet td.pp-sheet-run::before {
+  content: 'ƒ ';
+  font-weight: 700;
+}
+.pp-sheet td.pp-sheet-safe {
+  background: var(--green-bg);
+}
+.pp-sheet-title {
+  color: var(--fg-3);
+  font-size: 0.8em;
+}

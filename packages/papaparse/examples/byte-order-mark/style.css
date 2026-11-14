@@ -1,0 +1,17 @@
+/* Byte order mark: the two readers side by side */
+[data-example='papaparse/byte-order-mark'] {
+  .sides {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    min-height: 0;
+  }
+  .pp-naive .pp-pane-title {
+    color: var(--red);
+    text-transform: none;
+  }
+  .pp-papa .pp-pane-title {
+    color: var(--green);
+    text-transform: none;
+  }
+}

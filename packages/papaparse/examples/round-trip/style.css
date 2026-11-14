@@ -1,0 +1,6 @@
+/* Round trip: the arrow points up while Papa.unparse writes the text again */
+[data-example='papaparse/round-trip'] {
+  .pp-flow-column > .pp-via.up::before {
+    content: '▲ ';
+  }
+}
