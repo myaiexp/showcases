@@ -79,6 +79,15 @@ export interface Chart {
  *   layoutType 'region'. updateLayoutAttribute (custom_layout.md) is missing from the types.
  * - Custom mark style callbacks draw in canvas pixels; series.valueToPosition is relative to
  *   the region and returns a band's start.
+ * - Palette tokens ({ type: 'palette', key }) resolve only inside a theme, not in the spec.
+ * - With a constructor `theme`, instance setCurrentTheme still merges it on top: build with
+ *   init.theme undefined to switch themes on an instance.
+ * - registerMediaQuery() is not in the full import; media actions add components with
+ *   forceAppend: true.
+ * - A formatMethod named after an unregistered function throws; instance-registered
+ *   functions and 'initialized'/'rendered' listeners must exist before renderSync, so those
+ *   examples construct the VChart themselves instead of calling createChart.
+ * - An event query { id } matches the spec id, not the model id.
  * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
  * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
  * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
