@@ -1,0 +1,15 @@
+/* Download meter: file name, bar, big percentage and the pipe's steps */
+[data-example='motion/scroll-percent-pipe'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .meter { width: min(100%, 250px); display: flex; flex-direction: column; gap: var(--space-2); }
+  .meter.full { width: min(100%, 380px); }
+  .file { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--fg-1); }
+  .file span { color: var(--fg-3); font-size: 0.7rem; }
+  .track { height: 10px; border-radius: 5px; background: var(--bg-raised); overflow: hidden; }
+  .fill { height: 100%; width: 0; background: var(--accent); }
+  .fill[data-over='yes'] { background: var(--red); }
+  .big { font: 700 2rem var(--font-mono, monospace); color: var(--fg-1); text-align: center; line-height: 1.1; }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; font-size: 0.7rem; color: var(--fg-3); }
+  .steps li { display: flex; justify-content: space-between; }
+  .steps code { color: var(--fg-2); }
+}

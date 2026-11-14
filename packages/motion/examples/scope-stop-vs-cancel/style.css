@@ -1,0 +1,21 @@
+/* Dashboard tiles: a spinner, a bar, a hover orb and a draggable chip, with a state line */
+[data-example='motion/scope-stop-vs-cancel'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .dash { width: min(100%, 250px); display: flex; flex-direction: column; gap: var(--space-2); }
+  .dash.full { width: min(100%, 400px); }
+  .tiles { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); }
+  .tile { height: 70px; border-radius: 10px; background: var(--bg-surface); border: 1px solid var(--border); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-1); overflow: hidden; }
+  .full .tile { height: 100px; }
+  .tile > span { font-size: 0.65rem; color: var(--fg-3); }
+  .spinner { width: 24px; height: 24px; border-radius: 50%; border: 3px solid var(--border); border-top-color: var(--accent); }
+  .bar { width: 70%; height: 8px; border-radius: 4px; background: var(--bg-raised); }
+  .bar i { display: block; height: 100%; width: 15%; border-radius: 4px; background: var(--green); }
+  .orb { width: 20px; height: 20px; border-radius: 50%; background: #8aa4ff; }
+  .chip { padding: 3px 10px; border-radius: 6px; background: var(--accent); color: #fff; font-size: 0.7rem; cursor: grab; touch-action: none; }
+  .state { font-size: 0.7rem; color: var(--fg-3); text-align: center; }
+  .state b { font-family: var(--font-mono, monospace); color: var(--fg-1); }
+  .state b[data-state='active'] { color: var(--green); }
+  .state b[data-state='stopped'] { color: var(--yellow); }
+  .state b[data-state='cancelled'] { color: var(--red); }
+  .state em { display: block; font-style: normal; }
+}

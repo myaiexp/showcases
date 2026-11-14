@@ -1,0 +1,11 @@
+/* Magnetic button: a field with a dashed attraction zone, a button and a fake cursor */
+[data-example='motion/magnetic-button-distance'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .field { position: relative; width: min(100%, 260px); height: 190px; border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); overflow: hidden; display: grid; place-items: center; }
+  .field.full { width: min(100%, 480px); height: 320px; cursor: crosshair; }
+  .field > * { grid-area: 1 / 1; }
+  .zone { border-radius: 50%; border: 1px dashed var(--border); pointer-events: none; transition: none; }
+  .zone[data-near='on'] { border-color: var(--accent); }
+  .buy { padding: var(--space-2) var(--space-4); border-radius: 999px; border: 0; background: var(--accent); color: #fff; font-weight: 600; cursor: pointer; z-index: 1; }
+  .cursor { position: absolute; left: -6px; top: -6px; width: 12px; height: 12px; border-radius: 50%; background: var(--fg-1); opacity: 0.8; pointer-events: none; z-index: 2; }
+}

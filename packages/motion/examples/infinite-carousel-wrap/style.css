@@ -1,0 +1,12 @@
+/* Photo carousel: stacked photos cross-fading in a frame, with prev and next buttons */
+[data-example='motion/infinite-carousel-wrap'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .gallery { width: min(100%, 250px); display: flex; flex-direction: column; gap: var(--space-2); }
+  .gallery.full { width: min(100%, 420px); }
+  .window { position: relative; height: 120px; border-radius: 12px; overflow: hidden; }
+  .full .window { height: 240px; }
+  figure { position: absolute; inset: 0; margin: 0; display: flex; align-items: flex-end; padding: var(--space-2); }
+  figcaption { color: #fff; font-weight: 600; text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6); }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: var(--space-2); }
+  .idx { font-size: 0.65rem; color: var(--fg-3); }
+}

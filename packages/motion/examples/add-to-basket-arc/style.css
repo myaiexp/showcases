@@ -1,0 +1,16 @@
+/* Add to basket: a small shop card with a cart icon and a product row */
+[data-example='motion/add-to-basket-arc'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .shop { position: relative; width: min(100%, 240px); padding: var(--space-3); border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); display: flex; flex-direction: column; gap: var(--space-3); }
+  .shop.full { width: min(100%, 320px); }
+  .top { display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--fg-1); }
+  .cart { position: relative; width: 34px; height: 34px; display: grid; place-items: center; }
+  .cart svg { width: 24px; height: 24px; fill: none; stroke: var(--fg-1); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .cart i { position: absolute; top: -2px; right: -4px; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 8px; background: var(--accent); color: #fff; font: 600 0.65rem/16px var(--font-mono, monospace); text-align: center; }
+  .product { display: flex; gap: var(--space-3); align-items: center; }
+  .thumb, .ghost { width: 56px; height: 56px; border-radius: 10px; background: linear-gradient(135deg, #f0a050, #c0507a); }
+  .ghost { position: absolute; pointer-events: none; z-index: 2; box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); }
+  .name { color: var(--fg-1); font-weight: 600; font-size: 0.9rem; }
+  .price { color: var(--fg-3); font-size: 0.8rem; }
+  .add { width: 100%; }
+}

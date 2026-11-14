@@ -34,9 +34,23 @@
 // - attrEffect only re-cases aria*/data* keys: write other attribute names as the DOM has them ('stroke-dashoffset'),
 //   and its values must be motion values (a plain number is a type error: set it with setAttribute).
 // - inView/resize callbacks and delay() fired from them run outside the scope: wrap them with s.bind(...).
+// - frame.read/update/render callbacks are not collected by a scope: cancelFrame() them in cleanup.
+// - A scope cannot restart itself after stop()/cancel(): drive a card loop that stops a demo scope
+//   from a second, outer scopeMotion with delay().
 // - Window-level resize(cb) does not call back on registration (the element form does): call it once yourself.
 // - animate(motionValue, 1) is skipped when the value is already 1: jump() it back before replaying.
 // - The exported `scroll()` option type omits `trackContentSize` (scroll.md documents it): cast the options.
+// - Scripted gestures (loopGesture) run one at a time page-wide, so with many cards on screen each card
+//   moves only once per cycle (~20 s). pointer.ts rejects a script when its card unmounts; before that, a
+//   script awaiting an animation that a cancelled scope had stopped blocked every other card for good.
+//   Still: do not `await animate(...)` in a script, use `g.wait()`. For a flick (drag momentum needs release
+//   velocity) use `g.flick`, since `g.drag` eases to a stop. Hover scripts use `g.enter` / `g.leave`
+//   (pass 'touch' to emulate the fake hover after a tap).
+// - press(): `hold` makes the press succeed only after the hold, so a plain click cancels. For a stepper do the
+//   first step in the start callback and the rest in `onRepeat`. A press-end function and a handlers object
+//   (`onHold`, `onComplete`, `onRepeat`) are both valid returns.
+// - A drag `constraints` element is measured at drag() and at resize, not live. Options are fixed at drag()
+//   time: to change one from a control, stop the drag and call drag() again inside scope.run().
 // - Not verified that `motion/mini` animations join a scope: keep their controls and stop() them yourself.
 
 export interface Panel {
