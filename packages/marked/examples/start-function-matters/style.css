@@ -1,0 +1,9 @@
+/* Highlighter marks so found and missed tokens are easy to tell apart */
+[data-example='marked/start-function-matters'] {
+  mark {
+    background: #f6c945;
+    color: #1a1a1a;
+    padding: 0 3px;
+    border-radius: 2px;
+  }
+}

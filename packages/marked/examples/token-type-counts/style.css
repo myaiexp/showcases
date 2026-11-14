@@ -1,0 +1,44 @@
+/* Token count bar chart */
+[data-example='marked/token-type-counts'] {
+  .counts {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+  }
+  .name {
+    flex: 0 0 5.5em;
+    color: var(--fg-2);
+  }
+  .track {
+    flex: 1;
+    height: 10px;
+    border-radius: 3px;
+    background: color-mix(in srgb, var(--fg-2) 15%, transparent);
+  }
+  .bar {
+    display: block;
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.25s;
+  }
+  .n {
+    flex: 0 0 2em;
+    text-align: right;
+  }
+  .mk-card .line {
+    font-size: 9px;
+    gap: 4px;
+  }
+  .mk-card .name {
+    flex-basis: 5.6em;
+  }
+  .mk-card .n {
+    flex-basis: 1em;
+  }
+}

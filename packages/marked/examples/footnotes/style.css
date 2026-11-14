@@ -1,0 +1,14 @@
+/* Footnotes: small raised numbers and a quiet list under the page */
+[data-example='marked/footnotes'] {
+  sup.cite a {
+    padding: 0 3px;
+    border-radius: 3px;
+    background: color-mix(in srgb, var(--accent) 18%, transparent);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  ol.footnotes {
+    font-size: 0.9em;
+    color: var(--fg-2);
+  }
+}

@@ -1,0 +1,27 @@
+/* Progress bars: a track with a filled bar */
+[data-example='marked/progress-bars'] {
+  .progress {
+    display: inline-block;
+    width: 8em;
+    height: 0.7em;
+    vertical-align: middle;
+    border-radius: 999px;
+    background: var(--border);
+    overflow: hidden;
+  }
+  .progress .fill {
+    display: block;
+    height: 100%;
+    background: var(--accent);
+  }
+  .progress.done .fill {
+    background: var(--green);
+  }
+  .mk-card .progress {
+    width: 4em;
+  }
+  .pct {
+    font-size: 0.85em;
+    color: var(--fg-2);
+  }
+}

@@ -29,6 +29,18 @@
 //   after the browser repairs the nesting (`p:empty { display: none }`).
 // - With `async: true`, Marked rewraps a rejection's message, so a `STOPPED` rejection from an
 //   awaited walkTokens no longer equals STOPPED: ignore errors once `stage.disposed` is true.
+// - A tokenizer override reaches the built-in through `Tokenizer.prototype.<name>.call(this, src)`.
+//   Overrides for a plain character such as `$` never fire mid-sentence: `inlineText` swallows
+//   text up to the next special character first. That needs an inline extension with `start()`.
+// - A block extension's `start(src)` gets the text after the current position; return the index
+//   of the marker itself (`src.indexOf(':::')`). Without an inline `start()` only a token at the
+//   very start of a paragraph is found.
+// - Several `use({ walkTokens })` run last-registered first, and tokens a walker pushes are walked
+//   too. In an object-literal walkTokens `this` is typed MarkedExtension: import `Lexer` instead.
+// - Extension state kept in a closure (footnote definitions) needs a `hooks.preprocess` reset, or
+//   a deleted definition lingers while the card re-parses on every typed character.
+// - Cards re-render every typing step and replace the DOM, so timer-driven state on the rendered
+//   page (revealed, open) must be re-applied in liveDemo's `after` hook.
 // - `.mk-pane` is `display: flex`, so the `hidden` attribute does nothing on a pane.
 // - A worker's time limit starts after the worker has loaded Marked: in Vite dev the module load
 //   alone can take hundreds of milliseconds.

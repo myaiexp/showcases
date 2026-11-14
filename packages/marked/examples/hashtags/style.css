@@ -1,0 +1,11 @@
+/* Hashtag pills */
+[data-example='marked/hashtags'] {
+  a.tag {
+    padding: 0 7px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--green) 18%, transparent);
+    color: var(--green);
+    text-decoration: none;
+    font-weight: 600;
+  }
+}

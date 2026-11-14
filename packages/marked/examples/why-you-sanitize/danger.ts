@@ -1,4 +1,4 @@
-// HTML source view that paints script tags, event handlers and javascript: URLs red
+// HTML source view painting script tags, handlers and javascript: red
 import type { Stage } from '../../shared/stage.ts';
 
 const DANGER = /(<script[\s\S]*?<\/script>|\son\w+="[^"]*"|\son\w+='[^']*'|javascript:[^"'\s>]*)/gi;

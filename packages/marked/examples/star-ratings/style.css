@@ -1,0 +1,10 @@
+/* Star ratings: gold filled stars, dim empty ones */
+[data-example='marked/star-ratings'] {
+  .stars {
+    letter-spacing: 0.1em;
+    color: var(--fg-3);
+  }
+  .stars .on {
+    color: #f6c945;
+  }
+}

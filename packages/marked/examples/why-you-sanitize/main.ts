@@ -1,4 +1,4 @@
-// Marked passes raw HTML through; DOMPurify strips the dangerous parts before display
+// Marked passes raw HTML through; DOMPurify strips the dangerous parts
 import { marked } from 'marked';
 import DOMPurify from 'dompurify';
 import type { Mount } from '@/types.ts';

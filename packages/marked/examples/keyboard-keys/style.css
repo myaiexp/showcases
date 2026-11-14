@@ -1,0 +1,15 @@
+/* Key caps */
+[data-example='marked/keyboard-keys'] {
+  kbd {
+    display: inline-block;
+    min-width: 1.6em;
+    padding: 0.05em 0.5em;
+    text-align: center;
+    font: 600 0.85em ui-monospace, monospace;
+    color: var(--fg-1);
+    background: var(--bg-raised, var(--bg-surface));
+    border: 1px solid var(--border);
+    border-bottom-width: 3px;
+    border-radius: 5px;
+  }
+}
