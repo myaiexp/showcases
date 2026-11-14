@@ -14,6 +14,8 @@ import './plot.css';
  * - TypeScript: bin, binX and binY nested in a mark call infer T as `<Mark>Options | undefined`,
  *   and their Omit over that union rejects every channel but x/y. Pass the mark's options
  *   type: Plot.binX<Plot.RectYOptions>({y: 'count'}, {x: 'weight', fill: 'sex'}).
+ * - An explicit `figure: false` beats title, subtitle, caption and legends (they vanish);
+ *   pass `figure: undefined` for "not forced".
  *
  * Every example writes its whole Plot.plot({...}) spec in its own main.ts; this file only
  * sizes, places, re-renders and tears down what that spec returns.
