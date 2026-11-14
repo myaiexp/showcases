@@ -22,6 +22,16 @@ export { INK, GRID } from './setup.ts';
  *   format tokens (listed in that file), no locale.
  * - chart.destroy() leaves the canvas in the DOM; stage.release(chart) destroys and
  *   removes the box. Destroy before release when a mount built several charts.
+ * - Bubble `r` is in pixels and is added to the layout padding: a radius near the card's
+ *   height collapses the axes to one tick without an error. `radius` applies only to a
+ *   point with no `r`.
+ * - A doughnut's first dataset is its outer ring. animateRotate/animateScale play only
+ *   when a chart is created: a replay destroys and rebuilds it.
+ * - startAngle, grid.circular, beginAtZero and ticks.stepSize are missing from the union
+ *   type of options.scales.r: cast it to RadialLinearScaleOptions.
+ * - A mixed chart with no chart-level type rejects line-only keys (tension) on a dataset
+ *   and types scatter `data.push` as never: cast to ChartDataset<'line'> or the point type.
+ * - A card's monospace caption holds about 36 characters; use previewHeight 164 for two lines.
  */
 export interface Stage {
   /** The relatively positioned box that holds only the canvas (responsive.md). */
