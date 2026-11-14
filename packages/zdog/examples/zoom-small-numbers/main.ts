@@ -1,4 +1,4 @@
-// Zoom with small numbers: a tiny cactus modelled in single digits, scaled up by zoom
+// Zoom with small numbers: a tiny cactus modelled in single digits, then zoomed
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

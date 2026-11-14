@@ -1,4 +1,4 @@
-// Rounded phone: RoundedRect for the body, screen and app icons, with a cornerRadius slider
+// Rounded phone: RoundedRect body, screen and icons, with a cornerRadius slider
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

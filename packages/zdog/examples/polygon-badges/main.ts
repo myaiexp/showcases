@@ -1,4 +1,4 @@
-// Polygon badges: a medal whose Polygon gains a side at a time, from triangle to octagon
+// Polygon badges: a medal whose Polygon gains a side, triangle to octagon
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// City block shading: Box face colours fake a light, so one side of every building is brighter
+// City block shading: Box face colours fake a light on every building
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

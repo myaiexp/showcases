@@ -1,4 +1,4 @@
-// Figure kick: the finished tutorial character, legs and arms swinging from their joints
+// Figure kick: the finished tutorial character swinging legs and arms
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

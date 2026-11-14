@@ -1,4 +1,4 @@
-// Open and closed paths: the same house outline with and without the line back to the start
+// Open and closed paths: one house outline with and without the closing line
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// SVG without Illustration: a Zdog dog head rendered into a <g> inside a hand-made SVG badge
+// SVG without Illustration: a Zdog dog head rendered into a hand-made SVG badge
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

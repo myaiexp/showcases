@@ -1,4 +1,4 @@
-// Hello Zdog: a circle and a square placed in 3D space, spinning until you grab them
+// Hello Zdog: a circle and a square in 3D space, spinning until you grab them
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

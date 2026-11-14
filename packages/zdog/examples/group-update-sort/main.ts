@@ -1,4 +1,4 @@
-// Group updateSort: moons orbiting a planet, fixed draw order vs re-sorted each frame
+// Group updateSort: moons orbiting a planet, fixed vs re-sorted draw order
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

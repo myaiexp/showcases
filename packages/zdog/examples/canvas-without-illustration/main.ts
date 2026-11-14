@@ -1,4 +1,4 @@
-// Canvas without Illustration: your own 2D canvas drawing, a Zdog balloon rendered into it
+// Canvas without Illustration: a Zdog balloon rendered into your own 2D canvas
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

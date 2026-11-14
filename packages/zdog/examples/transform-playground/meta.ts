@@ -1,4 +1,4 @@
-// Zdog example: Transform playground, a paper plane under translate, rotate and scale
+// Zdog example: Transform playground, a paper plane under translate, rotate, scale
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

@@ -1,4 +1,4 @@
-// Cylinder bar chart: bars are Cylinders that grow to new values, with two-colour end caps
+// Cylinder bar chart: Cylinder bars grow to new values, with two-colour caps
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

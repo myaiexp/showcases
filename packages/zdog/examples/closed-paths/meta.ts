@@ -1,4 +1,4 @@
-// Zdog example: Open and closed paths, a house outline with or without its floor line
+// Zdog example: Open and closed paths, a house outline with or without a floor
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

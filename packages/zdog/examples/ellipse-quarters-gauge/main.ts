@@ -1,4 +1,4 @@
-// Quarter gauge: an Ellipse with quarters 1 to 4 as a charge ring, with width and height squash
+// Quarter gauge: an Ellipse with quarters 1 to 4 as a charge ring, squashable
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
@@ -15,7 +15,8 @@ const mount: Mount = (el, ctx) => {
     rotate: { x: -0.35, y: -0.4 },
     dragRotate: true,
   });
-  const dial = new Zdog.Anchor({ addTo: illo });
+  // a Group draws in add order: track, arc, ticks, cap, so the ticks never sink under the ring
+  const dial = new Zdog.Group({ addTo: illo });
   let squash = 1;
   const W = 150;
 

@@ -1,4 +1,4 @@
-// Spin and drag: a mug on a turntable that you can grab, and that spins again when let go
+// Spin and drag: a mug on a turntable you can grab, spinning again on release
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

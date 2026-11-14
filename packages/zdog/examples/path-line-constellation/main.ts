@@ -1,4 +1,4 @@
-// Constellation lines: a path with z coordinates joins stars that sit at different depths
+// Constellation lines: a path with z coordinates joins stars at varied depths
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

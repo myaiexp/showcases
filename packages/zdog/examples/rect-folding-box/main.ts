@@ -1,4 +1,4 @@
-// Folding box: six Rects, each turned to face a direction, fold from a flat net into a cube
+// Folding box: six Rects fold from a flat net into a cube
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

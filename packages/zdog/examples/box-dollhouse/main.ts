@@ -1,4 +1,4 @@
-// Box dollhouse: a Box with some faces switched off is a cut-away room with furniture inside
+// Box dollhouse: a Box with some faces off is a cut-away furnished room
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

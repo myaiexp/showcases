@@ -1,4 +1,4 @@
-// Conveyor belt: Zdog.modulo wraps crate positions, Zdog.lerp maps them onto the belt
+// Conveyor belt: Zdog.modulo wraps crate positions, Zdog.lerp maps to the belt
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

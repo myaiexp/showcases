@@ -1,4 +1,4 @@
-// Ladybug dome: a Hemisphere with a backface colour is a shell with a cream belly underneath
+// Ladybug dome: a Hemisphere with a backface colour is a shell with a belly
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

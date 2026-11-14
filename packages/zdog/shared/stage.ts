@@ -16,6 +16,27 @@
 //   `shape.updatePath()`.
 // - A Shape's z-order is the average z of its path points and a Group's the average of
 //   its children, so long shapes and big groups pop in front of things they should not.
+//   A filled ground disc sorts at its centre, so anything behind the centre draws under it
+//   (use an unfilled ring); a decal or window just in front of a wall needs wall and decal
+//   in one Group, which draws in add order.
+// - `closed` defaults to true: an open path of three or more points needs `closed: false`,
+//   or it draws a line back to its start.
+// - After construction `translate`, `rotate` and `scale` are Vectors: `scale: 2` works only
+//   as an option; at runtime write `.x/.y/.z` or `.set({...})` (an object, never a number).
+// - Box forwards color, stroke, fill, backface, front and visible to its six face Rects,
+//   but reads leftFace, topFace... only when built: remove and rebuild to change one.
+// - A Cylinder's frontFace is its +z end: `rotate: { x: TAU/4 }` stands it upright with
+//   frontFace on top. `Ellipse` with `quarters: 2` draws the right half.
+// - @types/zdog leaves `path` off Shape: keep the array you passed as `path`, move its
+//   points and call `updatePath()` (Zdog keeps that same array). `renderGraphSvg` is typed
+//   for `<svg>` only, though the docs allow a `<g>`.
+//   The types also leave out `illo.setResize()` and `illo.width/height` (use the stage's).
+// - A Box inside a Group draws its faces in add order, bottom last, so its underside shows
+//   through the top: give Box parts a plain Anchor.
+// - `illo.setSize(w, h)` leaves `zoom` alone; set it yourself.
+// - Dragger's moveX/moveY are screen pixels; divide by `illo.zoom` for scene units.
+// - Shape `visible: false` hides only that shape, never its children; Group `visible`
+//   hides the whole subtree.
 // - Cards have no pointer: drag examples animate what the drag would do on a timer.
 // - Dragger listens for pointerdown on its startElement and adds its move/up listeners to
 //   window only while a drag runs, so removing the element is enough to clean it up.

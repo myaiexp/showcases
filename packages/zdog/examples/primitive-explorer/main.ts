@@ -1,4 +1,4 @@
-// Primitive explorer: every Zdog shape class, one at a time, with its size and stroke
+// Primitive explorer: every Zdog shape class in turn, with its size and stroke
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// Child shapes orrery: sun, planet and moon, each carried by the one it is added to
+// Child shapes orrery: sun, planet and moon, each carried by its parent
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

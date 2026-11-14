@@ -1,4 +1,4 @@
-// Helix spring: a path of many points with z makes a coil that stretches under a weight
+// Helix spring: a path with z points makes a coil that stretches under weight
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

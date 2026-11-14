@@ -1,4 +1,4 @@
-// Cone tree: stacked Cones make a Christmas tree, with ornament dots pinned to the slopes
+// Cone tree: stacked Cones make a Christmas tree with ornament dots
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

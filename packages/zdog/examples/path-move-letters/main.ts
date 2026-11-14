@@ -1,4 +1,4 @@
-// Pen-lift letters: block letters drawn as one Shape each, with move commands between strokes
+// Pen-lift letters: block letters, one Shape each, with move commands
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
