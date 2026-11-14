@@ -7,7 +7,6 @@ import type { Mount } from '@/types.ts';
 import { controlBar, readout, slider } from '../../shared/controls.ts';
 import { overlay } from '../../shared/guide-overlay.ts';
 import { animate, createStage } from '../../shared/stage.ts';
-import { landLayer } from '../../shared/world.ts';
 
 /** An L-shaped plot, in metres from its coordinateOrigin. */
 const PLOT = [[0, 0], [600, 0], [600, 200], [200, 200], [200, 600], [0, 600], [0, 0]] as [number, number][];
@@ -19,13 +18,14 @@ function matrix(angleDeg: number, scale: number, east: number): Matrix4 {
 }
 
 const mount: Mount = async (el, ctx) => {
-  const stage = await createStage(el, ctx);
-  const view: MapViewState = { longitude: 24.94, latitude: 60.17, zoom: ctx.preview ? 13.4 : 14, pitch: 40 };
+  // City scale: the world basemap would be one flat fill here, so the stage colour stands in for land.
+  const stage = await createStage(el, ctx, { background: '#1e2938' });
+  // Centred ~400 m east of the origin, so the moved, rotated and scaled copy stays in frame.
+  const view: MapViewState = { longitude: 24.947, latitude: 60.17, zoom: ctx.preview ? 12.7 : 13.6, pitch: 40 };
   const label = ctx.preview ? overlay(stage.box, '', 'bottom') : readout(el);
   const state = { angle: 30, scale: 1, east: 0 };
 
   const layers = () => [
-    landLayer(),
     // The plot as it is stored: no matrix.
     new SolidPolygonLayer<{ ring: [number, number][] }>({
       id: 'original',
@@ -57,7 +57,7 @@ const mount: Mount = async (el, ctx) => {
   let stop = (): void => {};
   if (ctx.preview) {
     stop = animate((t) => {
-      state.angle = t * 40;
+      state.angle = (t * 40) % 360;
       state.scale = 1 + Math.sin(t) * 0.35;
       state.east = 500;
       apply();

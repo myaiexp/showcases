@@ -6,7 +6,6 @@ import type { Mount } from '@/types.ts';
 import { check, controlBar } from '../../shared/controls.ts';
 import { gridCells, type GridCell } from '../../shared/core-layers-1-data.ts';
 import { animate, createStage } from '../../shared/stage.ts';
-import { landLayer } from '../../shared/world.ts';
 
 /** Dark blue through teal to yellow, by value 0..1. */
 function ramp(v: number): Color {
@@ -19,7 +18,9 @@ function ramp(v: number): Color {
 }
 
 const mount: Mount = async (el, ctx) => {
-  const stage = await createStage(el, ctx);
+// City scale: the world basemap would be one flat fill that z-fights with flat layers,
+  // so the stage colour stands in for land (see the trap list in shared/stage.ts).
+  const stage = await createStage(el, ctx, { background: '#1e2938' });
   const n = ctx.preview ? 16 : 30;
   const data = gridCells(n, n, 2000, [2.0, 48.5], 4);
   const view: MapViewState = { longitude: 2.3, latitude: 48.8, zoom: ctx.preview ? 9.7 : 10.4, pitch: 45 };
@@ -36,13 +37,13 @@ const mount: Mount = async (el, ctx) => {
       getElevation: (d) => d.value * 6000,
     });
 
-  const deck = new Deck({ device: stage.device, initialViewState: view, controller: !ctx.preview, layers: [landLayer(), cells(false)] });
+  const deck = new Deck({ device: stage.device, initialViewState: view, controller: !ctx.preview, layers: [cells(false)] });
 
   let stop: () => void = () => {};
   if (ctx.preview) {
-    stop = animate((t) => deck.setProps({ layers: [landLayer(), cells(Math.floor(t / 3) % 2 === 1)], viewState: { ...view, bearing: t * 6 } }));
+    stop = animate((t) => deck.setProps({ layers: [cells(Math.floor(t / 3) % 2 === 1)], viewState: { ...view, bearing: t * 6 } }));
   } else {
-    check(controlBar(el), 'extruded', false, (v) => deck.setProps({ layers: [landLayer(), cells(v)] }));
+    check(controlBar(el), 'extruded', false, (v) => deck.setProps({ layers: [cells(v)] }));
   }
   return () => {
     stop();

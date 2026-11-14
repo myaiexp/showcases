@@ -6,7 +6,6 @@ import type { Mount } from '@/types.ts';
 import { check, controlBar } from '../../shared/controls.ts';
 import { overlay } from '../../shared/guide-overlay.ts';
 import { animate, createStage } from '../../shared/stage.ts';
-import { landLayer } from '../../shared/world.ts';
 
 type P = { position: [number, number, number]; ring: number };
 
@@ -24,12 +23,13 @@ const DEGREES: P[] = Array.from({ length: 25 }, (_, i) => ({ ring: 0, position: 
 const ABSOLUTE: P[] = [[2.2945, 48.8584], [2.3376, 48.8606], [2.3499, 48.853], [2.3212, 48.8738]].map(([x, y]) => ({ ring: 0, position: [x!, y!, 0] }));
 
 const mount: Mount = async (el, ctx) => {
-  const stage = await createStage(el, ctx);
+// City scale: the world basemap would be one flat fill that z-fights with flat layers,
+  // so the stage colour stands in for land (see the trap list in shared/stage.ts).
+  const stage = await createStage(el, ctx, { background: '#1e2938' });
   const view: MapViewState = { longitude: 2.3522, latitude: 48.8566, zoom: ctx.preview ? 10.6 : 11.2 };
   const show = { metres: true, degrees: true, lnglat: true };
 
   const layers = () => [
-    landLayer(),
     new ScatterplotLayer<P>({
       id: 'metres',
       data: METRIC,

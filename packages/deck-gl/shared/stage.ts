@@ -29,6 +29,9 @@ import type { MountContext } from '@/types.ts';
  *   it as Feature<Geometry, Props>.
  * - Layers in an OrbitView or OrthographicView need coordinateSystem: CARTESIAN.
  * - Accessors that read changing state need updateTriggers, or a fresh layer per change.
+ * - landLayer() is for world and country scale. At city zoom it is one flat fill that
+ *   z-fights with coplanar polygons (they vanish in some frames): leave it out and pass
+ *   createStage a land-coloured background instead.
  * - getTooltip hides with null, not undefined.
  * - dataComparator, dataTransform and _dataDiff are typed generically: take unknown and
  *   narrow inside. onDataLoad does not fire per batch of an async-iterable `data`.

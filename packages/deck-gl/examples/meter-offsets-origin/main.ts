@@ -7,7 +7,6 @@ import { controlBar, readout, select } from '../../shared/controls.ts';
 import { city } from '../../shared/data.ts';
 import { overlay } from '../../shared/guide-overlay.ts';
 import { createStage } from '../../shared/stage.ts';
-import { landLayer } from '../../shared/world.ts';
 
 interface Offset {
   /** [east, north, up] in metres from the layer's coordinateOrigin. */
@@ -26,7 +25,9 @@ const AXES = [
 const PLACES = ['Helsinki', 'Paris', 'Sydney', 'Lima'] as const;
 
 const mount: Mount = async (el, ctx) => {
-  const stage = await createStage(el, ctx);
+// City scale: the world basemap would be one flat fill that z-fights with flat layers,
+  // so the stage colour stands in for land (see the trap list in shared/stage.ts).
+  const stage = await createStage(el, ctx, { background: '#1e2938' });
   const label = ctx.preview ? overlay(stage.box, '', 'bottom') : readout(el);
   let place: (typeof PLACES)[number] = 'Helsinki';
 
@@ -38,7 +39,6 @@ const mount: Mount = async (el, ctx) => {
     const [lng, lat] = city(place).coordinates;
     const origin: [number, number, number] = [lng, lat, 0];
     return [
-      landLayer(),
       new ScatterplotLayer<Offset>({
         id: 'grid',
         data: GRID,
