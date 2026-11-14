@@ -1,0 +1,550 @@
+# v2.2.2
+
+2026-11-11
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: validate grid layout indices and spans before accessing row and column size entries
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.2.1...v2.2.2
+
+[more detail about v2.2.2](https://github.com/VisActor/VChart/releases/tag/v2.2.2)
+# v2.2.1
+
+2026-10-30
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: preserve measured layout bounds when title size is unchanged, preventing charts from collapsing after resize and legend filtering
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.2.0...v2.2.1
+
+[more detail about v2.2.1](https://github.com/VisActor/VChart/releases/tag/v2.2.1)
+# v2.2.0
+
+2026-10-19
+
+**🆕 New Features**
+
+- **@visactor/vchart**: 将 dot、link 系列及其类型、注册方法迁移至 @visactor/vchart-extension，主包不再导出或自动注册这些系列。
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: 类型构建先清理输出并禁用此次增量缓存，避免旧声明残留或重复构建缺失文件。
+- **@visactor/vchart**: 修复手动 resize 后 updateSpec 重建图表时恢复旧尺寸的问题，保持布局与画布尺寸一致。
+- **@visactor/vchart**: ignore unmatched datums in filterGraphicsByDatum collection-mark matching so setHovered does not throw
+- **@visactor/vchart**: 修复横向瀑布图连接线端点方向错误，避免连接线覆盖相邻柱体边缘，并保持反向轴和反向累计模式的正确连接。
+- **@visactor/vchart**: 修复默认 autoFit 的首次或重复尺寸通知覆盖手动 resize 的问题，同时保持 Spec 重建后的画布尺寸及真实容器变化的自动适配。
+- **@visactor/vchart**: sankey related emphasis no longer throws on plain node-link data and highlights the full upstream and downstream path
+- **@visactor/vchart**: restore sequence link filtering in dataZoom and exclude categorical IDs from preview sums
+- **@visactor/vchart**: 升级 VUtils 家族依赖至 ~1.0.28、VRender 家族依赖至 1.1.12，恢复 LOWESS 历史默认参数并保留算法正确性修复。
+
+**🔨 Chores**
+
+- **@visactor/vchart**: 测试：锁定箱型图在空数据后 updateDataSync 仍渲染离群点。#4270 的公共 spec 已由图表 transformer 与 viewDataUpdate 覆盖，不增加统计字段兜底。
+- **@visactor/vchart**: 将 sequence 时序图迁移至 vchart-extension，原 spec 保持不变，需从扩展包导入并调用 registerSequenceChart
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.1.7...v2.2.0
+
+[more detail about v2.2.0](https://github.com/VisActor/VChart/releases/tag/v2.2.0)
+# v2.1.7
+
+2026-09-18
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: restore point visibility after overlap updates
+- **@visactor/vchart**: 修复 roseSeries 在非堆叠场景里 innerRadius 不生效的问题
+- **@visactor/vchart**: 修复坐标轴旋转标签的采样角度单位与绘制不一致，导致标签过度抽样的问题。
+- **@visactor/vchart**: rebuild background when spec.background and spec.theme change in the same updateSpec
+- **@visactor/vchart**: avoid crash when recompiling a mark without a compile option
+- **@visactor/vchart**: remove the word cloud shape afterRender tap when the series is released
+- **@visactor/vchart**: bar smapling not work bug. fix#4571
+- **@visactor/vchart**: preserve crosshair visibility for explicitly bound multiple band axes (Issue #4127)
+- **@visactor/vchart**: 修复预览比例尺退化时 DataZoom 显示多余预览线的问题
+- **@visactor/vchart**: preserve final attributes for exit animations when appear animations are disabled
+- **@visactor/vchart**: respect explicit label smart invert settings
+- **@visactor/vchart**: prevent rich text labels from inheriting line dash styles (Issue #4595)
+- **@visactor/vchart**: unregister array-valued trigger event listeners on release
+- **@visactor/vchart**: fix theme overwrite when change chartType in updateSpec
+- **@visactor/vchart**: 修复 Glyph 状态更新未重新编码子图形导致的桑基图 hover 残留、关联流量高亮比例和取消恢复异常；统一共享运行时状态与子图形属性撤销。需要配套包含 Glyph 派生同步接口的 VRender 版本。同时修复 Liquid 显式 fillOpacity 在初始渲染、配置更新及状态切换中未作用于子波浪的问题，并在退出状态时恢复普通样式或默认透明度。
+- **@visactor/vchart**: 修复 #4561 导致堆叠数值轴 crosshair 错误显示范围标签及偏移，保留马赛克和直方图的维度区间高亮
+- **@visactor/vchart**: resolve title width/height/minWidth/maxWidth/minHeight/maxHeight as ILayoutNumber against the chart view rect
+
+**🔨 Chores**
+
+- **@visactor/vchart**: keep the word cloud shape afterRender tap as a stable member callback
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.1.6...v2.1.7
+
+[more detail about v2.1.7](https://github.com/VisActor/VChart/releases/tag/v2.1.7)
+# v2.1.6
+
+2026-08-13
+
+**🆕 New Features**
+
+- TODO: Fill in change details for v2.1.6.
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.1.4...v2.1.6
+
+[more detail about v2.1.6](https://github.com/VisActor/VChart/releases/tag/v2.1.6)
+# v2.1.5
+
+2026-07-30
+
+**🆕 New Features**
+
+- **@visactor/vchart**: support layout-time callbacks for discrete legend pager.layout and pager.position with resolved maxRow and maxCol
+- **@visactor/vchart**: support dimension hover state for mark point target symbol
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: release the pointerout listener when dimension hover events are unregistered
+- **@visactor/vchart**: avoid duplicate event handlers after chart remake
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.1.4...v2.1.5
+
+[more detail about v2.1.5](https://github.com/VisActor/VChart/releases/tag/v2.1.5)
+# v2.1.4
+
+2026-07-16
+
+**🆕 New Features**
+
+- **@visactor/vchart**: support automatic bar width for linear x axis
+- **@visactor/vchart**: support theming conversion funnel arrow (line / symbol / text) via series.funnel.conversionArrow theme token
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: restore existing axis grid graphics when grid visibility is enabled again through updateSpec with animation disabled
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.1.3...v2.1.4
+
+[more detail about v2.1.4](https://github.com/VisActor/VChart/releases/tag/v2.1.4)
+# v2.1.3
+
+2026-07-08
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: handle progressive graphics hover state
+- **@visactor/vchart**: stabilize BytePack ESM VRender registration paths and preserve seriesStyle after theme updates
+- **@visactor/vchart**: normalize funnel range mapping
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.1.1...v2.1.3
+
+[more detail about v2.1.3](https://github.com/VisActor/VChart/releases/tag/v2.1.3)
+# v2.1.1
+
+2026-06-25
+
+**🆕 New Features**
+
+- TODO: Fill in change details for v2.1.1.
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.1.0...v2.1.1
+
+[more detail about v2.1.1](https://github.com/VisActor/VChart/releases/tag/v2.1.1)
+# v2.1.0
+
+2026-06-23
+
+**🆕 New Features**
+
+- **@visactor/vchart**: markLine expandDistancesupport callback. close#4568
+- **@visactor/vchart**: support function type for `maxRow` / `maxCol` of the discrete legend, evaluated during layout against the legend's allocated rect, so the row / column count can adapt to the available space
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: waterfall lead line bug. fix#4580
+- **@visactor/vchart**: preserve discrete legend filtering after updateSpec when `legends.data` is a callback (Issue #4566)
+- **@visactor/vchart**: re-nice the cartesian linear axis with the real plot-area length after layout when `tick.tickCount` is a function, so the length-based tick count and nice ceiling match the final plot area instead of the pre-layout chart viewRect
+- **@visactor/vchart**: vchart relayout api not work bug. fix#4537
+- **@visactor/vchart**: label not follow when drag. fix#4547
+- **@visactor/vchart**: prcoess render error. fix#4578
+
+**🔨 Chores**
+
+- **@visactor/vchart**: update changes for 009-fix-map-roam-pointer-drag: This plan fixes a map roam drag bug where mobile browsers lose stable vertical dragging after supportsTouchEvents is forced to false
+- **@visactor/vchart**: introduce scoped updateSpec effects to make chart, component, series, data, layout, render, and animation update ranges explicit; local component updates such as marker exit, title text, legend appearance, axis appearance, mark style, field, label, animation, and layout-related series changes now avoid unnecessary chart remake/recompile paths when the existing chart model can be updated in place
+- **@visactor/vchart**: align VChart with the VRender 1.1.0 app-scoped runtime, state resolver, and animation contracts while keeping standard VChart spec usage compatible; consolidate mark shared-state handling, glyph sub-graphic state isolation, word-cloud scaleIn initialization, and interaction-state behavior for Sankey, brush, legend textures, marker rich text, and circular progress tick masks
+
+**💖 Community Contributions**
+
+Thanks to everyone who contributed to this release through code, issue reports, test cases, and regression verification. Special thanks to:
+
+- @g1f9: contributed function support for discrete legend `maxRow` / `maxCol`, and fixed linear axis nice-domain recalculation based on the final plot area.
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.20...v2.1.0
+
+[more detail about v2.1.0](https://github.com/VisActor/VChart/releases/tag/v2.1.0)
+
+# v2.0.22
+
+2026-04-13
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: correct stacked bar corner clipping when barMinHeight is applied (Issue #4543)
+- **@visactor/vchart**: relayout api not work bug. fix#4537
+- **@visactor/vchart**: custom mark not release after update spec. fix#4537
+- **@visactor/vchart**: map error when roam or drag canvas. fix#4547
+- **@visactor/vchart**: handle sankey tooltip labels when source index is 0 (Issue #4488)
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.20...v2.0.22
+
+[more detail about v2.0.22](https://github.com/VisActor/VChart/releases/tag/v2.0.22)
+
+# v2.0.21
+
+2026-04-03
+
+**🆕 New Features**
+
+- TODO: Fill in change details for v2.0.21.
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.20...v2.0.21
+
+[more detail about v2.0.21](https://github.com/VisActor/VChart/releases/tag/v2.0.21)
+
+# v2.0.20
+
+2026-03-26
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: fix theme config of spec and option
+- **@visactor/vchart**: datazoom update domain after data change. fix#4186
+
+**🔨 Chores**
+
+- **@visactor/vchart**: update changes for 008-fix-size-legend-handler-text: Allow size legend handlerText.style to accept function-based values in the same way other legend style hooks already do, and add regression coverage proving the style callback is preserved through continuous legend attribute transformation.
+- **@visactor/vchart**: update changes for 009-fix-heatmap-scrollbar-axis-direction: Align ScrollBar with DataZoom by using the shared reverse-axis detection when converting scrollbar state percentages back into domain values.
+- **@visactor/vchart**: update changes for 009-fix-issue-of-mark-state-when-updateSpec: Fix an issue where mark states were not properly cleared when updateSpec was called, causing incorrect state persistence.
+- **@visactor/vchart**: update changes for 010-hide-empty-axes: Add an opt-in hideWhenEmpty axis option for cartesian axes.
+- **@visactor/vchart**: update changes for 009-fix-issue-of-mark-state-when-updateSpec: Fix an issue where mark states were not properly cleared when updateSpec was called, causing incorrect state persistence.
+- **@visactor/vchart**: upgrade vutils, vdataset, vscale, vlayouts to ~1.0.23
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.19...v2.0.20
+
+[more detail about v2.0.20](https://github.com/VisActor/VChart/releases/tag/v2.0.20)
+
+# v2.0.19
+
+2026-03-06
+
+**🔨 Chores**
+
+- **@visactor/vchart**: remove unused GitHub Actions workflows
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.18...v2.0.19
+
+[more detail about v2.0.19](https://github.com/VisActor/VChart/releases/tag/v2.0.19)
+
+# v2.0.18
+
+2026-03-05
+
+**🆕 New Features**
+
+- **@visactor/vchart**: feat: optimiz workflows for release
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: fix: ensure DataZoom updates when data source changes (Issue #4185)
+- **@visactor/vchart**: fix: fix default lineWidth for heatmap label
+
+- **@visactor/vchart**: fix: Fix memory leaks in Player component and BaseComponent release logic.
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.17...v2.0.18
+
+[more detail about v2.0.18](https://github.com/VisActor/VChart/releases/tag/v2.0.18)
+
+# v2.0.17
+
+2026-02-26
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: fix: support functional alternateColor in axis grid configuration
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.16...v2.0.17
+
+[more detail about v2.0.17](https://github.com/VisActor/VChart/releases/tag/v2.0.17)
+
+# v2.0.16
+
+2026-02-13
+
+**🆕 New Features**
+
+- **@visactor/vchart**: Add Timeline chart by @xile611 in https://github.com/VisActor/VChart/pull/4440
+- **@visactor/vchart**: Optimize Word Cloud shape algorithm for better performance and layout by @xuefei1313 in https://github.com/VisActor/VChart/pull/4452
+- **@visactor/vchart**: Add skills feature support by @xile611 in https://github.com/VisActor/VChart/pull/4447
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: Upgrade `vrender` dependency to fix Word Cloud chart issues by @xuefei1313 in https://github.com/VisActor/VChart/pull/4432
+- **@visactor/vchart**: Fix React VChart tooltip render style by @xile611 in https://github.com/VisActor/VChart/pull/4430
+- **@visactor/vchart**: Fix invalid `fontSize` setting in `markPoint.itemContent.text.style` by @xuefei1313 in https://github.com/VisActor/VChart/pull/4453
+- **@visactor/vchart**: Fix fill graphic type definition by @xuefei1313 in https://github.com/VisActor/VChart/pull/4454
+- **@visactor/vchart**: Update `visual` type definition and related documentation by @xile611 in https://github.com/VisActor/VChart/pull/4451
+
+**🔨 Chores**
+
+- **@visactor/vchart**: Optimize `spec-kit` commands by @xuefei1313 in https://github.com/VisActor/VChart/pull/4442
+- **@visactor/vchart**: Update and fix release changelog GitHub Action workflow by @xuefei1313 in https://github.com/VisActor/VChart/pull/4439
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.14...v2.0.16
+
+[more detail about v2.0.16](https://github.com/VisActor/VChart/releases/tag/v2.0.16)
+
+# v2.0.15
+
+2026-02-02
+
+**🆕 New Features**
+
+- **@visactor/vchart**: Support Brush API and Interactive API by @skie1997 in https://github.com/VisActor/VChart/pull/4408
+- **@visactor/vchart**: Support fixed pixel step scrolling on wheel event and minimum scrollbar slider height by @xuefei1313 in https://github.com/VisActor/VChart/pull/4423
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: Fix React VChart component registration logic by @xile611 in https://github.com/VisActor/VChart/pull/4419
+- **@visactor/vchart**: Upgrade `vrender` dependency to fix Word Cloud chart issues by @xuefei1313 in https://github.com/VisActor/VChart/pull/4422
+
+**🔨 Chores**
+
+- **@visactor/vchart**: Add `spec-kit` and project constitution by @xuefei1313 in https://github.com/VisActor/VChart/pull/4412
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.14...v2.0.15
+
+[more detail about v2.0.15](https://github.com/VisActor/VChart/releases/tag/v2.0.15)
+
+# v2.0.14
+
+2026-01-22
+
+**🆕 New Features**
+
+- **@visactor/vchart**: Support Brush API and Interactive API by @skie1997 in https://github.com/VisActor/VChart/pull/4408
+- **@visactor/vchart**: Support fixed pixel step scrolling on wheel event and minimum scrollbar slider height by @xuefei1313 in https://github.com/VisActor/VChart/pull/4423
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: Fix React VChart component registration logic by @xile611 in https://github.com/VisActor/VChart/pull/4419
+- **@visactor/vchart**: Upgrade `vrender` dependency to fix Word Cloud chart issues by @xuefei1313 in https://github.com/VisActor/VChart/pull/4422
+- **@visactor/vchart**: Fix tooltip display issue in Map charts by @xuefei1313 in https://github.com/VisActor/VChart/pull/4417
+- **@visactor/vchart**: Fix subtitle layout bug by @xuefei1313 in https://github.com/VisActor/VChart/pull/4415
+- **@visactor/vchart**: Add protection code for tooltip handler to prevent errors by @skie1997 in https://github.com/VisActor/VChart/pull/4424
+
+**🔨 Chores**
+
+- **@visactor/vchart**: Update GH CLI and usage documentation by @xuefei1313 in https://github.com/VisActor/VChart/pull/4409
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.13...v2.0.14
+
+[more detail about v2.0.14](https://github.com/VisActor/VChart/releases/tag/v2.0.14)
+
+# v2.0.13
+
+2026-01-08
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: Fix tooltip display issue when stage is transformed by @xuefei1313 in https://github.com/VisActor/VChart/pull/4393
+- **@visactor/vchart**: Fix map tooltip issue by @xuefei1313 in https://github.com/VisActor/VChart/pull/4396
+- **@visactor/vchart**: Fix animation state issue by @xuefei1313 in https://github.com/VisActor/VChart/pull/4398
+
+**🔨 Chores**
+
+- **@visactor/vchart**: Update base Node.js version to 20+ by @xile611 in https://github.com/VisActor/VChart/pull/4402
+
+**📖 Documentation**
+
+- **@visactor/vchart**: Update marker point style and state documentation by @skie1997 in https://github.com/VisActor/VChart/pull/4369
+- **@visactor/vchart**: Add exit animation demo by @purpose233 in https://github.com/VisActor/VChart/pull/4374
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.12...v2.0.13
+
+[more detail about v2.0.13](https://github.com/VisActor/VChart/releases/tag/v2.0.13)
+
+# v2.0.12
+
+2025-12-25
+
+**🆕 New Features**
+
+- **@visactor/vchart**: Support `autoLabelMaxWidth` configuration in `CircleAxis` by @xuefei1313 in https://github.com/VisActor/VChart/pull/4357
+- **@visactor/vchart**: Add support for chart disappear state by @xuefei1313 in https://github.com/VisActor/VChart/pull/4341
+- **@visactor/vchart**: Optimize heatmap shape rendering logic by @xuefei1313 in https://github.com/VisActor/VChart/pull/4377
+- **@visactor/vchart**: Optimize map zoom interaction and add `zoomRate` configuration by @xuefei1313 in https://github.com/VisActor/VChart/pull/4373
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: Fix axis title layout issue by @xuefei1313 in https://github.com/VisActor/VChart/pull/4371
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.11...v2.0.12
+
+[more detail about v2.0.12](https://github.com/VisActor/VChart/releases/tag/v2.0.12)
+
+# v2.0.11
+
+2025-12-11
+
+# v2.0.11
+
+2025-12-11
+
+**🆕 New Features**
+
+- **@visactor/vchart**: Support `componentShowContent` in `initOption` by @xuefei1313 in https://github.com/VisActor/VChart/pull/4334
+- **@visactor/vchart**: Support boxplot label by @xile611 in https://github.com/VisActor/VChart/pull/4346
+- **@visactor/vchart**: Export data constant by @xuefei1313 in https://github.com/VisActor/VChart/pull/4339
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: Fix crosshair behavior when having inner offset by @xile611 in https://github.com/VisActor/VChart/pull/4340
+- **@visactor/vchart**: Fix outlier color in boxplot by @xile611 in https://github.com/VisActor/VChart/pull/4347
+- **@visactor/vchart**: Fix boxplot outlier style by @xile611 in https://github.com/VisActor/VChart/pull/4350
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.10...v2.0.11
+
+[more detail about v2.0.11](https://github.com/VisActor/VChart/releases/tag/v2.0.11)
+
+[more detail about v2.0.11](https://github.com/VisActor/VChart/releases/tag/v2.0.11)
+
+# v2.0.10
+
+2025-11-28
+
+**🆕 New Features**
+
+- **@visactor/vchart**: Enhance boxplot features by @xile611 in https://github.com/VisActor/VChart/pull/4323
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart**: Upgrade vrender dependency to fix rose chart issues by @xuefei1313 in https://github.com/VisActor/VChart/pull/4315
+- **@visactor/vchart**: Upgrade vrender dependency to fix animation issues by @xuefei1313 in https://github.com/VisActor/VChart/pull/4325
+- **@visactor/vchart**: Fix extension mark update logic by @xile611 in https://github.com/VisActor/VChart/pull/4318
+- **@visactor/vchart**: Fix font family setting issue by @xuefei1313 in https://github.com/VisActor/VChart/pull/4324
+- **@visactor/vchart**: Fix issue with setDimensionIndex by @xuefei1313 in https://github.com/VisActor/VChart/pull/4291
+
+**📖 Documentation**
+
+- **@visactor/vchart**: Add candlestick chart guide by @xuefei1313 in https://github.com/VisActor/VChart/pull/4310
+- **@visactor/vchart**: Add theme development guide by @xuanhun in https://github.com/VisActor/VChart/pull/4322
+- **@visactor/vchart**: Add map rewind guide by @xuefei1313 in https://github.com/VisActor/VChart/pull/4326
+- **@visactor/vchart**: Add 3D registration content to guide by @xuefei1313 in https://github.com/VisActor/VChart/pull/4312
+- **@visactor/vchart**: Fix documentation for common chart option labelLayout by @xuefei1313 in https://github.com/VisActor/VChart/pull/4316
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.9...v2.0.10
+
+[more detail about v2.0.10](https://github.com/VisActor/VChart/releases/tag/v2.0.10)
+
+# v2.0.9
+
+2025-11-18
+
+**🆕 New Features**
+
+- **@visactor/react-vchart**: Add export for registerChartResizeZoomPlugin by @xuefei1313 in https://github.com/VisActor/VChart/pull/4286
+- **@visactor/vchart**: Support effect animation by @purpose233 in https://github.com/VisActor/VChart/pull/4299
+- **@visactor/vchart**: Enhance datazoom and fix bugs by @skie1997 in https://github.com/VisActor/VChart/pull/4065
+
+**🐛 Bug Fixes**
+
+- **@visactor/vchart-extension**: Fix the vchart-extension packaged artifacts contained an extra version by @xuefei1313 in https://github.com/VisActor/VChart/pull/4277
+- **@visactor/vchart**: Fix markline auto range by @xuefei1313 in https://github.com/VisActor/VChart/pull/4290
+
+**📖 Documentation**
+
+- **@visactor/vchart**: Fix registerMorph error in example by @xuefei1313 in https://github.com/VisActor/VChart/pull/4285
+- **@visactor/vchart**: Add candlestick demo by @xuefei1313 in https://github.com/VisActor/VChart/pull/4297
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.7...v2.0.9
+
+[more detail about v2.0.9](https://github.com/VisActor/VChart/releases/tag/v2.0.9)
+
+# v2.0.7
+
+2025-11-03
+
+🆕 New Features
+
+@visactor/vchart: Support resize zoom chart plugin by @xuefei1313 in https://github.com/VisActor/VChart/pull/4241
+@visactor/vchart: Register transform boxplot by @xile611 in https://github.com/VisActor/VChart/pull/4268
+@visactor/vchart: Add translate-issues workflow configuration by @xuefei1313 in https://github.com/VisActor/VChart/pull/4264
+@visactor/vchart: Add regression-lines in vchart-extension by @xile611 in https://github.com/VisActor/VChart/pull/4245
+@visactor/vchart: Change vrender dependencies, see https://github.com/VisActor/VChart/pull/4224
+
+🐛 Bug Fixes
+
+@visactor/vchart: Fix crosshair not hide by @xile611 in https://github.com/VisActor/VChart/pull/4252
+@visactor/vchart: Fix issue of layout by @xuefei1313 in https://github.com/VisActor/VChart/pull/4249
+@visactor/vchart: Fix logistic regression line by @xile611 in https://github.com/VisActor/VChart/pull/4263
+@visactor/vchart: Fix support regression line for grouped scatter by @xile611 in https://github.com/VisActor/VChart/pull/4248
+@visactor/vchart: Fix check if stackData is empty by @kkxxkk2019 in https://github.com/VisActor/VChart/pull/4244
+@visactor/vchart: Fix issue of waterfall stack total by @xuefei1313 in https://github.com/VisActor/VChart/pull/4243
+
+[more detail about v2.0.7](https://github.com/VisActor/VChart/releases/tag/v2.0.7)
+
+# v2.0.6
+
+2025-10-14
+
+**What's Changed**
+
+- fix: fix the issue of legend pager by @xuefei1313 in https://github.com/VisActor/VChart/pull/4212
+- Feat/support calc in formatter by @xuefei1313 in https://github.com/VisActor/VChart/pull/4211
+- Fix/fix error of markline when series no data by @xuefei1313 in https://github.com/VisActor/VChart/pull/4216
+- feat: update bugreport metthod by @xuanhun in https://github.com/VisActor/VChart/pull/4221
+- feat: upgrade vrender to fix animation bug by @xuefei1313 in https://github.com/VisActor/VChart/pull/4222
+- feat: support waterfallType in waterfall chart by @xuefei1313 in https://github.com/VisActor/VChart/pull/4220
+- feat: change vrender dependencies by @xuefei1313 in https://github.com/VisActor/VChart/pull/4224
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.5...v2.0.6
+
+[more detail about v2.0.6](https://github.com/VisActor/VChart/releases/tag/v2.0.6)
+
+# v2.0.5
+
+2025-09-19
+
+[more detail about v2.0.5](https://github.com/VisActor/VChart/releases/tag/v2.0.5)
+
+# v2.0.2
+
+2025-07-28
+
+**🆕 New feature**
+
+- **@visactor/vchart**: add the afterClearRect hook of render
+
+**Full Changelog**: https://github.com/VisActor/VChart/compare/v2.0.1...v2.0.2
+
+[more detail about v2.0.2](https://github.com/VisActor/VChart/releases/tag/v2.0.2)
+
+# v2.0.1
+
+2025-07-24
+
+**🆕 New feature**
+
+- **@visactor/vchart**: add config to avoid brush state update. close [#4035](https://github.com/VisActor/VChart/issues/4035)
+- **@visactor/vchart**: optimize datazoom animation effect
+- **@visactor/vchart**: add the afterClearScreen hook of render
+
+**🐛 Bug fix**
+
+- **@visactor/vchart**: fix issue with 3d chart grid
+- **@visactor/vchart**: tickData of axis should update when `sampling` is changed, fix [#4059](https://github.com/VisActor/VChart/issues/4059)
+- **@visactor/vchart**: only calculate multi layer label items when need, fix [#4056](https://github.com/VisActor/VChart/issues/4056)
+- **@visactor/vchart**: fix resize error when remake, and re-normal aniamtion bug, fix [#4070](https://github.com/VisActor/VChart/issues/4070)
+- **@visactor/vchart**: fix issue with feishu block and call setenv when create vchart
+- **@visactor/vchart**: fix bug of tooltip triggerOff & tooltip lock
+- **@visactor/vchart**: fix tooltip throw error when some tooltip processor is undefined, fix [#4044](https://github.com/VisActor/VChart/issues/4044)
+- **@visactor/vchart**: fix `textAlign` not works in tooltip.style.titleLabel, fix [#4043](https://github.com/VisActor/VChart/issues/4043)
+
+[more detail about v2.0.1](https://github.com/VisActor/VChart/releases/tag/v2.0.1)
