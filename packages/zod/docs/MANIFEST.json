@@ -1,5 +1,116 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T20:44:04.973Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/colinhacks/zod",
+      "ref": "v4.6.7",
+      "paths": [
+        "packages/zod/README.md",
+        "LICENSE",
+        "packages/docs/content/meta.json",
+        "packages/docs/content/*.mdx",
+        "packages/docs/content/packages/*.mdx",
+        "packages/docs/content/v4/*.mdx",
+        "packages/docs/content/blog/zod-4-5.mdx",
+        "packages/docs/content/blog/zod-4-6.mdx",
+        "packages/docs/content/blog/introducing-z-compile.mdx"
+      ],
+      "commit": "b500a2ee95134f81d74da7911d7378dd2853d042"
+    }
+  ],
+  "files": {
+    "repo/LICENSE": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/LICENSE",
+      "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
+    },
+    "repo/packages/docs/content/api.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/api.mdx",
+      "sha256": "3240b2be405a3102df45a83b76c0151b3b2ddfba116b178379197661e73f8582"
+    },
+    "repo/packages/docs/content/basics.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/basics.mdx",
+      "sha256": "929e7cd93a21a7b75b977c24c9ba09556de6a1cce4d1f2269e42976fb346b8e0"
+    },
+    "repo/packages/docs/content/blog/introducing-z-compile.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/blog/introducing-z-compile.mdx",
+      "sha256": "3b1ce901572a4412f76136937998b2f804b8a28e1e77b8d18da07db7bb192a28"
+    },
+    "repo/packages/docs/content/blog/zod-4-5.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/blog/zod-4-5.mdx",
+      "sha256": "da495639d2c3bd5daf3bdef8adad6acfd34c916034cfb2cba4be68c8739e0a05"
+    },
+    "repo/packages/docs/content/blog/zod-4-6.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/blog/zod-4-6.mdx",
+      "sha256": "b59f878547319f761312fad05fc7931005e64c09091dd70e8f4fb9f989856736"
+    },
+    "repo/packages/docs/content/codecs.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/codecs.mdx",
+      "sha256": "5fe55922a5fed1b17779ace847964705ae17d430e87cc75df8e5fd9e6d3d5bf4"
+    },
+    "repo/packages/docs/content/compile.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/compile.mdx",
+      "sha256": "406fcfb3e8ccac94c92bf98ea566bb7fd4ceade357e901cec42ef283c52ac2a2"
+    },
+    "repo/packages/docs/content/ecosystem.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/ecosystem.mdx",
+      "sha256": "4ef40336d49c95fbe3645b5f2a0135002f1c346d6cf04b51dfcd21f97ab90f42"
+    },
+    "repo/packages/docs/content/error-customization.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/error-customization.mdx",
+      "sha256": "33a6220691fe2ff83147b5f9e6d74bcffbc8189207e9652378531ed02f328ac8"
+    },
+    "repo/packages/docs/content/error-formatting.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/error-formatting.mdx",
+      "sha256": "1150ff1a5d5aeb69b8d21c5aff4458f4d4e42f58107c6712fe94952ecdabec16"
+    },
+    "repo/packages/docs/content/index.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/index.mdx",
+      "sha256": "ad235cf83cb4dd4bcc90064dfb2572c336c9d700af767da9786c23660aeb26df"
+    },
+    "repo/packages/docs/content/json-schema.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/json-schema.mdx",
+      "sha256": "634ac057e60ecc31e6998e4a0767b495f7fdb9879faa0aeaadecb31d0ab96ee0"
+    },
+    "repo/packages/docs/content/library-authors.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/library-authors.mdx",
+      "sha256": "023ab39b77fb2860d39e409e7153b5e718337f37a3e30730759ca52cf775df89"
+    },
+    "repo/packages/docs/content/meta.json": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/meta.json",
+      "sha256": "71f5f7031dc1f223bd4727ecfe96f8a802d0e3b5eb2091dd7ccc5e2aac0f7973"
+    },
+    "repo/packages/docs/content/metadata.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/metadata.mdx",
+      "sha256": "bd83bd5851e20b88ecf852f508ebb6b524817524b4a2bbdf75f802b40bd1adf9"
+    },
+    "repo/packages/docs/content/packages/core.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/packages/core.mdx",
+      "sha256": "5432c87b489cdf0084771ce9adab7262837bb4ed3515fc3dbf4e4b513241bfe2"
+    },
+    "repo/packages/docs/content/packages/mini.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/packages/mini.mdx",
+      "sha256": "cde28fbbed870bb2f8427a194f0d5bfa17854871a172e1134304be954736fb9a"
+    },
+    "repo/packages/docs/content/packages/zod.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/packages/zod.mdx",
+      "sha256": "6d338154dfa9cfd3be5040c53d3bcbb333897b80b4be1c30ebaca71c3c4bd059"
+    },
+    "repo/packages/docs/content/v4/changelog.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/v4/changelog.mdx",
+      "sha256": "b77e6b11fd3f3b06ea657a4cd95323dd3d2665fba93f6ae6452151fcb1642343"
+    },
+    "repo/packages/docs/content/v4/index.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/v4/index.mdx",
+      "sha256": "38ba82201fe3f6a9fe7e72e85a927dad657435c51a638adcf4c5b4c3dbe22619"
+    },
+    "repo/packages/docs/content/v4/versioning.mdx": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/docs/content/v4/versioning.mdx",
+      "sha256": "d240e7179fff0c94f72e152a2ae2d44d1875111ebf49624cc73c47b2fe2807f8"
+    },
+    "repo/packages/zod/README.md": {
+      "url": "https://github.com/colinhacks/zod/blob/b500a2ee95134f81d74da7911d7378dd2853d042/packages/zod/README.md",
+      "sha256": "b5651740a66d68e8c55c4fdea2df8b00448f99a0433008fef99a54f859024039"
+    }
+  }
 }

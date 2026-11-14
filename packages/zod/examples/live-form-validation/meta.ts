@@ -1,13 +1,13 @@
-// Live form validation example metadata for the zod package
+// Zod example: a sign-up form checked by one Zod schema on every keystroke
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
   title: 'Live form validation',
   summary:
-    'Every keystroke runs the input through a Zod schema with safeParse. Fields turn red with a precise message or green when they pass, and the success card shows the parsed output, with age coerced to a real number.',
-  section: 'Basics',
-  tags: ['safeParse', 'coerce', 'forms'],
-  docs: [],
-  provenance: 'legacy',
-  added: '2026-06-14',
+    'A sign-up form whose rules all live in one Zod schema. Every keystroke runs safeParse over the whole form; each issue lands on the field its path names, and once everything passes the output shows age turned from typed text into a real number.',
+  section: 'Basic usage',
+  tags: ['safeParse', 'z.object', 'z.coerce.number', 'z.email', 'optional', 'forms'],
+  docs: ['repo/packages/docs/content/basics.mdx', 'repo/packages/docs/content/api.mdx'],
+  provenance: 'pure',
+  added: '2026-11-14',
 });

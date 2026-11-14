@@ -1,0 +1,263 @@
+/* Zod value views: typed value trees, checkpoint panes, verdicts, sample rows */
+/* --- Value tree: type colours, rows, marks --- */
+.zd-value {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.zd-row {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  padding: 0 4px;
+  border-left: 2px solid transparent;
+  white-space: nowrap;
+  min-width: 0;
+}
+.zd-row[data-mark='bad'] {
+  border-left-color: var(--red);
+  background: var(--red-bg);
+}
+.zd-row[data-mark='changed'],
+.zd-row[data-mark='new'] {
+  border-left-color: var(--accent);
+  background: var(--accent-glow);
+}
+.zd-row[data-mark='gone'] {
+  opacity: 0.45;
+  text-decoration: line-through;
+}
+.zd-nest {
+  padding-left: 12px;
+  border-left: 1px dotted var(--border);
+  margin-left: 6px;
+}
+.zd-key {
+  color: var(--fg-2);
+}
+.zd-bracket {
+  color: var(--fg-3);
+  font-size: 0.85em;
+}
+.zd-leaf {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+.zd-leaf-wrap {
+  display: inline-flex;
+  gap: 5px;
+  align-items: baseline;
+  min-width: 0;
+}
+.zd-type {
+  color: var(--fg-3);
+  font-size: 0.8em;
+}
+.zd-leaf[data-type='text'] {
+  color: var(--cyan);
+}
+.zd-leaf[data-type='number'],
+.zd-leaf[data-type='bigint'] {
+  color: var(--blue);
+}
+.zd-leaf[data-type='yes/no'] {
+  color: var(--purple);
+}
+.zd-leaf[data-type='date'] {
+  color: var(--orange);
+}
+.zd-leaf[data-type='null'],
+.zd-leaf[data-type='missing'],
+.zd-leaf[data-type='not a number'] {
+  color: var(--fg-3);
+  font-style: italic;
+}
+.zd-msg {
+  color: var(--red);
+  font-size: 0.85em;
+  padding-left: 14px;
+  white-space: normal;
+}
+
+/* --- Checkpoint: input → result --- */
+.zd-check {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 8px;
+  align-items: stretch;
+  min-height: 0;
+  flex: 1;
+}
+.zd-card .zd-check {
+  gap: 4px;
+}
+.zd-check.zd-stacked {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto auto;
+  flex: none;
+}
+.zd-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  min-height: 0;
+  padding: 6px 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.zd-card .zd-pane {
+  padding: 3px 4px;
+  gap: 2px;
+}
+.zd-pane[data-ok='true'] {
+  border-color: color-mix(in srgb, var(--green) 55%, var(--border));
+}
+.zd-pane[data-ok='false'] {
+  border-color: color-mix(in srgb, var(--red) 55%, var(--border));
+}
+.zd-pane-head,
+.zd-rows-head {
+  color: var(--fg-3);
+  font-size: 0.78em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+.zd-pane-body {
+  min-height: 0;
+  overflow: auto;
+}
+.zd-card .zd-pane-body {
+  overflow: hidden;
+}
+.zd-gate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: var(--fg-3);
+}
+.zd-stacked .zd-gate {
+  flex-direction: row;
+  gap: 8px;
+}
+.zd-arrow {
+  font-size: 1.4em;
+}
+.zd-gate-label {
+  font-family: var(--font-mono);
+  color: var(--accent-text);
+  font-size: 0.85em;
+  writing-mode: horizontal-tb;
+  max-width: 12em;
+  text-align: center;
+  white-space: normal;
+}
+.zd-card .zd-gate-label {
+  max-width: 7em;
+  font-size: 0.8em;
+}
+.zd-stamp {
+  font-weight: 600;
+  white-space: nowrap;
+}
+.zd-verdict[data-ok='true'] .zd-stamp {
+  color: var(--green);
+}
+.zd-verdict[data-ok='false'] .zd-stamp {
+  color: var(--red);
+}
+.zd-issues {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.zd-issues li {
+  display: flex;
+  flex-direction: column;
+}
+.zd-where {
+  color: var(--fg-2);
+  font-size: 0.85em;
+}
+.zd-what {
+  color: var(--fg-1);
+}
+.zd-more,
+.zd-pending {
+  color: var(--fg-3);
+  font-size: 0.85em;
+}
+
+/* --- Widgets --- */
+.zd-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  flex-shrink: 0;
+}
+.zd-pill {
+  padding: 0 7px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  color: var(--fg-2);
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+.zd-pill b {
+  color: var(--fg-1);
+}
+.zd-pill[data-tone='ok'] b {
+  color: var(--green);
+}
+.zd-pill[data-tone='bad'] b {
+  color: var(--red);
+}
+.zd-pill[data-tone='warn'] b {
+  color: var(--orange);
+}
+.zd-note-box {
+  color: var(--fg-2);
+  padding: 4px 8px;
+  border-left: 2px solid var(--border);
+  white-space: pre-wrap;
+}
+.zd-card .zd-note-box {
+  padding: 1px 6px;
+}
+
+/* --- Card compaction: the 200px card has no room for titles or the root's own row --- */
+.zd-root:has(> .zd-bracket):not([data-mark]) {
+  display: none;
+}
+.zd-card .zd-pane-head {
+  display: none;
+}
+.zd-card .zd-issues li {
+  display: block;
+}
+.zd-card .zd-where:not(:empty)::after {
+  content: ': ';
+}
+.zd-card .zd-stacked .zd-gate {
+  line-height: 1.1;
+}
+.zd-stacked .zd-gate-label {
+  max-width: none;
+}
+.zd-pane-body {
+  position: relative;
+}
+.zd-pane-body {
+  flex: 1 1 auto;
+}
+.zd-card .zd-stacked .zd-pane:first-child {
+  max-height: 74px;
+}

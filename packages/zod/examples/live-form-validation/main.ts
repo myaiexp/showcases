@@ -1,102 +1,63 @@
-// Signup form validated live by a Zod schema, cycling samples in previews
+// A sign-up form: one schema, safeParse per keystroke, issues routed to fields by path
+import * as z from 'zod';
 import type { Mount } from '@/types.ts';
-import { FIELDS, SAMPLES, validate, type FieldName, type FormValues } from './schema.ts';
-import './style.css';
+import { fillLoop, textField, type Field } from '../../shared/field.ts';
+import { createStage } from '../../shared/stage.ts';
+import { valueView } from '../../shared/value-view.ts';
 
-const LABELS: Record<FieldName, { label: string; hint: string; placeholder: string }> = {
-  username: { label: 'Username', hint: '3-20 chars, letters / numbers / underscore', placeholder: 'ada_lovelace' },
-  email: { label: 'Email', hint: '', placeholder: 'ada@example.com' },
-  age: { label: 'Age', hint: 'whole number, 13 or older', placeholder: '29' },
-  website: { label: 'Website', hint: 'optional', placeholder: 'https://ada.dev' },
-};
+const SignUp = z.object({
+  username: z
+    .string()
+    .min(3)
+    .max(20)
+    .regex(/^[a-z0-9_]+$/, { error: 'Only lowercase letters, digits and _' }),
+  email: z.email(),
+  // Inputs always hold text: coerce turns "29" into 29 before the number checks.
+  age: z.coerce.number().int().min(13),
+  website: z.url().optional(),
+});
 
-const mount: Mount = (el, { preview }) => {
-  const root = document.createElement('div');
-  root.className = preview ? 'root preview' : 'root';
-  el.append(root);
-  const form = document.createElement('form');
-  form.className = 'form';
-  form.noValidate = true;
-  const rows = {} as Record<FieldName, { box: HTMLElement; input: HTMLInputElement; err: HTMLElement }>;
-  for (const name of FIELDS) {
-    const box = document.createElement('div');
-    box.className = 'field';
-    const label = document.createElement('label');
-    label.textContent = LABELS[name].label;
-    if (LABELS[name].hint) {
-      const hint = document.createElement('span');
-      hint.className = 'hint';
-      hint.textContent = ` - ${LABELS[name].hint}`;
-      label.append(hint);
-    }
-    const input = document.createElement('input');
-    input.className = 'input';
-    input.name = name;
-    input.autocomplete = 'off';
-    input.placeholder = LABELS[name].placeholder;
-    if (preview) input.readOnly = true;
-    const err = document.createElement('span');
-    err.className = 'error';
-    box.append(label, input, err);
-    form.append(box);
-    rows[name] = { box, input, err };
-  }
-  const verdict = document.createElement('div');
-  verdict.className = 'verdict';
-  root.append(form, verdict);
+const FIELDS = [
+  ['username', 'Username', 'ada_l'],
+  ['email', 'Email', 'ada@example.com'],
+  ['age', 'Age', '29'],
+  ['website', 'Website', 'optional'],
+] as const;
 
-  let touched = preview;
-  const render = (): void => {
-    const values = {} as FormValues;
-    for (const name of FIELDS) values[name] = rows[name].input.value;
-    const { data, errors } = validate(values);
-    for (const name of FIELDS) {
-      const { box, input, err } = rows[name];
-      const msg = errors[name];
-      const hasValue = input.value.trim() !== '';
-      box.classList.remove('valid', 'invalid');
-      err.textContent = '';
-      if (msg && (hasValue || touched)) {
-        box.classList.add('invalid');
-        err.textContent = msg;
-      } else if (!msg && hasValue) box.classList.add('valid');
-    }
-    verdict.replaceChildren();
-    if (!touched) {
-      verdict.className = 'verdict';
-      verdict.textContent = 'Start typing to validate against the schema...';
-    } else if (data) {
-      verdict.className = 'verdict ok';
-      verdict.append('Valid, parsed output:');
-      const pre = document.createElement('pre');
-      pre.textContent = JSON.stringify(data, null, 2);
-      verdict.append(pre);
+const STEPS = [
+  ['ad', 'ada@', 'twelve', ''],
+  ['Ada!', 'ada@example.com', '12', 'ada.dev'],
+  ['ada_l', 'ada@example.com', '29', 'https://ada.dev'],
+];
+
+const mount: Mount = (el, ctx) => {
+  const stage = createStage(el, ctx, { hint: 'Fill the form: each field shows the issue Zod found for it.' });
+  const fields: Field[] = FIELDS.map(([, label, placeholder]) => textField(stage.root, stage, { label, placeholder }));
+  const out = document.createElement('div');
+  if (!stage.preview) stage.root.append(out);
+
+  const check = (): void => {
+    const [username, email, age, website] = fields.map((f) => f.value);
+    // An empty optional field means "not given", which is undefined, not "".
+    const result = SignUp.safeParse({ username, email, age, website: website || undefined });
+    FIELDS.forEach(([key], i) => {
+      const f = fields[i]!;
+      const issue = result.success ? undefined : result.error.issues.find((x) => x.path[0] === key);
+      if (!f.value && key !== 'website') f.state(null, '');
+      else f.state(!issue, issue ? issue.message : '✓');
+    });
+    if (result.success) {
+      stage.say('✓ The whole form is valid: age is now the number ' + result.data.age, 'ok');
+      out.replaceChildren(valueView(result.data, { types: true }));
     } else {
-      verdict.className = 'verdict bad';
-      const n = Object.keys(errors).length;
-      verdict.textContent = `${n} issue${n === 1 ? '' : 's'}: fix the highlighted field${n === 1 ? '' : 's'}.`;
+      stage.say(`✗ ${result.error.issues.length} field(s) to fix`, 'bad');
+      out.replaceChildren();
     }
   };
-
-  let timer: ReturnType<typeof setInterval> | undefined;
-  if (preview) {
-    let i = 0;
-    const show = (): void => {
-      const sample = SAMPLES[i++ % SAMPLES.length];
-      if (!sample) return;
-      for (const name of FIELDS) rows[name].input.value = sample[name];
-      render();
-    };
-    show();
-    timer = setInterval(show, 2200);
-  } else {
-    form.addEventListener('input', () => {
-      touched = true;
-      render();
-    });
-    render();
-  }
-  return () => clearInterval(timer);
+  fields.forEach((f) => f.onInput(check));
+  check();
+  fillLoop(stage, fields, STEPS, 1700);
+  return stage.dispose;
 };
 
 export default mount;

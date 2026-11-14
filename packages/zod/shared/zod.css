@@ -1,0 +1,217 @@
+/* Shared Zod chrome: stage, caption, bar, text fields, JSON editor */
+.zd-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font);
+}
+.zd-card {
+  height: 100%;
+  padding: 6px 8px;
+  gap: 4px;
+  font-size: 11px;
+  line-height: 1.3;
+}
+.zd-full {
+  font-size: 13px;
+  line-height: 1.45;
+}
+.zd-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  align-items: center;
+  font-size: 12px;
+}
+.zd-bar:empty {
+  display: none;
+}
+.zd-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.zd-bar input[type='text'] {
+  font: inherit;
+  background: var(--bg-surface);
+  color: var(--fg-1);
+  border: 1px solid var(--border);
+  padding: 2px 6px;
+}
+.zd-bar-label {
+  color: var(--fg-3);
+}
+.zd-scene {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+  flex: 1;
+}
+.zd-card .zd-scene {
+  gap: 4px;
+  overflow: hidden;
+}
+.zd-caption {
+  color: var(--fg-2);
+  min-height: 1.4em;
+}
+.zd-card .zd-caption {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+.zd-caption:empty {
+  display: none;
+}
+.zd-caption[data-tone='ok'] {
+  color: var(--green);
+}
+.zd-caption[data-tone='warn'] {
+  color: var(--orange);
+}
+.zd-caption[data-tone='bad'] {
+  color: var(--red);
+}
+.zd-hint {
+  color: var(--fg-3);
+  font-size: 12px;
+}
+.zd-try {
+  font: inherit;
+  font-size: 12px;
+  background: var(--bg-surface);
+  color: var(--fg-2);
+  border: 1px solid var(--border);
+  padding: 1px 8px;
+  cursor: pointer;
+}
+.zd-try:hover,
+.zd-try.zd-on {
+  color: var(--fg-1);
+  border-color: var(--accent);
+}
+.zd-call {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  color: var(--accent-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+/* --- Text field --- */
+.zd-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.zd-field-line {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.zd-field-label {
+  color: var(--fg-2);
+  min-width: 5.5em;
+  white-space: nowrap;
+}
+.zd-card .zd-field-label {
+  min-width: 4.5em;
+}
+.zd-input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  background: var(--bg-surface);
+  color: var(--fg-1);
+  border: 1px solid var(--border);
+  padding: 4px 8px;
+}
+.zd-input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.zd-field[data-ok='true'] .zd-input {
+  border-color: var(--green);
+}
+.zd-field[data-ok='false'] .zd-input {
+  border-color: var(--red);
+}
+.zd-fake {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 6px;
+  white-space: pre;
+  overflow: hidden;
+}
+.zd-caret {
+  display: inline-block;
+  width: 1px;
+  height: 1.1em;
+  background: var(--accent);
+  margin-left: 1px;
+}
+.zd-ph {
+  color: var(--fg-3);
+  margin-left: 4px;
+}
+.zd-field-msg {
+  min-height: 1.3em;
+  font-size: 0.9em;
+  color: var(--fg-3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.zd-full .zd-field-msg {
+  white-space: normal;
+}
+.zd-field[data-ok='true'] .zd-field-msg {
+  color: var(--green);
+}
+.zd-field[data-ok='false'] .zd-field-msg {
+  color: var(--red);
+}
+.zd-tries {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+  color: var(--fg-3);
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+/* --- JSON editor --- */
+.zd-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.zd-editor textarea {
+  font: inherit;
+  font-size: 12px;
+  background: var(--bg-surface);
+  color: var(--fg-1);
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  resize: vertical;
+}
+.zd-editor textarea:disabled {
+  display: none;
+}
+.zd-editor-status {
+  color: var(--fg-3);
+  font-size: 12px;
+}
+.zd-editor-status[data-tone='warn'] {
+  color: var(--orange);
+}
