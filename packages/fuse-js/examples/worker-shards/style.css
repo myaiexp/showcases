@@ -1,0 +1,25 @@
+/* Shards: one coloured block per worker, results tinted by the shard that found them */
+[data-example='fuse-js/worker-shards'] {
+  .shards {
+    display: flex;
+    gap: 3px;
+    flex-shrink: 0;
+  }
+  .shard {
+    flex: 1;
+    min-width: 0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid var(--shard);
+    background: color-mix(in srgb, var(--shard) 15%, transparent);
+    font-size: 0.8em;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .shard b {
+    color: var(--shard);
+  }
+  .fz-row {
+    border-left: 4px solid var(--shard);
+  }
+}

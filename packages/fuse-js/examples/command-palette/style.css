@@ -1,0 +1,61 @@
+/* Command palette over a tiny editor window */
+[data-example='fuse-js/command-palette'] {
+  .palette {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--bg-raised);
+  }
+  .fz-row:first-child {
+    border-color: var(--accent);
+  }
+  .ed {
+    display: flex;
+    min-height: 0;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    font-family: var(--font-mono);
+    font-size: 0.8em;
+    background: #15161c;
+    color: #c9d1d9;
+  }
+  .ed.ed-light {
+    background: #f6f7f9;
+    color: #23262e;
+  }
+  .ed-side {
+    white-space: pre;
+    padding: 4px 8px;
+    border-right: 1px solid var(--border);
+    color: var(--fg-3);
+  }
+  .ed-hidden {
+    display: none;
+  }
+  .ed-panes {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+  }
+  .ed-pane {
+    flex: 1;
+    min-width: 0;
+    padding: 4px 6px;
+    overflow: hidden;
+  }
+  .ed-pane + .ed-pane {
+    border-left: 1px solid var(--border);
+  }
+  .ed-line {
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .ed-wrap .ed-line {
+    white-space: pre-wrap;
+  }
+}

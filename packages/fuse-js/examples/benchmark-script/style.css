@@ -1,0 +1,13 @@
+/* The benchmark's console output */
+[data-example='fuse-js/benchmark-script'] {
+  .log {
+    font-family: var(--font-mono);
+    white-space: pre;
+    padding: 6px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-surface);
+    color: var(--fg-2);
+    overflow: hidden;
+  }
+}

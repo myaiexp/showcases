@@ -1,0 +1,26 @@
+/* A title with its matched ranges drawn as brackets under the letters */
+[data-example='fuse-js/highlight-from-indices'] {
+  .hl {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 4px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-surface);
+  }
+  .hl-text,
+  .hl-ruler {
+    font-family: var(--font-mono);
+    white-space: pre;
+  }
+  .hl-ruler {
+    color: var(--accent);
+    line-height: 1;
+  }
+  .hl-pairs {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    color: var(--fg-3);
+  }
+}
