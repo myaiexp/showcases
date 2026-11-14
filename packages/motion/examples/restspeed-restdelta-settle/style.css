@@ -1,0 +1,10 @@
+/* Two dials, each with a needle pivoting at the bottom centre */
+[data-example='motion/restspeed-restdelta-settle'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .gauges { display: flex; gap: var(--space-4); }
+  .g { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .dial { position: relative; width: 110px; height: 60px; border-radius: 110px 110px 0 0; background: var(--bg-surface); border: 2px solid var(--border); border-bottom: 0; }
+  .needle { position: absolute; left: calc(50% - 1.5px); bottom: 0; width: 3px; height: 52px; background: #ff6b6b; border-radius: 2px; transform-origin: 50% 100%; }
+  figcaption { display: flex; flex-direction: column; align-items: center; font-size: 0.72rem; color: var(--fg-3); }
+  b { color: var(--fg-1); }
+}

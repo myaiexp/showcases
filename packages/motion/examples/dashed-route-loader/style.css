@@ -1,0 +1,11 @@
+/* A small map with streets, a route and two pins */
+[data-example='motion/dashed-route-loader'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .map { width: min(100%, 320px); border-radius: 12px; overflow: hidden; background: #1c2a24; border: 1px solid var(--border); }
+  svg { display: block; width: 100%; fill: none; }
+  .street { stroke: #2f4238; stroke-width: 10; }
+  .faint { stroke: #3a5a4c; stroke-width: 5; stroke-linecap: round; }
+  .route { stroke: #5ee6a8; stroke-width: 5; stroke-linecap: butt; }
+  .pin.a { fill: #fff; stroke: #5ee6a8; stroke-width: 3; }
+  .pin.b { fill: #ff6f61; }
+}

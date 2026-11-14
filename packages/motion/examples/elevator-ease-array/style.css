@@ -1,0 +1,9 @@
+/* A building outline with an elevator shaft; floor 0 is the bottom */
+[data-example='motion/elevator-ease-array'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .building { display: flex; gap: var(--space-2); align-items: flex-start; }
+  .shaft { position: relative; width: 56px; height: 160px; border: 2px solid var(--border); border-radius: 6px; background: var(--bg-surface); overflow: hidden; }
+  .cab { position: absolute; left: 6px; right: 6px; bottom: 2px; height: 36px; border-radius: 4px; background: #f0c05a; display: flex; gap: 2px; padding: 3px; }
+  .cab i { flex: 1; background: #6b5a2a; border-radius: 2px; }
+  ol { margin: 0; padding: 0; list-style: none; height: 160px; display: flex; flex-direction: column; justify-content: space-around; font-size: 0.75rem; color: var(--fg-3); }
+}

@@ -1,0 +1,8 @@
+/* Welcome card: avatar, heading, copy, button */
+[data-example='motion/welcome-card-entrance'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .welcome { width: min(100%, 230px); padding: var(--space-4); border-radius: 16px; background: var(--bg-surface); border: 1px solid var(--border); text-align: center; display: flex; flex-direction: column; align-items: center; gap: var(--space-2); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); }
+  .avatar { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; color: #fff; background: linear-gradient(135deg, #7c5cff, #ff6fb5); }
+  h3 { margin: 0; font-size: 1rem; color: var(--fg-1); }
+  p { margin: 0; font-size: 0.78rem; color: var(--fg-2); }
+}

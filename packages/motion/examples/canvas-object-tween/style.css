@@ -1,0 +1,5 @@
+/* A canvas on a dark panel */
+[data-example='motion/canvas-object-tween'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  canvas { border-radius: 12px; background: #11131c; border: 1px solid var(--border); cursor: pointer; max-width: 100%; }
+}

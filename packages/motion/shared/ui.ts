@@ -15,6 +15,12 @@
 // - scopeMotion matchMedia and window-level resize()/scroll() read the window: use the iframe too.
 // - CSS is global; no @keyframes (the build fails). Animate with Motion.
 // - A card is 260x200 and must not fetch or play sound.
+// - The full view's mount element is display:block (`.sc-stage-full > .sc-mount`, specificity 0,2,0).
+//   To centre content there, write `&&& { display: flex; flex-direction: column; align-items: center; }`
+//   as the first rule inside the example's scoped block.
+// - animate(obj, { v: target }) is skipped as already finished when target equals the current value.
+//   That includes type: 'inertia', which ignores the target: pass any value that differs (current + 1).
+// - Not verified that `motion/mini` animations join a scope: keep their controls and stop() them yourself.
 
 export interface Panel {
   el: HTMLElement;
