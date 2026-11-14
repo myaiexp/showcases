@@ -1,0 +1,43 @@
+/* Read the reason a request failed: the sign-up form */
+[data-example='wretch/parse-error-bodies'] {
+  .form {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-surface);
+    padding: 6px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .banner {
+    color: var(--fg-2);
+  }
+  .banner[data-bad='yes'] {
+    color: var(--red);
+    background: var(--red-bg);
+    border-radius: 4px;
+    padding: 1px 4px;
+  }
+  .field {
+    display: grid;
+    grid-template-columns: 5em 1fr;
+    gap: 0 8px;
+  }
+  .lab {
+    color: var(--fg-3);
+  }
+  .err {
+    grid-column: 2;
+    color: var(--red);
+  }
+  .field[data-bad='yes'] .val {
+    color: var(--red);
+  }
+  .err:empty {
+    display: none;
+  }
+  .wr-card .form {
+    padding: 3px 6px;
+    gap: 2px;
+  }
+}

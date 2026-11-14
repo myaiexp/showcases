@@ -40,6 +40,14 @@
 //   addon falls back silently (the callback is never called): check for zero calls and say so.
 // - `.perfs()` entries are named after the URL, and the callback map and `clearMeasures` are shared
 //   page-wide: give each mount its own query (`?r=<id>`) so cards do not take each other's entries.
+// - RECIPES: the multipart recipe sends `metadata: {...}` with no option, so the server gets "[object Object]";
+//   `recursive: true` unpacks it but walks into the File too and drops it (a File has no own keys); `recursive: ['avatar']`
+//   keeps both. The retry recipe's `delayRamp: (delay) => delay * 2` never grows (it is handed the base delay every time):
+//   use `delay * 2 ** (attempts - 1)`. The snake/camel recipe has its two helpers the wrong way round (it turns the outgoing
+//   body camel and the answer snake): the app wants camelToSnake going out, snakeToCamel coming back. `redirect: 'manual'`
+//   gives a real browser an opaque answer (status 0, no Location), so that recipe only works where the 302 is visible.
+// - A catcher's return value replaces the whole result, whatever resolver the caller chained: a 401 catcher that replays
+//   with `.json()` hands an object to a caller that asked for `.text()`.
 // - `.onDownload()` / `.progress()` follow the body as it is read: the examples end in `.blob()` (not tried with `.res()`).
 // - README § Limitations' `dedupeHeaders` calls `headers.raw()`, which only Node's fetch has: browsers throw. In a
 //   middleware `opts.headers` is wretch's plain object (two keys for "content-type" and "Content-Type"), so group
