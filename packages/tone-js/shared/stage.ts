@@ -43,6 +43,8 @@ import { runLive } from './stage-live.ts';
  * - A monophonic synth throws when two notes start at the same time (quantized or "@" hits
  *   landing together): use a PolySynth or drop the duplicate.
  * - Signals connected into a Param add up: an idle Scale still adds its minimum.
+ * - OnePoleFilter (inside LowpassCombFilter, PluckSynth, Follower) is unstable above
+ *   sampleRate / π: about 7 kHz at the 22050 Hz card rate. Keep dampening and cutoffs below.
  * - Tone.Analyser, Meter and friends work live: the stage itself taps the Destination
  *   with an Analyser for the scope, so connecting another one there is fine.
  */

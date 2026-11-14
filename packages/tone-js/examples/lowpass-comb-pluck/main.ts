@@ -7,7 +7,8 @@ import { toneStage } from '../../shared/stage.ts';
 import { keyboard } from '../../shared/widgets.ts';
 
 const NOTES = ['E2', 'G2', 'A2', 'C3', 'D3', 'C3', 'A2', 'G2'];
-const DAMPENING = { bright: 8000, warm: 2000, dull: 600 } as const;
+// Cards render at 22050 Hz, where the one-pole dampening filter goes unstable above ~7 kHz.
+const DAMPENING = { bright: 6000, warm: 2000, dull: 600 } as const;
 
 interface Pluck extends Playable {
   noise: Tone.NoiseSynth;
