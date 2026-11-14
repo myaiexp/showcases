@@ -31,7 +31,7 @@ const mount: Mount = (el, ctx) => {
   const [left, right] = columns(stage.root, 3, 2);
   const view = tableView(stage, left!, {
     table: db.friends,
-    columns: [{ field: 'id', width: '3.6em' }, 'name', { field: 'age', width: '4.4em' }],
+    columns: [{ field: 'id', width: '2.6em' }, 'name', { field: 'age', width: '3.4em' }],
   });
   const out = resultPanel(right!);
   say.set('An empty table, declared in one line.', "db.version(1).stores({ friends: 'id, name, age' })");
