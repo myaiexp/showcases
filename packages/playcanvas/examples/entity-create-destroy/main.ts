@@ -1,4 +1,4 @@
-// Creating and destroying entities: addChild, the destroy event, removeChild versus destroy
+// Creating and destroying entities: addChild, the destroy event, removeChild
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

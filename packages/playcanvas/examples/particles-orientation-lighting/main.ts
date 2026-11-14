@@ -1,4 +1,4 @@
-// Particle orientation, particleNormal and lighting: billboards, fixed planes and lit puffs
+// Particle orientation, particleNormal and lighting: billboards, planes, puffs
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene } from '../../shared/components.ts';

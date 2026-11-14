@@ -1,4 +1,4 @@
-// Particle timing: rate, rate2, lifetime, numParticles, loop, autoPlay and preWarm
+// Particle timing: rate, rate2, lifetime, numParticles, loop, autoPlay, preWarm
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene } from '../../shared/components.ts';

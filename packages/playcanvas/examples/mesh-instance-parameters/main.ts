@@ -1,4 +1,4 @@
-// MeshInstance.setParameter: one shared material and mesh, a different tint uniform per instance
+// MeshInstance.setParameter: one shared material, a different tint per instance
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera } from '../../shared/graphics-basics.ts';

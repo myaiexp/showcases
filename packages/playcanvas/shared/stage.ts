@@ -79,9 +79,18 @@ export async function createStage(el: HTMLElement, { preview }: MountContext, op
       // alive until garbage collection, and a page only gets about 16 of them. Six
       // cards mount and unmount as the reader scrolls, so release it now.
       const gl = device.isWebGL2 ? canvas.getContext('webgl2') : null;
-      app.destroy();
-      gl?.getExtension('WEBGL_lose_context')?.loseContext();
-      canvas.remove();
+      try {
+        app.destroy();
+      } catch (err) {
+        // A listener that throws during destroy (an asset or entity event, say) leaves the
+        // app half torn down but still scheduling frames, and every frame then throws.
+        // Cancel the pending frame so the loop stops, and let the host report the error.
+        cancelAnimationFrame(app.frameRequestId);
+        throw err;
+      } finally {
+        gl?.getExtension('WEBGL_lose_context')?.loseContext();
+        canvas.remove();
+      }
     },
   };
 }

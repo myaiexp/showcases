@@ -1,4 +1,4 @@
-// AppBase runs only the component systems you list: addComponent returns null for the rest
+// AppBase runs only the component systems you list; addComponent returns null
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createBaseApp } from '../../shared/appbase.ts';

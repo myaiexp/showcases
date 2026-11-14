@@ -1,4 +1,4 @@
-// Sound component slots: loop, overlap, start time and duration, volume and pitch
+// Sound component slots: loop, overlap, start time, duration, volume and pitch
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createSoundAssets, join, loadAudio, note } from '../../shared/audio.ts';

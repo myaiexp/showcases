@@ -1,4 +1,4 @@
-// Clustered lighting: hundreds of omni and spot lights evaluated from a 3D grid of cells
+// Clustered lighting: hundreds of omni and spot lights from a 3D grid of cells
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addShape } from '../../shared/graphics-basics.ts';

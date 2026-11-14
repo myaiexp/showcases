@@ -1,4 +1,4 @@
-// PlayCanvas: open-source WebGL and WebGPU 3D engine, used here straight from npm
+// PlayCanvas: open-source WebGL and WebGPU 3D engine, used straight from npm
 import { definePackage } from '@/types.ts';
 
 export default definePackage({

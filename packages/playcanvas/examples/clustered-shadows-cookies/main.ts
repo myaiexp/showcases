@@ -1,4 +1,4 @@
-// Clustered shadows and cookies: the shadow type, shadow atlas and atlas split are scene-wide
+// Clustered shadows and cookies: shadow type and atlas settings are scene-wide
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addShape } from '../../shared/graphics-basics.ts';
@@ -104,9 +104,9 @@ const mount: Mount = async (el, ctx) => {
 
   return () => {
     orbit.dispose();
-    stage.dispose();
     star.destroy();
     grille.destroy();
+    stage.dispose();
   };
 };
 

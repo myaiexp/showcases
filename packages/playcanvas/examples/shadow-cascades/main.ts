@@ -1,4 +1,4 @@
-// Shadow cascades, distance and resolution: one directional light covering a long avenue
+// Shadow cascades, distance and resolution: one directional light, long avenue
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addShape, addSun } from '../../shared/graphics-basics.ts';

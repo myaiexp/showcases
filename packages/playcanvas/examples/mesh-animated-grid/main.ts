@@ -1,4 +1,4 @@
-// Updating a mesh every frame: new positions and normals, one update() call, streams kept
+// Updating a mesh every frame: new positions and normals, one update() call
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addSun } from '../../shared/graphics-basics.ts';
@@ -92,8 +92,8 @@ const mount: Mount = async (el, ctx) => {
 
   return () => {
     orbit.dispose();
-    stage.dispose();
     checker.destroy();
+    stage.dispose();
   };
 };
 

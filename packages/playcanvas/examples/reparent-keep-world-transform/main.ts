@@ -1,4 +1,4 @@
-// Parenting: addChild keeps the local transform; saving world position and rotation keeps the world one
+// Parenting: addChild keeps the local transform; saving world pose keeps world
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

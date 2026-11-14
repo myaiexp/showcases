@@ -1,4 +1,4 @@
-// Particle scaleGraph, colorGraph and alphaGraph: Curve and CurveSet over a particle's life
+// Particle scaleGraph, colorGraph and alphaGraph: Curve and CurveSet
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene } from '../../shared/components.ts';

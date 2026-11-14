@@ -1,4 +1,4 @@
-// Physical exposure: aperture, shutter and sensitivity with scene.physicalUnits on
+// Physical exposure: aperture, shutter and sensitivity with physicalUnits on
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addShape, addSun } from '../../shared/graphics-basics.ts';

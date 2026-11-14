@@ -1,4 +1,4 @@
-// Changing a mesh's vertex format: clear(), set every stream again, reassign the mesh
+// Changing a mesh's vertex format: clear(), set every stream, reassign the mesh
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addSun } from '../../shared/graphics-basics.ts';

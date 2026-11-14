@@ -1,4 +1,4 @@
-// The standalone guide's spinning cube: AppBase, AppOptions and a WebGPU-first device
+// The standalone guide's spinning cube: AppBase, AppOptions, WebGPU-first
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import './style.css';

@@ -1,4 +1,4 @@
-// A hierarchy of orbit entities: only two entities turn, the earth and moon are carried along
+// A hierarchy of orbit entities: only two turn, the earth and moon ride along
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene, material } from '../../shared/components.ts';

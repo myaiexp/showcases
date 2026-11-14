@@ -1,4 +1,4 @@
-// translate against translateLocal and rotate against rotateLocal, per frame, with dt
+// translate against translateLocal and rotate against rotateLocal, with dt
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

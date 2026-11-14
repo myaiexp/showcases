@@ -1,4 +1,4 @@
-// MeshInstance.renderStyle draws one mesh as solid triangles, a wireframe or points; visible hides it
+// MeshInstance.renderStyle draws solid, wireframe or points; visible hides it
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addSun, colorMaterial } from '../../shared/graphics-basics.ts';

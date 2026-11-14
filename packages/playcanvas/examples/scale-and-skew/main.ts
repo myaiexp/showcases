@@ -1,4 +1,4 @@
-// Scale multiplies everything below an entity; non-uniform scale over a rotated child skews it
+// Scale multiplies everything below an entity; non-uniform scale skews a child
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

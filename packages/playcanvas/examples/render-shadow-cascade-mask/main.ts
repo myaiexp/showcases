@@ -1,4 +1,4 @@
-// Render shadowCascadeMask: which cascades of a directional light a mesh casts into
+// Render shadowCascadeMask: which directional light cascades a mesh casts into
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addShape, createScene, material } from '../../shared/components.ts';

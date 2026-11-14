@@ -1,4 +1,4 @@
-// shadowBias and normalOffsetBias against acne and peter panning, plus shadowIntensity
+// shadowBias and normalOffsetBias against acne and peter panning, intensity
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addCanvasLabels, addGround, addShape, addSun } from '../../shared/graphics-basics.ts';

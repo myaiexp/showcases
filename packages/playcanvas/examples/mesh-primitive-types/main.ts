@@ -1,4 +1,4 @@
-// mesh.update(type): one ring of vertices drawn as points, lines, strips, loops, fans and triangles
+// mesh.update(type): one ring of vertices drawn as points, lines, strips, fans
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera } from '../../shared/graphics-basics.ts';

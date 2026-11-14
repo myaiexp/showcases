@@ -1,4 +1,4 @@
-// A camera renders only the layers in its layers list: two views of one scene differ
+// A camera renders only the layers in its layers list, so two views differ
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addCanvasLabels, addGround, addShape, addSun } from '../../shared/graphics-basics.ts';

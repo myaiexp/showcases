@@ -1,4 +1,4 @@
-// Split screen: each camera takes a normalized rect of the screen and renders by priority
+// Split screen: each camera takes a normalized rect of the screen, by priority
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addGround, addSceneryRing, addShape, addSun } from '../../shared/graphics-basics.ts';

@@ -1,4 +1,4 @@
-// The camera's read-only frustum answers containsPoint, the same test culling uses
+// The camera's read-only frustum answers containsPoint, as culling does
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { addCamera, addShape, addSun, colorMaterial } from '../../shared/graphics-basics.ts';

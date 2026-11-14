@@ -1,4 +1,4 @@
-// Components: addComponent, the entity.render shortcut, enabled, removeComponent
+// Components: addComponent, the entity.render shortcut, enabled, remove
 import * as pc from 'playcanvas';
 import type { Mount } from '@/types.ts';
 import { createScene, material } from '../../shared/components.ts';
