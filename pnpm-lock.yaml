@@ -86,6 +86,9 @@ importers:
       '@luma.gl/core':
         specifier: 9.4.2
         version: 9.4.2
+      '@luma.gl/effects':
+        specifier: 9.4.2
+        version: 9.4.2(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2))
       '@luma.gl/engine':
         specifier: 9.4.2
         version: 9.4.2(@luma.gl/core@9.4.2)(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2))
@@ -782,6 +785,11 @@ packages:
 
   '@luma.gl/core@9.4.2':
     resolution: {integrity: sha512-VFol6FUSHQeYR40NrkCM/mkP5DX7aI8pcDewxI8DBjtrcP4+ZJiJwnxWZnsMBzM4RuuvmDoHkPWCxj6Ob9yo+w==}
+
+  '@luma.gl/effects@9.4.2':
+    resolution: {integrity: sha512-BrTkLZgJssqYvu8K/stvVeJHZRjutG+90Q+dXE2UattNcFoXwKJY4QAiMk9AzB/WuZxvDgWTN5Jp4YkRqKQn7Q==}
+    peerDependencies:
+      '@luma.gl/shadertools': ~9.4.0
 
   '@luma.gl/engine@9.4.2':
     resolution: {integrity: sha512-gBAcn+b1jOwE4pDF5zbuzMxCa/KGY3Q2Gq0gNUPU1AZHNk4aDgOEQaY2sqMsaoGHkDXB+pxneJQPw5c6Q5mnHA==}
@@ -4054,6 +4062,12 @@ snapshots:
       '@probe.gl/log': 4.1.2
       '@probe.gl/stats': 4.1.2
       '@types/offscreencanvas': 2019.7.3
+
+  '@luma.gl/effects@9.4.2(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2))':
+    dependencies:
+      '@luma.gl/shadertools': 9.4.2(@luma.gl/core@9.4.2)
+      '@math.gl/core': 4.1.0
+      '@math.gl/types': 4.1.0
 
   '@luma.gl/engine@9.4.2(@luma.gl/core@9.4.2)(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2))':
     dependencies:
