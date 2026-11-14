@@ -5,8 +5,8 @@ import * as Tone from 'tone';
  * The docs load mp3s from tonejs.github.io; cards may not fetch, so these "recordings" are
  * rendered with Tone.Offline instead. It works inside a card render too: Tone.Offline nests,
  * saving and restoring whichever context is current. Each result is cached per sample
- * rate, and every call returns a fresh ToneAudioBuffer around the cached AudioBuffer, so an
- * example may dispose what it gets.
+ * rate, and every call returns a private copy, so an example may reverse, edit or dispose
+ * what it gets without changing the sound for any other example.
  */
 export type SampleName = 'drums' | 'voice' | 'melody' | 'chord' | 'gong';
 
@@ -97,5 +97,8 @@ export async function sample(name: SampleName): Promise<Tone.ToneAudioBuffer> {
     cache.set(key, pending);
     pending.catch(() => cache.delete(key));
   }
-  return new Tone.ToneAudioBuffer(await pending);
+  const cached = new Tone.ToneAudioBuffer(await pending);
+  const copy = cached.slice(0);
+  cached.dispose();
+  return copy;
 }
