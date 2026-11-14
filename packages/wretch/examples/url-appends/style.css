@@ -1,0 +1,15 @@
+/* Build an address piece by piece: the address bar */
+[data-example='wretch/url-appends'] {
+  .address {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--bg-surface);
+    padding: 3px 10px;
+    color: var(--fg-3);
+    word-break: break-all;
+  }
+  .piece {
+    color: var(--fg-1);
+    border-radius: 4px;
+  }
+}

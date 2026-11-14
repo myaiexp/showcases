@@ -1,0 +1,61 @@
+/* Screen, key/value list and columns shared by Wretch examples */
+.wr-screen,
+.wr-kv {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-surface);
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+.wr-screen-title,
+.wr-kv-title {
+  color: var(--fg-3);
+  font-size: 0.85em;
+}
+.wr-screen-body {
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--tone, var(--fg-1));
+}
+.wr-kv-list {
+  display: flex;
+  flex-direction: column;
+}
+.wr-kv-row {
+  display: grid;
+  grid-template-columns: minmax(3em, max-content) minmax(0, 1fr);
+  gap: 8px;
+}
+.wr-kv-k {
+  color: var(--cyan);
+}
+.wr-kv-v {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+.wr-kv-note {
+  color: var(--fg-3);
+}
+.wr-cols {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+.wr-card .wr-cols {
+  gap: 4px;
+}
+.wr-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.wr-card .wr-screen,
+.wr-card .wr-kv {
+  padding: 2px 6px;
+}

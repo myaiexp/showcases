@@ -12,9 +12,20 @@
 //   `server.fetch` reads method, headers and body from either shape.
 // - Middleware instances (dedupe, throttlingCache) keep their state in a closure. Build them
 //   inside mount, never at module level, or two cards share one cache.
+// - README § Chaining writes `.json({...}).post("/users")` and `.query(...)` without the addon. In 3.0.9
+//   `.post(body, url)` takes the body first, so `.post("/users")` sends the string "/users" as the body
+//   and the request goes to the base URL; and `.query()` needs QueryStringAddon. Put the path in
+//   `wretch(url)` or pass `.post(body, "/users")`.
+// - `.toFetch()` ends in `.res()`: a catcher that returns nothing makes the fetch-like function resolve
+//   with `undefined`, so code that expects a Response breaks. Return `error.response` from the catcher.
+// - `.resolve(r => r.json())` makes every call resolve as `unknown`: cast the result at the call site.
 // - The perfs addon reads Performance entries named after the request URL, which an in-memory
 //   answer never creates. `server` writes a `performance.measure` under that name, so `.perfs()`
 //   fires. perfs calls `performance.clearResourceTimings()`, which is page-wide.
+// - An object body with a non-JSON Content-Type set first (`.content('text/plain').post({…})`) is
+//   not stringified by wretch (core.ts `fetch`): fetch gets the object and writes "[object Object]".
+//   `server` shows exactly that as a text body. Options like `cache` or a `context` object never
+//   become headers: read them from `req.init`.
 import type { MountContext } from '@/types.ts';
 import './wretch.css';
 

@@ -1,0 +1,21 @@
+/* Read the error the server explained: the alert box */
+[data-example='wretch/custom-error'] {
+  .alert {
+    border: 1px solid var(--red);
+    border-radius: 6px;
+    background: var(--red-bg);
+    padding: 4px 8px;
+  }
+  .alert[data-on='no'] {
+    border-color: var(--border);
+    background: var(--bg-surface);
+    color: var(--fg-3);
+  }
+  .alert-code {
+    color: var(--red);
+    font-size: 0.85em;
+  }
+  .alert[data-on='no'] .alert-code {
+    color: var(--fg-3);
+  }
+}

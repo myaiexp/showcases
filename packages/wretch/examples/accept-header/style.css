@@ -1,0 +1,30 @@
+/* Ask for a format: the answer as the app shows it */
+[data-example='wretch/accept-header'] {
+  .answer {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-surface);
+    padding: 4px 8px;
+    min-height: 3em;
+    overflow: hidden;
+  }
+  .answer-title {
+    color: var(--fg-3);
+    font-size: 0.85em;
+  }
+  .answer table {
+    border-collapse: collapse;
+  }
+  .answer td {
+    padding: 0 12px 0 0;
+  }
+  .answer pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+    font: inherit;
+  }
+  .wr-card .answer {
+    max-height: 62px;
+  }
+}
