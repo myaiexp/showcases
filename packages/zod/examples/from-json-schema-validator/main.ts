@@ -60,9 +60,11 @@ const mount: Mount = (el, ctx) => {
     }
     status.textContent = '';
     const results = SAMPLES.map((input) => ({ input, result: validator.safeParse(input) }));
-    rows.show(stage.preview ? results.slice(0, 6) : results);
-    const passed = results.filter((r) => r.result.success).length;
-    stage.say(`${plural(passed, 'sample')} of ${results.length} pass: the rules came from plain JSON text`, passed === results.length ? 'ok' : 'warn');
+    // A card shows six rows, so it counts the same six.
+    const shown = stage.preview ? results.slice(0, 6) : results;
+    rows.show(shown);
+    const passed = shown.filter((r) => r.result.success).length;
+    stage.say(`${plural(passed, 'sample')} of ${shown.length} pass: the rules came from plain JSON text`, passed === shown.length ? 'ok' : 'warn');
   };
   area?.addEventListener('input', rebuild);
   rebuild();

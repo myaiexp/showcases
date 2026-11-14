@@ -34,7 +34,11 @@ const mount: Mount = (el, ctx) => {
       view.show(input, runStages(input, STAGES));
       const r = Departure.safeParse(input);
       if (r.success) stage.say('✓ A real date from 2026 on', 'ok');
-      else stage.say(`✗ The transform made something, and a later stage said no: ${r.error.issues[0]!.message.replace(/^Invalid input: /, '')}`, 'bad');
+      else {
+        // An invalid_type issue comes from z.date(); anything else from the refine after it.
+        const iss = r.error.issues[0]!;
+        stage.say(iss.code === 'invalid_type' ? '✗ z.date() refused the Invalid Date the transform made' : `✗ The last check refused the date: ${iss.message}`, 'bad');
+      }
     },
     { editor: stage.root, ms: 2800 },
   );
