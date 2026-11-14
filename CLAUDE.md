@@ -73,8 +73,10 @@ GitHub Pages. No service on the VPS.
   example renders (first state and every playground variant). It catches syntax, not layout.
   Live-config examples share `packages/mermaid/shared/controls.ts` (`liveDiagram`).
 - `vite.config.ts` resolves the bare `three` imported by three's addons to `three/webgpu`,
-  so the Three.js gallery keeps one core. A WebGL-based package that uses three's addons
-  needs that plugin rethought.
+  so the Three.js gallery keeps one core. Spark (WebGL) imports the `Pass.js` addon and so
+  gets `three/webgpu` too; it works because both builds share `three.core.js`.
+- Spark examples must not fetch in cards: the only captured splat is the docs' `butterfly.spz`,
+  loaded in full views, with `pushButterfly` as the card stand-in (`packages/spark/shared/`).
 - Babylon.js loads Havok and Recast WASM once per page through
   `packages/babylon-js/shared/{havok,recast}.ts` (Vite's dep bundling moves Havok's .wasm).
   Babylon has page-wide registries (glTF extensions, loader plugins, `RegisterMaterialPlugin`,
