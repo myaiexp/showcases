@@ -42,8 +42,12 @@ function same(a: unknown, b: unknown): boolean {
 export function diffMarks(input: unknown, output: unknown): { input: Map<string, Mark>; output: Map<string, Mark> } {
   const inMarks = new Map<string, Mark>();
   const outMarks = new Map<string, Mark>();
+  // Cyclic data (a category listing itself) would recurse forever: walk each pair once.
+  const seen = new WeakSet<object>();
   const walk = (a: unknown, b: unknown, path: PropertyKey[]): void => {
     if (plainObject(a) && plainObject(b) && Array.isArray(a) === Array.isArray(b)) {
+      if (seen.has(a)) return;
+      seen.add(a);
       const keys = new Set<PropertyKey>([...Reflect.ownKeys(a), ...Reflect.ownKeys(b)]);
       if (Array.isArray(a)) keys.delete('length');
       for (const k of keys) {

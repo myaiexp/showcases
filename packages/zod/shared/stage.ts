@@ -25,6 +25,13 @@
 // - multipleOf(0.05) is float-safe: 0.1 + 0.2 passes.
 // - Matrix columns are ~60px in a card: draw only ✓/✗ there, with short column titles.
 // - For caxi checks of the gallery, scroll to the bottom first: sections render progressively.
+// - Plain .extend() that overwrites a key on a refined object throws ("Use .safeExtend()");
+//   .partial() and z.deepPartial() throw on a refined object too. .safeExtend's refusal of an
+//   incompatible key is type-only: at runtime it is accepted.
+// - Cyclic input parses into a new object with the same loop; deep recursion (~2000 levels)
+//   overflows the stack. .required() reports "expected nonoptional, received undefined".
+// - Cards mount slowly in a loaded headless browser: scroll a card into view and wait
+//   several seconds before calling it "not mounted".
 import type { MountContext } from '@/types.ts';
 import './zod.css';
 

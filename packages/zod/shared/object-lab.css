@@ -1,0 +1,5 @@
+/* Object lab: in a card each pane shows its first rows, so tall trees cannot push the result out */
+.ol-lab.zd-stacked .zd-pane-body {
+  max-height: 46px;
+  overflow: hidden;
+}
