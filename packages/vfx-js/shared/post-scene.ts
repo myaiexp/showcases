@@ -1,4 +1,4 @@
-// Post effect scene: a picture and a headline, plus the stage centre in canvas uv
+// Post effect scene (a picture, a headline) and the stage centre in canvas uv
 import type { VFX } from '@vfx-js/core';
 import { picture, type PictureKind } from './pictures.ts';
 import type { Stage } from './stage.ts';

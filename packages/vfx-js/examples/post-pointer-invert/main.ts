@@ -17,7 +17,9 @@ out vec4 outColor;
 void main() {
     vec2 uv = (gl_FragCoord.xy - offset) / resolution;
     vec4 color = texture(src, uv);
-    outColor = vec4(mix(color.rgb, 1.0 - color.rgb, amount), color.a);
+    // Output is premultiplied alpha: invert against a, not 1, or the empty (transparent)
+    // parts of the canvas turn into white light.
+    outColor = vec4(mix(color.rgb, color.a - color.rgb, amount), color.a);
 }
 `;
 

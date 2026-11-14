@@ -18,7 +18,9 @@ out vec4 outColor;
 void main() {
     vec2 uv = (gl_FragCoord.xy - offset) / resolution;
     float shown = step(uv.x, enterTime / 1.5);
-    uv.y += leaveTime * leaveTime * 2.0;
+    // While the element is in view leaveTime is hugely negative (no leave yet): clamp it.
+    float out_ = max(leaveTime, 0.0);
+    uv.y += out_ * out_ * 2.0;
     vec4 color = uv.y > 1.0 ? vec4(0) : texture(src, uv);
     outColor = color * shown;
 }

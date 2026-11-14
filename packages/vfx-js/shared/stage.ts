@@ -22,6 +22,15 @@
 //   only after setParams; ParticleEffect's params is read-only (use setParam, and lower count
 //   from its default of ~1M); AsciiEffect needs updateAtlas() after a preset or chars change;
 //   LightStreakEffect needs pad >= length (both 300 by default, too big for a card).
+// - Custom effects: one without outputRect after a padded one keeps the padded size; as a
+//   post effect dims.element is the whole (window-sized) canvas, so px-scaled amounts grow.
+// - The leaveTime uniform is not "seconds since leaving" until the element has left: it is
+//   hugely positive before the first enter and hugely negative while in view. Clamp it.
+// - A function uniform may be read more than once per frame: return state, never consume it
+//   on read (multipass-ripple-sim holds a drop for 50 ms).
+// - Transitions: the transitions site documents keepPlaying, which 1.6.0 does not have (the
+//   vendored TRANSITION.md and types do not either). waitFor and keepWrapped are container
+//   options only. After destroy(), run() and show() still change the DOM but cut.
 // - ParticleExplodeEffect hides the element after trigger() until reset(); isDone() ends a burst.
 // - Several WebGL examples in one page under software rendering (headless Chrome) stall it:
 //   check cards a few at a time.

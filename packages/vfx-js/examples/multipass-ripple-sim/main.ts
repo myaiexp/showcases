@@ -67,26 +67,27 @@ const mount: Mount = async (el, ctx) => {
   const vfx = stage.own(new VFX({ ...stage.vfxOpts }));
 
   // Drops: from the pointer when it moves over the picture, else a raindrop now and then.
+  // A drop stays in the uniform for 50 ms rather than one read, since uniform functions
+  // may be read more than once per frame.
   let pending: [number, number, number] = [0, 0, 0];
+  let pendingAt = 0;
   let lastPointer = 0;
   const onMove = (e: PointerEvent): void => {
     const r = img.getBoundingClientRect();
     const x = (e.clientX - r.left) / r.width;
     const y = 1 - (e.clientY - r.top) / r.height;
     if (x < 0 || x > 1 || y < 0 || y > 1) return;
-    pending = [x, y, 0.6];
-    lastPointer = performance.now();
+    pending = [x, y, 0.3];
+    pendingAt = lastPointer = performance.now();
   };
   window.addEventListener('pointermove', onMove);
   stage.onDispose(() => window.removeEventListener('pointermove', onMove));
   stage.every(500, () => {
-    if (performance.now() - lastPointer > 1500) pending = [Math.random(), Math.random(), 1.5];
+    if (performance.now() - lastPointer < 1500) return;
+    pending = [Math.random(), Math.random(), 0.6];
+    pendingAt = performance.now();
   });
-  const drop = (): [number, number, number] => {
-    const d = pending;
-    pending = [0, 0, 0];
-    return d;
-  };
+  const drop = (): [number, number, number] => (performance.now() - pendingAt < 50 ? pending : [0, 0, 0]);
 
   await vfx.add(img, {
     shader: [
