@@ -36,6 +36,16 @@ export interface Chart {
  * - new VChart() reads the container's size: give it a width and height before the
  *   constructor runs. autoFit (default true) then follows container resizes itself.
  * - Calling a method on a released instance throws; timers must stop before release().
+ * - updateSpec rebuilds component instances: look a component up on each tick, never cache it.
+ * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
+ * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
+ * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
+ *   tooltip is appended to document.body.
+ * - setDimensionIndex shows the tooltip but no polar crosshair (radar angle axis).
+ * - Preview cards have no pointer input. Pointer events dispatched on the canvas draw
+ *   brushes, but a synthetic pointermove does not hover; drive hover state through the API.
+ * - A dataZoom or scrollBar window moves from code through
+ *   getChart().getComponentsByKey('dataZoom')[0].setStartAndEnd(a, b) (package types only).
  *
  * What Getting_Started.md describes: a container with a size, `new VChart(spec, { dom })`,
  * then renderSync(). release() destroys the instance (api/vchart.md § Release).
