@@ -1,100 +1,84 @@
-// Messy CSV parsed with toggleable Papa Parse options, shown as JSON
+// Messy CSV that breaks naive readers (quoted commas, line breaks, quotes) parsed right
 import Papa from 'papaparse';
 import type { Mount } from '@/types.ts';
-import './style.css';
+import { select } from '../../shared/controls.ts';
+import { csvEditor, csvView } from '../../shared/csv-view.ts';
+import { flash, flow } from '../../shared/panes.ts';
+import { createStage } from '../../shared/stage.ts';
+import { dataTable } from '../../shared/table.ts';
 
-const MESSY_CSV = `product;price;note
-"Widget, deluxe";19.99;"Top seller"
-"Gadget";5;"Has a
-line break"
-"Bundle ""Pro""";49;cheap`;
+interface Trap {
+  name: string;
+  text: string;
+  /** The cell that would break a naive reader: row index and column name. */
+  cell: [number, string];
+  say: string;
+}
 
-const DELIMS: readonly [string, string][] = [
-  ['', 'auto-detect'],
-  [',', 'comma ,'],
-  [';', 'semicolon ;'],
-  ['\t', 'tab'],
-  ['|', 'pipe |'],
+const TRAPS: Trap[] = [
+  {
+    name: 'comma inside a value',
+    text: 'name,address\nAda,"12 Mill Lane, Leeds"\nBruno,"3 Rue Neuve, Lyon"',
+    cell: [0, 'address'],
+    say: 'The comma inside quotes stays part of the address.',
+  },
+  {
+    name: 'line break inside a value',
+    text: 'product,note\nMug,"Blue\nhandle chipped"\nTeapot,ok',
+    cell: [0, 'note'],
+    say: 'The line break inside quotes stays in one cell (↵).',
+  },
+  {
+    name: 'quotes inside a value',
+    text: 'title,rating\n"The ""Big"" Day",4\n"Say ""hi""",5',
+    cell: [0, 'title'],
+    say: 'Doubled quotes "" turn back into one quote mark.',
+  },
+  {
+    name: 'semicolons, not commas',
+    text: 'city;price\nGraz;"4,50"\nCork;"3,20"',
+    cell: [0, 'price'],
+    say: 'Papa spots the ; separator, so "4,50" stays one value.',
+  },
 ];
 
-const pill = (label: string, value: string, err = false): HTMLSpanElement => {
-  const span = document.createElement('span');
-  span.className = err ? 'pill err' : 'pill';
-  const b = document.createElement('b');
-  b.textContent = value;
-  span.append(label, b);
-  return span;
-};
+const mount: Mount = (el, ctx) => {
+  const stage = createStage(el, ctx, { hint: 'Pick a trap, or edit the text to make your own.' });
+  const f = flow(stage, { from: 'CSV text', via: 'Papa.parse(text, { header: true })', to: 'Table' });
 
-const checkbox = (text: string): { label: HTMLLabelElement; box: HTMLInputElement } => {
-  const label = document.createElement('label');
-  label.className = 'toggle';
-  const box = document.createElement('input');
-  box.type = 'checkbox';
-  box.checked = true;
-  label.append(box, ` ${text}`);
-  return { label, box };
-};
+  const parse = (text: string, trap?: Trap): string => {
+    const result = Papa.parse<Record<string, unknown>>(text, { header: true, skipEmptyLines: true });
+    const [row, col] = trap?.cell ?? [-1, ''];
+    f.to.show(
+      dataTable(result.data, {
+        fields: result.meta.fields,
+        cellClass: (_v, i, c) => (i === row && c === col ? 'pp-hit' : undefined),
+      }),
+    );
+    const hit = f.to.body.querySelector('td.pp-hit');
+    if (hit) flash(hit);
+    if (trap) stage.say(trap.say, 'ok');
+    else stage.say(`${result.data.length} rows, ${result.errors.length} errors, separator "${result.meta.delimiter}"`);
+    return result.meta.delimiter;
+  };
 
-const mount: Mount = (stage, { preview }) => {
-  const el = document.createElement('div');
-  el.className = 'root';
-  stage.append(el);
-  const header = checkbox('header');
-  const typing = checkbox('dynamicTyping');
-  const skip = checkbox('skipEmptyLines');
-  const delim = document.createElement('select');
-  delim.className = 'ctl-select';
-  for (const [value, label] of DELIMS) delim.add(new Option(label, value));
-
-  const input = document.createElement('textarea');
-  input.className = 'csv-input';
-  input.spellcheck = false;
-  input.value = MESSY_CSV;
-  const meta = document.createElement('div');
-  meta.className = 'meta-bar';
-  const out = document.createElement('pre');
-  out.className = 'json-out';
-
-  if (!preview) {
-    const row = document.createElement('div');
-    row.className = 'config-row';
-    const field = document.createElement('div');
-    field.className = 'field';
-    const fl = document.createElement('label');
-    fl.textContent = 'delimiter';
-    field.append(fl, delim);
-    row.append(header.label, typing.label, skip.label, field);
-    el.append(row, input);
-  }
-  el.append(meta, out);
-
-  const render = (): void => {
-    const result = Papa.parse(input.value, {
-      header: header.box.checked,
-      dynamicTyping: typing.box.checked,
-      skipEmptyLines: skip.box.checked,
-      delimiter: delim.value,
+  if (stage.preview) {
+    stage.cycle(TRAPS, 3200, (trap) => {
+      const delimiter = parse(trap.text, trap);
+      f.from.show(csvView(trap.text, { delimiter }));
     });
-    const used = result.meta.delimiter === '\t' ? '\\t' : result.meta.delimiter;
-    const pills = [
-      pill('', `${result.data.length} records`),
-      pill('detected delimiter ', used || '?'),
-    ];
-    if (result.errors.length) pills.push(pill('', `${result.errors.length} error(s)`, true));
-    meta.replaceChildren(...pills);
-    out.textContent = JSON.stringify(result.data, null, 2);
-  };
+    return stage.dispose;
+  }
 
-  const inputs: EventTarget[] = [header.box, typing.box, skip.box, delim];
-  inputs.forEach((t) => t.addEventListener('change', render));
-  input.addEventListener('input', render);
-  render();
-
-  return () => {
-    inputs.forEach((t) => t.removeEventListener('change', render));
-    input.removeEventListener('input', render);
+  const editor = csvEditor(TRAPS[0]!.text, (text) => editor.paint({ delimiter: parse(text) }));
+  f.from.show(editor.el);
+  const show = (trap: Trap): void => {
+    editor.set(trap.text);
+    editor.paint({ delimiter: parse(trap.text, trap) });
   };
+  select(stage.bar!, 'Trap', TRAPS.map((t) => [t, t.name] as const), show);
+  show(TRAPS[0]!);
+  return stage.dispose;
 };
 
 export default mount;

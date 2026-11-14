@@ -1,0 +1,263 @@
+/* Shared Papa Parse chrome: stage, panes, CSV text colours, typed table, widgets */
+.pp-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-mono);
+}
+.pp-card {
+  height: 100%;
+  padding: 6px 8px;
+  gap: 4px;
+  font-size: 10px;
+  line-height: 1.35;
+}
+.pp-full {
+  font-size: 13px;
+  line-height: 1.5;
+}
+.pp-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  font-size: 13px;
+}
+.pp-bar:empty {
+  display: none;
+}
+.pp-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.pp-bar input[type='text'] {
+  font: inherit;
+  background: var(--bg-surface);
+  color: var(--fg-1);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+.pp-file-input {
+  display: none;
+}
+.pp-scene {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+  flex: 1;
+}
+.pp-card .pp-scene {
+  gap: 4px;
+  overflow: hidden;
+}
+.pp-caption {
+  color: var(--fg-2);
+  min-height: 1.4em;
+}
+.pp-card .pp-caption {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+.pp-caption:empty {
+  display: none;
+}
+.pp-caption[data-tone='ok'] {
+  color: var(--green);
+}
+.pp-caption[data-tone='warn'] {
+  color: var(--orange);
+}
+.pp-caption[data-tone='bad'] {
+  color: var(--red);
+}
+.pp-hint {
+  color: var(--fg-3);
+  font-size: 12px;
+}
+.pp-drop {
+  outline: 2px dashed var(--accent);
+  outline-offset: 4px;
+}
+
+/* --- Before → after --- */
+.pp-flow {
+  display: grid;
+  gap: 4px;
+  min-height: 0;
+  flex: 1;
+}
+.pp-flow-column {
+  grid-template-rows: fit-content(var(--pp-split-pct)) auto minmax(0, 1fr);
+}
+.pp-flow-row {
+  grid-template-columns: minmax(0, var(--pp-split)) auto minmax(0, var(--pp-rest));
+  gap: 12px;
+  align-items: start;
+}
+.pp-full .pp-flow-column {
+  grid-template-rows: auto auto auto;
+}
+.pp-pane {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+}
+.pp-pane-title {
+  color: var(--fg-3);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.pp-pane-body {
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.pp-full .pp-pane-body {
+  overflow: auto;
+  gap: 8px;
+}
+.pp-via {
+  align-self: center;
+  justify-self: center;
+  color: var(--accent-text);
+  white-space: nowrap;
+  font-size: 0.9em;
+}
+.pp-flow-column > .pp-via::before {
+  content: '▼ ';
+}
+.pp-flow-row > .pp-via {
+  padding-top: 2em;
+  white-space: normal;
+  max-width: 16em;
+  text-align: center;
+}
+.pp-flow-row > .pp-via::after {
+  content: ' →';
+}
+
+/* --- CSV text --- */
+.pp-csv {
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 3px 6px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: var(--fg-1);
+  tab-size: 4;
+}
+.pp-full .pp-csv {
+  padding: 8px 10px;
+}
+.pp-line {
+  min-height: 1lh;
+}
+.pp-sep {
+  color: var(--accent-text);
+  background: var(--accent-bg);
+  box-shadow: inset 0 -2px 0 var(--accent);
+  font-weight: 700;
+  border-radius: 2px;
+}
+.pp-quote {
+  color: var(--purple);
+  font-weight: 700;
+}
+.pp-esc {
+  color: var(--purple);
+  background: var(--purple-bg);
+}
+.pp-comment {
+  color: var(--fg-3);
+  font-style: italic;
+}
+.pp-glyph {
+  color: var(--cyan);
+  background: var(--cyan-bg);
+  border-radius: 2px;
+}
+.pp-nl::before {
+  content: attr(data-g);
+  color: var(--fg-3);
+}
+.pp-nl-in::before {
+  color: var(--orange);
+}
+.pp-line.pp-dim {
+  opacity: 0.35;
+}
+.pp-line.pp-strike {
+  text-decoration: line-through;
+  opacity: 0.45;
+}
+.pp-line.pp-bad {
+  background: var(--red-bg);
+}
+.pp-line.pp-hit {
+  background: var(--accent-bg);
+}
+.pp-line.pp-ok {
+  background: var(--green-bg);
+}
+/* The editor: a transparent textarea over the painted layer, same box and font. */
+.pp-csv.pp-editor {
+  padding: 0;
+}
+.pp-editor .pp-layer,
+.pp-editor textarea {
+  padding: 8px 10px;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  tab-size: 4;
+}
+.pp-editor textarea {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  overflow: hidden;
+  background: transparent;
+  color: transparent;
+  caret-color: var(--fg-1);
+  outline: none;
+}
+.pp-editor:focus-within {
+  border-color: var(--accent);
+}
+.pp-editor .pp-nl {
+  display: inline-block;
+  width: 0;
+  overflow: visible;
+}
+.pp-editor .pp-glyph {
+  background: var(--cyan-bg);
+}
+
+.pp-ok {
+  color: var(--green);
+}
+.pp-warn {
+  color: var(--orange);
+}
+.pp-bad {
+  color: var(--red);
+}

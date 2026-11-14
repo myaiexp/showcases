@@ -1,0 +1,20 @@
+/* Column picker: the chips built from meta.fields */
+[data-example='papaparse/meta-fields-column-picker'] {
+  .picker {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    align-items: center;
+  }
+  .chip {
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0 7px;
+    color: var(--fg-3);
+  }
+  .chip.on {
+    color: var(--accent-text);
+    border-color: var(--accent);
+    background: var(--accent-bg);
+  }
+}

@@ -12,5 +12,6 @@ export default definePackage({
   docsUrl: 'https://www.papaparse.com/docs',
   repo: 'https://github.com/mholt/PapaParse',
   added: '2026-06-14',
-  sections: ['Basics'],
+  // The order of the docs page (docs/docs.html), then the FAQ (docs/faq.html).
+  sections: ['Convert CSV to JSON', 'Convert JSON to CSV', 'Parse config', 'Results', 'Extras', 'FAQ'],
 });

@@ -1,0 +1,55 @@
+/* Result examples: the list of parse errors */
+.pp-errs {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-height: 0;
+  overflow: hidden;
+}
+.pp-err {
+  border-left: 3px solid var(--red);
+  background: var(--red-bg);
+  padding: 0 6px;
+  border-radius: 0 3px 3px 0;
+}
+.pp-err b {
+  color: var(--red);
+}
+.pp-err-row,
+.pp-err-msg {
+  color: var(--fg-2);
+}
+.pp-errs-none {
+  color: var(--green);
+}
+.pp-full .pp-err {
+  padding: 3px 8px;
+}
+.pp-sect-title {
+  color: var(--fg-3);
+  font-size: 0.9em;
+  margin: 2px 0 1px;
+}
+.pp-full .pp-sect + .pp-sect {
+  margin-top: 8px;
+}
+.pp-meta b {
+  color: var(--accent-text);
+  font-weight: 400;
+}
+.pp-meta span {
+  color: var(--fg-2);
+}
+.pp-badge {
+  display: inline-block;
+  font-weight: 700;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+}
+.pp-badge.pp-ok {
+  background: var(--green-bg);
+}
+.pp-badge.pp-bad {
+  background: var(--red-bg);
+}

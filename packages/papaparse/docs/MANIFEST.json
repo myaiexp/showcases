@@ -1,5 +1,50 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T16:45:21.635Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/mholt/PapaParse",
+      "ref": "5.7.1",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "CHANGELOG.md",
+        "papaparse.js",
+        "docs/docs.html",
+        "docs/faq.html",
+        "docs/index.html"
+      ],
+      "commit": "af9cc5f41d4bb5307f06bbf1380216bf18651b49"
+    }
+  ],
+  "files": {
+    "repo/CHANGELOG.md": {
+      "url": "https://github.com/mholt/PapaParse/blob/af9cc5f41d4bb5307f06bbf1380216bf18651b49/CHANGELOG.md",
+      "sha256": "a30d2ee45fdbe99782ee93c5f7122785afe63a839168c4da123af1af2340ac54"
+    },
+    "repo/docs/docs.html": {
+      "url": "https://github.com/mholt/PapaParse/blob/af9cc5f41d4bb5307f06bbf1380216bf18651b49/docs/docs.html",
+      "sha256": "c082e37dd6089fdb56ea699ea00d22fcffe12c0d662d6b2dd9cf1790bd1c86d7"
+    },
+    "repo/docs/faq.html": {
+      "url": "https://github.com/mholt/PapaParse/blob/af9cc5f41d4bb5307f06bbf1380216bf18651b49/docs/faq.html",
+      "sha256": "babf416263320b9afa933a514da42dd86262775ce3019a402be947e6266916ff"
+    },
+    "repo/docs/index.html": {
+      "url": "https://github.com/mholt/PapaParse/blob/af9cc5f41d4bb5307f06bbf1380216bf18651b49/docs/index.html",
+      "sha256": "98ffde697b68b13cbed8c043196335514ad48c67fa20f3eaa77d97f4ea2c8a5c"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/mholt/PapaParse/blob/af9cc5f41d4bb5307f06bbf1380216bf18651b49/LICENSE",
+      "sha256": "99aa68e4b42758b09828a46515f70369e5463458ab7a990189f641af2b8d9b4e"
+    },
+    "repo/papaparse.js": {
+      "url": "https://github.com/mholt/PapaParse/blob/af9cc5f41d4bb5307f06bbf1380216bf18651b49/papaparse.js",
+      "sha256": "1dd8f1e130eff02124dbdd0ce6542f57b1878af9bd71ce65c7c05f2ac787051e"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/mholt/PapaParse/blob/af9cc5f41d4bb5307f06bbf1380216bf18651b49/README.md",
+      "sha256": "4350af8813373400b8240ab3960084ea448d0c61f8d4e0f33081232b8d874f39"
+    }
+  }
 }

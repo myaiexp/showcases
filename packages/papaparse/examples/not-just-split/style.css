@@ -1,0 +1,24 @@
+/* Why not just split: the two readings side by side */
+[data-example='papaparse/not-just-split'] {
+  .sides {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    min-height: 0;
+  }
+  .pp-naive .pp-pane-title {
+    color: var(--red);
+    text-transform: none;
+  }
+  .pp-card .pp-table {
+    font-size: 9px;
+  }
+  .pp-card .pp-table th,
+  .pp-card .pp-table td {
+    padding: 1px 3px;
+  }
+  .pp-papa .pp-pane-title {
+    color: var(--green);
+    text-transform: none;
+  }
+}

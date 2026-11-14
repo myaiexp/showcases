@@ -1,0 +1,106 @@
+/* Typed table: cell colours by value type, row and cell marks */
+.pp-table-wrap {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  min-height: 0;
+}
+.pp-full .pp-table-wrap {
+  overflow: auto;
+  max-height: 420px;
+}
+.pp-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.pp-table th,
+.pp-table td {
+  padding: 1px 5px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  white-space: nowrap;
+  max-width: 16em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pp-full .pp-table th,
+.pp-full .pp-table td {
+  padding: 4px 10px;
+  max-width: 24em;
+}
+.pp-table th {
+  background: var(--bg-raised);
+  color: var(--fg-1);
+  font-weight: 600;
+}
+.pp-table tr:last-child td {
+  border-bottom: 0;
+}
+.pp-col-pos {
+  color: var(--fg-3);
+  font-weight: 400;
+}
+th.pp-col-extra {
+  color: var(--orange);
+}
+.pp-rownum {
+  color: var(--fg-3);
+  width: 1px;
+}
+.pp-v-str {
+  color: var(--fg-1);
+}
+.pp-v-num {
+  color: var(--green);
+}
+.pp-v-bool {
+  color: var(--orange);
+}
+.pp-v-empty,
+.pp-v-null {
+  color: var(--fg-3);
+  font-style: italic;
+}
+.pp-v-date {
+  color: var(--blue);
+}
+.pp-v-arr {
+  color: var(--orange);
+}
+.pp-v-missing {
+  background: repeating-linear-gradient(135deg, transparent 0 4px, var(--red-bg) 4px 8px);
+}
+.pp-table tr.pp-bad > td {
+  background: var(--red-bg);
+}
+.pp-table tr.pp-hit > td {
+  background: var(--accent-bg);
+}
+.pp-table tr.pp-ok > td {
+  background: var(--green-bg);
+}
+.pp-table tr.pp-dim > td {
+  opacity: 0.4;
+}
+.pp-table td.pp-bad {
+  background: var(--red-bg);
+  color: var(--red);
+}
+.pp-table td.pp-hit {
+  background: var(--accent-bg);
+}
+.pp-table td.pp-ok {
+  background: var(--green-bg);
+}
+.pp-more,
+.pp-none {
+  color: var(--fg-3);
+  padding: 1px 5px;
+}
+.pp-legend {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 0.85em;
+}
+

@@ -209,7 +209,7 @@ These are better as compact, text-output examples. Build them after the visual t
 | 154 | **Tone.js** (`tone`) ✅ built | v15 2024-05 | repo ✗lic (wiki) + source | Audio; `next` tag far ahead of `latest` |
 | 155 | Fuse.js *(legacy in gallery)* | v7 2023-10 | repo ✓ Apache | Fuzzy search. VitePress `docs/`, 9 pages |
 | 156 | Dexie.js *(legacy in gallery)* | v4 2024-03 | site | IndexedDB |
-| 157 | Papa Parse *(legacy in gallery)* | v5 2019 | site | CSV |
+| 157 | Papa Parse (`papaparse`) ✅ built | v5 2019 | repo ✓ MIT | CSV. Docs are the site source in the repo's `docs/` (docs, FAQ, home) at 5.7.1 plus README, CHANGELOG and source; `demo.html` and `player/` stay out. Downloads go to an in-page fake server |
 | 158 | Floating UI (`@floating-ui/dom`) | v1 2022 | repo ✓ MIT | Positioning; replaces archived Tippy |
 | 159 | Temporal polyfill (`temporal-polyfill`) | v1 | repo | Dates |
 | 160 | harfbuzzjs, fitty, mark.js, panzoom, Howler, tonal, webmidi | various | README | Small or audio-only |
