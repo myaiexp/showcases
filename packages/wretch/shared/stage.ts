@@ -41,6 +41,11 @@
 // - `.perfs()` entries are named after the URL, and the callback map and `clearMeasures` are shared
 //   page-wide: give each mount its own query (`?r=<id>`) so cards do not take each other's entries.
 // - `.onDownload()` / `.progress()` follow the body as it is read: the examples end in `.blob()` (not tried with `.res()`).
+// - README § Limitations' `dedupeHeaders` calls `headers.raw()`, which only Node's fetch has: browsers throw. In a
+//   middleware `opts.headers` is wretch's plain object (two keys for "content-type" and "Content-Type"), so group
+//   its entries by lower-cased name instead. A doubled header reaches fetch as "application/json, application/json".
+// - README's `cacheMiddleware` checks its saved answer before the in-flight list: once the throttle window reopens, calls
+//   made while the new request is on its way get the previous, stale answer, not the fresh one.
 import type { MountContext } from '@/types.ts';
 import './wretch.css';
 
