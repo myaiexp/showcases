@@ -1,84 +1,66 @@
-// Pizzicato oscillator with waveform, frequency and volume controls
-import Pizzicato, { type Wave } from 'pizzicato';
+// The four wave types at a pitch you choose
+import Pizzicato, { type Sound, type Wave } from 'pizzicato';
 import type { Mount } from '@/types.ts';
-import './style.css';
+import { select, slider } from '../../shared/controls.ts';
+import { pzStage } from '../../shared/stage.ts';
+import { bigText, smallText } from '../../shared/widgets.ts';
 
-const WAVES: readonly Wave[] = ['sine', 'square', 'sawtooth', 'triangle'];
+const TYPES: readonly Wave[] = ['sine', 'triangle', 'square', 'sawtooth'];
+const SOUNDS_LIKE: Record<Wave, string> = {
+  sine: 'pure, like a whistle',
+  triangle: 'soft, like a flute',
+  square: 'hollow, like an old game console',
+  sawtooth: 'bright and buzzy, like a brass synth',
+};
 
-function slider(label: string, min: number, max: number, step: number, value: number) {
-  const wrap = document.createElement('label');
-  wrap.className = 'field';
-  const text = document.createElement('span');
-  const input = document.createElement('input');
-  input.type = 'range';
-  input.min = String(min);
-  input.max = String(max);
-  input.step = String(step);
-  input.value = String(value);
-  wrap.append(label + ' ', text, input);
-  return { wrap, input, text };
-}
-
-const mount: Mount = (el) => {
-  let sound: InstanceType<typeof Pizzicato.Sound> | null = null;
-
-  const play = document.createElement('button');
-  play.className = 'btn';
-  play.textContent = 'Play';
-  const waveField = document.createElement('label');
-  waveField.className = 'field';
-  const wave = document.createElement('select');
-  for (const w of WAVES) wave.add(new Option(w, w, false, w === 'sawtooth'));
-  waveField.append('waveform ', wave);
-  const freq = slider('frequency', 80, 880, 1, 220);
-  const vol = slider('volume', 0, 1, 0.05, 0.5);
-  freq.text.textContent = '220 Hz';
-  vol.text.textContent = '0.50';
-
-  const row = document.createElement('div');
-  row.className = 'row';
-  row.append(play, waveField, freq.wrap, vol.wrap);
-  el.append(row);
-
-  const build = () => {
-    const s = new Pizzicato.Sound({
-      source: 'wave',
-      options: { type: wave.value as Wave, frequency: Number(freq.input.value) },
-    });
-    s.volume = Number(vol.input.value);
-    return s;
+const mount: Mount = (el, ctx) => {
+  const stage = pzStage(el, ctx, { seconds: 1.5 });
+  const title = bigText(stage.visual);
+  const note = smallText(stage.visual);
+  let type: Wave = 'sine';
+  let frequency = 220;
+  const describe = (t: Wave): void => {
+    title.textContent = `type: '${t}'`;
+    note.textContent = SOUNDS_LIKE[t];
   };
+  describe(type);
 
-  play.addEventListener('click', () => {
-    void Pizzicato.context.resume();
-    if (sound?.playing) {
-      sound.stop();
-      play.textContent = 'Play';
-    } else {
-      sound = build();
-      sound.play();
-      play.textContent = 'Stop';
-    }
-  });
-  wave.addEventListener('change', () => {
-    if (!sound?.playing) return;
-    sound.stop();
-    sound = build();
-    sound.play();
-  });
-  freq.input.addEventListener('input', () => {
-    freq.text.textContent = `${freq.input.value} Hz`;
-    if (sound) sound.frequency = Number(freq.input.value);
-  });
-  vol.input.addEventListener('input', () => {
-    vol.text.textContent = Number(vol.input.value).toFixed(2);
-    if (sound) sound.volume = Number(vol.input.value);
-  });
+  // The type is fixed when a sound is made, so changing it makes a new sound.
+  const make = (): Sound =>
+    new Pizzicato.Sound({ source: 'wave', options: { type, frequency, volume: type === 'sine' ? 0.6 : 0.35 } });
 
-  return () => {
-    sound?.stop();
-    sound = null;
-  };
+  return stage.run({
+    build: () => ({ sound: make(), retired: [] as Sound[] }),
+    play: (g, at) => {
+      const t = type;
+      stage.show(() => describe(t));
+      g.sound.play();
+      at(1.1, () => g.sound.stop());
+    },
+    variants: TYPES.map((t) => ({
+      label: t,
+      apply: (g: { sound: Sound; retired: Sound[] }) => {
+        type = t;
+        g.sound = make();
+      },
+    })),
+    controls: (g, bar) => {
+      select(bar, 'type', TYPES, (t) => {
+        const wasPlaying = g.sound.playing;
+        g.sound.stop();
+        // Kept so the default dispose disconnects it once the example closes.
+        g.retired.push(g.sound);
+        type = t;
+        g.sound = make();
+        describe(t);
+        if (wasPlaying) g.sound.play();
+      });
+      slider(bar, 'frequency', 55, 880, 1, frequency, (v) => {
+        frequency = v;
+        g.sound.frequency = v;
+      }, (v) => `${v} Hz`);
+    },
+  });
 };
 
 export default mount;

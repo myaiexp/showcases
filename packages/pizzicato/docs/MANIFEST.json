@@ -1,5 +1,106 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T15:25:38.624Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/alemangui/pizzicato",
+      "ref": "0.6.4",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "src/**/*.js"
+      ],
+      "commit": "1c03b9d322e0f5019d0183bac3c63373b6375bcc"
+    }
+  ],
+  "files": {
+    "repo/LICENSE": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/LICENSE",
+      "sha256": "c6c5b1d3b7e14813ba89e117ac9ce409fb0c95ca21b978271f652e4d0d3a0917"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/README.md",
+      "sha256": "76911e23792752b37388b36f17821e41d248c63103298a9db53d98ce120291e8"
+    },
+    "repo/src/Effects.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects.js",
+      "sha256": "f0bcaa06ab29c737d01ffa9ace36d7cb31139cbf0a2c1410ef4bcc17f4f68226"
+    },
+    "repo/src/Effects/Compressor.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/Compressor.js",
+      "sha256": "eeb0b7d0c63baeabe09fe972c9de0de7ec907cd22babaecbdb5624e502ce1e4a"
+    },
+    "repo/src/Effects/Convolver.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/Convolver.js",
+      "sha256": "d0bb9c1b6ec40f3babb253f8b217a137a22bbfd0d6d48323b75d16959a4143af"
+    },
+    "repo/src/Effects/Delay.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/Delay.js",
+      "sha256": "f89edfdc4c609ff5c3c664b066157b4550923cb12fb1d7aaacd0573c4dba95d1"
+    },
+    "repo/src/Effects/Distortion.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/Distortion.js",
+      "sha256": "ed307406f9fd01b89e291ec170b3a813d83c4308cd06080a1453ae578e7adba5"
+    },
+    "repo/src/Effects/DubDelay.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/DubDelay.js",
+      "sha256": "037ba1d274461669ef7332c0d3700c7429c489e3c6af0965055a680d5089cc08"
+    },
+    "repo/src/Effects/Filters.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/Filters.js",
+      "sha256": "406a62fdc8cbbca0056dfe98b19538d40b8cc5c6926d00d202492cfb26cf6381"
+    },
+    "repo/src/Effects/Flanger.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/Flanger.js",
+      "sha256": "8d1091bd1d6306c63682005e0d8ee76550e58e0d146f6011715d4a38c4c5e750"
+    },
+    "repo/src/Effects/PingPongDelay.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/PingPongDelay.js",
+      "sha256": "a0d08faab76f7778532fdbf472360d0d74d1246b97d9593d23c55c96ceb12b90"
+    },
+    "repo/src/Effects/Quadrafuzz.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/Quadrafuzz.js",
+      "sha256": "e06db2c5c49bdf24ef9f434a451992e27ee01f44fb6a2082655a1bd9f13476d3"
+    },
+    "repo/src/Effects/Reverb.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/Reverb.js",
+      "sha256": "fd39f6e5f0065390a080983e6e84cd794a1f469348cfdaa6fef54ca0fe19182f"
+    },
+    "repo/src/Effects/RingModulator.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/RingModulator.js",
+      "sha256": "0a66298a79ab70d2ec52285a5168d627434f2d36966fcc3dc3cd265443ae37ab"
+    },
+    "repo/src/Effects/StereoPanner.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/StereoPanner.js",
+      "sha256": "aaf8fdee9352586220a26476f3d4281afe6faeeabcc186641992adbc412facd0"
+    },
+    "repo/src/Effects/Tremolo.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Effects/Tremolo.js",
+      "sha256": "633a364733a6caf47fa1b5ae12ef9435f8c6a4694fac276945333adb0f9922f6"
+    },
+    "repo/src/Events.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Events.js",
+      "sha256": "5099c8b18b76d968c089b9253ebf00c681852a7dc329bd5106ecb42a3c59c3d8"
+    },
+    "repo/src/Group.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Group.js",
+      "sha256": "154449881c0b0698101e5a89cca2de43735103f526a1c8522f5270f41be8b851"
+    },
+    "repo/src/Pizzicato.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Pizzicato.js",
+      "sha256": "e6f388b584ac565d050508970a9276f282c951acd0e2c8a987a2919d7949d2a2"
+    },
+    "repo/src/Shims.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Shims.js",
+      "sha256": "2371a094d0776aefa2e315fb8d669f930dddfbecb720b0412fb68dd25724d79e"
+    },
+    "repo/src/Sound.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Sound.js",
+      "sha256": "0be12238195b7a8807d2eb6006f5db862e2ad2f1da6326f2627533104e891d65"
+    },
+    "repo/src/Util.js": {
+      "url": "https://github.com/alemangui/pizzicato/blob/1c03b9d322e0f5019d0183bac3c63373b6375bcc/src/Util.js",
+      "sha256": "509c720875a72b22cae8bc96a2285ef16f305b11f89ecf48f38825a0db1aa1ac"
+    }
+  }
 }

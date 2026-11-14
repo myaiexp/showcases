@@ -21,8 +21,23 @@ const threeAddonsOnWebgpu = {
   },
 };
 
+/**
+ * Pizzicato replaces AudioNode.prototype.connect page-wide when it loads, dropping
+ * connect()'s output and input indices (which Tone.js and others rely on). Every bare
+ * `pizzicato` import resolves to packages/pizzicato/shared/entry.ts, which captures the
+ * native method first and reinstalls one that keeps both. entry.ts itself imports the
+ * library by its file path, which this does not match.
+ */
+const pizzicatoEntry = {
+  name: 'pizzicato-entry',
+  enforce: 'pre' as const,
+  resolveId(id: string) {
+    return id === 'pizzicato' ? fileURLToPath(new URL('./packages/pizzicato/shared/entry.ts', import.meta.url)) : null;
+  },
+};
+
 export default defineConfig({
-  plugins: [threeAddonsOnWebgpu],
+  plugins: [threeAddonsOnWebgpu, pizzicatoEntry],
   resolve: {
     alias: { '@/': fileURLToPath(new URL('./src/', import.meta.url)) },
   },

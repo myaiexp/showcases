@@ -1,5 +1,12 @@
 {
-  "license": "none found",
-  "redistribute": false,
-  "sources": []
+  "license": "MIT (repo LICENSE: covers the README, which is the docs, and the library source)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/alemangui/pizzicato",
+      "ref": "0.6.4",
+      "paths": ["README.md", "LICENSE", "src/**/*.js"]
+    }
+  ]
 }
