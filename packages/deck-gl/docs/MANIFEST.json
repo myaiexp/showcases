@@ -1,0 +1,786 @@
+{
+  "fetched": "2026-11-14T05:00:20.845Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/visgl/deck.gl",
+      "ref": "v9.4.1",
+      "paths": [
+        "LICENSE",
+        "docs/table-of-contents.json",
+        "docs/**/*.md"
+      ],
+      "commit": "7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4"
+    }
+  ],
+  "files": {
+    "repo/docs/api-reference/aggregation-layers/aggregation-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/aggregation-layers/aggregation-layer.md",
+      "sha256": "bbb95094438d7f3e6a78e085ad80094b18922fefb5b601509c0947a6d130086c"
+    },
+    "repo/docs/api-reference/aggregation-layers/aggregator.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/aggregation-layers/aggregator.md",
+      "sha256": "67131265d8754cf6a0d7ab86a6cef7814028c3ea4963e8fb0deeb530c805493f"
+    },
+    "repo/docs/api-reference/aggregation-layers/contour-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/aggregation-layers/contour-layer.md",
+      "sha256": "b9a6f7503319875e80562031deeaa15280a5a2682487596add77d891a3a43e05"
+    },
+    "repo/docs/api-reference/aggregation-layers/cpu-aggregator.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/aggregation-layers/cpu-aggregator.md",
+      "sha256": "58df5bb55663c7b5aba629e31b28076ab468b733f78aece9a36a809324cdf713"
+    },
+    "repo/docs/api-reference/aggregation-layers/grid-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/aggregation-layers/grid-layer.md",
+      "sha256": "3a40501e0b18af96137906e64cd910cca54f220fd48fb0f6d0648830061210b7"
+    },
+    "repo/docs/api-reference/aggregation-layers/heatmap-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/aggregation-layers/heatmap-layer.md",
+      "sha256": "5756d030b61fcea16e4aef5eca380d77c8284988badd15f22afac01188f8c06e"
+    },
+    "repo/docs/api-reference/aggregation-layers/hexagon-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/aggregation-layers/hexagon-layer.md",
+      "sha256": "e92f45973edcf0c64fad7edb31ab027a2306bda3bb226405b84945e2bb1e13bd"
+    },
+    "repo/docs/api-reference/aggregation-layers/overview.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/aggregation-layers/overview.md",
+      "sha256": "7bdbbc900f001b326944e47cb3d347217907e66250c64f04d0114cf3695e558b"
+    },
+    "repo/docs/api-reference/aggregation-layers/screen-grid-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/aggregation-layers/screen-grid-layer.md",
+      "sha256": "55cf26c315127ad42addb8a902a2db299dc383700ce1c59cde11c0a31a266097"
+    },
+    "repo/docs/api-reference/aggregation-layers/webgl-aggregator.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/aggregation-layers/webgl-aggregator.md",
+      "sha256": "165ad6f5399bb3d71da73fd25f9c5ad9d4a51934cd0f3d6ec0c58f326aede79e"
+    },
+    "repo/docs/api-reference/arcgis/deck-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/arcgis/deck-layer.md",
+      "sha256": "eab51857d5bee8ed74067c9afd40e62bf059e3cff6d89ea55e32d5f8e3bf1eef"
+    },
+    "repo/docs/api-reference/arcgis/deck-renderer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/arcgis/deck-renderer.md",
+      "sha256": "7706f5673755ea38c15eb5cd4f6c00264efd56992aada28f433ae51e28797750"
+    },
+    "repo/docs/api-reference/arcgis/load-arcgis-modules.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/arcgis/load-arcgis-modules.md",
+      "sha256": "a48e645a15f203853e3fa5ebcf2ef2431a2d486f0ed2b197131a6d0b6fef0050"
+    },
+    "repo/docs/api-reference/arcgis/overview.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/arcgis/overview.md",
+      "sha256": "4565e4bd82217f631c28a68d4d669e87b05426efd8a077698d11a0ded2ae8088"
+    },
+    "repo/docs/api-reference/carto/basemap.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/basemap.md",
+      "sha256": "9cb5750ac3768cfb9865a0b6f68d703498672c674616900aa0b6796a504d24f5"
+    },
+    "repo/docs/api-reference/carto/cluster-tile-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/cluster-tile-layer.md",
+      "sha256": "e51c37ad32e01541c8e6381b7b86729ba88028923de01ceb233c628740365009"
+    },
+    "repo/docs/api-reference/carto/data-sources.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/data-sources.md",
+      "sha256": "2b763a44ddb5ad1a8daa9514f2e81f5d7a840491fd79500e3150e988b22ef759"
+    },
+    "repo/docs/api-reference/carto/fetch-map.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/fetch-map.md",
+      "sha256": "f2fe5019cff625aa4cb3da920bb0c56516760940daaed0004a86cdcc9209d5a4"
+    },
+    "repo/docs/api-reference/carto/h3-tile-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/h3-tile-layer.md",
+      "sha256": "2c2d441b7daee65342c70e815f1691ec440a298c5c4dff2f52e1217ef13b585e"
+    },
+    "repo/docs/api-reference/carto/heatmap-tile-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/heatmap-tile-layer.md",
+      "sha256": "fa003f3723eb98a4a2c14083f46550323fd33ae5ea411182b604f33cbaba4b37"
+    },
+    "repo/docs/api-reference/carto/overview.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/overview.md",
+      "sha256": "e15eef1ec1f83189810f6929dc234e33c943b160c6655f711034380f07c2ff26"
+    },
+    "repo/docs/api-reference/carto/point-label-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/point-label-layer.md",
+      "sha256": "1f5456e2e7c519c1ea39cea8741f9b787088de2bfaf044c786f567e264bee5fa"
+    },
+    "repo/docs/api-reference/carto/quadbin-tile-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/quadbin-tile-layer.md",
+      "sha256": "d75f88c7381bd88feb79250e91a2ebd164167693814bd6c54c4a6f86c0481907"
+    },
+    "repo/docs/api-reference/carto/raster-tile-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/raster-tile-layer.md",
+      "sha256": "5187844e7f31f77288981f2bb1b8b389f726a21b7c41f65f57e64fe778a7e9ab"
+    },
+    "repo/docs/api-reference/carto/styles.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/styles.md",
+      "sha256": "a1b91c38827da5bc627737c92b5aaa964a096f88f7de18d5755077e00d76d94f"
+    },
+    "repo/docs/api-reference/carto/vector-tile-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/carto/vector-tile-layer.md",
+      "sha256": "3df03750d195066bce81660beed7a39881235c9d7b63ff53544712547b3053e2"
+    },
+    "repo/docs/api-reference/core/ambient-light.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/ambient-light.md",
+      "sha256": "94f66303b35107fe237b158bb4d785ccfa5d8614bcc904703b891a79d3b8f6f3"
+    },
+    "repo/docs/api-reference/core/attribute-manager.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/attribute-manager.md",
+      "sha256": "7d7201fa2ceb488e15bcbc6967c3405d0c9d0b80a1fc98f4cf43e2b3a278420c"
+    },
+    "repo/docs/api-reference/core/attribute.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/attribute.md",
+      "sha256": "4c504d8ca4e6a4721249d90edd1a041510a66f8d650d2f7dc1f57cded623241c"
+    },
+    "repo/docs/api-reference/core/camera-light.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/camera-light.md",
+      "sha256": "9da20599d5cc29efbf49761f1ab01b2a360f6d6c336c15c28395358de3239419"
+    },
+    "repo/docs/api-reference/core/composite-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/composite-layer.md",
+      "sha256": "b122eee677e5b8614f498b82d6ff5affc96d44795219a7f49c39d6eef664ce31"
+    },
+    "repo/docs/api-reference/core/controller.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/controller.md",
+      "sha256": "192d309dab81e115541175fe0ce3b572dc6297c760881b83895ed1941a436a11"
+    },
+    "repo/docs/api-reference/core/deck.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/deck.md",
+      "sha256": "8fd2cc7015b44faf80b0ccbc01a1c69ba0a7e0b2359ce50f6a98b3906cfb6293"
+    },
+    "repo/docs/api-reference/core/deckgl.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/deckgl.md",
+      "sha256": "1c4a75369c81b1c23f739ae6cd20fef9a9bb6982fe15d13c4aaea228b79c00c9"
+    },
+    "repo/docs/api-reference/core/directional-light.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/directional-light.md",
+      "sha256": "6c7eaf64858ae08d9e04df5390b7607b7ff03220fdf911fdbd5f574a773895e0"
+    },
+    "repo/docs/api-reference/core/first-person-controller.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/first-person-controller.md",
+      "sha256": "8516fe58b1020bbeb46f3bffdc992c892576c09f56f42823c8e3d78dbfa3a34c"
+    },
+    "repo/docs/api-reference/core/first-person-view.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/first-person-view.md",
+      "sha256": "64bc8874fdebf67b7dbe36a917db418c3173500f93007c86bb59d4e9aa9a3c6b"
+    },
+    "repo/docs/api-reference/core/fly-to-interpolator.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/fly-to-interpolator.md",
+      "sha256": "fadfbe922f4e7d3d1e5c60c86eb0f9445cec0f979b82ebf3a0dfe7f9441ca5ff"
+    },
+    "repo/docs/api-reference/core/globe-controller.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/globe-controller.md",
+      "sha256": "4bfb9eb16394961102979bfcf087e1fce14d00fc043deb8c21be160df792049a"
+    },
+    "repo/docs/api-reference/core/globe-view.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/globe-view.md",
+      "sha256": "4ce12e410a672b8e558f9cb88310ef39d8b9d5846bde815c4b3032fbe59a8a39"
+    },
+    "repo/docs/api-reference/core/globe-viewport.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/globe-viewport.md",
+      "sha256": "94fa6ae45ee5d3406e6f3d7f56a481d72a745374ba6c82fd7ba2c899591cb937"
+    },
+    "repo/docs/api-reference/core/layer-manager.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/layer-manager.md",
+      "sha256": "588b590885e1fb352703c0f1726382810b9709cc41f8db29c004b8a117343d07"
+    },
+    "repo/docs/api-reference/core/layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/layer.md",
+      "sha256": "e12b3274786efad30445e7ac67f966474ea770295f3fadcc2834c7ef33a3f5ef"
+    },
+    "repo/docs/api-reference/core/lighting-effect.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/lighting-effect.md",
+      "sha256": "8a241ac5c489c87236fba865d80f1a5ec0728574779a4aa22918c8a70f4f8dfe"
+    },
+    "repo/docs/api-reference/core/linear-interpolator.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/linear-interpolator.md",
+      "sha256": "49d81d280e9f20a0e70fb66111fd3f43abedf7b2068b58411d3cbcbe90471f0a"
+    },
+    "repo/docs/api-reference/core/map-controller.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/map-controller.md",
+      "sha256": "48643126503029c558d989396f780bb1cb338aa78077b445bba440c37813daa2"
+    },
+    "repo/docs/api-reference/core/map-view.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/map-view.md",
+      "sha256": "58ff24d1ed3a4509886378be86ee3a74ee5e3cb0fb8bac7110f662e686ff1f5f"
+    },
+    "repo/docs/api-reference/core/orbit-controller.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/orbit-controller.md",
+      "sha256": "1ed9d9535b619995da430f7ba83654ed82cf81c5d2d6e942fbd2917be70d846a"
+    },
+    "repo/docs/api-reference/core/orbit-view.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/orbit-view.md",
+      "sha256": "612206dac0c177c640e32f35cced16b17ed3b63f0566b21fc3832ce7a6f8a0b7"
+    },
+    "repo/docs/api-reference/core/orthographic-controller.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/orthographic-controller.md",
+      "sha256": "9f54fe98d0db0da14dc2d97e982c1dd4f69ef545be48cb99385547f99ab9426a"
+    },
+    "repo/docs/api-reference/core/orthographic-view.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/orthographic-view.md",
+      "sha256": "57efd65f3bcfb194b3e47218c3a03dfd38ec3ff8a39095079fb7b46d1b542979"
+    },
+    "repo/docs/api-reference/core/point-light.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/point-light.md",
+      "sha256": "13ed523a12b51edf0a527d81f286c379b7409899d3c37796ea80796e172a9200"
+    },
+    "repo/docs/api-reference/core/post-process-effect.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/post-process-effect.md",
+      "sha256": "cca4d2f81ed813e6e5921cb269a8d177425f973a8e9f429f6716ffc1dc348ef9"
+    },
+    "repo/docs/api-reference/core/project.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/project.md",
+      "sha256": "b54291f3fc00d40ad9c25150f8aff99206b1651e23278471be5617753ad4c6b6"
+    },
+    "repo/docs/api-reference/core/project32.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/project32.md",
+      "sha256": "3203ff126ab0674fa600a70973a7bf2d2b818c14da6e6a7ade55bd78d95d871c"
+    },
+    "repo/docs/api-reference/core/project64.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/project64.md",
+      "sha256": "d3c706a05495690263ba24c2a292137f2309330648cb44a607fa65a4586c4082"
+    },
+    "repo/docs/api-reference/core/sun-light.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/sun-light.md",
+      "sha256": "e73ed3faf2d235dc1d8a8f0ca16e84c8ef77047c5a9e55c72a4b6ba281c083e1"
+    },
+    "repo/docs/api-reference/core/terrain-controller.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/terrain-controller.md",
+      "sha256": "fd5b98342a4b8bea4e2cc5ff6e066cf724b38f26470106a2243a320cdef33f32"
+    },
+    "repo/docs/api-reference/core/transition-interpolator.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/transition-interpolator.md",
+      "sha256": "c480901737591c57c73ed994d19f80899ee472d9da49f156069a44f2fbb86aa2"
+    },
+    "repo/docs/api-reference/core/view.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/view.md",
+      "sha256": "3edf0ff454ab40dabe35c4214b029adad4364a684a8af15fff598536ce924416"
+    },
+    "repo/docs/api-reference/core/viewport.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/viewport.md",
+      "sha256": "faebfafa5c8c7371899a2192d92bcab19caeeb449d281f87b3f5d6a19519b411"
+    },
+    "repo/docs/api-reference/core/web-mercator-viewport.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/web-mercator-viewport.md",
+      "sha256": "fe669391d5924384e1aedb2f6283dd322bf66b539954e50a829b3f9451827338"
+    },
+    "repo/docs/api-reference/core/widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/core/widget.md",
+      "sha256": "53c07087f0d53afebc882d1cde261eac8075d48a3e9315f8dc5d0a47a51b64da"
+    },
+    "repo/docs/api-reference/extensions/brushing-extension.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/extensions/brushing-extension.md",
+      "sha256": "210f0a17205779752ee3f440585236e4ac4704caa0076c6bfe23a5c71613e06e"
+    },
+    "repo/docs/api-reference/extensions/clip-extension.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/extensions/clip-extension.md",
+      "sha256": "26977fb5165912a6bc1c1e9b699366a2335b0aaa8acf9df4e2263a524069c609"
+    },
+    "repo/docs/api-reference/extensions/collision-filter-extension.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/extensions/collision-filter-extension.md",
+      "sha256": "ba227d3c2ee222a1aaa3c3d6b61983d337674012b0566c944e31db2078400bf5"
+    },
+    "repo/docs/api-reference/extensions/data-filter-extension.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/extensions/data-filter-extension.md",
+      "sha256": "e2e463ec815df4e36d25838114648153e559564eb2f9eb2a750f01d075590d01"
+    },
+    "repo/docs/api-reference/extensions/fill-style-extension.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/extensions/fill-style-extension.md",
+      "sha256": "ee2e5139ad000595432edbdf18aa88ff18607b069c6c2aacfc9179a48332c737"
+    },
+    "repo/docs/api-reference/extensions/fp64-extension.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/extensions/fp64-extension.md",
+      "sha256": "9826636a57f0f31aa7c3d158ffb020400f22c809f65d71bbea01fa59f904b577"
+    },
+    "repo/docs/api-reference/extensions/mask-extension.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/extensions/mask-extension.md",
+      "sha256": "7cd51802620968cfe57808172038b231a6d9525fd11f47582f0d40cd5e92afdd"
+    },
+    "repo/docs/api-reference/extensions/overview.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/extensions/overview.md",
+      "sha256": "3646141a88c2e5c8232c0ad40fe43d8f8894a74b09aca67d749ebe0e49ec5e9b"
+    },
+    "repo/docs/api-reference/extensions/path-style-extension.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/extensions/path-style-extension.md",
+      "sha256": "654c574facf04598bad5a38ba4353b7e6874b3c78341dceb55a861ed072e688d"
+    },
+    "repo/docs/api-reference/extensions/terrain-extension.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/extensions/terrain-extension.md",
+      "sha256": "100c4ab6cba759b76c7e1a3b00db52820fa52ad1ce71208b80dfc784cefadb8d"
+    },
+    "repo/docs/api-reference/geo-layers/a5-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/a5-layer.md",
+      "sha256": "8a76848fdea17f1ec92d4613e0785492ae5e9df42fb3d7ca2e75ca634444f2f4"
+    },
+    "repo/docs/api-reference/geo-layers/geohash-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/geohash-layer.md",
+      "sha256": "a95637446453ddb3ea231da071c886694f046b097447d360e0f9f63675b62fb1"
+    },
+    "repo/docs/api-reference/geo-layers/great-circle-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/great-circle-layer.md",
+      "sha256": "a603aa8f31270d0ad1ca744286057f3833387735a13abdd789c0ec7c30301452"
+    },
+    "repo/docs/api-reference/geo-layers/h3-cluster-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/h3-cluster-layer.md",
+      "sha256": "0c4599e92273bf80e629ffb1dd0147ffe4cb562091ba9aae8f0d3d70d1171d94"
+    },
+    "repo/docs/api-reference/geo-layers/h3-hexagon-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/h3-hexagon-layer.md",
+      "sha256": "a8999f38688073c1f2aa3b2cc772b4b1b9916b2ddfe9a18dcc624f30e0c58b17"
+    },
+    "repo/docs/api-reference/geo-layers/mvt-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/mvt-layer.md",
+      "sha256": "84ce0cf74c00c4c338fcd3fb1e14fcc048d1bc0106a4796e0910095511e126ef"
+    },
+    "repo/docs/api-reference/geo-layers/quadkey-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/quadkey-layer.md",
+      "sha256": "e52c8499357afa05bab480828fea3bb84f897794a2c83a6da766b9aa7e5c12cd"
+    },
+    "repo/docs/api-reference/geo-layers/s2-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/s2-layer.md",
+      "sha256": "67d4e0cfc5e6bba8110e4ad07ba745156230e78f2551e3b8416b2715edfcd13a"
+    },
+    "repo/docs/api-reference/geo-layers/terrain-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/terrain-layer.md",
+      "sha256": "87dfea1e32c3b133d8dac177a4d1f80fe372d768cb4f9ee5152a2c172aef507c"
+    },
+    "repo/docs/api-reference/geo-layers/tile-3d-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/tile-3d-layer.md",
+      "sha256": "4a10b3b0c863da11248e95b1becfa322c4abc73f51a156406429ac96f6385dbf"
+    },
+    "repo/docs/api-reference/geo-layers/tile-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/tile-layer.md",
+      "sha256": "12f3085c724d98c07f0d9e1e2adfd64c7ffa9c29bd5c4d7d29077d98a69e28e7"
+    },
+    "repo/docs/api-reference/geo-layers/trips-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/trips-layer.md",
+      "sha256": "eba92fa61cb40db4fa233960e4e16333945494690c1e2f70bf7c90fb1703f4e2"
+    },
+    "repo/docs/api-reference/geo-layers/wms-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/geo-layers/wms-layer.md",
+      "sha256": "2242271d08045f1638ed385b0644b7ce6b6d7e3856cab31482d5fb4675c6b81b"
+    },
+    "repo/docs/api-reference/google-maps/google-maps-overlay.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/google-maps/google-maps-overlay.md",
+      "sha256": "ca3fbb68654ede9349e74e46cd03890d753d6ac585f6e2098a3355f5b196eb4f"
+    },
+    "repo/docs/api-reference/google-maps/overview.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/google-maps/overview.md",
+      "sha256": "4067c98880f4e2f5cb03ebcbef78ec2111099e54bb508bdeca4e16466dfa692e"
+    },
+    "repo/docs/api-reference/json/conversion-reference.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/json/conversion-reference.md",
+      "sha256": "6cfd1da028f9e431e3beffcb1fc52d9d588ab9e69498342bb22f547535c149a8"
+    },
+    "repo/docs/api-reference/json/json-configuration.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/json/json-configuration.md",
+      "sha256": "224979c8a2927d505a55523d99ab4af0bb8b61d26281ce23e2f32f17e3a9cd4c"
+    },
+    "repo/docs/api-reference/json/json-converter.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/json/json-converter.md",
+      "sha256": "36eb65b8bed7460b4c4de533d1cd45724a97e81eadffcfa8161a88c06938ba1f"
+    },
+    "repo/docs/api-reference/json/overview.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/json/overview.md",
+      "sha256": "1835dc6d3c1b67da347acd62deca950fe9bca79241ea88d9e26fd5494bd591ec"
+    },
+    "repo/docs/api-reference/layers/arc-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/arc-layer.md",
+      "sha256": "356d2f2219a9f3af7cf7392bfdb4e702b2fc7d23bdf5eab015f34d109deac80e"
+    },
+    "repo/docs/api-reference/layers/bitmap-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/bitmap-layer.md",
+      "sha256": "121c5fcb22b6c0cc501d8a83b88105c729770cc406eef536739cb42ebbf33066"
+    },
+    "repo/docs/api-reference/layers/column-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/column-layer.md",
+      "sha256": "232cfb7ae6271b8ac057aec377a4c8f6d75eabca5ddee5e93550ee9de62f9448"
+    },
+    "repo/docs/api-reference/layers/geojson-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/geojson-layer.md",
+      "sha256": "5cd47e6405e2febe4d5307fc196b750d6230a44113ca7bde1bdbf267b3eadb92"
+    },
+    "repo/docs/api-reference/layers/grid-cell-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/grid-cell-layer.md",
+      "sha256": "da59124e0acbe574c3ace3c9895db91ab0855b38372aacebc6f1676e7bb96f47"
+    },
+    "repo/docs/api-reference/layers/icon-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/icon-layer.md",
+      "sha256": "9015903910446fc3ede942d2f63e96e0c374c66caa093b43ffb2aa88dca04c80"
+    },
+    "repo/docs/api-reference/layers/line-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/line-layer.md",
+      "sha256": "bed9256381bc0ac99607c86fd890dc35652893a77fd2f3aea314dea5bef0b332"
+    },
+    "repo/docs/api-reference/layers/path-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/path-layer.md",
+      "sha256": "207f1699c505f40da0b918f9fb075aea2f1ab0b6f8a43a5b2cb9ab396226ed14"
+    },
+    "repo/docs/api-reference/layers/point-cloud-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/point-cloud-layer.md",
+      "sha256": "df28a2f3b92758739f34fd335c8895fe17d2cba8bcb7aefa590059be70d09de3"
+    },
+    "repo/docs/api-reference/layers/polygon-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/polygon-layer.md",
+      "sha256": "ce14d7830bd79b4797ab7337d6f18dfdc85745a424ec08a403494207eea36210"
+    },
+    "repo/docs/api-reference/layers/README.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/README.md",
+      "sha256": "85bfb6fde3e245faf9207f78f82b98c8afbbefa2ae7b3caf1b2765b22cd5f0cc"
+    },
+    "repo/docs/api-reference/layers/scatterplot-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/scatterplot-layer.md",
+      "sha256": "77cb7067b3dcdf4079ee8d08dfa76ef83d5450aebe810c4be64764bd597a476f"
+    },
+    "repo/docs/api-reference/layers/solid-polygon-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/solid-polygon-layer.md",
+      "sha256": "04eddce67465c9f6522cbd2b5be992fddc5efcf186d8e7267cd70afc6415d1d2"
+    },
+    "repo/docs/api-reference/layers/text-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/layers/text-layer.md",
+      "sha256": "822049e7a2dfcd0ce95ba21a4b3668ded55759fe87971061712b8a6b17ac7889"
+    },
+    "repo/docs/api-reference/mapbox/mapbox-overlay.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/mapbox/mapbox-overlay.md",
+      "sha256": "4f1d01719508229c91cd689111bd8baab4f3dbc5627799d782c59faf74d86745"
+    },
+    "repo/docs/api-reference/mapbox/overview.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/mapbox/overview.md",
+      "sha256": "5acad8adcb4db2794bf372b77879d7166d7ec0f04326acefb3e9be0dc0b16bf6"
+    },
+    "repo/docs/api-reference/maplibre/overview.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/maplibre/overview.md",
+      "sha256": "348fe9a6a62262f4a5efd4cbdbe4177d982de2dc732c5728de4f3fa853108167"
+    },
+    "repo/docs/api-reference/mesh-layers/scenegraph-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/mesh-layers/scenegraph-layer.md",
+      "sha256": "768f45dbc0b388c72a9d652e7acfa254afc0eef4b24536c4e144d0916d03997a"
+    },
+    "repo/docs/api-reference/mesh-layers/simple-mesh-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/mesh-layers/simple-mesh-layer.md",
+      "sha256": "4f726e36013018d58b8b2408aa8ecc5045cdee57ba7a7412c94d4ab9d024ef37"
+    },
+    "repo/docs/api-reference/react/deckgl.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/react/deckgl.md",
+      "sha256": "d7906133673c171eb790b65254b26409604142817b5d478247fba0cd037ed0f7"
+    },
+    "repo/docs/api-reference/react/overview.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/react/overview.md",
+      "sha256": "3d6d22507ccb0619ae47705a651bfcb847cffa7057a3d9bec7c37a9692264e9b"
+    },
+    "repo/docs/api-reference/react/use-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/react/use-widget.md",
+      "sha256": "652b7a3e7c3e67ef88f57533f6995e58ce66ed4630748ee2edda12ead69a435e"
+    },
+    "repo/docs/api-reference/test-utils/generate-layer-tests.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/test-utils/generate-layer-tests.md",
+      "sha256": "92a9e7f7eea970d8fbeb7ae2ba7ecd506f7ecde12e9fd01a14ae726b5cc3849e"
+    },
+    "repo/docs/api-reference/test-utils/interaction-test-runner.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/test-utils/interaction-test-runner.md",
+      "sha256": "a049e165968bb25860f02658d2da831aa12ff0a9ae497cc273bb094c04216166"
+    },
+    "repo/docs/api-reference/test-utils/overview.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/test-utils/overview.md",
+      "sha256": "570c1fc1ae5e3ba9ffcd5b14391e128b280c8bcc7786f2750f2af0418c5b22aa"
+    },
+    "repo/docs/api-reference/test-utils/snapshot-test-runner.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/test-utils/snapshot-test-runner.md",
+      "sha256": "cd99f6412c78527c4c18e99b05532b2aa02b4bbad693cd0263f716a73b40fcb7"
+    },
+    "repo/docs/api-reference/test-utils/test-layer.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/test-utils/test-layer.md",
+      "sha256": "ae765afa6bef0b9486ae5cc1f4a40aa941e5bfe5e78a6582b43f3a123cff4b21"
+    },
+    "repo/docs/api-reference/widgets/compass-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/compass-widget.md",
+      "sha256": "294b750f58a2fded59385e3fbfdf6743983f14e5656ee1b680de2cbfb461ea85"
+    },
+    "repo/docs/api-reference/widgets/context-menu-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/context-menu-widget.md",
+      "sha256": "429a666287e5ae421d5869fdfe7374185b7a907ea6059da6cfa687fd634605b1"
+    },
+    "repo/docs/api-reference/widgets/fullscreen-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/fullscreen-widget.md",
+      "sha256": "e1347ab36976c2182a910c719348d6528e72de54c2be34405585ea75d85ef324"
+    },
+    "repo/docs/api-reference/widgets/geocoder-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/geocoder-widget.md",
+      "sha256": "7c2b7b4b20c97e8f6d233de39ea97b2d07b3ef94b6599380f12f6e8c401a3ad5"
+    },
+    "repo/docs/api-reference/widgets/gimbal-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/gimbal-widget.md",
+      "sha256": "9c05004598a89f9197bb396a7a36379a5b10ce0764ce59eb52bfc541de5d4c2d"
+    },
+    "repo/docs/api-reference/widgets/icon-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/icon-widget.md",
+      "sha256": "8104b742f021280f717b28ddffb81c63603ac5252f45c81a012370a50e42c02f"
+    },
+    "repo/docs/api-reference/widgets/info-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/info-widget.md",
+      "sha256": "a0a9ca3edd7b1529b92cf71cffdab4f6ab100d09049db3df0fb3b1a531ba499b"
+    },
+    "repo/docs/api-reference/widgets/loading-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/loading-widget.md",
+      "sha256": "2ac042264032181f8a969c222487ee70312a995ddb945f7993fcbb29ece4a885"
+    },
+    "repo/docs/api-reference/widgets/overview.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/overview.md",
+      "sha256": "dbcc11b3b4dbb85ffa8ea8499f745230a71eb383c2eaed6da6b8e122aee40a77"
+    },
+    "repo/docs/api-reference/widgets/popup-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/popup-widget.md",
+      "sha256": "0a13a05c31bd80660650f54a2f1a4a196df91df2c70ee84d5f7e06f39fb0be49"
+    },
+    "repo/docs/api-reference/widgets/reset-view-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/reset-view-widget.md",
+      "sha256": "c2848183179745bc15df42b64e1dc2272922780ad891f9de4aee9457b61b4a85"
+    },
+    "repo/docs/api-reference/widgets/scale-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/scale-widget.md",
+      "sha256": "a1e95605333ac48820d389dbe1ac4f8972a4be3bc4bda80e52a32151594f1832"
+    },
+    "repo/docs/api-reference/widgets/screenshot-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/screenshot-widget.md",
+      "sha256": "56bbddeb50ba0542e90046c6fc6a83730fbcf868913cad8513320f79bcfd06b7"
+    },
+    "repo/docs/api-reference/widgets/scrollbar-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/scrollbar-widget.md",
+      "sha256": "5c30d4083875cb1bfe9b6f6a90b9770aa770945ec9779f25bcb5cd701b37d5fb"
+    },
+    "repo/docs/api-reference/widgets/selector-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/selector-widget.md",
+      "sha256": "e4ca63ec050897939663e9daeb6e523597ac159c191e65c7cfae126d58cf42c9"
+    },
+    "repo/docs/api-reference/widgets/splitter-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/splitter-widget.md",
+      "sha256": "8a3354933efacd275aff59aca481ae9a6255766efd5330f0c009ee96f3d4c004"
+    },
+    "repo/docs/api-reference/widgets/stats-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/stats-widget.md",
+      "sha256": "79e68037599abb0f94126820ea29edf268f109f7ae32aeb6fd25499e5a42c729"
+    },
+    "repo/docs/api-reference/widgets/styling.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/styling.md",
+      "sha256": "424c268e6f02d923d85f476fc5dd1fd62b446d5a21c43720921aa46452c39d34"
+    },
+    "repo/docs/api-reference/widgets/theme-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/theme-widget.md",
+      "sha256": "de1814cf36423b8bddd62eb684d9280b5cb86bef33bdd0ed8a350f2aa7eea793"
+    },
+    "repo/docs/api-reference/widgets/timeline-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/timeline-widget.md",
+      "sha256": "4d2eb4000e88df4cddb0103da1b4f885de06e42688cbd7493f8282bc964c5123"
+    },
+    "repo/docs/api-reference/widgets/toggle-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/toggle-widget.md",
+      "sha256": "3da99caa6383c436cbfbd512b5064009eebb051ae9ccb5fecf87c23e3ffdf759"
+    },
+    "repo/docs/api-reference/widgets/tooltips.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/tooltips.md",
+      "sha256": "700f573cbf55b52fcabf0c91c98f7254d437b9dd4b2ccfa1a5bc29e3ddccadbe"
+    },
+    "repo/docs/api-reference/widgets/view-layout.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/view-layout.md",
+      "sha256": "7521c74102d3ee5df36c39d5cbb3dbf359c7da6a401ac2fa20c4405a46d3df98"
+    },
+    "repo/docs/api-reference/widgets/zoom-widget.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/api-reference/widgets/zoom-widget.md",
+      "sha256": "8df0ab601c6eff29bf88884ce3c79b6bb60b1d8c1093cd56214ec56054ea123f"
+    },
+    "repo/docs/developer-guide/animations-and-transitions.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/animations-and-transitions.md",
+      "sha256": "a3ebd83d62485ca469c573ae0120248f5667b8ddf358cc9a4ee24e959ef20037"
+    },
+    "repo/docs/developer-guide/base-maps/using-with-3d-tiles.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/base-maps/using-with-3d-tiles.md",
+      "sha256": "f91ba94b68609a61ae86fcbe75cf930e79aa2c20aae71d3a9a0ac0dc8c84c361"
+    },
+    "repo/docs/developer-guide/base-maps/using-with-arcgis.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/base-maps/using-with-arcgis.md",
+      "sha256": "4859575eeab7b4a67f1f74b425f10edc128d0c37de02db292d481c4f4df01e5d"
+    },
+    "repo/docs/developer-guide/base-maps/using-with-google-maps.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/base-maps/using-with-google-maps.md",
+      "sha256": "899a9cad55ec193c6814871d71cb488787dc620ab86e25ed0bf73ed9e9f47a0d"
+    },
+    "repo/docs/developer-guide/base-maps/using-with-mapbox.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/base-maps/using-with-mapbox.md",
+      "sha256": "52a184adb61f352551bf4179c791353ddc2c00c5b84634ccc3cc1be2c38f44c9"
+    },
+    "repo/docs/developer-guide/base-maps/using-with-maplibre.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/base-maps/using-with-maplibre.md",
+      "sha256": "c0bc775415a280bddbb9c4c04e8bc20e732b9204c1e2ea1d9d528aef665ffaa3"
+    },
+    "repo/docs/developer-guide/building-apps.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/building-apps.md",
+      "sha256": "3a879b941b1e675e924517e0a3743ffa88160dba4e536650748a8f91916240ca"
+    },
+    "repo/docs/developer-guide/coordinate-systems.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/coordinate-systems.md",
+      "sha256": "dc9f9d78a71071ce5555b44fcf75f51b36ddd74434e7942141991ad7d2724070"
+    },
+    "repo/docs/developer-guide/custom-layers/attribute-management.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-layers/attribute-management.md",
+      "sha256": "01f629189d3326de8df4d22feef9732960b779dd0d96f8b917e3f8446c6bc3c7"
+    },
+    "repo/docs/developer-guide/custom-layers/composite-layers.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-layers/composite-layers.md",
+      "sha256": "078cfb0cdd9d2c7029f6e6c8de0a006707007531586186d49664a977fa8d12f5"
+    },
+    "repo/docs/developer-guide/custom-layers/layer-attributes.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-layers/layer-attributes.md",
+      "sha256": "e960dd84bcf4624628017392aa19904cb88675d03db11245b45c8cf4b8c6f4c6"
+    },
+    "repo/docs/developer-guide/custom-layers/layer-extensions.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-layers/layer-extensions.md",
+      "sha256": "f0d0f9056a174c9ff65311a50e213140e91273230bb586d4c0db60834b36afa6"
+    },
+    "repo/docs/developer-guide/custom-layers/layer-lifecycle.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-layers/layer-lifecycle.md",
+      "sha256": "81a82be0d66aadd58ad593d894a6ccb7ac947a17606ca96d8fecd1cf7c91625e"
+    },
+    "repo/docs/developer-guide/custom-layers/picking.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-layers/picking.md",
+      "sha256": "fa89ab55e9a223eb65775e501583c8d30d86bee99c21a715478c690211003aa1"
+    },
+    "repo/docs/developer-guide/custom-layers/primitive-layers.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-layers/primitive-layers.md",
+      "sha256": "ab50e7aefaca2533411413f5b552cbb37ad0dd05db82c68611d44d16cd352b2a"
+    },
+    "repo/docs/developer-guide/custom-layers/prop-types.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-layers/prop-types.md",
+      "sha256": "53139b1c2bd21875e4a4d597fc9f751176eefa2248a06ef2a9eadf1ea603b9ae"
+    },
+    "repo/docs/developer-guide/custom-layers/README.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-layers/README.md",
+      "sha256": "b11f3bc32ad5aea947049002fca47a6880dc481a4503eb72fc69f31441d26dfd"
+    },
+    "repo/docs/developer-guide/custom-layers/subclassed-layers.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-layers/subclassed-layers.md",
+      "sha256": "ddb7778da7f7105d8cd7248518725a53804d03da057ee501f7c066b379d24a87"
+    },
+    "repo/docs/developer-guide/custom-layers/writing-shaders.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-layers/writing-shaders.md",
+      "sha256": "bf3d6e5db16292e085f2e73a103bcc9d818e4327fbf63108124e41f846969e4b"
+    },
+    "repo/docs/developer-guide/custom-widgets/preact-widgets.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-widgets/preact-widgets.md",
+      "sha256": "5452d7660b13f186982562d44aa16d2c84e424f4ef21baee54de5be2d705ec0a"
+    },
+    "repo/docs/developer-guide/custom-widgets/react-widgets.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-widgets/react-widgets.md",
+      "sha256": "5191847a334b83bdf693be564ffa902bd5cdf8bba6af5490425b9682dc7fa78d"
+    },
+    "repo/docs/developer-guide/custom-widgets/README.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-widgets/README.md",
+      "sha256": "8a221115153fbb43eb5c21bc588c093e4ee614c02bb4c3393bbf4b41eb7a7943"
+    },
+    "repo/docs/developer-guide/custom-widgets/universal-widgets.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/custom-widgets/universal-widgets.md",
+      "sha256": "c0463009425a8667a265335705cab77a0a20b49cd34d519489be7a7ebd7b28fb"
+    },
+    "repo/docs/developer-guide/debugging.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/debugging.md",
+      "sha256": "e38064e5bfda7fa18037d184724881be32f5d6a2d0b0c57222c74d9e481abc2b"
+    },
+    "repo/docs/developer-guide/fp64.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/fp64.md",
+      "sha256": "d42fde388c766dd99302e7e7d5d31f465fcae04aad1b4276b5882610abcc6f78"
+    },
+    "repo/docs/developer-guide/interactivity.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/interactivity.md",
+      "sha256": "3e81f4333e90a257ad8d4441a62a385f4895c40928158503c8ac9f59d69eb2de"
+    },
+    "repo/docs/developer-guide/loading-data.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/loading-data.md",
+      "sha256": "4d5c2714f1a59eb29c4d37e9bd59995efdc83d71f152935f484585dac45507ef"
+    },
+    "repo/docs/developer-guide/performance.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/performance.md",
+      "sha256": "a091d3bbf4f15c37548a2ccb647ca4e035f07a746071b5c4ffef65aa226dc6a3"
+    },
+    "repo/docs/developer-guide/testing.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/testing.md",
+      "sha256": "876f0f50f4405674495bbd7c792c3ea8cce27f1494971ef2d2bf2a8e6480c401"
+    },
+    "repo/docs/developer-guide/tips-and-tricks.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/tips-and-tricks.md",
+      "sha256": "e211431023989aee924892ca1a6055548acf0bc51d01516e41fd0a7f0dd91038"
+    },
+    "repo/docs/developer-guide/using-effects.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/using-effects.md",
+      "sha256": "d48a2cefbe7ba8154ad3d28c7bd3286e10155b40839c9084cf9c5f9323329050"
+    },
+    "repo/docs/developer-guide/using-layers.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/using-layers.md",
+      "sha256": "7bd2f8eb1fa3fd5f133a0bba9b3443e22635255a40363b8087f4fd4f01889a96"
+    },
+    "repo/docs/developer-guide/views.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/views.md",
+      "sha256": "2096466d543c4fde27853d3a3e6613ee81d94503490f15d98cebdcdd4ae456d9"
+    },
+    "repo/docs/developer-guide/webgpu.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/webgpu.md",
+      "sha256": "3364005457e47c043e1a3f874853c6d5b1db95a2cac5d38fa7d7b4fd329a6080"
+    },
+    "repo/docs/developer-guide/zoom-dependent-layers.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/developer-guide/zoom-dependent-layers.md",
+      "sha256": "594fb25308b9f810c831cd533924a5855db2e317cde28e2843c6c6aeef392e52"
+    },
+    "repo/docs/faq.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/faq.md",
+      "sha256": "b6fb50a677c305842e570b32d8473c31571ef45c11c811b78a100376f0b87bcc"
+    },
+    "repo/docs/get-started/getting-started.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/get-started/getting-started.md",
+      "sha256": "f0be21d86a882ba667606024670379bd999427694d2b8bbab74d5ebb6929461a"
+    },
+    "repo/docs/get-started/learning-resources.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/get-started/learning-resources.md",
+      "sha256": "80f2e9d4880d92bbfa4de56bb86044693176d917ef70b96bdaddb59b4905a264"
+    },
+    "repo/docs/get-started/using-standalone.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/get-started/using-standalone.md",
+      "sha256": "6533e1fef8ec221cffc31aa6cbbbb43123c22b021117338bc63d95020a6ad05e"
+    },
+    "repo/docs/get-started/using-with-map.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/get-started/using-with-map.md",
+      "sha256": "1ca2c1fa34266ed1d970e21141f76228faba4ab5d6ef802d66c739be779dcca9"
+    },
+    "repo/docs/get-started/using-with-react.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/get-started/using-with-react.md",
+      "sha256": "a224946f79f9125a4e4e6e32a79f9ce797ba36188b043da1808e882b88dfb356"
+    },
+    "repo/docs/get-started/using-with-typescript.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/get-started/using-with-typescript.md",
+      "sha256": "5fc6fa52d9cfbdb90ced1fd5f8d34287c2b7765f08e274963ca92450a0d7e918"
+    },
+    "repo/docs/README.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/README.md",
+      "sha256": "b847437f5c9cf80c052b12848057205eb9e816eee40a9c85d4b7895be51fae72"
+    },
+    "repo/docs/roadmap.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/roadmap.md",
+      "sha256": "005767aff088eda3e7e0d5051f16e2224b8bc03d2c6a060fe7eb15bd7a7c2090"
+    },
+    "repo/docs/table-of-contents.json": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/table-of-contents.json",
+      "sha256": "80023e500e7568487ae7dece7349ffe55a09352d9bbb80d99f977c1c0706c909"
+    },
+    "repo/docs/TEST-STATUS.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/TEST-STATUS.md",
+      "sha256": "22722cc8fda0e3c6cde75589c076615d2f495b0521fa2a4b0d2ba1a792a88de0"
+    },
+    "repo/docs/upgrade-guide.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/upgrade-guide.md",
+      "sha256": "a77ddb87b176f580e719c51ca1ee6b5f165f453864413b8bf3f5d5c7d681b5ce"
+    },
+    "repo/docs/whats-new.md": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/docs/whats-new.md",
+      "sha256": "6e79d6651cb9fda7bbc64053c02966b92ae927418d0a5f5b6af1a4c0e863ac6c"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/visgl/deck.gl/blob/7de3aa41176da9d6dcc11562fb5fa8b9d0cb11a4/LICENSE",
+      "sha256": "e499a2c2ba3b9faabe91fdfddf43e329439263264b7148e5548d0ec605cce9f2"
+    }
+  }
+}
