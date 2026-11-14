@@ -1,13 +1,13 @@
-// JSON in one line example metadata for the ky package
+// ky example: ky.get(url).json() fetches and parses in one line
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
   title: 'JSON in one line',
   summary:
-    'ky.get(url).json() resolves straight to parsed data, or throws on a non-2xx status. Click to fetch a random user from a public test API.',
-  section: 'Basics',
-  tags: ['get', 'json', 'HTTPError'],
-  docs: [],
-  provenance: 'legacy',
-  added: '2026-06-14',
+    'Ask a server for data and get a ready-to-use object back: ky.get(url).json() sends the request, checks that the answer is a success, and parses the JSON. Calling .json() also tells the server which format you want, through the Accept header it adds.',
+  section: 'Requests',
+  tags: ['ky.get', '.json()', 'accept'],
+  docs: ['repo/readme.md'],
+  provenance: 'pure',
+  added: '2026-11-14',
 });
