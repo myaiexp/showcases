@@ -56,6 +56,9 @@ importers:
       '@mermaid-js/mermaid-zenuml':
         specifier: ^1.0.1
         version: 1.0.1(mermaid@12.3.0)(tailwindcss@4.3.5)
+      '@observablehq/plot':
+        specifier: ^0.6.19
+        version: 0.6.19
       '@perspective-dev/client':
         specifier: 5.9.1
         version: 5.9.1
@@ -113,6 +116,9 @@ importers:
       chart.js:
         specifier: ^4.6.1
         version: 4.6.1
+      d3:
+        specifier: ^7.9.2
+        version: 7.9.2
       dexie:
         specifier: ^4.4.7
         version: 4.4.7
@@ -210,6 +216,9 @@ importers:
         specifier: ^4.6.7
         version: 4.6.7
     devDependencies:
+      '@types/d3':
+        specifier: ^7.4.3
+        version: 7.4.3
       '@types/geojson':
         specifier: ^7946.0.16
         version: 7946.0.16
@@ -554,6 +563,10 @@ packages:
     peerDependencies:
       '@emnapi/core': ^1.7.1 || 2.0.0-beta.2
       '@emnapi/runtime': ^1.7.1 || 2.0.0-beta.2
+
+  '@observablehq/plot@0.6.19':
+    resolution: {integrity: sha512-8Tg8+doIBDKTG6gL9Px7Tws+Tuni+bwjhaJufAKR3V8HFi2dtGQf57fH0UKwOrMYgjmEdX2PP1E4LIi7gyhgYw==}
+    engines: {node: '>=12'}
 
   '@oxc-project/types@0.156.0':
     resolution: {integrity: sha512-1Duyg48TdJNdyhEB8Xn1L36bT9Pv6GUtlKjHxOys8xkaF/rQq3XJE+bAurSK/AgIz5mGFsb77cn9Pb20+WCScw==}
@@ -1257,6 +1270,9 @@ packages:
   bidi-js@1.1.0:
     resolution: {integrity: sha512-fX1Onk0tdVPC7obPWB5EbJ1z7NVhLq4m2xZLq2YXBkxzMXIGRpNMU88n0EPgWseKl12J7zXs7qrDxPK4sRs2fg==}
 
+  binary-search-bounds@2.0.5:
+    resolution: {integrity: sha512-H0ea4Fd3lS1+sTEB2TgcLoK21lLhwEJzlQv3IN47pJS976Gx4zoWe0ak3q+uYh60ppQxg9F16Ri4tS1sfD4+jA==}
+
   bn.js@5.2.5:
     resolution: {integrity: sha512-Vq886eXykuP5E6HcKSSStP3bJgrE6In5WKxVUvJ8XGpWWYs2xZHWqUwzCtGgEtBcxyd57KBFDPFoUfNzdaHCNg==}
 
@@ -1689,11 +1705,17 @@ packages:
     resolution: {integrity: sha512-5Hh7Y1wQbvY5ooGgPbDaL5iYLAPzMTUrjMulskHLH6wnv/A+1q5rgEaiuqEjB+oxGXIVZs1FF+R/KPN3ZSQYYg==}
     engines: {node: '>=12'}
 
+  interval-tree-1d@1.0.4:
+    resolution: {integrity: sha512-wY8QJH+6wNI0uh4pDQzMvl+478Qh7Rl4qLmqiluxALlNvl+I+o5x38Pw3/z7mDPTPS1dQalZJXsmbvxx5gclhQ==}
+
   isarray@0.0.1:
     resolution: {integrity: sha512-D2S+3GLxWH+uhrNEcoh/fnmYeP8E8/zHl644d/jdA0g2uyXvy3sb0qxotE+ne0LtccHknQzWwZEzhak7oJ0COQ==}
 
   ismobilejs@1.1.1:
     resolution: {integrity: sha512-VaFW53yt8QO61k2WJui0dHf4SlL8lxBofUuUmwBo0ljPk0Drz2TiuDW4jo3wDcv41qy/SxrJ+VAzJ/qYqsmzRw==}
+
+  isoformat@0.2.1:
+    resolution: {integrity: sha512-tFLRAygk9NqrRPhJSnNGh7g7oaVWDwR0wKh/GM2LgmPa50Eg4UfyaCO4I8k6EqJHl1/uh2RAD6g06n5ygEnrjQ==}
 
   jotai@2.20.3:
     resolution: {integrity: sha512-N8L9FUbeGDP+0qNJw1FebOxt+5hk+jTOwUA2LlRE4C081jUcY6F1T/FSETp4DT2/INMtiSRZyNm2D+yZdzrSgA==}
@@ -2595,6 +2617,12 @@ snapshots:
       '@tybys/wasm-util': 0.10.4
     optional: true
 
+  '@observablehq/plot@0.6.19':
+    dependencies:
+      d3: 7.9.2
+      interval-tree-1d: 1.0.4
+      isoformat: 0.2.1
+
   '@oxc-project/types@0.156.0': {}
 
   '@perspective-dev/client@5.9.1':
@@ -3265,6 +3293,8 @@ snapshots:
     dependencies:
       require-from-string: 2.0.2
 
+  binary-search-bounds@2.0.5: {}
+
   bn.js@5.2.5: {}
 
   buffer-from@1.1.2: {}
@@ -3699,9 +3729,15 @@ snapshots:
 
   internmap@2.0.3: {}
 
+  interval-tree-1d@1.0.4:
+    dependencies:
+      binary-search-bounds: 2.0.5
+
   isarray@0.0.1: {}
 
   ismobilejs@1.1.1: {}
+
+  isoformat@0.2.1: {}
 
   jotai@2.20.3(react@19.3.1):
     optionalDependencies:

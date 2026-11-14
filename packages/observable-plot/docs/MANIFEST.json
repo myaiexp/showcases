@@ -1,0 +1,806 @@
+{
+  "fetched": "2026-11-14T05:47:16.058Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/observablehq/plot",
+      "ref": "v0.6.19",
+      "paths": [
+        "LICENSE",
+        "docs/.vitepress/config.ts",
+        "docs/*.md",
+        "docs/features/*.md",
+        "docs/marks/*.md",
+        "docs/transforms/*.md",
+        "docs/interactions/*.md",
+        "docs/data/*.ts",
+        "docs/components/*.js",
+        "test/data/aapl.csv",
+        "test/data/alphabet.csv",
+        "test/data/amzn.csv",
+        "test/data/anscombe.csv",
+        "test/data/athletes.csv",
+        "test/data/barley.csv",
+        "test/data/beagle.csv",
+        "test/data/bls-industry-unemployment.csv",
+        "test/data/bls-metro-unemployment.csv",
+        "test/data/ca55-south.csv",
+        "test/data/caltrain.csv",
+        "test/data/cars.csv",
+        "test/data/civilizations.csv",
+        "test/data/countries-110m.json",
+        "test/data/crimean-war.csv",
+        "test/data/diamonds.csv",
+        "test/data/dji.csv",
+        "test/data/driving.csv",
+        "test/data/faithful.tsv",
+        "test/data/flare.csv",
+        "test/data/gistemp.csv",
+        "test/data/goog.csv",
+        "test/data/hadcrut-annual.txt",
+        "test/data/ibm.csv",
+        "test/data/income-gender.csv",
+        "test/data/ipos.csv",
+        "test/data/metros.csv",
+        "test/data/miserables.json",
+        "test/data/morley.csv",
+        "test/data/MYDAL2_M_SKY_WV_2022-11-01_rgb_360x180.csv",
+        "test/data/penguins.csv",
+        "test/data/povcalnet.csv",
+        "test/data/riaa-us-revenue.csv",
+        "test/data/seattle-weather.csv",
+        "test/data/sf-sj-temperatures.csv",
+        "test/data/sf-temperatures.csv",
+        "test/data/simpsons.csv",
+        "test/data/survey.csv",
+        "test/data/tdf-stage-8-2017.csv",
+        "test/data/traffic.csv",
+        "test/data/travelers.csv",
+        "test/data/tsa.csv",
+        "test/data/us-congress-2023.csv",
+        "test/data/us-counties-10m.json",
+        "test/data/us-county-population.csv",
+        "test/data/us-county-unemployment.csv",
+        "test/data/us-population-state-age.csv",
+        "test/data/us-president-favorability.csv",
+        "test/data/us-presidential-election-2020.csv",
+        "test/data/us-state-population-2010-2019.csv",
+        "test/data/volcano.json",
+        "test/data/walmarts.tsv",
+        "test/data/westport-house.json",
+        "test/data/wind.csv"
+      ],
+      "commit": "1cc03956dbf752a7c6838a2c059ce86d5bd1263b"
+    }
+  ],
+  "files": {
+    "repo/docs/.vitepress/config.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/.vitepress/config.ts",
+      "sha256": "a8fc049a78da333dd9b3ae580d6e32bb0053e2d078740bafa191d3a0bef11c1e"
+    },
+    "repo/docs/api.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/api.md",
+      "sha256": "12f35a7fcb51df2a88a6b4425774ae0648363b75eef9e319a1d0d5149872e7b0"
+    },
+    "repo/docs/community.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/community.md",
+      "sha256": "c43c8d9c55e0c83f3d86ca59b89ef8de75c4eeaec3a532e9cd4c7cdd3956a429"
+    },
+    "repo/docs/components/links.js": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/components/links.js",
+      "sha256": "0007f7b343a63bacc6cb2b2ba2161f554740242c88c30da653ad77f1e8da85f3"
+    },
+    "repo/docs/components/perlin.js": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/components/perlin.js",
+      "sha256": "7b9b9bc69fbd4bb692dce8493d9b1ed75293588e52fbfd8fb338f5584df4bbdc"
+    },
+    "repo/docs/components/PlotRender.js": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/components/PlotRender.js",
+      "sha256": "1053cd3df271a63c7ba280bc5e46dde5d909b9b5953e699d59f1e9a993d960b7"
+    },
+    "repo/docs/components/poisson.js": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/components/poisson.js",
+      "sha256": "89648f960483856ce36f4a4513de081acb2cae4a69badc15a2389b1b8b1f33d4"
+    },
+    "repo/docs/data/aapl.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/aapl.data.ts",
+      "sha256": "c23b9d9f4b2c06dcdc6db83d4d28f7acb4eede1a9258b2cf09329f6c1fb4f65e"
+    },
+    "repo/docs/data/aapl.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/aapl.ts",
+      "sha256": "242d45b52115a48562cc751d5154cbb7e3c59caf26ff87f3a95534b6147da712"
+    },
+    "repo/docs/data/alphabet.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/alphabet.data.ts",
+      "sha256": "5be2e61b0d8990d3a793017d59893794bd034bed73928987775b7a17a8adefd2"
+    },
+    "repo/docs/data/alphabet.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/alphabet.ts",
+      "sha256": "056896209d65e0bb6ea84b4956fe7c6047137d5c830de9d8f18143119b3182f4"
+    },
+    "repo/docs/data/anscombe.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/anscombe.data.ts",
+      "sha256": "0953e16cf24e0cd66c934f91f327e7398d90eb56393b7b231062fb8a4ced35f9"
+    },
+    "repo/docs/data/anscombe.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/anscombe.ts",
+      "sha256": "e59ff35efab1a4033dd03b850bd9cc9dc5850ace02d8cdb855675c58ac0cfd70"
+    },
+    "repo/docs/data/api.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/api.data.ts",
+      "sha256": "10c5568c596f51b81d3ac3ae68e6df895a1d8185d103919b9ca3506e52be4ea9"
+    },
+    "repo/docs/data/barley.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/barley.data.ts",
+      "sha256": "7452876a4647220cc79a28ee62de543ca30cc4bdb1e332e86daee4ddd5fada39"
+    },
+    "repo/docs/data/barley.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/barley.ts",
+      "sha256": "2987dcdbbf495a10a2e18d4d4a165757caf11ee4b084c3a027629e17044e826c"
+    },
+    "repo/docs/data/bls-industry-unemployment.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/bls-industry-unemployment.data.ts",
+      "sha256": "1abe827c47c0cd1c01fd6eabf9e88ba22e2bf7ddd3505cee844c843172759e6b"
+    },
+    "repo/docs/data/bls-industry-unemployment.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/bls-industry-unemployment.ts",
+      "sha256": "5e966006154b3be5cecfb5c8fbe73627ccf0e2b070a24557eddf8ae25badb872"
+    },
+    "repo/docs/data/caltrain.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/caltrain.data.ts",
+      "sha256": "9f5c470bfa19d9b654896c8dcf87ab8c56f532c91fc8d993774f0f24f1cd7e41"
+    },
+    "repo/docs/data/caltrain.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/caltrain.ts",
+      "sha256": "a57a85b071c28c8d6f9e54863796d0e8969402a27ac9f8d3d318b98fb5170892"
+    },
+    "repo/docs/data/cars.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/cars.data.ts",
+      "sha256": "dc5fd976d04cdb2fae54d8d074a52b97202e6c8a25f3e89b12e5c8a8228dbaac"
+    },
+    "repo/docs/data/cars.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/cars.ts",
+      "sha256": "997b2c07ace30211c9dfe49fa2cbf8cc36ff7df8ad30dfd6f3d79bb9df0cfa55"
+    },
+    "repo/docs/data/civilizations.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/civilizations.data.ts",
+      "sha256": "9fd3261596abafcb94240f98ca2ecfb3fd748e702a4d0bf2d9c7a038243bb70c"
+    },
+    "repo/docs/data/civilizations.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/civilizations.ts",
+      "sha256": "f40a67e43ddaf38b946cdcd6497939f6ae5e811d97a14adee535b209aea4b231"
+    },
+    "repo/docs/data/crimea.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/crimea.data.ts",
+      "sha256": "359207a4e46892a9f675fcdb828cd75d347e8a96fb2bb5c401aef34bb5143036"
+    },
+    "repo/docs/data/crimea.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/crimea.ts",
+      "sha256": "0f9ad83d5eb1fd75768c004c7cbbe2f04d7aaec8c1b591cd6c9b19c7e3dcab01"
+    },
+    "repo/docs/data/diamonds.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/diamonds.data.ts",
+      "sha256": "0b5711b88895cf8c4f707d213b0734fb0a71a6b18720715748606626bcb786c3"
+    },
+    "repo/docs/data/diamonds.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/diamonds.ts",
+      "sha256": "1b07a93c070a0d9a4824254a4ae5b567a3d067381b8a85b2a62910eb45a3b5d5"
+    },
+    "repo/docs/data/driving.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/driving.data.ts",
+      "sha256": "2bd01c8b5f1a30dbaad8025d1c2a2ea382d29a9893e35a06a71246f956bfea78"
+    },
+    "repo/docs/data/driving.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/driving.ts",
+      "sha256": "162a5e9cb8df4bda94911bc2bc24249cfbf8449895e4feed733d0c8670f46cf9"
+    },
+    "repo/docs/data/faithful.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/faithful.data.ts",
+      "sha256": "901c3cf1c0a89f63106fef1b24e53239b8975891d1b38450f5534edd26e501dd"
+    },
+    "repo/docs/data/faithful.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/faithful.ts",
+      "sha256": "f816cbac4e7b637b1c1b25246c3830c5c104091e998956464f22f9da363bd8d8"
+    },
+    "repo/docs/data/gistemp.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/gistemp.data.ts",
+      "sha256": "6f7041773bc74d5c9a76f290e31f41774221f99d4ad5bfa809d55ac7c7a64488"
+    },
+    "repo/docs/data/gistemp.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/gistemp.ts",
+      "sha256": "3ce99853faefd9b79c012791ee93e5aa372b040a539dd2ee81aa83ab51dfba8c"
+    },
+    "repo/docs/data/hadcrut.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/hadcrut.data.ts",
+      "sha256": "a462ff5c99bdfbc4737629b4f763805a5ac7b3235c67d4fde1ff398677b8ff13"
+    },
+    "repo/docs/data/hadcrut.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/hadcrut.ts",
+      "sha256": "61e63a032957b611556b5daef6ab5a47c4a5dd9cf41391ca13effb1a53ac6048"
+    },
+    "repo/docs/data/income-gender.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/income-gender.data.ts",
+      "sha256": "584feb3b443db59457824aaa4936c86ce000f86d557411f12e2f9c3ccaf69577"
+    },
+    "repo/docs/data/income-gender.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/income-gender.ts",
+      "sha256": "931fb297554cb9f992fbd7d5597b2487ba353e1ae76e3ab725da574556e2ce89"
+    },
+    "repo/docs/data/metros.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/metros.data.ts",
+      "sha256": "5c3bdb139dd8d864f87ef7538c470d1c7bdac13c99dc3051379a903795c9e8a4"
+    },
+    "repo/docs/data/metros.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/metros.ts",
+      "sha256": "6edaec8a6879e04bfa268daafe48688456cc2ede6053fe49da551a2de0880cbf"
+    },
+    "repo/docs/data/miserables.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/miserables.data.ts",
+      "sha256": "837a8213151f40b283dcffdfefddca1bc696e08b687fe4712d26390f552e25e5"
+    },
+    "repo/docs/data/miserables.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/miserables.ts",
+      "sha256": "904772ac7741feee3c4eb909a046d432eac72f0f60e543cff6e0f971729e89d3"
+    },
+    "repo/docs/data/morley.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/morley.data.ts",
+      "sha256": "774738422df50447090a3ec543c8e2e383b91d248e4ee85e515ded0924e6ce6e"
+    },
+    "repo/docs/data/morley.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/morley.ts",
+      "sha256": "ca124041902bd7a026e4fefc209dac8e56c63eba335bdef7c806dbbe8b1dbba0"
+    },
+    "repo/docs/data/olympians.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/olympians.data.ts",
+      "sha256": "d8bcfeb7dffe3f8ce46013d14193f35237426ee215722d1d507054e8abe5ffd0"
+    },
+    "repo/docs/data/olympians.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/olympians.ts",
+      "sha256": "facae602e29ffe2211f298a6699e66205a7baa400be18ec609ddaeb1e52f75e3"
+    },
+    "repo/docs/data/penguins.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/penguins.data.ts",
+      "sha256": "082e3e9eadd1f41d9fd814a929a38d82081a52de60059add11b2f1753f7ac8a1"
+    },
+    "repo/docs/data/penguins.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/penguins.ts",
+      "sha256": "142ad6df2577bcf1906e293d52c0fd4d7b9546df88e3b7ad27f3f7068aeb1a6e"
+    },
+    "repo/docs/data/sf-temperatures.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/sf-temperatures.data.ts",
+      "sha256": "483f32e962ba6ab7dea5be7b4c7e3d01c9f68a800950c074a291215a813c386d"
+    },
+    "repo/docs/data/sf-temperatures.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/sf-temperatures.ts",
+      "sha256": "2d3f51a07a3eda798b66172212333fabe225cd94f6e5d98e0ff556fd4a13f9ad"
+    },
+    "repo/docs/data/tdf.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/tdf.data.ts",
+      "sha256": "4c0ffb7db4b88630c748939aceccdd5d8dd656f88d18941bc2d19e5c226b8610"
+    },
+    "repo/docs/data/tdf.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/tdf.ts",
+      "sha256": "2e674192a15e87bd5369c1205992a55ede8e3e7b950fc449d9e3e9705ff97346"
+    },
+    "repo/docs/data/us-counties-10m.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/us-counties-10m.data.ts",
+      "sha256": "d085700e72327de1d50c9af1b52f970191eee3797a10cec563cdb6ef8db2aebd"
+    },
+    "repo/docs/data/us-counties-10m.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/us-counties-10m.ts",
+      "sha256": "9b0e9500c79d4d76ab1c10d91c2a4e701e2856c6c3e96488620c511ddd719961"
+    },
+    "repo/docs/data/us-presidential-election-2020.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/us-presidential-election-2020.data.ts",
+      "sha256": "18f51ae389c15aebf80d85b0a7daeec1de5b0530d2928d4b140eb6e9626c0bcc"
+    },
+    "repo/docs/data/us-presidential-election-2020.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/us-presidential-election-2020.ts",
+      "sha256": "79763ce7663d6a5f04f42bc7556f6c9985e8a7bf503585521ec14bd31f1012cc"
+    },
+    "repo/docs/data/us-state-population-2010-2019.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/us-state-population-2010-2019.data.ts",
+      "sha256": "e04d39178102e0d0ea4ccdcc8537ff2acf29e0c9bd91dae8330d30c820c7a330"
+    },
+    "repo/docs/data/us-state-population-2010-2019.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/us-state-population-2010-2019.ts",
+      "sha256": "1e1d9e8d374835e000df2e11eefe12609cbb34bfe3be9ae9fc7ea85c4bb11d77"
+    },
+    "repo/docs/data/volcano.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/volcano.data.ts",
+      "sha256": "a91c344b9a2cc04312c70de8c00555726380f74565ebf44d427a1f204c88e6cc"
+    },
+    "repo/docs/data/volcano.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/volcano.ts",
+      "sha256": "add78b54557bdad22b4abd6d34675fb4e5277fd00eeb2382484a35c2cd2d48b3"
+    },
+    "repo/docs/data/walmarts.data.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/walmarts.data.ts",
+      "sha256": "fb37471df078dd11892e560ed14f30b2a592121c9e556cc97429ea2bab701140"
+    },
+    "repo/docs/data/walmarts.ts": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/data/walmarts.ts",
+      "sha256": "98d28c5b319247abb4acf04c89fbf892e96527caeabd21063c2f80128eb89723"
+    },
+    "repo/docs/features/accessibility.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/accessibility.md",
+      "sha256": "1bc50890bb6b782bd770a3f88a9f943b0aec38d2cfe15de78bdddcbc16620b88"
+    },
+    "repo/docs/features/curves.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/curves.md",
+      "sha256": "325be3f9420e4df3534626c4d75f5788fb5aab5671baf8c6d75697f90c91eaae"
+    },
+    "repo/docs/features/facets.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/facets.md",
+      "sha256": "99fc6972d71bc923b9e2034d03ba659eb34de374b3dfcd443b896b4780ae747c"
+    },
+    "repo/docs/features/formats.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/formats.md",
+      "sha256": "451ba8964613e87eb9eec29ce0e5f005114e0d4a261a5db2df435b2b74dfa290"
+    },
+    "repo/docs/features/interactions.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/interactions.md",
+      "sha256": "68128a84f14c0a8006cedede7c237312dd1213674fe83078387cd8ec6b69684f"
+    },
+    "repo/docs/features/intervals.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/intervals.md",
+      "sha256": "56b1ced94192d3912ba279ad53d5566f2556c6bbfc236c7f648d42dc6255c2f5"
+    },
+    "repo/docs/features/legends.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/legends.md",
+      "sha256": "4138625d6b6f1014a6d480a67855e7f400dceb6a6d7cef4d23049a61df63db8a"
+    },
+    "repo/docs/features/markers.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/markers.md",
+      "sha256": "3b3bf25e08cd6f8e455328e81e0f2ea01f754ef3693ab221637f88c2aed04648"
+    },
+    "repo/docs/features/marks.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/marks.md",
+      "sha256": "6f72912edf3ce7fa4c92b5c5149d5d1fdb26fda69f9e6bb7ce71a7b1f4619204"
+    },
+    "repo/docs/features/plots.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/plots.md",
+      "sha256": "1004509d5a814f9d08d103a8669597e8849525a1c71417c1b512428243ea4925"
+    },
+    "repo/docs/features/projections.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/projections.md",
+      "sha256": "68c560b275f833b73495bb46d787815464f029f1eedc8107da449af2e87ce0f4"
+    },
+    "repo/docs/features/scales.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/scales.md",
+      "sha256": "a40bd45d2141c58fb102104a477a94a81a2c948f1f02ee616e2c6ae28979575d"
+    },
+    "repo/docs/features/shorthand.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/shorthand.md",
+      "sha256": "c067d334cc166883b416f3589f90a35abd386df9cda9ff039f749f7513561691"
+    },
+    "repo/docs/features/transforms.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/features/transforms.md",
+      "sha256": "746e47d683b975fda3371d3e0e2353f1b0831c71715fee0353b75cf431967ce1"
+    },
+    "repo/docs/getting-started.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/getting-started.md",
+      "sha256": "a82d326bedc71be93e2a58f9893ba860fa4796ef31c20b5ad87c4eef9a1575cd"
+    },
+    "repo/docs/index.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/index.md",
+      "sha256": "b9d4560cc74ac104b3f73d8e74e2f1fcb0ea878a258e68a6483273ed2b97845e"
+    },
+    "repo/docs/interactions/crosshair.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/interactions/crosshair.md",
+      "sha256": "fb4c82e87c20312caa1bf64efd5c0516643972f5a793443c0f0710b5983aaa92"
+    },
+    "repo/docs/interactions/pointer.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/interactions/pointer.md",
+      "sha256": "2c85ad5c482f7d4b8be6c7e9e70fed63b76cc4d07f096921ff44622325d57d82"
+    },
+    "repo/docs/marks/area.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/area.md",
+      "sha256": "542862adb7cf79d32a93e83d359502674b99fe02f2ae907124004336042e1afc"
+    },
+    "repo/docs/marks/arrow.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/arrow.md",
+      "sha256": "36d62c05e2402192234ecac9c193fb04f67c1503444e96ca65cbb7ef45915256"
+    },
+    "repo/docs/marks/auto.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/auto.md",
+      "sha256": "3bc59f906d54e537d1461e96c4ab37c6d2d7254581f349c321008200f67810b9"
+    },
+    "repo/docs/marks/axis.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/axis.md",
+      "sha256": "60068e2ea67eb2fdc81ace02635677a9784cc757d9bf3835a5a8c1d9db896fdd"
+    },
+    "repo/docs/marks/bar.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/bar.md",
+      "sha256": "0922c7560a5ae00a74169429165df0384a14f3de956dbd32a0cd1dfec31e9486"
+    },
+    "repo/docs/marks/bollinger.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/bollinger.md",
+      "sha256": "81be384a6fbe56c2e5d98816c0595b1f4a0b60b1e24899b39fddf0d947710e5a"
+    },
+    "repo/docs/marks/box.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/box.md",
+      "sha256": "2aa80d7118cba95061655c84d3f6cfbfd259e01980049123d9f05d400d57b184"
+    },
+    "repo/docs/marks/cell.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/cell.md",
+      "sha256": "795f47fc5a2c1126e66e8af9893140a34dfeb2de4b226751dfdcf697e3dd7683"
+    },
+    "repo/docs/marks/contour.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/contour.md",
+      "sha256": "ac719a20b2f0b24913f4302a0c42cda6a202e34620d43d532d6d97f1db7efe6f"
+    },
+    "repo/docs/marks/delaunay.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/delaunay.md",
+      "sha256": "30d36d7fa9de56aaf89adc75a15700cce2ad41f49302a39636c694f4d5c4eae3"
+    },
+    "repo/docs/marks/density.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/density.md",
+      "sha256": "62a970f41fcc6a9e39d32c713cda98d6a473f166fe5f84ae03bcc83c7dd2ef06"
+    },
+    "repo/docs/marks/difference.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/difference.md",
+      "sha256": "8cce657d684a5c9f333425b9c284eea4cd059a99d611d970a56d6370521948fd"
+    },
+    "repo/docs/marks/dot.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/dot.md",
+      "sha256": "f2b1d4e0915e03a7f9a24162c2745241d26679f39df36f4b66969a0058622a77"
+    },
+    "repo/docs/marks/frame.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/frame.md",
+      "sha256": "47c01b1950e0266eedd8fa6bd5aa09d3186bd1f869f9124381bf9f7894c8e964"
+    },
+    "repo/docs/marks/geo.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/geo.md",
+      "sha256": "3f1165bafb33443c725a08e1ee7f6a0726d4afc9eecc92514265f16edfa8194c"
+    },
+    "repo/docs/marks/grid.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/grid.md",
+      "sha256": "4f0ed01f7ce24983a6a711c4bb96090273191829f3de219b317077c7cfd4d846"
+    },
+    "repo/docs/marks/hexgrid.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/hexgrid.md",
+      "sha256": "4d664db24844ef9239dbf501a8433ce1541df841f54372cd1063bce395846af3"
+    },
+    "repo/docs/marks/image.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/image.md",
+      "sha256": "939b5ef9a1cbf0df39fc98787ded442857918437faf644340c4494d853874726"
+    },
+    "repo/docs/marks/line.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/line.md",
+      "sha256": "f10e5a28d00c4d26cbef846b46c38d08063fc2e105dcdd9915ad38ef152f431a"
+    },
+    "repo/docs/marks/linear-regression.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/linear-regression.md",
+      "sha256": "8ea083de90f02808502838e7f7603af1b226baa072627ba4313a72b292140401"
+    },
+    "repo/docs/marks/link.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/link.md",
+      "sha256": "9a90585b8bebf7428fa62453b7e87ededcfd5cd88b2c5dffff4a1305c9e4246c"
+    },
+    "repo/docs/marks/raster.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/raster.md",
+      "sha256": "7dc4d7e3fd591fae3341005886c683259918292c792d10b4dbaeaa67106a23d2"
+    },
+    "repo/docs/marks/rect.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/rect.md",
+      "sha256": "c7a41c7056ec4e128facba7a1adcff06e3ca96f92c2ce356769e4b2926d8350f"
+    },
+    "repo/docs/marks/rule.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/rule.md",
+      "sha256": "ffd8d5fd9f8952312a01ec73db44929f6b314386582811dbe36332f0afb65f3f"
+    },
+    "repo/docs/marks/text.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/text.md",
+      "sha256": "3f070d989230ca169dfa2a6c10e4b631ebfa4eb4a73ebed404514ca4f7143020"
+    },
+    "repo/docs/marks/tick.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/tick.md",
+      "sha256": "387f95f9fb6505f83395368fa968d0880ce0d8ff0999120c79d95aab08788962"
+    },
+    "repo/docs/marks/tip.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/tip.md",
+      "sha256": "03cb78c38626b8f2f08d72c891c2d533e89e412c8f9fc3d189b565edb07f990c"
+    },
+    "repo/docs/marks/tree.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/tree.md",
+      "sha256": "314f0cb8f17acfbd7aabea01ef4c33cbbf989fd60551d7caf8c9d11d66640024"
+    },
+    "repo/docs/marks/vector.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/vector.md",
+      "sha256": "6efc0c160b4f405c28a96766bea73b618a275150b1c8b0bf73043c256660d95d"
+    },
+    "repo/docs/marks/waffle.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/marks/waffle.md",
+      "sha256": "7e9eefdde13e4b1d5c0d71ffe120075e25b9439da8ee767f46e0b5d1e4e778eb"
+    },
+    "repo/docs/transforms/bin.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/bin.md",
+      "sha256": "64433fe020920c5f6c91f1a092b3343a3917cb2a5929148971ba6ad153a3c29a"
+    },
+    "repo/docs/transforms/centroid.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/centroid.md",
+      "sha256": "da1d5fa400e85991bedba1e42ceee87dbf91fe240653ba3f889cb47c14059cae"
+    },
+    "repo/docs/transforms/dodge.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/dodge.md",
+      "sha256": "d8d0d51051bc6e610823893dcc475dc8da84696f517952e8fba2700f57e00421"
+    },
+    "repo/docs/transforms/filter.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/filter.md",
+      "sha256": "dfc972ac76f42ca0feb7b1ac6a3598ac5ebdf1f2d31fdf2942866caa3e7d33ae"
+    },
+    "repo/docs/transforms/group.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/group.md",
+      "sha256": "92911bcc38331549467271074a5a12178c90539df65bd9707d6d2546e7e641ef"
+    },
+    "repo/docs/transforms/hexbin.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/hexbin.md",
+      "sha256": "eb799d820c80ed5875f3a3db1919d014f46abd68ddc0f1012743d3979f10a196"
+    },
+    "repo/docs/transforms/interval.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/interval.md",
+      "sha256": "25e1321f3469ceb00d668adc69a02d2ceca8cc9973aec09d8ae0ae0c1297e866"
+    },
+    "repo/docs/transforms/map.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/map.md",
+      "sha256": "05294873f770c8031454cda5705a6bcfbf246539a7c9fe58129bf45154a30f2a"
+    },
+    "repo/docs/transforms/normalize.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/normalize.md",
+      "sha256": "d79022829939c76c6f056caedabb1d2a2e0162d3947704f1d6cbf947c85f278c"
+    },
+    "repo/docs/transforms/select.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/select.md",
+      "sha256": "b17957554104d325147528359d2c58be0ff22b5669ff409ebc707279c28f25a2"
+    },
+    "repo/docs/transforms/shift.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/shift.md",
+      "sha256": "c1898335518f11be7c4a1b06a8031a3aa37a799383f1fde151efc53f619b51f7"
+    },
+    "repo/docs/transforms/sort.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/sort.md",
+      "sha256": "c11ce3b41a1e4e41c0b2ab45f85dc22fbe7167846b89984cf79adbc2f8aaec6a"
+    },
+    "repo/docs/transforms/stack.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/stack.md",
+      "sha256": "c5f4c584e8c9879bcad8e7616de615c15aacff2a2764500396e410e632b29036"
+    },
+    "repo/docs/transforms/tree.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/tree.md",
+      "sha256": "80490b1f99d1bf469e782ef44ccd714317c974d451457f1809217fdff0c9c537"
+    },
+    "repo/docs/transforms/window.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/transforms/window.md",
+      "sha256": "aefd622221275d773bf249191b12d117f1db5ae286df9e9e714f6f94deb4f25c"
+    },
+    "repo/docs/what-is-plot.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/what-is-plot.md",
+      "sha256": "5d04f547556897541cc1174b2deaddeaddbccdcc4f721f0ed7d78167eaef4be0"
+    },
+    "repo/docs/why-plot.md": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/docs/why-plot.md",
+      "sha256": "63561f2e1ba2e487897d767995b9e51cbfb8fbb5d6b7fe919af0949522ad5f27"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/LICENSE",
+      "sha256": "4b295e011e0e046170041b5b46f1349393aeceb95797793a55bd21dbb543363a"
+    },
+    "repo/test/data/aapl.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/aapl.csv",
+      "sha256": "18dc8bf6542da26625d992544a619a5fc210d6dfc799e81ab7fb7f9edbc21f9a"
+    },
+    "repo/test/data/alphabet.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/alphabet.csv",
+      "sha256": "d62ce74dad83964bb0c463811933a29df888bff0624febbe7e63594931fa7e9e"
+    },
+    "repo/test/data/amzn.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/amzn.csv",
+      "sha256": "bccda0fb3ad28018d5c2a9de7c50c8b4cde8df43a5b15033d540da08fc210c26"
+    },
+    "repo/test/data/anscombe.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/anscombe.csv",
+      "sha256": "136943112c4dbaebddb3f69f72612c0a4c9d4354b74ea54d98f6d16d01be9913"
+    },
+    "repo/test/data/athletes.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/athletes.csv",
+      "sha256": "29ff8d6298da8961d264be2849701614cce6ef939d6e52fb413f2071ec30f7ec"
+    },
+    "repo/test/data/barley.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/barley.csv",
+      "sha256": "98e66fe7ca3d3faaf699fc1935a8181060c7343033862cf1e53b09d15cb18f10"
+    },
+    "repo/test/data/beagle.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/beagle.csv",
+      "sha256": "338919940e130c887f186729eda26ad85b8b272ab83128d5facf40fbb3b309e9"
+    },
+    "repo/test/data/bls-industry-unemployment.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/bls-industry-unemployment.csv",
+      "sha256": "4cfc13b6ebe0f8c231b52895cee5f67670e5a1bad86460a8982716c3d86d835f"
+    },
+    "repo/test/data/bls-metro-unemployment.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/bls-metro-unemployment.csv",
+      "sha256": "43abd0f7a31a9e6a8c7b370ff5c140571216791fd5f6d033b14749739179e4cf"
+    },
+    "repo/test/data/ca55-south.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/ca55-south.csv",
+      "sha256": "e603051f4f0a671d72c4a937b3c0d06d089e0d4779609290e9d7275280b60473"
+    },
+    "repo/test/data/caltrain.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/caltrain.csv",
+      "sha256": "3b552132055246cbbd5244149069343447d8b3a92c99e2431dc4ffdbdd044b95"
+    },
+    "repo/test/data/cars.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/cars.csv",
+      "sha256": "eaad8395d37ee0f591ea143e8ce4f87d0909fb1daba085834b27c1da841f56af"
+    },
+    "repo/test/data/civilizations.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/civilizations.csv",
+      "sha256": "f1bc77f2ce024bb8917f7f8efcb308faaf4f68e11d84fffefdd62872675ecfce"
+    },
+    "repo/test/data/countries-110m.json": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/countries-110m.json",
+      "sha256": "2516c915867c7baf18ddec727aec46c315541a07cfb3d79a6559b05d5e94eee8"
+    },
+    "repo/test/data/crimean-war.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/crimean-war.csv",
+      "sha256": "5747ee54b77a9b717dbc9d7f032581c4db67ea97de2f34df89cad093e632c368"
+    },
+    "repo/test/data/diamonds.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/diamonds.csv",
+      "sha256": "243996d7650e84e190a88d505b44c3a0be1bcfc7b4f32606d60d103a51494b9e"
+    },
+    "repo/test/data/dji.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/dji.csv",
+      "sha256": "a370d6a83b33c2f6c953566a2149230da9b7e9674bfd782a45a6bab7687cbc5c"
+    },
+    "repo/test/data/driving.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/driving.csv",
+      "sha256": "3aced2fa41f2be51ee43f9da66d964d7c647dac27bcc37158d09098efad4ba4e"
+    },
+    "repo/test/data/faithful.tsv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/faithful.tsv",
+      "sha256": "b296ecadf2814baf29c18477441006c1c54f229dce6f811fc969d45204f0ba2a"
+    },
+    "repo/test/data/flare.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/flare.csv",
+      "sha256": "858b31f2d59058a77c6770f1b9df9936910101d752a972b1bbfc694e2856447e"
+    },
+    "repo/test/data/gistemp.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/gistemp.csv",
+      "sha256": "08e51068e9866142250078e13bf4521b204f8f4b89eaad158e701792758a5b46"
+    },
+    "repo/test/data/goog.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/goog.csv",
+      "sha256": "e16130eb50588b79d42a0f3aa23152207d83be1813e5ae1c81eecb6a9301b5ae"
+    },
+    "repo/test/data/hadcrut-annual.txt": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/hadcrut-annual.txt",
+      "sha256": "68bec931df7e29ed7c793e8515827a004e8bebb4766e9242130b1bc8646b9fc3"
+    },
+    "repo/test/data/ibm.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/ibm.csv",
+      "sha256": "4dbd58000b695d3e5dab12134b07e853533487ca926d22856ad5e86b946ee4c1"
+    },
+    "repo/test/data/income-gender.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/income-gender.csv",
+      "sha256": "81a36744d0927985cd8a8da6a3a9d99c6a6992a85f1b5c4b2c5433d7e7d688f5"
+    },
+    "repo/test/data/ipos.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/ipos.csv",
+      "sha256": "764c55737524e7c142d5e0fbea0b803467d5097ec691d774547168b905332552"
+    },
+    "repo/test/data/metros.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/metros.csv",
+      "sha256": "9b50329064c16166026a8fee22c1f99f08c5de53697ab24271634b27d7b94a0b"
+    },
+    "repo/test/data/miserables.json": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/miserables.json",
+      "sha256": "e84d8083667ccd496313307bd7e7a036da77689b8acf3464fa0211fb0b61a675"
+    },
+    "repo/test/data/morley.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/morley.csv",
+      "sha256": "a9c06023c0f277f09b6ad541e0f81acc4e21b09f3d5c35919547c3934dae5968"
+    },
+    "repo/test/data/MYDAL2_M_SKY_WV_2022-11-01_rgb_360x180.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/MYDAL2_M_SKY_WV_2022-11-01_rgb_360x180.csv",
+      "sha256": "d4c3255d7f94ae562de4590cc35f5faf81ca1cb07fc96c8ec174129482fac757"
+    },
+    "repo/test/data/penguins.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/penguins.csv",
+      "sha256": "dfee817d1c1422363886dfd1897b3bed1a54ff9a3a6b223b5b7900a88e55a24d"
+    },
+    "repo/test/data/povcalnet.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/povcalnet.csv",
+      "sha256": "a611ab9eed17efce4ba7f4e8cad0bdc0643867aad88701f95af51a488d79a5d4"
+    },
+    "repo/test/data/riaa-us-revenue.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/riaa-us-revenue.csv",
+      "sha256": "cce255a9eb860cd30786984e0636a24e9cf51aa232fc1f08a5fac383ee8170c8"
+    },
+    "repo/test/data/seattle-weather.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/seattle-weather.csv",
+      "sha256": "0845078a290b48e3149ab8639966824110a251db4e06fc144c06ebb534af23be"
+    },
+    "repo/test/data/sf-sj-temperatures.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/sf-sj-temperatures.csv",
+      "sha256": "b7bde7cc7a03ba57fa1c11fee0206cdaa2624091e8a08acdf054fdee5a1aa158"
+    },
+    "repo/test/data/sf-temperatures.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/sf-temperatures.csv",
+      "sha256": "1e90d4f9b2094bb32a4fd3f9d777478d0b5cb16f609c95e9be6eb2c245061cb4"
+    },
+    "repo/test/data/simpsons.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/simpsons.csv",
+      "sha256": "7cc6ecdcb70637a6d5e8df8933537f338178a96f61dd92e905f1b6b6044ebd31"
+    },
+    "repo/test/data/survey.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/survey.csv",
+      "sha256": "de6879d712488bf64cc7d215c12de59b5c9e08d574471493ae8d476510c2969c"
+    },
+    "repo/test/data/tdf-stage-8-2017.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/tdf-stage-8-2017.csv",
+      "sha256": "332ba3539e89d924c99791cd91ecdefb5f16719188a5852b87d5abda8ee47209"
+    },
+    "repo/test/data/traffic.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/traffic.csv",
+      "sha256": "ef516d417e16e567f01ff07b2ed5c7675bb5e7e192929c2512e53310f1cad3d6"
+    },
+    "repo/test/data/travelers.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/travelers.csv",
+      "sha256": "a5d9ba37fe6d67dc82195c571bc3f3a04ca07c83ddf57e127e1886f4d04d8ce8"
+    },
+    "repo/test/data/tsa.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/tsa.csv",
+      "sha256": "ce9c7cc141ed2de10b899eaca0ab1fe84e1cd67e17870c95045bb30635357606"
+    },
+    "repo/test/data/us-congress-2023.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/us-congress-2023.csv",
+      "sha256": "c375ab83a919f39b60b8fceeb55e0b6af971e281557db169b99754aca882a2db"
+    },
+    "repo/test/data/us-counties-10m.json": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/us-counties-10m.json",
+      "sha256": "145aaf5d1433352a6a1d8e86b5f149c7c653f9171baf14aaf75ee66575def1b0"
+    },
+    "repo/test/data/us-county-population.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/us-county-population.csv",
+      "sha256": "a15915cb8635d4c4938cd33f0465c12f21b6cf3309ee6f521335af6651b6273e"
+    },
+    "repo/test/data/us-county-unemployment.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/us-county-unemployment.csv",
+      "sha256": "dd3cc76e5e21f8caceee84da7e36450d28a59a1535f928f93efbc9b752059452"
+    },
+    "repo/test/data/us-population-state-age.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/us-population-state-age.csv",
+      "sha256": "faac57ee6d432f7291ed2c55856c56edf33d0111c0d9b30d941fc10d551c1ca0"
+    },
+    "repo/test/data/us-president-favorability.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/us-president-favorability.csv",
+      "sha256": "8c6f91753a00f6a72a055794393466e435b845fe2b115cb897587bb0baaff8bb"
+    },
+    "repo/test/data/us-presidential-election-2020.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/us-presidential-election-2020.csv",
+      "sha256": "6082c56fe563103d91aab883518946bc6a7ffd53854745d871449d6170fb50cd"
+    },
+    "repo/test/data/us-state-population-2010-2019.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/us-state-population-2010-2019.csv",
+      "sha256": "c915d8ffd29bdfa7132f0c939b4b7826cc7e4048287f03d7e34e14d6b50a083c"
+    },
+    "repo/test/data/volcano.json": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/volcano.json",
+      "sha256": "f5223ec98032634f121adef600c947fab5ab9389d689a0bb1e21d6a877d21178"
+    },
+    "repo/test/data/walmarts.tsv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/walmarts.tsv",
+      "sha256": "79128392fa6eb79f49f5dd9e2434b3ef9d9136b99f9de60d007bf27ae1ee6a98"
+    },
+    "repo/test/data/westport-house.json": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/westport-house.json",
+      "sha256": "066ea951b4affba3ee7c2bf981b8333681ce24e55903ffcddcc39f0475fb39a3"
+    },
+    "repo/test/data/wind.csv": {
+      "url": "https://github.com/observablehq/plot/blob/1cc03956dbf752a7c6838a2c059ce86d5bd1263b/test/data/wind.csv",
+      "sha256": "906a2dcf864ac82fd92b8863c30388665f004dbd85ac43ec43b87ce3aeea1a5a"
+    }
+  }
+}
