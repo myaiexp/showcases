@@ -1,5 +1,12 @@
 {
-  "license": "none found",
+  "license": "none found: dexie/dexie-web (the Next.js source of dexie.org, docs/ as markdown) has no LICENSE; the Apache-2.0 dexie-website-old repo is the superseded site",
   "redistribute": false,
-  "sources": []
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/dexie/dexie-web",
+      "ref": "main",
+      "paths": ["docs/**/*.md", "!docs/cloud", "!docs/roadmap", "!docs/Releasing-Dexie.md", "!docs/Typescript-old.md", "!docs/Samples.md"]
+    }
+  ]
 }
