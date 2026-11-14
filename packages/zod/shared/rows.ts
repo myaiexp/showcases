@@ -60,7 +60,10 @@ export function sampleRows(parent: HTMLElement, stage: Stage, opts: RowsOptions 
     } else {
       const issue = row.result.error.issues[0];
       out.classList.add('zd-reason');
-      if (issue) out.textContent = issue.path.length ? `${pathText(issue.path)}: ${issue.message}` : issue.message;
+      // The ✗ already says "invalid": keep the part that says why ("expected number…").
+      const why = issue?.message.replace(/^Invalid input: /, '');
+      if (issue) out.textContent = issue.path.length ? `${pathText(issue.path)}: ${why}` : why!;
+      if (issue) out.title = issue.message;
     }
     if (row.note) {
       const note = document.createElement('span');

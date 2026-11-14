@@ -10,6 +10,15 @@
 //   from the global registry on cleanup (stage.onDispose).
 // - Cards never touch the network: z.url(), z.email() and friends only check the text, which
 //   is fine, but an async refine that "checks a server" fakes the server with stage.wait().
+// - An example's style.css loads only when its main.ts imports it (import './style.css').
+// - A card fits about 7 sampleRows rows; an eighth is clipped.
+// - z.templateLiteral checks the text shape only: an inner z.number().int() is reflected
+//   (user-1.5 fails) but .positive()/.min()/.max() are not (user-0 passes).
+// - z.coerce.date() turns null and true into 1970-01-01; z.coerce.bigint() turns "" into 0n
+//   and "0x1f" into 31n; z.coerce.string() never fails. z.void() rejects null.
+// - z.url() accepts javascript: and ftp: links; z.httpUrl() rejects localhost and bare IPs.
+//   z.url({ normalize: true }) returns new URL(x).href (a trailing slash appears).
+// - z.jwt() checks the shape and header alg only, never the signature.
 import type { MountContext } from '@/types.ts';
 import './zod.css';
 
