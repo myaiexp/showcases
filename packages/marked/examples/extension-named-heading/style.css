@@ -1,0 +1,19 @@
+/* Extension named heading: tags showing which renderer drew each heading */
+[data-example='marked/extension-named-heading'] {
+  .tag {
+    display: inline-block;
+    margin-right: 0.5em;
+    padding: 0 0.4em;
+    border-radius: 4px;
+    font-size: 0.6em;
+    font-weight: 600;
+    vertical-align: middle;
+    color: var(--bg);
+  }
+  .tag.r {
+    background: var(--accent);
+  }
+  .tag.e {
+    background: var(--green);
+  }
+}

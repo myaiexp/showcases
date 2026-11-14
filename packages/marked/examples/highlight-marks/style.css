@@ -1,0 +1,9 @@
+/* Highlighter marks: a warm yellow stroke */
+[data-example='marked/highlight-marks'] {
+  mark {
+    background: linear-gradient(transparent 10%, #f6c945 10%, #f6c945 90%, transparent 90%);
+    color: #1a1a1a;
+    padding: 0 3px;
+    border-radius: 2px;
+  }
+}

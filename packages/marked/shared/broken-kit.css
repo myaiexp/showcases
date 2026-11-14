@@ -1,0 +1,54 @@
+/* "Markdown is broken": outlined element boxes labelled by tag */
+.mk-outline :is(p, ul, ol, li, blockquote, pre, div, a) {
+  position: relative;
+  outline: 1px dashed var(--mk-o, #888);
+  outline-offset: 1px;
+  padding-top: 0.9em;
+}
+.mk-outline :is(p, ul, ol, li, blockquote, pre, div, a)::before {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font: 600 8px/1 ui-monospace, monospace;
+  color: var(--mk-o, #888);
+  letter-spacing: 0.04em;
+}
+.mk-outline a {
+  display: inline-block;
+}
+.mk-outline p { --mk-o: #8fa3bf; }
+.mk-outline p::before { content: 'p'; }
+.mk-outline ul { --mk-o: #e0a458; }
+.mk-outline ul::before { content: 'ul'; }
+.mk-outline ol { --mk-o: #e0a458; }
+.mk-outline ol::before { content: 'ol'; }
+.mk-outline li { --mk-o: #7cc47f; }
+.mk-outline li::before { content: 'li'; }
+.mk-outline blockquote { --mk-o: #c792ea; }
+.mk-outline blockquote::before { content: 'blockquote'; }
+.mk-outline pre { --mk-o: #f07178; }
+.mk-outline pre::before { content: 'pre'; }
+.mk-outline div { --mk-o: #4fc1c9; }
+.mk-outline div::before { content: 'div'; }
+.mk-outline a { --mk-o: #6aa9ff; }
+.mk-outline a::before { content: 'a'; }
+.mk-outline ul,
+.mk-outline ol {
+  padding-left: 1.6em;
+  margin: 0.3em 0;
+}
+.mk-outline li,
+.mk-outline p {
+  margin: 0.25em 0;
+}
+.mk-quote-wait {
+  color: var(--fg-3);
+  font-style: italic;
+}
+.mk-outline .mk-quote-wait {
+  outline: none;
+  padding-top: 0;
+}
+.mk-outline .mk-quote-wait::before {
+  content: none;
+}

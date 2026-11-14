@@ -1,5 +1,98 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T16:45:36.501Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/markedjs/marked",
+      "ref": "v18.2.0",
+      "paths": [
+        "README.md",
+        "LICENSE*",
+        "docs/INDEX.md",
+        "docs/USING_ADVANCED.md",
+        "docs/USING_PRO.md",
+        "docs/broken.md",
+        "src/**/*.ts"
+      ],
+      "commit": "afba4543ff47620ad60e980bc2f091971ccfdd8c"
+    }
+  ],
+  "files": {
+    "repo/docs/broken.md": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/docs/broken.md",
+      "sha256": "a20a23d5b1d357d337874d83d47642e076ed36a6eccbf37b1c3961b7808e1b19"
+    },
+    "repo/docs/INDEX.md": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/docs/INDEX.md",
+      "sha256": "ba8723e75be47244b933a48d35e8bc9f5a9fb7d0f9d0feebad542070a4536139"
+    },
+    "repo/docs/USING_ADVANCED.md": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/docs/USING_ADVANCED.md",
+      "sha256": "5d2c9a75fc427382629de99a8d712b931710e30b44af3fc4b97562c71018de4e"
+    },
+    "repo/docs/USING_PRO.md": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/docs/USING_PRO.md",
+      "sha256": "2d33595a96d9e7f79c21b549ca3de98c6f383e19cda1dea5fc144b6d1ea1c467"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/LICENSE",
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/README.md",
+      "sha256": "b2f958f05b55e66a736a99745c3bb2629793867b39c05f1bb8532722dddabd54"
+    },
+    "repo/src/defaults.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/defaults.ts",
+      "sha256": "fc15453d9c34ba9e51476f792eab6896652ade89cc03f635cdb2f25ac0d68475"
+    },
+    "repo/src/helpers.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/helpers.ts",
+      "sha256": "3fffc5bee1fc64a9632c91ee7131ba81a94c91d360110d7c46ae54f38cb4b098"
+    },
+    "repo/src/Hooks.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/Hooks.ts",
+      "sha256": "f27bf6eaaccee4aceeb44bc857d332515adeb1876b69082a99196cab42065eac"
+    },
+    "repo/src/Instance.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/Instance.ts",
+      "sha256": "f93d126dd3aada8ee3a11c292dff75702756703eb454822ffd0aec84422f81df"
+    },
+    "repo/src/Lexer.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/Lexer.ts",
+      "sha256": "f0085e612a3cfd335f95160f35a4b497c4ef11cad310f4c21308059eb2f436cf"
+    },
+    "repo/src/marked.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/marked.ts",
+      "sha256": "3e1b05d3e95866b41da37d737f4de207a17bc74b987f234ed78684c7e22982ee"
+    },
+    "repo/src/MarkedOptions.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/MarkedOptions.ts",
+      "sha256": "7373f04ccc884be038cf373f48ddf2b393f3ec306ad3dc82d1af65b4aa5372b2"
+    },
+    "repo/src/Parser.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/Parser.ts",
+      "sha256": "c6f0597cbecc7ee50af3a25ac044c619b7df5aa87f9ebb23b1bca2d502dfa348"
+    },
+    "repo/src/Renderer.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/Renderer.ts",
+      "sha256": "af7c3c22fec3c0f76a38cc3862ab017ee112a6193fc2ee71540ba0c3b5efa19a"
+    },
+    "repo/src/rules.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/rules.ts",
+      "sha256": "63b22dcdc8863a24612de8f1ebe618763d2f363d40ebae74e2b0ab26e41a0267"
+    },
+    "repo/src/TextRenderer.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/TextRenderer.ts",
+      "sha256": "ac46c7a2d49c6d6bde47eae10799487d650bc1d16ec422dec8dd2b3295f0d7a3"
+    },
+    "repo/src/Tokenizer.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/Tokenizer.ts",
+      "sha256": "c6d36ac191e5add66defd43b8c58fe120e621e372b02edd773d3a7456d2b0d4c"
+    },
+    "repo/src/Tokens.ts": {
+      "url": "https://github.com/markedjs/marked/blob/afba4543ff47620ad60e980bc2f091971ccfdd8c/src/Tokens.ts",
+      "sha256": "b28caea381f11ba48e444bddd4b9be7dd5695a3a2a825dfbde97a9d3baa210c8"
+    }
+  }
 }

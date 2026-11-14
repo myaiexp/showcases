@@ -1,0 +1,21 @@
+/* Two columns side by side */
+[data-example='marked/two-columns'] {
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0.6em 0;
+  }
+  .col {
+    padding: 0.3em 0.8em;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--accent) 6%, transparent);
+  }
+  .col > :first-child {
+    margin-top: 0.3em;
+  }
+  .col > :last-child {
+    margin-bottom: 0.3em;
+  }
+}

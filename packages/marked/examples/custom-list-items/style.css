@@ -1,0 +1,19 @@
+/* Price list items: name, dotted leader, price */
+[data-example='marked/custom-list-items'] {
+  .line {
+    display: flex;
+    align-items: baseline;
+    gap: 0.4em;
+    list-style: none;
+    margin-left: -1.2em;
+  }
+  .line .dots {
+    flex: 1;
+    border-bottom: 1px dotted var(--fg-3);
+    min-width: 1em;
+  }
+  .line .price {
+    font-weight: 700;
+    color: var(--accent-text);
+  }
+}

@@ -1,0 +1,17 @@
+/* Bold as highlighter: a stroke behind the lower part of the word */
+[data-example='marked/marker-strong'] {
+  .pen {
+    font-weight: 600;
+    padding: 0 0.15em;
+    border-radius: 2px;
+    color: var(--fg-1);
+    --ink: 255 214 0;
+    background: linear-gradient(transparent 40%, rgb(var(--ink) / 0.55) 40%);
+  }
+  .pen.pink {
+    --ink: 255 105 180;
+  }
+  .pen.green {
+    --ink: 90 220 120;
+  }
+}

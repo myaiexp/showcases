@@ -1,0 +1,17 @@
+/* Deletions as edits: red removed text, green inserted text */
+[data-example='marked/deletions-as-diff'] {
+  .old {
+    color: var(--red);
+    background: color-mix(in srgb, var(--red) 15%, transparent);
+    text-decoration: line-through;
+    border-radius: 3px;
+    padding: 0 0.2em;
+  }
+  .new {
+    color: var(--green);
+    background: color-mix(in srgb, var(--green) 15%, transparent);
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 0 0.2em;
+  }
+}

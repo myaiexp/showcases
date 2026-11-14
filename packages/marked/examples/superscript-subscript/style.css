@@ -1,0 +1,9 @@
+/* Sub and superscript sizing */
+[data-example='marked/superscript-subscript'] {
+  sup,
+  sub {
+    font-size: 0.75em;
+    color: var(--accent-text);
+    font-weight: 700;
+  }
+}

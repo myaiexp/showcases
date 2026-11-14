@@ -1,0 +1,17 @@
+/* Spoilers: a dark bar that fades away once revealed */
+[data-example='marked/spoilers'] {
+  button.spoiler {
+    font: inherit;
+    padding: 0 6px;
+    border: 0;
+    border-radius: 3px;
+    background: var(--fg-3);
+    color: transparent;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  button.spoiler.revealed {
+    background: color-mix(in srgb, var(--accent) 22%, transparent);
+    color: var(--fg-1);
+  }
+}

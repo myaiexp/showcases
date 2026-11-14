@@ -1,13 +1,13 @@
-// Marked example: Markdown editor with a sanitized live preview
+// marked example: Live Markdown editor
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
   title: 'Live Markdown editor',
   summary:
-    'Type Markdown on the left and see rendered HTML on the right, re-parsed on every keystroke with marked.parse() and sanitized by DOMPurify before it touches the DOM.',
-  section: 'Basics',
-  tags: ['GFM', 'tables', 'task lists', 'DOMPurify'],
-  docs: [],
-  provenance: 'legacy',
+    'Plain text with a few symbols (# for a heading, ** for bold, - for a list) turns into a formatted page as you type. marked.parse() converts the Markdown to HTML on every keystroke.',
+  section: 'Usage',
+  tags: ['marked.parse', 'live preview'],
+  docs: ['repo/docs/INDEX.md', 'repo/README.md'],
+  provenance: 'pure',
   added: '2026-06-14',
 });

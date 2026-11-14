@@ -1,0 +1,42 @@
+/* Code with line numbers (CSS counters) and a language badge */
+[data-example='marked/code-line-numbers'] {
+  .codebox {
+    position: relative;
+    margin: 0.6em 0;
+  }
+  .codebox pre {
+    margin: 0;
+    counter-reset: line;
+    padding-left: 0;
+  }
+  .codebox .ln {
+    display: block;
+    counter-increment: line;
+    white-space: pre;
+    padding-right: 3.2em;
+  }
+  .codebox .ln::before {
+    content: counter(line);
+    display: inline-block;
+    width: 2em;
+    margin-right: 0.8em;
+    text-align: right;
+    color: var(--fg-3);
+    border-right: 1px solid var(--border);
+    padding-right: 0.5em;
+    user-select: none;
+  }
+  .codebox .lang {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--accent-text);
+    background: var(--bg-raised);
+    border-radius: 4px;
+    padding: 0 0.4em;
+    z-index: 1;
+  }
+}

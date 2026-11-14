@@ -1,0 +1,19 @@
+/* A full-width banner (block) against a small chip (inline) */
+[data-example='marked/block-vs-inline-level'] {
+  .banner {
+    margin: 0.5em 0;
+    padding: 0.3em 0.8em;
+    border-radius: 4px;
+    background: var(--accent);
+    color: #111;
+    font-weight: 700;
+    text-align: center;
+  }
+  .chip {
+    padding: 0 7px;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--green) 22%, transparent);
+    color: var(--green);
+    font-weight: 700;
+  }
+}

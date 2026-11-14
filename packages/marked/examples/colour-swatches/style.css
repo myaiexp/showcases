@@ -1,0 +1,12 @@
+/* Colour swatches in code: a small square before the hex value */
+[data-example='marked/colour-swatches'] {
+  .chip {
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    margin-right: 0.4em;
+    vertical-align: -0.1em;
+    border-radius: 3px;
+    border: 1px solid var(--fg-3);
+  }
+}

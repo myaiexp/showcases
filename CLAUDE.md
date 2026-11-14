@@ -123,6 +123,9 @@ GitHub Pages. No service on the VPS.
 - Zdog: build on `packages/zdog/shared/stage.ts` (`createStage`, trap list), which sizes the
   canvas or svg before the example's own `new Zdog.Illustration({ element: stage.element })`
   reads it. Docs are the zzz.dog source (`metafizzy/zdog-docs`); its `demos/` folder stays out.
+- Marked: build on `packages/marked/shared/stage.ts` (`createStage`, trap list) and `shared/demo.ts`, whose
+  cards type sample Markdown and re-render each step. Never `marked.use()` on the global: `new Marked()` per
+  mount. HTML reaches the page through `doc.show()`/`putHtml()` (DOMPurify, offline images, inert links).
 - Tippy.js: build on `packages/tippy-js/shared/stage.ts` (`createStage`, trap list). Cards drive tips
   with `stage.ghost`, which sends events to the element only, never to the document (other cards'
   tips listen there). Pass elements, never selector strings, and `appendTo: stage.root`.

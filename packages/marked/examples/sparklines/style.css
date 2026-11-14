@@ -1,0 +1,11 @@
+/* Sparklines: a thin accent line with a dot on the last value */
+[data-example='marked/sparklines'] {
+  svg.spark {
+    vertical-align: middle;
+    color: var(--accent);
+    margin: 0 4px;
+  }
+  svg.spark .end {
+    fill: var(--red);
+  }
+}

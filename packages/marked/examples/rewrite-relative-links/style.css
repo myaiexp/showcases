@@ -1,0 +1,7 @@
+/* Let long destination addresses wrap inside narrow panes */
+[data-example='marked/rewrite-relative-links'] {
+  .mk-doc small {
+    overflow-wrap: anywhere;
+    color: var(--fg-2);
+  }
+}

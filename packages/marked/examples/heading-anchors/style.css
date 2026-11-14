@@ -1,0 +1,17 @@
+/* Heading anchors: the # link in front of each heading */
+[data-example='marked/heading-anchors'] {
+  .mk-doc h1,
+  .mk-doc h2,
+  .mk-doc h3 {
+    position: relative;
+  }
+  .mk-doc .anchor {
+    color: var(--fg-3);
+    text-decoration: none;
+    margin-right: 0.4em;
+    font-weight: 400;
+  }
+  .mk-doc .anchor:hover {
+    color: var(--accent-text);
+  }
+}

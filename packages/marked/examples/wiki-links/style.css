@@ -1,0 +1,11 @@
+/* Wiki links: existing pages blue, missing pages red and dashed */
+[data-example='marked/wiki-links'] {
+  a.wiki.exists {
+    color: var(--accent-text);
+    text-decoration: underline;
+  }
+  a.wiki.missing {
+    color: var(--red);
+    text-decoration: underline dashed;
+  }
+}
