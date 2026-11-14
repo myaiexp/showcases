@@ -36,6 +36,9 @@
 //   minMatchCharLength or the threshold in token and fuzzy examples alike.
 // - tokenize as a regex without the g flag only shortens the query (to its first token);
 //   fields are still matched whole. Fuse logs a one-time console.warn in dev builds.
+// - Extended search: the docs' "'^hello world" reads as include '^hello' AND fuzzy 'world'
+//   (matches nothing); a phrase needs quotes ('"hello world"). A query mixing a positive
+//   term with a ! term over several keys returns nothing. Patterns are lowercased.
 // - Plain Fuse on a big list blocks the page: cards keep lists small (a few thousand items)
 //   and never time main-thread work on 10,000+ items.
 import type { MountContext } from '@/types.ts';

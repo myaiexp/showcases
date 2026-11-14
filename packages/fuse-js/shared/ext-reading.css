@@ -1,0 +1,61 @@
+/* How the query was read: OR groups of AND terms, coloured by group */
+.fz-wrap {
+  --fz-g0: 210;
+  --fz-g1: 35;
+  --fz-g2: 150;
+  --fz-g3: 320;
+}
+.fz-read {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+  min-height: 1.6em;
+  flex-shrink: 0;
+}
+.fz-rgroup {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 5px;
+  border-radius: 6px;
+  border: 1px solid hsl(var(--fz-gh) 60% 50% / 0.6);
+  background: hsl(var(--fz-gh) 60% 50% / 0.12);
+}
+.fz-rterm {
+  font-size: 0.9em;
+}
+.fz-rterm b {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--fg-1);
+}
+.fz-rjoin {
+  font-size: 0.75em;
+  color: var(--fg-3);
+  letter-spacing: 0.05em;
+}
+.fz-rjoin.fz-or {
+  font-weight: 700;
+  color: var(--fg-2);
+}
+.fz-rnone {
+  color: var(--fg-3);
+  font-size: 0.85em;
+}
+.fz-card .fz-rterm {
+  font-size: 0.85em;
+}
+.fz-tile[data-group] {
+  border-color: hsl(var(--fz-gh) 60% 50% / 0.8);
+  background: hsl(var(--fz-gh) 60% 50% / 0.14);
+}
+.fz-tile[data-group='0'] { --fz-gh: var(--fz-g0); }
+.fz-tile[data-group='1'] { --fz-gh: var(--fz-g1); }
+.fz-tile[data-group='2'] { --fz-gh: var(--fz-g2); }
+.fz-tile[data-group='3'] { --fz-gh: var(--fz-g3); }
+.fz-rgroup[data-group='0'] { --fz-gh: var(--fz-g0); }
+.fz-rgroup[data-group='1'] { --fz-gh: var(--fz-g1); }
+.fz-rgroup[data-group='2'] { --fz-gh: var(--fz-g2); }
+.fz-rgroup[data-group='3'] { --fz-gh: var(--fz-g3); }

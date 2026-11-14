@@ -1,0 +1,49 @@
+[data-example='fuse-js/inverse-across-keys'] {
+  .ik-table {
+    display: grid;
+    gap: 3px 6px;
+    align-items: center;
+  }
+  .ik-head {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--fg-3);
+    text-align: center;
+  }
+  .ik-book {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .ik-book small {
+    color: var(--fg-3);
+    flex-shrink: 0;
+  }
+  .ik-title {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .ik-cell {
+    text-align: center;
+    border-radius: 5px;
+    padding: 0 4px;
+    border: 1px solid var(--border);
+    font-size: 0.85em;
+    min-height: 1.4em;
+    transition: opacity 0.25s;
+  }
+  .ik-cell[data-state='keep'] {
+    border-color: var(--green);
+    color: var(--green);
+  }
+  .ik-cell[data-state='drop'] {
+    opacity: 0.35;
+    text-decoration: line-through;
+  }
+}
