@@ -1,0 +1,47 @@
+/* Two photo thumbnails and a drawn fingertip for cards */
+[data-example='tippy-js/press-and-hold'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row {
+    display: flex;
+    gap: var(--space-5);
+    padding-top: 24px;
+  }
+  .thumb {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 96px;
+    height: 80px;
+    border: 0;
+    border-radius: var(--radius);
+    color: #fff;
+    cursor: pointer;
+  }
+  .t1 {
+    background: linear-gradient(160deg, #f6b26b, #3d6b9c 70%);
+  }
+  .t2 {
+    background: linear-gradient(160deg, #8fbf8f, #1f4a2e 70%);
+  }
+  .thumb small {
+    padding: 3px;
+    font-size: 11px;
+    text-shadow: 0 1px 2px #000;
+  }
+  .finger {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #ffffff55;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px #0008;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10000;
+  }
+}

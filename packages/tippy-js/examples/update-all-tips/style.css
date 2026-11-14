@@ -1,0 +1,29 @@
+/* A row of dashboard number tiles */
+[data-example='tippy-js/update-all-tips'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid {
+    display: flex;
+    gap: var(--space-3);
+  }
+  .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    width: 72px;
+    padding: 14px 0;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 11px;
+    color: var(--fg-3);
+  }
+  .tile strong {
+    font-size: 17px;
+    color: var(--fg-1);
+  }
+}

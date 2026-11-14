@@ -63,7 +63,7 @@ const mount: Mount = (el, ctx) => {
   stage.own(
     createSingleton(members, {
       delay: 500,
-      placement: 'bottom',
+      placement: 'top',
       appendTo: stage.root,
       ...timer(grouped.wait),
     }),

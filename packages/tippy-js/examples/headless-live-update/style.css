@@ -1,0 +1,37 @@
+/* An upload button and the hand-made progress bubble (no Tippy stylesheet) */
+[data-example='tippy-js/headless-live-update'] {
+  .scene {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .bubble {
+    box-sizing: border-box;
+    width: 170px;
+    margin-top: 8px;
+    padding: 9px 12px;
+    border-radius: 10px;
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    color: var(--fg-1);
+    font-size: 12px;
+    box-shadow: 0 6px 18px #0006;
+  }
+  .track {
+    height: 6px;
+    margin-top: 7px;
+    border-radius: 3px;
+    background: var(--bg);
+    overflow: hidden;
+  }
+  .fill {
+    height: 100%;
+    background: var(--accent);
+  }
+  .bubble.done {
+    border-color: var(--green);
+  }
+  .bubble.done .fill {
+    background: var(--green);
+  }
+}

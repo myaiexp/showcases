@@ -1,0 +1,36 @@
+/* A Reply button, a search box, and the reply form inside the tip */
+[data-example='tippy-js/hide-on-popper-blur'] {
+  .scene {
+    padding: 20px 16px;
+  }
+  .search {
+    margin-left: var(--space-4);
+    width: 100px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 2px;
+  }
+  .form input {
+    width: 150px;
+  }
+  .key {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-bottom-width: 3px;
+    border-radius: var(--radius);
+    background: var(--bg-raised);
+    color: var(--fg-2);
+    font-size: 12px;
+  }
+  .key.down {
+    background: var(--accent);
+    color: #fff;
+    border-bottom-width: 1px;
+  }
+}

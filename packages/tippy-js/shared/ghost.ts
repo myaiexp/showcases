@@ -3,6 +3,9 @@
 // Coordinates are px inside the stage's root. Events go to the target element only (see
 // the trap list in stage.ts for why never to the document).
 
+/** Thrown by the stage's `wait` and the ghost's moves after dispose; `play` swallows it. */
+export const STOPPED = Symbol('stage stopped');
+
 export type Point = { x: number; y: number };
 type Target = Element | Point;
 
@@ -87,9 +90,11 @@ export function createGhost(
     const from = { ...at };
     const to = local(target);
     const start = performance.now();
-    return new Promise((resolve) => {
+    // Rejecting (not resolving) once the stage is gone ends the play script here, so the
+    // line after a move never calls show() or hide() on a destroyed instance.
+    return new Promise((resolve, reject) => {
       const step = (now: number): void => {
-        if (stopped()) return resolve();
+        if (stopped()) return reject(STOPPED);
         const k = Math.min(1, (now - start) / ms);
         const e = k < 0.5 ? 2 * k * k : 1 - (-2 * k + 2) ** 2 / 2;
         at.x = from.x + (to.x - from.x) * e;

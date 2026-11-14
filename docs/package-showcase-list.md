@@ -213,7 +213,7 @@ These are better as compact, text-output examples. Build them after the visual t
 | 158 | Floating UI (`@floating-ui/dom`) | v1 2022 | repo ✓ MIT | Positioning; replaces archived Tippy |
 | 159 | Temporal polyfill (`temporal-polyfill`) | v1 | repo | Dates |
 | 160 | harfbuzzjs, fitty, mark.js, panzoom, Howler, tonal, webmidi | various | README | Small or audio-only |
-| 161 | Tippy.js *(legacy in gallery)* | v6 2020 | site | Repo archived; Floating UI succeeds it |
+| 161 | Tippy.js (`tippy.js`) ✅ built | v6 2020 | repo ✓ MIT (`website/src/pages/v6`) | Repo archived; Floating UI succeeds it. `website/src/components/examples/` stays out |
 | 162 | Pizzicato.js *(legacy in gallery)* | 0.6 2018 | README MIT | Abandoned |
 
 ## Cautions

@@ -34,6 +34,9 @@
 //   the children's own `appendTo` (pass it to createSingleton), and skips `onShow` on moves
 //   inside a visible group. In a card the tip glides only if the next ghost hover lands before
 //   the hide delay ends: hop with a short `ms` (~200).
+// - A plugin's own prop needs the docs' extended-props typing (`tippy as unknown as
+//   Tippy<ExtendedProps>`), or tippy() rejects it. Focus plugins that check `relatedTarget`
+//   (the docs' hideOnPopperBlur) need a FocusEvent built with one; `ghost.blur` sends none.
 // - To aim `getReferenceClientRect` at a point on an SVG drawing, map it to the viewport with
 //   `svg.getScreenCTM()`.
 // - `delay` applies to trigger events only: `show()` and `hide()` ignore it, so a card that
@@ -41,7 +44,7 @@
 // - Destroy instances before their reference elements leave the page: `stage.own(...)`
 //   destroys everything it holds, in reverse order, before the scene is removed.
 import type { MountContext } from '@/types.ts';
-import { createGhost, type Ghost } from './ghost.ts';
+import { createGhost, STOPPED, type Ghost } from './ghost.ts';
 
 export interface StageOptions {
   /** Height of the full view's scene in px. Cards are always 200px tall. */
@@ -76,8 +79,7 @@ export interface Stage {
   dispose(): void;
 }
 
-/** Thrown by `wait` after dispose; `play` swallows it. */
-export const STOPPED = Symbol('stage stopped');
+export { STOPPED };
 
 export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptions = {}): Stage {
   const { preview } = ctx;

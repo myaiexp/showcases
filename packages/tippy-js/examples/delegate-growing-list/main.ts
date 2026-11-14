@@ -33,7 +33,7 @@ const mount: Mount = (el, ctx) => {
     msg.className = `msg ${n % 2 ? 'mine' : ''}`;
     msg.textContent = LINES[n % LINES.length]!;
     // Plain data: the tip's content function reads it when the message is hovered.
-    msg.setAttribute('data-sent', new Date().toLocaleTimeString());
+    msg.setAttribute('data-sent', new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }));
     n++;
     list.append(msg);
     // Old messages scroll away: free the tip of a message before it leaves the page.
@@ -51,7 +51,7 @@ const mount: Mount = (el, ctx) => {
     delegate(list, {
       target: '.msg',
       content: (reference) => `Sent at ${reference.getAttribute('data-sent')}`,
-      placement: 'right',
+      placement: 'top',
       maxWidth: 150,
       appendTo: stage.root,
     }),

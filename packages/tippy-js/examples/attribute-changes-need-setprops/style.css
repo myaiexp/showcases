@@ -1,0 +1,37 @@
+/* A text field above two buttons that carry the same data attribute */
+[data-example='tippy-js/attribute-changes-need-setprops'] {
+  .scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    padding-top: 16px;
+  }
+  input {
+    width: 180px;
+  }
+  .cols {
+    display: flex;
+    gap: var(--space-6);
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    width: 120px;
+  }
+  .cap {
+    font-size: 11px;
+    color: var(--fg-3);
+    text-align: center;
+  }
+  code {
+    font-size: 11px;
+    color: var(--fg-2);
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

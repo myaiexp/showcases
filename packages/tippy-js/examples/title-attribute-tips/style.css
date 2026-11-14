@@ -1,0 +1,28 @@
+/* Rows of small toolbar buttons that start out with title attributes */
+[data-example='tippy-js/title-attribute-tips'] {
+  .scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-6);
+    padding-top: 22px;
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .cap {
+    font-size: 11px;
+    color: var(--fg-3);
+  }
+  .tools {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .tools .btn {
+    min-width: 36px;
+    font-weight: 700;
+  }
+}

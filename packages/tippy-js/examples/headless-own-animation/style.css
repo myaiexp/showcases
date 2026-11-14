@@ -1,0 +1,29 @@
+/* A heart button and its hand-animated note (no Tippy stylesheet) */
+[data-example='tippy-js/headless-own-animation'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .heart {
+    width: 52px;
+    height: 52px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--red);
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+  }
+  .note {
+    padding: 8px 12px;
+    margin-left: 8px;
+    border-radius: 10px;
+    background: var(--bg-raised);
+    color: var(--fg-1);
+    border: 1px solid var(--red);
+    font-size: 12px;
+    box-shadow: 0 6px 18px #0006;
+    max-width: 150px;
+  }
+}
