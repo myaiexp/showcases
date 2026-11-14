@@ -73,6 +73,7 @@
     "papaparse": "^5.7.1",
     "pixi.js": "^8.23.0",
     "pizzicato": "^0.6.4",
+    "playcanvas": "^2.24.1",
     "prismjs": "^1.30.0",
     "sigma": "4.0.6",
     "sortablejs": "^1.15.7",

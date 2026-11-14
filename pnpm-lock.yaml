@@ -164,6 +164,9 @@ importers:
       pizzicato:
         specifier: ^0.6.4
         version: 0.6.4
+      playcanvas:
+        specifier: ^2.24.1
+        version: 2.24.1
       prismjs:
         specifier: ^1.30.0
         version: 1.30.0
@@ -1690,6 +1693,10 @@ packages:
 
   pizzicato@0.6.4:
     resolution: {integrity: sha512-1Y4UGnhdBvCoeRTt4Cor/zPRsH/pEAGsBESy0zeR8mH2i2piJRQLEEctkzUJGo6h64GiepZy+LFaJ/a3riR+WA==}
+
+  playcanvas@2.24.1:
+    resolution: {integrity: sha512-tWZDt1evgPdS9tTjqOTH+YP6UY78KcXzpnhGAapsiCXpT8uciw/+ogZLcSt3xLjcbSvZmniTStQldZhkylsoXA==}
+    engines: {node: '>=18.3.0'}
 
   points-on-curve@0.2.0:
     resolution: {integrity: sha512-0mYKnYYe9ZcqMCWhUjItv/oHjvgEsfKvnUTg8sAtnHr3GVy7rGkXCb6d5cSyqrWqL4k81b9CPg3urd+T7aop3A==}
@@ -3329,6 +3336,11 @@ snapshots:
       tiny-lru: 11.4.7
 
   pizzicato@0.6.4: {}
+
+  playcanvas@2.24.1:
+    dependencies:
+      '@types/webxr': 0.5.24
+      '@webgpu/types': 0.1.74
 
   points-on-curve@0.2.0: {}
 

@@ -1,0 +1,10 @@
+---
+title: Optimize Scene Format
+description: Publish option that compresses scene JSON for smaller gzipped downloads without changing runtime behavior.
+---
+
+This is a publish option that can reduce the size of the scene files to approximately 30-50% after being gzipped on the server.
+
+To enable, on the publish screen, tick 'Optimize Scene Format' and publish.
+
+![](/img/user-manual/optimization/optimizing-scene-format/optimize-scene-format-publish-dialog.png)

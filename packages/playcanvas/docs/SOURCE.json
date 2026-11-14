@@ -1,0 +1,29 @@
+{
+  "license": "MIT (playcanvas/developer-site repo LICENSE)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/playcanvas/developer-site",
+      "ref": "main",
+      "paths": [
+        "LICENSE",
+        "sidebars.js",
+        "docs/user-manual/engine/**/*.md",
+        "docs/user-manual/editor/scenes/components/*.md",
+        "docs/user-manual/ecs/**/*.md",
+        "docs/user-manual/assets/**/*.md",
+        "docs/user-manual/scripting/**/*.md",
+        "docs/user-manual/graphics/**/*.md",
+        "docs/user-manual/gaussian-splatting/**/*.md",
+        "docs/user-manual/animation/**/*.md",
+        "docs/user-manual/physics/**/*.md",
+        "docs/user-manual/2D/**/*.md",
+        "docs/user-manual/user-interface/**/*.md",
+        "docs/user-manual/xr/**/*.md",
+        "docs/user-manual/debugging/**/*.md",
+        "docs/user-manual/optimization/**/*.md"
+      ]
+    }
+  ]
+}
