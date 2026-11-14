@@ -1,7 +1,12 @@
 {
-  "license": "none found (zzz.dog site; the zdog repo has no docs licence)",
+  "license": "none found (metafizzy/zdog-docs, the zzz.dog site source, has no licence); zdog's own README and js/ source are MIT and read from node_modules",
   "redistribute": false,
   "sources": [
-    { "kind": "crawl", "start": "https://zzz.dog/", "prefix": "https://zzz.dog/", "max": 40 }
+    {
+      "kind": "git",
+      "repo": "https://github.com/metafizzy/zdog-docs",
+      "ref": "master",
+      "paths": ["README.md", "content/*.hbs", "!content/404.hbs", "modules/docs/*.hbs"]
+    }
   ]
 }
