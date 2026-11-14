@@ -2,8 +2,14 @@
 //
 // Traps found while building the gallery (add to this list):
 // - z.config() writes one page-wide object (globalThis.__zod_globalConfig) that every card's
-//   parse reads. An example that calls it sets it, parses and restores it in one synchronous
-//   try/finally, never across a timer or an await, so no other card parses under its config.
+//   parse reads. Call it inside shared/error-config.ts keepConfig(), which restores the old
+//   config, and read the messages there with settle(): Zod builds a message when
+//   result.error is first read, so a message read after the restore uses the page's config.
+//   Never hold a config across a timer or an await. Per-parse { error } is captured: safe.
+// - Message precedence, lowest to highest: locale, global customError, per-parse error,
+//   schema-level error, check-level error.
+// - A z.treeifyError items array is sparse (passing elements are holes). z.flattenError files
+//   nested errors under the first path key only (user.name and user.email share "user").
 // - z.globalRegistry is page-wide too. A schema given .meta({ id }) or .register(z.globalRegistry)
 //   inside mount() is registered again on every remount, and z.toJSONSchema(z.globalRegistry)
 //   lists every example's schemas. Prefer z.registry() per mount; otherwise remove the schema
