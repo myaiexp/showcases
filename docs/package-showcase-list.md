@@ -203,7 +203,7 @@ These are better as compact, text-output examples. Build them after the visual t
 | 148 | Zod (`zod`) *(legacy in gallery)* | v4 2025-07 | repo ✓ MIT | Validation |
 | 149 | Valibot (`valibot`) | v1 2025-03 | repo ✓ MIT | Validation |
 | 150 | Arquero (`arquero`) | v8 2025-02 | site | Data wrangling; repo BSD-3 |
-| 151 | Marked + DOMPurify *(legacy in gallery)* | v18 2026-04 | repo ✓ | Markdown |
+| 151 | Marked + DOMPurify (`marked`) ✅ built | v18 2026-04 | repo ✓ MIT | Markdown. Docs are the repo `docs/` pages (INDEX, USING_ADVANCED, USING_PRO, broken.md), README and `src/`; `docs/demo/` stays out |
 | 152 | ky *(legacy in gallery)* | v2 2026-04 | README MIT | HTTP |
 | 153 | Wretch *(legacy in gallery)* | v3 2025-10 | README MIT | HTTP |
 | 154 | **Tone.js** (`tone`) ✅ built | v15 2024-05 | repo ✗lic (wiki) + source | Audio; `next` tag far ahead of `latest` |
