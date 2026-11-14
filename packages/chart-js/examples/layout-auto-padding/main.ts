@@ -1,4 +1,4 @@
-// Big points on the edge of the axes: drawn whole with autoPadding, cut off without
+// Big points on the axes' edge: whole with autoPadding, cut off without
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, slider, toggle } from '../../shared/controls.ts';

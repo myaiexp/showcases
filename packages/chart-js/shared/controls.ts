@@ -1,4 +1,4 @@
-// Full-view inputs for Chart.js examples: buttons, selects, sliders, toggles, log
+// Full-view inputs for Chart.js examples: buttons, selects, sliders, log
 /** The row above the chart that holds an example's controls. Never built in a card. */
 export function controlBar(el: HTMLElement): HTMLDivElement {
   const bar = document.createElement('div');

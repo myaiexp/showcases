@@ -1,4 +1,4 @@
-// A homemade interaction mode: hover a month and see only the drinks above a floor
+// A homemade interaction mode: a month's drinks above a floor
 import { Interaction } from 'chart.js';
 import type { Chart as ChartType, InteractionItem, InteractionModeFunction } from 'chart.js';
 import { getRelativePosition } from 'chart.js/helpers';

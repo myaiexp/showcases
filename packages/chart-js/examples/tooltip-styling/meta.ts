@@ -1,4 +1,4 @@
-// Chart.js example: tooltip backgroundColor, padding, cornerRadius, caretSize, displayColors
+// Chart.js example: tooltip colours, padding, cornerRadius, caretSize
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

@@ -1,4 +1,4 @@
-// Grid lines you can restyle: colour, width, tick marks, and whether they cross the chart
+// Restyle grid lines: colour, width, tick marks, drawing across the chart
 import type { CartesianScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// Two datasets on one doughnut draw as two rings: this year outside, last year inside
+// Two datasets on one doughnut: this year outside, last year inside
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, slider, toggle } from '../../shared/controls.ts';

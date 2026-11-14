@@ -1,4 +1,4 @@
-// A day of temperatures filled with a gradient that is rebuilt from the chart area
+// A day of temperatures filled with a gradient rebuilt from the chart area
 import type { ChartArea, ScriptableContext } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// layout.padding as a number, an {x, y} pair or each side, with the canvas edge outlined
+// layout.padding as a number, an {x, y} pair or per side, edge outlined
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, select, slider } from '../../shared/controls.ts';

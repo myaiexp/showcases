@@ -1,4 +1,4 @@
-// A chart in a box with no height of its own: aspectRatio decides how tall it gets
+// A box with no height of its own: aspectRatio decides how tall the chart is
 import type { Mount } from '@/types.ts';
 import { Chart, caption, cycle } from '../../shared/stage.ts';
 import { controlBar, slider, toggle } from '../../shared/controls.ts';

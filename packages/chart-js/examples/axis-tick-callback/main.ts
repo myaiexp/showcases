@@ -1,4 +1,4 @@
-// Same chart, different tick labels: ticks.callback adds money, percent or units
+// Same chart, new tick labels: ticks.callback adds money, percent or units
 import { Ticks, type Scale, type Tick } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

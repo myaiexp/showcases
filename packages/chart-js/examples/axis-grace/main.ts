@@ -1,4 +1,4 @@
-// Weekly profit and loss: grace adds room above and below so no bar touches the edge
+// Weekly profit and loss: grace adds room so no bar touches the edge
 import type { LinearScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// Server load that spikes past 100%: min/max cut the bar off, suggestedMax stretches
+// Server load past 100%: min/max cut the bar off, suggestedMax stretches
 import type { LinearScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

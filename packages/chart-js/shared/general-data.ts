@@ -1,4 +1,4 @@
-// Sample data for the General and Configuration examples: drinks, records, a sensor
+// Sample data for General and Configuration examples: drinks, records, sensor
 import { seeded } from './data.ts';
 
 /** Cups sold per month, first half of the year: [name, figures]. */

@@ -1,4 +1,4 @@
-// Doughnut slices with rounded corners (borderRadius) and gaps between them (spacing)
+// Doughnut slices with rounded corners (borderRadius) and gaps (spacing)
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, slider } from '../../shared/controls.ts';

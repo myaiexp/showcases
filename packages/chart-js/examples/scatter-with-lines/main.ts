@@ -1,4 +1,4 @@
-// A delivery round as scatter points: showLine joins them in the order they are listed
+// A delivery round as scatter points: showLine joins them in list order
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, every } from '../../shared/stage.ts';
 import { controlBar, slider, toggle } from '../../shared/controls.ts';

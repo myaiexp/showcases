@@ -1,4 +1,4 @@
-// A flat-looking line that is really a 1.5-point change: beginAtZero shows the scale
+// A flat-looking line that is a 1.5-point change: beginAtZero shows the scale
 import type { LinearScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

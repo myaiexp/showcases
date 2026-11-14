@@ -1,4 +1,4 @@
-// Ocean temperature by depth: reverse puts the surface at the top where readers expect it
+// Ocean temperature by depth: reverse puts the surface at the top
 import type { LinearScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

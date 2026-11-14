@@ -1,4 +1,4 @@
-// Café ratings on a radar: zoom the scale in or out with beginAtZero, suggestedMax and stepSize
+// Café ratings on a radar: beginAtZero, suggestedMax and stepSize
 import type { RadialLinearScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

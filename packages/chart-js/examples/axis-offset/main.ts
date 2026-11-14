@@ -1,4 +1,4 @@
-// Rainfall bars and a temperature line: offset adds room at both ends of the x axis
+// Rainfall bars and a temperature line: offset adds room at the x axis ends
 import type { CartesianScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

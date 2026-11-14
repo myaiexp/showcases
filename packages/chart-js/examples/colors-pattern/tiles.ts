@@ -1,4 +1,4 @@
-// Small canvas tiles that become CanvasPattern fills: stripes, dots, grid, zigzag
+// Small canvas tiles as CanvasPattern fills: stripes, dots, grid, zigzag
 export const TILE_NAMES = ['stripes', 'dots', 'grid', 'zigzag'] as const;
 export type TileName = (typeof TILE_NAMES)[number];
 

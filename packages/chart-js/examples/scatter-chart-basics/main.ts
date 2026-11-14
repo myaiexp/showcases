@@ -1,4 +1,4 @@
-// Height against weight for two groups: each dot is one person, the cloud shows the link
+// Height against weight for two groups: each dot one person
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, every } from '../../shared/stage.ts';
 import { button, controlBar } from '../../shared/controls.ts';

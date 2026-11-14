@@ -1,4 +1,4 @@
-// Temperature and rainfall in one chart: each dataset reads its own y axis via yAxisID
+// Temperature and rainfall: each dataset reads its own y axis via yAxisID
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, select, toggle } from '../../shared/controls.ts';

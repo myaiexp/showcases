@@ -1,4 +1,4 @@
-// Athlete profile on a radar: how many rings, and the numbers and backdrops on them
+// Athlete profile on a radar: how many rings, their numbers and backdrops
 import type { RadialLinearScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

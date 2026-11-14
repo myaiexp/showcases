@@ -1,4 +1,4 @@
-// Chart.js example: tooltip xAlign, yAlign, titleAlign, bodyAlign, footerAlign and position
+// Chart.js example: tooltip xAlign, yAlign, text alignment and position
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

@@ -1,4 +1,4 @@
-// Turn a polar area chart by changing where its radial scale starts (startAngle)
+// Turn a polar area chart by where its radial scale starts (startAngle)
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, slider, toggle } from '../../shared/controls.ts';

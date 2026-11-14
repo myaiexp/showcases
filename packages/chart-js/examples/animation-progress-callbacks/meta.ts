@@ -1,4 +1,4 @@
-// Chart.js example: animation.onProgress and onComplete drive an HTML progress bar
+// Chart.js example: onProgress and onComplete drive an HTML progress bar
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

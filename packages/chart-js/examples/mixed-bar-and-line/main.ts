@@ -1,4 +1,4 @@
-// Monthly rainfall as bars and temperature as a line on one chart, each on its own axis
+// Monthly rainfall bars and a temperature line, each on its own axis
 import type { ChartDataset } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

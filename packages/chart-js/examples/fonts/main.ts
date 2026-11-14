@@ -1,4 +1,4 @@
-// Chart.defaults.font restyles all chart text at once; a specific font still wins
+// Chart.defaults.font restyles all chart text; a specific font still wins
 import type { FontSpec } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

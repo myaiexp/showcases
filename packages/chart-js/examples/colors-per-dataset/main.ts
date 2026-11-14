@@ -1,4 +1,4 @@
-// Two weeks of sleep: one shared colour is unreadable, per-dataset colours are not
+// Two weeks of sleep: one shared colour is unreadable, per-dataset is not
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, select } from '../../shared/controls.ts';

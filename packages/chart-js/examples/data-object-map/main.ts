@@ -1,4 +1,4 @@
-// Coffee stock as a plain object: each property name is a label, its value the bar
+// Coffee stock as an object: each property name a label, its value the bar
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, every } from '../../shared/stage.ts';
 import { button, controlBar } from '../../shared/controls.ts';

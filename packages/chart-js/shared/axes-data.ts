@@ -1,4 +1,4 @@
-// Sample data for the axes examples: city weather, skills scores, a day-by-day series
+// Sample data for the axes examples: city weather, skills, a daily series
 import { days, seeded } from './data.ts';
 
 /** Monthly mean temperature (°C) and rainfall (mm) for three cities, Jan to Dec. */

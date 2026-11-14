@@ -1,4 +1,4 @@
-// Pull one slice out of a doughnut with offset, and push hovered slices with hoverOffset
+// Pull a doughnut slice out with offset, and hovered ones with hoverOffset
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, select, slider } from '../../shared/controls.ts';

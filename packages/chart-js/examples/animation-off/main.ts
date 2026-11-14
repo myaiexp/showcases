@@ -1,4 +1,4 @@
-// Compare animated updates, one skipped update with 'none', and animation: false
+// Animated updates, a skipped update with 'none', and animation: false
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, every } from '../../shared/stage.ts';
 import { button, controlBar, toggle } from '../../shared/controls.ts';

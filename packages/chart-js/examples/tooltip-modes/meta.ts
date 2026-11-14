@@ -1,4 +1,4 @@
-// Chart.js example: interaction.mode for tooltips (point, nearest, index, dataset, x, y)
+// Chart.js example: interaction.mode for tooltips (point, nearest, index…)
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

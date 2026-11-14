@@ -1,4 +1,4 @@
-// Replay a doughnut's entrance: spin in (animateRotate), grow in (animateScale), or both
+// Replay a doughnut's entrance: animateRotate, animateScale, or both
 import type { Chart as ChartType } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

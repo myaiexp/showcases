@@ -1,4 +1,4 @@
-// Which dataset is drawn on top: the order option, here for bars and a filled line
+// Which dataset is drawn on top: the order option, bars and a filled line
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, slider } from '../../shared/controls.ts';

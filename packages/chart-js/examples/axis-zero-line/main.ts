@@ -1,4 +1,4 @@
-// Monthly temperature with the freezing line picked out by a scriptable grid colour
+// Monthly temperature, the freezing line picked out by a scriptable grid
 import type { Mount } from '@/types.ts';
 import { Chart, GRID, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, slider } from '../../shared/controls.ts';

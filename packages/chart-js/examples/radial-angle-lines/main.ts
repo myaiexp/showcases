@@ -1,4 +1,4 @@
-// Athlete profile on a radar: angleLines are the spokes from the centre to each label
+// Athlete profile on a radar: angleLines are the spokes to each label
 import type { RadialLinearScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

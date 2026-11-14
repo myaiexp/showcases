@@ -1,4 +1,4 @@
-// Choose where a doughnut starts (rotation) and how much of the circle it covers (circumference)
+// Where a doughnut starts (rotation) and how much it covers (circumference)
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, slider } from '../../shared/controls.ts';

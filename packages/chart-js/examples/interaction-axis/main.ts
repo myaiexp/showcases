@@ -1,4 +1,4 @@
-// Which direction counts when finding the nearest point: x only, y only, or both
+// Which direction counts for the nearest point: x only, y only, or both
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, select } from '../../shared/controls.ts';

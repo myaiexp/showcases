@@ -1,4 +1,4 @@
-// How a radar profile is drawn: fill, line joins, curve tension and point shapes
+// How a radar profile is drawn: fill, line joins, tension, point shapes
 import type { PointStyle } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

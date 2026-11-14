@@ -1,4 +1,4 @@
-// Two y axes: with display 'auto' the right axis disappears when its dataset is hidden
+// Two y axes: with display 'auto' the right one goes when its data is hidden
 import type { CartesianScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

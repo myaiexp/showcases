@@ -1,4 +1,4 @@
-// Tooltip appearance: colours, border, padding, corners, caret, fonts and key boxes
+// Tooltip appearance: colours, border, padding, corners, caret, fonts
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { autoHover } from '../../shared/hover.ts';

@@ -1,4 +1,4 @@
-// Datasets with no colours: the Colors plugin picks a palette, or is switched off
+// Datasets with no colours: the Colors plugin picks a palette, or is off
 import type { ChartData, ChartType } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

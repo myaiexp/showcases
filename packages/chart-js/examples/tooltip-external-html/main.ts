@@ -1,4 +1,4 @@
-// The tooltip is a page element: external builds the HTML, Chart.js only says where
+// The tooltip as a page element: external builds the HTML
 import type { Chart as ChartType, TooltipModel } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, createStage } from '../../shared/stage.ts';

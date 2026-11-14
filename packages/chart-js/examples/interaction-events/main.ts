@@ -1,4 +1,4 @@
-// events picks the browser events a chart listens to; onHover and onClick report them
+// events picks what a chart listens to; onHover and onClick report them
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, every } from '../../shared/stage.ts';
 import { controlBar, log, select } from '../../shared/controls.ts';

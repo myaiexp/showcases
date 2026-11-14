@@ -1,4 +1,4 @@
-// Website visits over 18 months: time.unit and displayFormats decide the tick labels
+// 18 months of visits: time.unit and displayFormats decide the tick labels
 import type { TimeUnit } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

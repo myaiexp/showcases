@@ -1,4 +1,4 @@
-// Own tooltip wording: a title, lines with units, a total, and a note after the body
+// Own tooltip wording: a title, lines with units, a total, a footnote
 import type { TooltipItem } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage } from '../../shared/stage.ts';

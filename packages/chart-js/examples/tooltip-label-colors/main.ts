@@ -1,4 +1,4 @@
-// Tooltip markers: coloured boxes with borders, per-line text colours, point shapes
+// Tooltip markers: bordered colour boxes, per-line text colour, shapes
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { autoHover } from '../../shared/hover.ts';

@@ -1,4 +1,4 @@
-// Mean wind speed by compass direction: equal slice angles, the reach carries the value
+// Wind speed by direction: equal slice angles, the reach carries the value
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, select, toggle } from '../../shared/controls.ts';

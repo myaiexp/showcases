@@ -1,4 +1,4 @@
-// Exam scores on a radar: min/max, suggested limits and startAngle shape the scale
+// Exam scores on a radar: min/max, suggested limits and startAngle
 import type { RadialLinearScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

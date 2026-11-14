@@ -1,4 +1,4 @@
-// One options.elements block restyles every bar, line, point and slice of a chart
+// One options.elements block restyles every bar, line, point and slice
 import type { PointStyle } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

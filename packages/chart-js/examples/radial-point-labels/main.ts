@@ -1,4 +1,4 @@
-// Customer survey on a radar: restyle, space and rewrite the labels around the edge
+// Customer survey on a radar: restyle, space and rewrite the edge labels
 import type { RadialLinearScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

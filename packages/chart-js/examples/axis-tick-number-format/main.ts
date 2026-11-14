@@ -1,4 +1,4 @@
-// Tick numbers through Intl.NumberFormat: currency, percent, compact or units, no callback
+// Tick numbers through Intl.NumberFormat: currency, percent, compact, units
 import type { LinearScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// Plant heights measured on uneven days, given as {x, y}, [x, y] or a plain list
+// Plant heights on uneven days, as {x, y}, [x, y] or a plain list
 import type { ChartData } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

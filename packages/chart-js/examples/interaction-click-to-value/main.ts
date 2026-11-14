@@ -1,4 +1,4 @@
-// Click anywhere on the chart: pixels become data values, and a new point appears
+// Click the chart: pixels become data values, and a new point appears
 import { getRelativePosition } from 'chart.js/helpers';
 import type { Mount } from '@/types.ts';
 import { Chart, createStage, every } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// Hover a bar: a log of the context object its scriptable colour was called with
+// Hover a bar: a log of the context its scriptable colour was called with
 import type { ScriptableContext } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage } from '../../shared/stage.ts';

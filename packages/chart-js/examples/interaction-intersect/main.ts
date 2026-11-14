@@ -1,4 +1,4 @@
-// intersect: true needs the pointer on a point; false finds the nearest one anywhere
+// intersect: true needs the pointer on a point; false finds the nearest
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, every } from '../../shared/stage.ts';
 import { controlBar, select, toggle } from '../../shared/controls.ts';

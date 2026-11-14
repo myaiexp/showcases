@@ -1,4 +1,4 @@
-// Stock closes that skip weekends: 'time' leaves gaps, 'timeseries' packs the points
+// Stock closes skip weekends: 'time' leaves gaps, 'timeseries' packs them
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, select } from '../../shared/controls.ts';

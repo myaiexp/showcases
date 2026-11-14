@@ -62,7 +62,12 @@ export { INK, GRID } from './setup.ts';
  *   options.font: set fonts on the chart's own elements in cards.
  * - devicePixelRatio applies after resize(); resizeDelay only at construction.
  * - Typed custom plugin options: cast options.plugins to
- *   NonNullable<ChartOptions['plugins']> & {…}.
+ *   NonNullable<ChartOptions['plugins']> & {…}, or augment PluginOptionsByType with the
+ *   exact type-parameter spelling the other augmentations use (else TS2428).
+ * - Never centre the canvas with margin: auto (it sizes to 300×300): centre inside the box.
+ * - afterRender skips animation frames: an HTML overlay that follows elements uses afterDraw.
+ * - A custom controller's draw() is clipped to the chart area: leave room with grace.
+ *   A custom cartesian scale goes in CartesianScaleTypeRegistry, not only ScaleTypeRegistry.
  * - Scriptable and segment functions that read a closure variable need chart.update()
  *   after it changes.
  */

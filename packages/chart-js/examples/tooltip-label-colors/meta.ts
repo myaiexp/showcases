@@ -1,4 +1,4 @@
-// Chart.js example: tooltip labelColor, labelTextColor, usePointStyle and labelPointStyle
+// Chart.js example: tooltip labelColor, labelTextColor and point styles
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

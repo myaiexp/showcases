@@ -1,4 +1,4 @@
-// Energy mix as horizontal bars: ticks.align and crossAlign move the tick labels
+// Energy mix as horizontal bars: ticks.align and crossAlign move the labels
 import type { CartesianScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';

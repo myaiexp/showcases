@@ -1,4 +1,4 @@
-// Two players' skills on one radar: the shape of each profile shows strengths and gaps
+// Two players' skills on one radar: each shape shows strengths and gaps
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, select } from '../../shared/controls.ts';

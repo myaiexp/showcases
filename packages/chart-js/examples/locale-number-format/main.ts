@@ -1,4 +1,4 @@
-// Revenue and conversion rate on two axes, written the way each locale writes numbers
+// Revenue and conversion on two axes, written the way each locale writes
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, select } from '../../shared/controls.ts';

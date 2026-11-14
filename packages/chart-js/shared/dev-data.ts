@@ -1,4 +1,4 @@
-// Sample data for the Getting started guide: museum acquisitions and painting sizes
+// Sample data for the Getting started guide: acquisitions, painting sizes
 import { seeded } from './data.ts';
 
 export interface Acquisition {

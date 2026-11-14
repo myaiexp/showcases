@@ -1,4 +1,4 @@
-// Bubbles that swell when the pointer is near: hoverRadius adds size, hitRadius widens the target
+// Bubbles that swell near the pointer: hoverRadius and hitRadius
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage } from '../../shared/stage.ts';
 import { autoHover } from '../../shared/hover.ts';

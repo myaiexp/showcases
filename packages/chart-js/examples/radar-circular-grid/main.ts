@@ -1,4 +1,4 @@
-// A radar's grid as straight polygons or as round rings, chosen with grid.circular
+// A radar grid as polygons or round rings, chosen with grid.circular
 import type { RadialLinearScaleOptions } from 'chart.js';
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, every } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// Coffee per weekday: axis titles say what each axis measures (text, align, font, padding)
+// Coffee per weekday: axis titles say what each axis measures
 import type { Mount } from '@/types.ts';
 import { Chart, caption, createStage, cycle } from '../../shared/stage.ts';
 import { controlBar, select, slider, toggle } from '../../shared/controls.ts';

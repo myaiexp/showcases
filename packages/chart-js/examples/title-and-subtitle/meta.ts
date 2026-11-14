@@ -1,4 +1,4 @@
-// Chart.js example: plugins.title and plugins.subtitle position, align, font, padding
+// Chart.js example: title and subtitle position, align, font, padding
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
