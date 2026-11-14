@@ -1,0 +1,10 @@
+/* Stickers in a photo frame: gradient photo, three absolutely placed badges */
+[data-example='motion/sticker-in-frame'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .frame { position: relative; width: min(100%, 360px); aspect-ratio: 3 / 2; max-height: 100%; }
+  .photo { position: absolute; inset: 0; border-radius: 12px; background: linear-gradient(160deg, #1f3a5f, #4b6cb7 45%, #f2a65a); border: 1px solid var(--border); }
+  .sticker { position: absolute; padding: 4px 10px; border-radius: 999px; font-weight: 800; font-size: 0.8rem; color: #111; cursor: grab; user-select: none; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
+  .s0 { left: 12%; top: 14%; background: #ffd23f; transform: rotate(-8deg); }
+  .s1 { left: 62%; top: 20%; background: #ff6b9d; font-size: 1.4rem; padding: 0 10px; }
+  .s2 { left: 28%; top: 62%; background: #7bdff2; transform: rotate(5deg); }
+}

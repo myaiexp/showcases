@@ -19,12 +19,14 @@ export interface FakePointer {
   /** pointerup on window. */
   up(at: Point): void;
   /** pointerenter / pointerleave on `target`, as a mouse, for hover(). */
-  enter(target: Element, at: Point): void;
-  leave(target: Element, at: Point): void;
+  enter(target: Element, at: Point, pointerType?: 'mouse' | 'touch'): void;
+  leave(target: Element, at: Point, pointerType?: 'mouse' | 'touch'): void;
   /** Moves from `from` to `to` over `seconds`, easing in and out, one event per frame. */
   glide(from: Point, to: Point, seconds: number): Promise<void>;
   /** Down on `target`, glide, up: a whole drag. */
   drag(target: Element, from: Point, to: Point, seconds: number): Promise<void>;
+  /** Down, glide that speeds up all the way, up at full speed: a flick, so drag momentum has velocity to carry. */
+  flick(target: Element, from: Point, to: Point, seconds: number): Promise<void>;
   /** Down, wait, up: a tap or a long press. */
   tap(target: Element, at: Point, holdSeconds?: number): Promise<void>;
   /**
@@ -46,7 +48,10 @@ export function gesture(frame: HTMLElement, signal: AbortSignal, script: (p: Fak
   const run = queue.then(async () => {
     if (signal.aborted) return;
     try {
-      await script(makePointer(frame, signal));
+      // Race the abort: a script awaiting an animation that a cancelled scope stopped would never settle,
+      // and one stuck script would block every later card on the page.
+      const aborted = new Promise<never>((_, reject) => signal.addEventListener('abort', () => reject(signal.reason), { once: true }));
+      await Promise.race([script(makePointer(frame, signal)), aborted]);
     } catch (err) {
       if (!signal.aborted) throw err;
     }
@@ -106,33 +111,45 @@ function makePointer(frame: HTMLElement, signal: AbortSignal): FakePointer {
     );
   };
   // Frames until `seconds` pass, calling `step` with eased progress 0..1.
-  const tween = (seconds: number, step: (t: number) => void): Promise<void> =>
+  const tween = (seconds: number, step: (t: number) => void, easing: (t: number) => number = ease): Promise<void> =>
     new Promise((resolve, reject) => {
       const start = performance.now();
       let id = 0;
       const tick = (now: number): void => {
         if (signal.aborted) return reject(signal.reason);
         const t = Math.min(1, (now - start) / (seconds * 1000));
-        step(ease(t));
+        step(easing(t));
         if (t < 1) id = requestAnimationFrame(tick);
         else resolve();
       };
       id = requestAnimationFrame(tick);
-      signal.addEventListener('abort', () => cancelAnimationFrame(id), { once: true });
+      // Reject on abort: a tween that just stopped would leave the page-wide queue waiting forever.
+      signal.addEventListener('abort', () => {
+        cancelAnimationFrame(id);
+        reject(signal.reason);
+      }, { once: true });
     });
 
   const p: FakePointer = {
     down: (target, at) => fire(target, 'pointerdown', at),
     move: (at) => fire(window, 'pointermove', at),
     up: (at) => fire(window, 'pointerup', at),
-    enter: (target, at) => fire(target, 'pointerenter', at),
-    leave: (target, at) => fire(target, 'pointerleave', at),
+    enter: (target, at, pointerType = 'mouse') => fire(target, 'pointerenter', at, { pointerType }),
+    leave: (target, at, pointerType = 'mouse') => fire(target, 'pointerleave', at, { pointerType }),
     glide: (from, to, seconds) =>
       tween(seconds, (t) => p.move({ x: from.x + (to.x - from.x) * t, y: from.y + (to.y - from.y) * t })),
     async drag(target, from, to, seconds) {
       p.down(target, from);
       try {
         await p.glide(from, to, seconds);
+      } finally {
+        p.up(to);
+      }
+    },
+    async flick(target, from, to, seconds) {
+      p.down(target, from);
+      try {
+        await tween(seconds, (t) => p.move({ x: from.x + (to.x - from.x) * t, y: from.y + (to.y - from.y) * t }), (t) => t * t);
       } finally {
         p.up(to);
       }

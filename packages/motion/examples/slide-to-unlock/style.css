@@ -1,0 +1,10 @@
+/* Slide to unlock: a pill track, a growing fill and a round handle */
+[data-example='motion/slide-to-unlock'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .lock { position: relative; width: min(100%, 230px); height: 48px; border-radius: 24px; background: var(--bg-surface); border: 1px solid var(--border); overflow: hidden; }
+  .lock.big { width: 340px; height: 60px; border-radius: 30px; }
+  .fill { position: absolute; left: 4px; top: 4px; bottom: 4px; width: 48px; border-radius: 22px; background: var(--accent); opacity: 0.45; }
+  .label { position: absolute; inset: 0; display: grid; place-items: center; padding-left: 40px; color: var(--fg-2); font-size: 0.85rem; letter-spacing: 0.04em; pointer-events: none; }
+  .handle { position: absolute; left: 4px; top: 4px; bottom: 4px; aspect-ratio: 1; border-radius: 50%; display: grid; place-items: center; background: #fff; color: #222; font-size: 1.6rem; font-weight: 700; cursor: grab; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); }
+  .state { margin: var(--space-2) 0 0; font-size: 0.8rem; color: var(--fg-2); }
+}

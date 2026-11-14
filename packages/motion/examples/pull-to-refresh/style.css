@@ -1,0 +1,10 @@
+/* Pull-to-refresh: a phone with a spinner hidden behind a feed */
+[data-example='motion/pull-to-refresh'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .phone { position: relative; width: min(100%, 230px); height: 170px; overflow: hidden; border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); }
+  .phone.big { width: 300px; height: 340px; }
+  .spinner { position: absolute; inset: 8px 0 auto; display: flex; flex-direction: column; align-items: center; gap: 2px; opacity: 0; font-size: 0.7rem; color: var(--fg-2); }
+  .spinner svg { width: 24px; height: 24px; fill: none; stroke: var(--accent); stroke-width: 3; stroke-linecap: round; stroke-dasharray: 40 20; }
+  .feed { position: relative; height: 100%; background: var(--bg-surface); cursor: grab; }
+  .post { padding: var(--space-2) var(--space-3); border-bottom: 1px solid var(--border); font-size: 0.8rem; color: var(--fg-1); }
+}

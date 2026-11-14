@@ -1,0 +1,14 @@
+/* Volume knob: a round dial inside a ring of tick marks */
+[data-example='motion/volume-dial-rotate-only'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .amp { position: relative; display: grid; justify-items: center; gap: var(--space-2); width: 150px; }
+  .amp.big { width: 240px; }
+  .dial { position: relative; width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #4a4f5c, #1c1f27); border: 2px solid var(--border); box-shadow: 0 6px 14px rgba(0, 0, 0, 0.5); cursor: grab; }
+  .big .dial { width: 150px; height: 150px; }
+  .dial i { position: absolute; left: 50%; top: 6px; width: 4px; height: 20px; margin-left: -2px; border-radius: 2px; background: var(--accent); }
+  .ticks { position: absolute; left: 0; right: 0; top: 0; height: 90px; pointer-events: none; }
+  .big .ticks { height: 150px; }
+  .ticks i { position: absolute; left: 50%; top: -6px; width: 2px; height: 6px; margin-left: -1px; background: var(--fg-3); transform-origin: 1px 51px; }
+  .big .ticks i { top: -8px; transform-origin: 1px 83px; }
+  .vol { font-size: 1.4rem; font-weight: 700; color: var(--fg-1); font-variant-numeric: tabular-nums; }
+}

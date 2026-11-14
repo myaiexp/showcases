@@ -1,0 +1,11 @@
+/* Nested drag: a desk, a card and chips on it */
+[data-example='motion/nested-drag-propagation'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .desk { position: relative; width: min(100%, 240px); height: 160px; border-radius: 10px; background: var(--bg-surface); border: 1px dashed var(--border); display: grid; place-items: center; }
+  .desk.big { width: 400px; height: 280px; }
+  .card { width: 140px; display: flex; flex-wrap: wrap; gap: 6px; padding: var(--space-2); border-radius: 10px; background: var(--bg-raised); border: 1px solid var(--accent); cursor: grab; }
+  .big .card { width: 200px; padding: var(--space-3); }
+  .card b { width: 100%; font-size: 0.8rem; color: var(--fg-1); }
+  .chip { padding: 3px 10px; border-radius: 999px; background: var(--accent); color: #fff; font-size: 0.75rem; cursor: grab; user-select: none; }
+  .moved { margin: var(--space-2) 0 0; font-size: 0.75rem; color: var(--fg-2); }
+}

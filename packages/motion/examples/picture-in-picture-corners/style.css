@@ -1,0 +1,15 @@
+/* Picture-in-picture: a web page with a floating video window and four corner targets */
+[data-example='motion/picture-in-picture-corners'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .page { position: relative; width: min(100%, 240px); height: 170px; border-radius: 10px; background: var(--bg-surface); border: 1px solid var(--border); }
+  .page.big { width: 360px; height: 280px; }
+  .lines { padding: var(--space-3); display: grid; gap: 8px; }
+  .lines i { height: 8px; border-radius: 4px; background: var(--border); }
+  .lines i:nth-child(odd) { width: 80%; }
+  .ghost { position: absolute; width: 72px; height: 44px; border: 1px dashed var(--fg-3); border-radius: 6px; opacity: 0.35; }
+  .big .ghost { width: 96px; height: 60px; }
+  .tl { left: 8px; top: 8px; } .tr { right: 8px; top: 8px; } .bl { left: 8px; bottom: 8px; } .br { right: 8px; bottom: 8px; }
+  .pip { position: absolute; left: 0; top: 0; width: 72px; height: 44px; border-radius: 6px; background: linear-gradient(135deg, #5b3fd1, #e0508a); box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5); cursor: grab; display: grid; place-items: center; }
+  .big .pip { width: 96px; height: 60px; }
+  .pip span { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.1em; color: #fff; background: rgba(0, 0, 0, 0.4); padding: 1px 6px; border-radius: 3px; }
+}
