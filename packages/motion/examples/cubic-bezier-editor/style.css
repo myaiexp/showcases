@@ -1,0 +1,20 @@
+/* Bezier editor: a field with two handles, a rail with a ball, and the numbers */
+[data-example='motion/cubic-bezier-editor'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .editor { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); }
+  .row { display: flex; gap: var(--space-5); }
+  .field, .rail { position: relative; }
+  .field svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .unit { fill: var(--bg-surface); stroke: var(--border); }
+  .diag { stroke: var(--border); stroke-dasharray: 3 4; fill: none; }
+  .curve { stroke: var(--accent); stroke-width: 3; fill: none; }
+  .guide { stroke: var(--fg-3); stroke-width: 1; fill: none; }
+  .handle { position: absolute; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; cursor: grab; }
+  .h1 { background: var(--cyan); }
+  .h2 { background: var(--orange); }
+  .rail { width: 22px; }
+  .rail .base { position: absolute; left: 10px; width: 2px; top: 0; bottom: 0; background: var(--border); }
+  .ball { position: absolute; left: 2px; bottom: calc(100% * 0.6 / 2.2 - 9px); width: 18px; height: 18px; border-radius: 50%; background: var(--accent); }
+  .nums { font-size: 0.75rem; color: var(--fg-2); }
+  .editor.full .nums { font-size: 0.9rem; }
+}

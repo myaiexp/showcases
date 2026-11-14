@@ -1,0 +1,11 @@
+/* Double-tap photo: a photo card with a like count and a burst heart */
+[data-example='motion/double-tap-to-like-photo'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .post { width: min(100%, 220px); border-radius: 12px; overflow: hidden; background: var(--bg-surface); border: 1px solid var(--border); }
+  .post.big { width: 340px; }
+  .photo { position: relative; height: 120px; background: linear-gradient(150deg, #1f6f8b, #99d1d7 50%, #f4e1a0); cursor: pointer; overflow: hidden; user-select: none; }
+  .big .photo { height: 240px; }
+  .heart { position: absolute; width: 56px; height: 56px; margin: -28px 0 0 -28px; pointer-events: none; }
+  .heart svg { width: 100%; height: 100%; fill: #ff4d6d; filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.4)); }
+  .likes { margin: 0; padding: var(--space-2) var(--space-3); font-size: 0.8rem; color: var(--fg-1); font-weight: 600; }
+}

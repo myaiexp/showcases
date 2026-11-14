@@ -1,0 +1,11 @@
+/* Photo tray: three photos that can be ticked or dragged */
+[data-example='motion/drag-threshold-distance'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .tray { display: flex; gap: var(--space-3); padding: var(--space-4) var(--space-3); border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); }
+  .photo { position: relative; width: 64px; height: 64px; border-radius: 10px; cursor: pointer; touch-action: none; user-select: none; }
+  .full .photo { width: 96px; height: 96px; }
+  .photo b { position: absolute; top: 4px; right: 4px; width: 20px; height: 20px; border-radius: 50%; background: var(--green); color: #fff; font-size: 0.7rem; display: none; place-items: center; }
+  .photo[data-on='yes'] b { display: grid; }
+  .photo[data-on='yes'] { outline: 2px solid var(--green); }
+  .read { margin-top: var(--space-2); font-size: 0.65rem; color: var(--fg-3); }
+}

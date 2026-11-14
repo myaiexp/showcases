@@ -1,0 +1,8 @@
+/* A three-segment tab bar with a sliding highlight */
+[data-example='motion/mini-animate-spring'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .tabs { position: relative; display: flex; padding: 4px; border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); }
+  .pill { position: absolute; top: 4px; left: 4px; width: 82px; height: calc(100% - 8px); border-radius: 9px; background: var(--accent); }
+  .tab { position: relative; width: 82px; padding: 8px 0; border: 0; background: none; color: var(--fg-2); font: inherit; font-size: 0.85rem; cursor: pointer; }
+  .tab.on { color: #fff; font-weight: 600; }
+}

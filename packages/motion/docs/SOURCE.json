@@ -1,5 +1,56 @@
 {
-  "license": "none found",
+  "license": "none found (site-only docs at motion.dev/docs; the MIT licence covers the library package, not the site)",
   "redistribute": false,
-  "sources": []
+  "sources": [
+    {
+      "kind": "pages",
+      "urls": [
+        "https://motion.dev/docs/quick-start",
+        "https://motion.dev/docs/animate",
+        "https://motion.dev/docs/timeline-sequences",
+        "https://motion.dev/docs/stagger",
+        "https://motion.dev/docs/spring",
+        "https://motion.dev/docs/easing-functions",
+        "https://motion.dev/docs/tween",
+        "https://motion.dev/docs/arc",
+        "https://motion.dev/docs/animate-view",
+        "https://motion.dev/docs/layout-animations",
+        "https://motion.dev/docs/scroll",
+        "https://motion.dev/docs/inview",
+        "https://motion.dev/docs/resize",
+        "https://motion.dev/docs/hover",
+        "https://motion.dev/docs/press",
+        "https://motion.dev/docs/drag",
+        "https://motion.dev/docs/pinch",
+        "https://motion.dev/docs/scope-motion",
+        "https://motion.dev/docs/frame",
+        "https://motion.dev/docs/delay",
+        "https://motion.dev/docs/motion-value",
+        "https://motion.dev/docs/spring-value",
+        "https://motion.dev/docs/transform-value",
+        "https://motion.dev/docs/map-value",
+        "https://motion.dev/docs/style-effect",
+        "https://motion.dev/docs/attr-effect",
+        "https://motion.dev/docs/prop-effect",
+        "https://motion.dev/docs/svg-effect",
+        "https://motion.dev/docs/transform",
+        "https://motion.dev/docs/mix",
+        "https://motion.dev/docs/clamp",
+        "https://motion.dev/docs/wrap",
+        "https://motion.dev/docs/distance",
+        "https://motion.dev/docs/progress",
+        "https://motion.dev/docs/pipe",
+        "https://motion.dev/docs/resolve-elements",
+        "https://motion.dev/docs/svg-animation",
+        "https://motion.dev/docs/3d-transforms",
+        "https://motion.dev/docs/css",
+        "https://motion.dev/docs/three",
+        "https://motion.dev/docs/performance",
+        "https://motion.dev/docs/improvements-to-the-web-animations-api-dx",
+        "https://motion.dev/docs/upgrade-guide",
+        "https://motion.dev/docs/faqs",
+        "https://motion.dev/docs/migrate-from-gsap-to-motion"
+      ]
+    }
+  ]
 }

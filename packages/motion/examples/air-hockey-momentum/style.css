@@ -1,0 +1,8 @@
+/* Air hockey: a rink with a centre line and a puck */
+[data-example='motion/air-hockey-momentum'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .rink { position: relative; width: min(100%, 240px); height: 160px; display: grid; place-items: center; border-radius: 16px; background: #14304a; border: 3px solid #cfe3f5; box-sizing: border-box; }
+  .rink.big { width: 400px; height: 260px; }
+  .mid { position: absolute; left: 50%; top: 0; bottom: 0; border-left: 2px dashed rgba(255, 255, 255, 0.35); }
+  .puck { position: relative; width: 38px; height: 38px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ff9a9a, #d62f2f); box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); cursor: grab; }
+}

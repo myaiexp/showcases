@@ -1,0 +1,12 @@
+/* Press and cancel: a pay button, a result line and a three-line event log */
+[data-example='motion/press-cancel-slide-off'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .pay { width: min(100%, 220px); display: grid; gap: var(--space-2); justify-items: center; }
+  .pay.big { width: 300px; }
+  .btn-pay { width: 100%; padding: 14px; border: 0; border-radius: 12px; background: var(--accent); color: #fff; font-size: 1rem; font-weight: 700; cursor: pointer; }
+  .big .btn-pay { padding: 22px; font-size: 1.2rem; }
+  .result { margin: 0; font-size: 0.85rem; color: var(--fg-1); }
+  .result[data-ok='false'] { color: #e5646b; }
+  .result[data-ok='true'] { color: #4cc38a; }
+  .log { margin: 0; padding: 0; list-style: none; font: 0.7rem/1.4 ui-monospace, monospace; color: var(--fg-3); text-align: center; }
+}

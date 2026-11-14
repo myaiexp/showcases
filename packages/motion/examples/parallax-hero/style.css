@@ -1,0 +1,19 @@
+/* Parallax hero: layered mountain landscape above a text section */
+[data-example='motion/parallax-hero'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .frame { width: min(100%, 240px); border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+  .frame.full { width: min(100%, 460px); }
+  .scroller { height: 180px; overflow-y: auto; position: relative; scrollbar-width: none; background: var(--bg-surface); }
+  .frame.full .scroller { height: 320px; }
+  .hero { position: relative; height: 180px; overflow: hidden; background: linear-gradient(#1c2350, #b0507a 70%, #f2a65a); }
+  .frame.full .hero { height: 320px; }
+  .sun { position: absolute; left: 62%; top: 38%; width: 46px; height: 46px; border-radius: 50%; background: #ffd98a; box-shadow: 0 0 40px #ffb36b; }
+  .ridge { position: absolute; left: -10%; right: -10%; bottom: -40px; height: 55%; }
+  .far { background: #5a3f7a; clip-path: polygon(0 60%, 12% 30%, 24% 55%, 38% 15%, 52% 50%, 66% 25%, 80% 55%, 92% 35%, 100% 55%, 100% 100%, 0 100%); }
+  .mid { background: #3a2c63; height: 45%; clip-path: polygon(0 55%, 18% 20%, 33% 50%, 50% 10%, 68% 55%, 84% 25%, 100% 50%, 100% 100%, 0 100%); }
+  .near { background: #181a3a; height: 30%; bottom: -60px; clip-path: polygon(0 40%, 25% 15%, 45% 45%, 70% 10%, 100% 40%, 100% 100%, 0 100%); }
+  .title { position: absolute; inset: 14% 0 auto; margin: 0; text-align: center; font-size: 1.3rem; letter-spacing: 0.06em; text-transform: uppercase; color: #fff4e0; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4); }
+  .after { padding: var(--space-3) var(--space-4); min-height: 200px; }
+  h4 { margin: 0 0 var(--space-2); color: var(--fg-1); }
+  p { margin: 0 0 var(--space-2); font-size: 0.8rem; color: var(--fg-2); }
+}

@@ -1,0 +1,12 @@
+/* Personality buttons: three call-to-action buttons with a caption each */
+[data-example='motion/button-personality-easing'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .buttons { display: flex; flex-direction: column; gap: var(--space-3); align-items: stretch; }
+  .row { display: flex; flex-direction: column; gap: 4px; align-items: center; }
+  .cta { display: inline-flex; align-items: center; gap: var(--space-3); padding: 10px 22px; border: 0; border-radius: 999px; background: var(--accent); color: var(--accent-text, #fff); font-weight: 600; font-size: 0.9rem; cursor: pointer; }
+  .cta i { font-style: normal; display: inline-block; }
+  .row code { font-size: 0.68rem; color: var(--fg-3); }
+  .buttons.full { gap: var(--space-4); }
+  .buttons.full .cta { padding: 14px 32px; font-size: 1.05rem; }
+  .buttons.full code { font-size: 0.8rem; }
+}

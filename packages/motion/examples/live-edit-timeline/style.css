@@ -1,0 +1,8 @@
+/* Live edit timeline: a rack of numbered tiles */
+[data-example='motion/live-edit-timeline'] {
+  > div, > ul { width: fit-content; max-width: 100%; margin-inline: auto; }
+  > p { margin-inline: auto; }
+  .rack { display: flex; justify-content: center; gap: var(--space-3); padding: var(--space-6) var(--space-3) var(--space-3); }
+  .tile { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 10px; background: #5b6cff; color: #fff; font-weight: 700; }
+  .info { margin-top: var(--space-2); font-size: 0.7rem; color: var(--fg-3); font-family: var(--font-mono, monospace); text-align: center; }
+}

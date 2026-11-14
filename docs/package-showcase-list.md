@@ -81,7 +81,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 38 | Mosaic vgplot (`@uwdata/vgplot`) | 4 | 0.35 2026-11 | repo ✓ BSD-3 | 60 | Cross-filtered plots on DuckDB-WASM. Heavy, and 0.x moves fast |
 | 39 | dotLottie (`@lottiefiles/dotlottie-web`) | 4 | 0.83 2026-11 | README MIT | 30 | Lottie with state machines and themes; needs assets |
 | 40 | textmode.js (`textmode.js`) | 4 | 0.18 2026-10 | README MIT | 25 | ASCII/text-mode rendering, new 2025. API from the typings; `examples/` stays out |
-| 41 | Motion (`motion`) *(legacy in gallery)* | 4 | v14 2026-10 | site | 120 | Springs, scroll, layout, gestures |
+| 41 | **Motion** (`motion`) ✅ built | 4 | v14 2026-10 | site | 120 | Springs, scroll, layout, gestures. JS docs only: React/Vue pages and Motion UI (Motion+, paid) stay out |
 | 42 | Pts (`pts`) | 4 | 1.0 2026-09 | repo ✓ Apache | 80 | Generative art, just hit 1.0 |
 | 43 | wavesurfer.js (`wavesurfer.js`) | 4 | v8 2026-09 | README BSD | 50 | Audio waveforms, regions, spectrogram |
 | 44 | Monaco Editor (`monaco-editor`) | 4 | 0.57 2026-09 | README MIT | 25 | VS Code editor. Docs are README plus `monaco.d.ts`; the playground stays out |

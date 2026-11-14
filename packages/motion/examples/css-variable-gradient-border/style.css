@@ -1,0 +1,13 @@
+/* A plan card wrapped in a rotating conic-gradient border */
+[data-example='motion/css-variable-gradient-border'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .plan { position: relative; width: 190px; }
+  .ring, .halo { --angle: 0deg; background: conic-gradient(from var(--angle), #ff3d81, #ffb347, #3ddc97, #3da5ff, #b66bff, #ff3d81); border-radius: 18px; }
+  .halo { position: absolute; inset: 0; filter: blur(18px); opacity: 0.7; }
+  .ring { position: relative; padding: 3px; }
+  .inner { background: var(--bg-surface); border-radius: 15px; padding: var(--space-4); text-align: center; display: flex; flex-direction: column; gap: 4px; }
+  small { letter-spacing: 0.15em; color: var(--fg-3); }
+  strong { font-size: 2rem; color: var(--fg-1); }
+  strong span { font-size: 0.8rem; color: var(--fg-3); }
+  p { margin: 0; font-size: 0.8rem; color: var(--fg-2); }
+}

@@ -1,0 +1,11 @@
+/* Two ring spinners with twelve segments each, side by side */
+[data-example='motion/spinner-negative-start-delay'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .pair { display: flex; gap: var(--space-5); justify-content: center; }
+  .spin { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); }
+  .ring { position: relative; width: 64px; height: 64px; }
+  .ring i { position: absolute; left: calc(50% - 2px); top: calc(50% - 7px); width: 4px; height: 14px; border-radius: 2px; background: var(--accent); opacity: 0; }
+  .full .ring { transform: scale(1.5); margin: 24px; }
+  .spin span { font: 0.65rem var(--font-mono, monospace); color: var(--fg-3); }
+  .call { margin-top: var(--space-3); font-size: 0.65rem; color: var(--fg-3); text-align: center; }
+}

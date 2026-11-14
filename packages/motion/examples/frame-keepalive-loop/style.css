@@ -1,0 +1,11 @@
+/* Orbiting planets: rings centred on a sun, planets moved by the frame loop */
+[data-example='motion/frame-keepalive-loop'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .system { position: relative; width: 170px; height: 170px; display: grid; place-items: center; }
+  .system.full { width: 200px; height: 200px; }
+  .system > * { grid-area: 1 / 1; }
+  .sun { width: 22px; height: 22px; border-radius: 50%; background: #ffd24a; box-shadow: 0 0 18px #ffb020; }
+  .ring { border-radius: 50%; border: 1px dashed var(--border); }
+  .planet { border-radius: 50%; }
+  .frames { font: 0.7rem var(--font-mono, monospace); color: var(--fg-3); margin-top: var(--space-1); }
+}

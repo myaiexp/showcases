@@ -1,0 +1,9 @@
+/* Nav bar: four text links with a hidden underline each */
+[data-example='motion/nav-hover-lift'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .nav { display: flex; gap: var(--space-2); padding: var(--space-3) var(--space-2); border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); }
+  .nav.big { gap: var(--space-4); padding: var(--space-4) var(--space-5); }
+  .link { position: relative; padding: 4px 8px; color: var(--fg-1); font-size: 0.8rem; cursor: pointer; display: block; }
+  .big .link { font-size: 1.05rem; }
+  .link i { position: absolute; left: 8px; right: 8px; bottom: 0; height: 2px; border-radius: 1px; background: var(--accent); }
+}

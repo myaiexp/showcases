@@ -1,0 +1,13 @@
+/* Perspective explorer: two rows of tilted tiles */
+[data-example='motion/perspective-explorer'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .rows { display: flex; flex-direction: column; gap: var(--space-1); width: min(100%, 250px); }
+  .label { font-size: 0.6rem; color: var(--fg-3); text-align: center; }
+  .scene { position: relative; display: flex; justify-content: center; gap: var(--space-3); height: 70px; align-items: center; border-radius: 8px; background: var(--bg-surface); border: 1px solid var(--border); margin-bottom: var(--space-2); }
+  .tile { display: grid; place-items: center; width: 56px; height: 46px; border-radius: 6px; background: hsl(var(--hue) 65% 55%); color: #fff; font-weight: 700; }
+  .vp { position: absolute; width: 8px; height: 8px; margin: -4px 0 0 -4px; border-radius: 50%; background: var(--orange); box-shadow: 0 0 0 3px rgb(255 160 60 / 0.25); pointer-events: none; }
+  &.is-full .rows { width: min(100%, 520px); gap: var(--space-2); }
+  &.is-full .label { font-size: 0.75rem; }
+  &.is-full .scene { height: 150px; gap: var(--space-6); }
+  &.is-full .tile { width: 120px; height: 96px; font-size: 1.6rem; }
+}

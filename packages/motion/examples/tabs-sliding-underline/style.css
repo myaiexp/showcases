@@ -1,0 +1,11 @@
+/* Tabs and their underline */
+[data-example='motion/tabs-sliding-underline'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .tabs { width: min(100%, 320px); }
+  .bar { list-style: none; margin: 0; padding: 0; display: flex; border-bottom: 1px solid var(--border); }
+  .bar li { position: relative; flex: 1; }
+  .tab { width: 100%; padding: 8px 0; border: 0; background: none; color: var(--fg-3); font-size: 0.85rem; cursor: pointer; }
+  .tab[aria-selected='true'] { color: var(--fg-1); }
+  .underline { position: absolute; left: 6px; right: 6px; bottom: -1px; height: 3px; border-radius: 2px; background: var(--accent); }
+  .body { margin: var(--space-3) 0 0; color: var(--fg-2); font-size: 0.85rem; text-align: center; }
+}

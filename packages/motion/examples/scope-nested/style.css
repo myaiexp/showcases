@@ -1,0 +1,24 @@
+/* Mini page: a header, a sidebar and a main area, each tagged with its scope's state */
+[data-example='motion/scope-nested'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .site { width: min(100%, 250px); display: flex; flex-direction: column; gap: var(--space-2); }
+  .site.full { width: min(100%, 420px); }
+  .body { display: grid; grid-template-columns: 70px 1fr; gap: var(--space-2); }
+  .region { position: relative; border-radius: 10px; background: var(--bg-surface); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; gap: var(--space-3); overflow: hidden; }
+  .header { height: 52px; justify-content: flex-start; padding: 0 var(--space-3); }
+  .side { height: 90px; }
+  .main { height: 90px; }
+  .full .header { height: 70px; }
+  .full .side, .full .main { height: 140px; }
+  .region[data-state='active'] { border-color: var(--green); }
+  .region[data-state='cancelled'], .region[data-state='stopped'] { border-color: var(--red); }
+  .tag { white-space: nowrap; position: absolute; right: 6px; bottom: 3px; font: normal 0.55rem var(--font-mono, monospace); color: var(--fg-3); }
+  .header .tag { bottom: auto; top: 3px; }
+  .logo { width: 22px; height: 22px; border-radius: 6px; background: var(--accent); }
+  .dots { display: flex; gap: 4px; }
+  .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--fg-2); }
+  .bars { display: flex; gap: 4px; align-items: flex-end; height: 40px; }
+  .bars i { width: 8px; height: 100%; border-radius: 2px; background: var(--cyan); transform-origin: bottom; }
+  .sweep { width: 70%; height: 8px; border-radius: 4px; background: var(--bg-raised); overflow: hidden; }
+  .sweep i { display: block; width: 40%; height: 100%; border-radius: 4px; background: var(--purple); }
+}

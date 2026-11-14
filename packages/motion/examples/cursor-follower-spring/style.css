@@ -1,0 +1,9 @@
+/* Cursor follower with a spring: a pad with a raw pointer dot and a springy ring */
+[data-example='motion/cursor-follower-spring'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .pad { position: relative; width: 240px; height: 160px; overflow: hidden; border-radius: 12px; border: 1px solid var(--border); background: var(--bg-surface); touch-action: none; cursor: crosshair; }
+  .pad.big { width: min(100%, 420px); height: 260px; }
+  .raw { position: absolute; left: -3px; top: -3px; width: 6px; height: 6px; border-radius: 50%; background: var(--fg-3); }
+  .ring { position: absolute; left: -16px; top: -16px; width: 32px; height: 32px; border-radius: 50%; border: 2px solid var(--accent); background: color-mix(in srgb, var(--accent) 22%, transparent); }
+  .pad span { position: absolute; left: 10px; top: 8px; font-size: 0.7rem; color: var(--fg-3); }
+}

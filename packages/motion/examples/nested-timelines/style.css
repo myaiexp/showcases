@@ -1,0 +1,14 @@
+/* Nested timelines: a site mock with a hero and cards */
+[data-example='motion/nested-timelines'] {
+  > div, > ul { width: fit-content; max-width: 100%; margin-inline: auto; }
+  > p { margin-inline: auto; }
+  .site { display: flex; flex-direction: column; gap: var(--space-3); width: min(100%, 280px); padding: var(--space-3); border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); }
+  .top { display: flex; gap: var(--space-2); }
+  .top i { width: 34px; height: 8px; border-radius: 4px; background: var(--fg-3); }
+  .hero { display: flex; align-items: center; gap: var(--space-2); }
+  .logo { width: 30px; height: 30px; border-radius: 8px; background: var(--accent); }
+  .title { font-size: 1.1rem; color: var(--fg-1); }
+  .badge { padding: 1px 8px; border-radius: 99px; font-size: 0.65rem; font-weight: 700; background: var(--bg-raised); color: var(--fg-1); border: 1px solid var(--border); opacity: 0; }
+  .cards { display: flex; gap: var(--space-2); }
+  .cards i { flex: 1; height: 40px; border-radius: 8px; background: var(--bg-raised); border: 1px solid var(--border); }
+}

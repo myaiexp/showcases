@@ -1,0 +1,14 @@
+/* Overscroll stretch: two bars growing from a shared baseline, with a dashed limit line */
+[data-example='motion/map-value-unclamped'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .rig { width: min(100%, 240px); }
+  .rig.big { width: min(100%, 340px); }
+  .cols { position: relative; height: 130px; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); align-items: end; border-bottom: 1px solid var(--fg-3); }
+  .rig.big .cols { height: 220px; }
+  .bar { height: 33%; border-radius: 8px 8px 0 0; transform-origin: 50% 100%; }
+  .a { background: var(--accent); }
+  .b { background: var(--orange); }
+  .limit { position: absolute; left: 0; right: 0; bottom: 50%; border-top: 1px dashed var(--fg-3); pointer-events: none; }
+  .limit::after { content: 'clamp limit'; position: absolute; right: 0; top: -14px; font-size: 0.62rem; color: var(--fg-3); }
+  .labels { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-top: var(--space-1); font-family: var(--font-mono); font-size: 0.7rem; color: var(--fg-2); text-align: center; font-variant-numeric: tabular-nums; }
+}

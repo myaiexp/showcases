@@ -1,0 +1,11 @@
+/* Plan cards: each clips an oversized radial glow that is positioned at the entry point */
+[data-example='motion/hover-entry-point-ripple'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .plans { display: grid; gap: var(--space-2); width: min(100%, 230px); }
+  .plans.big { grid-template-columns: repeat(3, 1fr); width: 520px; gap: var(--space-3); }
+  .plan { position: relative; overflow: hidden; display: flex; justify-content: space-between; align-items: center; padding: 14px var(--space-3); border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); cursor: pointer; }
+  .big .plan { flex-direction: column; align-items: flex-start; gap: 6px; padding: 40px var(--space-3); }
+  .glow { position: absolute; width: 520px; height: 520px; margin: -260px 0 0 -260px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 55%, transparent), transparent 65%); pointer-events: none; }
+  .plan b, .plan span { position: relative; color: var(--fg-1); font-size: 0.85rem; }
+  .plan span { color: var(--fg-2); font-size: 0.75rem; }
+}

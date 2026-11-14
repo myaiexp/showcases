@@ -1,0 +1,8 @@
+/* A phone-like screen with a toast at the top */
+[data-example='motion/toast-await-sequence'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .screen { position: relative; width: min(100%, 280px); height: 150px; border-radius: 14px; border: 1px solid var(--border); background: var(--bg-surface); overflow: hidden; display: flex; flex-direction: column; align-items: center; }
+  .toast { margin-top: 14px; padding: 10px 16px; border-radius: 999px; background: #1f9d6a; color: #fff; font-size: 0.85rem; font-weight: 600; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35); }
+  .tick { margin-right: 4px; }
+  .status { position: absolute; bottom: 10px; font: 0.75rem var(--font-mono, monospace); color: var(--fg-2); }
+}

@@ -1,0 +1,10 @@
+/* Whole show duration: slides and a progress bar */
+[data-example='motion/whole-show-duration'] {
+  > div, > ul { width: fit-content; max-width: 100%; margin-inline: auto; }
+  > p { margin-inline: auto; }
+  .show { width: min(100%, 300px); }
+  .slides { position: relative; height: 130px; border-radius: 12px; overflow: hidden; background: var(--bg-surface); }
+  .slide { position: absolute; inset: 0; display: grid; place-items: center; font-size: 1.6rem; font-weight: 700; color: #fff; opacity: 0; }
+  .bar { height: 4px; margin-top: var(--space-2); border-radius: 2px; background: var(--bg-raised); overflow: hidden; }
+  .bar i { display: block; height: 100%; background: var(--accent); transform-origin: left; transform: scaleX(0); }
+}

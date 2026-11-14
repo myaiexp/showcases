@@ -1,0 +1,8 @@
+/* Widget board: a header strip across the top and one draggable widget */
+[data-example='motion/drag-measure-constraints'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .board { position: relative; width: min(100%, 240px); height: 170px; border-radius: 10px; background: var(--bg-surface); border: 1px solid var(--border); overflow: hidden; display: grid; align-items: end; justify-items: center; padding-bottom: 14px; box-sizing: border-box; }
+  .board.big { width: 400px; height: 280px; }
+  .strip { position: absolute; inset: 0 0 auto; height: 34px; display: flex; align-items: center; padding: 0 var(--space-3); background: var(--bg-raised); border-bottom: 1px solid var(--border); font-size: 0.75rem; color: var(--fg-2); }
+  .widget { position: relative; width: 84px; height: 56px; border-radius: 10px; display: grid; place-items: center; background: var(--accent); color: #fff; font-weight: 700; cursor: grab; box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4); }
+}

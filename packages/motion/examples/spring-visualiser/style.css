@@ -1,0 +1,13 @@
+/* Spring visualiser: an SVG curve over a rail with a ball, and a caption */
+[data-example='motion/spring-visualiser'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .viz { width: min(100%, 250px); display: flex; flex-direction: column; gap: var(--space-2); }
+  .viz.full { width: min(100%, 460px); }
+  svg { width: 100%; height: auto; border-radius: 10px; background: var(--bg-surface); border: 1px solid var(--border); overflow: visible; }
+  .goal { stroke: var(--border); stroke-dasharray: 3 3; }
+  .curve { fill: none; stroke: var(--accent); stroke-width: 2; }
+  .dot { fill: var(--fg-1); }
+  .rail { position: relative; height: 16px; border-radius: 8px; background: var(--bg-raised); }
+  .ball { position: absolute; left: 0; top: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--green); }
+  .cap { font-size: 0.65rem; color: var(--fg-3); text-align: center; }
+}

@@ -1,0 +1,10 @@
+/* Two side-by-side panels */
+[data-example='motion/scoped-layout-two-panels'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .pair { display: flex; gap: var(--space-3); width: min(100%, 320px); }
+  .side { flex: 1; padding: 8px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-surface); transition: border-color 0.2s; }
+  .side.scoped { border-color: var(--accent); }
+  .side h4 { margin: 0 0 6px; font-size: 0.7rem; font-weight: 500; color: var(--fg-3); text-transform: uppercase; letter-spacing: 0.06em; }
+  .stack { display: flex; flex-direction: column; gap: 5px; }
+  .bar { padding: 7px 8px; border-radius: 8px; color: #fff; font-size: 0.75rem; font-weight: 500; }
+}

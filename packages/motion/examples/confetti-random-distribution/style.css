@@ -1,0 +1,12 @@
+/* Confetti distribution: a cannon on the left, a sky for the flight and a ground line */
+[data-example='motion/confetti-random-distribution'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .party { width: min(100%, 260px); display: flex; flex-direction: column; gap: var(--space-1); }
+  .party.full { width: min(100%, 560px); }
+  .sky { position: relative; height: 140px; border-radius: 12px 12px 0 0; background: var(--bg-surface); border: 1px solid var(--border); border-bottom: 0; overflow: hidden; }
+  .full .sky { height: 280px; }
+  .cannon { position: absolute; left: 6px; bottom: 6px; width: 22px; height: 12px; border-radius: 3px; background: var(--fg-3); transform: rotate(-30deg); }
+  .sky i { position: absolute; left: 20px; bottom: 6px; width: 6px; height: 9px; border-radius: 1px; }
+  .ground { display: flex; justify-content: space-between; margin-top: -4px; padding: 0 var(--space-2); border-top: 2px solid var(--border); font-size: 0.65rem; color: var(--fg-3); }
+  .label { text-align: center; font-size: 0.7rem; color: var(--fg-2); }
+}

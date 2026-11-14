@@ -1,0 +1,6 @@
+/* A weather card with a sky background */
+[data-example='motion/colour-value-fade'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .sky { width: min(100%, 240px); height: 130px; border-radius: 16px; padding: var(--space-4); display: flex; flex-direction: column; justify-content: space-between; font-size: 1.1rem; box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35); }
+  .clock { font: 700 1.5rem/1 var(--font-mono, monospace); }
+}

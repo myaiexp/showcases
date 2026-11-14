@@ -1,0 +1,8 @@
+/* Photo strip that flips between a row and a stack */
+[data-example='motion/layout-slow-motion-controls'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .strip { display: flex; gap: 8px; width: min(100%, 300px); }
+  .strip.stacked { flex-direction: column; width: 120px; gap: 6px; }
+  .photo { flex: 1; display: grid; place-items: center; height: 56px; border-radius: 10px; color: #fff; font-weight: 600; }
+  .strip.stacked .photo { flex: none; height: 30px; }
+}

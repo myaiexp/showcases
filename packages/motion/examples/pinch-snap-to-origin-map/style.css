@@ -1,0 +1,14 @@
+/* A schematic map: roads and pins on a green ground, clipped by a frame */
+[data-example='motion/pinch-snap-to-origin-map'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .frame { position: relative; width: min(100%, 240px); height: 170px; overflow: hidden; border-radius: 12px; border: 1px solid var(--border); }
+  .frame.big { width: 420px; height: 300px; }
+  .map { position: absolute; inset: 0; background: #2f4f3f; cursor: grab; }
+  .road { position: absolute; background: #e8dfc8; }
+  .r1 { left: 0; right: 0; top: 48%; height: 7%; }
+  .r2 { top: 0; bottom: 0; left: 30%; width: 6%; }
+  .r3 { left: 40%; right: -10%; top: 20%; height: 4%; transform: rotate(-24deg); }
+  .pin { position: absolute; width: 14px; height: 14px; border-radius: 50% 50% 50% 0; rotate: -45deg; background: #e5646b; border: 2px solid #fff; }
+  .p1 { left: 24%; top: 30%; } .p2 { left: 62%; top: 58%; } .p3 { left: 78%; top: 26%; }
+  .badge { position: absolute; right: 8px; bottom: 8px; padding: 1px 8px; border-radius: 999px; background: rgba(0, 0, 0, 0.55); color: #fff; font-size: 0.7rem; pointer-events: none; }
+}

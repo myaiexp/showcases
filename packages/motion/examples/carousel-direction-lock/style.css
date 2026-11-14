@@ -1,0 +1,15 @@
+/* Carousel inside a list: skeleton rows above and below a photo strip */
+[data-example='motion/carousel-direction-lock'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .page { width: min(100%, 230px); display: grid; gap: 8px; }
+  .page.big { width: 360px; gap: 12px; }
+  .skeleton { height: 14px; border-radius: 4px; background: var(--border); }
+  .skeleton:last-child { width: 60%; }
+  .viewport { position: relative; overflow: hidden; border-radius: 10px; background: var(--bg-surface); }
+  .track { display: flex; gap: 8px; width: max-content; cursor: grab; }
+  .slide { width: 100px; height: 80px; border-radius: 10px; display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 1.4rem; user-select: none; }
+  .big .slide { width: 140px; height: 110px; }
+  .badge { position: absolute; left: 6px; top: 6px; padding: 1px 8px; border-radius: 999px; background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 0.7rem; pointer-events: none; }
+  .badge[data-axis='x'] { background: var(--accent); }
+  .badge[data-axis='y'] { background: #c0392b; }
+}

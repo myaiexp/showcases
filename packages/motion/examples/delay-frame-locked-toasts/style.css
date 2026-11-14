@@ -1,0 +1,9 @@
+/* Frame-locked toasts: a status line over a column of toasts */
+[data-example='motion/delay-frame-locked-toasts'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .toasts { width: min(100%, 260px); height: 180px; display: flex; flex-direction: column; gap: var(--space-2); }
+  .toasts.full { width: min(100%, 360px); height: 260px; }
+  .status { font: 0.7rem var(--font-mono, monospace); color: var(--fg-3); text-align: center; }
+  .stack { display: flex; flex-direction: column; gap: var(--space-1); overflow: hidden; flex: 1; }
+  .toast { padding: var(--space-2) var(--space-3); border-radius: 8px; background: var(--bg-raised); border: 1px solid var(--border); border-left: 3px solid var(--green); color: var(--fg-1); font-size: 0.8rem; }
+}

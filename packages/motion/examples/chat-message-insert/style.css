@@ -1,0 +1,11 @@
+/* Chat thread and composer */
+[data-example='motion/chat-message-insert'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .chat { width: min(100%, 300px); display: flex; flex-direction: column; gap: var(--space-2); }
+  .thread { display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; height: 170px; padding: 8px; overflow: hidden; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-surface); }
+  .bubble { max-width: 75%; padding: 6px 11px; border-radius: 14px; font-size: 0.8rem; }
+  .theirs { align-self: flex-start; background: var(--bg-raised); color: var(--fg-1); }
+  .mine { align-self: flex-end; background: var(--accent); color: var(--accent-text); }
+  .send { display: flex; gap: 6px; }
+  .send input { flex: 1; padding: 5px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-raised); color: var(--fg-1); font: inherit; }
+}

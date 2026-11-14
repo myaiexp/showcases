@@ -1,0 +1,12 @@
+/* Pinch lab: a card to pinch, a dot at the focal point and a monospace readout */
+[data-example='motion/pinch-info-readout'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .lab { position: relative; width: min(100%, 240px); height: 170px; overflow: hidden; border-radius: 10px; background: var(--bg-surface); border: 1px solid var(--border); display: grid; place-items: center; }
+  .lab.big { width: 420px; height: 300px; }
+  .card { position: relative; width: 90px; height: 64px; border-radius: 10px; display: grid; place-items: center; background: var(--accent); color: #fff; font-weight: 800; font-size: 0.75rem; letter-spacing: 0.08em; cursor: grab; }
+  .big .card { width: 160px; height: 110px; }
+  .cross { position: absolute; left: 50%; top: 50%; width: 6px; height: 6px; margin: -3px; border-radius: 50%; background: rgba(255, 255, 255, 0.7); }
+  .focal { position: absolute; width: 12px; height: 12px; margin: -6px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35); opacity: 0; pointer-events: none; }
+  .read { position: absolute; left: 6px; top: 4px; margin: 0; font: 0.6rem/1.35 ui-monospace, monospace; color: var(--fg-2); pointer-events: none; }
+  .big .read { font-size: 0.75rem; left: 10px; top: 8px; }
+}

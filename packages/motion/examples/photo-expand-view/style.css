@@ -1,0 +1,4 @@
+/* Photo expand view: the iframe that holds the example's own page */
+[data-example='motion/photo-expand-view'] {
+  .host { width: 100%; height: 200px; }
+}

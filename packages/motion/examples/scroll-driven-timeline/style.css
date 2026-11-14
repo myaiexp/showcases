@@ -1,0 +1,13 @@
+/* Scroll-driven timeline: a scrollable panel with a pinned stage */
+[data-example='motion/scroll-driven-timeline'] {
+  > div, > ul { width: fit-content; max-width: 100%; margin-inline: auto; }
+  > p { margin-inline: auto; }
+  .reader { width: min(100%, 280px); }
+  .scroller { height: 170px; overflow-y: auto; border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); scrollbar-width: thin; }
+  .track { height: 700px; }
+  .stage { position: sticky; top: 0; height: 168px; }
+  .step { position: absolute; left: 0; right: 0; top: 52px; text-align: center; font-size: 1.3rem; font-weight: 700; color: var(--fg-1); opacity: 0; }
+  .rocket { position: absolute; left: 50%; bottom: 40px; width: 12px; height: 24px; margin-left: -40px; border-radius: 6px 6px 2px 2px; background: #ff7a59; }
+  .meter { position: absolute; left: 12px; right: 12px; bottom: 12px; height: 4px; border-radius: 2px; background: var(--bg-raised); overflow: hidden; }
+  .meter i { display: block; height: 100%; background: var(--accent); transform-origin: left; transform: scaleX(0); }
+}

@@ -1,0 +1,9 @@
+/* FAQ accordion rows */
+[data-example='motion/accordion-faq'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .faq { width: min(100%, 320px); display: flex; flex-direction: column; gap: 6px; }
+  .qa { border: 1px solid var(--border); border-radius: 10px; background: var(--bg-surface); overflow: hidden; }
+  .q { display: block; width: 100%; padding: 9px 12px; border: 0; background: none; color: var(--fg-1); font-size: 0.85rem; text-align: left; cursor: pointer; }
+  .a { margin: 0; padding: 0 12px 10px; color: var(--fg-2); font-size: 0.8rem; }
+  .a[hidden] { display: none; }
+}

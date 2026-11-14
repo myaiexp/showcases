@@ -1,0 +1,10 @@
+/* Checklist call direction: onboarding steps with ticks */
+[data-example='motion/checklist-call-direction'] {
+  > div, > ul { width: fit-content; max-width: 100%; margin-inline: auto; }
+  > p { margin-inline: auto; }
+  .list { width: min(100%, 236px); margin: 0; padding: var(--space-3); list-style: none; display: flex; flex-direction: column; gap: var(--space-2); border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); }
+  li { display: flex; align-items: center; gap: var(--space-2); font-size: 0.85rem; color: var(--fg-2); }
+  .box { display: grid; place-items: center; width: 18px; height: 18px; border-radius: 5px; border: 1.5px solid var(--fg-3); font-size: 0.7rem; color: #111; }
+  .done { color: var(--fg-1); }
+  .done .box { background: var(--accent); border-color: var(--accent); }
+}

@@ -1,0 +1,13 @@
+/* Segmented meters: a bar cut into equal segments by a repeating gradient */
+[data-example='motion/eased-steps-distribution'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .meters { width: min(100%, 250px); display: flex; flex-direction: column; gap: var(--space-4); }
+  .meters.full { width: min(100%, 480px); }
+  .meter { display: flex; flex-direction: column; gap: 6px; }
+  .meter code { font-size: 0.68rem; color: var(--fg-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .meters.full code { font-size: 0.8rem; }
+  .bar { position: relative; height: 22px; border-radius: 6px; overflow: hidden; background: var(--bg-raised); }
+  .meters.full .bar { height: 30px; }
+  .bar i { position: absolute; inset: 0; background: var(--accent); transform-origin: left; transform: scaleX(0); }
+  .bar::after { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0 calc(100% / var(--n) - 3px), var(--bg) calc(100% / var(--n) - 3px) calc(100% / var(--n))); }
+}

@@ -1,0 +1,15 @@
+/* Spring versus fallback: two toasts side by side */
+[data-example='motion/css-spring-fallback'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .cols { display: flex; gap: var(--space-3); }
+  .col { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); width: 118px; }
+  .cap { font-size: 0.75rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; }
+  .toast { display: flex; flex-direction: column; width: 100%; height: 56px; justify-content: center; padding: 0 var(--space-3); border-radius: 10px; background: var(--bg-raised); border: 1px solid var(--border); border-left: 3px solid var(--green); }
+  .toast b { font-size: 0.85rem; color: var(--fg-1); }
+  .toast small { font-size: 0.65rem; color: var(--fg-3); }
+  .css { font-size: 0.55rem; color: var(--fg-3); text-align: center; overflow-wrap: anywhere; min-height: 4.5em; }
+  .support { margin: var(--space-2) 0 0; font-size: 0.7rem; color: var(--fg-3); }
+  &.is-full .col { width: 200px; }
+  &.is-full .toast { height: 72px; }
+  &.is-full .css { font-size: 0.7rem; }
+}

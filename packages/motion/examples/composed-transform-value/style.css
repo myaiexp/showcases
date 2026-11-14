@@ -1,0 +1,9 @@
+/* Paper plane flying a figure of eight: a sky box with a plane at its centre and a transform readout */
+[data-example='motion/composed-transform-value'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .sky { position: relative; width: 240px; height: 150px; overflow: hidden; border-radius: 12px; border: 1px solid var(--border); background: linear-gradient(#17304f, #3a5f86); }
+  .sky.big { width: min(100%, 400px); height: 250px; }
+  .plane { position: absolute; left: calc(50% - 14px); top: calc(50% - 14px); width: 28px; height: 28px; }
+  .plane svg { width: 100%; height: 100%; fill: #fff; }
+  .code { margin: var(--space-2) 0 0; width: min(100%, 240px); font-family: var(--font-mono); font-size: 0.66rem; color: var(--fg-3); overflow-wrap: anywhere; min-height: 2.6em; }
+}

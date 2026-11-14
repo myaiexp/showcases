@@ -1,0 +1,16 @@
+/* Hold to delete: a file row with a bin button wrapped in a progress ring */
+[data-example='motion/hold-to-delete'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .file { width: min(100%, 240px); display: flex; align-items: center; gap: var(--space-2); padding: var(--space-2); border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); }
+  .file.big { width: 380px; padding: var(--space-3); gap: var(--space-3); }
+  .thumb { flex: none; width: 44px; height: 44px; border-radius: 8px; background: linear-gradient(160deg, #f2a65a, #e0508a 60%, #3b2a6a); }
+  .meta { flex: 1; min-width: 0; display: grid; gap: 2px; }
+  .meta b { font-size: 0.8rem; color: var(--fg-1); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .msg { font-size: 0.7rem; color: var(--fg-3); }
+  .bin { position: relative; flex: none; width: 52px; height: 52px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
+  .bin svg { position: absolute; inset: 0; transform: rotate(-90deg); }
+  .bin circle { fill: none; stroke-width: 4; }
+  .track { stroke: var(--border); }
+  .ring { stroke: #e5646b; stroke-linecap: round; }
+  .bin i { font-style: normal; font-size: 1.2rem; }
+}

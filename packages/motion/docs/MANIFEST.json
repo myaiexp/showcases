@@ -1,5 +1,237 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T11:44:39.789Z",
+  "sources": [
+    {
+      "kind": "pages",
+      "urls": [
+        "https://motion.dev/docs/quick-start",
+        "https://motion.dev/docs/animate",
+        "https://motion.dev/docs/timeline-sequences",
+        "https://motion.dev/docs/stagger",
+        "https://motion.dev/docs/spring",
+        "https://motion.dev/docs/easing-functions",
+        "https://motion.dev/docs/tween",
+        "https://motion.dev/docs/arc",
+        "https://motion.dev/docs/animate-view",
+        "https://motion.dev/docs/layout-animations",
+        "https://motion.dev/docs/scroll",
+        "https://motion.dev/docs/inview",
+        "https://motion.dev/docs/resize",
+        "https://motion.dev/docs/hover",
+        "https://motion.dev/docs/press",
+        "https://motion.dev/docs/drag",
+        "https://motion.dev/docs/pinch",
+        "https://motion.dev/docs/scope-motion",
+        "https://motion.dev/docs/frame",
+        "https://motion.dev/docs/delay",
+        "https://motion.dev/docs/motion-value",
+        "https://motion.dev/docs/spring-value",
+        "https://motion.dev/docs/transform-value",
+        "https://motion.dev/docs/map-value",
+        "https://motion.dev/docs/style-effect",
+        "https://motion.dev/docs/attr-effect",
+        "https://motion.dev/docs/prop-effect",
+        "https://motion.dev/docs/svg-effect",
+        "https://motion.dev/docs/transform",
+        "https://motion.dev/docs/mix",
+        "https://motion.dev/docs/clamp",
+        "https://motion.dev/docs/wrap",
+        "https://motion.dev/docs/distance",
+        "https://motion.dev/docs/progress",
+        "https://motion.dev/docs/pipe",
+        "https://motion.dev/docs/resolve-elements",
+        "https://motion.dev/docs/svg-animation",
+        "https://motion.dev/docs/3d-transforms",
+        "https://motion.dev/docs/css",
+        "https://motion.dev/docs/three",
+        "https://motion.dev/docs/performance",
+        "https://motion.dev/docs/improvements-to-the-web-animations-api-dx",
+        "https://motion.dev/docs/upgrade-guide",
+        "https://motion.dev/docs/faqs",
+        "https://motion.dev/docs/migrate-from-gsap-to-motion"
+      ]
+    }
+  ],
+  "files": {
+    "pages/motion-dev/docs/3d-transforms.md": {
+      "url": "https://motion.dev/docs/3d-transforms",
+      "sha256": "7ed7fbbcaf506f34c8b6d09c7298e20a95d19e6887470b8c1dfd78f71e91610d"
+    },
+    "pages/motion-dev/docs/animate-view.md": {
+      "url": "https://motion.dev/docs/animate-view",
+      "sha256": "e63b2530ade542623bf2f2101601090a1114c853b81c36323ce233a10d816f23"
+    },
+    "pages/motion-dev/docs/animate.md": {
+      "url": "https://motion.dev/docs/animate",
+      "sha256": "f05798e49a8cb8a66286be6c153ff23dd62f4bda0cfcb515c5d8d2c4c2cb957b"
+    },
+    "pages/motion-dev/docs/arc.md": {
+      "url": "https://motion.dev/docs/arc",
+      "sha256": "c07fda918e7ab26015f4ecd9a4cab3cf8b19f050c5228dbc8211fa9db52ef8ed"
+    },
+    "pages/motion-dev/docs/attr-effect.md": {
+      "url": "https://motion.dev/docs/attr-effect",
+      "sha256": "8d618c59c39403e9bf19b52be417a14d162c0413990472fd6584f2f942792bff"
+    },
+    "pages/motion-dev/docs/clamp.md": {
+      "url": "https://motion.dev/docs/clamp",
+      "sha256": "62cbcf800aee9d761eeac9c13ee0c24c29e5060ce24373915a571a9074128227"
+    },
+    "pages/motion-dev/docs/css.md": {
+      "url": "https://motion.dev/docs/css",
+      "sha256": "f00312a386208be06724d6c5543e66e0b36dd3158eac219f6512884719255682"
+    },
+    "pages/motion-dev/docs/delay.md": {
+      "url": "https://motion.dev/docs/delay",
+      "sha256": "bd0710b5342e312a5f72e2f1143abe4ab25cd5a8f9a62e8b05e783c293dc07b0"
+    },
+    "pages/motion-dev/docs/distance.md": {
+      "url": "https://motion.dev/docs/distance",
+      "sha256": "e507ea54e603062e0832fa644840c1029a9fe11eac7e1aa1e44fc74f066b74f9"
+    },
+    "pages/motion-dev/docs/drag.md": {
+      "url": "https://motion.dev/docs/drag",
+      "sha256": "e2825c3756047dc008c3cbb7971a221d8fa696d9efd22baf6f35e8b87ec3d18e"
+    },
+    "pages/motion-dev/docs/easing-functions.md": {
+      "url": "https://motion.dev/docs/easing-functions",
+      "sha256": "2bac8c53feb4a28fddde96a90eb835d9b41b2bc51e08baca96713c09f94806f0"
+    },
+    "pages/motion-dev/docs/faqs.md": {
+      "url": "https://motion.dev/docs/faqs",
+      "sha256": "41624dd1c0877cdb862d769700414eb2ea82cdbd92fd0adaead14389627a5549"
+    },
+    "pages/motion-dev/docs/frame.md": {
+      "url": "https://motion.dev/docs/frame",
+      "sha256": "6fea3780c2eaddfd6a4631778b1e3a061f8b1fd8b9e406b04cffb283e9cb851f"
+    },
+    "pages/motion-dev/docs/hover.md": {
+      "url": "https://motion.dev/docs/hover",
+      "sha256": "35cd9f86aecae710d067d34f0737d873c2eb78450eb571e1fc999985791a5a40"
+    },
+    "pages/motion-dev/docs/improvements-to-the-web-animations-api-dx.md": {
+      "url": "https://motion.dev/docs/improvements-to-the-web-animations-api-dx",
+      "sha256": "03adf8dcd9ddd6e4457ff107a179884862e980b4f5647b039c0219a274dce58f"
+    },
+    "pages/motion-dev/docs/inview.md": {
+      "url": "https://motion.dev/docs/inview",
+      "sha256": "3f2cd4370296a8724e89f8348358bb8c70e0690f612937195086179e730c0889"
+    },
+    "pages/motion-dev/docs/layout-animations.md": {
+      "url": "https://motion.dev/docs/layout-animations",
+      "sha256": "4f1c3d1cbf9642fb001f6d0f1f30d37e4db0e7625f8cfe924b69a10d1cb5bd39"
+    },
+    "pages/motion-dev/docs/map-value.md": {
+      "url": "https://motion.dev/docs/map-value",
+      "sha256": "db0b79991dfbce851b9a712a185da4e1e4c73a2dd7be29d346e2beaec06cc48e"
+    },
+    "pages/motion-dev/docs/migrate-from-gsap-to-motion.md": {
+      "url": "https://motion.dev/docs/migrate-from-gsap-to-motion",
+      "sha256": "8c15e522b1a8f112c4d82422418634634aeeef2da428af62fef77fed07328a1c"
+    },
+    "pages/motion-dev/docs/mix.md": {
+      "url": "https://motion.dev/docs/mix",
+      "sha256": "864f5800539bb6eb8a155da646e55e06e82f4b49a07f581db97fc7a5482d37ef"
+    },
+    "pages/motion-dev/docs/motion-value.md": {
+      "url": "https://motion.dev/docs/motion-value",
+      "sha256": "26c6a6c3d361bac8397e0464bbec43eeeb35134c8544654fd46e7e4601d15aca"
+    },
+    "pages/motion-dev/docs/performance.md": {
+      "url": "https://motion.dev/docs/performance",
+      "sha256": "391bbb69c4291a94cdd0caf9821267965c0e84716b19f490bfce1f0e88cbcb7f"
+    },
+    "pages/motion-dev/docs/pinch.md": {
+      "url": "https://motion.dev/docs/pinch",
+      "sha256": "23ffcad290c34fe5b1ba33adc00ce86e903a7827741fa077561fbc5acd9819fc"
+    },
+    "pages/motion-dev/docs/pipe.md": {
+      "url": "https://motion.dev/docs/pipe",
+      "sha256": "ea624a1e9a718ec91e0472fc1f1f961eedbc4f39fc69fbc54e70a8a0971abf60"
+    },
+    "pages/motion-dev/docs/press.md": {
+      "url": "https://motion.dev/docs/press",
+      "sha256": "fdbfe42caf3108394953d81b60d19cfe608c0f83bfa14683c598fb67e272b002"
+    },
+    "pages/motion-dev/docs/progress.md": {
+      "url": "https://motion.dev/docs/progress",
+      "sha256": "b530efd9a7e38dc3d89622a770fc2894c42b392102b23819e540e762c3b43282"
+    },
+    "pages/motion-dev/docs/prop-effect.md": {
+      "url": "https://motion.dev/docs/prop-effect",
+      "sha256": "aff497fa283e394201a2a2a549ef65cee328b53d205c7f8203210c78e4c93e43"
+    },
+    "pages/motion-dev/docs/quick-start.md": {
+      "url": "https://motion.dev/docs/quick-start",
+      "sha256": "25338c4afcd9a5cc3baa2892bdb898c0376f5608229a6af1567bd9edfdacdbbb"
+    },
+    "pages/motion-dev/docs/resize.md": {
+      "url": "https://motion.dev/docs/resize",
+      "sha256": "dde1754028abf29a2dd8670becc6bb5691c77611b6b682b2d63d091914fbc731"
+    },
+    "pages/motion-dev/docs/resolve-elements.md": {
+      "url": "https://motion.dev/docs/resolve-elements",
+      "sha256": "d18a5afedbc506e041b61ec552ff7081e6d6dcabdd5c8b8e7cf1889de56b19c5"
+    },
+    "pages/motion-dev/docs/scope-motion.md": {
+      "url": "https://motion.dev/docs/scope-motion",
+      "sha256": "68b4b1430101c1c1543d90b4e927a1942077d24ba3db55f93515abf49b1f6381"
+    },
+    "pages/motion-dev/docs/scroll.md": {
+      "url": "https://motion.dev/docs/scroll",
+      "sha256": "46ec880c7f82c5a916e8528e1c0f24fc0e96a1b480cdca80f378584a032901ca"
+    },
+    "pages/motion-dev/docs/spring-value.md": {
+      "url": "https://motion.dev/docs/spring-value",
+      "sha256": "29a1251a3b85342a9a9ab494ef0bc98ba65a6262067a7e865d61a29915b4b6fb"
+    },
+    "pages/motion-dev/docs/spring.md": {
+      "url": "https://motion.dev/docs/spring",
+      "sha256": "39739ef84bc30bc4bb952490aa41909fea10c95499d82e4ce80910803a05fc3b"
+    },
+    "pages/motion-dev/docs/stagger.md": {
+      "url": "https://motion.dev/docs/stagger",
+      "sha256": "d4aecf49641c214e23ce6c53f177ca2d5a92ed56d715851635aa9f02c9e3ce43"
+    },
+    "pages/motion-dev/docs/style-effect.md": {
+      "url": "https://motion.dev/docs/style-effect",
+      "sha256": "2dca7aafbda24283a2ad825da71f847f771883f91a02ca1ec4ba43016ae2facb"
+    },
+    "pages/motion-dev/docs/svg-animation.md": {
+      "url": "https://motion.dev/docs/svg-animation",
+      "sha256": "73240df3ab64e710cc3cbc603b64618c28b214eaf57702b565c127c0cdbdfab3"
+    },
+    "pages/motion-dev/docs/svg-effect.md": {
+      "url": "https://motion.dev/docs/svg-effect",
+      "sha256": "9e88037067f13a1c9200a0e75c1b5bffbfbc02009475a0e2d25375601cc0b4fe"
+    },
+    "pages/motion-dev/docs/three.md": {
+      "url": "https://motion.dev/docs/three",
+      "sha256": "81758410ec046972c3ce46c35ac5ce0ced8f0a6696556ba83a0bd314a0f6d6c9"
+    },
+    "pages/motion-dev/docs/timeline-sequences.md": {
+      "url": "https://motion.dev/docs/timeline-sequences",
+      "sha256": "350b377b3ea4e2c7de646d24d3fe96e2eaffa22ef7c9e796ef9a1588aea0f251"
+    },
+    "pages/motion-dev/docs/transform-value.md": {
+      "url": "https://motion.dev/docs/transform-value",
+      "sha256": "9f01d212e4b6279f321b33549fcfb49500f188b73311ac348b890f0a3cf7da76"
+    },
+    "pages/motion-dev/docs/transform.md": {
+      "url": "https://motion.dev/docs/transform",
+      "sha256": "5399fdc6332778a69f62185768d7be671e26402fcf39f8eb3cc49bad55ad8fbb"
+    },
+    "pages/motion-dev/docs/tween.md": {
+      "url": "https://motion.dev/docs/tween",
+      "sha256": "2e47c3222849291c213cefb61befc6fdce6874c9e097c95f030e1e698877631e"
+    },
+    "pages/motion-dev/docs/upgrade-guide.md": {
+      "url": "https://motion.dev/docs/upgrade-guide",
+      "sha256": "749662f6b74a2ac01c848ab6a33ddcd96408a056619feecaf1da393bbe793ea4"
+    },
+    "pages/motion-dev/docs/wrap.md": {
+      "url": "https://motion.dev/docs/wrap",
+      "sha256": "ade9585a3cce033c216c334b30f23a73175ddbbf1eaa26b3075b5a7711558d4b"
+    }
+  }
 }

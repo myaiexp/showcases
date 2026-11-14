@@ -1,0 +1,13 @@
+/* Bar chart written as attributes or styles: a small SVG chart and a markup peek */
+[data-example='motion/svg-effect-attr-prefix'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .chart { width: min(100%, 240px); border: 1px solid var(--border); border-radius: 12px; background: var(--bg-surface); padding: var(--space-2); }
+  .chart.big { width: min(100%, 360px); padding: var(--space-3); }
+  .chart svg { display: block; width: 100%; }
+  .chart rect { fill: var(--accent); }
+  .chart line { stroke: var(--border); }
+  .chart text { fill: var(--fg-3); font-size: 8px; text-anchor: middle; }
+  .chart:not(.big) svg { height: 104px; }
+  .chart:not(.big) .peek { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.6rem; }
+  .peek { margin: var(--space-2) 0 0; width: 100%; font-family: var(--font-mono); font-size: 0.68rem; color: var(--fg-2); overflow-wrap: anywhere; }
+}

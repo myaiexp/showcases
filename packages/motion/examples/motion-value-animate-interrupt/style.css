@@ -1,0 +1,12 @@
+/* Colour picker that retargets mid-fade: a preview tile above a row of swatches */
+[data-example='motion/motion-value-animate-interrupt'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .rig { width: min(100%, 240px); display: grid; gap: var(--space-3); }
+  .rig.big { width: min(100%, 360px); }
+  .preview { height: 90px; border-radius: 14px; border: 1px solid var(--border); display: grid; place-items: center; font-family: var(--font-mono); font-size: 0.78rem; color: #0008; text-shadow: 0 0 6px #fff8; }
+  .rig.big .preview { height: 150px; }
+  .swatches { display: flex; justify-content: space-between; }
+  .swatch { width: 34px; height: 34px; padding: 0; border-radius: 50%; border: 2px solid var(--bg); cursor: pointer; }
+  .swatch.on { outline: 2px solid var(--fg-1); }
+  .count { font-size: 0.75rem; color: var(--fg-2); text-align: center; font-variant-numeric: tabular-nums; }
+}

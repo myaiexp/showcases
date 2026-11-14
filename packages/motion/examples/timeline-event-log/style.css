@@ -1,0 +1,11 @@
+/* Timeline event log: a ball lane and an event list */
+[data-example='motion/timeline-event-log'] {
+  > div, > ul { width: fit-content; max-width: 100%; margin-inline: auto; }
+  > p { margin-inline: auto; }
+  .monitor { width: min(100%, 236px); display: flex; flex-direction: column; gap: var(--space-2); }
+  .lane { height: 34px; padding: 4px; border-radius: 17px; background: var(--bg-surface); border: 1px solid var(--border); }
+  .ball { width: 24px; height: 24px; border-radius: 6px; background: var(--accent); }
+  .time { font-size: 0.75rem; color: var(--fg-2); }
+  .log { margin: 0; padding: var(--space-2); list-style: none; min-height: 3.6em; border-radius: 8px; background: var(--bg-raised); font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--fg-2); display: flex; flex-direction: column; gap: 2px; overflow: hidden; }
+  .log li:first-child { color: var(--accent); }
+}

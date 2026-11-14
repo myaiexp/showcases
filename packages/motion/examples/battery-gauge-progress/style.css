@@ -1,0 +1,15 @@
+/* Battery gauge: an outlined battery with a fill that scales from the left */
+[data-example='motion/battery-gauge-progress'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .phone { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); }
+  .battery { position: relative; width: 170px; height: 70px; border: 3px solid var(--fg-2); border-radius: 12px; display: grid; place-items: center; }
+  .full .battery { width: 240px; height: 96px; }
+  .battery::after { content: ''; position: absolute; right: -11px; top: 22px; width: 6px; height: 20px; border-radius: 0 3px 3px 0; background: var(--fg-2); }
+  .full .battery::after { top: 32px; }
+  .battery > * { grid-area: 1 / 1; }
+  .level { width: 100%; height: 100%; justify-self: stretch; transform-origin: left; border-radius: 6px 0 0 6px; background: var(--green); transform: scaleX(0); }
+  .level[data-state='mid'] { background: var(--yellow); }
+  .level[data-state='low'] { background: var(--red); }
+  .pct { position: relative; z-index: 1; font: 700 1.2rem var(--font-mono, monospace); color: #fff; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); }
+  .steps { font-size: 0.65rem; color: var(--fg-3); text-align: center; }
+}

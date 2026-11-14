@@ -1,0 +1,12 @@
+/* Story add pause: a rocket flying between two planets */
+[data-example='motion/story-add-pause'] {
+  > div, > ul { width: fit-content; max-width: 100%; margin-inline: auto; }
+  > p { margin-inline: auto; }
+  .story { width: min(100%, 260px); }
+  .sky { position: relative; height: 140px; border-radius: 12px; overflow: hidden; background: linear-gradient(#10132b, #22285a); }
+  .earth { position: absolute; left: 8px; bottom: 8px; width: 34px; height: 34px; border-radius: 50%; background: #3b82f6; }
+  .moon { position: absolute; right: 10px; top: 10px; width: 26px; height: 26px; border-radius: 50%; background: #d4d4dc; }
+  .rocket { position: absolute; left: 20px; bottom: 36px; width: 10px; height: 20px; border-radius: 5px 5px 2px 2px; background: #ff7a59; opacity: 0; }
+  .caption { display: flex; align-items: center; justify-content: space-between; min-height: 2.4rem; margin-top: var(--space-2); }
+  .chapter { font-size: 0.85rem; color: var(--fg-1); }
+}

@@ -1,0 +1,10 @@
+/* Like button pop: a post with a photo and a heart button */
+[data-example='motion/like-button-pop'] {
+  .post { width: min(100%, 240px); border-radius: 12px; overflow: hidden; background: var(--bg-surface); border: 1px solid var(--border); }
+  .photo { height: 110px; background: linear-gradient(135deg, #3a2a6a, #c0507a 60%, #f0a050); }
+  .bar { display: flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-3); }
+  .like { display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; background: none; cursor: pointer; }
+  .like svg { width: 28px; height: 28px; overflow: visible; }
+  .like path { fill: rgba(255, 77, 109, 0); stroke: #c8c8d0; stroke-width: 2; }
+  .count { font-variant-numeric: tabular-nums; color: var(--fg-1); font-weight: 600; display: inline-block; }
+}

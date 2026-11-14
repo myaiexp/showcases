@@ -96,7 +96,7 @@
     "maplibre-gl": "^6.18.0",
     "marked": "^18.2.0",
     "mermaid": "^12.3.0",
-    "motion": "^11.18.2",
+    "motion": "^14.14.0",
     "papaparse": "^5.7.1",
     "pixi.js": "^8.23.0",
     "pizzicato": "^0.6.4",
