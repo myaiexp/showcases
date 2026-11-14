@@ -279,7 +279,7 @@ These are better as compact, text-output examples. Build them after the visual t
 | 221 | Valibot (`valibot`) | v1 2025-03 | repo ✓ MIT | Validation |
 | 222 | Arquero (`arquero`) | v8 2025-02 | site | Data wrangling; repo BSD-3 |
 | 223 | Marked + DOMPurify (`marked`) ✅ built | v18 2026-04 | repo ✓ MIT | Markdown. Docs are the repo `docs/` pages (INDEX, USING_ADVANCED, USING_PRO, broken.md), README and `src/`; `docs/demo/` stays out |
-| 224 | ky *(legacy in gallery)* | v2 2026-04 | README MIT | HTTP |
+| 224 | ky ✅ built | v2 2026-04 | README MIT | HTTP. Docs are the readme plus the TSDoc in `source/types` and `source/errors`; requests go to an in-page pretend server through the `fetch` option |
 | 225 | Wretch *(legacy in gallery)* | v3 2025-10 | README MIT | HTTP |
 | 226 | **Tone.js** (`tone`) ✅ built | v15 2024-05 | repo ✗lic (wiki) + source | Audio; `next` tag far ahead of `latest` |
 | 227 | Fuse.js (`fuse.js`) ✅ built | v7 2023-10 | repo ✓ Apache | Fuzzy search. Docs are the VitePress `docs/` pages and articles at v7.5.0 plus README, CHANGELOG and `src/` (the site has no API reference pages any more); `demo.md` and the Vue demo components stay out |

@@ -138,3 +138,7 @@ GitHub Pages. No service on the VPS.
 - Dexie.js: build on `packages/dexie-js/shared/stage.ts` (`createStage`, trap list). Name databases
   with `stage.dbName()` and pass them to `stage.own()`, which deletes them on cleanup; show the data
   with `shared/table-view.ts` (a liveQuery grid that flashes changes) and drive steps with `tour()`.
+- Ky: build on `packages/ky/shared/stage.ts` (`createStage`, trap list). Every request goes through
+  the pretend server via Ky's own `fetch` option (`ky.extend({fetch: server.fetch})`) to an
+  `https://*.example` URL; a guard rejects *.example requests that skip it. The wire picture and
+  timeline read the server's events, so what travelled is always visible.

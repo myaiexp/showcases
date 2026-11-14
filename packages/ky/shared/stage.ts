@@ -16,7 +16,30 @@
 // - Each exchange takes `latency` out, `delay` at the server and `latency` back (220+150+220
 //   ms by default); timing examples set them on the server so the numbers are round.
 // - onUploadProgress needs request streams: Firefox has none, so Ky silently skips it there.
-//   Say so on screen rather than showing an empty bar.
+//   Say so on screen rather than showing an empty bar. A Blob/string body reaches the server
+//   as one chunk (progress jumps to 100%): prog-kit.ts `uploadBody` sends stream pieces where
+//   the browser allows. A stream body has totalBytes 0 until the end.
+// - Card captions are one line, ellipsised at ~40 characters: lead with the key fact.
+// - `server.reset()` restarts the per-route counts (`req.n`), and `n` counts per route key,
+//   not per URL; number attempts across routes with `server.requests.indexOf(req) + 1`.
+// - Controls that run multi-step scripts go through req-kit.ts `serial` so clicks never overlap.
+// - Pass `retry: 0` where the first failure must show. POST is not retried by default, but
+//   ky.retry() from afterResponse skips the method check.
+// - beforeRequest runs once, before the retry loop; afterResponse runs on every answer,
+//   including Responses a hook made up. A beforeRequest throw is not retried but still
+//   reaches beforeError. `.json()` after ky.stop throws a TypeError.
+// - A hook that waits uses `stage.wait`, which rejects on dispose.
+// - A `hang: true` reply with `timeout: false` waits for ever: abort its signal on dispose.
+// - A handler's `headers` must be typed Record<string, string>; a `{}` branch fails tsc.
+// - Searchparams: a key in both the input URL and the option is sent twice; null adds 'null'
+//   beside the old value; only undefined removes. Request input ignores prefix and baseUrl.
+// - ky.create() inherits no fetch. `baseUrl: ''` resolves against the page's own host.
+// - Only unknown options (next, priority) reach fetch's init; `cache` goes into the Request.
+// - A fire-and-forget request in a card loop needs its own .catch, or a rejection after
+//   dispose is unhandled. STOPPED is an AbortError too: check `stage.disposed` before
+//   counting an abort as the example's own.
+// - `new Request(request, {body: formData})` keeps the old content-type and so the old
+//   multipart boundary: delete the header first (form-data-in-hook shows the 400).
 import type { MountContext } from '@/types.ts';
 import { createServer, STOPPED as SERVER_STOPPED, type Handler, type Server, type ServerOptions } from './server.ts';
 import { wire, type Wire, type WireOptions } from './wire.ts';

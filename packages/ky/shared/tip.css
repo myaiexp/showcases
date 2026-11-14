@@ -1,0 +1,25 @@
+/* Tips chapter: multipart body lines */
+.tip-boundary {
+  color: var(--fg-3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tip-type {
+  color: var(--fg-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tip-label {
+  color: var(--fg-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tip-blank {
+  height: 0.6em;
+}
+.ky-card .tip-blank {
+  display: none;
+}
