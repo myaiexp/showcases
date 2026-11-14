@@ -1,0 +1,13 @@
+/* Custom widget: switches: the widget's own look, nested under this example */
+[data-example='deck-gl/custom-widget-controlled-switch'] {
+  .deck-widget-switch button {
+    padding: 6px 12px;
+    border: 1px solid rgba(120, 160, 210, 0.5);
+    border-radius: 8px;
+    background: rgba(12, 20, 32, 0.9);
+    color: #d6e6f8;
+    font: 600 12px var(--font-mono, monospace);
+    cursor: pointer;
+    &[aria-pressed='true'] { background: #2f6a4a; border-color: #5fd08f; }
+  }
+}

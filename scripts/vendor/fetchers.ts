@@ -1,6 +1,6 @@
 // Vendoring network calls: git sparse checkout, tfish fetch, raw HTML for links
 import { execFileSync } from 'node:child_process';
-import { cpSync, existsSync, mkdirSync, mkdtempSync, rmSync } from 'node:fs';
+import { cpSync, existsSync, lstatSync, mkdirSync, mkdtempSync, readlinkSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { isAbsolute, join, normalize } from 'node:path';
 
@@ -29,10 +29,17 @@ export function vendorGit(repo: string, ref: string, paths: readonly string[], d
       if (files.length === 0) throw new Error(`${repo}@${ref} has nothing matching ${p}`);
       for (const f of files) {
         const from = join(tmp, f);
+        // A symlink whose target lies outside the sparse paths is dangling here: its
+        // content was not asked for, so skip it rather than fail the whole run.
+        if (!existsSync(from) && lstatSync(from, { throwIfNoEntry: false })?.isSymbolicLink()) {
+          console.warn(`  ! skipped ${f}: symlink to ${readlinkSync(from)}, outside the vendored paths`);
+          continue;
+        }
         if (!existsSync(from)) throw new Error(`${repo}@${ref} has no ${f}`);
         const to = join(dest, f);
         mkdirSync(join(to, '..'), { recursive: true });
-        cpSync(from, to, { recursive: true });
+        // dereference: vendored docs are plain files, never links into the clone.
+        cpSync(from, to, { recursive: true, dereference: true });
       }
     }
     return commit;

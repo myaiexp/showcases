@@ -1,0 +1,12 @@
+{
+  "license": "MIT (LICENSE at the root of visgl/deck.gl, which holds the docs under docs/)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/visgl/deck.gl",
+      "ref": "v9.4.1",
+      "paths": ["LICENSE", "docs/table-of-contents.json", "docs/**/*.md"]
+    }
+  ]
+}

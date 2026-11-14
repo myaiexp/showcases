@@ -1,0 +1,56 @@
+// A5Layer: getPentagon reads an A5 cell id (a bigint) and draws the pentagon
+import { Deck } from '@deck.gl/core';
+import { A5Layer } from '@deck.gl/geo-layers';
+import type { Mount } from '@/types.ts';
+import { europeView, spots } from '../../shared/aggregation-data.ts';
+import { controlBar, slider } from '../../shared/controls.ts';
+import { a5CellAt, a5Hex, countBy, heat, toCells, type CellCount } from '../../shared/geo-layers-cells.ts';
+import { createStage } from '../../shared/stage.ts';
+import { landLayer } from '../../shared/world.ts';
+
+const mount: Mount = async (el, ctx) => {
+  const stage = await createStage(el, ctx);
+  const points = spots(ctx.preview ? 1500 : 5000);
+  const view = europeView(ctx.preview);
+
+  const cells = (resolution: number): A5Layer<CellCount<bigint>> => {
+    const data = toCells(countBy(points, (p) => String(a5CellAt(p.position, resolution)))).map((c) => ({ id: BigInt(c.id), count: c.count }));
+    const max = data[0]?.count ?? 1;
+    return new A5Layer<CellCount<bigint>>({
+      id: 'a5',
+      data,
+      // A 64-bit id as a bigint (a base-16 string works too).
+      getPentagon: (d) => d.id,
+      getFillColor: (d) => [...heat(Math.sqrt(d.count / max)), 220],
+      getLineColor: [255, 255, 255, 80],
+      lineWidthMinPixels: 1,
+      stroked: true,
+      extruded: false,
+      pickable: !ctx.preview,
+    });
+  };
+  const deck = new Deck({
+    device: stage.device,
+    initialViewState: view,
+    controller: !ctx.preview,
+    layers: [landLayer(), cells(ctx.preview ? 6 : 7)],
+    getTooltip: ({ object }: { object?: CellCount<bigint> }) => (object ? `${a5Hex(object.id)}\n${object.count} points` : null),
+  });
+
+  let timer = 0;
+  if (ctx.preview) {
+    let res = 6;
+    timer = window.setInterval(() => {
+      res = res === 8 ? 5 : res + 1;
+      deck.setProps({ layers: [landLayer(), cells(res)] });
+    }, 2200);
+  } else {
+    slider(controlBar(el), 'A5 resolution', 4, 9, 1, 7, (v) => deck.setProps({ layers: [landLayer(), cells(v)] }));
+  }
+  return () => {
+    clearInterval(timer);
+    stage.release(deck);
+  };
+};
+
+export default mount;

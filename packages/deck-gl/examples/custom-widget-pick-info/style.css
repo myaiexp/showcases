@@ -1,0 +1,12 @@
+/* Custom widget: pick info: the widget's own look, nested under this example */
+[data-example='deck-gl/custom-widget-pick-info'] {
+  .deck-widget-pick-info {
+    padding: 8px 12px;
+    background: rgba(12, 20, 32, 0.9);
+    color: #d6e6f8;
+    border: 1px solid rgba(120, 160, 210, 0.4);
+    border-radius: 8px;
+    font: 12px/1.6 var(--font-mono, monospace);
+    min-width: 220px;
+  }
+}

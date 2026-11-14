@@ -99,3 +99,7 @@ GitHub Pages. No service on the VPS.
 - G6: build on `packages/g6/shared/graph.ts` (`mountGraph`, trap list); every example writes its
   whole `new Graph({...})` spec with `theme: 'dark'`. Data comes from `shared/data.ts` (the repo's
   test datasets, the files the docs fetch from their CDN); images from `shared/images.ts`.
+- deck.gl: read the trap list in `packages/deck-gl/shared/stage.ts` and add to it. Render on
+  `createStage`'s device (`new Deck({device: stage.device})`) and clean up with `stage.release(deck)`:
+  `Deck.finalize()` never frees the WebGL context. MapLibre examples use `shared/base-maps.ts`
+  instead. No network in cards or full views: tiles, terrain and glTF are generated in code.

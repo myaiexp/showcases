@@ -60,7 +60,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 22 | PlayCanvas (`playcanvas`) ✅ built | 5 | v2 2024-08 | repo ✓ MIT | 350 | Engine with Gaussian splats. Docs are the developer-site user manual (engine chapters plus the component reference); the Editor-based tutorials stay out because each embeds a demo project. Physics loads sync-ammo; splats, models and textures are generated in code |
 | 23 | VStory (`@visactor/vstory`) | 5 | 0.0.x 2024-07 | repo ✓ MIT | 30 | Animated data storytelling on VChart. `docs/assets` guide and API; `docs/assets/examples` stays out |
 | 24 | **AntV G6** (`@antv/g6`) ✅ built | 5 | v5 2024-06 | repo ✓ MIT | 120 | Graph visualisation. Docs in `packages/site`; its example files stay out |
-| 25 | deck.gl (`deck.gl`) | 5 | v9 2024-03 | repo ✓ MIT | 150 | GPU geospatial layers |
+| 25 | deck.gl (`deck.gl`) ✅ built | 5 | v9 2024-03 | repo ✓ MIT | 389 | GPU geospatial layers. Docs are `docs/` at v9.4.1; every example runs offline (tiles, terrain and glTF made in code). CARTO, ArcGIS, Google Maps and React are left out; MVT, Tile3D and WMS need a server |
 | 26 | Rive (`@rive-app/canvas`) | 5 | v2 2023-07 | repo ✗lic | 40 | State-machine art; needs `.riv` assets |
 | 27 | Galacean (`@galacean/engine`) | 5 | 1.0 2023-04 | repo ✓ MIT | 150 | Full WebGL engine; `docs/en` has ~185 pages. Pages that assume the Editor or embed playgrounds stay out. 2.0 is in alpha, so the line may move |
 | 28 | AntV G2 (`@antv/g2`) | 5 | v5 2023-03 | repo ✓ MIT | 150 | Grammar-of-graphics charts. Docs in `site/docs` |

@@ -1,0 +1,22 @@
+/* Custom widget: rotate buttons: the widget's own look, nested under this example */
+[data-example='deck-gl/custom-widget-view-state'] {
+  .deck-widget-rotate {
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    background: rgba(12, 20, 32, 0.88);
+    border: 1px solid rgba(120, 160, 210, 0.4);
+    border-radius: 8px;
+    button {
+      width: 30px;
+      height: 30px;
+      border: 0;
+      border-radius: 6px;
+      background: #27405f;
+      color: #e6eef8;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover { background: #3a5f8c; }
+  }
+}
