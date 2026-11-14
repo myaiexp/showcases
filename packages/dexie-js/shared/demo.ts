@@ -27,6 +27,8 @@ export interface DemoOptions {
   hint?: string;
   height?: number;
   view?: Partial<TableViewOptions>;
+  /** Runs at the start of every reseed (card loop, Reset button), e.g. to lift a read-only flag. */
+  beforeReseed?: () => void;
   /** Outbound primary key (stores ', name'): the grid gets a `key` column, and seed rows carry a `key`. */
   withKeys?: boolean;
 }
@@ -98,13 +100,15 @@ export function demo(el: HTMLElement, ctx: MountContext, o: DemoOptions): Demo {
   const out = resultPanel(side === 'result' ? right! : spare);
   const log = eventLog(side === 'log' ? right! : spare);
 
-  const reseed = (): Promise<void> =>
-    db.transaction('rw', t, async () => {
+  const reseed = (): Promise<void> => {
+    o.beforeReseed?.();
+    return db.transaction('rw', t, async () => {
       await t.clear();
       if (!o.seed?.length) return;
       if (o.withKeys) await t.bulkPut(o.seed.map(({ key: _k, ...r }) => r), o.seed.map((r) => r.key) as string[]);
       else await t.bulkPut(o.seed as Row[]);
     });
+  };
 
   const clean = (): void => {
     view.unmark();

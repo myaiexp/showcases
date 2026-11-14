@@ -27,11 +27,28 @@
 // - A table with an outbound key (stores ', name') has no key path, so the grid cannot read the key
 //   from the row: give tableView a `read` that pairs keys and values (shared/demo.ts `withKeys`).
 // - IndexedDB booleans are not indexable: store 0/1 in a field you want to query with where().
+// - dexie 4.4.7: a keyless add() (a '++id' table) that fails entirely leaves a null in the live
+//   query cache and every later live query on that table throws. `own()` installs the scrubbing
+//   middleware in shared/cache-fix.ts; a Dexie instance not passed to own() lacks it.
+// - Hooks and middleware (shared/hook-kit.ts): the grid's own liveQuery reads through them, so a spy
+//   or counter would log the grid's reads too. `plainDemo` points the grid at a second, plain
+//   connection (what is really stored) and `d.t` stays the hooked table. Gate a spy with a flag
+//   that is only true inside a step, since reseeding also passes through.
+// - db.use() middleware joins the stack when the database opens: register it in the same tick as
+//   demo() (before any await). db.unuse() changes nothing for the open database until close()+open().
+// - A middleware must not wait on a timer (or any non-IndexedDB promise) before forwarding a
+//   request: the IndexedDB transaction commits meanwhile. Copy rows it rewrites (`{ ...row }`):
+//   live queries hand out shared cached objects, and add()/put() values are the caller's own.
+// - A hook's `trans.table('x')` throws NotFoundError unless 'x' is in the transaction's scope, so a
+//   deleting hook that writes an audit row needs `db.transaction('rw', t, audit, ...)`.
+// - hook('creating') returning a value uses it as the key whenever the row came without one (also on
+//   '++id' tables): hook bodies that only stamp fields use a block body so they return undefined.
 // - Dexie events registered with db.on(...) belong to that Dexie instance only; page-wide
 //   ones (Dexie.on('storagemutated'), Dexie.debug, Dexie.addons, Promise.on.error) must be
 //   restored or unsubscribed on dispose, because the whole gallery shares them.
 import type { Dexie } from 'dexie';
 import type { MountContext } from '@/types.ts';
+import { scrubNullOptimisticOps } from './cache-fix.ts';
 import './dexie.css';
 
 /** Rejection reason of `wait` once the stage is gone; never shown. */
@@ -134,6 +151,8 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
     },
     own(db, o = {}) {
       dbs.push({ db, keep: o.keep ?? false });
+      // A middleware can only join before the database opens; the bug it fixes needs a live query.
+      if (!db.isOpen()) scrubNullOptimisticOps(db);
       return db;
     },
     play(script) {

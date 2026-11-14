@@ -1,0 +1,31 @@
+/* Storage estimate: a usage meter beside the stored photos */
+[data-example='dexie-js/storage-estimate'] {
+  .meter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    flex: 1;
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-surface);
+  }
+  .usage {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .fill {
+    height: 12px;
+    width: 0;
+    border-radius: 6px;
+    background: var(--accent);
+    box-shadow: 0 0 0 1px var(--border);
+    transition: width 0.6s;
+  }
+  .quota {
+    color: var(--fg-3);
+    font-size: 0.9em;
+  }
+}
