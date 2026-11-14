@@ -44,6 +44,9 @@ importers:
       '@chenglou/pretext':
         specifier: ^1.0.0
         version: 1.0.0
+      '@css-doodle/addons':
+        specifier: 1.1.0
+        version: 1.1.0(css-doodle@0.69.0)
       '@deck.gl/aggregation-layers':
         specifier: 9.4.1
         version: 9.4.1(@deck.gl/core@9.4.1(@luma.gl/webgpu@9.4.2(@luma.gl/core@9.4.2)(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2))))(@deck.gl/layers@9.4.1(@deck.gl/core@9.4.1(@luma.gl/webgpu@9.4.2(@luma.gl/core@9.4.2)(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2))))(@loaders.gl/core@4.5.4)(@luma.gl/core@9.4.2)(@luma.gl/engine@9.4.2(@luma.gl/core@9.4.2)(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2))))(@luma.gl/core@9.4.2)(@luma.gl/engine@9.4.2(@luma.gl/core@9.4.2)(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2)))
@@ -188,6 +191,9 @@ importers:
       chart.js:
         specifier: ^4.6.1
         version: 4.6.1
+      css-doodle:
+        specifier: 0.69.0
+        version: 0.69.0
       d3:
         specifier: ^7.9.2
         version: 7.9.2
@@ -491,6 +497,11 @@ packages:
 
   '@chevrotain/utils@13.2.0':
     resolution: {integrity: sha512-SzKYY68rseOrb9KILVzPsl6SjkQtdWw01SRGB5aCVI5kFcHltQsOYV3JB0Ffst72DgkvHCyDQ0NLwxtmCCf97Q==}
+
+  '@css-doodle/addons@1.1.0':
+    resolution: {integrity: sha512-WIkt+AlQFQ4difCtZL3d1PQnQ9nvdHPiS3t4nWXpvIROmX/tc01+88+2w3vM2SYvLiP3/tsFh7TCVVO+me38Tw==}
+    peerDependencies:
+      css-doodle: '>=0.65.0'
 
   '@deck.gl/aggregation-layers@9.4.1':
     resolution: {integrity: sha512-dllv7obihrzTkvjSgnnVSGGfpWoyM0cen2x9AeHZUdRgpFXbmZCQs7n0Zk6jCjT0NFniGVbvvz97ezUvg66vVw==}
@@ -2081,6 +2092,9 @@ packages:
   crypto-js@4.2.0:
     resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
     deprecated: Active development of CryptoJS has been discontinued. This library is no longer maintained.
+
+  css-doodle@0.69.0:
+    resolution: {integrity: sha512-RYr9+rNAR+TI1aRTI6EfRYTNgMOiVS2on+y66PT7iARlzG4zjd26Oy7WNqG3VOG8cln0TW8izfBClcOV9H5Zzw==}
 
   css-line-break@2.1.0:
     resolution: {integrity: sha512-FHcKFCZcAha3LwfVBhCQbW2nCNbkZXn7KVUJcsT5/P8YmfsVja0FMPJr0B903j/E69HUphKiV9iQArX8SDYA4w==}
@@ -3781,6 +3795,10 @@ snapshots:
   '@chevrotain/types@13.2.0': {}
 
   '@chevrotain/utils@13.2.0': {}
+
+  '@css-doodle/addons@1.1.0(css-doodle@0.69.0)':
+    dependencies:
+      css-doodle: 0.69.0
 
   '@deck.gl/aggregation-layers@9.4.1(@deck.gl/core@9.4.1(@luma.gl/webgpu@9.4.2(@luma.gl/core@9.4.2)(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2))))(@deck.gl/layers@9.4.1(@deck.gl/core@9.4.1(@luma.gl/webgpu@9.4.2(@luma.gl/core@9.4.2)(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2))))(@loaders.gl/core@4.5.4)(@luma.gl/core@9.4.2)(@luma.gl/engine@9.4.2(@luma.gl/core@9.4.2)(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2))))(@luma.gl/core@9.4.2)(@luma.gl/engine@9.4.2(@luma.gl/core@9.4.2)(@luma.gl/shadertools@9.4.2(@luma.gl/core@9.4.2)))':
     dependencies:
@@ -5650,6 +5668,8 @@ snapshots:
   crypt@0.0.2: {}
 
   crypto-js@4.2.0: {}
+
+  css-doodle@0.69.0: {}
 
   css-line-break@2.1.0:
     dependencies:
