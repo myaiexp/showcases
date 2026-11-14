@@ -101,6 +101,12 @@ export interface Chart {
  * - wordBreak 'keep-all' draws nothing when a word is wider than maxLineWidth.
  * - A rect mark's `background` image fill did not draw; the chart-level background does.
  * - animationThreshold is a chart-level key in the types and changelog, not the option docs.
+ * - imageCloud (registerImageCloudChart, extension) reads a bare maskShape string as an image
+ *   URL; use { type: 'geometric', shape }. registerVennChart is in the main package.
+ * - Word cloud colorMode 'ordinal' colours by seriesField; without colorMode, colorList is a
+ *   gradient over valueField.
+ * - Sankey setNodeLayer gets the original node row; an unmatched return blanks the chart.
+ * - legends[].rail width/height are drawn horizontally; a markLine label at 'end' is clipped.
  * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
  * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
  * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
