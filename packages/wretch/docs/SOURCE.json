@@ -1,5 +1,12 @@
 {
-  "license": "none found",
-  "redistribute": false,
-  "sources": []
+  "license": "MIT (elbywan/wretch LICENSE covers the repo: README, RECIPES, migration guides and the library source the API site is generated from)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/elbywan/wretch",
+      "ref": "3.0.9",
+      "paths": ["README.md", "RECIPES.md", "MIGRATION_V2_V3.md", "CHANGELOG.md", "LICENSE", "src/**/*.ts"]
+    }
+  ]
 }

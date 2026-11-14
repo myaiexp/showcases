@@ -1,0 +1,146 @@
+import { mix, extractContentType, isLikelyJsonMime } from "./utils.js"
+import { JSON_MIME, CATCHER_FALLBACK } from "./constants.js"
+import { resolver, WretchError } from "./resolver.js"
+import type { Wretch, WretchOptions } from "./types.js"
+
+export const core: Wretch = {
+  _url: "",
+  _options: {},
+  _catchers: new Map(),
+  _resolvers: [],
+  _deferred: [],
+  _middlewares: [],
+  _addons: [],
+  addon(addon) {
+    const addons = Array.isArray(addon) ? addon : [addon]
+    const wretchProps = addons.reduce((acc, a) => ({ ...acc, ...a.wretch }), {})
+    return { ...this, _addons: [...this._addons, ...addons], ...wretchProps }
+  },
+  fetchPolyfill(fetchImpl) {
+    return { ...this, _fetch: fetchImpl }
+  },
+  url(_url, replace = false) {
+    if (replace)
+      return { ...this, _url }
+    const idx = this._url.indexOf("?")
+    return {
+      ...this,
+      _url: idx > -1 ?
+        this._url.slice(0, idx) + _url + this._url.slice(idx) :
+        this._url + _url
+    }
+  },
+  options(options, replace = false) {
+    return { ...this, _options: replace ? options : mix(this._options, options) }
+  },
+  headers(headerValues) {
+    const headers =
+      !headerValues ? {} :
+        Array.isArray(headerValues) ? Object.fromEntries(headerValues) :
+          "entries" in headerValues ? Object.fromEntries((headerValues as Headers).entries()) :
+            headerValues
+    return { ...this, _options: mix(this._options, { headers }) }
+  },
+  accept(headerValue) {
+    return this.headers({ Accept: headerValue })
+  },
+  content(headerValue) {
+    return this.headers({ "Content-Type": headerValue })
+  },
+  auth(headerValue) {
+    return this.headers({ Authorization: headerValue })
+  },
+  catcher(ids, catcher) {
+    const newMap = new Map(this._catchers)
+    const errorIds = Array.isArray(ids) ? ids : [ids]
+    for (const errorId of errorIds) {
+      newMap.set(errorId, catcher)
+    }
+    return { ...this, _catchers: newMap }
+  },
+  catcherFallback(catcher) {
+    return this.catcher(CATCHER_FALLBACK, catcher)
+  },
+  customError(transformer) {
+    return { ...this, _errorTransformer: transformer } as any
+  },
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  resolve<R = unknown>(resolver, clear: boolean = false) {
+    return { ...this, _resolvers: clear ? [resolver] : [...this._resolvers, resolver] }
+  },
+  defer(callback, clear: boolean = false) {
+    return {
+      ...this,
+      _deferred: clear ? [callback] : [...this._deferred, callback]
+    }
+  },
+  middlewares(middlewares, clear = false) {
+    return {
+      ...this,
+      _middlewares: clear ? middlewares : [...this._middlewares, ...middlewares]
+    }
+  },
+  fetch(method: string = this._options.method, url = "", body = null) {
+    let base = this.url(url).options({ method })
+    // "Jsonify" the body if it is an object and if it is likely that the content type targets json.
+    const contentType = extractContentType(base._options.headers)
+    const jsonify =
+      typeof body === "object" &&
+      !(body instanceof FormData) &&
+      (!base._options.headers || !contentType || isLikelyJsonMime(contentType))
+    base =
+      !body ? base :
+        jsonify ? base.json(body, contentType) :
+          base.body(body)
+    return resolver(
+      base
+        ._deferred
+        .reduce((acc: Wretch, curr) => curr(acc, acc._url, acc._options), base)
+    )
+  },
+  get(url = "") {
+    return this.fetch("GET", url)
+  },
+  delete(url = "") {
+    return this.fetch("DELETE", url)
+  },
+  put(body, url = "") {
+    return this.fetch("PUT", url, body)
+  },
+  post(body, url = "") {
+    return this.fetch("POST", url, body)
+  },
+  patch(body, url = "") {
+    return this.fetch("PATCH", url, body)
+  },
+  head(url = "") {
+    return this.fetch("HEAD", url)
+  },
+  opts(url = "") {
+    return this.fetch("OPTIONS", url)
+  },
+  body(contents) {
+    return { ...this, _options: { ...this._options, body: contents } }
+  },
+  json(jsObject, contentType) {
+    const currentContentType = extractContentType(this._options.headers)
+    return this.content(
+      contentType ||
+      isLikelyJsonMime(currentContentType) && currentContentType ||
+      JSON_MIME
+    ).body(JSON.stringify(jsObject))
+  },
+  toFetch() {
+    return (fetchUrl, fetchOptions: WretchOptions = {}) => {
+      return this
+        .url(fetchUrl)
+        .options(fetchOptions)
+        .catcherFallback(error => {
+          if(error instanceof WretchError) { return error.response  }
+          else { throw error }
+        })
+        .fetch()
+        .res()
+    }
+  }
+}

@@ -1,47 +1,25 @@
-/* Fluent requests: request line and response output */
+/* Fluent requests: the post card the app shows */
 [data-example='wretch/fluent-requests'] {
-  .root {
-    width: 100%;
-    min-width: 0;
-  }
-  .btn {
-    padding: 8px 16px;
-    font: inherit;
-    font-weight: 600;
-    color: var(--accent-text);
-    background: var(--accent);
-    border: 0;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  .btn:disabled {
-    opacity: 0.6;
-    cursor: default;
-  }
-  .request {
-    margin-top: var(--space-3);
-    font-family: monospace;
-    font-size: 0.75rem;
-    color: var(--cyan);
-    word-break: break-all;
-  }
-  .out {
-    margin: var(--space-2) 0 0;
-    padding: var(--space-3);
-    background: var(--bg-raised);
+  .post {
     border: 1px solid var(--border);
-    border-radius: 6px;
-    font-family: monospace;
-    font-size: 0.78rem;
-    line-height: 1.55;
-    color: var(--fg-1);
-    white-space: pre-wrap;
-    word-break: break-word;
-    max-height: 280px;
-    overflow: auto;
+    border-radius: 8px;
+    background: var(--bg-raised);
+    padding: 8px 12px;
+    font-family: var(--font);
   }
-  .out.err {
-    border-color: var(--red);
-    color: var(--red);
+  .post h3 {
+    margin: 0;
+    font-size: 1.15em;
+  }
+  .by {
+    color: var(--fg-3);
+    font-size: 0.9em;
+  }
+  .post p {
+    margin: 4px 0 0;
+    color: var(--fg-2);
+  }
+  .wr-card .post {
+    padding: 4px 8px;
   }
 }

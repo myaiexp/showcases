@@ -1,54 +1,6 @@
-/* Handle responses by status: picker row and handler log */
+/* Handle responses by status: the handler chips get a little more room */
 [data-example='wretch/handle-responses-by-status'] {
-  .root {
-    width: 100%;
-    min-width: 0;
-  }
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-3);
-    align-items: center;
-  }
-  .select {
-    padding: 8px 12px;
-    font: inherit;
-    color: var(--fg-1);
-    background: var(--bg-raised);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-  }
-  .btn {
-    padding: 8px 16px;
-    font: inherit;
-    font-weight: 600;
-    color: var(--accent-text);
-    background: var(--accent);
-    border: 0;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  .log {
-    margin-top: var(--space-3);
-    padding: var(--space-3);
-    background: var(--bg-raised);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-family: monospace;
-    font-size: 0.78rem;
-    line-height: 1.7;
-    min-height: 52px;
-  }
-  .line {
-    display: block;
-  }
-  .ok {
-    color: var(--green);
-  }
-  .warn {
-    color: var(--orange);
-  }
-  .dim {
-    color: var(--fg-3);
+  .wr-chips {
+    margin-top: 4px;
   }
 }

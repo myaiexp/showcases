@@ -1,0 +1,67 @@
+/* Timeline: requests on a time axis */
+.wr-timeline {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-height: 70px;
+}
+.wr-full .wr-timeline {
+  min-height: 150px;
+}
+.wr-tl-plot {
+  position: relative;
+  flex: 1;
+  border-left: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.wr-tl-bar {
+  position: absolute;
+  min-height: 8px;
+  max-height: 22px;
+  border-radius: 3px;
+  background: var(--tone-bg);
+  border: 1px solid var(--tone);
+  color: var(--tone);
+  font-size: 0.85em;
+  line-height: 1.3;
+  padding: 0 3px;
+  white-space: nowrap;
+  overflow: visible;
+}
+.wr-tl-mark {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  border-left: 1px dashed var(--tone);
+  color: var(--tone);
+  font-size: 0.8em;
+  padding-left: 2px;
+  display: flex;
+  align-items: flex-end;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.wr-tl-cursor {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--fg-3);
+  opacity: 0.5;
+}
+.wr-tl-axis {
+  position: relative;
+  height: 1.3em;
+  color: var(--fg-3);
+  font-size: 0.85em;
+}
+.wr-tl-tick {
+  position: absolute;
+  transform: translateX(-50%);
+}
+.wr-tl-tick:first-child {
+  transform: none;
+}
+

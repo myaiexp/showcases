@@ -1,60 +1,46 @@
-// Wretch base client demo: static sample in previews, live GET on click
+// A reusable client: the base address once, then .get(path).json() for each post
 import wretch from 'wretch';
 import type { Mount } from '@/types.ts';
+import { button } from '../../shared/controls.ts';
+import { findPost, findUser, POSTS, type Post } from '../../shared/data.ts';
+import { BASE, createServer } from '../../shared/server.ts';
+import { createStage } from '../../shared/stage.ts';
+import { wire } from '../../shared/wire.ts';
+import { postCard } from './post-card.ts';
 import './style.css';
 
-interface Todo {
-  userId: number;
-  id: number;
-  title: string;
-  completed: boolean;
-}
-
-const SAMPLE: Todo = { userId: 1, id: 12, title: 'quo adipisci enim quam ut ab', completed: true };
-
-const mount: Mount = (el, { preview, signal }) => {
-  const root = document.createElement('div');
-  root.className = preview ? 'root preview' : 'root';
-  el.append(root);
-  const request = document.createElement('div');
-  request.className = 'request';
-  const out = document.createElement('pre');
-  out.className = 'out';
-
-  if (preview) {
-    request.textContent = 'wretch(base).get("/todos/12").json()';
-    out.textContent = JSON.stringify(SAMPLE, null, 2);
-    root.append(request, out);
-    return () => undefined;
-  }
-
-  const api = wretch('https://jsonplaceholder.typicode.com').options({ signal });
-  const button = document.createElement('button');
-  button.className = 'btn';
-  button.textContent = 'GET a random to-do';
-  out.textContent = 'Click the button to fetch.';
-  root.append(button, request, out);
-
-  button.addEventListener('click', async () => {
-    const id = Math.ceil(Math.random() * 200);
-    request.textContent = `wretch(base).get("/todos/${id}").json()`;
-    out.classList.remove('err');
-    out.textContent = 'Loading...';
-    button.disabled = true;
-    try {
-      const todo = await api.get(`/todos/${id}`).json<Todo>();
-      out.textContent = JSON.stringify(todo, null, 2);
-    } catch (err) {
-      if (signal.aborted || (err instanceof DOMException && err.name === 'AbortError')) return;
-      out.classList.add('err');
-      out.textContent =
-        'Request failed: ' + (err instanceof Error ? err.message : String(err)) +
-        '\n(Check your connection: this demo hits a live API.)';
-    } finally {
-      if (!signal.aborted) button.disabled = false;
-    }
+const mount: Mount = (el, ctx) => {
+  const stage = createStage(el, ctx, { hint: 'Pick a post. The server is simulated in the page.' });
+  const server = createServer(stage, {
+    'GET /posts/:id': (req) => {
+      const post = findPost(req.params['id']!);
+      return post ? { json: post } : { status: 404, json: { error: 'No such post' } };
+    },
   });
-  return () => undefined;
+  wire(stage, server, { rows: stage.preview ? 1 : 4 });
+  const card = postCard(stage.root);
+
+  // The client: the address once, reused by every request below.
+  const api = wretch(BASE).fetchPolyfill(server.fetch);
+
+  const open = async (id: number): Promise<void> => {
+    stage.say(`api.get("/posts/${id}").json()`);
+    const post = await api.get(`/posts/${id}`).json<Post>();
+    if (stage.disposed) return;
+    card.show(post, findUser(post.userId)?.name ?? '');
+    stage.say(`Post ${post.id} arrived as a ready-to-use object`, 'ok');
+  };
+
+  if (stage.bar) for (const p of POSTS) button(stage.bar, `Post ${p.id}`, () => void open(p.id).catch(() => {}));
+  if (stage.preview) {
+    stage.play(async (wait) => {
+      for (const p of POSTS) {
+        await open(p.id);
+        await wait(1600);
+      }
+    });
+  } else void open(1).catch(() => {});
+  return () => stage.dispose();
 };
 
 export default mount;

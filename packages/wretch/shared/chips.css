@@ -1,0 +1,37 @@
+/* Handler chips: which handler ran */
+.wr-chips-title {
+  color: var(--fg-3);
+  font-size: 0.85em;
+}
+.wr-chips {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+}
+.wr-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.wr-chip {
+  padding: 1px 6px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  color: var(--fg-3);
+}
+.wr-chip.wr-on {
+  color: var(--tone);
+  background: var(--tone-bg);
+  border-color: var(--tone);
+}
+.wr-chips-detail {
+  color: var(--fg-2);
+  min-height: 1.3em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wr-chips-detail:empty {
+  display: none;
+}
