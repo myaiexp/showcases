@@ -17,7 +17,7 @@ const PRESETS: Record<string, Preset> = {
   percent: { label: 'Share of voters', data: [0.12, 0.18, 0.22, 0.31, 0.38, 0.41], color: C.blue, format: { style: 'percent' } },
   compact: { label: 'Downloads', data: [1_200_000, 2_400_000, 3_100_000, 5_800_000, 7_200_000, 9_500_000], color: C.purple, format: { notation: 'compact' } },
   speed: { label: 'Top speed', data: [38, 44, 51, 47, 58, 63], color: C.orange, format: { style: 'unit', unit: 'kilometer-per-hour' } },
-  decimals: { label: 'Rate', data: [1.2, 1.5, 1.45, 1.8, 2.1, 2.35], color: C.pink, format: { minimumFractionDigits: 2 } },
+  decimals: { label: 'Rate', data: [1.2, 1.5, 1.45, 1.8, 2.1, 2.35], color: C.pink, format: { minimumFractionDigits: 2, maximumFractionDigits: 2 } },
 };
 const NAMES = Object.keys(PRESETS);
 

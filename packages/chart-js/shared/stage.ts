@@ -45,6 +45,8 @@ export { INK, GRID } from './setup.ts';
  * - tick.major reaches scriptable tick options only with ticks.major.enabled. On a time
  *   axis, month starts become major ticks with unit 'day' (week is not a "common" unit).
  * - ticks.callback may return null to drop a tick and its grid line.
+ * - ticks.format is merged over the min/max fraction digits Chart.js computes from the
+ *   step: set both together, or a minimum above the computed maximum throws a RangeError.
  * - Replacing chart.options.interaction leaves options.hover on the old object: assign
  *   its keys in place. options.events can change live; update() rebinds the listeners.
  * - A scriptable animation.delay also runs for non-data contexts: guard c.type === 'data'.
