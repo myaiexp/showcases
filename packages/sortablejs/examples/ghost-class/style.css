@@ -1,0 +1,51 @@
+/* Drop slot looks: recipe steps and four ways to dress the slot */
+[data-example='sortablejs/ghost-class'] {
+  .list {
+    list-style: decimal inside;
+    margin: 0;
+    padding: 0;
+    width: min(100%, 340px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .step {
+    display: list-item;
+    padding: 7px var(--space-3);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--fg-1);
+    font-size: 13px;
+    cursor: grab;
+    user-select: none;
+    transition: background 0.15s;
+  }
+  .look {
+    margin-bottom: 6px;
+    color: var(--accent);
+    font: 12px ui-monospace, monospace;
+  }
+  .slot-outline {
+    background: transparent;
+    border: 1px dashed var(--accent);
+    color: transparent;
+  }
+  .slot-faded {
+    opacity: 0.25;
+  }
+  .slot-bar {
+    height: 6px;
+    padding: 0;
+    overflow: hidden;
+    background: var(--accent);
+    border-color: var(--accent);
+    color: transparent;
+    font-size: 0;
+  }
+  .slot-glow {
+    background: color-mix(in srgb, var(--blue) 25%, var(--bg-surface));
+    border-color: var(--blue);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--blue) 60%, transparent);
+  }
+}

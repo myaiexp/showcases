@@ -1,0 +1,34 @@
+/* Playlist: section headers and song rows in one list */
+[data-example='sortablejs/draggable-selector'] {
+  .playlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: min(100%, 300px);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .section {
+    margin-top: 4px;
+    padding: 2px 4px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+    user-select: none;
+  }
+  .song {
+    padding: 5px 10px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--fg-1);
+    font-size: 13px;
+    cursor: grab;
+    user-select: none;
+  }
+  .ghost { opacity: 0.35; border-style: dashed; }
+  .hint { color: var(--fg-3); font-size: 13px; text-align: center; margin: var(--space-3) 0 0; max-width: 360px; }
+}

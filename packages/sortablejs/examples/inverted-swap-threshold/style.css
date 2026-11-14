@@ -1,0 +1,62 @@
+/* Inverted swap threshold: schedule rows with shaded top and bottom edge zones */
+[data-example='sortablejs/inverted-swap-threshold'] {
+  .list {
+    --edge: 0.5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: min(calc(100% - 16px), 340px);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .talk {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    height: 36px;
+    padding: 0 var(--space-3);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--blue);
+    border-radius: 6px;
+    color: var(--fg-1);
+    font-size: 13px;
+    cursor: grab;
+    user-select: none;
+  }
+  .time {
+    position: relative;
+    color: var(--blue);
+    font: 12px ui-monospace, monospace;
+  }
+  .title {
+    position: relative;
+  }
+  .edge {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: calc(var(--edge) * 50%);
+    background: color-mix(in srgb, var(--orange) 30%, transparent);
+    pointer-events: none;
+    transition: height 0.15s;
+  }
+  .top {
+    top: 0;
+  }
+  .bottom {
+    bottom: 0;
+  }
+  .ghost {
+    opacity: 0.45;
+  }
+  .hint {
+    margin: 0 0 var(--space-3);
+    max-width: 420px;
+    text-align: center;
+    color: var(--fg-3);
+    font-size: 12px;
+  }
+}

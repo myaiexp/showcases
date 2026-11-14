@@ -1,0 +1,54 @@
+/* Swap threshold: playlist rows with their swap zone shaded */
+[data-example='sortablejs/swap-threshold'] {
+  .list {
+    --zone: 0.5;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: min(calc(100% - 16px), 340px);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .song {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    height: 40px;
+    padding: 0 var(--space-3);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--fg-1);
+    font-size: 13px;
+    cursor: grab;
+    user-select: none;
+  }
+  .zone {
+    position: absolute;
+    inset: calc((1 - var(--zone)) * 50%) 0;
+    background: color-mix(in srgb, var(--accent) 28%, transparent);
+    border-block: 1px dashed var(--accent);
+    pointer-events: none;
+    transition: inset 0.15s;
+  }
+  .no {
+    position: relative;
+    color: var(--fg-3);
+    font: 12px ui-monospace, monospace;
+  }
+  .name {
+    position: relative;
+  }
+  .ghost {
+    opacity: 0.45;
+  }
+  .hint {
+    margin: 0 0 var(--space-3);
+    max-width: 420px;
+    text-align: center;
+    color: var(--fg-3);
+    font-size: 12px;
+  }
+}

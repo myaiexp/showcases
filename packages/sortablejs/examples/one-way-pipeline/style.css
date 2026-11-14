@@ -1,0 +1,47 @@
+/* Hiring pipeline: three stage columns with candidate cards */
+[data-example='sortablejs/one-way-pipeline'] {
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-2);
+    width: min(100%, 560px);
+  }
+  .column {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--col);
+    border-radius: 6px;
+    padding: 6px;
+    transition: opacity 0.2s;
+  }
+  .column.closed { opacity: 0.35; }
+  h3 {
+    margin: 0 0 6px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--fg-3);
+  }
+  .people {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-height: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .person {
+    padding: 6px 8px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--col);
+    border-radius: 4px;
+    color: var(--fg-1);
+    font-size: 12px;
+    cursor: grab;
+    user-select: none;
+  }
+  .ghost { opacity: 0.35; border-style: dashed; }
+  .hint { color: var(--fg-3); font-size: 13px; text-align: center; margin: var(--space-3) 0 0; }
+}

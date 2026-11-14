@@ -1,0 +1,53 @@
+/* Floating copy escapes its panel: a clipped queue panel next to open page */
+[data-example='sortablejs/fallback-on-body'] {
+  .row {
+    display: flex;
+    gap: var(--space-4);
+    align-items: stretch;
+    width: min(100%, 420px);
+  }
+  .panel {
+    flex: 0 0 130px;
+    overflow: hidden;
+    transform: translateZ(0);
+    padding: 6px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+  }
+  .queue {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .track {
+    padding: 6px 8px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    color: var(--fg-1);
+    font-size: 12px;
+    cursor: grab;
+    user-select: none;
+  }
+  .hole {
+    opacity: 0.3;
+  }
+  .stage {
+    flex: 1;
+    display: grid;
+    place-items: center;
+    min-height: 120px;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    color: var(--fg-3);
+    font-size: 12px;
+  }
+  .hint {
+    margin: var(--space-3) 0 0;
+    max-width: 420px;
+    text-align: center;
+    color: var(--fg-3);
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,39 @@
+/* Click opens, drag reorders: a bookmarks bar */
+[data-example='sortablejs/click-or-drag-links'] {
+  .list {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+    width: min(100%, 300px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .mark {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    user-select: none;
+  }
+  .mark a {
+    display: block;
+    padding: 8px var(--space-3);
+    color: var(--blue);
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .mark:hover {
+    border-color: var(--blue);
+  }
+  .hole {
+    opacity: 0.3;
+  }
+  .hint {
+    margin: var(--space-3) 0 0;
+    max-width: 380px;
+    text-align: center;
+    color: var(--fg-3);
+    font-size: 12px;
+  }
+}

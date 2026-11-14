@@ -28,6 +28,21 @@
 //   It is a clone of the item, so it needs the item's styles without the list's ancestors:
 //   scope item CSS by class under the example, not by `.list > .item`.
 // - onMove returning false stops insertion but the drag goes on; onEnd still fires.
+// - With native drag and drop the constructor forces touchStartThreshold to 1 (and divides it by
+//   devicePixelRatio): pass forceFallback: true for the option to act. A threshold of 0 cancels a
+//   delayed drag on any pointermove, even one that does not move.
+// - group.revertClone has no visible effect in 1.15.7 on a plain drag: _showClone only reads it while
+//   the dragged item is still in its own list, which is never true when a clone is shown.
+// - A fallback drag appends the floating copy to the list itself, so list.children counts it:
+//   skip Sortable.ghost when counting. The copy carries inline opacity 0.8 and a transform, so
+//   style dragClass/fallbackClass with the separate `rotate`/`scale` properties and
+//   `opacity: 1 !important`. With fallbackOnBody it sits outside the scoped CSS: style it inline
+//   in onStart (Sortable.ghost).
+// - chosenClass lands when the delay has elapsed, not on press.
+// - forceFallback (and the native/fallback choice) is fixed at creation. To toggle it, call
+//   destroy() and create again on the same element; release() may defer, and a late destroy()
+//   would unregister the new instance.
+// - Sortable.utils.detectDirection is documented but missing from @types/sortablejs: cast.
 import Sortable from 'sortablejs';
 
 /** Destroys `sortables`, waiting (up to 5 s) while another example's drag is in flight. */

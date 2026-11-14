@@ -117,6 +117,9 @@ GitHub Pages. No service on the VPS.
   silently by pointing the page-wide `Pizzicato.context` at an OfflineAudioContext (`render.ts`);
   timed steps go through `at()`, never timers. `vite.config.ts` resolves `pizzicato` to
   `shared/entry.ts`, which undoes the library's page-wide `AudioNode.connect` patch.
+- Sortable.js: read the trap list in `packages/sortablejs/shared/lifecycle.ts`. One drag per page lives in
+  module state: cards script touch drags through `shared/drive.ts` (one page-wide queue) and tear down with
+  `release()`, since `destroy()` ends any drag on the page. Plugins mount once per page (`mountOnce`).
 - Zdog: build on `packages/zdog/shared/stage.ts` (`createStage`, trap list), which sizes the
   canvas or svg before the example's own `new Zdog.Illustration({ element: stage.element })`
   reads it. Docs are the zzz.dog source (`metafizzy/zdog-docs`); its `demos/` folder stays out.

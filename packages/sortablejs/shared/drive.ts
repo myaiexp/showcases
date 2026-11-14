@@ -7,8 +7,13 @@
 //   which a script cannot start. Real Firefox on Android takes the same path.
 // - turns pointer events back on for the card while it runs: cards are `pointer-events: none`,
 //   and the fallback finds the list under the pointer with document.elementFromPoint.
-// - drops the visitor's real pointermove events while it runs. Sortable does not filter by
-//   pointerId, so a real mouse crossing the page would steer the scripted drag.
+// - gives the card a no-op transform while it runs. The floating copy is position: fixed, and a
+//   transformed ancestor becomes its containing block (Sortable measures against it), so the copy
+//   scrolls and clips with its own card instead of hanging over other cards when the page moves.
+// - sends a mousemove beside every pointermove, as a real pointer does: the drop-into-empty-list
+//   detection (emptyInsertThreshold) listens for mousemove/touchmove only, never pointermove.
+// - drops the visitor's real pointermove and mousemove events while it runs. Sortable does not
+//   filter by pointerId, so a real mouse crossing the page would steer the scripted drag.
 // - turns AutoScroll off (or only its bubbling, with `autoScroll: true`) so a drag near an
 //   edge never scrolls the gallery page.
 // - sends a non-bubbling click on the card every frame and on release, which clears Sortable's
@@ -106,7 +111,9 @@ function sortablesIn(root: HTMLElement): Sortable[] {
 
 function open(root: HTMLElement, signal: AbortSignal, opts: DriveOptions): { hand: Hand; close(): void } {
   const prevPointer = root.style.pointerEvents;
+  const prevTransform = root.style.transform;
   root.style.pointerEvents = 'auto';
+  if (!prevTransform) root.style.transform = 'translate(0)';
 
   const restore: (() => void)[] = [];
   for (const s of sortablesIn(root)) {
@@ -125,9 +132,19 @@ function open(root: HTMLElement, signal: AbortSignal, opts: DriveOptions): { han
     if (e.isTrusted) e.stopImmediatePropagation();
   };
   window.addEventListener('pointermove', blockReal, true);
+  window.addEventListener('mousemove', blockReal, true);
 
   let pressed = false;
   let last = { x: 0, y: 0 };
+  // Where the card was at the press. Sortable places the floating copy by the pointer's travel in
+  // viewport coordinates since the press, so a page scroll mid-drag throws the copy off by the
+  // scroll distance. A finger would stay put while the page moved under it; the script cannot
+  // match that, so it drops the item as soon as the card moves and the next loop starts afresh.
+  let origin = { x: 0, y: 0 };
+  const cardMoved = (): boolean => {
+    const r = root.getBoundingClientRect();
+    return Math.abs(r.left - origin.x) > 1 || Math.abs(r.top - origin.y) > 1;
+  };
 
   const fire = (target: EventTarget, type: string, at: { x: number; y: number }): void => {
     last = at;
@@ -160,6 +177,8 @@ function open(root: HTMLElement, signal: AbortSignal, opts: DriveOptions): { han
   const hand: Hand = {
     down(item, at = item) {
       pressed = true;
+      const r = root.getBoundingClientRect();
+      origin = { x: r.left, y: r.top };
       fire(item, 'pointerdown', point(root, at));
     },
     glide(to, seconds) {
@@ -169,11 +188,18 @@ function open(root: HTMLElement, signal: AbortSignal, opts: DriveOptions): { han
         let id = 0;
         const tick = (now: number): void => {
           if (signal.aborted) return reject(signal.reason);
+          if (!pressed) return resolve();
+          if (cardMoved()) {
+            hand.up();
+            return resolve();
+          }
           const t = Math.min(1, (now - start) / (seconds * 1000));
           const k = ease(t);
           // Re-read the target every frame: items slide while Sortable animates the reorder.
           const end = point(root, to);
-          fire(document, 'pointermove', { x: from.x + (end.x - from.x) * k, y: from.y + (end.y - from.y) * k });
+          const at = { x: from.x + (end.x - from.x) * k, y: from.y + (end.y - from.y) * k };
+          fire(document, 'pointermove', at);
+          document.dispatchEvent(new MouseEvent('mousemove', { bubbles: true, cancelable: true, clientX: at.x, clientY: at.y, buttons: 1 }));
           clearClickFlag();
           if (t < 1) id = requestAnimationFrame(tick);
           else resolve();
@@ -220,8 +246,10 @@ function open(root: HTMLElement, signal: AbortSignal, opts: DriveOptions): { han
     close() {
       hand.up(); // an aborted script may leave the pointer down
       window.removeEventListener('pointermove', blockReal, true);
+      window.removeEventListener('mousemove', blockReal, true);
       for (const r of restore) r();
       root.style.pointerEvents = prevPointer;
+      root.style.transform = prevTransform;
     },
   };
 }
