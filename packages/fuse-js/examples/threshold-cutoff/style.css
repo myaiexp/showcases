@@ -1,0 +1,97 @@
+/* Threshold cutoff: score axis with a sweeping line */
+[data-example='fuse-js/threshold-cutoff'] {
+  .cut {
+    --name-w: 84px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .cut-row {
+    display: grid;
+    grid-template-columns: var(--name-w) 1fr;
+    align-items: center;
+    height: 20px;
+    transition: opacity 0.25s;
+  }
+  .cut-row[data-pass='no'] {
+    opacity: 0.3;
+  }
+  .cut-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .cut-track {
+    position: relative;
+    height: 100%;
+    border-bottom: 1px dashed var(--border);
+  }
+  .cut-dot {
+    position: absolute;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
+    border-radius: 50%;
+  }
+  .cut-num {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 9px;
+    font-family: var(--font-mono);
+    font-size: 0.75em;
+    color: var(--fg-3);
+  }
+  .cut-axis {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: var(--name-w);
+    right: 0;
+    pointer-events: none;
+  }
+  .cut-line {
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    width: 2px;
+    margin-left: -1px;
+    background: var(--accent);
+    transition: left 0.35s ease-out;
+  }
+  .cut-line b {
+    position: absolute;
+    top: -2px;
+    left: 5px;
+    font-size: 0.75em;
+    font-family: var(--font-mono);
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  .cut-scale {
+    display: grid;
+    grid-template-columns: var(--name-w) 1fr;
+    font-size: 0.75em;
+    color: var(--fg-3);
+  }
+  .cut-scale span:last-child {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fz-card .cut {
+    --name-w: 60px;
+  }
+  .fz-card .cut-row {
+    height: 14px;
+  }
+  .fz-card .cut-dot {
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+  }
+  .fz-card .fz-search {
+    display: none;
+  }
+}

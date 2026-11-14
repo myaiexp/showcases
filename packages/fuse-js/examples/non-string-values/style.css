@@ -1,0 +1,11 @@
+[data-example='fuse-js/non-string-values'] {
+  .nv-type {
+    margin-right: 6px;
+    padding: 0 6px;
+    border-radius: 8px;
+    background: var(--bg-raised);
+    color: var(--fg-3);
+    font-family: var(--font-mono);
+    font-size: 0.8em;
+  }
+}

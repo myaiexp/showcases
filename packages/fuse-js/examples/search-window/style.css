@@ -1,0 +1,52 @@
+/* Search window: the character ruler */
+[data-example='fuse-js/search-window'] {
+  .rl {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    padding-top: 12px;
+    font-family: var(--font-mono);
+    font-size: 15px;
+  }
+  .fz-card .rl {
+    font-size: 10.5px;
+    row-gap: 14px;
+    padding-top: 10px;
+  }
+  .rl-c {
+    position: relative;
+    width: 1ch;
+    height: 1.7em;
+    line-height: 1.7em;
+    text-align: center;
+    color: var(--fg-2);
+    transition: background 0.25s;
+  }
+  .rl-c[data-tick]::before {
+    content: attr(data-tick);
+    position: absolute;
+    top: -1.2em;
+    left: 0;
+    font-size: 0.7em;
+    color: var(--fg-2);
+  }
+  .rl-c.in {
+    background: color-mix(in srgb, var(--accent) 20%, transparent);
+    color: var(--fg-1);
+  }
+  .rl-c.loc {
+    box-shadow: inset 2px 0 0 var(--accent);
+  }
+  .rl-c.word {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: var(--red);
+    font-weight: 700;
+  }
+  .rl-c.word.in {
+    color: var(--green);
+  }
+  .rl-c.hit {
+    background: color-mix(in srgb, var(--green) 40%, transparent);
+  }
+}

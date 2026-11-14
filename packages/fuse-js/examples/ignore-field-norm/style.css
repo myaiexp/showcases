@@ -1,0 +1,6 @@
+/* Field norm columns: the card spends its height on rows, not on the search box */
+[data-example='fuse-js/ignore-field-norm'] {
+  .fz-card .fz-search {
+    display: none;
+  }
+}

@@ -16,6 +16,22 @@
 // - The docs' `import { ExtendedSearch } from 'fuse.js'` (for Fuse.use with the basic
 //   build) does not exist in 7.5.0: the published builds export only the default class.
 // - Fuse.config is frozen, so there are no page-wide defaults an example could leak.
+// - The search window is location ± threshold × distance (both sides), not only forward.
+// - A pattern over 32 characters does not throw: it is cut into 32-letter pieces, and the
+//   score averages the pieces (a failed piece counts as 1).
+// - findAllMatches changes scores, not the highlighted indices, in 7.5.0.
+// - threshold 1.0 does not "match anything": a word with every letter wrong still fails.
+// - A field's score includes the field-length norm, so it is not the bitap score that
+//   `threshold` is compared against. Relate scores to threshold with single-word items or
+//   `ignoreFieldNorm`.
+// - Fuse.match: an edit at the first or last letter can score as a perfect hit, since the
+//   rest of the word is still found intact inside the text.
+// - An array of BigInts is not searched as a string list; BigInt works as a field of objects.
+// - With includeScore, an empty query still returns every item, without a score.
+// - FuseWorker.terminate() rejects searches still in flight ("FuseWorker terminated"):
+//   ignore that rejection when the example is the one that terminated it.
+// - Plain Fuse on a big list blocks the page: cards keep lists small (a few thousand items)
+//   and never time main-thread work on 10,000+ items.
 import type { MountContext } from '@/types.ts';
 import './fuse.css';
 

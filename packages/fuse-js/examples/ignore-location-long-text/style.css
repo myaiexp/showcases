@@ -1,0 +1,6 @@
+/* Long descriptions: let the matched sentence wrap */
+[data-example='fuse-js/ignore-location-long-text'] {
+  .fz-full .fz-sub {
+    white-space: normal;
+  }
+}

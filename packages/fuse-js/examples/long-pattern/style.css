@@ -1,0 +1,41 @@
+/* Long pattern: the query with its 32-letter chunks underneath */
+[data-example='fuse-js/long-pattern'] {
+  .lp-chunks {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    white-space: pre;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .fz-card .lp-chunks {
+    font-size: 9.5px;
+    gap: 1px;
+  }
+  .lp-chunk {
+    display: block;
+    width: fit-content;
+    border-radius: 3px;
+    color: var(--fg-1);
+  }
+  .lp-chunk[data-n='1'] {
+    background: color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+  .lp-chunk[data-n='2'] {
+    background: color-mix(in srgb, var(--green) 30%, transparent);
+  }
+  .lp-chunk[data-n='3'] {
+    background: color-mix(in srgb, var(--orange) 30%, transparent);
+  }
+  .lp-pad {
+    visibility: hidden;
+  }
+  .fz-card .lp-full {
+    display: none;
+  }
+  .lp-full {
+    color: var(--fg-3);
+    margin-bottom: 2px;
+  }
+}

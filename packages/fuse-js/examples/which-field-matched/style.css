@@ -1,0 +1,18 @@
+[data-example='fuse-js/which-field-matched'] {
+  .wf-line {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .wf-key {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 0 6px;
+    border-radius: 8px;
+    background: var(--bg-raised);
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.8em;
+  }
+}

@@ -1,0 +1,4 @@
+/* Column headings that show code keep their case */
+.fz-code-heads .fz-col-head {
+  text-transform: none;
+}

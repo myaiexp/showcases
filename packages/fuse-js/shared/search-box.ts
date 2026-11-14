@@ -127,6 +127,11 @@ export function searchBox(parent: HTMLElement, stage: Stage, opts: SearchBoxOpti
 export function typeLoop(stage: Stage, box: SearchBox, queries: readonly string[], hold = 1800): void {
   if (!stage.preview) return;
   stage.play(async (wait) => {
+    // A box that starts with text would otherwise get the queries typed onto its end.
+    if (box.value) {
+      await wait(hold);
+      await box.erase();
+    }
     for (const q of queries) {
       await box.type(q);
       await wait(hold);
