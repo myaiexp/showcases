@@ -75,6 +75,7 @@ export function mountPlot<S extends object>(el: HTMLElement, ctx: MountContext, 
     if (root) root.replaceWith(next);
     else box.append(next);
     root = next;
+    if (preview) fitCard(next);
     undoAfter = spec.after?.(next, live, size);
   };
   const live: Live<S> = {
@@ -131,6 +132,25 @@ export function mountPlot<S extends object>(el: HTMLElement, ctx: MountContext, 
 /** A plot with no state: one render function. Cards replay a reveal so they look alive. */
 export function mountStatic(el: HTMLElement, ctx: MountContext, render: (size: Size) => Element): Cleanup {
   return mountPlot(el, ctx, { initial: {}, render: (_s, size) => render(size) });
+}
+
+/**
+ * A bare svg already scales to the card through max-height (plot.css). A figure (title,
+ * legend) or a div of several plots does not, and a 200px box would clip its top: scale it
+ * down from the top edge so the whole thing shows.
+ */
+function fitCard(root: Element): void {
+  if (root instanceof SVGSVGElement || !(root instanceof HTMLElement)) return;
+  root.style.transform = '';
+  root.style.marginBottom = '';
+  const h = root.getBoundingClientRect().height;
+  if (h <= 200) return;
+  // A transform leaves the layout box full height; the negative margin trims it to 200px
+  // so the card's centring puts the top edge at the top.
+  root.style.flexShrink = '0';
+  root.style.transformOrigin = 'top center';
+  root.style.transform = `scale(${200 / h})`;
+  root.style.marginBottom = `${200 - h}px`;
 }
 
 /** Wipes the plot in from left to right with element.animate (no CSS keyframes). */
