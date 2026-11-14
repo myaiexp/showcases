@@ -76,7 +76,11 @@ export function leafText(v: unknown): string {
   if (typeof v === 'symbol') return v.toString();
   if (typeof v === 'function') return `ƒ ${v.name || 'function'}`;
   if (v === undefined) return 'missing';
-  if (v instanceof Date) return Number.isNaN(v.getTime()) ? 'Invalid Date' : v.toISOString().replace('.000Z', 'Z');
+  if (v instanceof Date) {
+    if (Number.isNaN(v.getTime())) return 'Invalid Date';
+    // A date at UTC midnight is a calendar day: print just the day so it fits a card.
+    return v.toISOString().replace('T00:00:00.000Z', '').replace('.000Z', 'Z');
+  }
   if (v instanceof Promise) return 'Promise';
   if (v instanceof URL) return `URL ${v.href}`;
   if (v instanceof Uint8Array) return `bytes [${[...v.slice(0, 8)].join(' ')}${v.length > 8 ? ' …' : ''}]`;
