@@ -1,5 +1,271 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T12:51:39.193Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/chartjs/Chart.js",
+      "ref": "v4.6.1",
+      "paths": [
+        "README.md",
+        "LICENSE.md",
+        "docs/**/*.md",
+        "!docs/samples"
+      ],
+      "commit": "76d8cf895a7485dc838c90ef37e2bc9d9e388fcb"
+    }
+  ],
+  "files": {
+    "repo/docs/axes/_common_ticks.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/_common_ticks.md",
+      "sha256": "8e3af849925ff7f1b092c79f6036f18fa7eb1836a655fe8da5083f87b8cef4c9"
+    },
+    "repo/docs/axes/_common.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/_common.md",
+      "sha256": "f472bcdc3bd4ee0c27b34e38e3d1cbcb1eecbf65bfaac7cc38c74c6600852f55"
+    },
+    "repo/docs/axes/cartesian/_common_ticks.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/cartesian/_common_ticks.md",
+      "sha256": "3b10e39423d59ef35728de110b18a3acdd5dfbc5ca4f9de40e3425f1826a6dc0"
+    },
+    "repo/docs/axes/cartesian/_common.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/cartesian/_common.md",
+      "sha256": "ed3a22eb5353c9a74e2590675d9d7199c5fb4a503879befbe85daeaf2737d255"
+    },
+    "repo/docs/axes/cartesian/category.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/cartesian/category.md",
+      "sha256": "2bb611add19fcfe115ef2c57e410909147f796f95582d183a7d582a5f8d6f5c0"
+    },
+    "repo/docs/axes/cartesian/index.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/cartesian/index.md",
+      "sha256": "a43511ed8235987a711f2249e367467288bb7c02b67cb6bf397d9d276b9fb975"
+    },
+    "repo/docs/axes/cartesian/linear.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/cartesian/linear.md",
+      "sha256": "416aa85bcc474e321d936fa173b4d1996a2ccab54446237659a743279d97c298"
+    },
+    "repo/docs/axes/cartesian/logarithmic.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/cartesian/logarithmic.md",
+      "sha256": "38fd426cec18af7b7f6b6174047446c370c55397870a37d78dc8faf89661c283"
+    },
+    "repo/docs/axes/cartesian/time.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/cartesian/time.md",
+      "sha256": "7901c3b4e53dadd54ea64627a6653bcfd9cdcf10b979c9bd74783c5722cf5b16"
+    },
+    "repo/docs/axes/cartesian/timeseries.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/cartesian/timeseries.md",
+      "sha256": "185c50c75c3af6a4e3c19a26a194c9d9580e53d6b4de6cf67de007624af8b9e7"
+    },
+    "repo/docs/axes/index.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/index.md",
+      "sha256": "c23500b4c4ac936d1039f2aa11afd3bc7044e491aa3f4e4fafaba19b25ac5ff4"
+    },
+    "repo/docs/axes/labelling.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/labelling.md",
+      "sha256": "c64dd10ecac31449f0b84f893be360148772860f9f81abf501cc4a3783493529"
+    },
+    "repo/docs/axes/radial/index.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/radial/index.md",
+      "sha256": "9967216b46232ace40e86b04c01844c3c256dec49b15cdcbf43daf9758833d36"
+    },
+    "repo/docs/axes/radial/linear.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/radial/linear.md",
+      "sha256": "f2db95c925d716e69eac65a5ae2f2322b123d321c9b4380a3f08f7af14160d7c"
+    },
+    "repo/docs/axes/styling.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/axes/styling.md",
+      "sha256": "f1cea91d0792cfa51571f4f687acd168665e673acc6f6dad015cd91a875cb850"
+    },
+    "repo/docs/charts/area.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/charts/area.md",
+      "sha256": "83493631bdec2137744c4b58bc517a2e21d097826a5e6144d17e255512218d3c"
+    },
+    "repo/docs/charts/bar.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/charts/bar.md",
+      "sha256": "5f97751035cd9c710b8cc906675d7a6b9ea17ed8136d7e94fef39d7c9a53ce77"
+    },
+    "repo/docs/charts/bubble.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/charts/bubble.md",
+      "sha256": "3bc3999c996dd650c0352d2b3b653e1d2be395f706182a0a150cb964e62e555c"
+    },
+    "repo/docs/charts/doughnut.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/charts/doughnut.md",
+      "sha256": "3834a1b4bf46bf97490840997b1dda09102b0edbd1bfc1d7a824a18f20384c5c"
+    },
+    "repo/docs/charts/line.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/charts/line.md",
+      "sha256": "e9937d754443caa78c4cdaec21ea8b350a74dc7073c6a4c52266e1395ee8027d"
+    },
+    "repo/docs/charts/mixed.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/charts/mixed.md",
+      "sha256": "bb3538bc42ffff88693354e0102c5268ac5a7905a499e5d5fb6b0b425005c8e4"
+    },
+    "repo/docs/charts/polar.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/charts/polar.md",
+      "sha256": "214c90b84b1ddbadf7ba89992f7e4e6deb1949b99f54eacf287e32fc80ce7c57"
+    },
+    "repo/docs/charts/radar.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/charts/radar.md",
+      "sha256": "ba9be179c28d6a4472b074908951c43e3e4336211db9b79c59781b8105ff9589"
+    },
+    "repo/docs/charts/scatter.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/charts/scatter.md",
+      "sha256": "7e92ffdf748b70c4077dd5dc5c86959d50b212c74bf5073c799e9b3447a558d9"
+    },
+    "repo/docs/configuration/animations.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/animations.md",
+      "sha256": "79120a4dae05109825be1d7e442249e2b251506accf81239275b7ec7382c3675"
+    },
+    "repo/docs/configuration/canvas-background.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/canvas-background.md",
+      "sha256": "b55b0c61b8d7e89cd6d0c49fa6dd0786f2afd063d11776c92961219281813ee3"
+    },
+    "repo/docs/configuration/decimation.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/decimation.md",
+      "sha256": "81eb2a10a3a81f740109fcaa3211a07ed98ec20847ae54c1865f9260ebea42d7"
+    },
+    "repo/docs/configuration/device-pixel-ratio.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/device-pixel-ratio.md",
+      "sha256": "6cd9e469a537c26d953766df3943815c25e7fe25548d39642c546e1c7987dca8"
+    },
+    "repo/docs/configuration/elements.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/elements.md",
+      "sha256": "548f532345d69f67a9dcd4806dd7f174e043ffcccab591fa72a26c38bee9680e"
+    },
+    "repo/docs/configuration/index.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/index.md",
+      "sha256": "9f313a15d10e6743d9ae0c36bf4b90e5ec3d3001976e4f00c4165186f25ea12c"
+    },
+    "repo/docs/configuration/interactions.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/interactions.md",
+      "sha256": "6323690cb791cf20a5788c50c8f02c15f15a587f4bea26fa18c783b5d85135ed"
+    },
+    "repo/docs/configuration/layout.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/layout.md",
+      "sha256": "0376599fbd1054105df54d5b51cd087b7fdd9ff8a5d655de65c40efba3f9f3a6"
+    },
+    "repo/docs/configuration/legend.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/legend.md",
+      "sha256": "05a6e08aaa6a9c33462bac45510d700f60baf242217c0f486e76c1f0603868c5"
+    },
+    "repo/docs/configuration/locale.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/locale.md",
+      "sha256": "6d85c176ae2948f1916ce5fc22cd1467099f48f07859c1f6c47c3ab6cae0e3c6"
+    },
+    "repo/docs/configuration/responsive.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/responsive.md",
+      "sha256": "56224ab23c415202514a296552c085c6b5e5eea932be75c07bec83f7e14b408b"
+    },
+    "repo/docs/configuration/subtitle.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/subtitle.md",
+      "sha256": "50c433b730c354f3df27cb500b48bb39c4bcd845b6928bd6ce826312df83ef48"
+    },
+    "repo/docs/configuration/title.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/title.md",
+      "sha256": "c274f5bb44b605255b79b9e7ff9d589e3ac5602f597f379d291149861b0870f2"
+    },
+    "repo/docs/configuration/tooltip.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/configuration/tooltip.md",
+      "sha256": "df4bbb86a052283b90b00f5b422758e7fae30d039dd5dad1a652fcb45c57638b"
+    },
+    "repo/docs/developers/api.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/developers/api.md",
+      "sha256": "0fa21f28aa603f109472c3fd1ce746b758ebf1407605b1db6fd4e8d36829ef9d"
+    },
+    "repo/docs/developers/axes.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/developers/axes.md",
+      "sha256": "68515920d732214e60a714814f0a717ed316bb105e5e643be814e9754c08bbdc"
+    },
+    "repo/docs/developers/charts.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/developers/charts.md",
+      "sha256": "090c6390b6c48bbf2e3e6a51790e008c1c02bcd5861aa2e49ce8cd610dc78ea2"
+    },
+    "repo/docs/developers/contributing.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/developers/contributing.md",
+      "sha256": "535b63a74e9921a054774f944caf640503d50589fb6a231614c58f7f817d3272"
+    },
+    "repo/docs/developers/index.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/developers/index.md",
+      "sha256": "01ad627c5d48c6fb81922b479c0cab53c6ba85de512fac48bc5995221d481880"
+    },
+    "repo/docs/developers/plugins.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/developers/plugins.md",
+      "sha256": "a4408a6e01cacf3769946c461f0ea134df351eb3d5a2cc1977f8bce05fed2e9d"
+    },
+    "repo/docs/developers/publishing.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/developers/publishing.md",
+      "sha256": "8899be46294aedfcfc15396746262fdb3863175f81ec33d574175f73bde67586"
+    },
+    "repo/docs/developers/updates.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/developers/updates.md",
+      "sha256": "49b8fafe0d76dcd90a57e2a1498fbba4cdc5566d241275632eac86c6f0906f4e"
+    },
+    "repo/docs/general/accessibility.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/general/accessibility.md",
+      "sha256": "2943b0a29f26b433c7cd9aabec7d087dba69004026672b68f734cd7bf52cd0e1"
+    },
+    "repo/docs/general/colors.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/general/colors.md",
+      "sha256": "a323dbe9b7450937d13a04257aefdbe1d2b13f6f769e0399ad14a53217aab6a8"
+    },
+    "repo/docs/general/data-structures.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/general/data-structures.md",
+      "sha256": "9f36beaf24f44be6170be0ee3be0eb0c2341b378df5cc182bc7415fb55231165"
+    },
+    "repo/docs/general/fonts.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/general/fonts.md",
+      "sha256": "c4658bd12ada4283796bf25a04966efe214cebda57bd2ba1f2fe4d7871548543"
+    },
+    "repo/docs/general/options.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/general/options.md",
+      "sha256": "76175587fc61a89ca2a4989480654de2dcb753ee5828b9cf82443666bacb9386"
+    },
+    "repo/docs/general/padding.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/general/padding.md",
+      "sha256": "1af0e38cad071e61613867f1a0c52f21b317f9811395dfbae8678ea100d73318"
+    },
+    "repo/docs/general/performance.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/general/performance.md",
+      "sha256": "42a40fbd64487830d4008a0b0be222ac083ba466ce5a321cbce91d7d204ded5a"
+    },
+    "repo/docs/getting-started/index.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/getting-started/index.md",
+      "sha256": "3e6aeae27a43c9e75d29fc95e555f06b45be25680ab01abf07344689d9fa9ed8"
+    },
+    "repo/docs/getting-started/installation.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/getting-started/installation.md",
+      "sha256": "f0154b8c289826419b6f4726d4681788e1a0a6be9b1a1eb69921c4733ff1c815"
+    },
+    "repo/docs/getting-started/integration.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/getting-started/integration.md",
+      "sha256": "43786c422bf4f255fc43971cf0f4c704b80218857f6d993923aa793c6079bd3f"
+    },
+    "repo/docs/getting-started/usage.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/getting-started/usage.md",
+      "sha256": "dff4d28493be614342c1a7514c625a56ae3a65b9f792e7f99f16926691985264"
+    },
+    "repo/docs/getting-started/using-from-node-js.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/getting-started/using-from-node-js.md",
+      "sha256": "e0272f73bfd628c9dd8e6a9a9f683a1e08c96b3d45572a5ee097e8f1ddeee7e7"
+    },
+    "repo/docs/index.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/index.md",
+      "sha256": "4cc6907a6a101d1561126591c2b21b978d030883200cd2fd4adab1307aa54c02"
+    },
+    "repo/docs/migration/v3-migration.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/migration/v3-migration.md",
+      "sha256": "5f247da8df53111a05a8c959e3833f541e4afb0d04cab36e1a26f601fbca096f"
+    },
+    "repo/docs/migration/v4-migration.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/docs/migration/v4-migration.md",
+      "sha256": "7b199ebb6dcce06d2f90d00a499ad4c9b4b786b425cd7de20f04061ee49147cf"
+    },
+    "repo/LICENSE.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/LICENSE.md",
+      "sha256": "41a84aa2caba645f966a18d9c2056b73e6d3a81d80bc0046bc0011a2634d4cce"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/chartjs/Chart.js/blob/76d8cf895a7485dc838c90ef37e2bc9d9e388fcb/README.md",
+      "sha256": "30418232ad2cc5a51fa0938e12dc97e31cfd1fb3b0bc352132f281c0c10da348"
+    }
+  }
 }
