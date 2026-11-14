@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Tap to animate',
   summary: 'Tap any box to trigger a scale and rotate keyframe animation with animate(). Each tap replays it.',
-  section: 'Basics',
+  section: 'animate',
   tags: ['animate', 'keyframes', 'click'],
   docs: [],
   provenance: 'legacy',

@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Stagger entrance',
   summary: 'Reset and replay a staggered fade and slide-in across a row of elements with the stagger() helper.',
-  section: 'Basics',
+  section: 'Utils',
   tags: ['stagger', 'animate', 'delay'],
   docs: [],
   provenance: 'legacy',

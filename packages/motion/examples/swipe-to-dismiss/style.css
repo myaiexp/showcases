@@ -1,0 +1,7 @@
+/* Swipe to dismiss: a column of notification cards */
+[data-example='motion/swipe-to-dismiss'] {
+  .list { width: min(100%, 300px); overflow: hidden; padding: var(--space-1) 0; }
+  .note { display: flex; flex-direction: column; gap: 2px; margin-bottom: var(--space-2); padding: var(--space-2) var(--space-3); border-radius: 10px; background: var(--bg-raised); border: 1px solid var(--border); cursor: grab; overflow: hidden; }
+  .note b { font-size: 0.8rem; color: var(--accent); }
+  .note span { font-size: 0.8rem; color: var(--fg-1); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+}
