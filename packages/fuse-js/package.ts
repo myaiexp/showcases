@@ -6,11 +6,25 @@ export default definePackage({
   npm: 'fuse.js',
   tagline: 'Lightweight fuzzy-search library with zero dependencies, for client-side search without a server.',
   about:
-    'Fuse.js brings powerful fuzzy searching to the client with no backend. It handles typos, partial matches and weighted multi-key search. It is the go-to when you need "search that just works" for small-to-medium datasets without setting up Elasticsearch or Algolia.',
+    'People mistype. Search "javscript" with a plain text filter and you get nothing; Fuse.js finds "JavaScript" anyway, ranks the closest matches first and tells you which letters matched. It runs in the browser over a list you already have (contacts, products, commands, files), with no server or search service. Weighted fields, multi-word token search, unix-like operators, and/or queries and Web Worker search cover the rest.',
   category: 'Utilities',
   homepage: 'https://www.fusejs.io',
-  docsUrl: 'https://www.fusejs.io/getting-started/installation.html',
+  docsUrl: 'https://www.fusejs.io/getting-started.html',
   repo: 'https://github.com/krisk/Fuse',
   added: '2026-03-03',
-  sections: ['Basics'],
+  // The docs sidebar order (docs/.vitepress/config.ts), with two sections for what the
+  // README's feature list and the type definitions document but no docs page covers:
+  // keys and result options after Getting Started, collections and indexes after Logical Search.
+  sections: [
+    'Getting Started',
+    'Keys and results',
+    'Fuzzy Search',
+    'Token Search',
+    'Extended Search',
+    'Logical Search',
+    'Collections and indexes',
+    'Web Workers',
+    'Performance',
+    'Articles',
+  ],
 });

@@ -1,5 +1,26 @@
 {
-  "license": "none found",
-  "redistribute": false,
-  "sources": []
+  "license": "Apache-2.0 (krisk/Fuse LICENSE covers the repo: README, the fusejs.io site source in docs/, and the library source)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/krisk/Fuse",
+      "ref": "v7.5.0",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "CHANGELOG.md",
+        "docs/index.md",
+        "docs/getting-started.md",
+        "docs/fuzzy-search.md",
+        "docs/token-search.md",
+        "docs/extended-search.md",
+        "docs/logical-search.md",
+        "docs/web-workers.md",
+        "docs/performance.md",
+        "docs/articles/*.md",
+        "src/**/*.ts"
+      ]
+    }
+  ]
 }

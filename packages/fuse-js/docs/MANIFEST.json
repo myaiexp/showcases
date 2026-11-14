@@ -1,5 +1,224 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T18:58:22.300Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/krisk/Fuse",
+      "ref": "v7.5.0",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "CHANGELOG.md",
+        "docs/index.md",
+        "docs/getting-started.md",
+        "docs/fuzzy-search.md",
+        "docs/token-search.md",
+        "docs/extended-search.md",
+        "docs/logical-search.md",
+        "docs/web-workers.md",
+        "docs/performance.md",
+        "docs/articles/*.md",
+        "src/**/*.ts"
+      ],
+      "commit": "45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a"
+    }
+  ],
+  "files": {
+    "repo/CHANGELOG.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/CHANGELOG.md",
+      "sha256": "c2d2f106825512e61dda5f451ab28fb2b3ae600d2e7ab71c8c21430665731b53"
+    },
+    "repo/docs/articles/how-fuzzy-search-works.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/docs/articles/how-fuzzy-search-works.md",
+      "sha256": "b0951211099fc21565fe6b305921ff93180e464320c151bfc78778cafa003b6f"
+    },
+    "repo/docs/articles/using-fuse-with-react.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/docs/articles/using-fuse-with-react.md",
+      "sha256": "ac8065dee46ac20971ffab3cf4c4b3381284b920e204e27884160fa4f2c29c5b"
+    },
+    "repo/docs/articles/vs-semantic-search.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/docs/articles/vs-semantic-search.md",
+      "sha256": "53efea12ab54a41c8f1df1326157e55addd503001ccb23ef3002d5222266ceca"
+    },
+    "repo/docs/extended-search.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/docs/extended-search.md",
+      "sha256": "9d24ea7e198a13da6bc0aad6d079cc421d277b68904a2873daf5ecc474e3f798"
+    },
+    "repo/docs/fuzzy-search.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/docs/fuzzy-search.md",
+      "sha256": "0737c82b821b85fa8be95db3a71c00091774f735dc807f31643950a33fe183bb"
+    },
+    "repo/docs/getting-started.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/docs/getting-started.md",
+      "sha256": "981c949d31d49c31ee3fa64002fc7fa1ec4bb8dc2383f03f9a4bb6da6b026e28"
+    },
+    "repo/docs/index.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/docs/index.md",
+      "sha256": "79b0a3e87f7c0609fc1854277264faaf8276a4eb68e4fa9f84e031eee2c57394"
+    },
+    "repo/docs/logical-search.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/docs/logical-search.md",
+      "sha256": "aa6b4683a1f0baf92fd205088f5a2d1b199ad45f9b1294d8037d3986143f3b09"
+    },
+    "repo/docs/performance.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/docs/performance.md",
+      "sha256": "e33a5ee22a1ad3955f7ecc6bfc3f8f4b3da7f374eff28e944f0acebabdec63f8"
+    },
+    "repo/docs/token-search.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/docs/token-search.md",
+      "sha256": "51a6d610f9023c26affeda49f2d384b70c1185f54c6304af7c1137f3cd9f1e1c"
+    },
+    "repo/docs/web-workers.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/docs/web-workers.md",
+      "sha256": "143103febf4718094fc1dbd1f8280dc34988335c2395fb2549d250a75e8ded5b"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/LICENSE",
+      "sha256": "cc807e3caa26cdee316bab2ff6fdb508a2f619b74959fe59e513ef6e61635ebe"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/README.md",
+      "sha256": "ddeea10c54ccf1d6d21bcc31f89ca305db4b50c3197f3cd105dbb7b0c01ef72d"
+    },
+    "repo/src/core/computeScore.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/core/computeScore.ts",
+      "sha256": "86706ac641efc27d441a2d024fe383aeaf7bd5d06a40b4bc8cffb7dc6dcf9c2c"
+    },
+    "repo/src/core/config.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/core/config.ts",
+      "sha256": "7299493fff1cd50a8c54422a7e5002fbae3a4ace4d6ba970875510321ee19845"
+    },
+    "repo/src/core/errorMessages.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/core/errorMessages.ts",
+      "sha256": "cf219807cd50ddbce77afc7a91a0cf46c8310f8d65e1dcfc50b54e2a0c001c2c"
+    },
+    "repo/src/core/format.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/core/format.ts",
+      "sha256": "181ca6be4be0befcd577fb3afa1959d59cf6028841be3c8e17fe1c4c7f7bf033"
+    },
+    "repo/src/core/formatMatches.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/core/formatMatches.ts",
+      "sha256": "29ab75bac600b4a9cc98ad742a96afd7e57f2d58e581fb908093bdc91beaf524"
+    },
+    "repo/src/core/index.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/core/index.ts",
+      "sha256": "d95b78b8518d46aaa7270c068d9e301709cadfac6856fc36baf3522b5b9d061d"
+    },
+    "repo/src/core/queryParser.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/core/queryParser.ts",
+      "sha256": "cf5d7fa013b5060706e40997b1518efd4127ad2cf19e4f1a7296c2cdf3c0328b"
+    },
+    "repo/src/core/register.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/core/register.ts",
+      "sha256": "f430c10a728abc07d19a2f580de43c46ff50dbc9c965f1defcd0f00a09cf7861"
+    },
+    "repo/src/entry.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/entry.ts",
+      "sha256": "57447d09340a4199aecfa52f0c77f20ffab709e6376b22a8fe6f4ca6517ddf81"
+    },
+    "repo/src/env.d.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/env.d.ts",
+      "sha256": "d25d5e7176e81a7e961f31f823890b9763b30566f45ad6e89d4fe08c992c4361"
+    },
+    "repo/src/helpers/diacritics.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/helpers/diacritics.ts",
+      "sha256": "8b6fddefd30ec21c826c0b845fadba4f174ff5e4d474995f6dca2ccf3066ff6d"
+    },
+    "repo/src/helpers/get.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/helpers/get.ts",
+      "sha256": "8932e18afc7e571c970b29abf17943c0b96d6f2c8c1d7d5d218170bbe07a3c1b"
+    },
+    "repo/src/helpers/mergeIndices.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/helpers/mergeIndices.ts",
+      "sha256": "15d3041555de7b141bd39d7249442b7619bb84e117cc979d9b3e40ea95e088fc"
+    },
+    "repo/src/helpers/typeGuards.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/helpers/typeGuards.ts",
+      "sha256": "cd691805bdcbd459d52558adbf1fcb8fb5c0625b0b2b335e9e1e1435b88ab755"
+    },
+    "repo/src/search/bitap/computeScore.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/bitap/computeScore.ts",
+      "sha256": "3c93f98662d252a8b36ccb98d0275038f8e497cc606c4a4edbf98f9d77692789"
+    },
+    "repo/src/search/bitap/constants.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/bitap/constants.ts",
+      "sha256": "5d6038b41c508a065e256bedc89bcd605f1f7c16143b923e90ce5e8df49ca9a3"
+    },
+    "repo/src/search/bitap/convertMaskToIndices.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/bitap/convertMaskToIndices.ts",
+      "sha256": "11743e1033673d972c7c4645955014f32bca91e615d68aa4416d2215fb8908b9"
+    },
+    "repo/src/search/bitap/createPatternAlphabet.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/bitap/createPatternAlphabet.ts",
+      "sha256": "a0c0ecb3c777fb4470cdda90fd01fe8e45a706c873ed6f5b8c14c4b6b96f1a10"
+    },
+    "repo/src/search/bitap/index.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/bitap/index.ts",
+      "sha256": "6f60bd0882e47b48d4d3b19842448d4537adb4703428d21d833834d9a300cb12"
+    },
+    "repo/src/search/bitap/search.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/bitap/search.ts",
+      "sha256": "9a08c4f78e109db7314f3895c1a36443930849c616f77cfd7292f132e763126e"
+    },
+    "repo/src/search/extended/index.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/extended/index.ts",
+      "sha256": "97468880c3c6531187442f39a723ff2d3baf90c37b4c2e52046503baeaa79ba3"
+    },
+    "repo/src/search/extended/matchers.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/extended/matchers.ts",
+      "sha256": "cb38fad4ada9b90ed5cd7d7996f485fc5c6cc72643c8593a0be2665c2e4a1d21"
+    },
+    "repo/src/search/extended/parseQuery.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/extended/parseQuery.ts",
+      "sha256": "3dedb8e533ba76e7b5eaeeb3b9cb73239da551544d7c484ca2c144f443683818"
+    },
+    "repo/src/search/index.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/index.ts",
+      "sha256": "b405fe0fb471b2a27b4221c1c885220bc6d8b4fcca6fea07ca312d04bc023b60"
+    },
+    "repo/src/search/token/analyzer.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/token/analyzer.ts",
+      "sha256": "7792cee5f13e3c94c99f0922f423932feae9ba25bd7c7e405cd3d9b0011748e4"
+    },
+    "repo/src/search/token/index.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/token/index.ts",
+      "sha256": "bb90b0c49a39904dd19639777015be0d02c3a943a4d04932daa4c8369993efc2"
+    },
+    "repo/src/search/token/InvertedIndex.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/search/token/InvertedIndex.ts",
+      "sha256": "94b4129a787f600799779252308ef059faebd9f8e159a7d14ccd8c194a5fe2d6"
+    },
+    "repo/src/tools/fieldNorm.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/tools/fieldNorm.ts",
+      "sha256": "03832073ba638b8b061f111de9b2cea7e9e6bb87b9f29a488b8b7386dccb4813"
+    },
+    "repo/src/tools/FuseIndex.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/tools/FuseIndex.ts",
+      "sha256": "c36132578eff65dc56b15d6f0f05b903782466dfc1763084f6d05b543f2fc5ac"
+    },
+    "repo/src/tools/KeyStore.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/tools/KeyStore.ts",
+      "sha256": "280b15d42daa88743cdc11be9bd8c2c5241cf2f31be0fc40012211fdb76c9463"
+    },
+    "repo/src/tools/MaxHeap.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/tools/MaxHeap.ts",
+      "sha256": "06ecb532235a698f8562e624084fa1d59efd5393ec64f907f597f255cea62950"
+    },
+    "repo/src/types.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/types.ts",
+      "sha256": "6a4e6ffc3ced5c2be8b2d1a6757790623a8220eefb0825cf48228e6d6b6646c8"
+    },
+    "repo/src/workers/FuseWorker.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/workers/FuseWorker.ts",
+      "sha256": "c15e75445c07a6bc04702f2b369c925cc25ecf62846f82ac761c716db8bfbf3d"
+    },
+    "repo/src/workers/index.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/workers/index.ts",
+      "sha256": "849334b28440fb21b72c85d22c0df892eea2d8391674a2aa4e0e9d2618935db7"
+    },
+    "repo/src/workers/worker.ts": {
+      "url": "https://github.com/krisk/Fuse/blob/45bac9fe2e71fe8c680c861a35a8b226c4ae6d5a/src/workers/worker.ts",
+      "sha256": "7fba53f39b7358d9618201c3ac9fe8d98f7b1b8786345beb8b98824066c5c216"
+    }
+  }
 }
