@@ -19,6 +19,12 @@
 // - z.url() accepts javascript: and ftp: links; z.httpUrl() rejects localhost and bare IPs.
 //   z.url({ normalize: true }) returns new URL(x).href (a trailing slash appears).
 // - z.jwt() checks the shape and header alg only, never the signature.
+// - z.date() on an Invalid Date says "expected date, received Date". z.enum() is
+//   case-sensitive ("m" fails against "M"). z.any()/z.unknown() as an object key still
+//   need the key: missing fails with "expected nonoptional, received undefined".
+// - multipleOf(0.05) is float-safe: 0.1 + 0.2 passes.
+// - Matrix columns are ~60px in a card: draw only ✓/✗ there, with short column titles.
+// - For caxi checks of the gallery, scroll to the bottom first: sections render progressively.
 import type { MountContext } from '@/types.ts';
 import './zod.css';
 

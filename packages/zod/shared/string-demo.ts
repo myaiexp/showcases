@@ -1,9 +1,9 @@
-// Strings kit: a typed-text demo and a schema-variants-over-inputs demo
+// Strings kit: a typed-text demo, and schema variants over inputs on their own stage
 import type * as z from 'zod';
 import type { MountContext } from '@/types.ts';
-import { select } from './controls.ts';
 import { textField, typeLoop } from './field.ts';
 import { sampleRows } from './rows.ts';
+import { schemaTour, type TourOptions, type Variant } from './schema-tour.ts';
 import { createStage } from './stage.ts';
 import { codeLine } from './widgets.ts';
 
@@ -45,47 +45,14 @@ export function typedDemo(el: HTMLElement, ctx: MountContext, cfg: TypedConfig):
   return stage.dispose;
 }
 
-export interface Variant {
-  /** Name in the full view's select. */
-  label: string;
-  /** The schema in code. */
-  code: string;
-  schema: z.ZodType;
-  /** Inputs for this variant; falls back to the config's. */
-  inputs?: readonly unknown[];
-  /** Replaces the "n of m pass" caption. */
-  say?: (passed: number, total: number) => string;
-}
-
-export interface CompareConfig {
+export interface CompareConfig extends TourOptions {
   variants: readonly Variant[];
-  inputs?: readonly unknown[];
-  types?: boolean;
-  /** Column title for the outputs. */
-  outTitle?: string;
-  /** Show passing outputs (default) or only ✓. */
-  showOutput?: boolean;
-  /** Card: ms per variant. */
-  ms?: number;
   hint?: string;
 }
 
 /** Variants of a schema (select in the full view, cycled in a card) over rows of inputs. */
 export function compareDemo(el: HTMLElement, ctx: MountContext, cfg: CompareConfig): () => void {
   const stage = createStage(el, ctx, { hint: cfg.hint });
-  const code = codeLine(stage.root, '');
-  const rows = sampleRows(stage.root, stage, { types: cfg.types, outTitle: cfg.outTitle ?? 'Output', showOutput: cfg.showOutput });
-  const show = (v: Variant): void => {
-    code.textContent = v.code;
-    const results = (v.inputs ?? cfg.inputs ?? []).map((input) => ({ input, result: v.schema.safeParse(input) }));
-    rows.show(results);
-    const passed = results.filter((r) => r.result.success).length;
-    stage.say(v.say ? v.say(passed, results.length) : `${passed} of ${results.length} pass`, passed === results.length ? 'ok' : 'info');
-  };
-  if (stage.preview) stage.cycle(cfg.variants, cfg.ms ?? 4400, show);
-  else if (stage.bar) {
-    select(stage.bar, 'Schema', cfg.variants.map((v) => [v, v.label] as const), show);
-    show(cfg.variants[0]!);
-  }
+  schemaTour(stage, cfg.variants, cfg);
   return stage.dispose;
 }
