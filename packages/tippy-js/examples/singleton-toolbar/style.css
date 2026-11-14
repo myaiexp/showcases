@@ -1,0 +1,39 @@
+/* Editor toolbar and the page under it */
+[data-example='tippy-js/singleton-toolbar'] {
+  .scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    gap: var(--space-4);
+  }
+  .toolbar {
+    display: flex;
+    gap: var(--space-1);
+    padding: var(--space-1);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .tool {
+    width: 34px;
+    padding: 4px 0;
+  }
+  .bold {
+    font-weight: 800;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .under {
+    text-decoration: underline;
+  }
+  .page {
+    width: 80%;
+    padding: var(--space-3);
+    font-size: 12px;
+    color: var(--fg-3);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+  }
+}

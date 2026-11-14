@@ -1,0 +1,62 @@
+/* A mock page that is light or dark, and the two tip themes that go with it */
+[data-example='tippy-js/dark-light-theme-switch'] {
+  .scene {
+    --pg-bg: #f4f1ea;
+    --pg-fg: #1d1d1f;
+    --pg-edge: #d8d3c6;
+    background: var(--pg-bg);
+    color: var(--pg-fg);
+    transition: background 0.2s;
+  }
+  .scene.dark {
+    --pg-bg: #16181d;
+    --pg-fg: #eceff4;
+    --pg-edge: #323640;
+  }
+  .topbar {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--pg-edge);
+  }
+  .tool,
+  .toggle {
+    padding: 4px 10px;
+    border: 1px solid var(--pg-edge);
+    border-radius: var(--radius);
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .toggle {
+    margin-left: auto;
+  }
+  .toggle[aria-checked='true'] {
+    background: var(--pg-fg);
+    color: var(--pg-bg);
+  }
+  .body {
+    margin: 0;
+    padding: 18px 14px;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+  .tippy-box[data-theme~='on-light'] {
+    background: #1d1d1f;
+    color: #fff;
+  }
+  .tippy-box[data-theme~='on-light'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: #1d1d1f;
+  }
+  .tippy-box[data-theme~='on-dark'] {
+    background: #eceff4;
+    color: #16181d;
+  }
+  .tippy-box[data-theme~='on-dark'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: #eceff4;
+  }
+}

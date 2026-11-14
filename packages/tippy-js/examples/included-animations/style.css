@@ -1,0 +1,19 @@
+/* Five buttons in a row, wrapping on narrow cards */
+[data-example='tippy-js/included-animations'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    padding: 0 var(--space-2);
+  }
+  .btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}

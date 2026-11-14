@@ -1,0 +1,53 @@
+/* Selection bubble: a paragraph of text, a status line and the small action bubble */
+[data-example='tippy-js/selection-share-bubble'] {
+  .scene {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 56px 24px 0;
+    gap: var(--space-4);
+  }
+  .para {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--fg-1);
+    max-width: 440px;
+    align-self: center;
+  }
+  .mini .para {
+    font-size: 11px;
+  }
+  .mini {
+    padding: 40px 16px 0;
+  }
+  .mini .picked {
+    display: none;
+  }
+  .lit {
+    background: color-mix(in srgb, var(--accent) 45%, transparent);
+    border-radius: 2px;
+  }
+  .picked {
+    font-size: 12px;
+    color: var(--fg-3);
+    text-align: center;
+  }
+  .bubble {
+    display: flex;
+    gap: 2px;
+  }
+  .act {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    font-size: 13px;
+    padding: 2px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .act:hover {
+    background: #fff3;
+  }
+}

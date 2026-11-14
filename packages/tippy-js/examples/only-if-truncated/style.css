@@ -1,0 +1,36 @@
+/* A narrow file list whose names end in an ellipsis */
+[data-example='tippy-js/only-if-truncated'] {
+  .scene {
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+  }
+  .files {
+    list-style: none;
+    margin: 0;
+    padding: var(--space-2);
+    width: 170px;
+    height: fit-content;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 12px;
+  }
+  .files li {
+    padding: 4px 6px;
+    display: flex;
+    gap: 6px;
+  }
+  .name {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--fg-1);
+  }
+  .tippy-box {
+    font-size: 12px;
+    overflow-wrap: anywhere;
+  }
+}

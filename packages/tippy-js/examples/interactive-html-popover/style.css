@@ -1,42 +1,41 @@
-/* Interactive HTML popover: button row, menu content and the themed tip */
+/* Account menu: a small app bar, the dropdown's items and the status line */
 [data-example='tippy-js/interactive-html-popover'] {
-  .row {
+  .topbar {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-3);
     align-items: center;
-    justify-content: center;
-    padding: var(--space-6) 0;
+    justify-content: space-between;
+    padding: var(--space-2) var(--space-3);
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .logo {
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .picked {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: var(--space-4);
+    text-align: center;
+    color: var(--fg-2);
   }
   .menu {
-    min-width: 180px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    min-width: 140px;
+    padding: var(--space-1) 0;
   }
-  .menu-head {
-    padding: var(--space-1) var(--space-3) var(--space-2);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--fg-3);
-  }
-  .menu-item {
-    display: block;
-    width: 100%;
-    padding: var(--space-2) var(--space-3);
+  .item {
+    padding: var(--space-1) var(--space-3);
     border: 0;
     background: transparent;
-    color: var(--fg-1);
+    color: inherit;
+    font: inherit;
     text-align: left;
     cursor: pointer;
   }
-  .menu-item:hover {
-    background: var(--border);
-  }
-  .tippy-box[data-theme~='accent'] {
-    background: var(--bg-raised);
-    color: var(--fg-1);
-    border: 1px solid var(--border);
-  }
-  .tippy-box[data-theme~='accent'] > .tippy-arrow {
-    color: var(--bg-raised);
+  .item:hover, .item.lit {
+    background: #fff2;
   }
 }

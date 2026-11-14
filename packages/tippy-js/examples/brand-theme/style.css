@@ -1,0 +1,50 @@
+/* The tomato theme (box and arrow colours per placement) and the brand's buttons */
+[data-example='tippy-js/brand-theme'] {
+  .scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+  .brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: tomato;
+  }
+  .row {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .cta {
+    padding: 6px 12px;
+    border: 2px solid tomato;
+    border-radius: 999px;
+    background: transparent;
+    color: tomato;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .cta:hover {
+    background: tomato;
+    color: #fff;
+  }
+  .tippy-box[data-theme~='tomato'] {
+    background-color: tomato;
+    color: yellow;
+    font-weight: 600;
+  }
+  .tippy-box[data-theme~='tomato'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: tomato;
+  }
+  .tippy-box[data-theme~='tomato'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: tomato;
+  }
+  .tippy-box[data-theme~='tomato'][data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: tomato;
+  }
+  .tippy-box[data-theme~='tomato'][data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: tomato;
+  }
+}

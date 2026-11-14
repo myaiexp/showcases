@@ -1,0 +1,22 @@
+/* Two username fields side by side */
+[data-example='tippy-js/field-tip-stays-open'] {
+  .scene {
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+  }
+  .row {
+    display: flex;
+    gap: var(--space-5);
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    font-size: 11px;
+    color: var(--fg-3);
+  }
+  input {
+    width: 112px;
+  }
+}

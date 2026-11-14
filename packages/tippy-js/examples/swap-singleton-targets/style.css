@@ -1,0 +1,35 @@
+/* Mode switch, the toolbar of the current mode and a note */
+[data-example='tippy-js/swap-singleton-targets'] {
+  .scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    padding-top: 20px;
+  }
+  .switch,
+  .toolbar {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .toolbar[hidden] {
+    display: none;
+  }
+  .holder {
+    min-height: 34px;
+    padding: var(--space-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-surface);
+  }
+  .holder .btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  .note {
+    position: absolute;
+    bottom: 10px;
+    font-size: 11px;
+    color: var(--fg-3);
+  }
+}

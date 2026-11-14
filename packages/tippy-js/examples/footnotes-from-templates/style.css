@@ -1,0 +1,29 @@
+/* A short article with footnote markers; the templates stay hidden */
+[data-example='tippy-js/footnotes-from-templates'] {
+  .article {
+    padding: var(--space-3);
+    max-width: 380px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.6;
+  }
+  .article h3 {
+    margin: 0 0 var(--space-1);
+    font-size: 14px;
+  }
+  .article p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .fn {
+    padding: 0 2px;
+    border: 0;
+    background: none;
+    color: var(--accent);
+    font: inherit;
+    font-size: 12px;
+    vertical-align: super;
+    cursor: pointer;
+  }
+}

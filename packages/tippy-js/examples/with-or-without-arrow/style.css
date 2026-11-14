@@ -1,0 +1,28 @@
+/* Map pins on a soft map-like backdrop, with a caption under each */
+[data-example='tippy-js/with-or-without-arrow'] {
+  .scene {
+    background:
+      linear-gradient(90deg, transparent 49%, #fff1 49% 51%, transparent 51%),
+      linear-gradient(0deg, transparent 49%, #fff1 49% 51%, transparent 51%),
+      var(--bg-surface);
+  }
+  .pin {
+    position: absolute;
+    top: 52%;
+    transform: translateX(-50%);
+    border: 0;
+    background: transparent;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .note {
+    position: absolute;
+    top: 76%;
+    transform: translateX(-50%);
+    width: 90px;
+    text-align: center;
+    color: var(--fg-3);
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,36 @@
+/* Board: a corkboard-like scene holding one movable sticky note */
+[data-example='tippy-js/auto-placement'] {
+  .scene {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .note {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 76px;
+    height: 56px;
+    background: #ffd966;
+    color: #3b2f00;
+    border-radius: 3px;
+    display: grid;
+    place-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 3px 8px #0006;
+    cursor: grab;
+    touch-action: none;
+    user-select: none;
+  }
+  .note.held {
+    cursor: grabbing;
+  }
+  .where {
+    position: absolute;
+    left: 8px;
+    bottom: 6px;
+    font-size: 11px;
+    color: var(--fg-3);
+  }
+}

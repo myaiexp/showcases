@@ -1,0 +1,40 @@
+/* Filter buttons with a checkbox panel, and a drawn Esc key in cards */
+[data-example='tippy-js/hide-on-esc'] {
+  .scene {
+    display: flex;
+    justify-content: center;
+    padding-top: 28px;
+  }
+  .row {
+    display: flex;
+    gap: var(--space-4);
+    align-items: flex-start;
+    height: 36px;
+  }
+  .panel {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 2px 4px;
+    font-size: 12px;
+    text-align: left;
+  }
+  .key {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-bottom-width: 3px;
+    border-radius: var(--radius);
+    background: var(--bg-raised);
+    color: var(--fg-2);
+    font-size: 12px;
+    transition: background 0.1s;
+  }
+  .key.down {
+    background: var(--accent);
+    color: #fff;
+    border-bottom-width: 1px;
+  }
+}

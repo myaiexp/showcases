@@ -1,0 +1,33 @@
+/* Reaction bar: a post and a row of emoji buttons */
+[data-example='tippy-js/tips-from-attributes'] {
+  .post {
+    position: absolute;
+    left: var(--space-4);
+    right: var(--space-4);
+    top: var(--space-3);
+    padding: var(--space-3);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 13px;
+  }
+  .reactions {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: var(--space-4);
+    display: flex;
+    justify-content: center;
+    gap: var(--space-1);
+  }
+  .react {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--bg-raised);
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+  }
+}

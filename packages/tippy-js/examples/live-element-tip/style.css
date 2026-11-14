@@ -1,0 +1,38 @@
+/* A heading to recolour, and the picker that lives inside the tip */
+[data-example='tippy-js/live-element-tip'] {
+  .trigger {
+    position: absolute;
+    top: var(--space-3);
+    left: 50%;
+    translate: -50% 0;
+  }
+  .heading {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: var(--space-4);
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+  }
+  .picker {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-1) 0;
+  }
+  .swatches {
+    display: flex;
+    gap: 6px;
+  }
+  .swatch {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fff6;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .picker input {
+    width: 100%;
+  }
+}

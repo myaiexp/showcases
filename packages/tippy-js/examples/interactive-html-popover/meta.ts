@@ -1,13 +1,18 @@
-// Tippy.js example: a click-triggered account menu built from a tooltip
+// Tippy.js example: a click-to-open account menu built from a tippy
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
   title: 'Interactive HTML popover',
   summary:
-    'With interactive: true a Tippy becomes a click-triggered dropdown you can move into. Here is an account menu built from DOM content, next to a plain info tooltip.',
-  section: 'Basics',
-  tags: ['popover', 'interactive', 'dropdown'],
-  docs: [],
-  provenance: 'legacy',
-  added: '2026-06-14',
+    'The same tool that makes tooltips makes dropdown menus. Click the account button and a menu drops down; its items are real buttons you can click, and picking one closes the menu.',
+  section: 'Overview',
+  tags: ['interactive', 'trigger: click', 'content: Element', 'hide()', 'dropdown'],
+  docs: [
+    'repo/website/src/pages/index.mdx',
+    'repo/website/src/pages/v6/html-content.mdx',
+    'repo/website/src/pages/v6/all-props.mdx',
+    'repo/website/src/pages/v6/methods.mdx',
+  ],
+  provenance: 'pure',
+  added: '2026-11-14',
 });

@@ -1,0 +1,39 @@
+/* Filter button with a counter, and the dropdown's checklist */
+[data-example='tippy-js/click-outside-dropdown'] {
+  .scene {
+    padding: 14px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: flex-start;
+    font-size: 12px;
+  }
+  .counter {
+    color: var(--fg-2);
+    font-size: 11px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 150px;
+  }
+  .menu label {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .menu .hint {
+    min-height: 1.3em;
+    color: var(--orange);
+    font-size: 11px;
+  }
+  .menu .buttons {
+    display: flex;
+    gap: 6px;
+  }
+  .menu .btn {
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+}

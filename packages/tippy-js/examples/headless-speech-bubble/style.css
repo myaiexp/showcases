@@ -1,0 +1,76 @@
+/* Comic characters and the hand-made speech bubble (no Tippy stylesheet) */
+[data-example='tippy-js/headless-speech-bubble'] {
+  .scene {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 18px;
+    background: #f4e9c8;
+  }
+  .strip {
+    display: flex;
+    gap: 34px;
+  }
+  .face {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    border: 3px solid #222;
+    border-radius: 50%;
+    background: #ffd36e;
+    cursor: pointer;
+  }
+  .face-1 {
+    background: #9fd8b0;
+  }
+  .face-2 {
+    background: #f4a6a6;
+  }
+  .face i {
+    position: absolute;
+    top: 17px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #222;
+  }
+  .face i:nth-child(1) {
+    left: 13px;
+  }
+  .face i:nth-child(2) {
+    right: 13px;
+  }
+  .face b {
+    position: absolute;
+    left: 17px;
+    right: 17px;
+    bottom: 11px;
+    height: 7px;
+    border-bottom: 3px solid #222;
+    border-radius: 0 0 12px 12px;
+  }
+  .bubble {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 170px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+    border: 3px solid #222;
+    border-radius: 18px 22px 20px 16px / 20px 16px 22px 18px;
+    background: #fff;
+    color: #222;
+    font: 700 12px/1.3 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    text-align: center;
+  }
+  .tail {
+    position: absolute;
+    left: calc(50% - 8px);
+    bottom: -11px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-right: 3px solid #222;
+    border-bottom: 3px solid #222;
+    transform: rotate(45deg) skew(8deg, 8deg);
+  }
+}

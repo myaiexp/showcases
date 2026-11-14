@@ -1,0 +1,47 @@
+/* Pricing plan: one card with a row per feature and a small round info button */
+[data-example='tippy-js/click-to-open-info'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 8px;
+  }
+  .mini .tippy-box {
+    font-size: 12px;
+  }
+  .plan {
+    width: 138px;
+    padding: var(--space-3);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 12px;
+  }
+  .head {
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+    color: var(--fg-1);
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0;
+    color: var(--fg-2);
+  }
+  .info {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid var(--fg-3);
+    background: none;
+    color: var(--fg-3);
+    font: italic 10px/1 serif;
+    cursor: pointer;
+  }
+  .info:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+}

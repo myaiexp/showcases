@@ -1,0 +1,10 @@
+/* A centred button that the always-open tip points at */
+[data-example='tippy-js/restyle-on-the-fly'] {
+  .scene {
+    display: grid;
+    place-items: center;
+  }
+  .tippy-box {
+    font-size: 12px;
+  }
+}

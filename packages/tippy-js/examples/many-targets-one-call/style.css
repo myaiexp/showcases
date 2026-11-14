@@ -1,0 +1,29 @@
+/* Palette rows: a label, the swatches and the type tippy() returned */
+[data-example='tippy-js/many-targets-one-call'] {
+  .row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    height: 33%;
+    padding: 0 var(--space-3);
+  }
+  .label {
+    width: 76px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: var(--fg-2);
+  }
+  .swatch {
+    width: 26px;
+    height: 26px;
+    border: 2px solid #fff3;
+    border-radius: var(--radius);
+    cursor: pointer;
+  }
+  .result {
+    margin-left: auto;
+    font-size: 11px;
+    color: var(--fg-3);
+    white-space: nowrap;
+  }
+}

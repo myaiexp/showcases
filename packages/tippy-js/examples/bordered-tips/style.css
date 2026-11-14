@@ -1,0 +1,36 @@
+/* Outlined themes: a coloured border, matching arrow outline for CSS and SVG arrows */
+[data-example='tippy-js/bordered-tips'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row {
+    display: flex;
+    gap: var(--space-3);
+  }
+  .tippy-box[data-theme~='outlined'],
+  .tippy-box[data-theme~='outlined-round'] {
+    background: #1b2a41;
+    border: 1px solid #ffd166;
+    color: #ffd166;
+  }
+  .tippy-box[data-theme~='outlined'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: #1b2a41;
+  }
+  .tippy-box[data-theme~='outlined'][data-placement^='bottom'] > .tippy-arrow::before {
+    border-bottom-color: #1b2a41;
+  }
+  .tippy-box[data-theme~='outlined'][data-placement^='left'] > .tippy-arrow::before {
+    border-left-color: #1b2a41;
+  }
+  .tippy-box[data-theme~='outlined'][data-placement^='right'] > .tippy-arrow::before {
+    border-right-color: #1b2a41;
+  }
+  .tippy-box[data-theme~='outlined-round'] > .tippy-svg-arrow > svg:first-child {
+    fill: #ffd166;
+  }
+  .tippy-box[data-theme~='outlined-round'] > .tippy-svg-arrow > svg:last-child {
+    fill: #1b2a41;
+  }
+}

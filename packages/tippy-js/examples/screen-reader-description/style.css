@@ -1,0 +1,19 @@
+/* Screen reader panel: the button on top, the attribute readout below */
+[data-example='tippy-js/screen-reader-description'] {
+  .scene {
+    padding: 22px 18px;
+  }
+  .panel {
+    margin-top: 40px;
+    padding: var(--space-3);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-surface);
+    font: 12px/1.5 ui-monospace, monospace;
+    color: var(--fg-2);
+  }
+  .speech {
+    margin-top: 4px;
+    color: var(--accent);
+  }
+}

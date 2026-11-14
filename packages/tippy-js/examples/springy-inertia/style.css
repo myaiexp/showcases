@@ -1,0 +1,19 @@
+/* The bouncier timing curve for the third button's theme */
+[data-example='tippy-js/springy-inertia'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .tippy-box[data-inertia][data-state='visible'][data-theme~='bouncy'] {
+    transition-timing-function: cubic-bezier(0.3, 2.2, 0.5, 1);
+    background-color: #7c4dff;
+  }
+  .tippy-box[data-theme~='bouncy'] > .tippy-arrow::before {
+    border-top-color: #7c4dff;
+  }
+}

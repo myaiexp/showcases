@@ -1,0 +1,42 @@
+/* User preview: chat lines, mentions and the profile card in the tip */
+[data-example='tippy-js/user-preview-loader'] {
+  .scene {
+    padding: 18px 14px;
+  }
+  .chat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    font-size: 13px;
+    color: var(--fg-2);
+  }
+  .mention {
+    color: var(--accent);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .profile {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 0 8px;
+    align-items: center;
+    font-size: 12px;
+    text-align: left;
+  }
+  .avatar {
+    grid-row: span 2;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 700;
+  }
+  .profile em {
+    grid-column: 1 / -1;
+    margin-top: 4px;
+    font-size: 11px;
+    opacity: 0.7;
+  }
+}

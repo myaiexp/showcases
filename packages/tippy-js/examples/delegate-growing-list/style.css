@@ -1,0 +1,38 @@
+/* Chat bubbles stacked from the bottom */
+[data-example='tippy-js/delegate-growing-list'] {
+  .scene {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--space-3) var(--space-4);
+  }
+  .chat {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-bottom: 18px;
+  }
+  .msg {
+    align-self: flex-start;
+    max-width: 70%;
+    padding: 4px 10px;
+    border-radius: 12px;
+    background: var(--bg-raised);
+    font-size: 12px;
+    color: var(--fg-1);
+  }
+  .msg.mine {
+    align-self: flex-end;
+    background: var(--accent);
+    color: #fff;
+  }
+  .count {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--fg-3);
+  }
+}

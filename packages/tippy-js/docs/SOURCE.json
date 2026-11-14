@@ -1,5 +1,12 @@
 {
-  "license": "none found",
-  "redistribute": false,
-  "sources": []
+  "license": "MIT (atomiks/tippyjs LICENSE covers the repo, website/ docs source included)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/atomiks/tippyjs",
+      "ref": "master",
+      "paths": ["README.md", "website/src/pages/index.mdx", "website/src/pages/v6/*.mdx"]
+    }
+  ]
 }

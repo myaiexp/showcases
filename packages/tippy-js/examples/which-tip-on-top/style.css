@@ -1,0 +1,30 @@
+/* Two buttons close together, and one colour theme per tip */
+[data-example='tippy-js/which-tip-on-top'] {
+  .pin {
+    position: absolute;
+    top: 14px;
+  }
+  .help {
+    left: calc(50% - 86px);
+  }
+  .alert {
+    left: calc(50% + 14px);
+  }
+  .state {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: var(--space-2);
+    text-align: center;
+    color: var(--fg-3);
+    font-size: 11px;
+  }
+  .tippy-box[data-theme~='help'] {
+    background: #2563eb;
+    color: #fff;
+  }
+  .tippy-box[data-theme~='alert'] {
+    background: #dc2626;
+    color: #fff;
+  }
+}

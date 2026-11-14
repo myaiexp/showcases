@@ -1,0 +1,24 @@
+/* A readout, a Delete button and a status line, stacked in the middle */
+[data-example='tippy-js/touch-or-mouse'] {
+  .scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+    padding-top: 22px;
+  }
+  .input {
+    font-size: 11px;
+    color: var(--fg-2);
+    padding: 3px 8px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .message {
+    min-height: 1.4em;
+    margin-top: 40px;
+    font-size: 12px;
+    color: var(--green);
+  }
+}

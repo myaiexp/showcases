@@ -1,0 +1,8 @@
+/* Hello tooltip: the button sits in the middle of the scene */
+[data-example='tippy-js/hello-tooltip'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

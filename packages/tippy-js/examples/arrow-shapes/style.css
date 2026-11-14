@@ -1,0 +1,32 @@
+/* Each theme scales the arrow's ::before with transform, as the docs describe */
+[data-example='tippy-js/arrow-shapes'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: var(--space-4) var(--space-3);
+    margin-top: var(--space-4);
+  }
+  .btn {
+    padding: 4px 12px;
+  }
+  .tippy-box[data-theme~='large-arrow'] > .tippy-arrow::before {
+    transform: scale(1.5);
+  }
+  .tippy-box[data-theme~='small-arrow'] > .tippy-arrow::before {
+    transform: scale(0.65);
+  }
+  .tippy-box[data-theme~='wide-arrow'] > .tippy-arrow::before {
+    transform: scaleX(1.7);
+  }
+  .tippy-box[data-theme~='narrow-arrow'] > .tippy-arrow::before {
+    transform: scaleX(0.55);
+  }
+  .tippy-box[data-theme~='scaled-arrow'] > .tippy-arrow::before {
+    transform: scale(2);
+  }
+}

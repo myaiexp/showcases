@@ -1,0 +1,19 @@
+/* Button row and a red "danger" tip theme */
+[data-example='tippy-js/singleton-overrides'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .tippy-box[data-theme~='danger'] {
+    background-color: #c0392b;
+    color: #fff;
+  }
+  .tippy-box[data-theme~='danger'][data-placement^='top'] > .tippy-arrow::before {
+    border-top-color: #c0392b;
+  }
+}

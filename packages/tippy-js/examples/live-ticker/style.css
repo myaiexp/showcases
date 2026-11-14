@@ -1,0 +1,28 @@
+/* Two ticker rows and a line showing how many update timers are running */
+[data-example='tippy-js/live-ticker'] {
+  .scene {
+    padding: 14px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    font-size: 12px;
+    align-items: flex-start;
+  }
+  .sym {
+    padding: 4px 10px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--fg-1);
+    font-weight: 600;
+    cursor: default;
+  }
+  .timers {
+    color: var(--fg-3);
+    margin-top: var(--space-2);
+  }
+  .tippy-box {
+    font-size: 12px;
+    white-space: pre-line;
+  }
+}

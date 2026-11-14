@@ -1,0 +1,31 @@
+/* Two posts with a timestamp each, and a small page clock */
+[data-example='tippy-js/fresh-content-on-show'] {
+  .scene {
+    padding: 14px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    font-size: 12px;
+  }
+  .clock {
+    color: var(--fg-3);
+  }
+  .post {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: var(--space-2) var(--space-3);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--fg-2);
+  }
+  .stamp {
+    color: var(--accent);
+    cursor: default;
+    border-bottom: 1px dotted var(--accent);
+  }
+  .tippy-box {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,41 @@
+/* Placement ring: the profile card, its invisible references and the small labels */
+[data-example='tippy-js/placement-ring'] {
+  .card, .ref {
+    position: absolute;
+    left: calc(50% - 74px);
+    top: calc(50% - 36px);
+    width: 148px;
+    height: 72px;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    background: var(--bg-raised);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 13px;
+  }
+  .ref {
+    pointer-events: none;
+  }
+  .face {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .tippy-box {
+    font-size: 10px;
+  }
+  .tippy-content {
+    padding: 3px 5px;
+    white-space: nowrap;
+  }
+}

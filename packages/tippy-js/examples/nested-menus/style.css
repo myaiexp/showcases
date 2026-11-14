@@ -1,0 +1,52 @@
+/* Nested menus: the menu bar, both menus and the status line */
+[data-example='tippy-js/nested-menus'] {
+  .menubar {
+    display: flex;
+    gap: var(--space-1);
+    padding: var(--space-1) var(--space-2);
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border);
+  }
+  .top {
+    padding: 2px var(--space-3);
+    border: 0;
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--fg-1);
+    font: inherit;
+    cursor: pointer;
+  }
+  .top:hover {
+    background: var(--bg-raised);
+  }
+  .picked {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: var(--space-4);
+    text-align: center;
+    color: var(--fg-2);
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    min-width: 110px;
+    padding: var(--space-1) 0;
+  }
+  .item {
+    padding: 3px var(--space-3);
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 13px;
+    text-align: left;
+    cursor: pointer;
+  }
+  .item:hover, .item.lit {
+    background: #fff2;
+  }
+  .tippy-content {
+    padding: 0;
+  }
+}

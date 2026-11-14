@@ -1,0 +1,36 @@
+/* Vertical gauge: a tall bar fading from light water to deep water, with tick labels */
+[data-example='tippy-js/follow-cursor-vertical'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gauge {
+    position: relative;
+    width: 44px;
+    height: 84%;
+    border-radius: var(--radius);
+    background: linear-gradient(#5fd0ff, #1b6fb5 25%, #0b2a52 60%, #050b1c);
+    cursor: ns-resize;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tippy-box {
+    white-space: pre-line;
+  }
+  .mini {
+    justify-content: flex-start;
+    padding-left: 64px;
+  }
+  .mark {
+    position: relative;
+    left: -52px;
+    width: 46px;
+    text-align: right;
+    font-size: 11px;
+    color: var(--fg-3);
+    pointer-events: none;
+    line-height: 1;
+  }
+}
