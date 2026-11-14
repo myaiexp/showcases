@@ -1,0 +1,10 @@
+/* Scrub seek progress: a tiny video-player style stage */
+[data-example='motion/scrub-seek-progress'] {
+  > div, > ul { width: fit-content; max-width: 100%; margin-inline: auto; }
+  > p { margin-inline: auto; }
+  .player { width: min(100%, 300px); }
+  .screen { display: grid; place-items: center; height: 130px; border-radius: 12px; overflow: hidden; background: #0e1020; border: 1px solid var(--border); }
+  .blob { width: 54px; height: 54px; border-radius: 14px; background: #5b6cff; }
+  .scrub { margin-top: var(--space-2); }
+  .scrub input { width: 100%; accent-color: var(--accent); }
+}

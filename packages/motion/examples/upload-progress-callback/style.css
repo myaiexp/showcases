@@ -1,0 +1,12 @@
+/* Upload progress callback: a file row with a progress bar */
+[data-example='motion/upload-progress-callback'] {
+  > div, > ul { width: fit-content; max-width: 100%; margin-inline: auto; }
+  > p { margin-inline: auto; }
+  .upload { width: min(100%, 280px); }
+  .row { padding: var(--space-3); border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); }
+  .file { display: flex; justify-content: space-between; margin-bottom: var(--space-2); font-size: 0.8rem; color: var(--fg-1); }
+  .pct { font-variant-numeric: tabular-nums; color: var(--fg-2); }
+  .track { height: 8px; border-radius: 4px; background: var(--bg-raised); overflow: hidden; }
+  .fill { display: block; height: 100%; background: #6366f1; transform-origin: left; transform: scaleX(0); }
+  .status { margin-top: var(--space-2); font-size: 0.7rem; color: var(--fg-3); }
+}

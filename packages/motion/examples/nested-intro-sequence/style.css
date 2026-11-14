@@ -1,0 +1,13 @@
+/* Nested intro sequence: a page with nav, intro and cards */
+[data-example='motion/nested-intro-sequence'] {
+  > div, > ul { width: fit-content; max-width: 100%; margin-inline: auto; }
+  > p { margin-inline: auto; }
+  .page { display: flex; flex-direction: column; gap: var(--space-3); width: min(100%, 300px); padding: var(--space-3); border-radius: 12px; background: var(--bg-surface); border: 1px solid var(--border); }
+  .nav { display: flex; gap: var(--space-2); }
+  .nav i { width: 36px; height: 8px; border-radius: 4px; background: var(--fg-3); }
+  .intro { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-2) 0; }
+  .logo { width: 36px; height: 36px; border-radius: 10px; background: var(--accent); }
+  .tag { font-size: 1rem; font-weight: 700; color: var(--fg-1); }
+  .cards { display: flex; gap: var(--space-2); }
+  .cards i { flex: 1; height: 42px; border-radius: 8px; background: var(--bg-raised); border: 1px solid var(--border); }
+}

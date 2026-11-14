@@ -20,6 +20,11 @@
 //   as the first rule inside the example's scoped block.
 // - animate(obj, { v: target }) is skipped as already finished when target equals the current value.
 //   That includes type: 'inertia', which ignores the target: pass any value that differs (current + 1).
+// - Timelines: call() callbacks do not run on seek(), `time =` or `progress =`, only while playing
+//   (playTo() counts). add/move/remove apply on the next microtask, so `duration` read right after
+//   still has the old value. reverse() toggles direction; use playTo(0) / playTo(duration) to close.
+// - A single-value target can fail to animate from a CSS-set start (opacity: 0 in style.css): give
+//   the first animation explicit [from, to] keyframes.
 // - Not verified that `motion/mini` animations join a scope: keep their controls and stop() them yourself.
 
 export interface Panel {
