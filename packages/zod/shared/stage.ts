@@ -70,6 +70,15 @@
 //   from Zod 3. StandardSchemaV1 is not exported from zod/v4/core: declare ~standard locally.
 // - z.getDiscriminatedOption(union, unknownKind) returns undefined (types allow known kinds).
 // - .isOptional()/.isNullable() are both true for .catch(), z.any() and z.unknown().
+// - None of the docs' "useful codecs" (stringToNumber, json(), base64ToBytes…) is exported
+//   in 4.6.7: only z.codec, z.invertCodec and z.stringbool. Define them as the docs show.
+// - A codec whose decode throws (BigInt("abc"), decodeURIComponent("100%")) escapes
+//   safeDecode as a plain error, not an issue. A transform throws $ZodEncodeError on encode,
+//   even through safeEncode. .encode() through .default()/.prefault()/.catch() fails.
+// - z.compile() works here (new Function, no CSP); a cold first race can show no speed-up.
+//   It returns the same schema for async refines, .catch(fn) and recursion.
+// - Never wrap stage.wait() in a promise a sync call may abandon: it rejects unhandled at
+//   dispose. Use new Promise((r) => stage.after(ms, r)) for pretend servers.
 import type { MountContext } from '@/types.ts';
 import './zod.css';
 

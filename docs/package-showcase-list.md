@@ -275,7 +275,7 @@ These are better as compact, text-output examples. Build them after the visual t
 | 217 | fast-check (`fast-check`) | v4 2025-03 | repo ✓ MIT | Property-based testing with shrinking, model-based and race-condition runs; examples show counterexamples and shrink traces. Docs are `website/docs` (68 pages) |
 | 218 | ArkType (`arktype`) | v2 2025-01 | repo ✓ MIT | Validation written in TS syntax: morphs, scopes, `match`, JSON Schema, plus `arkregex`. Docs are `ark/docs/content` (34 pages); the `attest` pages stay out |
 | 219 | Loro (`loro-crdt`) | 1.x 2024 (1.17 2026-10) | repo ✗lic | CRDTs with rich text, movable trees and time travel (3.4 MB WASM). Docs repo `loro-dev/loro-docs` has no licence; ~45 English pages under `pages/docs` |
-| 220 | Zod (`zod`) *(legacy in gallery)* | v4 2025-07 | repo ✓ MIT | Validation |
+| 220 | Zod (`zod`) ✅ built | v4 2025-07 | repo ✓ MIT | Validation. Docs are the zod.dev source (`packages/docs/content/*.mdx`) at v4.6.7 plus the package README and the 4.5, 4.6 and `z.compile()` posts; the other blog posts are essays, not docs |
 | 221 | Valibot (`valibot`) | v1 2025-03 | repo ✓ MIT | Validation |
 | 222 | Arquero (`arquero`) | v8 2025-02 | site | Data wrangling; repo BSD-3 |
 | 223 | Marked + DOMPurify (`marked`) ✅ built | v18 2026-04 | repo ✓ MIT | Markdown. Docs are the repo `docs/` pages (INDEX, USING_ADVANCED, USING_PRO, broken.md), README and `src/`; `docs/demo/` stays out |

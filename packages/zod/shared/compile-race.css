@@ -1,0 +1,50 @@
+/* Compile kit: the two timing bars of compile-race.ts */
+.cr {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.cr-row {
+  display: grid;
+  grid-template-columns: 7.5em minmax(0, 1fr) 6em;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+.zd-card .cr-row {
+  grid-template-columns: 6em minmax(0, 1fr) 4.6em;
+}
+.cr-label {
+  color: var(--accent-text);
+  font-family: var(--font-mono);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cr-track {
+  height: 12px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+}
+.cr-bar {
+  height: 100%;
+  background: var(--fg-3);
+  width: 0;
+}
+.cr-row[data-fast] .cr-bar {
+  background: var(--green);
+}
+.cr-ms {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg-1);
+}
+.cr-verdict {
+  font-size: 13px;
+  color: var(--fg-2);
+  min-height: 1.4em;
+}
+.cr-verdict[data-tone='ok'] {
+  color: var(--green);
+}
