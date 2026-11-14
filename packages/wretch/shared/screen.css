@@ -59,3 +59,18 @@
 .wr-card .wr-kv {
   padding: 2px 6px;
 }
+/* A card column can be ~120px wide: let each "key value" pair flow as one line of text */
+.wr-card .wr-kv-row {
+  display: block;
+}
+.wr-card .wr-kv-k {
+  margin-right: 0.5em;
+}
+.wr-card .wr-kv-v {
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+.wr-card .wr-kv-k,
+.wr-card .wr-kv-v {
+  display: inline;
+}

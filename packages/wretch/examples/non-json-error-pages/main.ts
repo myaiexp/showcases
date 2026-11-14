@@ -19,7 +19,8 @@ const BRANCHES = ['application/json', 'text/html', 'anything else'];
 const mount: Mount = (el, ctx) => {
   const stage = createStage(el, ctx, { hint: 'Three failures, three kinds of body. The same handler copes with all of them.' });
   const server = createServer(stage, { 'POST /posts/:who': (req) => FAILURES[req.params['who']!]! });
-  wire(stage, server, { rows: 0 });
+  // A card has no room for the wire as well as the three panes below.
+  if (!stage.preview) wire(stage, server, { rows: 0 });
   const seen = kv(stage.root, 'What came back');
   const branch = chips(stage.root, BRANCHES, 'Which branch ran');
   const shown = screen(stage.root, 'What the app shows');
@@ -55,7 +56,7 @@ const mount: Mount = (el, ctx) => {
         seen.set([
           ['status', String(error.status)],
           ['type', error.contentType.split(';')[0]!],
-          ['body', isPage ? `(${String(error.body).length} characters of HTML)` : JSON.stringify(error.body)],
+          ...(stage.preview ? [] : [['body', isPage ? `(${String(error.body).length} characters of HTML)` : JSON.stringify(error.body)] as [string, string]]),
         ]);
         const friendly = isPage ? 'The site is having trouble. Please try again in a minute.' : String((error.body as { message?: string }).message ?? error.body);
         shown.show(friendly, isPage ? 'bad' : 'warn');

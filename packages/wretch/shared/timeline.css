@@ -65,3 +65,6 @@
   transform: none;
 }
 
+.wr-tl-tick:last-child:not(:first-child) {
+  transform: translateX(-100%);
+}
