@@ -1,13 +1,13 @@
-// Fuse.js example: type-ahead fuzzy search over a list of packages
+// Fuse.js example: a book search that still finds what you meant when you mistype
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: 'Live fuzzy search',
+  title: 'Search that forgives typos',
   summary:
-    'Type to fuzzy-search a list of popular JS packages. Try typos such as "recat" or "loash"; Fuse still finds the match and highlights it.',
-  section: 'Basics',
-  tags: ['search', 'typos', 'includeMatches'],
-  docs: [],
-  provenance: 'legacy',
-  added: '2026-03-03',
+    'Type "jon", "javscript" or "gatsbi" into a book search: Fuse.js still finds John Scalzi, JavaScript and The Great Gatsby, ranks the closest first and marks the letters that matched.',
+  section: 'Getting Started',
+  tags: ['new Fuse', 'search', 'keys', 'includeMatches', 'includeScore', 'typos'],
+  docs: ['repo/docs/getting-started.md', 'repo/docs/index.md', 'repo/README.md'],
+  provenance: 'pure',
+  added: '2026-11-14',
 });

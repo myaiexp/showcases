@@ -1,0 +1,55 @@
+[data-example='fuse-js/basic-build'] {
+  .fb-table {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.9em;
+  }
+  .fb-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1.4fr);
+    gap: 6px;
+    align-items: center;
+  }
+  .fb-head {
+    color: var(--fg-3);
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+  }
+  .fb-name {
+    display: flex;
+    flex-direction: column;
+    color: var(--fg-1);
+  }
+  .fb-call {
+    color: var(--fg-3);
+    font-size: 0.75em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .fb-cell {
+    padding: 3px 7px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+    overflow-wrap: anywhere;
+  }
+  .fb-ok {
+    color: var(--green);
+  }
+  .fb-no {
+    color: var(--red);
+    font-size: 0.85em;
+  }
+  .fb-wait {
+    color: var(--fg-3);
+  }
+  .fz-card .fb-table {
+    gap: 3px;
+    font-size: 0.8em;
+  }
+  .fz-card .fb-cell {
+    padding: 1px 5px;
+  }
+}

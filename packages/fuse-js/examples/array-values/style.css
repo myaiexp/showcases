@@ -1,0 +1,16 @@
+[data-example='fuse-js/array-values'] {
+  .ar-chip {
+    display: inline-block;
+    margin-right: 4px;
+    padding: 0 7px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--bg-surface);
+    color: var(--fg-3);
+    font-size: 0.85em;
+  }
+  .ar-hit {
+    border-color: var(--accent);
+    color: var(--fg-1);
+  }
+}

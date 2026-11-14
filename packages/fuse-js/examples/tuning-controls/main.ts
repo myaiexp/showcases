@@ -1,126 +1,73 @@
-// Fuse search with sliders that rebuild the index options; card sweeps threshold
+// Threshold, location and distance on one list: which notes still count as a match
 import Fuse from 'fuse.js';
 import type { Mount } from '@/types.ts';
-import { PACKAGES, type Pkg } from './data.ts';
-import { renderAll, renderResults } from './render.ts';
-import './style.css';
+import { checkbox, slider } from '../../shared/controls.ts';
+import { marked } from '../../shared/highlight.ts';
+import { shelf, type Hit } from '../../shared/shelf.ts';
+import { searchBox } from '../../shared/search-box.ts';
+import { createStage } from '../../shared/stage.ts';
+import { pills } from '../../shared/widgets.ts';
 
-const INITIAL = { threshold: 0.4, distance: 100, minMatchCharLength: 1 };
-
-interface Slider {
-  key: keyof typeof INITIAL;
-  min: number;
-  max: number;
-  step: number;
-  value: number;
-  desc: string;
-  fmt: (v: number) => string;
-}
-
-const SLIDERS: readonly Slider[] = [
-  { key: 'threshold', min: 0, max: 1, step: 0.05, value: 0.4, fmt: (v) => v.toFixed(2),
-    desc: '0 = perfect match only, 1 = match everything' },
-  { key: 'distance', min: 0, max: 1000, step: 10, value: 100, fmt: (v) => String(v),
-    desc: 'How far from the expected location a match can be' },
-  { key: 'minMatchCharLength', min: 1, max: 8, step: 1, value: 1, fmt: (v) => String(v),
-    desc: 'Minimum characters that must match' },
+// "coffee" sits at the start, the middle and the end of these notes, and look-alike
+// words (toffee, coffin, copy) sit near the start.
+const NOTES = [
+  'coffee beans from Kenya',
+  'buy milk, bread and coffee',
+  'toffee apples for the party',
+  'coffin nails for the shed',
+  'copy the report for Monday',
+  'call the plumber about the leak in the kitchen, then pick up coffee',
+  'cafe on the corner opens at eight',
 ];
 
-const makeFuse = (threshold: number, distance: number, minMatchCharLength: number): Fuse<Pkg> =>
-  new Fuse<Pkg>(PACKAGES, {
-    keys: ['name', 'description'],
-    includeScore: true,
-    includeMatches: true,
-    threshold,
-    distance,
-    minMatchCharLength,
-  });
+interface Dials {
+  threshold: number;
+  location: number;
+  distance: number;
+  ignoreLocation: boolean;
+}
 
-const mount: Mount = (stage, { preview }) => {
-  const el = document.createElement('div');
-  el.className = 'root';
-  stage.append(el);
-  const input = document.createElement('input');
-  input.type = 'text';
-  input.className = 'search-input';
-  input.placeholder = 'Type here to test tuned search...';
-  const list = document.createElement('ul');
-  list.className = 'results-list';
+const CARD_STEPS: Dials[] = [
+  { threshold: 0.0, location: 0, distance: 100, ignoreLocation: false },
+  { threshold: 0.3, location: 0, distance: 100, ignoreLocation: false },
+  { threshold: 0.6, location: 0, distance: 100, ignoreLocation: false },
+  { threshold: 0.3, location: 0, distance: 100, ignoreLocation: true },
+];
 
-  const values = { ...INITIAL };
+const mount: Mount = (el, ctx) => {
+  const stage = createStage(el, ctx, { hint: 'Lower threshold = stricter. Small distance = the word must be near location.' });
+  const box = searchBox(stage.root, stage, { value: 'coffee', tries: ['coffee', 'cofee', 'kofi', 'plumber', 'eight'] });
+  const info = stage.preview ? pills(stage.root) : null;
+  const notes = shelf(stage.root, NOTES.map((label, id) => ({ id, label })), { layout: 'list' });
+  const dials: Dials = { ...CARD_STEPS[2]! };
 
-  const search = (): void => {
-    const query = input.value.trim();
-    if (!query) {
-      renderAll(PACKAGES, list);
-      return;
-    }
-    const fuse = makeFuse(values.threshold, values.distance, values.minMatchCharLength);
-    renderResults(fuse.search(query), list, preview ? 2 : 10);
+  const run = (): void => {
+    // The sliders show the dials in the full view; a card names them in pills instead.
+    info?.set('threshold', dials.threshold.toFixed(2));
+    info?.set('ignoreLocation', String(dials.ignoreLocation));
+    // The three dials go straight into the options; Fuse is rebuilt on every change.
+    const fuse = new Fuse(NOTES, { ...dials, includeScore: true, includeMatches: true });
+    const results = fuse.search(box.value);
+    const hits = new Map<number, Hit>();
+    results.forEach((r, i) => hits.set(r.refIndex, { score: r.score, nodes: marked(r, undefined, r.item), rank: i + 1 }));
+    notes.mark(box.value ? hits : null);
+    stage.say(`${results.length} of ${NOTES.length} notes count as a match for "${box.value}"`, results.length ? 'ok' : 'warn');
   };
 
-  if (preview) {
-    input.readOnly = true;
-    input.value = 'frmework';
-    const label = document.createElement('div');
-    label.className = 'sweep';
-    el.append(label, input, list);
-    const thresholds = [0.1, 0.3, 0.5, 0.7];
-    let i = 0;
-    const step = (): void => {
-      values.threshold = thresholds[i++ % thresholds.length] ?? 0.4;
-      label.textContent = `threshold ${values.threshold.toFixed(2)}`;
-      search();
-    };
-    step();
-    const timer = window.setInterval(step, 2200);
-    return () => clearInterval(timer);
+  if (stage.preview) {
+    stage.cycle(CARD_STEPS, 2200, (step) => {
+      Object.assign(dials, step);
+      run();
+    });
+  } else if (stage.bar) {
+    slider(stage.bar, 'threshold', 0, 1, 0.05, dials.threshold, (v) => ((dials.threshold = v), run()), (v) => v.toFixed(2));
+    slider(stage.bar, 'location', 0, 60, 1, dials.location, (v) => ((dials.location = v), run()));
+    slider(stage.bar, 'distance', 0, 200, 5, dials.distance, (v) => ((dials.distance = v), run()));
+    checkbox(stage.bar, 'ignoreLocation', dials.ignoreLocation, (v) => ((dials.ignoreLocation = v), run()));
+    box.onInput(run);
+    run();
   }
-
-  const controls = document.createElement('div');
-  controls.className = 'controls';
-  const cleanups: (() => void)[] = [];
-  for (const s of SLIDERS) {
-    const row = document.createElement('div');
-    row.className = 'control-row';
-    const label = document.createElement('label');
-    const name = document.createElement('span');
-    name.textContent = s.key;
-    const val = document.createElement('span');
-    val.className = 'val';
-    val.textContent = s.fmt(s.value);
-    label.append(name, val);
-    const range = document.createElement('input');
-    range.type = 'range';
-    range.min = String(s.min);
-    range.max = String(s.max);
-    range.step = String(s.step);
-    range.value = String(s.value);
-    const desc = document.createElement('span');
-    desc.className = 'control-desc';
-    desc.textContent = s.desc;
-    const onInput = (): void => {
-      const v = Number(range.value);
-      values[s.key] = v;
-      val.textContent = s.fmt(v);
-      search();
-    };
-    range.addEventListener('input', onInput);
-    cleanups.push(() => range.removeEventListener('input', onInput));
-    row.append(label, range, desc);
-    controls.append(row);
-  }
-  const field = document.createElement('div');
-  field.className = 'field';
-  field.append(input, list);
-  el.append(controls, field);
-  renderAll(PACKAGES, list);
-  input.addEventListener('input', search);
-
-  return () => {
-    input.removeEventListener('input', search);
-    cleanups.forEach((c) => c());
-  };
+  return stage.dispose;
 };
 
 export default mount;

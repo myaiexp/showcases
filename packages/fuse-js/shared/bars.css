@@ -1,0 +1,44 @@
+/* Timing bars for the performance and worker examples */
+.fz-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.fz-card .fz-bars {
+  gap: 3px;
+}
+.fz-bars-row {
+  display: grid;
+  grid-template-columns: minmax(5em, 0.9fr) minmax(0, 2fr) minmax(4.5em, auto);
+  gap: 8px;
+  align-items: center;
+}
+.fz-bars-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--fg-2);
+}
+.fz-bars-track {
+  height: 12px;
+  border-radius: 6px;
+  background: var(--bg-surface);
+  overflow: hidden;
+}
+.fz-card .fz-bars-track {
+  height: 9px;
+}
+.fz-bars-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 6px;
+  background: var(--accent);
+  transition: width 0.4s ease-out;
+}
+.fz-bars-num {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  text-align: right;
+  color: var(--fg-2);
+  white-space: nowrap;
+}

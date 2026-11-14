@@ -282,7 +282,7 @@ These are better as compact, text-output examples. Build them after the visual t
 | 224 | ky *(legacy in gallery)* | v2 2026-04 | README MIT | HTTP |
 | 225 | Wretch *(legacy in gallery)* | v3 2025-10 | README MIT | HTTP |
 | 226 | **Tone.js** (`tone`) ✅ built | v15 2024-05 | repo ✗lic (wiki) + source | Audio; `next` tag far ahead of `latest` |
-| 227 | Fuse.js *(legacy in gallery)* | v7 2023-10 | repo ✓ Apache | Fuzzy search. VitePress `docs/`, 9 pages |
+| 227 | Fuse.js (`fuse.js`) ✅ built | v7 2023-10 | repo ✓ Apache | Fuzzy search. Docs are the VitePress `docs/` pages and articles at v7.5.0 plus README, CHANGELOG and `src/` (the site has no API reference pages any more); `demo.md` and the Vue demo components stay out |
 | 228 | Dexie.js (`dexie`) ✅ built | v4 2024-03 | repo ✗lic (`dexie/dexie-web` `docs/`) | IndexedDB. `docs/cloud` (needs a sync server) and the Samples page (links to official demos) stay out; dexie 4.4.7 live-query cache bug worked around in `shared/cache-fix.ts` |
 | 229 | Papa Parse (`papaparse`) ✅ built | v5 2019 | repo ✓ MIT | CSV. Docs are the site source in the repo's `docs/` (docs, FAQ, home) at 5.7.1 plus README, CHANGELOG and source; `demo.html` and `player/` stay out. Downloads go to an in-page fake server |
 | 230 | Floating UI (`@floating-ui/dom`) | v1 2022 | repo ✓ MIT | Positioning; replaces archived Tippy |

@@ -1,0 +1,30 @@
+/* Option cards: tried in Fuse and in FuseWorker, with the outcome of each */
+[data-example='fuse-js/worker-function-options'] {
+  .trial {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.6fr) minmax(0, 1.4fr);
+    gap: 8px;
+    align-items: start;
+    padding: 3px 8px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-surface);
+  }
+  .trial[data-active='true'] {
+    border-color: var(--accent);
+  }
+  .opt {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .ok {
+    color: var(--green);
+  }
+  .bad {
+    color: var(--red);
+    font-size: 0.85em;
+  }
+}

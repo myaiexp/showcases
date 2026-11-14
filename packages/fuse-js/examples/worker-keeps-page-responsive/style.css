@@ -1,0 +1,39 @@
+/* Worker vs page: two lanes with a ball each */
+[data-example='fuse-js/worker-keeps-page-responsive'] {
+  .lanes {
+    display: grid;
+    gap: 10px;
+  }
+  .lane {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .lane-head {
+    color: var(--fg-2);
+    font-size: 0.85em;
+  }
+  .lane-track {
+    position: relative;
+    height: 16px;
+    border-radius: 8px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+  }
+  .lane-ball {
+    position: absolute;
+    top: 1px;
+    width: 14px;
+    height: 12px;
+    border-radius: 6px;
+    background: var(--accent);
+  }
+  .lane-gap {
+    font-family: var(--font-mono);
+    font-size: 0.8em;
+    color: var(--green);
+  }
+  .lane-gap[data-bad='true'] {
+    color: var(--red);
+  }
+}

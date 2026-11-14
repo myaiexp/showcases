@@ -1,0 +1,30 @@
+/* Timelines of keystrokes and searches */
+[data-example='fuse-js/debounced-search'] {
+  .tl {
+    position: relative;
+    height: 14px;
+    border-radius: 3px;
+    background: var(--bg-surface);
+    overflow: hidden;
+  }
+  .tick {
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    width: 3px;
+    border-radius: 1px;
+  }
+  .tick.key {
+    background: var(--fg-3);
+  }
+  .tick.search {
+    background: var(--accent);
+  }
+  .tl-label {
+    font-size: 0.8em;
+    color: var(--fg-3);
+  }
+  .tl-label b {
+    color: var(--fg-1);
+  }
+}
