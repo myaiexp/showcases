@@ -90,3 +90,6 @@ GitHub Pages. No service on the VPS.
   to it. The option reference has one gallery section per series type (`Option: series.<type>`).
   Tags are option paths: `test/echarts-citations.test.ts` fails when a tag's name is not in the
   cited docs, usually a partial reached through `{{ use: }}` that `meta.docs` leaves out.
+- VChart: read the trap list in `packages/vchart/shared/chart.ts` before building, and add to
+  it. Never call `VChart.ThemeManager.setCurrentTheme` (it restyles every card); register
+  themes, maps and functions under unique prefixed names (`showcase-…`, `vchart-…`), and leave them.

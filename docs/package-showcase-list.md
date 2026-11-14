@@ -45,7 +45,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 10 | cobe (`cobe`) | 5 | v2 2026-03 | README MIT | 10 | Small WebGL dotted globe |
 | 11 | AntV Infographic (`@antv/infographic`) | 5 | 0.1 2025-11 | unchecked | 40 | New, infographic templates |
 | 12 | **Apache ECharts** (`echarts`) ✅ built | 5 | v6 2025-07 | repo ✓ Apache | 400 | Biggest chart breadth, animated, 3D. Docs are the handbook (`apache/echarts-handbook`) plus the option and API reference (`apache/echarts-doc`); the handbook's embedded gallery demos stay out (pattern.md § Purity). ECharts GL is a separate package |
-| 13 | VChart (`@visactor/vchart`) | 5 | v2 2025-06 | unchecked | 150 | Narrative/animated charts |
+| 13 | **VChart** (`@visactor/vchart`) ✅ built | 5 | v2 2025-06 | repo ✓ MIT | 150 | Narrative/animated charts. Docs are `docs/assets/{guide,option,api,changelog,faq}` in VisActor/VChart; its `examples/` and `demos/` gallery stays out. 3D charts and the extension charts need `@visactor/vchart-extension` |
 | 14 | GSAP (`gsap`) ✅ built | 5 | 3.x, plugins free since 2025 | site | 250 | SplitText, MorphSVG, ScrollTrigger, Flip. Non-OSI licence |
 | 15 | Paper Shaders (`@paper-design/shaders`) | 5 | 0.0.x 2024-10 | unchecked | 30 | Shader-effect pack, vanilla build alongside React |
 | 16 | PlayCanvas (`playcanvas`) ✅ built | 5 | v2 2024-08 | repo ✓ MIT | 350 | Engine with Gaussian splats. Docs are the developer-site user manual (engine chapters plus the component reference); the Editor-based tutorials stay out because each embeds a demo project. Physics loads sync-ammo; splats, models and textures are generated in code |

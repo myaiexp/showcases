@@ -95,6 +95,12 @@ export interface Chart {
  * - A storyline title is dark with a white stroke by default; restyle it for dark pages.
  * - A hand-made GeoJSON polygon must wind clockwise for registerMap; getMap returns a DataView.
  * - 'rendered' does not fire on updateData; 'layoutEnd' does (re-pin overlays there).
+ * - Custom marks: a style callback returning undefined for an attribute can hide the mark,
+ *   stroke needs a lineWidth (default 0), the first render precedes the canvas size (call
+ *   updateData once after), and group children get no datum from the group (give each a dataId).
+ * - wordBreak 'keep-all' draws nothing when a word is wider than maxLineWidth.
+ * - A rect mark's `background` image fill did not draw; the chart-level background does.
+ * - animationThreshold is a chart-level key in the types and changelog, not the option docs.
  * - Scrollbar.md's `roam: true` is not in IScrollBarSpec; use roamDrag, roamZoom or roamScroll.
  * - `stateDef` (Legend.md) is missing from the ISpec types, so that spec needs a cast.
  * - tooltip.renderMode 'canvas' draws nothing with the full import; the default HTML
