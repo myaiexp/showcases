@@ -1,0 +1,1390 @@
+/**
+ * Creating a sidebar enables you to:
+ - create an ordered group of docs
+ - render a sidebar for each doc of that group
+ - provide next/previous navigation
+
+ The sidebars can be generated from the filesystem, or explicitly defined here.
+
+ Create as many sidebars as you want.
+ */
+
+// @ts-check
+
+// Section headers are raw HTML items, which Docusaurus does not translate, so their
+// labels are picked per locale here. This file is reloaded for each locale, and both
+// `docusaurus build` and `docusaurus start` set DOCUSAURUS_CURRENT_LOCALE beforehand.
+/** @type {Record<string, Record<string, string>>} */
+const sectionHeaderLabels = {
+  ja: {
+    'Introduction': 'イントロダクション',
+    'Core Products': '主要製品',
+    'Common Topics': '共通トピック',
+    'Foundational APIs': '基盤API',
+    'Additional Resources': 'その他のリソース',
+  },
+};
+
+/**
+ * @param {string} label - The English label.
+ * @returns {{ type: 'html', value: string }} The header item for the current locale.
+ */
+const sectionHeader = (label) => {
+  const locale = process.env.DOCUSAURUS_CURRENT_LOCALE ?? 'en';
+  const text = sectionHeaderLabels[locale]?.[label] ?? label;
+  return { type: 'html', value: `<div class="sidebar-section-header">${text}</div>` };
+};
+
+/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
+const sidebars = {
+  // User Manual sidebar with custom groupings
+  userManualSidebar: [
+    sectionHeader('Introduction'),
+    'user-manual/index',
+    {
+      type: 'category',
+      label: 'Getting Started',
+      key: 'general-getting-started',
+      link: {
+        type: 'doc',
+        id: 'user-manual/getting-started/index',
+      },
+      items: [
+        'user-manual/getting-started/start-with-create-playcanvas',
+        'user-manual/getting-started/use-playcanvas-skills',
+        'user-manual/getting-started/migrating-from-unity',
+        'user-manual/getting-started/community',
+        'user-manual/getting-started/open-source',
+        'user-manual/getting-started/made-with-playcanvas',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Account Management',
+      link: {
+        type: 'doc',
+        id: 'user-manual/account-management/index',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'User Accounts',
+          link: {
+            type: 'doc',
+            id: 'user-manual/account-management/user-accounts/index',
+          },
+          items: [
+            'user-manual/account-management/user-accounts/account-creation',
+            'user-manual/account-management/user-accounts/user-home',
+            'user-manual/account-management/user-accounts/settings',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Organizations',
+          link: {
+            type: 'doc',
+            id: 'user-manual/account-management/organizations/index',
+          },
+          items: [
+            'user-manual/account-management/organizations/creating',
+            'user-manual/account-management/organizations/managing',
+          ],
+        },
+        'user-manual/account-management/billing'
+      ],
+    },
+    sectionHeader('Core Products'),
+    {
+      type: 'category',
+      label: 'PlayCanvas Engine',
+      link: {
+        type: 'doc',
+        id: 'user-manual/engine/index',
+      },
+      items: [
+        'user-manual/engine/supported-browsers',
+        'user-manual/engine/standalone',
+        'user-manual/engine/bundle-size',
+        'user-manual/engine/running-in-node',
+        'user-manual/engine/versioning',
+        'user-manual/engine/migrations',
+        'user-manual/engine/developing-with-ai',
+        {
+          type: 'category',
+          label: 'Add-on Libraries',
+          link: {
+            type: 'doc',
+            id: 'user-manual/engine/libraries/index',
+          },
+          items: [
+            'user-manual/engine/libraries/spine',
+            'user-manual/engine/libraries/3d-tiles',
+            'user-manual/engine/libraries/tween',
+            'user-manual/engine/libraries/loaders-gl',
+          ],
+        },
+        { type: 'link', label: 'Examples', key: 'engine-examples', href: 'https://playcanvas.com/examples' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'PlayCanvas Editor',
+      link: {
+        type: 'doc',
+        id: 'user-manual/editor/index',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'Getting Started',
+          key: 'editor-getting-started',
+          link: {
+            type: 'doc',
+            id: 'user-manual/editor/getting-started/index',
+          },
+          items: [
+            'user-manual/editor/getting-started/workflow',
+            'user-manual/editor/getting-started/your-first-app',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Projects',
+          link: {
+            type: 'doc',
+            id: 'user-manual/editor/projects/index',
+          },
+          items: [
+            'user-manual/editor/projects/creating',
+            'user-manual/editor/projects/dashboard',
+            'user-manual/editor/projects/settings',
+            'user-manual/editor/projects/team-management',
+            'user-manual/editor/projects/dev-logs',
+            'user-manual/editor/projects/downloading',
+            'user-manual/editor/projects/backup-and-export',
+            'user-manual/editor/projects/ownership-transfers',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Editor Interface',
+          link: {
+            type: 'doc',
+            id: 'user-manual/editor/interface/index',
+          },
+          items: [
+            'user-manual/editor/interface/toolbar',
+            'user-manual/editor/interface/hierarchy',
+            'user-manual/editor/interface/inspector',
+            'user-manual/editor/interface/assets',
+            'user-manual/editor/interface/viewport',
+            {
+              type: 'category',
+              label: 'Launch Page',
+              link: {
+                type: 'doc',
+                id: 'user-manual/editor/interface/launch-page/index',
+              },
+              items: [
+                'user-manual/editor/interface/launch-page/custom-engine',
+                'user-manual/editor/interface/launch-page/loading-screen',
+              ],
+            },
+            'user-manual/editor/interface/keyboard-shortcuts',
+            {
+              type: 'category',
+              label: 'Project Settings',
+              link: {
+                type: 'doc',
+                id: 'user-manual/editor/interface/settings/index',
+              },
+              items: [
+                'user-manual/editor/interface/settings/engine',
+                'user-manual/editor/interface/settings/editor',
+                'user-manual/editor/interface/settings/asset-import',
+                'user-manual/editor/interface/settings/physics',
+                'user-manual/editor/interface/settings/rendering',
+                'user-manual/editor/interface/settings/layers',
+                'user-manual/editor/interface/settings/lightmapping',
+                'user-manual/editor/interface/settings/batch-groups',
+                'user-manual/editor/interface/settings/launch-page',
+                'user-manual/editor/interface/settings/input',
+                'user-manual/editor/interface/settings/localization',
+                'user-manual/editor/interface/settings/network',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Assets',
+          key: 'editor-assets',
+          link: {
+            type: 'doc',
+            id: 'user-manual/editor/assets/index',
+          },
+          items: [
+            'user-manual/editor/assets/asset-panel',
+            'user-manual/editor/assets/importing',
+            {
+              type: 'category',
+              label: 'Import Pipeline',
+              link: {
+                type: 'doc',
+                id: 'user-manual/editor/assets/import-pipeline/index',
+              },
+              items: [
+                'user-manual/editor/assets/import-pipeline/import-hierarchy',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Asset Inspectors',
+              link: {
+                type: 'doc',
+                id: 'user-manual/editor/assets/inspectors/index',
+              },
+              items: [
+                'user-manual/editor/assets/inspectors/animation',
+                'user-manual/editor/assets/inspectors/audio',
+                'user-manual/editor/assets/inspectors/css',
+                'user-manual/editor/assets/inspectors/cubemap',
+                'user-manual/editor/assets/inspectors/font',
+                'user-manual/editor/assets/inspectors/gsplat',
+                'user-manual/editor/assets/inspectors/html',
+                'user-manual/editor/assets/inspectors/json',
+                'user-manual/editor/assets/inspectors/material',
+                'user-manual/editor/assets/inspectors/render',
+                'user-manual/editor/assets/inspectors/shader',
+                'user-manual/editor/assets/inspectors/sprite',
+                'user-manual/editor/assets/inspectors/template',
+                'user-manual/editor/assets/inspectors/text',
+                'user-manual/editor/assets/inspectors/texture',
+                'user-manual/editor/assets/inspectors/texture-atlas',
+                'user-manual/editor/assets/inspectors/wasm',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Asset Store',
+              link: {
+                type: 'doc',
+                id: 'user-manual/editor/assets/asset-store/index',
+              },
+              items: [
+                'user-manual/editor/assets/asset-store/sketchfab',
+              ],
+            },
+            'user-manual/editor/assets/viewers',
+          ],
+        },
+        'user-manual/editor/realtime-collaboration',
+        {
+          type: 'category',
+          label: 'Working with Scenes',
+          link: {
+            type: 'doc',
+            id: 'user-manual/editor/scenes/index',
+          },
+          items: [
+            'user-manual/editor/scenes/managing-scenes',
+            {
+              type: 'category',
+              label: 'Components',
+              link: {
+                type: 'doc',
+                id: 'user-manual/editor/scenes/components/index',
+              },
+              items: [
+                'user-manual/editor/scenes/components/anim',
+                'user-manual/editor/scenes/components/animation',
+                'user-manual/editor/scenes/components/audiolistener',
+                'user-manual/editor/scenes/components/button',
+                'user-manual/editor/scenes/components/camera',
+                'user-manual/editor/scenes/components/collision',
+                'user-manual/editor/scenes/components/element',
+                'user-manual/editor/scenes/components/gsplat',
+                'user-manual/editor/scenes/components/joint',
+                'user-manual/editor/scenes/components/layoutchild',
+                'user-manual/editor/scenes/components/layoutgroup',
+                'user-manual/editor/scenes/components/light',
+                'user-manual/editor/scenes/components/model',
+                'user-manual/editor/scenes/components/particlesystem',
+                'user-manual/editor/scenes/components/render',
+                'user-manual/editor/scenes/components/rigidbody',
+                'user-manual/editor/scenes/components/screen',
+                'user-manual/editor/scenes/components/script',
+                'user-manual/editor/scenes/components/scrollbar',
+                'user-manual/editor/scenes/components/scrollview',
+                'user-manual/editor/scenes/components/sound',
+                'user-manual/editor/scenes/components/sprite',
+              ],
+            },
+            'user-manual/editor/scenes/loading-scenes',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Scripting',
+          key: 'editor-scripting',
+          link: {
+            type: 'doc',
+            id: 'user-manual/editor/scripting/index'
+          },
+          items: [
+            'user-manual/editor/scripting/managing-scripts',
+            'user-manual/editor/scripting/import-maps',
+            'user-manual/editor/scripting/code-editor',
+            'user-manual/editor/scripting/vscode-extension',
+            'user-manual/editor/scripting/hot-reloading',
+            'user-manual/editor/scripting/loading-order'
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Templates',
+          link: {
+            type: 'doc',
+            id: 'user-manual/editor/templates/index',
+          },
+          items: [
+            'user-manual/editor/templates/diff',
+            'user-manual/editor/templates/nested',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Version Control',
+          link: {
+            type: 'doc',
+            id: 'user-manual/editor/version-control/index',
+          },
+          items: [
+            'user-manual/editor/version-control/checkpoints',
+            'user-manual/editor/version-control/branches',
+            'user-manual/editor/version-control/merging',
+            'user-manual/editor/version-control/changes',
+            'user-manual/editor/version-control/branch-workflows',
+            'user-manual/editor/version-control/graph-view',
+            'user-manual/editor/version-control/item-history',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Publishing',
+          link: {
+            type: 'doc',
+            id: 'user-manual/editor/publishing/index',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'Web',
+              link: {
+                type: 'doc',
+                id: 'user-manual/editor/publishing/web/index',
+              },
+              items: [
+                'user-manual/editor/publishing/web/playcanvas-hosting',
+                'user-manual/editor/publishing/web/self-hosting',
+                'user-manual/editor/publishing/web/self-hosting-for-beginners',
+                'user-manual/editor/publishing/web/communicating-webpage',
+                'user-manual/editor/publishing/web/hosting-cdn',
+                'user-manual/editor/publishing/web/hosting-heyvr',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Mobile',
+              link: {
+                type: 'doc',
+                id: 'user-manual/editor/publishing/mobile/index',
+              },
+              items: [
+                'user-manual/editor/publishing/mobile/cordova',
+                'user-manual/editor/publishing/mobile/gonative',
+              ],
+            },
+            'user-manual/editor/publishing/desktop/index',
+            {
+              type: 'category',
+              label: 'Playable Ads',
+              link: {
+                type: 'doc',
+                id: 'user-manual/editor/publishing/playable-ads/index',
+              },
+              items: [
+                'user-manual/editor/publishing/playable-ads/fb-playable-ads',
+                'user-manual/editor/publishing/playable-ads/snapchat-playable-ads',
+              ],
+            },
+            'user-manual/editor/publishing/snapchat-web-lenses',
+          ],
+        },
+        'user-manual/editor/editor-api',
+        'user-manual/editor/mcp-server',
+        'user-manual/editor/engine-compatibility',
+        'user-manual/editor/faq',
+        'user-manual/editor/troubleshooting',
+        { type: 'link', label: 'Tutorials', href: '/tutorials/' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'PlayCanvas React',
+      link: {
+        type: 'doc',
+        id: 'user-manual/react/index',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'Getting Started',
+          key: 'react-getting-started',
+          link: {
+            type: 'doc',
+            id: 'user-manual/react/getting-started/index',
+          },
+          items: [
+            'user-manual/react/getting-started/installation',
+          ]
+        },
+        'user-manual/react/building-a-scene',
+        {
+          type: 'category',
+          label: 'Guide',
+          link: {
+            type: 'doc',
+            id: 'user-manual/react/guide/index',
+          },
+          items: [
+            'user-manual/react/guide/interactivity',
+            'user-manual/react/guide/loading-assets',
+            'user-manual/react/guide/modifying-glb-models',
+            'user-manual/react/guide/physics',
+            'user-manual/react/guide/materials'
+          ]
+        },
+        {
+          type: 'category',
+          label: 'API',
+          link: {
+            type: 'doc',
+            id: 'user-manual/react/api/index',
+          },
+          items: [
+            'user-manual/react/api/application',
+            'user-manual/react/api/entity',
+            'user-manual/react/api/gltf',
+            'user-manual/react/api/modify',
+            {
+              type: 'category',
+              label: 'Components',
+              key: 'react-api-components',
+              items: [
+                'user-manual/react/api/anim',
+                'user-manual/react/api/camera',
+                'user-manual/react/api/collision',
+                'user-manual/react/api/element',
+                'user-manual/react/api/environment',
+                'user-manual/react/api/gsplat',
+                'user-manual/react/api/light',
+                'user-manual/react/api/render',
+                'user-manual/react/api/rigidbody',
+                'user-manual/react/api/screen',
+                'user-manual/react/api/script',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'Hooks',
+              key: 'react-api-hooks',
+              link: {
+                type: 'doc',
+                id: 'user-manual/react/api/hooks/index',
+              },
+              items: [
+                'user-manual/react/api/hooks/use-app',
+                'user-manual/react/api/hooks/use-app-event',
+                'user-manual/react/api/hooks/use-asset',
+                'user-manual/react/api/hooks/use-material',
+                'user-manual/react/api/hooks/use-parent',
+                'user-manual/react/api/hooks/use-physics',
+              ]
+            }
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Examples',
+          key: 'react-examples',
+          link: {
+            type: 'doc',
+            id: 'user-manual/react/examples/index',
+          },
+          items: [
+            'user-manual/react/examples/model-viewer',
+            'user-manual/react/examples/motion',
+            'user-manual/react/examples/physics',
+            'user-manual/react/examples/text',
+          ]
+        },
+        
+      ],
+    },
+    {
+      type: 'category',
+      label: 'PlayCanvas Web Components',
+      className: 'sidebar-item-nowrap',
+      link: {
+        type: 'doc',
+        id: 'user-manual/web-components/index',
+      },
+      items: [
+        'user-manual/web-components/getting-started',
+        'user-manual/web-components/building-a-scene',
+        'user-manual/web-components/loading-models',
+        'user-manual/web-components/attributes',
+        'user-manual/web-components/scripting',
+        'user-manual/web-components/programmatic-access',
+        'user-manual/web-components/templates',
+        'user-manual/web-components/xr',
+        {
+          type: 'category',
+          label: 'Tag Reference',
+          link: {
+            type: 'doc',
+            id: 'user-manual/web-components/tags/index',
+          },
+          items: [
+            'user-manual/web-components/tags/pc-anim',
+            'user-manual/web-components/tags/pc-anim-clip',
+            'user-manual/web-components/tags/pc-app',
+            'user-manual/web-components/tags/pc-asset',
+            'user-manual/web-components/tags/pc-audio-listener',
+            'user-manual/web-components/tags/pc-button',
+            'user-manual/web-components/tags/pc-camera',
+            'user-manual/web-components/tags/pc-collision',
+            'user-manual/web-components/tags/pc-element',
+            'user-manual/web-components/tags/pc-entity',
+            'user-manual/web-components/tags/pc-gsplat',
+            'user-manual/web-components/tags/pc-joint',
+            'user-manual/web-components/tags/pc-layout-child',
+            'user-manual/web-components/tags/pc-layout-group',
+            'user-manual/web-components/tags/pc-light',
+            'user-manual/web-components/tags/pc-material',
+            'user-manual/web-components/tags/pc-model',
+            'user-manual/web-components/tags/pc-node',
+            'user-manual/web-components/tags/pc-particle-system',
+            'user-manual/web-components/tags/pc-render',
+            'user-manual/web-components/tags/pc-rigid-body',
+            'user-manual/web-components/tags/pc-scene',
+            'user-manual/web-components/tags/pc-screen',
+            'user-manual/web-components/tags/pc-script',
+            'user-manual/web-components/tags/pc-script-instance',
+            'user-manual/web-components/tags/pc-scrollbar',
+            'user-manual/web-components/tags/pc-scroll-view',
+            'user-manual/web-components/tags/pc-sky',
+            'user-manual/web-components/tags/pc-sound',
+            'user-manual/web-components/tags/pc-sound-slot',
+            'user-manual/web-components/tags/pc-sprite',
+            'user-manual/web-components/tags/pc-sprite-clip',
+            'user-manual/web-components/tags/pc-wasm',
+          ],
+        },
+        { type: 'link', label: 'Examples', key: 'web-components-examples', href: 'https://playcanvas.github.io/web-components/examples/' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SuperSplat',
+      link: {
+        type: 'doc',
+        id: 'user-manual/supersplat/index',
+      },
+      items: [
+        'user-manual/supersplat/getting-started',
+        {
+          type: 'category',
+          label: 'Editor',
+          link: {
+            type: 'doc',
+            id: 'user-manual/supersplat/editor/index',
+          },
+          items: [
+            'user-manual/supersplat/editor/interface',
+            'user-manual/supersplat/editor/import-export',
+            'user-manual/supersplat/editor/managing-projects',
+            'user-manual/supersplat/editor/scene-management',
+            'user-manual/supersplat/editor/camera-controls',
+            'user-manual/supersplat/editor/editing-splats',
+            'user-manual/supersplat/editor/transform-measure-align',
+            'user-manual/supersplat/editor/color-and-appearance',
+            'user-manual/supersplat/editor/data-panel',
+            'user-manual/supersplat/editor/keyboard-shortcuts',
+            'user-manual/supersplat/editor/timeline',
+            'user-manual/supersplat/editor/rendering',
+            'user-manual/supersplat/editor/publishing',
+            'user-manual/supersplat/editor/troubleshooting',
+          ],
+        },
+        'user-manual/supersplat/upload',
+        'user-manual/supersplat/manage',
+        {
+          type: 'category',
+          label: 'Studio',
+          link: {
+            type: 'doc',
+            id: 'user-manual/supersplat/studio/index',
+          },
+          items: [
+            'user-manual/supersplat/studio/cameras',
+            'user-manual/supersplat/studio/annotations',
+            'user-manual/supersplat/studio/post-effects',
+            'user-manual/supersplat/studio/skybox',
+            'user-manual/supersplat/studio/collision',
+            'user-manual/supersplat/studio/experience-settings',
+          ],
+        },
+        'user-manual/supersplat/scene-page',
+        'user-manual/supersplat/explore',
+        'user-manual/supersplat/user-profile',
+        'user-manual/supersplat/following',
+        'user-manual/supersplat/streaming',
+        {
+          type: 'category',
+          label: 'Viewer',
+          link: {
+            type: 'doc',
+            id: 'user-manual/supersplat/viewer/index',
+          },
+          items: [
+            'user-manual/supersplat/viewer/embedding',
+            'user-manual/supersplat/viewer/self-hosting',
+          ],
+        },
+        'user-manual/supersplat/convert',
+        {
+          type: 'category',
+          label: 'API & Integrations',
+          link: {
+            type: 'doc',
+            id: 'user-manual/supersplat/api-integrations',
+          },
+          items: [
+            {
+              type: 'link',
+              label: 'API Reference',
+              key: 'supersplat-api-reference',
+              href: '/user-manual/api/supersplat/',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SplatTransform',
+      link: {
+        type: 'doc',
+        id: 'user-manual/splat-transform/index',
+      },
+      items: [
+        'user-manual/splat-transform/cli-reference',
+        'user-manual/splat-transform/streamed-sog',
+        'user-manual/splat-transform/collision',
+        'user-manual/splat-transform/image-rendering',
+        'user-manual/splat-transform/library',
+        'user-manual/splat-transform/docker',
+        'user-manual/splat-transform/voxel-format',
+      ],
+    },
+    sectionHeader('Common Topics'),
+    {
+      type: 'category',
+      label: 'Entity Component System',
+      link: {
+        type: 'doc',
+        id: 'user-manual/ecs/index',
+      },
+      items: [
+        'user-manual/ecs/entities',
+        'user-manual/ecs/components',
+        'user-manual/ecs/hierarchy-and-transformations',
+        'user-manual/ecs/searching-the-hierarchy',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Assets',
+      key: 'common-assets',
+      link: {
+        type: 'doc',
+        id: 'user-manual/assets/index',
+      },
+      items: [
+        'user-manual/assets/asset-registry',
+        'user-manual/assets/preloading',
+        'user-manual/assets/loading-unloading',
+        'user-manual/assets/supported-formats',
+        'user-manual/assets/custom-parsers',
+        {
+          type: 'category',
+          label: 'Models',
+          link: {
+            type: 'doc',
+            id: 'user-manual/assets/models/index',
+          },
+          items: [
+            'user-manual/assets/models/building',
+            'user-manual/assets/models/exporting',
+            'user-manual/assets/models/units',
+          ],
+        },
+        'user-manual/assets/finding',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Scripting',
+      key: 'scripting',
+      link: {
+        type: 'doc',
+        id: 'user-manual/scripting/index',
+      },
+      items: [
+        'user-manual/scripting/getting-started',
+        'user-manual/scripting/esm-scripts',
+        'user-manual/scripting/script-lifecycle',
+        'user-manual/scripting/application-lifecycle',
+        {
+          type: 'category',
+          label: 'Script Attributes',
+          link: {
+            type: 'doc',
+            id: 'user-manual/scripting/script-attributes/index',
+          },
+          items: [
+            'user-manual/scripting/script-attributes/classic',
+            'user-manual/scripting/script-attributes/esm',
+          ],
+        },
+        'user-manual/scripting/engine-api',
+        'user-manual/scripting/events',
+        // the debugging of scripts is part of Debugging and Optimization, linked from here
+        { type: 'ref', id: 'user-manual/debugging/index', label: 'Debugging' },
+        'user-manual/scripting/migration-guide'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Graphics',
+      link: {
+        type: 'doc',
+        id: 'user-manual/graphics/index',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'Cameras',
+          link: {
+            type: 'doc',
+            id: 'user-manual/graphics/cameras/index',
+          },
+          items: [
+            'user-manual/graphics/cameras/projection',
+            'user-manual/graphics/cameras/clearing',
+            'user-manual/graphics/cameras/tone-mapping',
+            'user-manual/graphics/cameras/multiple-cameras',
+            'user-manual/graphics/cameras/camera-controls',
+            'user-manual/graphics/cameras/screen-and-world',
+            'user-manual/graphics/cameras/scene-picker',
+            'user-manual/graphics/cameras/depth-layer',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Meshes',
+          link: {
+            type: 'doc',
+            id: 'user-manual/graphics/meshes/index',
+          },
+          items: [
+            'user-manual/graphics/meshes/creating-meshes',
+            'user-manual/graphics/meshes/mesh-instances',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Lighting',
+          link: {
+            type: 'doc',
+            id: 'user-manual/graphics/lighting/index',
+          },
+          items: [
+            'user-manual/graphics/lighting/lights',
+            'user-manual/graphics/lighting/shadows',
+            'user-manual/graphics/lighting/lightmapping',
+            'user-manual/graphics/lighting/ambient-occlusion',
+            'user-manual/graphics/lighting/runtime-lightmaps',
+            'user-manual/graphics/lighting/clustered-lighting',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Physically Based Rendering',
+          link: {
+            type: 'doc',
+            id: 'user-manual/graphics/physical-rendering/index',
+          },
+          items: [
+            'user-manual/graphics/physical-rendering/physical-materials',
+            'user-manual/graphics/physical-rendering/parallax-mapping',
+            'user-manual/graphics/physical-rendering/image-based-lighting',
+            'user-manual/graphics/physical-rendering/environment-lighting',
+          ],
+        },
+        'user-manual/graphics/textures',
+        'user-manual/graphics/transparency',
+        {
+          type: 'category',
+          label: 'Linear Workflow',
+          link: {
+            type: 'doc',
+            id: 'user-manual/graphics/linear-workflow/index',
+          },
+          items: [
+            'user-manual/graphics/linear-workflow/textures',
+            'user-manual/graphics/linear-workflow/hdr-rendering',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Shaders',
+          link: {
+            type: 'doc',
+            id: 'user-manual/graphics/shaders/index',
+          },
+          items: [
+            'user-manual/graphics/shaders/preprocessor',
+            'user-manual/graphics/shaders/glsl-specifics',
+            'user-manual/graphics/shaders/wgsl-specifics',
+            'user-manual/graphics/shaders/wgsl-reflection',
+            'user-manual/graphics/shaders/wgsl-capabilities',
+            'user-manual/graphics/shaders/wgsl-vertex-fragment-shaders',
+            'user-manual/graphics/shaders/built-in-uniforms',
+            'user-manual/graphics/shaders/shader-parameters',
+            'user-manual/graphics/shaders/compute-shaders',
+            'user-manual/graphics/shaders/compute-shaders-advanced',
+            'user-manual/graphics/shaders/migrations',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Post Effects',
+          link: {
+            type: 'doc',
+            id: 'user-manual/graphics/posteffects/index',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'Modern Post Processing',
+              link: {
+                type: 'doc',
+                id: 'user-manual/graphics/posteffects/cameraframe/index',
+              },
+              items: [
+                'user-manual/graphics/posteffects/cameraframe/volumetric-fog',
+                'user-manual/graphics/posteffects/cameraframe/auto-exposure',
+                'user-manual/graphics/posteffects/cameraframe/lens-flare',
+                'user-manual/graphics/posteffects/cameraframe/dynamic-sky',
+                'user-manual/graphics/posteffects/cameraframe/custom-effects',
+                'user-manual/graphics/posteffects/cameraframe/effect-passes',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Legacy Post Effects',
+              link: {
+                type: 'doc',
+                id: 'user-manual/graphics/posteffects/legacy/index',
+              },
+              items: [
+                'user-manual/graphics/posteffects/legacy/bloom',
+                'user-manual/graphics/posteffects/legacy/brightness_contrast',
+                'user-manual/graphics/posteffects/legacy/fxaa',
+                'user-manual/graphics/posteffects/legacy/hue_saturation',
+                'user-manual/graphics/posteffects/legacy/sepia',
+                'user-manual/graphics/posteffects/legacy/vignette',
+              ],
+            },
+          ],
+        },
+        'user-manual/graphics/particles',
+        'user-manual/graphics/layers/index',
+        'user-manual/graphics/wide-lines',
+        'user-manual/graphics/debug-drawing',
+        {
+          type: 'category',
+          label: 'Advanced Rendering',
+          link: {
+            type: 'doc',
+            id: 'user-manual/graphics/advanced-rendering/index',
+          },
+          items: [
+            'user-manual/graphics/advanced-rendering/rendering-without-entities',
+            'user-manual/graphics/advanced-rendering/batching',
+            'user-manual/graphics/advanced-rendering/hardware-instancing',
+            'user-manual/graphics/advanced-rendering/multi-draw',
+            'user-manual/graphics/advanced-rendering/render-targets',
+            'user-manual/graphics/advanced-rendering/multiple-render-targets',
+            {
+              type: 'category',
+              label: 'Frame Graph',
+              link: {
+                type: 'doc',
+                id: 'user-manual/graphics/advanced-rendering/frame-graph/index',
+              },
+              items: [
+                'user-manual/graphics/advanced-rendering/frame-graph/frame-passes',
+                'user-manual/graphics/advanced-rendering/frame-graph/camera-passes',
+                {
+                  type: 'category',
+                  label: 'Render Passes',
+                  link: {
+                    type: 'doc',
+                    id: 'user-manual/graphics/advanced-rendering/frame-graph/render-pass',
+                  },
+                  items: [
+                    'user-manual/graphics/advanced-rendering/frame-graph/render-pass-shader-quad',
+                    'user-manual/graphics/advanced-rendering/frame-graph/render-pass-forward',
+                  ],
+                },
+                'user-manual/graphics/advanced-rendering/frame-graph/compute-pass',
+              ],
+            },
+            'user-manual/graphics/advanced-rendering/dual-source-blending',
+            'user-manual/graphics/advanced-rendering/indirect-drawing',
+            'user-manual/graphics/advanced-rendering/transform-feedback',
+            'user-manual/graphics/advanced-rendering/html-in-canvas',
+            'user-manual/graphics/advanced-rendering/device-loss',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Gaussian Splatting',
+      link: {
+        type: 'doc',
+        id: 'user-manual/gaussian-splatting/index',
+      },
+      items: [
+        'user-manual/gaussian-splatting/what-is-gaussian-splatting',
+        {
+          type: 'category',
+          label: 'Splat File Formats',
+          link: {
+            type: 'doc',
+            id: 'user-manual/gaussian-splatting/formats/index',
+          },
+          items: [
+            'user-manual/gaussian-splatting/formats/ply',
+            'user-manual/gaussian-splatting/formats/sog',
+            'user-manual/gaussian-splatting/formats/sog-v2',
+            'user-manual/gaussian-splatting/formats/streamed-sog',
+            'user-manual/gaussian-splatting/formats/glb',
+            'user-manual/gaussian-splatting/formats/spz',
+            'user-manual/gaussian-splatting/formats/lcc2',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Creating Splats',
+          link: {
+            type: 'doc',
+            id: 'user-manual/gaussian-splatting/creating/index',
+          },
+          items: [
+            'user-manual/gaussian-splatting/creating/taking-photos',
+            'user-manual/gaussian-splatting/creating/recommended-tools',
+          ],
+        },
+        'user-manual/gaussian-splatting/viewing',
+        'user-manual/gaussian-splatting/editing/index',
+        {
+          type: 'category',
+          label: 'Rendering Architecture',
+          link: {
+            type: 'doc',
+            id: 'user-manual/gaussian-splatting/rendering-architecture/index',
+          },
+          items: [
+            'user-manual/gaussian-splatting/rendering-architecture/splat-data-format',
+            'user-manual/gaussian-splatting/rendering-architecture/work-buffer-format',
+            'user-manual/gaussian-splatting/rendering-architecture/work-buffer-rendering',
+            'user-manual/gaussian-splatting/rendering-architecture/splat-processing',
+            'user-manual/gaussian-splatting/rendering-architecture/renderers',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Building Splat Applications',
+          link: {
+            type: 'doc',
+            id: 'user-manual/gaussian-splatting/building/index',
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'Your First Splat App',
+              link: {
+                type: 'doc',
+                id: 'user-manual/gaussian-splatting/building/your-first-app/index',
+              },
+              items: [
+                'user-manual/gaussian-splatting/building/your-first-app/engine',
+                'user-manual/gaussian-splatting/building/your-first-app/editor',
+                'user-manual/gaussian-splatting/building/your-first-app/react',
+                'user-manual/gaussian-splatting/building/your-first-app/web-components',
+              ],
+            },
+            'user-manual/gaussian-splatting/building/lod-streaming',
+            'user-manual/gaussian-splatting/building/picking',
+            'user-manual/gaussian-splatting/building/shadows',
+            'user-manual/gaussian-splatting/building/fisheye',
+            'user-manual/gaussian-splatting/building/tonemapping',
+            'user-manual/gaussian-splatting/building/anti-aliasing',
+            {
+              type: 'category',
+              label: 'Custom Shaders',
+              link: {
+                type: 'doc',
+                id: 'user-manual/gaussian-splatting/building/custom-shaders/index',
+              },
+              items: [
+                'user-manual/gaussian-splatting/building/custom-shaders/vertex',
+                'user-manual/gaussian-splatting/building/custom-shaders/fragment',
+                'user-manual/gaussian-splatting/building/custom-shaders/varyings',
+              ],
+            },
+            'user-manual/gaussian-splatting/building/relighting',
+            {
+              type: 'category',
+              label: 'Procedural Splats',
+              link: {
+                type: 'doc',
+                id: 'user-manual/gaussian-splatting/building/procedural-splats/index',
+              },
+              items: [
+                'user-manual/gaussian-splatting/building/procedural-splats/mesh',
+                'user-manual/gaussian-splatting/building/procedural-splats/image',
+                'user-manual/gaussian-splatting/building/procedural-splats/lines',
+                'user-manual/gaussian-splatting/building/procedural-splats/text',
+              ],
+            },
+            'user-manual/gaussian-splatting/building/performance',
+            'user-manual/gaussian-splatting/building/render-on-demand',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Animation',
+      link: {
+        type: 'doc',
+        id: 'user-manual/animation/index',
+      },
+      items: [
+        'user-manual/animation/playing-animations',
+        'user-manual/animation/clips',
+        'user-manual/animation/state-graphs',
+        'user-manual/animation/blend-trees',
+        'user-manual/animation/layers-and-masks',
+        'user-manual/animation/events'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Physics',
+      link: {
+        type: 'doc',
+        id: 'user-manual/physics/index',
+      },
+      items: [
+        'user-manual/physics/physics-basics',
+        'user-manual/physics/rigid-bodies',
+        'user-manual/physics/collision-shapes',
+        'user-manual/physics/forces-and-impulses',
+        'user-manual/physics/collision-events',
+        'user-manual/physics/trigger-volumes',
+        'user-manual/physics/ray-casting',
+        'user-manual/physics/joints',
+        'user-manual/physics/calling-ammo',
+        'user-manual/physics/ammo-alternatives',
+      ],
+    },
+    {
+      type: 'category',
+      label: '2D',
+      link: {
+        type: 'doc',
+        id: 'user-manual/2D/index',
+      },
+      items: [
+        'user-manual/2D/sprite-editor',
+        'user-manual/2D/slicing',
+        'user-manual/2D/texture-packing',
+        { type: 'ref', id: 'user-manual/engine/libraries/spine' },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'User Interface',
+      link: {
+        type: 'doc',
+        id: 'user-manual/user-interface/index',
+      },
+      items: [
+        'user-manual/user-interface/user-interface-basics',
+        {
+          type: 'category',
+          label: 'Layout',
+          key: 'ui-layout',
+          items: [
+            'user-manual/user-interface/screens',
+            'user-manual/user-interface/elements',
+            'user-manual/user-interface/layout-groups',
+            'user-manual/user-interface/safe-area',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Images',
+          key: 'ui-images',
+          items: [
+            'user-manual/user-interface/image-elements',
+            'user-manual/user-interface/masks',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Text',
+          key: 'ui-text',
+          items: [
+            'user-manual/user-interface/text-elements',
+            'user-manual/user-interface/fonts',
+            'user-manual/user-interface/localization',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Interaction',
+          key: 'ui-interaction',
+          items: [
+            'user-manual/user-interface/input',
+            'user-manual/user-interface/buttons',
+            'user-manual/user-interface/scroll-views',
+          ],
+        },
+        'user-manual/user-interface/common-widgets',
+        {
+          type: 'category',
+          label: 'World Space and XR',
+          key: 'ui-world-space-and-xr',
+          items: [
+            'user-manual/user-interface/world-space-ui',
+            'user-manual/user-interface/xr',
+          ],
+        },
+        'user-manual/user-interface/html-and-css',
+        'user-manual/user-interface/draw-order-and-performance',
+        'user-manual/user-interface/troubleshooting',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'XR',
+      link: {
+        type: 'doc',
+        id: 'user-manual/xr/index',
+      },
+      items: [
+        'user-manual/xr/using-webxr',
+        'user-manual/xr/platforms',
+        'user-manual/xr/capabilities',
+        'user-manual/xr/input-sources',
+        'user-manual/xr/hand-tracking',
+        {
+          type: 'category',
+          label: 'AR',
+          link: {
+            type: 'doc',
+            id: 'user-manual/xr/ar/index',
+          },
+          items: [
+            'user-manual/xr/ar/anchors',
+            'user-manual/xr/ar/camera-color',
+            'user-manual/xr/ar/depth-sensing',
+            'user-manual/xr/ar/dom-overlay',
+            'user-manual/xr/ar/hit-testing',
+            'user-manual/xr/ar/image-tracking',
+            'user-manual/xr/ar/light-estimation',
+            'user-manual/xr/ar/mesh-detection',
+            'user-manual/xr/ar/plane-detection',
+            'user-manual/xr/ar/8th-wall-integration',
+            'user-manual/xr/ar/zappar-integration',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'VR',
+          link: {
+            type: 'doc',
+            id: 'user-manual/xr/vr/index',
+          },
+          items: [
+            'user-manual/xr/vr/types-of-vr',
+          ],
+        },
+        'user-manual/xr/optimizing-webxr',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Debugging and Optimization',
+      link: {
+        type: 'doc',
+        id: 'user-manual/optimization/index',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'Debugging',
+          link: {
+            type: 'doc',
+            id: 'user-manual/debugging/index',
+          },
+          items: [
+            'user-manual/debugging/console-logging',
+            'user-manual/debugging/browser-dev-tools',
+            'user-manual/debugging/inspector',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Profiling',
+          items: [
+            'user-manual/optimization/mini-stats',
+            'user-manual/optimization/app-stats',
+            'user-manual/optimization/inspector-performance',
+            'user-manual/optimization/profiler',
+            'user-manual/optimization/gpu-profiling',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Optimization',
+          items: [
+            'user-manual/optimization/guidelines',
+            'user-manual/optimization/texture-compression',
+            'user-manual/optimization/runtime-devicepixelratio',
+            'user-manual/optimization/load-time',
+            'user-manual/optimization/optimizing-scene-format',
+            'user-manual/optimization/troubleshooting-performance',
+          ],
+        },
+      ],
+    },
+    sectionHeader('Foundational APIs'),
+    {
+      type: 'category',
+      label: 'REST API',
+      link: {
+        type: 'doc',
+        id: 'user-manual/api/index',
+      },
+      items: [
+        'user-manual/api/app-download',
+        'user-manual/api/app-get',
+        'user-manual/api/app-get-primary',
+        'user-manual/api/app-get-project',
+        'user-manual/api/asset-create',
+        'user-manual/api/asset-delete',
+        'user-manual/api/asset-file',
+        'user-manual/api/asset-get',
+        'user-manual/api/asset-list',
+        'user-manual/api/asset-update',
+        'user-manual/api/branch-create',
+        'user-manual/api/branch-list',
+        'user-manual/api/checkpoint-create',
+        'user-manual/api/checkpoint-get',
+        'user-manual/api/checkpoint-list',
+        'user-manual/api/job-get',
+        'user-manual/api/project-export',
+        'user-manual/api/scene-list',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'PCUI',
+      link: {
+        type: 'doc',
+        id: 'user-manual/pcui/index',
+      },
+      items: [
+        'user-manual/pcui/getting-started',
+        'user-manual/pcui/react',
+        {
+          type: 'category',
+          label: 'Data Binding',
+          link: {
+            type: 'doc',
+            id: 'user-manual/pcui/data-binding/index',
+          },
+          items: [
+            'user-manual/pcui/data-binding/using-observers',
+            'user-manual/pcui/data-binding/two-way-binding',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Examples',
+          link: {
+            type: 'doc',
+            id: 'user-manual/pcui/examples/index',
+          },
+          items: [
+            'user-manual/pcui/examples/history',
+            'user-manual/pcui/examples/todo-list',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'PCUI Graph',
+          link: {
+            type: 'doc',
+            id: 'user-manual/pcui/pcui-graph/index',
+          },
+          items: [
+            'user-manual/pcui/pcui-graph/getting-started',
+            'user-manual/pcui/pcui-graph/context-menus',
+            'user-manual/pcui/pcui-graph/events',
+            'user-manual/pcui/pcui-graph/schema',
+            'user-manual/pcui/pcui-graph/styling',
+          ],
+        },
+      ],
+    },
+    sectionHeader('Additional Resources'),
+    'user-manual/glossary',
+    'user-manual/press-pack',
+    'user-manual/security',
+  ],
+  tutorialsSidebar: [{type: 'autogenerated', dirName: 'tutorials'}],
+};
+
+export default sidebars;

@@ -1,0 +1,496 @@
+---
+title: Using the Engine Standalone
+description: Build PlayCanvas applications without the Editor, using npm and a build tool, or an import map and a CDN.
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+It is possible to build applications on the PlayCanvas Engine without using the Editor. Some examples of applications built directly against the Engine are:
+
+* [glTF Viewer](https://playcanvas.com/viewer) \[[GitHub](https://github.com/playcanvas/model-viewer)\]
+* [SuperSplat](https://playcanvas.com/supersplat/editor) \[[GitHub](https://github.com/playcanvas/supersplat)\]
+* ...and, of course, the [PlayCanvas Editor](../../editor) itself!
+
+This page guides you in how to get started.
+
+:::note
+
+Before you begin, ensure you have [Node.js](https://nodejs.org/) installed.
+
+:::
+
+:::tip[Quick start]
+
+For a Vite and TypeScript project, use the official [`create-playcanvas`](/user-manual/getting-started/start-with-create-playcanvas/) tool and choose the Engine format:
+
+```bash
+npm create playcanvas@latest my-app -- -f engine
+```
+
+The generated project includes a runnable starter and [PlayCanvas Skills](/user-manual/getting-started/use-playcanvas-skills/) for compatible AI coding agents.
+
+:::
+
+When setting up your project, there are two main options to consider.
+
+## Option 1: Build Tool and NPM
+
+This is the recommended set up that should suit most developers.
+
+A build tool can bundle your application into an optimized package that can run on a wide range of browsers. There are many build tools such as [webpack](https://webpack.js.org/), [Rollup](https://rollupjs.org/) and [esbuild](https://esbuild.github.io/), and PlayCanvas will work with all of them. Here, we will use [Vite](https://vitejs.dev/), a popular build tool that aims to provide a faster and leaner development experience for modern web projects.
+
+First, select whether you prefer to develop in JavaScript or TypeScript:
+
+<Tabs>
+  <TabItem value="javascript" label="JavaScript" default>
+
+1. Open a Terminal/Command Prompt, create a folder for your app and `cd` inside it.
+2. Install `playcanvas` and `vite`:
+
+    ```sh
+    npm install playcanvas
+    npm install vite --save-dev
+    ```
+
+    To control which future Engine releases npm can update to, see [Versioning and Releases](versioning.md).
+
+3. Create an `index.html` and paste this:
+
+    ```html title="index.html"
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <style>
+                body { margin: 0; overflow: hidden; }
+            </style>
+        </head>
+        <body>
+            <script type="module" src="main.js"></script>
+            <canvas id='application'></canvas>
+        </body>
+    </html>
+    ```
+
+4. Create a `main.js` and paste this:
+
+    ```javascript title="main.js"
+    import * as pc from 'playcanvas';
+
+    // create a graphics device, preferring WebGPU over WebGL 2.0
+    const canvas = document.getElementById('application');
+    const device = await pc.createGraphicsDevice(canvas, {
+        deviceTypes: [pc.DEVICETYPE_WEBGPU]
+    });
+
+    // create an application with the systems and handlers it uses
+    const options = new pc.AppOptions();
+    options.graphicsDevice = device;
+    options.componentSystems = [
+        pc.RenderComponentSystem,
+        pc.CameraComponentSystem,
+        pc.LightComponentSystem
+    ];
+    options.resourceHandlers = [
+        pc.TextureHandler,
+        pc.ContainerHandler
+    ];
+
+    const app = new pc.AppBase(canvas);
+    app.init(options);
+    app.setCanvasResolution(pc.RESOLUTION_AUTO);
+    app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
+    app.start();
+
+    // resize the canvas when the window is resized
+    window.addEventListener('resize', () => app.resizeCanvas());
+
+    // create a camera
+    const camera = new pc.Entity();
+    camera.addComponent('camera', {
+        clearColor: new pc.Color(0.3, 0.3, 0.7)
+    });
+    camera.setPosition(0, 0, 3);
+    app.root.addChild(camera);
+
+    // create a light
+    const light = new pc.Entity();
+    light.addComponent('light');
+    light.setEulerAngles(45, 45, 0);
+    app.root.addChild(light);
+
+    // create a box
+    const box = new pc.Entity();
+    box.addComponent('render', {
+        type: 'box'
+    });
+    app.root.addChild(box);
+
+    // rotate the box
+    app.on('update', (dt) => box.rotate(10 * dt, 20 * dt, 30 * dt));
+    ```
+
+5. Run the Vite development server:
+
+    ```sh
+    npx vite
+    ```
+
+    This starts a server at `http://localhost:5173`. Visit this URL in your browser and you will see the following:
+
+    ![Spinning Cube](/img/user-manual/engine/standalone/spinning-cube.webp)
+
+    :::tip
+
+    Every time you save your source files, the tab will reload automatically.
+
+    :::
+
+  </TabItem>
+  <TabItem value="typescript" label="TypeScript">
+
+1. Open a Terminal/Command Prompt, create a folder for your app and `cd` inside it.
+2. Install `playcanvas` and `vite`:
+
+    ```sh
+    npm install playcanvas
+    npm install vite --save-dev
+    ```
+
+    To control which future Engine releases npm can update to, see [Versioning and Releases](versioning.md).
+
+3. Create an `index.html` and paste this:
+
+    ```html title="index.html"
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <style>
+                body { margin: 0; overflow: hidden; }
+            </style>
+        </head>
+        <body>
+            <script type="module" src="main.ts"></script>
+            <canvas id='application'></canvas>
+        </body>
+    </html>
+    ```
+
+4. Create a `main.ts` and paste this:
+
+    ```typescript title="main.ts"
+    import * as pc from 'playcanvas';
+
+    // create a graphics device, preferring WebGPU over WebGL 2.0
+    const canvas = document.getElementById('application') as HTMLCanvasElement;
+    const device = await pc.createGraphicsDevice(canvas, {
+        deviceTypes: [pc.DEVICETYPE_WEBGPU]
+    });
+
+    // create an application with the systems and handlers it uses
+    const options = new pc.AppOptions();
+    options.graphicsDevice = device;
+    options.componentSystems = [
+        pc.RenderComponentSystem,
+        pc.CameraComponentSystem,
+        pc.LightComponentSystem
+    ];
+    options.resourceHandlers = [
+        pc.TextureHandler,
+        pc.ContainerHandler
+    ];
+
+    const app = new pc.AppBase(canvas);
+    app.init(options);
+    app.setCanvasResolution(pc.RESOLUTION_AUTO);
+    app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
+    app.start();
+
+    // resize the canvas when the window is resized
+    window.addEventListener('resize', () => app.resizeCanvas());
+
+    // create a camera
+    const camera = new pc.Entity();
+    camera.addComponent('camera', {
+        clearColor: new pc.Color(0.3, 0.3, 0.7)
+    });
+    camera.setPosition(0, 0, 3);
+    app.root.addChild(camera);
+
+    // create a light
+    const light = new pc.Entity();
+    light.addComponent('light');
+    light.setEulerAngles(45, 45, 0);
+    app.root.addChild(light);
+
+    // create a box
+    const box = new pc.Entity();
+    box.addComponent('render', {
+        type: 'box'
+    });
+    app.root.addChild(box);
+
+    // rotate the box
+    app.on('update', (dt: number) => box.rotate(10 * dt, 20 * dt, 30 * dt));
+    ```
+
+5. Run the Vite development server:
+
+    ```sh
+    npx vite
+    ```
+
+    This starts a server at `http://localhost:5173`. Visit this URL in your browser and you will see the following:
+
+    ![Spinning Cube](/img/user-manual/engine/standalone/spinning-cube.webp)
+
+    :::tip
+
+    Every time you save your source files, the tab will reload automatically.
+
+    :::
+
+  </TabItem>
+</Tabs>
+
+## Option 2: Import Map and CDN
+
+An [import map](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap) can resolve module specifiers in JavaScript modules. Consider this import statement:
+
+```javascript
+import * as pc from 'playcanvas';
+```
+
+An import map can resolve `playcanvas` to a CDN-hosted build of the engine that can be dynamically loaded by the browser. This means that we can skip the build step described in Option 1.
+
+First, select whether you prefer to develop in JavaScript or TypeScript:
+
+<Tabs>
+  <TabItem value="javascript" label="JavaScript" default>
+
+1. Open a Terminal/Command Prompt, create a folder for your app and `cd` inside it.
+2. Create an `index.html` and paste this:
+
+    ```html title="index.html"
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <style>
+                body { margin: 0; overflow: hidden; }
+            </style>
+            <script type="importmap">
+            {
+                "imports": {
+                    "playcanvas": "https://cdn.jsdelivr.net/npm/playcanvas/+esm"
+                }
+            }
+            </script>
+        </head>
+        <body>
+            <script type="module" src="main.js"></script>
+            <canvas id='application'></canvas>
+        </body>
+    </html>
+    ```
+
+3. Create a `main.js` and paste this:
+
+    ```javascript title="main.js"
+    import * as pc from 'playcanvas';
+
+    // create a graphics device, preferring WebGPU over WebGL 2.0
+    const canvas = document.getElementById('application');
+    const device = await pc.createGraphicsDevice(canvas, {
+        deviceTypes: [pc.DEVICETYPE_WEBGPU]
+    });
+
+    // create an application with the systems and handlers it uses
+    const options = new pc.AppOptions();
+    options.graphicsDevice = device;
+    options.componentSystems = [
+        pc.RenderComponentSystem,
+        pc.CameraComponentSystem,
+        pc.LightComponentSystem
+    ];
+    options.resourceHandlers = [
+        pc.TextureHandler,
+        pc.ContainerHandler
+    ];
+
+    const app = new pc.AppBase(canvas);
+    app.init(options);
+    app.setCanvasResolution(pc.RESOLUTION_AUTO);
+    app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
+    app.start();
+
+    // resize the canvas when the window is resized
+    window.addEventListener('resize', () => app.resizeCanvas());
+
+    // create a camera
+    const camera = new pc.Entity();
+    camera.addComponent('camera', {
+        clearColor: new pc.Color(0.3, 0.3, 0.7)
+    });
+    camera.setPosition(0, 0, 3);
+    app.root.addChild(camera);
+
+    // create a light
+    const light = new pc.Entity();
+    light.addComponent('light');
+    light.setEulerAngles(45, 45, 0);
+    app.root.addChild(light);
+
+    // create a box
+    const box = new pc.Entity();
+    box.addComponent('render', {
+        type: 'box'
+    });
+    app.root.addChild(box);
+
+    // rotate the box
+    app.on('update', (dt) => box.rotate(10 * dt, 20 * dt, 30 * dt));
+    ```
+
+4. Run `serve`:
+
+    ```sh
+    npx serve
+    ```
+
+    This starts a server at `http://localhost:3000`. Visit this URL in your browser and you will see the following:
+
+    ![Spinning Cube](/img/user-manual/engine/standalone/spinning-cube.webp)
+
+  </TabItem>
+  <TabItem value="typescript" label="TypeScript">
+
+1. Open a Terminal/Command Prompt, create a folder for your app and `cd` inside it.
+2. Create an `index.html` and paste this:
+
+    ```html title="index.html"
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <style>
+                body { margin: 0; overflow: hidden; }
+            </style>
+            <script type="importmap">
+            {
+                "imports": {
+                    "playcanvas": "https://cdn.jsdelivr.net/npm/playcanvas/+esm"
+                }
+            }
+            </script>
+        </head>
+        <body>
+            <script type="module" src="main.js"></script>
+            <canvas id='application'></canvas>
+        </body>
+    </html>
+    ```
+
+3. Create a `main.ts` and paste this:
+
+    ```typescript title="main.ts"
+    import * as pc from 'playcanvas';
+
+    // create a graphics device, preferring WebGPU over WebGL 2.0
+    const canvas = document.getElementById('application') as HTMLCanvasElement;
+    const device = await pc.createGraphicsDevice(canvas, {
+        deviceTypes: [pc.DEVICETYPE_WEBGPU]
+    });
+
+    // create an application with the systems and handlers it uses
+    const options = new pc.AppOptions();
+    options.graphicsDevice = device;
+    options.componentSystems = [
+        pc.RenderComponentSystem,
+        pc.CameraComponentSystem,
+        pc.LightComponentSystem
+    ];
+    options.resourceHandlers = [
+        pc.TextureHandler,
+        pc.ContainerHandler
+    ];
+
+    const app = new pc.AppBase(canvas);
+    app.init(options);
+    app.setCanvasResolution(pc.RESOLUTION_AUTO);
+    app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
+    app.start();
+
+    // resize the canvas when the window is resized
+    window.addEventListener('resize', () => app.resizeCanvas());
+
+    // create a camera
+    const camera = new pc.Entity();
+    camera.addComponent('camera', {
+        clearColor: new pc.Color(0.3, 0.3, 0.7)
+    });
+    camera.setPosition(0, 0, 3);
+    app.root.addChild(camera);
+
+    // create a light
+    const light = new pc.Entity();
+    light.addComponent('light');
+    light.setEulerAngles(45, 45, 0);
+    app.root.addChild(light);
+
+    // create a box
+    const box = new pc.Entity();
+    box.addComponent('render', {
+        type: 'box'
+    });
+    app.root.addChild(box);
+
+    // rotate the box
+    app.on('update', (dt: number) => box.rotate(10 * dt, 20 * dt, 30 * dt));
+    ```
+
+4. Install `playcanvas` and `typescript`:
+
+    ```sh
+    npm install playcanvas typescript --save-dev
+    ```
+
+5. Compile `main.ts` to `main.js`:
+
+    ```sh
+    npx tsc main.ts --target es2022 --lib esnext,dom --module esnext --moduleResolution bundler --types webxr
+    ```
+
+6. Run `serve`:
+
+    ```sh
+    npx serve
+    ```
+
+    This starts a server at `http://localhost:3000`. Visit this URL in your browser and you will see the following:
+
+    ![Spinning Cube](/img/user-manual/engine/standalone/spinning-cube.webp)
+
+  </TabItem>
+</Tabs>
+
+## Configuring the Application
+
+The samples create the application in two steps:
+
+1. [`createGraphicsDevice`](https://api.playcanvas.com/engine/functions/createGraphicsDevice.html) creates the graphics device. Listing `DEVICETYPE_WEBGPU` in `deviceTypes` requests WebGPU, and the Engine falls back to WebGL 2.0 when WebGPU isn't available.
+2. [`AppBase`](https://api.playcanvas.com/engine/classes/AppBase.html) is initialized with an [`AppOptions`](https://api.playcanvas.com/engine/classes/AppOptions.html) object that lists the component systems and resource handlers the application uses. Because nothing else is registered, a build tool can leave the rest out of your bundle.
+
+As your application grows, register what it needs:
+
+* **Components**: Each component type needs its component system. For example, add `pc.ScriptComponentSystem` to use the `script` component. [Bundle Size and Tree Shaking](/user-manual/engine/bundle-size/) lists every component type with its system. If a system is missing, `addComponent` returns `null`, and the debug build of the Engine logs an error.
+* **Assets**: Each asset type needs its resource handler. The samples register `pc.TextureHandler` for textures and `pc.ContainerHandler` for GLB models. [Bundle Size and Tree Shaking](/user-manual/engine/bundle-size/#resource-handlers) lists every asset type with its handler.
+* **Other features**: Sound, batching, lightmapping and XR are enabled with further `AppOptions` properties. For example, the `sound` component also needs `options.soundManager = new pc.SoundManager()`.
+
+:::note
+
+The [`Application`](https://api.playcanvas.com/engine/classes/Application.html) class sets all of this up for you. However, its constructor can't create a WebGPU device, it adds every component system and resource handler to your bundle, and it is expected to be deprecated in a future release.
+
+:::

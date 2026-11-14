@@ -1,0 +1,1107 @@
+{
+  "fetched": "2026-11-14T01:30:20.013Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/playcanvas/developer-site",
+      "ref": "main",
+      "paths": [
+        "LICENSE",
+        "sidebars.js",
+        "docs/user-manual/engine/**/*.md",
+        "docs/user-manual/editor/scenes/components/*.md",
+        "docs/user-manual/ecs/**/*.md",
+        "docs/user-manual/assets/**/*.md",
+        "docs/user-manual/scripting/**/*.md",
+        "docs/user-manual/graphics/**/*.md",
+        "docs/user-manual/gaussian-splatting/**/*.md",
+        "docs/user-manual/animation/**/*.md",
+        "docs/user-manual/physics/**/*.md",
+        "docs/user-manual/2D/**/*.md",
+        "docs/user-manual/user-interface/**/*.md",
+        "docs/user-manual/xr/**/*.md",
+        "docs/user-manual/debugging/**/*.md",
+        "docs/user-manual/optimization/**/*.md"
+      ],
+      "commit": "92e0ae3c26a507947ad888c2deee37fbbc00f867"
+    }
+  ],
+  "files": {
+    "repo/docs/user-manual/2D/9-slicing.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/2D/9-slicing.md",
+      "sha256": "a683fa5b0409c6742db92d6d3c97bebf7fc3e3884cc7c969b358510e78cd34e5"
+    },
+    "repo/docs/user-manual/2D/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/2D/index.md",
+      "sha256": "49d1f88970b1d452cf9768445235c87b0d704cef51eccdd9c849fe912e53f854"
+    },
+    "repo/docs/user-manual/2D/sprite-editor.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/2D/sprite-editor.md",
+      "sha256": "2e004de01b5e7e474a9b52f937008a6f28f73424f5102f91fe327e3adc5c6379"
+    },
+    "repo/docs/user-manual/2D/texture-packing.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/2D/texture-packing.md",
+      "sha256": "daac0c659fdca99fd3512450427b0755371abafde80280373f8144d763fe5d1e"
+    },
+    "repo/docs/user-manual/animation/blend-trees.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/animation/blend-trees.md",
+      "sha256": "62cd0c0f51fd7bdf3326ad3fa5843b4de050bbe813640784ac709772f1612477"
+    },
+    "repo/docs/user-manual/animation/clips.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/animation/clips.md",
+      "sha256": "a2d0b2e5010b5c3f55476e582b5c365a432778cda8bf02f32fad6048cef74574"
+    },
+    "repo/docs/user-manual/animation/events.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/animation/events.md",
+      "sha256": "997055076679c31bc03f3ee804e936bc94a8f6aa7e82d5e68c216dc6046b31ca"
+    },
+    "repo/docs/user-manual/animation/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/animation/index.md",
+      "sha256": "60a327e3ca8d1d879bf9b214ebb586e49041ff0b171bec0eca793d49ee70c67a"
+    },
+    "repo/docs/user-manual/animation/layers-and-masks.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/animation/layers-and-masks.md",
+      "sha256": "0500d005c82b1ed239ea9b3b64eb5585d159e9e73ca697d8151cbb08c6be22ae"
+    },
+    "repo/docs/user-manual/animation/playing-animations.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/animation/playing-animations.md",
+      "sha256": "0169dbba62e1e96440de8872b1767c493c9490279ecc05c55655ffe73212058c"
+    },
+    "repo/docs/user-manual/animation/state-graphs.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/animation/state-graphs.md",
+      "sha256": "ba279401d352a0d134dfe4151d0acfe81f6419c622497fd3da64157811f99c9c"
+    },
+    "repo/docs/user-manual/assets/asset-registry.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/assets/asset-registry.md",
+      "sha256": "6274d23ce6c2c3f6eb7301798abbc3136616e9e663b85c6b2cda9da9f69c7dac"
+    },
+    "repo/docs/user-manual/assets/custom-parsers.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/assets/custom-parsers.md",
+      "sha256": "833386fe8849e50ce5cb1feb86c8eff22dbf05097423b0cb540dc7309f97d178"
+    },
+    "repo/docs/user-manual/assets/finding.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/assets/finding.md",
+      "sha256": "07c240332a78292afeeb8a4490ed147a61e1cee4a69156f567fc74ec3d1691a8"
+    },
+    "repo/docs/user-manual/assets/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/assets/index.md",
+      "sha256": "6ba651ff68f66631be795271939296c8d0b73d2fbbba983400d29f09d8d03fba"
+    },
+    "repo/docs/user-manual/assets/loading-unloading.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/assets/loading-unloading.md",
+      "sha256": "b61d16dbeb90f657a0a8a7568b58f12043a21977ec8453a4743f1fc06f49e49f"
+    },
+    "repo/docs/user-manual/assets/models/building.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/assets/models/building.md",
+      "sha256": "0b5a74e827cf6b1cce452f7fa4056a16efa42e3153d6020a162633838b581644"
+    },
+    "repo/docs/user-manual/assets/models/exporting.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/assets/models/exporting.md",
+      "sha256": "c49a577128cd26a27cacae652f91174fbf30265040145362872533f2e3d6681a"
+    },
+    "repo/docs/user-manual/assets/models/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/assets/models/index.md",
+      "sha256": "00892bd8cf3d08cdbf3f7dee4c5432ed7abc38302c3c73142973b1e7a42b926e"
+    },
+    "repo/docs/user-manual/assets/models/units.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/assets/models/units.md",
+      "sha256": "26ce7b155f754740d8603fd8bc1ff72c3ea3ef5c5e8b9fc624862ee32d273608"
+    },
+    "repo/docs/user-manual/assets/preloading.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/assets/preloading.md",
+      "sha256": "9dbce7041016a70c83e2e99341c833796adcbba90dd75edb71bb08466c76ecff"
+    },
+    "repo/docs/user-manual/assets/supported-formats.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/assets/supported-formats.md",
+      "sha256": "4c7bcf2099354c54dbef1f53c4b16717dfaead25319d3c9ba2bbc250155eb45a"
+    },
+    "repo/docs/user-manual/debugging/browser-dev-tools.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/debugging/browser-dev-tools.md",
+      "sha256": "f247f8516981be87db29d9f2abd98f156a155c365551376c7b26270b941f1fb0"
+    },
+    "repo/docs/user-manual/debugging/console-logging.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/debugging/console-logging.md",
+      "sha256": "e10297e6c44d6e7d9b6c91d252eb208e73dc55bd6b58cd0a192f608c79dabacd"
+    },
+    "repo/docs/user-manual/debugging/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/debugging/index.md",
+      "sha256": "9b71d6e0e9f85704e63d5737263721064eed2a8d38542fdedcf00697e8983a83"
+    },
+    "repo/docs/user-manual/debugging/inspector.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/debugging/inspector.md",
+      "sha256": "faf008ca6e2fe5d23825666e69a5385162ca62ae7b9aa47b697ea99e0a7b27f5"
+    },
+    "repo/docs/user-manual/ecs/components.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/ecs/components.md",
+      "sha256": "56922b699f42caf0c5215df5556e56bfcb163187b926d64a2e64b92a99548964"
+    },
+    "repo/docs/user-manual/ecs/entities.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/ecs/entities.md",
+      "sha256": "25a04b2cf2f28e56fb7ad46e9b368a607c9a79fc8579f5c1cbf264e4d34dd712"
+    },
+    "repo/docs/user-manual/ecs/hierarchy-and-transformations.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/ecs/hierarchy-and-transformations.md",
+      "sha256": "ae1325e32ead732ed86f8dfb846d454f1f1b174a0af7f5d2c88158fd822fd491"
+    },
+    "repo/docs/user-manual/ecs/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/ecs/index.md",
+      "sha256": "e39033e2a4f1721683c0fa6554b0c993b81912b9f2f6a927156d11c5052eab51"
+    },
+    "repo/docs/user-manual/ecs/searching-the-hierarchy.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/ecs/searching-the-hierarchy.md",
+      "sha256": "2b6b8dc1107fa990ad847470026e117d9043743ec8f367e7669576fba24ff594"
+    },
+    "repo/docs/user-manual/editor/scenes/components/anim.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/anim.md",
+      "sha256": "6f45ddd3a71892adc753f09567ef825d848bdc5f28520e4934769f8ff560f2b7"
+    },
+    "repo/docs/user-manual/editor/scenes/components/animation.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/animation.md",
+      "sha256": "ffc1486fee421875c11e37861fe1fd7f33e2ca9f60c838b7bde98ddeafc23387"
+    },
+    "repo/docs/user-manual/editor/scenes/components/audiolistener.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/audiolistener.md",
+      "sha256": "e291a64d702fc99929cadfdb6cdff938c00452bf325c195eff1311c441056c69"
+    },
+    "repo/docs/user-manual/editor/scenes/components/button.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/button.md",
+      "sha256": "8678811b9d83646b5ee94332f100fc7dc00f3ef0fc26a8223de8b393e44394b8"
+    },
+    "repo/docs/user-manual/editor/scenes/components/camera.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/camera.md",
+      "sha256": "031257284f3776c005b150b1d90b1e1679bd152d04da26df00807b260803ae10"
+    },
+    "repo/docs/user-manual/editor/scenes/components/collision.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/collision.md",
+      "sha256": "7d03c28015b4e46da4bfa2b10c5195c3a58d91802f89f3b50569b5e3a1acb58f"
+    },
+    "repo/docs/user-manual/editor/scenes/components/element.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/element.md",
+      "sha256": "491a6c5dbf2e40751598e495657423b4ef41601d0ea6a9afe4ebd4fa12a38146"
+    },
+    "repo/docs/user-manual/editor/scenes/components/gsplat.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/gsplat.md",
+      "sha256": "a624265ccc018b46e4a80ac69de9dbd677ff68c524bed8f589e67970dfd46bd2"
+    },
+    "repo/docs/user-manual/editor/scenes/components/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/index.md",
+      "sha256": "c11acb7bb62ef193402030a0847d2a81142ee287d976cc75d6038ebb940ee890"
+    },
+    "repo/docs/user-manual/editor/scenes/components/joint.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/joint.md",
+      "sha256": "8abcf567e6c601b1459d5203ec5fe32000bd1325e303688162b6f3e43c0ad4dc"
+    },
+    "repo/docs/user-manual/editor/scenes/components/layoutchild.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/layoutchild.md",
+      "sha256": "c9098286cc4d4ad172ce164908e6ef9b58778e94b2c8b2783a374da72f3b446c"
+    },
+    "repo/docs/user-manual/editor/scenes/components/layoutgroup.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/layoutgroup.md",
+      "sha256": "1e1c728782f30868c632b03a4c8277e07aefa688cf59e708d5e8ef84be67fa11"
+    },
+    "repo/docs/user-manual/editor/scenes/components/light.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/light.md",
+      "sha256": "d99d0516bef556582f5caedcaf40d7f5496fcb9afd33293298b236e19057a479"
+    },
+    "repo/docs/user-manual/editor/scenes/components/model.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/model.md",
+      "sha256": "7f7da5bdae8bed0752bde250856ae06fb8a70f733eb9c30be8ad9124ba0c3c24"
+    },
+    "repo/docs/user-manual/editor/scenes/components/particlesystem.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/particlesystem.md",
+      "sha256": "25472a7a9ea06ba4c978c022cbd91b69abc975867c9d2a7bb481d7d558fdc1eb"
+    },
+    "repo/docs/user-manual/editor/scenes/components/render.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/render.md",
+      "sha256": "26b48d5cd8f548145bf3fc154e9931feeb78f00670ea75fdd2b79dff400d8330"
+    },
+    "repo/docs/user-manual/editor/scenes/components/rigidbody.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/rigidbody.md",
+      "sha256": "b7397ddde766248f3c6772f39250c9c669af50c0ddb32c57e37e13b94d063b9b"
+    },
+    "repo/docs/user-manual/editor/scenes/components/screen.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/screen.md",
+      "sha256": "1ca7bf435fbb744cccfbebc4194b8b1c6c1d0da8eb61a8f0bde7bfde2573a503"
+    },
+    "repo/docs/user-manual/editor/scenes/components/script.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/script.md",
+      "sha256": "c7bbe13e701ac052d86c8f2d95c9c55fe3ed053a25e72e66c899cac92cca7328"
+    },
+    "repo/docs/user-manual/editor/scenes/components/scrollbar.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/scrollbar.md",
+      "sha256": "b20c674a74024766657a2302c646a1abf1c8f52f87939e1fd7e6cffb23e0405f"
+    },
+    "repo/docs/user-manual/editor/scenes/components/scrollview.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/scrollview.md",
+      "sha256": "ef5a914ccbdf4107157d1ea750e044d6a328ac0ca921a49b8cef589d63381c18"
+    },
+    "repo/docs/user-manual/editor/scenes/components/sound.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/sound.md",
+      "sha256": "3e8b64e8a4b453fbfb2724d5e2593812e5b79be8db93025deda6099e7398202b"
+    },
+    "repo/docs/user-manual/editor/scenes/components/sprite.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/editor/scenes/components/sprite.md",
+      "sha256": "0f9d56b670d6cc06eb9b58ae8d142e1bf19cc648bc81c401cb56aa456d544385"
+    },
+    "repo/docs/user-manual/engine/bundle-size.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/bundle-size.md",
+      "sha256": "123fc3d00548b81ab73fdba5afccefe5b57638adbe6def222a29b2319f5b427b"
+    },
+    "repo/docs/user-manual/engine/developing-with-ai.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/developing-with-ai.md",
+      "sha256": "6f09a066aad248f0d2c3e682a8eaafac77ad803eae2c80f029d3e39311785e6c"
+    },
+    "repo/docs/user-manual/engine/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/index.md",
+      "sha256": "0dbe8c6f78514fffb79ff8b344ede4a7128070760d9f87afba670af7e333225d"
+    },
+    "repo/docs/user-manual/engine/libraries/3d-tiles.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/libraries/3d-tiles.md",
+      "sha256": "ace70e179da5b22b182c3c84a34284275d76e0181c862f5cdf1f8e50ca6dd2ca"
+    },
+    "repo/docs/user-manual/engine/libraries/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/libraries/index.md",
+      "sha256": "41a8f90e0454581fb60cdfbbbd4ac3de8ad26c90b31fe92f62dca681ce41f709"
+    },
+    "repo/docs/user-manual/engine/libraries/loaders-gl.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/libraries/loaders-gl.md",
+      "sha256": "5c79de28f85943308a1e670f9cc98482318363be8e54f85cd3da62f18ba4c122"
+    },
+    "repo/docs/user-manual/engine/libraries/spine.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/libraries/spine.md",
+      "sha256": "0ea3cf2d0508d80f761aa91e6cfb9f764bda0a3a5752be1a31f41833ce9bee71"
+    },
+    "repo/docs/user-manual/engine/libraries/tween.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/libraries/tween.md",
+      "sha256": "5f060b9a8a7f2741f469479095007a8b11f7b8a5fd39a73172507ba4dbd01c15"
+    },
+    "repo/docs/user-manual/engine/migrations.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/migrations.md",
+      "sha256": "924d3b7ac381413ede2a9322baab4996c1896233f28015d17d027e6365ba0bee"
+    },
+    "repo/docs/user-manual/engine/running-in-node.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/running-in-node.md",
+      "sha256": "121386591e31cc5d2acb7333931ea52e14f5134c09e7365119e460033a852eab"
+    },
+    "repo/docs/user-manual/engine/standalone.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/standalone.md",
+      "sha256": "bfccd843cdedf36f6e9adf9a62b6fcec495530873681e7ab8c1f07e823e04061"
+    },
+    "repo/docs/user-manual/engine/supported-browsers.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/supported-browsers.md",
+      "sha256": "3824e8758b76c8deaf32fb16707f4aae8134260577d1a50b742001888eb33b44"
+    },
+    "repo/docs/user-manual/engine/versioning.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/engine/versioning.md",
+      "sha256": "6664e41826bc3ca9dd431c636837f5e51c5a659872fe0f2600cb59cca31fe461"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/anti-aliasing.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/anti-aliasing.md",
+      "sha256": "59718c662bbb5137da32853db462cb0d4695670f0ad637e91e75ab08e2c3a385"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/custom-shaders/fragment.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/custom-shaders/fragment.md",
+      "sha256": "7fb0906f5196bcf6cc833c2ba260caf97d7dbd3ef3acb684912cfa3b406eb377"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/custom-shaders/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/custom-shaders/index.md",
+      "sha256": "ca9d5ee572e66dd7054e0d8984b11e81462a544c01b10c9e43c3510a6cef7d44"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/custom-shaders/varyings.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/custom-shaders/varyings.md",
+      "sha256": "fddda861f2929db0e7289afb4eff187b2a7648a9241cbd9e0c7c81960161e393"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/custom-shaders/vertex.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/custom-shaders/vertex.md",
+      "sha256": "56c2511a24a5e5caf534ce5c9db86887adc20554c740d763bd1015fcf3d44b57"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/fisheye.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/fisheye.md",
+      "sha256": "782d4aae163a9aaaae02f1641d0c8677fc67c5f6491e89c0a7d1e663f58b5e92"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/index.md",
+      "sha256": "eaecef47b51b5cbf6f45a25b477aaf3b1fb4a02c69b41e47668eb3c4ea5374e8"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/lod-streaming.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/lod-streaming.md",
+      "sha256": "04fed95123a44916b3b0c9a4351d43532dcbb045d3bd6454545eb8cb1dffaf74"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/performance.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/performance.md",
+      "sha256": "a345d33985035785687718e29f0ec609c359be9d121ee5b9d3aa27e81f501385"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/picking.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/picking.md",
+      "sha256": "e19b680aa67eaf10e577160419245d582263d0add5ba6c8540992c38b03f078b"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/procedural-splats/image.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/procedural-splats/image.md",
+      "sha256": "694f306d89a7826d4cc9441f406f05387c6352ce448e8258a3bfea86badc8578"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/procedural-splats/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/procedural-splats/index.md",
+      "sha256": "83c1c8c9d5adc2713e7e8461a3a719a59e2fc644732b139fd9af7308d66367cc"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/procedural-splats/lines.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/procedural-splats/lines.md",
+      "sha256": "5b448b60eb9914ae357294b19f692b4035c83c0f272f28b8651fbc4aacef6b71"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/procedural-splats/mesh.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/procedural-splats/mesh.md",
+      "sha256": "0c764a20ec92a9ce2b29e708ebdc42ff989a7176c84f9e104b33b56e8bd5f546"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/procedural-splats/text.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/procedural-splats/text.md",
+      "sha256": "ea250cfed3a05c757b26e925c97ae628adae9c61c24fbf1655c752f7aecfc465"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/relighting.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/relighting.md",
+      "sha256": "28c58b9c4aab2b2d4acbf211dac4cab27449ed4337923b148657cb9abe4321d2"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/render-on-demand.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/render-on-demand.md",
+      "sha256": "e2c4a8b5d98f368f5583209ff1fdf9d3b63faf1271d3e5e5d842ff9b1d85cd72"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/shadows.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/shadows.md",
+      "sha256": "90b6ef81a0f41451df884ac970d2afce780404c7084ad8885b702d757ec85e02"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/tonemapping.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/tonemapping.md",
+      "sha256": "98ede1750c93fb0e1e421eebfbded0fd0d6bce5358b6ace55f91e52b076d57fd"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/your-first-app/editor.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/your-first-app/editor.md",
+      "sha256": "d4bbacbeffc477abeabc53d77d2f7ee61885ba19146fde54cd24a825bf056b29"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/your-first-app/engine.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/your-first-app/engine.md",
+      "sha256": "38bf254f2e17df434a23265a9c34df48444f19e06e6c4dcfea47dd917ac96a18"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/your-first-app/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/your-first-app/index.md",
+      "sha256": "bd8926e64f7beea49dd09c837c582455c00b46daf6258d5169f64d7b50ba5403"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/your-first-app/react.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/your-first-app/react.md",
+      "sha256": "7637f0d23462cdb216375b65898ff227e80ee279d9e878def9531438df25b61b"
+    },
+    "repo/docs/user-manual/gaussian-splatting/building/your-first-app/web-components.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/building/your-first-app/web-components.md",
+      "sha256": "6060546c1d4df4bf54698969fe68c640aa64ae534f28ab40459f41bf1b11c22b"
+    },
+    "repo/docs/user-manual/gaussian-splatting/creating/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/creating/index.md",
+      "sha256": "43086ab19c9076261e9678b013e8369dad278417e375abff89f6e1655a024f96"
+    },
+    "repo/docs/user-manual/gaussian-splatting/creating/recommended-tools.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/creating/recommended-tools.md",
+      "sha256": "f42a4314040c16394bda10c39ffdd3ca5dacdcca132aed3608ed5cd2218f7b27"
+    },
+    "repo/docs/user-manual/gaussian-splatting/creating/taking-photos.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/creating/taking-photos.md",
+      "sha256": "af34be835d1980d85f158fdf101981cf7b77a4328940d6355b4ef6a58e093588"
+    },
+    "repo/docs/user-manual/gaussian-splatting/editing/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/editing/index.md",
+      "sha256": "58da88586125ead037d23a5b1bb490136ca8ee473489b21e03cb38f4ad4b82db"
+    },
+    "repo/docs/user-manual/gaussian-splatting/formats/glb.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/formats/glb.md",
+      "sha256": "146e5285df77012c945e7d330b1927ec730d6a0e92c77a2a9e74d4f7152fd22f"
+    },
+    "repo/docs/user-manual/gaussian-splatting/formats/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/formats/index.md",
+      "sha256": "ff53c654202b2bf19d5f92eab1b9a7a3cb03eb4616601d9d78914a7ba5ed2881"
+    },
+    "repo/docs/user-manual/gaussian-splatting/formats/lcc2.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/formats/lcc2.md",
+      "sha256": "b28e0cdef1d5aa798b8e200010eaad94605085fb47b06216b5c63c27d2715bc1"
+    },
+    "repo/docs/user-manual/gaussian-splatting/formats/ply.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/formats/ply.md",
+      "sha256": "0f46637ebac979ff4bb36cfe182a67f8acca60368920af431dec181e0325b7bd"
+    },
+    "repo/docs/user-manual/gaussian-splatting/formats/sog-v2.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/formats/sog-v2.md",
+      "sha256": "060196baaabdef207c78bc9bbd797f38999bb7ea672d957a6127c184bfc758e1"
+    },
+    "repo/docs/user-manual/gaussian-splatting/formats/sog.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/formats/sog.md",
+      "sha256": "a3f3db41fc09fdc82b01ae52775827743383ce50537f9e75fed9ddefe8ada792"
+    },
+    "repo/docs/user-manual/gaussian-splatting/formats/spz.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/formats/spz.md",
+      "sha256": "4d52985f11800f57f4fc820c16f09ae6cb6c76f4f87cb529ed976b31fb9d387a"
+    },
+    "repo/docs/user-manual/gaussian-splatting/formats/streamed-sog.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/formats/streamed-sog.md",
+      "sha256": "f229efb1ce4b4e58d8712179b76d5683996b28d38eb6368e8622fbc9044f4019"
+    },
+    "repo/docs/user-manual/gaussian-splatting/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/index.md",
+      "sha256": "e752318b52106903e95c22c39cb896f4da3dfab932581faa992be2c43fd314e1"
+    },
+    "repo/docs/user-manual/gaussian-splatting/rendering-architecture/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/rendering-architecture/index.md",
+      "sha256": "579a128f6b5c674c6d3118d483fc3653a1302019001952b636b01e4b21a0f3ba"
+    },
+    "repo/docs/user-manual/gaussian-splatting/rendering-architecture/renderers.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/rendering-architecture/renderers.md",
+      "sha256": "cd98edbcfc49a140a102f4cb9c8b9900a0c68989d2583c83f1d237c2c30899a0"
+    },
+    "repo/docs/user-manual/gaussian-splatting/rendering-architecture/splat-data-format.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/rendering-architecture/splat-data-format.md",
+      "sha256": "d57cae2581f6cbcfcf05b8cad23ace2c8273a928061c41dc804b93d76afbc518"
+    },
+    "repo/docs/user-manual/gaussian-splatting/rendering-architecture/splat-processing.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/rendering-architecture/splat-processing.md",
+      "sha256": "bb93832d531d60c24e8fa897a12231516ee41cc5de28880ddd84e5fec70c7b72"
+    },
+    "repo/docs/user-manual/gaussian-splatting/rendering-architecture/work-buffer-format.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/rendering-architecture/work-buffer-format.md",
+      "sha256": "a81a08352e42e264f32af219a668129bd34b2874d8e29696ab586d9740394148"
+    },
+    "repo/docs/user-manual/gaussian-splatting/rendering-architecture/work-buffer-rendering.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/rendering-architecture/work-buffer-rendering.md",
+      "sha256": "8ecef0ef78a2888e572888d2f3060abbf674f5aaf9ec3ef00236f57be5144aea"
+    },
+    "repo/docs/user-manual/gaussian-splatting/viewing.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/viewing.md",
+      "sha256": "89cd9897a242f5ef81665bcfc813630c2c9f60a3f55337fc5262b5099bfa870f"
+    },
+    "repo/docs/user-manual/gaussian-splatting/what-is-gaussian-splatting.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/gaussian-splatting/what-is-gaussian-splatting.md",
+      "sha256": "819ff0a3e2e39b7fcede04b106b804041879b445e594deac5a72ae629d5b40fa"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/batching.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/batching.md",
+      "sha256": "9a9c01fe5464e2c99f8b9a9c9e6d3ce94cfe84c045aa8f97144caedd44605274"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/device-loss.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/device-loss.md",
+      "sha256": "b335927aa4cc4ec78c2266af5ce119062355e9c41ffc53b1919c8efdc76cd272"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/dual-source-blending.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/dual-source-blending.md",
+      "sha256": "7a3479d9cc5fad27f27de5d0ba3e3711f5dc8169401947ac018670a7e99dbea3"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/frame-graph/camera-passes.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/frame-graph/camera-passes.md",
+      "sha256": "924b9b2fe78f3ea57169678c41a818db97b4882be1229b0ce99ab5acce20bdef"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/frame-graph/compute-pass.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/frame-graph/compute-pass.md",
+      "sha256": "0164f1f685fe900eecdb2792f8542600fa4ef038e8f2c170fea83345ed39e2a4"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/frame-graph/frame-passes.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/frame-graph/frame-passes.md",
+      "sha256": "65e4b5fbb27fb802b855872773248561faf9965bbaee24df21a45e5dc6f696b5"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/frame-graph/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/frame-graph/index.md",
+      "sha256": "3fefc4efc21e7b3409496d784d0adb9818204006d24ada395ccdbc4f4b5aa6dd"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/frame-graph/render-pass-forward.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/frame-graph/render-pass-forward.md",
+      "sha256": "b74ef9bdbd057f40f5dc8c3ef1450b60670ebb21ea80616bfb0b90bac582922b"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/frame-graph/render-pass-shader-quad.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/frame-graph/render-pass-shader-quad.md",
+      "sha256": "424f08b5f23e8e39e4d57bdb0f4c09fdca88fa2389f3e73a59eba8e9343fb738"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/frame-graph/render-pass.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/frame-graph/render-pass.md",
+      "sha256": "e9839201e31d66d6e72257b681cf73949a539509bd25442ef42fe129de10029a"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/hardware-instancing.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/hardware-instancing.md",
+      "sha256": "40750760f179d637b0e9ffd479ca33ae6286962ba12c387674034cd09934c465"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/html-in-canvas.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/html-in-canvas.md",
+      "sha256": "d94fee2ffb0314e5d4000f0259fb6e2e439922fb613272559e7c40ae1f9aba8c"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/index.md",
+      "sha256": "1e3d84f769a089b28085c1802091747fde3cff9ee73ad8d2013478b5648ce2b7"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/indirect-drawing.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/indirect-drawing.md",
+      "sha256": "92715a54657fa35aabea51112ae7231f82331ca19f9b2b10e25b7bceb33dad19"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/multi-draw.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/multi-draw.md",
+      "sha256": "466decbb816694c7ff7c5bdf3de1008521e288e37745378a7be6dae1fcebcd30"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/multiple-render-targets.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/multiple-render-targets.md",
+      "sha256": "a65861f780b52765d6d74d9422c491a4a9a31899d7c12af77d0c407121c6be7b"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/render-targets.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/render-targets.md",
+      "sha256": "6dbb98de7a15f3da4322eb69a130ef409b987b7700c00e4ec9c499a9e4932f54"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/rendering-without-entities.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/rendering-without-entities.md",
+      "sha256": "69c76f1d0ab3d88ab9e50959e0128ab263b3bcf8a3cf2005a23429533c908d65"
+    },
+    "repo/docs/user-manual/graphics/advanced-rendering/transform-feedback.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/advanced-rendering/transform-feedback.md",
+      "sha256": "c09046e9e5a079ab2762800c92901e80894833c643d50a4c500813c0837b5b3c"
+    },
+    "repo/docs/user-manual/graphics/cameras/camera-controls.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/cameras/camera-controls.md",
+      "sha256": "e22dbbb44355393295174f9c6fad2a656fd0a046346458341dc5de0f9873e237"
+    },
+    "repo/docs/user-manual/graphics/cameras/clearing.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/cameras/clearing.md",
+      "sha256": "44fde64bcc9c8b19c434c40e5c178fe5df6ee526e1e77b7113d695e71a836b0a"
+    },
+    "repo/docs/user-manual/graphics/cameras/depth-layer.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/cameras/depth-layer.md",
+      "sha256": "b135aac8d4dcf746f947ad3b0121029c0340de82e70c6c620ee351c7268119b3"
+    },
+    "repo/docs/user-manual/graphics/cameras/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/cameras/index.md",
+      "sha256": "eb07ac909d0b6abae6e95f13789e3b8838c87abbeb564e1d9109a9a0b6c151df"
+    },
+    "repo/docs/user-manual/graphics/cameras/multiple-cameras.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/cameras/multiple-cameras.md",
+      "sha256": "94c3c4dabe3de3e50bcdae333dd23771a33dca0c54d87960e491e1706ab05d47"
+    },
+    "repo/docs/user-manual/graphics/cameras/projection.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/cameras/projection.md",
+      "sha256": "938e6004df1adf14233f58effbb3f26af423e577aa94ef7d473ef22ebc54bdad"
+    },
+    "repo/docs/user-manual/graphics/cameras/scene-picker.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/cameras/scene-picker.md",
+      "sha256": "1068b2f3903dbe7cdd28e4cc1e482387069e40119783aa6419a34a573750a155"
+    },
+    "repo/docs/user-manual/graphics/cameras/screen-and-world.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/cameras/screen-and-world.md",
+      "sha256": "068bbdc85d7ef3f62534e16c6556def918fdd70009740d33e00d93f1f3b5447f"
+    },
+    "repo/docs/user-manual/graphics/cameras/tone-mapping.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/cameras/tone-mapping.md",
+      "sha256": "162aaa62b0453940eebf8c4641b536eade32e83dfda305bf033e377300f493a5"
+    },
+    "repo/docs/user-manual/graphics/debug-drawing.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/debug-drawing.md",
+      "sha256": "94cae72223967d852b385188ac1eb9e2e57e8b5e7551053d7581d4a84f2b952f"
+    },
+    "repo/docs/user-manual/graphics/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/index.md",
+      "sha256": "4a257a4abe1c2785b91b4000b2fdb4eec73c5387c87770f8e4e229e192ba9c13"
+    },
+    "repo/docs/user-manual/graphics/layers/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/layers/index.md",
+      "sha256": "25a9e6b274cbc7fe02864155a176c822fa4b5b35828259df675dfc52a4f6bf10"
+    },
+    "repo/docs/user-manual/graphics/lighting/ambient-occlusion.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/lighting/ambient-occlusion.md",
+      "sha256": "755022858d32656d603332d836ac17105d9c9f29c33e917fe95c42e7f6545ca0"
+    },
+    "repo/docs/user-manual/graphics/lighting/clustered-lighting.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/lighting/clustered-lighting.md",
+      "sha256": "fd20bbacd1fe223eb760d2babd0b6da72b8bd1d599d4314f36d63657ec724236"
+    },
+    "repo/docs/user-manual/graphics/lighting/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/lighting/index.md",
+      "sha256": "be6d74ee8a978b4d347b518fb34ece36b284b028d634c89896fec09dd4bb0264"
+    },
+    "repo/docs/user-manual/graphics/lighting/lightmapping.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/lighting/lightmapping.md",
+      "sha256": "b36a3a1a00b36576dd95337b9d7e8522581683ba9beb0d3da68c14c81c040013"
+    },
+    "repo/docs/user-manual/graphics/lighting/lights.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/lighting/lights.md",
+      "sha256": "0d06ae90e5afeb04175918530bd431cb529742e3851bf45b1e495233aeb53058"
+    },
+    "repo/docs/user-manual/graphics/lighting/runtime-lightmaps.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/lighting/runtime-lightmaps.md",
+      "sha256": "8e5042282d9ca399e24f38a9db710b59ca9f62faecbd305ee9dffde8e432d26a"
+    },
+    "repo/docs/user-manual/graphics/lighting/shadows.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/lighting/shadows.md",
+      "sha256": "a5bd89f60e751e53e2fc5c807d04de70fe8361950e51b07ef7589d148759f471"
+    },
+    "repo/docs/user-manual/graphics/linear-workflow/hdr-rendering.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/linear-workflow/hdr-rendering.md",
+      "sha256": "0e34325b49c705b29bee028fb78d4e02eefe3cdf016fd0d6fc3a8a204a212814"
+    },
+    "repo/docs/user-manual/graphics/linear-workflow/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/linear-workflow/index.md",
+      "sha256": "842004c751a5f6dfb9202094af33a201cffa637d490e45a6981f10aa2e832969"
+    },
+    "repo/docs/user-manual/graphics/linear-workflow/textures.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/linear-workflow/textures.md",
+      "sha256": "178a7ba8201cfa0f19b3125bc5862821b10bf5e7b58e26e8314110b7727f044c"
+    },
+    "repo/docs/user-manual/graphics/meshes/creating-meshes.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/meshes/creating-meshes.md",
+      "sha256": "0e79dd2aeea7ef0bd24baf1b0fcf84b29635d8ca57ddaa48a1df8e4f6ab9ebef"
+    },
+    "repo/docs/user-manual/graphics/meshes/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/meshes/index.md",
+      "sha256": "c3e101144028ab1fa868b7266db8614de6c23205b5760e3c657d418969073604"
+    },
+    "repo/docs/user-manual/graphics/meshes/mesh-instances.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/meshes/mesh-instances.md",
+      "sha256": "6a85dfac6609cdf696a6d23dd1c0fc132ae4e3e9a64b2909928396ebe6ae089e"
+    },
+    "repo/docs/user-manual/graphics/particles.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/particles.md",
+      "sha256": "2ea9ccb99982158dc093089afa97431816bb97c1bde68bf65b7ced40051bb9d6"
+    },
+    "repo/docs/user-manual/graphics/physical-rendering/environment-lighting.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/physical-rendering/environment-lighting.md",
+      "sha256": "93dd6c7191ffa03c16f35ef4e5d0b615854980b4dea937b98e448f23c62be8c0"
+    },
+    "repo/docs/user-manual/graphics/physical-rendering/image-based-lighting.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/physical-rendering/image-based-lighting.md",
+      "sha256": "54b7a182cec98effb810468b08fc3b65ff630f9eb62cac7c212eb8226f4968f7"
+    },
+    "repo/docs/user-manual/graphics/physical-rendering/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/physical-rendering/index.md",
+      "sha256": "0306bc6a57e14c2bd6f05ae532b7e7e6f5cef095b11188475850e6d52181516c"
+    },
+    "repo/docs/user-manual/graphics/physical-rendering/parallax-mapping.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/physical-rendering/parallax-mapping.md",
+      "sha256": "3f0e9cf56f73cc81d8dde030bce70a8a483dbd87787ff30a1ebd75a7ffaade7a"
+    },
+    "repo/docs/user-manual/graphics/physical-rendering/physical-materials.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/physical-rendering/physical-materials.md",
+      "sha256": "07505b1ad84e5968ac1252fa28b0a57be99057539e3d0145908b211aee422eb8"
+    },
+    "repo/docs/user-manual/graphics/posteffects/cameraframe/auto-exposure.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/cameraframe/auto-exposure.md",
+      "sha256": "6e7d169ee03cbef2500c9ff239952fb354d756eda4de82c520bea59d7c681f18"
+    },
+    "repo/docs/user-manual/graphics/posteffects/cameraframe/custom-effects.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/cameraframe/custom-effects.md",
+      "sha256": "c537dfa80316611e1add3f85034034ea72fcc7ccf860286580b54bbe0e8c5926"
+    },
+    "repo/docs/user-manual/graphics/posteffects/cameraframe/dynamic-sky.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/cameraframe/dynamic-sky.md",
+      "sha256": "d610270e495464bdbeaa3239e666330cac97cf24687faebe4137e3a1d238380d"
+    },
+    "repo/docs/user-manual/graphics/posteffects/cameraframe/effect-passes.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/cameraframe/effect-passes.md",
+      "sha256": "a944e6a84111e57eb140666395e644124fbc7b287473afdf5f34efd7957149a1"
+    },
+    "repo/docs/user-manual/graphics/posteffects/cameraframe/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/cameraframe/index.md",
+      "sha256": "efd636d465c3708a373b3edb26d13c24be7ead1766bfc67d93a4945d6e61bd97"
+    },
+    "repo/docs/user-manual/graphics/posteffects/cameraframe/lens-flare.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/cameraframe/lens-flare.md",
+      "sha256": "7c809ac456092ce3256a5300d78d3db58c5a66fc7d429eeb7ababfd0f0f492e6"
+    },
+    "repo/docs/user-manual/graphics/posteffects/cameraframe/volumetric-fog.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/cameraframe/volumetric-fog.md",
+      "sha256": "14bd2e72c7723b542cb7b3136bc03a761237d5be34822738397bdbfa2848cf18"
+    },
+    "repo/docs/user-manual/graphics/posteffects/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/index.md",
+      "sha256": "0fed2511fee652a37e325a7412dbec3b4150df73e711a33ebaff94b7fc2d6fcd"
+    },
+    "repo/docs/user-manual/graphics/posteffects/legacy/bloom.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/legacy/bloom.md",
+      "sha256": "2a0392147bd0ba05c98913d358128058ac7be21633f3d130c2bd4e869ffaf052"
+    },
+    "repo/docs/user-manual/graphics/posteffects/legacy/brightness_contrast.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/legacy/brightness_contrast.md",
+      "sha256": "30dc2a662d7da7505f7c76d23a7bc7d79e1e7b998b8bfca3bb9c9de34fe50c0d"
+    },
+    "repo/docs/user-manual/graphics/posteffects/legacy/fxaa.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/legacy/fxaa.md",
+      "sha256": "0ad6a13f0b380cdddc446f2650fe62da61e1a52c4723a839536761ec7c4c4c57"
+    },
+    "repo/docs/user-manual/graphics/posteffects/legacy/hue_saturation.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/legacy/hue_saturation.md",
+      "sha256": "8345e233915a6e3c8ce61e6319511f3f26b18a6451304d94d34674fd1d92284b"
+    },
+    "repo/docs/user-manual/graphics/posteffects/legacy/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/legacy/index.md",
+      "sha256": "8e22bc535a372cb732dec5f7305aabaf35a10dcabe0873197eda99ea9972cf97"
+    },
+    "repo/docs/user-manual/graphics/posteffects/legacy/sepia.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/legacy/sepia.md",
+      "sha256": "b522dd6608b3adfc95fbadd98761d1aa4844e5b3c7f4291a907e10f01a955cda"
+    },
+    "repo/docs/user-manual/graphics/posteffects/legacy/vignette.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/posteffects/legacy/vignette.md",
+      "sha256": "2c86bf8dc3132a18bfe30f23f07ed77af8e01aa9906fe40bfc48e089d9baf84d"
+    },
+    "repo/docs/user-manual/graphics/shaders/built-in-uniforms.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/built-in-uniforms.md",
+      "sha256": "34be79aff8eca59211544d7656cae140aadf422170927f05efe3ee4fd06e3d81"
+    },
+    "repo/docs/user-manual/graphics/shaders/compute-shaders-advanced.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/compute-shaders-advanced.md",
+      "sha256": "3aef481e38171fcd9cd9c6fe464662ebbca9400455cf7bbce6dbcdab050ceb07"
+    },
+    "repo/docs/user-manual/graphics/shaders/compute-shaders.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/compute-shaders.md",
+      "sha256": "625954320c6c03872971a554c57bf7bf36f0d30399db34af46b1898bac49f34e"
+    },
+    "repo/docs/user-manual/graphics/shaders/glsl-specifics.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/glsl-specifics.md",
+      "sha256": "98b74f4d4fab98a6d2950c2afa46efe7f6efc66b9e1ebdccac24b3ccc51726ea"
+    },
+    "repo/docs/user-manual/graphics/shaders/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/index.md",
+      "sha256": "3345089c9165be7c6421b6eb7d160fd446bb05d6fbc6e3d525e65192fc0418be"
+    },
+    "repo/docs/user-manual/graphics/shaders/migrations.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/migrations.md",
+      "sha256": "3b8fb32851af498bb7f68187c8f6daa136e0432b11294ee136e0b68a03793dd5"
+    },
+    "repo/docs/user-manual/graphics/shaders/preprocessor.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/preprocessor.md",
+      "sha256": "606e2693de0c396ca5be4fd25784eefd6f29d6fc37254a64f2a178eb4e31d016"
+    },
+    "repo/docs/user-manual/graphics/shaders/shader-parameters.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/shader-parameters.md",
+      "sha256": "8008bdd62eb96e0fe95678e1aabb127fd3c4c50e626db263077c7d08b1ab48f4"
+    },
+    "repo/docs/user-manual/graphics/shaders/wgsl-capabilities.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/wgsl-capabilities.md",
+      "sha256": "37c0b58ac2d662e5ee45f3b4e487d4ab232c99cfebc464a737dcbd0be24a9a19"
+    },
+    "repo/docs/user-manual/graphics/shaders/wgsl-reflection.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/wgsl-reflection.md",
+      "sha256": "c5a6c4df92936f2869227701b84f7779ace2b6fd719dea9764ccd7c6fc5a0e16"
+    },
+    "repo/docs/user-manual/graphics/shaders/wgsl-specifics.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/wgsl-specifics.md",
+      "sha256": "9513f325f79ccb4ffcbe63e6279e4c0098c8b2f365847f88543b0d587f09808f"
+    },
+    "repo/docs/user-manual/graphics/shaders/wgsl-vertex-fragment-shaders.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/shaders/wgsl-vertex-fragment-shaders.md",
+      "sha256": "2ec55b350a8b48dd58f11d567bb64dab8d0544f5a2904896151ef0da772c848d"
+    },
+    "repo/docs/user-manual/graphics/textures.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/textures.md",
+      "sha256": "efbf963e7c6864b7334d6d3be6c4fa71b80b665a7915177a74dca318dc1427ac"
+    },
+    "repo/docs/user-manual/graphics/transparency.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/transparency.md",
+      "sha256": "d077377dd997bcd9203060c06740549fbe6c298f86f2a9eae8b9019f58cffe66"
+    },
+    "repo/docs/user-manual/graphics/wide-lines.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/graphics/wide-lines.md",
+      "sha256": "7452ccd07d8d44ff47ce012cadbc0f3136beb5ed213d4511e75847ca5283b561"
+    },
+    "repo/docs/user-manual/optimization/app-stats.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/app-stats.md",
+      "sha256": "130a2ed6ff697fead215bfed37ae639e5e27c22160000f57e45151eb8aaca605"
+    },
+    "repo/docs/user-manual/optimization/gpu-profiling.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/gpu-profiling.md",
+      "sha256": "e171dbc9a98b0cb70c577795544d339f9a6df67b262d9cb9deb8bd28e71c21ef"
+    },
+    "repo/docs/user-manual/optimization/guidelines.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/guidelines.md",
+      "sha256": "55923618abdfe406a08fe3aa9bc57ffabd80ea6e5f27ecc791023f7f126d1781"
+    },
+    "repo/docs/user-manual/optimization/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/index.md",
+      "sha256": "bc5ce22fb762ed857de72b44429d3d64f6f38a76db50147878e50a04c9e751db"
+    },
+    "repo/docs/user-manual/optimization/inspector-performance.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/inspector-performance.md",
+      "sha256": "028755e2e0098fb55f170d5e7cdc8cf22b9fa3cbb715851b66cc91a40f943e2e"
+    },
+    "repo/docs/user-manual/optimization/load-time.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/load-time.md",
+      "sha256": "ea86406f60da7014418fe8060ead1fe874704ffe477a1c84d3ed8f3c4e4326f5"
+    },
+    "repo/docs/user-manual/optimization/mini-stats.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/mini-stats.md",
+      "sha256": "0fe164a04bf44840c2acd688d8093e91cd629cabaa869d500c866606c4371a6e"
+    },
+    "repo/docs/user-manual/optimization/optimizing-scene-format.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/optimizing-scene-format.md",
+      "sha256": "08063c9a91e1d0f0861d01dc3b2ce93bbf57a1ea42cb448d2dc8bde185796555"
+    },
+    "repo/docs/user-manual/optimization/profiler.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/profiler.md",
+      "sha256": "5d329c78019f114c8a9d617aeb951ed071ab503d1d817196318a28e274f39bbc"
+    },
+    "repo/docs/user-manual/optimization/runtime-devicepixelratio.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/runtime-devicepixelratio.md",
+      "sha256": "9ef080b0164f902ce975eba57d6103b54b7f3ba6e062f8829a7742fd7f865919"
+    },
+    "repo/docs/user-manual/optimization/texture-compression.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/texture-compression.md",
+      "sha256": "82d0208148917732adbbde573bfaf9f254675e27a79c3f92570d5eb71fcb92e0"
+    },
+    "repo/docs/user-manual/optimization/troubleshooting-performance.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/optimization/troubleshooting-performance.md",
+      "sha256": "8a8d1517d1cf2f319f3524533970ff0ba2cb0e457469c7a313ebe2cb0833acc6"
+    },
+    "repo/docs/user-manual/physics/ammo-alternatives.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/physics/ammo-alternatives.md",
+      "sha256": "5198007757b7429e1df90898af2f92467018262a9892e0d38800f648cc6dbe3a"
+    },
+    "repo/docs/user-manual/physics/calling-ammo.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/physics/calling-ammo.md",
+      "sha256": "9ad06904961a897d16755976ef2da1f8fb777704d4a86d0d9062de85e5e2c0f8"
+    },
+    "repo/docs/user-manual/physics/collision-events.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/physics/collision-events.md",
+      "sha256": "97fc51154696af1fdfcefdd16fdd27bb4a94610512911f11db5261e3ef1d4077"
+    },
+    "repo/docs/user-manual/physics/collision-shapes.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/physics/collision-shapes.md",
+      "sha256": "859bf8d1e2f4cb16525971e090bf07eef400b4ce6eaeac68f7040f2c7b85be76"
+    },
+    "repo/docs/user-manual/physics/forces-and-impulses.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/physics/forces-and-impulses.md",
+      "sha256": "e7f8d8a2783cf7a37b3355618a07466d8ec39d376c50605747797acb7c6296df"
+    },
+    "repo/docs/user-manual/physics/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/physics/index.md",
+      "sha256": "cc1996a1be9bcfbc2cb70ce9fe6b22262048e9da0361456eecbbbe06cc532fd0"
+    },
+    "repo/docs/user-manual/physics/joints.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/physics/joints.md",
+      "sha256": "bb6704b1c97196633473b37e54afcc1979515296a247e69fbc37ddcb279885f6"
+    },
+    "repo/docs/user-manual/physics/physics-basics.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/physics/physics-basics.md",
+      "sha256": "866f834770c9851e18709deaf5d40fab695764b099bebcf15d4fc9eeb6e51c16"
+    },
+    "repo/docs/user-manual/physics/ray-casting.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/physics/ray-casting.md",
+      "sha256": "9b268f024f5ef9575b4187eb1db64977739b2564967f87a13f45f05121cb50bc"
+    },
+    "repo/docs/user-manual/physics/rigid-bodies.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/physics/rigid-bodies.md",
+      "sha256": "43599ffbbe7cfa55e121de1825445b08168a3a87669830e5b680c3f411dd174e"
+    },
+    "repo/docs/user-manual/physics/trigger-volumes.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/physics/trigger-volumes.md",
+      "sha256": "e2afeaebe8ca3ceb43c33a22c5ceb17573feeeabe5f98fae10f667f0a464adaf"
+    },
+    "repo/docs/user-manual/scripting/application-lifecycle.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/scripting/application-lifecycle.md",
+      "sha256": "41ea5785035213647464528e6d0a78ca00be7e3b0386630a8b0328237569f15e"
+    },
+    "repo/docs/user-manual/scripting/engine-api.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/scripting/engine-api.md",
+      "sha256": "c329e340253e6679a9618455382c537133afd0b7a6c0fcbe4a74f05af413df03"
+    },
+    "repo/docs/user-manual/scripting/esm-scripts.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/scripting/esm-scripts.md",
+      "sha256": "4b4d6101a27bdc10821a10f6b69e65e88b233a13e124b0e563ea8f8e2263b632"
+    },
+    "repo/docs/user-manual/scripting/events.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/scripting/events.md",
+      "sha256": "61a1bba101c0b8a936e73f082af2304c5c97219c7577cda74f34b2e18f1aabff"
+    },
+    "repo/docs/user-manual/scripting/getting-started.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/scripting/getting-started.md",
+      "sha256": "58a8e04cfe7f39362e52a1e5d7ecaaf6ffcd9b77cd62ddf6ebe4dc2148417ca8"
+    },
+    "repo/docs/user-manual/scripting/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/scripting/index.md",
+      "sha256": "55ce61a21f123d3c2cdd357ca1878ab31a2c297277959a19030252a535308905"
+    },
+    "repo/docs/user-manual/scripting/migration-guide.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/scripting/migration-guide.md",
+      "sha256": "07277accc8c17ef390c5a1f1a50193187fecaeeeef082b6c73288d2db94c7023"
+    },
+    "repo/docs/user-manual/scripting/script-attributes/classic.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/scripting/script-attributes/classic.md",
+      "sha256": "4aebd04dfb5e2d21ecf223a1554ae187a094e96958ddf4c1f5236ec637f3d5b3"
+    },
+    "repo/docs/user-manual/scripting/script-attributes/esm.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/scripting/script-attributes/esm.md",
+      "sha256": "44be2efdc5cb8955e42d3a47a6aff2712b43e071a09d2b0c23db37ff637d9a1a"
+    },
+    "repo/docs/user-manual/scripting/script-attributes/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/scripting/script-attributes/index.md",
+      "sha256": "d5ec3db3681c932b4e46373961ce78f15f3817098590ae013398addd196fc8f8"
+    },
+    "repo/docs/user-manual/scripting/script-lifecycle.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/scripting/script-lifecycle.md",
+      "sha256": "e2f40fa4da2cadafbec3fd4c637d12aec9e132f9f4b9150f7d39afe415e0b52c"
+    },
+    "repo/docs/user-manual/user-interface/buttons.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/buttons.md",
+      "sha256": "008b6701bf226adc365003a46dbb8abd42a50e43c3d27712864a4be96958336c"
+    },
+    "repo/docs/user-manual/user-interface/common-widgets.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/common-widgets.md",
+      "sha256": "6149ce722a7e66eeb2d7f2dc3ec844542ac65214bfab094eb61fef3db8629d89"
+    },
+    "repo/docs/user-manual/user-interface/draw-order-and-performance.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/draw-order-and-performance.md",
+      "sha256": "3d75f9761dbcc10d5cf43f8598c58749280575f2846e8bb91729ea8569a36847"
+    },
+    "repo/docs/user-manual/user-interface/elements.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/elements.md",
+      "sha256": "af7088db39611138da6a64bfd9cca037affeb8a7f46664f955a1d002bff5ed1c"
+    },
+    "repo/docs/user-manual/user-interface/fonts.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/fonts.md",
+      "sha256": "df0868c2d62b819236b0063dd34094542a063edeb4ac187761a6840098af3b94"
+    },
+    "repo/docs/user-manual/user-interface/html-and-css.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/html-and-css.md",
+      "sha256": "689cdfd392619f66cae491e4be29a6624545f6eefa4de5d389d388eedcd7ea04"
+    },
+    "repo/docs/user-manual/user-interface/image-elements.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/image-elements.md",
+      "sha256": "2713d23ea7556d3413732c60d44554a7285aec041b360dc45b84dc9a994a6682"
+    },
+    "repo/docs/user-manual/user-interface/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/index.md",
+      "sha256": "3c991b49eba3f248175f1954cd0d25f68c5a0d3edb9b3e148d3e157290946ecf"
+    },
+    "repo/docs/user-manual/user-interface/input.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/input.md",
+      "sha256": "c52361fe1c046ecfecd35cb95abe752c4c6d596d368b9ac2b242025bc25faa04"
+    },
+    "repo/docs/user-manual/user-interface/layout-groups.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/layout-groups.md",
+      "sha256": "32c94fab1986a07ea758b6694b4407dde5e3d73e8a1ed9deed8b29fc28781d3d"
+    },
+    "repo/docs/user-manual/user-interface/localization.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/localization.md",
+      "sha256": "5e895644ea63c89ca1bd7c39407141885d04750605d33a5f3ddc2ea6d001bbeb"
+    },
+    "repo/docs/user-manual/user-interface/masks.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/masks.md",
+      "sha256": "52e9d44ee5d7e5b1332fb2ddbf38dbb40da872bab2dfeb35c3231e19be4792cc"
+    },
+    "repo/docs/user-manual/user-interface/safe-area.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/safe-area.md",
+      "sha256": "3007b001e29d1ed1dfa610298c05a29e45fddfb8191f63d56eb393a4cd2a80e8"
+    },
+    "repo/docs/user-manual/user-interface/screens.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/screens.md",
+      "sha256": "abfc3f354b6ca26e4235362483d02b9bba074214b54b164bbff0e76345658616"
+    },
+    "repo/docs/user-manual/user-interface/scroll-views.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/scroll-views.md",
+      "sha256": "ee0292d7c16fb3f6849b3811076243b04c961949d65018e553cbfb6f8567be95"
+    },
+    "repo/docs/user-manual/user-interface/text-elements.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/text-elements.md",
+      "sha256": "13094a896b1c7acf2c83892dd4d95ef148ddacf190b81f70d98600ccb8f35407"
+    },
+    "repo/docs/user-manual/user-interface/troubleshooting.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/troubleshooting.md",
+      "sha256": "166b656ac702e9fa3cd96b7c1c07296a5edef19c2f03105d9e37d437e491e8d0"
+    },
+    "repo/docs/user-manual/user-interface/user-interface-basics.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/user-interface-basics.md",
+      "sha256": "59caad6f9419c5e4105c9718e908b4e29d25904de37d296f20d9a1dae21c49ce"
+    },
+    "repo/docs/user-manual/user-interface/world-space-ui.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/world-space-ui.md",
+      "sha256": "0fe75355c10f47b316759cf0d612896113ec70c24bbb021fb81afe8c735654fe"
+    },
+    "repo/docs/user-manual/user-interface/xr.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/user-interface/xr.md",
+      "sha256": "c4428c1f88177dc843ea65a4c3b638bfecb8fab921b91e48cc37f2015e3f0e00"
+    },
+    "repo/docs/user-manual/xr/ar/8th-wall-integration.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/8th-wall-integration.md",
+      "sha256": "eaea0f10f06702bca41102d323416d046d705230e8c68a1aa4b034faf27d70a7"
+    },
+    "repo/docs/user-manual/xr/ar/anchors.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/anchors.md",
+      "sha256": "9d50704cb0e0a1d6ffdc84e17b8982da963e95777b645865f946144ebe7ad0b7"
+    },
+    "repo/docs/user-manual/xr/ar/camera-color.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/camera-color.md",
+      "sha256": "e201b561168796ba2a41591df3bad1aadc36152d3692c4bea83ee165d5b3e7fa"
+    },
+    "repo/docs/user-manual/xr/ar/depth-sensing.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/depth-sensing.md",
+      "sha256": "586e148fcadb50dadecd807441542a40571ba3f31e284e6bdb8cadbfa63ed217"
+    },
+    "repo/docs/user-manual/xr/ar/dom-overlay.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/dom-overlay.md",
+      "sha256": "7b1e6c05cd672882046d00793ebc6240b9636c3a41526648f32162d5f3c53106"
+    },
+    "repo/docs/user-manual/xr/ar/hit-testing.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/hit-testing.md",
+      "sha256": "5142ebad98f57a87a46d3e700c240688d820fe79a905d703d14cde788dad97d9"
+    },
+    "repo/docs/user-manual/xr/ar/image-tracking.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/image-tracking.md",
+      "sha256": "056be02ab247243502f39c3688c872c4f8e8a048bc66025d26ff3585fc054b7e"
+    },
+    "repo/docs/user-manual/xr/ar/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/index.md",
+      "sha256": "2167716d4363564558bfe4a828f114c5b6fc4811957296c93d1bb1e8dc5f0e54"
+    },
+    "repo/docs/user-manual/xr/ar/light-estimation.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/light-estimation.md",
+      "sha256": "91af3cb112441c85d4273550902ff431442f2b24d9bc1c5a24d7bd68e6f099d2"
+    },
+    "repo/docs/user-manual/xr/ar/mesh-detection.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/mesh-detection.md",
+      "sha256": "af10f2f76a4d2009f14c6c7648dab2c52d3abc332eb196b378d346c36d72fd3e"
+    },
+    "repo/docs/user-manual/xr/ar/plane-detection.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/plane-detection.md",
+      "sha256": "ab883ae2253f2a260fcfeed57156234b50b777d4817e94cc0993a13bd5bd66e6"
+    },
+    "repo/docs/user-manual/xr/ar/zappar-integration.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/ar/zappar-integration.md",
+      "sha256": "6088fcf4df46fc66d8ae7b595eae7769c1e3ff4cb4953d8b4c4caef516f84515"
+    },
+    "repo/docs/user-manual/xr/capabilities.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/capabilities.md",
+      "sha256": "488c32d7af79f87513b49903c991121b6f7ddae53ec5e81ce0f2f08236b80b12"
+    },
+    "repo/docs/user-manual/xr/hand-tracking.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/hand-tracking.md",
+      "sha256": "162ef77f663dcaa503f723a74715ff9dabbaf1c71908ac7b0baab0903f6ba4fa"
+    },
+    "repo/docs/user-manual/xr/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/index.md",
+      "sha256": "3c5b0e7f48215deb7187b013814269fab6dbe979d0f708445a2b5545b465f752"
+    },
+    "repo/docs/user-manual/xr/input-sources.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/input-sources.md",
+      "sha256": "493d736a99157a9cac7b0647a2f58ce6fc882748ff095072e93ff2a2da83ea3c"
+    },
+    "repo/docs/user-manual/xr/optimizing-webxr.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/optimizing-webxr.md",
+      "sha256": "4d406168ad9c47299c63af2e3b4d03d5ac70b37affe5fa77533e29a63a5071e9"
+    },
+    "repo/docs/user-manual/xr/platforms.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/platforms.md",
+      "sha256": "b16f90891a2f85d3c79e2e1e91c07e1b6574df0c605d7210b20cf3ff9ac43475"
+    },
+    "repo/docs/user-manual/xr/using-webxr.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/using-webxr.md",
+      "sha256": "a22699f83b860467338dbfdebd367ef155120793719fecfcb8e82a890e068f16"
+    },
+    "repo/docs/user-manual/xr/vr/index.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/vr/index.md",
+      "sha256": "54526f807e05a69e02a3f188ce318b1f639b88864b611bd06b035abe42c084d4"
+    },
+    "repo/docs/user-manual/xr/vr/types-of-vr.md": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/docs/user-manual/xr/vr/types-of-vr.md",
+      "sha256": "48f147ea9d0713fe7ff36792795b2d9a15ef9d0092c220bf6ddb0aa4a702b977"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/LICENSE",
+      "sha256": "42fa51ddd556be151a29f381fb97ee975825dcc454e805ea3ea9c079cca04d34"
+    },
+    "repo/sidebars.js": {
+      "url": "https://github.com/playcanvas/developer-site/blob/92e0ae3c26a507947ad888c2deee37fbbc00f867/sidebars.js",
+      "sha256": "0af20a45b6581f6a6835416e58876b82d2ac68ebf294126e6a8cd349838068aa"
+    }
+  }
+}
