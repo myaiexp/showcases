@@ -1,37 +1,115 @@
 {
-  "fetched": "2026-11-13T12:59:22.445Z",
+  "fetched": "2026-11-14T12:52:15.051Z",
   "sources": [
     {
-      "kind": "crawl",
-      "start": "https://zzz.dog/",
-      "prefix": "https://zzz.dog/",
-      "max": 40
+      "kind": "git",
+      "repo": "https://github.com/metafizzy/zdog-docs",
+      "ref": "master",
+      "paths": [
+        "README.md",
+        "content/*.hbs",
+        "!content/404.hbs",
+        "modules/docs/*.hbs"
+      ],
+      "commit": "f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f"
     }
   ],
   "files": {
-    "pages/zzz-dog.md": {
-      "url": "https://zzz.dog/",
-      "sha256": "25f69914ddc5fb2824c56d55ef290502ac0edd6e859057c27d8a8e1d4819f6bf"
+    "repo/content/api.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/content/api.hbs",
+      "sha256": "cc607d84bbe1e300ee1bdbd32f414ed79add1e75a653b60b54d06a4992543101"
     },
-    "pages/zzz-dog/api.md": {
-      "url": "https://zzz.dog/api",
-      "sha256": "997556d0e7dc736344ef0437f4c3136a25c4d2eac0429d590f39e61ed5d41764"
+    "repo/content/extras.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/content/extras.hbs",
+      "sha256": "8cc796e2ad06dcf084cd596a9c8990d7455a3431c8e75fd8c74f2fb461895f82"
     },
-    "pages/zzz-dog/extras.md": {
-      "url": "https://zzz.dog/extras",
-      "sha256": "a61fa78d0a28a65aedf7b429a68e8964575b355917c4ea6133be2582888a5544"
+    "repo/content/getting-started.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/content/getting-started.hbs",
+      "sha256": "b7348d580c3d2135b3ad46b9f8ddd1f3607df88004a40f6f4723424720496498"
     },
-    "pages/zzz-dog/getting-started.md": {
-      "url": "https://zzz.dog/getting-started",
-      "sha256": "a2f0c5373af5a1d7190dd4b458b47ef729a3fe092123519298f92dda1921ce4b"
+    "repo/content/index.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/content/index.hbs",
+      "sha256": "6f22d7a019d5e1159dc2bb82857b080fe477e6fa4f3f2412659f68d60ac5e03f"
     },
-    "pages/zzz-dog/modeling.md": {
-      "url": "https://zzz.dog/modeling",
-      "sha256": "5ca4729471e8ff7e6a96134be1be3b582eb812d9065c87bc650968e22da0a561"
+    "repo/content/modeling.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/content/modeling.hbs",
+      "sha256": "0c160add007e0394366e722a51d4497ebc57b6b6ed32e214d0b3607d7f551c2b"
     },
-    "pages/zzz-dog/shapes.md": {
-      "url": "https://zzz.dog/shapes",
-      "sha256": "29de68f3b1ffa3fc8ea6cffaf4c6de5216be076efc0cd0088445900bfd05a795"
+    "repo/content/shapes.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/content/shapes.hbs",
+      "sha256": "2a336ac85b8d127d89a11524713839b525a05ae101dae50ff28aafdf8a522f2f"
+    },
+    "repo/modules/docs/api-anchor.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/api-anchor.hbs",
+      "sha256": "cd6150c4079aaf1dbef9e3ea1f89eb3680a539e7ed86d3a51e8af5010272e8b0"
+    },
+    "repo/modules/docs/api-dragger.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/api-dragger.hbs",
+      "sha256": "74736102ad5c32b813b6ae8a1dc75bd19e9202b47f7b376ff68bb9f15d8970f2"
+    },
+    "repo/modules/docs/api-group.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/api-group.hbs",
+      "sha256": "b830e04aa7d22f9562ec8c3e7314f94ecbcdd54f13b9afcd18a4491cc6b90690"
+    },
+    "repo/modules/docs/api-illo.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/api-illo.hbs",
+      "sha256": "54fc103f8754921bb9563a058c916b6c170009c881c26b5eeb339026a9523cdd"
+    },
+    "repo/modules/docs/api-shape.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/api-shape.hbs",
+      "sha256": "cbbf35f35bb89de1adc0217e3952e2ed3f792723bb4190d7d3604ae8ec76ed61"
+    },
+    "repo/modules/docs/api-utils.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/api-utils.hbs",
+      "sha256": "2b314e42db05030885d4dca7578808819687d53f61e8474cc7b26980320b6d90"
+    },
+    "repo/modules/docs/api-vector.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/api-vector.hbs",
+      "sha256": "fa70f93e2666dde1e627afbe2b8d885f7d1a7abda212bba2ab3214e841861940"
+    },
+    "repo/modules/docs/child-shapes-add-to.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/child-shapes-add-to.hbs",
+      "sha256": "5b1a4afe27e6aecfb037d264792a88c8846136811ab2b332adb18a663e32d530"
+    },
+    "repo/modules/docs/copy-example.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/copy-example.hbs",
+      "sha256": "b24156fca5933195afd591b92db53b7a076eb0ea9f26dc76a0bae6aab15db20f"
+    },
+    "repo/modules/docs/copy-graph-example.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/copy-graph-example.hbs",
+      "sha256": "284e42f7510624e740c5f6852268c0bd4bcfab833e82d83ae8b6a6a1dea0321a"
+    },
+    "repo/modules/docs/group-concept.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/group-concept.hbs",
+      "sha256": "99420760dc7f4d3ce8895ba249fa2945c95c9ea96ade9a91b73a310e5c21cbd6"
+    },
+    "repo/modules/docs/modeling-concepts.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/modeling-concepts.hbs",
+      "sha256": "246de19173af438ba2f9dbc039a7251c699cab8d6aa61825e659ddca2fe851b9"
+    },
+    "repo/modules/docs/modeling-tutorial.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/modeling-tutorial.hbs",
+      "sha256": "7825045de0633171aa644cd8a30a724ec4f7070105a419251f253c6ee8efda95"
+    },
+    "repo/modules/docs/shapes-basic.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/shapes-basic.hbs",
+      "sha256": "96a1d25b766f8e8b54d66da59d0a1e71626ef975c4f1c6e30c1fab5980724619"
+    },
+    "repo/modules/docs/shapes-composite.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/shapes-composite.hbs",
+      "sha256": "b8f954b075541c1c0a319bf46fb73dfd6db866399e43c8a432a001f331a831db"
+    },
+    "repo/modules/docs/shapes-shape.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/shapes-shape.hbs",
+      "sha256": "577355db95a9287ee18a03436c117adf2bcdd41601c9017b5b22cbe9d883882d"
+    },
+    "repo/modules/docs/vector-objects.hbs": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/modules/docs/vector-objects.hbs",
+      "sha256": "a0c927cf2816c61e7878d19e86e277e9c28715be8e922eafad49b00c42b53880"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/metafizzy/zdog-docs/blob/f3c5b98ea516a9cd34a60adb5994ba41e48a8d4f/README.md",
+      "sha256": "3dd48a02c2cf897983ab6a087fa8b9e7700751bb989201b83bfd39da535b3cdb"
     }
   }
 }

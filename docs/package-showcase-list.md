@@ -134,7 +134,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 91 | JSXGraph (`jsxgraph`) | 4 | 1.x 2020 (1.14 2026-10) | repo ✓ MIT | 80 | Interactive geometry, function plots, 3D view. Dual MIT/LGPL; docs are JSDoc plus `src/tutorials/*.md`. The jsxgraph.org gallery stays out |
 | 92 | Rough Notation (`rough-notation`) | 4 | 0.5 2020 | README MIT | 10 | Hand-drawn highlights. Stale |
 | 93 | curtains.js (`curtainsjs`) | 4 | v8 2020 | README MIT | 50 | WebGL image effects. Low activity |
-| 94 | Zdog (`zdog`) *(legacy in gallery)* | 4 | 1.0 2019 | site (vendored) | 40 | Pseudo-3D. Stale but charming |
+| 94 | Zdog (`zdog`) ✅ built | 4 | 1.0 2019 | repo ✗lic | 60 | Pseudo-3D. Stale but charming. Docs are the site source `metafizzy/zdog-docs` (`content/`, `modules/docs/`); its `demos/` stays out |
 | 95 | SVG.js (`@svgdotjs/svg.js`) | 4 | v3 2018-12 | site | 50 | SVG animation, morphing, masks, gradients. Repo MIT; the API docs are on svgdotjs.github.io, source not found |
 | 96 | canvas-confetti (`canvas-confetti`) | 4 | v1 (2025-10) | README ISC | 15 | Confetti bursts and shapes |
 | 97 | Flubber (`flubber`) | 4 | 2018 | README MIT | 8 | SVG shape morphing. Abandoned |

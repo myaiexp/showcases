@@ -1,49 +1,69 @@
-// Spinning, draggable Zdog box with an auto-rotate toggle
+// Spin and drag: a mug on a turntable you can grab, spinning again on release
 import Zdog from 'zdog';
 import type { Mount } from '@/types.ts';
-import './style.css';
+import { createStage } from '../../shared/stage.ts';
 
-const mount: Mount = (el, { preview }) => {
-  const canvas = document.createElement('canvas');
-  canvas.width = 760;
-  canvas.height = 600;
-  canvas.className = 'canvas';
+const mount: Mount = (el, ctx) => {
+  const stage = createStage(el, ctx, { hint: 'Drag the mug to inspect it. Let go and it spins again.' });
+  let isSpinning = true;
+  let resumeAt = 0;
 
-  const toggle = document.createElement('label');
-  toggle.className = 'toggle';
-  const spin = document.createElement('input');
-  spin.type = 'checkbox';
-  spin.checked = true;
-  toggle.append(spin, ' auto-rotate (drag to orbit)');
-  el.append(canvas);
-  if (!preview) el.append(toggle);
-
-  const illo = new Zdog.Illustration({ element: canvas, dragRotate: true, zoom: 4 });
-  illo.rotate.x = -0.5;
-
-  new Zdog.Box({
-    addTo: illo,
-    width: 90,
-    height: 90,
-    depth: 90,
-    stroke: false,
-    frontFace: '#e5484d',
-    rearFace: '#6c8cff',
-    leftFace: '#8c6cff',
-    rightFace: '#19b8c4',
-    topFace: '#30a46c',
-    bottomFace: '#f5a623',
+  const illo = new Zdog.Illustration({
+    element: stage.element,
+    zoom: stage.zoom,
+    rotate: { x: -0.35 },
+    dragRotate: true,
+    onDragStart: () => {
+      isSpinning = false;
+    },
+    onDragEnd: () => {
+      resumeAt = performance.now() + 1500;
+    },
   });
 
-  let frame = 0;
-  const animate = (): void => {
-    if (spin.checked) illo.rotate.y += 0.03;
-    illo.updateRenderGraph();
-    frame = requestAnimationFrame(animate);
-  };
-  animate();
+  // the mug: a cylinder standing upright (cylinders run along z, so turn it a quarter)
+  const mug = new Zdog.Cylinder({
+    addTo: illo,
+    diameter: 90,
+    length: 100,
+    rotate: { x: Zdog.TAU / 4 },
+    stroke: false,
+    color: '#E62',
+    frontFace: '#5b2a10', // the coffee, seen from above
+    backface: '#C25',
+  });
+  // handle: half an ellipse on the side
+  new Zdog.Ellipse({
+    addTo: mug,
+    width: 50,
+    height: 56,
+    quarters: 2,
+    translate: { x: 45 },
+    rotate: { x: Zdog.TAU / 4, z: Zdog.TAU / 4 },
+    stroke: 10,
+    color: '#E62',
+  });
+  // saucer under it
+  new Zdog.Ellipse({
+    addTo: illo,
+    diameter: 150,
+    translate: { y: 54 },
+    rotate: { x: Zdog.TAU / 4 },
+    stroke: 8,
+    fill: true,
+    color: '#EA0',
+  });
 
-  return () => cancelAnimationFrame(frame);
+  stage.loop(() => {
+    if (!isSpinning && resumeAt && performance.now() > resumeAt) {
+      isSpinning = true;
+      resumeAt = 0;
+    }
+    if (isSpinning) illo.rotate.y += 0.02;
+    illo.updateRenderGraph();
+  });
+
+  return stage.dispose;
 };
 
 export default mount;
