@@ -21,6 +21,7 @@
     "new-example": "node scripts/new-example.ts"
   },
   "dependencies": {
+    "@antv/g6": "5.1.1",
     "@babylonjs/addons": "9.36.0",
     "@babylonjs/controls": "2.0.0-alpha.1",
     "@babylonjs/core": "9.36.0",

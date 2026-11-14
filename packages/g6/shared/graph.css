@@ -1,0 +1,37 @@
+/* Shared G6 chrome: graph box, card fit, control bar, readout */
+.g6-stage {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #000;
+}
+.g6-stage-card {
+  border-radius: 0;
+}
+.g6-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 10px;
+  font-size: 13px;
+}
+.g6-bar:empty {
+  display: none;
+}
+.g6-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.g6-readout {
+  margin: 8px 0 0;
+  font-size: 12px;
+  white-space: pre-wrap;
+  width: 100%;
+  max-height: 160px;
+  overflow: auto;
+  color: var(--fg-2);
+}
