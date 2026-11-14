@@ -63,7 +63,7 @@ export function checkbox(bar: HTMLElement, label: string, checked: boolean, onCh
 export function button(bar: HTMLElement, label: string, onClick: () => void): HTMLButtonElement {
   const b = document.createElement('button');
   b.type = 'button';
-  b.className = 'btn btn-sm';
+  b.className = 'btn';
   b.textContent = label;
   b.addEventListener('click', onClick);
   bar.append(b);
