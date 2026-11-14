@@ -1,0 +1,45 @@
+/* Seat grid, with smaller seats in the card */
+[data-example='tippy-js/delegate-big-grid'] {
+  .scene {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--space-5);
+    padding-top: 12px;
+    --seat: 14px;
+  }
+  .scene.small {
+    --seat: 5px;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(20, var(--seat));
+    gap: 2px;
+  }
+  .seat {
+    width: var(--seat);
+    height: var(--seat);
+    border-radius: 2px;
+    background: var(--green);
+    opacity: 0.8;
+  }
+  .seat.taken {
+    background: var(--border);
+  }
+  .side {
+    font-size: 12px;
+    color: var(--fg-3);
+    line-height: 1.8;
+    white-space: nowrap;
+  }
+  .small .side {
+    font-size: 11px;
+    margin-top: 70px;
+  }
+  .tips {
+    color: var(--accent);
+    font-weight: 700;
+  }
+}

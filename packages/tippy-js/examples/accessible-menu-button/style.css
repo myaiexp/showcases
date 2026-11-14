@@ -1,0 +1,37 @@
+/* Menu button: the wrapper, the menu list and the attribute readout */
+[data-example='tippy-js/accessible-menu-button'] {
+  .scene {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    padding: 18px 14px;
+  }
+  .wrap {
+    position: relative;
+    flex: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    min-width: 96px;
+  }
+  .item {
+    all: unset;
+    box-sizing: border-box;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .item:hover,
+  .item:focus-visible {
+    background: #fff3;
+  }
+  .readout {
+    position: absolute;
+    left: 14px;
+    bottom: 8px;
+    font: 11px/1.6 ui-monospace, monospace;
+    color: var(--fg-2);
+  }
+}

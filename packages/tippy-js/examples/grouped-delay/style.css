@@ -1,0 +1,33 @@
+/* Two labelled toolbar rows */
+[data-example='tippy-js/grouped-delay'] {
+  .scene {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 var(--space-4);
+  }
+  .block {
+    width: 100%;
+    max-width: 260px;
+  }
+  .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-2);
+    font-size: 11px;
+    color: var(--fg-3);
+  }
+  .took {
+    color: var(--accent);
+  }
+  .row {
+    display: flex;
+    gap: var(--space-1);
+  }
+  .row .btn {
+    flex: 1;
+    padding: 4px 0;
+    font-size: 12px;
+  }
+}

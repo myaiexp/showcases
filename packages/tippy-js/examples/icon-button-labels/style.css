@@ -1,0 +1,37 @@
+/* Icon rows and the attribute panel under them */
+[data-example='tippy-js/icon-button-labels'] {
+  .scene {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding: 14px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  .row-title {
+    width: 112px;
+    font-size: 12px;
+    color: var(--fg-3);
+  }
+  .icon {
+    width: 34px;
+    padding: 4px 0;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+  .panel {
+    margin-top: var(--space-2);
+    padding: var(--space-3);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-surface);
+    font: 11px/1.5 ui-monospace, monospace;
+    color: var(--fg-2);
+  }
+  .speech {
+    color: var(--accent);
+  }
+}

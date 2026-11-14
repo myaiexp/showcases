@@ -1,0 +1,31 @@
+/* Paragraph with dotted abbreviations and a focus ring */
+[data-example='tippy-js/focusable-non-buttons'] {
+  .scene {
+    padding: 22px 18px;
+  }
+  .para {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--fg-2);
+  }
+  .term {
+    border-bottom: 1px dotted var(--accent);
+    color: var(--fg-1);
+    cursor: help;
+    outline: none;
+    text-decoration: none;
+  }
+  .term:focus-visible,
+  .term.ring {
+    box-shadow: 0 0 0 2px var(--accent);
+    border-radius: 2px;
+  }
+  .how {
+    position: absolute;
+    left: 18px;
+    bottom: 12px;
+    font-size: 12px;
+    color: var(--fg-3);
+  }
+}
