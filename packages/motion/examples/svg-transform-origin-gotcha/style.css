@@ -1,0 +1,18 @@
+/* SVG transform origin: three framed viewBoxes, each with a star and a red origin dot */
+[data-example='motion/svg-transform-origin-gotcha'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .trio { display: flex; gap: var(--space-2); }
+  figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: var(--space-1); width: 80px; }
+  svg { width: 100%; aspect-ratio: 1; border: 1px solid var(--border); background: var(--bg-surface); border-radius: 8px; overflow: hidden; }
+  .star { fill: var(--accent); }
+  .origin { fill: var(--red); }
+  .fixed .star { transform-box: fill-box; transform-origin: center; }
+  .mo .star { transform-origin: center; }
+  figcaption { display: flex; flex-direction: column; align-items: center; text-align: center; }
+  figcaption b { font-size: 0.7rem; color: var(--fg-1); }
+  figcaption small { font-size: 0.6rem; color: var(--fg-3); line-height: 1.2; }
+  &.is-full figure { width: 150px; }
+  &.is-full .trio { gap: var(--space-4); }
+  &.is-full figcaption b { font-size: 0.9rem; }
+  &.is-full figcaption small { font-size: 0.75rem; }
+}

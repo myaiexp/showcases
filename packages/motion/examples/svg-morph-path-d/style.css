@@ -1,0 +1,12 @@
+/* Morphing icons: a toolbar of three SVG buttons */
+[data-example='motion/svg-morph-path-d'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .bar { display: flex; gap: var(--space-4); }
+  .cell { display: flex; flex-direction: column; align-items: center; gap: var(--space-1); }
+  .cell span { font-size: 0.7rem; color: var(--fg-3); }
+  .icon { display: grid; place-items: center; width: 64px; height: 64px; padding: 0; border-radius: 16px; border: 1px solid var(--border); background: var(--bg-raised); color: var(--fg-1); cursor: pointer; }
+  .icon svg { width: 34px; height: 34px; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  &.is-full .bar { gap: var(--space-6); }
+  &.is-full .icon { width: 110px; height: 110px; border-radius: 26px; }
+  &.is-full .icon svg { width: 60px; height: 60px; }
+}

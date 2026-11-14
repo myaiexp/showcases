@@ -1,0 +1,4 @@
+/* Shader dissolve: a 3D stage with a control panel */
+[data-example='motion/three-shader-uniforms'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+}

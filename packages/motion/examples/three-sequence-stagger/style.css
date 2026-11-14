@@ -1,0 +1,5 @@
+/* Intro sequence: a heading laid over a 3D stage */
+[data-example='motion/three-sequence-stagger'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .title { position: absolute; top: var(--space-4); left: 0; right: 0; margin: 0; text-align: center; font-size: 1.6rem; color: var(--fg-1); opacity: 0; pointer-events: none; }
+}

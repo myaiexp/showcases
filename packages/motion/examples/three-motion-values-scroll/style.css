@@ -1,0 +1,12 @@
+/* Scroll-driven logo: a 3D stage beside a scrolling panel */
+[data-example='motion/three-motion-values-scroll'] {
+  &&& { display: flex; flex-direction: column; align-items: center; }
+  .wrap { display: flex; width: min(100%, 250px); height: 190px; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); background: var(--bg-surface); }
+  .wrap.full { width: min(100%, 560px); height: 320px; }
+  .logo { flex: 1; min-width: 0; }
+  .scroller { flex: 0 0 48%; overflow-y: auto; scrollbar-width: none; border-left: 1px solid var(--border); }
+  section { height: 190px; display: flex; flex-direction: column; justify-content: center; padding: var(--space-3); }
+  .full section { height: 320px; }
+  h3 { margin: 0 0 var(--space-1); color: var(--fg-1); }
+  p { margin: 0; color: var(--fg-2); font-size: 0.85rem; }
+}

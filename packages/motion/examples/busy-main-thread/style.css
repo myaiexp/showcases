@@ -1,0 +1,20 @@
+/* Main-thread test: two lanes and a heartbeat counter */
+[data-example='motion/busy-main-thread'] {
+  &&& { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .lanes { display: flex; flex-direction: column; gap: var(--space-3); width: min(100%, 240px); }
+  header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px; }
+  header b { font-size: 0.8rem; color: var(--fg-1); font-family: var(--font-mono); }
+  header span { font-size: 0.65rem; color: var(--fg-3); }
+  .tick { font-family: var(--font-mono); color: var(--orange); font-variant-numeric: tabular-nums; }
+  .track { position: relative; height: 28px; border-radius: 8px; background: var(--bg-surface); border: 1px solid var(--border); }
+  .box { position: absolute; left: 0; top: 0; width: 28px; height: 26px; border-radius: 7px; }
+  .fast .box { background: var(--green); }
+  .slow .box { background: var(--accent); }
+  .status { margin: var(--space-2) 0 0; font-size: 0.7rem; color: var(--fg-3); }
+  .status.busy { color: var(--red); }
+  &.is-full .lanes { width: min(100%, 520px); }
+  &.is-full header b { font-size: 1rem; }
+  &.is-full header span { font-size: 0.8rem; }
+  &.is-full .track { height: 40px; }
+  &.is-full .box { width: 40px; height: 38px; }
+}
