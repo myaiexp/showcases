@@ -1,0 +1,120 @@
+/* JSON Schema kit: coloured JSON, change marks, code and JSON side by side */
+.zd-js {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  min-width: 0;
+  overflow: hidden;
+}
+.zd-js-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-left: 2px solid transparent;
+  line-height: 1.38;
+}
+.zd-js-line[data-diff='new'] {
+  border-left-color: var(--accent);
+  background: var(--accent-glow);
+}
+.zd-js-key {
+  color: var(--fg-2);
+}
+.zd-js-str {
+  color: var(--cyan);
+}
+.zd-js-num {
+  color: var(--blue);
+}
+.zd-js-bool {
+  color: var(--purple);
+}
+.zd-js-null {
+  color: var(--fg-3);
+  font-style: italic;
+}
+.zd-js-punct {
+  color: var(--fg-3);
+}
+.zd-js-fail {
+  color: var(--red);
+  background: var(--red-bg);
+  padding: 4px 6px;
+  white-space: normal;
+  font-family: var(--font-mono);
+}
+.zd-card .zd-js-fail {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.zd-js-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-3);
+  width: 100%;
+}
+.zd-js-pair > div {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.zd-js-head {
+  color: var(--fg-3);
+  font-size: 12px;
+}
+.zd-js-code {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  color: var(--fg-1);
+  background: var(--bg-surface);
+  padding: 6px 8px;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* --- Eval log: a line of code and its result --- */
+.zd-evlog {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  width: 100%;
+}
+.zd-ev {
+  min-width: 0;
+}
+.zd-ev-code {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  color: var(--accent-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.zd-ev-out {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  color: var(--fg-1);
+  padding-left: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &[data-tone='ok'] {
+    color: var(--green);
+  }
+  &[data-tone='bad'] {
+    color: var(--red);
+  }
+  &[data-tone='warn'] {
+    color: var(--orange);
+  }
+}
+.zd-full .zd-ev-code,
+.zd-full .zd-ev-out {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}

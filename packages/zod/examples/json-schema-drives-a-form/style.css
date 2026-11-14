@@ -1,0 +1,12 @@
+/* A form beside the JSON Schema it was drawn from */
+[data-example='zod/json-schema-drives-a-form'] {
+  .jsf-layout {
+    display: grid;
+    gap: var(--space-3);
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .zd-full .jsf-layout {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  }
+}

@@ -53,6 +53,17 @@
 // - safeParse on an async transform or refine throws "Encountered Promise during
 //   synchronous parse"; use safeParseAsync.
 // - objectLab: a card plan with one entry never cycles; list every [variant, sample] pair.
+// - .readonly() freezes the top object only (docs: Object.freeze): nested arrays still push.
+// - .default({}) on an object is not parsed, so inner defaults stay unfilled; .prefault({})
+//   fills them. .default() fires only for undefined, never null or "".
+// - z.json() failures have an empty path and say only "Invalid input" (it is a union).
+// - Registries: a duplicate id is accepted silently (the later schema wins); conversion
+//   throws "Duplicate schema id" only when both schemas are converted together.
+// - Metadata is inherited by same-kind copies (.refine, .min, .meta) but not by wrappers
+//   (.optional, .default, .transform, z.array, .extend, .pick): the docs say otherwise.
+// - toJSONSchema: looseObject gives additionalProperties: {}; fromJSONSchema objects keep
+//   extra keys when additionalProperties is unset, so a round trip turns strict into loose.
+// - A card fits about 10 lines of JSON.
 import type { MountContext } from '@/types.ts';
 import './zod.css';
 
