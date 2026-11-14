@@ -1,0 +1,2424 @@
+import { Backbuffer } from "./backbuffer.js";
+import { shaders } from "./constants.js";
+import { CopyPass } from "./copy-pass.js";
+import dom2canvas from "./dom-to-canvas.js";
+import { EffectChain } from "./effect-chain.js";
+import {
+    makeEffectRenderTargetFromFb,
+    makeEffectTexture,
+} from "./effect-host.js";
+import { FreezeTracker } from "./freeze.js";
+import GIFData from "./gif.js";
+import { GLContext } from "./gl/context.js";
+import type { Framebuffer } from "./gl/framebuffer.js";
+import { type Pass, renderPass } from "./gl/pass.js";
+import type { Uniform, Uniforms } from "./gl/program.js";
+import { Quad } from "./gl/quad.js";
+import { loadImage, Texture, type TextureWrap } from "./gl/texture.js";
+import { Vec2, Vec4 } from "./gl/vec.js";
+import { type GLRect, getGLRect, rectToGLRect } from "./gl-rect.js";
+import { isHicCanvas } from "./hic-canvas.js";
+import { getImageSourceUrl } from "./image-source.js";
+import {
+    createIntersectionState,
+    nextIsIn,
+    pauseIntersection,
+    stepIntersection,
+} from "./intersection-state.js";
+import { PostEffectPass } from "./post-effect-pass.js";
+import { ProgramCache } from "./program-cache.js";
+import {
+    createMargin,
+    createRect,
+    getIntersection,
+    growRect,
+    MARGIN_ZERO,
+    type Margin,
+    type Rect,
+    toCeiledRect,
+    toRect,
+} from "./rect.js";
+import { createPassMaterial, createRenderTarget } from "./render-target.js";
+import type {
+    Effect,
+    EffectUniformValue,
+    EffectVFXProps,
+    VFXElement,
+    VFXElementIntersection,
+    VFXElementPass,
+    VFXElementType,
+    VFXOptsInner,
+    VFXPass,
+    VFXPostEffect,
+    VFXProps,
+    VFXUniformValue,
+    VFXWrap,
+} from "./types.js";
+
+const gifFor = new Map<HTMLElement, GIFData>();
+
+// Warn about bad intersection options once per page.
+let hasWarnedDuration = false;
+
+// The opacity that hides an element under its overlay, or null to leave it as is.
+function hiddenOpacityFor(
+    type: VFXElementType,
+    overlay: VFXProps["overlay"],
+): string | null {
+    // The wrapper canvas clears itself once captured.
+    if (type === "hic" || overlay === true) {
+        return null;
+    }
+    if (typeof overlay === "number") {
+        return overlay.toString();
+    }
+    // Don't hide a video completely, to prevent jank frames.
+    return type === "video" ? "0.0001" : "0";
+}
+
+function drawCaptureOnCanvas(
+    canvas: HTMLCanvasElement,
+    capture: OffscreenCanvas,
+): void {
+    const ctx = canvas.getContext("2d");
+    if (!ctx) {
+        return;
+    }
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(capture, 0, 0, canvas.width, canvas.height);
+}
+
+/**
+ * @internal
+ */
+export class VFXPlayer {
+    #opts: VFXOptsInner;
+
+    #canvas: HTMLCanvasElement;
+    #ctx: GLContext;
+    #gl: WebGL2RenderingContext;
+    #quad: Quad;
+    #programCache: ProgramCache;
+    #copyPass: CopyPass;
+    #postEffectEntries: {
+        pass: PostEffectPass;
+        target: string | undefined;
+        generators: { [name: string]: () => VFXUniformValue };
+    }[] = [];
+    #postEffectTarget: Framebuffer | undefined;
+    #postEffectBufferTargets: Map<string, Framebuffer | undefined> = new Map();
+
+    // Effect-path post-effect state (mutually exclusive with the shader
+    // post-effect passes above).
+    #postEffectChain: EffectChain | null = null;
+    #postEffectChainReady = false;
+
+    /**
+     * Tracks Effect instances currently attached (element chain or
+     * postEffect chain). Used to reject reuse — Effects are stateful
+     * (own RTs, dims) and cannot safely be shared across hosts.
+     */
+    #registeredEffects: WeakSet<Effect> = new WeakSet();
+    #postEffectChainStaticUniforms: Record<string, EffectUniformValue> = {};
+    #postEffectChainGenerators: Record<string, () => EffectUniformValue> = {};
+    #postEffectChainLastTime = 0;
+
+    #playRequest: number | undefined = undefined;
+    #pixelRatio = 2;
+    #elements: VFXElement[] = [];
+    #freezes = new FreezeTracker({
+        showPlain: (e) => {
+            // The capture cannot see the overlay, so show the plain content.
+            if (e.type === "hic") {
+                const source = e.srcTexture.source;
+                if (source instanceof OffscreenCanvas) {
+                    drawCaptureOnCanvas(e.element as HTMLCanvasElement, source);
+                }
+            } else {
+                e.element.style.setProperty(
+                    "opacity",
+                    e.originalOpacity.toString(),
+                );
+            }
+        },
+        hidePlain: (e, opacity) => {
+            if (e.type === "hic") {
+                const canvas = e.element as HTMLCanvasElement;
+                canvas
+                    .getContext("2d")
+                    ?.clearRect(0, 0, canvas.width, canvas.height);
+            } else {
+                e.element.style.opacity = opacity;
+            }
+        },
+        isRegistered: (e) => this.#elements.includes(e),
+    });
+
+    // Virtual animation clock. `time` exposed to effects is driven by this
+    // (not raw wall time), so playback can be scaled, paused, rewound, or
+    // pinned to a fixed value for deterministic rendering (e.g. VRT).
+    #time = 0;
+    #timeScale = 1;
+    #wallPrev = Date.now() / 1000;
+    // When set via `setTime`, the next `render` uses `#time` verbatim
+    // (no wall-delta advance) so a `setTime(t); render()` pair is exact.
+    #timeOverridden = false;
+
+    /** Canvas extent in CSS px (= viewport + scrollPadding on each side). */
+    #canvasRect: Rect = createRect(0);
+
+    /** Visible viewport in CSS px (no scrollPadding). */
+    #viewport: Rect = createRect(0);
+
+    #canvasSize = [0, 0];
+    #paddingX = 0;
+    #paddingY = 0;
+
+    #mouseX = 0;
+    #mouseY = 0;
+
+    #isRenderingToCanvas = new WeakMap<HTMLElement, boolean>();
+
+    constructor(opts: VFXOptsInner, canvas: HTMLCanvasElement) {
+        this.#opts = opts;
+
+        this.#canvas = canvas;
+        this.#ctx = new GLContext(canvas, opts.preserveDrawingBuffer);
+        this.#gl = this.#ctx.gl;
+        this.#gl.clearColor(0, 0, 0, 0);
+        this.#pixelRatio = opts.pixelRatio;
+        this.#timeScale = opts.timeScale;
+        this.#wallPrev = Date.now() / 1000;
+
+        this.#quad = new Quad(this.#ctx);
+        this.#programCache = new ProgramCache(this.#ctx);
+
+        if (typeof window !== "undefined") {
+            window.addEventListener("resize", this.#resize);
+            window.addEventListener("pointermove", this.#pointermove);
+        }
+        this.#resize();
+
+        this.#copyPass = new CopyPass(this.#ctx);
+        this.#initPostEffects(opts.postEffects);
+
+        // Clear state that depends on frame-by-frame GPU output so the
+        // scene re-renders cleanly after a context restore (persistent
+        // backbuffers come back as black, then accumulate again).
+        this.#ctx.onContextRestored(() => {
+            this.#gl.clearColor(0, 0, 0, 0);
+        });
+    }
+
+    destroy(): void {
+        this.stop();
+        if (typeof window !== "undefined") {
+            window.removeEventListener("resize", this.#resize);
+            window.removeEventListener("pointermove", this.#pointermove);
+        }
+
+        this.#postEffectTarget?.dispose();
+        for (const rt of this.#postEffectBufferTargets.values()) {
+            rt?.dispose();
+        }
+        for (const e of this.#postEffectEntries) {
+            e.pass.dispose();
+        }
+        if (this.#postEffectChain) {
+            this.#postEffectChain.dispose();
+            this.#postEffectChain = null;
+            this.#postEffectChainReady = false;
+        }
+        this.#copyPass.dispose();
+        this.#programCache.dispose();
+        this.#quad.dispose();
+    }
+
+    #updateCanvasSize(): void {
+        if (typeof window === "undefined") {
+            return;
+        }
+
+        // Get the viewport size excluding scrollbars.
+        // We need to choose the element based on the document mode (quirks / standard).
+        const doc = this.#canvas.ownerDocument;
+        const viewportEl =
+            doc.compatMode === "BackCompat" ? doc.body : doc.documentElement;
+        const width = viewportEl.clientWidth;
+        const height = viewportEl.clientHeight;
+
+        const scrollX = window.scrollX;
+        const scrollY = window.scrollY;
+
+        let paddingX: number;
+        let paddingY: number;
+        if (this.#opts.fixedCanvas) {
+            paddingX = 0;
+            paddingY = 0;
+        } else if (this.#opts.wrapper) {
+            // When a wrapper with overflow:hidden is used, no clamping needed.
+            // The wrapper clips the canvas, so full padding is safe.
+            paddingX = width * this.#opts.scrollPadding[0];
+            paddingY = height * this.#opts.scrollPadding[1];
+        } else {
+            // No wrapper: clamp padding so that the canvas doesn't cause overflow
+            const maxPaddingX = doc.body.scrollWidth - (scrollX + width);
+            const maxPaddingY = doc.body.scrollHeight - (scrollY + height);
+
+            paddingX = clamp(
+                width * this.#opts.scrollPadding[0],
+                0,
+                maxPaddingX,
+            );
+            paddingY = clamp(
+                height * this.#opts.scrollPadding[1],
+                0,
+                maxPaddingY,
+            );
+        }
+
+        const widthWithPadding = width + paddingX * 2;
+        const heightWithPadding = height + paddingY * 2;
+
+        if (
+            widthWithPadding !== this.#canvasSize[0] ||
+            heightWithPadding !== this.#canvasSize[1]
+        ) {
+            this.#canvas.style.width = `${widthWithPadding}px`;
+            this.#canvas.style.height = `${heightWithPadding}px`;
+            this.#ctx.setSize(
+                widthWithPadding,
+                heightWithPadding,
+                this.#pixelRatio,
+            );
+            this.#canvasRect = createRect({
+                top: -paddingY,
+                left: -paddingX,
+                right: width + paddingX,
+                bottom: height + paddingY,
+            });
+            this.#viewport = createRect({
+                top: 0,
+                left: 0,
+                right: width,
+                bottom: height,
+            });
+            this.#canvasSize = [widthWithPadding, heightWithPadding];
+            this.#paddingX = paddingX;
+            this.#paddingY = paddingY;
+        }
+
+        // Sync scroll
+        if (!this.#opts.fixedCanvas) {
+            this.#canvas.style.setProperty(
+                "transform",
+                `translate(${scrollX - paddingX}px, ${scrollY - paddingY}px)`,
+            );
+        }
+    }
+
+    #resize = async (): Promise<void> => {
+        if (typeof window !== "undefined") {
+            // Update dom2canvas result.
+            // Render elements in viewport first, then render elements outside of the viewport.
+            for (const e of this.#elements) {
+                if (e.type === "text" && e.isInViewport) {
+                    const rect = e.element.getBoundingClientRect();
+                    const w = Math.ceil(rect.width);
+                    const h = Math.ceil(rect.height);
+                    if (w !== e.width || h !== e.height) {
+                        await this.#rerenderTextElement(e);
+                        e.width = w;
+                        e.height = h;
+                    }
+                }
+            }
+            for (const e of this.#elements) {
+                if (e.type === "text" && !e.isInViewport) {
+                    const rect = e.element.getBoundingClientRect();
+                    const w = Math.ceil(rect.width);
+                    const h = Math.ceil(rect.height);
+                    if (w !== e.width || h !== e.height) {
+                        await this.#rerenderTextElement(e);
+                        e.width = w;
+                        e.height = h;
+                    }
+                }
+            }
+        }
+    };
+
+    #pointermove = (e: PointerEvent): void => {
+        if (typeof window !== "undefined") {
+            this.#mouseX = e.clientX;
+            this.#mouseY = window.innerHeight - e.clientY;
+        }
+    };
+
+    async #rerenderTextElement(e: VFXElement): Promise<void> {
+        if (this.#isRenderingToCanvas.get(e.element)) {
+            return;
+        }
+        this.#isRenderingToCanvas.set(e.element, true);
+
+        try {
+            const oldTexture = e.srcTexture;
+            const oldCanvas =
+                oldTexture.source instanceof OffscreenCanvas
+                    ? oldTexture.source
+                    : undefined;
+
+            const canvas = await dom2canvas(
+                e.element,
+                e.originalOpacity,
+                oldCanvas,
+                this.maxTextureSize,
+            );
+            // Element not laid out yet (0-size canvas).
+            // Skip this frame and keep the previous texture.
+            if (canvas.width === 0 || canvas.height === 0) {
+                return;
+            }
+
+            const texture = new Texture(this.#ctx, canvas);
+            texture.wrapS = oldTexture.wrapS;
+            texture.wrapT = oldTexture.wrapT;
+            texture.premultiplyAlpha = oldTexture.premultiplyAlpha;
+            texture.needsUpdate = true;
+            // Effect-path uses a resolver-form EffectTexture that reads
+            // `e.srcTexture` each frame, so updating the field alone is
+            // enough. Shader path also needs the pass-0 src uniform
+            // rewritten.
+            if (!e.chain && e.passes.length > 0) {
+                e.passes[0].uniforms["src"].value = texture;
+            }
+            e.srcTexture = texture;
+            oldTexture.dispose();
+        } catch (err) {
+            console.error(err);
+        } finally {
+            this.#isRenderingToCanvas.set(e.element, false);
+        }
+    }
+
+    async addElement(
+        element: HTMLElement,
+        opts: VFXProps = {},
+        initialCapture?: OffscreenCanvas,
+    ): Promise<void> {
+        // Effect path: mutually exclusive with `shader`. See plan.md.
+        if (opts.effect !== undefined) {
+            return this.#addEffectElement(
+                element,
+                opts,
+                opts.effect,
+                initialCapture,
+            );
+        }
+
+        // Normalize shader input to VFXPass array
+        const inputPasses = this.#normalizePasses(opts);
+
+        const domRect = element.getBoundingClientRect();
+        const rect = isTextPathElement(element)
+            ? toCeiledRect(domRect)
+            : toRect(domRect);
+        const [isFullScreen, overflow] = parseOverflowOpts(opts.overflow);
+        const rectWithOverflow = growRect(rect, overflow);
+
+        const intersectionOpts = parseIntersectionOpts(opts.intersection);
+
+        const originalOpacity =
+            element.style.opacity === ""
+                ? 1
+                : Number.parseFloat(element.style.opacity);
+
+        // Create values for element types
+        let texture: Texture;
+        let type: VFXElementType;
+        let isGif = false;
+        if (element instanceof HTMLImageElement) {
+            type = "img" as VFXElementType;
+            const imageUrl = getImageSourceUrl(element);
+            isGif = !!imageUrl.match(/\.gif/i);
+
+            if (isGif) {
+                const gif = await GIFData.create(imageUrl, this.#pixelRatio);
+                gifFor.set(element, gif);
+                texture = new Texture(this.#ctx, gif.getCanvas());
+            } else {
+                const img = await loadImage(imageUrl);
+                texture = new Texture(this.#ctx, img);
+            }
+        } else if (element instanceof HTMLVideoElement) {
+            texture = new Texture(this.#ctx, element);
+            type = "video" as VFXElementType;
+        } else if (element instanceof HTMLCanvasElement) {
+            if (isHicCanvas(element) && initialCapture) {
+                texture = new Texture(this.#ctx, initialCapture);
+                type = "hic" as VFXElementType;
+            } else {
+                texture = new Texture(this.#ctx, element);
+                type = "canvas" as VFXElementType;
+            }
+        } else {
+            const canvas = await dom2canvas(
+                element,
+                originalOpacity,
+                undefined,
+                this.maxTextureSize,
+            );
+            texture = new Texture(this.#ctx, canvas);
+            type = "text" as VFXElementType;
+        }
+
+        const [wrapS, wrapT] = parseWrap(opts.wrap);
+        texture.wrapS = wrapS;
+        texture.wrapT = wrapT;
+        texture.needsUpdate = true;
+
+        const autoCrop = opts.autoCrop ?? true;
+
+        const hiddenOpacity = hiddenOpacityFor(type, opts.overlay);
+
+        // Create shared uniforms
+        const sharedUniforms: Uniforms = {
+            src: { value: texture },
+            resolution: { value: new Vec2() },
+            offset: { value: new Vec2() },
+            time: { value: 0.0 },
+            enterTime: { value: -1.0 },
+            leaveTime: { value: -1.0 },
+            enterProgress: { value: 0.0 },
+            leaveProgress: { value: 0.0 },
+            mouse: { value: new Vec2() },
+            intersection: { value: 0.0 },
+            viewport: { value: new Vec4() },
+            autoCrop: { value: autoCrop },
+        };
+
+        const sharedUniformGenerators: {
+            [name: string]: () => VFXUniformValue;
+        } = {};
+
+        if (opts.uniforms !== undefined) {
+            for (const [key, value] of Object.entries(opts.uniforms)) {
+                if (typeof value === "function") {
+                    sharedUniforms[key] = { value: value() };
+                    sharedUniformGenerators[key] = value;
+                } else {
+                    sharedUniforms[key] = { value };
+                }
+            }
+        }
+
+        // Backbuffer
+        let backbuffer: VFXElement["backbuffer"];
+        if (opts.backbuffer) {
+            backbuffer = (() => {
+                const bw =
+                    (rectWithOverflow.right - rectWithOverflow.left) *
+                    this.#pixelRatio;
+                const bh =
+                    (rectWithOverflow.bottom - rectWithOverflow.top) *
+                    this.#pixelRatio;
+                return new Backbuffer(
+                    this.#ctx,
+                    bw,
+                    bh,
+                    this.#pixelRatio,
+                    false,
+                );
+            })();
+            sharedUniforms["backbuffer"] = { value: backbuffer.texture };
+        }
+
+        // Create buffer targets for intermediate passes
+        const bufferTargets = new Map<string, Framebuffer>();
+        const passBackbuffers = new Map<string, Backbuffer>();
+        for (let i = 0; i < inputPasses.length - 1; i++) {
+            const targetName = inputPasses[i].target ?? `pass${i}`;
+            inputPasses[i] = { ...inputPasses[i], target: targetName };
+            const passSize = inputPasses[i].size;
+            const bw = passSize
+                ? passSize[0]
+                : (rectWithOverflow.right - rectWithOverflow.left) *
+                  this.#pixelRatio;
+            const bh = passSize
+                ? passSize[1]
+                : (rectWithOverflow.bottom - rectWithOverflow.top) *
+                  this.#pixelRatio;
+
+            if (inputPasses[i].persistent) {
+                // Persistent passes use double-buffered Backbuffer
+                const pixelRatio = passSize ? 1 : this.#pixelRatio;
+                const cssW = passSize
+                    ? passSize[0]
+                    : rectWithOverflow.right - rectWithOverflow.left;
+                const cssH = passSize
+                    ? passSize[1]
+                    : rectWithOverflow.bottom - rectWithOverflow.top;
+                passBackbuffers.set(
+                    targetName,
+                    new Backbuffer(
+                        this.#ctx,
+                        cssW,
+                        cssH,
+                        pixelRatio,
+                        inputPasses[i].float,
+                    ),
+                );
+            } else {
+                bufferTargets.set(
+                    targetName,
+                    createRenderTarget(this.#ctx, bw, bh, {
+                        float: inputPasses[i].float,
+                    }),
+                );
+            }
+        }
+
+        // Build passes
+        const passes: VFXElementPass[] = [];
+        for (let i = 0; i < inputPasses.length; i++) {
+            const p = inputPasses[i];
+            const frag = p.frag;
+
+            // Create per-pass uniforms
+            const passUniforms: Uniforms = { ...sharedUniforms };
+            const passUniformGenerators: {
+                [name: string]: () => VFXUniformValue;
+            } = {};
+
+            // Auto-bind buffer targets referenced in the shader
+            // Skip binding the pass's own render target to avoid feedback loops
+            // (persistent passes can read their own buffer via backbuffer double-buffering)
+            for (const [name, rt] of bufferTargets) {
+                if (name === p.target) {
+                    continue;
+                }
+                if (
+                    frag.match(new RegExp(`uniform\\s+sampler2D\\s+${name}\\b`))
+                ) {
+                    passUniforms[name] = { value: rt.texture };
+                }
+            }
+            for (const [name, bb] of passBackbuffers) {
+                if (
+                    frag.match(new RegExp(`uniform\\s+sampler2D\\s+${name}\\b`))
+                ) {
+                    // Backbuffer read texture is always safe (double-buffered)
+                    passUniforms[name] = { value: bb.texture };
+                }
+            }
+
+            // Add per-pass uniforms
+            if (p.uniforms) {
+                for (const [key, value] of Object.entries(p.uniforms)) {
+                    if (typeof value === "function") {
+                        passUniforms[key] = { value: value() };
+                        passUniformGenerators[key] = value;
+                    } else {
+                        passUniforms[key] = { value };
+                    }
+                }
+            }
+
+            const pass = createPassMaterial(this.#ctx, {
+                vertexShader: p.vert,
+                fragmentShader: frag,
+                uniforms: passUniforms,
+                renderingToBuffer: p.target !== undefined,
+                glslVersion: p.glslVersion,
+            });
+
+            passes.push({
+                pass,
+                uniforms: passUniforms,
+                uniformGenerators: {
+                    ...sharedUniformGenerators,
+                    ...passUniformGenerators,
+                },
+                target: p.target,
+                persistent: p.persistent,
+                float: p.float,
+                size: p.size,
+                backbuffer: p.target
+                    ? passBackbuffers.get(p.target)
+                    : undefined,
+            });
+        }
+
+        const now = this.#time;
+        const elem: VFXElement = {
+            type,
+            element,
+            isInViewport: false,
+            intersectionState: createIntersectionState(now),
+            // Match the (possibly-ceiled) rect so #resize's width/height
+            // comparison stays in the same coordinate system.
+            width: rect.right - rect.left,
+            height: rect.bottom - rect.top,
+            passes,
+            bufferTargets,
+            startTime: now,
+            enterTime: now,
+            leaveTime: Number.NEGATIVE_INFINITY,
+            release: opts.release ?? Number.POSITIVE_INFINITY,
+            isGif,
+            isFullScreen,
+            overflow,
+            intersection: intersectionOpts,
+            originalOpacity,
+            srcTexture: texture,
+            zIndex: opts.zIndex ?? 0,
+            backbuffer,
+            autoCrop,
+        };
+
+        this.#hitTest(elem, rect, now);
+        this.#register(elem, hiddenOpacity);
+    }
+
+    // Hide the element under its overlay, or freeze it inside a frozen root.
+    #register(elem: VFXElement, hiddenOpacity: string | null): void {
+        if (
+            !this.#freezes.adopt(elem, hiddenOpacity) &&
+            hiddenOpacity !== null
+        ) {
+            elem.element.style.setProperty("opacity", hiddenOpacity);
+        }
+        // Sort is stable, so elements with the same z render in the order they were added.
+        this.#elements.push(elem);
+        this.#elements.sort((a, b) => a.zIndex - b.zIndex);
+    }
+
+    async #addEffectElement(
+        element: HTMLElement,
+        opts: VFXProps,
+        rawEffect: Effect | readonly Effect[],
+        initialCapture?: OffscreenCanvas,
+    ): Promise<void> {
+        if (opts.shader !== undefined) {
+            console.warn(
+                "[VFX-JS] Both `shader` and `effect` specified; `effect` takes precedence.",
+            );
+        }
+
+        if (opts.overflow !== undefined) {
+            console.warn(
+                "[VFX-JS] `overflow` is shader-path only and is ignored by the effect path. Use each effect's own `outputRect` (with `dims.canvasRect` for fullscreen) to control its dst rect.",
+            );
+        }
+
+        const effects: readonly Effect[] = Array.isArray(rawEffect)
+            ? [...rawEffect]
+            : [rawEffect];
+        this.#assertEffectsNotReused(effects);
+
+        // Shared prelude (mirrors shader-path addElement).
+        const domRect = element.getBoundingClientRect();
+        const rect = isTextPathElement(element)
+            ? toCeiledRect(domRect)
+            : toRect(domRect);
+        const [isFullScreen, overflow] = parseOverflowOpts(opts.overflow);
+        const intersectionOpts = parseIntersectionOpts(opts.intersection);
+
+        const originalOpacity =
+            element.style.opacity === ""
+                ? 1
+                : Number.parseFloat(element.style.opacity);
+
+        let texture: Texture;
+        let type: VFXElementType;
+        let isGif = false;
+        if (element instanceof HTMLImageElement) {
+            type = "img" as VFXElementType;
+            const imageUrl = getImageSourceUrl(element);
+            isGif = !!imageUrl.match(/\.gif/i);
+
+            if (isGif) {
+                const gif = await GIFData.create(imageUrl, this.#pixelRatio);
+                gifFor.set(element, gif);
+                texture = new Texture(this.#ctx, gif.getCanvas());
+            } else {
+                const img = await loadImage(imageUrl);
+                texture = new Texture(this.#ctx, img);
+            }
+        } else if (element instanceof HTMLVideoElement) {
+            texture = new Texture(this.#ctx, element);
+            type = "video" as VFXElementType;
+        } else if (element instanceof HTMLCanvasElement) {
+            if (isHicCanvas(element) && initialCapture) {
+                texture = new Texture(this.#ctx, initialCapture);
+                type = "hic" as VFXElementType;
+            } else {
+                texture = new Texture(this.#ctx, element);
+                type = "canvas" as VFXElementType;
+            }
+        } else {
+            const canvas = await dom2canvas(
+                element,
+                originalOpacity,
+                undefined,
+                this.maxTextureSize,
+            );
+            texture = new Texture(this.#ctx, canvas);
+            type = "text" as VFXElementType;
+        }
+
+        const [wrapS, wrapT] = parseWrap(opts.wrap);
+        texture.wrapS = wrapS;
+        texture.wrapT = wrapT;
+        // Effects read `ctx.src` as premultiplied, like later stages.
+        texture.premultiplyAlpha = true;
+        texture.needsUpdate = true;
+
+        const autoCrop = opts.autoCrop ?? true;
+
+        const hiddenOpacity = hiddenOpacityFor(type, opts.overlay);
+
+        // Effect-path specifics.
+        const now = this.#time;
+        const elem: VFXElement = {
+            type,
+            element,
+            isInViewport: false,
+            intersectionState: createIntersectionState(now),
+            // Match the (possibly-ceiled) rect so #resize's width/height
+            // comparison stays in the same coordinate system.
+            width: rect.right - rect.left,
+            height: rect.bottom - rect.top,
+            passes: [],
+            bufferTargets: new Map(),
+            startTime: now,
+            enterTime: now,
+            leaveTime: Number.NEGATIVE_INFINITY,
+            release: opts.release ?? Number.POSITIVE_INFINITY,
+            isGif,
+            isFullScreen,
+            overflow,
+            intersection: intersectionOpts,
+            originalOpacity,
+            srcTexture: texture,
+            zIndex: opts.zIndex ?? 0,
+            backbuffer: undefined,
+            autoCrop,
+            effectLastRenderTime: now,
+        };
+
+        // Resolver-form EffectTexture — closure over `elem.srcTexture`
+        // transparently follows text-element re-renders.
+        const captureHandle = makeEffectTexture(
+            () => elem.srcTexture,
+            () => readTextureSourceDim(elem.srcTexture, "w"),
+            () => readTextureSourceDim(elem.srcTexture, "h"),
+        );
+
+        // Split user uniforms into static + generators.
+        const staticUniforms: Record<string, EffectUniformValue> = {};
+        const gens: Record<string, () => EffectUniformValue> = {};
+        if (opts.uniforms) {
+            for (const [k, v] of Object.entries(opts.uniforms)) {
+                if (typeof v === "function") {
+                    gens[k] = v as () => EffectUniformValue;
+                    staticUniforms[k] = v() as EffectUniformValue;
+                } else {
+                    staticUniforms[k] = v as EffectUniformValue;
+                }
+            }
+        }
+        elem.effectUniformGenerators = gens;
+        elem.effectStaticUniforms = staticUniforms;
+
+        const vfxProps: EffectVFXProps = {
+            autoCrop,
+            glslVersion: opts.glslVersion ?? "300 es",
+        };
+        const chain = new EffectChain(
+            this.#ctx,
+            this.#quad,
+            this.#pixelRatio,
+            effects,
+            vfxProps,
+            captureHandle,
+            false,
+            this.#programCache,
+        );
+        try {
+            await chain.initAll();
+        } catch (err) {
+            // Chain has already disposed prior effects + failing host.
+            // Release the source texture and restore opacity.
+            this.#releaseEffects(effects);
+            texture.dispose();
+            element.style.setProperty("opacity", originalOpacity.toString());
+            throw err;
+        }
+        elem.chain = chain;
+
+        this.#hitTest(elem, rect, now);
+        this.#register(elem, hiddenOpacity);
+    }
+
+    /**
+     * Normalize shader input to a VFXPass array.
+     * Per-pass `glslVersion` wins; otherwise `opts.glslVersion` is inherited.
+     */
+    #normalizePasses(opts: VFXProps): VFXPass[] {
+        const inherit = (p: VFXPass): VFXPass =>
+            p.glslVersion === undefined && opts.glslVersion !== undefined
+                ? { ...p, glslVersion: opts.glslVersion }
+                : p;
+        if (Array.isArray(opts.shader)) {
+            return opts.shader.map(inherit);
+        }
+        const shaderCode = this.#getShader(opts.shader || "uvGradient");
+        return [inherit({ frag: shaderCode })];
+    }
+
+    /**
+     * Replace the effect chain on an already-registered effect-path
+     * element. Effects whose reference is unchanged keep their host /
+     * init state; only added/removed effects run init/dispose. Throws
+     * when the element is not registered, lives on the shader path, or
+     * when a *new* effect (not already in the current chain) is already
+     * attached to another element/postEffect on this player.
+     */
+    async updateElementEffects(
+        element: HTMLElement,
+        rawEffect: Effect | readonly Effect[],
+    ): Promise<void> {
+        const e = this.#elements.find((x) => x.element === element);
+        if (!e) {
+            throw new Error(
+                "[VFX-JS] updateElementEffects: element not registered",
+            );
+        }
+        if (!e.chain) {
+            throw new Error(
+                "[VFX-JS] updateElementEffects: element is on the shader path; effect-only updates are not supported",
+            );
+        }
+
+        const newEffects: readonly Effect[] = Array.isArray(rawEffect)
+            ? [...rawEffect]
+            : [rawEffect];
+
+        const oldEffects = e.chain.effects;
+        const oldSet = new Set(oldEffects);
+        const reallyNew: Effect[] = [];
+        for (const eff of newEffects) {
+            if (!oldSet.has(eff)) {
+                if (this.#registeredEffects.has(eff)) {
+                    throw new Error(
+                        "[VFX-JS] Effect instance already attached. Construct a new instance per `vfx.add()` / `postEffect`.",
+                    );
+                }
+                reallyNew.push(eff);
+            }
+        }
+
+        await e.chain.replaceEffects(newEffects);
+
+        const newSet = new Set(newEffects);
+        for (const eff of oldEffects) {
+            if (!newSet.has(eff)) {
+                this.#registeredEffects.delete(eff);
+            }
+        }
+        for (const eff of reallyNew) {
+            this.#registeredEffects.add(eff);
+        }
+    }
+
+    removeElement(element: HTMLElement): void {
+        const i = this.#elements.findIndex((e) => e.element === element);
+        if (i !== -1) {
+            const e = this.#elements.splice(i, 1)[0] as VFXElement;
+
+            if (e.chain) {
+                // Effect path: chain disposes its effects + hosts +
+                // intermediates. Source texture + opacity are ours.
+                this.#releaseEffects(e.chain.effects);
+                e.chain.dispose();
+            } else {
+                for (const rt of e.bufferTargets.values()) {
+                    rt.dispose();
+                }
+                for (const p of e.passes) {
+                    p.pass.dispose();
+                    p.backbuffer?.dispose();
+                }
+                e.backbuffer?.dispose();
+            }
+            e.srcTexture.dispose();
+
+            // Recover the original state
+            element.style.setProperty("opacity", e.originalOpacity.toString());
+        }
+    }
+
+    updateTextElement(element: HTMLElement): Promise<void> {
+        const i = this.#elements.findIndex((e) => e.element === element);
+        if (i !== -1) {
+            return this.#rerenderTextElement(this.#elements[i]);
+        }
+
+        // Do nothing if the element is not found
+        // This happens when addElement is still processing
+        return Promise.resolve();
+    }
+
+    /**
+     * Re-capture an `<img>` whose `src` changed since `add()`.
+     *
+     * Image source textures are uploaded once at `add()` time (only
+     * video / GIF refresh per frame), so this reloads the current `src`
+     * and swaps `e.srcTexture`. No-op for GIFs, which refresh already.
+     */
+    async updateImageElement(element: HTMLImageElement): Promise<void> {
+        const e = this.#elements.find((e) => e.element === element);
+        if (e?.type !== "img" || e.isGif) {
+            return;
+        }
+
+        const img = await loadImage(getImageSourceUrl(element));
+        const oldTexture = e.srcTexture;
+        const texture = new Texture(this.#ctx, img);
+        texture.wrapS = oldTexture.wrapS;
+        texture.wrapT = oldTexture.wrapT;
+        texture.premultiplyAlpha = oldTexture.premultiplyAlpha;
+        texture.needsUpdate = true;
+        // Effect path reads `e.srcTexture` each frame via a resolver, so
+        // the field swap suffices; shader path also needs the src uniform.
+        if (!e.chain && e.passes.length > 0) {
+            e.passes[0].uniforms["src"].value = texture;
+        }
+        e.srcTexture = texture;
+        oldTexture.dispose();
+    }
+
+    updateCanvasElement(element: HTMLCanvasElement): void {
+        const e = this.#elements.find((e) => e.element === element);
+        if (e) {
+            const oldTexture = e.srcTexture;
+            const texture = new Texture(this.#ctx, element);
+            texture.wrapS = oldTexture.wrapS;
+            texture.wrapT = oldTexture.wrapT;
+            texture.premultiplyAlpha = oldTexture.premultiplyAlpha;
+            texture.needsUpdate = true;
+            if (!e.chain && e.passes.length > 0) {
+                e.passes[0].uniforms["src"].value = texture;
+            }
+            e.srcTexture = texture;
+            oldTexture.dispose();
+        }
+    }
+
+    updateHICTexture(
+        canvas: HTMLCanvasElement,
+        offscreen: OffscreenCanvas,
+    ): void {
+        const e = this.#elements.find((e) => e.element === canvas);
+        if (e?.type !== "hic") {
+            return;
+        }
+        if (e.frozen) {
+            drawCaptureOnCanvas(canvas, offscreen);
+        }
+
+        const oldTexture = e.srcTexture;
+
+        if (oldTexture.source === offscreen) {
+            oldTexture.needsUpdate = true;
+        } else {
+            const texture = new Texture(this.#ctx, offscreen);
+            texture.wrapS = oldTexture.wrapS;
+            texture.wrapT = oldTexture.wrapT;
+            texture.premultiplyAlpha = oldTexture.premultiplyAlpha;
+            texture.needsUpdate = true;
+            if (!e.chain && e.passes.length > 0) {
+                e.passes[0].uniforms["src"].value = texture;
+            }
+            e.srcTexture = texture;
+            oldTexture.dispose();
+        }
+    }
+
+    /**
+     * Stop rendering the elements inside `root` and show their plain
+     * content, including ones added under it later.
+     * Returns a function that undoes it.
+     */
+    freezeInside(root: HTMLElement): () => void {
+        return this.#freezes.freezeInside(root, this.#elements);
+    }
+
+    /** Whether the element is frozen by `freezeInside`. */
+    isFrozen(element: HTMLElement): boolean {
+        return this.#elements.some((e) => e.element === element && e.frozen);
+    }
+
+    /**
+     * Keep rendering the element while it is off screen.
+     * Returns a function that undoes it.
+     */
+    forceRender(element: HTMLElement): () => void {
+        const e = this.#elements.find((e) => e.element === element);
+        if (!e || e.forceRender) {
+            return () => {};
+        }
+        e.forceRender = true;
+        return () => {
+            e.forceRender = false;
+        };
+    }
+
+    get maxTextureSize(): number {
+        return this.#ctx.maxTextureSize;
+    }
+
+    isPlaying(): boolean {
+        return this.#playRequest !== undefined;
+    }
+
+    play(): void {
+        if (!this.isPlaying()) {
+            // Resume from "now" so a long pause doesn't advance the clock
+            // by the whole stopped duration on the first frame.
+            this.#wallPrev = Date.now() / 1000;
+            this.#playRequest = requestAnimationFrame(this.#playLoop);
+        }
+    }
+
+    /** Current virtual animation time, in seconds. */
+    get time(): number {
+        return this.#time;
+    }
+
+    /**
+     * Pin the virtual clock to an absolute time (seconds). The next
+     * `render` uses it verbatim, so `setTime(t); render()` is exact —
+     * useful for scrubbing and deterministic snapshots.
+     */
+    setTime(time: number): void {
+        this.#time = time;
+        this.#timeOverridden = true;
+    }
+
+    /** Playback rate: `1` = realtime, `0` = paused, negative = rewind. */
+    get timeScale(): number {
+        return this.#timeScale;
+    }
+
+    set timeScale(scale: number) {
+        this.#timeScale = scale;
+    }
+
+    stop(): void {
+        if (this.#playRequest !== undefined) {
+            cancelAnimationFrame(this.#playRequest);
+            this.#playRequest = undefined;
+        }
+    }
+
+    render(): void {
+        // Advance the virtual clock by the wall time elapsed since the last
+        // frame, scaled by timeScale. A pending `setTime` skips the advance
+        // for one frame so the pinned value renders exactly.
+        const wall = Date.now() / 1000;
+        if (this.#timeOverridden) {
+            this.#timeOverridden = false;
+        } else {
+            this.#time += (wall - this.#wallPrev) * this.#timeScale;
+        }
+        this.#wallPrev = wall;
+        const now = this.#time;
+        const gl = this.#gl;
+
+        // This must done every frame because iOS Safari doesn't fire
+        // window resize event while the address bar is transforming.
+        this.#updateCanvasSize();
+
+        // Clear the main canvas.
+        gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+        gl.viewport(0, 0, this.#canvas.width, this.#canvas.height);
+        gl.clear(gl.COLOR_BUFFER_BIT);
+
+        const canvasW = this.#canvasRect.right - this.#canvasRect.left;
+        const canvasH = this.#canvasRect.bottom - this.#canvasRect.top;
+        const viewportGlRect = getGLRect(0, 0, canvasW, canvasH);
+
+        // Setup post effect render target if needed. Chain-based
+        // post-effect is only enabled once its async `init` resolves;
+        // until then render directly to canvas (no blank frames).
+        const shouldUsePostEffect = this.#shouldUsePostEffect();
+        if (shouldUsePostEffect) {
+            this.#setupPostEffectTarget(canvasW, canvasH);
+            if (this.#postEffectTarget) {
+                gl.bindFramebuffer(gl.FRAMEBUFFER, this.#postEffectTarget.fbo);
+                gl.clear(gl.COLOR_BUFFER_BIT);
+                gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+            }
+        }
+
+        for (const e of this.#elements) {
+            if (e.frozen) {
+                // Resume without a jump when unfrozen.
+                pauseIntersection(e.intersectionState, now);
+                continue;
+            }
+            const domRect = e.element.getBoundingClientRect();
+            // text-path texture is captured at ceil dimensions — match the
+            // quad so the texture maps 1:1 with no sub-pixel squish.
+            const rect =
+                e.type === "text" ? toCeiledRect(domRect) : toRect(domRect);
+            const hit = this.#hitTest(e, rect, now);
+
+            if (!hit.isVisible) {
+                continue;
+            }
+
+            if (e.chain) {
+                this.#renderEffectElement(e, rect, hit, now);
+                continue;
+            }
+
+            // Update uniforms
+            const u = e.passes[0].uniforms;
+            u["time"].value = now - e.startTime;
+            (u["resolution"].value as Vec2).set(
+                (rect.right - rect.left) * this.#pixelRatio,
+                (rect.bottom - rect.top) * this.#pixelRatio,
+            );
+            // #mouseX/Y are in viewport-Y-up coords, but gl_FragCoord in
+            // the canvas is in canvas-Y-up coords (canvas extends paddingX/Y
+            // outside the viewport). Add padding to convert.
+            (u["mouse"].value as Vec2).set(
+                (this.#mouseX + this.#paddingX) * this.#pixelRatio,
+                (this.#mouseY + this.#paddingY) * this.#pixelRatio,
+            );
+
+            // Update uniform generators
+            for (const pass of e.passes) {
+                for (const [key, gen] of Object.entries(
+                    pass.uniformGenerators,
+                )) {
+                    pass.uniforms[key].value = gen();
+                }
+            }
+
+            // Update GIF / video
+            gifFor.get(e.element)?.update();
+            if (e.type === "video" || e.isGif) {
+                (u["src"].value as Texture).needsUpdate = true;
+            }
+
+            const glRect = rectToGLRect(
+                rect,
+                canvasH,
+                this.#paddingX,
+                this.#paddingY,
+            );
+            const glRectWithOverflow = rectToGLRect(
+                hit.rectWithOverflow,
+                canvasH,
+                this.#paddingX,
+                this.#paddingY,
+            );
+
+            // Update backbuffer uniform before any pass
+            if (e.backbuffer) {
+                e.passes[0].uniforms["backbuffer"].value = e.backbuffer.texture;
+            }
+
+            // Resize buffer targets if needed (skip passes with custom size)
+            {
+                const targetRect = e.isFullScreen
+                    ? viewportGlRect
+                    : glRectWithOverflow;
+                const tw = Math.max(1, targetRect.w * this.#pixelRatio);
+                const th = Math.max(1, targetRect.h * this.#pixelRatio);
+                const cssW = Math.max(1, targetRect.w);
+                const cssH = Math.max(1, targetRect.h);
+                for (let i = 0; i < e.passes.length - 1; i++) {
+                    const pass = e.passes[i];
+                    if (pass.size) {
+                        continue; // fixed size, no resize
+                    }
+                    if (pass.backbuffer) {
+                        pass.backbuffer.resize(cssW, cssH);
+                    } else {
+                        const rt = e.bufferTargets.get(pass.target as string);
+                        if (rt && (rt.width !== tw || rt.height !== th)) {
+                            rt.setSize(tw, th);
+                        }
+                    }
+                }
+            }
+
+            // Track resolved buffer textures for dynamic uniform updates
+            const resolvedTargets = new Map<string, Texture>();
+
+            // Pre-register persistent backbuffer textures
+            for (const pass of e.passes) {
+                if (pass.backbuffer && pass.target) {
+                    resolvedTargets.set(pass.target, pass.backbuffer.texture);
+                }
+            }
+
+            // Render intermediate passes, chaining src between passes
+            // Use local inputTexture (like post-effects) to avoid corrupting
+            // the shared src uniform across frames.
+            let inputTexture: Texture = e.srcTexture;
+
+            for (let i = 0; i < e.passes.length - 1; i++) {
+                const pass = e.passes[i];
+                const defaultRect = e.isFullScreen
+                    ? viewportGlRect
+                    : glRectWithOverflow;
+
+                // Set src from chain (not shared uniform mutation)
+                pass.uniforms["src"].value = inputTexture;
+
+                // Update auto-bound buffer uniforms from resolved targets
+                for (const [name, tex] of resolvedTargets) {
+                    if (pass.uniforms[name]) {
+                        pass.uniforms[name].value = tex;
+                    }
+                }
+
+                // Update dynamic uniforms
+                for (const [key, gen] of Object.entries(
+                    pass.uniformGenerators,
+                )) {
+                    if (pass.uniforms[key]) {
+                        pass.uniforms[key].value = gen();
+                    }
+                }
+
+                // Element-space uniforms, like the final pass.
+                // offset and mouse are relative to this pass's buffer.
+                const bufferRect = pass.size
+                    ? getGLRect(0, 0, pass.size[0], pass.size[1])
+                    : getGLRect(0, 0, defaultRect.w, defaultRect.h);
+                const passUniforms = getIntermediatePassUniforms(
+                    domRect,
+                    glRect,
+                    defaultRect,
+                    pass.size,
+                    [this.#mouseX, this.#mouseY],
+                    [this.#paddingX, this.#paddingY],
+                    this.#pixelRatio,
+                );
+                (pass.uniforms["resolution"].value as Vec2).set(
+                    ...passUniforms.resolution,
+                );
+                (pass.uniforms["offset"].value as Vec2).set(
+                    ...passUniforms.offset,
+                );
+                (pass.uniforms["mouse"].value as Vec2).set(
+                    ...passUniforms.mouse,
+                );
+
+                if (pass.backbuffer) {
+                    // Persistent pass: render to backbuffer, then swap
+                    this.#render(
+                        pass.pass,
+                        pass.backbuffer.target,
+                        bufferRect,
+                        pass.uniforms,
+                        true,
+                    );
+                    pass.backbuffer.swap();
+                    inputTexture = pass.backbuffer.texture;
+                } else {
+                    const rt = e.bufferTargets.get(pass.target as string);
+                    if (!rt) {
+                        continue;
+                    }
+                    this.#render(
+                        pass.pass,
+                        rt,
+                        bufferRect,
+                        pass.uniforms,
+                        true,
+                    );
+                    inputTexture = rt.texture;
+                }
+
+                // Update resolved target
+                if (pass.target) {
+                    resolvedTargets.set(pass.target, inputTexture);
+                }
+            }
+
+            // Render final pass — restore element-space uniforms
+            const finalPass = e.passes[e.passes.length - 1];
+            finalPass.uniforms["src"].value = inputTexture;
+            (finalPass.uniforms["resolution"].value as Vec2).set(
+                domRect.width * this.#pixelRatio,
+                domRect.height * this.#pixelRatio,
+            );
+            (finalPass.uniforms["offset"].value as Vec2).set(
+                glRect.x * this.#pixelRatio,
+                glRect.y * this.#pixelRatio,
+            );
+            (finalPass.uniforms["mouse"].value as Vec2).set(
+                (this.#mouseX + this.#paddingX) * this.#pixelRatio,
+                (this.#mouseY + this.#paddingY) * this.#pixelRatio,
+            );
+
+            // Update resolved buffer uniforms for final pass
+            for (const [name, tex] of resolvedTargets) {
+                if (finalPass.uniforms[name]) {
+                    finalPass.uniforms[name].value = tex;
+                }
+            }
+            // Update dynamic uniforms for final pass
+            for (const [key, gen] of Object.entries(
+                finalPass.uniformGenerators,
+            )) {
+                if (finalPass.uniforms[key]) {
+                    finalPass.uniforms[key].value = gen();
+                }
+            }
+
+            if (e.backbuffer) {
+                // Update backbuffer
+                finalPass.uniforms["backbuffer"].value = e.backbuffer.texture;
+
+                if (e.isFullScreen) {
+                    e.backbuffer.resize(canvasW, canvasH);
+
+                    this.#setOffset(e, glRect.x, glRect.y);
+                    this.#render(
+                        finalPass.pass,
+                        e.backbuffer.target,
+                        viewportGlRect,
+                        finalPass.uniforms,
+                        true,
+                    );
+                    e.backbuffer.swap();
+
+                    this.#copyPass.setUniforms(
+                        e.backbuffer.texture,
+                        this.#pixelRatio,
+                        viewportGlRect,
+                    );
+                    this.#render(
+                        this.#copyPass.pass,
+                        shouldUsePostEffect
+                            ? this.#postEffectTarget || null
+                            : null,
+                        viewportGlRect,
+                        this.#copyPass.uniforms,
+                        false,
+                    );
+                } else {
+                    e.backbuffer.resize(
+                        glRectWithOverflow.w,
+                        glRectWithOverflow.h,
+                    );
+
+                    this.#setOffset(e, e.overflow.left, e.overflow.bottom);
+                    this.#render(
+                        finalPass.pass,
+                        e.backbuffer.target,
+                        e.backbuffer.getViewport(),
+                        finalPass.uniforms,
+                        true,
+                    );
+                    e.backbuffer.swap();
+
+                    this.#copyPass.setUniforms(
+                        e.backbuffer.texture,
+                        this.#pixelRatio,
+                        glRectWithOverflow,
+                    );
+                    this.#render(
+                        this.#copyPass.pass,
+                        shouldUsePostEffect
+                            ? this.#postEffectTarget || null
+                            : null,
+                        glRectWithOverflow,
+                        this.#copyPass.uniforms,
+                        false,
+                    );
+                }
+            } else {
+                this.#setOffset(e, glRect.x, glRect.y);
+                this.#render(
+                    finalPass.pass,
+                    shouldUsePostEffect ? this.#postEffectTarget || null : null,
+                    e.isFullScreen ? viewportGlRect : glRectWithOverflow,
+                    finalPass.uniforms,
+                    false,
+                );
+            }
+        }
+
+        // Apply post effects
+        if (shouldUsePostEffect && this.#postEffectTarget) {
+            if (this.#postEffectChain && this.#postEffectChainReady) {
+                this.#runPostEffectChain(viewportGlRect, now);
+            } else {
+                this.#renderPostEffects(viewportGlRect, now);
+            }
+        }
+    }
+
+    #playLoop = (): void => {
+        if (this.isPlaying()) {
+            this.render();
+            this.#playRequest = requestAnimationFrame(this.#playLoop);
+        }
+    };
+
+    /**
+     * Effect-path render. Assembles the ChainFrameInput for one visible
+     * element and dispatches to its EffectChain.
+     *
+     * Hit-test is already done by the caller; `hit.isVisible === true`
+     * here.
+     */
+    #renderEffectElement(
+        e: VFXElement,
+        rect: Rect,
+        hit: {
+            rectWithOverflow: Rect;
+            isVisible: boolean;
+            intersection: number;
+            enterProgress: number;
+            leaveProgress: number;
+        },
+        now: number,
+    ): void {
+        const chain = e.chain;
+        if (!chain) {
+            return;
+        }
+
+        const pr = this.#pixelRatio;
+
+        // Video / GIF per-frame re-upload (mirror shader path).
+        gifFor.get(e.element)?.update();
+        if (e.type === "video" || e.isGif) {
+            e.srcTexture.needsUpdate = true;
+        }
+
+        // Resolve per-frame uniforms: static baseline + generator results.
+        const resolvedUniforms: Record<string, EffectUniformValue> = {
+            ...(e.effectStaticUniforms ?? {}),
+        };
+        if (e.effectUniformGenerators) {
+            for (const [k, gen] of Object.entries(e.effectUniformGenerators)) {
+                resolvedUniforms[k] = gen() as EffectUniformValue;
+            }
+        }
+
+        const canvasW = this.#canvasRect.right - this.#canvasRect.left;
+        const canvasH = this.#canvasRect.bottom - this.#canvasRect.top;
+
+        const glRect = rectToGLRect(
+            rect,
+            canvasH,
+            this.#paddingX,
+            this.#paddingY,
+        );
+        // Mouse coordinates (bottom-left origin, physical px).
+        //   mouse: element-local
+        //   mouseViewport: viewport-local
+        // `#mouseX/Y` are viewport-local logical px; adding padding maps
+        // into canvas-local coords, subtracting glRect.x/y maps into
+        // element-local coords.
+        const relMouseX = this.#mouseX + this.#paddingX - glRect.x;
+        const relMouseY = this.#mouseY + this.#paddingY - glRect.y;
+
+        const elementInnerW = rect.right - rect.left;
+        const elementInnerH = rect.bottom - rect.top;
+
+        const prevT = e.effectLastRenderTime ?? now;
+        const deltaTime = now - prevT;
+        e.effectLastRenderTime = now;
+
+        const shouldUsePostEffect = this.#shouldUsePostEffect();
+        const finalTarget =
+            shouldUsePostEffect && this.#postEffectTarget
+                ? makeEffectRenderTargetFromFb(this.#postEffectTarget)
+                : null;
+
+        chain.run({
+            time: now - e.startTime,
+            deltaTime,
+            mouse: [relMouseX * pr, relMouseY * pr],
+            mouseViewport: [this.#mouseX * pr, this.#mouseY * pr],
+            intersection: hit.intersection,
+            enterTime: clampTime(now - e.enterTime),
+            leaveTime: clampTime(now - e.leaveTime),
+            enterProgress: hit.enterProgress,
+            leaveProgress: hit.leaveProgress,
+            resolvedUniforms,
+            canvasSize: [canvasW, canvasH],
+            canvasBufferSize: [canvasW * pr, canvasH * pr],
+            elementSize: [elementInnerW, elementInnerH],
+            elementBufferSize: [elementInnerW * pr, elementInnerH * pr],
+            elementRectOnCanvasPx: {
+                x: glRect.x * pr,
+                y: glRect.y * pr,
+                w: glRect.w * pr,
+                h: glRect.h * pr,
+            },
+            finalTarget,
+            isVisible: hit.isVisible,
+        });
+    }
+
+    #shouldUsePostEffect(): boolean {
+        return (
+            this.#postEffectEntries.length > 0 ||
+            (this.#postEffectChain !== null && this.#postEffectChainReady)
+        );
+    }
+
+    /**
+     * Throws if any of the given Effect instances is already attached to
+     * another element/postEffect on this player. Effects own per-host
+     * GPU resources and dims, so reuse silently corrupts state.
+     * Successful assertions register the instances; callers must release
+     * via #releaseEffects on dispose.
+     */
+    #assertEffectsNotReused(effects: readonly Effect[]): void {
+        for (const e of effects) {
+            if (this.#registeredEffects.has(e)) {
+                throw new Error(
+                    "[VFX-JS] Effect instance already attached. Construct a new instance per `vfx.add()` / `postEffect`.",
+                );
+            }
+        }
+        for (const e of effects) {
+            this.#registeredEffects.add(e);
+        }
+    }
+
+    #releaseEffects(effects: readonly Effect[]): void {
+        for (const e of effects) {
+            this.#registeredEffects.delete(e);
+        }
+    }
+
+    #chainMarginCss(chain: EffectChain): Margin {
+        const padBuffer = chain.hitTestPadBuffer;
+        const pr = this.#pixelRatio;
+        return createMargin({
+            top: padBuffer.top / pr,
+            right: padBuffer.right / pr,
+            bottom: padBuffer.bottom / pr,
+            left: padBuffer.left / pr,
+        });
+    }
+
+    /**
+     * Check element intersection with the viewport.
+     */
+    #hitTest(
+        e: VFXElement,
+        rect: Rect,
+        now: number,
+    ): {
+        rectWithOverflow: Rect;
+        isVisible: boolean;
+        intersection: number;
+        enterProgress: number;
+        leaveProgress: number;
+    } {
+        // Effect path uses chain's max dst pad (device px → CSS
+        // for growRect) instead of `e.overflow`, which is shader-only.
+        // Lags the actual chain pad by one frame on entry; acceptable.
+        const visibilityMargin = e.chain
+            ? this.#chainMarginCss(e.chain)
+            : e.overflow;
+        const rectWithOverflow = growRect(rect, visibilityMargin);
+
+        const isInViewport =
+            e.isFullScreen ||
+            isRectInViewport(this.#viewport, rectWithOverflow);
+
+        const viewportWithMargin = growRect(
+            this.#viewport,
+            e.intersection.rootMargin,
+        );
+        const intersection = getIntersection(viewportWithMargin, rect);
+        updateIntersection(
+            e,
+            intersection,
+            isRectInViewport(viewportWithMargin, rect),
+            now,
+        );
+        const { enterProgress, leaveProgress } = e.intersectionState;
+
+        e.isInViewport = isInViewport;
+
+        // Quit if the element has left and the transition has ended
+        const isVisible =
+            (isInViewport && now - e.leaveTime <= e.release) ||
+            (e.forceRender === true &&
+                rect.right > rect.left &&
+                rect.bottom > rect.top);
+
+        if (isVisible && !e.chain && e.passes.length > 0) {
+            setIntersectionUniforms(e.passes[0].uniforms, e, intersection, now);
+        }
+
+        return {
+            isVisible,
+            intersection,
+            rectWithOverflow,
+            enterProgress,
+            leaveProgress,
+        };
+    }
+
+    #getShader(shaderNameOrCode: string): string {
+        if (shaderNameOrCode in shaders) {
+            return shaders[shaderNameOrCode as keyof typeof shaders];
+        } else {
+            return shaderNameOrCode;
+        }
+    }
+
+    #render(
+        pass: Pass,
+        target: Framebuffer | null,
+        rect: GLRect,
+        uniforms: Uniforms,
+        clearTarget: boolean,
+    ) {
+        const gl = this.#gl;
+
+        // Clear intermediate targets, but never touch the post-effect target
+        // here (it's cleared once per frame at the top of `render`).
+        if (
+            clearTarget &&
+            target !== null &&
+            target !== this.#postEffectTarget
+        ) {
+            gl.bindFramebuffer(gl.FRAMEBUFFER, target.fbo);
+            gl.viewport(0, 0, target.width, target.height);
+            gl.clear(gl.COLOR_BUFFER_BIT);
+        }
+
+        // Viewport uniform uses un-clipped rect for shader uv calculation.
+        const vp = uniforms["viewport"];
+        if (vp && vp.value instanceof Vec4) {
+            vp.value.set(
+                rect.x * this.#pixelRatio,
+                rect.y * this.#pixelRatio,
+                rect.w * this.#pixelRatio,
+                rect.h * this.#pixelRatio,
+            );
+        }
+
+        try {
+            renderPass(
+                gl,
+                this.#quad,
+                pass,
+                target,
+                rect,
+                this.#canvasSize[0],
+                this.#canvasSize[1],
+                this.#pixelRatio,
+            );
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    /**
+     * Set uniforms["offset"] of the given element.
+     * XY must be the values from the bottom-left of the render target.
+     */
+    #setOffset(e: VFXElement, x: number, y: number) {
+        const offset = e.passes[0].uniforms["offset"].value as Vec2;
+        offset.x = x * this.#pixelRatio;
+        offset.y = y * this.#pixelRatio;
+    }
+
+    #initPostEffects(postEffects: (VFXPostEffect | VFXPass)[]) {
+        // Effect-path post-effect: a single-slot VFXPostEffect whose
+        // `effect` field is set. See plan.md task 4-4.
+        const pe =
+            postEffects.length === 1 && !("frag" in postEffects[0])
+                ? (postEffects[0] as VFXPostEffect)
+                : null;
+        if (pe && pe.effect !== undefined) {
+            this.#initPostEffectChain(pe, pe.effect);
+            return;
+        }
+
+        const shaderSources: string[] = [];
+
+        // First pass: assign auto target names for intermediate VFXPass items
+        const passItems: VFXPass[] = [];
+        for (const pe of postEffects) {
+            if ("frag" in pe) {
+                passItems.push(pe);
+            }
+        }
+        for (let i = 0; i < passItems.length - 1; i++) {
+            if (!passItems[i].target) {
+                passItems[i] = { ...passItems[i], target: `pass${i}` };
+            }
+        }
+
+        for (const pe of postEffects) {
+            let frag: string;
+            let pass: PostEffectPass;
+            let target: string | undefined;
+
+            if ("frag" in pe) {
+                frag = pe.frag;
+                pass = new PostEffectPass(
+                    this.#ctx,
+                    frag,
+                    pe.uniforms,
+                    pe.persistent ?? false,
+                    pe.float ?? false,
+                    pe.size,
+                    pe.target !== undefined,
+                    pe.glslVersion,
+                );
+                target = pe.target;
+            } else {
+                if (pe.shader === undefined) {
+                    throw new Error(
+                        "VFXPostEffect requires `shader` (the `effect` path is not implemented yet).",
+                    );
+                }
+                frag = this.#getShader(pe.shader);
+                pass = new PostEffectPass(
+                    this.#ctx,
+                    frag,
+                    pe.uniforms,
+                    pe.persistent ?? false,
+                    pe.float ?? false,
+                    undefined,
+                    false,
+                    pe.glslVersion,
+                );
+                if (pe.persistent) {
+                    pass.registerBufferUniform("backbuffer");
+                }
+                target = undefined;
+            }
+
+            shaderSources.push(frag);
+
+            const generators: { [name: string]: () => VFXUniformValue } = {};
+            if (pe.uniforms) {
+                for (const [key, value] of Object.entries(pe.uniforms)) {
+                    if (typeof value === "function") {
+                        generators[key] = value;
+                    }
+                }
+            }
+
+            this.#postEffectEntries.push({ pass, target, generators });
+        }
+
+        for (const p of passItems) {
+            if (p.target) {
+                this.#postEffectBufferTargets.set(p.target, undefined);
+            }
+        }
+
+        // Auto-bind named buffer targets referenced in shaders
+        const allTargetNames = this.#postEffectEntries
+            .map((e) => e.target)
+            .filter((n): n is string => n !== undefined);
+        for (let i = 0; i < this.#postEffectEntries.length; i++) {
+            for (const name of allTargetNames) {
+                if (
+                    shaderSources[i].match(
+                        new RegExp(`uniform\\s+sampler2D\\s+${name}\\b`),
+                    )
+                ) {
+                    this.#postEffectEntries[i].pass.registerBufferUniform(name);
+                }
+            }
+        }
+    }
+
+    /**
+     * Build the Effect-path post-effect chain (single slot). See plan.md
+     * task 4-4. Init is kicked off synchronously but its Promise is
+     * fire-and-forget: until it resolves, `shouldUsePostEffect` remains
+     * false and the scene renders directly to canvas (no blank frame).
+     */
+    #initPostEffectChain(
+        pe: VFXPostEffect,
+        rawEffect: Effect | readonly Effect[],
+    ): void {
+        if (pe.shader !== undefined) {
+            console.warn(
+                "[VFX-JS] Both `shader` and `effect` specified on post-effect; `effect` takes precedence.",
+            );
+        }
+        const effects: readonly Effect[] = Array.isArray(rawEffect)
+            ? [...rawEffect]
+            : [rawEffect];
+        this.#assertEffectsNotReused(effects);
+
+        // Capture resolver: always the current #postEffectTarget texture
+        // (regenerated on viewport resize via #setupPostEffectTarget).
+        const captureHandle = makeEffectTexture(
+            () => {
+                const target = this.#postEffectTarget;
+                if (!target) {
+                    throw new Error(
+                        "[VFX-JS] post-effect chain active without target",
+                    );
+                }
+                return target.texture;
+            },
+            () => this.#postEffectTarget?.width ?? 0,
+            () => this.#postEffectTarget?.height ?? 0,
+        );
+        const vfxProps: EffectVFXProps = {
+            autoCrop: true,
+            glslVersion: pe.glslVersion ?? "300 es",
+        };
+        const chain = new EffectChain(
+            this.#ctx,
+            this.#quad,
+            this.#pixelRatio,
+            effects,
+            vfxProps,
+            captureHandle,
+            true,
+            this.#programCache,
+        );
+
+        if (pe.uniforms) {
+            for (const [k, v] of Object.entries(pe.uniforms)) {
+                if (typeof v === "function") {
+                    this.#postEffectChainGenerators[k] =
+                        v as () => EffectUniformValue;
+                    this.#postEffectChainStaticUniforms[k] =
+                        v() as EffectUniformValue;
+                } else {
+                    this.#postEffectChainStaticUniforms[k] =
+                        v as EffectUniformValue;
+                }
+            }
+        }
+
+        this.#postEffectChain = chain;
+        this.#postEffectChainLastTime = this.#time;
+
+        chain
+            .initAll()
+            .then(() => {
+                // Guard against destroy() between init kickoff and
+                // resolution.
+                if (this.#postEffectChain === chain) {
+                    this.#postEffectChainReady = true;
+                }
+            })
+            .catch((err) => {
+                console.error(
+                    "[VFX-JS] Post-effect init failed; post-effect disabled:",
+                    err,
+                );
+                if (this.#postEffectChain === chain) {
+                    this.#releaseEffects(this.#postEffectChain.effects);
+                    this.#postEffectChain.dispose();
+                    this.#postEffectChain = null;
+                    this.#postEffectChainReady = false;
+                }
+            });
+    }
+
+    #runPostEffectChain(viewportGlRect: GLRect, now: number): void {
+        const chain = this.#postEffectChain;
+        if (!chain) {
+            return;
+        }
+
+        const pr = this.#pixelRatio;
+        const resolvedUniforms: Record<string, EffectUniformValue> = {
+            ...this.#postEffectChainStaticUniforms,
+        };
+        for (const [k, gen] of Object.entries(
+            this.#postEffectChainGenerators,
+        )) {
+            resolvedUniforms[k] = gen();
+        }
+
+        const canvasW = this.#canvasRect.right - this.#canvasRect.left;
+        const canvasH = this.#canvasRect.bottom - this.#canvasRect.top;
+        const prev = this.#postEffectChainLastTime;
+        const deltaTime = now - prev;
+        this.#postEffectChainLastTime = now;
+
+        // For post-effects `element*` mirrors `canvas*`; overflow is 0.
+        const canvasSize: [number, number] = [canvasW, canvasH];
+        const canvasBufferSize: [number, number] = [canvasW * pr, canvasH * pr];
+
+        const canvasOnCanvas = {
+            x: viewportGlRect.x * pr,
+            y: viewportGlRect.y * pr,
+            w: viewportGlRect.w * pr,
+            h: viewportGlRect.h * pr,
+        };
+
+        chain.run({
+            time: now,
+            deltaTime,
+            mouse: [this.#mouseX * pr, this.#mouseY * pr],
+            mouseViewport: [this.#mouseX * pr, this.#mouseY * pr],
+            intersection: 1,
+            enterTime: 0,
+            leaveTime: 0,
+            enterProgress: 1,
+            leaveProgress: 0,
+            resolvedUniforms,
+            canvasSize,
+            canvasBufferSize,
+            elementSize: canvasSize,
+            elementBufferSize: canvasBufferSize,
+            elementRectOnCanvasPx: canvasOnCanvas,
+            finalTarget: null,
+            isVisible: true,
+        });
+    }
+
+    #renderPostEffects(viewportGlRect: GLRect, now: number) {
+        if (!this.#postEffectTarget) {
+            return;
+        }
+
+        let inputTexture: Texture = this.#postEffectTarget.texture;
+
+        const resolvedTargets = new Map<string, Texture>();
+
+        // Pre-register persistent backbuffer textures so that earlier passes
+        // can read from later passes' previous-frame output.
+        for (const { pass, target } of this.#postEffectEntries) {
+            if (target && pass.backbuffer) {
+                resolvedTargets.set(target, pass.backbuffer.texture);
+            }
+        }
+
+        for (let i = 0; i < this.#postEffectEntries.length; i++) {
+            const {
+                pass,
+                target: targetName,
+                generators,
+            } = this.#postEffectEntries[i];
+            const isLastPass = i === this.#postEffectEntries.length - 1;
+
+            const mouseX = this.#mouseX + this.#paddingX;
+            const mouseY = this.#mouseY + this.#paddingY;
+
+            const targetDims = pass.size;
+            if (targetDims) {
+                const [tw, th] = targetDims;
+                pass.uniforms.src.value = inputTexture;
+                (pass.uniforms.resolution.value as Vec2).set(tw, th);
+                (pass.uniforms.offset.value as Vec2).set(0, 0);
+                pass.uniforms.time.value = now;
+                (pass.uniforms.mouse.value as Vec2).set(
+                    (mouseX / viewportGlRect.w) * tw,
+                    (mouseY / viewportGlRect.h) * th,
+                );
+            } else {
+                pass.setUniforms(
+                    inputTexture,
+                    this.#pixelRatio,
+                    viewportGlRect,
+                    now,
+                    mouseX,
+                    mouseY,
+                );
+            }
+            pass.uniforms.passIndex.value = i;
+            pass.updateCustomUniforms(generators);
+
+            // Update auto-bound buffer uniforms from previously resolved targets
+            for (const [name, tex] of resolvedTargets) {
+                const u: Uniform | undefined = pass.uniforms[name];
+                if (u) {
+                    u.value = tex;
+                }
+            }
+
+            if (isLastPass) {
+                if (pass.backbuffer) {
+                    if (pass.uniforms.backbuffer) {
+                        pass.uniforms.backbuffer.value =
+                            pass.backbuffer.texture;
+                    }
+
+                    this.#render(
+                        pass.pass,
+                        pass.backbuffer.target,
+                        viewportGlRect,
+                        pass.uniforms,
+                        true,
+                    );
+                    pass.backbuffer.swap();
+
+                    this.#copyPass.setUniforms(
+                        pass.backbuffer.texture,
+                        this.#pixelRatio,
+                        viewportGlRect,
+                    );
+                    this.#render(
+                        this.#copyPass.pass,
+                        null,
+                        viewportGlRect,
+                        this.#copyPass.uniforms,
+                        false,
+                    );
+                } else {
+                    this.#render(
+                        pass.pass,
+                        null,
+                        viewportGlRect,
+                        pass.uniforms,
+                        false,
+                    );
+                }
+            } else if (pass.backbuffer) {
+                if (pass.uniforms.backbuffer) {
+                    pass.uniforms.backbuffer.value = pass.backbuffer.texture;
+                }
+
+                const bbRect = targetDims
+                    ? getGLRect(
+                          0,
+                          0,
+                          targetDims[0] / this.#pixelRatio,
+                          targetDims[1] / this.#pixelRatio,
+                      )
+                    : viewportGlRect;
+
+                this.#render(
+                    pass.pass,
+                    pass.backbuffer.target,
+                    bbRect,
+                    pass.uniforms,
+                    true,
+                );
+                pass.backbuffer.swap();
+
+                inputTexture = pass.backbuffer.texture;
+
+                if (targetName) {
+                    resolvedTargets.set(targetName, pass.backbuffer.texture);
+                }
+            } else {
+                const bufferName = targetName ?? `postEffect${i}`;
+                let rt = this.#postEffectBufferTargets.get(bufferName);
+
+                const rtW = targetDims
+                    ? targetDims[0]
+                    : viewportGlRect.w * this.#pixelRatio;
+                const rtH = targetDims
+                    ? targetDims[1]
+                    : viewportGlRect.h * this.#pixelRatio;
+
+                if (!rt || rt.width !== rtW || rt.height !== rtH) {
+                    rt?.dispose();
+                    rt = createRenderTarget(this.#ctx, rtW, rtH, {
+                        float: pass.float,
+                    });
+                    this.#postEffectBufferTargets.set(bufferName, rt);
+                }
+
+                const renderRect = targetDims
+                    ? getGLRect(
+                          0,
+                          0,
+                          targetDims[0] / this.#pixelRatio,
+                          targetDims[1] / this.#pixelRatio,
+                      )
+                    : viewportGlRect;
+
+                this.#render(pass.pass, rt, renderRect, pass.uniforms, true);
+
+                inputTexture = rt.texture;
+
+                if (targetName) {
+                    resolvedTargets.set(targetName, rt.texture);
+                }
+            }
+        }
+    }
+
+    #setupPostEffectTarget(width: number, height: number) {
+        const targetWidth = width * this.#pixelRatio;
+        const targetHeight = height * this.#pixelRatio;
+
+        if (
+            !this.#postEffectTarget ||
+            this.#postEffectTarget.width !== targetWidth ||
+            this.#postEffectTarget.height !== targetHeight
+        ) {
+            this.#postEffectTarget?.dispose();
+            this.#postEffectTarget = createRenderTarget(
+                this.#ctx,
+                targetWidth,
+                targetHeight,
+            );
+        }
+
+        // Initialize/resize post effect backbuffers
+        for (const { pass } of this.#postEffectEntries) {
+            if (pass.persistent && !pass.backbuffer) {
+                pass.initializeBackbuffer(
+                    this.#ctx,
+                    width,
+                    height,
+                    this.#pixelRatio,
+                );
+            } else if (pass.backbuffer) {
+                pass.resizeBackbuffer(width, height);
+            }
+        }
+    }
+}
+
+/**
+ * Returns if the given rects intersect.
+ * It returns true when the rects are adjacent (= intersection ratio is 0).
+ */
+export function isRectInViewport(viewport: Rect, rect: Rect): boolean {
+    return (
+        rect.left <= viewport.right &&
+        rect.right >= viewport.left &&
+        rect.top <= viewport.bottom &&
+        rect.bottom >= viewport.top
+    );
+}
+
+export function parseOverflowOpts(
+    overflow: VFXProps["overflow"],
+): [isFullScreen: boolean, Margin] {
+    if (overflow === true) {
+        return [true, MARGIN_ZERO];
+    }
+    if (overflow === undefined) {
+        return [false, MARGIN_ZERO];
+    }
+    return [false, createMargin(overflow)];
+}
+
+/**
+ * Uniforms for an intermediate pass of a multipass chain.
+ * `resolution` and `offset` give the element rect inside the pass buffer.
+ * Passes with a fixed `size` use the whole buffer.
+ * @internal
+ */
+export function getIntermediatePassUniforms(
+    elementSize: { width: number; height: number },
+    glRect: GLRect,
+    bufferGlRect: GLRect,
+    passSize: readonly [number, number] | undefined,
+    mouse: readonly [number, number],
+    padding: readonly [number, number],
+    pixelRatio: number,
+): {
+    resolution: [number, number];
+    offset: [number, number];
+    mouse: [number, number];
+} {
+    // Mouse in canvas coords, relative to the buffer origin
+    const mouseX = mouse[0] + padding[0] - bufferGlRect.x;
+    const mouseY = mouse[1] + padding[1] - bufferGlRect.y;
+
+    if (passSize) {
+        return {
+            resolution: [passSize[0], passSize[1]],
+            offset: [0, 0],
+            mouse: [
+                (mouseX / bufferGlRect.w) * passSize[0],
+                (mouseY / bufferGlRect.h) * passSize[1],
+            ],
+        };
+    }
+
+    return {
+        resolution: [
+            elementSize.width * pixelRatio,
+            elementSize.height * pixelRatio,
+        ],
+        offset: [
+            (glRect.x - bufferGlRect.x) * pixelRatio,
+            (glRect.y - bufferGlRect.y) * pixelRatio,
+        ],
+        mouse: [mouseX * pixelRatio, mouseY * pixelRatio],
+    };
+}
+
+/**
+ * Update in/out, the legacy `enterTime` / `leaveTime`, and the transition state.
+ * @internal
+ */
+export function updateIntersection(
+    e: Pick<
+        VFXElement,
+        | "intersectionState"
+        | "intersection"
+        | "isFullScreen"
+        | "enterTime"
+        | "leaveTime"
+    >,
+    ratio: number,
+    touching: boolean,
+    now: number,
+): void {
+    const state = e.intersectionState;
+    const wasIn = state.isIn;
+    const isIn =
+        e.isFullScreen ||
+        nextIsIn(
+            state,
+            ratio,
+            touching,
+            e.intersection.threshold,
+            e.intersection.leaveThreshold,
+        );
+
+    if (!wasIn && isIn) {
+        e.enterTime = now;
+        e.leaveTime = Number.POSITIVE_INFINITY;
+    }
+    if (wasIn && !isIn) {
+        e.leaveTime = now;
+    }
+
+    stepIntersection(state, isIn, now, e.intersection.duration);
+}
+
+/**
+ * Write the intersection uniforms of a shader-path element.
+ * @internal
+ */
+export function setIntersectionUniforms(
+    uniforms: Uniforms,
+    e: Pick<VFXElement, "intersectionState" | "enterTime" | "leaveTime">,
+    intersection: number,
+    now: number,
+): void {
+    uniforms["intersection"].value = intersection;
+    uniforms["enterTime"].value = clampTime(now - e.enterTime);
+    uniforms["leaveTime"].value = clampTime(now - e.leaveTime);
+    uniforms["enterProgress"].value = e.intersectionState.enterProgress;
+    uniforms["leaveProgress"].value = e.intersectionState.leaveProgress;
+}
+
+export function parseIntersectionOpts(
+    intersectionOpts: VFXProps["intersection"],
+): VFXElementIntersection {
+    const threshold = intersectionOpts?.threshold ?? 0;
+    const rootMargin = createMargin(intersectionOpts?.rootMargin ?? 0);
+
+    const leaveThreshold = intersectionOpts?.leaveThreshold ?? threshold;
+
+    let duration = intersectionOpts?.duration ?? 1;
+    if (!(Number.isFinite(duration) && duration > 0)) {
+        if (!hasWarnedDuration) {
+            hasWarnedDuration = true;
+            console.warn(
+                `[VFX-JS] \`intersection.duration\` must be a finite number above 0, got ${duration}. Using 1 instead.`,
+            );
+        }
+        duration = 1;
+    }
+
+    return {
+        threshold,
+        leaveThreshold,
+        rootMargin,
+        duration,
+    };
+}
+
+/**
+ * Inspect a Texture's source and return its native width/height.
+ * Used by `ctx.src` for effect-path elements. Returns 0 if the source
+ * is not yet ready (e.g. HTMLImageElement pre-load).
+ */
+function readTextureSourceDim(tex: Texture, axis: "w" | "h"): number {
+    const src = tex.source;
+    if (!src) {
+        return 0;
+    }
+    if (
+        typeof HTMLImageElement !== "undefined" &&
+        src instanceof HTMLImageElement
+    ) {
+        return axis === "w" ? src.naturalWidth : src.naturalHeight;
+    }
+    if (
+        typeof HTMLVideoElement !== "undefined" &&
+        src instanceof HTMLVideoElement
+    ) {
+        return axis === "w" ? src.videoWidth : src.videoHeight;
+    }
+    const wc = src as { width: number; height: number };
+    return axis === "w" ? wc.width : wc.height;
+}
+
+function parseWrapSingle(wrapOpt: VFXWrap): TextureWrap {
+    if (wrapOpt === "repeat") {
+        return "repeat";
+    }
+    if (wrapOpt === "mirror") {
+        return "mirror";
+    }
+    return "clamp";
+}
+
+function parseWrap(
+    wrapOpt: VFXWrap | [VFXWrap, VFXWrap] | undefined,
+): [TextureWrap, TextureWrap] {
+    if (!wrapOpt) {
+        return ["clamp", "clamp"];
+    }
+
+    if (Array.isArray(wrapOpt)) {
+        return [parseWrapSingle(wrapOpt[0]), parseWrapSingle(wrapOpt[1])];
+    }
+    const w = parseWrapSingle(wrapOpt);
+    return [w, w];
+}
+
+function clamp(x: number, xmin: number, xmax: number): number {
+    return Math.max(xmin, Math.min(xmax, x));
+}
+
+// Infinity in uniforms is undefined in GLSL ES, so keep time finite.
+const MAX_UNIFORM_TIME = 1e6;
+
+function clampTime(t: number): number {
+    return clamp(t, -MAX_UNIFORM_TIME, MAX_UNIFORM_TIME);
+}
+
+/**
+ * Whether `element` goes through the text path (i.e. `dom2canvas`). These
+ * elements have their texture captured at ceiled CSS-pixel dimensions, so
+ * their on-screen rect must use {@link toCeiledRect} as well.
+ * @internal
+ */
+function isTextPathElement(element: HTMLElement): boolean {
+    return !(
+        element instanceof HTMLImageElement ||
+        element instanceof HTMLVideoElement ||
+        element instanceof HTMLCanvasElement
+    );
+}
