@@ -5,7 +5,7 @@ export default defineMeta({
   title: 'Persistent notes',
   summary:
     'A mini note-taking app backed by IndexedDB. Add notes, delete them, reload the page: they persist.',
-  section: 'Basics',
+  section: 'Getting started',
   tags: ['IndexedDB', 'schema', 'orderBy', 'CRUD'],
   docs: [],
   provenance: 'legacy',

@@ -132,3 +132,6 @@ GitHub Pages. No service on the VPS.
 - Papa Parse: build on `packages/papaparse/shared/stage.ts` (`createStage`, trap list) and its
   views (`csvView`/`csvEditor`, `dataTable`, `flow`). Downloads go to `shared/fake-server.ts`
   (an XMLHttpRequest subclass answering https://data.example in memory); never with `worker`.
+- Dexie.js: build on `packages/dexie-js/shared/stage.ts` (`createStage`, trap list). Name databases
+  with `stage.dbName()` and pass them to `stage.own()`, which deletes them on cleanup; show the data
+  with `shared/table-view.ts` (a liveQuery grid that flashes changes) and drive steps with `tour()`.

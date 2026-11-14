@@ -1,5 +1,977 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T17:16:09.144Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/dexie/dexie-web",
+      "ref": "main",
+      "paths": [
+        "docs/**/*.md",
+        "!docs/cloud",
+        "!docs/roadmap",
+        "!docs/Releasing-Dexie.md",
+        "!docs/Typescript-old.md",
+        "!docs/Samples.md"
+      ],
+      "commit": "bda611b8839e660a0edea86448467d04a0ffe861"
+    }
+  ],
+  "files": {
+    "repo/docs/API-Reference.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/API-Reference.md",
+      "sha256": "b46938ce041fe84d3edbb584e0ab68fa8aab454bfdb2660cc4232ddecfb10b5c"
+    },
+    "repo/docs/Collection/Collection.and().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.and().md",
+      "sha256": "b73f4b26f6ef031ac8a5e1056797c199342c8242ac2b91ea689d6b407da5a011"
+    },
+    "repo/docs/Collection/Collection.clone().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.clone().md",
+      "sha256": "053182c0be3600888be1feb5361751c67aca726e91ed5f056c04074aba0015ee"
+    },
+    "repo/docs/Collection/Collection.count().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.count().md",
+      "sha256": "36781c86de76341b0974b4778957be2973127a71441ebf0f6fca09c759b01267"
+    },
+    "repo/docs/Collection/Collection.delete().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.delete().md",
+      "sha256": "233da4d0515f5d38637153738904337c3f8d2a8f8960db23db661b585645208f"
+    },
+    "repo/docs/Collection/Collection.desc().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.desc().md",
+      "sha256": "cb593e69bf556458db606b2c4225547c13b1fdf7b5b6674b6d0287e8b4b13279"
+    },
+    "repo/docs/Collection/Collection.distinct().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.distinct().md",
+      "sha256": "df64cd4f166576bf7b886abcc58b6222b97de13dfeda3edd2fc845ddcbe5b424"
+    },
+    "repo/docs/Collection/Collection.each().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.each().md",
+      "sha256": "023d2cb4dcb311c20159b5405a40e6be96378a57669a91b622e8d2cc2c3c6863"
+    },
+    "repo/docs/Collection/Collection.eachKey().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.eachKey().md",
+      "sha256": "94d30bd84461acebf146d1a4a318a885534a258374b925b1bfe16081c675e8ee"
+    },
+    "repo/docs/Collection/Collection.eachPrimaryKey().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.eachPrimaryKey().md",
+      "sha256": "248bfde9f0f95c9bb5f3ad9a6b3a8d0ea5bc41cd1959b911281a2e1ff25771ab"
+    },
+    "repo/docs/Collection/Collection.eachUniqueKey().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.eachUniqueKey().md",
+      "sha256": "c6cbf25a0967014d6c233a3baa515ce6210dfe25922cc242d2638eef2d702346"
+    },
+    "repo/docs/Collection/Collection.filter().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.filter().md",
+      "sha256": "11077ca255b859e3b11b4c0d0a2142091ce729ff9c538e7acd6521bd31a0244c"
+    },
+    "repo/docs/Collection/Collection.first().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.first().md",
+      "sha256": "39a29c528b5293f31de6768117b06676e960ac2c4d3eaaeb47d621be200afd19"
+    },
+    "repo/docs/Collection/Collection.keys().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.keys().md",
+      "sha256": "5323782709ff26970c65589d18edbd1977399ca6a960f4b2117fe8d11e273d9b"
+    },
+    "repo/docs/Collection/Collection.last().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.last().md",
+      "sha256": "f4ef864ddfa7370030ea9ca4e15ddbc6a69f082e0b905b31772f3c603ced285a"
+    },
+    "repo/docs/Collection/Collection.limit().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.limit().md",
+      "sha256": "ef9a960dc8befdfbf49af532a4543e1e5a44c2cd123c3d22a7e2e08893918c6e"
+    },
+    "repo/docs/Collection/Collection.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.md",
+      "sha256": "ca75abfd37398ea08363380cfe6821bc93323f91befd470d24c76503ee29dfc3"
+    },
+    "repo/docs/Collection/Collection.modify().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.modify().md",
+      "sha256": "b92511d567575c982c59dda928ea3e25fa0c231f3e852a1620d97ccaae89956f"
+    },
+    "repo/docs/Collection/Collection.offset().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.offset().md",
+      "sha256": "98b6b9c7902a9489e24751686593e7ff68ad3edff39c6fdeffec76979b7bf460"
+    },
+    "repo/docs/Collection/Collection.or().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.or().md",
+      "sha256": "64d66f85b213a39be8a5c7f8d7b44c24ff6eea15340e402dab8279bbc7841d0e"
+    },
+    "repo/docs/Collection/Collection.primaryKeys().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.primaryKeys().md",
+      "sha256": "1a90b8470cc72a90caa37e931659914592be8a03840b1cd98036bbcd418d9907"
+    },
+    "repo/docs/Collection/Collection.raw().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.raw().md",
+      "sha256": "0695ff0648797dbde7b45e0d40d65fdd918fef97c37d916f814d9365601bc3f2"
+    },
+    "repo/docs/Collection/Collection.reverse().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.reverse().md",
+      "sha256": "b9085a0083ca3b1ba5abb1c120a76acb2e181f935f1da0a1571136d89719420a"
+    },
+    "repo/docs/Collection/Collection.sortBy().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.sortBy().md",
+      "sha256": "31e8c9dee7d1db123b796e5902f982864a2af710c8dd1692aa97f4307d0f0dcc"
+    },
+    "repo/docs/Collection/Collection.toArray().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.toArray().md",
+      "sha256": "43f031feb6fc348124b1a5aa2720b1b26e3ea55852c492041fbce9e14b47fbde"
+    },
+    "repo/docs/Collection/Collection.uniqueKeys().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.uniqueKeys().md",
+      "sha256": "426f6156754e2d8cae9db303fd2a9397f66c338951cce659fd7b7e2f75ed92cd"
+    },
+    "repo/docs/Collection/Collection.until().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Collection/Collection.until().md",
+      "sha256": "10b9f6f5ccd7deb53e109d0a8060874f887e79921136bea80a5da5d3be03e36e"
+    },
+    "repo/docs/Compound-Index.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Compound-Index.md",
+      "sha256": "1e0a176b9625a0bbadb818ae1a3edefc8dd26688b3dfb8000d0b5f7625b2dd20"
+    },
+    "repo/docs/DBCore/DBCore.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCore.md",
+      "sha256": "091f07f872da8710765456c0afd9a60ac5f8570df81454e582d50ee9a4f42db0"
+    },
+    "repo/docs/DBCore/DBCoreAddRequest.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreAddRequest.md",
+      "sha256": "d0a3dd7a348fe1f7b174484812df09cef8a75b37a404ae14cbc603e4536d91e0"
+    },
+    "repo/docs/DBCore/DBCoreCountRequest.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreCountRequest.md",
+      "sha256": "f7e5602b94d581687695daac5414dc34d65849b2ee0578000f90d1913272a49b"
+    },
+    "repo/docs/DBCore/DBCoreCursor.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreCursor.md",
+      "sha256": "3c18709996f8f730b0388b14caadc6a0266f9d613ac78359dd5618cdfa54e6aa"
+    },
+    "repo/docs/DBCore/DBCoreDeleteRangeRequest.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreDeleteRangeRequest.md",
+      "sha256": "e559429220dbd43f26e2c4b893dee785ee24b7692805ae4ad31fbe3f285d6d0c"
+    },
+    "repo/docs/DBCore/DBCoreDeleteRequest.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreDeleteRequest.md",
+      "sha256": "6abe5fe74c56dfaaeb936755b36f562a4849764f9d65435de0e77efa92c3034d"
+    },
+    "repo/docs/DBCore/DBCoreGetManyRequest.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreGetManyRequest.md",
+      "sha256": "98b537e2f67cce4fe012a072b647a8ee5424c588e1effc7b6913d2c038fafaa7"
+    },
+    "repo/docs/DBCore/DBCoreGetRequest.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreGetRequest.md",
+      "sha256": "9ab80546310481ce461ec9f3c6817b8f4ff176100673e0a43cbc1a4fe04e8bfb"
+    },
+    "repo/docs/DBCore/DBCoreIndex.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreIndex.md",
+      "sha256": "0c087653e408fcf98718e6a439fef42178c3f2051f5512795aa06d84195a5470"
+    },
+    "repo/docs/DBCore/DBCoreKeyRange.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreKeyRange.md",
+      "sha256": "664f0e1cd32ab61b4e795d4d8dffce9b942410c0a95b32c986c4f632502a68f7"
+    },
+    "repo/docs/DBCore/DBCoreMutateRequest.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreMutateRequest.md",
+      "sha256": "d999fb3d6774bf5db49e7b52f0bd63504a2612770e9146460e6429c551145340"
+    },
+    "repo/docs/DBCore/DBCoreMutateResponse.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreMutateResponse.md",
+      "sha256": "f35f052d4c640d3ee6a59ae1dfdd26ae3bae642801410835254608e41df2fb22"
+    },
+    "repo/docs/DBCore/DBCoreOpenCursorRequest.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreOpenCursorRequest.md",
+      "sha256": "0cb1d9d11254dbd27402dd7099abbae9b5906d0a1bbbdb4af09d168eaabbaa88"
+    },
+    "repo/docs/DBCore/DBCorePutRequest.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCorePutRequest.md",
+      "sha256": "fbfbaf62cfe037d6076fb7b3ef243cb6f3c9339937b7701529b1a8366253f904"
+    },
+    "repo/docs/DBCore/DBCoreQuery.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreQuery.md",
+      "sha256": "24c86623ba0d5f57b73daea4320e698b0f440ce66088d6843595db982ffe3552"
+    },
+    "repo/docs/DBCore/DBCoreQueryRequest.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreQueryRequest.md",
+      "sha256": "26e56360e4a06ef75ea75cacc5e9f3fb787f3e5bc2f9188560adfeb67359c993"
+    },
+    "repo/docs/DBCore/DBCoreQueryResponse.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreQueryResponse.md",
+      "sha256": "6dc2b54553edafd079d13b07d31a837ede1dd13aa9763ed98e81f246145693a0"
+    },
+    "repo/docs/DBCore/DBCoreRangeType.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreRangeType.md",
+      "sha256": "c83b8885f1a47219e150e05f22e999375546b47ea1a723ed3e927c03d1a5b872"
+    },
+    "repo/docs/DBCore/DBCoreSchema.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreSchema.md",
+      "sha256": "135b8973373660d518a536259b721effa1cc9e7c8337c119384a3bdb7c563677"
+    },
+    "repo/docs/DBCore/DBCoreTable.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreTable.md",
+      "sha256": "8ed7adbb8a23ceb36ab5a94a72d349985d688d38bae8d2d524c46887444bf13c"
+    },
+    "repo/docs/DBCore/DBCoreTableSchema.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreTableSchema.md",
+      "sha256": "4aa5b7a2f6d87b6a1596d4f0f3097f3b75f751550cddfa6bdf29b9569dbb1287"
+    },
+    "repo/docs/DBCore/DBCoreTransaction.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreTransaction.md",
+      "sha256": "1605a15189f7f734d754bfaad927adee32780fedd8051e57229e2ebd63ed9938"
+    },
+    "repo/docs/DBCore/DBCoreTransactionMode.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DBCore/DBCoreTransactionMode.md",
+      "sha256": "8bd93243bf9a44920d7b7323587a7057b620d434452fcbab2fba99ce8cc8a570"
+    },
+    "repo/docs/Deprecations.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Deprecations.md",
+      "sha256": "23eae6e0f3704006ed30105cd1da18bc37923276e39d505aa067b00dddf20b91"
+    },
+    "repo/docs/DerivedWork.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DerivedWork.md",
+      "sha256": "ad93189cf249f94a06eab34b15c29e9f0febd69a5e5566b0d0e744e858d744fb"
+    },
+    "repo/docs/dexie-react-hooks/useDocument().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/dexie-react-hooks/useDocument().md",
+      "sha256": "2cc90c2092aa6b2f53a9eb0f70044789e9d9124681551d555d6171c9c49dc60d"
+    },
+    "repo/docs/dexie-react-hooks/useLiveQuery().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/dexie-react-hooks/useLiveQuery().md",
+      "sha256": "c3bc8458d3afc7b5cacc46c5532bd70b0fa98d112ff0d2efa37a9b6ff118a795"
+    },
+    "repo/docs/dexie-react-hooks/useObservable().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/dexie-react-hooks/useObservable().md",
+      "sha256": "b2420d341babdce6f630ef83867c21907261c909c47e58d423a2ff8791ca0f0f"
+    },
+    "repo/docs/dexie-react-hooks/usePermissions().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/dexie-react-hooks/usePermissions().md",
+      "sha256": "e1b54ff1ec438249da11faab06e4191d6f49406f9aa3428e10abea53ee3864b5"
+    },
+    "repo/docs/dexie-worker/dexie-worker.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/dexie-worker/dexie-worker.md",
+      "sha256": "38906f8e0c2a601e4f0cb418218640565df1468956e4611f4ef32dde3ca86701"
+    },
+    "repo/docs/Dexie.js.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie.js.md",
+      "sha256": "3ca0bd73922ada37e49202003817bd3316ba3ac5f8d5866974754f0f55cffe7c"
+    },
+    "repo/docs/Dexie/Dexie.[table].md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.[table].md",
+      "sha256": "923dee999c190ee94dc95bdc59c05d30839706866fdadc4d2355300c134da8bb"
+    },
+    "repo/docs/Dexie/Dexie.addons.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.addons.md",
+      "sha256": "d842076cc0772ef8d15fedfcd93ec0655f73ce1166f80f8545ec72fb25e49a19"
+    },
+    "repo/docs/Dexie/Dexie.async().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.async().md",
+      "sha256": "b52a20cd1c9bc7c187bb84662728005c1d6796afda1c2e7c52e00c752e39f040"
+    },
+    "repo/docs/Dexie/Dexie.backendDB().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.backendDB().md",
+      "sha256": "464df2b8b4bfbc4af2fc8ef445bce373c9f2d45a76b40018ea483c9f4852416a"
+    },
+    "repo/docs/Dexie/Dexie.close().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.close().md",
+      "sha256": "0d53fa6ff08e6f0ac44ad0e91dc82074b1509c8c27f131a90071b818f37a7169"
+    },
+    "repo/docs/Dexie/Dexie.currentTransaction.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.currentTransaction.md",
+      "sha256": "a7799288bc0f037841656b7964d9533e4e077214ed79cd5024719d3371378a26"
+    },
+    "repo/docs/Dexie/Dexie.debug.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.debug.md",
+      "sha256": "aea4551cd88fa977cf142c64a3285b10e2586634a652a601fcca4fa4e25b2df8"
+    },
+    "repo/docs/Dexie/Dexie.deepClone().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.deepClone().md",
+      "sha256": "60965055a3748fd9493e19d0106e3c9fe9851b50c5ba1dcbf1b544dbad98baf9"
+    },
+    "repo/docs/Dexie/Dexie.defineClass().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.defineClass().md",
+      "sha256": "d05f05117f8e77a705904475f11010469b2fb2a736d1da7f07013b344d12ae3a"
+    },
+    "repo/docs/Dexie/Dexie.delByKeyPath().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.delByKeyPath().md",
+      "sha256": "6b2de7cfb48ce1bf91f0e8d0a34ba0e0ee3664749ce6c99bce99e01082b3eef8"
+    },
+    "repo/docs/Dexie/Dexie.delete().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.delete().md",
+      "sha256": "e6d6bd3b45ac10b9b3db89742382bf760be95fb2a34ed91f10edfbacacd91a92"
+    },
+    "repo/docs/Dexie/Dexie.derive().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.derive().md",
+      "sha256": "a0f735acb1d73423846e580391ee0eb131f8c74b4a8c7620c1b512f0a65d7619"
+    },
+    "repo/docs/Dexie/Dexie.events().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.events().md",
+      "sha256": "4da5d0115d9b95a48650bead0ccb9712fe85a87583b05ec03c289828ad031150"
+    },
+    "repo/docs/Dexie/Dexie.exists().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.exists().md",
+      "sha256": "8a232cad00c0e608773e9644cebb426129522f516af30ca81e44790b3ce26abf"
+    },
+    "repo/docs/Dexie/Dexie.extend().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.extend().md",
+      "sha256": "0e24ca5033836770585b3824747bf6ce7517c8959db7dcffae1093566df4c8d1"
+    },
+    "repo/docs/Dexie/Dexie.getByKeyPath().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.getByKeyPath().md",
+      "sha256": "91595b400e22ab6727dfe2ea830a021f6d9013f5d3e196849584da6e72dcff95"
+    },
+    "repo/docs/Dexie/Dexie.getDatabaseNames().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.getDatabaseNames().md",
+      "sha256": "dd1f1f5ad6d341dc6ff0e0b748e76c70da637d1cefbbeef172279d7e044e3169"
+    },
+    "repo/docs/Dexie/Dexie.hasFailed().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.hasFailed().md",
+      "sha256": "3b9b221ef72fa789b14ed2bb07ad7d574608f8b55e9fd9b0ea20ab0fb9e0d718"
+    },
+    "repo/docs/Dexie/Dexie.ignoreTransaction().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.ignoreTransaction().md",
+      "sha256": "e89f23f0cd1e784ae64676465c91851281e43d20e04de63116e757536c4b20df"
+    },
+    "repo/docs/Dexie/Dexie.isOpen().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.isOpen().md",
+      "sha256": "930cf1d6c2ae7d2dbe61b5b8ad566771d47ec8dd352518f185b42c9e9c1e48f6"
+    },
+    "repo/docs/Dexie/Dexie.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.md",
+      "sha256": "31ec4d437a757cadb9b030c9ebf5886622a7a19f2ae1fe2747c6531746014e95"
+    },
+    "repo/docs/Dexie/Dexie.name.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.name.md",
+      "sha256": "9ba71a96988cda4ae8cd125944574efd76d210f7a0fd81fbd50e46af6b976ec2"
+    },
+    "repo/docs/Dexie/Dexie.on.blocked.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.on.blocked.md",
+      "sha256": "063f78b371d739c7fc6ca23c899af357c39da07138c993ad97895e6b4552bc04"
+    },
+    "repo/docs/Dexie/Dexie.on.close.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.on.close.md",
+      "sha256": "dfdaddf51074b8f5f289b20fb558b221e1d9c3798ed633b3e315c502e2452eb9"
+    },
+    "repo/docs/Dexie/Dexie.on.error.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.on.error.md",
+      "sha256": "b2c00e55edea8099a9b8ae656dae0a44ddbdc1422f1e544532119388e910fe01"
+    },
+    "repo/docs/Dexie/Dexie.on.populate-(old-version).md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.on.populate-(old-version).md",
+      "sha256": "128a8b386f3e6d2865d098e20da8b9a9cdfa66465bcd98242b9ffe7c241e03cf"
+    },
+    "repo/docs/Dexie/Dexie.on.populate.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.on.populate.md",
+      "sha256": "615363f487a232b07d469e09fe096db07b40a656019813393c1bf60f7549e5bf"
+    },
+    "repo/docs/Dexie/Dexie.on.ready.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.on.ready.md",
+      "sha256": "1d4ddf3c64f4ac0540f8186e89c7c49da4afc5e6d1c2767808a3841999b9ac82"
+    },
+    "repo/docs/Dexie/Dexie.on.storagemutated.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.on.storagemutated.md",
+      "sha256": "466c0305cdc533deee583454e3940774b01ac2dcbe7a0bf8481d41788480a52c"
+    },
+    "repo/docs/Dexie/Dexie.on.versionchange.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.on.versionchange.md",
+      "sha256": "9cb6199dfc80c9c1ff4adf93db2f8cfa3791b5f3ff14b7c5e9425a7aad9e6395"
+    },
+    "repo/docs/Dexie/Dexie.on().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.on().md",
+      "sha256": "df95fc9fb9eaebf564ccfde3adb0f356e2756dc21d0acd34ce902a84abf4ca2e"
+    },
+    "repo/docs/Dexie/Dexie.open().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.open().md",
+      "sha256": "ca53a38b4947d65ffb951c1b8b20b3f4186c062213ebab9de0707eccdcd3b27f"
+    },
+    "repo/docs/Dexie/Dexie.override().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.override().md",
+      "sha256": "2372a0927cce9e590387800e8484abc6d4e36f4ab071861dceeb25b1e6740e0e"
+    },
+    "repo/docs/Dexie/Dexie.semVer.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.semVer.md",
+      "sha256": "9820d604308de1af7b149054298ce749eaa07abd4009a295fb5a80bccae3cac5"
+    },
+    "repo/docs/Dexie/Dexie.setByKeyPath().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.setByKeyPath().md",
+      "sha256": "ee771612abd5c80e8343d276d86e4e027583e4df220857514136c95ee349e7e3"
+    },
+    "repo/docs/Dexie/Dexie.shallowClone().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.shallowClone().md",
+      "sha256": "f95033ada50a80a27f02449063f55f8248b20e033833ceb1a61a6fd84e06868d"
+    },
+    "repo/docs/Dexie/Dexie.spawn().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.spawn().md",
+      "sha256": "d3760947ce5929fae9e34d9e1e6a246b4ef545f3b47832df7273d63dac200f1b"
+    },
+    "repo/docs/Dexie/Dexie.table().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.table().md",
+      "sha256": "1da42c35e7104fb1b0d92a7e4ec4356789f64765a3ecf1c61d799bd5e7e157a0"
+    },
+    "repo/docs/Dexie/Dexie.tables.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.tables.md",
+      "sha256": "ef3dd082cd604ba107289b0064a7023968d48d2ee0af06fc9ee9d1d1e2067708"
+    },
+    "repo/docs/Dexie/Dexie.transaction()-(old-version).md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.transaction()-(old-version).md",
+      "sha256": "d7243f0d8d061080d8b0096e83b5ec4cc7fa8498ecb8748a41a2111644a92ea0"
+    },
+    "repo/docs/Dexie/Dexie.transaction().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.transaction().md",
+      "sha256": "9efba68f3404a14c2eb1f50dea3f6b5f99a4452f37ceea29e5791548287af03b"
+    },
+    "repo/docs/Dexie/Dexie.use().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.use().md",
+      "sha256": "db8d61a03694b4890f6e322bb0501f5df14d9e0c6e9cf0f22dab8fc4310f6036"
+    },
+    "repo/docs/Dexie/Dexie.verno.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.verno.md",
+      "sha256": "6a5a6a9fb28e40cdebc4eefbfc7376eb64c07e12b9175afccacd0d5a996588a4"
+    },
+    "repo/docs/Dexie/Dexie.version.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.version.md",
+      "sha256": "3d67a256b7ba4c49b8143d30e8c86d6801b365c948db2609bd6666f7110a4076"
+    },
+    "repo/docs/Dexie/Dexie.version().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.version().md",
+      "sha256": "bf7e2326df36510810eba21e168e56cb727c88ba77615be35952fc2d7e76083a"
+    },
+    "repo/docs/Dexie/Dexie.vip().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.vip().md",
+      "sha256": "69e60be20652d4612cc3cda747d38ae7a1d1153ac7f0db6e83d16eac93145d25"
+    },
+    "repo/docs/Dexie/Dexie.waitFor().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Dexie/Dexie.waitFor().md",
+      "sha256": "ec0654afebd33868ba6b3020157f85dbf8e6c6996e6aa21a9d76431370164436"
+    },
+    "repo/docs/DexieErrors/Dexie.AbortError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.AbortError.md",
+      "sha256": "6f444aa77cac85e4b88bbff19b58ace26e05a9280c2e89b9dce2095380fca770"
+    },
+    "repo/docs/DexieErrors/Dexie.BulkError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.BulkError.md",
+      "sha256": "3dc590a532c5c9828056fd71e3c9226db10172f751183714aa85fd8f6a813c61"
+    },
+    "repo/docs/DexieErrors/Dexie.ConstraintError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.ConstraintError.md",
+      "sha256": "363d5d13eb25eb995b15b25b1c4aba90e7d6e8f052868f7dce9a8ee80b36e247"
+    },
+    "repo/docs/DexieErrors/Dexie.DatabaseClosedError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.DatabaseClosedError.md",
+      "sha256": "c5552fe511c9e92096e5c9e1447f773cf76917b365f0352267d63273459a5f02"
+    },
+    "repo/docs/DexieErrors/Dexie.DataCloneError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.DataCloneError.md",
+      "sha256": "991482c2affb308fccee783c3699d88cadfb93922327a77f99c9818d530c85ab"
+    },
+    "repo/docs/DexieErrors/Dexie.DataError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.DataError.md",
+      "sha256": "dd1a2efc9633eab3d02a0c5d9c368e29f0be577bcd45ea043a585db2e76ef0d0"
+    },
+    "repo/docs/DexieErrors/Dexie.IncompatiblePromiseError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.IncompatiblePromiseError.md",
+      "sha256": "3972bc15bd7b4f909269fa521c7f0080f0ad5a543a067e145427a2736d61ec44"
+    },
+    "repo/docs/DexieErrors/Dexie.InternalError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.InternalError.md",
+      "sha256": "b290579966235cc34e2da4db8cce95ddf85c735842ff53ebc0f3800d8be13730"
+    },
+    "repo/docs/DexieErrors/Dexie.InvalidAccessError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.InvalidAccessError.md",
+      "sha256": "2939df9a5fd7de2eeefa02037183401e3eb94259addb9b37b1e5dd9d2da71d06"
+    },
+    "repo/docs/DexieErrors/Dexie.InvalidArgumentError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.InvalidArgumentError.md",
+      "sha256": "93ce36a99c22fd01c8f66e41844a6dc540a357cfda9679d85807e4de41df4668"
+    },
+    "repo/docs/DexieErrors/Dexie.InvalidStateError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.InvalidStateError.md",
+      "sha256": "b62ff25140ee2e950d301369390e665bd66cc66bcca397270f7bf35126c83006"
+    },
+    "repo/docs/DexieErrors/Dexie.InvalidTableError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.InvalidTableError.md",
+      "sha256": "69060b1866dbce86a0120795d67f9bd792ecdc905dcae8b5c6e71301b44cf69d"
+    },
+    "repo/docs/DexieErrors/Dexie.MissingAPIError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.MissingAPIError.md",
+      "sha256": "dc4e8af299e8142f8876b282ba277b1274fbeeaf59dd08d9914db46ba4ae44ed"
+    },
+    "repo/docs/DexieErrors/Dexie.ModifyError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.ModifyError.md",
+      "sha256": "fd1cf7e72fe682ad10a36c215865e4ab8a1ab311f5af44fdd3e8dac43aac5389"
+    },
+    "repo/docs/DexieErrors/Dexie.NoSuchDatabaseError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.NoSuchDatabaseError.md",
+      "sha256": "75109181721994f4ce4089b96fa0abe5c049effa67836b467cf596ea692630b5"
+    },
+    "repo/docs/DexieErrors/Dexie.NotFoundError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.NotFoundError.md",
+      "sha256": "6ed49e7376a7421f5f44f059067ff253f5e06214531611b9c2780b6b1c535371"
+    },
+    "repo/docs/DexieErrors/Dexie.OpenFailedError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.OpenFailedError.md",
+      "sha256": "aa9da9d4bb89c33b39935350b9f7f9f351a7fff210eae10289b5e51b27ccab97"
+    },
+    "repo/docs/DexieErrors/Dexie.PrematureCommitError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.PrematureCommitError.md",
+      "sha256": "c83457e2c2715d936d32136d91f6e23132718abe41cc4969395c7d36a67678c6"
+    },
+    "repo/docs/DexieErrors/Dexie.QuotaExceededError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.QuotaExceededError.md",
+      "sha256": "a5aff2b5d1abcd349e6bb821e83e78dcc5075f45b5c89d849c6bf11ffb164203"
+    },
+    "repo/docs/DexieErrors/Dexie.ReadOnlyError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.ReadOnlyError.md",
+      "sha256": "4bf36ed8ef16147549ac77de3cec9778e5b7bc613784e32aee7ca0ef8835a3e8"
+    },
+    "repo/docs/DexieErrors/Dexie.SchemaError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.SchemaError.md",
+      "sha256": "8f66d36235aacbd80f60e94e82f8e65eedc18606aca9ca0bba19a77062bef692"
+    },
+    "repo/docs/DexieErrors/Dexie.SubTransactionError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.SubTransactionError.md",
+      "sha256": "c54afacf512a6ddf963b45ac29c174a40b21c7582caeb7f994f1e0f17e7f334c"
+    },
+    "repo/docs/DexieErrors/Dexie.TimeoutError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.TimeoutError.md",
+      "sha256": "6a64d14f401b0049c2b8e39b84a8cff9ecfa34911e3973e49b689f73962ea33f"
+    },
+    "repo/docs/DexieErrors/Dexie.TransactionInactiveError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.TransactionInactiveError.md",
+      "sha256": "98b67b3706e9a8b878beba26a2c5937c0a13b93c9aefe6f947247342b0bac9b6"
+    },
+    "repo/docs/DexieErrors/Dexie.UnknownError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.UnknownError.md",
+      "sha256": "08ab8c92fab1cc007ab0f73cf5cc92fa34de9d1a6c248ea5bdc1dbaab4533f6d"
+    },
+    "repo/docs/DexieErrors/Dexie.UnsupportedError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.UnsupportedError.md",
+      "sha256": "98e925525339671d1d3082ca3975fd366f10fd70462d71e35427ab8c0f95a24a"
+    },
+    "repo/docs/DexieErrors/Dexie.UpgradeError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.UpgradeError.md",
+      "sha256": "1b9aac4e14bc7fa47640d661ce76c0903d306334f7b02459f63b5999678eb442"
+    },
+    "repo/docs/DexieErrors/Dexie.VersionChangeError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.VersionChangeError.md",
+      "sha256": "f96ef55fe34ba20137fb07ec2b7a4d5516d4fb8e6d8c09bf89277d0c0d1402e1"
+    },
+    "repo/docs/DexieErrors/Dexie.VersionError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/Dexie.VersionError.md",
+      "sha256": "d5e2c5ac1c2d7efff109c39d80377a8f829ec808c1fa626529f3f0081e90bcd2"
+    },
+    "repo/docs/DexieErrors/DexieError.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/DexieErrors/DexieError.md",
+      "sha256": "db5d4cb8f247223b862bfc1402498d627c929d34cceecd2c155b6b6fb8b0b8cd"
+    },
+    "repo/docs/Download.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Download.md",
+      "sha256": "ae7b1cc06a8111ec7d4496fe322aaeecac25f7384ce8190ccc7fd6b313dd2784"
+    },
+    "repo/docs/EntityTable.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/EntityTable.md",
+      "sha256": "59e59ec3ff1f6810ed5847580ebf685fe9f6436905019cdf0aa69101050b96a9"
+    },
+    "repo/docs/ExportImport/dexie-export-import.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/ExportImport/dexie-export-import.md",
+      "sha256": "e075baafe56831b68a2a7579ea8cd876684cde8958cb0713015b95701c7050df"
+    },
+    "repo/docs/inbound.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/inbound.md",
+      "sha256": "c0478e2a93bb2ec89d19e0a6b63f6f851cb0289fd3278863ac8c53a19d04afe8"
+    },
+    "repo/docs/index.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/index.md",
+      "sha256": "b86553918c5df9d1bf070b7d294d67c64e7c80b68015bb7f1389b9fa80d34849"
+    },
+    "repo/docs/Indexable-Type.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Indexable-Type.md",
+      "sha256": "ae0c9a4d8aa8d5b5ed11dd08aa3bf53ad0a4debbe7e0b8b068ed06e6c8cf7191"
+    },
+    "repo/docs/IndexedDB-on-Safari.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/IndexedDB-on-Safari.md",
+      "sha256": "ee24736bee3410a518c5447a9ebb5bda109e7066729663fac4a7b6b94a45631e"
+    },
+    "repo/docs/IndexSpec.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/IndexSpec.md",
+      "sha256": "449cb33208e26401a806bae9fa3e1837396e0d09c827baf84a6fc235c0cbfc0c"
+    },
+    "repo/docs/libs/dexie-encrypted.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/libs/dexie-encrypted.md",
+      "sha256": "d46b5032ca05b47a5cb7c1f2d34e1b09b7eff8ea2e95db6d79f7890d72a94695"
+    },
+    "repo/docs/libs/dexie-react-hooks.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/libs/dexie-react-hooks.md",
+      "sha256": "64706f358d2856370eb649e72bac9ceec46e6468d1835e3b266995212b2d1327"
+    },
+    "repo/docs/liveQuery().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/liveQuery().md",
+      "sha256": "a8cc16dbae2cff1bb96e440436f20f39ef5fe6e02d49db63475e8ae7236671c1"
+    },
+    "repo/docs/MultiEntry-Index.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/MultiEntry-Index.md",
+      "sha256": "34270dcf0d4c3fb5cf0dd30ce68bf8717d322025d2b5a720639c6152701230e2"
+    },
+    "repo/docs/Promise/Promise.catch().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Promise/Promise.catch().md",
+      "sha256": "ffe68ad81b13c02bb5454166dc9fa4b615e9998c31daa31d4e3bbc3b60d49dac"
+    },
+    "repo/docs/Promise/Promise.finally().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Promise/Promise.finally().md",
+      "sha256": "73dbddc5915e477664a86850e328062bc3cb6bd03e4a6fcb13a0f3ddceffac49"
+    },
+    "repo/docs/Promise/Promise.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Promise/Promise.md",
+      "sha256": "6bc5f3823c243fe32fa46b33ee6fd646a285f8b869183ed3ae718ff8a646de70"
+    },
+    "repo/docs/Promise/Promise.on.error.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Promise/Promise.on.error.md",
+      "sha256": "e5fa15147329eb45e8351917ebf6b275dd418554d1ccbfec30324f1e30bb78f1"
+    },
+    "repo/docs/Promise/Promise.onuncatched.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Promise/Promise.onuncatched.md",
+      "sha256": "6c5b4d85399c792bcf555a323b60417e0337130dc8287007adf23a02f4b93c22"
+    },
+    "repo/docs/Promise/Promise.PSD.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Promise/Promise.PSD.md",
+      "sha256": "d90648df7ea552013c470d23fec66406a1114fd0ef24873bcc64cf25cca546c4"
+    },
+    "repo/docs/Promise/unhandledrejection-event.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Promise/unhandledrejection-event.md",
+      "sha256": "7639f16db9ff56ecaf6ea299b87f30c9fc826418b14a6508d4838da613d76401"
+    },
+    "repo/docs/PropModification/add().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/PropModification/add().md",
+      "sha256": "176608b5717a4100e6ca51534c993f8805a99a7dfad41ac94a5f5c884c40a17a"
+    },
+    "repo/docs/PropModification/remove().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/PropModification/remove().md",
+      "sha256": "3e09fd8fc1a9ed99fd8f9a49626993896358d3a068d6a1a7b7221dc9ccfb47e5"
+    },
+    "repo/docs/PropModification/replacePrefix().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/PropModification/replacePrefix().md",
+      "sha256": "ffe270c71b7b064cc3f051d58ae61a32e13174c328699b582377535e272462a1"
+    },
+    "repo/docs/Questions-and-Answers.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Questions-and-Answers.md",
+      "sha256": "ab2f799ab6a17de4f878bdb3f76fef17730029226af78453e03777f40c0314f1"
+    },
+    "repo/docs/safari-issues.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/safari-issues.md",
+      "sha256": "d9e0f4b482f7dfde73923ff7534cd6763f05d08f702808026b4af43950dd02dd"
+    },
+    "repo/docs/Simplify-with-yield.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Simplify-with-yield.md",
+      "sha256": "8c73832ef012fd956a41211d20a17f550c29ef8bcf85feed7fd8a87f9ef50fd5"
+    },
+    "repo/docs/StorageManager.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/StorageManager.md",
+      "sha256": "15fca8864980f2f9e23611a087a3dd594e6eaa39479a5d98151fa9929b58d1a3"
+    },
+    "repo/docs/Table/Table.add().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.add().md",
+      "sha256": "a220451c8c59af9238bf73530b6c06aa591aa58d881ed62372d8a0603f922a46"
+    },
+    "repo/docs/Table/Table.bulkAdd().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.bulkAdd().md",
+      "sha256": "f38fe41c311f128b8f08bc737b1bd5954d184a223ad94925f26c7fa91734211a"
+    },
+    "repo/docs/Table/Table.bulkDelete().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.bulkDelete().md",
+      "sha256": "80178e920f5f44dcbbd67d54db5b230e1d7c81fed97dd1853b11dffb693c33d5"
+    },
+    "repo/docs/Table/Table.bulkGet().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.bulkGet().md",
+      "sha256": "59ffb616dc8a0c68aa07b0cec22cfaca446327267e0e6b9499a9d2fd0ddc55a0"
+    },
+    "repo/docs/Table/Table.bulkPut().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.bulkPut().md",
+      "sha256": "61b55c7af19518ce8649921512e7d21ccfb234164bc748d97b4380737445b4c6"
+    },
+    "repo/docs/Table/Table.bulkUpdate().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.bulkUpdate().md",
+      "sha256": "a6ed7113f32c87d7a013b8175b8e14fe13053fac70d93c04d50da3112ed71e08"
+    },
+    "repo/docs/Table/Table.clear().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.clear().md",
+      "sha256": "3a05bdc2d8d4b97ad1d345ba6ec3fde89f4d0c6f21156538100b862bef471f6a"
+    },
+    "repo/docs/Table/Table.count().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.count().md",
+      "sha256": "718413ffa74f2796d584575e4b625e783980c5076b10135cc435d45b94a6b017"
+    },
+    "repo/docs/Table/Table.defineClass().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.defineClass().md",
+      "sha256": "af483aced4cc389a8a817a5903b2577d36f9bf14ee7047150e9cb17df9fa02cf"
+    },
+    "repo/docs/Table/Table.delete().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.delete().md",
+      "sha256": "941d50b923d4d8dce12f53cb67c52f920f726557afb136c2be9ffd7a53ba73a9"
+    },
+    "repo/docs/Table/Table.each().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.each().md",
+      "sha256": "ec1c092802db93eb5fbe9786d2dc503f08bdf3bf0e8e06bf058adc53af1490d6"
+    },
+    "repo/docs/Table/Table.filter().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.filter().md",
+      "sha256": "7d84af1088712c99c806ed55b080378c6bc9917475a006da0526403da8a1700c"
+    },
+    "repo/docs/Table/Table.get().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.get().md",
+      "sha256": "9bfd5fe2178676cfe57453b07ccdfda8fa105cb0f91918421fe63ad2273e74dd"
+    },
+    "repo/docs/Table/Table.hook('creating').md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.hook('creating').md",
+      "sha256": "ba39d9e4090efb9116ff98a54d3008eb3b07d4677e5b3a264063d8e63b539d5b"
+    },
+    "repo/docs/Table/Table.hook('deleting').md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.hook('deleting').md",
+      "sha256": "0b2a955669af5f414e94adee9296afd4b8ce63a1798712e92e7e4de300434e3e"
+    },
+    "repo/docs/Table/Table.hook('reading').md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.hook('reading').md",
+      "sha256": "29e8f9313b2d96c3ea310d000e9f7c1a51185f711ef1469825e6298287dcc950"
+    },
+    "repo/docs/Table/Table.hook('updating').md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.hook('updating').md",
+      "sha256": "ded686f7b44a857e7feca258b11f16a630d010a30096a818569b722446734893"
+    },
+    "repo/docs/Table/Table.limit().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.limit().md",
+      "sha256": "067fa7765bdefcb94f3e1f84e92d348f1dbd93691fea56057b8704b1decdf07c"
+    },
+    "repo/docs/Table/Table.mapToClass().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.mapToClass().md",
+      "sha256": "4421a3e933ce7e918fbf175dec5cef20f9b5ffde2e30a33f4a2d172ae41a771c"
+    },
+    "repo/docs/Table/Table.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.md",
+      "sha256": "cd45c579d6a78ecb73715c3cc2929871f954542e437f2b22d65efc63804dbd35"
+    },
+    "repo/docs/Table/Table.name.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.name.md",
+      "sha256": "a0bb0e32f768e13f2dda8b97daf60b1b10cd40ce107b9fed9e3aae5e18582b02"
+    },
+    "repo/docs/Table/Table.offset().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.offset().md",
+      "sha256": "d7051f4f8695f1b4116c060569334e6471002e25c5f533ce0611c896219f1a25"
+    },
+    "repo/docs/Table/Table.orderBy().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.orderBy().md",
+      "sha256": "2c3c163505be0610a20225d66837c98cbefb2c147effb0b1f86488a9214498e8"
+    },
+    "repo/docs/Table/Table.put().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.put().md",
+      "sha256": "4ac45779d9afe30b5692d7848cd73c942cd7e076e019b40ccc78c6e2868cd00d"
+    },
+    "repo/docs/Table/Table.reverse().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.reverse().md",
+      "sha256": "3fb2fb5003fb550f073ac6022715d5e4fddd535bc1f9b62c9b40b454112dc699"
+    },
+    "repo/docs/Table/Table.schema.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.schema.md",
+      "sha256": "9149f40eb7534ff770b0e6f2851de7a633dec24b4b15f319eaa420f0e7e0948a"
+    },
+    "repo/docs/Table/Table.toArray().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.toArray().md",
+      "sha256": "97a3a0fc0f0bab7dcefe7d2958a6dc0b63279a4b17d0a201d41ee6842734251d"
+    },
+    "repo/docs/Table/Table.toCollection().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.toCollection().md",
+      "sha256": "b5a056c9895f4de93d0a6ceb8fe8f0dee9a75b9423084fae870b35e904db6486"
+    },
+    "repo/docs/Table/Table.update().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.update().md",
+      "sha256": "88544ecb61c3afb184167c97bbb36aaf60f9b25406a92070d2da4fc5de187c2f"
+    },
+    "repo/docs/Table/Table.upsert().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.upsert().md",
+      "sha256": "c0c0c0ab0238a48b503641e85e3fc524a569548c2436a3e57df9eba17087b3bc"
+    },
+    "repo/docs/Table/Table.where().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Table/Table.where().md",
+      "sha256": "89616206ec62e538545eeec8f202848cd5393602c9c87695d02d818d8b843bb7"
+    },
+    "repo/docs/TableSchema.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/TableSchema.md",
+      "sha256": "cf66721ca38ec0a9626523d14a0d606e876906c5b5a31879a31b965c905cda28"
+    },
+    "repo/docs/The-Main-Limitations-of-IndexedDB.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/The-Main-Limitations-of-IndexedDB.md",
+      "sha256": "5f20b37ad26ab1d3e426a9428ea3939f87df2b352c6ce95cc0541bbfe09dd310"
+    },
+    "repo/docs/The-Three-Main-Limitations-of-IndexedDB.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/The-Three-Main-Limitations-of-IndexedDB.md",
+      "sha256": "b69a700920587ee943a76d46de6980915fb2bd9356a7d96b0c6b7360d5875702"
+    },
+    "repo/docs/Transaction/Transaction.abort().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Transaction/Transaction.abort().md",
+      "sha256": "0b8394ec50e7a61b0bac03f0ea41bfbcb2b3772497163093bc26280d74c0e6a5"
+    },
+    "repo/docs/Transaction/Transaction.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Transaction/Transaction.md",
+      "sha256": "602e4200e87e87b5989d71d897fc06830417ce44d07053c626417755694156ad"
+    },
+    "repo/docs/Transaction/Transaction.on.abort.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Transaction/Transaction.on.abort.md",
+      "sha256": "918ccc4d5b79fd7b2b3ee3e43b03698152cca4514b26fde25cdb961a07354da6"
+    },
+    "repo/docs/Transaction/Transaction.on.complete.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Transaction/Transaction.on.complete.md",
+      "sha256": "1911c675467c96b3585d42f011c9adbde5aca308df930081572bce4f7da406eb"
+    },
+    "repo/docs/Transaction/Transaction.on.error.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Transaction/Transaction.on.error.md",
+      "sha256": "cff940f9d518c190ab5f2cce848ad811dc49702c4c41f9ed1d3b363da9418f16"
+    },
+    "repo/docs/Transaction/Transaction.table().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Transaction/Transaction.table().md",
+      "sha256": "1626a5b131df97fba44c699f3040a9cc21d8d24519ba59a998e5dd5c450959a5"
+    },
+    "repo/docs/Tutorial/Angular.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Angular.md",
+      "sha256": "648faa7923f7a32925b551cee62d5913bb0b5dd30fb46ac1afc2e087e1b8eace"
+    },
+    "repo/docs/Tutorial/Best-Practices.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Best-Practices.md",
+      "sha256": "5b2c9c76ff950aaa38d758546fcb79d01783bf79d680e52d7da964646c78974a"
+    },
+    "repo/docs/Tutorial/Building-Addons.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Building-Addons.md",
+      "sha256": "5b22ddaf5d8fc0aa9145390d0c67e9880cac1c38edae840383c91f85fe6cf232"
+    },
+    "repo/docs/Tutorial/Consuming-dexie-as-a-module.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Consuming-dexie-as-a-module.md",
+      "sha256": "8cec6964ded359fc9252b322b04a8485efc8e0256b0f884ab6f255236d43e014"
+    },
+    "repo/docs/Tutorial/Design.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Design.md",
+      "sha256": "c20dacefff58d41306dd6a7e0bc1fc15c18a14af5ed29f09f1c8a93a6da99d0c"
+    },
+    "repo/docs/Tutorial/Dexie-Cloud.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Dexie-Cloud.md",
+      "sha256": "91644dad1264e7adcfa24e8ace2da7b18579af58bd4b3b9e6cb3892d6011b4d8"
+    },
+    "repo/docs/Tutorial/Getting-started.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Getting-started.md",
+      "sha256": "8edb9571622c2431ee35c5f192dfabf5562cc90ef0209d9911ed62fc4a5ce609"
+    },
+    "repo/docs/Tutorial/Hello-World.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Hello-World.md",
+      "sha256": "437d4e91bc012e4556160ecdbe04ddfc47c4c8db91611e93b39ff090a4a27353"
+    },
+    "repo/docs/Tutorial/index.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/index.md",
+      "sha256": "b048db0841e8d6e63740b1a81ca60f5613dc103eeda9aad24894cc36064c7dc7"
+    },
+    "repo/docs/Tutorial/Migrating-existing-DB-to-Dexie.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Migrating-existing-DB-to-Dexie.md",
+      "sha256": "acecf5c30dc4053ae13ef26935cfe6f81ae2ee89307f48eeb8e802204a98dae9"
+    },
+    "repo/docs/Tutorial/React.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/React.md",
+      "sha256": "50c6c5cf89fc20e2e070214e853f7f18b2c6d37bf70c6767a3f54afc1fb2409e"
+    },
+    "repo/docs/Tutorial/Svelte.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Svelte.md",
+      "sha256": "0df1a99090c73a760f372c6317260d80952d87483223cf528298147d8cefe389"
+    },
+    "repo/docs/Tutorial/Understanding-the-basics.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Understanding-the-basics.md",
+      "sha256": "5ea37986aaa4ff0b0608339e0f389686c140bd7b6190282b835572f1f41a47d0"
+    },
+    "repo/docs/Tutorial/Vue.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Tutorial/Vue.md",
+      "sha256": "c1df3e66283766668c79cfa88c89c1ad3b4dd57464561d9e6e1b73b8faefcbd3"
+    },
+    "repo/docs/Typescript.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Typescript.md",
+      "sha256": "95883c213f9e383513bc74f2673e510a1250b7b3b3cc40cdf2411d75e9c75e55"
+    },
+    "repo/docs/Version/Version.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Version/Version.md",
+      "sha256": "6f95dadf612b1ea09354826112fce4a3a0fe9402ee70b848d4403596f67dfc1a"
+    },
+    "repo/docs/Version/Version.stores().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Version/Version.stores().md",
+      "sha256": "f3a0e923330d15e4974d65ea3ec20c6b35ae11e501eb983f87981ec08892ba67"
+    },
+    "repo/docs/Version/Version.upgrade().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Version/Version.upgrade().md",
+      "sha256": "7d956ccc52bddef1b67dcd6e9e134493f8e54357205ebf68f750b26de5754e1e"
+    },
+    "repo/docs/WhereClause/WhereClause.above().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.above().md",
+      "sha256": "12bca101561c7f5e1bfbc73314183efbba41a9381b012dd9a217a51b6d8b87a3"
+    },
+    "repo/docs/WhereClause/WhereClause.aboveOrEqual().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.aboveOrEqual().md",
+      "sha256": "015ec82f514d55d5d044aecbf5ac0427988cd4151bda1fea6a50f5351c064700"
+    },
+    "repo/docs/WhereClause/WhereClause.anyOf().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.anyOf().md",
+      "sha256": "d53b70163353dc62c6698f97fe5870e0512066872f17ac10db1b0131e5fda7c7"
+    },
+    "repo/docs/WhereClause/WhereClause.anyOfIgnoreCase().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.anyOfIgnoreCase().md",
+      "sha256": "241d39b9b2cd9b6f5e1ab061648a1c7d095ce0e3deab358228bbf43a7cc0363f"
+    },
+    "repo/docs/WhereClause/WhereClause.below().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.below().md",
+      "sha256": "f838ba2a488a592ac1035505b2a1264be68e25066e646124e76e8d1599f4c1c2"
+    },
+    "repo/docs/WhereClause/WhereClause.belowOrEqual().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.belowOrEqual().md",
+      "sha256": "86f30fd8d1228a5ac80ef90c79d2c957f364de84cc361a257023bdd5269089b0"
+    },
+    "repo/docs/WhereClause/WhereClause.between().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.between().md",
+      "sha256": "466beb60d87fbdb4340220a986509016aed788053b7120173e9612e31e269d19"
+    },
+    "repo/docs/WhereClause/WhereClause.equals().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.equals().md",
+      "sha256": "7f7728fdd56195897c0dc72866ba257219ac1f8a25a8858b569dd2253f651614"
+    },
+    "repo/docs/WhereClause/WhereClause.equalsIgnoreCase().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.equalsIgnoreCase().md",
+      "sha256": "77c4fd9efaf3f95c17b18e31ec431e03a712232fa93720467917de20fcb6df28"
+    },
+    "repo/docs/WhereClause/WhereClause.inAnyRange().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.inAnyRange().md",
+      "sha256": "d1bbecfa0abff9045e7eb24bc0259a58400ecd1847f1ed5b46a6e444e88570d0"
+    },
+    "repo/docs/WhereClause/WhereClause.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.md",
+      "sha256": "7e99653a22ccb85edec305bcd0340338e66afd9ff19d0fe741207960ddfabc20"
+    },
+    "repo/docs/WhereClause/WhereClause.noneOf().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.noneOf().md",
+      "sha256": "bceea36dcb9340035ce626195761492f42bb47e7d256db76b27cf535062b1d91"
+    },
+    "repo/docs/WhereClause/WhereClause.notEqual().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.notEqual().md",
+      "sha256": "ed5fa3df5e6595056a25f1ecfa28e38056f46d1210bf8721d8455b49b8ad857e"
+    },
+    "repo/docs/WhereClause/WhereClause.startsWith().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.startsWith().md",
+      "sha256": "c3a455b0ab00d47f028fb51d72c65e6cb9ef6dff06b39198110f74b0f5452c3b"
+    },
+    "repo/docs/WhereClause/WhereClause.startsWithAnyOf().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.startsWithAnyOf().md",
+      "sha256": "755f2b5e163a78573571e4fc80fb3fc8b2f8d3ced9652d0e72a32842ce534c8b"
+    },
+    "repo/docs/WhereClause/WhereClause.startsWithAnyOfIgnoreCase().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.startsWithAnyOfIgnoreCase().md",
+      "sha256": "a23a0a112dc918d521e624c7fdfbf75d076575d941627005b8caa897b6616061"
+    },
+    "repo/docs/WhereClause/WhereClause.startsWithIgnoreCase().md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/WhereClause/WhereClause.startsWithIgnoreCase().md",
+      "sha256": "dcbc36c5b936b228c07fa46f0e060ae8257402010b3e804797718c30b840bafb"
+    },
+    "repo/docs/Y.js/y-dexie.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Y.js/y-dexie.md",
+      "sha256": "765d6ea609d7bd1c6d54e1a344cd0f40afbe5e7aae159c2fddec7b4c30eb51c5"
+    },
+    "repo/docs/Y.js/Y.js.md": {
+      "url": "https://github.com/dexie/dexie-web/blob/bda611b8839e660a0edea86448467d04a0ffe861/docs/Y.js/Y.js.md",
+      "sha256": "f99e61089970f8c2908fb894786c09b0370ce36f2bb4e6628523182eaa331d6d"
+    }
+  }
 }
