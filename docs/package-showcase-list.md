@@ -280,7 +280,7 @@ These are better as compact, text-output examples. Build them after the visual t
 | 222 | Arquero (`arquero`) | v8 2025-02 | site | Data wrangling; repo BSD-3 |
 | 223 | Marked + DOMPurify (`marked`) ✅ built | v18 2026-04 | repo ✓ MIT | Markdown. Docs are the repo `docs/` pages (INDEX, USING_ADVANCED, USING_PRO, broken.md), README and `src/`; `docs/demo/` stays out |
 | 224 | ky ✅ built | v2 2026-04 | README MIT | HTTP. Docs are the readme plus the TSDoc in `source/types` and `source/errors`; requests go to an in-page pretend server through the `fetch` option |
-| 225 | Wretch *(legacy in gallery)* | v3 2025-10 | README MIT | HTTP |
+| 225 | Wretch (`wretch`) ✅ built | v3 2025-10 | README MIT | HTTP. Docs are README, RECIPES, the v2→v3 guide and the library source (the API site is generated from it); 123 examples on an in-memory server reached through `.fetchPolyfill()` |
 | 226 | **Tone.js** (`tone`) ✅ built | v15 2024-05 | repo ✗lic (wiki) + source | Audio; `next` tag far ahead of `latest` |
 | 227 | Fuse.js (`fuse.js`) ✅ built | v7 2023-10 | repo ✓ Apache | Fuzzy search. Docs are the VitePress `docs/` pages and articles at v7.5.0 plus README, CHANGELOG and `src/` (the site has no API reference pages any more); `demo.md` and the Vue demo components stay out |
 | 228 | Dexie.js (`dexie`) ✅ built | v4 2024-03 | repo ✗lic (`dexie/dexie-web` `docs/`) | IndexedDB. `docs/cloud` (needs a sync server) and the Samples page (links to official demos) stay out; dexie 4.4.7 live-query cache bug worked around in `shared/cache-fix.ts` |

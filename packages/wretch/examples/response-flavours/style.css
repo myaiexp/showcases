@@ -1,0 +1,15 @@
+/* Same answer, four ways to read it: panes size to their own text */
+[data-example='wretch/response-flavours'] {
+  .wr-pane-body {
+    min-height: 3.5em;
+  }
+  .wr-card .wr-pane-body {
+    min-height: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .wr-card .wr-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,5 +1,125 @@
 {
-  "fetched": null,
-  "sources": [],
-  "files": {}
+  "fetched": "2026-11-14T20:43:21.553Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/elbywan/wretch",
+      "ref": "3.0.9",
+      "paths": [
+        "README.md",
+        "RECIPES.md",
+        "MIGRATION_V2_V3.md",
+        "CHANGELOG.md",
+        "LICENSE",
+        "src/**/*.ts"
+      ],
+      "commit": "32d5f68badf7e8f103b734febe680968c6e0f97f"
+    }
+  ],
+  "files": {
+    "repo/CHANGELOG.md": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/CHANGELOG.md",
+      "sha256": "d49429b81a9e65508501e2ef86417155ac6a0809d8d1b69399cafd366f28ea24"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/LICENSE",
+      "sha256": "9ba5c172e22137af456ce7ae19c045e689d8b5fe8e429e723a116560c48eaa5d"
+    },
+    "repo/MIGRATION_V2_V3.md": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/MIGRATION_V2_V3.md",
+      "sha256": "ac2d903e893886413b0d533ce8ee56f39e32123c79d95589dd2e4ef8a76fdd51"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/README.md",
+      "sha256": "a52fe07f1d520f81056b23dbbd75d3e0cf2346aa6c1b3f352a04533fc93663fc"
+    },
+    "repo/RECIPES.md": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/RECIPES.md",
+      "sha256": "08110f0e36201483fdcfa01e0d61d957df5909815e5ec0ce3db0bdc3d7e2fd52"
+    },
+    "repo/src/addons/abort.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/addons/abort.ts",
+      "sha256": "883dc824f32c0b80f75fc768e0a0cbcab92d02822437cfdb9b8c79089df1de8a"
+    },
+    "repo/src/addons/basicAuth.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/addons/basicAuth.ts",
+      "sha256": "bb3ff8783e1bf91d74b4bfb0c9cfd6ecf67942f59308e0fa5682994184ca5c3e"
+    },
+    "repo/src/addons/formData.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/addons/formData.ts",
+      "sha256": "95a3a22fbe88a63d9a8e31c9a20ed6806988bdc763a777489a1033f2f6201810"
+    },
+    "repo/src/addons/formUrl.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/addons/formUrl.ts",
+      "sha256": "9cf5d451e74bc617cdfbd93e0a13fd75a328d2e214c19ce6b06c57cdfb317def"
+    },
+    "repo/src/addons/index.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/addons/index.ts",
+      "sha256": "fccfac7e4bd08510a7bd82049aafe33f9868cea43ce109d5542f794b4c0ebc0a"
+    },
+    "repo/src/addons/perfs.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/addons/perfs.ts",
+      "sha256": "155a85fe9f8c3342437dbc6a72f0d8bd0aba476deff4cd1bec0223827d2a6463"
+    },
+    "repo/src/addons/progress.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/addons/progress.ts",
+      "sha256": "3d095e4b77434c720ceff87fefd1f80f0fcb6a20406dda8c2f27f9a8506a1b15"
+    },
+    "repo/src/addons/queryString.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/addons/queryString.ts",
+      "sha256": "4aa0cb9e5198bd435e7e3718e04ee757598f4f42692c4ec0ca76a9cfe300ad85"
+    },
+    "repo/src/constants.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/constants.ts",
+      "sha256": "850316b650be64d60c2bff6b9561ecf34c21bceaacae967654868f8d41fc8a3c"
+    },
+    "repo/src/core.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/core.ts",
+      "sha256": "f1f8e2659376e48d04396fdfc8e6fd0b14f689c3419c4fbec0cc699ec6bd4d88"
+    },
+    "repo/src/index.all.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/index.all.ts",
+      "sha256": "9af20807211746b3f6e55f5a2e303b7624b4463125dd12f543f180482277d9dd"
+    },
+    "repo/src/index.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/index.ts",
+      "sha256": "12400e1eccdcbe3abf86ca1aec2aae1dfee2667ab4d71d3d811e8bd835163df0"
+    },
+    "repo/src/middleware.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/middleware.ts",
+      "sha256": "c8504b37d276dc79b1d447b89efe464ae1958897d10eae9ca120212a62b6acf3"
+    },
+    "repo/src/middlewares/dedupe.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/middlewares/dedupe.ts",
+      "sha256": "85a50b793ee87ced104e0e7c3e16f7370cb595ee384b71bb69bcb7b5d1d439e2"
+    },
+    "repo/src/middlewares/delay.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/middlewares/delay.ts",
+      "sha256": "a6ea0df592760cf92d26b7c40983dd545c5f5402e4c436fa4b3b52b4a2ae793d"
+    },
+    "repo/src/middlewares/index.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/middlewares/index.ts",
+      "sha256": "8ffa5b4874e90df6e7064d03368e3255de21646bb6059dbed0cc651faecb411c"
+    },
+    "repo/src/middlewares/retry.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/middlewares/retry.ts",
+      "sha256": "02c5cb1abf0f6f53e8f89a9bf6c5db9ff5445ec7aaaddf5f3b1d98e9e4d20e84"
+    },
+    "repo/src/middlewares/throttlingCache.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/middlewares/throttlingCache.ts",
+      "sha256": "502b531798c0501a52fbf60d921f657d4ebcd44f5aa50f9951b45196b3eb5c0f"
+    },
+    "repo/src/resolver.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/resolver.ts",
+      "sha256": "c7adab061f3a89132789bf6a19f6ba52dfb841aef50079d5c61bc589495e04d2"
+    },
+    "repo/src/types.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/types.ts",
+      "sha256": "1acd88cf8547a3db6338aa58c768751aaa7347c0bb361b4cb3e3b0878735b1e1"
+    },
+    "repo/src/utils.ts": {
+      "url": "https://github.com/elbywan/wretch/blob/32d5f68badf7e8f103b734febe680968c6e0f97f/src/utils.ts",
+      "sha256": "cd4f8a347adbb3327b598498e2e00b9c3f0c8ce50b688c8ad400e51acae215c2"
+    }
+  }
 }

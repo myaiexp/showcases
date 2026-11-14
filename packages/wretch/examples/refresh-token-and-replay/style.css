@@ -1,0 +1,6 @@
+/* Refresh a token and try again: keep the screen pane steady */
+[data-example='wretch/refresh-token-and-replay'] {
+  .wr-pane-body {
+    min-height: 1.4em;
+  }
+}

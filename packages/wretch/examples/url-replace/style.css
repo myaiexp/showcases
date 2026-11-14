@@ -1,0 +1,17 @@
+/* Swap the base address: the two server boxes */
+[data-example='wretch/url-replace'] {
+  .hosts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .host {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 8px;
+    white-space: pre-line;
+    text-align: center;
+    color: var(--fg-2);
+    word-break: break-all;
+  }
+}

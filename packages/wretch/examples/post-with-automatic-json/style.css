@@ -1,0 +1,6 @@
+/* Send an object, get an object: no styles of its own beyond the shared kit */
+[data-example='wretch/post-with-automatic-json'] {
+  .wr-grid {
+    align-items: start;
+  }
+}

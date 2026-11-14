@@ -1,0 +1,17 @@
+/* Posting JSON without the boilerplate: envelopes under their column */
+[data-example='wretch/posting-json-made-easy'] {
+  .wr-grid {
+    align-items: start;
+  }
+  .wr-env {
+    margin-top: 4px;
+  }
+  .wr-card .wr-env-title,
+  .wr-card .wr-env-sec-name {
+    display: none;
+  }
+  .wr-card .wr-env-kv {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

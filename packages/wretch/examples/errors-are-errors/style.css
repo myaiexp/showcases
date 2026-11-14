@@ -1,0 +1,6 @@
+/* A 404 is a failure: keep the columns steady while lines come and go */
+[data-example='wretch/errors-are-errors'] {
+  .wr-pane-body {
+    min-height: 3.6em;
+  }
+}

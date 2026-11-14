@@ -1,0 +1,118 @@
+import type { WretchResponseChain, WretchAddon } from "../types.js"
+
+export type PerfCallback = (timing: any) => void
+
+export interface PerfsAddon {
+  /**
+   * Performs a callback on the API performance timings of the request.
+   *
+   * Warning: Still experimental on browsers and node.js
+   */
+  perfs: <T, C extends PerfsAddon, R>(this: C & WretchResponseChain<T, C, R>, cb?: PerfCallback) => this,
+}
+
+/**
+ * Adds the ability to measure requests using the Performance Timings API.
+ *
+ * Uses the Performance API
+ * ([browsers](https://developer.mozilla.org/en-US/docs/Web/API/Performance_API) &
+ * [node.js](https://nodejs.org/api/perf_hooks.html)) to expose timings related to
+ * the underlying request.
+ *
+ * Browser timings are very accurate, node.js only contains raw measures.
+ *
+ * ```js
+ * import PerfsAddon from "wretch/addons/perfs"
+ *
+ * // Use perfs() before the response types (text, json, ...)
+ * wretch("...")
+ *   .addon(PerfsAddon())
+ *   .get()
+ *   .perfs((timings) => {
+ *     // Will be called when the timings are ready.
+ * console.log(timings.startTime);
+ *   })
+ *   .res();
+ *
+ * ```
+ */
+const perfs: () => WretchAddon<unknown, PerfsAddon> = () => {
+  const callbacks = new Map<string, PerfCallback>()
+  let observer /*: PerformanceObserver | null*/ = null
+
+  const onMatch = (
+    entries /*: PerformanceObserverEntryList */,
+    name: string,
+    callback: PerfCallback,
+    performance: typeof globalThis.performance
+  ) => {
+    if (!entries.getEntriesByName)
+      return false
+    const matches = entries.getEntriesByName(name)
+    if (matches && matches.length > 0) {
+      callback(matches.reverse()[0])
+      if (performance.clearMeasures)
+        performance.clearMeasures(name)
+      callbacks.delete(name)
+
+      if (callbacks.size < 1) {
+        observer.disconnect()
+        if (performance.clearResourceTimings) {
+          performance.clearResourceTimings()
+        }
+      }
+      return true
+    }
+    return false
+  }
+
+  const initObserver = (
+    performance: (typeof globalThis.performance) | null | undefined,
+    performanceObserver /*: (typeof PerformanceObserver) | null | undefined */
+  ) => {
+    if (!observer && performance && performanceObserver) {
+      observer = new performanceObserver(entries => {
+        callbacks.forEach((callback, name) => {
+          onMatch(entries, name, callback, performance)
+        })
+      })
+      if (performance.clearResourceTimings) {
+        performance.clearResourceTimings()
+      }
+    }
+
+    return observer
+  }
+
+  const monitor = (
+    name: string | null | undefined,
+    callback: PerfCallback | null | undefined,
+  ) => {
+    if (!name || !callback)
+      return
+
+    if (!initObserver(performance, PerformanceObserver))
+      return
+
+    if (!onMatch(performance, name, callback, performance)) {
+      if (callbacks.size < 1)
+        observer.observe({ entryTypes: ["resource", "measure"] })
+      callbacks.set(name, callback)
+    }
+  }
+
+  return {
+    resolver: {
+      perfs(cb) {
+        this._fetchReq
+          .then(() =>
+            monitor(this._wretchReq._url, cb)
+          )
+          .catch(() => {/* swallow */ })
+        return this
+      },
+    }
+  }
+}
+
+export default perfs

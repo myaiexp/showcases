@@ -1,0 +1,6 @@
+/* One step instead of two: the data line wraps instead of widening the column */
+[data-example='wretch/json-in-one-step'] {
+  .wr-line.wr-done {
+    overflow-wrap: anywhere;
+  }
+}

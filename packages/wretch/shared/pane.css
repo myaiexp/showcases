@@ -1,0 +1,50 @@
+/* Panes: titled boxes of lines, laid out in a grid */
+.wr-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 8px;
+  min-height: 0;
+}
+.wr-card .wr-grid {
+  gap: 4px;
+}
+.wr-pane {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-surface);
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+}
+.wr-pane-head {
+  color: var(--fg-3);
+  font-size: 0.85em;
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+}
+.wr-pane-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  min-height: 0;
+  overflow: hidden;
+}
+.wr-line {
+  color: var(--tone, var(--fg-1));
+}
+.wr-line.wr-done {
+  border-top: 1px dashed var(--border);
+  margin-top: 2px;
+  padding-top: 2px;
+  font-weight: 600;
+}
+.wr-count {
+  color: var(--accent);
+}

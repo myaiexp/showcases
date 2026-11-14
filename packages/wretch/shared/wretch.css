@@ -1,0 +1,176 @@
+/* Shared Wretch chrome: stage, caption, tones, and the app ⇄ server wire */
+.wr-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-mono);
+}
+.wr-card {
+  height: 100%;
+  padding: 6px 8px;
+  gap: 4px;
+  font-size: 10px;
+  line-height: 1.35;
+}
+.wr-full {
+  font-size: 13px;
+  line-height: 1.5;
+}
+.wr-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  font-size: 13px;
+}
+.wr-bar:empty {
+  display: none;
+}
+.wr-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.wr-bar input[type='text'] {
+  font: inherit;
+  background: var(--bg-surface);
+  color: var(--fg-1);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+.wr-file-input {
+  display: none;
+}
+.wr-scene {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+  flex: 1;
+}
+.wr-card .wr-scene {
+  gap: 4px;
+  overflow: hidden;
+}
+.wr-caption {
+  color: var(--fg-2);
+  min-height: 1.4em;
+}
+.wr-card .wr-caption {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+.wr-caption:empty {
+  display: none;
+}
+.wr-caption[data-tone='ok'] {
+  color: var(--green);
+}
+.wr-caption[data-tone='warn'] {
+  color: var(--orange);
+}
+.wr-caption[data-tone='bad'] {
+  color: var(--red);
+}
+.wr-hint {
+  color: var(--fg-3);
+  font-size: 12px;
+}
+.wr-drop {
+  outline: 2px dashed var(--accent);
+  outline-offset: 4px;
+}
+
+/* --- Tones, shared by every view --- */
+.wr-ok { --tone: var(--green); --tone-bg: var(--green-bg); }
+.wr-info { --tone: var(--blue); --tone-bg: var(--blue-bg); }
+.wr-warn { --tone: var(--orange); --tone-bg: var(--orange-bg); }
+.wr-bad { --tone: var(--red); --tone-bg: var(--red-bg); }
+.wr-dim { --tone: var(--fg-3); --tone-bg: var(--bg-surface); }
+
+/* --- Wire: app ⇄ server --- */
+.wr-wire {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  flex-shrink: 0;
+}
+.wr-lane {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 56px;
+}
+.wr-card .wr-lane {
+  height: 52px;
+}
+.wr-end {
+  flex-shrink: 0;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-surface);
+  color: var(--fg-2);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 90px;
+}
+.wr-host {
+  border-color: var(--accent);
+}
+.wr-track {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  background: repeating-linear-gradient(90deg, var(--border) 0 6px, transparent 6px 12px) center / 100% 1px no-repeat;
+}
+.wr-pill {
+  position: absolute;
+  left: 0;
+  white-space: nowrap;
+  padding: 0 6px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  line-height: 15px;
+  color: var(--tone);
+  background: var(--tone-bg);
+  border: 1px solid var(--tone);
+  max-width: 75%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wr-log {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.wr-row {
+  display: grid;
+  grid-template-columns: 2.4em minmax(0, 1fr) auto;
+  gap: 6px;
+  color: var(--tone);
+}
+.wr-row > div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.wr-row-id {
+  color: var(--fg-3);
+}
+.wr-row-req {
+  color: var(--fg-1);
+}
+.wr-note .wr-row-req {
+  color: var(--tone);
+  grid-column: span 2;
+}

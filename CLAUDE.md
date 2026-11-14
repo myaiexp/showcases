@@ -145,3 +145,6 @@ GitHub Pages. No service on the VPS.
 - VFX-JS: build on `packages/vfx-js/shared/stage.ts` (`createStage`, trap list). Every `new VFX()` spreads
   `stage.vfxOpts` and goes through `stage.own()`, which clips its window-sized canvas to the stage and frees
   the WebGL context. Cards scroll-reveal through `shared/scroll-sim.ts` and fake the mouse with `shared/pointer.ts`.
+- Wretch: build on `packages/wretch/shared/stage.ts` (`createStage`, trap list) and `shared/server.ts`, an
+  in-memory server each chain reaches through `.fetchPolyfill(server.fetch)`, so nothing touches the network.
+  Show the traffic with `wire` (requests flying), `timeline` (timing), `envelope` (what was sent), `chips`.

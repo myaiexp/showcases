@@ -1,0 +1,26 @@
+/* Read as a Blob: the picture beside its facts */
+[data-example='wretch/read-as-blob'] {
+  .pic-row {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 8px;
+    align-items: start;
+  }
+  .pic-frame {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    line-height: 0;
+    min-width: 80px;
+    min-height: 50px;
+    background: var(--bg-surface);
+  }
+  .pic-frame img {
+    width: 160px;
+    max-width: 100%;
+    height: auto;
+  }
+  .wr-card .pic-frame img {
+    width: 100px;
+  }
+}

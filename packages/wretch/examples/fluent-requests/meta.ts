@@ -4,10 +4,10 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Fluent requests',
   summary:
-    'Configure with one chain, resolve with another. A base client holds the host and .get(path).json() finishes the job. Click to fetch a random to-do from a public test API.',
-  section: 'Basics',
-  tags: ['get', 'json', 'base client'],
-  docs: [],
-  provenance: 'legacy',
+    'One base client remembers the server address; each request only names the page it wants and asks for .json(). Watch the request go out, the answer come back, and the post appear.',
+  section: 'Quick start',
+  tags: ['wretch()', 'get', 'json', 'base client'],
+  docs: ['repo/README.md', 'repo/src/types.ts'],
+  provenance: 'pure',
   added: '2026-06-14',
 });

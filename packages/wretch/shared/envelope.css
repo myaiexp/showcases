@@ -1,0 +1,73 @@
+/* Envelope: what the server received */
+.wr-env {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-surface);
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-height: 0;
+  overflow: hidden;
+}
+.wr-env-title,
+.wr-env-sec-name {
+  color: var(--fg-3);
+  font-size: 0.85em;
+}
+.wr-env-line {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  word-break: break-all;
+}
+.wr-env-line.wr-dim {
+  color: var(--fg-3);
+}
+.wr-env-method {
+  color: var(--accent);
+  font-weight: 600;
+}
+.wr-env-q {
+  color: var(--orange);
+  margin-left: -6px;
+}
+.wr-env-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+.wr-env-kv {
+  display: grid;
+  grid-template-columns: minmax(4em, max-content) minmax(0, 1fr);
+  gap: 8px;
+}
+.wr-env-k {
+  color: var(--cyan);
+}
+.wr-env-k:empty {
+  display: none;
+}
+.wr-env-k:empty + .wr-env-v {
+  grid-column: span 2;
+}
+.wr-env-v {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+/* A card column can be ~120px wide: let each "name value" pair flow as one line of text */
+.wr-card .wr-env-kv {
+  display: block;
+  overflow-wrap: anywhere;
+}
+.wr-card .wr-env-k:not(:empty) {
+  display: inline;
+  margin-right: 0.5em;
+}
+.wr-card .wr-env-v {
+  display: inline;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}

@@ -1,0 +1,33 @@
+/* Address bar: path, then query pieces */
+.wr-addr {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-surface);
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow: hidden;
+}
+.wr-addr-title {
+  color: var(--fg-3);
+  font-size: 0.85em;
+}
+.wr-addr-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  word-break: break-all;
+}
+.wr-addr-path {
+  color: var(--fg-1);
+}
+.wr-addr-sep {
+  color: var(--fg-3);
+  padding: 0 1px;
+}
+.wr-addr-piece {
+  color: var(--orange);
+  border-radius: 3px;
+}

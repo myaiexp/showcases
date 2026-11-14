@@ -1,0 +1,6 @@
+/* Hand wretch to code that expects fetch: the widget box stands apart */
+[data-example='wretch/to-fetch-adapter'] {
+  .wr-pane {
+    border-style: dashed;
+  }
+}

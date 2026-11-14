@@ -1,0 +1,39 @@
+/* Create, read, update, delete: the to-do list and its method badges */
+[data-example='wretch/crud-methods'] {
+  .todos {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-surface);
+    padding: 4px 8px;
+    min-height: 5.5em;
+  }
+  .todos-head {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .todos-count {
+    color: var(--fg-3);
+  }
+  .method {
+    padding: 0 6px;
+    border-radius: 8px;
+    border: 1px solid var(--fg-3);
+    color: var(--fg-3);
+    font-weight: 600;
+  }
+  .method[data-method='GET'] { color: var(--blue); border-color: var(--blue); }
+  .method[data-method='POST'] { color: var(--green); border-color: var(--green); }
+  .method[data-method='PUT'] { color: var(--orange); border-color: var(--orange); }
+  .method[data-method='PATCH'] { color: var(--cyan); border-color: var(--cyan); }
+  .method[data-method='DELETE'] { color: var(--red); border-color: var(--red); }
+  ul {
+    list-style: none;
+    margin: 2px 0 0;
+    padding: 0;
+  }
+  li.done {
+    color: var(--fg-3);
+    text-decoration: line-through;
+  }
+}

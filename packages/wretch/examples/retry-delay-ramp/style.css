@@ -1,0 +1,20 @@
+/* Choose how waits grow: three labelled timelines that share the height */
+[data-example='wretch/retry-delay-ramp'] {
+  .ramp {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+  }
+  .ramp-name {
+    color: var(--fg-3);
+    font-size: 0.85em;
+  }
+  .ramp .wr-timeline,
+  .wr-full .ramp .wr-timeline {
+    min-height: 34px;
+  }
+  .wr-full .ramp .wr-timeline {
+    min-height: 70px;
+  }
+}

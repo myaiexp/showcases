@@ -1,0 +1,20 @@
+/* Measure how long a request took: a lane with a bar for startTime and duration */
+[data-example='wretch/request-timings'] {
+  .lane {
+    position: relative;
+    height: 14px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg-surface);
+    overflow: hidden;
+  }
+  .fill {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: var(--accent);
+    border-radius: 3px;
+  }
+}
