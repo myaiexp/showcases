@@ -1,11 +1,16 @@
 // Treemap roam: drag and zoom a large tree
 import type { Mount } from '@/types.ts';
 import { createChart, every } from '../../shared/chart.ts';
-import { asSpec, treemapBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, moduleTree, pathOf } from '../../shared/hierarchy-data.ts';
 
 const mount: Mount = (el, ctx) => {
   const { container, release } = createChart(el, ctx, asSpec({
-    ...treemapBase(ctx.preview),
+    type: 'treemap',
+    data: [{ id: 'data', values: moduleTree() }],
+    categoryField: 'name',
+    valueField: 'value',
+    label: { visible: true, style: { fontSize: ctx.preview ? 9 : 11 } },
+    tooltip: { mark: { title: { value: pathOf } } },
     roam: true,
     nonLeaf: { visible: true },
     nonLeafLabel: { visible: true, position: 'top', padding: 20, style: { fontSize: 11, fill: '#fff' } },

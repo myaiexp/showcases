@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, fit, frame, dotLinkSeries, MINUTE, T0, trace } from '../../shared/sequence-data.ts';
+import { asSpec, fit, MINUTE, T0, trace } from '../../shared/sequence-data.ts';
 
 const LAYERS: Record<string, { step: number; fmt: string; step2: number; fmt2: string }> = {
   '15 min / hour': { step: 15 * MINUTE, fmt: '%H:%M', step2: 60 * MINUTE, fmt2: '%Y-%m-%d' },
@@ -22,8 +22,36 @@ const mount: Mount = (el, ctx) =>
       const { rows, links } = fit(full, preview);
       return asSpec({
         type: 'sequence',
-        ...frame(preview),
-        series: dotLinkSeries({}, preview),
+        // Padding keeps the row titles clear of the grid lines; no scroll bar in a card.
+        appendPadding: { left: preview ? 70 : 100, right: 20 },
+        ...(preview ? { scrollBar: [{ visible: false }] } : {}),
+        series: [
+          {
+            type: 'link',
+            dataId: 'links',
+            dotSeriesIndex: 1,
+            fromField: 'from',
+            toField: 'to',
+            dotTypeField: 'link_type',
+          },
+          {
+            type: 'dot',
+            dataId: 'dots',
+            xField: 'event_time',
+            yField: 'service',
+            titleField: 'service',
+            dotTypeField: 'event_type',
+            highLightSeriesGroup: '',
+            height: preview ? 70 : 200,
+            clipHeight: 400,
+            title: { style: { fill: '#ddd', fontSize: preview ? 9 : 12 } },
+            subTitle: { visible: false, style: {} },
+            // The symbol is the row marker drawn beside the title.
+            symbol: { style: { dx: -20 } },
+            grid: { style: { stroke: '#555' } },
+          },
+        ],
+        // Two label layers, each with its own tickStep and timeFormat.
         axes: [
           {
             orient: 'top',

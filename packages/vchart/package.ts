@@ -14,6 +14,8 @@ export default definePackage({
   added: '2026-11-14',
   // The guide's chapter order (docs/assets/guide/menu.json), its Chart Types chapter split
   // into groups of related types, then the option reference, the API reference and the FAQ.
+  // The guide's Cross-terminal chapter is framework and mini-app wrappers (React, Vue, Lynx,
+  // Node, the 0.0.x SVG plugin), so it has no section here.
   sections: [
     'Quick Start',
     'Basic',
@@ -39,7 +41,6 @@ export default definePackage({
     'Self-adaption',
     'Progressive Rendering',
     'Load on Demand',
-    'Cross-terminal',
     'Events',
     'Functions',
     'Plugins',

@@ -15,7 +15,7 @@ const build = (s: State): ISpec =>
     xField: 'k',
     yField: 'v',
     axes: [
-      { orient: 'bottom', type: 'band', ...(s.mode === 'auto' ? {} : { [s.mode]: s.size }), ...(s.mode === 'auto' ? {} : { autoRegionSize: s.autoRegion }) },
+      { orient: 'bottom', type: 'band', ...(s.mode === 'auto' ? {} : { [s.mode]: s.size }), ...(s.mode === 'bandSize' || s.mode === 'maxBandSize' ? { autoRegionSize: s.autoRegion } : {}) },
       { orient: 'left' },
     ],
   }) as unknown as ISpec;
@@ -27,9 +27,14 @@ const mount: Mount = (el, ctx) =>
     mode: 'rebuild',
     step: (s) => ({ mode: MODES[(MODES.indexOf(s.mode) + 1) % MODES.length] ?? 'auto', size: s.mode === 'bandSize' ? 30 : 50 }),
     controls: (bar, live) => {
-      select(bar, 'option', MODES, (v) => live.set({ mode: v as State['mode'] })).value = 'bandSize';
+      const modeSelect = select(bar, 'option', MODES, (v) => {
+        // autoRegionSize only applies together with bandSize or maxBandSize, so it is not sent in the other modes.
+        region.disabled = v === 'auto' || v === 'minBandSize';
+        live.set({ mode: v as State['mode'] });
+      });
+      modeSelect.value = 'bandSize';
       slider(bar, 'pixels', [10, 160, 5], 40, (v) => live.set({ size: v }));
-      select(bar, 'autoRegionSize', ['false', 'true'], (v) => live.set({ autoRegion: v === 'true' }));
+      const region = select(bar, 'autoRegionSize', ['false', 'true'], (v) => live.set({ autoRegion: v === 'true' }));
     },
   });
 

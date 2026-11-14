@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, sunburstBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, salesTree, pathOf } from '../../shared/hierarchy-data.ts';
 
 type Layout = ({ align: string; rotate: string; offset: number } | null)[];
 const LAYOUTS: Record<string, Layout> = {
@@ -31,7 +31,12 @@ const mount: Mount = (el, ctx) =>
     mode: 'rebuild',
     build: ({ name }, preview) =>
       asSpec({
-        ...sunburstBase(preview),
+        type: 'sunburst',
+        data: [{ id: 'data', values: salesTree() }],
+        categoryField: 'name',
+        valueField: 'value',
+        sunburst: { style: { fillOpacity: (d: { isLeaf?: boolean }) => (d.isLeaf ? 0.45 : 0.85) } },
+        tooltip: { mark: { title: { value: pathOf } } },
         innerRadius: [0, 0.35, 0.65],
         outerRadius: [0.35, 0.65, 0.95],
         label: { visible: true, style: { fontSize: preview ? 7 : 11 } },

@@ -55,62 +55,12 @@ export function trace(seed = 6): { rows: Row[]; links: Link[] } {
   return { rows, links };
 }
 
-/** The time axis the guide uses: a time-typed top axis with two label layers. */
-export function timeAxis(): object {
-  return {
-    orient: 'top',
-    type: 'time',
-    range: { min: T0 - 2 * MINUTE, max: T0 + 62 * MINUTE },
-    layers: [
-      { tickStep: 15 * MINUTE, timeFormat: '%H:%M' },
-      { tickStep: 60 * MINUTE, timeFormat: '%Y-%m-%d' },
-    ],
-  };
-}
-
-/** The dot + link series pair; `link` is bound to the dot series at index 1 by dotSeriesIndex. */
-export function dotLinkSeries(extra: { link?: object; dot?: object } = {}, preview = false): object[] {
-  return [
-    {
-      type: 'link',
-      dataId: 'links',
-      dotSeriesIndex: 1,
-      fromField: 'from',
-      toField: 'to',
-      dotTypeField: 'link_type',
-      ...extra.link,
-    },
-    {
-      type: 'dot',
-      dataId: 'dots',
-      xField: 'event_time',
-      yField: 'service',
-      titleField: 'service',
-      dotTypeField: 'event_type',
-      highLightSeriesGroup: '',
-      height: preview ? 70 : 200,
-      clipHeight: 400,
-      title: { style: { fill: '#ddd', fontSize: preview ? 9 : 12 } },
-      subTitle: { visible: false, style: {} },
-      // The symbol is the row marker drawn beside the title.
-      symbol: { style: { dx: -20 } },
-      grid: { style: { stroke: '#555' } },
-      ...extra.dot,
-    },
-  ];
-}
-
 /** A card has room for about three rows: keep the first `n` services and the links between them. */
 export function fit(data: { rows: Row[]; links: Link[] }, preview: boolean, n = 3): { rows: Row[]; links: Link[] } {
   if (!preview) return data;
   const rows = data.rows.slice(0, n);
   const names = new Set(rows.flatMap((r) => r.dots.map((d) => d.node_name)));
   return { rows, links: data.links.filter((l) => names.has(l.from) && names.has(l.to)) };
-}
-
-/** Chart-level frame: padding for the row titles, and no scroll bar in a 200px card. */
-export function frame(preview: boolean): object {
-  return { appendPadding: { left: preview ? 70 : 100, right: 20 }, ...(preview ? { scrollBar: [{ visible: false }] } : {}) };
 }
 
 /** Counts per five-minute bucket for the bar series: { start_time, end_time, value }. */

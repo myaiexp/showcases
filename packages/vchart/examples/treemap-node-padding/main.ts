@@ -2,14 +2,19 @@
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, treemapBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, moduleTree, pathOf } from '../../shared/hierarchy-data.ts';
 
 const mount: Mount = (el, ctx) =>
   mountLive<{ padding: number }>(el, ctx, {
     initial: { padding: 5 },
     build: ({ padding }, preview) =>
       asSpec({
-        ...treemapBase(preview),
+        type: 'treemap',
+        data: [{ id: 'data', values: moduleTree() }],
+        categoryField: 'name',
+        valueField: 'value',
+        label: { visible: true, style: { fontSize: preview ? 9 : 11 } },
+        tooltip: { mark: { title: { value: pathOf } } },
         nodePadding: [padding],
         // Non-leaf rectangles are hidden by default; showing them makes the padding visible.
         nonLeaf: { visible: true, style: { fillOpacity: 0.25 } },

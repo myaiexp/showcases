@@ -1,7 +1,7 @@
 // Treemap drill: click a parent to open it, plus the 'drill' event and drillDown/drillUp from code
 import type { Mount } from '@/types.ts';
 import { button, controlBar, createChart, every, readout } from '../../shared/chart.ts';
-import { asSpec, moduleTree, treemapBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, moduleTree, pathOf } from '../../shared/hierarchy-data.ts';
 
 interface Drillable {
   drillDown(path: string[]): string[];
@@ -11,7 +11,11 @@ interface Drillable {
 const mount: Mount = (el, ctx) => {
   const bar = ctx.preview ? null : controlBar(el);
   const { vchart, release } = createChart(el, ctx, asSpec({
-    ...treemapBase(ctx.preview),
+    type: 'treemap',
+    categoryField: 'name',
+    valueField: 'value',
+    label: { visible: true, style: { fontSize: ctx.preview ? 9 : 11 } },
+    tooltip: { mark: { title: { value: pathOf } } },
     data: [{ id: 'data', values: moduleTree() }],
     // The drill key: names are unique in this tree, so the name is the path element.
     drill: true,

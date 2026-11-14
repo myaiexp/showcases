@@ -33,10 +33,10 @@ const mount: Mount = (el, ctx) => {
 
   const bar = ctx.preview ? null : controlBar(el);
   const { vchart, release } = createChart(el, ctx, spec, { init: { theme: undefined } });
-  vchart.setCurrentThemeSync(dark);
+  void vchart.setCurrentTheme(dark);
   let released = false;
   const apply = (name: string): void => {
-    if (!released) vchart.setCurrentThemeSync(name);
+    if (!released) void vchart.setCurrentTheme(name);
   };
 
   let stop = (): void => {};

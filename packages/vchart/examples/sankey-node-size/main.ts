@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, sankeyBase } from '../../shared/flow-data.ts';
+import { asSpec, budgetFlat } from '../../shared/flow-data.ts';
 
 type S = { width: number; gap: number };
 const STEPS: S[] = [
@@ -17,7 +17,17 @@ const mount: Mount = (el, ctx) =>
     initial: { width: 12, gap: 10 },
     build: ({ width, gap }, preview) =>
       asSpec({
-        ...sankeyBase(preview),
+        type: 'sankey',
+        data: [{ id: 'data', values: budgetFlat() }],
+        categoryField: 'nodeName',
+        valueField: 'value',
+        sourceField: 'source',
+        targetField: 'target',
+        nodeKey: 'nodeName',
+        nodeAlign: 'justify',
+        minNodeHeight: 4,
+        link: { style: { fillOpacity: 0.5 } },
+        label: { visible: true, style: { fontSize: preview ? 8 : 11 } },
         nodeWidth: width,
         nodeGap: preview ? gap / 2 : gap,
         title: { visible: true, text: `nodeWidth ${width}, nodeGap ${gap}`, textStyle: { fontSize: preview ? 11 : 15 } },

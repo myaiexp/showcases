@@ -1,7 +1,7 @@
 // Sankey emphasis: self, adjacency and related highlight effects on click or hover
 import type { Mount } from '@/types.ts';
 import { controlBar, createChart, every, select, type IVChart } from '../../shared/chart.ts';
-import { asSpec, BUDGET_NODES, sankeyBase } from '../../shared/flow-data.ts';
+import { asSpec, BUDGET_NODES, budgetFlat } from '../../shared/flow-data.ts';
 
 interface Graphic { data?: { nodeName?: string }[]; context?: { data?: { nodeName?: string }[] } }
 interface SankeySeries {
@@ -11,7 +11,17 @@ interface SankeySeries {
 }
 
 const spec = (preview: boolean, effect: string, trigger: string): Record<string, unknown> => ({
-  ...sankeyBase(preview),
+  type: 'sankey',
+  data: [{ id: 'data', values: budgetFlat() }],
+  categoryField: 'nodeName',
+  valueField: 'value',
+  sourceField: 'source',
+  targetField: 'target',
+  nodeKey: 'nodeName',
+  nodeAlign: 'justify',
+  nodeGap: preview ? 6 : 10,
+  nodeWidth: 12,
+  minNodeHeight: 4,
   // Links take the source node's colour; blur states fade whatever is not highlighted.
   node: { state: { hover: { stroke: '#fff', lineWidth: 1 }, blur: { fillOpacity: 0.15 } } },
   link: {

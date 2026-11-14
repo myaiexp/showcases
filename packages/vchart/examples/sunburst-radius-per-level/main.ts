@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, sunburstBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, salesTree, pathOf } from '../../shared/hierarchy-data.ts';
 
 const PRESETS: Record<string, { inner: number[]; outer: number[] }> = {
   'even rings': { inner: [0, 0.33, 0.66], outer: [0.33, 0.66, 0.95] },
@@ -18,7 +18,14 @@ const mount: Mount = (el, ctx) =>
     build: ({ preset }, preview) => {
       const p = PRESETS[preset] as { inner: number[]; outer: number[] };
       return asSpec({
-        ...sunburstBase(preview),
+        type: 'sunburst',
+        data: [{ id: 'data', values: salesTree() }],
+        categoryField: 'name',
+        valueField: 'value',
+        sunburst: { style: { fillOpacity: (d: { isLeaf?: boolean }) => (d.isLeaf ? 0.45 : 0.85) } },
+        // Cards are too small for arc labels.
+        label: { visible: !preview, style: { fontSize: 11 } },
+        tooltip: { mark: { title: { value: pathOf } } },
         innerRadius: p.inner,
         outerRadius: p.outer,
         title: { visible: true, text: preset, textStyle: { fontSize: preview ? 11 : 15 } },

@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, treemapBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, moduleTree, pathOf } from '../../shared/hierarchy-data.ts';
 
 const TYPES = ['binary', 'dice', 'slice', 'sliceDice', 'squarify'] as const;
 type SplitType = (typeof TYPES)[number];
@@ -12,7 +12,11 @@ const mount: Mount = (el, ctx) =>
     initial: { splitType: 'binary' },
     build: ({ splitType }, preview) =>
       asSpec({
-        ...treemapBase(preview),
+        type: 'treemap',
+        data: [{ id: 'data', values: moduleTree() }],
+        categoryField: 'name',
+        valueField: 'value',
+        tooltip: { mark: { title: { value: pathOf } } },
         splitType,
         label: { visible: !preview, style: { fontSize: 11 } },
         title: { visible: true, text: `splitType: '${splitType}'`, textStyle: { fontSize: preview ? 12 : 16 } },

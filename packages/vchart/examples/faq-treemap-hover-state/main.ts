@@ -1,7 +1,7 @@
 // FAQ: restyle treemap leaves on hover and selection through leaf.state
 import type { Mount } from '@/types.ts';
 import { controlBar, createChart, every, select } from '../../shared/chart.ts';
-import { asSpec, moduleTree, treemapBase, type TreeNode } from '../../shared/hierarchy-data.ts';
+import { asSpec, moduleTree, type TreeNode, pathOf } from '../../shared/hierarchy-data.ts';
 import { pick } from '../../shared/components-data.ts';
 
 const leaves = (nodes: TreeNode[]): string[] => nodes.flatMap((n) => (n.children ? leaves(n.children) : [n.name]));
@@ -9,7 +9,12 @@ const NAMES = leaves(moduleTree());
 
 const build = (preview: boolean, strong: boolean) =>
   asSpec({
-    ...treemapBase(preview),
+    type: 'treemap',
+    data: [{ id: 'data', values: moduleTree() }],
+    categoryField: 'name',
+    valueField: 'value',
+    label: { visible: true, style: { fontSize: preview ? 9 : 11 } },
+    tooltip: { mark: { title: { value: pathOf } } },
     leaf: {
       state: {
         // hover and selected are state names; the style given here replaces the base look while the state is on.

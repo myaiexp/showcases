@@ -46,13 +46,16 @@ const mount: Mount = (el, ctx) => {
     el.prepend(bar);
     select(bar, 'pager style', ['custom', 'default'], (v) => ((styled = v === 'custom'), apply()));
   }
-  // Page back and forth so both the enabled and the disabled arrow show.
+  // The card pages back and forth so both the enabled and the disabled arrow show;
+  // the full view leaves the pager to the reader.
   let i = 0;
-  const stop = every(1500, () => {
-    i += 1;
-    current = 1 + (i % 3);
-    apply();
-  });
+  const stop = ctx.preview
+    ? every(1500, () => {
+        i += 1;
+        current = 1 + (i % 3);
+        apply();
+      })
+    : () => {};
   return () => {
     stop();
     released = true;

@@ -49,7 +49,7 @@ const mount: Mount = (el, ctx) => {
   };
   // layoutEnd fires after every layout (data changes and resizes included): positions are valid then.
   vchart.on('layoutEnd', pin);
-  window.setTimeout(pin, 300);
+  const pinTimer = window.setTimeout(pin, 300);
 
   let seed = 1;
   const change = (): void => {
@@ -61,6 +61,7 @@ const mount: Mount = (el, ctx) => {
   const stop = bar ? () => {} : every(2200, change);
   return () => {
     alive = false;
+    window.clearTimeout(pinTimer);
     stop();
     release();
     stage.remove();

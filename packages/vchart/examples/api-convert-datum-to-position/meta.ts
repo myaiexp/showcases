@@ -9,6 +9,7 @@ export default defineMeta({
   tags: ['convertDatumToPosition', 'isRelativeToCanvas', 'updateData', 'layoutEnd', 'HTML overlay'],
   docs: [
     'repo/docs/assets/api/en/API/vchart.md',
+    'repo/docs/assets/api/en/API/event.md',
   ],
   provenance: 'pure',
   added: '2026-11-14',

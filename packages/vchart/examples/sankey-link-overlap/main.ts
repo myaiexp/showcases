@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, sankeyBase } from '../../shared/flow-data.ts';
+import { asSpec, budgetFlat } from '../../shared/flow-data.ts';
 
 const MODES = ['off', 'start', 'center', 'end'] as const;
 
@@ -12,7 +12,18 @@ const mount: Mount = (el, ctx) =>
     mode: 'rebuild',
     build: ({ overlap }, preview) =>
       asSpec({
-        ...sankeyBase(preview),
+        type: 'sankey',
+        data: [{ id: 'data', values: budgetFlat() }],
+        categoryField: 'nodeName',
+        valueField: 'value',
+        sourceField: 'source',
+        targetField: 'target',
+        nodeKey: 'nodeName',
+        nodeAlign: 'justify',
+        nodeGap: preview ? 6 : 10,
+        nodeWidth: 12,
+        minNodeHeight: 4,
+        label: { visible: true, style: { fontSize: preview ? 8 : 11 } },
         // Leaving the key out gives the default layout; a rebuild drops it cleanly.
         ...(overlap === 'off' ? {} : { linkOverlap: overlap }),
         link: { style: { fillOpacity: 0.35 } },

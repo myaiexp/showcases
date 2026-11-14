@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, fit, frame, dotLinkSeries, timeAxis, trace } from '../../shared/sequence-data.ts';
+import { asSpec, fit, MINUTE, T0, trace } from '../../shared/sequence-data.ts';
 
 const GROUPS = ['edge', 'core', 'none'] as const;
 const GROUP_OF: Record<string, string> = { gateway: 'edge', auth: 'edge' };
@@ -19,15 +19,48 @@ const mount: Mount = (el, ctx) =>
       const { rows, links } = fit({ rows: grouped, links: full.links }, preview);
       return asSpec({
         type: 'sequence',
-        ...frame(preview),
-        series: dotLinkSeries({
-          dot: {
+        // Padding keeps the row titles clear of the grid lines; no scroll bar in a card.
+        appendPadding: { left: preview ? 70 : 100, right: 20 },
+        ...(preview ? { scrollBar: [{ visible: false }] } : {}),
+        series: [
+          {
+            type: 'link',
+            dataId: 'links',
+            dotSeriesIndex: 1,
+            fromField: 'from',
+            toField: 'to',
+            dotTypeField: 'link_type',
+          },
+          {
+            type: 'dot',
+            dataId: 'dots',
+            xField: 'event_time',
+            yField: 'service',
+            titleField: 'service',
+            dotTypeField: 'event_type',
+            height: preview ? 70 : 200,
+            clipHeight: 400,
+            title: { style: { fill: '#ddd', fontSize: preview ? 9 : 12 } },
+            subTitle: { visible: false, style: {} },
+            // The symbol is the row marker drawn beside the title.
+            symbol: { style: { dx: -20 } },
+            grid: { background: { fill: '#4f8cff', fillOpacity: 0.25 }, style: { stroke: '#555' } },
             seriesGroupField: 'type',
             highLightSeriesGroup: group === 'none' ? '' : group,
-            grid: { background: { fill: '#4f8cff', fillOpacity: 0.25 }, style: { stroke: '#555' } },
           },
-        }, preview),
-        axes: [timeAxis()],
+        ],
+        // The time-typed top axis, with two label layers.
+        axes: [
+          {
+            orient: 'top',
+            type: 'time',
+            range: { min: T0 - 2 * MINUTE, max: T0 + 62 * MINUTE },
+            layers: [
+              { tickStep: 15 * MINUTE, timeFormat: '%H:%M' },
+              { tickStep: 60 * MINUTE, timeFormat: '%Y-%m-%d' },
+            ],
+          },
+        ],
         data: [
           { id: 'dots', values: rows },
           { id: 'links', values: links },

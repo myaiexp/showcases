@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, sankeyBase } from '../../shared/flow-data.ts';
+import { asSpec, budgetFlat } from '../../shared/flow-data.ts';
 
 // The layout hands nodeSortBy node objects ({ key, value }) and linkSortBy link objects ({ source, target, value }).
 interface N { key: string; value: number }
@@ -24,7 +24,19 @@ const mount: Mount = (el, ctx) =>
     build: ({ sort }, preview) => {
       const s = SORTS[sort];
       return asSpec({
-        ...sankeyBase(preview),
+        type: 'sankey',
+        data: [{ id: 'data', values: budgetFlat() }],
+        categoryField: 'nodeName',
+        valueField: 'value',
+        sourceField: 'source',
+        targetField: 'target',
+        nodeKey: 'nodeName',
+        nodeAlign: 'justify',
+        nodeGap: preview ? 6 : 10,
+        nodeWidth: 12,
+        minNodeHeight: 4,
+        link: { style: { fillOpacity: 0.5 } },
+        label: { visible: true, style: { fontSize: preview ? 8 : 11 } },
         ...(s ? { nodeSortBy: s.node, linkSortBy: s.link } : {}),
         // A single layout pass keeps the sorted order instead of relaxing it away.
         iterations: 1,

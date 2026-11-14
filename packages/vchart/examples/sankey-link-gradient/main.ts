@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, COLORS, sankeyBase } from '../../shared/flow-data.ts';
+import { asSpec, COLORS, budgetFlat } from '../../shared/flow-data.ts';
 
 interface LinkDatum {
   source?: string;
@@ -29,7 +29,17 @@ const mount: Mount = (el, ctx) =>
     initial: { opacity: 0.7 },
     build: ({ opacity }, preview) =>
       asSpec({
-        ...sankeyBase(preview),
+        type: 'sankey',
+        data: [{ id: 'data', values: budgetFlat() }],
+        categoryField: 'nodeName',
+        valueField: 'value',
+        sourceField: 'source',
+        targetField: 'target',
+        nodeKey: 'nodeName',
+        nodeGap: preview ? 6 : 10,
+        nodeWidth: 12,
+        minNodeHeight: 4,
+        label: { visible: true, style: { fontSize: preview ? 8 : 11 } },
         nodeAlign: 'justify',
         node: { style: { fill: (d: { nodeName?: string; name?: string; datum?: { nodeName?: string } }) => COLORS[d.nodeName ?? d.datum?.nodeName ?? d.name ?? ''] ?? '#888' } },
         link: { style: { fill: gradient, fillOpacity: opacity } },

@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, treemapBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, moduleTree, pathOf } from '../../shared/hierarchy-data.ts';
 
 type S = { node: number; children: number };
 const STEPS: S[] = [
@@ -17,7 +17,12 @@ const mount: Mount = (el, ctx) =>
     initial: { node: 10, children: 0 },
     build: ({ node, children }, preview) =>
       asSpec({
-        ...treemapBase(preview),
+        type: 'treemap',
+        data: [{ id: 'data', values: moduleTree() }],
+        categoryField: 'name',
+        valueField: 'value',
+        label: { visible: true, style: { fontSize: preview ? 9 : 11 } },
+        tooltip: { mark: { title: { value: pathOf } } },
         minVisibleArea: node,
         // 0 disables the child pruning: a parent is never that small.
         minChildrenVisibleArea: children || undefined,

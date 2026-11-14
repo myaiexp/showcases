@@ -1,7 +1,7 @@
 // Sunburst drill: click an arc to open its subtree, plus drillDown/drillUp from code
 import type { Mount } from '@/types.ts';
 import { button, controlBar, createChart, every, readout } from '../../shared/chart.ts';
-import { asSpec, sunburstBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, pathOf, salesTree } from '../../shared/hierarchy-data.ts';
 
 interface Drillable {
   drillDown(path: string[]): string[];
@@ -11,7 +11,19 @@ interface Drillable {
 const mount: Mount = (el, ctx) => {
   const bar = ctx.preview ? null : controlBar(el);
   // Region and product names are unique, so 'name' works as the drill key.
-  const { vchart, release } = createChart(el, ctx, asSpec({ ...sunburstBase(ctx.preview), drill: true, drillField: 'name' }));
+  const { vchart, release } = createChart(el, ctx, asSpec({
+    type: 'sunburst',
+    data: [{ id: 'data', values: salesTree() }],
+    categoryField: 'name',
+    valueField: 'value',
+    outerRadius: 0.95,
+    sunburst: { style: { fillOpacity: (d: { isLeaf?: boolean }) => (d.isLeaf ? 0.45 : 0.85) } },
+    // Cards are too small for arc labels.
+    label: { visible: !ctx.preview, style: { fontSize: 11 } },
+    tooltip: { mark: { title: { value: pathOf } } },
+    drill: true,
+    drillField: 'name',
+  }));
   const out = ctx.preview ? null : readout(el);
   if (out) out.textContent = 'Click an arc to drill down; click again to drill up.';
 

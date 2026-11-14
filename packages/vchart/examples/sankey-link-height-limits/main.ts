@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { select, slider } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, sankeyBase } from '../../shared/flow-data.ts';
+import { asSpec, budgetFlat } from '../../shared/flow-data.ts';
 
 type S = { min: number; mode: string };
 const MODES = ['proportional', 'maxNodeHeight 40', 'equalNodeHeight'] as const;
@@ -19,7 +19,18 @@ const mount: Mount = (el, ctx) =>
     mode: 'rebuild',
     build: ({ min, mode }, preview) =>
       asSpec({
-        ...sankeyBase(preview),
+        type: 'sankey',
+        data: [{ id: 'data', values: budgetFlat() }],
+        categoryField: 'nodeName',
+        valueField: 'value',
+        sourceField: 'source',
+        targetField: 'target',
+        nodeKey: 'nodeName',
+        nodeAlign: 'justify',
+        nodeGap: preview ? 6 : 10,
+        nodeWidth: 12,
+        link: { style: { fillOpacity: 0.5 } },
+        label: { visible: true, style: { fontSize: preview ? 8 : 11 } },
         minNodeHeight: min,
         minLinkHeight: min / 2,
         ...(mode === 'maxNodeHeight 40' ? { maxNodeHeight: 40 } : {}),

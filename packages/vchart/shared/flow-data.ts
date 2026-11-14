@@ -53,25 +53,6 @@ export function budgetFlat(seed = 4, extraNodes: string[] = []): unknown[] {
   return [{ nodes: [...BUDGET_NODES, ...extraNodes].map((nodeName) => ({ nodeName })), links: budgetLinks(seed) }];
 }
 
-/** The sankey spec every flat-data example starts from. */
-export function sankeyBase(preview: boolean, seed = 4): Record<string, unknown> {
-  return {
-    type: 'sankey',
-    data: [{ id: 'data', values: budgetFlat(seed) }],
-    categoryField: 'nodeName',
-    valueField: 'value',
-    sourceField: 'source',
-    targetField: 'target',
-    nodeKey: 'nodeName',
-    nodeAlign: 'justify',
-    nodeGap: preview ? 6 : 10,
-    nodeWidth: 12,
-    minNodeHeight: 4,
-    link: { style: { fillOpacity: 0.5 } },
-    label: { visible: true, style: { fontSize: preview ? 8 : 11 } },
-  };
-}
-
 /** Nested sankey data: a tree whose levels become the columns. Names are unique, they key the nodes. */
 export function budgetNested(seed = 4): unknown[] {
   const r = rng(seed);

@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, sunburstBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, salesTree, pathOf } from '../../shared/hierarchy-data.ts';
 
 type S = { x: number; y: number };
 const DRIFT: S[] = [
@@ -17,7 +17,14 @@ const mount: Mount = (el, ctx) =>
     initial: { x: 0, y: 0 },
     build: ({ x, y }, preview) =>
       asSpec({
-        ...sunburstBase(preview),
+        type: 'sunburst',
+        data: [{ id: 'data', values: salesTree() }],
+        categoryField: 'name',
+        valueField: 'value',
+        sunburst: { style: { fillOpacity: (d: { isLeaf?: boolean }) => (d.isLeaf ? 0.45 : 0.85) } },
+        // Cards are too small for arc labels.
+        label: { visible: !preview, style: { fontSize: 11 } },
+        tooltip: { mark: { title: { value: pathOf } } },
         outerRadius: preview ? 0.6 : 0.8,
         offsetX: x,
         offsetY: y,

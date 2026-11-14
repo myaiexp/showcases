@@ -1,12 +1,16 @@
 // Treemap quick start: nested name/value/children data drawn as rectangles
 import type { Mount } from '@/types.ts';
 import { createChart, every } from '../../shared/chart.ts';
-import { asSpec, moduleTree, reseed, treemapBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, moduleTree, reseed, pathOf } from '../../shared/hierarchy-data.ts';
 
 const mount: Mount = (el, ctx) => {
   // The Getting Started spec: hierarchical data, a category field and a weight field.
   const { vchart, release } = createChart(el, ctx, asSpec({
-    ...treemapBase(ctx.preview),
+    type: 'treemap',
+    categoryField: 'name',
+    valueField: 'value',
+    label: { visible: true, style: { fontSize: ctx.preview ? 9 : 11 } },
+    tooltip: { mark: { title: { value: pathOf } } },
     data: [{ id: 'data', values: moduleTree() }],
     title: { visible: !ctx.preview, text: 'Module sizes' },
   }));

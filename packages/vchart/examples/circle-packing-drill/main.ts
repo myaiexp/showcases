@@ -1,7 +1,7 @@
 // Circle packing drill: open a circle to see its children, plus drillDown/drillUp from code
 import type { Mount } from '@/types.ts';
 import { button, controlBar, createChart, every, readout } from '../../shared/chart.ts';
-import { asSpec, packingBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, pathOf, salesRoot } from '../../shared/hierarchy-data.ts';
 
 interface Drillable {
   drillDown(path: string[]): string[];
@@ -10,7 +10,19 @@ interface Drillable {
 
 const mount: Mount = (el, ctx) => {
   const bar = ctx.preview ? null : controlBar(el);
-  const { vchart, release } = createChart(el, ctx, asSpec({ ...packingBase(ctx.preview), drill: true, drillField: 'name', layoutPadding: [0, 10, 10] }));
+  const { vchart, release } = createChart(el, ctx, asSpec({
+    type: 'circlePacking',
+    data: [{ id: 'data', values: salesRoot() }],
+    categoryField: 'name',
+    valueField: 'value',
+    circlePacking: { style: { fillOpacity: (d: { isLeaf?: boolean }) => (d.isLeaf ? 0.75 : 0.25) } },
+    // Labels only on the country and region circles; the leaves are too small for text.
+    label: { visible: !ctx.preview, style: { fontSize: 11, fill: '#fff', visible: (d: { depth: number }) => d.depth <= 2 } },
+    tooltip: { mark: { title: { value: pathOf } } },
+    drill: true,
+    drillField: 'name',
+    layoutPadding: [0, 10, 10],
+  }));
   const out = ctx.preview ? null : readout(el);
   if (out) out.textContent = 'Click a circle to drill down; click it again to drill up.';
 

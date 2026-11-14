@@ -2,7 +2,7 @@
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/chart.ts';
 import { mountLive } from '../../shared/live-spec.ts';
-import { asSpec, treemapBase } from '../../shared/hierarchy-data.ts';
+import { asSpec, moduleTree, pathOf } from '../../shared/hierarchy-data.ts';
 
 type Gaps = { g0: number; g1: number; g2: number };
 const STEPS: Gaps[] = [
@@ -17,7 +17,12 @@ const mount: Mount = (el, ctx) =>
     initial: { g0: 14, g1: 6, g2: 1 },
     build: ({ g0, g1, g2 }, preview) =>
       asSpec({
-        ...treemapBase(preview),
+        type: 'treemap',
+        data: [{ id: 'data', values: moduleTree() }],
+        categoryField: 'name',
+        valueField: 'value',
+        label: { visible: true, style: { fontSize: preview ? 9 : 11 } },
+        tooltip: { mark: { title: { value: pathOf } } },
         gapWidth: preview ? [g0 / 2, g1 / 2, g2 / 2] : [g0, g1, g2],
         title: { visible: true, text: `gapWidth: [${g0}, ${g1}, ${g2}]`, textStyle: { fontSize: preview ? 12 : 16 } },
       }),
