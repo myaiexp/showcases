@@ -1,98 +1,47 @@
-// Parses editable CSV with Papa Parse into a table with typed cells
+// A spreadsheet export as text becomes a table with named columns and real numbers
 import Papa from 'papaparse';
 import type { Mount } from '@/types.ts';
-import './style.css';
+import { csvEditor, csvView } from '../../shared/csv-view.ts';
+import { flow, revealRows } from '../../shared/panes.ts';
+import { createStage } from '../../shared/stage.ts';
+import { dataTable, typeLegend } from '../../shared/table.ts';
 
-const SAMPLE_CSV = `name,role,commits,active
-Ada Lovelace,Engineer,128,true
-Grace Hopper,Compiler Lead,342,true
-Alan Turing,Researcher,87,false
-Katherine Johnson,Mathematician,256,true`;
+const EXPORTS = [
+  'name,team,goals,captain\nAda,Red,12,true\nBruno,Blue,7,false\nChen,Red,9,false',
+  'city,temp °C,rain\nTurku,4.5,true\nPorto,17,false\nRiga,-2,true',
+  'item,price,in stock\nTeapot,24.9,true\nMug,6,false\nKettle,39,true',
+];
 
-type Row = Record<string, unknown>;
+const mount: Mount = (el, ctx) => {
+  const stage = createStage(el, ctx, { hint: 'Edit the text: the table follows on every keystroke.' });
+  const f = flow(stage, {
+    from: 'CSV text',
+    via: stage.preview ? 'Papa.parse' : 'Papa.parse(text, { header: true, dynamicTyping: true })',
+    to: 'Table',
+  });
 
-const pill = (label: string, value: string, err = false): HTMLSpanElement => {
-  const span = document.createElement('span');
-  span.className = err ? 'pill err' : 'pill';
-  const b = document.createElement('b');
-  b.textContent = value;
-  span.append(b, ` ${label}`);
-  return span;
-};
-
-const typedCell = (value: unknown): HTMLTableCellElement => {
-  const td = document.createElement('td');
-  const span = document.createElement('span');
-  if (value === null || value === undefined || value === '') {
-    span.className = 'type-null';
-    span.textContent = '(empty)';
-  } else if (typeof value === 'number') {
-    span.className = 'type-num';
-    span.textContent = String(value);
-  } else if (typeof value === 'boolean') {
-    span.className = 'type-bool';
-    span.textContent = String(value);
-  } else {
-    span.textContent = String(value);
-  }
-  td.append(span);
-  return td;
-};
-
-const mount: Mount = (stage, { preview }) => {
-  const el = document.createElement('div');
-  el.className = 'root';
-  stage.append(el);
-  const input = document.createElement('textarea');
-  input.className = 'csv-input';
-  input.spellcheck = false;
-  input.value = SAMPLE_CSV;
-  const meta = document.createElement('div');
-  meta.className = 'meta-bar';
-  const wrap = document.createElement('div');
-  wrap.className = 'table-wrap';
-  const table = document.createElement('table');
-  table.className = 'csv';
-  wrap.append(table);
-  if (!preview) el.append(input);
-  el.append(meta, wrap);
-
-  const render = (): void => {
-    const result = Papa.parse<Row>(input.value, {
-      header: true,
-      dynamicTyping: true,
-      skipEmptyLines: true,
+  const parse = (text: string): void => {
+    const result = Papa.parse<Record<string, unknown>>(text, {
+      header: true, // the first line names the columns
+      dynamicTyping: true, // "12" becomes the number 12, "true" the value true
+      skipEmptyLines: true, // a trailing blank line is not a row
     });
-    const fields = result.meta.fields ?? [];
-    const delim = result.meta.delimiter === '\t' ? '\\t' : result.meta.delimiter;
-    const pills = [
-      pill('rows', String(result.data.length)),
-      pill('columns', String(fields.length)),
-      pill('delimiter', delim),
-    ];
-    if (result.errors.length) pills.push(pill('error(s)', String(result.errors.length), true));
-    meta.replaceChildren(...pills);
-
-    const thead = document.createElement('thead');
-    const htr = document.createElement('tr');
-    for (const f of fields) {
-      const th = document.createElement('th');
-      th.textContent = f;
-      htr.append(th);
-    }
-    thead.append(htr);
-    const tbody = document.createElement('tbody');
-    for (const row of result.data) {
-      const tr = document.createElement('tr');
-      for (const f of fields) tr.append(typedCell(row[f]));
-      tbody.append(tr);
-    }
-    table.replaceChildren(thead, tbody);
+    const table = dataTable(result.data, { fields: result.meta.fields });
+    f.to.show(table, ...(stage.preview ? [] : [typeLegend()]));
+    stage.say(`${result.data.length} rows, columns named ${result.meta.fields?.join(', ')}`);
   };
 
-  input.addEventListener('input', render);
-  render();
-  return () => input.removeEventListener('input', render);
+  if (stage.preview) {
+    stage.cycle(EXPORTS, 3200, (text) => {
+      f.from.show(csvView(text));
+      parse(text);
+      revealRows(f.to.body);
+    });
+  } else {
+    f.from.show(csvEditor(EXPORTS[0]!, parse).el);
+    parse(EXPORTS[0]!);
+  }
+  return stage.dispose;
 };
 
 export default mount;

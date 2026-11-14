@@ -1,5 +1,12 @@
 {
-  "license": "none found",
-  "redistribute": false,
-  "sources": []
+  "license": "MIT (mholt/PapaParse LICENSE covers the repo: README, the papaparse.com site source in docs/, and the library source)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/mholt/PapaParse",
+      "ref": "5.7.1",
+      "paths": ["README.md", "LICENSE", "CHANGELOG.md", "papaparse.js", "docs/docs.html", "docs/faq.html", "docs/index.html"]
+    }
+  ]
 }
