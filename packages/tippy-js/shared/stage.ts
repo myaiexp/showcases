@@ -20,7 +20,12 @@
 //   cards never fake touch: `touch: 'hold'` examples show the press as a picture.
 // - `hideAll()` and `tippy.setDefaultProps()` act on every tippy on the page. Call hideAll
 //   only from a full-view button; set defaults, create the instances, then restore the old
-//   defaults in the same synchronous block.
+//   defaults in the same synchronous block. `setDefaultProps` mutates `tippy.defaultProps` in
+//   place, so copy it (`{...tippy.defaultProps}`) before changing it.
+// - The page font is monospace: tip text runs about 8px per character, and a card is about
+//   284px wide, so card tips need short text (or a smaller `maxWidth`).
+// - To aim `getReferenceClientRect` at a point on an SVG drawing, map it to the viewport with
+//   `svg.getScreenCTM()`.
 // - `delay` applies to trigger events only: `show()` and `hide()` ignore it, so a card that
 //   demonstrates delay hovers with the ghost instead of calling show().
 // - Destroy instances before their reference elements leave the page: `stage.own(...)`

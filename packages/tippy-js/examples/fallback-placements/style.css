@@ -1,0 +1,35 @@
+/* Side panels: a narrow column of buttons pinned to each edge of the scene */
+[data-example='tippy-js/fallback-placements'] {
+  .scene {
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+  }
+  .panel {
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    width: 84px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 6px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .panel.left { left: 8px; }
+  .panel.right { right: 8px; }
+  .title {
+    font-size: 11px;
+    color: var(--fg-3);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .item {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+  .item:last-child {
+    margin-top: auto;
+  }
+}

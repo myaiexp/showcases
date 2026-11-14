@@ -1,0 +1,37 @@
+/* Two buttons side by side, and the small menu each one opens */
+[data-example='tippy-js/forgiving-hover-zone'] {
+  .scene {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 28px;
+  }
+  .col {
+    width: 110px;
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    min-width: 84px;
+  }
+  .item {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    font-size: 12px;
+    text-align: left;
+    padding: 3px 6px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .item:hover {
+    background: #fff3;
+  }
+}

@@ -1,0 +1,25 @@
+/* Progress bar: a video-style track cut into chapter segments */
+[data-example='tippy-js/follow-cursor-initial'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .player {
+    width: 86%;
+    padding: var(--space-4) 0;
+  }
+  .bar {
+    display: flex;
+    gap: 3px;
+    height: 10px;
+    cursor: pointer;
+  }
+  .seg {
+    background: var(--bg-raised);
+    border-radius: 2px;
+  }
+  .seg:nth-child(-n + 2) {
+    background: var(--accent);
+  }
+}

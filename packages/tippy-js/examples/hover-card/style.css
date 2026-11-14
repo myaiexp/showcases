@@ -1,0 +1,51 @@
+/* Comment thread and the profile card tip */
+[data-example='tippy-js/hover-card'] {
+  .scene {
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+  }
+  .thread {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    width: 86%;
+    max-width: 420px;
+    font-size: 13px;
+    color: var(--fg-2);
+  }
+  .handle {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 2px 10px;
+    align-items: center;
+    padding: 4px 2px;
+    min-width: 180px;
+  }
+  .avatar {
+    grid-row: span 2;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 700;
+  }
+  .card p {
+    grid-column: 1 / -1;
+    margin: 4px 0;
+    font-size: 12px;
+    opacity: 0.85;
+  }
+  .card .btn {
+    grid-column: 1 / -1;
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+}

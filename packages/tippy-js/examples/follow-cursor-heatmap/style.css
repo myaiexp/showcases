@@ -1,0 +1,26 @@
+/* Heatmap: a calendar grid, one column per week, filled by weekday */
+[data-example='tippy-js/follow-cursor-heatmap'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 36px;
+  }
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-auto-flow: column;
+    gap: 3px;
+    width: min(88%, 420px);
+    aspect-ratio: 12 / 7;
+    cursor: crosshair;
+  }
+  .cell {
+    border-radius: 3px;
+    background: var(--bg-raised);
+  }
+  .level-1 { background: color-mix(in srgb, var(--green) 30%, var(--bg-raised)); }
+  .level-2 { background: color-mix(in srgb, var(--green) 55%, var(--bg-raised)); }
+  .level-3 { background: color-mix(in srgb, var(--green) 80%, var(--bg-raised)); }
+  .level-4 { background: var(--green); }
+}

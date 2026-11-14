@@ -1,0 +1,35 @@
+/* Dashboard mock: a header with two buttons above a small bar chart */
+[data-example='tippy-js/show-on-create'] {
+  .scene {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-surface);
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-3);
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .actions {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .body {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 12px;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .body i {
+    flex: 1;
+    background: var(--bg-raised);
+    border-radius: 3px 3px 0 0;
+  }
+}
