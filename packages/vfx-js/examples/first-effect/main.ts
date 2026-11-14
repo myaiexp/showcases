@@ -1,4 +1,4 @@
-// VFX-JS example: one VFX, one image, the "glitch" preset drawn 100px past its edges
+// one VFX, one image, the "glitch" preset drawn 100px past its edges
 import { VFX } from '@vfx-js/core';
 import type { Mount } from '@/types.ts';
 import { picture } from '../../shared/pictures.ts';

@@ -1,4 +1,4 @@
-// Stand-in pointer for cards: page-wide pointermove events over one card at a time
+// Stand-in pointer for cards: page-wide pointermove over one card at a time
 //
 // VFX-JS reads the `mouse` uniform (and FluidEffect, ParticleEffect and VoronoiEffect read
 // ctx.mouse) from pointermove events on `window`, for every VFX on the page. A card has no

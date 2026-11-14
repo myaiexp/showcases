@@ -15,6 +15,16 @@
 // - Transitions and addHTML wrap the element in a <canvas> sized by the html-in-canvas sizing
 //   policy, which sees only an inline px width: a width set by a class stretches the wrapper
 //   to the parent's width. Set fixed sizes inline (shared/slides.ts does).
+// - A post effect sees the whole canvas, which here covers the window: uv 0.5 is the window
+//   centre. Centre position-dependent post effects with shared/post-scene.ts stageCenter.
+// - @vfx-js/effects 1.4.4 does not change params one way: MatrixEffect only takes setParams;
+//   BadJpegEffect has plain fields (quality 1..100); JPEGGlitchEffect with speed 0 re-glitches
+//   only after setParams; ParticleEffect's params is read-only (use setParam, and lower count
+//   from its default of ~1M); AsciiEffect needs updateAtlas() after a preset or chars change;
+//   LightStreakEffect needs pad >= length (both 300 by default, too big for a card).
+// - ParticleExplodeEffect hides the element after trigger() until reset(); isDone() ends a burst.
+// - Several WebGL examples in one page under software rendering (headless Chrome) stall it:
+//   check cards a few at a time.
 import type { VFX, VFXOpts } from '@vfx-js/core';
 import type { MountContext } from '@/types.ts';
 import './vfx.css';

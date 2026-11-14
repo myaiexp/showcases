@@ -1,4 +1,4 @@
-// VFX-JS example: a tab panel whose slides change through show() and the Swipe preset
+// a tab panel whose slides change through show() and the Swipe preset
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

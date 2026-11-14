@@ -94,10 +94,6 @@
   border-radius: 4px;
   object-fit: cover;
 }
-.vx-card .vx-pic {
-  max-height: 140px;
-  width: auto;
-}
 .vx-title {
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -167,4 +163,18 @@
 }
 .vx-card .vx-slide h3 {
   font-size: 18px;
+}
+
+/* --- Scroll room for the full view of scroll reveals (shared/scroll-sim.ts) --- */
+.vx-scroll-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.vx-scroll-room {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  color: var(--fg-3);
 }

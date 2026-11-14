@@ -1,4 +1,4 @@
-// VFX-JS example: BloomEffect from @vfx-js/effects with live threshold, intensity and scatter
+// BloomEffect from @vfx-js/effects with live threshold, intensity and scatter
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
