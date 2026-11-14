@@ -1,4 +1,4 @@
-// PolygonLayer outline width: lineWidthUnits, lineWidthScale and the min/max pixel clamps
+// PolygonLayer outline width: lineWidthUnits, lineWidthScale and pixel clamps
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

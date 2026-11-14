@@ -1,4 +1,4 @@
-// addMetersToLngLat(): a ring of points one radius away, against deck's own metre-sized circle
+// addMetersToLngLat(): a ring of points one radius away, against deck's own circle
 import { Deck, WebMercatorViewport } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import type { Mount } from '@/types.ts';

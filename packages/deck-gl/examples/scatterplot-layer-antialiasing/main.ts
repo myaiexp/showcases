@@ -1,4 +1,4 @@
-// ScatterplotLayer antialiasing: smoothed circle edges, and the artifacts where circles overlap
+// ScatterplotLayer antialiasing: smoothed edges, artifacts where circles overlap
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

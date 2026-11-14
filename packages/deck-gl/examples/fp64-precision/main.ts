@@ -1,4 +1,4 @@
-// Fp64Extension: a metre-spaced grid of points at the highest zoom, 32-bit and 64-bit
+// Fp64Extension: a metre-spaced grid of points at the highest zoom, 32 vs 64-bit
 import { Deck } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import { Fp64Extension } from '@deck.gl/extensions';

@@ -1,4 +1,4 @@
-// Class theming: the className prop plus CSS variables set on that class in a stylesheet
+// Class theming: the className prop plus CSS variables set on that class in CSS
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

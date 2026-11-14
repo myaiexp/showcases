@@ -1,4 +1,4 @@
-// Controller keyboard options: zoomSpeed, moveSpeed and the rotate speeds for the arrow and +/- keys
+// Controller keyboard options: zoomSpeed, moveSpeed and the rotate speeds
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

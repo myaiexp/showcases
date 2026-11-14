@@ -1,4 +1,4 @@
-// numInstances: draw only the first N objects, overriding the count derived from data
+// numInstances: draw only the first N objects, overriding the count from data
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

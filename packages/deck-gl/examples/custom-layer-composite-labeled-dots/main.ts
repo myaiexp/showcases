@@ -1,4 +1,4 @@
-// A composite layer: LabeledDotLayer renders a ScatterplotLayer and a TextLayer from one set of props
+// A composite layer: LabeledDotLayer renders a ScatterplotLayer and a TextLayer
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

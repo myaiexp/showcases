@@ -1,4 +1,4 @@
-// Zoom bands: overlapping opacity ramps per GridLayer, set from the zoom in onViewStateChange
+// Zoom bands: overlapping opacity ramps per GridLayer, set from onViewStateChange
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { GridLayer } from '@deck.gl/aggregation-layers';

@@ -1,4 +1,4 @@
-// deck-gl example: getSubLayerRow and getSubLayerAccessor in an adapter composite layer
+// deck-gl example: getSubLayerRow and getSubLayerAccessor in an adapter layer
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

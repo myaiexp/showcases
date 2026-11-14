@@ -1,4 +1,4 @@
-// DataFilterExtension: getFilterValue = the zoom each city appears at, filterRange = [0, zoom]
+// DataFilterExtension: getFilterValue = zoom a city appears, filterRange [0, zoom]
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { DataFilterExtension } from '@deck.gl/extensions';

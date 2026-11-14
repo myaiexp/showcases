@@ -1,4 +1,4 @@
-// Subclassing: add an instanced attribute (with its accessor) and use it from an injected size hook
+// Subclassing: add an instanced attribute and use it from an injected size hook
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

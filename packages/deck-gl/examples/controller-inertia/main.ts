@@ -1,4 +1,4 @@
-// Controller inertia: after a fling the view keeps gliding for the given number of milliseconds
+// Controller inertia: after a fling the view glides for the given milliseconds
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

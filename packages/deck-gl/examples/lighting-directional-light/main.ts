@@ -1,4 +1,4 @@
-// DirectionalLight: sliders turn an azimuth and a height into the light's direction vector
+// DirectionalLight: sliders turn an azimuth and a height into a light direction
 import { AmbientLight, Deck, DirectionalLight, LightingEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

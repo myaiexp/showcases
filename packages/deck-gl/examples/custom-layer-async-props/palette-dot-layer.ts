@@ -1,4 +1,4 @@
-// PaletteDotLayer: an async object prop (a Promise or URL) with transform and release callbacks
+// PaletteDotLayer: an async object prop (a Promise or URL) with transform, release
 import { CompositeLayer } from '@deck.gl/core';
 import type { Accessor, Color, DefaultProps, Layer, LayerDataSource, Position } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

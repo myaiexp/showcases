@@ -1,4 +1,4 @@
-// TileLayer extent: [minX, minY, maxX, maxY] of the data; tiles outside are never loaded
+// TileLayer extent: [minX, minY, maxX, maxY] of the data; outside tiles never load
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TileLayer } from '@deck.gl/geo-layers';

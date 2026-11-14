@@ -1,4 +1,4 @@
-// Canvas-drawn images for the core layers chapter: a map-like bitmap and icon sheets
+// Canvas-drawn images for the core layers chapter: a map bitmap and icon sheets
 
 function canvas(w: number, h: number): [HTMLCanvasElement, CanvasRenderingContext2D] {
   const c = document.createElement('canvas');

@@ -1,4 +1,4 @@
-// TimelineWidget as a filter: points whose time is not past the slider are left out
+// TimelineWidget as a filter: points whose time is past the slider are left out
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

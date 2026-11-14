@@ -1,4 +1,4 @@
-// TriangleLayer: a layer from scratch: instanced luma.gl Model, own GLSL, project32 and picking
+// TriangleLayer: a layer from scratch with instanced luma.gl Model and own GLSL
 import { Layer, UNIT, picking, project32 } from '@deck.gl/core';
 import type { Accessor, Color, DefaultProps, LayerDataSource, Position, Unit, UpdateParameters } from '@deck.gl/core';
 import { Geometry, Model } from '@luma.gl/engine';

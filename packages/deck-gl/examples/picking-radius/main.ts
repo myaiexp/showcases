@@ -1,4 +1,4 @@
-// Deck pickingRadius: extra pixels around the pointer, so tiny targets are easy to hit
+// Deck pickingRadius: extra pixels around the pointer, so tiny targets are hit
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

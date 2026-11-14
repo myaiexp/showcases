@@ -1,4 +1,4 @@
-// transitions: interpolate getPosition and getFillColor over a duration with an easing curve
+// transitions: interpolate getPosition and getFillColor with duration and easing
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

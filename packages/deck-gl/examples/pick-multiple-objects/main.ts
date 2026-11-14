@@ -1,4 +1,4 @@
-// deck.pickMultipleObjects: deep picking returns objects hidden under other objects
+// deck.pickMultipleObjects: deep picking returns objects hidden under others
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

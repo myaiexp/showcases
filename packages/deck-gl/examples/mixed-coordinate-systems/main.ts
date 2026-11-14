@@ -1,4 +1,4 @@
-// Each layer sets its own coordinateSystem, so data from different sources composes in one view
+// Each layer sets its own coordinateSystem, so mixed data composes in one view
 import { COORDINATE_SYSTEM, Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

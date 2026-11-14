@@ -1,4 +1,4 @@
-// Widgets chapter: SVG icon data URLs, a card-side auto-clicker and a wrapped drift
+// Widgets chapter: SVG icon data URLs, a card-side auto-clicker, a wrapped drift
 import type { MapViewState } from '@deck.gl/core';
 
 /** A 24x24 black-filled SVG as a data URL: widgets use it as a CSS mask, so only its shape counts. */

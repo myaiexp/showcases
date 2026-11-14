@@ -1,4 +1,4 @@
-// onViewportChange: a widget that reads the camera and renders it as the user pans and zooms
+// onViewportChange: a widget that reads the camera and renders it as you pan, zoom
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, WidgetPlacement } from '@deck.gl/core';
 import '@deck.gl/widgets/stylesheet.css';

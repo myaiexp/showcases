@@ -1,4 +1,4 @@
-// deck-gl example: defaultProps with prop types decide which prop changes update a layer
+// deck-gl example: defaultProps with prop types decide which changes update
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

@@ -1,4 +1,4 @@
-// deck-gl example: styling a custom widget through className, style and CSS variables
+// deck-gl example: styling a custom widget with className, style and CSS variables
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

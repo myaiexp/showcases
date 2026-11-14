@@ -1,4 +1,4 @@
-// A feed of positions: every tick builds new layers with the same ids and calls setProps
+// A feed of positions: every tick builds new layers with same ids and setProps
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

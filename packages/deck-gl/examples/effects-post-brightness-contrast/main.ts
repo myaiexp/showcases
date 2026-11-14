@@ -1,4 +1,4 @@
-// PostProcessEffect with brightnessContrast from @luma.gl/effects, props changed from sliders
+// PostProcessEffect with brightnessContrast from @luma.gl/effects, by sliders
 import { Deck, PostProcessEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ArcLayer, ScatterplotLayer } from '@deck.gl/layers';

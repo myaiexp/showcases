@@ -1,4 +1,4 @@
-// LinearInterpolator({around, makeViewport}): zoom and rotate while one screen point stays fixed
+// LinearInterpolator({around, makeViewport}): zoom and rotate about a fixed point
 import { Deck, LinearInterpolator, WebMercatorViewport } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// PingRingLayer: transforms each object into many sublayer rows, keeping accessors on the original
+// PingRingLayer: turns each object into many sublayer rows, keeping its accessors
 import { CompositeLayer } from '@deck.gl/core';
 import type { Accessor, Color, DefaultProps, LayerData, LayerDataSource, Position, UpdateParameters } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

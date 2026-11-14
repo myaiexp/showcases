@@ -1,4 +1,4 @@
-// SwitchWidget: a toggle that works uncontrolled (initialOn) or controlled (the `on` prop)
+// SwitchWidget: a toggle that works uncontrolled (initialOn) or controlled (on)
 import { Widget } from '@deck.gl/core';
 import type { WidgetPlacement, WidgetProps } from '@deck.gl/core';
 

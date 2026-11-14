@@ -1,4 +1,4 @@
-// onHover and onClick: a custom widget that reports the picked object and pins the clicked one
+// onHover and onClick: a custom widget that reports the picked object and pins it
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

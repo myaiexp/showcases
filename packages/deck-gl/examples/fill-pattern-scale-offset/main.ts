@@ -1,4 +1,4 @@
-// FillStyleExtension getFillPatternScale and getFillPatternOffset, per object or fixed
+// FillStyleExtension getFillPatternScale and getFillPatternOffset
 import { Deck } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';
 import { FillStyleExtension, type FillStyleExtensionProps } from '@deck.gl/extensions';

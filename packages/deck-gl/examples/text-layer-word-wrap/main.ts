@@ -1,4 +1,4 @@
-// TextLayer maxWidth, wordBreak and lineHeight: long strings wrapped into text blocks
+// TextLayer maxWidth, wordBreak and lineHeight: long strings wrapped into blocks
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

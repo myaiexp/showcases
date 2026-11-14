@@ -1,4 +1,4 @@
-// MaskExtension maskInverted: one mask, used normally by one layer and inverted by another
+// MaskExtension maskInverted: one mask, normal in one layer, inverted in another
 import { Deck } from '@deck.gl/core';
 import { GeoJsonLayer, ScatterplotLayer } from '@deck.gl/layers';
 import { MaskExtension, type MaskExtensionProps } from '@deck.gl/extensions';

@@ -1,4 +1,4 @@
-// TintedDotLayer: a composite whose getDotColor trigger is (optionally) remapped to the sublayer
+// TintedDotLayer: a composite whose getDotColor trigger is remapped to a sublayer
 import { CompositeLayer } from '@deck.gl/core';
 import type { Accessor, Color, DefaultProps, LayerDataSource, Position } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

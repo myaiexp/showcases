@@ -1,4 +1,4 @@
-// CollisionFilterExtension collisionTestProps: bigger footprints in the test, more spacing
+// CollisionFilterExtension collisionTestProps: bigger footprints, more spacing
 import { Deck } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import { CollisionFilterExtension, type CollisionFilterExtensionProps } from '@deck.gl/extensions';

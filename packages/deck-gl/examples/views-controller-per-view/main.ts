@@ -1,4 +1,4 @@
-// A controller per view: the left map only zooms, the right one only pans, sharing one view state
+// A controller per view: left map only zooms, right only pans, one view state
 import { Deck, MapView } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

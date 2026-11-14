@@ -1,4 +1,4 @@
-// Accessors read outside state: updateTriggers tells deck.gl when to call them again
+// Accessors read outside state: updateTriggers says when to call them again
 import { Deck } from '@deck.gl/core';
 import type { Color, MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

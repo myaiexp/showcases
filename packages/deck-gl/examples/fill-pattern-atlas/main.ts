@@ -1,4 +1,4 @@
-// FillStyleExtension pattern: polygons tiled with sprites from an atlas drawn on a canvas
+// FillStyleExtension pattern: polygons tiled with sprites from a canvas atlas
 import { Deck } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';
 import { FillStyleExtension, type FillStyleExtensionProps } from '@deck.gl/extensions';

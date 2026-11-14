@@ -1,4 +1,4 @@
-// TileLayer minZoom / maxZoom: where tiles exist, and what happens outside that range
+// TileLayer minZoom / maxZoom: where tiles exist, and what happens outside
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TileLayer } from '@deck.gl/geo-layers';

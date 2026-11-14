@@ -1,4 +1,4 @@
-// getDistanceScales(): metres per pixel at the view centre, turned into a scale bar
+// getDistanceScales(): metres per pixel at the view centre, as a scale bar
 import { Deck, WebMercatorViewport } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';
 import { animate, createStage } from '../../shared/stage.ts';

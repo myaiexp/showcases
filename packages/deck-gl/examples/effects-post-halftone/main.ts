@@ -1,4 +1,4 @@
-// Stylising passes from @luma.gl/effects: colour halftone, dot screen, hexagonal pixelate and ink
+// Stylising passes from @luma.gl/effects: halftone, dot screen, hexagonal pixelate
 import { Deck, PostProcessEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

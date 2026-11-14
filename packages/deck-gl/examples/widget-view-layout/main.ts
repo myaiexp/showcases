@@ -1,4 +1,4 @@
-// buildViewsFromViewLayout: an overlay layout (map plus corner minimap) compiled to views
+// buildViewsFromViewLayout: an overlay layout (map plus corner minimap) to views
 import { Deck, MapView } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

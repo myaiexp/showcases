@@ -1,4 +1,4 @@
-// Several PostProcessEffects in one Deck: they run in order, each on the previous one's output
+// Several PostProcessEffects in one Deck: they run in order, each on the last
 import { Deck, PostProcessEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

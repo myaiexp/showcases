@@ -1,4 +1,4 @@
-// _CameraLight lights what faces the camera; a fixed DirectionalLight does not follow the view
+// _CameraLight lights what faces the camera; a fixed DirectionalLight does not
 import { _CameraLight as CameraLight, AmbientLight, Deck, DirectionalLight, LightingEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

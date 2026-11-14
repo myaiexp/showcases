@@ -1,4 +1,4 @@
-// data as a Promise: the layer draws once it resolves, onDataLoad reports the value
+// data as a Promise: the layer draws once it resolves; onDataLoad reports it
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// TileLayer with its default renderSubLayers: GeoJSON per tile, styled by GeoJsonLayer props
+// TileLayer default renderSubLayers: GeoJSON per tile, styled by layer props
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { TileLayer } from '@deck.gl/geo-layers';

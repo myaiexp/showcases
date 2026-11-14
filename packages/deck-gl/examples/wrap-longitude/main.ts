@@ -1,4 +1,4 @@
-// wrapLongitude: lines and polygons take the short way round the world, split at 180 degrees
+// wrapLongitude: lines and polygons take the short way round, split at 180
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { LineLayer, PolygonLayer } from '@deck.gl/layers';

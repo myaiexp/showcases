@@ -1,4 +1,4 @@
-// TileLayer zRange: tall 2.5D content needs tiles beyond the 2D viewport at high pitch
+// TileLayer zRange: tall 2.5D content needs tiles beyond the 2D viewport at pitch
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TileLayer } from '@deck.gl/geo-layers';

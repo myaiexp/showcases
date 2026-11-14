@@ -1,4 +1,4 @@
-// Controller dragMode: a plain drag pans the map or rotates it, the other needs shift or ctrl
+// Controller dragMode: a plain drag pans or rotates, the other needs shift or ctrl
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

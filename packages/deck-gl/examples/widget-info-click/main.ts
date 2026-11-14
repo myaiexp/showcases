@@ -1,4 +1,4 @@
-// InfoWidget in click mode with a DOM element as content and live placement options
+// InfoWidget in click mode with a DOM element as content and placement options
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

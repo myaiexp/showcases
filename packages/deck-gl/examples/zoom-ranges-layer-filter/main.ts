@@ -1,4 +1,4 @@
-// minzoom/maxzoom the deck.gl way: layerFilter per viewport, or the visible prop per layer
+// minzoom/maxzoom the deck.gl way: layerFilter per viewport, or the visible prop
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// getTooltip returning {html, style, className}: a styled tooltip built from the hovered object
+// getTooltip returning {html, style, className}: a styled tooltip from the object
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { ColumnLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// The smallest custom widget: a Widget subclass with a text prop, changed through setProps
+// The smallest custom widget: a Widget subclass with a text prop set via setProps
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, WidgetPlacement } from '@deck.gl/core';
 import '@deck.gl/widgets/stylesheet.css';

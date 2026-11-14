@@ -1,4 +1,4 @@
-// deck-gl example: PostProcessEffect with the brightnessContrast pass from @luma.gl/effects
+// deck-gl example: PostProcessEffect with brightnessContrast from @luma.gl/effects
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

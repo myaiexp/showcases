@@ -1,4 +1,4 @@
-// deck-gl example: subclass a layer to add an instanced attribute and a vertex shader hook
+// deck-gl example: subclass a layer to add an instanced attribute and a hook
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

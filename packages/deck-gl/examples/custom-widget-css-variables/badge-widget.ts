@@ -1,4 +1,4 @@
-// BadgeWidget: styled only through its class name and CSS variables, which apps can override
+// BadgeWidget: styled only via class name and CSS variables that apps can override
 import { Widget } from '@deck.gl/core';
 import type { WidgetPlacement, WidgetProps } from '@deck.gl/core';
 

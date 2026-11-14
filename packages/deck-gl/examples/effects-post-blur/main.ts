@@ -1,4 +1,4 @@
-// Blur passes from @luma.gl/effects as PostProcessEffects: gaussian, triangle, zoom and tilt-shift
+// Blur passes from @luma.gl/effects as PostProcessEffects: gaussian, tilt-shift
 import { Deck, PostProcessEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

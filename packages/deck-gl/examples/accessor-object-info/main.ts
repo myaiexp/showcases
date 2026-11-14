@@ -1,4 +1,4 @@
-// Accessors receive (object, {index, data, target}); target is a reusable output array
+// Accessors receive (object, {index, data, target}); target is a reusable array
 import { Deck } from '@deck.gl/core';
 import type { Color, MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

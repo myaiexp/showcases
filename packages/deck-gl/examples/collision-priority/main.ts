@@ -1,4 +1,4 @@
-// CollisionFilterExtension getCollisionPriority: the higher priority wins an overlap
+// CollisionFilterExtension getCollisionPriority: higher priority wins an overlap
 import { Deck } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import { CollisionFilterExtension, type CollisionFilterExtensionProps } from '@deck.gl/extensions';

@@ -1,4 +1,4 @@
-// StatsWidget: a collapsible FPS and counters panel, with the deck, luma or device stats
+// StatsWidget: a collapsible FPS and counters panel for deck, luma or device
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

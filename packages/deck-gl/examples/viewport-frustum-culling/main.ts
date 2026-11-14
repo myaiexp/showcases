@@ -1,4 +1,4 @@
-// getFrustumPlanes() and projectPosition(): testing points against the camera, in common space
+// getFrustumPlanes() and projectPosition(): testing points against the camera
 import { Deck, MapView, WebMercatorViewport } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

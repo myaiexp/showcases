@@ -1,4 +1,4 @@
-// A SolidPolygonLayer: fill only, with holes from an array of rings and no outlines
+// A SolidPolygonLayer: fill only, with holes from an array of rings, no outlines
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { SolidPolygonLayer } from '@deck.gl/layers';

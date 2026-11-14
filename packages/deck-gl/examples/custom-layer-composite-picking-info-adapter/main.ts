@@ -1,4 +1,4 @@
-// A composite layer's getPickingInfo: rewrite the sublayer's info before the app's onHover sees it
+// A composite layer's getPickingInfo: rewrite the sublayer's info before onHover
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

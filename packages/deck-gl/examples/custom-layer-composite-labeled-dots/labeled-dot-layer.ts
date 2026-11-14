@@ -1,4 +1,4 @@
-// LabeledDotLayer: a CompositeLayer that renders a ScatterplotLayer and a TextLayer
+// LabeledDotLayer: a CompositeLayer rendering a ScatterplotLayer and a TextLayer
 import { CompositeLayer } from '@deck.gl/core';
 import type { Accessor, Color, DefaultProps, LayerDataSource, Position } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

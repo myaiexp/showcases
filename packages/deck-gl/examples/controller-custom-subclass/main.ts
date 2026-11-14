@@ -1,4 +1,4 @@
-// A custom MapController: handleEvent ignores the wheel unless ctrl is held, and says so
+// A custom MapController: handleEvent ignores the wheel unless ctrl is held
 import { Deck, MapController } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

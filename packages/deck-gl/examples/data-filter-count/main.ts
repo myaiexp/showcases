@@ -1,4 +1,4 @@
-// DataFilterExtension countItems: onFilteredItemsChange reports how many objects pass
+// DataFilterExtension countItems: onFilteredItemsChange reports how many pass
 import { Deck } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import { DataFilterExtension, type DataFilterExtensionProps } from '@deck.gl/extensions';

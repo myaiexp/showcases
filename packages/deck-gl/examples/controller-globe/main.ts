@@ -1,4 +1,4 @@
-// GlobeController: inertia keeps the globe spinning after a fling; maxBounds limits where it can look
+// GlobeController: inertia keeps the globe spinning; maxBounds limits the view
 import { Deck, _GlobeView as GlobeView } from '@deck.gl/core';
 import { ScatterplotLayer, SolidPolygonLayer } from '@deck.gl/layers';
 import type { Mount } from '@/types.ts';

@@ -1,4 +1,4 @@
-// SweepScatterplotLayer: vertex hooks that read geometry.worldPosition to light a moving band
+// SweepScatterplotLayer: vertex hooks read geometry.worldPosition to light a band
 import type { DefaultProps } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import type { ScatterplotLayerProps } from '@deck.gl/layers';

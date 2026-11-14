@@ -1,4 +1,4 @@
-// MapView nearZMultiplier and farZMultiplier: scale the near and far planes of a pitched camera
+// MapView nearZMultiplier and farZMultiplier: near and far planes when pitched
 import { Deck, MapView } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import type { Mount } from '@/types.ts';

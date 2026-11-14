@@ -1,4 +1,4 @@
-// PolygonLayer wireframe: edge lines of extruded polygons, alone or over a solid second layer
+// PolygonLayer wireframe: edge lines of extruded polygons, alone or over a layer
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

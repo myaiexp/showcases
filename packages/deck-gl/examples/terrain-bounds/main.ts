@@ -1,4 +1,4 @@
-// TerrainLayer bounds: [left, bottom, right, top] places and scales the image on the map
+// TerrainLayer bounds: [left, bottom, right, top] places and scales the image
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TerrainLayer } from '@deck.gl/geo-layers';

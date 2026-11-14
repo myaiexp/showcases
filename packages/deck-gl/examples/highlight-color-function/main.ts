@@ -1,4 +1,4 @@
-// highlightColor as a function of the picking info: the hovered object picks its own colour
+// highlightColor as a function of picking info: each object picks its colour
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

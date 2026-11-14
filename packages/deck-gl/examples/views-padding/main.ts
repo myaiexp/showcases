@@ -1,4 +1,4 @@
-// View padding moves the look-at point away from the middle: keep a city clear of a side panel
+// View padding moves the look-at point off-centre: keep a city clear of a panel
 import { Deck, MapView } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

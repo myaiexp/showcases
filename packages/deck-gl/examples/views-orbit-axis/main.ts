@@ -1,4 +1,4 @@
-// OrbitView orbitAxis: which axis, Z or Y, the camera can spin around through a full 360 degrees
+// OrbitView orbitAxis: which axis, Z or Y, the camera can spin around fully
 import { COORDINATE_SYSTEM, Deck, OrbitView } from '@deck.gl/core';
 import type { OrbitViewState } from '@deck.gl/core';
 import { LineLayer, PointCloudLayer } from '@deck.gl/layers';

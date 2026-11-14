@@ -1,4 +1,4 @@
-// filterSubLayer: switch a composite layer's sublayers on zoom without re-rendering them
+// filterSubLayer: switch a composite's sublayers on zoom without re-rendering
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

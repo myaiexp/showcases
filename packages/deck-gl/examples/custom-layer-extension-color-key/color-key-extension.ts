@@ -1,4 +1,4 @@
-// ColorKeyExtension: keep only the fragments whose colour is dominated by one channel
+// ColorKeyExtension: keep only fragments whose colour is dominated by one channel
 import { LayerExtension } from '@deck.gl/core';
 import type { CompositeLayer, Layer, UpdateParameters } from '@deck.gl/core';
 import type { ShaderModule } from '@luma.gl/shadertools';

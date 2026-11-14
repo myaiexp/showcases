@@ -1,4 +1,4 @@
-// onTransitionEnd chains LinearInterpolator(['bearing']) legs into a continuous orbit
+// onTransitionEnd chains LinearInterpolator(['bearing']) legs into a camera orbit
 import { Deck, LinearInterpolator } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ColumnLayer } from '@deck.gl/layers';

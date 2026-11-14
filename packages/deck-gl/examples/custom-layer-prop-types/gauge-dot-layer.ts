@@ -1,4 +1,4 @@
-// GaugeDotLayer: defaultProps with explicit prop types, and a counter of real updateState calls
+// GaugeDotLayer: defaultProps with explicit prop types, and an updateState counter
 import { CompositeLayer } from '@deck.gl/core';
 import type { Accessor, Color, DefaultProps, LayerDataSource, Position, UpdateParameters } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

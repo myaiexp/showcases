@@ -1,4 +1,4 @@
-// Widgets chapter: timestamped trips between cities, and a slow promise of sample points
+// Widgets chapter: timestamped trips between cities, and a slow promise of points
 import { CITIES, pointCloud, seeded, type LngLat, type SamplePoint } from './data.ts';
 
 export interface Trip {

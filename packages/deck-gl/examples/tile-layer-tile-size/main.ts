@@ -1,4 +1,4 @@
-// TileLayer tileSize: smaller tiles, higher zoom level, more tiles to fill the screen
+// TileLayer tileSize: smaller tiles, higher zoom level, more tiles on screen
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TileLayer } from '@deck.gl/geo-layers';

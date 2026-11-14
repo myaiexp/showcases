@@ -1,4 +1,4 @@
-// ScrollbarWidget: scroll an OrthographicView over a wide content area, with decorations
+// ScrollbarWidget: scroll an OrthographicView over a wide content area, decorated
 import { COORDINATE_SYSTEM, Deck, OrthographicView } from '@deck.gl/core';
 import type { OrthographicViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

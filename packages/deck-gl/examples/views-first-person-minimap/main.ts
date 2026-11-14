@@ -1,4 +1,4 @@
-// A driver's view and a minimap: layerFilter keeps the car out of the first-person camera
+// A driver's view and a minimap: layerFilter keeps the car out of the driver view
 import { Deck, FirstPersonView, MapView } from '@deck.gl/core';
 import type { FirstPersonViewState, MapViewState } from '@deck.gl/core';
 import { PathLayer, PolygonLayer, ScatterplotLayer } from '@deck.gl/layers';

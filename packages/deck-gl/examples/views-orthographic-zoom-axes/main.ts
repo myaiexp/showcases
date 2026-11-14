@@ -1,4 +1,4 @@
-// OrthographicView zoomX and zoomY stretch the axes independently; zoom sizes common-unit shapes
+// OrthographicView zoomX and zoomY stretch axes independently; zoom sizes shapes
 import { COORDINATE_SYSTEM, Deck, OrthographicView } from '@deck.gl/core';
 import type { OrthographicViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

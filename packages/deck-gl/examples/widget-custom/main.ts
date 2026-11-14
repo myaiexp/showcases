@@ -1,4 +1,4 @@
-// A custom Widget subclass: a live view readout using onViewportChange, onClick and updateHTML
+// A custom Widget subclass: a live view readout via onViewportChange, updateHTML
 import { Deck, Widget, WebMercatorViewport } from '@deck.gl/core';
 import type { MapViewState, PickingInfo, Viewport, WidgetPlacement, WidgetProps } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

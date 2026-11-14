@@ -1,4 +1,4 @@
-// TerrainExtension terrainDrawMode: a trail draped over the surface or lifted point by point
+// TerrainExtension terrainDrawMode: a trail draped over the surface or lifted
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TerrainLayer } from '@deck.gl/geo-layers';

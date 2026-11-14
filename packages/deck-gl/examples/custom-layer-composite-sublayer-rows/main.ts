@@ -1,4 +1,4 @@
-// getSubLayerRow and getSubLayerAccessor: a composite expands each object into rows but keeps its API
+// getSubLayerRow and getSubLayerAccessor: a composite expands objects into rows
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

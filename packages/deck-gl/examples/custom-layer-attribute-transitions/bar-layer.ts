@@ -1,4 +1,4 @@
-// BarLayer: pixel-space bars rising from a position, with transitioned height and colour attributes
+// BarLayer: pixel-space bars with transitioned height and colour attributes
 import { Layer, picking, project32 } from '@deck.gl/core';
 import type { Accessor, Color, DefaultProps, LayerDataSource, Position } from '@deck.gl/core';
 import { Geometry, Model } from '@luma.gl/engine';

@@ -1,4 +1,4 @@
-// Toggle a 15,000-point layer two ways and count how often its accessor runs on the way back
+// Toggle a 15,000-point layer two ways and count how often its accessor runs
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// ZoomWidget options: horizontal orientation, zoomStep, transition and custom tooltips
+// ZoomWidget options: horizontal orientation, zoomStep, transition, tooltips
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

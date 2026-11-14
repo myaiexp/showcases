@@ -1,4 +1,4 @@
-// PointLight orbiting the block: position in lng/lat/altitude, attenuation for distance falloff
+// PointLight orbiting the block: lng/lat/altitude position, distance attenuation
 import { AmbientLight, Deck, LightingEffect, PointLight } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer, ScatterplotLayer } from '@deck.gl/layers';

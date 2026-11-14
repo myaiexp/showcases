@@ -1,4 +1,4 @@
-// Warp passes from @luma.gl/effects: swirl and bulgePinch around a centre that follows the pointer
+// Warp passes from @luma.gl/effects: swirl and bulgePinch following the pointer
 import { Deck, PostProcessEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

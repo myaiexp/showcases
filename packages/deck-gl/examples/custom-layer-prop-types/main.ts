@@ -1,4 +1,4 @@
-// Prop types decide what counts as a change: equal colours, new closures and equal objects do not update
+// Prop types decide what counts as a change: equal colours, objects do not update
 import { Deck } from '@deck.gl/core';
 import type { Color, MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

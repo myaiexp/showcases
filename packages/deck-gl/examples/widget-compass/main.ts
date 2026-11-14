@@ -1,4 +1,4 @@
-// CompassWidget: shows bearing and pitch; click to level the bearing, click again for pitch
+// CompassWidget: shows bearing and pitch; click to level bearing, again for pitch
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

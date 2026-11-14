@@ -1,4 +1,4 @@
-// deck-gl example: an async layer prop resolved from a Promise, with transform and release
+// deck-gl example: an async layer prop resolved from a Promise
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

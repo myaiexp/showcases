@@ -1,4 +1,4 @@
-// GlobeView resolution and parameters: how finely flat shapes bend, and whether back faces draw
+// GlobeView resolution and parameters: how finely shapes bend, back faces draw
 import { Deck, _GlobeView as GlobeView } from '@deck.gl/core';
 import { SolidPolygonLayer } from '@deck.gl/layers';
 import type { Mount } from '@/types.ts';

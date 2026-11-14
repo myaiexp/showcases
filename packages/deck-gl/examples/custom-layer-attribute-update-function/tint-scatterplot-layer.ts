@@ -1,4 +1,4 @@
-// TintScatterplotLayer: an attribute filled by an update function, invalidated by hand
+// TintScatterplotLayer: an attribute filled by an update function, by hand
 import type { Accessor, Attribute, DefaultProps, UpdateParameters } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import type { ScatterplotLayerProps } from '@deck.gl/layers';

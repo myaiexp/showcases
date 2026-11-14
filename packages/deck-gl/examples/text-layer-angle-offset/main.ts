@@ -1,4 +1,4 @@
-// TextLayer getAngle, getPixelOffset and billboard: rotated labels beside their points
+// TextLayer getAngle, getPixelOffset and billboard: rotated labels beside points
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

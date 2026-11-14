@@ -1,4 +1,4 @@
-// PathLayer widths in meters, common units or pixels, with scale and min/max pixel limits
+// PathLayer widths in meters, common units or pixels, with min/max pixel limits
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PathLayer } from '@deck.gl/layers';

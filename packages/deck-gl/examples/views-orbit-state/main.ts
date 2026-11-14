@@ -1,4 +1,4 @@
-// OrbitView state: rotationX, rotationOrbit, zoom and target, with rotationX limited by minRotationX
+// OrbitView state: rotationX, rotationOrbit, zoom, target and minRotationX
 import { COORDINATE_SYSTEM, Deck, OrbitView } from '@deck.gl/core';
 import type { OrbitViewState } from '@deck.gl/core';
 import { LineLayer, PointCloudLayer } from '@deck.gl/layers';

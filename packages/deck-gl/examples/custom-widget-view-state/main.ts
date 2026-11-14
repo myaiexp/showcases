@@ -1,4 +1,4 @@
-// A widget that drives the camera: getViewState and setViewState from buttons it renders itself
+// A widget that drives the camera: getViewState and setViewState from its buttons
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

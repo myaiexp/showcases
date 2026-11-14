@@ -1,4 +1,4 @@
-// ViewportReadoutWidget: onViewportChange and updateHTML, re-rendering only when a value changed
+// ViewportReadoutWidget: onViewportChange and updateHTML, rendering only on change
 import { Widget } from '@deck.gl/core';
 import type { Viewport, WidgetPlacement, WidgetProps } from '@deck.gl/core';
 

@@ -1,4 +1,4 @@
-// Three ways to change a scatterplot, and how many times each one calls the getRadius accessor
+// Three ways to change a scatterplot, and how often each calls getRadius
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

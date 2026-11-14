@@ -1,4 +1,4 @@
-// ClipExtension clipByInstance: clip circles by their anchor point or by their shape
+// ClipExtension clipByInstance: clip circles by anchor point or by their shape
 import { Deck } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import { ClipExtension, type ClipExtensionProps } from '@deck.gl/extensions';

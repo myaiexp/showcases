@@ -1,4 +1,4 @@
-// Screen position of a coordinate in a Deck's first viewport, for pointer-free picking probes
+// Screen position of a coordinate in a Deck's first viewport, for picking probes
 import type { Deck } from '@deck.gl/core';
 
 /** Pixel position of `lngLat` in the canvas, or null before the first viewport exists. */

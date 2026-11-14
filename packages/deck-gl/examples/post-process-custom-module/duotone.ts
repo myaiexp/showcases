@@ -1,4 +1,4 @@
-// A hand-written screen-space filter module for PostProcessEffect: duotone by brightness
+// A hand-written screen-space filter module for PostProcessEffect: duotone
 import type { ShaderPass } from '@luma.gl/shadertools';
 
 export interface DuotoneProps {

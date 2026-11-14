@@ -1,4 +1,4 @@
-// PointCloudLayer getNormal: per-point normals shade a sphere, a constant normal flattens it
+// PointCloudLayer getNormal: per-point normals shade a sphere, a constant one not
 import { COORDINATE_SYSTEM, Deck, OrbitView } from '@deck.gl/core';
 import { PointCloudLayer } from '@deck.gl/layers';
 import type { Mount } from '@/types.ts';

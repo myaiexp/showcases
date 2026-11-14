@@ -1,4 +1,4 @@
-// A stable layer id keeps layer state, so new positions glide; a fresh id rebuilds the layer
+// A stable layer id keeps layer state so positions glide; a fresh id rebuilds it
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

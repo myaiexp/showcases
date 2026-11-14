@@ -1,4 +1,4 @@
-// onDragStart, onDrag and onDragEnd on a layer: drag its points and the polygon follows
+// onDragStart, onDrag, onDragEnd on a layer: drag points, the polygon follows
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { PolygonLayer, ScatterplotLayer } from '@deck.gl/layers';

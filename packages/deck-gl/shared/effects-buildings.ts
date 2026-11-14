@@ -1,4 +1,4 @@
-// A seeded block of box-shaped buildings on a flat ground, for lighting and shadows
+// A seeded block of box-shaped buildings on flat ground, for lighting, shadows
 import { seeded, type LngLat } from './data.ts';
 
 export interface Building {

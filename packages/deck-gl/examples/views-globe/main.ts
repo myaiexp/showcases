@@ -1,4 +1,4 @@
-// GlobeView: the shared world on a 3D globe, with a polygon for the ocean to stop see-through
+// GlobeView: the shared world on a 3D globe, with an ocean polygon behind it
 import { Deck, _GlobeView as GlobeView } from '@deck.gl/core';
 import { ScatterplotLayer, SolidPolygonLayer } from '@deck.gl/layers';
 import type { Mount } from '@/types.ts';

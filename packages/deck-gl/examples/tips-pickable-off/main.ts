@@ -1,4 +1,4 @@
-// Deck _pickable: false switches picking off for the whole deck; hover shows what it answers
+// Deck _pickable: false switches picking off for the whole deck
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

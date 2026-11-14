@@ -1,4 +1,4 @@
-// deck.pickObjectAsync({x, y, radius}): a probe at the click finds the closest object in reach
+// deck.pickObjectAsync({x, y, radius}): a probe finds the closest object in reach
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

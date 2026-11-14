@@ -1,4 +1,4 @@
-// A View's viewState prop extends a shared view state: an overview that pins zoom, pitch and bearing
+// A View's viewState prop extends a shared view state: an overview pins zoom
 import { Deck, MapView } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

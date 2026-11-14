@@ -1,4 +1,4 @@
-// ScatterplotLayer radiusUnits: meters and common units scale with the map, pixels do not
+// ScatterplotLayer radiusUnits: meters and common units scale with zoom, pixels no
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

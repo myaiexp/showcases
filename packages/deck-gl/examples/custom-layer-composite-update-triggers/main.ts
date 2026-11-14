@@ -1,4 +1,4 @@
-// Forwarding updateTriggers through a composite layer: remap the parent's names to the sublayer's
+// Forwarding updateTriggers through a composite layer to the sublayer
 import { Deck } from '@deck.gl/core';
 import type { Color, MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

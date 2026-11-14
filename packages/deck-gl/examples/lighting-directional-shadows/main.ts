@@ -1,4 +1,4 @@
-// DirectionalLight({_shadow}), LightingEffect.shadowColor and a layer's shadowEnabled opt-out
+// DirectionalLight({_shadow}), LightingEffect.shadowColor, shadowEnabled opt-out
 import { AmbientLight, Deck, DirectionalLight, LightingEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

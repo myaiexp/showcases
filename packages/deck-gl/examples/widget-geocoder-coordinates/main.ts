@@ -1,4 +1,4 @@
-// GeocoderWidget with the built-in coordinates geocoder: type "lng, lat" to fly there
+// GeocoderWidget with the coordinates geocoder: type "lng, lat" to fly there
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

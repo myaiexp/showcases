@@ -1,4 +1,4 @@
-// Async props: palette is a Promise; the layer draws grey until it resolves, then recolours
+// Async props: palette is a Promise; the layer draws grey until it resolves
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

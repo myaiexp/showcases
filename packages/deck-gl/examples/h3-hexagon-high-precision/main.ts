@@ -1,4 +1,4 @@
-// H3HexagonLayer: highPrecision 'auto', true or false on coarse cells and pentagons
+// H3HexagonLayer: highPrecision 'auto', true or false on coarse cells, pentagons
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { H3HexagonLayer } from '@deck.gl/geo-layers';

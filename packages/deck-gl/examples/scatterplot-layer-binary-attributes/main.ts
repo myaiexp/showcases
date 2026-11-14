@@ -1,4 +1,4 @@
-// ScatterplotLayer fed typed arrays through data.attributes: 50,000 circles with no accessors
+// ScatterplotLayer typed arrays via data.attributes: 50,000 circles, no accessors
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

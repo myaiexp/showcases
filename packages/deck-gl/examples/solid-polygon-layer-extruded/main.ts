@@ -1,4 +1,4 @@
-// SolidPolygonLayer extruded: heights, elevationScale, and a second layer for the wireframe
+// SolidPolygonLayer extruded: heights, elevationScale, second wireframe layer
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { SolidPolygonLayer } from '@deck.gl/layers';

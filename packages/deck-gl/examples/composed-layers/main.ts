@@ -1,4 +1,4 @@
-// Several layers in one Deck, drawn in array order, with nested arrays and falsy entries
+// Several layers in one Deck, drawn in array order, with nested arrays and falsy
 import { Deck } from '@deck.gl/core';
 import type { LayersList, MapViewState } from '@deck.gl/core';
 import { ArcLayer, ScatterplotLayer, TextLayer } from '@deck.gl/layers';

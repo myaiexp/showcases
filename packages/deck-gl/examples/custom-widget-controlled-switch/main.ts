@@ -1,4 +1,4 @@
-// Controlled and uncontrolled widget state: one switch keeps its own, one is driven by the app
+// Controlled and uncontrolled widget state: one switch is app-driven, one is not
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

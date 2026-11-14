@@ -1,4 +1,4 @@
-// PathStyleExtension dashGapPickable: hover the gaps between dashes, or only the dashes
+// PathStyleExtension dashGapPickable: hover the gaps between dashes, or not
 import { Deck } from '@deck.gl/core';
 import { PathLayer } from '@deck.gl/layers';
 import { PathStyleExtension, type PathStyleExtensionProps } from '@deck.gl/extensions';

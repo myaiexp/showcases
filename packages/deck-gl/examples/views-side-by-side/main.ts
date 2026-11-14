@@ -1,4 +1,4 @@
-// Two MapViews share one canvas through x and width, and one viewState keeps them in step
+// Two MapViews share one canvas via x and width, one viewState keeps them in step
 import { Deck, MapView } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

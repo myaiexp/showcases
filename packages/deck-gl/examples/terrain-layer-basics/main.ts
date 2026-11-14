@@ -1,4 +1,4 @@
-// TerrainLayer: a mesh from a height-map image (drawn in code), textured and placed by bounds
+// TerrainLayer: a mesh from a height-map image drawn in code, placed by bounds
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TerrainLayer } from '@deck.gl/geo-layers';

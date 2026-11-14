@@ -1,4 +1,4 @@
-// PolygonLayer outline joints: lineJointRounded, lineMiterLimit and lineAntialiasing on stars
+// PolygonLayer outline joints: lineJointRounded, lineMiterLimit, lineAntialiasing
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// ClipExtension clipBounds: a GeoJsonLayer cut to a rectangle in longitude and latitude
+// ClipExtension clipBounds: a GeoJsonLayer cut to a longitude/latitude rectangle
 import { Deck } from '@deck.gl/core';
 import { GeoJsonLayer } from '@deck.gl/layers';
 import { ClipExtension, type ClipExtensionProps } from '@deck.gl/extensions';

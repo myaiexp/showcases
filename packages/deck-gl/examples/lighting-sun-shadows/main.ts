@@ -1,4 +1,4 @@
-// A SunLight with _shadow: a day's worth of timestamps sweeps the shadows across the ground
+// A SunLight with _shadow: a day of timestamps sweeps shadows across the ground
 import { _SunLight as SunLight, AmbientLight, Deck, LightingEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

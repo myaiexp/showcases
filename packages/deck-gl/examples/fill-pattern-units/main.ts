@@ -1,4 +1,4 @@
-// FillStyleExtension fillPatternSizeUnits: pattern tiles that zoom with the map or not
+// FillStyleExtension fillPatternSizeUnits: tiles that zoom with the map or not
 import { Deck } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';
 import { FillStyleExtension, type FillStyleExtensionProps } from '@deck.gl/extensions';

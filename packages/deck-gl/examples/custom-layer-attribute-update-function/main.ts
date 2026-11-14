@@ -1,4 +1,4 @@
-// An attribute with an update function: filled when invalidated, for all rows or just a range
+// An attribute with an update function: filled when invalidated, whole or ranged
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

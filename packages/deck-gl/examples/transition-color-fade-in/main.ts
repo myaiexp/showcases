@@ -1,4 +1,4 @@
-// Attribute transitions on colour and radius; enter backfills new points as transparent
+// Attribute transitions on colour and radius; enter backfills new points
 import { Deck } from '@deck.gl/core';
 import type { Color, MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

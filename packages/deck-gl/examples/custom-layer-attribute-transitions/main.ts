@@ -1,4 +1,4 @@
-// Attribute transitions: a custom layer's height and colour attributes interpolate on data change
+// Attribute transitions: a custom layer's height and colour interpolate on change
 import { Deck } from '@deck.gl/core';
 import type { Color, MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

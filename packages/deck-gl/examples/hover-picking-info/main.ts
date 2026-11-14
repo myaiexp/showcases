@@ -1,4 +1,4 @@
-// The PickingInfo object handed to onHover: picked, index, layer, sourceLayer, x, y, coordinate
+// The PickingInfo handed to onHover: picked, index, layer, sourceLayer, x, y
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

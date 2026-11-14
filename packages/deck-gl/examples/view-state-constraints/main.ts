@@ -1,4 +1,4 @@
-// onViewStateChange can rewrite the view state: here it clamps the camera to a bounding box
+// onViewStateChange can rewrite the view state: here it clamps the camera to a box
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PathLayer } from '@deck.gl/layers';

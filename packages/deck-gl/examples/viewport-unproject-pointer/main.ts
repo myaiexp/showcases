@@ -1,4 +1,4 @@
-// viewport.unproject(): pixels back to longitude and latitude, on the ground or at a chosen height
+// viewport.unproject(): pixels back to longitude and latitude, ground or raised
 import { Deck, WebMercatorViewport } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// ScatterplotLayer billboard: circles lie flat on the ground, or always face the camera
+// ScatterplotLayer billboard: circles lie flat on the ground, or face the camera
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

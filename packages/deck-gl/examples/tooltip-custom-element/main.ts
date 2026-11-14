@@ -1,4 +1,4 @@
-// A custom tooltip: onHover moves your own element to the pointer, with no getTooltip
+// A custom tooltip: onHover moves your own element to the pointer, no getTooltip
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

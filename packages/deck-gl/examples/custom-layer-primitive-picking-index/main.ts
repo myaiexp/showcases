@@ -1,4 +1,4 @@
-// Custom picking: rowIndexes maps every star instance to its constellation, so one hover picks all
+// Custom picking: rowIndexes maps star instances to constellations, one hover
 import { Deck } from '@deck.gl/core';
 import type { Color, MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

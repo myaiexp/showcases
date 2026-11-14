@@ -1,4 +1,4 @@
-// ContextMenuWidget: a right-click menu whose items depend on the object under the pointer
+// ContextMenuWidget: a right-click menu whose items depend on the object under it
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

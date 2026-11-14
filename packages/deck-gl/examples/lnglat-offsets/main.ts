@@ -1,4 +1,4 @@
-// coordinateSystem LNGLAT_OFFSETS: positions are degrees of longitude and latitude from coordinateOrigin
+// coordinateSystem LNGLAT_OFFSETS: positions are degrees from coordinateOrigin
 import { COORDINATE_SYSTEM, Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PathLayer, ScatterplotLayer } from '@deck.gl/layers';

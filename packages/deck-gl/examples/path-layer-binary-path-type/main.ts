@@ -1,4 +1,4 @@
-// PathLayer fed binary attributes with startIndices, skipping normalization via _pathType
+// PathLayer binary attributes with startIndices, skipping _pathType normalization
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PathLayer } from '@deck.gl/layers';

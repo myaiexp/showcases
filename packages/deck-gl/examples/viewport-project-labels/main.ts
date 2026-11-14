@@ -1,4 +1,4 @@
-// viewport.project(): HTML labels follow cities, placed from the Deck's current WebMercatorViewport
+// viewport.project(): HTML labels follow cities from the WebMercatorViewport
 import { Deck, WebMercatorViewport } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

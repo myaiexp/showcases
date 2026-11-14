@@ -1,4 +1,4 @@
-// MapController maxBounds, maxBoundsPadding and rubberBand: keep the camera inside a box
+// MapController maxBounds, maxBoundsPadding, rubberBand: keep camera in a box
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PathLayer } from '@deck.gl/layers';

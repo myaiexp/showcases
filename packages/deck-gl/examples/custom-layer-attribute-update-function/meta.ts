@@ -1,4 +1,4 @@
-// deck-gl example: an attribute filled by an update function and invalidated for a row range
+// deck-gl example: an attribute filled by an update function and invalidated
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

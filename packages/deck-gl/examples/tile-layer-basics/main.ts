@@ -1,4 +1,4 @@
-// TileLayer: getTileData makes each tile, renderSubLayers shows it, picking reports the index
+// TileLayer: getTileData makes each tile, renderSubLayers shows it, picking index
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { TileLayer } from '@deck.gl/geo-layers';

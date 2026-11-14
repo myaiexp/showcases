@@ -1,4 +1,4 @@
-// Billboarded labels share depth with the ground; parameters.depthCompare = 'always' turns that off
+// Billboarded labels share depth with the ground; depthCompare 'always' stops it
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

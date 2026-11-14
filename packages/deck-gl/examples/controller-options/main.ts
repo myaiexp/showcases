@@ -1,4 +1,4 @@
-// Controller options on and off: scrollZoom, dragPan, dragRotate, doubleClickZoom, touchZoom, keyboard
+// Controller options on and off: scrollZoom, dragPan, dragRotate, keyboard, more
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// IconLayer getIcon: {url, width, height} with url a data URL made from an SVG string
+// IconLayer getIcon: {url, width, height} with url a data URL made from SVG
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { IconLayer } from '@deck.gl/layers';

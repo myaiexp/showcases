@@ -1,4 +1,4 @@
-// Geo layers chapter: cell ids made from coordinates (geohash, quadkey, S2, A5, counts)
+// Geo layers chapter: cell ids made from coordinates (geohash, quadkey, S2, A5)
 import { lonLatToCell, u64ToHex } from 'a5-js';
 import type { LngLat } from './data.ts';
 

@@ -1,4 +1,4 @@
-// PostProcessEffect(shaderModule, props): a custom filter pass over the finished canvas
+// PostProcessEffect(shaderModule, props): a custom filter pass over the canvas
 import { Deck, PostProcessEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

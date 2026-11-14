@@ -1,4 +1,4 @@
-// TextLayer sizeUnits, sizeScale and the min/max pixel clamps for labels sized in meters
+// TextLayer sizeUnits, sizeScale and pixel clamps for labels sized in meters
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TextLayer } from '@deck.gl/layers';

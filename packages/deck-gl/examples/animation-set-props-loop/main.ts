@@ -1,4 +1,4 @@
-// Custom animation: a frame loop re-creates the layer with a new radiusScale and opacity
+// Custom animation: a frame loop re-creates the layer with new radiusScale
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

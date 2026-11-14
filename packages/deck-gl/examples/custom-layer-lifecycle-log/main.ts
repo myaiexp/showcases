@@ -1,4 +1,4 @@
-// The layer lifecycle, logged: initializeState, shouldUpdateState, updateState, draw, finalizeState
+// The layer lifecycle, logged: initializeState, shouldUpdateState, updateState
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

@@ -1,4 +1,4 @@
-// deck-gl example: a LayerExtension with constructor options, props and a draw hook
+// deck-gl example: a LayerExtension with options, props and a draw hook
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

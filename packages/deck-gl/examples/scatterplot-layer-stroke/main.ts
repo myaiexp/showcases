@@ -1,4 +1,4 @@
-// ScatterplotLayer outlines: filled, stroked, getLineColor, getLineWidth and its units
+// ScatterplotLayer outlines: filled, stroked, getLineColor, getLineWidth and units
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

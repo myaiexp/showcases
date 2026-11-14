@@ -1,4 +1,4 @@
-// transitionEasing on a camera move, with the easing curve plotted beside the result
+// transitionEasing on a camera move, with the easing curve plotted beside it
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

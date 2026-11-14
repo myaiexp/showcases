@@ -1,4 +1,4 @@
-// PulsingScatterplotLayer: ScatterplotLayer plus an instanced attribute and a size hook
+// PulsingScatterplotLayer: ScatterplotLayer plus an instanced attribute, size hook
 import type { Accessor, DefaultProps } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import type { ScatterplotLayerProps } from '@deck.gl/layers';

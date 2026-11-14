@@ -1,4 +1,4 @@
-// A minimap: two overlapping MapViews, a viewState per view id, the minimap following the main view
+// A minimap: two overlapping MapViews, a viewState per view id, one following
 import { Deck, MapView } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

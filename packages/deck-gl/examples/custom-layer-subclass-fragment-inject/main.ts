@@ -1,4 +1,4 @@
-// Subclassing with getShaders: an injected fragment hook and a uniform set from updateState
+// Subclassing with getShaders: an injected fragment hook and a uniform
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

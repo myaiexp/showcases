@@ -1,4 +1,4 @@
-// deck-gl example: override getShaders with a fragment inject hook and a custom uniform
+// deck-gl example: getShaders with a fragment inject hook and a custom uniform
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

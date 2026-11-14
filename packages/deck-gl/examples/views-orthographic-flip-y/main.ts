@@ -1,4 +1,4 @@
-// OrthographicView flipY: top-left coordinates with y growing downward, or bottom-left with y up
+// OrthographicView flipY: top-left origin with y down, or bottom-left with y up
 import { COORDINATE_SYSTEM, Deck, OrthographicView } from '@deck.gl/core';
 import type { OrthographicViewState } from '@deck.gl/core';
 import { LineLayer, PathLayer, TextLayer } from '@deck.gl/layers';

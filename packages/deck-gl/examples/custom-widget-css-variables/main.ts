@@ -1,4 +1,4 @@
-// Customising a widget's style: className, the style prop and CSS variables, per instance
+// Customising a widget's style: className, style prop and CSS variables
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import '@deck.gl/widgets/stylesheet.css';

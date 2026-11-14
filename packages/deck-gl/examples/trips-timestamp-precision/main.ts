@@ -1,4 +1,4 @@
-// TripsLayer getTimestamps: epoch milliseconds lose precision as float32 unless offset
+// TripsLayer getTimestamps: epoch ms lose float32 precision unless offset
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TripsLayer } from '@deck.gl/geo-layers';

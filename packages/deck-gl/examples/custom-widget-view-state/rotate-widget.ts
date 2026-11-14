@@ -1,4 +1,4 @@
-// RotateWidget: buttons that read and write the view state of the views it is attached to
+// RotateWidget: buttons that read and write the view state of the attached views
 import { FlyToInterpolator, Widget } from '@deck.gl/core';
 import type { WidgetPlacement, WidgetProps } from '@deck.gl/core';
 

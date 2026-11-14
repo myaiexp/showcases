@@ -1,4 +1,4 @@
-// LoggingScatterplotLayer: every lifecycle method reports to a log, then runs its parent's version
+// LoggingScatterplotLayer: every lifecycle method logs, then runs its parent's
 import type { DefaultProps, LayerContext, UpdateParameters } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import type { ScatterplotLayerProps } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// A flat PolygonLayer: filled and stroked city blocks coloured by a value, with a tooltip
+// A flat PolygonLayer: filled and stroked city blocks coloured by value, tooltip
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

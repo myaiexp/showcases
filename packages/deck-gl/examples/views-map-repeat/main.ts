@@ -1,4 +1,4 @@
-// MapView repeat: copies of the world fill the screen beyond the antimeridian at low zoom
+// MapView repeat: copies of the world fill the screen beyond the antimeridian
 import { Deck, MapView } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import type { Mount } from '@/types.ts';

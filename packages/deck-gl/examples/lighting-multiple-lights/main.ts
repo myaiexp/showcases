@@ -1,4 +1,4 @@
-// One LightingEffect holding an ambient, two directional and two point lights under custom keys
+// One LightingEffect holding an ambient, two directional and two point lights
 import { AmbientLight, Deck, DirectionalLight, LightingEffect, PointLight } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

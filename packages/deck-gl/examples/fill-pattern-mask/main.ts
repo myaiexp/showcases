@@ -1,4 +1,4 @@
-// FillStyleExtension fillPatternMask: the atlas is a stencil (fill colour) or a picture
+// FillStyleExtension fillPatternMask: the atlas is a stencil or a picture
 import { Deck } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';
 import { FillStyleExtension, type FillStyleExtensionProps } from '@deck.gl/extensions';

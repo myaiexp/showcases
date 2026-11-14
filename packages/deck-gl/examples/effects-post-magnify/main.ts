@@ -1,4 +1,4 @@
-// The magnify pass from @luma.gl/effects: a lens over the map, positioned in screen coordinates
+// The magnify pass from @luma.gl/effects: a lens over the map in screen space
 import { Deck, PostProcessEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

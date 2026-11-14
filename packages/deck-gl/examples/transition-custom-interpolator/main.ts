@@ -1,4 +1,4 @@
-// A custom TransitionInterpolator against the stock LinearInterpolator across the antimeridian
+// A custom TransitionInterpolator against LinearInterpolator at the antimeridian
 import { Deck, LinearInterpolator } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

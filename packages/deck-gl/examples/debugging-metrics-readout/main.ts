@@ -1,4 +1,4 @@
-// _onMetrics: a once-a-second table of Deck's own counters, driven by buttons that cause work
+// _onMetrics: a once-a-second table of Deck's counters, driven by buttons
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

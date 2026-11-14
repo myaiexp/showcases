@@ -1,4 +1,4 @@
-// Subclassing with several vertex hooks: #decl, #main-start, DECKGL_FILTER_SIZE and DECKGL_FILTER_COLOR
+// Subclassing with vertex hooks: #decl, #main-start, DECKGL_FILTER_SIZE and _COLOR
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import type { Mount } from '@/types.ts';

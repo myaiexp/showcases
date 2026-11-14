@@ -1,4 +1,4 @@
-// data as an async iterable: batches stream in; dataTransform keeps a sliding window
+// data as an async iterable: batches stream in; dataTransform slides a window
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// onClick on a layer selects an object; the selection re-colours it through updateTriggers
+// onClick selects an object; the selection re-colours it through updateTriggers
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// A LayerExtension, written once, filters a GeoJsonLayer's polygons, lines and points alike
+// A LayerExtension, written once, filters a GeoJsonLayer's polygons, lines, points
 import { Deck } from '@deck.gl/core';
 import type { Color, MapViewState } from '@deck.gl/core';
 import { GeoJsonLayer } from '@deck.gl/layers';

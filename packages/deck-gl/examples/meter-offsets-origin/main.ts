@@ -1,4 +1,4 @@
-// coordinateSystem METER_OFFSETS: positions are metres east and north of coordinateOrigin
+// coordinateSystem METER_OFFSETS: positions are metres east and north of origin
 import { COORDINATE_SYSTEM, Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { LineLayer, ScatterplotLayer } from '@deck.gl/layers';

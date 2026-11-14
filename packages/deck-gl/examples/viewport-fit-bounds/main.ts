@@ -1,4 +1,4 @@
-// WebMercatorViewport.fitBounds(): a camera that frames a group of cities, then flown to
+// WebMercatorViewport.fitBounds(): a camera framing a group of cities, flown to
 import { Deck, FlyToInterpolator, WebMercatorViewport } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PathLayer, ScatterplotLayer } from '@deck.gl/layers';

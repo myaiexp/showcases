@@ -1,4 +1,4 @@
-// SolidPolygonLayer fed binary attributes: packed vertices, per-vertex heights and colours
+// SolidPolygonLayer fed binary attributes: packed vertices, heights and colours
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { SolidPolygonLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// BrushingExtension custom target: paths brushed by a position from getBrushingTarget
+// BrushingExtension custom target: paths brushed by a getBrushingTarget position
 import { Deck } from '@deck.gl/core';
 import { PathLayer } from '@deck.gl/layers';
 import { BrushingExtension, type BrushingExtensionProps } from '@deck.gl/extensions';

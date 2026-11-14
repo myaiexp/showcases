@@ -1,4 +1,4 @@
-// TileLayer in an OrthographicView: tile x, y count from the origin in tileSize steps
+// TileLayer in an OrthographicView: tile x, y count from origin in tileSize steps
 import { Deck, OrthographicView } from '@deck.gl/core';
 import type { OrthographicViewState, PickingInfo } from '@deck.gl/core';
 import { TileLayer } from '@deck.gl/geo-layers';

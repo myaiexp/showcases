@@ -1,4 +1,4 @@
-// Widgets per view: viewId pins a widget to one of two MapViews, the others use the whole canvas
+// Widgets per view: viewId pins a widget to one of two MapViews
 import { Deck, MapView } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

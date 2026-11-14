@@ -1,4 +1,4 @@
-// PolygonLayer extruded: getElevation heights, scaled with elevationScale, lit from above
+// PolygonLayer extruded: getElevation heights, elevationScale, lit from above
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

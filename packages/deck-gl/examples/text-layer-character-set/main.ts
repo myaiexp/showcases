@@ -1,4 +1,4 @@
-// TextLayer characterSet: the default ASCII range, an explicit list, or 'auto' from the data
+// TextLayer characterSet: default ASCII, an explicit list, or 'auto' from data
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TextLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// Geo layers chapter: canvas-drawn map tiles, a drawn height map, trips, tile features
+// Geo layers chapter: canvas-drawn map tiles, a height map, trips, tile features
 import type { Feature, Point } from 'geojson';
 import { seeded, type City, type LngLat } from './data.ts';
 

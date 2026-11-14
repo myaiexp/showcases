@@ -1,4 +1,4 @@
-// _SunLight positions a directional light from a timestamp; the slider is the hour of the day
+// _SunLight positions a directional light from a timestamp; the slider is the hour
 import { _SunLight as SunLight, AmbientLight, Deck, LightingEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

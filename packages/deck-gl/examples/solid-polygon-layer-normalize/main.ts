@@ -1,4 +1,4 @@
-// SolidPolygonLayer _normalize: false with flat closed rings, and the _windingOrder that must match
+// SolidPolygonLayer _normalize: false with flat closed rings and _windingOrder
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { SolidPolygonLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// TextLayer fontSettings sdf: sharp scaling text, with outlineWidth and outlineColor
+// TextLayer fontSettings sdf: sharp scaling text, outlineWidth and outlineColor
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TextLayer } from '@deck.gl/layers';

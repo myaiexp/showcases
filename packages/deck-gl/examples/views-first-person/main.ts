@@ -1,4 +1,4 @@
-// FirstPersonView: a camera standing in a street, set by position, bearing, pitch and fovy
+// FirstPersonView: a camera in a street, set by position, bearing, pitch and fovy
 import { Deck, FirstPersonView } from '@deck.gl/core';
 import type { FirstPersonViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

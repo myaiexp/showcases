@@ -1,4 +1,4 @@
-// MapController rotationPivot and TerrainController: rotate around the centre, the ground or a building
+// MapController rotationPivot and TerrainController: rotate around a pivot
 import { Deck, MapController, TerrainController } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

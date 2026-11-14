@@ -1,4 +1,4 @@
-// TripsLayer: currentTime is the playhead, trailLength how long a path takes to fade
+// TripsLayer: currentTime is the playhead, trailLength how long a path fades
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TripsLayer } from '@deck.gl/geo-layers';

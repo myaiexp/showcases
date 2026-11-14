@@ -1,4 +1,4 @@
-// The material prop: ambient, diffuse, shininess and specularColor on an extruded layer
+// The material prop: ambient, diffuse, shininess, specularColor on extrusions
 import { AmbientLight, Deck, DirectionalLight, LightingEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// Seeded points around Paris and a zoom-stop interpolator for the zoom-dependent examples
+// Seeded points around Paris and a zoom-stop interpolator for zoom examples
 import { gaussian, seeded, type LngLat } from './data.ts';
 
 export const PARIS: LngLat = [2.35, 48.86];

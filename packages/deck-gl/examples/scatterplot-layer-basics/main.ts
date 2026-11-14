@@ -1,4 +1,4 @@
-// A ScatterplotLayer of cities: radius in meters from population, colour from the same value
+// A ScatterplotLayer of cities: radius in meters from population, colour likewise
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

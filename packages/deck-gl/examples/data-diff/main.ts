@@ -1,4 +1,4 @@
-// _dataDiff (experimental): update the attributes of one changed row instead of all of them
+// _dataDiff (experimental): update the attributes of one changed row, not all
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

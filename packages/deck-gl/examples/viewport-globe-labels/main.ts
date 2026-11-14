@@ -1,4 +1,4 @@
-// GlobeViewport.project(): HTML labels on the globe, hidden once a city turns to the far side
+// GlobeViewport.project(): HTML labels on the globe, hidden on the far side
 import { Deck, _GlobeView as GlobeView, _GlobeViewport as GlobeViewport } from '@deck.gl/core';
 import { ScatterplotLayer, SolidPolygonLayer } from '@deck.gl/layers';
 import type { Mount } from '@/types.ts';

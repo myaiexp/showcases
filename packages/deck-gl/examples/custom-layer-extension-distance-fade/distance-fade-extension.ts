@@ -1,4 +1,4 @@
-// DistanceFadeExtension: constructor opts pick the shader, draw() feeds it a moving centre
+// DistanceFadeExtension: constructor opts pick the shader, draw() feeds a centre
 import { LayerExtension } from '@deck.gl/core';
 import type { Layer } from '@deck.gl/core';
 import type { ShaderModule } from '@luma.gl/shadertools';

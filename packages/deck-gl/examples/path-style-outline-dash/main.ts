@@ -1,4 +1,4 @@
-// PathStyleExtension on outlines: dashed polygon edges and dashed ScatterplotLayer rings
+// PathStyleExtension on outlines: dashed polygon edges and dashed scatter rings
 import { Deck } from '@deck.gl/core';
 import { PolygonLayer, ScatterplotLayer } from '@deck.gl/layers';
 import { PathStyleExtension, type PathStyleExtensionProps } from '@deck.gl/extensions';

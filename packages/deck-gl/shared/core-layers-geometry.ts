@@ -1,4 +1,4 @@
-// Sample shapes for the core-layer chapter: rings, wavy paths, city blocks, a sphere cloud
+// Sample shapes for the core layers chapter: rings, paths, blocks, a sphere cloud
 import { gaussian, seeded, type LngLat } from './data.ts';
 
 /** Centre of the neighbourhood-scale examples; zoom ~13 shows a few kilometres. */

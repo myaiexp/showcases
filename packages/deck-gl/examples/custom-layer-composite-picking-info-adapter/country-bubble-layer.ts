@@ -1,4 +1,4 @@
-// CountryBubbleLayer: an adapter composite that groups rows, and rewrites picking info to match
+// CountryBubbleLayer: an adapter composite that groups rows, rewrites picking info
 import { CompositeLayer } from '@deck.gl/core';
 import type {
   Accessor,

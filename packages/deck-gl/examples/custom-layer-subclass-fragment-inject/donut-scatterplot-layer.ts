@@ -1,4 +1,4 @@
-// DonutScatterplotLayer: a fragment hook cuts a hole in every dot, sized by a layer prop
+// DonutScatterplotLayer: a fragment hook cuts a hole in every dot, sized by a prop
 import type { DefaultProps, UpdateParameters } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import type { ScatterplotLayerProps } from '@deck.gl/layers';

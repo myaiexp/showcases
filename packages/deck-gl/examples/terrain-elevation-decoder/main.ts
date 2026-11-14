@@ -1,4 +1,4 @@
-// TerrainLayer elevationDecoder: pixel colour to metres, for different image encodings
+// TerrainLayer elevationDecoder: pixel colour to metres, for different encodings
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TerrainLayer } from '@deck.gl/geo-layers';

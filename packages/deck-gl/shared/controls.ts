@@ -1,4 +1,4 @@
-// Control-bar inputs for the full view: buttons, sliders, selects, checks, readouts
+// Control-bar inputs for the full view: buttons, sliders, selects, checks
 function labelled(text: string): HTMLLabelElement {
   const wrap = document.createElement('label');
   wrap.style.display = 'flex';

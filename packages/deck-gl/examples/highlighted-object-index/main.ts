@@ -1,4 +1,4 @@
-// highlightedObjectIndex highlights an object from code, with no pointer; -1 clears it
+// highlightedObjectIndex highlights an object from code, no pointer; -1 clears it
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// OrthographicController zoomAxis: wheel zoom applies to X only, Y only, or both axes
+// OrthographicController zoomAxis: wheel zoom applies to X only, Y only, or both
 import { COORDINATE_SYSTEM, Deck, OrthographicController, OrthographicView } from '@deck.gl/core';
 import type { OrthographicViewState } from '@deck.gl/core';
 import { LineLayer, ScatterplotLayer, TextLayer } from '@deck.gl/layers';

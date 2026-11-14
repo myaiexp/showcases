@@ -1,4 +1,4 @@
-// The four built-in themes (light, dark, and their glass variants) applied through widget style
+// The four built-in themes (light, dark, glass variants) applied via widget style
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

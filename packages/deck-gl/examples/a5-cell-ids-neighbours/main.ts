@@ -1,4 +1,4 @@
-// A5Layer ids as bigint or hex string; click selects a cell and its gridDisk neighbours
+// A5Layer ids as bigint or hex; click selects a cell and its gridDisk neighbours
 import { Deck } from '@deck.gl/core';
 import type { PickingInfo } from '@deck.gl/core';
 import { A5Layer } from '@deck.gl/geo-layers';

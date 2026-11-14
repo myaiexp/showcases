@@ -1,4 +1,4 @@
-// CSS mix-blend-mode on the canvas: overlay colours multiply with the "map" painted behind it
+// CSS mix-blend-mode on the canvas: overlay colours multiply with the map behind
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

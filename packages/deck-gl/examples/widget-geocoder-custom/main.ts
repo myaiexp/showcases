@@ -1,4 +1,4 @@
-// GeocoderWidget with a custom geocoder: a local lookup of the sample cities by name
+// GeocoderWidget with a custom geocoder: a local lookup of the sample cities
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

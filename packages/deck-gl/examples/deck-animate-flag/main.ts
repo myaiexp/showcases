@@ -1,4 +1,4 @@
-// Deck _animate: redraw every frame even when no prop changed, measured with _onMetrics
+// Deck _animate: redraw every frame even when no prop changed, via _onMetrics
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

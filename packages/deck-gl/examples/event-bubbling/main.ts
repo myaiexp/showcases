@@ -1,4 +1,4 @@
-// A layer's onHover runs first; if it returns a truthy value the Deck's onHover is skipped
+// A layer's onHover runs first; a truthy return skips the Deck's onHover
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

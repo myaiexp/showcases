@@ -1,4 +1,4 @@
-// View x, y, width and height take calc() expressions: three panels with a gap you can change
+// View x, y, width and height take calc() expressions: three panels with a gap
 import { Deck, MapView } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// OrbitView orthographic and fovy: perspective with a field of view, or a parallel projection
+// OrbitView orthographic and fovy: perspective with a field of view, or parallel
 import { COORDINATE_SYSTEM, Deck, OrbitView } from '@deck.gl/core';
 import { LineLayer, PointCloudLayer } from '@deck.gl/layers';
 import type { Mount } from '@/types.ts';

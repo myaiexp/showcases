@@ -1,4 +1,4 @@
-// TimelineWidget in controlled mode: the app owns time and playing, the widget only reports
+// TimelineWidget in controlled mode: the app owns time and playing, widget reports
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

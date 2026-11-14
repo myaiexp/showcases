@@ -1,4 +1,4 @@
-// The docs' first Deck: a ScatterplotLayer of cities over a world map, with a controller
+// The docs' first Deck: a ScatterplotLayer of cities over a world map, controller
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

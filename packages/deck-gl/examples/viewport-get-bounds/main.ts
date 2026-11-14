@@ -1,4 +1,4 @@
-// viewport.getBounds(): the visible rectangle of a pitched camera, drawn on a minimap
+// viewport.getBounds(): the visible rectangle of a pitched camera, on a minimap
 import { Deck, MapView, WebMercatorViewport } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PathLayer, ScatterplotLayer } from '@deck.gl/layers';

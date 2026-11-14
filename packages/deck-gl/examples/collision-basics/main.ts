@@ -1,4 +1,4 @@
-// CollisionFilterExtension: of the points that overlap on screen, only one is drawn
+// CollisionFilterExtension: of the points that overlap on screen, only one draws
 import { Deck } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
 import { CollisionFilterExtension, type CollisionFilterExtensionProps } from '@deck.gl/extensions';

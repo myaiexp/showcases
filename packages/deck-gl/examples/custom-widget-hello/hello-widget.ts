@@ -1,4 +1,4 @@
-// HelloWidget: the smallest universal widget: props, placement, a class name, onRenderHTML
+// HelloWidget: the smallest universal widget: props, placement, onRenderHTML
 import { Widget } from '@deck.gl/core';
 import type { WidgetPlacement, WidgetProps } from '@deck.gl/core';
 

@@ -1,4 +1,4 @@
-// PathStyleExtension dashMode: restart the dashes at every vertex, or run along the path
+// PathStyleExtension dashMode: restart dashes at each vertex, or run along path
 import { Deck } from '@deck.gl/core';
 import { PathLayer } from '@deck.gl/layers';
 import { PathStyleExtension, type DashMode, type PathStyleExtensionProps } from '@deck.gl/extensions';

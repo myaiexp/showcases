@@ -1,4 +1,4 @@
-// 1M points straight from typed arrays through data.attributes, with live Deck metrics
+// 1M points from typed arrays through data.attributes, with live Deck metrics
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// StarLayer: a primitive layer whose picking index is the row's group, not its own row
+// StarLayer: a primitive layer whose picking index is the row's group
 import { Layer, picking, project32 } from '@deck.gl/core';
 import type { Accessor, Color, DefaultProps, GetPickingInfoParams, LayerDataSource, PickingInfo, Position, UpdateParameters } from '@deck.gl/core';
 import { Geometry, Model } from '@luma.gl/engine';

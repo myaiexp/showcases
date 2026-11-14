@@ -1,4 +1,4 @@
-// data = {src, length}: a non-iterable object, so accessors read a typed array by index
+// data = {src, length}: a non-iterable object, so accessors read a typed array
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

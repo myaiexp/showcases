@@ -1,4 +1,4 @@
-// Offline basemap: Natural Earth countries as GeoJSON and a dark land layer drawn from them
+// Offline basemap: Natural Earth countries as GeoJSON and a dark land layer
 import { GeoJsonLayer } from '@deck.gl/layers';
 import type { Feature, FeatureCollection, Geometry, MultiLineString, Position } from 'geojson';
 import type { GeometryCollection, Topology } from 'topojson-specification';

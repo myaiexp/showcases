@@ -1,4 +1,4 @@
-// MaskExtension with three masks at once: each layer reads the mask named by its maskId
+// MaskExtension with three masks at once: each layer reads the one named by maskId
 import { Deck } from '@deck.gl/core';
 import { GeoJsonLayer, ScatterplotLayer } from '@deck.gl/layers';
 import { MaskExtension, type MaskExtensionProps } from '@deck.gl/extensions';

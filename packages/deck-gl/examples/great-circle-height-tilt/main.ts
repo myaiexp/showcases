@@ -1,4 +1,4 @@
-// GreatCircleLayer: getHeight, getTilt and numSegments shape the arc seen from a pitched view
+// GreatCircleLayer: getHeight, getTilt and numSegments shape the arc, pitched
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { GreatCircleLayer } from '@deck.gl/geo-layers';

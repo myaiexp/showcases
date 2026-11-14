@@ -1,4 +1,4 @@
-// TerrainLayer meshMaxError: fewer triangles for a larger tolerance; wireframe shows the mesh
+// TerrainLayer meshMaxError: fewer triangles for more tolerance; wireframe view
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TerrainLayer } from '@deck.gl/geo-layers';

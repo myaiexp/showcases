@@ -1,4 +1,4 @@
-// Controller scrollZoom speed and smooth: how far a wheel notch zooms, and whether it eases
+// Controller scrollZoom speed and smooth: how far a wheel notch zooms, and easing
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

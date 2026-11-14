@@ -1,4 +1,4 @@
-// TileLayer maxRequests and debounceTime: how many getTileData calls run, and when they start
+// TileLayer maxRequests and debounceTime: how many getTileData calls run, and when
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TileLayer } from '@deck.gl/geo-layers';

@@ -1,4 +1,4 @@
-// LayerStatusWidget: onRedraw lists the top-level layers and whether their data has loaded
+// LayerStatusWidget: onRedraw lists the top-level layers and whether data loaded
 import { Widget } from '@deck.gl/core';
 import type { Layer, WidgetPlacement, WidgetProps } from '@deck.gl/core';
 

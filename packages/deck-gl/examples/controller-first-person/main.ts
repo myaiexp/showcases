@@ -1,4 +1,4 @@
-// FirstPersonController: scroll walks forward, drag turns your head, shift-drag pans
+// FirstPersonController: scroll walks forward, drag turns the head, shift pans
 import { Deck, FirstPersonController, FirstPersonView } from '@deck.gl/core';
 import type { FirstPersonViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

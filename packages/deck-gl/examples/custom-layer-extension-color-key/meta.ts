@@ -1,4 +1,4 @@
-// deck-gl example: a custom LayerExtension that filters by colour on a composite layer
+// deck-gl example: a custom LayerExtension that filters by colour
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

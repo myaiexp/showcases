@@ -1,4 +1,4 @@
-// data.attributes with one interleaved Buffer: x,y,z then r,g,b per point, rewritten per frame
+// data.attributes with one interleaved Buffer: x,y,z then r,g,b, per-frame writes
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PointCloudLayer } from '@deck.gl/layers';

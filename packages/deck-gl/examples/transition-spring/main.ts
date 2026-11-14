@@ -1,4 +1,4 @@
-// transitions with type 'spring': radiusScale overshoots and settles instead of using a duration
+// transitions type 'spring': radiusScale overshoots and settles, with no duration
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

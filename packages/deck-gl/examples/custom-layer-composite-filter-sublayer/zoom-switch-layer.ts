@@ -1,4 +1,4 @@
-// ZoomSwitchLayer: renders two sublayers once and shows one of them with filterSubLayer
+// ZoomSwitchLayer: renders two sublayers once and shows one with filterSubLayer
 import { CompositeLayer } from '@deck.gl/core';
 import type { Accessor, DefaultProps, FilterContext, LayerDataSource, Position } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

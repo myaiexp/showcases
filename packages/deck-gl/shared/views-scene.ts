@@ -1,4 +1,4 @@
-// Views chapter: an orbit-space knot with axes, a car loop, and a few shared map states
+// Views chapter: an orbit-space knot with axes, a car loop, and shared map states
 import type { MapViewState } from '@deck.gl/core';
 import { HOME } from './core-layers-geometry.ts';
 import type { LngLat } from './data.ts';

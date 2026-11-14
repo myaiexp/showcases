@@ -1,4 +1,4 @@
-// TerrainExtension: a TerrainLayer with operation 'terrain' or 'terrain+draw' under a graticule
+// TerrainExtension: a TerrainLayer with operation 'terrain' or 'terrain+draw'
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TerrainLayer } from '@deck.gl/geo-layers';

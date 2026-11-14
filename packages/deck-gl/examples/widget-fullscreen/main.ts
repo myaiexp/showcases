@@ -1,4 +1,4 @@
-// FullscreenWidget: enter and exit fullscreen for the map container or a chosen element
+// FullscreenWidget: enter and exit fullscreen for the map container or an element
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

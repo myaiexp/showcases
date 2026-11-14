@@ -1,4 +1,4 @@
-// ScatterplotLayer radiusMinPixels and radiusMaxPixels clamp meter-sized circles as you zoom
+// ScatterplotLayer radiusMinPixels and radiusMaxPixels clamp meter circles on zoom
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// TextLayer getTextAnchor and getAlignmentBaseline: nine labels around nine marked points
+// TextLayer getTextAnchor and getAlignmentBaseline: nine labels around nine points
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

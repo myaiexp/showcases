@@ -1,4 +1,4 @@
-// Deck's layerFilter decides which layers draw in which view: names left, bubbles right
+// Deck's layerFilter decides which layers draw in which view
 import { Deck, MapView } from '@deck.gl/core';
 import type { Layer, MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

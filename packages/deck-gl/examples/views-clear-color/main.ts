@@ -1,4 +1,4 @@
-// View clear and clearColor: an inset that wipes what is beneath it, or draws over the main map
+// View clear and clearColor: an inset that wipes what is under it, or draws over
 import { Deck, MapView } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

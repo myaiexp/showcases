@@ -1,4 +1,4 @@
-// A TextLayer of city names: getText, getPosition, getSize and getColor over a world map
+// A TextLayer of city names: getText, getPosition, getSize and getColor on a map
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TextLayer } from '@deck.gl/layers';

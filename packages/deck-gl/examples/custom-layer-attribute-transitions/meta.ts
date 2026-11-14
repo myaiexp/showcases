@@ -1,4 +1,4 @@
-// deck-gl example: custom attributes with accessors and transitions on a from-scratch layer
+// deck-gl example: custom attributes with accessors and transitions
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

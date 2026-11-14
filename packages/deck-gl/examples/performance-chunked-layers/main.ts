@@ -1,4 +1,4 @@
-// Appending chunks: concat into one data array versus one layer per chunk with a stable id
+// Appending chunks: concat into one array versus one layer per chunk, stable id
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

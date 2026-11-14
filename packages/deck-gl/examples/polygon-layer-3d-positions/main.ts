@@ -1,4 +1,4 @@
-// PolygonLayer with [x, y, z] vertices: tilted panels, and getElevation added on top of the altitude
+// PolygonLayer with [x, y, z] vertices: tilted panels, getElevation added on top
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

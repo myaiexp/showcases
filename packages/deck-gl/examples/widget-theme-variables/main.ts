@@ -1,4 +1,4 @@
-// Instance-level CSS variables: size, margin, radius and colours of widgets through style
+// Instance-level CSS variables: size, margin, radius, colours of widgets by style
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

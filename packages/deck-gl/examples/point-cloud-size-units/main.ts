@@ -1,4 +1,4 @@
-// PointCloudLayer sizeUnits and pointSize on a map: pixels stay put, meters scale with zoom
+// PointCloudLayer sizeUnits and pointSize on a map: pixels stay put, meters scale
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PointCloudLayer } from '@deck.gl/layers';

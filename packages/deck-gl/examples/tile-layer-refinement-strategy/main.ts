@@ -1,4 +1,4 @@
-// TileLayer refinementStrategy: what to show while the tiles of the new zoom level load
+// TileLayer refinementStrategy: what to show while the new zoom level's tiles load
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { TileLayer } from '@deck.gl/geo-layers';

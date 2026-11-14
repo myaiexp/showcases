@@ -1,4 +1,4 @@
-// transitions: enter sets where new objects start from; onStart, onEnd and onInterrupt report
+// transitions: enter sets where new objects start; onStart, onEnd, onInterrupt
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

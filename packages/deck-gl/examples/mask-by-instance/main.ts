@@ -1,4 +1,4 @@
-// MaskExtension maskByInstance: mask whole objects by their anchor, or cut them by shape
+// MaskExtension maskByInstance: mask whole objects by anchor, or cut them by shape
 import { Deck } from '@deck.gl/core';
 import { GeoJsonLayer, ScatterplotLayer } from '@deck.gl/layers';
 import { MaskExtension, type MaskExtensionProps } from '@deck.gl/extensions';

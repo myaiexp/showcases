@@ -1,4 +1,4 @@
-// A LayerExtension with constructor options, extra props and a draw hook, on two different layers
+// A LayerExtension with constructor options, extra props and a draw hook
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ArcLayer, ScatterplotLayer } from '@deck.gl/layers';

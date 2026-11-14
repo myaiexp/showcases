@@ -1,4 +1,4 @@
-// PointCloudLayer material: ambient, diffuse, shininess and specular colour of the lit points
+// PointCloudLayer material: ambient, diffuse, shininess, specular colour of points
 import { COORDINATE_SYSTEM, Deck, OrbitView } from '@deck.gl/core';
 import { PointCloudLayer } from '@deck.gl/layers';
 import type { Mount } from '@/types.ts';

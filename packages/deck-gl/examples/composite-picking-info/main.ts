@@ -1,4 +1,4 @@
-// Picking a composite layer: info.layer is the GeoJsonLayer, info.sourceLayer the sublayer drawn
+// Picking a composite layer: info.layer is the parent, info.sourceLayer the child
 import { Deck } from '@deck.gl/core';
 import type { MapViewState, PickingInfo } from '@deck.gl/core';
 import { GeoJsonLayer } from '@deck.gl/layers';

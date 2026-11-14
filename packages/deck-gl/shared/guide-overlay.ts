@@ -1,4 +1,4 @@
-// A small text overlay inside the stage, and longitude wrapping, for the guide examples
+// A small text overlay inside the stage, and longitude wrapping, for the guide
 /** A monospace label pinned to a corner of the stage; set `.textContent` to update it. */
 export function overlay(box: HTMLElement, text = '', corner: 'top' | 'bottom' = 'top'): HTMLDivElement {
   const div = document.createElement('div');

@@ -1,4 +1,4 @@
-// LightingEffect with a custom AmbientLight and DirectionalLight versus the default lights
+// LightingEffect with custom Ambient and Directional lights versus the defaults
 import { AmbientLight, Deck, DirectionalLight, LightingEffect } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';

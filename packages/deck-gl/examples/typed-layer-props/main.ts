@@ -1,4 +1,4 @@
-// Typed props: a data type threaded through ScatterplotLayer, TextLayer and PickingInfo
+// Typed props: a data type threaded through ScatterplotLayer, TextLayer, picking
 import { Deck } from '@deck.gl/core';
 import type { LayersList, MapViewState, PickingInfo } from '@deck.gl/core';
 import { ScatterplotLayer, TextLayer } from '@deck.gl/layers';

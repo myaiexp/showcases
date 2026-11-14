@@ -1,4 +1,4 @@
-// FillStyleExtension proceduralPattern: hatch, cross-hatch and dot patterns from the shader
+// FillStyleExtension proceduralPattern: hatch, cross-hatch and dot patterns
 import { Deck } from '@deck.gl/core';
 import { PolygonLayer } from '@deck.gl/layers';
 import { FillStyleExtension, type FillStyleExtensionProps, type ProceduralPatternMapping } from '@deck.gl/extensions';

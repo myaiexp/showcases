@@ -1,4 +1,4 @@
-// FlyToInterpolator options: speed, curve, screenSpeed and maxDuration, with the measured duration
+// FlyToInterpolator options: speed, curve, screenSpeed, maxDuration, measured time
 import { Deck, FlyToInterpolator } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

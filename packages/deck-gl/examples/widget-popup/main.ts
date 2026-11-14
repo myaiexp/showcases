@@ -1,4 +1,4 @@
-// PopupWidget: popups anchored to world positions, with markers that open them on click
+// PopupWidget: popups anchored to world positions, with markers that open them
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';

@@ -1,4 +1,4 @@
-// PathStyleExtension dashJustified: stretch the gaps so every corner lands on a dash
+// PathStyleExtension dashJustified: stretch gaps so every corner lands on a dash
 import { Deck } from '@deck.gl/core';
 import { PathLayer } from '@deck.gl/layers';
 import { PathStyleExtension, type PathStyleExtensionProps } from '@deck.gl/extensions';

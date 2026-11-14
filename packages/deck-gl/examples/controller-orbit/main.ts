@@ -1,4 +1,4 @@
-// OrbitController: dragMode rotate or pan, inertia, and maxBounds on the target of an OrbitView
+// OrbitController: dragMode rotate or pan, inertia, and maxBounds on an OrbitView
 import { COORDINATE_SYSTEM, Deck, OrbitView } from '@deck.gl/core';
 import type { OrbitViewState } from '@deck.gl/core';
 import { LineLayer, PointCloudLayer } from '@deck.gl/layers';

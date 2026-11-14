@@ -1,4 +1,4 @@
-// onRedraw: a widget that watches the layers' isLoaded flags while a Promise-backed layer loads
+// onRedraw: a widget that watches layers' isLoaded flags while a Promise loads
 import { Deck } from '@deck.gl/core';
 import type { MapViewState } from '@deck.gl/core';
 import { ScatterplotLayer } from '@deck.gl/layers';
