@@ -22,6 +22,7 @@ import './plot.css';
  * - tickFormat is typed (d, i) but Plot also passes the ticks array third; cast to use it.
  * - The scheme is PiYG (the docs write PiYg). The docs' var(--vp-c-bg) is the docs site's
  *   background: use var(--plot-background) here.
+ * - Plot.autoSpec returns whole data columns inside markOptions: summarize before printing.
  *
  * Every example writes its whole Plot.plot({...}) spec in its own main.ts; this file only
  * sizes, places, re-renders and tears down what that spec returns.
