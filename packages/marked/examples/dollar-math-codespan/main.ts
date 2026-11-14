@@ -41,7 +41,7 @@ const mount: Mount = (el, ctx) => {
       { label: 'codespan override', render: (md) => render(maths, md) },
     ],
     caption:
-      'Formulas wrapped in dollar signs become code chips, but only where a line (or a bold or link span) starts with one: the lexer swallows plain text up to the next *, _, ` or [ before this tokenizer gets a look, so the mid-sentence one stays literal.',
+      'Formulas wrapped in dollar signs become code chips, but only where a paragraph (or a bold or link span) starts with one: the lexer swallows plain text up to the next special character (such as *, _, `, [ or \\) before this tokenizer gets a look, so the mid-sentence one stays literal.',
   });
 
   return () => stage.dispose();

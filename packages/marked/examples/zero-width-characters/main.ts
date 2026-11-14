@@ -6,20 +6,20 @@ import { docPane, note, row, sourcePane, textPane } from '../../shared/panes.ts'
 import { button } from '../../shared/controls.ts';
 import { typeLoop } from '../../shared/typing.ts';
 
-const BOM = '﻿';
+const BOM = '\uFEFF';
 const NOTE = `${BOM}# Trip notes\n\nPack **light**.`;
 const SHORT = `${BOM}# Trip\nPack **light**`;
 
 /** Spells out characters a reader cannot see, such as the byte order mark. */
 const SPELL: Record<string, string> = {
-  '﻿': '⟦U+FEFF⟧',
-  '​': '⟦U+200B⟧',
-  '‌': '⟦U+200C⟧',
-  '‍': '⟦U+200D⟧',
-  '‎': '⟦U+200E⟧',
-  '‏': '⟦U+200F⟧',
+  '\uFEFF': '⟦U+FEFF⟧',
+  '\u200B': '⟦U+200B⟧',
+  '\u200C': '⟦U+200C⟧',
+  '\u200D': '⟦U+200D⟧',
+  '\u200E': '⟦U+200E⟧',
+  '\u200F': '⟦U+200F⟧',
 };
-const visible = (text: string): string => text.replace(/[​-‏﻿]/g, (c) => SPELL[c] ?? c);
+const visible = (text: string): string => text.replace(/[\u200B-\u200F\uFEFF]/g, (c) => SPELL[c] ?? c);
 
 const mount: Mount = (el, ctx) => {
   const stage = createStage(el, ctx, { hint: 'Press the button to add or remove the invisible character' });
@@ -34,7 +34,7 @@ const mount: Mount = (el, ctx) => {
     spelled.show(visible(text));
     raw.show(marked.parse(text, { async: false }));
     // The docs' fix: drop one zero-width character from the very start of the file.
-    fixed.show(marked.parse(text.replace(/^[​‌‍‎‏﻿]/, ''), { async: false }));
+    fixed.show(marked.parse(text.replace(/^[\u200B\u200C\u200D\u200E\u200F\uFEFF]/, ''), { async: false }));
   };
 
   if (stage.preview) {
@@ -44,7 +44,7 @@ const mount: Mount = (el, ctx) => {
   } else {
     row(stage.root, src.el, spelled.el);
     row(stage.root, raw.el, fixed.el);
-    note(stage.root, 'The first line looks the same in both, but in the left page the hidden character means "# Trip notes" is not a heading. replace() strips it, so the right page is correct.');
+    note(stage.root, 'In the source both start "# Trip notes", but on the left a hidden character comes first, so it renders as a plain paragraph, not a heading. replace() strips it, so the right page is correct.');
     src.onInput(draw);
     button(stage.bar!, 'Toggle the invisible character', () => {
       const t = src.value();
