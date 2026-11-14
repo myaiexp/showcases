@@ -75,9 +75,10 @@ export function formatValue(value: unknown): string {
   }
 }
 
-/** The class name Ky gave an error, falling back to its `name`. */
+/** The error's kind: Ky sets `name` on its own errors ('HTTPError', 'TimeoutError' …). */
 export function errorName(err: unknown): string {
-  if (err instanceof Error) return err.constructor.name !== 'Error' ? err.constructor.name : err.name;
+  // `name` first: a minified build renames classes, so constructor.name is unreliable.
+  if (err instanceof Error) return err.name !== 'Error' ? err.name : err.constructor.name;
   return typeof err;
 }
 

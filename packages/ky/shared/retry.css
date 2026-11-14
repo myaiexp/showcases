@@ -1,0 +1,63 @@
+/* Retry and timeout chapters: herd of clients, body meter */
+.retry-herd {
+  position: relative;
+  height: 128px;
+}
+.ky-card .retry-herd {
+  height: 52px;
+}
+.retry-col {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1px;
+}
+.retry-dot {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--tone);
+}
+.ky-card .retry-dot {
+  width: 5px;
+  height: 5px;
+}
+.retry-herd + .ky-axis {
+  margin-top: 2px;
+}
+.retry-stat {
+  color: var(--fg-2);
+  float: right;
+}
+.retry-meter {
+  position: relative;
+  height: 14px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.ky-card .retry-meter {
+  height: 10px;
+}
+.retry-fill {
+  height: 100%;
+  width: 0;
+  background: color-mix(in srgb, var(--tone) 40%, var(--bg-surface));
+}
+.retry-limit {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-left: 2px solid var(--red);
+}
+.retry-meter-text {
+  margin-top: 2px;
+  color: var(--fg-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
