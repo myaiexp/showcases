@@ -6,7 +6,7 @@ export default defineMeta({
   summary: "A texture drawn in code is projected through a spot light onto the floor. cookieIntensity, cookieAngle, cookieScale, cookieOffset, cookieFalloff and cookieChannel are controls in the full view; cards spin the cookie.",
   section: "Components",
   tags: ["cookie","cookieIntensity","cookieAngle","cookieScale","cookieOffset","cookieFalloff","cookieChannel"],
-  docs: ["repo/docs/user-manual/editor/scenes/components/light.md"],
+  docs: ['repo/docs/user-manual/editor/scenes/components/light.md', 'repo/docs/user-manual/graphics/lighting/clustered-lighting.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

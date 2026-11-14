@@ -26,6 +26,9 @@ const mount: Mount = async (el, ctx) => {
     { size: 256, name: 'cookie', srgb: false, mipmaps: false, addressU: pc.ADDRESS_CLAMP_TO_EDGE, addressV: pc.ADDRESS_CLAMP_TO_EDGE },
   );
 
+  // Clustered lighting is on by default and draws cookies from an atlas only when enabled.
+  app.scene.lighting.cookiesEnabled = true;
+
   const spot = new pc.Entity('spot');
   spot.addComponent('light', {
     type: 'spot',
