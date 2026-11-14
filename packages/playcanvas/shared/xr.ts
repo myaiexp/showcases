@@ -167,10 +167,11 @@ export function addXrEntry(el: HTMLElement, panel: Panel, scene: { app: pc.Appli
     let any = false;
     entries.forEach((entry, i) => {
       const available = !!xr?.supported && xr.isAvailable(entry.type);
-      buttons[i]!.hidden = !available || !!xr?.active;
+      // .btn sets display, which overrides the hidden attribute, so hide through style.
+      buttons[i]!.style.display = !available || xr?.active ? 'none' : '';
       any ||= available;
     });
-    exit.hidden = !xr?.active;
+    exit.style.display = xr?.active ? '' : 'none';
     status.textContent = xr?.active ? `session running: ${xr.type} in ${xr.spaceType}` : any ? 'session types available' : 'no session available';
     notice?.remove();
     notice = any ? null : showNotice(el, describe());

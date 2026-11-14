@@ -63,7 +63,12 @@ const mount: Mount = async (el, ctx) => {
   back.setLocalScale(4, 1, 4);
   app.root.addChild(back);
 
-  const material = new pc.ShaderMaterial(shaderDesc);
+  // pcFragColorSecondary exists only with the extension, so the fallback shader drops that output.
+  const material = new pc.ShaderMaterial(
+    supported
+      ? shaderDesc
+      : { ...shaderDesc, uniqueName: 'AdvDualSourceFallback', fragmentGLSL: shaderDesc.fragmentGLSL!.replace(/^.*pcFragColorSecondary.*$/m, '') },
+  );
   material.depthWrite = false;
   const setFactor = (name: keyof typeof FACTORS): void => {
     // source0 * 1 + destination * factor(source1), for RGB; alpha keeps the destination.
