@@ -1,0 +1,58 @@
+/* Instances, JSON and fetch examples: the ledger of what each call carried */
+.inst-entry {
+  min-width: 0;
+}
+.inst-entry + .inst-entry {
+  margin-top: 3px;
+}
+.inst-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--tone, var(--fg-2));
+}
+.inst-label {
+  color: var(--tone, var(--fg-1));
+}
+.inst-line span[data-tone] {
+  color: var(--tone);
+}
+.inst-sep {
+  color: var(--fg-3);
+}
+.inst-wrap .inst-line {
+  white-space: normal;
+  word-break: break-all;
+}
+
+/* Bars: one line per call with a bar as long as the call took */
+.inst-bar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0 6px;
+  align-items: center;
+}
+.inst-bar + .inst-bar {
+  margin-top: 3px;
+}
+.inst-bar-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--tone, var(--fg-1));
+}
+.inst-bar-ms {
+  color: var(--fg-2);
+  text-align: right;
+}
+.inst-bar-track {
+  grid-column: 1 / -1;
+  height: 5px;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--fg-3) 18%, transparent);
+  overflow: hidden;
+}
+.inst-bar-fill {
+  height: 100%;
+  background: var(--tone, var(--accent));
+}
