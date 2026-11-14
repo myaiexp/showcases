@@ -39,6 +39,13 @@ import type { MountContext } from '@/types.ts';
  * - With an array of views, viewState is a map keyed by view id ({left: s, right: s}).
  * - GlobeViewport.project puts far-side points on screen: hide them with an angle test.
  * - Flat ground under a road in a FirstPersonView z-fights: lower the ground slightly.
+ * - Mutating a light or effect needs deck.redraw(reason). Rebuilding a shadow-casting
+ *   LightingEffect every frame recreates its shadow maps: mutate one and redraw. After
+ *   toggling a light's _shadow, effect.setProps(effect.props) re-reads the casters.
+ * - data.attributes given a luma Buffer of float colours needs type: 'float32'.
+ * - A change to an extension's constructor options (filterSize, fp64, dashMode) needs a new
+ *   layer id. CollisionFilterExtension tests the anchor pixel: a label whose anchor falls
+ *   outside its own glyphs is always hidden.
  * - getTooltip hides with null, not undefined.
  * - dataComparator, dataTransform and _dataDiff are typed generically: take unknown and
  *   narrow inside. onDataLoad does not fire per batch of an async-iterable `data`.
