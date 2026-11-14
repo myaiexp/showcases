@@ -85,7 +85,7 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   gap: 8px;
-  align-items: stretch;
+  align-items: start;
   min-height: 0;
   flex: 1;
 }
