@@ -29,6 +29,11 @@ import { runLive } from './stage-live.ts';
  * - ToneAudioBuffer.reverse flips the buffer in place, which is why sample() hands out copies.
  * - LowpassCombFilter's feedback delay cannot go below one 128-sample block (5.8 ms at the
  *   card rate), so keep its notes low enough that cards and the full view agree.
+ * - Card variants all render before any is shown, so state an apply() sets is the last
+ *   variant's by the time the card animates: capture it in play() and draw it via show().
+ * - Never call renderOffline() inside build(): it waits for the queue it is running in.
+ * - Channel.send()/receive() buses are page-wide statics, never freed, owned by the first
+ *   context that names them: use a bus name unique to the mount.
  * - Tone.Analyser, Meter and friends work live: the stage itself taps the Destination
  *   with an Analyser for the scope, so connecting another one there is fine.
  */

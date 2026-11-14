@@ -1,11 +1,16 @@
-// Disposes whatever an example's build() returned: one node, an array or an object of nodes
+// Disposes whatever an example's build() returned: nodes, arrays and objects of them
 
-/** Disposes `g`, or every disposable value of an array or plain object `g`. */
-export function disposeAll(g: unknown): void {
-  const kill = (v: unknown): void => {
-    if (v && typeof v === 'object' && 'dispose' in v && typeof v.dispose === 'function') v.dispose();
-  };
-  if (Array.isArray(g)) g.forEach(kill);
-  else if (g && typeof g === 'object' && !('dispose' in g)) Object.values(g).forEach(kill);
-  else kill(g);
+/**
+ * Disposes `g`: a node, or every node reachable through arrays and plain objects inside it.
+ * A value that has its own dispose() is disposed and not looked into, since it owns its parts.
+ */
+export function disposeAll(g: unknown, seen = new Set<unknown>()): void {
+  if (!g || typeof g !== 'object' || seen.has(g)) return;
+  seen.add(g);
+  if ('dispose' in g && typeof g.dispose === 'function') {
+    g.dispose();
+    return;
+  }
+  const parts = Array.isArray(g) ? g : Object.getPrototypeOf(g) === Object.prototype ? Object.values(g) : [];
+  for (const v of parts) disposeAll(v, seen);
 }
