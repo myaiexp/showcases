@@ -26,6 +26,11 @@
 //   not stringified by wretch (core.ts `fetch`): fetch gets the object and writes "[object Object]".
 //   `server` shows exactly that as a text body. Options like `cache` or a `context` object never
 //   become headers: read them from `req.init`.
+// - throttlingCache's `condition` is typed as taking WretchOptions in 3.0.9; at run time it receives a cloned
+//   Response. Type the parameter as WretchOptions and read `.ok` (any). `retry` with `resolveWithLatestResponse`
+//   hands a 503 on to wretch, so `.catcher(503, …)` runs (there is no `.serviceUnavailable()`); with `false` the
+//   rejection is a plain Error("Number of attempts exceeded."). A WretchError has no `.json`: its `message` is
+//   the body text, so `JSON.parse(err.message)`.
 // - formData `recursive: ['ignored']` does not drop the listed keys, as its JSDoc and the README claim:
 //   they are appended as the text "[object Object]". The list matches key names at any depth.
 //   README § Query's comments also drop an "&" ("b=2c=3"): the real string is a=1&b=2&c=3&d=4&d=5.
@@ -35,7 +40,7 @@
 //   addon falls back silently (the callback is never called): check for zero calls and say so.
 // - `.perfs()` entries are named after the URL, and the callback map and `clearMeasures` are shared
 //   page-wide: give each mount its own query (`?r=<id>`) so cards do not take each other's entries.
-// - `.onDownload()` / `.progress()` only fire while the body is read (`.blob()`, `.json()`...), not for `.res()`.
+// - `.onDownload()` / `.progress()` follow the body as it is read: the examples end in `.blob()` (not tried with `.res()`).
 import type { MountContext } from '@/types.ts';
 import './wretch.css';
 

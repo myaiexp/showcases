@@ -1,0 +1,32 @@
+/* Progress meter: a track, a fill and a label */
+.wr-meter {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-surface);
+  padding: 4px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.wr-meter-title {
+  color: var(--fg-3);
+  font-size: 0.85em;
+}
+.wr-meter-track {
+  height: 10px;
+  border-radius: 5px;
+  background: var(--border);
+  overflow: hidden;
+}
+.wr-meter-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  transition: width 120ms linear;
+}
+.wr-meter-label[data-tone='ok'] { color: var(--green); }
+.wr-meter-label[data-tone='info'] { color: var(--blue); }
+.wr-meter-label[data-tone='warn'] { color: var(--orange); }
+.wr-meter-label[data-tone='bad'] { color: var(--red); }
+.wr-meter-label[data-tone='dim'] { color: var(--fg-3); }
