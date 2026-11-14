@@ -1,0 +1,33 @@
+/* Two themes whose SVG arrow takes its colour from fill */
+[data-example='tippy-js/round-arrow'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+  }
+  .btn {
+    padding: 4px 10px;
+    font-size: 13px;
+  }
+  .tippy-box[data-theme~='violet'] {
+    background-color: #7c4dff;
+    color: #fff;
+  }
+  .tippy-box[data-theme~='violet'] > .tippy-svg-arrow {
+    fill: #7c4dff;
+  }
+  .tippy-box[data-theme~='mint'] {
+    background-color: #5fd3b0;
+    color: #07322a;
+    font-weight: 600;
+  }
+  .tippy-box[data-theme~='mint'] > .tippy-svg-arrow {
+    fill: #5fd3b0;
+  }
+}

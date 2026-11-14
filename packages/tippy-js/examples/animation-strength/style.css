@@ -1,0 +1,12 @@
+/* Three buttons side by side */
+[data-example='tippy-js/animation-strength'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row {
+    display: flex;
+    gap: var(--space-3);
+  }
+}

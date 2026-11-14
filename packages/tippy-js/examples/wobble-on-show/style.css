@@ -1,0 +1,31 @@
+/* A bell with a count badge, centred in the scene */
+[data-example='tippy-js/wobble-on-show'] {
+  .scene {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bell {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    margin-bottom: var(--space-5);
+    border: 0;
+    border-radius: 50%;
+    background: var(--bg-raised);
+    font-size: 26px;
+    cursor: pointer;
+  }
+  .badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: var(--red);
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
