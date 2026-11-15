@@ -39,6 +39,8 @@
   width: 100%;
   min-width: 0;
   color: var(--fg-1);
+  /* interactiveColorLegend buttons paint with the system colours canvas/canvastext */
+  color-scheme: dark;
   font-family: var(--font-sans, system-ui, sans-serif);
   font-size: 12px;
   --ts-chart-1: var(--accent, #60a5fa);

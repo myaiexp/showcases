@@ -1,0 +1,9 @@
+/* Tooltip class styling for themes-tooltip-class */
+[data-example='tanstack-charts/themes-tooltip-class'] {
+  .revenue-tooltip {
+    border-left: 4px solid #a78bfa;
+    font-size: 11px;
+    letter-spacing: 0.02em;
+    padding: 6px 10px;
+  }
+}

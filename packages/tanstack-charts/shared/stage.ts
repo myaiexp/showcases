@@ -40,6 +40,12 @@
 // - polar() text and rule marks go through the polar scales: a labelled pie needs angle
 //   [0, 2π] and radius [0, 1], or `angle: null, radius: null`.
 // - sankeyDiagram's links need `d3Curve(curveBumpX)` for S-shaped ribbons.
+// - A host with a fixed `width` lays out at that width and the svg is then scaled to its box
+//   by its viewBox, text and strokes included.
+// - A responsive builder's context names the theme `defaultTheme`, not `theme`.
+// - Keyboard focus in a card: dispatch keydown with `bubbles: true` on the chart svg.
+// - The built-in tooltip is a role=status element whose textContent runs rows together
+//   ("xMayy76,000"): read rows from the DOM, not textContent, when quoting it.
 // - A first visit to a new subpath (polar, hierarchy/*, spatial/*) makes Vite re-optimise and
 //   reload the dev page: a blank chart for a while is that, not a bug.
 import type { MountContext } from '@/types.ts';
