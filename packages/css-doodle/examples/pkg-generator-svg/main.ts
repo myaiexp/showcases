@@ -1,4 +1,4 @@
-// svg() turns @svg code into SVG markup with no doodle; svg.element() makes it an element
+// svg() turns @svg code into markup; svg.element() makes it an element
 import { svg } from 'css-doodle/generator';
 import type { Mount } from '@/types.ts';
 import { codeBlock, framed } from '../../shared/frame.ts';

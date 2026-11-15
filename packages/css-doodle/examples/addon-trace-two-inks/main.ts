@@ -1,4 +1,4 @@
-// Two @trace() levels of one picture in an @svg of the image's size: a two-ink print
+// Two @trace() levels of one picture in an @svg: a print in two inks
 import '@css-doodle/addons/trace';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

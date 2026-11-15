@@ -1,4 +1,4 @@
-// Batch C scaffolding: an example is a spec of one doodle, code variants, or labelled doodles
+// Example scaffolding: one doodle, code variants, or two labelled doodles
 import type { Mount } from '@/types.ts';
 import { button } from './controls.ts';
 import { createStage, type Stage } from './stage.ts';

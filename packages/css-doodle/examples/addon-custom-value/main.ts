@@ -1,4 +1,4 @@
-// CSSDoodle.use(name, { value }) adds a value function every doodle on the page can call
+// CSSDoodle.use(name, { value }) adds a value function for every doodle
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

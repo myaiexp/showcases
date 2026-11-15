@@ -1,4 +1,4 @@
-// prerender(): static HTML for a doodle, and the needs list of what it cannot do alone
+// prerender(): static HTML for a doodle, and what still needs the runtime
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

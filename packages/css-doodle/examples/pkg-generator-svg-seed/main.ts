@@ -1,4 +1,4 @@
-// svg() with a seed repeats its random picks; without one every call picks new ones
+// svg() with a seed repeats its picks; without one each call picks anew
 import { svg } from 'css-doodle/generator';
 import type { Mount } from '@/types.ts';
 import { framed } from '../../shared/frame.ts';

@@ -1,4 +1,4 @@
-// CSSDoodle.use(name, { shader }) adds an image function drawn with WebGL, like @pattern
+// CSSDoodle.use(name, { shader }) adds a WebGL image function, like @pattern
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

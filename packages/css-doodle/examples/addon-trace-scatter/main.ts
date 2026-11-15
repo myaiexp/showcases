@@ -1,4 +1,4 @@
-// @plot.scatter(path: @trace(…)) spreads the cells over the inside of a traced picture
+// @plot.scatter(path: @trace(…)) spreads cells inside a traced picture
 import '@css-doodle/addons/trace';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// @trace() turns a picture into an SVG path for @shape(path: …), clipping the cells
+// @trace() turns a picture into a path for @shape(path: …), clipping the cell
 import '@css-doodle/addons/trace';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

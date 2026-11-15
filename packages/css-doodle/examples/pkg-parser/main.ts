@@ -1,4 +1,4 @@
-// css-doodle/parser exposes the parsers; here the tokenizer and parseGrid on sample input
+// css-doodle/parser: the tokenizer and parseGrid run on sample input
 import { parseGrid, tokenizer } from 'css-doodle/parser';
 import type { Mount } from '@/types.ts';
 import { codeBlock } from '../../shared/frame.ts';

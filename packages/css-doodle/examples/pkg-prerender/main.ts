@@ -1,4 +1,4 @@
-// prerender() writes HTML that paints without the runtime, and lists what still needs it
+// prerender() writes HTML that paints without the runtime, and its needs
 import { prerender } from 'css-doodle/generator';
 import type { Mount } from '@/types.ts';
 import { codeBlock, framed, scriptlessFrame } from '../../shared/frame.ts';

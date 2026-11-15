@@ -152,3 +152,6 @@ GitHub Pages. No service on the VPS.
   4.6.7) with `checkpoint`, `sampleRows`/`schemaTour`, `valueView`. `z.config()` is page-wide and messages
   are built lazily: call it inside `error-config.ts` `keepConfig()` and read issues with `settle()`. Use
   `z.registry()` per mount, never ids on `z.globalRegistry`.
+- css-doodle: build on `packages/css-doodle/shared/stage.ts` (`createStage`, trap list): `stage.doodle(code)` frames a
+  `<css-doodle>` (code says `@grid: N / 100%`, not the docs' `60vmin`) with a live editor in full views; cards stay alive
+  with `reroll` or `variants`. Addons are imported from `@css-doodle/addons/<name>` so `@use` never hits a CDN.
