@@ -229,3 +229,8 @@ GitHub Pages. No service on the VPS.
   window) and frees the WebGL context `_destructor()` keeps. Images come from `shared/textures.ts`, tiles from
   `shared/tiles.ts`, both painted in code (`test/globe-gl-offline.test.ts` fails any URL). Cards hover and click
   through `stage.ghost(globe)`; arcs need `ghost.arc()`.
+- Zephyr3D: build on `packages/zephyr3d/shared/frame.ts` (`zephyrExample(import.meta.url, run)`; traps in `shared/traps.md`).
+  The engine allows one `Application` per page and never disposes it, so each example runs in an iframe that re-imports
+  its own module; write `new Application({ backend: backendWebGL2, canvas: stage.canvas, … })` as the docs do. Assets go
+  through a MemoryFS (`shared/vfs.ts`, `textures.ts`, models from `shared/gltf/`); physics passes `wasmUrl` from
+  `shared/physics.ts`. Load-time globals (`__ZEPHYR3D_REVERSE_Z__`, `__ZEPHYR3D_DEBUG_VIEWS__`) use the frame's `globals`.

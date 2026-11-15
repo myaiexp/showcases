@@ -1,0 +1,78 @@
+/* Shared Zephyr3D chrome: the iframe view, control bar, caption, read-out, error box */
+.z3s-view {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #0b0f14;
+}
+.z3s-view.z3s-card {
+  height: 200px;
+  border-radius: 0;
+}
+.z3s-view iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.z3s-card iframe {
+  pointer-events: none;
+}
+.z3s-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 3px 8px;
+  font-size: 12px;
+  color: var(--fg-1);
+  background: rgb(0 0 0 / 0.45);
+  pointer-events: none;
+}
+.z3s-caption:empty {
+  display: none;
+}
+.z3s-error {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--red, #f66);
+  background: rgb(0 0 0 / 0.7);
+}
+.z3s-bar:empty {
+  display: none;
+}
+.z3s-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 10px;
+  font-size: 13px;
+}
+.z3s-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.z3s-readout {
+  margin: 8px 0 0;
+  font-size: 12px;
+  white-space: pre-wrap;
+  width: 100%;
+  max-height: 180px;
+  overflow: auto;
+  color: var(--fg-2);
+}
+.z3s-readout:empty {
+  display: none;
+}

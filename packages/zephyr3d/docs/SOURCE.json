@@ -1,0 +1,45 @@
+{
+  "license": "MIT (LICENSE at the root of gavinyork/zephyr3d, which holds the docs site under apps/doc). The English pages outside editor/ are taken (editor/ assumes the browser editor; zh-cn is the Chinese copy). The tut-N/main.js files are only those the pages transclude as their inline code (<<< @/../src/tut-N/main.js); the other tut-*, sample-* and demo-* runners are showcase demos and stay out. No release tag exists for @zephyr3d/scene, so the ref is main, pinned in MANIFEST to the commit that publishes 0.10.0.",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/gavinyork/zephyr3d",
+      "ref": "main",
+      "paths": [
+        "LICENSE",
+        "README.md",
+        "apps/doc/web/en/*.md",
+        "apps/doc/src/tut-0/main.js",
+        "apps/doc/src/tut-1/main.js",
+        "apps/doc/src/tut-2/main.js",
+        "apps/doc/src/tut-4/main.js",
+        "apps/doc/src/tut-5/main.js",
+        "apps/doc/src/tut-6/main.js",
+        "apps/doc/src/tut-7/main.js",
+        "apps/doc/src/tut-8/main.js",
+        "apps/doc/src/tut-9/main.js",
+        "apps/doc/src/tut-10/main.js",
+        "apps/doc/src/tut-11/main.js",
+        "apps/doc/src/tut-12/main.js",
+        "apps/doc/src/tut-13/main.js",
+        "apps/doc/src/tut-16/main.js",
+        "apps/doc/src/tut-32/main.js",
+        "apps/doc/src/tut-33/main.js",
+        "apps/doc/src/tut-34/main.js",
+        "apps/doc/src/tut-50/main.js",
+        "apps/doc/src/tut-54/main.js",
+        "apps/doc/src/tut-70/main.js",
+        "apps/doc/src/tut-76/main.js",
+        "apps/doc/src/tut-77/main.js",
+        "apps/doc/src/tut-78/main.js",
+        "apps/doc/src/tut-79/main.js",
+        "apps/doc/src/tut-80/main.js",
+        "apps/doc/src/tut-81/main.js",
+        "apps/doc/src/tut-82/main.js",
+        "apps/doc/src/tut-83/main.js",
+        "apps/doc/src/tut-84/main.js"
+      ]
+    }
+  ]
+}
