@@ -43,6 +43,14 @@
 // - fitViewByPointPositions takes a plain number[], not a Float32Array, in the type definitions.
 // - Cards fake a mouse drag with shared/fake-drag.ts (mousedown on the canvas, then window moves),
 //   and the held right button with shared/right-hold.ts (pointermove with buttons = 2).
+// - A position transition needs a first render behind it (the first render snaps), so examples that
+//   move points wait for `await graph.ready` before the second setPointPositions + render(). With
+//   the simulation running that second render also auto-pauses it, and a point-count change under
+//   transitionDuration > 0 does too: growing graphs set transitionDuration: 0.
+// - NaN-position (absent) points are left out of fitView and the init fit: a graph that starts with
+//   empty slots frames only the filled ones, so use fitViewOnInit: false and fitViewByPointPositions.
+// - findPointsInRect/Polygon, getSampledLinkPositionsMap and getTrackedPointPositionsArray read
+//   synchronously (no nonBlocking form for the last two): call them on a timer, not every frame.
 // - Headless Chrome (SwiftShader) is slow enough that the gallery benches most cards; check a
 //   card by importing its main.ts and mounting it with { preview: true } by hand.
 import type { Device } from '@luma.gl/core';
