@@ -7,7 +7,7 @@ export default defineMeta({
     'Sliders for gravity, centering, repulsion, link spring, link distance, friction and collision on one graph of four communities, plus presets that set several at once. Every change is a single setConfigPartial call followed by start().',
   section: 'Simulation forces',
   tags: ['setConfigPartial', 'simulationGravity', 'simulationCenter', 'simulationRepulsion', 'simulationLinkSpring', 'simulationLinkDistance', 'simulationFriction', 'simulationCollision'],
-  docs: ['repo/src/stories/configuration.mdx'],
+  docs: ['repo/src/stories/configuration.mdx', 'repo/src/stories/api-reference.mdx'],
   provenance: 'pure',
   added: '2026-11-15',
 });

@@ -7,7 +7,7 @@ export default defineMeta({
     'simulationCollisionPadding adds room to every point\'s collision radius, so neighbours settle with a gap of twice the padding between their edges instead of just touching.',
   section: 'Simulation forces',
   tags: ['simulationCollisionPadding', 'simulationCollision', 'setConfigPartial'],
-  docs: ['repo/src/stories/configuration.mdx', 'repo/docs/collision-force/README.md'],
+  docs: ['repo/src/stories/configuration.mdx', 'repo/docs/collision-force/README.md', 'repo/src/stories/api-reference.mdx'],
   provenance: 'pure',
   added: '2026-11-15',
 });

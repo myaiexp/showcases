@@ -7,7 +7,7 @@ export default defineMeta({
     'linkOpacity is one number between 0 and 1 that multiplies the alpha of every link. renderLinks set to false stops drawing links altogether, which also saves their cost.',
   section: 'Link styling',
   tags: ['linkOpacity', 'renderLinks', 'setConfigPartial'],
-  docs: ['repo/src/stories/configuration.mdx'],
+  docs: ['repo/src/stories/configuration.mdx', 'repo/src/stories/api-reference.mdx'],
   provenance: 'pure',
   added: '2026-11-15',
 });

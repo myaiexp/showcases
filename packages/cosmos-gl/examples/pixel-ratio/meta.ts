@@ -7,7 +7,7 @@ export default defineMeta({
     'pixelRatio decides how many canvas pixels back each CSS pixel. A low ratio renders fewer pixels and looks blocky; a high one is sharper on high-density screens but uses more GPU memory.',
   section: 'Configuration',
   tags: ['pixelRatio', 'setConfigPartial'],
-  docs: ['repo/src/stories/configuration.mdx'],
+  docs: ['repo/src/stories/configuration.mdx', 'repo/src/stories/api-reference.mdx'],
   provenance: 'pure',
   added: '2026-11-15',
 });
