@@ -89,6 +89,33 @@ means the vendored pages under `docs/repo/site/docs/`.
   heightfixed ~3e6). Line size [w, h] and raisingHeight lift ~100 visibly. Flowline
   arrowheads are large: sizes 3–4 read best.
 
+## Components
+
+- Marker: the getter is `getLnglat()` (docs: getLngLat); pass `setLnglat` an object (its
+  IPoint type rejects a tuple). Options (anchor, offsets) are read at construction only.
+- MarkerLayer `clusterOption.element` gets one GeoJSON feature: `point_count`, `point_sum`, …
+  are in `feature.properties`, as strings. A one-point cluster returns the original marker.
+- LayerPopup: `title`, `customContent`, `formatField`, `formatValue` get the feature's
+  properties (a JSON row is its own properties); `getValue` gets the raw feature. With
+  `customContent` set, `fields` is ignored. `trigger` also takes touchstart/touchend.
+- LayerSwitch builds its popper only with layers or options; without `layers` it lists every
+  layer, `basemap-*` included. `popperTrigger: 'click'` closes on a pointerdown outside.
+- Pressing a control's button from a card: dispatch `new MouseEvent('click', {bubbles:
+  false})` on the button (a bubbling synthetic click would reach the card's link).
+- Control `setOptions`: an undefined value falls back to the default; position and className
+  apply live.
+- ExportImage / `exportPng` export the layers only, on transparency. Pass
+  `preserveDrawingBuffer` to the Scene, not the Map. The Logo control is a fixed 89×16 px box
+  that stretches its image.
+
+## Sources
+
+- A Source emits only `'update'` (`{ type: 'inited' | 'update' }`); `source.on('inited')` never
+  fires. `updateClusterData(zoom)` swaps data silently: emit `'update'` yourself to redraw.
+- Tiles: the method is `reloadTilebyId` (docs: reloadTileById); `source.tileset` exists once the
+  layer has initialised. With `getCustomData` the URL is never fetched; `callback(err)` leaves
+  a hole and does not retry.
+
 ## Polygon layers
 
 - `shape('circle' | 'dot' | <icon>)` on a PolygonLayer builds a point model but draws
