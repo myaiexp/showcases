@@ -74,6 +74,7 @@
     "@sigma/node-piechart": "^4.0.0",
     "@sigma/utils": "^4.0.0",
     "@sparkjsdev/spark": "2.4.0",
+    "@tanstack/charts": "1.5.0",
     "@vfx-js/core": "1.6.0",
     "@vfx-js/effects": "1.4.4",
     "@vfx-js/transitions": "0.1.2",
@@ -84,6 +85,9 @@
     "chart.js": "^4.6.1",
     "css-doodle": "0.69.0",
     "d3": "^7.9.2",
+    "d3-geo": "3.1.1",
+    "d3-scale": "4.0.2",
+    "d3-shape": "3.2.0",
     "deck.gl": "9.4.1",
     "dexie": "^4.4.7",
     "dompurify": "^3.4.17",
@@ -121,6 +125,9 @@
   },
   "devDependencies": {
     "@types/d3": "^7.4.3",
+    "@types/d3-geo": "^3.1.1",
+    "@types/d3-scale": "^4.0.9",
+    "@types/d3-shape": "^3.2.0",
     "@types/geojson": "^7946.0.16",
     "@types/node": "^24.19.2",
     "@types/papaparse": "^5.5.2",
@@ -134,5 +141,10 @@
     "typescript": "^7.0.2",
     "vite": "^8.3.8",
     "vitest": "^5.1.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "@tanstack/charts>d3-selection": "3.0.1"
+    }
   }
 }

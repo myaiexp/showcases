@@ -1,0 +1,6 @@
+/* Default nearest-point tooltip: styles, all nested under this example's own selector */
+[data-example='tanstack-charts/tooltip-default-nearest'] {
+  .box {
+    color: var(--fg-1);
+  }
+}

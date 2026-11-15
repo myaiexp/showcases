@@ -1,0 +1,314 @@
+{
+  "fetched": "2026-11-14T22:58:01.165Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/TanStack/charts",
+      "ref": "v1.5.0",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "docs/*.md",
+        "docs/config.json",
+        "docs/concepts/**",
+        "docs/guides/**",
+        "docs/reference/**"
+      ],
+      "commit": "b236dae2d57f1921b9e0296b6ecf023bf012bb5f"
+    }
+  ],
+  "files": {
+    "repo/docs/comparison.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/comparison.md",
+      "sha256": "9a5c3205abd3ba32d497608d616577ebd190db363429beb084fbcd0b72e388b8"
+    },
+    "repo/docs/compatibility.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/compatibility.md",
+      "sha256": "ef1c4eaebb88df1cdbb2b9fa6f04073f67aa2994f5d1bab558d278e055c11fc5"
+    },
+    "repo/docs/concepts/chart-definitions.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/concepts/chart-definitions.md",
+      "sha256": "4325bcf5eada87d13976e2821adab1d24d9ee2ca2c82980b1de7a6748b367f12"
+    },
+    "repo/docs/concepts/data-and-channels.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/concepts/data-and-channels.md",
+      "sha256": "facf36c852af2a5584812f6bb55494d5a744d3db50f1370ed2eaa651e44115ea"
+    },
+    "repo/docs/concepts/grammar-of-graphics.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/concepts/grammar-of-graphics.md",
+      "sha256": "7aadd3866f0187a4d6b42d375d0bd7891f02e736d78c10ecd0e4377841d79809"
+    },
+    "repo/docs/concepts/layout-axes-and-coordinates.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/concepts/layout-axes-and-coordinates.md",
+      "sha256": "7503e45c0191e5fb9935d0760b72e0927f50623e5ea08c316305d9afcb8e6278"
+    },
+    "repo/docs/concepts/marks-and-layering.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/concepts/marks-and-layering.md",
+      "sha256": "fb0c959c523400212de074e83806c4bd9352723bc769d7923b6e2a94f0a7b656"
+    },
+    "repo/docs/concepts/scales-and-d3.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/concepts/scales-and-d3.md",
+      "sha256": "5ee6402c29a18fb326583c586398631b8086504e96b1f53de2fb1a626442b5d3"
+    },
+    "repo/docs/config.json": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/config.json",
+      "sha256": "b8aa6cb6872c08a59cca5d9a889a9da98174c232a4168c02707eab7d759a5309"
+    },
+    "repo/docs/guides/accessibility.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/accessibility.md",
+      "sha256": "df11d45663f17efa5060d046d9fc2087405d82ff648f4418b4883221e5e71225"
+    },
+    "repo/docs/guides/ai-authoring.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/ai-authoring.md",
+      "sha256": "4e785aa86025fc2031125e9badfa2441c72d59f341f4ca398209e47442486b76"
+    },
+    "repo/docs/guides/bundle-size-and-performance.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/bundle-size-and-performance.md",
+      "sha256": "33e19c74e284730bda05ef8c50bc37eb9de80c39ec51d4eaa182a8788de5eeee"
+    },
+    "repo/docs/guides/choosing-a-chart.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/choosing-a-chart.md",
+      "sha256": "611b921ff2c87a3b2b709318ab5baf482bf679886bc34d305eb74c23762994f7"
+    },
+    "repo/docs/guides/coming-from-recharts.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/coming-from-recharts.md",
+      "sha256": "4ebb8b9df8dcf64b01cafdf6aca169e8cbd86eb6362de3ffd77428410dd67748"
+    },
+    "repo/docs/guides/custom-marks-and-renderers.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/custom-marks-and-renderers.md",
+      "sha256": "9c703b9c730c3c4e0b8f6e3f4478c3a1f384c68c065c447b60d119b872f10993"
+    },
+    "repo/docs/guides/dynamic-data-and-animation.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/dynamic-data-and-animation.md",
+      "sha256": "2f07c545e62d9ac1bb69661a6a325c7d52f46c70bcec7ea960a8636847948322"
+    },
+    "repo/docs/guides/exporting.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/exporting.md",
+      "sha256": "269e03c269069ecaf3f7feeac0287c3dd1d8627dafec34369e7e7e5a52d6314d"
+    },
+    "repo/docs/guides/faceting-and-composition.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/faceting-and-composition.md",
+      "sha256": "059a66e73d2e90ad1ede92ec59879b6d7d7d0fd740212786a24c434bf28aac21"
+    },
+    "repo/docs/guides/framework-tick-labels.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/framework-tick-labels.md",
+      "sha256": "aa76d677ce5fb46396ac6f62beff522cb83e52993a526bad1eb8534483abd3db"
+    },
+    "repo/docs/guides/interactions-and-selections.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/interactions-and-selections.md",
+      "sha256": "e8aa0047aa20faf7dc760e0f192d26ba9b111f6fea037ea2766ba0a2ed7f282d"
+    },
+    "repo/docs/guides/large-data.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/large-data.md",
+      "sha256": "6cb0a8bddb85e3411fe5424b8072dad2ea710c596b965eea85b28eec476a9c4f"
+    },
+    "repo/docs/guides/legends-and-color.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/legends-and-color.md",
+      "sha256": "af71abcbadeda1135ecbd3a5014f248a161ca3763617f81cc95cdc0821a810a0"
+    },
+    "repo/docs/guides/migrating.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/migrating.md",
+      "sha256": "3c12766ced532bd4a5eb01a549895a0972a43e3d862ba64a4f7c64b259488620"
+    },
+    "repo/docs/guides/responsive-charts.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/responsive-charts.md",
+      "sha256": "b154a3ed7ae5e3c37e7c7f1bb5e0a755501581b15881b3f672991bbc6c74f7b8"
+    },
+    "repo/docs/guides/ssr-and-hydration.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/ssr-and-hydration.md",
+      "sha256": "8906b4bead2c39bad8d35000973fd83608fe47fff3fad041b5083983f6683026"
+    },
+    "repo/docs/guides/testing-and-debugging.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/testing-and-debugging.md",
+      "sha256": "0a86c36add62968b0695d8615769b57e94d5aaad715b21e9b95f52f6bc3a2b12"
+    },
+    "repo/docs/guides/themes-and-styling.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/themes-and-styling.md",
+      "sha256": "2694e78910d68ade91392cfcb5dcd6dc4c505a1097799fab0a82a4b986a51717"
+    },
+    "repo/docs/guides/tooltips-and-focus.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/tooltips-and-focus.md",
+      "sha256": "fab4fb3875f4031a8b70c866a06a391c210465aa048ef9f45599708cacd8b849"
+    },
+    "repo/docs/guides/transforms-and-reactivity.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/transforms-and-reactivity.md",
+      "sha256": "180688a505719f50662828e715a8d28723332ae97a4b3a6a9cf7d04b201eb1bc"
+    },
+    "repo/docs/guides/typescript.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/guides/typescript.md",
+      "sha256": "c394d01d9bbb2cfbd48d8f5ac076e72efaba6db4218dfd7f5d35f3d31401b5d9"
+    },
+    "repo/docs/installation.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/installation.md",
+      "sha256": "c78091207106bd9ee979981bbbcd4f4b6e2691cbee7b4f36f89b4b0deb56263b"
+    },
+    "repo/docs/overview.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/overview.md",
+      "sha256": "28621ce03c0eabd485afca2c072658bc73a93cd18ae0bc33f511a2d75b8ad78b"
+    },
+    "repo/docs/quick-start.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/quick-start.md",
+      "sha256": "3f0862e87ffba93b268d2d28b3bfc2907111b7cb37d425085ce1cbec68dc2a2e"
+    },
+    "repo/docs/reference/adapter-controller.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/adapter-controller.md",
+      "sha256": "2b14f0121e4f52a73fd353884ca76947312ecf8cbf504abc6ad8ffad9c18a272"
+    },
+    "repo/docs/reference/chart-definitions.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/chart-definitions.md",
+      "sha256": "9a36bc4ed6cefa911794d187b602fe51b15f55a8fd2d8b704df6b502b6badcfb"
+    },
+    "repo/docs/reference/chart-spec.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/chart-spec.md",
+      "sha256": "58d6357298378c0ef7b759a5a78d2692eadd2bcac49789abf8d6eff078ae0fb9"
+    },
+    "repo/docs/reference/custom-extensions.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/custom-extensions.md",
+      "sha256": "364b1577b1d9de1b9b7225762bce43af80467878c5676720e75a478e7b585532"
+    },
+    "repo/docs/reference/dom-host.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/dom-host.md",
+      "sha256": "e2352ff453432ff43273505e9d10d45c698ccddb1169dd3d957a720171bc2c06"
+    },
+    "repo/docs/reference/focus-and-interaction.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/focus-and-interaction.md",
+      "sha256": "0d3f2f4927430f0633c0e553a2f633da2638543b37a2ac616f6bc83300b2551a"
+    },
+    "repo/docs/reference/index.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/index.md",
+      "sha256": "1b419f9b5f26fb273395aa887d976321ec94c04dfe92b78f39209e8056a11faa"
+    },
+    "repo/docs/reference/marks/bar-and-rect.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/bar-and-rect.md",
+      "sha256": "051ff02798b58442d11e37eccc11096afcf73cc1de31c988c97199caf3ab9ee7"
+    },
+    "repo/docs/reference/marks/box.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/box.md",
+      "sha256": "9bb2c4788d2c544d163d7693eafb9034665882996a339d033a834a418bd4ce11"
+    },
+    "repo/docs/reference/marks/contour.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/contour.md",
+      "sha256": "d0aa727e48446c24648014aa456a1fbea929844978134d361963acd3c8c73aa2"
+    },
+    "repo/docs/reference/marks/delaunay.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/delaunay.md",
+      "sha256": "1591490f71df40da33a86a877dffb3f054234d31c3592b407245e1e9cc9d3b6d"
+    },
+    "repo/docs/reference/marks/density.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/density.md",
+      "sha256": "30a1981cf2ccf8d689d61c488cc9717946b49e0245a2accf88b9d1fb276e86c3"
+    },
+    "repo/docs/reference/marks/difference.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/difference.md",
+      "sha256": "ba89180c01a43d44272eb9e1b9b6a95d8235a5da68d5b88bf7ccc463c77a5cf9"
+    },
+    "repo/docs/reference/marks/dodge.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/dodge.md",
+      "sha256": "aa82b913077c0059198c9d5d13086ae03c105ca14e47f55edf997a203522f260"
+    },
+    "repo/docs/reference/marks/dot-and-hexagon.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/dot-and-hexagon.md",
+      "sha256": "bbbb44f82976bd609c63720e3756eababb415857853ebf8aa13a42d54b09ea95"
+    },
+    "repo/docs/reference/marks/focus-guide.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/focus-guide.md",
+      "sha256": "7fc396245f445dbd71b3fa6638ea29cf7ac3e467b1039aa5c7e1898b6d3da80d"
+    },
+    "repo/docs/reference/marks/geo.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/geo.md",
+      "sha256": "368443bb7eb82e181233087ec8b92beb3bfae361c7304fa148eb45bf86743c4f"
+    },
+    "repo/docs/reference/marks/hexbin.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/hexbin.md",
+      "sha256": "15d7b1138468bad968d0ce9b8dad19c7454566ac43ac86be12990771f6e1fb70"
+    },
+    "repo/docs/reference/marks/line-and-area.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/line-and-area.md",
+      "sha256": "c0239c2088254053ba58d9aeb0845051c5d914118ef686454a1445fd16e431cb"
+    },
+    "repo/docs/reference/marks/polar.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/polar.md",
+      "sha256": "8978344d2de3eba3edacccdac864df12edf4f709eaf31c8bdabfa8801739fa65"
+    },
+    "repo/docs/reference/marks/regression.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/regression.md",
+      "sha256": "32a1f8aa6f9a7a18132b9d95cd15eb7496c05cab3e6e321205a68e874cc88f4d"
+    },
+    "repo/docs/reference/marks/ridgeline.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/ridgeline.md",
+      "sha256": "c70f2305831e25b8d7d6bcc61e0599d9f61854db057cb6388432294eb8d56786"
+    },
+    "repo/docs/reference/marks/rules-links-arrows-vectors-and-ticks.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/rules-links-arrows-vectors-and-ticks.md",
+      "sha256": "1f27284760db63b23d2f06280f3f62a9fbe4d1b074a960922f5faca3e900b71b"
+    },
+    "repo/docs/reference/marks/sankey.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/sankey.md",
+      "sha256": "b8f428456f03da4f2e6479f5ed91ff63199e7ef0b424abbe04e77a0ed1196842"
+    },
+    "repo/docs/reference/marks/sunburst.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/sunburst.md",
+      "sha256": "1013b2b4effa04a0b9d6301250f875c6540d012146854a661814ed1f3d91076d"
+    },
+    "repo/docs/reference/marks/text-frame-and-facet.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/text-frame-and-facet.md",
+      "sha256": "bc81e2ecd165784882fddce25d11a50415a62582c7d10dd67d04c2c9f804a6f7"
+    },
+    "repo/docs/reference/marks/treemap.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/treemap.md",
+      "sha256": "0664d4fcf849aedc8d6981ac2f75dee099fc782bd3ed9df8524f2d33f8eceff6"
+    },
+    "repo/docs/reference/marks/violin.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/violin.md",
+      "sha256": "ab97c0b78ede29a6e7a2feb44d789723995d4b12ebb82c9b546a25cb4734f414"
+    },
+    "repo/docs/reference/marks/voronoi.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/voronoi.md",
+      "sha256": "b0e5d24ef2ee0544e8c5dd2b5ba537f168ebdfb73942ef1c290313cc3e917c91"
+    },
+    "repo/docs/reference/marks/waffle.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/marks/waffle.md",
+      "sha256": "f5fe6be0993c9e4118027f3171a3bb8d76ff4868ab873b966d36d6e6e1ae2752"
+    },
+    "repo/docs/reference/motion.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/motion.md",
+      "sha256": "d8024035fa2705b410c0f79cda879b8fb09dfeba46ffbb603ec5fd6811dedc1f"
+    },
+    "repo/docs/reference/rendering-and-export.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/rendering-and-export.md",
+      "sha256": "f2c33632ade0a3f5e4d3ab96d1bab2b7b70f019d61599f263bbc6bb6a5620fca"
+    },
+    "repo/docs/reference/runtime-and-scene.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/runtime-and-scene.md",
+      "sha256": "5da8e9e97ff1078b55c4ee7c2ac6fa8b64390c76641c300d8769ca13d00ece02"
+    },
+    "repo/docs/reference/scales-guides-and-color.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/scales-guides-and-color.md",
+      "sha256": "7f05fd1e61b1dce3e34fa176642f61bd3f52ec4c3d29592439eb4efb1553647e"
+    },
+    "repo/docs/reference/transforms.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/transforms.md",
+      "sha256": "92805debe79484ba95fade1fb904e2cfffe9b21f3db5bb595377ab937c8b747f"
+    },
+    "repo/docs/reference/types.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/types.md",
+      "sha256": "b8ceff9d194accb96c8692717c2efd3856a38931b24c084bf5cfd184e197cbb4"
+    },
+    "repo/docs/reference/view-composition.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/reference/view-composition.md",
+      "sha256": "d148a570c4716def9efca7452ce7203f2fdec731e0c8c7e52f9bed09f4beab39"
+    },
+    "repo/docs/stability.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/docs/stability.md",
+      "sha256": "68a891cf153f108cb2a684f3ceec4dd6ee7972e8fe00c43918fb2b3fdd7bed93"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/LICENSE",
+      "sha256": "a09cf172b475f76e0cb456e3cd346b1aa3fe5169ae5454f9f7fbe98b3e93c85f"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/TanStack/charts/blob/b236dae2d57f1921b9e0296b6ecf023bf012bb5f/README.md",
+      "sha256": "710aa0a9b1b43577533e7109acd6a4d28914003e0c457c49c575594a18749ad2"
+    }
+  }
+}
