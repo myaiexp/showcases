@@ -7,7 +7,7 @@ export default defineMeta({
     'createCubeTexture makes a texture of six square faces; each CubeFace gets its own update call. The shader declares a texCube and samples it with a direction, here the position on a spinning cube.',
   section: 'Device API',
   tags: ['createCubeTexture', 'CubeFace', 'update', 'texCube', 'textureSample', 'setTexture'],
-  docs: ['repo/apps/doc/web/en/texture.md', 'repo/apps/doc/web/en/shader.md'],
+  docs: ['repo/apps/doc/web/en/texture.md', 'repo/apps/doc/web/en/shader.md', 'repo/apps/doc/web/en/drawcall.md'],
   provenance: 'pure',
   added: '2026-11-15',
 });

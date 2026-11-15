@@ -17,7 +17,11 @@ export default zephyrExample(import.meta.url, async (stage) => {
   waves.amplitude = 1;
 
   // A lattice of height queries around the origin: one query batch serves every body
-  const sampler = new WaterSurfaceSampler(water, { spacing: 2, cols: 25, rows: 25, updateHz: 30 });
+  // Cards take a smaller lattice at a lower rate; the bodies sit within ±6 of the origin either way
+  const sampler = new WaterSurfaceSampler(
+    water,
+    stage.preview ? { spacing: 2, cols: 9, rows: 9, updateHz: 15 } : { spacing: 2, cols: 25, rows: 25, updateHz: 30 },
+  );
 
   const bodies = [
     { size: 1.3, mass: 200, fraction: 0.5, x: 0, z: 0, rgb: [0.9, 0.3, 0.2] },
