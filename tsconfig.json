@@ -13,6 +13,7 @@
     "erasableSyntaxOnly": true,
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
+    "jsx": "react-jsx",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "paths": { "@/*": ["./src/*"], "vizzu": ["./packages/vizzu/shared/vizzu-types.d.ts"] }

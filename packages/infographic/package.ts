@@ -1,0 +1,47 @@
+// AntV Infographic: infographics from a short text syntax, rendered as editable SVG
+import { definePackage } from '@/types.ts';
+
+export default definePackage({
+  name: 'AntV Infographic',
+  npm: '@antv/infographic',
+  tagline: 'Infographics from a few lines of text: lists, timelines, trees, comparisons, flows.',
+  about:
+    'AntV Infographic turns a short, indented text (the docs call it infographic syntax) into a finished SVG infographic: a numbered process, a roadmap, an org chart, a SWOT grid, a funnel, a mind map. A template names a layout (the structure) and a card design for each data item (the item); the data block lists the items, and a theme sets colours, fonts and a hand-drawn or patterned style. The syntax is forgiving enough to render half-written text, so it can draw an infographic while a language model is still writing it. Every infographic can also be opened in its editor, extended with your own structures and items written in JSX, and exported as SVG or PNG. The library fetches icons and fonts from AntV services; this gallery answers those from bundled Font Awesome icons and four local fonts instead, so nothing here leaves the page.',
+  category: 'Data/Viz',
+  homepage: 'https://infographic.antv.vision/',
+  docsUrl: 'https://infographic.antv.vision/learn',
+  repo: 'https://github.com/antvis/Infographic',
+  added: '2026-11-15',
+  // The docs site's sidebar order: Learn (site/src/sidebarLearn.en.json), then Reference.
+  sections: [
+    'Quick start',
+    'Infographic syntax',
+    'Design',
+    'Templates',
+    'Data',
+    'Themes',
+    'Editor',
+    'Resources',
+    'Custom structures',
+    'Custom items',
+    'Custom templates',
+    'Custom themes',
+    'Custom palettes',
+    'Custom fonts',
+    'Custom resource loader',
+    'Custom patterns',
+    'Infographic theory',
+    'Infographic API',
+    'Options & types',
+    'Exports',
+    'JSX primitives',
+    'Create layout',
+    'JSX utilities',
+    'Built-in structures',
+    'Built-in items',
+    'Built-in templates',
+    'Built-in themes & palettes',
+    'Built-in patterns',
+    'Built-in components',
+  ],
+});
