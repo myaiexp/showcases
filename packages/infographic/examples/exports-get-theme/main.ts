@@ -17,6 +17,8 @@ const NAMES = ['light', 'dark', 'hand-drawn', 'default'];
 
 const mount: Mount = async (el, ctx) => {
   const stage = await createStage(el, ctx, { height: 320 });
+  // The hand-drawn theme sets no background colour: give it paper to sit on.
+  stage.box.style.background = '#f6f1e4';
   stage.box.style.display = 'flex';
   stage.box.style.gap = '6px';
   const drawn = document.createElement('div');

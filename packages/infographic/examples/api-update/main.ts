@@ -17,6 +17,8 @@ data
 
 const mount: Mount = async (el, ctx) => {
   const stage = await createStage(el, ctx);
+  // The hand-drawn theme sets no background colour: give it paper to sit on.
+  stage.box.style.background = '#f6f1e4';
   const infographic = stage.own(
     new Infographic({ container: stage.box, width: '100%', height: '100%', padding: ctx.preview ? 8 : 24 }),
   );
