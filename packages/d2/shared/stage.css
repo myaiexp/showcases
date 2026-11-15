@@ -32,6 +32,10 @@
   gap: 6px;
   align-items: center;
 }
+.dd-bar button,
+.dd-pre {
+  font-variant-ligatures: none;
+}
 .dd-bar button.dd-on {
   border-color: var(--accent);
   color: var(--accent);
@@ -98,6 +102,8 @@
 }
 .dd-editor {
   flex: 1;
+  /* The mono font joins -> into an arrow; D2 is typed as the two characters. */
+  font-variant-ligatures: none;
   min-height: 220px;
   width: 100%;
   resize: vertical;
@@ -155,4 +161,12 @@
 .dd-hint {
   color: var(--fg-3);
   font-size: 13px;
+}
+.dd-files {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.dd-files:empty {
+  display: none;
 }

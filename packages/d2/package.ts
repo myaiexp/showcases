@@ -13,7 +13,8 @@ export default definePackage({
   repo: 'https://github.com/terrastruct/d2',
   added: '2026-11-15',
   // The tour sidebar's page order (d2-docs sidebars.ts), one section per page, then the
-  // C4 and ASCII feature posts and the D2.js README the tour has no page for.
+  // C4 feature post and the D2.js README the tour has no page for. Fonts is left out:
+  // the WASM accepts custom fonts but still renders Source Sans Pro (shared/stage.ts).
   sections: [
     'Hello World',
     'Shapes',
@@ -32,7 +33,6 @@ export default definePackage({
     'Positions',
     'Sketch',
     'Interactive',
-    'Fonts',
     'Layouts',
     'Strings',
     'Variables',

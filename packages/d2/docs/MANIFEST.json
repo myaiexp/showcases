@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-15T05:51:31.191Z",
+  "fetched": "2026-11-15T06:24:06.905Z",
   "sources": [
     {
       "kind": "git",
@@ -26,6 +26,7 @@
         "static/bespoke-d2/grid-row-dominant.d2",
         "static/bespoke-d2/imports-nested.d2",
         "static/bespoke-d2/lotr.d2",
+        "static/bespoke-d2/serviceB.d2",
         "static/bespoke-d2/styles-animated.d2",
         "static/bespoke-d2/terminal-theme.d2",
         "static/bespoke-d2/tiktok.d2"
@@ -507,6 +508,10 @@
     "repo/static/bespoke-d2/lotr.d2": {
       "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/lotr.d2",
       "sha256": "abf9a303a0556755cc1bd44a265fe288c42b435f5359d101b93703f7c683f4a5"
+    },
+    "repo/static/bespoke-d2/serviceB.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/serviceB.d2",
+      "sha256": "a2d4c77375f101afd4b00ea1c03b0f556a898bff943b2df12b0fda701bf3d434"
     },
     "repo/static/bespoke-d2/styles-animated.d2": {
       "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/styles-animated.d2",

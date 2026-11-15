@@ -1,4 +1,4 @@
-// What compile returns: the laid-out diagram's shapes and connections, and the render options
+// What compile returns: the laid-out shapes, connections and render options
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

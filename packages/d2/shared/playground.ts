@@ -11,6 +11,11 @@ export interface Variant {
   code: string;
   /** Compile options for this variant, over the playground's own `options`. */
   options?: CompileOptions;
+  /**
+   * Other files the source can import (`@x`), by path: sent with it as D2.js's `fs`, the
+   * source itself as "index". The full view lists them under the editor, read-only.
+   */
+  files?: Readonly<Record<string, string>>;
 }
 
 export interface PlaygroundOptions {
@@ -31,10 +36,18 @@ const PAD = 24;
  * diagram with the render options compile returned (the source's d2-config merged in).
  * `pad` defaults to 24 unless the options or the source's d2-config set one.
  */
-export async function compileAndRender(stage: Stage, code: string, options: CompileOptions): Promise<{ result: CompileResponse; svg: string }> {
+export async function compileAndRender(
+  stage: Stage,
+  code: string,
+  options: CompileOptions,
+  files?: Readonly<Record<string, string>>,
+): Promise<{ result: CompileResponse; svg: string }> {
   const d2 = await stage.d2();
   const pad = 'pad' in options || /\bpad\s*:/.test(code) ? {} : { pad: PAD };
-  const result = await d2.compile(code, { ...pad, ...options });
+  const all = { ...pad, ...options };
+  const result = files
+    ? await d2.compile({ fs: { ...files, index: code }, inputPath: 'index', options: all })
+    : await d2.compile(code, all);
   const svg = await d2.render(result.diagram, result.renderOptions);
   return { result, svg };
 }
@@ -50,7 +63,7 @@ export function playground(stage: Stage, opts: PlaygroundOptions): void {
     const mine = ++ticket;
     try {
       const options = { ...opts.options, ...variant.options };
-      const { result, svg } = await compileAndRender(stage, code, options);
+      const { result, svg } = await compileAndRender(stage, code, options, variant.files);
       let text = svg;
       if (target !== undefined) {
         const d2 = await stage.d2();
@@ -87,7 +100,9 @@ export function playground(stage: Stage, opts: PlaygroundOptions): void {
   panel?.append(editor);
   const optionLine = document.createElement('code');
   optionLine.className = 'dd-options';
-  panel?.append(optionLine);
+  const fileList = document.createElement('div');
+  fileList.className = 'dd-files';
+  panel?.append(optionLine, fileList);
 
   const tabs: HTMLButtonElement[] = [];
   const pick = (variant: Variant): void => {
@@ -95,6 +110,16 @@ export function playground(stage: Stage, opts: PlaygroundOptions): void {
     editor.value = variant.code;
     const options = { ...opts.options, ...variant.options };
     optionLine.textContent = `compile options: ${JSON.stringify(options)}`;
+    fileList.replaceChildren();
+    for (const [path, text] of Object.entries(variant.files ?? {})) {
+      const name = document.createElement('div');
+      name.className = 'dd-side-title';
+      name.textContent = `${path} (imported, read-only)`;
+      const pre = document.createElement('pre');
+      pre.className = 'dd-pre';
+      pre.textContent = text;
+      fileList.append(name, pre);
+    }
     for (const t of tabs) t.classList.toggle('dd-on', t.textContent === variant.label);
     void draw(variant, variant.code);
   };

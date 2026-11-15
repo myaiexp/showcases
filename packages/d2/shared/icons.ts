@@ -7,7 +7,8 @@ const svg = (body: string, color: string): string =>
 
 /**
  * Line icons, each a `data:image/svg+xml` URL D2 accepts wherever the docs use an
- * https icon URL. Interpolate them into the source: `server.icon: ${icons.server}`.
+ * https icon URL. Interpolate them quoted: `server.icon: "${icons.server}"`. Unquoted, the
+ * `;` in the URL ends the statement and the rest becomes a stray shape (or an error).
  */
 export const icons = {
   server: svg('<rect x="8" y="6" width="32" height="14" rx="3"/><rect x="8" y="28" width="32" height="14" rx="3"/><path d="M14 13h4M14 35h4"/>', '#4f9cf9'),

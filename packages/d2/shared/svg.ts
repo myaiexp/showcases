@@ -5,6 +5,11 @@ import { boardOf } from './boards.ts';
 export interface LinkHandlers {
   /** A link to another board ("layers.x"): the gallery's own hash routes must not see it. */
   onBoardLink?: (board: string) => void;
+  /**
+   * Keep D2's own sizing (width, height, preserveAspectRatio) instead of fitting the box,
+   * for examples about the options that set it (scale, center).
+   */
+  raw?: boolean;
 }
 
 /** The SVG's own size from its viewBox, in user units. */
@@ -24,11 +29,13 @@ export function putSvg(box: HTMLElement, text: string, links: LinkHandlers = {})
   const error = doc.querySelector('parsererror');
   if (error) throw new Error(`D2 returned SVG the browser cannot parse: ${error.textContent ?? ''}`);
   const svg = document.importNode(doc.documentElement, true) as unknown as SVGSVGElement;
-  // D2 pins the top-left corner (xMinYMin); centring reads better in a fixed box.
-  svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-  svg.removeAttribute('width');
-  svg.removeAttribute('height');
-  svg.classList.add('dd-svg');
+  if (!links.raw) {
+    // D2 pins the top-left corner (xMinYMin); centring reads better in a fixed box.
+    svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+    svg.removeAttribute('width');
+    svg.removeAttribute('height');
+    svg.classList.add('dd-svg');
+  }
   for (const a of Array.from(svg.querySelectorAll('a'))) {
     const href = a.getAttribute('href') ?? a.getAttribute('xlink:href') ?? '';
     if (/^https?:\/\//i.test(href)) {

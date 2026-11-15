@@ -83,10 +83,20 @@ vi.mock('../packages/d2/shared/engine.ts', async () => {
           diagram: object;
         };
         sources.set(JSON.stringify(result.diagram), codeOf(input));
+        // An unquoted data: URL splits at its ";" and leaves a stray shape named "base64,…".
+        const stray = (result.diagram as { shapes?: { id: string }[] }).shapes?.find((s) => /base64,/.test(s.id));
+        if (stray) failures.push({ call: 'compile', code: codeOf(input), message: `unquoted data: URL made a shape ${stray.id.slice(0, 40)}` });
         return result;
       }),
-    render: (diagram: object, options?: unknown) =>
-      queue('render', sources.get(JSON.stringify(diagram)) ?? '', () => call('render', diagram, options)),
+    render: (diagram: object, options?: unknown) => {
+      const code = sources.get(JSON.stringify(diagram)) ?? '';
+      return queue('render', code, async () => {
+        const svg = await call('render', diagram, options);
+        // A source marked as a deliberate error must not compile and render cleanly.
+        if (code.includes(DELIBERATE)) failures.push({ call: 'render', code, message: 'the deliberate error rendered fine' });
+        return svg;
+      });
+    },
     encode: (s: string) => queue('encode', s, () => call('encode', s)),
     decode: (s: string) => queue('decode', s, () => call('decode', s)),
     version: () => queue('version', '', () => call('version')),
@@ -111,8 +121,8 @@ vi.mock('../packages/d2/shared/playground.ts', async (importActual) => {
     ...real,
     playground: (stage: Parameters<typeof real.playground>[0], opts: Opts) => {
       for (const v of opts.variants) {
-        void real.compileAndRender(stage, v.code, { ...opts.options, ...v.options }).then(
-          ({ svg }) => stage.show(svg),
+        void real.compileAndRender(stage, v.code, { ...opts.options, ...v.options }, v.files).then(
+          ({ result, svg }) => opts.onRender?.(result, stage.show(svg), v),
           () => undefined,
         );
       }

@@ -22,7 +22,16 @@
 //   CompileOptions directly (compile('x -> y', { sketch: true })). D2Api types it the README's way.
 //   CompileRequest's `options` is required in the types: pass `options: {}` with an fs.
 // - Errors reject with the compiler's error list as JSON text; shared/errors.ts reads it.
-// - Icons: no remote URLs (cards must not fetch). D2 takes a data: URL as icon, made in code.
+// - Icons: no remote URLs (cards must not fetch). D2 takes a data: URL as icon (shared/icons.ts),
+//   but only quoted: `icon: "${icons.x}"`. Unquoted, its `;` ends the statement, so "base64,…"
+//   becomes a stray shape, or an error ("image shapes cannot have children").
+// - Reserved keywords cannot be connection ends: the docs' `a--shape` fails ("reserved keywords
+//   are prohibited in edges").
+// - circle and square with unequal width and height are rejected ("width and height must be
+//   equal"); the docs say the larger value wins, which is 0.9 behaviour.
+// - Custom fonts do nothing here: fontRegular etc. (as a number array or base64; a Uint8Array
+//   fails as "invalid JSON input") set diagram.fontFamily to "custom", but the SVG still embeds
+//   Source Sans Pro. The Fonts page has no example for that reason.
 import type { MountContext } from '@/types.ts';
 import { loadD2, STOPPED, type D2Api } from './engine.ts';
 import { d2ErrorText } from './errors.ts';
@@ -51,7 +60,7 @@ export interface Stage {
   bar: HTMLElement | null;
   /** The page's D2 engine. Calls made after this stage is disposed are dropped. */
   d2(): Promise<D2Api>;
-  /** Draws a rendered SVG into the box, sized to fit. Returns the svg element. */
+  /** Draws a rendered SVG into the box, sized to fit unless `raw`. Returns the svg element. */
   show(svg: string, links?: LinkHandlers): SVGSVGElement;
   /** Shows text output (an ASCII render) in the box as preformatted text. */
   showText(text: string): HTMLPreElement;
@@ -133,7 +142,7 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
     d2: () => loadD2(abort.signal),
     show(svg, links) {
       const node = putSvg(box, svg, links);
-      fit(node);
+      if (!links?.raw) fit(node);
       return node;
     },
     showText(text) {
