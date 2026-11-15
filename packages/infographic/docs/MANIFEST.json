@@ -1,0 +1,243 @@
+{
+  "fetched": "2026-11-15T05:31:59.667Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/antvis/Infographic",
+      "ref": "main",
+      "paths": [
+        "LICENSE",
+        "README.md",
+        "site/src/content/index.en.md",
+        "site/src/content/learn/*.en.md",
+        "site/src/content/reference/*.en.md",
+        "site/src/sidebarLearn.en.json",
+        "site/src/sidebarReference.en.json",
+        "skills/**/*.md"
+      ],
+      "commit": "5ae0d9394ac6280cb688eb4b4345881e291b9209"
+    }
+  ],
+  "files": {
+    "repo/LICENSE": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/LICENSE",
+      "sha256": "cacec99fa5f02241b33906689924718962f4991cd6eada3624f56c6bd4f3ff28"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/README.md",
+      "sha256": "7ebe3d1d001ff66171cc4ce8778de0f5f0a03b856c02e0500181a35c8cda8687"
+    },
+    "repo/site/src/content/index.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/index.en.md",
+      "sha256": "20664af918a2cfce47995c72839e5aec97a34ec1cb8fe2400ad26fe59ac8c767"
+    },
+    "repo/site/src/content/learn/contributing.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/contributing.en.md",
+      "sha256": "403204abbee6835a796922d263c0e1ce69f696b3aebf27efffb266693abfe5cb"
+    },
+    "repo/site/src/content/learn/core-concepts.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/core-concepts.en.md",
+      "sha256": "256f2c8b7ca667580fd47781ca07587db0fab8b8880ad165d288faddd7540d5c"
+    },
+    "repo/site/src/content/learn/core-theory.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/core-theory.en.md",
+      "sha256": "b46063c7aa48abfcfd78601b5f5815d9d6a943048f8658a60f27377be81b0f31"
+    },
+    "repo/site/src/content/learn/custom-design.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/custom-design.en.md",
+      "sha256": "c08a58c8bbdc04446a0f6cd0641d82e5ea6bf0c7a05317a825dd924cd2259acc"
+    },
+    "repo/site/src/content/learn/custom-fonts.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/custom-fonts.en.md",
+      "sha256": "94f0dab3f9c4238342d3b97bb635b47dc2fae9b2c8918028a93eef5a68b7c92b"
+    },
+    "repo/site/src/content/learn/custom-items.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/custom-items.en.md",
+      "sha256": "2bb200b757ea4faf4cec5129c0087fe5d4c68c351eaa76197f446f70ac5ecc84"
+    },
+    "repo/site/src/content/learn/custom-palette.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/custom-palette.en.md",
+      "sha256": "7b3afb10d1736e9509354f6fb22a6bb33ee63f0c6be9f577245b3e6c73028ae6"
+    },
+    "repo/site/src/content/learn/custom-pattern.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/custom-pattern.en.md",
+      "sha256": "4754730195f587a6b5a6d747b5ebf915f4b47e52decf629bc8ccb674050cb2f4"
+    },
+    "repo/site/src/content/learn/custom-resource-loader.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/custom-resource-loader.en.md",
+      "sha256": "a23eb9b1531394d4cb48482a4f2ed313be2acb9de5f3661ff4696e9cd6a054d0"
+    },
+    "repo/site/src/content/learn/custom-structure.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/custom-structure.en.md",
+      "sha256": "a6bfe1a056ace0f3e2accb37f93039a5e4012864712499f6ded4e4e7b192e481"
+    },
+    "repo/site/src/content/learn/custom-template.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/custom-template.en.md",
+      "sha256": "de53323c4243e615a0eeb902f12e781f60aaa43454e1efa0911b6da0ed4303b6"
+    },
+    "repo/site/src/content/learn/custom-theme.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/custom-theme.en.md",
+      "sha256": "adc60c8818b9ab77119d6e97116e8eeca95ce1eaced1246d2ac5f4ea1618e32a"
+    },
+    "repo/site/src/content/learn/data.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/data.en.md",
+      "sha256": "cc96f2f8d8fe7677727e9622a2d16777b400f853ad45756f0133a823daf08aef"
+    },
+    "repo/site/src/content/learn/design.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/design.en.md",
+      "sha256": "e3dd6196bdb60636cb907dc49c4e8c987813eb17f89df95a7577d2f0a7d7f8e4"
+    },
+    "repo/site/src/content/learn/editor.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/editor.en.md",
+      "sha256": "b70881ceeb73f17da1024eb83c3b33c2b87234e09bf1314e79830e41809d2f18"
+    },
+    "repo/site/src/content/learn/getting-started.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/getting-started.en.md",
+      "sha256": "957d00f000517fda6a11e89e446b6fbd76b4070d4e15483eca1d4481b44c9635"
+    },
+    "repo/site/src/content/learn/index.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/index.en.md",
+      "sha256": "6279a532ceaa30a1243f21f24a53f2e9359f3ba4057ca000327c02c6184c47d0"
+    },
+    "repo/site/src/content/learn/infographic-classification.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/infographic-classification.en.md",
+      "sha256": "b713995994ca85c15270b91285a50ba76484e25db7c0e3623c67cb882e286b98"
+    },
+    "repo/site/src/content/learn/infographic-design.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/infographic-design.en.md",
+      "sha256": "51f89844c7ac2fd5044151a4f867d08065a0e6aa08b1f410d02e4cd73135b876"
+    },
+    "repo/site/src/content/learn/infographic-elements.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/infographic-elements.en.md",
+      "sha256": "fd04b1d765b24a49dee60684128571d7ee0b95d128b7c9d7473b6f98eab7dacd"
+    },
+    "repo/site/src/content/learn/infographic-syntax.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/infographic-syntax.en.md",
+      "sha256": "8f294380be953e79d8197f1ca009dc747f1d20a88cf4b7bb7c552d0da5061233"
+    },
+    "repo/site/src/content/learn/infographic-theory.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/infographic-theory.en.md",
+      "sha256": "ad4aa6dc8c4584cba82f9a30ae7e9fa6b2a17c4fac802111bca32fd62aa4cf6c"
+    },
+    "repo/site/src/content/learn/resources.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/resources.en.md",
+      "sha256": "87945d6abff77cf31d14dcece4f5f618d28365ed46b4997291d58def019f722e"
+    },
+    "repo/site/src/content/learn/template.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/template.en.md",
+      "sha256": "40dd292f0822603f923d4e0d96828245d6e398c22b6534410b7bd3d81ba977d3"
+    },
+    "repo/site/src/content/learn/theme.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/learn/theme.en.md",
+      "sha256": "6daaf89c2ca7ae5931ede394f4e7ae2c773e4bb34fe98a66102260eef5c1a0d6"
+    },
+    "repo/site/src/content/reference/built-in-components.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/built-in-components.en.md",
+      "sha256": "0052a6ed05e78951183b6ffcc48aaab1e220866962a5ad8ef587093103f8b907"
+    },
+    "repo/site/src/content/reference/built-in-items.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/built-in-items.en.md",
+      "sha256": "428d3ef7774a2294ff57adad8b83f3d9fbbadcfb8362bcf41c37ed0f789ea320"
+    },
+    "repo/site/src/content/reference/built-in-palettes.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/built-in-palettes.en.md",
+      "sha256": "8fa1a4774d4d3a618be7c744c24a0efe7d8a915c2bd505b02f63aa81a9c72438"
+    },
+    "repo/site/src/content/reference/built-in-patterns.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/built-in-patterns.en.md",
+      "sha256": "13086cb4891306f1861954d822eca80bda212bf5888934e7afda0595c478439e"
+    },
+    "repo/site/src/content/reference/built-in-structures.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/built-in-structures.en.md",
+      "sha256": "c566b1fe7d02aaf13a00140ef48258196ef385d5fa8610dfa322db7ba67fc0cb"
+    },
+    "repo/site/src/content/reference/built-in-templates.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/built-in-templates.en.md",
+      "sha256": "be8aa9f6721a603e449c67b56c493733bc9cde6f83ac0226fe542cc394d9b3da"
+    },
+    "repo/site/src/content/reference/built-in-themes.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/built-in-themes.en.md",
+      "sha256": "82c5f16dc393845d106a3755a94dfeef8e9819695e0bb166632beb5c68f40a00"
+    },
+    "repo/site/src/content/reference/create-layout.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/create-layout.en.md",
+      "sha256": "ef278f9745dfa97d875bc8b46638deba1e1ad6c69e97f5c30edaa2acf1adab9d"
+    },
+    "repo/site/src/content/reference/design-assets.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/design-assets.en.md",
+      "sha256": "8f4b91433627e369f0c13200dac70e8083b9ea620cce2cac83429fadcc68a481"
+    },
+    "repo/site/src/content/reference/index.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/index.en.md",
+      "sha256": "0a62dbbd76ba549f56a808f5d71ad3e4d5c7255c480224b4bde45b1b7d329f2d"
+    },
+    "repo/site/src/content/reference/infographic-api.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/infographic-api.en.md",
+      "sha256": "aabbd90ea2c5d0a8e81f5c020afe9741253d22b6f14954228998128bb8c78e19"
+    },
+    "repo/site/src/content/reference/infographic-exports.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/infographic-exports.en.md",
+      "sha256": "2d350c859ac622c59bf220801c88b992b2d31cd0183f1ac7a0b79b86910652d3"
+    },
+    "repo/site/src/content/reference/infographic-options.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/infographic-options.en.md",
+      "sha256": "d316772a2983f8e1709b4f5dd622ded42f089383e4f032b6bee3fea17308385e"
+    },
+    "repo/site/src/content/reference/infographic-types.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/infographic-types.en.md",
+      "sha256": "70dd5b951c10be9e787935b693a74b1609aa8ee389ddbb53a7566cc8184a60c7"
+    },
+    "repo/site/src/content/reference/jsx-utils.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/jsx-utils.en.md",
+      "sha256": "be3b56e99edf9ed18d2488ca63f8d08a6a685bd4c94eede75d6278c0576c0779"
+    },
+    "repo/site/src/content/reference/jsx.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/jsx.en.md",
+      "sha256": "15aaf1816d885758e284d5661d1efe4aacaa284aa2d9965826dbbb3919068e8e"
+    },
+    "repo/site/src/content/reference/primitive-nodes.en.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/content/reference/primitive-nodes.en.md",
+      "sha256": "34e65ef34ed3de2a26c59639b1109dfc582cd213d88d9c0077b9829348eee52c"
+    },
+    "repo/site/src/sidebarLearn.en.json": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/sidebarLearn.en.json",
+      "sha256": "67d5fe42bfb6ce9f7fb42126e497544db5b04a42e846b113e803e63402b2ab4a"
+    },
+    "repo/site/src/sidebarReference.en.json": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/site/src/sidebarReference.en.json",
+      "sha256": "9334c1c6e2fc3b81419a25708e69a006fe4240e33cadcb7c9c44068fc18d5aa2"
+    },
+    "repo/skills/infographic-creator/SKILL.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/skills/infographic-creator/SKILL.md",
+      "sha256": "00d0f5da0d7f17e8d23e9e06ce67f31d187b0c190f118aed50fa7cc736dcbc8b"
+    },
+    "repo/skills/infographic-item-creator/references/item-prompt.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/skills/infographic-item-creator/references/item-prompt.md",
+      "sha256": "dd80b14e556c12739c337271afb18458015346006110469af4becd38e08b3f47"
+    },
+    "repo/skills/infographic-item-creator/SKILL.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/skills/infographic-item-creator/SKILL.md",
+      "sha256": "d4be2e284c1cf5308c3e17f42e3ad0cd7786f77ada26d3d35bf4f83a2d76608c"
+    },
+    "repo/skills/infographic-structure-creator/references/structure-prompt.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/skills/infographic-structure-creator/references/structure-prompt.md",
+      "sha256": "a541f70c3c52189391947f453d6dfd42d561ffe88519681d7433fa163075657a"
+    },
+    "repo/skills/infographic-structure-creator/SKILL.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/skills/infographic-structure-creator/SKILL.md",
+      "sha256": "54faddf33e39eb00545f2a25c406b60670bf2dbc21857a04fcc78eeb13c2edc5"
+    },
+    "repo/skills/infographic-syntax-creator/references/prompt.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/skills/infographic-syntax-creator/references/prompt.md",
+      "sha256": "0c6865b19dc5bc515ff9ed3c9d19c7e13ace9ebb1de6a1bfbb73a61f728af81f"
+    },
+    "repo/skills/infographic-syntax-creator/SKILL.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/skills/infographic-syntax-creator/SKILL.md",
+      "sha256": "5d954cc22ea77bbd142c6cd257fd346b1bd50b06369f40d50c39c76cef2f4b4a"
+    },
+    "repo/skills/infographic-template-updater/SKILL.md": {
+      "url": "https://github.com/antvis/Infographic/blob/5ae0d9394ac6280cb688eb4b4345881e291b9209/skills/infographic-template-updater/SKILL.md",
+      "sha256": "dd83f1dab4eb4e3493f0c043bf5f6cbebb5c68c14ab4a75b8d6f76b7f6726787"
+    }
+  }
+}

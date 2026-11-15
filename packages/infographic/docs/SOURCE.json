@@ -1,0 +1,21 @@
+{
+  "license": "MIT (antvis/Infographic LICENSE, which covers the site/ docs in the same repo)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/antvis/Infographic",
+      "ref": "main",
+      "paths": [
+        "LICENSE",
+        "README.md",
+        "site/src/content/index.en.md",
+        "site/src/content/learn/*.en.md",
+        "site/src/content/reference/*.en.md",
+        "site/src/sidebarLearn.en.json",
+        "site/src/sidebarReference.en.json",
+        "skills/**/*.md"
+      ]
+    }
+  ]
+}

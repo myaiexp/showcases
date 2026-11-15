@@ -183,3 +183,7 @@ GitHub Pages. No service on the VPS.
   `stage.own(new Graph(stage.div, config, stage.device()))`: the stage's own luma device, because
   `Graph.destroy()` never frees the WebGL context. It runs on the repo's one luma.gl (9.4.2) although it
   declares ~9.3. Cards fake hover and clicks with `shared/ghost.ts`; layouts centre on `CENTER` (2048).
+- AntV Infographic: build on `packages/infographic/shared/stage.ts` (`createStage`, trap list). Setup swaps the
+  library's CDN fonts for bundled stand-ins and answers every icon/illus keyword offline; never `ref:search:`
+  or an off-page `ref:remote:`. `registerResourceLoader` is page-wide: fall back to `offlineResource` and restore
+  `installOfflineLoader()` on cleanup. JSX lives in a sibling `.tsx` with the docs' `@jsxImportSource` pragma.
