@@ -1,6 +1,7 @@
 // Vite build and vitest config for the gallery SPA
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vitest/config';
+import { packageWatcher } from './scripts/dev/package-watcher.ts';
 
 /** `/packages/<pkg>/examples/<ex>/meta.ts` → `<pkg>`. */
 const META = /\/packages\/([^/]+)\/examples\/[^/]+\/meta\.ts$/;
@@ -40,7 +41,9 @@ const pizzicatoEntry = {
 };
 
 export default defineConfig({
-  plugins: [threeAddonsOnWebgpu, pizzicatoEntry],
+  // packageWatcher: packages/ is watched per directory and its vendored docs not at all,
+  // because chokidar's per-file watches ran the VPS out of inotify watches.
+  plugins: [threeAddonsOnWebgpu, pizzicatoEntry, packageWatcher()],
   resolve: {
     alias: [
       { find: '@/', replacement: fileURLToPath(new URL('./src/', import.meta.url)) },

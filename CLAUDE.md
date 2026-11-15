@@ -41,7 +41,8 @@ Details and the reasoning: [docs/pattern.md](docs/pattern.md) § Purity.
 
 ## Commands
 
-- `pnpm dev`: dev server.
+- `pnpm dev`: dev server. It watches `packages/` one folder at a time (`scripts/dev/package-watcher.ts`)
+  and never watches vendored docs, so restart it after `pnpm vendor-docs`.
 - `pnpm check:pkg [<pkg>...]`: **what builders run.** It type-checks only those packages
   (about 0.5 GB at most) and runs their integrity checks and their `test/<pkg>-*.test.ts`
   files. With no args, it works out the scope from the branch's changes against master;
