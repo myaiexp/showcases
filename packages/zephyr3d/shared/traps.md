@@ -28,3 +28,29 @@ Found while building this gallery. Read before building an example; add to it.
 
 - **Rapier's WASM URL breaks under Vite.** Always `await initPhysics(rapierPhysics, { wasmUrl: rapierWasmUrl })`
   with `rapierWasmUrl` from `shared/physics.ts`.
+
+## Docs that drifted from 0.10.0
+
+- **`user-material-lit.md`:** the `forEachLight` callback is `(type, posRange, dirCutoff, colorIntensity,
+  extra, shadow, …)`, not the 5-argument form; `calculateShadow` takes `(scope, worldPos, worldNormal, NoL)`.
+- **`user-material-multipass.md`:** `albedoIntensity` sums `r, g, g`; use `r, g, b`. An opaque
+  multi-pass material's light pass depth-tests `equal` against the prepass, so the inflated outline
+  pass never draws; overriding `getQueueType()` to `QUEUE_TRANSPARENT` makes it draw.
+- **`posteffect-sao.md`:** `SSAOScale` and `SSAORadius` are gone: use `SSAOOcclusionRadius` (metres,
+  default 0.25) and `SSAOIntensity` (default 1).
+- **`serialization.md`:** the property accessors' `value` type does not narrow on `type: 'float'`, so the
+  docs' `value.num[0]` needs a cast under this repo's strict tsconfig.
+
+## Device API
+
+- **Set a `RenderStateSet` before every raw draw** (depth and cull); without one an indexed cube drew nothing.
+- **`Matrix4x4.lookAt` is the camera's world matrix**, not a view matrix: invert it (`invertAffine`).
+- **`Matrix4x4.perspective` and `DEPTH_COMPARE_DEFAULT` follow reverse-Z**: clear with `DEPTH_CLEAR_VALUE`.
+
+## Scenes
+
+- **The default scene has a bright scatter sky and IBL**, which washes out bloom and dark demos:
+  set `scene.env.sky.skyType = 'none'` (and `scene.env.light.type`) when the effect needs contrast.
+- **`Vector3` has no `setX`/`setY`/`setZ`**: use `setXYZ` or `.x =`.
+- **Every file write in the worktree makes the dev server reload open pages**: re-open before
+  judging a blank stage.
