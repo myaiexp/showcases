@@ -187,3 +187,7 @@ GitHub Pages. No service on the VPS.
   library's CDN fonts for bundled stand-ins and answers every icon/illus keyword offline; never `ref:search:`
   or an off-page `ref:remote:`. `registerResourceLoader` is page-wide: fall back to `offlineResource` and restore
   `installOfflineLoader()` on cleanup. JSX lives in a sibling `.tsx` with the docs' `@jsxImportSource` pragma.
+- Penrose: build on `packages/penrose/shared/playground.ts` (traps in `shared/traps.md`); each main.ts writes its whole
+  trio. Solves go through `shared/solver.ts`, one rAF loop with a frame budget, since `optimize()` blocks. Diagrams sit
+  on light paper. `test/penrose-examples.test.ts` fails degenerate layouts (negative sizes, off canvas) for every card
+  variation; `test/penrose-citations.test.ts` wants every Style function called to appear in a cited docs file.

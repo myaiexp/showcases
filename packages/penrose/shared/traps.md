@@ -176,5 +176,8 @@ Found while building this gallery. Read before building an example, and add to i
   or the optimizer carries on from the old LBFGS history.
 - `makeTranslateOnMouseDown` registers window listeners that only its own pointerup removes, so a disposed example
   mid-drag would leak them; shared/interactive.ts does the same job with listeners tied to `stage.signal`.
+- The editor runs a `draggingConstraint` string as a JavaScript function body. This gallery never evaluates strings
+  as code: shared/drag-constraint.ts parses `return [a, b]` over x, y, numbers, arithmetic and `Math.*`, and an
+  unsupported body is an error message, not a call.
 - `scaleVaryingValues` throws "Points scaling not implemented" for Line, Polygon and Polyline (`scalableShapePaths` has
   them); only circles, ellipses and width/height shapes can scale.
