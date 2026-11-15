@@ -5,7 +5,7 @@ import { slider } from '../../shared/controls.ts';
 import { zephyrExample } from '../../shared/frame.ts';
 import { BLUE, cast, colliderOf, dynBox, floor, GREEN, launch, mat, orbit, ORANGE, respawn, SLATE, startPhysics, YELLOW } from '../../shared/phys-kit.ts';
 
-const TILT = 0.42; // radians; the ramp's right end is lower
+const TILT = 0.5; // radians; the ramp's right end is lower
 
 export default zephyrExample(import.meta.url, async (stage) => {
   const kit = await startPhysics(stage);
@@ -18,7 +18,7 @@ export default zephyrExample(import.meta.url, async (stage) => {
   ramp.rotation = Quaternion.fromAxisAngle(Vector3.axisPZ(), -TILT);
   const rampCollider = new Collider();
   rampCollider.size = new Vector3(9, 0.3, 6);
-  rampCollider.friction = 0.5;
+  rampCollider.friction = 0.3;
   ramp.physics = new NodePhysics({ colliders: [rampCollider] });
   cast(kit, ramp);
 
@@ -36,7 +36,7 @@ export default zephyrExample(import.meta.url, async (stage) => {
     });
   respawn(kit, build, 6500, 'Slide again');
 
-  if (stage.bar) slider(stage.bar, 'Ramp friction', [0, 1.5, 0.05], 0.5, (v) => (rampCollider.friction = v));
+  if (stage.bar) slider(stage.bar, 'Ramp friction', [0, 1.5, 0.05], 0.3, (v) => (rampCollider.friction = v));
 
   orbit(kit, new Vector3(0, 5, 11), new Vector3(0, 1.8, 0));
   launch(kit);

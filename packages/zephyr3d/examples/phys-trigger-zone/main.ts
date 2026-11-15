@@ -6,7 +6,7 @@ import { BLUE, colliderOf, dynBall, dynBox, floor, launch, mat, orbit, ORANGE, r
 
 export default zephyrExample(import.meta.url, async (stage) => {
   const kit = await startPhysics(stage);
-  floor(kit, 14, 8);
+  floor(kit, 20, 12);
   stage.caption('a trigger collider blocks nothing; bodies inside turn pink');
 
   // The zone: a collider with isTrigger set, and no RigidBody
@@ -53,7 +53,7 @@ export default zephyrExample(import.meta.url, async (stage) => {
         nodes.push(ball);
       }
       const box = dynBox(kit, 0.6, new Vector3(-4, 1, 0), YELLOW);
-      box.physics!.body!.setLinearVelocity(new Vector3(5, 3, 0)); // thrown through the zone
+      box.physics!.body!.setLinearVelocity(new Vector3(3.5, 3, 0)); // thrown through the zone
       nodes.push(box);
       nodes.push(dynBox(kit, 0.5, new Vector3(0.4, 7, 0.2), BLUE));
       return nodes;

@@ -95,3 +95,14 @@ Found while building this gallery. Read before building an example; add to it.
   `'cubicspline-natural'`.
 - **Repeated `fetchModel` calls** give independent nodes sharing primitives and materials (skinned
   instancing without `clone()`). Create humanoid mask clips lazily: making all ten at mount stalled Chrome here.
+
+## Physics
+
+- **Heights differ by class**: `CapsuleShape.height` is the straight middle; `Collider.height` and
+  `CharacterController.height` are the total (middle + 2·radius).
+- **`TorusShape` lies in the XZ plane**; `outerRadius` is the major radius, `innerRadius` the tube.
+- **A force on a sleeping body is lost**: `wakeUp()` before `applyForce`; switching `motionType` needs it too.
+- **`restitution` and `friction` average over the touching pair**: a 0-restitution ball on a floor of 1 bounces at 0.5.
+- **Hinge and slider joints go on a child node** (set `joint.axis` for a slider). `BallJoint.swingLimit` is soft.
+- **Positive `Wheel` steering turns left**; a rear-steer share reverses it.
+- **Removing a compound body** needs `removeCaster` on every descendant mesh, not only the root.

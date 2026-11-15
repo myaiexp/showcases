@@ -158,8 +158,8 @@ export function dynBall(kit: Kit, radius: number, pos: Vector3, color: Rgb, mass
 }
 
 /** A capsule mesh whose total height (round ends included) matches Collider.height. */
-export function capsuleShape(radius: number, totalHeight: number): CapsuleShape {
-  return new CapsuleShape({ radius, height: totalHeight - 2 * radius });
+export function capsuleShape(radius: number, totalHeight: number, anchor = 0.5): CapsuleShape {
+  return new CapsuleShape({ radius, height: totalHeight - 2 * radius, anchor });
 }
 
 /** A cylinder mesh standing on Y, centred. */
@@ -195,4 +195,36 @@ export function respawn(kit: Kit, build: () => Mesh[], cardMs = 8000, label = 'R
   if (kit.stage.bar) button(kit.stage.bar, label, reset);
   else kit.stage.every(cardMs, reset);
   return reset;
+}
+
+export interface Beam {
+  /** Stretches the beam between two points (and recolours it). */
+  set(from: Vector3, to: Vector3, color?: Rgb): void;
+  show(visible: boolean): void;
+}
+
+/** A thin box used to draw a ray: `set` places and stretches it between two points. */
+export function beam(kit: Kit, color: Rgb = YELLOW, width = 0.05): Beam {
+  const mesh = new Mesh(kit.scene, new BoxShape({ size: width, sizeY: width, sizeZ: 1 }), mat(color));
+  mesh.castShadow = false;
+  return {
+    set(from, to, c) {
+      const d = Vector3.sub(to, from, new Vector3());
+      const len = Math.max(d.magnitude, 1e-4);
+      mesh.lookAt(from, to, Math.abs(d.y / len) > 0.99 ? Vector3.axisPX() : Vector3.axisPY());
+      mesh.position.setXYZ((from.x + to.x) / 2, (from.y + to.y) / 2, (from.z + to.z) / 2);
+      mesh.scale.setXYZ(1, 1, len);
+      if (c) tint(mesh, c);
+    },
+    show(visible) {
+      mesh.showState = visible ? 'visible' : 'hidden';
+    },
+  };
+}
+
+/** A small unlit-looking marker ball. */
+export function marker(kit: Kit, radius: number, color: Rgb): Mesh {
+  const m = new Mesh(kit.scene, new SphereShape({ radius }), mat(color));
+  m.castShadow = false;
+  return m;
 }
