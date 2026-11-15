@@ -147,3 +147,34 @@ Found while building this gallery. Read before building an example, and add to i
   3-vectors, and a Polyline cannot hold 3-vectors (project them first).
 - Curve measures: `encourage minimal(elasticEnergy(pts, false))` and the like work on a list of free points; start a polygon as
   free radii at fixed angles (always simple) rather than free points. `curvatures` is signed (positive counterclockwise).
+
+## Optimization API, constraints and interactivity (3.3.1)
+
+- optimization-api.md's example is wrong three ways: `const problem = await problem(…)` shadows its import, `problem()`
+  returns a `Problem` whose `start({})` returns the `Run`, and `converged` and `vals` live on the Run (`problem.converged`
+  is undefined). It also logs `x`, but a `variable` keeps the value it was created with; read `run.vals.get(x)`.
+  Passing `(x - 5)²` as `constraints` works (it is driven to 0), `objective` too.
+- `run({ until })` asks `until` before each iteration, so a counter in it takes exactly that many. The Run is immutable:
+  `run.run(…)` returns the next one. The first iteration of a long-step line search often lands far from the start.
+- `Run.vals` leaves out frozen variables (and `start({ vals })` is how a variable gets its starting value). Keep your own
+  map of what you froze. A frozen variable can carry a constant such as a weight or padding into a problem built once.
+- The package's `compile` is the trio compiler: it shadows Autodiff's `compile`/`interp`. To evaluate an expression
+  for a plot, `genGradient(vars, [expr], [])` with weight 0 returns the value as `phi` (shared/opt-eval.ts).
+- Pixel-sized numbers make the penalty method explode: an overlapping start with radii around 40 can send the first
+  iterate to 1e12. Model in units near 1 and scale when drawing (shared/disks.ts `diskView`). The docs' `repel` weight
+  of 10e6 is for pixel distances; with units around 1 use weights of 0.01 to 100.
+- A constraint with no objective stops at whichever point first satisfies it, often far inside the allowed range
+  (`y - 3 <= 0` from 10 landed at -3490 once), so give an objective if the position matters.
+- constraints.md: the `disjoint` comment says `d + r1 + r2 >= 0`; the code is `r1 + r2 - d`, which is `<= 0` when disjoint.
+  `makeCircle` is not exported, so examples build `Disk = Pick<Circle<Num>, 'center' | 'r'>` from `vectorV`/`floatV`.
+- Interactivity.md's c5 reads `center + (0, 10)` with `center` undefined; use a named unknown (`pos + (0, 10)`).
+- Shape paths in `interactivityInfo` are Style names: `` `a`.icon `` for Substance objects (backticks included),
+  `c1.shape` for namespaces. `toSVG`'s fifth argument (a `Map`) fills with shape path -> svg element, and every
+  shape's svg element has a `<title>` holding its path.
+- A pin is `inputMask[i] = false` in the current stage's `constraintSets` entry, built from the compiled state's masks
+  each time (shared/interactive.ts). After moving inputs, reset `params` with `start(n)` and `currentStageIndex` to 0,
+  or the optimizer carries on from the old LBFGS history.
+- `makeTranslateOnMouseDown` registers window listeners that only its own pointerup removes, so a disposed example
+  mid-drag would leak them; shared/interactive.ts does the same job with listeners tied to `stage.signal`.
+- `scaleVaryingValues` throws "Points scaling not implemented" for Line, Polygon and Polyline (`scalableShapePaths` has
+  them); only circles, ellipses and width/height shapes can scale.
