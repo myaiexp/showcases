@@ -1,0 +1,109 @@
+/* Shared cosmos.gl chrome: stage, control bar, graph box, caption, side panel */
+.cg-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font);
+}
+.cg-card {
+  height: 100%;
+  padding: 0;
+  gap: 0;
+  font-size: 11px;
+  line-height: 1.3;
+  position: relative;
+}
+.cg-full {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.cg-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  font-size: 13px;
+}
+.cg-bar:empty {
+  display: none;
+}
+.cg-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.cg-bar input[type='range'] {
+  width: 120px;
+}
+.cg-bar output {
+  min-width: 3ch;
+  color: var(--fg-2);
+  font-variant-numeric: tabular-nums;
+}
+.cg-scene {
+  display: flex;
+  gap: 12px;
+  min-height: 0;
+  flex: 1;
+}
+.cg-graph {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #222222;
+}
+.cg-card .cg-graph {
+  height: 100%;
+  border-radius: 0;
+}
+.cg-graph canvas {
+  display: block;
+}
+.cg-caption {
+  color: var(--fg-2);
+  min-height: 1.3em;
+}
+.cg-card .cg-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2px 6px;
+  background: rgb(0 0 0 / 0.55);
+  color: #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+.cg-card .cg-caption:empty {
+  display: none;
+}
+.cg-caption[data-tone='ok'] {
+  color: var(--green, #4ade80);
+}
+.cg-caption[data-tone='warn'] {
+  color: var(--accent);
+}
+.cg-caption[data-tone='bad'] {
+  color: var(--red, #f87171);
+}
+.cg-hint {
+  color: var(--fg-3);
+  font-size: 13px;
+}
+.cg-side {
+  width: 240px;
+  flex: none;
+  font-size: 13px;
+  color: var(--fg-2);
+  overflow: auto;
+}
+.cg-side pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}

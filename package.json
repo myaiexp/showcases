@@ -34,6 +34,7 @@
     "@babylonjs/smart-filters-blocks": "9.36.0",
     "@babylonjs/viewer": "9.36.0",
     "@chenglou/pretext": "^1.0.0",
+    "@cosmos.gl/graph": "3.6.0",
     "@css-doodle/addons": "1.1.0",
     "@deck.gl/aggregation-layers": "9.4.1",
     "@deck.gl/core": "9.4.1",

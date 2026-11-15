@@ -1,0 +1,174 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Configuration" />
+
+# cosmos.gl configuration properties
+
+All configuration properties are optional. When creating a graph or calling `setConfig()`, any omitted properties will use their default values.
+
+> **Note:** `setConfig()` fully resets the configuration to defaults before applying the provided values.
+> Properties not included in the call will revert to their defaults, not retain their previous values.
+>
+> To update only specific properties without affecting the rest, use `setConfigPartial()` instead.
+
+| Property | Description | Default |
+|---|---|---|
+| enableSimulation | If set to `false`, the simulation will not run. This property can be changed at runtime using `setConfig()` or `setConfigPartial()`. Re-enabling simulation recreates the required simulation resources immediately. | `true` |
+| transitionDuration | Duration in milliseconds of the animated transitions applied when point positions, point colors, point sizes, point stroke colors, point stroke widths, link colors, or link widths change via the corresponding setters.<br /><br />Set to `0` (or any value `<= 0`) to disable animated transitions and snap to the new state instead. See [Transitions](#transitions) below for details and migration notes. | `800` |
+| transitionEasing | Easing curve used for animated transitions. Accepts a `TransitionEasing` enum value (e.g. `TransitionEasing.CubicInOut`) or its string literal (e.g. `'cubic-in-out'`).<br /><br />Allowed values: `linear`, `quad-in`, `quad-out`, `quad-in-out`, `cubic-in`, `cubic-out`, `cubic-in-out`, `sin-in`, `sin-out`, `sin-in-out`, `exp-in`, `exp-out`, `exp-in-out`, `circle-in`, `circle-out`, `circle-in-out`. | `TransitionEasing.CubicInOut` |
+| backgroundColor | Canvas background color | `#222222` |
+| spaceSize | **Deprecated — goes away in the next major.** It sets no size and bounds no position: it places the world origin at `spaceSize / 2` on both axes (the centre of the screen under the initial view, and where gravity pulls), and the initial rescale (`rescalePositions`) and a few step guards are fractions of it. Leave it at the default; a non-default value logs a warning, and a layout saved around another origin will need shifting when the key goes.<br /><br />**No bound:** a layout extends as far as its forces take it. Positions are float32, so keep `spaceSize` at most 2,097,152 (2²¹, an origin of about 1e6); a larger value is used as given, with a console warning. | `4096` |
+| pointDefaultColor | The default color to use for points when no point colors are provided, or if the color value in the array is `undefined` or `null`. This can be either a hex color string (e.g., '#b3b3b3') or an array of RGBA values in the format `[red, green, blue, alpha]` where each value is a number between 0 and 1 | `#b3b3b3` |
+| pointGreyoutOpacity | Opacity multiplier for points when they are greyed out (when highlighting is active). Values range from 0 (completely transparent) to 1 (fully opaque). When defined, this value is multiplied with the point's final alpha instead of the default `pointOpacity`. When `undefined`, greyed-out points use `pointOpacity` as their multiplier. | `undefined` |
+| pointGreyoutColor | The color to use for points when they are greyed out (when highlighting is active). This can be either a hex color string (e.g., '#b3b3b3') or an array of RGBA values in the format `[red, green, blue, alpha]` where each value is a number between 0 and 1. If not provided, the color will be the same as the point's original color, but darkened or lightened depending on the background color. If `pointGreyoutOpacity` is also defined, it will be multiplied with the final alpha of this color. | `undefined` |
+| pointDefaultSize | The default size value to use for points when no point sizes are provided or if the size value in the array is `undefined` or `null` | `4` |
+| pointDefaultShape | The default shape to use for points when no point shapes are provided via `setPointShapes()`, or if the shape value in the array is `undefined`, `null`, or invalid. Accepts a `PointShape` enum value (e.g., `PointShape.Circle`), a plain number (e.g., `2`), or a numeric string (e.g., `"2"`). See [API Reference](../?path=/docs/api-reference--docs#set_point_shapes) for all shape values | `PointShape.Circle` |
+| pointOpacity | Universal opacity value applied to all points. This value multiplies with individual point alpha values (if set via setPointColors). Useful for dynamically controlling opacity of all points without updating individual RGBA arrays. | `1.0` |
+| pointSizeScale | Scale factor for the point size | `1` |
+| pointDefaultStrokeWidth | Default width, in CSS pixels, of the stroke drawn along the inside edge of a point: a thin band in a shade of the point's own color (see `pointDefaultStrokeColor`) that separates overlapping points. Used for every point without a width of its own from `setPointStrokeWidths` (`NaN` = use this default). Inset, so it never enlarges the point; constant while zooming even with `scalePointsOnZoom`. On a point too small for its stroke the band narrows to half the point's depth, so some fill always shows and nothing switches off as points shrink. Points with an image get the stroke on the shape only, underneath the image. `0` disables the stroke; with no per-point widths either, the stroke costs nothing to draw | `0` |
+| pointDefaultStrokeColor | Default stroke color, used for every point without a color of its own from `setPointStrokeColors` (`NaN` channel = use this default). Either a color (hex string or RGBA in 0..1) used as is, or a rule deriving it from the point's own fill by a `pointStrokeContrast` step in OKLab lightness: `'darken'` and `'lighten'` apply that direction to every point, `'auto'` decides per point from its lightness (light points darken, dark points lighten); a forced direction has no room on a fill already at that end. A color's alpha is its opacity over the fill; the point's own alpha (its color, `pointOpacity`, greyout) applies to the whole point, stroke included. Greyed-out points always get the derived shade of their greyed fill | `'auto'` |
+| pointStrokeContrast | Size of the OKLab lightness step (`L`, 0..1) between a point's fill and its derived stroke color. Perceptual, so every hue gets an equally visible stroke: `0.1` reads as a clear outline, `0.05` as a hint. Hue is preserved; chroma is reduced only where the shifted color would leave the sRGB gamut. Applies to the derivation rules only | `0.03` |
+| pointOcclusionCulling | Depth-based occlusion culling: skips shading and blending of point fragments hidden underneath other opaque points, greatly improving performance when many large opaque points overlap. Rendering output stays visually identical (point edges remain antialiased and per-point translucent colors still blend correctly). Applies automatically only while it is safe: `pointOpacity` is `1` and `highlightedPointIndices` is not set. Set to `false` to always use the standard single-pass rendering | `true` |
+| hoveredPointCursor | Cursor style to use when hovering over a point | `auto` |
+| hoveredLinkCursor | Cursor style to use when hovering over a link | `auto` |
+| renderHoveredPointRing | Turns ring rendering around a point on hover on / off | `false` |
+| hoveredPointRingColor | Hovered point ring color hex value or an array of RGBA values | `white` |
+| focusedPointRingColor | Focused point ring color hex value or an array of RGBA values | `white` |
+| focusedPointIndex | Set focus on a point by index. A ring will be rendered around the focused point. When set to `undefined`, no point is focused. | `undefined` |
+| highlightedPointIndices | Array of point indices to highlight. Non-highlighted points are greyed out. `[]` greys out all points. Set to `undefined` to clear highlighting. | `undefined` |
+| outlinedPointIndices | Array of point indices to render with an outline ring. Independent of highlighting. | `undefined` |
+| outlinedPointRingColor | Color of the outline ring. Hex string or RGBA array. | `white` |
+| renderLinks | Turns link rendering on / off | `true` |
+| linkDefaultColor | The default color to use for links when no matching link-color array is provided, or for each `NaN` channel in the `Float32Array`. The caller's array is retained verbatim. This can be either a hex color string (e.g., '#666666') or an array of RGBA values in the format `[red, green, blue, alpha]` where each value is a number between 0 and 1 | `#666666` |
+| linkOpacity | Universal opacity value applied to all links. This value multiplies with individual link alpha values (if set via setLinkColors). Useful for dynamically controlling opacity of all links without updating individual RGBA arrays. | `1.0` |
+| linkGreyoutOpacity | Greyed-out link opacity value when link highlighting is active | `0.1` |
+| linkDefaultWidth | The default width to use when no matching link-width array is provided, or for a `NaN` entry in the `Float32Array`. The caller's array is retained verbatim. | `1` |
+| linkDefaultStyle | The default style (stroke pattern) for links when no styles are provided via `setLinkStyles()`, or if the value is `undefined`, `null`, or invalid. Accepts a `LinkStyle` enum value (e.g., `LinkStyle.Solid`), a plain number, or a numeric string. `0` = Solid, `1` = Dashed, `2` = Dotted | `LinkStyle.Solid` |
+| linkDashLength | Dash length for dashed links (`LinkStyle.Dashed`). When `scaleLinksOnZoom` is `false` (default), it is a screen-pixel size (constant on-screen size, but the pattern shifts along the link as its on-screen length changes with zoom). When `scaleLinksOnZoom` is `true`, it is measured in graph space, locking the pattern to the link so it scales with zoom instead of shifting | `8` |
+| linkDashGap | Gap between dashes (dashed links) or between dots (dotted links). Same units as `linkDashLength` (screen pixels, or graph space when `scaleLinksOnZoom` is `true`) | `4` |
+| linkColorInterpolateFromEndpoints | If `true`, each link's color is interpolated along its length from its source point color to its target point color (from `setPointColors()`). Overrides the per-link RGB from `setLinkColors()` (opacity, greyout, and hover still apply). Works with any stroke pattern. Note: on curved links the gradient and dash/dot spacing are approximate | `false` |
+| linkWidthScale | Scale factor for the link width | `1` |
+| hoveredLinkColor | The color to use for links when they are hovered. This can be either a hex color string (e.g., '#ff3333') or an array of RGBA values in the format `[red, green, blue, alpha]` where each value is a number between 0 and 1 | `undefined` |
+| hoveredLinkWidthIncrease | Number of pixels to add to the link width when hovered | `5` |
+| highlightedLinkIndices | Array of link indices to highlight. Non-highlighted links are greyed out. `[]` greys out all links. Set to `undefined` to clear highlighting. | `undefined` |
+| focusedLinkIndex | Set focus on a link by index. The focused link will be rendered wider. When set to `undefined`, no link is focused. | `undefined` |
+| focusedLinkWidthIncrease | Number of pixels to add to the link width when focused | `5` |
+| scaleLinksOnZoom | Increase/decrease link width when zooming | `false` |
+| linkBlending | Controls alpha blending for link rendering. `true`: source-over blending for transparency and soft AA edges. `false`: opaque hard edges (faster for dense graphs); greyed-out links are hidden entirely instead of dimmed. | `true` |
+| curvedLinks | If set to true, links are rendered as curved lines. Otherwise as straight lines | `false` |
+| curvedLinkSegments | Number of segments in a curved line | `19` |
+| curvedLinkWeight | Weight affects the shape of the curve | `0.8` |
+| curvedLinkControlPointDistance | Defines the position of the control point of the curve on the normal from the centre of the line. If set to 1 then the control point is at a distance equal to the length of the line | `0.5` |
+| linkDefaultArrows | The default link arrow value that controls whether or not to display link arrows | `false` |
+| linkArrowsSizeScale | Scale factor for the link arrows size | `1` |
+| linkVisibilityDistanceRange | The range defines the minimum and maximum link visibility distance in pixels.<br /><br />The link will be fully opaque when its length is less than the first number in the array, and will have `linkVisibilityMinTransparency` transparency when its length is greater than the second number in the array.<br /><br />This distance is defined in screen space coordinates and will change as you zoom in and out (e.g. links become longer when you zoom in, and shorter when you zoom out). | `[50, 150]` |
+| linkVisibilityMinTransparency | The transparency value that the link will have when its length reaches the maximum link distance value from `linkVisibilityDistanceRange`. | `0.25` |
+| showFPSMonitor | Show WebGL performance monitor | `false` |
+| pixelRatio | Pixel ratio for the canvas. Higher values use more GPU memory but provide better quality on high-DPI displays.<br /><br />**Note:** This value always overrides the luma.gl Device's `useDevicePixels` setting, even when providing an external device via the `devicePromise` parameter. | `window.devicePixelRatio \|\| 2` |
+| scalePointsOnZoom | Increase/decrease point size when zooming | `false` |
+| initialZoomLevel | Initial zoom level (set once during initialization) | `undefined` |
+| enableZoom | Enables zooming interactions | `true` |
+| enableSimulationDuringZoom | Keep simulation running during zoom operations. Note: initialization zoom (e.g. `fitViewOnInit`) always runs with simulation enabled regardless of this setting. Individual zoom method calls can override this value via their `enableSimulation` parameter. | `false` |
+| enableDrag | Enable/disable point dragging | `false` |
+| fitViewOnInit | Auto-zoom to fit all points on initialization | `true` |
+| fitViewDelay | Delay before fitting view when enabled in milliseconds | `250` |
+| fitViewPadding | Extra space around points when fitting view | `0.1` |
+| fitViewDuration | Animation duration for fit view operation in milliseconds | `250` |
+| fitViewByPointsInRect | When `fitViewOnInit` is set to `true`, fits the view to show the points within a rectangle defined by its two corner coordinates `[[left, bottom], [right, top]]` in the scene space | `undefined` |
+| fitViewByPointIndices | When `fitViewOnInit` is set to `true`, fits the view to show only the specified points by their indices. Takes precedence over `fitViewByPointsInRect` when both are provided. | `undefined` |
+| randomSeed | Providing a value allows control over layout randomness for consistency across simulations. Applied only on initialization | `undefined` |
+| pointSamplingDistance | Sampling density for point position methods (used in `getSampledPointPositionsMap`) in pixels | `100` |
+| linkSamplingDistance | Sampling density for link position methods (used in `getSampledLinks` and `getSampledLinkPositionsMap`) in pixels | `100` |
+| attribution | Controls the text shown in the bottom right corner. Provide HTML content as a string for custom attribution. Empty string hides attribution. Applied only on initialization | `''` |
+| rescalePositions | Control automatic point position adjustment. When undefined: auto-rescale if simulation disabled | `undefined` |
+
+**Notes:**
+- The attribution text color can be customized using CSS variable `--cosmosgl-attribution-color`.
+- Error message text color can be customized using CSS variable `--cosmosgl-error-message-color`.
+
+## Simulation configuration
+
+cosmos.gl layout algorithm was inspired by the [d3-force](https://github.com/d3/d3-force#forces) simulation forces: Link, Many-Body, Gravitation, Centering, and Collision. It provides several simulation settings to adjust the layout. Each of them can be changed in real time, while the simulation is in progress.
+
+| Property | Description  | Recommended range | Default |
+|---|---|---|---|
+| simulationDecay | Force simulation decay coefficient. <br /><br />Use smaller values if you want the simulation to "cool down" slower.| 100 – 10 000| `5000` |
+| simulationGravity | Gravity force coefficient | 0.0 – 1.0 | `0.25` |
+| simulationCenter | Centering force coefficient | 0.0 – 1.0 | `0.0` |
+| simulationRepulsion | Repulsion force coefficient | 0.0 – 2.0 | `1.0` |
+| simulationRepulsionSamples | Close-range repulsion samples per grid cell above 4,096 points. Cells holding at most this many points are repelled exactly; denser cells are sampled anew every tick, which can show as shimmer in held layouts. Each sample adds one render pass per tick. Unset, the graph's render loop measures how full the cells are and picks the smallest count that samples all but 1 % of the points whole: 8 to 64 up to 16,384 points, 8 or 16 up to 100,000, 8 above; before its first measurement, and wherever none is taken (a deck.gl layer or another host driving the frames, a graph given its device, `enableRenderLoop: false`), it uses 32 up to 16,384 points, 16 up to 65,536 and 8 above. | 2 – 64 (auto picks 8 – 64, by size) | `undefined` |
+| simulationRepulsionTheta | **Deprecated, no effect.** The Many-Body force now repels close points individually (a grid pyramid with an unbiased Monte-Carlo near field), so there is no theta approximation to tune. | - | `1.15` |
+| simulationRepulsionQuality | How far the Many-Body force keeps its far-field approximation from a point. `'precise'` stays calm on clustered data while the simulation is hot and costs about a third more per step above 25,000 points, a few percent below; `'fast'` can shimmer there until the layout cools; `'auto'` is precise up to 25,000 points and fast above. | `'auto'`, `'precise'`, `'fast'` | `'auto'` |
+| simulationLinkSpring | Link spring force coefficient | 0.0 – 2.0 | `1.0` |
+| simulationLinkDistance | Minimum link distance. While `simulationCollision` is on, a link's rest length is never less than the sum of its two endpoints' effective collision radii, each including `simulationCollisionPadding`, so a spring can never pull a pair into overlap. | 1 – 20 | `10` |
+| simulationLinkDistRandomVariationRange | Link distance randomness multiplier range | [0.8 – 1.2,<br/> 1.2 – 2.0] | `[1, 1.2]` |
+| simulationRepulsionFromMouse | Repulsion from the mouse pointer force coefficient. The repulsion force is activated by pressing the right mouse button. | 0.0 – 5.0 | `2.0`
+| enableRightClickRepulsion | Enable or disable the repulsion force from mouse when right-clicking. When set to `true`, holding the right mouse button will activate the mouse repulsion force. When set to `false`, right-clicking will not trigger any repulsion force. | - | `false` |
+| simulationFriction | Friction coefficient. Values range from `0` (high friction, stops quickly) to `1` (no friction, keeps moving). | 0.0 – 1.0 | `0.85` |
+| simulationCluster | Cluster coefficient | 0.0 – 1.0 | `0.1` |
+| simulationCollision | Collision force coefficient. When greater than `0`, points push each other apart when they overlap, so they don't stack on top of one another. `1` applies the full pairwise correction before the per-point radius cap, so deep overlaps can need multiple passes; up to `2` over-relaxes, which settles jammed piles faster. At or below 4,096 points every pair is tested; above that a GPU spatial hash with depth-peeled neighbour slots keeps it pairwise in linear time (exact while each hash bucket holds at most 32 points through 16,384 total points, 16 through 65,536, and 8 above that; sampled afresh every pass in denser buckets. Distant cells share a bucket's slot budget, with candidates checked against their world cell). Unlike the other forces it is a constraint: not scaled by alpha (unless `simulationCollisionCooling` opts in) and integrated without friction, so overlap keeps resolving at full strength while the layout cools. Set to `0` to skip collision passes. GPU resources are allocated on first use and retained if collision is later disabled; a graph that never uses collision allocates none. | 0.0 – 2.0 | `0` |
+| simulationAttractor | Attractor force coefficient. Scales the pull of each point toward its own attractor (`setPointAttractors`, per-point weights via `setPointAttractorStrength`). Only points that have an attractor are affected; with none set the force does nothing. | 0.0 – 1.0 | `0.1` |
+| simulationCollisionRadius | Collision radius. When `0`, each point's collision radius is derived from its size (half of the point size). When greater than `0`, every point uses this fixed radius regardless of its size. | 0 – 100 | `0` |
+| simulationCollisionPadding | Extra room added to every point's collision radius, in simulation space units. Without padding, points settle just touching; with padding, neighbouring points keep a gap of twice this value between their visual edges. Composes with both size-derived and fixed `simulationCollisionRadius`. | 0 – 50 | `0` |
+| simulationCollisionIterations | Collision passes per simulation tick. Each pass re-runs the collision on the latest positions — every pair at or below 4,096 points, a fresh spatial-hash build above — and applies one bounded correction, so more passes unwind a dense pile in fewer ticks, with the cost linear in the number of passes. `1` suits sparse graphs; dense clusters with many links pulling inward resolve noticeably better at `2`–`4`. | ≥ 1; typically 1 – 8 | `1` |
+| simulationCollisionCooling | How much the collision correction cools with alpha, as the power alpha is raised to. `0` keeps collision at full strength until the simulation ends, so overlap goes on resolving after every other force has faded; `1` scales it by alpha like the other forces, so a layout still under compression stops jittering as it cools, at the price of overlap left when alpha is low; `0.5` cools half as fast. | 0 – 1 | `0` |
+
+## Event Callbacks
+
+| Callback | Description | 
+|---|---|
+| onSimulationStart | Called when simulation starts |
+| onSimulationTick | Called on every simulation tick, with the current alpha value and hover information |
+| onSimulationEnd | Called when simulation stops |
+| onSimulationPause | Called when simulation pauses |
+| onSimulationUnpause | Called when simulation unpauses |
+| onTransitionStart | Called when an animated transition starts (see [Transitions](#transitions)) |
+| onTransition | Called on every transition frame with the eased `progress` value in the `[0, 1]` range: `(progress: number) => void` |
+| onTransitionEnd | Called when a transition ends. `interrupted` is `true` when the transition was replaced or ended early — specifically: a new transition cycle starts before the current one finishes, `transitionDuration` is set to `0` mid-flight, `enableSimulation` is turned on mid-flight, or `start()` / `unpause()` is called while a position transition is active. Otherwise `false`: `(interrupted: boolean) => void` |
+| onClick | Called on canvas click, with point index and position if exists |
+| onPointClick | Called when a point is clicked, with point index and position |
+| onLinkClick | Called when a link is clicked, with link index |
+| onBackgroundClick | Called when the background (empty space) is clicked |
+| onContextMenu | Called when a context menu trigger occurs on the canvas, with point index and position if exists |
+| onPointContextMenu | Called when a context menu trigger occurs on a point, with point index and position |
+| onLinkContextMenu | Called when a context menu trigger occurs on a link, with link index |
+| onBackgroundContextMenu | Called when a context menu trigger occurs on the background (empty space) |
+| onMouseMove | Called on mouse movement with hover info |
+| onPointMouseOver | Called when pointer enters a point, with index, position, event, isHighlighted, and isOutlined |
+| onPointMouseOut | Called when pointer leaves a point |
+| onLinkMouseOver | Called when pointer enters a link |
+| onLinkMouseOut | Called when pointer leaves a link |
+| onZoomStart | Called when zoom/pan starts |
+| onZoom | Called during zoom/pan |
+| onZoomEnd | Called when zoom/pan ends |
+| onDragStart | Called when dragging starts |
+| onDrag | Called during dragging |
+| onDragEnd | Called when dragging ends |
+
+## <a name="transitions" href="#transitions">#</a> Transitions
+
+By default, changes made through the following setters are animated on the next `render()` call:
+
+- `setPointPositions`
+- `setPointColors`
+- `setPointSizes`
+- `setPointStrokeColors`
+- `setPointStrokeWidths`
+- `setLinkColors`
+- `setLinkWidths`
+
+A single transition cycle tracks every animated property in one shared timeline, driven by `transitionDuration` (default `800` ms) and `transitionEasing` (default `TransitionEasing.CubicInOut`). Set `transitionDuration: 0` to disable animations and snap to the new state instead.
+
+**First render after init.** Position setters always snap on the very first render — there is no prior state to interpolate from. The auto-pause rule described below is also skipped for the first render.
+
+**Auto-pause.** When `render()` fires with a pending **position** transition, `transitionDuration > 0`, and the simulation running (and it is not the first render), the simulation is paused before the transition starts and `onSimulationPause` fires. The simulation stays paused after the transition ends until you resume it with `unpause()`.
+
+**`fitView` during a transition.** `fitView()` and `fitViewByPointIndices()` frame the target positions (the latest `setPointPositions` argument), not the interpolated positions currently on screen.
+
+**Toggling `enableSimulation` mid-transition.** Turning simulation on while a transition is active interrupts it (`onTransitionEnd(true)` fires) and the simulation starts from the current mid-animation positions. Any queued position transition is also dropped to avoid auto-pause on the next render. Turning simulation off leaves an active transition untouched.
+
+**Migration.** The `transitionDuration` default of `800` ms means `setPointPositions(...); render()` after the first render now animates instead of snapping. To keep the old snap behavior, set `transitionDuration: 0` at construction time, or toggle it per-update via `setConfigPartial({ transitionDuration: 0 })`.
+
+---
+Copyright [OpenJS Foundation](https://openjsf.org) and cosmos.gl contributors. All rights reserved. The [OpenJS Foundation](https://openjsf.org) has registered trademarks and uses trademarks.  For a list of trademarks of the [OpenJS Foundation](https://openjsf.org), please see our [Trademark Policy](https://trademark-policy.openjsf.org/) and [Trademark List](https://trademark-list.openjsf.org/).  Trademarks and logos not indicated on the [list of OpenJS Foundation trademarks](https://trademark-list.openjsf.org) are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
+[The OpenJS Foundation](https://openjsf.org/) | [Terms of Use](https://terms-of-use.openjsf.org/) | [Privacy Policy](https://privacy-policy.openjsf.org/) | [Bylaws](https://bylaws.openjsf.org/) | [Code of Conduct](https://code-of-conduct.openjsf.org) | [Trademark Policy](https://trademark-policy.openjsf.org/) | [Trademark List](https://trademark-list.openjsf.org/) | [Cookie Policy](https://www.linuxfoundation.org/cookies/)

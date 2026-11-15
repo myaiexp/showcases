@@ -1,0 +1,319 @@
+# Non-blocking position reads (tracked points, cluster centroids), and point trackers
+
+**PRs:** [#273](https://github.com/cosmosgl/graph/pull/273) (tracked point reads), [#276](https://github.com/cosmosgl/graph/pull/276) (cluster centroid reads), [#257](https://github.com/cosmosgl/graph/pull/257) (point trackers)
+
+**Frame pacing and cold reads:** `perf/readback-frame-pacing`: `feat(points, lines, clusters): report a copy in flight as pending until its fence signals` (`a38819cb`), `perf(render): hold the next frame while a copy is pending — one frame in flight` (`48cc7c88`), `fix(points, clusters): a non-blocking read after a pause waits like a first read — an overlay resumes in place` (`6fd5983c`)
+
+## Why
+
+Overlays such as labels read positions back from the GPU on every simulation tick:
+`getTrackedPointPositionsMap()` for point labels, `getClusterPositions()` for cluster
+labels. Both ended in a synchronous `readPixels`, which cannot return before the GPU
+has run everything queued ahead of it, in this case the whole tick. In Safari, whose
+WebGL runs in a separate GPU process, that wait is an IPC round trip on top of the
+drain, which is where the report of slow cluster labels came from.
+
+Two things were wrong, and each reader had both:
+
+- **The CPU cache was gated on the simulation being stopped.** While it ran, every
+  call read the GPU again, even a second call in the same frame (labels on tick and
+  again on zoom). The cache flag is already cleared by every writer of the position
+  texture, so the gate was redundant: the cache is valid exactly while the flag
+  holds. Without the gate, N reads per position change cost one readback instead
+  of N.
+- **One read per tick still stalled for the tick.** The first read after a position
+  change has to go to the GPU, and a synchronous read parks the main thread for as
+  long as the tick's GPU work takes. The frame loses the CPU-GPU overlap: the GPU
+  sits idle while the result transfers and while the CPU does its work between the
+  read and the draw, a fraction of a GPU-bound frame. The main thread loses the
+  whole wait, which nothing else on the page can use while the call blocks.
+
+Embedding added a third. The scheme below was built on `Graph`'s render frames, and
+tracking was one set behind three `Graph` methods. A standalone `GraphSimulation`,
+which is what a deck.gl layer draws, has no frames and had no tracking at all; a
+headless `Graph` and one with `enableRenderLoop: false` had the methods but no frame
+to feed them, so a non-blocking read stayed at its first result.
+
+## The scheme
+
+Both methods take `{ nonBlocking: true }` (one exported type, `PositionsReadOptions`;
+the tracked-only name it replaced was never published):
+
+```js
+// labels overlay, every tick
+graph.getClusterPositions({ nonBlocking: true })
+graph.getTrackedPointPositionsMap({ nonBlocking: true })
+
+// the same on a standalone simulation
+const tracker = simulation.trackPoints(indices)
+tracker.positions({ nonBlocking: true })
+simulation.getClusterPositions({ nonBlocking: true })
+```
+
+A non-blocking read returns the latest positions the GPU has already handed back, one
+frame behind the drawn points under `Graph`'s own render loop (a frame or more where a
+host drives frames itself, see below), and notes that a readback is wanted. The frame
+end issues the readback into a `PIXEL_PACK_BUFFER` behind a fence (the
+`PickingReadback` helper from [picking](2026-07-09-picking.md)); the next frame's
+start collects it, before the frame queues GPU work, so `getBufferSubData` has
+nothing to wait behind — provided no earlier frame is still queued, which is what
+[one frame in flight](#one-frame-in-flight) guarantees.
+
+Where no frame will come, the read does both jobs: it collects a copy that has landed
+and issues the next one. The frame end stays the first choice because it follows the
+frame's last position write, so the copy holds the newest positions; a read is the
+fallback because it is the only event a host without frames is sure to produce.
+`Graph` tells the points module which case it is in: asked for a tick, it requests a
+render and answers yes, or answers no when it is headless or has no render loop of
+its own. A standalone simulation has nobody to ask, which reads as no.
+
+What this buys: the GPU work is unchanged (the gather pass runs once per frame in
+which positions changed, which is what a blocking caller reading every tick pays
+once the cache is trusted), so the frame gets back the overlap the stall threw away
+and the main thread gets back the whole wait, since the call now costs a map or
+array lookup. The price is one frame of lag, which an overlay cannot show at the
+speeds points move between ticks.
+
+- Readbacks are issued only while non-blocking reads are being taken and only after
+  a position change, so they stop when the reads do or the layout settles.
+- `shouldKeepRendering()` stays true while one is in flight: the copy issued after
+  the simulation's last step is still collected, so an overlay ends on the settled
+  layout and the loop then idles. Same class of gap as the picking rebase fix.
+- The first read, and the first after the tracked set or the clusters change, still
+  blocks: there is nothing earlier to return. So does a read after a pause in reading,
+  whose cache predates the pause (see [a read after a pause](#a-read-after-a-pause)).
+- A non-blocking read taken outside a frame (a timer, a button) requests one; an idle
+  loop would never issue the readback it needs. Where no frame can be promised, the
+  read issues the copy itself.
+- A blocking read while a copy is in flight cancels it and reads synchronously: the
+  copy holds older positions than the read about to be taken.
+
+## One frame in flight
+
+The scheme above assumed the GPU is at most a frame behind the CPU, which holds on
+the graphs it was measured on and fails on the ones labels matter most for. On a
+GPU-bound graph Chrome lets the loop run several frames ahead of the GPU, and both
+halves of the scheme break:
+
+- The fence planted at the end of frame N signals only when the GPU finishes frame N,
+  by which time the loop is several frames on. The copy an overlay reads is that many
+  frames old, and labels visibly trail their points.
+- Collecting it still blocks. Chrome's `getBufferSubData` is a round trip that waits
+  for the GPU process to consume every command queued before it, the later frames
+  included (`GetBufferSubDataCHROMIUM` ends in `WaitForCmd()`). A signaled fence
+  says the copy is done, not that the queue in front of the collect is empty.
+
+So the render loop now keeps one frame in flight while a copy is on its way: in the
+animation-frame callback, if any copy's fence has not signaled, the frame is not
+drawn and a 1 ms timer re-checks; the frame runs as soon as the fence flips. The
+collect then has nothing queued ahead of it, and the positions it brings are one
+frame old. The problem surfaced in an application with a 100k-point graph and
+labels; the same hold was first made there, and the two tidy-ups that went with it,
+issuing at frame end and only on request, were already here from the trackers work.
+
+- **A timer, not the next animation frame.** The WebGL spec lets a sync object change
+  state only between tasks, so polling inside one task never sees it. A timer task
+  is the earliest check short of the next frame, and waiting for the next frame would
+  round every GPU frame up to a display frame.
+- **A held frame counts as scheduled.** A render request during the hold runs in the
+  held frame; `stopFrames()` clears the timer, so destroy, an empty render and
+  turning the loop off end the hold with the loop.
+- **Every copy the loop issues gates it**: tracked positions, the point pick, the
+  cluster centroids, and the link pick, which lives on the renderer rather than the
+  simulation and was the one review had to point out. All share the stall. The pick
+  fences are planted mid-frame, so for them the bound is "under one frame queued"
+  rather than "nothing"; good enough, and moving the pick issue is a hover-latency
+  change of its own.
+- **A cap.** A fence that has not signaled after a second is given up on: the copy is
+  dropped, each reader asks again on its next read, and the loop draws. A lost
+  context already reads as not pending; the cap covers a fence that never signals
+  without one. Dropping rather than drawing around the copy matters: a frame forced
+  past a still-pending copy would leave it pending forever and slow the loop to the
+  cap's rate.
+- **Hosts that drive their own frames are not paced**: a headless graph, one with
+  `enableRenderLoop: false`, a standalone simulation, the deck layer. Their reads
+  issue and collect for themselves, and they own the cadence. For them the docs keep
+  saying "a frame or more"; a getter a host could pace on is a possible follow-up.
+
+The price: while an overlay reads, the GPU idles between a fence signaling and the
+next submit, so the simulation runs somewhat fewer ticks per second. With no
+non-blocking read in progress nothing changes, since no copy is ever pending.
+
+Tests hold every fence by stubbing `clientWaitSync` to report "not yet" and watch the
+simulation tick: a frame runs only once the copy is collected, for each kind of copy
+(the link case holds only the link fence after the point fence signals), a request
+coalesces into the held frame, the cap lets the loop draw again, and the hold ends
+with the loop.
+
+## A read after a pause
+
+A non-blocking read returns the latest copy. Once an overlay stops reading, copies
+stop too, and the cache keeps the positions from the last read. When reading resumes
+(labels shown again, a filter restored), the first read hands back those positions:
+the overlay appears where the points were and jumps to where they are a copy later.
+With the loop paced that is two frames, visible all the same; before it was more.
+
+A read after a pause is in the first read's position: what it has predates the pause.
+It now waits the same way. The points module counts every simulation step that ran; a
+tracker and the centroid read remember the step of their last read, recorded before
+the up-to-date early return so a reader who kept asking while nothing moved stays
+warm. A read more than `READBACK_COLD_STEPS` (8) steps after the previous one takes
+the blocking path, which refreshes the cache for the reads that follow.
+
+- **Steps, not frames or wall time.** Every host runs steps through one method, so a
+  headless graph, a standalone simulation and a deck layer go cold like a looped
+  graph; a frame counter advanced only in the loop's `drawFrame` and left them out.
+  A zoom with the simulation blocked, or a pause, runs no step, so reading through
+  one never goes cold; a frame counter kept climbing through a zoom and made the
+  first tick after it block. And a slow frame is still one step, where a wall clock
+  called a reader asking every tick cold on a slow GPU and brought the stall back.
+  Both rejected clocks were tried and caught by the tests.
+- **Eight, not one.** A reader that asks every other step, or every fourth, is a
+  legitimate way to be cheap and must stay on the non-blocking path. A pause shorter
+  than eight steps still shows the old positions for a copy, which is hard to see at
+  that length.
+
+## Trackers
+
+Tracking is a handle the simulation gives out:
+
+```js
+const tracker = simulation.trackPoints([0, 5, 9])
+tracker.positions({ nonBlocking: true }) // ReadonlyMap<index, [x, y]>
+tracker.positionsArray()                 // [x0, y0, x1, y1, …], NaN for a point that is gone
+tracker.setIndices([2, 3])
+tracker.destroy()
+```
+
+- **A handle, not three more methods.** One set per engine made the parts of an
+  application overwrite each other's points. A tracker owns its set, its GPU target,
+  its cache and its copy in flight, so trackers are independent and each has a
+  lifetime its owner ends. It may be created before data arrives and before the
+  device is ready.
+- **`Graph`'s three tracking methods are unchanged** and run on one internal tracker.
+  The released surface stays as it was; `Graph` has no `trackPoints` of its own yet.
+- **Versions instead of flags.** The points module counts every write to the position
+  texture. The cache, the gathered target and the copy issued last each remember the
+  version they hold, so "behind" is a comparison and not a flag every writer has to
+  clear for every reader. With several trackers the flags would have been per set;
+  the version is one number they all read. It also lets a tracker skip its gather
+  while its target is current, which the frames of a paused simulation used to redo.
+- **Draws between steps reset the host's GL state.** A tracker gathers when it is
+  created, given another set, or read while behind, and a cluster read sums positions
+  in a pass of its own. On a shared device those draws inherit what the host left: a
+  scissor or a color mask silently dropped them. Both now reset the state first, as a
+  simulation step does (see [host embedding](2026-08-18-host-embedding.md)).
+
+## Which points exist
+
+A non-blocking read may be behind on coordinates. It must not be behind on which
+points exist, and two different moments used to be stored as one cache entry: the
+coordinates came from a copy taken earlier, the membership check ran when that copy
+was decoded. A point list that changed in between gave three wrong answers:
+
+| the point | what a non-blocking read reported |
+|---|---|
+| was removed | still in the map, until the copy in flight landed |
+| appeared (the count grew) | at the zeros its index had gathered while it was out of range |
+| was revived (absent, then present) | at `NaN`, the position it had while absent |
+
+The points module keeps a point-list version. It goes up when the count or the set of
+absent points really changes, found by the absence scan every data apply already
+runs, and when the last point is removed. New coordinates for the same points leave
+it alone. The cache and the copy in flight each remember the version they were taken
+under:
+
+- An older cache drops the points that are gone before it is returned. It keeps its
+  old position version, so a blocking read still goes to the GPU and reports a point
+  that is already there.
+- An older copy is discarded, not decoded, and another is asked for. Trimming the
+  cache cannot undo a decode that has inserted a point at the wrong place.
+
+So a removed point leaves the map at once, and a point that appeared or revived joins
+it when a copy taken under the current list lands.
+
+Two shortcuts were rejected. A flag written by the gather shader for an out-of-range
+fetch misses the revived point, whose index is in range, and an index past the count
+can still land on a padding texel inside the texture. Raising the version on every
+data apply would be simpler than comparing, but an application that sends its own
+layout every frame would then discard every copy and never see a new position.
+
+Cluster reads have no such gap: `Clusters.create()` runs on every data apply and
+drops both the cached centroids and the copy in flight, so the first read after it
+waits and is current. The price is that an application re-sending data every frame
+gets no benefit from `nonBlocking` on cluster reads.
+
+## Clusters
+
+The centroid path had more to fix than the tracked one:
+
+- **Every read ran the centermass pass again**, on top of the one the tick's
+  `Clusters.run()` already ran. The non-blocking design keeps one pass per frame,
+  at frame end, summing the positions the frame drew. Reusing the tick's own
+  mid-step sums instead would have saved that pass, at the price of centroids one
+  or two force passes behind the drawn points; the pass is a point-list draw whose
+  cost is one texel fetch per point, and it did not register against the frame, so
+  the exact pass was kept.
+- **The on-demand pass summed the wrong texture.** It bound `previousPositionTexture`,
+  which inside a step is the freshest (the swap has just made it so, and `run()`
+  still uses it), but by the time a tick callback runs it is one force pass behind
+  `currentPositionTexture`. On-demand and frame-end passes now sum `current`.
+- **One flag channel from Points.** `Points.areClusterCentroidsUpToDate` is the only
+  signal Points sends Clusters about position writes, so rather than mirror the two
+  flags the tracked path kept at the time (versions now, see Trackers), it holds
+  while the cached array, or a copy
+  still in flight, matches the positions: a blocking read sets it after filling the
+  array, an issued readback sets it while the array is still the previous one. The
+  pending copy stands in for "the array has been filled":
+
+  | state | blocking read | `nonBlocking` read |
+  |---|---|---|
+  | flag holds, cache present, nothing in flight | cache | cache |
+  | positions changed, cache present | pass + `readPixels`, flag set | cache; readback wanted |
+  | copy in flight, flag holds | cancels it, pass + `readPixels` | cache; wanted |
+  | no cache yet | pass + `readPixels` | pass + `readPixels` (blocks) |
+
+- `Clusters.create()` drops a copy in flight: the centermass FBO may be reallocated
+  when the cluster count changes, and the readback buffer is sized to it.
+
+## A read that ends without pixels
+
+Review found the one place the single flag lied. `poll()` ends a read without pixels
+when the fence wait fails (`WAIT_FAILED`, or the `0` a lost context returns); it
+clears its in-flight state, the resolve wrote nothing, and the flag set at issue
+time still said the cached array was current. Every later read took the cache: a
+blocking `getClusterPositions()` returned stale centroids, a non-blocking one never
+asked again, and after the simulation's last step nothing clears the flag, so labels
+stayed a tick behind the settled layout for the rest of the session. The tracked
+path had the milder half: its cache flag is set only by blocking reads, but the
+stale flag was not set back either, so a non-blocking read waited for a position
+write that never comes.
+
+Fix: a read that ends without pixels clears the cluster flag / makes the tracker
+forget the version it issued, so the next read recomputes or asks again. Both resolves check
+`inFlight` before polling; an idle frame's poll returns nothing too, and a blocking
+read that already cancelled the copy has just filled the cache, so neither may
+touch the flags. Verified by forcing `clientWaitSync` to report `WAIT_FAILED` on the
+copy issued after the last step and checking the next reads against centroids
+computed on the CPU.
+
+## Example
+
+`integrations/deck-layers/src/stories/graph-layer.ts`, Storybook → Examples →
+Integrations → Graph layer. The hub labels are a `TextLayer` fed by a tracker: a
+non-blocking read on every tick, a plain read when the simulation pauses or ends so
+the labels rest exactly on the hubs, and `setIndices` when a cluster is added or
+removed.
+
+## Notes
+
+- One readback slot per reader. Under the render loop the slot is always free by the
+  next frame, since the frame is held until the copy's fence signals (see [one frame
+  in flight](#one-frame-in-flight)). Where a host drives frames itself and the
+  browser observes fences late (headless Chrome: two frames), a new copy cannot be
+  issued while the previous one is out, so the result alternates two and three ticks
+  behind instead of one. Fine for labels; a second slot would fix it if a reader
+  ever needs the latency.
+- `positionsArray()` returns a plain array, as `getTrackedPointPositionsArray()` always
+  has, so the graph method hands it on without a copy. A `Float32Array` destination,
+  which deck.gl takes as a binary attribute, is left for later.
