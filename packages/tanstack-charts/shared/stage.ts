@@ -20,6 +20,28 @@
 //   `axis.tickLabels.rotate` and `axis.label.offset`.
 // - Gradient ids written as `url(#id)` are scoped by `idPrefix` automatically: pass
 //   `idPrefix: stage.id()` and keep the id itself unprefixed.
+// - `tooltip: true` does not type-check: import `tooltip` from `@tanstack/charts/tooltip`.
+// - dodgeY/dodgeX need the dodged axis off (`y: null` / `x: null` in `scales`); waffles need
+//   `scales: { x: null, y: null }`.
+// - Colour legends go in the top-level `color: { legend: colorLegend() }`; a continuous colour
+//   scale is a d3 `scaleLinear` factory plus `color.range`.
+// - violinY takes `d3AreaXCurve`; violinX and ridgelines take `d3Curve`. A ridgeline's
+//   `overlap` should not exceed the point scale's `padding`; `reverse: true` puts the first
+//   category at the bottom.
+// - differenceY on a log y works only when both scales invert (d3 `scaleLog` does).
+// - A position scale ignores a `domain` key (`{ scale: scaleLinear, domain: [0, 10] }` type-checks
+//   and does nothing): fix a domain on an instance, `scale: scaleLinear().domain([0, 10])`. The
+//   `color` block's `domain` is real.
+// - Facets with shared outer axes throw "cannot share outer axes" unless every cell resolves the
+//   same scales (fixed equal domains); the parent needs `scales: { x: null, y: null }`, and child
+//   specs are plain `{ marks, scales }` objects, not defineChart results.
+// - The default tooltip prints raw x/y, which means pixels for Sankey, lon/lat for geo and angle/
+//   radius for polar: give those `tooltip: { use: tooltip, format: (point) => … }`.
+// - polar() text and rule marks go through the polar scales: a labelled pie needs angle
+//   [0, 2π] and radius [0, 1], or `angle: null, radius: null`.
+// - sankeyDiagram's links need `d3Curve(curveBumpX)` for S-shaped ribbons.
+// - A first visit to a new subpath (polar, hierarchy/*, spatial/*) makes Vite re-optimise and
+//   reload the dev page: a blank chart for a while is that, not a bug.
 import type { MountContext } from '@/types.ts';
 import './stage.css';
 

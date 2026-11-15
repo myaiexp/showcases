@@ -39,7 +39,7 @@ const mount: Mount = (el, ctx) => {
           strokeOpacity: 0.9,
         }),
       ],
-      scales: { x: { scale: scaleLinear, axis: false }, y: { scale: scaleLinear, domain: [0, 10], axis: false } },
+      scales: { x: { scale: scaleLinear, axis: false }, y: { scale: scaleLinear().domain([0, 10]), axis: false } },
     });
 
   const options = { definition: chart(style), height: stage.height, initialWidth: 640, ariaLabel: 'A zig-zag line with adjustable stroke' };
