@@ -36,6 +36,18 @@ export const IMAGES: Readonly<Record<string, string>> = {
     '<circle cx="50" cy="28" r="18" fill="#c58c62"/><path d="M18 96 a32 34 0 0 1 64 0 z" fill="#4f6dbf"/>',
   ),
   'arrow.svg': svg('<path d="M8 40 h56 v-20 l30 30 -30 30 v-20 h-56 z" fill="#5c7cfa" stroke="#2b3f8f" stroke-width="3"/>'),
+  // Wide pictures (not 1:1), so preserveAspectRatio has something to fit.
+  'flag.svg': svg(
+    '<rect x="2" y="2" width="156" height="96" fill="#fff" stroke="#3d4452" stroke-width="3"/>' +
+      '<rect x="2" y="2" width="156" height="32" fill="#d94f4f"/><rect x="2" y="66" width="156" height="32" fill="#3f6fbf"/>' +
+      '<circle cx="80" cy="50" r="22" fill="#f2b531" stroke="#a86d0a" stroke-width="3"/>',
+    '0 0 160 100',
+  ),
+  'wave.svg': svg(
+    '<rect x="1" y="1" width="198" height="78" rx="6" fill="#e6f1fb" stroke="#36506e" stroke-width="2"/>' +
+      '<path d="M8 50 q23 -34 46 0 t46 0 t46 0 t46 0" fill="none" stroke="#2f7fc1" stroke-width="6" stroke-linecap="round"/>',
+    '0 0 200 80',
+  ),
 };
 
 /** toSVG's path resolver: answers from IMAGES, never from the network. */

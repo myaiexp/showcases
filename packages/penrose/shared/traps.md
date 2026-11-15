@@ -75,3 +75,26 @@ Found while building this gallery. Read before building an example, and add to i
 - Constraints and objectives are soft penalties; a free pull (`encourage nearPt(...)`) shows a constraint
   working. `inDirection` is an equality on the projection, not a bound.
 - Free polygon points need a start (`(?[x], ?[y])`); with random ones the optimizer often tangles the polygon.
+
+## Shapes, sampling, passthrough and stages (3.3.1)
+
+- `from` is a reserved word in Style: `t.from = Circle {…}` is a syntax error, reported at the end of the block
+  ("Unexpected from token"), not at the name.
+- `Polygon`/`Polyline` `scale` is an SVG `scale(s)` about the diagram's top-left corner, while the points are in
+  screen coordinates, so `scale : 0.5` also slides the shape towards that corner (shape-polygon-scale shows it).
+  Neither shape has a centre; to move one, write the points as offsets from unknowns.
+- Arrowhead styles on `Line` and `Path`: `none` (default), `straight`, `concave`, `perp`, `line`, `doubleLine`,
+  `loopup`, `loopdown`, `loop`. `flipStartArrowhead` and the two size properties are in units of `strokeWidth`.
+- A static scene (all values fixed) has nothing for a card to animate. Add an unknown pinned by an equality
+  (`dx = ?` with `ensure dx == 0`) and offset the shapes by it: the scene slides in from a sampled position.
+- Passthrough values are skipped when the renderer already wrote the attribute: `fill`, `fillOpacity` and
+  `strokeOpacity` lose to `fillColor`/`strokeColor`; `opacity`, `strokeLinejoin`, `fillRule`, `strokeDashoffset`,
+  `letterSpacing` and `textDecoration` get through, also on a `Group` (its `<g>`).
+- `Group.shapes` members are rendered inside the group only; the clip shape of `clip(s)` is a member and is not
+  drawn itself. Layering a member (`r1 above b1`) moves its whole group.
+- TeX in a Style string keeps its backslashes (`string : "\frac{1}{2}"`); in a JS template literal write `\\frac`.
+- Random samples: `randomIndex(1, 5)` gives the integers 1 to 4. `diskRandom()`, `circleRandom()` and
+  `sphereRandom()` return unit vectors (`sphereRandom` has three components); scale them. Each call is its own sample.
+- `layout = [a, b, a]` (a repeated stage) compiles and solves; `ensure … in [s1, s2]` and `? in [s1, s2]` take lists.
+- Text `center` is the anchor point for `textAnchor: "start"`/`"end"`, so a box built from `t.text.center` only
+  fits a middle-anchored text (shape-text-box-misaligned).
