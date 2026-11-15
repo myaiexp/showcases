@@ -44,7 +44,7 @@ const mount: Mount = async (el, ctx) => {
   };
   material.colorNode = runnyEggs(options);
   // The normal and roughness functions read the same parameters; the vertex tangent
-  // they need comes from the geometry (see tangents below).
+  // they need is added by model(), which computes tangents for a normalNode.
   material.normalNode = runnyEggs.normal(options);
   material.roughnessNode = runnyEggs.roughness(options);
   model(stage, material);

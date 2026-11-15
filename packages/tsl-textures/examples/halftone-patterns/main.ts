@@ -1,4 +1,4 @@
-// Halftone patterns: the eleven indexed patterns, picked from a list or stepped through
+// Halftone patterns: the eleven indexed patterns, picked or stepped through
 import * as THREE from 'three/webgpu';
 import { halftone } from 'tsl-textures';
 import type { Mount } from '@/types.ts';
@@ -22,7 +22,7 @@ const mount: Mount = async (el, ctx) => {
       color: rgb(0x7fd1b9),
     },
     // A card steps through every pattern, 1.5 s each.
-    { hold: 1500, presets: NAMES.map((_n, pattern) => ({ scale: 2, radius: 0.5, pattern })) },
+    { hold: 1500, presets: NAMES.map((_n, pattern) => ({ scale: 2, radius: 0.5, pattern })), presetButtons: false },
   );
 
   if (stage.panel) {

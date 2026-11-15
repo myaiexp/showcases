@@ -1,4 +1,4 @@
-// Watermelon in screen space: the same stripes with screenUV passed as uvs, on a plane
+// Watermelon in screen space: screenUV passed as uvs, on a plane
 import * as THREE from 'three/webgpu';
 import { screenUV } from 'three/tsl';
 import { watermelon } from 'tsl-textures';

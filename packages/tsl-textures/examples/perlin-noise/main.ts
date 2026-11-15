@@ -1,4 +1,4 @@
-// Perlin noise: colour and background blended by Perlin noise, balance and contrast
+// Perlin noise: two colours blended by noise, with balance and contrast
 import * as THREE from 'three/webgpu';
 import { perlinNoise } from 'tsl-textures';
 import type { Mount } from '@/types.ts';

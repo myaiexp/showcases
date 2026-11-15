@@ -32,7 +32,7 @@ const mount: Mount = async (el, ctx) => {
   // The docs: for flat surfaces screenUV is better than the default equirectangular uvs.
   // The grid is then drawn in screen space (the plane is a window onto it), so the
   // equirectangular correction is off and aspect is log2(width / height), the value
-  // the source keeps in $replaceExportASP, so the cells come out square.
+  // the source keeps in $replaceExportASP, so lines run the same width across and down.
   material.colorNode = grid({
     uvs: screenUV,
     countU: u.countU,

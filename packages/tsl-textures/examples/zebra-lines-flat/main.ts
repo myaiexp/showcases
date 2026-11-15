@@ -1,4 +1,4 @@
-// Zebra lines on a plane: the flat flag draws the zebra lines on a plane, not a sphere
+// Zebra lines on a plane: the flat flag draws the lines for a plane
 import * as THREE from 'three/webgpu';
 import { zebraLines } from 'tsl-textures';
 import type { Mount } from '@/types.ts';

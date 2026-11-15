@@ -57,6 +57,11 @@ export interface ParamOptions<S extends Record<string, Spec>> {
   title?: string;
   /** Card: ms each preset holds before easing to the next. */
   hold?: number;
+  /**
+   * Full view: the presets' button row. Defaults to the docs snapshots ("Snapshot 1"…);
+   * false hides it, for presets that only drive the card.
+   */
+  presetButtons?: false | { title: string; labels: readonly string[] };
 }
 
 export interface Params<S extends Record<string, Spec>> {
@@ -139,9 +144,11 @@ export function params<S extends Record<string, Spec>>(stage: Stage, spec: S, op
   const presets = opts.presets ?? [];
   if (stage.panel) {
     const panel = stage.panel;
-    if (presets.length > 0) {
-      heading(panel, 'Snapshots from the docs');
-      buttons(panel, presets.map((p, i) => [`Snapshot ${i + 1}`, () => apply(p, 700)] as [string, () => void]));
+    const shown = opts.presetButtons;
+    if (presets.length > 0 && shown !== false) {
+      heading(panel, shown?.title ?? 'Snapshots from the docs');
+      const label = (i: number): string => shown?.labels[i] ?? `Snapshot ${i + 1}`;
+      buttons(panel, presets.map((p, i) => [label(i), () => apply(p, 700)] as [string, () => void]));
     }
     heading(panel, opts.title ?? 'Parameters');
     for (const [key, s] of Object.entries(spec)) rows.set(key, addRow(panel, key, s, u[key]!));
@@ -151,6 +158,10 @@ export function params<S extends Record<string, Spec>>(stage: Stage, spec: S, op
     const id = setInterval(() => apply(presets[(i = (i + 1) % presets.length)]!, 1100), hold + 1100);
     stage.onDispose(() => clearInterval(id));
   }
+  // Open on the first snapshot, as the docs page does: some textures' raw defaults draw
+  // nothing on a radius-1.1 model (darthMaul's `distance: 1.9` cuts off every fragment).
+  // After the rows exist, so they show the snapshot's values.
+  if (presets[0]) apply(presets[0]);
   return { u: u as unknown as Uniforms<S>, apply };
 }
 

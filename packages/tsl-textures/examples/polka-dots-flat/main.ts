@@ -1,4 +1,4 @@
-// Polka dots on a plane: the flat flag lays the dot lattice out on a plane, not a sphere
+// Polka dots on a plane: the flat flag lays the dots out for a plane
 import * as THREE from 'three/webgpu';
 import { polkaDots } from 'tsl-textures';
 import type { Mount } from '@/types.ts';

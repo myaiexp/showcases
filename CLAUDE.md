@@ -191,3 +191,7 @@ GitHub Pages. No service on the VPS.
   trio. Solves go through `shared/solver.ts`, one rAF loop with a frame budget, since `optimize()` blocks. Diagrams sit
   on light paper. `test/penrose-examples.test.ts` fails degenerate layouts (negative sizes, off canvas) for every card
   variation; `test/penrose-citations.test.ts` wants every Style function called to appear in a cited docs file.
+- tsl-textures: build on `packages/tsl-textures/shared/stage.ts` (`createStage`, trap list) with `params()` (every
+  parameter a uniform, the docs' snapshots as presets) and `model()`/`lineup()`. `vite.config.ts` maps the library's
+  bare `three` to `three/webgpu`. The docs' parameter lists drift from the source: `shared/tsl-textures.d.ts` types
+  each texture from its src `defaults`, and `test/tsl-textures-types.test.ts` fails when a bump changes them.

@@ -1,4 +1,4 @@
-// position: positionGeometry pins the pattern to the model, positionWorld to the scene
+// position: positionGeometry follows the model, positionWorld the scene
 import * as THREE from 'three/webgpu';
 import { positionGeometry, positionWorld } from 'three/tsl';
 import { camouflage } from 'tsl-textures';

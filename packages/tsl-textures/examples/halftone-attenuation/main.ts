@@ -22,7 +22,16 @@ const mount: Mount = async (el, ctx) => {
       far: range(13, 0, 20),
       color: rgb(0xf2c14e),
     },
-    { presets: [{ attenuation: 1, near: 5, far: 13 }, { attenuation: 1, near: 3, far: 9 }, { attenuation: 0 }] },
+    {
+      // The Notes' three cases: near < far hides far spheres, near > far hides close
+      // ones, and attenuation 0 keeps one dot size at every depth.
+      presets: [
+        { attenuation: 1, near: 5, far: 13 },
+        { attenuation: 1, near: 13, far: 5 },
+        { attenuation: 0 },
+      ],
+      presetButtons: { title: 'Cases from the notes', labels: ['near < far', 'near > far', 'attenuation 0'] },
+    },
   );
 
   const material = stage.own(new THREE.MeshStandardNodeMaterial({ roughness: 0.5, metalness: 0 }));

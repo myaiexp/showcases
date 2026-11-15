@@ -1,4 +1,4 @@
-// Types for tsl-textures 3.0.5, which ships none: every texture's params from its src defaults
+// Types for tsl-textures 3.0.5 (it ships none), from each src file's defaults
 // helm-large-file-ok: one declaration per texture (52), mirroring the library's own one-file entry
 // Ambient declarations: this file must not import at the top level (that would make them
 // augmentations). Each `XParams` lists the keys of `defaults` in node_modules/tsl-textures/src/<file>,

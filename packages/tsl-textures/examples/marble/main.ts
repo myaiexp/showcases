@@ -1,4 +1,4 @@
-// Marble: threads through a solid colour, on a node material's colorNode, tuned live
+// Marble: threads through stone on a colorNode, tuned live
 import * as THREE from 'three/webgpu';
 import { marble } from 'tsl-textures';
 import type { Mount } from '@/types.ts';

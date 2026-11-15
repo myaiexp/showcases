@@ -30,6 +30,9 @@ import './stage.css';
  *   texture's .normal) read `tangentLocal`, the raw `tangent` attribute, which three's
  *   geometries lack: the normals come out NaN. shapes.ts `model()` computes tangents
  *   whenever the material has a normalNode, so call it after assigning the nodes.
+ * - Without a GPU (headless Chrome's SwiftShader) bricks and dalmatianSpots compile into
+ *   shaders big enough to lose the WebGL device, and after two losses Chrome refuses new
+ *   contexts on the page: every later example fails at getContext. Check them one per page load.
  * - halftone's `color` defaults to vertexColor(), which needs a colour attribute: pass a
  *   colour. Its `position` is screenCoordinate, in pixels, so dot size follows pixel ratio.
  * - Params with an `int` layout input (rust/planet `iterations`, isolayers `layers`,

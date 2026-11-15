@@ -1,4 +1,4 @@
-// Static noise: screen-space noise that refreshes with time, multiplied onto a colour
+// Static noise: screen-space noise that refreshes with time
 import * as THREE from 'three/webgpu';
 import { color } from 'three/tsl';
 import { staticNoise } from 'tsl-textures';
