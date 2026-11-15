@@ -1,4 +1,4 @@
-// A second layer in Override mode: its Wave replaces the base Walk on the arm, by weight
+// An Override layer's Wave replaces the base Walk on the arm, by weight
 import { AnimatorControllerLayer, AnimatorLayerBlendingMode } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { controllerFor } from '../../shared/anim-kit.ts';

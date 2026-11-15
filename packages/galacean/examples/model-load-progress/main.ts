@@ -1,4 +1,4 @@
-// onProgress on a batch load: the task total, then each file's own loaded and total
+// onProgress on a batch load: the task total, then each file's progress
 import { Animator, AssetType, type GLTFResource } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

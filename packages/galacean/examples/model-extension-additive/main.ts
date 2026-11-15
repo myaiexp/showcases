@@ -1,4 +1,4 @@
-// A custom glTF extension in AdditiveParse mode adds a spinning Script to the nodes that name it
+// A custom AdditiveParse glTF extension adds a Script to its nodes
 import { Entity, GLTFExtensionMode, GLTFExtensionParser, type GLTFParserContext, Script, registerGLTFExtension } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

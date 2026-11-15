@@ -1,4 +1,4 @@
-// Frame animation: an AnimationRefCurve swaps SpriteRenderer.sprite between three cuts of one sheet
+// An AnimationRefCurve swaps SpriteRenderer.sprite between sheet cuts
 import { AnimationClip, AnimationRefCurve, SpriteRenderer } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { keys, playClip } from '../../shared/anim-kit.ts';

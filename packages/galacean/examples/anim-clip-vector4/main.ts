@@ -1,4 +1,4 @@
-// A Vector4 curve on "material.tilingOffset" scrolls a texture with no script running
+// A Vector4 curve on "getMaterial().tilingOffset" scrolls a texture
 import { AnimationClip, AnimationVector4Curve, MeshRenderer, Vector4 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';
@@ -11,10 +11,10 @@ const mount: Mount = async (el, ctx) => {
   const clip = new AnimationClip('scroll');
   const curve = new AnimationVector4Curve();
   keys(curve, [[0, new Vector4(2, 2, 0, 0)], [3, new Vector4(2, 2, 1, 0.5)], [6, new Vector4(3, 1, 2, 1)]]);
-  clip.addCurveBinding('', MeshRenderer, 'material.tilingOffset', curve);
+  clip.addCurveBinding('', MeshRenderer, 'getMaterial().tilingOffset', curve);
   playClip(engine, cube, clip);
   cube.transform.setRotation(15, 30, 0);
-  say('"material.tilingOffset" (x, y scale, z, w offset) animated');
+  say('"getMaterial().tilingOffset" (x, y scale, z, w offset) animated');
   return stage.dispose;
 };
 

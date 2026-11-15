@@ -1,4 +1,4 @@
-// An Additive layer adds the change of its clip on top of the layer below instead of replacing it
+// An Additive layer adds its clip's change on top of the layer below
 import { AnimationClip, AnimationQuaternionCurve, AnimatorControllerLayer, AnimatorLayerBlendingMode, Quaternion, Transform } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { controllerFor, keys } from '../../shared/anim-kit.ts';

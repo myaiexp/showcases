@@ -1,4 +1,4 @@
-// animator.crossFade(state, normalizedDuration) blends from the current pose into the next state
+// animator.crossFade(state, normalizedDuration) blends into the next state
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';
 import { robotGlb } from '../../shared/gltf-models.ts';

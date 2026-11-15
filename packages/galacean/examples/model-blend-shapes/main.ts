@@ -1,4 +1,4 @@
-// glTF morph targets become BlendShapes: SkinnedMeshRenderer.blendShapeWeights mixes them
+// glTF morph targets become BlendShapes mixed by blendShapeWeights
 import { Animator, type ModelMesh, SkinnedMeshRenderer } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

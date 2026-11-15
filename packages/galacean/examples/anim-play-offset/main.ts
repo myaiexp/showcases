@@ -1,4 +1,4 @@
-// animator.play(state, layer, normalizedTimeOffset) starts a state part way through its clip
+// animator.play(state, layer, normalizedTimeOffset) starts part way in
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';
 import { tick } from '../../shared/gfx-kit.ts';

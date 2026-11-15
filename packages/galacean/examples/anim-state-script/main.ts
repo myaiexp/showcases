@@ -1,4 +1,4 @@
-// A StateMachineScript on each state hears onStateEnter, onStateUpdate and onStateExit
+// A StateMachineScript hears onStateEnter, onStateUpdate and onStateExit
 import { Animator, type AnimatorState, StateMachineScript } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { controllerFor, link } from '../../shared/anim-kit.ts';

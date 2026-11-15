@@ -1,4 +1,4 @@
-// addEvent(functionName, time, parameter): the callback receives the parameter object
+// addEvent(functionName, time, parameter) passes the parameter along
 import { AnimationClip, AnimationVector3Curve, type PBRMaterial, Script, Transform, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

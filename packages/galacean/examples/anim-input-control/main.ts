@@ -1,4 +1,4 @@
-// Keyboard-driven animation: hold W to walk, W and Shift to run, release to idle, via a speed parameter
+// Hold W to walk, W and Shift to run: keys drive a speed parameter
 import { Animator, AnimatorConditionMode as M, Keys, Script } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { controllerFor, link } from '../../shared/anim-kit.ts';

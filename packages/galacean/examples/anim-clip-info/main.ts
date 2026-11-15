@@ -1,4 +1,4 @@
-// Inspect a clip: its length, curve bindings and events, read from the AnimationClip itself
+// A clip's length, curve bindings and events, read from AnimationClip
 import { AnimationEvent, AnimationClip, AnimationFloatCurve, AnimationVector3Curve, Transform, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';
@@ -13,7 +13,7 @@ const mount: Mount = async (el, ctx) => {
   clip.addCurveBinding('', Transform, 'position', move);
   const roughness = new AnimationFloatCurve();
   keys(roughness, [[0, 0.1], [4, 0.9]]);
-  clip.addCurveBinding('', MeshRenderer, 'material.roughness', roughness);
+  clip.addCurveBinding('', MeshRenderer, 'getMaterial().roughness', roughness);
   const event = new AnimationEvent();
   event.functionName = 'ping';
   event.time = 1;

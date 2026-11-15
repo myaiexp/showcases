@@ -1,4 +1,4 @@
-// Additive Curl over a swaying tentacle: both clips drive the same bones and the layers add up
+// Additive Curl over a swaying tentacle: both layers drive the bones
 import { AnimatorControllerLayer, AnimatorLayerBlendingMode } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { controllerFor } from '../../shared/anim-kit.ts';

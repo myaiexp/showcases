@@ -1,4 +1,4 @@
-// A skinned model's bones are plain entities: stop the Animator and bend them from a script
+// A skinned model's bones are entities: bend them from a script
 import { Animator, SkinnedMeshRenderer } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

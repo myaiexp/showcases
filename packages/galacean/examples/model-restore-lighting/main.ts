@@ -1,4 +1,4 @@
-// Same model, four lighting setups: default scene, direct light, image-based ambient, both
+// One model under four lighting setups: none, direct, ambient, both
 import { Animator } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { loadStudioEnv } from '../../shared/env.ts';

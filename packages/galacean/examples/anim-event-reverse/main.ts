@@ -1,4 +1,4 @@
-// Events fire as the playhead crosses them, whichever way it runs: a negative speed plays backwards
+// Events fire as the playhead crosses them, in reverse too
 import { AnimationClip, AnimationVector3Curve, Script, Transform, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

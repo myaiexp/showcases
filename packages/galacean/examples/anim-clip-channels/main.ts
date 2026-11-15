@@ -1,4 +1,4 @@
-// A property path can reach one channel: three float curves on color.r, color.g and color.b of a light
+// Three float curves on a light's color.r, color.g and color.b
 import { AnimationClip, AnimationFloatCurve, DirectLight } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

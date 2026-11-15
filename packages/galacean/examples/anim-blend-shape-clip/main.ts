@@ -1,4 +1,4 @@
-// A clip made in code for blend shapes: an AnimationFloatArrayCurve on blendShapeWeights
+// An AnimationFloatArrayCurve on blendShapeWeights, built in code
 import { AnimationClip, AnimationFloatArrayCurve, SkinnedMeshRenderer } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { keys, playClip } from '../../shared/anim-kit.ts';

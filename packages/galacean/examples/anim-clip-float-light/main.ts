@@ -1,4 +1,4 @@
-// A float curve on a child entity's component: the docs' DirectLight "color.r" at path "/light"
+// A float curve on a child's DirectLight "color.r" at path "/light"
 import { AnimationClip, AnimationFloatCurve, DirectLight } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

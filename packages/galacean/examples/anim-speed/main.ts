@@ -1,4 +1,4 @@
-// Animator.speed scales every clip: faster above 1, slower below, and reversed when negative
+// Animator.speed scales every clip; negative plays backwards
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';
 import { tick } from '../../shared/gfx-kit.ts';

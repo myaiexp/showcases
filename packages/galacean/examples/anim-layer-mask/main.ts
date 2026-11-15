@@ -1,4 +1,4 @@
-// AnimatorLayerMask limits a layer to some entity paths: Run on the legs only, Idle everywhere else
+// AnimatorLayerMask limits a Run layer to the legs, arms or whole body
 import { AnimatorControllerLayer, AnimatorLayerMask } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { controllerFor } from '../../shared/anim-kit.ts';

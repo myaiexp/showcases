@@ -1,4 +1,4 @@
-// Animator.cullingMode: Complete skips the work while the model is off screen, None keeps evaluating
+// Animator.cullingMode: Complete skips work while off screen
 import { AnimatorCullingMode } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cycle } from '../../shared/anim-kit.ts';

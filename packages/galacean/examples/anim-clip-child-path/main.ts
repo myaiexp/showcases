@@ -1,4 +1,4 @@
-// entityPath reaches children and grandchildren: one clip moves a parent, a child and a grandchild
+// entityPath reaches children: one clip moves parent, child, grandchild
 import { AnimationClip, AnimationFloatCurve, AnimationVector3Curve, PrimitiveMesh, Transform, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

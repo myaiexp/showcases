@@ -1,4 +1,4 @@
-// isFixedDuration: a transition's duration in seconds, not as a share of the destination clip
+// isFixedDuration: transition duration in seconds, not a clip share
 import type { Mount } from '@/types.ts';
 import { controllerFor, link } from '../../shared/anim-kit.ts';
 import { tick } from '../../shared/gfx-kit.ts';

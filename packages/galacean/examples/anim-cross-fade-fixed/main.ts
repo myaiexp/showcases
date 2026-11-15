@@ -1,4 +1,4 @@
-// crossFadeInFixedDuration takes the blend time in seconds, whatever the clip's length
+// crossFadeInFixedDuration takes the blend time in seconds
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';
 import { steps } from '../../shared/gfx-kit.ts';

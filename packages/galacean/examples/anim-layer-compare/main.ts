@@ -1,4 +1,4 @@
-// Override and Additive side by side with the same clip and weight: only Additive keeps the base motion
+// Override and Additive side by side: only Additive keeps the base
 import { Animator, AnimatorController, AnimatorControllerLayer, AnimatorLayerBlendingMode } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

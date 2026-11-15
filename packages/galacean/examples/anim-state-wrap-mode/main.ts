@@ -1,4 +1,4 @@
-// WrapMode.Once stops on the last frame, WrapMode.Loop starts over; the default state is Loop
+// WrapMode.Once stops on the last frame, Loop starts over (the default)
 import { WrapMode } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cycle } from '../../shared/anim-kit.ts';

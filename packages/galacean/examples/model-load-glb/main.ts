@@ -1,4 +1,4 @@
-// A generated .glb loaded as AssetType.GLTF, then instantiateSceneRoot() into the scene
+// A generated .glb loaded as AssetType.GLTF and instantiated
 import { Animator, AssetType, type GLTFResource } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

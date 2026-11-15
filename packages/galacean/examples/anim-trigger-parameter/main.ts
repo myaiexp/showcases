@@ -1,4 +1,4 @@
-// A trigger parameter fires one transition and resets itself: Idle waves once per activation
+// A trigger parameter fires one transition and resets itself
 import { AnimatorConditionMode } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { controllerFor, link } from '../../shared/anim-kit.ts';

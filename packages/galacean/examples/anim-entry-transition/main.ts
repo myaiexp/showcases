@@ -1,4 +1,4 @@
-// addEntryStateTransition connects the entry node to a state, so it plays without animator.play
+// addEntryStateTransition plays a state without animator.play
 import { Animator } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { controllerFor } from '../../shared/anim-kit.ts';

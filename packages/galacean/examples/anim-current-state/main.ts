@@ -1,4 +1,4 @@
-// getCurrentAnimatorState(layer) reports which state is playing as crossFades hand over
+// getCurrentAnimatorState(layer) reports the playing state
 import type { Mount } from '@/types.ts';
 import { tick, steps } from '../../shared/gfx-kit.ts';
 import { robotGlb } from '../../shared/gltf-models.ts';

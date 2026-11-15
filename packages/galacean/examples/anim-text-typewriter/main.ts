@@ -1,4 +1,4 @@
-// An AnimationStringCurve on TextRenderer.text swaps whole strings at each key, like a typewriter
+// An AnimationStringCurve on TextRenderer.text types like a typewriter
 import { AnimationClip, AnimationColorCurve, AnimationStringCurve, Color, TextRenderer } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { keys, playClip } from '../../shared/anim-kit.ts';

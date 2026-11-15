@@ -1,4 +1,4 @@
-// Both glTF forms load the same way: a single .glb, or a .gltf JSON with its buffer split out
+// A single .glb and a .gltf with a split buffer load the same way
 import { Animator, AssetType, type GLTFResource } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

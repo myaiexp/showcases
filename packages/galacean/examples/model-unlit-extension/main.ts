@@ -1,4 +1,4 @@
-// KHR_materials_unlit: a glTF material flagged unlit loads as an UnlitMaterial and ignores lights
+// KHR_materials_unlit loads as an UnlitMaterial that ignores lights
 import { UnlitMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

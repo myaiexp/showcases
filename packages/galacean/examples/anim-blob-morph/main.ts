@@ -1,4 +1,4 @@
-// Morph-target animation from a glTF: the Morph clip drives blend shape weights through the Animator
+// A glTF Morph clip drives blend shape weights through the Animator
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';
 import { tick } from '../../shared/gfx-kit.ts';

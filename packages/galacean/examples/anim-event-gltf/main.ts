@@ -1,4 +1,4 @@
-// A glTF animation can carry events: the GALACEAN_animation_event extension feeds AnimationClip.events
+// GALACEAN_animation_event in a glTF feeds AnimationClip.events
 import { Script } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { robotGlb } from '../../shared/gltf-models.ts';

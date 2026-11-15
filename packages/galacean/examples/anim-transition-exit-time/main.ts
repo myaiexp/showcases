@@ -1,4 +1,4 @@
-// AnimatorStateTransition: duration, offset and exitTime decide when and how Walk hands over to Run
+// Transition duration, offset and exitTime decide how Walk hands over to Run
 import { AnimatorStateTransition } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { controllerFor, link } from '../../shared/anim-kit.ts';

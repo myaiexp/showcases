@@ -1,4 +1,4 @@
-// Events on a loaded clip: the Walk cycle calls step() twice per loop and a footprint appears
+// Walk-cycle events call step() twice per loop and leave footprints
 import { type Entity, PrimitiveMesh, Script } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, blinn, tick } from '../../shared/gfx-kit.ts';

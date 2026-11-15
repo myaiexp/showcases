@@ -1,4 +1,4 @@
-// The same keys under Linear, Step, CubicSpine and Hermite interpolation, one cube each
+// The same keys under Linear, Step, CubicSpine and Hermite interpolation
 import { AnimationClip, AnimationFloatCurve, InterpolationType, Transform } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

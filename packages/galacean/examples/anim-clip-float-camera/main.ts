@@ -1,4 +1,4 @@
-// A float curve on Camera.fieldOfView zooms the view; any numeric property of any component can be keyed
+// A float curve on Camera.fieldOfView zooms the view
 import { AnimationClip, AnimationFloatCurve, Camera } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

@@ -1,4 +1,4 @@
-// AnimationCurve.evaluate(time) samples a curve directly, here plotted live beside the animated cube
+// AnimationCurve.evaluate(time) samples a curve, plotted live
 import { AnimationFloatCurve, InterpolationType } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys } from '../../shared/anim-kit.ts';

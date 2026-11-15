@@ -1,4 +1,4 @@
-// An AnimationEvent calls a method of a Script on the same entity at a chosen time of the clip
+// An AnimationEvent calls a Script method at a chosen time of the clip
 import { AnimationClip, AnimationEvent, AnimationVector3Curve, Script, Transform, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

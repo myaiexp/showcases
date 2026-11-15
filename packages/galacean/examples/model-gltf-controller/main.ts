@@ -1,4 +1,4 @@
-// The AnimatorController the loader builds for a glTF: one layer, one state per clip
+// The loader's AnimatorController for a glTF: one state per clip
 import { Animator } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

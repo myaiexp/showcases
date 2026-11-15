@@ -1,4 +1,4 @@
-// KHR_materials_variants: glTF.extensionsData.variants lists materials to swap with setMaterial
+// KHR_materials_variants: swap the listed materials with setMaterial
 import { type GLTFResource, type Material, type Renderer } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

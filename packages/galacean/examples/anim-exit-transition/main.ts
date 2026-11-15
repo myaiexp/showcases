@@ -1,4 +1,4 @@
-// addExitTransition leads to the exit node, which re-enters at entry: the chain loops
+// addExitTransition goes to exit, which re-enters at entry: a loop
 import type { Mount } from '@/types.ts';
 import { controllerFor, link } from '../../shared/anim-kit.ts';
 import { tick } from '../../shared/gfx-kit.ts';

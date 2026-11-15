@@ -1,4 +1,4 @@
-// Duplicate a model's own material, change its colour and put the copy on the renderers
+// Copy a model's material, recolour it and put the copy on the renderers
 import { type PBRMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { color } from '../../shared/controls.ts';

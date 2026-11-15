@@ -1,4 +1,4 @@
-// A model's mesh sub-assets: vertex count, sub-meshes and bounds read from each ModelMesh
+// A model's ModelMesh sub-assets: vertex count, sub-meshes and bounds
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';
 import { steps, tick } from '../../shared/gfx-kit.ts';

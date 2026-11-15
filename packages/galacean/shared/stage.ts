@@ -69,9 +69,21 @@
 //   AnimatorController has no layers. `getCurrentAnimatorState(0)` is undefined before the
 //   first update. Additive layers subtract each curve's first key; layer mask paths are
 //   relative to the Animator's entity.
+// - An addCurveBinding property path may call methods: a renderer has no `material` property,
+//   so animate `getMaterial().baseColor`, not `material.baseColor` (which throws on mount).
 // - `registerGLTFExtension` adds to a page-wide list with no unregister: register once per page.
 //   The loader has no parser for KHR_materials_pbrSpecularGlossiness, which glTF.mdx lists.
 //   Only a glTF's default scene root gets an Animator.
+// - The bundled PhysX runtime has no `overlapMultiple`, so `overlapBoxAll`/`SphereAll`/
+//   `CapsuleAll` throw every call (`shared/phys-overlap.ts` falls back once and says so).
+//   An error thrown every frame grows until the tab runs out of memory.
+// - Physics docs vs 1.6.13: joint anchors use `set`, not `setValue`; collision callbacks get a
+//   `Collision`, trigger callbacks a `ColliderShape`; there is no impulse method (applyForce
+//   and applyTorque only). `XRTrackedInputDevice.Control` is `Controller`.
+// - In the dev server only, Vite inlines a second copy of @galacean/engine-xr into the webxr
+//   bundle, so `isSupportedFeature` returns undefined; compare with `=== true`.
+// - `XRCameraManager.fixedFoveation` throws with no session. `AudioClip.sampleRate` is the
+//   AudioContext's rate, not the file's; `AudioSource.time` is read-only.
 // - `WebGLGraphicDeviceOptions` has no `antialias`: anti-aliasing is `camera.msaaSamples`
 //   and `camera.antiAliasing` (FXAA) only.
 import { Camera, type Entity, type Scene, WebGLEngine, type WebGLEngineConfiguration } from '@galacean/engine';

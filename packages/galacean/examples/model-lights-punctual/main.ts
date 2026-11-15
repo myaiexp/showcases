@@ -1,4 +1,4 @@
-// KHR_lights_punctual: a point light declared in the glTF becomes a PointLight entity
+// KHR_lights_punctual: a glTF point light becomes a PointLight entity
 import { Animator, PointLight } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

@@ -1,4 +1,4 @@
-// Hermite keys take inTangent and outTangent: the slopes shape the curve between the same values
+// Hermite keys' inTangent and outTangent shape the curve between values
 import { AnimationClip, AnimationFloatCurve, InterpolationType, PrimitiveMesh, Transform } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

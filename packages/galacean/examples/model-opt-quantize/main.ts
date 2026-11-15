@@ -1,4 +1,4 @@
-// Mesh quantization shrinks vertex data: the same sphere as floats and as normalized 16-bit integers
+// Mesh quantization: one sphere as floats and as normalized 16-bit ints
 import { AssetType, type GLTFResource } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

@@ -1,4 +1,4 @@
-// Controller parameters: addParameter, removeParameter, getParameter().defaultValue and the live value
+// Controller parameters: add, remove, default value and live value
 import type { Mount } from '@/types.ts';
 import { controllerFor } from '../../shared/anim-kit.ts';
 import { button, slider } from '../../shared/controls.ts';

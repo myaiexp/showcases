@@ -1,4 +1,4 @@
-// The animation system as objects: Animator, controller, layer, state machine, state, clip, curves
+// The animation system's objects, from Animator down to curves
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';
 import { steps } from '../../shared/gfx-kit.ts';

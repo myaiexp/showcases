@@ -1,4 +1,4 @@
-// An AnimationRectCurve on "sprite.region" slides the visible part of one sprite across its texture
+// An AnimationRectCurve on "sprite.region" slides a sprite's visible part
 import { AnimationClip, AnimationRectCurve, Rect, SpriteRenderer } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { keys, playClip } from '../../shared/anim-kit.ts';

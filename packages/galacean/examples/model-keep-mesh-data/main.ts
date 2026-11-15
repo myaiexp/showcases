@@ -1,4 +1,4 @@
-// The glTF load param keepMeshData keeps CPU copies of vertex data, so ModelMesh can be read back
+// keepMeshData keeps CPU vertex data so a ModelMesh can be read back
 import { AssetType, type GLTFResource, type ModelMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

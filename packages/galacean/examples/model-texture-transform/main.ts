@@ -1,4 +1,4 @@
-// KHR_texture_transform: scale and offset in the glTF set the material's tilingOffset
+// KHR_texture_transform sets the material's tilingOffset
 import type { PBRMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

@@ -1,4 +1,4 @@
-// A texture embedded in the .glb is a Texture2D sub-asset you can reuse on other materials
+// A texture embedded in the .glb, reused as a Texture2D sub-asset
 import { PrimitiveMesh, type PBRMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

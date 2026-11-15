@@ -1,4 +1,4 @@
-// Build an AnimatorController in code from a glTF's clips, then bind it to the Animator
+// An AnimatorController built in code from a glTF's clips
 import { AnimatorController, AnimatorControllerLayer } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { robotGlb } from '../../shared/gltf-models.ts';

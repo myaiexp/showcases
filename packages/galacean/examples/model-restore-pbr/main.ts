@@ -1,4 +1,4 @@
-// Metallic and roughness of glTF materials: more metal reflects the environment, more roughness blurs it
+// glTF metallic and roughness: metal reflects, roughness blurs
 import type { PBRMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

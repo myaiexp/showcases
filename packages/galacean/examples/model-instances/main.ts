@@ -1,4 +1,4 @@
-// Every instantiateSceneRoot() copy gets its own Animator, so each plays its own clip
+// Each instantiateSceneRoot() copy has its own Animator and clip
 import type { Mount } from '@/types.ts';
 import { Animator } from '@galacean/engine';
 import { tick } from '../../shared/gfx-kit.ts';

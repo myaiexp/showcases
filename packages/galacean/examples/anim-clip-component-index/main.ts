@@ -1,4 +1,4 @@
-// The componentIndex overload picks one of several components of the same type on an entity
+// The componentIndex overload picks one of several same-type components
 import { AnimationClip, AnimationFloatCurve, PointLight } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

@@ -1,4 +1,4 @@
-// transition.mute disables one transition; transition.solo silences all its siblings
+// transition.mute disables one transition; solo silences its siblings
 import type { Mount } from '@/types.ts';
 import { cycle, controllerFor, link } from '../../shared/anim-kit.ts';
 import { tick } from '../../shared/gfx-kit.ts';

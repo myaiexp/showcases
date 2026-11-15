@@ -1,4 +1,4 @@
-// A skinned model on a small state machine: Sway hands over to Curl and back through crossfades
+// A skinned tentacle's state machine crossfades Sway and Curl
 import type { Mount } from '@/types.ts';
 import { controllerFor, link } from '../../shared/anim-kit.ts';
 import { tick } from '../../shared/gfx-kit.ts';

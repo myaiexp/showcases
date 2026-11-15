@@ -1,4 +1,4 @@
-// A material colour clip: red, green, blue, red again, through the renderer's "material.baseColor"
+// A colour clip on the renderer's "getMaterial().baseColor": red, green, blue
 import { AnimationClip, AnimationColorCurve, Color, MeshRenderer } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';
@@ -11,9 +11,9 @@ const mount: Mount = async (el, ctx) => {
   const curve = new AnimationColorCurve();
   // As in the material-animation guide: red, green at 0:20, blue at 0:40, red again at 1:00 (60 fps frames).
   keys(curve, [[0, c([1, 0.1, 0.1])], [1 / 3, c([0.1, 1, 0.1])], [2 / 3, c([0.15, 0.2, 1])], [1, c([1, 0.1, 0.1])]]);
-  clip.addCurveBinding('', MeshRenderer, 'material.baseColor', curve);
+  clip.addCurveBinding('', MeshRenderer, 'getMaterial().baseColor', curve);
   playClip(engine, cube, clip);
-  say('addCurveBinding("", MeshRenderer, "material.baseColor", AnimationColorCurve)');
+  say('addCurveBinding("", MeshRenderer, "getMaterial().baseColor", AnimationColorCurve)');
   return stage.dispose;
 };
 

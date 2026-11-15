@@ -1,4 +1,4 @@
-// hasExitTime true waits for exitTime; false lets the condition fire the transition at once
+// hasExitTime waits for exitTime; without it the condition fires at once
 import { AnimatorConditionMode } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cycle, controllerFor, link } from '../../shared/anim-kit.ts';

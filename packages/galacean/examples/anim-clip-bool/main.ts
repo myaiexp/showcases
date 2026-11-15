@@ -1,4 +1,4 @@
-// AnimationBoolCurve on a component's enabled flag: a renderer that blinks, step by step
+// AnimationBoolCurve on a renderer's enabled flag makes it blink
 import { AnimationBoolCurve, AnimationClip, MeshRenderer } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

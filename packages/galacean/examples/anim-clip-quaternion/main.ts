@@ -1,4 +1,4 @@
-// AnimationQuaternionCurve on rotationQuaternion: keys are quaternions, blended along the shortest arc
+// AnimationQuaternionCurve on rotationQuaternion, shortest-arc blending
 import { AnimationClip, AnimationQuaternionCurve, Quaternion, Transform } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeStage, keys, playClip } from '../../shared/anim-kit.ts';

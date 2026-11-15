@@ -1,4 +1,4 @@
-// KHR_materials_anisotropy: stretched highlights from anisotropyStrength and anisotropyRotation
+// KHR_materials_anisotropy: stretched highlights from strength and rotation
 import type { PBRMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

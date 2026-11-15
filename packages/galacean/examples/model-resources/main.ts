@@ -1,4 +1,4 @@
-// What a loaded GLTFResource holds: meshes, materials, skins, animations and entities
+// What a GLTFResource holds: meshes, materials, skins, animations
 import { AssetType, type GLTFResource } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { loadStudioEnv } from '../../shared/env.ts';

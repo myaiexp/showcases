@@ -1,4 +1,4 @@
-// One AnimatorController can drive several models: it only stores data, not playback state
+// One AnimatorController drives several models: it holds no playback
 import { Animator } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { robotGlb } from '../../shared/gltf-models.ts';

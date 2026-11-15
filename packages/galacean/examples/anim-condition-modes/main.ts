@@ -1,4 +1,4 @@
-// Every AnimatorConditionMode on its own parameter: If, IfNot, Greater, Less, Equals, NotEquals
+// Every AnimatorConditionMode on its own parameter
 import { AnimatorConditionMode as M } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cycle, controllerFor, link } from '../../shared/anim-kit.ts';

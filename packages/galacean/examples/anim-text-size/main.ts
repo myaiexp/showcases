@@ -1,4 +1,4 @@
-// Text animation: a float curve on TextRenderer.fontSize grows Hello World from nothing to full size
+// A float curve on TextRenderer.fontSize grows Hello World into view
 import { AnimationClip, AnimationFloatCurve, TextRenderer } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { keys, playClip } from '../../shared/anim-kit.ts';

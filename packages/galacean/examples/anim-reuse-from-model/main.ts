@@ -1,4 +1,4 @@
-// Reuse another model's animation: same node names, so its controller drives this character
+// Same node names, so another model's controller drives this one
 import { Animator } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { plainRobotGlb } from '../../shared/anim-kit.ts';

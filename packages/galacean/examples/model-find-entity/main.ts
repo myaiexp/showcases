@@ -1,4 +1,4 @@
-// Find parts of a loaded model by name or path: scene.findEntityByPath and entity.findByName
+// Find parts of a loaded model by name or path
 import { Animator } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';
