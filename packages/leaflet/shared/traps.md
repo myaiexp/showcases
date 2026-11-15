@@ -123,6 +123,17 @@ add to it when something bites.
   no typed `feature`, and `getBounds()` plus typed pointer handlers exist on `Polygon`/`Polyline`,
   not `Layer`: cast state layers `as Polygon`. `GeoJSON.geometryToLayer` doesn't set
   `layer.feature`; `addData` does. Use `instanceof`, never `constructor.name` (minified).
+- Control subclasses in TS: `override onAdd`, `override getEvents`, `static override
+  defaultOptions`. `addTo` prepends in bottom corners and appends in top ones. ZoomControl,
+  ScaleControl and FullscreenControl options are read at `onAdd` (new control to change them).
+  ZoomControl buttons step `zoomDelta`, ×3 with Shift (a scripted `shiftKey` click works).
+- `new LatLngBounds([-30, 170], [30, -170])` takes min/max per axis and spans the long way
+  round: use a corner past 180 to cross the antimeridian. `crs.getProjectedBounds()` is `null`
+  for SimpleCRS. SimpleCRS maps fit their image better with `zoomSnap: 0.25`.
+- Geometry examples without a map draw on `plane.ts` (an SVG plane, y down like `Point`); the
+  star map's measured bounds and stars are in `uqm.ts`.
+- Memory: each Leaflet card costs real browser memory (tiles are decoded images). A probe that
+  mounts many cards at once can pass caxi's 1.2 GB cap: probe a dozen or fewer at a time.
 - `.lf-map` has `flex: 1`: an example that sets the map box's width also sets `flex: none`.
 - In a card, `stage.log()` writes the caption, so a `stage.say()` in a cycle overwrites it.
 

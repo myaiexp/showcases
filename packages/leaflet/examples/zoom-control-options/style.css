@@ -1,0 +1,6 @@
+/* Zoom control options: styles, all nested under this example's own selector */
+[data-example='leaflet/zoom-control-options'] {
+  .box {
+    color: var(--fg-1);
+  }
+}
