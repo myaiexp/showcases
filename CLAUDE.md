@@ -195,3 +195,8 @@ GitHub Pages. No service on the VPS.
   parameter a uniform, the docs' snapshots as presets) and `model()`/`lineup()`. `vite.config.ts` maps the library's
   bare `three` to `three/webgpu`. The docs' parameter lists drift from the source: `shared/tsl-textures.d.ts` types
   each texture from its src `defaults`, and `test/tsl-textures-types.test.ts` fails when a bump changes them.
+- Vega: build on `packages/vega/shared/stage.ts` (`createStage`, trap list); every example writes its whole
+  spec and calls `stage.render(spec)` (dark config, offline loader for the docs' `data/*` files) or builds
+  `new vega.View(vega.parse(spec, stage.config), {...stage.options})` and `stage.adopt`s it. Cards fake input
+  with `stage.ghost(view)` (canvas renderer). The mount test (`test/vega-mount.ts`, in four shards) fails on
+  any Vega warning.
