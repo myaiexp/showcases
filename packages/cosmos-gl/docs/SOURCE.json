@@ -1,0 +1,24 @@
+{
+  "license": "MIT (cosmosgl/graph LICENCE, vendored alongside)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/cosmosgl/graph",
+      "ref": "v3.6.0",
+      "paths": [
+        "LICENCE",
+        "README.md",
+        "migration-notes.md",
+        "src/stories/welcome.mdx",
+        "src/stories/configuration.mdx",
+        "src/stories/api-reference.mdx",
+        "docs/*/README.md",
+        "docs/many-body-force/*.svg",
+        "docs/picking/*.svg",
+        "history/README.md",
+        "history/2026/*.md"
+      ]
+    }
+  ]
+}
