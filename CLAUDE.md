@@ -41,7 +41,15 @@ Details and the reasoning: [docs/pattern.md](docs/pattern.md) § Purity.
 
 ## Commands
 
-- `pnpm dev`: dev server. `pnpm check` runs types, tests and the build.
+- `pnpm dev`: dev server.
+- `pnpm check:pkg [<pkg>...]`: **what builders run.** It type-checks only those packages
+  (about 0.5 GB at most) and runs their integrity checks and their `test/<pkg>-*.test.ts`
+  files. With no args, it works out the scope from the branch's changes against master;
+  a `src/` or `tsconfig.json` change brings in the whole-repo tsc. It never builds.
+- `pnpm check`: the whole repo (tsc ~4 GB, vite build ~6 GB). Each heavy step queues on a
+  lock shared by every worktree. Run it only after changing shared config. CI and
+  deploy's type-check gate run the whole-repo check on every land. Details:
+  [docs/pattern.md](docs/pattern.md) § Checking.
 - `pnpm new-package <slug> <npm> <Category>`, then `pnpm new-example <pkg> <slug> "<Title>" "<Section>"`.
 - `pnpm vendor-docs <pkg>`: (re)fetch a package's docs from its `docs/SOURCE.json`.
 

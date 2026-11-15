@@ -15,7 +15,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "check:types": "tsc --noEmit",
-    "check": "pnpm run check:types && pnpm run test && pnpm run build",
+    "check": "node scripts/check.ts --all",
+    "check:pkg": "node scripts/check.ts",
     "vendor-docs": "node scripts/vendor-docs.ts",
     "new-package": "node scripts/new-package.ts",
     "new-example": "node scripts/new-example.ts"
