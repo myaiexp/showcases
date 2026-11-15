@@ -35,6 +35,13 @@ import './stage.css';
  *   map (shared/line-data.ts `NO_DATELINE` avoids them). Units: wall size 40 is a sensible wall
  *   at zoom 3–4 (2000 fills the screen; with heightfixed ~3e6); line size [w, h] and
  *   raisingHeight lift ~100 visibly. Flowline arrowheads are large: sizes 3–4 read best.
+ * - Point layers: size is a radius in px. Column size [w, l, h] (or [w, h] = [w, w, h]) is in
+ *   projected units that grow with zoom (~1 per px at zoom 3.4); map-distance values cover the
+ *   screen. Cluster options are `clusterOptions` (docs: clusterOption), maxZoom default 20.
+ *   opacityLinear dir 'up' fades columns toward the top. Image ids must not reuse shape names
+ *   (circle, …). The default dot model blends additively, so overlaps glow.
+ * - Marker, Popup and the controls come from @antv/l7-component, whose `browser` field is a
+ *   UMD bundle with no ESM exports; vite.config.ts aliases it to its es build.
  * - tsconfig has noUncheckedIndexedAccess: guard indexed reads.
  */
 
