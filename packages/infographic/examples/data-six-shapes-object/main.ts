@@ -1,4 +1,4 @@
-// The six data types as options.data objects, each drawn by a template that reads it
+// The six data types as options.data objects, each with a template that reads it
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

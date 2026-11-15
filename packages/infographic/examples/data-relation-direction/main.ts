@@ -1,4 +1,4 @@
-// nodes with ids and a relation from api to db whose direction is forward, both or none
+// A relation from api to db whose direction is forward, both or none
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

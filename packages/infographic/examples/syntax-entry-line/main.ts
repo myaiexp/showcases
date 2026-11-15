@@ -1,4 +1,4 @@
-// The first line, infographic <template-name>, picks the template for the data below
+// The entry line, infographic <template-name>, picks the template for the data
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

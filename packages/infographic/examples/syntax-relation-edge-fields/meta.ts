@@ -1,4 +1,4 @@
-// AntV Infographic example: Syntax: direction, showArrow and arrowType on a relation
+// AntV Infographic example: syntax-relation-edge-fields
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

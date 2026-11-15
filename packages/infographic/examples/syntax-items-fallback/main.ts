@@ -1,4 +1,4 @@
-// When unsure which field a template wants, items adapts to list and sequence templates
+// When unsure which field a template wants, the generic items field adapts
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// getTemplate() reads a built-in template; registerTemplate() stores an edited copy
+// getTemplate() reads a built-in template; registerTemplate() stores a copy
 import { Infographic, getTemplate, registerTemplate } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

@@ -4,9 +4,9 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Data: comparison data with values',
   summary:
-    "Comparison data uses the compares field. The data page's two plans carry a value each, and a binary comparison template draws each plan with its children and its number. The second step changes the values.",
+    'Comparison data uses the compares field, and its entries can carry a value. The plans from the data page become two roots with children, drawn by a compact-card item, which shows each child value beside its label. The second step changes the numbers.',
   section: 'Data',
-  tags: ['data', 'compares', 'value', 'children', 'compare-binary-horizontal-badge-card-vs'],
+  tags: ['data', 'compares', 'value', 'children', 'compare-binary-horizontal-compact-card-vs'],
   docs: [
     'repo/site/src/content/learn/data.en.md',
   ],

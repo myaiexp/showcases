@@ -9,6 +9,7 @@ registerPalette('showcase-smooth-gradient', (ratio) => {
 });
 
 const NAMES = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+const VALUES = [12, 17, 9, 15, 11, 14, 8];
 
 const mount: Mount = async (el, ctx) => {
   const stage = await createStage(el, ctx);
@@ -21,13 +22,13 @@ const mount: Mount = async (el, ctx) => {
     [3, 5, 7].map((n) => ({
       say: `${n} items`,
       run: () => {
-        const lists = NAMES.slice(0, n).map((name) => `    - label ${name}`).join('\n');
-        const syntax = `infographic list-grid-compact-card
+        const values = NAMES.slice(0, n).map((name, i) => `    - label ${name}\n      value ${VALUES[i]}`).join('\n');
+        const syntax = `infographic chart-column-simple
 theme dark
   palette showcase-smooth-gradient
 data
-  lists
-${lists}`;
+  values
+${values}`;
         infographic.render(syntax);
         if (code) code.textContent = syntax;
       },

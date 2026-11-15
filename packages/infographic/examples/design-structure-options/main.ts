@@ -1,4 +1,4 @@
-// Options nested under a structure line (columns, gap, zigzag) are specific to that structure
+// Options under a structure line (columns, gap, zigzag) belong to that structure
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

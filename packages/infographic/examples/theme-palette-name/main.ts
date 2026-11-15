@@ -7,44 +7,62 @@ import { createStage } from '../../shared/stage.ts';
 const STEPS = [
   {
     say: 'No palette: every item uses the primary colour',
-    syntax: `infographic list-grid-compact-card
+    syntax: `infographic chart-column-simple
 theme dark
 data
-  lists
+  values
     - label One
+      value 12
     - label Two
+      value 17
     - label Three
+      value 9
     - label Four
+      value 15
     - label Five
-    - label Six`,
+      value 11
+    - label Six
+      value 14`,
   },
   {
     say: 'palette antv',
-    syntax: `infographic list-grid-compact-card
+    syntax: `infographic chart-column-simple
 theme dark
   palette antv
 data
-  lists
+  values
     - label One
+      value 12
     - label Two
+      value 17
     - label Three
+      value 9
     - label Four
+      value 15
     - label Five
-    - label Six`,
+      value 11
+    - label Six
+      value 14`,
   },
   {
     say: 'palette spectral',
-    syntax: `infographic list-grid-compact-card
+    syntax: `infographic chart-column-simple
 theme dark
   palette spectral
 data
-  lists
+  values
     - label One
+      value 12
     - label Two
+      value 17
     - label Three
+      value 9
     - label Four
+      value 15
     - label Five
-    - label Six`,
+      value 11
+    - label Six
+      value 14`,
   },
 ];
 

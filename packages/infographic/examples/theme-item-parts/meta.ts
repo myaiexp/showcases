@@ -1,4 +1,4 @@
-// AntV Infographic example: Themes: item.label, item.desc, item.value and item.icon
+// AntV Infographic example: theme-item-parts
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

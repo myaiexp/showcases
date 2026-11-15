@@ -1,4 +1,4 @@
-// The primary colour, used for decoration and as the default item colour, and the background
+// colorPrimary, the decoration and default item colour, and colorBg
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

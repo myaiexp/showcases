@@ -1,4 +1,4 @@
-// theme.item styles one part of every data item: its label, description, value or icon
+// theme.item styles one part of every item: label, desc, value or icon
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

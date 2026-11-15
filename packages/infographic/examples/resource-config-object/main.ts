@@ -1,4 +1,4 @@
-// icon as ResourceConfig objects (scene set by hand, see summary): raw SVG, SVG data URI, PNG
+// icon as ResourceConfig objects: raw SVG, SVG data URI and PNG
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

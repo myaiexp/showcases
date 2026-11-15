@@ -1,4 +1,4 @@
-// A dotted key beside an indented block, and a path assigned twice keeps the last value
+// A dotted key beside a block, and a path assigned twice keeps the last value
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// stylize pattern with pattern line, dot, hex, diamond, mosaic or square fills the shapes
+// stylize pattern, with pattern line, dot, hex, diamond, mosaic or square
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

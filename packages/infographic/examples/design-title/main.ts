@@ -1,4 +1,4 @@
-// design.title default draws data.title and data.desc, with align-horizontal and desc-line-number
+// design.title default draws data.title and data.desc; no line, no title
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
@@ -6,13 +6,12 @@ import { createStage } from '../../shared/stage.ts';
 // Each step is a whole infographic syntax; the instance re-renders with the next one.
 const STEPS = [
   {
-    say: 'align-horizontal left',
+    say: 'title default',
     syntax: `infographic
 design
   structure list-row
   item simple
   title default
-    align-horizontal left
 theme dark
 data
   title A rather long infographic title
@@ -23,13 +22,15 @@ data
     - label Three`,
   },
   {
-    say: 'align-horizontal center',
+    say: 'width 300, alignHorizontal left, descLineNumber 1',
     syntax: `infographic
 design
   structure list-row
   item simple
   title default
-    align-horizontal center
+    width 300
+    alignHorizontal left
+    descLineNumber 1
 theme dark
 data
   title A rather long infographic title
@@ -40,31 +41,12 @@ data
     - label Three`,
   },
   {
-    say: 'align-horizontal right',
+    say: 'no title line in the design block',
     syntax: `infographic
 design
   structure list-row
   item simple
-  title default
-    align-horizontal right
-theme dark
-data
-  title A rather long infographic title
-  desc This is the description text of the infographic, long enough that it needs more than one line to show in full
-  lists
-    - label One
-    - label Two
-    - label Three`,
-  },
-  {
-    say: 'desc-line-number 1: the description is cut to one line',
-    syntax: `infographic
-design
-  structure list-row
-  item simple
-  title default
-    align-horizontal left
-    desc-line-number 1
+
 theme dark
 data
   title A rather long infographic title

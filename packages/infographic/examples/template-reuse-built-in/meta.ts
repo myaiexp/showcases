@@ -1,4 +1,4 @@
-// AntV Infographic example: Templates: read a built-in template and register a variant
+// AntV Infographic example: template-reuse-built-in
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

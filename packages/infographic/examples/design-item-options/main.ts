@@ -1,4 +1,4 @@
-// An item block takes its own options, here showIcon, iconType and usePaletteColor of simple
+// An item block takes its own options: showIcon, iconType, usePaletteColor
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

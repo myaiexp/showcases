@@ -1,4 +1,4 @@
-// sequences as lanes, children as nodes with a step number, relations linking node ids
+// Lanes in sequences, nodes in children with a step, relations linking node ids
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

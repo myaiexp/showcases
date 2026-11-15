@@ -1,4 +1,4 @@
-// icon values written as data:image/svg+xml,<svg>...</svg>, the built-in inline protocol
+// icon values written as data:image/svg+xml,<svg>, the built-in inline protocol
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

@@ -4,9 +4,9 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Themes: a palette repeats when items outnumber colours',
   summary:
-    'The theme page notes that palette colours are used cyclically. A three-colour palette is applied to three, four, five and six items, and each extra item picks up the palette from the start again.',
+    'The theme page notes that palette colours are used cyclically. A three-colour palette is applied to three, four, five and six columns, and each extra column picks up the palette from the start again.',
   section: 'Themes',
-  tags: ['theme', 'palette', 'cyclic', 'lists'],
+  tags: ['theme', 'palette', 'cyclic', 'values'],
   docs: [
     'repo/site/src/content/learn/theme.en.md',
   ],

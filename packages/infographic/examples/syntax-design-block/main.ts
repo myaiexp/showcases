@@ -53,7 +53,7 @@ design
     zigzag true
   item horizontal-icon-arrow
   title default
-    align-horizontal left
+    alignHorizontal left
 theme dark
 data
   title Design block

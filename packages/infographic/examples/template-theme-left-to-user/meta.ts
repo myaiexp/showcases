@@ -1,4 +1,4 @@
-// AntV Infographic example: Templates: a template presets the design, you set the theme
+// AntV Infographic example: template-theme-left-to-user
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

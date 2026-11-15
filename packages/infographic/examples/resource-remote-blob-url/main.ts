@@ -1,4 +1,4 @@
-// ref:remote:svg:<url> pointed at blob: URLs created on this page, so nothing leaves it
+// ref:remote:svg:<url> pointed at blob: URLs made on this page
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

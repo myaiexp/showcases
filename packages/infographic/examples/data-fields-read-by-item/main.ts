@@ -1,4 +1,4 @@
-// The same label, desc, value and icon data drawn by items that use different fields
+// The same label, desc, value and icon, drawn by items that read different fields
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

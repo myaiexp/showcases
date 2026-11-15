@@ -1,4 +1,4 @@
-// registerTemplate(): the entry line "infographic <name>" draws the same as a design block
+// registerTemplate(): infographic <name> draws the same as a design block
 import { Infographic, registerTemplate } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

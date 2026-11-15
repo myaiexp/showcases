@@ -1,4 +1,4 @@
-// getTemplates(): the first template of each family, drawn with the data that family reads
+// getTemplates(): the first template of each family, with its data field
 import { Infographic, getTemplates } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

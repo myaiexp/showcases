@@ -1,4 +1,4 @@
-// One infographic built up in the order the core concepts list: data, design, theme, resources
+// One infographic built up in the order of the core concepts
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

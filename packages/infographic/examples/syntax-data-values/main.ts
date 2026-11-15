@@ -1,4 +1,4 @@
-// values holds label and value pairs, and each chart template draws them its own way
+// values holds label and value pairs; each chart template draws them its way
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

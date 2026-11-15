@@ -1,4 +1,4 @@
-// compares entries with a label and a value, such as Plan A at 80 and Plan B at 65
+// compares entries whose children carry a value, drawn by a value-showing item
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
@@ -6,48 +6,52 @@ import { createStage } from '../../shared/stage.ts';
 // Each step is a whole infographic syntax; the instance re-renders with the next one.
 const STEPS = [
   {
-    say: 'Plan A 80, Plan B 65',
-    syntax: `infographic compare-binary-horizontal-badge-card-vs
+    say: 'Plan A: 80, Plan B: 65',
+    syntax: `infographic compare-binary-horizontal-compact-card-vs
 theme dark
 data
   title Plan Comparison
   compares
     - label Plan A
-      value 80
       children
-        - label Faster
+        - label Speed
+          value 80
           icon bolt
-        - label Pricier
+        - label Price
+          value 65
           icon coins
     - label Plan B
-      value 65
       children
-        - label Cheaper
-          icon tag
-        - label Slower
-          icon hourglass`,
+        - label Speed
+          value 65
+          icon bolt
+        - label Price
+          value 80
+          icon coins`,
   },
   {
-    say: 'Plan A 55, Plan B 90',
-    syntax: `infographic compare-binary-horizontal-badge-card-vs
+    say: 'Plan A: 35, Plan B: 90',
+    syntax: `infographic compare-binary-horizontal-compact-card-vs
 theme dark
 data
   title Plan Comparison
   compares
     - label Plan A
-      value 55
       children
-        - label Faster
+        - label Speed
+          value 35
           icon bolt
-        - label Pricier
+        - label Price
+          value 90
           icon coins
     - label Plan B
-      value 90
       children
-        - label Cheaper
-          icon tag
-        - label Slower
-          icon hourglass`,
+        - label Speed
+          value 90
+          icon bolt
+        - label Price
+          value 35
+          icon coins`,
   },
 ];
 

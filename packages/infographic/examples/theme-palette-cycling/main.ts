@@ -6,54 +6,72 @@ import { createStage } from '../../shared/stage.ts';
 // Each step is a whole infographic syntax; the instance re-renders with the next one.
 const STEPS = [
   {
-    say: '3 items, 3 colours',
-    syntax: `infographic list-grid-compact-card
+    say: '3 columns, 3 colours',
+    syntax: `infographic chart-column-simple
 theme dark
   palette #61DDAA #F6BD16 #F08BB4
 data
-  lists
+  values
     - label One
+      value 12
     - label Two
-    - label Three`,
+      value 17
+    - label Three
+      value 9`,
   },
   {
-    say: '4 items, 3 colours',
-    syntax: `infographic list-grid-compact-card
+    say: '4 columns, 3 colours',
+    syntax: `infographic chart-column-simple
 theme dark
   palette #61DDAA #F6BD16 #F08BB4
 data
-  lists
+  values
     - label One
+      value 12
     - label Two
+      value 17
     - label Three
-    - label Four`,
-  },
-  {
-    say: '5 items, 3 colours',
-    syntax: `infographic list-grid-compact-card
-theme dark
-  palette #61DDAA #F6BD16 #F08BB4
-data
-  lists
-    - label One
-    - label Two
-    - label Three
+      value 9
     - label Four
-    - label Five`,
+      value 15`,
   },
   {
-    say: '6 items, 3 colours',
-    syntax: `infographic list-grid-compact-card
+    say: '5 columns, 3 colours',
+    syntax: `infographic chart-column-simple
 theme dark
   palette #61DDAA #F6BD16 #F08BB4
 data
-  lists
+  values
     - label One
+      value 12
     - label Two
+      value 17
     - label Three
+      value 9
     - label Four
+      value 15
     - label Five
-    - label Six`,
+      value 11`,
+  },
+  {
+    say: '6 columns, 3 colours',
+    syntax: `infographic chart-column-simple
+theme dark
+  palette #61DDAA #F6BD16 #F08BB4
+data
+  values
+    - label One
+      value 12
+    - label Two
+      value 17
+    - label Three
+      value 9
+    - label Four
+      value 15
+    - label Five
+      value 11
+    - label Six
+      value 14`,
   },
 ];
 
