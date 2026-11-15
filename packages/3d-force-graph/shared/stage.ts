@@ -37,6 +37,26 @@
 //   `emitParticle` adds the returned object itself. Return plain Meshes.
 // - `zoomToFit` measures geometries only: nodes that are pure CSS2D/CSS3D objects have none, so
 //   nothing fits (a CSS2D label on an extended sphere does count the sphere).
+// - `ngraphPhysics()` is only read when the ngraph layout is built, which a new value does not trigger
+//   (only `graphData`, `nodeId`, `linkSource`, `linkTarget`, `numDimensions`, `forceEngine` and the DAG
+//   props do): set `graphData(graph.graphData())` after it. Passing an object replaces every default.
+// - `dagNodeFilter` changes leave the nodes it newly rejects pinned (`fy` etc. are only cleared when
+//   `dagMode` changes): delete those fields yourself before setting the filter.
+// - `onDagError` runs inside the data update: only record the loop there. Props set from the
+//   callback trigger another update (and another report when a DAG prop is among them).
+// - `enableNodeDrag` has no effect once data is loaded: the DragControls are built (or not) when a data
+//   update finishes. After changing it, set `graphData(graph.graphData())` so they are rebuilt.
+// - Turning `enablePointerInteraction` off stops the raycasting, so no `onNodeHover(null)` ever follows
+//   a hover that was in progress: clear any hover highlight yourself.
+// - `enableNavigationControls(false)` also stops the controls' `update()`, so an OrbitControls
+//   `autoRotate` stops with it (the only camera motion a card can get from the controls).
+// - `refresh()` rebuilds the node and link objects at the origin until the next tick, so a `zoomToFit`
+//   straight after it (from an `onEngineStop` that fires again) zooms in on nothing.
+// - A node dragged by `ghost.drag` ends up where it was dropped: keep card drags short, or the
+//   `zoomToFit` that follows frames a long stretched link.
+// - The default `dagLevelDistance` is nodes / maxDepth × a ratio: a band of ~30 units for a
+//   20-node DAG, so the other forces spread it sideways and the levels barely show. Set it
+//   (about 40) for small graphs.
 // - The nav info footer ("Left-click: rotate, …") shows by default: cards hide it.
 import type { MountContext } from '@/types.ts';
 import type { PerspectiveCamera } from 'three';

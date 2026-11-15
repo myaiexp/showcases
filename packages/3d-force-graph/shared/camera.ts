@@ -54,3 +54,19 @@ export function fitOnce(graph: AnyGraph, padding = 40): void {
     graph.zoomToFit(600, padding);
   });
 }
+
+/** Fits the camera to the graph at once and returns its distance from the origin. */
+export function fitNow(graph: AnyGraph, padding = 20): number {
+  graph.scene().updateMatrixWorld(true); // objects made since the last render have a stale matrixWorld
+  graph.zoomToFit(0, padding);
+  const p = graph.camera().position;
+  return Math.hypot(p.x, p.y, p.z);
+}
+
+/** Like `fitNow`, but first turns the camera to look at the graph from a corner, so depth shows. */
+export function diagonalFit(graph: AnyGraph, padding = 20): void {
+  const d = fitNow(graph, padding);
+  graph.cameraPosition({ x: d * 0.45, y: d * 0.35, z: d * 0.82 }, { x: 0, y: 0, z: 0 });
+  graph.scene().updateMatrixWorld(true);
+  graph.zoomToFit(0, padding);
+}
