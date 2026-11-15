@@ -28,8 +28,12 @@ const latOfMercY = (y: number): number => (Math.atan(Math.sinh(Math.PI * (1 - 2 
 const cache = new Map<string, string>();
 const CACHE_MAX = 240;
 
+// One canvas paints every tile: a canvas per tile would hold its pixel buffer outside the JS
+// heap until a garbage collection, which a small heap rarely triggers. Setting the size clears it.
+let canvas: HTMLCanvasElement | null = null;
+
 function render(spec: PaintSpec): string {
-  const canvas = document.createElement('canvas');
+  canvas ??= document.createElement('canvas');
   canvas.width = Math.round(spec.w * spec.scale);
   canvas.height = Math.round(spec.h * spec.scale);
   const ctx = canvas.getContext('2d');
