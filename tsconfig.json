@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "paths": { "@/*": ["./src/*"] }
+    "paths": { "@/*": ["./src/*"], "vizzu": ["./packages/vizzu/shared/vizzu-types.d.ts"] }
   },
   "include": ["src", "packages", "scripts", "test", "vite.config.ts"],
   "exclude": ["packages/*/docs"]

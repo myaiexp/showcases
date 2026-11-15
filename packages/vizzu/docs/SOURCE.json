@@ -1,0 +1,26 @@
+{
+  "license": "Apache-2.0 (vizzuhq/vizzu-lib LICENSE, with its NOTICE vendored alongside as the licence requires)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/vizzuhq/vizzu-lib",
+      "ref": "v0.18.0",
+      "paths": [
+        "LICENSE",
+        "NOTICE",
+        "README.md",
+        "FAQ.md",
+        "CHANGELOG.md",
+        "docs/installation.md",
+        "docs/reference/README.md",
+        "docs/tutorial/**",
+        "docs/assets/data/music_data.js",
+        "tools/docs/mkdocs.yml",
+        "src/apps/weblib/typeschema-api/*.yaml",
+        "src/apps/weblib/ts-api/**/*.ts",
+        "src/apps/weblib/ts-api/plugins/presetconfigs.js"
+      ]
+    }
+  ]
+}

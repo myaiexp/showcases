@@ -1,0 +1,1116 @@
+{
+  "fetched": "2026-11-15T01:16:35.430Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/vizzuhq/vizzu-lib",
+      "ref": "v0.18.0",
+      "paths": [
+        "LICENSE",
+        "NOTICE",
+        "README.md",
+        "FAQ.md",
+        "CHANGELOG.md",
+        "docs/installation.md",
+        "docs/reference/README.md",
+        "docs/tutorial/**",
+        "docs/assets/data/music_data.js",
+        "tools/docs/mkdocs.yml",
+        "src/apps/weblib/typeschema-api/*.yaml",
+        "src/apps/weblib/ts-api/**/*.ts",
+        "src/apps/weblib/ts-api/plugins/presetconfigs.js"
+      ],
+      "commit": "d81a7e9abf32830093c7b37101dc89898c700f7c"
+    }
+  ],
+  "files": {
+    "repo/CHANGELOG.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/CHANGELOG.md",
+      "sha256": "82d2cf4f8692bf5832b996ae520e9df01b551ee6da3b57f80aaf8c812a53710e"
+    },
+    "repo/docs/assets/data/music_data.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/assets/data/music_data.js",
+      "sha256": "42b47ee8ded504fa0918cfd528a0bad535829b48572b30dd7685081de413f1b9"
+    },
+    "repo/docs/installation.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/installation.md",
+      "sha256": "2e7e792af4aa779c111e83f25286e940092a873cd6ba315ba539192891ef5d76"
+    },
+    "repo/docs/reference/README.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/reference/README.md",
+      "sha256": "f25e0ae6ed1635910d3dc79e3c6a324a96d0579241af02ecddc7433740a6c894"
+    },
+    "repo/docs/tutorial/aggregating_data.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data.md",
+      "sha256": "38ad95742dd4d9eeea38d34bcd004c3ffc338a709667b95e0d6c1fc46bb8ddf6"
+    },
+    "repo/docs/tutorial/aggregating_data/01_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/01_a.js",
+      "sha256": "eb17c947423a8058a98032ca744ad60fc712511d5498a4eabd9c14e241ee1b75"
+    },
+    "repo/docs/tutorial/aggregating_data/01_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/01_b.js",
+      "sha256": "7eb3bd26a360bfe7236ff0ada32567622c8b88558c4d3b723c3bf3d07d02b229"
+    },
+    "repo/docs/tutorial/aggregating_data/01_c.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/01_c.js",
+      "sha256": "0813ab44df7e8f710f891af8732029adde7748f83edbc26f2ce811ecdf3ec024"
+    },
+    "repo/docs/tutorial/aggregating_data/01_d.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/01_d.js",
+      "sha256": "3aa292def94710f5dfa8bee854fa728ea29b5a84051f2484919289c9b056008b"
+    },
+    "repo/docs/tutorial/aggregating_data/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/02_a.js",
+      "sha256": "cbcc0ba12b6363860f9248ceb324ab300a7d28c882033be5d4283ff4f85c99bd"
+    },
+    "repo/docs/tutorial/aggregating_data/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/02_b.js",
+      "sha256": "99d6c89bb1740eef598b6c24364e56b7135aaabf28527862101a8388f78764fe"
+    },
+    "repo/docs/tutorial/aggregating_data/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/03_a.js",
+      "sha256": "37b60c6ff668d0206168269ac3b1cf36aba9f97cf11ad02d4be21f12ad56646b"
+    },
+    "repo/docs/tutorial/aggregating_data/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/03_b.js",
+      "sha256": "da05ab720977ec08f4f3ec15dc8deb09a419784fb31a139c64395e2cb07b9964"
+    },
+    "repo/docs/tutorial/aggregating_data/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/04_a.js",
+      "sha256": "ae084a6fc097304d8e021564df62e485cf67ec3ff1e39ec0828f8e06ff45afe1"
+    },
+    "repo/docs/tutorial/aggregating_data/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/04_b.js",
+      "sha256": "720df6af3a1919dc1d438b36d66b2ef0ee65fe757c71698b8688b652f4c00517"
+    },
+    "repo/docs/tutorial/aggregating_data/05_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/05_a.js",
+      "sha256": "99d02d5c00dbb9bff19cd1aa633cde7af575f9c33cdccf470cfbfca59587add3"
+    },
+    "repo/docs/tutorial/aggregating_data/05_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/05_b.js",
+      "sha256": "42f4dc7db2638195907df71a54f38557ea9c3b95b6b180e694b3da9ac40f7754"
+    },
+    "repo/docs/tutorial/aggregating_data/06_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/06_a.js",
+      "sha256": "7bafaaf9d818eca5857f2c97c3938f0d5828f4ebb264598c4c918b68799f12ed"
+    },
+    "repo/docs/tutorial/aggregating_data/06_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/06_b.js",
+      "sha256": "2a89f53826dbfbccdeed57f38e06b5d3bd7abf349d9d4475f01cf7481908f7b4"
+    },
+    "repo/docs/tutorial/aggregating_data/07_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/07_a.js",
+      "sha256": "0813ab44df7e8f710f891af8732029adde7748f83edbc26f2ce811ecdf3ec024"
+    },
+    "repo/docs/tutorial/aggregating_data/07_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/07_b.js",
+      "sha256": "34e75d577f0aa1280230de9f153c40c4a18d55e7b063b7b76eeff409e40d26cc"
+    },
+    "repo/docs/tutorial/aggregating_data/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/aggregating_data/config.js",
+      "sha256": "8d410d66cabf349b762103249d1c223427c21ea9b3a38ca0279a6e9048dc7c85"
+    },
+    "repo/docs/tutorial/align_range.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range.md",
+      "sha256": "d6dffbb957a787696e979ade82bd4ee5d4f67fcef96b452abdb510467de3dfd9"
+    },
+    "repo/docs/tutorial/align_range/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/01.js",
+      "sha256": "feccfccf5b5c28b7f13306d291305603a4b5f2e5c1647b8c06164f5c1a8c8111"
+    },
+    "repo/docs/tutorial/align_range/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/02_a.js",
+      "sha256": "2202feb3b07c86465069bb6dc08dd6077c87a0f017206dd8e0d6b7ad30f6ba8e"
+    },
+    "repo/docs/tutorial/align_range/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/02_b.js",
+      "sha256": "627403426ba56c9e7e3071ec651feed54bc91fd37c1d810996339dee003fa254"
+    },
+    "repo/docs/tutorial/align_range/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/03_a.js",
+      "sha256": "ff15a1a048fcd725e09e0f177a38aa2523dfb03ab5dbddbfe56b1a26446f867c"
+    },
+    "repo/docs/tutorial/align_range/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/03_b.js",
+      "sha256": "8a06c08dceb99f4a66105ff833419ac55a7f78cb7573b68dcf7fe379f40ebff3"
+    },
+    "repo/docs/tutorial/align_range/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/04_a.js",
+      "sha256": "086521544b0690a1610dd3b4306f8fbd58fc4b672bef3b0853f3885e90371c96"
+    },
+    "repo/docs/tutorial/align_range/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/04_b.js",
+      "sha256": "87a6783a5d38c3d3ef64c51399dcba4e0dfdf946868120577200d17cd39b9915"
+    },
+    "repo/docs/tutorial/align_range/05_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/05_a.js",
+      "sha256": "d81fdeea2c7b35794e91129c9b043e32bbd869054fecc6ce0e0471bc547d518c"
+    },
+    "repo/docs/tutorial/align_range/05_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/05_b.js",
+      "sha256": "e86e53e9212c50070750834d461c5423079c5bb577175b62c999901d28c898f4"
+    },
+    "repo/docs/tutorial/align_range/06_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/06_a.js",
+      "sha256": "67edcbeb6ecc74a00dbbe80bd81977d2904484338c9234a8af1cf1bbf1ff3990"
+    },
+    "repo/docs/tutorial/align_range/06_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/06_b.js",
+      "sha256": "8fcb53ed02b7fe82e8b4d919daae0b86f68791beaf12bfd6559002d3499aabe9"
+    },
+    "repo/docs/tutorial/align_range/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/align_range/config.js",
+      "sha256": "8d9a392afc3de2a87772eab7f4afea3cd3c961823d3a6bc5ce8ac4e51b91ef80"
+    },
+    "repo/docs/tutorial/animation_control_keyframes.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_control_keyframes.md",
+      "sha256": "427f41e1bcfe7ebf7f677ce795f7358d8bc43dc5f93734c40386b15c80637727"
+    },
+    "repo/docs/tutorial/animation_control_keyframes/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_control_keyframes/01.js",
+      "sha256": "4801cb8fd196e51be7b593a8acdd3d089cbba38209e37416f86d322fe6a86569"
+    },
+    "repo/docs/tutorial/animation_control_keyframes/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_control_keyframes/02_a.js",
+      "sha256": "31bedb8382ec527a7c02b1a407a377645c9be4cfc462b88577800f3183ff4dbb"
+    },
+    "repo/docs/tutorial/animation_control_keyframes/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_control_keyframes/02_b.js",
+      "sha256": "626637abac153604fcec51f02efb2987fbd9d0e8172800871be3d02157fc1f8a"
+    },
+    "repo/docs/tutorial/animation_control_keyframes/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_control_keyframes/03_a.js",
+      "sha256": "7ac5f9d2347cb24f0df7aebb3e3290004aa31abb8bcfd3d30c2a7731e388ba6e"
+    },
+    "repo/docs/tutorial/animation_control_keyframes/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_control_keyframes/03_b.js",
+      "sha256": "ba66d4618d55293c2876f1596ed08b6d2f5f00e6b90e8ed8fae05c58cf208aa8"
+    },
+    "repo/docs/tutorial/animation_control_keyframes/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_control_keyframes/config.js",
+      "sha256": "6f870e7452a84bbfa42e880a08cf577a0094320b8cf23896be503fc7bc01bdc3"
+    },
+    "repo/docs/tutorial/animation_options.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options.md",
+      "sha256": "4a8e2f4422bef0ff0ac4b905962c8ed6ab9e39b09665a13312d278ad35f57d03"
+    },
+    "repo/docs/tutorial/animation_options/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/01.js",
+      "sha256": "203fcfacd06ae2ddc28b253cb3775b333930de5bc7ba524d69df0b776e6f7c3e"
+    },
+    "repo/docs/tutorial/animation_options/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/02_a.js",
+      "sha256": "23d2e8d924a4d4c4e1d9202968d5de882260a3eeedb20e3b6d14247ba3c1b73c"
+    },
+    "repo/docs/tutorial/animation_options/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/02_b.js",
+      "sha256": "be5f40a137fbeb0282cac78f2116584ff739364e21163795a0b43ab37b429d99"
+    },
+    "repo/docs/tutorial/animation_options/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/03_a.js",
+      "sha256": "c272a965e5aed06081282931f759e9f3f982b9cdcd363ebcc07b4a9deedaccad"
+    },
+    "repo/docs/tutorial/animation_options/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/03_b.js",
+      "sha256": "abde88929a57605a3ebe7bf42de21d47798c37fac39aca2a8171046696dcd83d"
+    },
+    "repo/docs/tutorial/animation_options/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/04_a.js",
+      "sha256": "5f8e8cc084175b970d0343a3072a274f523dd0efe0e60efcee8a3e11f21bd988"
+    },
+    "repo/docs/tutorial/animation_options/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/04_b.js",
+      "sha256": "b97dbceba357a0b97d5f7bfeae0285d29d6a88a16384c18c9e81a97b1bd7adce"
+    },
+    "repo/docs/tutorial/animation_options/05_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/05_a.js",
+      "sha256": "76b935c727ddd1375943a8e23e98b94084ae42a493732025366ecc2f1a75e711"
+    },
+    "repo/docs/tutorial/animation_options/05_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/05_b.js",
+      "sha256": "ec58b6c17b7889c5c8f5fdbf8484c035253202acf98a7869ec65939848f9bdad"
+    },
+    "repo/docs/tutorial/animation_options/06_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/06_a.js",
+      "sha256": "30bb777c290a5c29492734764210b03d1c4187bad2150c51ecc1fc54c9b532e2"
+    },
+    "repo/docs/tutorial/animation_options/06_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/06_b.js",
+      "sha256": "9f234cadc940964daede308e8ab964376c000dc6196ae81516240b7f344e0841"
+    },
+    "repo/docs/tutorial/animation_options/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/animation_options/config.js",
+      "sha256": "9bb5b06cf8357202afe291b4cf932426ae6c03d4d4d127e67b553829bd5cbfd9"
+    },
+    "repo/docs/tutorial/assets/chart-gen-overview.svg": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/assets/chart-gen-overview.svg",
+      "sha256": "bbf009d0752d4c8ddf6dbfcb5af6cf586ac6e21ca5a7348af0c1e5267217c99f"
+    },
+    "repo/docs/tutorial/assets/setup/init.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/assets/setup/init.md",
+      "sha256": "afa6ba3c244c42790008a1f9bb4e8ce82c94ae01d9040ad5be95c53d3f773df6"
+    },
+    "repo/docs/tutorial/assets/setup/setup_a.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/assets/setup/setup_a.md",
+      "sha256": "fc320b21c115209901f3a3a6d997fe5d5ecf98d4d632fe2e9a029a04fe8c4964"
+    },
+    "repo/docs/tutorial/assets/setup/setup_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/assets/setup/setup_b.js",
+      "sha256": "707a1d049d835aab5692d4445838b66b536c1f5864b3409489dbfd37a792cf88"
+    },
+    "repo/docs/tutorial/assets/setup/setup_b.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/assets/setup/setup_b.md",
+      "sha256": "19bb68976ecee170bd7064b536449b6fed277507e23e9831532cc6fcdeec1a02"
+    },
+    "repo/docs/tutorial/assets/setup/setup_c.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/assets/setup/setup_c.js",
+      "sha256": "0c304d02c4fee6722f57178add02978cdc637c82216b08a818ba08008f98b8f8"
+    },
+    "repo/docs/tutorial/assets/setup/setup_c.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/assets/setup/setup_c.md",
+      "sha256": "0e9c67306a96902fa3072029d563acc5721188dfd76c7df752364ec643e8ad54"
+    },
+    "repo/docs/tutorial/assets/snippet.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/assets/snippet.js",
+      "sha256": "38f0a09612f8b9929ed3c03e39b15b87906d1a8d10407e73e0741e1cdc6802fd"
+    },
+    "repo/docs/tutorial/axes_title_tooltip.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/axes_title_tooltip.md",
+      "sha256": "1ef2ceec1f27cd2c9249ce37a104d971c59e9ff54feb1561b1f577201e5d4a32"
+    },
+    "repo/docs/tutorial/axes_title_tooltip/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/axes_title_tooltip/01.js",
+      "sha256": "d76fff53c50ea2aaa6fca7a5e33a9ede22373a0e1359b459b976f5a7bce9ed79"
+    },
+    "repo/docs/tutorial/axes_title_tooltip/02.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/axes_title_tooltip/02.js",
+      "sha256": "aeec9731b9a9f149c9935e9431dce9e66b03c46f1f8e1e6bfb8c6e338121f087"
+    },
+    "repo/docs/tutorial/axes_title_tooltip/03.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/axes_title_tooltip/03.js",
+      "sha256": "802f36f592632415274bcd6b7accfe26bb20ee7e1813e4de52ebd11d76b829ab"
+    },
+    "repo/docs/tutorial/axes_title_tooltip/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/axes_title_tooltip/04_a.js",
+      "sha256": "b8d6790f57cd94719194f002c2eb5925b7fe940aa4574e8cfd799a330aa61433"
+    },
+    "repo/docs/tutorial/axes_title_tooltip/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/axes_title_tooltip/04_b.js",
+      "sha256": "84dec4c1bd050de0a891169f5acdc34f9d853d2f5f2a32261f19233d4858f337"
+    },
+    "repo/docs/tutorial/axes_title_tooltip/05.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/axes_title_tooltip/05.js",
+      "sha256": "a06b18af351b366503fb49348c2e93624ea5742d16e91cbd5009d713412a2ff5"
+    },
+    "repo/docs/tutorial/axes_title_tooltip/06.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/axes_title_tooltip/06.js",
+      "sha256": "32442dc5ed41eacfbd90ed4c51028756a03da00669cea6bac8b17ee09c8e70d7"
+    },
+    "repo/docs/tutorial/axes_title_tooltip/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/axes_title_tooltip/config.js",
+      "sha256": "7fb61457851b58827351bb46a68a5ebb36024b69ffc600f759a4fcb7bec8ae88"
+    },
+    "repo/docs/tutorial/changing_dimensions.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/changing_dimensions.md",
+      "sha256": "3282c7b6b14f5fc91cbb30399ea7a19ef8c490193d846677b32513bae4db5b8f"
+    },
+    "repo/docs/tutorial/changing_dimensions/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/changing_dimensions/01.js",
+      "sha256": "e764d4f069026dde04eac89f09f591b9a94fcbffc875dd8488c308261c7ed50d"
+    },
+    "repo/docs/tutorial/changing_dimensions/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/changing_dimensions/02_a.js",
+      "sha256": "09a0868ddf21acb6fb699fab5d034ebb15aa522b5ac3f8286de2a2c00612ec31"
+    },
+    "repo/docs/tutorial/changing_dimensions/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/changing_dimensions/02_b.js",
+      "sha256": "fa4e44285a0eb6b933eea57d201fe956229506ca97b309d5673f8966633d284a"
+    },
+    "repo/docs/tutorial/changing_dimensions/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/changing_dimensions/03_a.js",
+      "sha256": "956e6e75c2ba144c990d28f4611b7f2863ee61317da540dd4948123aaedc85f9"
+    },
+    "repo/docs/tutorial/changing_dimensions/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/changing_dimensions/03_b.js",
+      "sha256": "38755836597240080cc652c1179e701d13ac0eb339d723adc8c96711a4a3851e"
+    },
+    "repo/docs/tutorial/changing_dimensions/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/changing_dimensions/04_a.js",
+      "sha256": "91d7dec47b1cafa8c7ea31170937cede5f38d5b4d95d85e693d8283d9eefb0b6"
+    },
+    "repo/docs/tutorial/changing_dimensions/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/changing_dimensions/04_b.js",
+      "sha256": "b39b0c0e9336697adf8a245c89c9c7b594a0fda092adf01ef51474e39ff4f4af"
+    },
+    "repo/docs/tutorial/changing_dimensions/05_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/changing_dimensions/05_a.js",
+      "sha256": "6cae06dfe28a24d3c2cfaa38477f665ec173b9645cc42e7da65f232fff81026c"
+    },
+    "repo/docs/tutorial/changing_dimensions/05_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/changing_dimensions/05_b.js",
+      "sha256": "31906229189d7cfe51e485ccd04b430da02691a5cb4f1c79aba97d18ad8991ec"
+    },
+    "repo/docs/tutorial/changing_dimensions/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/changing_dimensions/config.js",
+      "sha256": "fb200def8651f54d169632dceda671b1bb1f16fb35ffd32d464352f4da80e43d"
+    },
+    "repo/docs/tutorial/channels_legend.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/channels_legend.md",
+      "sha256": "5fa3022fe405f528e30a44a40fc2b7f426172e27f16e911b11c66f4bdb6f791a"
+    },
+    "repo/docs/tutorial/channels_legend/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/channels_legend/01.js",
+      "sha256": "88f9e751ea2439b3213148960eac8060f2b22efb47c1e662c721a57607b35156"
+    },
+    "repo/docs/tutorial/channels_legend/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/channels_legend/02_a.js",
+      "sha256": "a849cd93a22b2f9bf1340a57c869d96c475e6477bcbb32c9124df0b17ded5abe"
+    },
+    "repo/docs/tutorial/channels_legend/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/channels_legend/02_b.js",
+      "sha256": "e4aef03a3c8217b6a3d7bab07d9978585961f4eb0618b9fb4cf05ee95d300415"
+    },
+    "repo/docs/tutorial/channels_legend/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/channels_legend/03_a.js",
+      "sha256": "2a4a924db67b36a61307838ba2bb1b2978dcd3edb34b21cda5e116a859ac0e2b"
+    },
+    "repo/docs/tutorial/channels_legend/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/channels_legend/03_b.js",
+      "sha256": "a882262a1a0813ae3bac221ec078b8c6a1ccbcdadb30cf54546626d4edb52dcf"
+    },
+    "repo/docs/tutorial/channels_legend/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/channels_legend/04_a.js",
+      "sha256": "a5785b6f13a77a35df4eacc5c5d85cb13edb92906c7fcd228f37e324be7f4676"
+    },
+    "repo/docs/tutorial/channels_legend/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/channels_legend/04_b.js",
+      "sha256": "296d67350c1beefdab0dd55387e195909e758a37b9f71575c55e069f6445edce"
+    },
+    "repo/docs/tutorial/channels_legend/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/channels_legend/config.js",
+      "sha256": "ff8a2666cffbb723322bfddadcb39cd6b86018fdad9df534650f47781819565d"
+    },
+    "repo/docs/tutorial/chart_layout.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout.md",
+      "sha256": "c828c1c7c6756cd8ab1242dd9943124da0b46a41be8f996e8c4103f6049a76c9"
+    },
+    "repo/docs/tutorial/chart_layout/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout/01.js",
+      "sha256": "31e2ed7fcdc6c9d82be3d999897547a7b3d3adc8eaa5613b256034b574f38f50"
+    },
+    "repo/docs/tutorial/chart_layout/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout/02_a.js",
+      "sha256": "134af9115e38e461433c89ca0bab6052d03fa657ba00ca7d8a5b1c3a712b34d6"
+    },
+    "repo/docs/tutorial/chart_layout/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout/02_b.js",
+      "sha256": "95f5785e6ee261d86a1f3daf5e954efd55ed3dfb54b1fb741c71c77b1c8589ec"
+    },
+    "repo/docs/tutorial/chart_layout/03.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout/03.js",
+      "sha256": "d89018c4d8e0f5705748e16210cf43df72764ea38b7d09a0e9d0124d591cfc8f"
+    },
+    "repo/docs/tutorial/chart_layout/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout/04_a.js",
+      "sha256": "05c357002a2ddbaf4d5927cbbbfbd729cb430d25554c957ee8948d222553c473"
+    },
+    "repo/docs/tutorial/chart_layout/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout/04_b.js",
+      "sha256": "b719f92605a06c2df36e48033f098447889cf607c13496b5ba735df6293533e3"
+    },
+    "repo/docs/tutorial/chart_layout/05.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout/05.js",
+      "sha256": "e55f6c41d0f7a3d9e2c0743ef9efe18d32d5a92a082874cb6e061b117af4c3e0"
+    },
+    "repo/docs/tutorial/chart_layout/06_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout/06_a.js",
+      "sha256": "ad34e10e28c0b5812f24ea331da496eba7157b472db4f9f47799a813847c1583"
+    },
+    "repo/docs/tutorial/chart_layout/06_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout/06_b.js",
+      "sha256": "15c0a46943cb17733f8b2e372d7a3312f7a443f6271aa313137b49bf8c058e2c"
+    },
+    "repo/docs/tutorial/chart_layout/07.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout/07.js",
+      "sha256": "c2060bbf5be6ecef76521d901cebaee9d671ca7a70cecb6cd8a5c1d79ebdf7e4"
+    },
+    "repo/docs/tutorial/chart_layout/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_layout/config.js",
+      "sha256": "178b84b0e7b83708494e9a4bdc209b95eef97e774f4b66f69eabd9a3fa63750c"
+    },
+    "repo/docs/tutorial/chart_presets.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_presets.md",
+      "sha256": "b89414dba1fd74ee797991df2d22e633d45e358ec68c32e8f008fd6595dd9921"
+    },
+    "repo/docs/tutorial/chart_presets/01_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_presets/01_a.js",
+      "sha256": "976d538cae173f3c7e7a358beebc65eb7dcff39b0f65bd3162b1d266b5d8a87e"
+    },
+    "repo/docs/tutorial/chart_presets/01_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_presets/01_b.js",
+      "sha256": "2cf24a489f69efb9240fb12d87d23e4f616b6800b0c8ad9307051ebb68f17dbf"
+    },
+    "repo/docs/tutorial/chart_presets/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_presets/02_a.js",
+      "sha256": "c50363f537039351f0cbf46d7c6105abf2222043db9d7d9433d43b89c2960342"
+    },
+    "repo/docs/tutorial/chart_presets/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_presets/02_b.js",
+      "sha256": "444e289392ea13efded4bd143c1e3abe599d9f0248f8f93f42ec9b1066fb5bbd"
+    },
+    "repo/docs/tutorial/chart_presets/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_presets/03_a.js",
+      "sha256": "f99ca74b6acae1e4c30cf782f6296e33cfd0ca152103d1129abd5859e51a1b24"
+    },
+    "repo/docs/tutorial/chart_presets/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_presets/03_b.js",
+      "sha256": "003ce2b6216b1301d35f6ec546336db5658c515048e18ccfade77e58d9487cd7"
+    },
+    "repo/docs/tutorial/chart_presets/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/chart_presets/config.js",
+      "sha256": "c9e359db81b724d2e8998cab8d94ed60e42fee81ab1686dd0dd2a05d04941ac5"
+    },
+    "repo/docs/tutorial/color_palette_fonts.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts.md",
+      "sha256": "3d22cd95f1227e85dea009c335f3c155a92dd449b9abc4e835db15e2fea8bc48"
+    },
+    "repo/docs/tutorial/color_palette_fonts/01_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts/01_a.js",
+      "sha256": "145693da127a486dfd5c8760c26d96a1d75de0c08989d3218ec3c24fb068f5bb"
+    },
+    "repo/docs/tutorial/color_palette_fonts/01_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts/01_b.js",
+      "sha256": "b5d4588b847e351a523efd7d5e21955894e77091b1ce40480a5dced6e788a2f8"
+    },
+    "repo/docs/tutorial/color_palette_fonts/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts/02_a.js",
+      "sha256": "e90c2f279e7c96e95992de0a2951c0696ac3e948b5d9918c82fc9f9ee479392d"
+    },
+    "repo/docs/tutorial/color_palette_fonts/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts/02_b.js",
+      "sha256": "4aa6b5c771dde53a39e9064ebcb88698a72ff18f75b2875702126bbb0e85cb52"
+    },
+    "repo/docs/tutorial/color_palette_fonts/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts/03_a.js",
+      "sha256": "433ec518fb53d5ad837f5d8752576920fd467cddf21677e1b57940b771615f2f"
+    },
+    "repo/docs/tutorial/color_palette_fonts/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts/03_b.js",
+      "sha256": "2a75aecab5eae75442f5acf51efc7d26d0a89dd3c67f9bf8d747600b90c1bb34"
+    },
+    "repo/docs/tutorial/color_palette_fonts/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts/04_a.js",
+      "sha256": "8b255c3ba7a7e46e26751ec31eb01ff6de9bec856e1b5d5ba9b2958e9343f9ed"
+    },
+    "repo/docs/tutorial/color_palette_fonts/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts/04_b.js",
+      "sha256": "494d80b2697b4db4213695891d6b48166a6f7e054e619d5ddbe5895f88ec6c78"
+    },
+    "repo/docs/tutorial/color_palette_fonts/05_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts/05_a.js",
+      "sha256": "e2c96bb771339f5b3c5b6e89be0621ba5b79859ad7629a9f2456fd879a7f3c88"
+    },
+    "repo/docs/tutorial/color_palette_fonts/05_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts/05_b.js",
+      "sha256": "f5ad4faeee26956e046f88aefe097c1bd39dd64c7dab15f2e0f37e7f032a07bd"
+    },
+    "repo/docs/tutorial/color_palette_fonts/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/color_palette_fonts/config.js",
+      "sha256": "d826b4bc82dd1b816eb5665f0840b7079a8dfbd18c4020b74b3b714ba3b35e86"
+    },
+    "repo/docs/tutorial/data.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/data.md",
+      "sha256": "89332f5783e46128603e78a036d48923be0f8a273380f660ddc8bfed394e0511"
+    },
+    "repo/docs/tutorial/events.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/events.md",
+      "sha256": "5ec0eee507982a594a04060972be78ecadb2585cb9d89be0ec4ffcd32f5c3242"
+    },
+    "repo/docs/tutorial/events/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/events/01.js",
+      "sha256": "a2f6f027889cac19815bb022958e6ddccc711bdbd7dadf33cb4bb488b0fa7b9c"
+    },
+    "repo/docs/tutorial/events/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/events/02_a.js",
+      "sha256": "3b116b52bde9708eae7d7420dfcd9ed64c027cbcf515c2f4f00e34463861cf1a"
+    },
+    "repo/docs/tutorial/events/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/events/02_b.js",
+      "sha256": "3d1eb29a0e2bba54a78932337c93f084a089a88edd656f46493836eab78a5799"
+    },
+    "repo/docs/tutorial/events/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/events/03_a.js",
+      "sha256": "a9b6cef25cf55f0e209730b6cc2952aa8826622e7a39cd4328f144d0f8f1724e"
+    },
+    "repo/docs/tutorial/events/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/events/03_b.js",
+      "sha256": "334c19b89dfb8c9253c88a438a15ebda51d24df13f4d843d7e3c7a0eae9ef23a"
+    },
+    "repo/docs/tutorial/events/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/events/04_a.js",
+      "sha256": "d5fc731c0ea98843869e8b213f016b9f909d547aa7cf9e44c5a7c0900fe14684"
+    },
+    "repo/docs/tutorial/events/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/events/04_b.js",
+      "sha256": "d2976f8c0465a52e239d6f8c5f6732ed1147f0dedde207a27c0a934d31d85355"
+    },
+    "repo/docs/tutorial/events/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/events/config.js",
+      "sha256": "fbaff594299797ef014141825b8a693f9ace78b38ce59e50c3e27f9e8c8b853c"
+    },
+    "repo/docs/tutorial/filter_add_new_records.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/filter_add_new_records.md",
+      "sha256": "8a442d5bf967eaebb3fb1587f53f10bc2be74b9cb52024a296012fc51b42559c"
+    },
+    "repo/docs/tutorial/filter_add_new_records/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/filter_add_new_records/01.js",
+      "sha256": "ae7955a3a49c280d05e192f93eb711090bf5b61fe8c7ca4f6a360ebaf75079ae"
+    },
+    "repo/docs/tutorial/filter_add_new_records/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/filter_add_new_records/02_a.js",
+      "sha256": "dda8564d1c1b8d3da628c3590919a6db905025c0952422ae17611a268dadaf9e"
+    },
+    "repo/docs/tutorial/filter_add_new_records/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/filter_add_new_records/02_b.js",
+      "sha256": "26c928be435994dbeedbeeca2097d8d983facdca0848cd3e2196c4ece5b5eac1"
+    },
+    "repo/docs/tutorial/filter_add_new_records/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/filter_add_new_records/03_a.js",
+      "sha256": "c5281b2a0907ff17d8f98a334ff6537ee3930dbf72de319f98541d396a6adae7"
+    },
+    "repo/docs/tutorial/filter_add_new_records/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/filter_add_new_records/03_b.js",
+      "sha256": "345d61e23e415aa9f58c49be1934ebafcb7b757fbe93f9859ff1883f2f0bd647"
+    },
+    "repo/docs/tutorial/filter_add_new_records/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/filter_add_new_records/04_a.js",
+      "sha256": "633ba414cbf2e3d0e6f6627f1acbc926d365b948b7b9de2d3909e4b033d244c7"
+    },
+    "repo/docs/tutorial/filter_add_new_records/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/filter_add_new_records/04_b.js",
+      "sha256": "f6efcb1d554259ae6c8a2fc94dfdbc78da0f1e7c1e83f3c6dc569d3332d5f988"
+    },
+    "repo/docs/tutorial/filter_add_new_records/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/filter_add_new_records/config.js",
+      "sha256": "f95b898e7d9e0f66e9d4f2787f0336fff6e5c1e8be99cd8d9513470df0b3d520"
+    },
+    "repo/docs/tutorial/geometry.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/geometry.md",
+      "sha256": "c15fabae196857ea6b28b23a6ba04c130e7f5bef246438bbef69a1e628b5d316"
+    },
+    "repo/docs/tutorial/geometry/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/geometry/01.js",
+      "sha256": "ddcfd9211bfdf4b51913ceac26140431710b31f668c4cbee6b9e49ab49d9f44d"
+    },
+    "repo/docs/tutorial/geometry/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/geometry/02_a.js",
+      "sha256": "5a6796418c2b4524e1758f2c42f244e525b29d8b0c658c02071c76a5e58d5a48"
+    },
+    "repo/docs/tutorial/geometry/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/geometry/02_b.js",
+      "sha256": "5b323ba655203b69914e53d61f5e922e3a5b373a6655f9ba91aca979f28a8b57"
+    },
+    "repo/docs/tutorial/geometry/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/geometry/03_a.js",
+      "sha256": "ebb50d076e5ccfbc45a40a8d557fa97836f809f79c605e51ad8884a70830d040"
+    },
+    "repo/docs/tutorial/geometry/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/geometry/03_b.js",
+      "sha256": "e3756c4cd9fc7b30e3868245790770e92402cacb2e0e58d6a6e4c983d4f3b780"
+    },
+    "repo/docs/tutorial/geometry/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/geometry/04_a.js",
+      "sha256": "da38d26c26af852ea85a6df15d4a62f299d51678d14df6a7d97602fc421b5e6d"
+    },
+    "repo/docs/tutorial/geometry/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/geometry/04_b.js",
+      "sha256": "a27245b43c7689c6592c41710770f0b4b7a217b67e10cfd28c02210488697346"
+    },
+    "repo/docs/tutorial/geometry/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/geometry/config.js",
+      "sha256": "46bfad123a0930cdfcaa11d2dc48698a853b983c9e830d8b7a082cdb6a1736fd"
+    },
+    "repo/docs/tutorial/group_stack.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/group_stack.md",
+      "sha256": "eff6ce4c30a88467aa809f9d5db01db65060f998a1614871d5837ec86522f712"
+    },
+    "repo/docs/tutorial/group_stack/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/group_stack/01.js",
+      "sha256": "e9f1dd057d2426b577b6789338aac4ec32fbec2b00255eee271d80db56deadae"
+    },
+    "repo/docs/tutorial/group_stack/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/group_stack/02_a.js",
+      "sha256": "4fd61a217cae3e582cdbb8d49148d7bf70aa26fb0ba24faf7ee4ed2dcda545b7"
+    },
+    "repo/docs/tutorial/group_stack/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/group_stack/02_b.js",
+      "sha256": "27b44903d792ca8ceb09856a79fd7107f957279878473012f54ec8e5a6e7bf8e"
+    },
+    "repo/docs/tutorial/group_stack/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/group_stack/03_a.js",
+      "sha256": "01df29f6e27f0b0d3f533f5bc4b5c928fc363c6eb0e8db0983d5c851730e7bec"
+    },
+    "repo/docs/tutorial/group_stack/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/group_stack/03_b.js",
+      "sha256": "25bf0e356b962e9b5f7be37199c09c7b49e50a1a973fc752287625ae63eb9088"
+    },
+    "repo/docs/tutorial/group_stack/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/group_stack/04_a.js",
+      "sha256": "ff74a6ca8e11110c2d2a22b1259609fae203122549037b7e899a129490b07fc2"
+    },
+    "repo/docs/tutorial/group_stack/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/group_stack/04_b.js",
+      "sha256": "faa56d4425cf106b2310dc58b76ddf1aa752376789f1789bb6a9440e85bd5272"
+    },
+    "repo/docs/tutorial/group_stack/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/group_stack/config.js",
+      "sha256": "9d0ba0443e227946030caefedbc840419288603fc81d58c43cac2968211c12d8"
+    },
+    "repo/docs/tutorial/index.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/index.md",
+      "sha256": "41fa0f01f3bc41966b9b35569ca262f3e436c8da5b3bf78cde42f259099ddd97"
+    },
+    "repo/docs/tutorial/initialization.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/initialization.md",
+      "sha256": "94cbf738c8fe89198b61fe96ff114fd18f264645194f9af75a0437bce7c560f2"
+    },
+    "repo/docs/tutorial/orientation_split_polar.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/orientation_split_polar.md",
+      "sha256": "5a764a4d0f932b4c159d847da26ae2f8208996bc4db2e9301d1b289c1e72d9cd"
+    },
+    "repo/docs/tutorial/orientation_split_polar/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/orientation_split_polar/01.js",
+      "sha256": "802f36f592632415274bcd6b7accfe26bb20ee7e1813e4de52ebd11d76b829ab"
+    },
+    "repo/docs/tutorial/orientation_split_polar/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/orientation_split_polar/02_a.js",
+      "sha256": "03ca6665a69165178c0c6a937800db235cbd4a3f1d7f4505075ee6aedb433bc6"
+    },
+    "repo/docs/tutorial/orientation_split_polar/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/orientation_split_polar/02_b.js",
+      "sha256": "9c6026d1199dae9315986441da4c81a8b31315cc4b1c13629e64f8207656fd15"
+    },
+    "repo/docs/tutorial/orientation_split_polar/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/orientation_split_polar/03_a.js",
+      "sha256": "97b1e0c3473fdfd850877c9c61b008c5abed1d6a58ec6c5092212342e00df566"
+    },
+    "repo/docs/tutorial/orientation_split_polar/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/orientation_split_polar/03_b.js",
+      "sha256": "3be46afddbea4b5cadd1300ba49610377131e670ecced066fe0614f94199a116"
+    },
+    "repo/docs/tutorial/orientation_split_polar/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/orientation_split_polar/04_a.js",
+      "sha256": "11144dfa1774f984182c3f799a9d25b35bbae9f2048bd1e5d2dff5f95a6e611c"
+    },
+    "repo/docs/tutorial/orientation_split_polar/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/orientation_split_polar/04_b.js",
+      "sha256": "b905b0953d51cfeb45c1ba7a6e14e42c18f6710159b4fbffded1e07d81707def"
+    },
+    "repo/docs/tutorial/orientation_split_polar/05_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/orientation_split_polar/05_a.js",
+      "sha256": "5b2e9748b87593eba1e7bb58f62bb4f57c4ea68bd39ef4ffc4ebb147cca0da7b"
+    },
+    "repo/docs/tutorial/orientation_split_polar/05_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/orientation_split_polar/05_b.js",
+      "sha256": "cdb4e7286d9f516d343a65c054d7b786b006ba8cc8ef6d9bf1c9dee416766c28"
+    },
+    "repo/docs/tutorial/orientation_split_polar/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/orientation_split_polar/config.js",
+      "sha256": "544c37bcded6a8e3b8f6585f510a5fe44e4c48a425eeaff9eee99dbb1899fcc9"
+    },
+    "repo/docs/tutorial/shorthands_store.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store.md",
+      "sha256": "478cc9d8ce3bbed04824fc0dc794ee9770956551016d472977521a095bbaca5d"
+    },
+    "repo/docs/tutorial/shorthands_store/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/01.js",
+      "sha256": "8dd9390cd153874cedc9476aafc025effa7ee0b6b628e3d78b4a620d6b8c9826"
+    },
+    "repo/docs/tutorial/shorthands_store/02.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/02.js",
+      "sha256": "41ee90199c8d5a0ca27b259c0696ce1c9b83a9386b880055fe61ce4fd24490ba"
+    },
+    "repo/docs/tutorial/shorthands_store/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/03_a.js",
+      "sha256": "d77042ec2858675ea8b74e99266d392774020e79614cd493a514df659259b02a"
+    },
+    "repo/docs/tutorial/shorthands_store/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/03_b.js",
+      "sha256": "e27cca28d6840bb15d1c5acc71ebd20d9901ec1dda6f46b3260801a07b74f503"
+    },
+    "repo/docs/tutorial/shorthands_store/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/04_a.js",
+      "sha256": "4b6dca120f8f23726b8809e0a8d9e1d2e2adf2f92ee57b0b8f3eb2d56da0c3e2"
+    },
+    "repo/docs/tutorial/shorthands_store/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/04_b.js",
+      "sha256": "26d14a49dd5511b3af358c27d4284f70eb9efa0f1a636f2fe87c52d11eb267ab"
+    },
+    "repo/docs/tutorial/shorthands_store/05_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/05_a.js",
+      "sha256": "987855a6ec93e8d89a00faf8da3e294d255c03696278e65fceb0f455ba69d2ea"
+    },
+    "repo/docs/tutorial/shorthands_store/05_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/05_b.js",
+      "sha256": "ac9499921d9a4d105446093ac2dd9ba41c0b5470950113021c5fbf1948b00308"
+    },
+    "repo/docs/tutorial/shorthands_store/06_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/06_a.js",
+      "sha256": "1762246b34357e1fa52322660dd4203224b5280ad7752b2ca9b04e5f1ef8e452"
+    },
+    "repo/docs/tutorial/shorthands_store/06_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/06_b.js",
+      "sha256": "30f5ae81e495413951b8d4750ed789ef90681fbdb781e6ba2612f219117f6cc2"
+    },
+    "repo/docs/tutorial/shorthands_store/07_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/07_a.js",
+      "sha256": "558b0c2976fe390ceb85176c036d6595f4e3c027524eaf0e24d22174d56302fa"
+    },
+    "repo/docs/tutorial/shorthands_store/07_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/07_b.js",
+      "sha256": "7a584dc334922c23cb184ad5bf337fe84f7ef788ff92ea02ed31b64bc2faa047"
+    },
+    "repo/docs/tutorial/shorthands_store/08.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/08.js",
+      "sha256": "1b0ed67d8e856ba372e638beb1e23ef144c80a8ed9e7c171f168eb04dc88d4ae"
+    },
+    "repo/docs/tutorial/shorthands_store/09.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/09.js",
+      "sha256": "c127bbe1ff5333cbd146905b76ad37b0d7204d2154c573d46db43c75351d9f10"
+    },
+    "repo/docs/tutorial/shorthands_store/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/shorthands_store/config.js",
+      "sha256": "2ad66bf2a70e81c9a994b6cb3792cf5a0545185ab9b0b8762382f53609c647e2"
+    },
+    "repo/docs/tutorial/sorting.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/sorting.md",
+      "sha256": "7dc61d1bc8f032e859e8a34e82285b9f387005c9c71f3bf4df0503d8c5a28fb7"
+    },
+    "repo/docs/tutorial/sorting/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/sorting/01.js",
+      "sha256": "206d4aa5e66999bef7b0cde790641dbaef39e08f6abaebb764a81be301a6f43f"
+    },
+    "repo/docs/tutorial/sorting/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/sorting/02_a.js",
+      "sha256": "166f1c9941db6c7735cce9d5a14d24cf27053fee867fd8e6998ea347ad7e2c4a"
+    },
+    "repo/docs/tutorial/sorting/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/sorting/02_b.js",
+      "sha256": "dd316525f09b28fa2858d7f9d4c043a5807bc66a30f17c072a8dbde4f4028daf"
+    },
+    "repo/docs/tutorial/sorting/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/sorting/03_a.js",
+      "sha256": "2113c6b33aee7fac6b48a0bf0a2600b39f7f6811589658fe15357a7d57cb5e7b"
+    },
+    "repo/docs/tutorial/sorting/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/sorting/03_b.js",
+      "sha256": "77e0f9780d318c805aa1ae65482f15a2efeba6a265c58fdf97fbda784da3caa4"
+    },
+    "repo/docs/tutorial/sorting/04_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/sorting/04_a.js",
+      "sha256": "17d0278607c562779265112e0d81ecec6a25b32eb90b971decac36dcbbde5dc8"
+    },
+    "repo/docs/tutorial/sorting/04_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/sorting/04_b.js",
+      "sha256": "cd09701d020df07e2f8fd074fc2282fb73ec49115ae7e14c3dc2bbc4dfa5a348"
+    },
+    "repo/docs/tutorial/sorting/05_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/sorting/05_a.js",
+      "sha256": "b99623020b7913c1669f853d53d299a7901730dc3a6acd45fcb3b7e0e6308686"
+    },
+    "repo/docs/tutorial/sorting/05_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/sorting/05_b.js",
+      "sha256": "30b2154d912f26790ac36440686264b959d99e5b24c3f7242416e37d48e3b914"
+    },
+    "repo/docs/tutorial/sorting/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/sorting/config.js",
+      "sha256": "6a12199921ebc92596a4ef7b2f4011415651e5e6677080c3f81cc1a1312f9e93"
+    },
+    "repo/docs/tutorial/stacking_explanation.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/stacking_explanation.md",
+      "sha256": "e751fef41542db5a1c0f4fb1fac4a4e5312d8296af3ad5f23fac0acfe97fe0f7"
+    },
+    "repo/docs/tutorial/stacking_explanation/01_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/stacking_explanation/01_a.js",
+      "sha256": "1399dcaad766f26560aadfc44521b6d86fa25f27e9f4574b88849750fcaff674"
+    },
+    "repo/docs/tutorial/stacking_explanation/01_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/stacking_explanation/01_b.js",
+      "sha256": "ec208e450db67f7560b2bebea9c69d8b5d2d9d2954aff9b0296606333ea8a2f1"
+    },
+    "repo/docs/tutorial/stacking_explanation/01_c.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/stacking_explanation/01_c.js",
+      "sha256": "9b2ef945a7f0cc02deec983469eb0d58063fb0bdd7549c2ec3185aa9de2245db"
+    },
+    "repo/docs/tutorial/stacking_explanation/01_d.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/stacking_explanation/01_d.js",
+      "sha256": "a007f7c063954e66a45074a8c4e555f450952866e5054c5ef36ef9c9b477d028"
+    },
+    "repo/docs/tutorial/stacking_explanation/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/stacking_explanation/config.js",
+      "sha256": "b261917427d3666b698a00b8295f0f39330a472385a9692023416557b90133c7"
+    },
+    "repo/docs/tutorial/stacking_explanation/data.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/stacking_explanation/data.js",
+      "sha256": "7ba764324558076171e10f0610f010118db137c805ffa1f3a5a8f330dc3ea92d"
+    },
+    "repo/docs/tutorial/style.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/style.md",
+      "sha256": "44fbff6b4ff3bbd4bc55c21316386ad0144fd1c90043825e52a32fc44a2e5ae1"
+    },
+    "repo/docs/tutorial/without_coordinates_noop_channel.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/without_coordinates_noop_channel.md",
+      "sha256": "794cf3d6934908a9b86e60d64232ad8389135825ed422469f943fb9b20efcbdc"
+    },
+    "repo/docs/tutorial/without_coordinates_noop_channel/01.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/without_coordinates_noop_channel/01.js",
+      "sha256": "a994abdfbe90bd96f9855ceee4a5991d210039d6f0429a1a877b59005930cab4"
+    },
+    "repo/docs/tutorial/without_coordinates_noop_channel/02_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/without_coordinates_noop_channel/02_a.js",
+      "sha256": "6a8c3fdf60725165b128939d94b1afc873ba4d6fefb9af757c19b81fbdd65d01"
+    },
+    "repo/docs/tutorial/without_coordinates_noop_channel/02_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/without_coordinates_noop_channel/02_b.js",
+      "sha256": "e3756c4cd9fc7b30e3868245790770e92402cacb2e0e58d6a6e4c983d4f3b780"
+    },
+    "repo/docs/tutorial/without_coordinates_noop_channel/03_a.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/without_coordinates_noop_channel/03_a.js",
+      "sha256": "04a5eb997add8084b71e19496292a2b23d372692e224e279cacc24cbe811c95b"
+    },
+    "repo/docs/tutorial/without_coordinates_noop_channel/03_b.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/without_coordinates_noop_channel/03_b.js",
+      "sha256": "eef2bbc7d3e13e2e84dbde5be9b88526f3f1fdcf5b63bf5ea253f0c70e78f762"
+    },
+    "repo/docs/tutorial/without_coordinates_noop_channel/config.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/without_coordinates_noop_channel/config.js",
+      "sha256": "0c4d31209cad958e58c59dbd7ca2a2416bf1c388f1335bfb66eb6b7ef16ed986"
+    },
+    "repo/docs/tutorial/writing_plugins.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/docs/tutorial/writing_plugins.md",
+      "sha256": "96009604ae9c9e04fd2df6b6a4ecf2fdb725d1afa70f888a6f58e10869634ec8"
+    },
+    "repo/FAQ.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/FAQ.md",
+      "sha256": "d72293b668a8c9c7a791e04700214eb60ceb0dc0fb37be074323dd27d92d9d53"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "repo/NOTICE": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/NOTICE",
+      "sha256": "115523853baf478fa5d8c4ab1915682e487d5c82a32becf078e61682c291fb48"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/README.md",
+      "sha256": "1d22628b6ae0ca065f6823a3bd27e2a53d8be93ded5cc3ca013859d93e16b418"
+    },
+    "repo/src/apps/weblib/ts-api/animcompleting.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/animcompleting.ts",
+      "sha256": "bb368c22297d80ac02777694cdc223d005269886766b160b69d854c7771ec1fe"
+    },
+    "repo/src/apps/weblib/ts-api/animcontrol.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/animcontrol.ts",
+      "sha256": "e950d3d686e193d298ba59b12fe063b1771447c4ac035d66e1ca94ac98a76f26"
+    },
+    "repo/src/apps/weblib/ts-api/chart.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/chart.ts",
+      "sha256": "bde56ff19dd49f19cbdfe6ca699cbd5d91d305008723b9780dd79f5c550814db"
+    },
+    "repo/src/apps/weblib/ts-api/cvizzu.d.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/cvizzu.d.ts",
+      "sha256": "1f465117c49544ae2272981df173037896e1755c8979c78bf4f4038ea5d28070"
+    },
+    "repo/src/apps/weblib/ts-api/cvizzu.types.d.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/cvizzu.types.d.ts",
+      "sha256": "7507d4e23e2d5b7c066c09959ba9943948cf877c4bd248dc0a58a467daad9b5b"
+    },
+    "repo/src/apps/weblib/ts-api/data.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/data.ts",
+      "sha256": "07a50f1daebb1c43d022c2fabec37877cb3fc9556865e40e141eaeeb537eebb7"
+    },
+    "repo/src/apps/weblib/ts-api/datarecord.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/datarecord.ts",
+      "sha256": "5f62a33d668011eb65d7108bca9145de5a5bef00755e010174ba4870098f29a7"
+    },
+    "repo/src/apps/weblib/ts-api/errors.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/errors.ts",
+      "sha256": "b54de5c50a1202b8412dfabb322a020803e2030e4be21a8180575433a51cc05f"
+    },
+    "repo/src/apps/weblib/ts-api/events.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/events.ts",
+      "sha256": "4b6f90328e29c087dffeae4d978951ff630626215e3e2b04ea14bf7232d3de9b"
+    },
+    "repo/src/apps/weblib/ts-api/geom.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/geom.ts",
+      "sha256": "ab91a95ce44d177dc6d8233264cc2c9f5d1c96381ce2f452ca8472984a64f6f9"
+    },
+    "repo/src/apps/weblib/ts-api/index.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/index.ts",
+      "sha256": "8b9fbc24d9ad891bad962009628faa0c24897350237254fa0ee45f5896783442"
+    },
+    "repo/src/apps/weblib/ts-api/module/canimctrl.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/canimctrl.ts",
+      "sha256": "9fe3e2dd0df623d0b8e848c4ef65b229be63cd08d6d90333cd3e5dc0e991f52b"
+    },
+    "repo/src/apps/weblib/ts-api/module/ccanvas.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/ccanvas.ts",
+      "sha256": "cfac2ab92acd4b0fe0c43b804d624fa3df0988a9d022aad5c9ba2df2abc2f5d2"
+    },
+    "repo/src/apps/weblib/ts-api/module/cchart.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/cchart.ts",
+      "sha256": "8c84c2904afe5ef91f50bb3f071af1cc3f3b3b78c03a0069d6ad2ac9b91fc3f9"
+    },
+    "repo/src/apps/weblib/ts-api/module/ccolorgradient.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/ccolorgradient.ts",
+      "sha256": "6b99999f25d4675a3cb8788b69883179c328ae2931491a673583d5d0a2ee037d"
+    },
+    "repo/src/apps/weblib/ts-api/module/ccoordsys.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/ccoordsys.ts",
+      "sha256": "a1187f5bd7e2a8f3a59096eb47fd8a492db5493d78fb5fa929436e788b880c5f"
+    },
+    "repo/src/apps/weblib/ts-api/module/cdata.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/cdata.ts",
+      "sha256": "1271d83698f43c391dba83f144ebdca02303735ecb15faca2d5b9effbc58c197"
+    },
+    "repo/src/apps/weblib/ts-api/module/cenv.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/cenv.ts",
+      "sha256": "f04a033154d4508371ecb3ad0ccc4c8f24320e855b69091319bd1b4a19499a83"
+    },
+    "repo/src/apps/weblib/ts-api/module/cerror.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/cerror.ts",
+      "sha256": "24a6781c2633dbb754bd823f1fcb27accf8a856c1611a62ad44f5f2dc1c1760f"
+    },
+    "repo/src/apps/weblib/ts-api/module/chart.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/chart.ts",
+      "sha256": "f04a55b5bab6e4daa1bc5d2107bde47c818e116f161d0429a764fbb141df376a"
+    },
+    "repo/src/apps/weblib/ts-api/module/cproxy.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/cproxy.ts",
+      "sha256": "c64d33a6105af1e21cac6788f3496c93c932c11035e2c273216b17154118b75d"
+    },
+    "repo/src/apps/weblib/ts-api/module/crenderer.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/crenderer.ts",
+      "sha256": "b339a3e1d31ce9b2c650c92890c1be847d169e55999b5173bc25a51f1e59bcb5"
+    },
+    "repo/src/apps/weblib/ts-api/module/loader.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/loader.ts",
+      "sha256": "33e89fefcf6d3ecdc3721abb8873208f8b20d23fd2f0de410b1c75bbcfac2616"
+    },
+    "repo/src/apps/weblib/ts-api/module/module.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/module.ts",
+      "sha256": "d7f636527098b084bf6003aeabe129d3b4685708785ead69cf2e166abf872eb1"
+    },
+    "repo/src/apps/weblib/ts-api/module/objregistry.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/module/objregistry.ts",
+      "sha256": "a645aaf86d846af3c572b4a23e58dd20a4eb71e3e74753b260e06a1b56c1b64f"
+    },
+    "repo/src/apps/weblib/ts-api/plugins.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins.ts",
+      "sha256": "5690ce564d2c382237acde05a9cfec047a0ec42597200afb4dadb72d45fd8601"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/canvasrenderer.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/canvasrenderer.ts",
+      "sha256": "bf3077911facd97b87856a08c39c1f7c30763e19abb71bbb512de8b151c560cb"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/clock.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/clock.ts",
+      "sha256": "41a00883621241c0e462f9e6882696d3e9e24f4280a3499fb4e4bc7031f037a3"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/coordsys.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/coordsys.ts",
+      "sha256": "1ee70f5aeb38bb9b606f5b10ac8b002a47e15e0f3276525ab71613525fa71224"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/cssproperties.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/cssproperties.ts",
+      "sha256": "19dc6be0c92eed9e2f410299bdfa00198ffb3e69371593cbdd10229919be6141"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/cssutils.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/cssutils.ts",
+      "sha256": "ac5ffd32a000e8ee3291545e4ddfa7909c32265aa953a4d50fa35c9b667b882a"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/htmlcanvas.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/htmlcanvas.ts",
+      "sha256": "436b7de33d55a8a88c4b3efd8c059c84dffcf3db8dc3d3b08c9418d0e8289aa6"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/logging.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/logging.ts",
+      "sha256": "47a7ecd6ed7a899cbd3509b0b7ffbe4dbf3e652177954c01ae7db1a14d245c19"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/pivotdata.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/pivotdata.ts",
+      "sha256": "dbffe051ffd32440f11968dd1690e6e163f0dcc28edd136cff6256905f0e29f4"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/pointerevents.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/pointerevents.ts",
+      "sha256": "3fb4c0c3a45407cc9bb454450d2ff1e69e03ec841366db8dc511ab6e56bfcd1a"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/presetconfigs.js": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/presetconfigs.js",
+      "sha256": "09a2116113d3b8150a6ec3b975adaa03627fdb2ac816ac2178d6d4296f4f2937"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/presets.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/presets.ts",
+      "sha256": "99b47a5eba1140a0f2fa6c83103c395dd5a4edaa2cc9429d4dbda73c6159cb03"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/rendercontrol.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/rendercontrol.ts",
+      "sha256": "6e6d7daba0d9abc116b52de93be3e5f40872db1116a6b31d1479bc18e5c4d7be"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/scheduler.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/scheduler.ts",
+      "sha256": "a16e5c8238141edb6535dfd13fd6fd2420880855932fc5a3eff81e20a4d9306d"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/shorthands-augmentation.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/shorthands-augmentation.ts",
+      "sha256": "dc4e0d7668b68579ba15aab1f15fa4845f5711d6f4c2712c74392ae8036dce9d"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/shorthands.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/shorthands.ts",
+      "sha256": "03f8fb0c8797c0d48986d68f07e69e1baaeea34c91a32b29b9de94070a891502"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/tooltip.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/tooltip.ts",
+      "sha256": "ea040cabb753bcf56b0a1933bc2190081c2749d30a12c8641d07cd481b91795b"
+    },
+    "repo/src/apps/weblib/ts-api/plugins/unpivot.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/plugins/unpivot.ts",
+      "sha256": "dd225eb834d2efc7abb64fb434d8ce0788571f95563049d58d4b52f136870dcc"
+    },
+    "repo/src/apps/weblib/ts-api/tsutils.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/tsutils.ts",
+      "sha256": "b04ceaaa980847b6b194a22a28de8a5df59d3f013d1fc45b7bacfa48da07f1d0"
+    },
+    "repo/src/apps/weblib/ts-api/utils.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/utils.ts",
+      "sha256": "ed845c322f7e4e66b099ab72155fbee0a99183230a96544533b25e6f6a2ce00c"
+    },
+    "repo/src/apps/weblib/ts-api/vizzu.ts": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/ts-api/vizzu.ts",
+      "sha256": "dd77d53d59b30057a7a8071a3256b3b1330b602a70735a1c27eb870b34f274c3"
+    },
+    "repo/src/apps/weblib/typeschema-api/anim.yaml": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/typeschema-api/anim.yaml",
+      "sha256": "70bb619bc050353f7dcdac2066fd09207d4b0ec588b715e97b95cedd34ded90c"
+    },
+    "repo/src/apps/weblib/typeschema-api/config.yaml": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/typeschema-api/config.yaml",
+      "sha256": "55e0761ca3896e386e8143d6bed695004076edccd9e7c685e834f322570b619c"
+    },
+    "repo/src/apps/weblib/typeschema-api/data.yaml": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/typeschema-api/data.yaml",
+      "sha256": "77de9f2df826b57017101012f574d43ca03ecc1741bd00c62a4fe1e68432d96e"
+    },
+    "repo/src/apps/weblib/typeschema-api/styles.yaml": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/src/apps/weblib/typeschema-api/styles.yaml",
+      "sha256": "a7178d0360588fbe3258d6ac38442419f000f01a25fe6ca941348738ca58546f"
+    },
+    "repo/tools/docs/mkdocs.yml": {
+      "url": "https://github.com/vizzuhq/vizzu-lib/blob/d81a7e9abf32830093c7b37101dc89898c700f7c/tools/docs/mkdocs.yml",
+      "sha256": "36e40d656cf86f87b03c60082c31e90c704a8cabdd25c21bd330dfa43681e10b"
+    }
+  }
+}
