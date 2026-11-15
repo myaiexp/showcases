@@ -265,3 +265,11 @@ body {
   max-width: 80ch;
   color: var(--fg-2);
 }
+
+.sc-credit {
+  font-size: 13px;
+  margin-top: var(--space-2);
+}
+.sc-credit a {
+  color: var(--accent-text);
+}

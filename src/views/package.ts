@@ -10,6 +10,7 @@ import {
 } from '../registry.ts';
 import { formatRoute } from '../router.ts';
 import type { ComparisonDef } from '../types.ts';
+import { creditLine } from '../ui/credit.ts';
 import { h } from '../ui/dom.ts';
 import { notFound } from './not-found.ts';
 
@@ -35,6 +36,7 @@ export function renderPackage(root: HTMLElement, pkg: PackageEntry | undefined):
         h('a', { href: pkg.repo, target: '_blank', rel: 'noopener' }, 'Source'),
         h('code', {}, `npm i ${pkg.npm}`),
       ),
+      pkg.credit ? creditLine(pkg.credit) : null,
     ),
     body,
   );

@@ -39,6 +39,21 @@ export interface PackageDef {
    * the package gallery groups and orders by this list.
    */
   sections: readonly string[];
+  /**
+   * Attribution the docs licence requires (CC BY and similar), shown on the package page
+   * and under every example's "Built from" list.
+   */
+  credit?: DocsCredit;
+}
+
+export interface DocsCredit {
+  /** Who holds the docs' copyright and what the work is, e.g. "Plotly, Inc.: Plotly.js docs". */
+  text: string;
+  /** Where the original work lives. */
+  url: string;
+  /** Licence name, e.g. "CC BY 3.0". */
+  license: string;
+  licenseUrl: string;
 }
 
 export type Provenance =
