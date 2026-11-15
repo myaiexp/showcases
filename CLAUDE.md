@@ -163,3 +163,7 @@ GitHub Pages. No service on the VPS.
   `stage.own(new Vizzu(stage.element, { style: darkStyle }))`; steps run through `stage.story()`,
   which loops and rewinds via `chart.store()`. tsconfig `paths` maps `vizzu` to the type-only
   `shared/vizzu-types.d.ts`, because the library's own shorthand `animate()` types never apply.
+- AntV Infographic: build on `packages/infographic/shared/stage.ts` (`createStage`, trap list). Setup swaps the
+  library's CDN fonts for bundled stand-ins and answers every icon/illus keyword offline; never `ref:search:`
+  or an off-page `ref:remote:`. `registerResourceLoader` is page-wide: fall back to `offlineResource` and restore
+  `installOfflineLoader()` on cleanup. JSX lives in a sibling `.tsx` with the docs' `@jsxImportSource` pragma.

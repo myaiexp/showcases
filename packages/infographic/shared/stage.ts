@@ -18,6 +18,15 @@
 // - destroy() removes the SVG and the editor, and drops every listener.
 // - Text is measured at render time with canvas measureText, so fonts must be loaded first
 //   (createStage awaits it); a font registered later only applies to later renders.
+// - Docs ids that differ in 0.2.20: structures register as sequence-ascending-stairs-3d,
+//   sequence-cylinders-3d, sequence-zigzag-pucks-3d; items as simple and simple-illus.
+//   compare-binary-horizontal's dividerType takes vs, pros-cons-fold or pros-cons-arrow.
+// - An unknown structure or item renders nothing; the only sign is 'error' "Incomplete options".
+//   In syntax, a per-level `items` entry is `- circle-node` with props indented under it;
+//   `- type circle-node` reads as an item named "type circle-node".
+// - With no template, the data list is taken from the first present of lists, sequences,
+//   compares, nodes, values, root: use the field the structure expects.
+// - Function props (valueFormatter, formatter) cannot be written in syntax: use an options object.
 import type { Infographic } from '@antv/infographic';
 import type { MountContext } from '@/types.ts';
 import { infographicReady } from './setup.ts';
