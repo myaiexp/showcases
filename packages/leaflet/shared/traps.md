@@ -103,6 +103,16 @@ add to it when something bites.
   An overriding `onRemove` returns `void`.
 - `tileSize: 512` against the pretend server needs a literal `@2x` in the URL (`{r}` is empty at
   pixel ratio 1), with `zoomOffset: -1` and `minZoom: 1`. The WMS server always answers PNG.
+- Overlay media: `canvas-media.ts` (`canvasImage`, `canvasVideo`: a muted `<video>` playing a
+  `captureStream()`, tracks stopped on cleanup). `VideoOverlay` applies `keepAspectRatio`,
+  `muted`, `autoplay` only to a `<video>` it creates: for those, pass `''` as the URL and set
+  `getElement().srcObject` afterwards. SVG elements: `createElementNS` with the SVG namespace (the
+  offline test allows XML namespace URIs).
+- `ImageOverlay.bringToFront()` only reorders the DOM; once `setZIndex` is called, z-index wins.
+- A path's `renderer` and a Canvas `tolerance` are read live; a Canvas `padding` needs a new
+  renderer. Group events are `LeafletPointerEvent`: read `e.propagatedFrom`.
+- The layers control fires `overlayadd`/`overlayremove`/`baselayerchange` for any add or remove
+  of an entry's layer, from code too. `group-demo.ts` `pressEntry()` clicks an entry in cards.
 - `.lf-map` has `flex: 1`: an example that sets the map box's width also sets `flex: none`.
 - In a card, `stage.log()` writes the caption, so a `stage.say()` in a cycle overwrites it.
 
