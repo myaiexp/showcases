@@ -72,7 +72,7 @@ export async function mountFrame(el: HTMLElement, ctx: MountContext, moduleUrl: 
       console.error('zephyr3d stage: stopping the app failed', err);
     }
     // The context dies with the iframe's document eventually; losing it now frees it at once.
-    const canvas = iframe.contentDocument?.querySelector('canvas');
+    const canvas = iframe.contentDocument?.querySelector<HTMLCanvasElement>('canvas');
     if (canvas && canvas.width > 0) {
       (canvas.getContext('webgl2') as WebGL2RenderingContext | null)?.getExtension('WEBGL_lose_context')?.loseContext();
     }
@@ -102,7 +102,7 @@ export async function mountFrame(el: HTMLElement, ctx: MountContext, moduleUrl: 
     await race(new Promise<void>((resolve) => iframe.addEventListener('load', () => resolve(), { once: true })), signal);
     const win = iframe.contentWindow;
     const doc = iframe.contentDocument;
-    const canvas = doc?.querySelector('canvas');
+    const canvas = doc?.querySelector<HTMLCanvasElement>('canvas');
     if (!win || !doc || !canvas) throw new Error('the example iframe has no document');
     tameFocus(win, preview);
     Object.assign(win, opts.globals);
