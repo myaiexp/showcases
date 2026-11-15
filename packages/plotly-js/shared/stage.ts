@@ -28,6 +28,22 @@ import './stage.css';
  *   GeoJSON layers, and never ask for text on a map (glyphs need a URL).
  * - Cards have no pointer: animate with stage.every() (restyle, react, animate, Fx.hover).
  *   A card that calls none of them gets a periodic wipe so it still looks alive.
+ * - v4 shows a "Share chart…" mode bar button that uploads the figure to Plotly Cloud;
+ *   stage.config turns it off (showSendToCloud: false). Spread stage.config, never replace it.
+ * - The bundled types are stricter than the docs: tuples ([null, 500] ranges, domains),
+ *   per-trace arrays in restyle ({opacity: [a, b]}), `as const` readonly arrays and reading
+ *   a trace back (Data is a union) all need casts; basic-util.ts has loosely typed
+ *   restyle/relayout. Missing from the types though documented: prependTraces' maxPoints,
+ *   sunburst textposition, Fx, `_guiRelayout`; violin points 'none' types only as false.
+ * - Docs colour names with spaces ('deep sky blue') are not colours: write deepskyblue.
+ * - uirevision only keeps changes the reader made; a scripted zoom through plain relayout
+ *   is forgotten on the next react. fund-util.ts guiRelayout (Plotly._guiRelayout) records
+ *   it the way the mode bar does.
+ * - Config is read at newPlot: changing displayModeBar, staticPlot, locale, editable or
+ *   scrollZoom means calling newPlot again. config.responsive listens to window resizes
+ *   only (the stage's ResizeObserver covers its own box).
+ * - A splom costs ~350MB in a software-WebGL browser (released on dispose): keep card
+ *   sploms to a few dimensions and a sample of the rows.
  * - Mount is async: await Plotly.newPlot, then check ctx.signal before starting loops.
  */
 
@@ -122,7 +138,10 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
     div,
     preview,
     template: darkTemplate(preview),
-    config: preview ? { displayModeBar: false, displaylogo: false, scrollZoom: false } : { displaylogo: false },
+    // showSendToCloud: v4's "Share chart…" button posts the figure to Plotly Cloud; never here.
+    config: preview
+      ? { displayModeBar: false, displaylogo: false, scrollZoom: false, showSendToCloud: false }
+      : { displaylogo: false, showSendToCloud: false },
     bar,
     every,
     own: (fn) => stops.push(fn),
