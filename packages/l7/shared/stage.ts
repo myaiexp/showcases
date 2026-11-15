@@ -6,43 +6,10 @@ import { createGhost, type Ghost } from './ghost.ts';
 import './stage.css';
 
 /**
- * L7 2.29 traps found while building this gallery, for whoever adds the next example:
- * - Every Scene gets `logoVisible: false`: the default logo is an image from alipayobjects.com.
- *   Hand the scene to `await stage.ready(scene)` before adding layers: it waits for 'loaded',
- *   and on dispose destroys the scene and frees its WebGL context, which `scene.destroy()`
- *   never does (browsers cap live contexts, and the gallery mounts and unmounts cards).
- * - No network anywhere, cards or full views. Draw on `shared/world.ts` (Natural Earth via
- *   world-atlas) instead of a basemap; generate data in code instead of the docs' CDN JSON;
- *   give `scene.addImage` data: URLs drawn in code (`shared/images.ts`). Polygon shapes
- *   `water` and `ocean` load a texture from alipayobjects.com: never use them. Raster tile
- *   layers and MVT sources fetch: feed tiles through `getCustomData` instead of a URL.
- * - The MapTheme control's thumbnails are remote images; it stays out.
- * - Cards have no pointer. Animate with `stage.every()`/`stage.frame()` or layer `animate`,
- *   or fake input with `stage.ghost(scene)` (mousemove for hover, pointerdown/up for click).
- * - Scene mouse events (`scene.on('mousemove' | 'click' | …)`) are the map engine's events:
- *   `{ point: {x, y}, lngLat, originalEvent }`, with no `x`/`y` of their own. Layer events
- *   (`layer.on('click')`) are L7's: `{ x, y, lngLat, feature, featureId }`. Errors thrown in a
- *   scene handler are caught and logged as "Error in map event handler".
- * - `scene.once(type)` for map events (click, mousemove, moveend, …) never fires: it lands on
- *   an emitter the map engine doesn't feed. Use on + off. 'maploaded' is never emitted.
- *   `getPickedLayer()` is set by the async pick that follows a pointer move: read it later
- *   (a timer), not inside the scene's own mousemove handler.
- * - `scene.addImage` returns a Promise: await it before adding a layer that uses the image.
- *   `removeImage` only empties the registry (hasImage turns false); icons already drawn stay.
- * - Line layers, docs claims wrong for 2.29.1: style `arrow` ({enable, arrowWidth, …}) is read
- *   by no model; `borderWidth`/`borderColor` and `linearDir` work only on shape('line'), not
- *   arcs; walls have no dashArray. Great circles across ±180° draw a straight band over the
- *   map (shared/line-data.ts `NO_DATELINE` avoids them). Units: wall size 40 is a sensible wall
- *   at zoom 3–4 (2000 fills the screen; with heightfixed ~3e6); line size [w, h] and
- *   raisingHeight lift ~100 visibly. Flowline arrowheads are large: sizes 3–4 read best.
- * - Point layers: size is a radius in px. Column size [w, l, h] (or [w, h] = [w, w, h]) is in
- *   projected units that grow with zoom (~1 per px at zoom 3.4); map-distance values cover the
- *   screen. Cluster options are `clusterOptions` (docs: clusterOption), maxZoom default 20.
- *   opacityLinear dir 'up' fades columns toward the top. Image ids must not reuse shape names
- *   (circle, …). The default dot model blends additively, so overlaps glow.
- * - Marker, Popup and the controls come from @antv/l7-component, whose `browser` field is a
- *   UMD bundle with no ESM exports; vite.config.ts aliases it to its es build.
- * - tsconfig has noUncheckedIndexedAccess: guard indexed reads.
+ * L7 2.29.1 traps found while building this gallery are in ./traps.md: read it before
+ * building an example and add to it. The ones that shape this file: scene.destroy() never
+ * frees the WebGL context (dispose loses it), and the default logo is a remote image, so
+ * every Scene sets logoVisible: false.
  */
 
 export interface StageOptions {
