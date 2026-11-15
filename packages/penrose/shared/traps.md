@@ -98,3 +98,27 @@ Found while building this gallery. Read before building an example, and add to i
 - `layout = [a, b, a]` (a repeated stage) compiles and solves; `ensure … in [s1, s2]` and `? in [s1, s2]` take lists.
 - Text `center` is the anchor point for `textAnchor: "start"`/`"end"`, so a box built from `t.text.center` only
   fits a middle-anchored text (shape-text-box-misaligned).
+- ref/style/expressions.md assigns one component of a vector, `x.shape.center[0] = 50`. On 3.3.1 that is the error
+  "Cannot directly assign to or delete an index … of a larger structure". Assign the whole vector instead
+  (`override x.shape.center = (50, 100)`); reading `x.shape.center[0]` is fine.
+- ref/style/namespaces.md says values in a namespace cannot be overwritten. On 3.3.1 `override ns.field = …` inside a
+  selector block compiles, and later reads of `ns.field` see the new value.
+- A shape can be a namespace field (`frame { box = Rectangle { … } }`) and be read as `frame.box` from any block.
+- A `Line` whose start and end coincide makes the optimizer fail with "NaN in xs" (a self-edge drawn between a node and
+  itself). Draw self-edges as a mark on the node instead.
+- `delete x.f` leaves later blocks that read `x.f` failing for the types that deleted it, even `layer x.f above …` and
+  `ensure … x.f …`. A shape that must survive the delete can share a position field (`x.pos`) with the shape that stays.
+- `perspective()` negates y (its matrix has `-f` at [1][1], the docs print `+f`), while `ortho()` keeps y up. With the
+  usual viewport `(-w/2, -h/2, w, h)` a perspective cube comes out upside down. Use a viewport with a negative height,
+  `(-w/2, h/2, w, -h)`, for perspective, the normal one for ortho. `lookAt` and the other matrices are fine.
+- `project()` and `projectList()` return the depth too (3-vectors, not 2D points as the docs say), so a circle centre
+  takes `(p[0], p[1])` (a list of them is read as `P[i][0]`, `P[i][1]`).
+- ref/style/vectors-matrices.md names `rotate2D`, `scale2D`, `rotate3Dh`; the functions are lower-case (`rotate2d`,
+  `scale2d`, `rotate3dh`). The computation functions ending in `2d`, `3d`, `3dh` are case-sensitive.
+- `projectDepth` with `perspective(…)` returns a depth that is not in [0, 1] and grows as the point gets nearer
+  (the matrix has +2fn/(f-n) where OpenGL has the negative): corners 4 to 8 units from the eye with near 1 and far 12 give
+  about 1.22 to 1.32. `ortho()` depth follows the docs. Measure the range before mapping it to a size or colour.
+- A header whose literal variables can take the same value (`where At(v, x, y, z)` with `At(a, -1, -1, -1)`) matches
+  nothing without `repeatable`: non-repeatable matching refuses two style variables on one Substance literal.
+- ref/style/selectors.md says `match_id` and `match_total` can be overwritten. `override match_id = match_total + 1 - match_id`
+  is "cyclic variable assignments" on 3.3.1; read them into a new local (`rank = match_total + 1 - match_id`) instead.
