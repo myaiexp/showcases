@@ -5,8 +5,10 @@ import { aframeExample } from '../../shared/frame.ts';
 const fonts = ['roboto', 'dejavu', 'exo2bold', 'exo2semibold', 'aileronsemibold', 'kelsonsans', 'monoid', 'mozillavr', 'sourcecodepro'];
 
 export default aframeExample(import.meta.url, {
-  scene: () => `
+  scene: ({ preview }) => `
     <a-scene background="color: #10151c">
+      <!-- Cards are narrower than the full view: the lines sit further back there. -->
+      <a-entity position="0 ${preview ? 0.4 : 0} ${preview ? -2.2 : 0}">
       <a-text value="Hello, World!" position="0 2.75 -3" align="center" width="6" color="#FFC65D"></a-text>
       ${fonts
         .map(
@@ -17,6 +19,7 @@ export default aframeExample(import.meta.url, {
         .join('')}
       <a-text value="Now Interactable" geometry="primitive: plane; width: 1.6; height: 0.3" material="color: #2a4a6b"
               align="center" position="0 -0.2 -3" width="3"></a-text>
+      </a-entity>
     </a-scene>`,
   run(stage) {
     if (stage.preview) sway(stage, { yaw: 10 });

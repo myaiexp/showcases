@@ -91,6 +91,9 @@ export interface Entity extends HTMLElement {
   states: string[];
   /** A-Frame events are CustomEvents with a `detail` (click, mouseenter, componentchanged, …). */
   addEventListener(type: string, listener: (evt: any) => void, options?: boolean | AddEventListenerOptions): void;
+  /** Children of an entity are entities (or plain elements typed by the caller). */
+  querySelector<E extends Element = Entity>(selectors: string): E | null;
+  querySelectorAll<E extends Element = Entity>(selectors: string): NodeListOf<E>;
   getAttribute(name: string): any;
   getDOMAttribute(name: string): any;
   setAttribute(name: string, value?: any): void;
