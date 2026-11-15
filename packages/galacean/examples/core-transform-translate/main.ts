@@ -1,4 +1,4 @@
-// Two turned cubes step forward with translate: along their own axes, and along the world's
+// translate along the cube's own axes versus the world's
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// A script's fields exposed as Number, Slider, Boolean, Vector3, Color, Select and Textarea parameters
+// A script's fields as Number, Slider, Boolean, Vector3, Color and more
 import { type BlinnPhongMaterial, Color, MeshRenderer, type ModelMesh, PrimitiveMesh, Script, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { checkbox, color, select, slider } from '../../shared/controls.ts';

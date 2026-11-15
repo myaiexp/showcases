@@ -1,4 +1,4 @@
-// A child's localMatrix and worldMatrix as 4x4 grids, built with Matrix.affineTransformation
+// A child's localMatrix and worldMatrix shown as 4x4 grids
 import { Matrix, PrimitiveMesh, Quaternion, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { lit, PALETTE, phong, solid, tick } from '../../shared/core-kit.ts';

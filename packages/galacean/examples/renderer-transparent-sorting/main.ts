@@ -1,4 +1,4 @@
-// The transparent queue draws far to near, so overlapping panes blend correctly from any side
+// The transparent queue draws far to near, so overlapping panes blend
 import { MeshRenderer, PrimitiveMesh, UnlitMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { demo, orbit } from '../../shared/gfx-kit.ts';

@@ -1,4 +1,4 @@
-// BoundingSphere.fromPoints wraps a point cloud; BoundingSphere.fromBox wraps a box
+// BoundingSphere.fromPoints wraps a point cloud; fromBox wraps a box
 import { BoundingBox, BoundingSphere, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// PBRMaterial.occlusionTexture with occlusionTextureIntensity darkens ambient light
+// PBR occlusionTexture and its intensity darken ambient light
 import { PBRMaterial, Vector4 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { caption, lin, tick } from '../../shared/gfx-kit.ts';

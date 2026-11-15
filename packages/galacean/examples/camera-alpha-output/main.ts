@@ -1,4 +1,4 @@
-// A transparent background and isAlphaOutputRequired: the canvas lets the page through
+// isAlphaOutputRequired and a transparent background let the page through
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, caption, demo, pbr, spin } from '../../shared/gfx-kit.ts';

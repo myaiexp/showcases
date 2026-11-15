@@ -1,4 +1,4 @@
-// scene.enableTransparentShadow lets alpha-cutoff and transparent renderers cast shadows
+// enableTransparentShadow lets cutoff and transparent renderers cast
 import { BlinnPhongMaterial, PrimitiveMesh, RenderFace, ShadowType } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, caption, demo, floor, steps } from '../../shared/gfx-kit.ts';

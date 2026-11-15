@@ -1,4 +1,4 @@
-// onTriggerEnter, onTriggerStay and onTriggerExit as a kinematic ball crosses a trigger zone
+// onTriggerEnter, Stay and Exit as a kinematic ball crosses a zone
 import { DynamicCollider, PrimitiveMesh, Script, StaticCollider, type ColliderShape } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { boxShape, lit, PALETTE, sphereShape, solid, tick, unlit } from '../../shared/core-kit.ts';

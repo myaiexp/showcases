@@ -1,4 +1,4 @@
-// 2D benchmark in miniature: many SpriteRenderers sharing one Sprite, all rotating each frame
+// 2D benchmark in miniature: many rotating SpriteRenderers sharing one Sprite
 import { Camera, type Entity, Rect, Sprite, SpriteRenderer, Texture2D, Vector2 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

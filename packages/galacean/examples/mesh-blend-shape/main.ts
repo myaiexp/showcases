@@ -1,4 +1,4 @@
-// ModelMesh blend shape: delta positions in a BlendShape, driven by blendShapeWeights
+// A ModelMesh BlendShape of delta positions driven by blendShapeWeights
 import { BlendShape, BlinnPhongMaterial, ModelMesh, PrimitiveMesh, SkinnedMeshRenderer, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { caption, demo, tick } from '../../shared/gfx-kit.ts';

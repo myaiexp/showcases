@@ -1,4 +1,4 @@
-// A cloned Script copies its fields: primitives by value, a Vector3 by reference (assignment is the default)
+// A cloned Script copies primitives by value and a Vector3 by reference
 import { type Entity, PrimitiveMesh, Script, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

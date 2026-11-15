@@ -1,4 +1,4 @@
-// Energy-saving mode: render fewer pixels than the screen has and let the browser scale up
+// Energy-saving mode: fewer pixels than the screen, scaled up by the browser
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

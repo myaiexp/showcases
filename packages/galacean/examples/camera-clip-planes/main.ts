@@ -1,4 +1,4 @@
-// nearClipPlane and farClipPlane cut the frustum: cubes beyond either one are not drawn
+// nearClipPlane and farClipPlane: cubes beyond either are not drawn
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, caption, demo, pbr, tick } from '../../shared/gfx-kit.ts';

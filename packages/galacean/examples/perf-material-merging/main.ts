@@ -1,4 +1,4 @@
-// The same cubes with one shared material, then with a material each: fewer materials can batch into fewer draws
+// One shared material versus one each: fewer materials, fewer draws
 import { type BlinnPhongMaterial, MeshRenderer, PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

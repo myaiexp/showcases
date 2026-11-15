@@ -1,4 +1,4 @@
-// onBeginRender and onEndRender run only for scripts on camera entities, once per camera per frame
+// onBeginRender and onEndRender run per camera, on camera entities only
 import { Camera, CameraClearFlags, DirectLight, PrimitiveMesh, Script, Vector4 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { PALETTE, phong, solid, tick } from '../../shared/core-kit.ts';

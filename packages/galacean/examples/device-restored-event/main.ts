@@ -1,4 +1,4 @@
-// A texture written with setPixelBuffer loses its pixels with the device; devicerestored writes them back
+// devicerestored rewrites a setPixelBuffer texture lost with the device
 import { PrimitiveMesh, Texture2D, TextureFilterMode, UnlitMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

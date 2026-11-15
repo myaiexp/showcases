@@ -1,4 +1,4 @@
-// A batch load reports progress with AssetPromise.onProgress while items finish at different times
+// AssetPromise.onProgress reports a batch load as its items finish
 import { AssetPromise, PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { SLOW_TYPE } from '../../shared/assets-slow.ts';

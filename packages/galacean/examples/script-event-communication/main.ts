@@ -1,4 +1,4 @@
-// engine.on, engine.once, engine.dispatch and engine.off used by scripts to talk to each other
+// engine.on, once, dispatch and off for scripts talking to each other
 import { type Entity, PrimitiveMesh, Script } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

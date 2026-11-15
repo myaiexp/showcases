@@ -1,4 +1,4 @@
-// Light and shadow scene pieces: a prop set that casts shadows, and a PBR sample grid
+// Light and shadow pieces: a shadow-casting prop set and a PBR grid
 import { type Engine, type Entity, type Material, type Mesh, type MeshRenderer, PrimitiveMesh } from '@galacean/engine';
 import { add, blinn, pbr, spin, tick } from './gfx-kit.ts';
 

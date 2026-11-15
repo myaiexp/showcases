@@ -1,4 +1,4 @@
-// camera_OpaqueTexture: the transparent queue can sample what the opaque queue drew
+// camera_OpaqueTexture: transparent objects sample what opaque ones drew
 import { BlendFactor, Downsampling, Material, PrimitiveMesh, RenderQueueType, Shader, Vector2 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, blinn, caption, demo, pbr, spin, tick } from '../../shared/gfx-kit.ts';

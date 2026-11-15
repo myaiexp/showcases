@@ -1,4 +1,4 @@
-// AmbientOcclusion intensity, power, radius, bias, bilateralThreshold, minHorizonAngle
+// AmbientOcclusion intensity, power, radius, bias and the other settings
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, caption, demo, pbr, tick } from '../../shared/gfx-kit.ts';

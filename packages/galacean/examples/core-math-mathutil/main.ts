@@ -1,4 +1,4 @@
-// MathUtil: degree and radian conversion, clamp, lerp and isPowerOf2 driving a sweeping ball
+// MathUtil conversions, clamp, lerp and isPowerOf2 driving a sweeping ball
 import { MathUtil, PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

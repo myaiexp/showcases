@@ -1,4 +1,4 @@
-// A Ray against a plane, a sphere and a box: intersect* return a distance, or -1 for a miss
+// A Ray against a plane, sphere and box: a distance, or -1 for a miss
 import { BoundingBox, BoundingSphere, Plane, Ray, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

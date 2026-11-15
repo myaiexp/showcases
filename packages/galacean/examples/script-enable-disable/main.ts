@@ -1,4 +1,4 @@
-// onEnable and onDisable fire for the script's enabled flag, its entity's isActive and an ancestor's isActive
+// onEnable and onDisable from enabled, isActive and an ancestor's isActive
 import { type Entity, PrimitiveMesh, Script } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

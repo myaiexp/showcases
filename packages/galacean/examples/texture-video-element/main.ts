@@ -1,4 +1,4 @@
-// A <video> element (fed by canvas.captureStream) uploaded each frame with setImageSource
+// A canvas-fed <video> uploaded each frame with setImageSource
 import { MeshRenderer, Texture2D, TextureFormat, TextureUsage, UnlitMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { caption, demo, orbit, quadMesh, tick } from '../../shared/gfx-kit.ts';

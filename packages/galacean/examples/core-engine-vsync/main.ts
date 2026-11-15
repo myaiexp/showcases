@@ -1,4 +1,4 @@
-// vSyncCount follows the display; with 0, targetFrameRate sets a fixed rate. The readout measures real frames.
+// vSyncCount follows the display; at 0, targetFrameRate sets the rate
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { select, slider } from '../../shared/controls.ts';

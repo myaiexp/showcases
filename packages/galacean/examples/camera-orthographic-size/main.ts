@@ -1,4 +1,4 @@
-// Orthographic camera: orthographicSize is half the visible height, depth doesn't shrink objects
+// orthographicSize is half the visible height; distance doesn't shrink objects
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, caption, demo, pbr, spin, tick } from '../../shared/gfx-kit.ts';

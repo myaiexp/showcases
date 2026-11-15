@@ -1,4 +1,4 @@
-// CollisionUtil against a plane: a point, a sphere and a box classified as Front, Back or Intersecting
+// CollisionUtil classifies a point, sphere and box against a plane
 import { BoundingBox, BoundingSphere, CollisionUtil, Plane, PlaneIntersectionType, PrimitiveMesh, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { lit, phong, planeSheet, PALETTE, solid, tick, unlit } from '../../shared/core-kit.ts';

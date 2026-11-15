@@ -1,4 +1,4 @@
-// A BoundingFrustum from a view-projection matrix, with boxes and spheres tested against it
+// A BoundingFrustum from a view-projection matrix tests boxes and spheres
 import { BoundingBox, BoundingFrustum, BoundingSphere, CollisionUtil, ContainmentType, Matrix, PrimitiveMesh, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { lit, PALETTE, phong, polyline, solid, tick, unlit, wireBox } from '../../shared/core-kit.ts';

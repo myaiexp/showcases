@@ -1,4 +1,4 @@
-// Separate vertex buffers: static POSITION, dynamic COLOR updated through Buffer.setData
+// Separate buffers: static POSITION, dynamic COLOR updated with setData
 import { Buffer, BufferBindFlag, BufferMesh, BufferUsage, MeshRenderer, VertexBufferBinding, VertexElement, VertexElementFormat } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { caption, demo, spin, tick } from '../../shared/gfx-kit.ts';

@@ -1,4 +1,4 @@
-// Low-level data on a ModelMesh: Buffer + setVertexBufferBinding + setVertexElements
+// A ModelMesh fed through Buffer, setVertexBufferBinding, setVertexElements
 import { RenderFace, Buffer, BufferBindFlag, BufferUsage, MeshRenderer, MeshTopology, ModelMesh, UnlitMaterial, VertexAttribute, VertexElement, VertexElementFormat } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { caption, demo, spin } from '../../shared/gfx-kit.ts';

@@ -1,4 +1,4 @@
-// resourceManager.gc() releases cached assets that nothing references; referenced ones stay
+// resourceManager.gc() releases unreferenced cached assets; referenced ones stay
 import { AssetType, type Entity, type Texture2D } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { pictureFrame, pngBlobUrl, releaseUrls, tile } from '../../shared/assets-kit.ts';

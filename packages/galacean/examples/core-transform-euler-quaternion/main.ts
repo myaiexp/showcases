@@ -1,4 +1,4 @@
-// The same rotation as Euler degrees and as a quaternion, each one writing the other
+// One rotation as Euler degrees and as a quaternion, each writing the other
 import { PrimitiveMesh, Quaternion } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

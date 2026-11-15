@@ -1,4 +1,4 @@
-// The right-handed world: +X right, +Y up, +Z toward the viewer, camera looking down -Z, positive turns counterclockwise
+// The right-handed world: +Y up, +Z toward the viewer, camera down -Z
 import { PrimitiveMesh, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

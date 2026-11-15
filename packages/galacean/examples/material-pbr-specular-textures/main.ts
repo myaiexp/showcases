@@ -1,4 +1,4 @@
-// PBRMaterial.specularIntensityTexture and specularColorTexture vary specular by UV
+// PBR specularIntensityTexture and specularColorTexture vary by UV
 import { PBRMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { caption, lin, tick } from '../../shared/gfx-kit.ts';

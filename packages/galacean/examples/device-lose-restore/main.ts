@@ -1,4 +1,4 @@
-// forceLoseDevice and forceRestoreDevice, with a custom ContentRestorer for a texture drawn in code
+// forceLoseDevice, forceRestoreDevice and a custom ContentRestorer
 import { AssetPromise, AssetType, ContentRestorer, type Entity, type Engine, Texture2D } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { pictureFrame, pngBlobUrl, releaseUrls, tile } from '../../shared/assets-kit.ts';

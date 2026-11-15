@@ -1,4 +1,4 @@
-// camera.renderTarget redirects a camera's output into a texture used by a material
+// camera.renderTarget sends a camera's output to a texture on a material
 import { Camera, Layer, PrimitiveMesh, RenderTarget, Texture2D } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, demo, floor, pbr, spin, unlit } from '../../shared/gfx-kit.ts';

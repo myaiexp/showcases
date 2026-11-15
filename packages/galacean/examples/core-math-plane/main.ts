@@ -1,4 +1,4 @@
-// A Plane from a normal and a distance, and from three points with Plane.fromPoints
+// A Plane from a normal and distance, and from three points
 import { Plane, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { select, slider } from '../../shared/controls.ts';

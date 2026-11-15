@@ -1,4 +1,4 @@
-// getPixelBuffer(x, y, width, height, mipLevel, out): read a region back from a texture
+// getPixelBuffer reads a region of a texture back into an array
 import { MeshRenderer, PrimitiveMesh, Texture2D, TextureFormat, UnlitMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, caption, demo, quadMesh, tick, unlit } from '../../shared/gfx-kit.ts';

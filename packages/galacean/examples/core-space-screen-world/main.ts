@@ -1,4 +1,4 @@
-// World, viewport and screen space of one point, through worldToViewportPoint and worldToScreenPoint
+// One point in world, viewport and screen space
 import { PrimitiveMesh, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

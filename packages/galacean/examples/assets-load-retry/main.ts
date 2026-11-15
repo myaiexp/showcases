@@ -1,4 +1,4 @@
-// retryCount and retryInterval on a LoadItem: a load that cannot succeed takes longer to give up
+// retryCount and retryInterval: a load that can't succeed takes longer to fail
 import { AssetType, PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

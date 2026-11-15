@@ -1,4 +1,4 @@
-// BoundingBox: fromCenterAndExtent, fromPoints, fromSphere, transform and merge, drawn as wireframes
+// BoundingBox builders, transform and merge, drawn as wireframes
 import { BoundingBox, BoundingSphere, Matrix, Quaternion, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

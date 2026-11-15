@@ -1,4 +1,4 @@
-// Two tilted cubes spin with rotate: around their own tilted Y, and around the world's Y
+// rotate around the cube's own tilted Y versus the world's Y
 import { PrimitiveMesh, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { lit, PALETTE, phong, solid, tick } from '../../shared/core-kit.ts';

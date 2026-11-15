@@ -1,4 +1,4 @@
-// Mixing two colours in sRGB numbers versus in linear space with toLinear and toSRGB
+// Mixing colours in sRGB numbers versus linear space with toLinear/toSRGB
 import { Color, PrimitiveMesh, UnlitMaterial, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { color } from '../../shared/controls.ts';

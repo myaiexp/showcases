@@ -1,4 +1,4 @@
-// RenderTarget(engine, w, h, colorTexture, depthTexture): offscreen colour and depth
+// RenderTarget with a colour and a depth texture, both shown
 import { Camera, Layer, MeshRenderer, PrimitiveMesh, RenderTarget, Texture2D, TextureFilterMode, TextureFormat } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, caption, demo, quadMesh, spin, unlit } from '../../shared/gfx-kit.ts';

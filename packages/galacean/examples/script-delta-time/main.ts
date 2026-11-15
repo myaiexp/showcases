@@ -1,4 +1,4 @@
-// onUpdate(deltaTime): a fixed step per frame versus a step scaled by deltaTime, as the frame rate halves
+// A fixed step per frame versus a step scaled by deltaTime
 import { PrimitiveMesh, Script, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

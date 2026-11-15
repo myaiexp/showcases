@@ -1,4 +1,4 @@
-// Matrix.multiply(a, b) applies b first: T * R spins in place, R * T orbits the origin
+// Matrix.multiply(a, b) applies b first: T * R spins, R * T orbits
 import { Matrix, PrimitiveMesh, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

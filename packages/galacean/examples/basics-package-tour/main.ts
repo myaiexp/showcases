@@ -1,4 +1,4 @@
-// The overview's core packages in one scene: engine, PhysX physics and the toolkit's OrbitControl
+// The overview's core packages in one scene: engine, PhysX and OrbitControl
 import { DynamicCollider, PrimitiveMesh, StaticCollider } from '@galacean/engine';
 import { OrbitControl } from '@galacean/engine-toolkit-controls';
 import type { Mount } from '@/types.ts';

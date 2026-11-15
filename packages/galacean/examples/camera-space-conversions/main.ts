@@ -1,4 +1,4 @@
-// worldToViewportPoint, viewportToScreenPoint, screenToViewportPoint and viewportToWorldPoint chained
+// World, viewport and screen conversions chained on the Camera
 import { PrimitiveMesh, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, caption, demo, floor, pbr, tick } from '../../shared/gfx-kit.ts';

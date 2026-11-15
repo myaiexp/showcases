@@ -1,4 +1,4 @@
-// Post-process gallery scaffolding: HDR camera with post-processing and a glowing scene
+// Post-process scaffolding: an HDR camera with post-processing on
 import { type Engine, type Entity, PBRMaterial, PrimitiveMesh } from '@galacean/engine';
 import type { MountContext } from '@/types.ts';
 import { add, blinn, demo, type Demo, type DemoOptions, floor, tick } from './gfx-kit.ts';

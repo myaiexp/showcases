@@ -1,4 +1,4 @@
-// The quick start's spinning model as code: camera, light, a cube and a Script that rotates it
+// The quick start in code: camera, light, cube and a rotating Script
 import { BlinnPhongMaterial, DirectLight, MeshRenderer, PrimitiveMesh, Script } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { addCamera, createStage } from '../../shared/stage.ts';

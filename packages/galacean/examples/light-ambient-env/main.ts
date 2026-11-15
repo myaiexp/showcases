@@ -1,4 +1,4 @@
-// AssetType.Env loads a baked ambient light: SH diffuse plus a prefiltered specular cube
+// AssetType.Env ambient light: SH diffuse plus a prefiltered specular cube
 import type { Mount } from '@/types.ts';
 import { demo, orbit } from '../../shared/gfx-kit.ts';
 import { loadStudioEnv } from '../../shared/env.ts';

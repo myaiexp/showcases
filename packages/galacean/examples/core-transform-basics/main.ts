@@ -1,4 +1,4 @@
-// A cube moved, turned and stretched with the Transform setters, read back through its properties
+// A cube moved, turned and stretched with the Transform setters
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

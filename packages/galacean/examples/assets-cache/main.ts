@@ -1,4 +1,4 @@
-// The resource cache: getFromCache before and after load, and the same object on a second load
+// The resource cache: getFromCache before and after a load, same object twice
 import { AssetType, type Texture2D } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { pictureFrame, pngBlobUrl, releaseUrls, tile } from '../../shared/assets-kit.ts';

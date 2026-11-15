@@ -1,4 +1,4 @@
-// engine.time.timeScale slows everything driven by deltaTime; actualDeltaTime ignores it
+// time.timeScale slows everything driven by deltaTime
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

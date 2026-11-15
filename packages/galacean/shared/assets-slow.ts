@@ -1,4 +1,4 @@
-// A loader for the made-up asset type "ShowcaseSlow": resolves its URL after params.ms milliseconds
+// A made-up "ShowcaseSlow" asset type that resolves after params.ms
 import { AssetPromise, type LoadItem, Loader, resourceLoader } from '@galacean/engine';
 
 export const SLOW_TYPE = 'ShowcaseSlow';

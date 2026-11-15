@@ -1,4 +1,4 @@
-// The same picture at growing texture sizes: the look barely changes, the memory grows by four times per step
+// Growing texture sizes: the look barely changes, memory grows fourfold
 import { PrimitiveMesh, UnlitMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

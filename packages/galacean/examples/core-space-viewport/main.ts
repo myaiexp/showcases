@@ -1,4 +1,4 @@
-// Two cameras on one scene, each drawing into its own viewport rectangle of the canvas
+// Two cameras on one scene, each drawing into its own viewport
 import { Camera, CameraClearFlags, PrimitiveMesh, Vector4 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

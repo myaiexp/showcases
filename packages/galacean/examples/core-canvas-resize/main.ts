@@ -1,4 +1,4 @@
-// resizeByClientSize(pixelRatio): the drawing buffer follows the element's CSS size times a ratio
+// resizeByClientSize(ratio): the drawing buffer follows the CSS size
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

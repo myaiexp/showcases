@@ -1,4 +1,4 @@
-// Renderer.bounds: the world axis-aligned bounding box follows the object's transform
+// Renderer.bounds: a world-space box that follows the transform
 import { BoundingBox, PrimitiveMesh, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, blinn, caption, demo, spin, tick, unlit } from '../../shared/gfx-kit.ts';

@@ -1,4 +1,4 @@
-// engine.pause() freezes the frame loop and engine time; engine.resume() starts both again
+// engine.pause() freezes frames and time; engine.resume() starts both again
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

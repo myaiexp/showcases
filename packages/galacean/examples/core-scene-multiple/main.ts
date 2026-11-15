@@ -1,4 +1,4 @@
-// Two scenes rendered at once: addScene and removeScene, each scene with its own camera viewport
+// Two scenes rendered at once with addScene and removeScene
 import { DirectLight, PrimitiveMesh, Scene, Vector4 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// A PNG drawn in code, turned into a blob URL and loaded through resourceManager.load as a Texture2D
+// A PNG drawn in code, loaded from a blob URL as a Texture2D
 import { AssetType, type Texture2D } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { pictureFrame, pngBlobUrl, releaseUrls, tile } from '../../shared/assets-kit.ts';

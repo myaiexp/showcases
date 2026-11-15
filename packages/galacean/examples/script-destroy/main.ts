@@ -1,4 +1,4 @@
-// destroy() on a component or an entity calls onDestroy; the component is recycled at the frame's end
+// destroy() calls onDestroy; the component is recycled at frame end
 import { type Entity, PrimitiveMesh, Script } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

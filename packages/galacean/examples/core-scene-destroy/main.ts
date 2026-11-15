@@ -1,4 +1,4 @@
-// scene.destroy() drops the scene from sceneManager.scenes without a removeScene call
+// scene.destroy() removes the scene from sceneManager.scenes by itself
 import { DirectLight, PrimitiveMesh, Scene, Vector4 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

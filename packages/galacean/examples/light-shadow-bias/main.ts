@@ -1,4 +1,4 @@
-// shadowBias, shadowNormalBias and shadowNearPlane against shadow acne and peter-panning
+// shadowBias, shadowNormalBias and shadowNearPlane against acne
 import { PrimitiveMesh, ShadowType } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, blinn, caption, demo, floor, tick } from '../../shared/gfx-kit.ts';

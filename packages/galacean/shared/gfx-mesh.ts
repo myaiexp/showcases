@@ -1,4 +1,4 @@
-// A parameter lab for PrimitiveMesh.create*: sliders in the full view, a sweep in cards
+// A parameter lab for PrimitiveMesh.create*: sliders, or a sweep in cards
 import { BlinnPhongMaterial, type Engine, type Mesh, MeshRenderer, Texture2D } from '@galacean/engine';
 import type { MountContext } from '@/types.ts';
 import { slider } from './controls.ts';

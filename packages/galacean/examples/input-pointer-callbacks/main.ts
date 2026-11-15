@@ -1,4 +1,4 @@
-// onPointerEnter, Exit, Down, Up, Click and Drag on a cube with a collider (needs a physics engine)
+// Script pointer callbacks on a cube with a collider (needs physics)
 import { PrimitiveMesh, Script, StaticCollider } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { boxShape, lit, PALETTE, phong, solid, tick } from '../../shared/core-kit.ts';

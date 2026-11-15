@@ -1,4 +1,4 @@
-// maximumDeltaTime caps deltaTime after a stalled frame; actualDeltaTime still reports the stall
+// maximumDeltaTime caps deltaTime after a stall; actualDeltaTime doesn't
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button, slider } from '../../shared/controls.ts';

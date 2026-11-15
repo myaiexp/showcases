@@ -1,4 +1,4 @@
-// cancelNotLoaded(url) and cancelNotLoaded() stop loads that have not finished; cancelled loads reject
+// cancelNotLoaded(url) and cancelNotLoaded() stop unfinished loads
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { SLOW_TYPE } from '../../shared/assets-slow.ts';

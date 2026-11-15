@@ -1,4 +1,4 @@
-// Rendering benchmark in miniature: many instantiated glTF models under ten point lights
+// Rendering benchmark in miniature: many glTF copies under ten point lights
 import { AssetType, type Entity, type GLTFResource, PointLight } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeGltfUrl, releaseUrls } from '../../shared/assets-kit.ts';

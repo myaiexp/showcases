@@ -1,4 +1,4 @@
-// PBRMaterial.normalTexture with normalTextureIntensity gives bumps without geometry
+// PBR normalTexture and normalTextureIntensity: bumps without geometry
 import { PBRMaterial, Vector4 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { caption, lin, tick } from '../../shared/gfx-kit.ts';

@@ -1,4 +1,4 @@
-// onBeginRender: render Layer0 into a RenderTarget, then let the camera draw Layer1 to the screen
+// onBeginRender renders Layer0 into a RenderTarget, then Layer1 to screen
 import { type Camera, Layer, PrimitiveMesh, RenderTarget, Script, Texture2D, type Entity } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, demo, pbr, quadMesh, spin, unlit } from '../../shared/gfx-kit.ts';

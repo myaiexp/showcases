@@ -1,4 +1,4 @@
-// A Script logging its lifecycle hooks as the entity is created, disabled, enabled and destroyed
+// A Script logging its lifecycle hooks as its entity changes
 import { type Entity, PrimitiveMesh, Script } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

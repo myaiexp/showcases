@@ -1,4 +1,4 @@
-// A GameCtrl built on EventDispatcher: one state, three scripts reacting to State_Change
+// A GameCtrl EventDispatcher whose state three scripts react to
 import { type Entity, EventDispatcher, PrimitiveMesh, Script, type UnlitMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

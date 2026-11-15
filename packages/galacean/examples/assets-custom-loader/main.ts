@@ -1,4 +1,4 @@
-// A Loader subclass registered with resourceLoader reads a made-up voxel file into an entity of cubes
+// A Loader registered with resourceLoader turns a voxel file into cubes
 import { AssetPromise, type Engine, type Entity, type LoadItem, Loader, MeshRenderer, PrimitiveMesh, type ResourceManager, resourceLoader } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { releaseUrls, jsonBlobUrl } from '../../shared/assets-kit.ts';

@@ -1,4 +1,4 @@
-// Finding entities: scene.findEntityByName/Path and entity.getChild, findByName, findByPath
+// Finding entities by name and path, from the scene and from an entity
 import { type Entity, PrimitiveMesh, type BlinnPhongMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

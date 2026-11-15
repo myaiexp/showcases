@@ -1,4 +1,4 @@
-// Texture2D.setImageSource(source, mipLevel, flipY): any canvas, image or video can feed a texture
+// setImageSource(source, mipLevel, flipY) feeds a canvas to a texture
 import { MeshRenderer, Texture2D, TextureFormat, UnlitMaterial } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { caption, demo, quadMesh, steps } from '../../shared/gfx-kit.ts';

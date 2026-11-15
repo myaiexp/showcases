@@ -1,4 +1,4 @@
-// The scene's top level: createRootEntity, addRootEntity, getRootEntity, removeRootEntity, rootEntities
+// A scene's root entities: create, add, get and remove
 import { Entity, type Scene, PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

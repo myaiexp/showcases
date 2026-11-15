@@ -1,4 +1,4 @@
-// Manual picking: pointer position, then camera.screenPointToRay, then scene.physics.raycast
+// Manual picking: screenPointToRay, then scene.physics.raycast
 import { HitResult, PrimitiveMesh, Ray, StaticCollider, Vector2, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { boxShape, lit, marker, PALETTE, phong, solid, tick, unlit } from '../../shared/core-kit.ts';

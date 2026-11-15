@@ -1,4 +1,4 @@
-// A glTF built in code and loaded as AssetType.GLTF; instantiateSceneRoot makes copies of its scene
+// A glTF built in code, loaded as AssetType.GLTF and instantiated as copies
 import { AssetType, type GLTFResource } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeGltfUrl, releaseUrls } from '../../shared/assets-kit.ts';

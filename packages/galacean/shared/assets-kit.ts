@@ -1,4 +1,4 @@
-// Generated assets for the loading examples: PNG blobs, data URLs, a cube .gltf, JSON blobs
+// Generated assets for loading examples: PNG and JSON blobs, a cube .gltf
 import { type Engine, type Entity, PrimitiveMesh, type Texture2D, UnlitMaterial } from '@galacean/engine';
 import { solid } from './core-kit.ts';
 import { paint } from './textures.ts';

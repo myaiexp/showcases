@@ -1,4 +1,4 @@
-// CollisionUtil shape tests: sphere-sphere, sphere-box and box-box decide which static shapes light up
+// CollisionUtil sphere-sphere, sphere-box and box-box tests light up shapes
 import { BoundingBox, BoundingSphere, CollisionUtil, PrimitiveMesh, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { lit, PALETTE, phong, solid, tick } from '../../shared/core-kit.ts';

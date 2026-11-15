@@ -1,4 +1,4 @@
-// Scene fog: Linear (fogStart, fogEnd), Exponential and ExponentialSquared (fogDensity)
+// Scene fog: Linear (start, end), Exponential and ExponentialSquared
 import { FogMode, PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { select, slider } from '../../shared/controls.ts';

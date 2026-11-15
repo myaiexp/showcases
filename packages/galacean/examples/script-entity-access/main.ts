@@ -1,4 +1,4 @@
-// A script reaching around the tree: this.entity, getChild, findByName, findByPath and getComponent
+// A script reaching around the entity tree and its components
 import { type Entity, PrimitiveMesh, Script } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { lit, PALETTE, phong, solid } from '../../shared/core-kit.ts';

@@ -1,4 +1,4 @@
-// registerWorldChangeFlag: a flag that turns true when the world matrix changes, so work can be cached
+// registerWorldChangeFlag turns true when the world matrix changes
 import { Matrix, PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

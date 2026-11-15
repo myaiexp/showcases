@@ -1,4 +1,4 @@
-// mergeScenes(source, dest): two scenes built apart become one before being added to the engine
+// mergeScenes(source, dest): two scenes become one before being added
 import { DirectLight, PrimitiveMesh, Scene } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

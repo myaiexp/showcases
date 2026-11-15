@@ -1,4 +1,4 @@
-// A child inside a moved, turned, scaled parent: local position, world position and lossy scale
+// A child of a moved, turned, scaled parent: local and world values
 import { PrimitiveMesh, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

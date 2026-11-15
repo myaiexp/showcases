@@ -1,4 +1,4 @@
-// Fixed-width mode: a 750 px wide drawing buffer scaled onto the page with setScale
+// Fixed-width mode: a 750 px drawing buffer scaled onto the page
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { lit, PALETTE, phong, solid, tick } from '../../shared/core-kit.ts';

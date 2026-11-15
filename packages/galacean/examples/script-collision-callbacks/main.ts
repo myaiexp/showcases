@@ -1,4 +1,4 @@
-// onCollisionEnter, onCollisionStay and onCollisionExit on a ball bouncing on a floor
+// onCollisionEnter, Stay and Exit on a ball bouncing on a floor
 import { type Collision, DynamicCollider, PrimitiveMesh, Script, StaticCollider, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

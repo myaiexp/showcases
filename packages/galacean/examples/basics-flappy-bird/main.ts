@@ -1,4 +1,4 @@
-// Flappy Bird as scripts: state events, free-fall flaps, pooled pipes, trigger colliders, a restart button
+// Flappy Bird as scripts: state events, flaps, pooled pipes, trigger colliders
 import { BoxColliderShape, Camera, type ColliderShape, DynamicCollider, type Engine, type Entity, EventDispatcher, Rect, Script, SphereColliderShape, Sprite, SpriteRenderer, StaticCollider, Texture2D, Vector2, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { panel } from '../../shared/core-ui.ts';

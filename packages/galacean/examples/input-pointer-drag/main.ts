@@ -1,4 +1,4 @@
-// onPointerDrag moves a cube: the pointer position becomes a ray, and the ray meets a plane
+// onPointerDrag moves a cube along a plane under the pointer's ray
 import { type Camera, PrimitiveMesh, Plane, PointerEventData, Ray, Script, StaticCollider, Vector2, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { boxShape, lit, PALETTE, phong, solid, tick } from '../../shared/core-kit.ts';

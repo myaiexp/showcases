@@ -1,4 +1,4 @@
-// A directional light with shadowType, scene.castShadows and per-renderer cast/receive flags
+// A directional light's shadowType with cast and receive flags
 import { ShadowType } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { caption, demo, tick } from '../../shared/gfx-kit.ts';

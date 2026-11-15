@@ -1,4 +1,4 @@
-// addComponent, getComponent, getComponents and getComponentsIncludeChildren on a small tree of Scripts
+// addComponent, getComponent, getComponents and getComponentsIncludeChildren
 import { Color, DirectLight, PrimitiveMesh, Script } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { addCamera, createStage } from '../../shared/stage.ts';

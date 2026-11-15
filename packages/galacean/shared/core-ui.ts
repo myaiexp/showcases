@@ -1,4 +1,4 @@
-// DOM overlays for Galacean examples: text panels, an event log, world-anchored labels, a ghost cursor
+// DOM overlays: text panels, an event log, world labels, a ghost cursor
 import type { Camera } from '@galacean/engine';
 import { Vector3 } from '@galacean/engine';
 import type { Stage } from './stage.ts';

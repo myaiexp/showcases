@@ -1,4 +1,4 @@
-// load([...]) resolves to an array in the order of the items, whatever order they finish in
+// load([...]) resolves in item order, whatever order the items finish in
 import { AssetType, type GLTFResource, type Texture2D } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { cubeGltfUrl, pictureFrame, pngBlobUrl, releaseUrls, tile } from '../../shared/assets-kit.ts';

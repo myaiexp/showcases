@@ -1,4 +1,4 @@
-// The InputManager's pointers: id, phase, button, position, deltaPosition and the isPointer* queries
+// The InputManager's pointers: id, phase, button, position and queries
 import { PointerButton, PointerPhase } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

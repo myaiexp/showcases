@@ -1,4 +1,4 @@
-// isActive switches an entity off; everything below it follows, which isActiveInHierarchy reports
+// isActive switches a subtree off, as isActiveInHierarchy reports
 import { PrimitiveMesh } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

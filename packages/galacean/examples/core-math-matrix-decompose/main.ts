@@ -1,4 +1,4 @@
-// affineTransformation versus T * R * S built by hand, and decompose() reading the parts back
+// affineTransformation versus T * R * S by hand, and decompose() back
 import { Matrix, PrimitiveMesh, Quaternion, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

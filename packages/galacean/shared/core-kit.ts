@@ -1,4 +1,4 @@
-// Scene helpers for Core, Script, Input and Assets examples: lights, solids, lines, per-frame ticks
+// Scene helpers for Core, Script, Input, Assets: lights, solids, ticks
 import {
   BlinnPhongMaterial,
   BoxColliderShape,

@@ -1,4 +1,4 @@
-// DepthTextureMode.PrePass: a water plane that foams where scene depth is close to its own
+// DepthTextureMode.PrePass: water that foams where scene depth meets it
 import { BlendFactor, DepthTextureMode, Material, PrimitiveMesh, RenderQueueType, Shader, Vector2 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, blinn, caption, demo, pbr, tick } from '../../shared/gfx-kit.ts';

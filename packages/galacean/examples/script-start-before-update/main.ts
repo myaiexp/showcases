@@ -1,4 +1,4 @@
-// All onStart calls run before the frame's onUpdate calls, so scripts can read each other's initial values
+// Every onStart runs before the frame's onUpdate calls
 import { type Entity, PrimitiveMesh, Script } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

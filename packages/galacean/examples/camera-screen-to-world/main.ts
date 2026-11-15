@@ -1,4 +1,4 @@
-// screenToWorldPoint: z of the input is the distance from the camera to the returned point
+// screenToWorldPoint: the input's z is the distance from the camera
 import { PrimitiveMesh, Vector3 } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { add, caption, demo, floor, pbr, tick } from '../../shared/gfx-kit.ts';

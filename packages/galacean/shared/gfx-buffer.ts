@@ -1,4 +1,4 @@
-// Plain GLSL shaders for BufferMesh examples: vertex colour, and instanced vertex colour
+// Plain GLSL shaders for BufferMesh examples: plain and instanced colour
 import { type Engine, Material, Shader } from '@galacean/engine';
 
 const VERT = `

@@ -1,4 +1,4 @@
-// Instanced drawing: VertexElement instanceStepRate = 1 and BufferMesh.instanceCount
+// Instanced drawing: instanceStepRate 1 and BufferMesh.instanceCount
 import { Buffer, BufferBindFlag, BufferMesh, BufferUsage, IndexFormat, MeshRenderer, VertexBufferBinding, VertexElement, VertexElementFormat } from '@galacean/engine';
 import type { Mount } from '@/types.ts';
 import { caption, demo, orbit, tick } from '../../shared/gfx-kit.ts';
