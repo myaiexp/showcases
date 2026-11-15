@@ -1,0 +1,9 @@
+/* Transparent background: the CSS scene under the globe's canvas */
+[data-example='globe-gl/transparent-background'] {
+  .backdrop {
+    background:
+      linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px) 0 0 / 24px 24px,
+      linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px) 0 0 / 24px 24px,
+      radial-gradient(circle at 30% 20%, #ff7e5f, #6a3093 55%, #12122a);
+  }
+}

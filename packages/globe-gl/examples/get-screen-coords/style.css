@@ -1,0 +1,22 @@
+/* getScreenCoords: DOM labels laid over the canvas */
+[data-example='globe-gl/get-screen-coords'] {
+  .overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .tag {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 1px 5px;
+    margin: -9px 0 0 6px;
+    border-left: 2px solid #ffd166;
+    background: rgba(10, 15, 30, 0.75);
+    color: #fff;
+    font: 11px/1.4 ui-sans-serif, system-ui, sans-serif;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+  }
+}
