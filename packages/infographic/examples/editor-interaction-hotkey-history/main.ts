@@ -78,12 +78,21 @@ const mount: Mount = async (el, ctx) => {
 
   if (ctx.preview) {
     stage.cycle([
-      { say: 'execute: first label recoloured', run: recolour, hold: 1000 },
+      {
+        // Each loop starts from a fresh render (a fresh editor, empty history) so the recolours show again.
+        say: 'execute: first label recoloured',
+        run: async () => {
+          infographic.render(SYNTAX);
+          n = 0;
+          await recolour();
+        },
+        hold: 1000,
+      },
       { say: 'execute: second label recoloured', run: recolour, hold: 1000 },
       { say: 'Ctrl+Z: undo', run: () => driver.api?.commander.undo(), hold: 1000 },
       { say: 'Ctrl+Z: undo', run: () => driver.api?.commander.undo(), hold: 1000 },
       { say: 'Ctrl+Y: redo', run: () => driver.api?.commander.redo(), hold: 1000 },
-      { say: 'Ctrl+Y: redo', run: async () => { await driver.api?.commander.redo(); n = 0; driver.api?.commander.clear(); }, hold: 1000 },
+      { say: 'Ctrl+Y: redo', run: () => driver.api?.commander.redo(), hold: 1000 },
     ]);
   }
   return () => stage.dispose();

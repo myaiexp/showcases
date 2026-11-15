@@ -81,7 +81,7 @@ data
 ];
 
 const mount: Mount = async (el, ctx) => {
-  const stage = await createStage(el, ctx, { hint: 'Pause the cycle, then click the green + and red buttons that appear around the items.' });
+  const stage = await createStage(el, ctx, { hint: 'The add and remove buttons are in the SVG but hidden: 0.2.20 draws its BtnsGroup with display: none.' });
   const infographic = stage.own(
     new Infographic({
       container: stage.box,

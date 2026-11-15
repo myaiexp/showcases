@@ -24,11 +24,14 @@ const mount: Mount = async (el, ctx) => {
     ['<path d="M12 2 22 12 12 22 2 12z"/>', '<path d="M3 12h18M12 3v18" stroke="white" stroke-width="4"/>', '<circle cx="12" cy="12" r="4"/>'],
   ];
 
+  // One blob: URL per shape, made once: each loop reuses them, and cleanup revokes all six.
+  const sets = SHAPES.map((shapes) => shapes.map((s) => blobUrl(s, urls)));
+
   stage.cycle(
-    SHAPES.map((shapes, i) => ({
+    sets.map((set, i) => ({
       say: `ref:remote:svg:blob:... (set ${i + 1})`,
       run: () => {
-        const [a, b, c] = shapes.map((s) => blobUrl(s, urls));
+        const [a, b, c] = set;
         const syntax = `infographic list-row-horizontal-icon-arrow
 theme dark
 data

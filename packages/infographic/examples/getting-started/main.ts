@@ -1,7 +1,25 @@
-// The docs' complete starting example: a design, a dark hand-drawn theme and data, editable
+// The docs' starting example: design, dark hand-drawn theme, data, editable
 import { Infographic } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
+
+const ITEMS = [
+  `    - label Step 1
+      desc Start
+      time Last Day
+      icon mdi/rocket-launch
+`,
+  `    - label Step 2
+      desc In Progress
+      time Today
+      icon mdi/progress-clock
+`,
+  `    - label Step 3
+      desc Complete
+      time Tomorrow
+      icon mdi/trophy
+`,
+];
 
 const mount: Mount = async (el, ctx) => {
   const stage = await createStage(el, ctx, { hint: 'Double-click a label to edit it, drag to pan, scroll to zoom.' });
@@ -17,7 +35,8 @@ const mount: Mount = async (el, ctx) => {
     }),
   );
 
-  infographic.render(`
+  // The docs' spec as one string; `steps` keeps the first n data items.
+  const spec = (steps: number) => `
 design
   title default
     width 300
@@ -37,19 +56,14 @@ theme dark
 data
   title Project Progress
   items
-    - label Step 1
-      desc Start
-      time Last Day
-      icon mdi/rocket-launch
-    - label Step 2
-      desc In Progress
-      time Today
-      icon mdi/progress-clock
-    - label Step 3
-      desc Complete
-      time Tomorrow
-      icon mdi/trophy
-`);
+${ITEMS.slice(0, steps).join('')}`;
+
+  if (ctx.preview) {
+    // The card builds the list up one step at a time; the full view renders it once, to edit.
+    stage.cycle([1, 2, 3].map((n) => ({ say: `${n} of 3 items`, run: () => infographic.render(spec(n)) })));
+  } else {
+    infographic.render(spec(3));
+  }
 
   return () => stage.dispose();
 };
