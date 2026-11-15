@@ -28,7 +28,6 @@ export default definePackage({
     'Configuration Options',
     'Responsive / Fluid Layouts',
     'uirevision in Plotly.react',
-    'Plotly.react',
     'Colorscales',
     'Colorway',
     'Text and Font Styling',

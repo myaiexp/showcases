@@ -48,7 +48,11 @@ export interface Stage {
   readonly config: Partial<Config>;
   /** Control bar above the graph in the full view; null in cards. */
   readonly bar: HTMLElement | null;
-  /** Calls fn(i) every ms (i counts from 1) until the stage is disposed. */
+  /**
+   * Calls fn(i) every ms (i counts from 1) until the stage is disposed, in cards and the
+   * full view alike: a loop that only keeps a card alive goes behind `if (stage.preview)`,
+   * so it never fights the full view's controls.
+   */
   every(ms: number, fn: (i: number) => void): void;
   /** Registers a teardown that runs before the plot is purged. */
   own(fn: () => void): void;
