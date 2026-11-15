@@ -52,6 +52,17 @@
 // - Keyboard focus in a card: dispatch keydown with `bubbles: true` on the chart svg.
 // - The built-in tooltip is a role=status element whose textContent runs rows together
 //   ("xMayy76,000"): read rows from the DOM, not textContent, when quoting it.
+// - `renderChartSvg` output has no xmlns and is sized 100%: as an image or file it fails to
+//   decode. `serializeChartSvg` adds both (`render-view.ts` `svgBlob` patches the former).
+// - Scenes hold unpainted focus-candidate dots (a 2,000-row lineY: one polyline, 2,000 dot
+//   nodes, zero circles in the DOM). Custom renderers skip `group` nodes with a `focus` field.
+// - Inferred keys come from channel values, not position: they survive a reorder, not an edit.
+// - Decorative createMark with `scales: { x: null, y: null }` needs `createMark<…, never, never>`;
+//   `createCanvasChartRenderer` needs explicit generics for `mountChartRenderer`.
+// - A ChartTextMeasurer's `x` is the glyph box's left edge from the anchor: an end-anchored label
+//   needs `x = -width`, or the margin never grows.
+// - Layered hosts (canvas, mixed, mountCanvasChart) all need `stage.box.style.height`.
+// - Card captions: one short line, and take ~34px off the chart height for it.
 // - A first visit to a new subpath (polar, hierarchy/*, spatial/*) makes Vite re-optimise and
 //   reload the dev page: a blank chart for a while is that, not a bug.
 import type { MountContext } from '@/types.ts';
