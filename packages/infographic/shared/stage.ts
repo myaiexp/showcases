@@ -27,6 +27,17 @@
 // - With no template, the data list is taken from the first present of lists, sequences,
 //   compares, nodes, values, root: use the field the structure expects.
 // - Function props (valueFormatter, formatter) cannot be written in syntax: use an options object.
+// - A ResourceConfig object needs an explicit `scene: 'icon' | 'illus'`: without it the library
+//   hashes the config into the symbol id, then sets scene on the same object, and the <use>
+//   points at an id that no longer exists (an empty circle). Strings are re-parsed and fine.
+// - An SVG as `data:image/svg+xml;charset=utf-8,<encoded>` is drawn as an <image>, so the theme
+//   cannot recolour it (black on dark): give it its own fill. Raw SVG text and the plain
+//   `data:image/svg+xml,<svg…>` form are inlined and take the theme colour.
+// - Docs claims wrong for 0.2.20: title options are read only as alignHorizontal and
+//   descLineNumber (not align-horizontal / desc-line-number), and do little; there is no
+//   chart-column-grouped-simple template (category is parsed, no built-in chart uses it);
+//   syntax `stylize` accepts only rough and pattern, so gradients need an options object.
+// - No `title` line in a design block means no title is drawn.
 import type { Infographic } from '@antv/infographic';
 import type { MountContext } from '@/types.ts';
 import { infographicReady } from './setup.ts';
