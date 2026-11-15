@@ -17,7 +17,7 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "pie: the single stacked bar is bent into a circle",
+      say: 'pie: the single stacked bar is bent into a circle',
       // A preset returns a whole chart config, so it can go straight into animate().
       run: (c) => c.animate(Vizzu.presets.pie({ angle: 'Sales', by: 'Region', title: 'Sales by region' })),
       hold: 2400,

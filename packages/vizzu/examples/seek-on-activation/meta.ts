@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Seek when the animation starts",
+  title: 'Seek when the animation starts',
   summary:
     "animate() returns a promise with an activated property that resolves with the animation's control as soon as it starts. Calling seek('50%') on it jumps the animation to half way, so the columns appear half moved and finish from there.",
-  section: "Animation control & keyframes",
-  tags: ['animate','activated','AnimControl','seek'],
+  section: 'Animation control & keyframes',
+  tags: ['animate', 'activated', 'AnimControl', 'seek'],
   docs: [
     'repo/docs/tutorial/animation_control_keyframes.md',
     'repo/docs/tutorial/animation_control_keyframes/01.js',

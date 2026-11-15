@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: Vizzu.presets.stackedColumn({ x: 'Genres', y: 'Popularity', stackedBy: 'Kinds', title: 'Genres, stacked by kind' }),
+    config: Vizzu.presets.stackedColumn({
+      x: 'Genres',
+      y: 'Popularity',
+      stackedBy: 'Kinds',
+      title: 'Genres, stacked by kind',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "percentageColumn: every column stretched to full height, so the pieces show shares",
+      say: 'percentageColumn: every column stretched to full height, so the pieces show shares',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.percentageColumn({ x: 'Genres', y: 'Popularity', stackedBy: 'Kinds', title: 'Share of each kind' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.percentageColumn({
+            x: 'Genres',
+            y: 'Popularity',
+            stackedBy: 'Kinds',
+            title: 'Share of each kind',
+          }),
+        ),
       hold: 2400,
     },
   ]);

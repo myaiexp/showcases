@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'HTML canvas API',
   summary:
-    "chart.feature.htmlCanvas exposes the canvas element Vizzu draws on and the conversions clientToCanvas and canvasToClient between page and canvas coordinates. The card prints the canvas size; in the full view a cross drawn at the converted pointer position follows the mouse.",
+    'chart.feature.htmlCanvas exposes the canvas element Vizzu draws on and the conversions clientToCanvas and canvasToClient between page and canvas coordinates. The card prints the canvas size; in the full view a cross drawn at the converted pointer position follows the mouse.',
   section: 'Code reference',
   tags: ['feature', 'htmlCanvas', 'element', 'clientToCanvas', 'canvasToClient', 'draw-complete'],
   docs: [

@@ -12,14 +12,28 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: marketData,
-    config: Vizzu.presets.stackedColumn({ x: 'Region', y: 'Sales', stackedBy: 'Channel', title: 'Sales by region and channel' }),
+    config: Vizzu.presets.stackedColumn({
+      x: 'Region',
+      y: 'Sales',
+      stackedBy: 'Channel',
+      title: 'Sales by region and channel',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "mekko: a column per region, as wide as its Customers, stacked by channel",
+      say: 'mekko: a column per region, as wide as its Customers, stacked by channel',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.mekko({ x: 'Customers', groupedBy: 'Region', y: 'Sales', stackedBy: 'Channel', title: 'Column width is customers' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.mekko({
+            x: 'Customers',
+            groupedBy: 'Region',
+            y: 'Sales',
+            stackedBy: 'Channel',
+            title: 'Column width is customers',
+          }),
+        ),
       hold: 2400,
     },
   ]);

@@ -30,7 +30,7 @@ const mount: Mount = async (el, ctx) => {
   let added = false;
   stage.story(chart, [
     {
-      say: "Add three Soul records and switch the filter off",
+      say: 'Add three Soul records and switch the filter off',
       run: (c) => {
         if (added) return c.animate({ data: { filter: null } });
         added = true;

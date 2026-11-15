@@ -15,7 +15,8 @@ class ExamplePlugin implements Plugins.Plugin {
       prepareAnimation: (ctx: Plugins.PrepareAnimationContext, next: () => void): void => {
         // By now the shorthands plugin has turned animate()'s argument into a list of keyframes.
         const keyframe = Array.isArray(ctx.target) ? ctx.target[0]?.target : undefined;
-        const config: Config.Chart | undefined = keyframe && 'config' in keyframe ? keyframe.config : undefined;
+        const config: Config.Chart | undefined =
+          keyframe && 'config' in keyframe ? keyframe.config : undefined;
         // A stored snapshot has no config to edit: leave those animations alone.
         if (config) {
           const color = config.channels?.color;
@@ -37,7 +38,13 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, label: { set: ['Popularity'] } } },
+    config: {
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [

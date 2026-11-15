@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Align: stretch = % view",
+      title: 'Align: stretch = % view',
       channels: {
         y: { set: ['Popularity', 'Kinds'], align: 'stretch' },
         x: { set: ['Genres'] },
@@ -26,13 +26,14 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "y: align none, the default",
-      run: (c) => c.animate({
-        config: {
-          title: 'Align: none - default',
-          channels: { y: { align: 'none' } },
-        },
-      }),
+      say: 'y: align none, the default',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: 'Align: none - default',
+            channels: { y: { align: 'none' } },
+          },
+        }),
       hold: 2600,
     },
   ]);

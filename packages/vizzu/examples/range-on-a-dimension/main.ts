@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Axis range on a dimension, the default",
+      title: 'Axis range on a dimension, the default',
       channels: {
         y: { set: ['Popularity', 'Kinds'] },
         x: { set: ['Genres'] },
@@ -26,13 +26,14 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "x: range from -2 to 3",
-      run: (c) => c.animate({
-        config: {
-          title: 'Axis range set explicitly on an axis with discrete series',
-          channels: { x: { range: { min: -2, max: 3 } } },
-        },
-      }),
+      say: 'x: range from -2 to 3',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: 'Axis range set explicitly on an axis with discrete series',
+            channels: { x: { range: { min: -2, max: 3 } } },
+          },
+        }),
       hold: 2800,
     },
   ]);

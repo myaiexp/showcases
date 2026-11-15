@@ -21,7 +21,15 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Easing curves', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Easing curves',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, steps, { rewind: false });

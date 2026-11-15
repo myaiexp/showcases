@@ -14,14 +14,25 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Custom unit for duration', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Custom unit for duration',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
     { say: "animate(target, '500ms')", run: (c) => c.animate(toGrouped, '500ms'), hold: 1200 },
     { say: "animate(target, '2s')", run: (c) => c.animate(toStacked, '2s') },
     { say: 'animate(target, 1.5): a number is seconds', run: (c) => c.animate(toGrouped, 1.5) },
-    { say: "animate(target, { duration: '3000ms' }): the longhand form", run: (c) => c.animate(toStacked, { duration: '3000ms' }) },
+    {
+      say: "animate(target, { duration: '3000ms' }): the longhand form",
+      run: (c) => c.animate(toStacked, { duration: '3000ms' }),
+    },
   ]);
   return () => stage.dispose();
 };

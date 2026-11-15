@@ -14,7 +14,9 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] } } },
+    config: {
+      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] } },
+    },
   });
 
   stage.story(chart, [
@@ -25,11 +27,12 @@ const mount: Mount = async (el, ctx) => {
     {
       say: stage.preview ? 'Tooltips are on: hover a column in the full view' : 'Stacked again',
       run: (c) =>
-        c.animate({ config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } } }),
+        c.animate({
+          config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } },
+        }),
     },
   ]);
   return () => stage.dispose();
 };
 
 export default mount;
-

@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Range: back to auto",
+  title: 'Range: back to auto',
   summary:
-    "After fixing a range on both axes, setting min and max to \"auto\" hands control back to Vizzu, which picks the range from the chart configuration again.",
-  section: "Align & range",
-  tags: ['range','auto','channels'],
+    'After fixing a range on both axes, setting min and max to "auto" hands control back to Vizzu, which picks the range from the chart configuration again.',
+  section: 'Align & range',
+  tags: ['range', 'auto', 'channels'],
   docs: [
     'repo/docs/tutorial/align_range.md',
     'repo/docs/tutorial/align_range/04_b.js',

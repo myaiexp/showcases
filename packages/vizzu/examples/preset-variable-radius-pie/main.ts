@@ -12,14 +12,28 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: countryData,
-    config: Vizzu.presets.mekko({ x: 'Population', groupedBy: 'Country', y: 'Income', stackedBy: [], title: 'Income by country, wide = population' }),
+    config: Vizzu.presets.mekko({
+      x: 'Population',
+      groupedBy: 'Country',
+      y: 'Income',
+      stackedBy: [],
+      title: 'Income by country, wide = population',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "variableRadiusPie: each column becomes a slice as wide as its population and as long as its income",
+      say: 'variableRadiusPie: each column becomes a slice as wide as its population and as long as its income',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.variableRadiusPie({ angle: 'Population', by: 'Country', radius: 'Income', title: 'Income by country, wide = population' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.variableRadiusPie({
+            angle: 'Population',
+            by: 'Country',
+            radius: 'Income',
+            title: 'Income by country, wide = population',
+          }),
+        ),
       hold: 2400,
     },
   ]);

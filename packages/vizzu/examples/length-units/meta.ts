@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Pixels, percent and em",
+  title: 'Pixels, percent and em',
   summary:
-    "Every size style accepts a number of pixels, a percentage of the chart, or em, relative to the font size. The legend width is set in all three in turn: \"120px\", \"25%\" and \"8em\".",
-  section: "Chart layout",
-  tags: ['style','legend.width','units','px','%','em'],
+    'Every size style accepts a number of pixels, a percentage of the chart, or em, relative to the font size. The legend width is set in all three in turn: "120px", "25%" and "8em".',
+  section: 'Chart layout',
+  tags: ['style', 'legend.width', 'units', 'px', '%', 'em'],
   docs: [
     'repo/docs/tutorial/chart_layout.md',
     'repo/docs/tutorial/chart_layout/01.js',

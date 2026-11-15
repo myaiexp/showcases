@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Reverse the order",
+  title: 'Reverse the order',
   summary:
-    "reverse flips the order. After a byValue sort it gives descending order. Without a sort it flips the order of the data set itself: Pop, Rock, Jazz, Metal becomes Metal, Jazz, Rock, Pop.",
-  section: "Sorting",
-  tags: ['sort','reverse','byValue','channels'],
+    'reverse flips the order. After a byValue sort it gives descending order. Without a sort it flips the order of the data set itself: Pop, Rock, Jazz, Metal becomes Metal, Jazz, Rock, Pop.',
+  section: 'Sorting',
+  tags: ['sort', 'reverse', 'byValue', 'channels'],
   docs: [
     'repo/docs/tutorial/sorting.md',
     'repo/docs/tutorial/sorting/02_a.js',

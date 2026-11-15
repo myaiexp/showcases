@@ -38,11 +38,12 @@ const mount: Mount = async (el, ctx) => {
     {
       say: "'' makes the unlabelled third category; the 0 records add nothing to their columns",
       run: (c) =>
-        c.animate({ config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } } }),
+        c.animate({
+          config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } },
+        }),
     },
   ]);
   return () => stage.dispose();
 };
 
 export default mount;
-

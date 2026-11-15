@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Aggregate",
+      title: 'Aggregate',
       channels: {
         y: { set: ['Popularity', 'Kinds'] },
         x: { set: ['Genres'] },
@@ -26,7 +26,7 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "x: set null, the genres are summed",
+      say: 'x: set null, the genres are summed',
       run: (c) => c.animate({ config: { channels: { x: { set: null } } } }),
       hold: 2800,
     },

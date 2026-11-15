@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: salesData,
-    config: Vizzu.presets.stackedArea({ x: 'Year', y: 'Revenue', stackedBy: 'Region', title: 'Revenue by region, stacked' }),
+    config: Vizzu.presets.stackedArea({
+      x: 'Year',
+      y: 'Revenue',
+      stackedBy: 'Region',
+      title: 'Revenue by region, stacked',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "percentageArea: the stacked areas stretched to the full height, so they show shares",
+      say: 'percentageArea: the stacked areas stretched to the full height, so they show shares',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.percentageArea({ x: 'Year', y: 'Revenue', stackedBy: 'Region', title: 'Share of revenue by region' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.percentageArea({
+            x: 'Year',
+            y: 'Revenue',
+            stackedBy: 'Region',
+            title: 'Share of revenue by region',
+          }),
+        ),
       hold: 2400,
     },
   ]);

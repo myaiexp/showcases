@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Treemap",
+      title: 'Treemap',
       channels: {
         y: { set: null },
         x: { set: null },
@@ -27,10 +27,11 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "geometry circle",
-      run: (c) => c.animate({
-        config: { title: 'Bubble chart - stacked', geometry: 'circle' },
-      }),
+      say: 'geometry circle',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Bubble chart - stacked', geometry: 'circle' },
+        }),
       hold: 3000,
     },
   ]);

@@ -15,13 +15,19 @@ const mount: Mount = async (el, ctx) => {
     data: musicData,
     config: {
       title: 'Chart with its normal background',
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
 
   // The docs' 3x2 pixel GIF, stretched over the whole chart.
   const image = new Image();
-  image.src = 'data:image/gif;base64,R0lGODlhAwACAPIAAJLf6q/i7M/r8un0+PT6+/n8/QAAAAAAACH5BAQAAAAALAAAAAADAAIAAAMEWBMkkAA7';
+  image.src =
+    'data:image/gif;base64,R0lGODlhAwACAPIAAJLf6q/i7M/r8un0+PT6+/n8/QAAAAAAACH5BAQAAAAALAAAAAADAAIAAAMEWBMkkAA7';
   const loaded = image.decode().catch(() => {});
 
   const backgroundImageHandler = (event: EventOf<'background-draw'>): void => {

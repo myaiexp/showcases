@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Axis range as set by default",
+      title: 'Axis range as set by default',
       channels: {
         y: { set: ['Popularity', 'Kinds'] },
         x: { set: ['Genres'] },
@@ -27,19 +27,25 @@ const mount: Mount = async (el, ctx) => {
   stage.story(chart, [
     {
       say: "y: range max '50max', 50 above the largest value",
-      run: (c) => c.animate({ config: { title: "max: '50max'", channels: { y: { range: { max: '50max' } } } } }),
+      run: (c) =>
+        c.animate({ config: { title: "max: '50max'", channels: { y: { range: { max: '50max' } } } } }),
     },
     {
       say: "y: range max '-50max', 50 below it",
-      run: (c) => c.animate({ config: { title: "max: '-50max'", channels: { y: { range: { max: '-50max' } } } } }),
+      run: (c) =>
+        c.animate({ config: { title: "max: '-50max'", channels: { y: { range: { max: '-50max' } } } } }),
     },
     {
       say: "y: range max '5min', 5 above the smallest value",
-      run: (c) => c.animate({ config: { title: "max: '5min'", channels: { y: { range: { max: '5min' } } } } }),
+      run: (c) =>
+        c.animate({ config: { title: "max: '5min'", channels: { y: { range: { max: '5min' } } } } }),
     },
     {
       say: "y: range min '-50min', max 'auto'",
-      run: (c) => c.animate({ config: { title: "min: '-50min'", channels: { y: { range: { min: '-50min', max: 'auto' } } } } }),
+      run: (c) =>
+        c.animate({
+          config: { title: "min: '-50min'", channels: { y: { range: { min: '-50min', max: 'auto' } } } },
+        }),
     },
   ]);
   return () => stage.dispose();

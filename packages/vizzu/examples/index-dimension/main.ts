@@ -28,11 +28,12 @@ const mount: Mount = async (el, ctx) => {
     {
       say: 'Genres and Kinds hold indexes; the chart shows their category names',
       run: (c) =>
-        c.animate({ config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } } }),
+        c.animate({
+          config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } },
+        }),
     },
   ]);
   return () => stage.dispose();
 };
 
 export default mount;
-

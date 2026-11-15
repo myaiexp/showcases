@@ -17,9 +17,17 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "groupedColumn: one group of columns per genre, one column per kind, coloured by kind",
+      say: 'groupedColumn: one group of columns per genre, one column per kind, coloured by kind',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.groupedColumn({ groupedBy: 'Genres', x: 'Kinds', y: 'Popularity', title: 'Each genre by kind' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.groupedColumn({
+            groupedBy: 'Genres',
+            x: 'Kinds',
+            y: 'Popularity',
+            title: 'Each genre by kind',
+          }),
+        ),
       hold: 2400,
     },
   ]);

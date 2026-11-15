@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: Vizzu.presets.stackedBar({ x: 'Popularity', stackedBy: 'Kinds', y: 'Genres', title: 'Genres, stacked by kind' }),
+    config: Vizzu.presets.stackedBar({
+      x: 'Popularity',
+      stackedBy: 'Kinds',
+      y: 'Genres',
+      title: 'Genres, stacked by kind',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "percentageBar: every bar stretched to full length, so the pieces show shares",
+      say: 'percentageBar: every bar stretched to full length, so the pieces show shares',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.percentageBar({ x: 'Popularity', stackedBy: 'Kinds', y: 'Genres', title: 'Share of each kind' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.percentageBar({
+            x: 'Popularity',
+            stackedBy: 'Kinds',
+            y: 'Genres',
+            title: 'Share of each kind',
+          }),
+        ),
       hold: 2400,
     },
   ]);

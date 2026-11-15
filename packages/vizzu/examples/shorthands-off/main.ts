@@ -14,7 +14,12 @@ const mount: Mount = async (el, ctx) => {
     data: musicData,
     config: {
       title: 'Shorthands are on',
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
 
@@ -51,7 +56,10 @@ const mount: Mount = async (el, ctx) => {
             target: {
               config: {
                 title: 'Shorthands off: the long form',
-                channels: { x: { set: [{ name: 'Genres' }] }, y: { set: [{ name: 'Popularity' }, { name: 'Kinds' }] } },
+                channels: {
+                  x: { set: [{ name: 'Genres' }] },
+                  y: { set: [{ name: 'Popularity' }, { name: 'Kinds' }] },
+                },
               },
             },
           },

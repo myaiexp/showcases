@@ -17,9 +17,17 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "stackedTreemap: each region tile is cut into its channels",
+      say: 'stackedTreemap: each region tile is cut into its channels',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.stackedTreemap({ size: 'Sales', dividedBy: 'Region', color: 'Channel', title: 'Sales by region and channel' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.stackedTreemap({
+            size: 'Sales',
+            dividedBy: 'Region',
+            color: 'Channel',
+            title: 'Sales by region and channel',
+          }),
+        ),
       hold: 2400,
     },
   ]);

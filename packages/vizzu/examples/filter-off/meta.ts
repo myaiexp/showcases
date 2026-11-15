@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Switch the filter off",
+  title: 'Switch the filter off',
   summary:
-    "Passing null as the filter clears it and brings every record back. Without that, Vizzu keeps using the last filter in later states.",
-  section: "Filtering & adding new records",
-  tags: ['filter','null','data'],
+    'Passing null as the filter clears it and brings every record back. Without that, Vizzu keeps using the last filter in later states.',
+  section: 'Filtering & adding new records',
+  tags: ['filter', 'null', 'data'],
   docs: [
     'repo/docs/tutorial/filter_add_new_records.md',
     'repo/docs/tutorial/filter_add_new_records/02_b.js',

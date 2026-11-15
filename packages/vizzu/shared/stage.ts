@@ -36,6 +36,11 @@
 //   series as { name } objects. The story's rewind passes a snapshot, which needs them back on.
 // - feature('logging', true) prints nothing in the 0.18.0 npm build. chart.version() returns
 //   "0.18.0-1-d81a7e-[Apr 20 2026 12:43:09]".
+// - Style defaults that make a setting look like a no-op: numberFormat is 'prefixed'; about
+//   four significant digits show anyway; marker labels already sit on top of columns; x-axis
+//   label side is 'negative'; rectangleSpacing is about 0.75. plot.xAxis ticks / guides draw
+//   only when the channel sets ticks / guides: true. legend.maxWidth caps an explicit width only.
+// - plot.overflow 'visible' → 'hidden' does not clip again, so it cannot loop.
 // - Tooltips need a real pointer over the canvas: synthetic events and caxi hovers show none.
 import type Vizzu from 'vizzu';
 import type { MountContext } from '@/types.ts';

@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: salesData,
-    config: Vizzu.presets.stackedColumn({ x: 'Year', y: 'Revenue', stackedBy: 'Region', title: 'Revenue by year and region' }),
+    config: Vizzu.presets.stackedColumn({
+      x: 'Year',
+      y: 'Revenue',
+      stackedBy: 'Region',
+      title: 'Revenue by year and region',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "heatmap: a grid of years and regions, each cell lighter the more revenue it holds",
+      say: 'heatmap: a grid of years and regions, each cell lighter the more revenue it holds',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.heatmap({ x: 'Year', y: 'Region', lightness: 'Revenue', title: 'Revenue by year and region, as a heatmap' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.heatmap({
+            x: 'Year',
+            y: 'Region',
+            lightness: 'Revenue',
+            title: 'Revenue by year and region, as a heatmap',
+          }),
+        ),
       hold: 2400,
     },
   ]);

@@ -17,7 +17,7 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "color: attach Genres, legend: color",
+      say: 'color: attach Genres, legend: color',
       run: (c) => c.animate({ config: { channels: { color: { attach: ['Genres'] } }, legend: 'color' } }),
       hold: 2600,
     },

@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Preset: treemap',
   summary:
-    "Vizzu.presets.treemap({ size, color }) puts no series on the axes. It sets size to size and then color, colours and labels by color, so the area of each tile shows its size value.",
+    'Vizzu.presets.treemap({ size, color }) puts no series on the axes. It sets size to size and then color, colours and labels by color, so the area of each tile shows its size value.',
   section: 'Chart presets',
   tags: ['presets', 'treemap'],
   docs: [

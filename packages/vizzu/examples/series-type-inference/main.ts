@@ -6,7 +6,9 @@ import { darkStyle } from '../../shared/theme.ts';
 import type { Data } from 'vizzu';
 
 const mount: Mount = async (el, ctx) => {
-  const stage = await createStage(el, ctx, { hint: 'The panel lists what chart.data reports for each series.' });
+  const stage = await createStage(el, ctx, {
+    hint: 'The panel lists what chart.data reports for each series.',
+  });
   const chart = stage.own(new Vizzu(stage.element, { style: darkStyle }));
   await chart.initializing;
 
@@ -32,11 +34,12 @@ const mount: Mount = async (el, ctx) => {
     {
       say: `Untyped series became: ${types.join(', ')}`,
       run: (c) =>
-        c.animate({ config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } } }),
+        c.animate({
+          config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } },
+        }),
     },
   ]);
   return () => stage.dispose();
 };
 
 export default mount;
-

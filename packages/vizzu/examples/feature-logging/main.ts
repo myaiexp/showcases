@@ -6,7 +6,9 @@ import { darkStyle } from '../../shared/theme.ts';
 import { musicData } from '../../shared/music.ts';
 
 const mount: Mount = async (el, ctx) => {
-  const stage = await createStage(el, ctx, { hint: 'Logging is switched on in this view: watch the browser console.' });
+  const stage = await createStage(el, ctx, {
+    hint: 'Logging is switched on in this view: watch the browser console.',
+  });
   const chart = stage.own(new Vizzu(stage.element, { style: darkStyle }));
   await chart.initializing;
 
@@ -43,7 +45,12 @@ const mount: Mount = async (el, ctx) => {
     data: musicData,
     config: {
       title: stage.preview ? 'Logging is on in the full view only' : 'Logging on: see the console',
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
 

@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Drill-down",
+      title: 'Drill-down',
       channels: {
         y: { set: ['Popularity'] },
         x: { set: ['Genres'] },
@@ -25,12 +25,13 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "y: attach Kinds, colour: Kinds",
-      run: (c) => c.animate({
-        config: {
-          channels: { y: { attach: ['Kinds'] }, color: { set: ['Kinds'] } },
-        },
-      }),
+      say: 'y: attach Kinds, colour: Kinds',
+      run: (c) =>
+        c.animate({
+          config: {
+            channels: { y: { attach: ['Kinds'] }, color: { set: ['Kinds'] } },
+          },
+        }),
       hold: 2800,
     },
   ]);

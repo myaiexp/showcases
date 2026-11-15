@@ -17,9 +17,17 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "stackedBubble: each kind of music splits into one bubble per genre",
+      say: 'stackedBubble: each kind of music splits into one bubble per genre',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.stackedBubble({ size: 'Popularity', color: 'Kinds', stackedBy: 'Genres', title: 'Popularity by kind and genre' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.stackedBubble({
+            size: 'Popularity',
+            color: 'Kinds',
+            stackedBy: 'Genres',
+            title: 'Popularity by kind and genre',
+          }),
+        ),
       hold: 2400,
     },
   ]);

@@ -14,7 +14,12 @@ const mount: Mount = async (el, ctx) => {
     data: musicData,
     config: {
       title: 'The logo sits in the bottom right corner',
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
 

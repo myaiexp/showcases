@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "A colour range from a measure",
+  title: 'A colour range from a measure',
   summary:
-    "When the color channel carries a measure instead of a dimension, Vizzu colours the markers along a range, so the legend is a gradient bar rather than a list of names. Here Popularity, which also gives the column heights, sets the colours.",
-  section: "Channels & legend",
-  tags: ['color','legend','channels','attach'],
+    'When the color channel carries a measure instead of a dimension, Vizzu colours the markers along a range, so the legend is a gradient bar rather than a list of names. Here Popularity, which also gives the column heights, sets the colours.',
+  section: 'Channels & legend',
+  tags: ['color', 'legend', 'channels', 'attach'],
   docs: [
     'repo/docs/tutorial/channels_legend.md',
     'repo/docs/tutorial/channels_legend/03_a.js',

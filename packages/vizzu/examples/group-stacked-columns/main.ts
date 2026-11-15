@@ -12,13 +12,19 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: '...then you can add it to another channel = group elements', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] } } },
+    config: {
+      title: '...then you can add it to another channel = group elements',
+      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] } },
+    },
   });
 
   stage.story(chart, [
     {
-      say: "Kinds: detach from y, attach to x",
-      run: (c) => c.animate({ config: { title: 'Grouped', channels: { y: { detach: ['Kinds'] }, x: { attach: ['Kinds'] } } } }),
+      say: 'Kinds: detach from y, attach to x',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Grouped', channels: { y: { detach: ['Kinds'] }, x: { attach: ['Kinds'] } } },
+        }),
       hold: 2600,
     },
   ]);

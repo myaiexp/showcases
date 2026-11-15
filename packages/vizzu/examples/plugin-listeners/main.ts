@@ -44,8 +44,15 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: stage.preview ? 'Listeners count animations (clicks need the full view)' : 'The plugin counts clicks and animations',
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      title: stage.preview
+        ? 'Listeners count animations (clicks need the full view)'
+        : 'The plugin counts clicks and animations',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
 

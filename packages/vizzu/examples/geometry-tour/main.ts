@@ -12,7 +12,10 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Geometry: rectangle - default', channels: { y: { set: ['Popularity'] }, x: { set: ['Genres'] } } },
+    config: {
+      title: 'Geometry: rectangle - default',
+      channels: { y: { set: ['Popularity'] }, x: { set: ['Genres'] } },
+    },
   });
 
   stage.story(chart, [

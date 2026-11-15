@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Preset: stackedTreemap',
   summary:
-    "Vizzu.presets.stackedTreemap({ size, dividedBy, color }) sets size to size and then dividedBy, colours by color, labels dividedBy and also maps size to lightness, so the tiles of a group are tinted by their size.",
+    'Vizzu.presets.stackedTreemap({ size, dividedBy, color }) sets size to size and then dividedBy, colours by color, labels dividedBy and also maps size to lightness, so the tiles of a group are tinted by their size.',
   section: 'Chart presets',
   tags: ['presets', 'stackedTreemap'],
   docs: [

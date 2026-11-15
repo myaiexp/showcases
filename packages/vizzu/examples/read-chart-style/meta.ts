@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Read chart.style",
+  title: 'Read chart.style',
   summary:
-    "The style property holds the actual style settings of the chart, defaults included. The side panel prints a few of them before and after a palette and a title font size are set, so you can see the values the chart resolved.",
-  section: "Color palette & fonts",
-  tags: ['chart.style','style','colorPalette','fontSize'],
+    'The style property holds the actual style settings of the chart, defaults included. The side panel prints a few of them before and after a palette and a title font size are set, so you can see the values the chart resolved.',
+  section: 'Color palette & fonts',
+  tags: ['chart.style', 'style', 'colorPalette', 'fontSize'],
   docs: [
     'repo/docs/tutorial/color_palette_fonts.md',
     'repo/docs/tutorial/color_palette_fonts/01_a.js',

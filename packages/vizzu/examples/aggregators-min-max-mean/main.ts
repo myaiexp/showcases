@@ -12,25 +12,40 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Sum of Popularity by Genres', channels: { y: { set: ['Popularity'] }, x: { set: ['Genres'] } } },
+    config: {
+      title: 'Sum of Popularity by Genres',
+      channels: { y: { set: ['Popularity'] }, x: { set: ['Genres'] } },
+    },
   });
 
   stage.story(chart, [
     {
-      say: "min(Popularity): the smallest value in each genre",
-      run: (c) => c.animate({ config: { title: 'Minimum of Popularity by Genres', channels: { y: { set: ['min(Popularity)'] } } } }),
+      say: 'min(Popularity): the smallest value in each genre',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Minimum of Popularity by Genres', channels: { y: { set: ['min(Popularity)'] } } },
+        }),
     },
     {
-      say: "max(Popularity): the largest value in each genre",
-      run: (c) => c.animate({ config: { title: 'Maximum of Popularity by Genres', channels: { y: { set: ['max(Popularity)'] } } } }),
+      say: 'max(Popularity): the largest value in each genre',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Maximum of Popularity by Genres', channels: { y: { set: ['max(Popularity)'] } } },
+        }),
     },
     {
-      say: "mean(Popularity): the average value in each genre",
-      run: (c) => c.animate({ config: { title: 'Mean of Popularity by Genres', channels: { y: { set: ['mean(Popularity)'] } } } }),
+      say: 'mean(Popularity): the average value in each genre',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Mean of Popularity by Genres', channels: { y: { set: ['mean(Popularity)'] } } },
+        }),
     },
     {
-      say: "sum(Popularity): back to the default",
-      run: (c) => c.animate({ config: { title: 'Sum of Popularity by Genres', channels: { y: { set: ['sum(Popularity)'] } } } }),
+      say: 'sum(Popularity): back to the default',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Sum of Popularity by Genres', channels: { y: { set: ['sum(Popularity)'] } } },
+        }),
     },
   ]);
   return () => stage.dispose();

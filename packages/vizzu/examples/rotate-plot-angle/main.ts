@@ -27,12 +27,12 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "angle: 1 radian",
+      say: 'angle: 1 radian',
       run: (c) => c.animate({ config: { title: 'angle: 1 (radians)', angle: 1 } }),
       hold: 2600,
     },
     {
-      say: "angle: back to 0",
+      say: 'angle: back to 0',
       run: (c) => c.animate({ config: { title: 'angle: 0', angle: 0 } }),
       hold: 2000,
     },

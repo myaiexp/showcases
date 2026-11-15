@@ -17,9 +17,17 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "polarLine: the lines bend around the centre, the years now an angle",
+      say: 'polarLine: the lines bend around the centre, the years now an angle',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.polarLine({ angle: 'Year', radius: 'Revenue', dividedBy: 'Region', title: 'Revenue by year, polar' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.polarLine({
+            angle: 'Year',
+            radius: 'Revenue',
+            dividedBy: 'Region',
+            title: 'Revenue by year, polar',
+          }),
+        ),
       hold: 2400,
     },
   ]);

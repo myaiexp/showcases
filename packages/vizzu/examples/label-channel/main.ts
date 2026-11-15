@@ -17,7 +17,7 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "label: attach Popularity",
+      say: 'label: attach Popularity',
       run: (c) => c.animate({ config: { channels: { label: { attach: ['Popularity'] } } } }),
       hold: 2600,
     },

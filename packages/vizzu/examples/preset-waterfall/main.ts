@@ -17,7 +17,7 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "waterfall: each month starts where the previous one ended",
+      say: 'waterfall: each month starts where the previous one ended',
       // A preset returns a whole chart config, so it can go straight into animate().
       run: (c) => c.animate(Vizzu.presets.waterfall({ x: 'Month', y: 'Change', title: 'Running balance' })),
       hold: 2400,

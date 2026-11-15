@@ -19,7 +19,8 @@ class ExamplePlugin implements Plugins.Plugin {
     return {
       prepareAnimation: (ctx: Plugins.PrepareAnimationContext, next: () => void): void => {
         const keyframe = Array.isArray(ctx.target) ? ctx.target[0]?.target : undefined;
-        const config: Config.Chart | undefined = keyframe && 'config' in keyframe ? keyframe.config : undefined;
+        const config: Config.Chart | undefined =
+          keyframe && 'config' in keyframe ? keyframe.config : undefined;
         if (config) {
           const first = config.channels?.color?.set?.[0];
           if (first) {
@@ -56,7 +57,13 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, label: { set: ['Popularity'] } } },
+    config: {
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
   report();
 

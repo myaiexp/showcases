@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Channel as a series name',
   summary:
-    "A channel that only uses set, with no range or other option, can be written as its series: an array, or a bare name for a single series. A channel with an option such as range still needs the object. Each shorthand has its long form in a comment.",
+    'A channel that only uses set, with no range or other option, can be written as its series: an array, or a bare name for a single series. A channel with an option such as range still needs the object. Each shorthand has its long form in a comment.',
   section: 'Shorthands & Store',
   tags: ['animate', 'shorthands', 'set', 'range'],
   docs: [

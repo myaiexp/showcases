@@ -12,16 +12,19 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Data order: Pop, Rock, Jazz, Metal', channels: { y: { set: ['Popularity'] }, x: { set: ['Genres'] } } },
+    config: {
+      title: 'Data order: Pop, Rock, Jazz, Metal',
+      channels: { y: { set: ['Popularity'] }, x: { set: ['Genres'] } },
+    },
   });
 
   stage.story(chart, [
     {
-      say: "x: sort byLabel",
+      say: 'x: sort byLabel',
       run: (c) => c.animate({ config: { title: 'Sorted by label', channels: { x: { sort: 'byLabel' } } } }),
     },
     {
-      say: "byLabel with reverse: true",
+      say: 'byLabel with reverse: true',
       run: (c) => c.animate({ config: { title: 'By label, reversed', channels: { x: { reverse: true } } } }),
     },
   ]);

@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Count and distinct",
+  title: 'Count and distinct',
   summary:
-    "count() needs no series: it counts the records in each genre. distinct(Kinds) counts how many different values of the dimension Kinds appear in each genre. The docs note that distinct is meant for dimensions, not measures.",
-  section: "Aggregating data",
-  tags: ['aggregator','count','distinct','set'],
+    'count() needs no series: it counts the records in each genre. distinct(Kinds) counts how many different values of the dimension Kinds appear in each genre. The docs note that distinct is meant for dimensions, not measures.',
+  section: 'Aggregating data',
+  tags: ['aggregator', 'count', 'distinct', 'set'],
   docs: [
     'repo/docs/tutorial/aggregating_data.md',
     'repo/docs/tutorial/aggregating_data/05_a.js',

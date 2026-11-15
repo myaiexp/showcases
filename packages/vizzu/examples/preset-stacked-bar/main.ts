@@ -17,9 +17,17 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "stackedBar: each genre bar is cut into one piece per kind",
+      say: 'stackedBar: each genre bar is cut into one piece per kind',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.stackedBar({ x: 'Popularity', stackedBy: 'Kinds', y: 'Genres', title: 'Genres, stacked by kind' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.stackedBar({
+            x: 'Popularity',
+            stackedBy: 'Kinds',
+            y: 'Genres',
+            title: 'Genres, stacked by kind',
+          }),
+        ),
       hold: 2400,
     },
   ]);

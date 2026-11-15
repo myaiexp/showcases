@@ -17,12 +17,16 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "One bar per genre: the sum of Popularity within each",
-      run: (c) => c.animate({ config: { title: 'Sum of Popularity by Genres', channels: { x: { set: ['Genres'] } } } }),
+      say: 'One bar per genre: the sum of Popularity within each',
+      run: (c) =>
+        c.animate({ config: { title: 'Sum of Popularity by Genres', channels: { x: { set: ['Genres'] } } } }),
     },
     {
-      say: "The same thing, with the aggregator written out: sum(Popularity)",
-      run: (c) => c.animate({ config: { title: 'sum(Popularity) by Genres', channels: { y: { set: ['sum(Popularity)'] } } } }),
+      say: 'The same thing, with the aggregator written out: sum(Popularity)',
+      run: (c) =>
+        c.animate({
+          config: { title: 'sum(Popularity) by Genres', channels: { y: { set: ['sum(Popularity)'] } } },
+        }),
     },
   ]);
   return () => stage.dispose();

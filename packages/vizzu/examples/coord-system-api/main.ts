@@ -8,7 +8,9 @@ import { musicData } from '../../shared/music.ts';
 import { overlay } from '../../shared/overlay.ts';
 
 const mount: Mount = async (el, ctx) => {
-  const stage = await createStage(el, ctx, { hint: 'Move the pointer over the chart: toRelative reads it in plot coordinates.' });
+  const stage = await createStage(el, ctx, {
+    hint: 'Move the pointer over the chart: toRelative reads it in plot coordinates.',
+  });
   const chart = stage.own(new Vizzu(stage.element, { style: darkStyle }));
   await chart.initializing;
   const coords = chart.feature.coordSystem;
@@ -34,7 +36,8 @@ const mount: Mount = async (el, ctx) => {
       g.arc(p.x, p.y, 3.5, 0, Math.PI * 2);
       g.fill();
     }
-    if (centers.length) show(`toCanvas(relative centre) vs marker.position.center\nlargest gap: ${gap.toFixed(2)} px`);
+    if (centers.length)
+      show(`toCanvas(relative centre) vs marker.position.center\nlargest gap: ${gap.toFixed(2)} px`);
     centers.length = 0;
   };
   chart.on('plot-marker-draw', markerHandler);

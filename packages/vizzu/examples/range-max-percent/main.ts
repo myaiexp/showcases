@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Axis range as set by default",
+      title: 'Axis range as set by default',
       channels: {
         y: { set: ['Popularity', 'Kinds'] },
         x: { set: ['Genres'] },
@@ -26,13 +26,14 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "y: range max 150%",
-      run: (c) => c.animate({
-        config: {
-          title: 'Axis range set proportionally to shown values',
-          channels: { y: { range: { max: '150%' } } },
-        },
-      }),
+      say: 'y: range max 150%',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: 'Axis range set proportionally to shown values',
+            channels: { y: { range: { max: '150%' } } },
+          },
+        }),
       hold: 2600,
     },
   ]);

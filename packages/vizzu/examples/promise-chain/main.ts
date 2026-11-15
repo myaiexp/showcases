@@ -35,7 +35,9 @@ const mount: Mount = async (el, ctx) => {
           .then(() => {
             stage.say('Grouped is done, so the last .then() goes back to plain columns');
             return c.animate({
-              config: { channels: { x: { set: ['Genres'] }, y: { set: ['Popularity'] }, color: { set: null } } },
+              config: {
+                channels: { x: { set: ['Genres'] }, y: { set: ['Popularity'] }, color: { set: null } },
+              },
             });
           }),
       hold: 1800,
@@ -45,4 +47,3 @@ const mount: Mount = async (el, ctx) => {
 };
 
 export default mount;
-

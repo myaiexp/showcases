@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: countryData,
-    config: Vizzu.presets.scatter({ x: 'Income', y: 'Online', dividedBy: 'Country', title: 'Income against internet use' }),
+    config: Vizzu.presets.scatter({
+      x: 'Income',
+      y: 'Online',
+      dividedBy: 'Country',
+      title: 'Income against internet use',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "polarScatter: the same dots, now placed by angle and distance from the centre",
+      say: 'polarScatter: the same dots, now placed by angle and distance from the centre',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.polarScatter({ angle: 'Income', radius: 'Online', dividedBy: 'Country', title: 'Income against internet use, polar' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.polarScatter({
+            angle: 'Income',
+            radius: 'Online',
+            dividedBy: 'Country',
+            title: 'Income against internet use, polar',
+          }),
+        ),
       hold: 2400,
     },
   ]);

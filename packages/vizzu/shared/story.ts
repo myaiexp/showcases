@@ -1,4 +1,4 @@
-// Story runner: plays animate steps in order and loops, with pause and restart
+// Story runner: plays animate steps in order and loops, with a pause button
 import type Vizzu from 'vizzu';
 import type { AnimControl } from 'vizzu';
 import type { Stage } from './stage.ts';
@@ -39,7 +39,7 @@ export async function runStory(stage: Stage, chart: Vizzu, steps: readonly Step[
     const activated = (v as { activated?: Promise<AnimControl> }).activated;
     activated?.then((c) => {
       control = c;
-      if (paused) c.pause();
+      if (paused) c.playState = 'paused';
     }, () => {});
     await Promise.race([v, stopped]);
     control = null;
@@ -47,7 +47,6 @@ export async function runStory(stage: Stage, chart: Vizzu, steps: readonly Step[
 
   let control: AnimControl | null = null;
   let paused = false;
-  let restart = false;
   let wake: (() => void) | null = null;
   const items: HTMLLIElement[] = [];
 
@@ -60,26 +59,19 @@ export async function runStory(stage: Stage, chart: Vizzu, steps: readonly Step[
       items.push(li);
       list.append(li);
     }
+    // No restart button: steps often undo what earlier ones did (chart.off after chart.on),
+    // so a pass always runs to its end.
     const toggle = stage.button('Pause', () => {
       paused = !paused;
       toggle!.textContent = paused ? 'Play' : 'Pause';
-      if (paused) control?.pause();
-      else {
-        control?.play();
-        wake?.();
-      }
-    });
-    stage.button('Restart', () => {
-      restart = true;
-      control?.play();
-      if (paused) toggle!.click();
-      wake?.();
+      if (control) control.playState = paused ? 'paused' : 'running';
+      if (!paused) wake?.();
     });
     stage.root.after(list);
   }
 
   const gate = async (): Promise<void> => {
-    while (paused && !restart) await new Promise<void>((r) => (wake = r));
+    while (paused) await new Promise<void>((r) => (wake = r));
     wake = null;
   };
   const rest = async (ms: number): Promise<void> => {
@@ -89,7 +81,7 @@ export async function runStory(stage: Stage, chart: Vizzu, steps: readonly Step[
   };
 
   for (;;) {
-    for (let i = 0; i < steps.length && !restart; i++) {
+    for (let i = 0; i < steps.length; i++) {
       const step = steps[i]!;
       items.forEach((li, j) => li.classList.toggle('vz-now', j === i));
       // The full view's step list already highlights the step, so the caption is cleared.
@@ -98,8 +90,7 @@ export async function runStory(stage: Stage, chart: Vizzu, steps: readonly Step[
       await settle(step.run(chart));
       await rest(step.hold ?? hold);
     }
-    if (!loop && !restart) return;
-    restart = false;
+    if (!loop) return;
     if (rewind) {
       items.forEach((li) => li.classList.remove('vz-now'));
       stage.say('Back to the start');

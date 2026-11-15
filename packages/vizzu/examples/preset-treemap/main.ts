@@ -17,9 +17,12 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "treemap: the columns become tiles, each as big as its sales",
+      say: 'treemap: the columns become tiles, each as big as its sales',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.treemap({ size: 'Sales', color: 'Region', title: 'Sales by region, as a treemap' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.treemap({ size: 'Sales', color: 'Region', title: 'Sales by region, as a treemap' }),
+        ),
       hold: 2400,
     },
   ]);

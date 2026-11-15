@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Duration in seconds or milliseconds",
+  title: 'Duration in seconds or milliseconds',
   summary:
-    "A bare number is seconds. The strings \"500ms\" and \"2s\" set the unit, and passing just a duration as the second argument is a shorter form of { duration }. The four steps use each form.",
-  section: "Animation options",
-  tags: ['animate','options','duration','ms'],
+    'A bare number is seconds. The strings "500ms" and "2s" set the unit, and passing just a duration as the second argument is a shorter form of { duration }. The four steps use each form.',
+  section: 'Animation options',
+  tags: ['animate', 'options', 'duration', 'ms'],
   docs: [
     'repo/docs/tutorial/animation_options.md',
     'repo/docs/tutorial/animation_options/06_a.js',

@@ -7,7 +7,9 @@ import { musicData } from '../../shared/music.ts';
 import { overlay } from '../../shared/overlay.ts';
 
 const mount: Mount = async (el, ctx) => {
-  const stage = await createStage(el, ctx, { hint: 'Move the pointer over the chart: a cross follows it, placed with clientToCanvas.' });
+  const stage = await createStage(el, ctx, {
+    hint: 'Move the pointer over the chart: a cross follows it, placed with clientToCanvas.',
+  });
   const chart = stage.own(new Vizzu(stage.element, { style: darkStyle }));
   await chart.initializing;
   const canvas = chart.feature.htmlCanvas;
@@ -53,7 +55,12 @@ const mount: Mount = async (el, ctx) => {
     data: musicData,
     config: {
       title: 'The canvas behind the chart',
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
   if (pre) pre.textContent = describe();

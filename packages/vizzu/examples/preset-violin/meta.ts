@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Preset: violin',
   summary:
-    "Vizzu.presets.violin({ x, y, splittedBy }) puts y and then splittedBy on the y-axis with split on and align center, and draws areas. Each splittedBy series gets its own band and is mirrored around the middle of that band.",
+    'Vizzu.presets.violin({ x, y, splittedBy }) puts y and then splittedBy on the y-axis with split on and align center, and draws areas. Each splittedBy series gets its own band and is mirrored around the middle of that band.',
   section: 'Chart presets',
   tags: ['presets', 'violin'],
   docs: [

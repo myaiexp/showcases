@@ -17,9 +17,17 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "groupedBar: one group of bars per genre, one bar per kind, coloured by kind",
+      say: 'groupedBar: one group of bars per genre, one bar per kind, coloured by kind',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.groupedBar({ x: 'Popularity', groupedBy: 'Genres', y: 'Kinds', title: 'Each genre by kind' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.groupedBar({
+            x: 'Popularity',
+            groupedBy: 'Genres',
+            y: 'Kinds',
+            title: 'Each genre by kind',
+          }),
+        ),
       hold: 2400,
     },
   ]);

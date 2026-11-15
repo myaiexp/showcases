@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Bubble chart - stacked",
+      title: 'Bubble chart - stacked',
       channels: {
         y: { set: null },
         x: { set: null },
@@ -28,13 +28,14 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "Genres: off size, onto noop",
-      run: (c) => c.animate({
-        config: {
-          title: 'Bubble chart - grouped - using the noop channel',
-          channels: { size: { detach: ['Genres'] }, noop: { set: ['Genres'] } },
-        },
-      }),
+      say: 'Genres: off size, onto noop',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: 'Bubble chart - grouped - using the noop channel',
+            channels: { size: { detach: ['Genres'] }, noop: { set: ['Genres'] } },
+          },
+        }),
       hold: 3000,
     },
   ]);

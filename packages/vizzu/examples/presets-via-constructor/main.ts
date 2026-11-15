@@ -16,7 +16,8 @@ const mount: Mount = async (el, ctx) => {
   // `presets` is a getter that builds a new Presets object on every read, so === is false.
   // What the docs mean by "equivalent" is that the same call returns the same config.
   const sameObject = viaConstructor === Vizzu.presets;
-  const sameConfig = JSON.stringify(viaConstructor.radialBar(args)) === JSON.stringify(Vizzu.presets.radialBar(args));
+  const sameConfig =
+    JSON.stringify(viaConstructor.radialBar(args)) === JSON.stringify(Vizzu.presets.radialBar(args));
 
   const side = stage.side();
   if (side) {

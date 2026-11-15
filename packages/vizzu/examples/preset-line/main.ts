@@ -17,9 +17,17 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "line: the single area becomes one line per region",
+      say: 'line: the single area becomes one line per region',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.line({ x: 'Year', y: 'Revenue', dividedBy: 'Region', title: 'Revenue by year, one line per region' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.line({
+            x: 'Year',
+            y: 'Revenue',
+            dividedBy: 'Region',
+            title: 'Revenue by year, one line per region',
+          }),
+        ),
       hold: 2400,
     },
   ]);

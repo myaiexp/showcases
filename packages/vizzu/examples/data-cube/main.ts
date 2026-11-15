@@ -36,13 +36,21 @@ const mount: Mount = async (el, ctx) => {
     {
       say: 'Kinds stacks on the y-axis',
       run: (c) =>
-        c.animate({ config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } } }),
+        c.animate({
+          config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } },
+        }),
     },
     {
       say: 'Kinds moves to the x-axis: grouped columns',
       run: (c) =>
         c.animate({
-          config: { channels: { y: { set: ['Popularity'] }, x: { set: ['Genres', 'Kinds'] }, color: { set: ['Kinds'] } } },
+          config: {
+            channels: {
+              y: { set: ['Popularity'] },
+              x: { set: ['Genres', 'Kinds'] },
+              color: { set: ['Kinds'] },
+            },
+          },
         }),
     },
   ]);
@@ -50,4 +58,3 @@ const mount: Mount = async (el, ctx) => {
 };
 
 export default mount;
-

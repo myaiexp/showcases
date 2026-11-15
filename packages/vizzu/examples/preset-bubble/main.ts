@@ -17,9 +17,16 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "bubble: the columns become circles packed together, sized by population",
+      say: 'bubble: the columns become circles packed together, sized by population',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.bubble({ size: 'Population', color: 'Country', title: 'Population by country, as bubbles' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.bubble({
+            size: 'Population',
+            color: 'Country',
+            title: 'Population by country, as bubbles',
+          }),
+        ),
       hold: 2400,
     },
   ]);

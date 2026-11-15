@@ -12,13 +12,22 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Color palette', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Color palette',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
     {
       say: 'colorPalette: three colours, one per Kinds item',
-      run: (c) => c.animate({ style: { plot: { marker: { colorPalette: '#9355e8FF #1f9bd1FF #BDAF10FF' } } } }),
+      run: (c) =>
+        c.animate({ style: { plot: { marker: { colorPalette: '#9355e8FF #1f9bd1FF #BDAF10FF' } } } }),
       hold: 2400,
     },
   ]);

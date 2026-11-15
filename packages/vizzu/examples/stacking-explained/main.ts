@@ -18,92 +18,116 @@ const mount: Mount = async (el, ctx) => {
   const chart = stage.own(new Vizzu(stage.element, { style: darkStyle }));
   await chart.initializing;
 
-  await chart.animate({ data, config: {
-          title: 'Dimension only',
-          channels: {
-            x: {
-              set: ['D', 'i'],
-              range: { max: 3 },
-              axis: true,
-              labels: false,
-              title: 'x: [ dimension ]',
-              interlacing: false,
-              markerGuides: true,
-              ticks: false,
-            },
-            y: { set: null, axis: true, labels: false, title: null, interlacing: false },
-            color: 'D',
-            label: ['D'],
+  await chart.animate(
+    {
+      data,
+      config: {
+        title: 'Dimension only',
+        channels: {
+          x: {
+            set: ['D', 'i'],
+            range: { max: 3 },
+            axis: true,
+            labels: false,
+            title: 'x: [ dimension ]',
+            interlacing: false,
+            markerGuides: true,
+            ticks: false,
           },
-          legend: null,
-        } }, { duration: 2, delay: 0 });
+          y: { set: null, axis: true, labels: false, title: null, interlacing: false },
+          color: 'D',
+          label: ['D'],
+        },
+        legend: null,
+      },
+    },
+    { duration: 2, delay: 0 },
+  );
 
   stage.story(chart, [
     {
-      say: "Measure and dimension: x is [D, M], widths follow M",
-      run: (c) => c.animate({ config: {
-          title: 'Measure and dimension',
-          channels: {
-            x: {
-              set: ['D', 'M'],
-              range: { max: 12 },
-              axis: true,
-              labels: true,
-              title: 'x: [ measure, dimension ]',
-              interlacing: false,
-              markerGuides: true,
-              ticks: true,
+      say: 'Measure and dimension: x is [D, M], widths follow M',
+      run: (c) =>
+        c.animate(
+          {
+            config: {
+              title: 'Measure and dimension',
+              channels: {
+                x: {
+                  set: ['D', 'M'],
+                  range: { max: 12 },
+                  axis: true,
+                  labels: true,
+                  title: 'x: [ measure, dimension ]',
+                  interlacing: false,
+                  markerGuides: true,
+                  ticks: true,
+                },
+                y: { set: null, axis: true, labels: false, title: null, interlacing: false },
+                color: 'D',
+                label: ['D'],
+              },
             },
-            y: { set: null, axis: true, labels: false, title: null, interlacing: false },
-            color: 'D',
-            label: ['D'],
           },
-        } }, { duration: 2, delay: 0 }),
+          { duration: 2, delay: 0 },
+        ),
       hold: 2000,
     },
     {
-      say: "Measure only: one bar, stacked from the origin",
-      run: (c) => c.animate({ config: {
-          title: 'Measure only',
-          channels: {
-            x: {
-              set: 'M',
-              range: { max: 7 },
-              axis: true,
-              labels: true,
-              title: 'x: [ measure ]',
-              interlacing: false,
-              markerGuides: true,
-              ticks: true,
+      say: 'Measure only: one bar, stacked from the origin',
+      run: (c) =>
+        c.animate(
+          {
+            config: {
+              title: 'Measure only',
+              channels: {
+                x: {
+                  set: 'M',
+                  range: { max: 7 },
+                  axis: true,
+                  labels: true,
+                  title: 'x: [ measure ]',
+                  interlacing: false,
+                  markerGuides: true,
+                  ticks: true,
+                },
+                y: { set: null, axis: true, labels: false, title: null, interlacing: false },
+                color: 'D',
+                label: ['D'],
+              },
             },
-            y: { set: null, axis: true, labels: false, title: null, interlacing: false },
-            color: 'D',
-            label: ['D'],
           },
-        } }, { duration: 2, delay: 0 }),
+          { duration: 2, delay: 0 },
+        ),
       hold: 2000,
     },
     {
-      say: "Dimension only again",
-      run: (c) => c.animate({ config: {
-          title: 'Dimension only',
-          channels: {
-            x: {
-              set: ['D', 'i'],
-              range: { max: 3 },
-              axis: true,
-              labels: false,
-              title: 'x: [ dimension ]',
-              interlacing: false,
-              markerGuides: true,
-              ticks: false,
+      say: 'Dimension only again',
+      run: (c) =>
+        c.animate(
+          {
+            config: {
+              title: 'Dimension only',
+              channels: {
+                x: {
+                  set: ['D', 'i'],
+                  range: { max: 3 },
+                  axis: true,
+                  labels: false,
+                  title: 'x: [ dimension ]',
+                  interlacing: false,
+                  markerGuides: true,
+                  ticks: false,
+                },
+                y: { set: null, axis: true, labels: false, title: null, interlacing: false },
+                color: 'D',
+                label: ['D'],
+              },
+              legend: null,
             },
-            y: { set: null, axis: true, labels: false, title: null, interlacing: false },
-            color: 'D',
-            label: ['D'],
           },
-          legend: null,
-        } }, { duration: 2, delay: 0 }),
+          { duration: 2, delay: 0 },
+        ),
       hold: 2000,
     },
   ]);

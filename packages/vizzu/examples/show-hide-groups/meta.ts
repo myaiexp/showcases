@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Timing markers that show and hide",
+  title: 'Timing markers that show and hide',
   summary:
-    "Filtering out a genre makes its markers fade away, which the hide group times; bringing them back is the show group. Hide gets 2 seconds, and show waits 1 second then takes 2.",
-  section: "Animation options",
-  tags: ['animate','options','show','hide','filter'],
+    'Filtering out a genre makes its markers fade away, which the hide group times; bringing them back is the show group. Hide gets 2 seconds, and show waits 1 second then takes 2.',
+  section: 'Animation options',
+  tags: ['animate', 'options', 'show', 'hide', 'filter'],
   docs: [
     'repo/docs/tutorial/animation_options.md',
     'repo/docs/tutorial/animation_options/03_b.js',

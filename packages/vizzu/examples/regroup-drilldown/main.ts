@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Changing dimensions",
+      title: 'Changing dimensions',
       channels: {
         y: { set: ['Popularity'] },
         x: { set: ['Genres'] },
@@ -25,14 +25,17 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "x: Genres out, Kinds in, regroupStrategy drilldown",
-      run: (c) => c.animate({
-        config: {
-          title: 'Changing dimensions by drilling down',
-          channels: { x: { detach: ['Genres'], attach: ['Kinds'] } },
-        },
-      },
-      { regroupStrategy: 'drilldown' }),
+      say: 'x: Genres out, Kinds in, regroupStrategy drilldown',
+      run: (c) =>
+        c.animate(
+          {
+            config: {
+              title: 'Changing dimensions by drilling down',
+              channels: { x: { detach: ['Genres'], attach: ['Kinds'] } },
+            },
+          },
+          { regroupStrategy: 'drilldown' },
+        ),
       hold: 3000,
     },
   ]);

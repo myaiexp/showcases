@@ -27,13 +27,24 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Reading chart.style', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Reading chart.style',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
     {
       say: 'colorPalette set: chart.style now returns it (sizes still automatic, so null)',
-      run: (c) => (show(), c).animate({ style: { plot: { marker: { colorPalette: '#9355e8FF #1f9bd1FF #BDAF10FF' } } } }).then(show),
+      run: (c) =>
+        (show(), c)
+          .animate({ style: { plot: { marker: { colorPalette: '#9355e8FF #1f9bd1FF #BDAF10FF' } } } })
+          .then(show),
     },
     {
       say: 'title.fontSize set to 40: chart.style returns "40.000000px"',

@@ -12,16 +12,31 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Using keyframes', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Using keyframes',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
     {
       say: 'two keyframes in one animate() call: 1 s, then 2 s',
-      run: (c) => c.animate([
-        { target: { config: { channels: { x: { attach: ['Kinds'] }, y: { detach: ['Kinds'] } } } }, options: { duration: 1 } },
-        { target: { config: { channels: { x: { detach: ['Kinds'] }, y: { attach: ['Kinds'] } } } }, options: { duration: 2 } },
-      ]),
+      run: (c) =>
+        c.animate([
+          {
+            target: { config: { channels: { x: { attach: ['Kinds'] }, y: { detach: ['Kinds'] } } } },
+            options: { duration: 1 },
+          },
+          {
+            target: { config: { channels: { x: { detach: ['Kinds'] }, y: { attach: ['Kinds'] } } } },
+            options: { duration: 2 },
+          },
+        ]),
     },
   ]);
   return () => stage.dispose();

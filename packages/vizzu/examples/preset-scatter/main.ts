@@ -17,9 +17,17 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "scatter: one dot per country, income along x, share online up y",
+      say: 'scatter: one dot per country, income along x, share online up y',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.scatter({ x: 'Income', y: 'Online', dividedBy: 'Country', title: 'Income against internet use' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.scatter({
+            x: 'Income',
+            y: 'Online',
+            dividedBy: 'Country',
+            title: 'Income against internet use',
+          }),
+        ),
       hold: 2400,
     },
   ]);

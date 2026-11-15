@@ -22,13 +22,21 @@ const mount: Mount = async (el, ctx) => {
   await chart.initializing;
 
   const latest = (n: number) => (r: Data.Record) => (r['Step'] as number) > n - WINDOW;
-  const start = (): Data.Set => ({ series, records: Array.from({ length: WINDOW }, (_, i) => record(i + 1)) });
+  const start = (): Data.Set => ({
+    series,
+    records: Array.from({ length: WINDOW }, (_, i) => record(i + 1)),
+  });
 
   await chart.animate({
     data: { ...start(), filter: latest(WINDOW) },
     config: {
       title: 'Records arrive on a timer',
-      channels: { x: { set: ['Tick'] }, y: { set: ['Reading'] }, label: { set: ['Reading'] }, color: { set: ['Reading'] } },
+      channels: {
+        x: { set: ['Tick'] },
+        y: { set: ['Reading'] },
+        label: { set: ['Reading'] },
+        color: { set: ['Reading'] },
+      },
     },
   });
 

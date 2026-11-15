@@ -14,7 +14,15 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Using initial animation control parameters', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Using initial animation control parameters',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
@@ -22,7 +30,10 @@ const mount: Mount = async (el, ctx) => {
       say: 'playState: "paused", position: 0.5, held for two seconds, then control.play()',
       run: (c) => {
         const animation = c.animate(toGrouped, { playState: 'paused', position: 0.5, duration: 3 });
-        animation.activated.then((control) => stage.wait(2000).then(() => control.play()), () => {});
+        animation.activated.then(
+          (control) => stage.wait(2000).then(() => control.play()),
+          () => {},
+        );
         return animation;
       },
     },

@@ -12,10 +12,12 @@ const mount: Mount = async (el, ctx) => {
 
   // The tutorial's setup_c state, written out in full (plus whatever this step starts from).
   await chart.animate({
-    data: { ...musicData, filter: (record) =>
-    (record.Genres === 'Pop' || record.Genres === 'Metal') && record.Kinds === 'Smooth' },
+    data: {
+      ...musicData,
+      filter: (record) => (record.Genres === 'Pop' || record.Genres === 'Metal') && record.Kinds === 'Smooth',
+    },
     config: {
-      title: "Filter by two dimensions",
+      title: 'Filter by two dimensions',
       channels: {
         y: { set: ['Popularity', 'Kinds'] },
         x: { set: ['Genres'] },
@@ -27,11 +29,12 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "filter: null",
-      run: (c) => c.animate({
-        config: { title: 'Filter off' },
-        data: { filter: null },
-      }),
+      say: 'filter: null',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Filter off' },
+          data: { filter: null },
+        }),
       hold: 2800,
     },
   ]);

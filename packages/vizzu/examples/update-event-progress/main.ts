@@ -23,7 +23,8 @@ const mount: Mount = async (el, ctx) => {
   const updateHandler = (event: Events.UpdateEvent): void => {
     const { progress, position } = event.detail;
     fill.style.width = `${(progress * 100).toFixed(1)}%`;
-    if (pre) pre.textContent = `update event\n\nprogress  ${progress.toFixed(3)}\nposition  ${String(position)}`;
+    if (pre)
+      pre.textContent = `update event\n\nprogress  ${progress.toFixed(3)}\nposition  ${String(position)}`;
   };
   chart.on('update', updateHandler);
 
@@ -31,18 +32,25 @@ const mount: Mount = async (el, ctx) => {
     data: musicData,
     config: {
       title: 'Progress from the update event',
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
 
   stage.story(chart, [
     {
       say: 'The bar fills as the animation runs',
-      run: (c) => c.animate({ config: { channels: { x: { attach: ['Kinds'] }, y: { detach: ['Kinds'] } } } }, 3),
+      run: (c) =>
+        c.animate({ config: { channels: { x: { attach: ['Kinds'] }, y: { detach: ['Kinds'] } } } }, 3),
     },
     {
       say: 'And again for the way back',
-      run: (c) => c.animate({ config: { channels: { x: { detach: ['Kinds'] }, y: { attach: ['Kinds'] } } } }, 3),
+      run: (c) =>
+        c.animate({ config: { channels: { x: { detach: ['Kinds'] }, y: { attach: ['Kinds'] } } } }, 3),
     },
   ]);
   return () => stage.dispose();

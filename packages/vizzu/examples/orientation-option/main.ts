@@ -26,12 +26,12 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "orientation: horizontal",
+      say: 'orientation: horizontal',
       run: (c) => c.animate({ config: { title: 'orientation: horizontal', orientation: 'horizontal' } }),
       hold: 2600,
     },
     {
-      say: "orientation: vertical",
+      say: 'orientation: vertical',
       run: (c) => c.animate({ config: { title: 'orientation: vertical', orientation: 'vertical' } }),
       hold: 2600,
     },

@@ -12,13 +12,22 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Show and hide groups', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Show and hide groups',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
     {
       say: 'Jazz filtered out: hide { duration: 2 }',
-      run: (c) => c.animate({ data: { filter: (record) => record.Genres !== 'Jazz' } }, { hide: { duration: 2 } }),
+      run: (c) =>
+        c.animate({ data: { filter: (record) => record.Genres !== 'Jazz' } }, { hide: { duration: 2 } }),
     },
     {
       say: 'filter removed: show { delay: 1, duration: 2 }',

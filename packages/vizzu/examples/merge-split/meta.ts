@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Merge split values",
+  title: 'Merge split values',
   summary:
     "Starting from side-by-side bars, split false stacks the genres on top of each other again, so each bar's length is the total for its kind.",
-  section: "Orientation, split & polar",
-  tags: ['split','channels','orientation'],
+  section: 'Orientation, split & polar',
+  tags: ['split', 'channels', 'orientation'],
   docs: [
     'repo/docs/tutorial/orientation_split_polar.md',
     'repo/docs/tutorial/orientation_split_polar/02_b.js',

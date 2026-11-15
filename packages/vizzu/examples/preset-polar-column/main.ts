@@ -17,9 +17,16 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "polarColumn: the columns become spokes, income as the radius",
+      say: 'polarColumn: the columns become spokes, income as the radius',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.polarColumn({ angle: 'Country', radius: 'Income', title: 'Income by country, polar' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.polarColumn({
+            angle: 'Country',
+            radius: 'Income',
+            title: 'Income by country, polar',
+          }),
+        ),
       hold: 2400,
     },
   ]);

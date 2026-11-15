@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Align: stretch",
+  title: 'Align: stretch',
   summary:
-    "From a centred stack, align: \"stretch\" makes every column fill the whole plot height, so the chart shows each kind's share of its genre and the axis switches from values to percentages.",
-  section: "Align & range",
-  tags: ['align','stretch','labels','channels'],
+    'From a centred stack, align: "stretch" makes every column fill the whole plot height, so the chart shows each kind\'s share of its genre and the axis switches from values to percentages.',
+  section: 'Align & range',
+  tags: ['align', 'stretch', 'labels', 'channels'],
   docs: [
     'repo/docs/tutorial/align_range.md',
     'repo/docs/tutorial/align_range/01.js',

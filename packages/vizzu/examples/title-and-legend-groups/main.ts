@@ -12,16 +12,25 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Title, legend and color groups', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Title, legend and color groups',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
     {
       say: 'title 1 s, legend 2 s after 1 s, color 2 s after 3 s',
-      run: (c) => c.animate(
-        { config: { title: 'Coloured by Genres', channels: { color: { set: ['Genres'] } } } },
-        { title: { duration: 1 }, legend: { duration: 2, delay: 1 }, color: { duration: 2, delay: 3 } },
-      ),
+      run: (c) =>
+        c.animate(
+          { config: { title: 'Coloured by Genres', channels: { color: { set: ['Genres'] } } } },
+          { title: { duration: 1 }, legend: { duration: 2, delay: 1 }, color: { duration: 2, delay: 3 } },
+        ),
       hold: 1800,
     },
   ]);

@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Duration and easing for the whole animation",
+  title: 'Duration and easing for the whole animation',
   summary:
-    "Options given at the top level govern the whole animation. A 4 second duration with linear easing moves the columns at constant speed, and the way back is a 0.5 second jump.",
-  section: "Animation options",
-  tags: ['animate','options','duration','easing','linear'],
+    'Options given at the top level govern the whole animation. A 4 second duration with linear easing moves the columns at constant speed, and the way back is a 0.5 second jump.',
+  section: 'Animation options',
+  tags: ['animate', 'options', 'duration', 'easing', 'linear'],
   docs: [
     'repo/docs/tutorial/animation_options.md',
     'repo/docs/tutorial/animation_options/04_a.js',

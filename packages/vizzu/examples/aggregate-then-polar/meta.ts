@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Aggregate, then go polar",
+  title: 'Aggregate, then go polar',
   summary:
-    "Genres leaves the x-axis so each kind becomes one bar, then coordSystem \"polar\" bends the axes into a radial bar chart. The y range min of -30% opens a hole in the middle so the short bars stay readable.",
-  section: "Orientation, split & polar",
-  tags: ['coordSystem','polar','range','detach'],
+    'Genres leaves the x-axis so each kind becomes one bar, then coordSystem "polar" bends the axes into a radial bar chart. The y range min of -30% opens a hole in the middle so the short bars stay readable.',
+  section: 'Orientation, split & polar',
+  tags: ['coordSystem', 'polar', 'range', 'detach'],
   docs: [
     'repo/docs/tutorial/orientation_split_polar.md',
     'repo/docs/tutorial/orientation_split_polar/04_a.js',

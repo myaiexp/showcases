@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Aggregator as an object",
+  title: 'Aggregator as an object',
   summary:
-    "The second way to pick an aggregator is a series descriptor: { name: \"Popularity\", aggregator: \"max\" } in place of the string \"max(Popularity)\". The chart is identical; the object form is the one the data typings document (sum, count, min, max, mean, distinct).",
-  section: "Aggregating data",
-  tags: ['aggregator','SeriesDescriptor','AggregatorType','set'],
+    'The second way to pick an aggregator is a series descriptor: { name: "Popularity", aggregator: "max" } in place of the string "max(Popularity)". The chart is identical; the object form is the one the data typings document (sum, count, min, max, mean, distinct).',
+  section: 'Aggregating data',
+  tags: ['aggregator', 'SeriesDescriptor', 'AggregatorType', 'set'],
   docs: [
     'repo/docs/tutorial/aggregating_data.md',
     'repo/docs/tutorial/aggregating_data/02_b.js',

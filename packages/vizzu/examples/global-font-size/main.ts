@@ -12,11 +12,23 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Setting all font sizes in one step', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Setting all font sizes in one step',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
-    { say: 'style.fontSize: 20, every text grows in proportion', run: (c) => c.animate({ style: { fontSize: 20 } }), hold: 2400 },
+    {
+      say: 'style.fontSize: 20, every text grows in proportion',
+      run: (c) => c.animate({ style: { fontSize: 20 } }),
+      hold: 2400,
+    },
   ]);
   return () => stage.dispose();
 };

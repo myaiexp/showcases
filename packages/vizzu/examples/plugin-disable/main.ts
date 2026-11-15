@@ -25,7 +25,8 @@ const mount: Mount = async (el, ctx) => {
       return {
         prepareAnimation: (ctx: Plugins.PrepareAnimationContext, next: () => void): void => {
           const keyframe = Array.isArray(ctx.target) ? ctx.target[0]?.target : undefined;
-          const config: Config.Chart | undefined = keyframe && 'config' in keyframe ? keyframe.config : undefined;
+          const config: Config.Chart | undefined =
+            keyframe && 'config' in keyframe ? keyframe.config : undefined;
           if (config) {
             const first = config.channels?.color?.set?.[0];
             config.title = first ? (typeof first === 'string' ? first : first.name) : 'Example plugin';
@@ -41,7 +42,13 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, label: { set: ['Popularity'] } } },
+    config: {
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   // Whether a plugin is on is not part of the chart state the rewind restores, so the story ends with it on.

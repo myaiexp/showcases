@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: salesData,
-    config: Vizzu.presets.stackedBar({ x: 'Revenue', stackedBy: 'Region', y: 'Year', title: 'Revenue by year, stacked' }),
+    config: Vizzu.presets.stackedBar({
+      x: 'Revenue',
+      stackedBy: 'Region',
+      y: 'Year',
+      title: 'Revenue by year, stacked',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "verticalStream: the stacked bars turn into areas, centred on the middle of the x-axis",
+      say: 'verticalStream: the stacked bars turn into areas, centred on the middle of the x-axis',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.verticalStream({ x: 'Revenue', stackedBy: 'Region', y: 'Year', title: 'Revenue by year, as a vertical stream' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.verticalStream({
+            x: 'Revenue',
+            stackedBy: 'Region',
+            y: 'Year',
+            title: 'Revenue by year, as a vertical stream',
+          }),
+        ),
       hold: 2400,
     },
   ]);

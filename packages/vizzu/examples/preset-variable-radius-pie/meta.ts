@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Preset: variableRadiusPie',
   summary:
-    "Vizzu.presets.variableRadiusPie({ angle, by, radius }) puts angle and then by on the x-axis and radius on the y-axis, colours by by, labels radius and uses the polar system. Slice width is one measure and slice length another.",
+    'Vizzu.presets.variableRadiusPie({ angle, by, radius }) puts angle and then by on the x-axis and radius on the y-axis, colours by by, labels radius and uses the polar system. Slice width is one measure and slice length another.',
   section: 'Chart presets',
   tags: ['presets', 'variableRadiusPie'],
   docs: [

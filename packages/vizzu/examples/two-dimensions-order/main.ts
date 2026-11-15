@@ -12,17 +12,37 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Genres and Kinds on the stacked chart', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Genres and Kinds on the stacked chart',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
     {
-      say: "Kinds leaves y; x: set [Genres, Kinds]",
-      run: (c) => c.animate({ config: { title: 'With two discretes on one axis...', channels: { y: { detach: ['Kinds'] }, x: { set: ['Genres', 'Kinds'] } } } }),
+      say: 'Kinds leaves y; x: set [Genres, Kinds]',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: 'With two discretes on one axis...',
+            channels: { y: { detach: ['Kinds'] }, x: { set: ['Genres', 'Kinds'] } },
+          },
+        }),
     },
     {
-      say: "x: set [Kinds, Genres]",
-      run: (c) => c.animate({ config: { title: '...grouping is determined by their order.', channels: { x: { set: ['Kinds', 'Genres'] } } } }),
+      say: 'x: set [Kinds, Genres]',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: '...grouping is determined by their order.',
+            channels: { x: { set: ['Kinds', 'Genres'] } },
+          },
+        }),
     },
   ]);
   return () => stage.dispose();

@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Align: none",
+  title: 'Align: none',
   summary:
-    "Setting align back to \"none\" is how you leave a centred or stretched layout: the stacks drop back onto the x-axis and the axis shows values again.",
-  section: "Align & range",
-  tags: ['align','none','channels'],
+    'Setting align back to "none" is how you leave a centred or stretched layout: the stacks drop back onto the x-axis and the axis shows values again.',
+  section: 'Align & range',
+  tags: ['align', 'none', 'channels'],
   docs: [
     'repo/docs/tutorial/align_range.md',
     'repo/docs/tutorial/align_range/02_b.js',

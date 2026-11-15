@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Range: max as a percentage",
+  title: 'Range: max as a percentage',
   summary:
-    "A y-axis normally ends a little above the biggest value. A max of \"150%\" is relative to the largest element, so the axis grows to 150% of it and the columns shrink to two thirds of the plot height.",
-  section: "Align & range",
-  tags: ['range','max','percent','channels'],
+    'A y-axis normally ends a little above the biggest value. A max of "150%" is relative to the largest element, so the axis grows to 150% of it and the columns shrink to two thirds of the plot height.',
+  section: 'Align & range',
+  tags: ['range', 'max', 'percent', 'channels'],
   docs: [
     'repo/docs/tutorial/align_range.md',
     'repo/docs/tutorial/align_range/04_a.js',

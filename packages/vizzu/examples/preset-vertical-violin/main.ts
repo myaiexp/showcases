@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: salesData,
-    config: Vizzu.presets.splittedBar({ x: 'Revenue', splittedBy: 'Region', y: 'Year', title: 'Revenue by year, split by region' }),
+    config: Vizzu.presets.splittedBar({
+      x: 'Revenue',
+      splittedBy: 'Region',
+      y: 'Year',
+      title: 'Revenue by year, split by region',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "verticalViolin: the bars become areas, each region centred on its own vertical line",
+      say: 'verticalViolin: the bars become areas, each region centred on its own vertical line',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.verticalViolin({ x: 'Revenue', splittedBy: 'Region', y: 'Year', title: 'Revenue by year, as vertical violins' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.verticalViolin({
+            x: 'Revenue',
+            splittedBy: 'Region',
+            y: 'Year',
+            title: 'Revenue by year, as vertical violins',
+          }),
+        ),
       hold: 2400,
     },
   ]);

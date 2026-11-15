@@ -29,4 +29,3 @@ const mount: Mount = async (el, ctx) => {
 };
 
 export default mount;
-

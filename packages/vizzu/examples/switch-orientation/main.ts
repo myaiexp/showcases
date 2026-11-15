@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Switch the orientation = arrange by other axis",
+      title: 'Switch the orientation = arrange by other axis',
       channels: {
         y: { set: ['Popularity', 'Kinds'] },
         x: { set: ['Genres'] },
@@ -26,12 +26,13 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "Popularity: off y, onto x",
-      run: (c) => c.animate({
-        config: {
-          channels: { y: { detach: ['Popularity'] }, x: { attach: ['Popularity'] } },
-        },
-      }),
+      say: 'Popularity: off y, onto x',
+      run: (c) =>
+        c.animate({
+          config: {
+            channels: { y: { detach: ['Popularity'] }, x: { attach: ['Popularity'] } },
+          },
+        }),
       hold: 2800,
     },
   ]);

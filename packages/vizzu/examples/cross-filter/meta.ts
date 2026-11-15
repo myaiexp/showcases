@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Filter on two dimensions",
+  title: 'Filter on two dimensions',
   summary:
-    "A new filter replaces the old one rather than adding to it, so this one repeats the genre test and adds a test on Kinds. Only the smooth Pop and Metal records are left.",
-  section: "Filtering & adding new records",
-  tags: ['filter','data'],
+    'A new filter replaces the old one rather than adding to it, so this one repeats the genre test and adds a test on Kinds. Only the smooth Pop and Metal records are left.',
+  section: 'Filtering & adding new records',
+  tags: ['filter', 'data'],
   docs: [
     'repo/docs/tutorial/filter_add_new_records.md',
     'repo/docs/tutorial/filter_add_new_records/01.js',

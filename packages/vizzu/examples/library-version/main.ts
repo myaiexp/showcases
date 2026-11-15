@@ -16,7 +16,12 @@ const mount: Mount = async (el, ctx) => {
     data: musicData,
     config: {
       title: `Vizzu ${version}`,
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
   const pre = stage.side();
@@ -25,11 +30,23 @@ const mount: Mount = async (el, ctx) => {
   stage.story(chart, [
     {
       say: `chart.version() returned "${version}"`,
-      run: (c) => c.animate({ config: { title: `chart.version(): ${version}`, channels: { x: { attach: ['Kinds'] }, y: { detach: ['Kinds'] } } } }),
+      run: (c) =>
+        c.animate({
+          config: {
+            title: `chart.version(): ${version}`,
+            channels: { x: { attach: ['Kinds'] }, y: { detach: ['Kinds'] } },
+          },
+        }),
     },
     {
       say: 'The title is just a string built from it',
-      run: (c) => c.animate({ config: { title: `Vizzu ${version}`, channels: { x: { detach: ['Kinds'] }, y: { attach: ['Kinds'] } } } }),
+      run: (c) =>
+        c.animate({
+          config: {
+            title: `Vizzu ${version}`,
+            channels: { x: { detach: ['Kinds'] }, y: { attach: ['Kinds'] } },
+          },
+        }),
     },
   ]);
   return () => stage.dispose();

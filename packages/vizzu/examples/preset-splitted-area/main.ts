@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: salesData,
-    config: Vizzu.presets.stackedArea({ x: 'Year', y: 'Revenue', stackedBy: 'Region', title: 'Revenue by region, stacked' }),
+    config: Vizzu.presets.stackedArea({
+      x: 'Year',
+      y: 'Revenue',
+      stackedBy: 'Region',
+      title: 'Revenue by region, stacked',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "splittedArea: the stacked bands pulled apart, one band per region",
+      say: 'splittedArea: the stacked bands pulled apart, one band per region',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.splittedArea({ x: 'Year', y: 'Revenue', splittedBy: 'Region', title: 'Revenue by region, split' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.splittedArea({
+            x: 'Year',
+            y: 'Revenue',
+            splittedBy: 'Region',
+            title: 'Revenue by region, split',
+          }),
+        ),
       hold: 2400,
     },
   ]);

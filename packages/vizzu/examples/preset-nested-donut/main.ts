@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: marketData,
-    config: Vizzu.presets.percentageBar({ x: 'Sales', stackedBy: 'Channel', y: 'Region', title: 'Channel shares by region' }),
+    config: Vizzu.presets.percentageBar({
+      x: 'Sales',
+      stackedBy: 'Channel',
+      y: 'Region',
+      title: 'Channel shares by region',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "nestedDonut: each region becomes its own ring, every ring filled round to the full circle",
+      say: 'nestedDonut: each region becomes its own ring, every ring filled round to the full circle',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.nestedDonut({ angle: 'Sales', stackedBy: 'Channel', radius: 'Region', title: 'Channel shares by region, nested' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.nestedDonut({
+            angle: 'Sales',
+            stackedBy: 'Channel',
+            radius: 'Region',
+            title: 'Channel shares by region, nested',
+          }),
+        ),
       hold: 2400,
     },
   ]);

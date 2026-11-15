@@ -12,12 +12,16 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: salesData,
-    config: { title: 'Line width from size', geometry: 'line', channels: { x: { set: ['Year'] }, y: { set: ['Revenue'] }, color: { set: ['Region'] } } },
+    config: {
+      title: 'Line width from size',
+      geometry: 'line',
+      channels: { x: { set: ['Year'] }, y: { set: ['Revenue'] }, color: { set: ['Region'] } },
+    },
   });
 
   stage.story(chart, [
     {
-      say: "size: set Profit (width follows profit)",
+      say: 'size: set Profit (width follows profit)',
       run: (c) => c.animate({ config: { channels: { size: { set: ['Profit'] } } } }),
       hold: 2600,
     },

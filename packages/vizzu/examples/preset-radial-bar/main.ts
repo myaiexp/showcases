@@ -17,9 +17,12 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "radialBar: the bars curl into arcs around a hole, longer arcs for higher income",
+      say: 'radialBar: the bars curl into arcs around a hole, longer arcs for higher income',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.radialBar({ angle: 'Income', radius: 'Country', title: 'Income by country, radial' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.radialBar({ angle: 'Income', radius: 'Country', title: 'Income by country, radial' }),
+        ),
       hold: 2400,
     },
   ]);

@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "From area to line and back",
+  title: 'From area to line and back',
   summary:
-    "Revenue by year, stacked by region, drawn as an area. Switching the geometry to line keeps the stacking, so the lines are running totals. Detaching Region from the y-axis gives one line per region, and putting it back stacks them into areas again.",
-  section: "Geometry",
-  tags: ['geometry','area','line','attach','detach'],
+    'Revenue by year, stacked by region, drawn as an area. Switching the geometry to line keeps the stacking, so the lines are running totals. Detaching Region from the y-axis gives one line per region, and putting it back stacks them into areas again.',
+  section: 'Geometry',
+  tags: ['geometry', 'area', 'line', 'attach', 'detach'],
   docs: [
     'repo/docs/tutorial/geometry.md',
     'repo/docs/tutorial/geometry/01.js',

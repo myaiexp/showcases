@@ -6,7 +6,9 @@ import { darkStyle } from '../../shared/theme.ts';
 import { musicData } from '../../shared/music.ts';
 
 const mount: Mount = async (el, ctx) => {
-  const stage = await createStage(el, ctx, { hint: 'Move the pointer over the chart: the panel follows it.' });
+  const stage = await createStage(el, ctx, {
+    hint: 'Move the pointer over the chart: the panel follows it.',
+  });
   const chart = stage.own(new Vizzu(stage.element, { style: darkStyle }));
   await chart.initializing;
 
@@ -21,7 +23,9 @@ const mount: Mount = async (el, ctx) => {
       '',
       `position  ${x.toFixed(0)}, ${y.toFixed(0)}`,
       `target    ${target ? target.tagName : '(none)'}`,
-      ...(target && 'categories' in target ? [`marker    ${JSON.stringify((target as Events.Marker).categories)}`] : []),
+      ...(target && 'categories' in target
+        ? [`marker    ${JSON.stringify((target as Events.Marker).categories)}`]
+        : []),
       ...(target && 'value' in target ? [`value     ${String((target as Events.TextElement).value)}`] : []),
     ].join('\n');
   };
@@ -31,7 +35,12 @@ const mount: Mount = async (el, ctx) => {
     data: musicData,
     config: {
       title: stage.preview ? 'Needs a pointer: open the full view' : 'Pointer move read-out',
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
 

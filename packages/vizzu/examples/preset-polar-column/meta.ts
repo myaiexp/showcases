@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Preset: polarColumn',
   summary:
-    "Vizzu.presets.polarColumn({ angle, radius }) is the column preset in the polar coordinate system: angle takes the x-axis, radius the y-axis, and the radius is labelled.",
+    'Vizzu.presets.polarColumn({ angle, radius }) is the column preset in the polar coordinate system: angle takes the x-axis, radius the y-axis, and the radius is labelled.',
   section: 'Chart presets',
   tags: ['presets', 'polarColumn'],
   docs: [

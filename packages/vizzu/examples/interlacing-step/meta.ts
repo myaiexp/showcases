@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Interlacing step',
   summary:
-    'The step of an axis channel sets the base interval of its interlacing. The story sets 25, then 50, then back to \'auto\', and the stripes and the numbers on the axis follow.',
+    "The step of an axis channel sets the base interval of its interlacing. The story sets 25, then 50, then back to 'auto', and the stripes and the numbers on the axis follow.",
   section: 'Axes, title, tooltip',
   tags: ['step', 'interlacing', 'axis'],
   docs: [

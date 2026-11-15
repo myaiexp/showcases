@@ -14,7 +14,12 @@ const mount: Mount = async (el, ctx) => {
     data: musicData,
     config: {
       title: 'When you use set and no other channel options',
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
 
@@ -32,8 +37,9 @@ const mount: Mount = async (el, ctx) => {
         }),
     },
     {
-      say: "A channel with other options still needs the object: y: { set, range }",
-      run: (c) => c.animate({ channels: { y: { set: ['Popularity', 'Kinds'], range: { max: '150%' } }, x: 'Genres' } }),
+      say: 'A channel with other options still needs the object: y: { set, range }',
+      run: (c) =>
+        c.animate({ channels: { y: { set: ['Popularity', 'Kinds'], range: { max: '150%' } }, x: 'Genres' } }),
     },
   ]);
   return () => stage.dispose();

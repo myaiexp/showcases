@@ -17,9 +17,12 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "donut: the stacked bar becomes a ring with a hole",
+      say: 'donut: the stacked bar becomes a ring with a hole',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.donut({ angle: 'Sales', stackedBy: 'Region', title: 'Sales by region, as a donut' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.donut({ angle: 'Sales', stackedBy: 'Region', title: 'Sales by region, as a donut' }),
+        ),
       hold: 2400,
     },
   ]);

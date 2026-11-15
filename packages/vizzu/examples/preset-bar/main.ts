@@ -17,9 +17,10 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "bar: Popularity runs along x, the genres line up down y",
+      say: 'bar: Popularity runs along x, the genres line up down y',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.bar({ x: 'Popularity', y: 'Genres', title: 'Popularity by genre' })),
+      run: (c) =>
+        c.animate(Vizzu.presets.bar({ x: 'Popularity', y: 'Genres', title: 'Popularity by genre' })),
       hold: 2400,
     },
   ]);

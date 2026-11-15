@@ -6,7 +6,9 @@ import { darkStyle } from '../../shared/theme.ts';
 import { musicData } from '../../shared/music.ts';
 
 const mount: Mount = async (el, ctx) => {
-  const stage = await createStage(el, ctx, { hint: 'Click the chart, then switch pointer events off and click again.' });
+  const stage = await createStage(el, ctx, {
+    hint: 'Click the chart, then switch pointer events off and click again.',
+  });
   const chart = stage.own(new Vizzu(stage.element, { style: darkStyle }));
   await chart.initializing;
 
@@ -33,7 +35,12 @@ const mount: Mount = async (el, ctx) => {
     data: musicData,
     config: {
       title: stage.preview ? 'Pointer events switched off and on' : 'Pointer events on',
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
 
@@ -44,14 +51,18 @@ const mount: Mount = async (el, ctx) => {
       say: "feature('pointerEvents', false): clicks no longer reach the handler",
       run: (c) => {
         if (stage.preview) set(false);
-        return c.animate({ config: { title: stage.preview ? 'Pointer events off' : 'Click, then press the buttons' } });
+        return c.animate({
+          config: { title: stage.preview ? 'Pointer events off' : 'Click, then press the buttons' },
+        });
       },
     },
     {
       say: "feature('pointerEvents', true): they do again",
       run: (c) => {
         if (stage.preview) set(true);
-        return c.animate({ config: { title: stage.preview ? 'Pointer events on' : 'Pointer events switch' } });
+        return c.animate({
+          config: { title: stage.preview ? 'Pointer events on' : 'Pointer events switch' },
+        });
       },
     },
   ]);

@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: Vizzu.presets.stackedColumn({ x: 'Genres', y: 'Popularity', stackedBy: 'Kinds', title: 'Genres, stacked by kind' }),
+    config: Vizzu.presets.stackedColumn({
+      x: 'Genres',
+      y: 'Popularity',
+      stackedBy: 'Kinds',
+      title: 'Genres, stacked by kind',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "splittedColumn: the same pieces, each kind pulled out to its own row of columns",
+      say: 'splittedColumn: the same pieces, each kind pulled out to its own row of columns',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.splittedColumn({ x: 'Genres', y: 'Popularity', splittedBy: 'Kinds', title: 'Genres, split by kind' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.splittedColumn({
+            x: 'Genres',
+            y: 'Popularity',
+            splittedBy: 'Kinds',
+            title: 'Genres, split by kind',
+          }),
+        ),
       hold: 2400,
     },
   ]);

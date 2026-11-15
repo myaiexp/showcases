@@ -14,11 +14,22 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Custom options for the whole animation', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Custom options for the whole animation',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
-    { say: 'duration: 4, easing: "linear"', run: (c) => c.animate(toGrouped, { duration: 4, easing: 'linear' }) },
+    {
+      say: 'duration: 4, easing: "linear"',
+      run: (c) => c.animate(toGrouped, { duration: 4, easing: 'linear' }),
+    },
     { say: 'duration: 0.5', run: (c) => c.animate(toStacked, { duration: 0.5 }) },
   ]);
   return () => stage.dispose();

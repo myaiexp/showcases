@@ -17,8 +17,15 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "lightness: attach Popularity, legend: lightness",
-      run: (c) => c.animate({ config: { title: 'Lightness - legend on', channels: { lightness: { attach: ['Popularity'] } }, legend: 'lightness' } }),
+      say: 'lightness: attach Popularity, legend: lightness',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: 'Lightness - legend on',
+            channels: { lightness: { attach: ['Popularity'] } },
+            legend: 'lightness',
+          },
+        }),
       hold: 2600,
     },
   ]);

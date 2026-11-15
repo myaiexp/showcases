@@ -25,7 +25,12 @@ const mount: Mount = async (el, ctx) => {
       say: 'Kinds on x, Popularity summed (the default aggregator)',
       run: (c) =>
         c.animate({
-          config: { channels: { x: { set: [{ name: 'Kinds' }] }, y: { set: [{ name: 'Popularity', aggregator: 'sum' }] } } },
+          config: {
+            channels: {
+              x: { set: [{ name: 'Kinds' }] },
+              y: { set: [{ name: 'Popularity', aggregator: 'sum' }] },
+            },
+          },
         }),
     },
     {
@@ -43,4 +48,3 @@ const mount: Mount = async (el, ctx) => {
 };
 
 export default mount;
-

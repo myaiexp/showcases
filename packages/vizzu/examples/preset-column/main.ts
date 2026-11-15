@@ -17,9 +17,10 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "column: Genres along x, Popularity up y, the value on each column",
+      say: 'column: Genres along x, Popularity up y, the value on each column',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.column({ x: 'Genres', y: 'Popularity', title: 'Popularity by genre' })),
+      run: (c) =>
+        c.animate(Vizzu.presets.column({ x: 'Genres', y: 'Popularity', title: 'Popularity by genre' })),
       hold: 2400,
     },
   ]);

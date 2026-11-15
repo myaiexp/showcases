@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Store an animation and replay it",
+  title: 'Store an animation and replay it',
   summary:
-    "The control from activated has a store() method that returns a reference to the animation itself. Passing that reference to animate() later plays the same animation again, so it need not be described a second time.",
-  section: "Animation control & keyframes",
-  tags: ['animate','activated','AnimControl','store','CAnimation'],
+    'The control from activated has a store() method that returns a reference to the animation itself. Passing that reference to animate() later plays the same animation again, so it need not be described a second time.',
+  section: 'Animation control & keyframes',
+  tags: ['animate', 'activated', 'AnimControl', 'store', 'CAnimation'],
   docs: [
     'repo/docs/tutorial/animation_control_keyframes.md',
     'repo/docs/tutorial/animation_control_keyframes/01.js',

@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Merge",
+      title: 'Merge',
       channels: {
         y: { set: ['Kinds'] },
         x: { set: ['Genres', 'Popularity'] },
@@ -26,20 +26,22 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "x: detach Genres, the kinds are summed",
-      run: (c) => c.animate({
-        config: { title: 'Aggregate', channels: { x: { detach: ['Genres'] } } },
-      }),
+      say: 'x: detach Genres, the kinds are summed',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Aggregate', channels: { x: { detach: ['Genres'] } } },
+        }),
     },
     {
-      say: "coordSystem polar, y range min -30%",
-      run: (c) => c.animate({
-        config: {
-          title: 'Polar coordinates',
-          channels: { y: { range: { min: '-30%' } } },
-          coordSystem: 'polar',
-        },
-      }),
+      say: 'coordSystem polar, y range min -30%',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: 'Polar coordinates',
+            channels: { y: { range: { min: '-30%' } } },
+            coordSystem: 'polar',
+          },
+        }),
       hold: 3000,
     },
   ]);

@@ -17,9 +17,10 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "lollipop: the same values, drawn as a dot on each stem",
+      say: 'lollipop: the same values, drawn as a dot on each stem',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.lollipop({ x: 'Genres', y: 'Popularity', title: 'Popularity by genre' })),
+      run: (c) =>
+        c.animate(Vizzu.presets.lollipop({ x: 'Genres', y: 'Popularity', title: 'Popularity by genre' })),
       hold: 2400,
     },
   ]);

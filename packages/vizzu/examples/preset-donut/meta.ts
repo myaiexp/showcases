@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Preset: donut',
   summary:
-    "Vizzu.presets.donut({ angle, stackedBy }) puts angle and then stackedBy on the x-axis, colours by stackedBy and uses the polar system. It sets only the y range (-200% to 100%), which is what leaves the hole, and no series on y.",
+    'Vizzu.presets.donut({ angle, stackedBy }) puts angle and then stackedBy on the x-axis, colours by stackedBy and uses the polar system. It sets only the y range (-200% to 100%), which is what leaves the hole, and no series on y.',
   section: 'Chart presets',
   tags: ['presets', 'donut'],
   docs: [

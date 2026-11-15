@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Plugin: prepareAnimation hook',
   summary:
-    "A plugin class with a hooks getter runs its prepareAnimation function before every animate() call is set up, and may edit the target. This one writes the name of the series on color into the chart title, or a default title when there is none.",
+    'A plugin class with a hooks getter runs its prepareAnimation function before every animate() call is set up, and may edit the target. This one writes the name of the series on color into the chart title, or a default title when there is none.',
   section: 'Writing plugins',
   tags: ['Plugins.Plugin', 'hooks', 'prepareAnimation', 'feature', 'meta'],
   docs: [

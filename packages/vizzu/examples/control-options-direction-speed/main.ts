@@ -14,13 +14,30 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Direction and speed', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Direction and speed',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
-    { say: 'speed: 0.5, a 2 s animation takes 4 s', run: (c) => c.animate(toGrouped, { duration: 2, speed: 0.5 }) },
-    { say: 'speed: 3, back in a fraction of the time', run: (c) => c.animate(toStacked, { duration: 3, speed: 3 }) },
-    { say: 'direction: "reverse", plays from the grouped look back to the stacked one', run: (c) => c.animate(toGrouped, { duration: 3, direction: 'reverse' }) },
+    {
+      say: 'speed: 0.5, a 2 s animation takes 4 s',
+      run: (c) => c.animate(toGrouped, { duration: 2, speed: 0.5 }),
+    },
+    {
+      say: 'speed: 3, back in a fraction of the time',
+      run: (c) => c.animate(toStacked, { duration: 3, speed: 3 }),
+    },
+    {
+      say: 'direction: "reverse", plays from the grouped look back to the stacked one',
+      run: (c) => c.animate(toGrouped, { duration: 3, direction: 'reverse' }),
+    },
   ]);
   return () => stage.dispose();
 };

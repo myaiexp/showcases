@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Legend width",
+  title: 'Legend width',
   summary:
-    "The legend is as wide as Vizzu decides until legend.width is set. Setting 50 squeezes it, a larger value gives it room, and null returns to the automatic width. The plot takes whatever the legend leaves.",
-  section: "Chart layout",
-  tags: ['style','legend.width','null'],
+    'The legend is as wide as Vizzu decides until legend.width is set. Setting 50 squeezes it, a larger value gives it room, and null returns to the automatic width. The plot takes whatever the legend leaves.',
+  section: 'Chart layout',
+  tags: ['style', 'legend.width', 'null'],
   docs: [
     'repo/docs/tutorial/chart_layout.md',
     'repo/docs/tutorial/chart_layout/01.js',

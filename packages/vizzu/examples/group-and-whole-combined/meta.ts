@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Group and whole options together",
+  title: 'Group and whole options together',
   summary:
-    "The same group timings play twice: once as set (6 seconds in all), and once with duration: 1 on top. Vizzu then squeezes the groups into one second and keeps their proportions, so the labels still move last.",
-  section: "Animation options",
-  tags: ['animate','options','duration','easing','y','style'],
+    "The same group timings play twice: once as set (6 seconds in all), and once with duration: 1 on top. Vizzu then squeezes the groups into one second and keeps their proportions, so the style group still starts last. That pass also sets easing: 'linear' for the whole animation.",
+  section: 'Animation options',
+  tags: ['animate', 'options', 'duration', 'easing', 'y', 'style'],
   docs: [
     'repo/docs/tutorial/animation_options.md',
     'repo/docs/tutorial/animation_options/03_b.js',

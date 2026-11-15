@@ -12,14 +12,29 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: countryData,
-    config: Vizzu.presets.scatter({ x: 'Income', y: 'Online', dividedBy: 'Country', title: 'Income against internet use' }),
+    config: Vizzu.presets.scatter({
+      x: 'Income',
+      y: 'Online',
+      dividedBy: 'Country',
+      title: 'Income against internet use',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "bubbleplot: the scatter, with a bubble sized by Population and coloured by Continent",
+      say: 'bubbleplot: the scatter, with a bubble sized by Population and coloured by Continent',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.bubbleplot({ x: 'Income', y: 'Online', color: 'Continent', size: 'Population', dividedBy: 'Country', title: 'Bubble size is population' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.bubbleplot({
+            x: 'Income',
+            y: 'Online',
+            color: 'Continent',
+            size: 'Population',
+            dividedBy: 'Country',
+            title: 'Bubble size is population',
+          }),
+        ),
       hold: 2400,
     },
   ]);

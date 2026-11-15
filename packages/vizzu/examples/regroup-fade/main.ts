@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Changing dimensions with fading",
+      title: 'Changing dimensions with fading',
       channels: {
         y: { set: ['Popularity'] },
         x: { set: ['Kinds'] },
@@ -25,13 +25,16 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "x: Kinds out, Genres in, regroupStrategy fade",
-      run: (c) => c.animate({
-        config: {
-          channels: { x: { detach: ['Kinds'], attach: ['Genres'] } },
-        },
-      },
-      { regroupStrategy: 'fade' }),
+      say: 'x: Kinds out, Genres in, regroupStrategy fade',
+      run: (c) =>
+        c.animate(
+          {
+            config: {
+              channels: { x: { detach: ['Kinds'], attach: ['Genres'] } },
+            },
+          },
+          { regroupStrategy: 'fade' },
+        ),
       hold: 3000,
     },
   ]);

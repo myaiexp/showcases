@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Order of two dimensions",
+  title: 'Order of two dimensions',
   summary:
-    "With Genres and Kinds both on the x-axis, the first in the list groups the second: one set of columns per genre, one column per kind. Swapping the list makes kinds the groups. The legend disappears while Vizzu animates the change.",
-  section: "Sorting",
-  tags: ['set','detach','channels','grouping','sort'],
+    'With Genres and Kinds both on the x-axis, the first in the list groups the second: one set of columns per genre, one column per kind. Swapping the list makes kinds the groups. The legend disappears while Vizzu animates the change.',
+  section: 'Sorting',
+  tags: ['set', 'detach', 'channels', 'grouping', 'sort'],
   docs: [
     'repo/docs/tutorial/sorting.md',
     'repo/docs/tutorial/sorting/04_a.js',

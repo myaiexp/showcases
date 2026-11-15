@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Preset: nestedDonut',
   summary:
-    "Vizzu.presets.nestedDonut({ angle, stackedBy, radius }) is the percentage bar in the polar coordinate system: angle then stackedBy on x with align stretch, so every ring closes, and radius on y with a -50% minimum for the hole.",
+    'Vizzu.presets.nestedDonut({ angle, stackedBy, radius }) is the percentage bar in the polar coordinate system: angle then stackedBy on x with align stretch, so every ring closes, and radius on y with a -50% minimum for the hole.',
   section: 'Chart presets',
   tags: ['presets', 'nestedDonut'],
   docs: [

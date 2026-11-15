@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Fixed ranges",
+      title: 'Fixed ranges',
       channels: {
         y: { set: ['Popularity', 'Kinds'], range: { max: '150%' } },
         x: { set: ['Genres'], range: { min: -2, max: 3 } },
@@ -27,15 +27,16 @@ const mount: Mount = async (el, ctx) => {
   stage.story(chart, [
     {
       say: "y max and x min/max: 'auto'",
-      run: (c) => c.animate({
-        config: {
-          title: 'Back to the default ranges',
-          channels: {
-            y: { range: { max: 'auto' } },
-            x: { range: { min: 'auto', max: 'auto' } },
+      run: (c) =>
+        c.animate({
+          config: {
+            title: 'Back to the default ranges',
+            channels: {
+              y: { range: { max: 'auto' } },
+              x: { range: { min: 'auto', max: 'auto' } },
+            },
           },
-        },
-      }),
+        }),
       hold: 2800,
     },
   ]);

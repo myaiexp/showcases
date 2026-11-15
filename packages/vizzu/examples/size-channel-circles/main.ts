@@ -12,16 +12,19 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Size - change of geometry required', channels: { y: { set: ['Popularity'] }, x: { set: ['Genres'] } } },
+    config: {
+      title: 'Size - change of geometry required',
+      channels: { y: { set: ['Popularity'] }, x: { set: ['Genres'] } },
+    },
   });
 
   stage.story(chart, [
     {
-      say: "size: set Popularity (rectangles ignore it)",
+      say: 'size: set Popularity (rectangles ignore it)',
       run: (c) => c.animate({ config: { channels: { size: { set: ['Popularity'] } } } }),
     },
     {
-      say: "geometry: circle (now the radius follows size)",
+      say: 'geometry: circle (now the radius follows size)',
       run: (c) => c.animate({ config: { geometry: 'circle' } }),
       hold: 2400,
     },

@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: marketData,
-    config: Vizzu.presets.stackedBar({ x: 'Sales', stackedBy: 'Channel', y: 'Region', title: 'Sales by region and channel' }),
+    config: Vizzu.presets.stackedBar({
+      x: 'Sales',
+      stackedBy: 'Channel',
+      y: 'Region',
+      title: 'Sales by region and channel',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "radialStackedBar: each stacked bar becomes a ring, split into its channels",
+      say: 'radialStackedBar: each stacked bar becomes a ring, split into its channels',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.radialStackedBar({ angle: 'Sales', stackedBy: 'Channel', radius: 'Region', title: 'Sales by region and channel, radial' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.radialStackedBar({
+            angle: 'Sales',
+            stackedBy: 'Channel',
+            radius: 'Region',
+            title: 'Sales by region and channel, radial',
+          }),
+        ),
       hold: 2400,
     },
   ]);

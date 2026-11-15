@@ -16,15 +16,37 @@ const mount: Mount = async (el, ctx) => {
       {
         name: 'Genres',
         type: 'dimension',
-        values: ['Pop', 'Rock', 'Jazz', 'Metal', 'Pop', 'Rock', 'Jazz', 'Metal', 'Pop', 'Rock', 'Jazz', 'Metal'],
+        values: [
+          'Pop',
+          'Rock',
+          'Jazz',
+          'Metal',
+          'Pop',
+          'Rock',
+          'Jazz',
+          'Metal',
+          'Pop',
+          'Rock',
+          'Jazz',
+          'Metal',
+        ],
       },
       {
         name: 'Kinds',
         type: 'dimension',
         values: [
-          'Hard', 'Hard', 'Hard', 'Hard',
-          'Smooth', 'Experimental', 'Smooth', 'Smooth',
-          'Experimental', 'Experimental', 'Experimental', 'Experimental',
+          'Hard',
+          'Hard',
+          'Hard',
+          'Hard',
+          'Smooth',
+          'Experimental',
+          'Smooth',
+          'Smooth',
+          'Experimental',
+          'Experimental',
+          'Experimental',
+          'Experimental',
         ],
       },
       { name: 'Popularity', type: 'measure', values: [114, 96, 78, 52, 56, 36, 174, 121, 127, 83, 94, 58] },
@@ -41,13 +63,21 @@ const mount: Mount = async (el, ctx) => {
     {
       say: 'Kinds stacks on the y-axis',
       run: (c) =>
-        c.animate({ config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } } }),
+        c.animate({
+          config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } },
+        }),
     },
     {
       say: 'Kinds moves to the x-axis: grouped columns',
       run: (c) =>
         c.animate({
-          config: { channels: { y: { set: ['Popularity'] }, x: { set: ['Genres', 'Kinds'] }, color: { set: ['Kinds'] } } },
+          config: {
+            channels: {
+              y: { set: ['Popularity'] },
+              x: { set: ['Genres', 'Kinds'] },
+              color: { set: ['Kinds'] },
+            },
+          },
         }),
     },
   ]);
@@ -55,4 +85,3 @@ const mount: Mount = async (el, ctx) => {
 };
 
 export default mount;
-

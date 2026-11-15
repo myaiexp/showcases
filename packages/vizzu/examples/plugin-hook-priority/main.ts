@@ -27,7 +27,9 @@ class TagPlugin implements Plugins.Plugin {
       next();
     };
     // Vizzu reads the priority property of the function each time hooks are collected.
-    return { prepareAnimation: this.priority === undefined ? hook : Object.assign(hook, { priority: this.priority }) };
+    return {
+      prepareAnimation: this.priority === undefined ? hook : Object.assign(hook, { priority: this.priority }),
+    };
   }
 }
 
@@ -44,7 +46,15 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Start', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Start',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [

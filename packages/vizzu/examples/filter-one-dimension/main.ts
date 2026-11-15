@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Filter by one dimension",
+      title: 'Filter by one dimension',
       channels: {
         y: { set: ['Popularity', 'Kinds'] },
         x: { set: ['Genres'] },
@@ -26,10 +26,11 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "filter: Pop or Metal",
-      run: (c) => c.animate({
-        data: { filter: (record) => record.Genres === 'Pop' || record.Genres === 'Metal' },
-      }),
+      say: 'filter: Pop or Metal',
+      run: (c) =>
+        c.animate({
+          data: { filter: (record) => record.Genres === 'Pop' || record.Genres === 'Metal' },
+        }),
       hold: 2800,
     },
   ]);

@@ -12,21 +12,31 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Sum of Popularity by Genres', channels: { y: { set: ['Popularity'] }, x: { set: ['Genres'] } } },
+    config: {
+      title: 'Sum of Popularity by Genres',
+      channels: { y: { set: ['Popularity'] }, x: { set: ['Genres'] } },
+    },
   });
 
   stage.story(chart, [
     {
-      say: "count(): how many records each genre has",
-      run: (c) => c.animate({ config: { title: 'Count of items by Genres', channels: { y: { set: ['count()'] } } } }),
+      say: 'count(): how many records each genre has',
+      run: (c) =>
+        c.animate({ config: { title: 'Count of items by Genres', channels: { y: { set: ['count()'] } } } }),
     },
     {
-      say: "distinct(Kinds): how many different Kinds each genre has",
-      run: (c) => c.animate({ config: { title: 'Distinct Kinds by Genres', channels: { y: { set: ['distinct(Kinds)'] } } } }),
+      say: 'distinct(Kinds): how many different Kinds each genre has',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Distinct Kinds by Genres', channels: { y: { set: ['distinct(Kinds)'] } } },
+        }),
     },
     {
-      say: "sum(Popularity): back to the default",
-      run: (c) => c.animate({ config: { title: 'Sum of Popularity by Genres', channels: { y: { set: ['sum(Popularity)'] } } } }),
+      say: 'sum(Popularity): back to the default',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Sum of Popularity by Genres', channels: { y: { set: ['sum(Popularity)'] } } },
+        }),
     },
   ]);
   return () => stage.dispose();

@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Changing dimensions",
+      title: 'Changing dimensions',
       channels: {
         y: { set: ['Popularity', 'Kinds'] },
         x: { set: null },
@@ -26,16 +26,17 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "Kinds off y, Genres onto x, Kinds off colour",
-      run: (c) => c.animate({
-        config: {
-          channels: {
-            y: { detach: ['Kinds'] },
-            x: { set: ['Genres'] },
-            color: { set: null },
+      say: 'Kinds off y, Genres onto x, Kinds off colour',
+      run: (c) =>
+        c.animate({
+          config: {
+            channels: {
+              y: { detach: ['Kinds'] },
+              x: { set: ['Genres'] },
+              color: { set: null },
+            },
           },
-        },
-      }),
+        }),
       hold: 3000,
     },
   ]);

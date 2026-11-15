@@ -6,7 +6,16 @@ export default defineMeta({
   summary:
     "A plot-marker-draw handler gets each marker's bounding rectangle (in plot-relative units, which coordSystem.toCanvas turns into pixels), its categories and a canvas context. Drawing a shape there and calling preventDefault replaces the library's marker; the handler keeps drawing while the chart regroups.",
   section: 'Events',
-  tags: ['on', 'off', 'plot-marker-draw', 'preventDefault', 'detail.rect', 'detail.relative', 'coordSystem', 'event.target.categories'],
+  tags: [
+    'on',
+    'off',
+    'plot-marker-draw',
+    'preventDefault',
+    'detail.rect',
+    'detail.relative',
+    'coordSystem',
+    'event.target.categories',
+  ],
   docs: [
     'repo/docs/tutorial/events.md',
     'repo/docs/tutorial/events/config.js',

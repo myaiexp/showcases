@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Plugin: switch it off',
   summary:
-    "feature(plugin, false) disables a registered plugin: its hooks stop running and its listeners are removed, and feature(plugin, true) brings them back. While the title plugin is off, changing the color series leaves the old title in place.",
+    'feature(plugin, false) disables a registered plugin: its hooks stop running and its listeners are removed, and feature(plugin, true) brings them back. While the title plugin is off, changing the color series leaves the old title in place.',
   section: 'Writing plugins',
   tags: ['feature', 'Plugins.Plugin', 'enable', 'hooks'],
   docs: [

@@ -12,13 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Descending by value', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'], sort: 'byValue', reverse: true }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Descending by value',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'], sort: 'byValue', reverse: true },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
     {
-      say: "x: sort none, reverse false",
-      run: (c) => c.animate({ config: { title: "Let's get back to where we were", channels: { x: { sort: 'none', reverse: false } } } }),
+      say: 'x: sort none, reverse false',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: "Let's get back to where we were",
+            channels: { x: { sort: 'none', reverse: false } },
+          },
+        }),
       hold: 2600,
     },
   ]);

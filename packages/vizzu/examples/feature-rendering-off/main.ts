@@ -16,11 +16,17 @@ const mount: Mount = async (el, ctx) => {
     data: musicData,
     config: {
       title: 'Rendering on',
-      channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } },
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
     },
   });
   // Which series the chart holds on x, read from the chart rather than from the canvas.
-  const xSeries = (): string => (chart.config.channels?.x?.set ?? []).map((s: { name: string }) => s.name).join(' + ');
+  const xSeries = (): string =>
+    (chart.config.channels?.x?.set ?? []).map((s: { name: string }) => s.name).join(' + ');
   show(`rendering on\nx: ${xSeries()}`);
 
   // The rendering feature is not part of the stored state, so the last step turns it on again.
@@ -30,7 +36,12 @@ const mount: Mount = async (el, ctx) => {
       run: (c) => {
         c.feature('rendering', false);
         show(`rendering off\nx: ${xSeries()}`);
-        return c.animate({ config: { title: 'Rendering off', channels: { x: { attach: ['Kinds'] }, y: { detach: ['Kinds'] } } } });
+        return c.animate({
+          config: {
+            title: 'Rendering off',
+            channels: { x: { attach: ['Kinds'] }, y: { detach: ['Kinds'] } },
+          },
+        });
       },
     },
     {

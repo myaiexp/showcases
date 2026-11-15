@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Single series without an array',
   summary:
-    "set, attach and detach accept a bare series name when only one series is involved. The code keeps the array form in a comment above each call; the chart moves the same way, Kinds going from the y-axis to the x-axis and back.",
+    'set, attach and detach accept a bare series name when only one series is involved. The code keeps the array form in a comment above each call; the chart moves the same way, Kinds going from the y-axis to the x-axis and back.',
   section: 'Shorthands & Store',
   tags: ['animate', 'shorthands', 'attach', 'detach'],
   docs: [

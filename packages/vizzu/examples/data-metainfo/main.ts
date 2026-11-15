@@ -29,7 +29,10 @@ const mount: Mount = async (el, ctx) => {
     { say: lines[2]!, run: () => undefined },
     {
       say: lines[0]!,
-      run: (c) => c.animate({ config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } } }),
+      run: (c) =>
+        c.animate({
+          config: { channels: { y: { set: ['Popularity', 'Kinds'] }, color: { set: ['Kinds'] } } },
+        }),
     },
     { say: lines[1]!, run: () => undefined },
   ]);

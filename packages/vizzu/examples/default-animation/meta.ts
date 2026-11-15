@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Default animation options",
+  title: 'Default animation options',
   summary:
-    "When animate() gets no options, Vizzu sets durations and delays from what changes. Here the columns are grouped and then stacked again with the defaults: the movement and the labels are each timed automatically.",
-  section: "Animation options",
-  tags: ['animate','options','default'],
+    'When animate() gets no options, Vizzu sets durations and delays from what changes. Here the columns are grouped and then stacked again with the defaults: the movement and the labels are each timed automatically.',
+  section: 'Animation options',
+  tags: ['animate', 'options', 'default'],
   docs: [
     'repo/docs/tutorial/animation_options.md',
     'repo/docs/tutorial/animation_options/01.js',

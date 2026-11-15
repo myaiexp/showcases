@@ -12,21 +12,35 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: salesData,
-    config: { title: 'Revenue by year: area', geometry: 'area', channels: { x: { set: ['Year'] }, y: { set: ['Revenue', 'Region'] }, color: { set: ['Region'] } } },
+    config: {
+      title: 'Revenue by year: area',
+      geometry: 'area',
+      channels: { x: { set: ['Year'] }, y: { set: ['Revenue', 'Region'] }, color: { set: ['Region'] } },
+    },
   });
 
   stage.story(chart, [
     {
-      say: "geometry: line (still stacked: each line sits on the one below)",
+      say: 'geometry: line (still stacked: each line sits on the one below)',
       run: (c) => c.animate({ config: { title: 'Revenue by year: stacked lines', geometry: 'line' } }),
     },
     {
-      say: "Region leaves the y-axis: one line per region, from zero",
-      run: (c) => c.animate({ config: { title: 'Revenue by year: a line per region', channels: { y: { detach: ['Region'] } } } }),
+      say: 'Region leaves the y-axis: one line per region, from zero',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Revenue by year: a line per region', channels: { y: { detach: ['Region'] } } },
+        }),
     },
     {
-      say: "Region back on y, geometry: area",
-      run: (c) => c.animate({ config: { title: 'Revenue by year: area', geometry: 'area', channels: { y: { attach: ['Region'] } } } }),
+      say: 'Region back on y, geometry: area',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: 'Revenue by year: area',
+            geometry: 'area',
+            channels: { y: { attach: ['Region'] } },
+          },
+        }),
     },
   ]);
   return () => stage.dispose();

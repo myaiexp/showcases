@@ -12,21 +12,40 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'legend: auto', legend: 'auto', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'legend: auto',
+      legend: 'auto',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
     {
-      say: "legend: null (gone, and its space too)",
+      say: 'legend: null (gone, and its space too)',
       run: (c) => c.animate({ config: { title: 'legend: null', legend: null } }),
     },
     {
-      say: "legend: lightness, with Popularity on lightness",
-      run: (c) => c.animate({ config: { title: "legend: 'lightness'", legend: 'lightness', channels: { lightness: { set: ['Popularity'] } } } }),
+      say: 'legend: lightness, with Popularity on lightness',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: "legend: 'lightness'",
+            legend: 'lightness',
+            channels: { lightness: { set: ['Popularity'] } },
+          },
+        }),
     },
     {
-      say: "legend: auto again",
-      run: (c) => c.animate({ config: { title: 'legend: auto', legend: 'auto', channels: { lightness: { set: null } } } }),
+      say: 'legend: auto again',
+      run: (c) =>
+        c.animate({
+          config: { title: 'legend: auto', legend: 'auto', channels: { lightness: { set: null } } },
+        }),
     },
   ]);
   return () => stage.dispose();

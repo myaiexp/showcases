@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Column chart",
+      title: 'Column chart',
       channels: {
         y: { set: ['Popularity', 'Kinds'] },
         x: { set: ['Genres'] },
@@ -26,17 +26,18 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "x and y empty, Genres and Popularity on size",
-      run: (c) => c.animate({
-        config: {
-          title: 'Treemap',
-          channels: {
-            y: { set: null },
-            x: { set: null },
-            size: { attach: ['Genres', 'Popularity'] },
+      say: 'x and y empty, Genres and Popularity on size',
+      run: (c) =>
+        c.animate({
+          config: {
+            title: 'Treemap',
+            channels: {
+              y: { set: null },
+              x: { set: null },
+              size: { attach: ['Genres', 'Popularity'] },
+            },
           },
-        },
-      }),
+        }),
       hold: 3000,
     },
   ]);

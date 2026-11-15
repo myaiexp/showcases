@@ -16,7 +16,15 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: musicData,
-    config: { title: 'Store and replay an animation', channels: { y: { set: ['Popularity', 'Kinds'] }, x: { set: ['Genres'] }, color: { set: ['Kinds'] }, label: { set: ['Popularity'] } } },
+    config: {
+      title: 'Store and replay an animation',
+      channels: {
+        y: { set: ['Popularity', 'Kinds'] },
+        x: { set: ['Genres'] },
+        color: { set: ['Kinds'] },
+        label: { set: ['Popularity'] },
+      },
+    },
   });
 
   stage.story(chart, [
@@ -24,12 +32,18 @@ const mount: Mount = async (el, ctx) => {
       say: 'animate() grouped, and control.store() keeps the animation',
       run: (c) => {
         const animation = c.animate(toGrouped, { duration: 2 });
-        animation.activated.then((control) => { stored = control.store(); });
+        animation.activated.then((control) => {
+          stored = control.store();
+        });
         return animation;
       },
     },
     { say: 'stacked again by an ordinary animate()', run: (c) => c.animate(toStacked, { duration: 1 }) },
-    { say: 'animate(stored) plays the first animation again', run: (c) => (stored ? c.animate(stored) : undefined), hold: 1500 },
+    {
+      say: 'animate(stored) plays the first animation again',
+      run: (c) => (stored ? c.animate(stored) : undefined),
+      hold: 1500,
+    },
   ]);
   return () => stage.dispose();
 };

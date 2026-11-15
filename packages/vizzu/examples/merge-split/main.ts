@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Split stacked values = show side-by-side",
+      title: 'Split stacked values = show side-by-side',
       channels: {
         y: { set: ['Kinds'] },
         x: { set: ['Genres', 'Popularity'], split: true },
@@ -26,10 +26,11 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "x: split false",
-      run: (c) => c.animate({
-        config: { title: 'Merge', x: { split: false } },
-      }),
+      say: 'x: split false',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Merge', x: { split: false } },
+        }),
       hold: 2800,
     },
   ]);

@@ -28,7 +28,9 @@ const mount: Mount = async (el, ctx) => {
       say: "Revenue (unit 'k$') on y; Visitors (unit 'k') replaces it",
       run: (c) =>
         c.animate({
-          config: { channels: { y: { set: ['Visitors'] }, x: { set: ['Quarter'] }, label: { set: ['Visitors'] } } },
+          config: {
+            channels: { y: { set: ['Visitors'] }, x: { set: ['Quarter'] }, label: { set: ['Visitors'] } },
+          },
         }),
     },
   ]);
@@ -36,4 +38,3 @@ const mount: Mount = async (el, ctx) => {
 };
 
 export default mount;
-

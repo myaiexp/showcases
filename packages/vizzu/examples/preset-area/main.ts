@@ -17,7 +17,7 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "area: the columns joined into one filled shape",
+      say: 'area: the columns joined into one filled shape',
       // A preset returns a whole chart config, so it can go straight into animate().
       run: (c) => c.animate(Vizzu.presets.area({ x: 'Year', y: 'Revenue', title: 'Revenue by year' })),
       hold: 2400,

@@ -4,7 +4,7 @@ import { defineMeta } from '@/types.ts';
 export default defineMeta({
   title: 'Preset: radialStackedBar',
   summary:
-    "Vizzu.presets.radialStackedBar({ angle, stackedBy, radius }) is the stacked bar preset in the polar coordinate system: angle then stackedBy on x, radius on y with the range starting at -50% for a hole in the middle.",
+    'Vizzu.presets.radialStackedBar({ angle, stackedBy, radius }) is the stacked bar preset in the polar coordinate system: angle then stackedBy on x, radius on y with the range starting at -50% for a hole in the middle.',
   section: 'Chart presets',
   tags: ['presets', 'radialStackedBar'],
   docs: [

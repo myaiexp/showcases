@@ -12,14 +12,27 @@ const mount: Mount = async (el, ctx) => {
 
   await chart.animate({
     data: salesData,
-    config: Vizzu.presets.splittedColumn({ x: 'Year', y: 'Revenue', splittedBy: 'Region', title: 'Revenue by year, split by region' }),
+    config: Vizzu.presets.splittedColumn({
+      x: 'Year',
+      y: 'Revenue',
+      splittedBy: 'Region',
+      title: 'Revenue by year, split by region',
+    }),
   });
 
   stage.story(chart, [
     {
-      say: "violin: each region gets its own area, centred on its own line",
+      say: 'violin: each region gets its own area, centred on its own line',
       // A preset returns a whole chart config, so it can go straight into animate().
-      run: (c) => c.animate(Vizzu.presets.violin({ x: 'Year', y: 'Revenue', splittedBy: 'Region', title: 'Revenue by year, as violins' })),
+      run: (c) =>
+        c.animate(
+          Vizzu.presets.violin({
+            x: 'Year',
+            y: 'Revenue',
+            splittedBy: 'Region',
+            title: 'Revenue by year, as violins',
+          }),
+        ),
       hold: 2400,
     },
   ]);

@@ -37,7 +37,15 @@ const mount: Mount = async (el, ctx) => {
     {
       say: 'Genres on color: the legend lists genres, which the handler has no colour for',
       run: (c) =>
-        c.animate({ config: { channels: { x: { set: ['Kinds'] }, y: { set: ['Popularity', 'Genres'] }, color: { set: ['Genres'] } } } }),
+        c.animate({
+          config: {
+            channels: {
+              x: { set: ['Kinds'] },
+              y: { set: ['Popularity', 'Genres'] },
+              color: { set: ['Genres'] },
+            },
+          },
+        }),
     },
     {
       say: 'chart.off: labels go back to the legend style',

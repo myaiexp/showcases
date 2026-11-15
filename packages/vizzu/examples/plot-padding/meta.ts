@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "Plot padding",
+  title: 'Plot padding',
   summary:
-    "Setting plot paddingLeft and paddingRight to 100 narrows the plot. The axis texts are drawn in the padding and not in the plot, so they move out with it, and null brings the plot back.",
-  section: "Chart layout",
-  tags: ['style','plot.paddingLeft','plot.paddingRight'],
+    'Setting plot paddingLeft and paddingRight to 100 narrows the plot. The axis texts are drawn in the padding and not in the plot, so they move out with it, and null brings the plot back.',
+  section: 'Chart layout',
+  tags: ['style', 'plot.paddingLeft', 'plot.paddingRight'],
   docs: [
     'repo/docs/tutorial/chart_layout.md',
     'repo/docs/tutorial/chart_layout/05.js',

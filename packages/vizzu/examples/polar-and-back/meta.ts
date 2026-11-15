@@ -2,11 +2,11 @@
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
-  title: "From polar back to cartesian",
+  title: 'From polar back to cartesian',
   summary:
-    "Set coordSystem back to \"cartesian\" and the radial bars unroll into ordinary horizontal bars; the axes keep their series, only the geometry of the space changes.",
-  section: "Orientation, split & polar",
-  tags: ['coordSystem','cartesian','polar'],
+    'Set coordSystem back to "cartesian" and the radial bars unroll into ordinary horizontal bars; the axes keep their series, only the geometry of the space changes.',
+  section: 'Orientation, split & polar',
+  tags: ['coordSystem', 'cartesian', 'polar'],
   docs: [
     'repo/docs/tutorial/orientation_split_polar.md',
     'repo/docs/tutorial/orientation_split_polar/05_b.js',

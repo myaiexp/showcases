@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
   await chart.animate({
     data: musicData,
     config: {
-      title: "Polar coordinates",
+      title: 'Polar coordinates',
       channels: {
         y: { set: ['Kinds'], range: { min: '-30%' } },
         x: { set: ['Popularity'] },
@@ -27,10 +27,11 @@ const mount: Mount = async (el, ctx) => {
 
   stage.story(chart, [
     {
-      say: "coordSystem cartesian",
-      run: (c) => c.animate({
-        config: { title: 'Back to cartesian coordinates', coordSystem: 'cartesian' },
-      }),
+      say: 'coordSystem cartesian',
+      run: (c) =>
+        c.animate({
+          config: { title: 'Back to cartesian coordinates', coordSystem: 'cartesian' },
+        }),
       hold: 2800,
     },
   ]);
