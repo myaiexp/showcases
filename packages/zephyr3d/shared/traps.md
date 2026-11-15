@@ -81,3 +81,17 @@ Found while building this gallery. Read before building an example; add to it.
   use `heightMap.update(…)` then `updateBoundingBox()`, or `setHeights(Uint16Array)` of half floats.
   `setSplatMap` takes a 2-layer `Texture2DArray`; layer 0's rgba weight detail layers 0–3.
 - **`PlaneShape` is centred on its node.**
+
+## Animation and characters
+
+- **`Vector3.addBy/subBy/scaleBy/mulBy` mutate in place**: reusing a vector after `scaleBy` collapses geometry.
+- **`material-skin.md` names classes 0.10.0 lacks**: `SkinMaterial`, `SkinProfile`, `camera.skinSSS` are
+  `SSSMaterial`, `SSSProfile`, `camera.SSS`. `diffuseWrap`/`scatterWrap` live on `HairMaterial`.
+- **`HairMaterial` has no albedo**: colour and alpha come from vertex colours (`vertexColor = true`);
+  hair cards need `cullMode = 'none'` and an `alphaCutoff`. `EyeMaterial` mirrors the sky: use
+  `scene.env.light.type = 'constant'`.
+- **`animation-controller.md` §5**: `onActive: 'keep'` leaves idle blended in; omit it to stop idle.
+- **`'cubicspline'` keyframes** take tangent triples; the constructor form takes plain values, so use
+  `'cubicspline-natural'`.
+- **Repeated `fetchModel` calls** give independent nodes sharing primitives and materials (skinned
+  instancing without `clone()`). Create humanoid mask clips lazily: making all ten at mount stalled Chrome here.
