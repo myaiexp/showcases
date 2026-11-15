@@ -65,6 +65,8 @@ function attachMarkup(doc: Document, markup: string, preview: boolean): Scene {
   const scene = parsed.querySelector('a-scene');
   if (!scene) throw new Error('the example markup has no <a-scene>');
   if (preview) for (const [name, value] of Object.entries(CARD_ATTRS)) if (!scene.hasAttribute(name)) scene.setAttribute(name, value);
+  // A leading <style> lands in the parsed <head>; keep it, as the docs' pages would.
+  doc.head.append(...Array.from(parsed.head.querySelectorAll('style')));
   // Moving the nodes adopts them into the iframe's document, where A-Frame's elements upgrade.
   doc.body.append(...Array.from(parsed.body.childNodes));
   return scene as unknown as Scene;

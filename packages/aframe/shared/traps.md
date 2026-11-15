@@ -42,3 +42,38 @@ Found while building this gallery. Read before building an example; add to it.
   divides by fwidth = 0. Real GPUs do not; the sdf fonts (all the others) are clean everywhere.
 
 ## Docs vs 1.8.0
+
+- **`a-link.md` lists a `src` attribute; 1.8.0 maps `image`** (`<a-link image="#thumb">`).
+- **`stateremoved` passes the state name itself as `evt.detail`**; `entity.md` reads `evt.detail.state`, which is undefined.
+- **`removeObject3D` deletes the key from `object3DMap`**; the docs say it sets it to null.
+- **`developing-with-threejs.md` uses `Matrix4.getInverse` and `applyMatrix`**, both gone from three.js: use
+  `.copy(m).invert()` and `applyMatrix4`.
+
+## Assets and models
+
+- **`<a-asset-item>` reads text unless the URL ends in `.glb`** (a-assets.js `inferResponseType`): a GLB
+  from `models.ts` is a blob: URL, so give it `response-type="arraybuffer"`. Inline `gltf-model="url(…)"`
+  needs nothing.
+- **glTF animations need aframe-extras' animation-mixer** (`gltf-model.md`), which is not installed.
+
+## Typing
+
+- `stage.scene.querySelector(...)` returns an `Entity` (types.ts overrides it); `document.querySelector`
+  does not, so pass the type: `document.querySelector<Entity>('#box')`.
+- Under `noUncheckedIndexedAccess`, `el.components.foo` needs a `!`.
+
+## Found building Components
+
+- **`AFRAME.ANIME` is anime v3**: only the easings in `animation.md`'s table exist; an unknown name
+  (`easeOutBounce`) throws `A.easing is not a function` every frame.
+- **`sphericalEnvMap` is deprecated in 1.8.0**: it warns and acts as an equirectangular `envMap`.
+- **The ambient-occlusion map reads the first UV set** with three 0.184; the docs' second-UV advice is stale.
+- **`wasd-controls` ignores keys unless `document.activeElement === document.body`**: click the view first.
+- **`link` navigates on its `on` event (`click`)**: set `on` to an event nothing emits to keep a portal in place;
+  the link component needs `visualAspectEnabled: true` to draw a portal (`<a-link>` sets it).
+- **`laser-controls` draws its ray only after `controllerconnected` with `detail.name`**; pass `model: false`
+  so no controller model is fetched.
+- **`pool` hands back paused entities**: call `el.play()` before their animations run.
+- **An `<img>` with no src in `<a-assets>` does not delay loading**; an `<audio preload="auto">` with no source
+  holds the scene until the assets `timeout`, which is how a loading screen stays up long enough to see.
+- **A `<style>` in `scene` markup** is moved into the iframe's `<head>` by the host; other head elements are dropped.

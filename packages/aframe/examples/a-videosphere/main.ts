@@ -24,13 +24,13 @@ const turningSky: VideoPainter = (g, w, h, t) => {
     g.fillRect((i / 24) * w, h / 2, w / 24, h / 2);
   }
   g.fillStyle = '#ffffff';
-  g.font = `${Math.round(h / 28)}px system-ui, sans-serif`;
+  g.font = `${Math.round(h / 18)}px system-ui, sans-serif`;
   g.fillText(`${t.toFixed(1)} s`, w * 0.48, h * 0.6);
 };
 
 export default aframeExample(import.meta.url, {
   setup() {
-    canvasVideo({ id: 'antarctica', width: 1024, height: 512, draw: turningSky });
+    canvasVideo({ id: 'antarctica', width: 512, height: 256, fps: 15, draw: turningSky });
   },
 
   scene: `
