@@ -23,6 +23,10 @@ import './stage.css';
  *   `{ point: {x, y}, lngLat, originalEvent }`, with no `x`/`y` of their own. Layer events
  *   (`layer.on('click')`) are L7's: `{ x, y, lngLat, feature, featureId }`. Errors thrown in a
  *   scene handler are caught and logged as "Error in map event handler".
+ * - `scene.once(type)` for map events (click, mousemove, moveend, …) never fires: it lands on
+ *   an emitter the map engine doesn't feed. Use on + off. 'maploaded' is never emitted.
+ *   `getPickedLayer()` is set by the async pick that follows a pointer move: read it later
+ *   (a timer), not inside the scene's own mousemove handler.
  * - `scene.addImage` returns a Promise: await it before adding a layer that uses the image.
  *   `removeImage` only empties the registry (hasImage turns false); icons already drawn stay.
  * - Line layers, docs claims wrong for 2.29.1: style `arrow` ({enable, arrowWidth, …}) is read

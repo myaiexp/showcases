@@ -1,8 +1,7 @@
-// on, once and off: three click listeners with different lifetimes
+// on and off: one click listener stays, another removes itself after three clicks
 import { PointLayer, Scene } from '@antv/l7';
 import { Map } from '@antv/l7-maps';
 import type { Mount } from '@/types.ts';
-import { button } from '../../shared/controls.ts';
 import { cityFeatures } from '../../shared/data.ts';
 import { eventBoard } from '../../shared/scene-board.ts';
 import { createStage } from '../../shared/stage.ts';
@@ -20,17 +19,15 @@ const mount: Mount = async (el, ctx) => {
   for (const l of worldLayers()) scene.addLayer(l);
   scene.addLayer(new PointLayer().source(cityFeatures()).shape('circle').size(5).color('#ffb347'));
 
-  const flash = eventBoard(stage.container, ['on', 'once', 'on → off after 3']);
+  const flash = eventBoard(stage.container, ['on', 'on → off after 3']);
   let n = 0;
   scene.on('click', () => flash('on'));
-  scene.once('click', () => flash('once'));
   const third = (): void => {
     flash('on → off after 3');
     if (++n === 3) scene.off('click', third);
   };
   scene.on('click', third);
 
-  if (stage.bar) button(stage.bar, 'Re-arm once()', () => scene.once('click', () => flash('once')));
   if (stage.preview) {
     const ghost = stage.ghost(scene);
     ghost.move(130, 100);

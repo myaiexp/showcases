@@ -22,7 +22,8 @@ const mount: Mount = async (el, ctx) => {
 
   const show = valuePanel(stage.container, 'br');
   const names: Record<string, string> = { [land.id]: 'countries', [dots.id]: 'cities' };
-  scene.on('mousemove', () => {
+  // Picking runs asynchronously after each pointer move, so read the result on a short timer.
+  stage.every(200, () => {
     const id = scene.getPickedLayer();
     show({ 'getPickedLayer()': `${id}`, layer: names[String(id)] ?? '(none)' });
   });

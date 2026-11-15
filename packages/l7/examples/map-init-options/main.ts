@@ -21,7 +21,7 @@ const mount: Mount = async (el, ctx) => {
     new PointLayer()
       .source(cityFeatures())
       .shape('squareColumn')
-      .size('pop', (pop: number) => [4, 4, pop * 4])
+      .size('pop', (pop: number) => [5, 5, pop * 0.8])
       .color('#7fdbff'),
   );
   valuePanel(stage.container, 'br')(Object.fromEntries(Object.entries(options).map(([k, v]) => [k, JSON.stringify(v)])));

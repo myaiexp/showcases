@@ -8,7 +8,8 @@ import { eventBoard } from '../../shared/scene-board.ts';
 import { createStage } from '../../shared/stage.ts';
 import { worldLayers } from '../../shared/world.ts';
 
-const EVENTS = ['loaded', 'maploaded', 'resize'] as const;
+// The docs also list 'maploaded', but 2.29.1 never emits it.
+const EVENTS = ['loaded', 'resize'] as const;
 
 const mount: Mount = async (el, ctx) => {
   const stage = createStage(el, ctx);
