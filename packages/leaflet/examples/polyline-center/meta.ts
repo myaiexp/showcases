@@ -11,6 +11,7 @@ export default defineMeta({
     'repo/src/layer/vector/Polyline.js',
     'repo/src/geometry/LineUtil.js',
     'repo/src/layer/vector/CircleMarker.js',
+    'repo/src/map/Map.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

@@ -11,6 +11,7 @@ export default defineMeta({
     'repo/docs/examples/extending-2-layers/index.md',
     'repo/src/layer/tile/TileLayer.js',
     'repo/src/layer/tile/GridLayer.js',
+    'repo/src/map/Map.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

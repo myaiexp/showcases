@@ -7,7 +7,7 @@ export default defineMeta({
     "hideSingleBase hides the base-layer section while the LayersControl lists only one base layer. Buttons call removeLayer and addBaseLayer to go between one and two.",
   section: "Layer groups",
   tags: ["LayersControl", "hideSingleBase", "removeLayer", "addBaseLayer"],
-  docs: ["repo/src/control/LayersControl.js"],
+  docs: ['repo/src/control/LayersControl.js', 'repo/src/layer/LayerGroup.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

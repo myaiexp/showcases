@@ -179,6 +179,10 @@ GitHub Pages. No service on the VPS.
   main.ts writes its D2 source and compile options. Never `new D2()`: `stage.d2()` is the page's one queued
   engine (22 MB WASM). Icons come from `shared/icons.ts`, quoted (`icon: "${icons.x}"`). `test/d2-examples.test.ts`
   compiles every variant in Node; a variant that fails on purpose holds the comment `# (deliberate error)`.
+- Leaflet 2 (`packages/leaflet`, on `leaflet@2.0.0-beta.4`): build on `shared/stage.ts` (`createStage`; traps in
+  `shared/traps.md`), `stage.own(new LeafletMap(stage.box, …))`. Never a plain TileLayer/WMSTileLayer: `LocalTileLayer`
+  and `LocalWMSTileLayer` send Leaflet's URLs (`https://tiles.example/…`, `wms.example`) to a pretend server that paints
+  Natural Earth land; `test/leaflet-offline.test.ts` fails other URLs. Cards click through `shared/ghost.ts`.
 - cosmos.gl: build on `packages/cosmos-gl/shared/stage.ts` (`createStage`; traps in `shared/traps.md`). Every graph is
   `stage.own(new Graph(stage.div, config, stage.device()))`: the stage's own luma device, because
   `Graph.destroy()` never frees the WebGL context. It runs on the repo's one luma.gl (9.4.2) although it

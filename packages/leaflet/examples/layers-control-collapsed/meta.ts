@@ -7,7 +7,7 @@ export default defineMeta({
     "A LayersControl's collapsed, collapseDelay, position and title options, with expand() and collapse() buttons. Changing an option builds a new control.",
   section: "Layer groups",
   tags: ["LayersControl", "collapsed", "collapseDelay", "position", "title", "expand", "collapse"],
-  docs: ["repo/src/control/LayersControl.js"],
+  docs: ['repo/src/control/LayersControl.js', 'repo/src/layer/LayerGroup.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

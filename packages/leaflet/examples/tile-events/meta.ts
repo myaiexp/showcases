@@ -8,7 +8,7 @@ export default defineMeta({
   section: "Tile layers",
   tags: ["TileLayer", "tileloadstart", "tileload", "tileerror", "tileabort", "tileunload", "loading", "load", "isLoading"],
   // The vendored docs files this example was built from (keys of docs/MANIFEST.json).
-  docs: ["repo/src/layer/tile/GridLayer.js", "repo/src/layer/tile/TileLayer.js"],
+  docs: ['repo/src/layer/tile/GridLayer.js', 'repo/src/layer/tile/TileLayer.js', 'repo/src/map/Map.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

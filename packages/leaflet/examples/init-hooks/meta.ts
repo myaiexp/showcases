@@ -12,6 +12,8 @@ export default defineMeta({
     'repo/docs/examples/extending-1-classes/index.md',
     'repo/MIGRATION.md',
     'repo/src/layer/Layer.js',
+    'repo/src/layer/LayerGroup.js',
+    'repo/src/layer/DivOverlay.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

@@ -7,7 +7,7 @@ export default defineMeta({
     "flyTo(Tokyo, 8, {duration: 5}) starts a long flight from London; stop() ends it where the map is and settles on a whole zoom level. The log shows movestart and moveend.",
   section: "Map view",
   tags: ["stop", "flyTo", "movestart", "moveend"],
-  docs: ["repo/src/map/Map.js"],
+  docs: ['repo/src/map/Map.js', 'repo/src/layer/Layer.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

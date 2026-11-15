@@ -12,6 +12,7 @@ export default defineMeta({
     'repo/src/core/Class.js',
     'repo/src/geo/LatLng.js',
     'repo/src/layer/vector/Polyline.js',
+    'repo/src/layer/Layer.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

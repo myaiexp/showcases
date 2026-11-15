@@ -7,7 +7,12 @@ export default defineMeta({
     "A LatLngBounds starts empty and grows with extend(); a dashed rectangle shows pad(ratio). Click the map or watch the card add points; the caption gives toBBoxString and isValid.",
   section: "Geometry & types",
   tags: ["LatLngBounds", "extend", "pad", "isValid", "toBBoxString"],
-  docs: ["repo/src/geo/LatLngBounds.js"],
+  docs: [
+    'repo/src/geo/LatLngBounds.js',
+    'repo/src/layer/vector/Rectangle.js',
+    'repo/src/layer/vector/CircleMarker.js',
+    'repo/src/map/Map.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

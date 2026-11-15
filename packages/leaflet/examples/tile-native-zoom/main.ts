@@ -33,8 +33,22 @@ const mount: Mount = (el, ctx) => {
     layer.redraw();
     report();
   };
-  stage.slider('minNativeZoom', 0, 9, 1, 3, (v) => ((layer.options.minNativeZoom = Math.min(v, layer.options.maxNativeZoom ?? 9)), apply()));
-  stage.slider('maxNativeZoom', 0, 9, 1, 5, (v) => ((layer.options.maxNativeZoom = Math.max(v, layer.options.minNativeZoom ?? 0)), apply()));
+  // Each slider is clamped by the other; a clamped value is written back so the slider shows it.
+  const settle = (input: HTMLInputElement | null, v: number, kept: number): void => {
+    if (input && kept !== v) {
+      input.value = String(kept);
+      input.dispatchEvent(new Event('input'));
+    }
+    apply();
+  };
+  const minSlider: HTMLInputElement | null = stage.slider('minNativeZoom', 0, 9, 1, 3, (v) => {
+    layer.options.minNativeZoom = Math.min(v, layer.options.maxNativeZoom ?? 9);
+    settle(minSlider, v, layer.options.minNativeZoom);
+  });
+  const maxSlider: HTMLInputElement | null = stage.slider('maxNativeZoom', 0, 9, 1, 5, (v) => {
+    layer.options.maxNativeZoom = Math.max(v, layer.options.minNativeZoom ?? 0);
+    settle(maxSlider, v, layer.options.maxNativeZoom);
+  });
 
   if (stage.preview) {
     stage.cycle([{ run: () => map.setZoom(8) }, { run: () => map.setZoom(5) }, { run: () => map.setZoom(1) }, { run: () => map.setZoom(6) }], 2400);

@@ -12,6 +12,7 @@ export default defineMeta({
     'repo/src/geometry/LineUtil.js',
     'repo/MIGRATION.md',
     'repo/src/layer/GeoJSON.js',
+    'repo/src/layer/DivOverlay.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

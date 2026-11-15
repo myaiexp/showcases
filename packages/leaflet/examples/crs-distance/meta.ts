@@ -12,6 +12,8 @@ export default defineMeta({
     'repo/src/geo/crs/EarthCRS.js',
     'repo/src/geo/LatLng.js',
     'repo/src/layer/marker/Marker.js',
+    'repo/src/layer/vector/Rectangle.js',
+    'repo/src/layer/vector/Polyline.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

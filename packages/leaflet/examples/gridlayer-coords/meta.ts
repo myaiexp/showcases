@@ -8,7 +8,11 @@ export default defineMeta({
   section: "Tile layers",
   tags: ["GridLayer", "createTile", "tileSize", "Point"],
   // The vendored docs files this example was built from (keys of docs/MANIFEST.json).
-  docs: ["repo/docs/examples/extending-2-layers/index.md", "repo/src/layer/tile/GridLayer.js"],
+  docs: [
+    'repo/docs/examples/extending-2-layers/index.md',
+    'repo/src/layer/tile/GridLayer.js',
+    'repo/src/map/Map.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

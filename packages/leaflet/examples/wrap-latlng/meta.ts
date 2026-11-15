@@ -11,6 +11,7 @@ export default defineMeta({
     'repo/src/map/Map.js',
     'repo/src/layer/vector/Rectangle.js',
     'repo/src/layer/vector/CircleMarker.js',
+    'repo/src/geo/LatLngBounds.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

@@ -7,7 +7,12 @@ export default defineMeta({
     "An open popup with keepInView true: dragging the map so the popup would leave the view makes the map pan back. With keepInView false the same drag carries the popup out of sight.",
   section: "Popups & tooltips",
   tags: ["keepInView", "autopanstart", "bindPopup"],
-  docs: ["repo/src/layer/Popup.js", "repo/src/layer/DivOverlay.js", "repo/src/map/Map.js"],
+  docs: [
+    'repo/src/layer/Popup.js',
+    'repo/src/layer/DivOverlay.js',
+    'repo/src/map/Map.js',
+    'repo/src/layer/Layer.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

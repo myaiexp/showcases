@@ -12,6 +12,7 @@ export default defineMeta({
     'repo/src/geo/crs/CRS.js',
     'repo/docs/examples/wms/index.md',
     'repo/src/layer/vector/Rectangle.js',
+    'repo/src/map/Map.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

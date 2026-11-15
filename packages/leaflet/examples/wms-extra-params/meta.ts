@@ -8,7 +8,7 @@ export default defineMeta({
   section: "WMS & TMS",
   tags: ["WMSTileLayer", "setParams", "wmsParams", "format_options", "time"],
   // The vendored docs files this example was built from (keys of docs/MANIFEST.json).
-  docs: ['repo/src/layer/tile/WMSTileLayer.js', 'repo/src/core/Util.js'],
+  docs: ['repo/src/layer/tile/WMSTileLayer.js', 'repo/src/core/Util.js', 'repo/src/layer/LayerBase.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

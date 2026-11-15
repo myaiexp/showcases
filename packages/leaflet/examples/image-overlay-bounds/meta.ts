@@ -11,6 +11,7 @@ export default defineMeta({
     'repo/src/layer/ImageOverlay.js',
     'repo/docs/examples/overlays/index.md',
     'repo/src/layer/vector/Rectangle.js',
+    'repo/src/geo/LatLngBounds.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

@@ -7,7 +7,12 @@ export default defineMeta({
     "A Circle with the stroke and fill options switched on and off, and fillColor set apart from color, through setStyle.",
   section: "Vector layers",
   tags: ["Circle", "stroke", "fill", "fillColor", "setStyle"],
-  docs: ["repo/src/layer/vector/Path.js", "repo/src/layer/vector/CircleMarker.js", "repo/src/layer/vector/Circle.js"],
+  docs: [
+    'repo/src/layer/vector/Path.js',
+    'repo/src/layer/vector/CircleMarker.js',
+    'repo/src/layer/vector/Circle.js',
+    'repo/src/layer/DivOverlay.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

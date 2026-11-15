@@ -7,7 +7,7 @@ export default defineMeta({
     "A live readout of the map's state getters: getCenter, getZoom, getBounds, getSize, getPixelBounds and getPixelOrigin, refreshed on move, zoom, viewreset and resize. The card flies between cities.",
   section: "Map events & conversion",
   tags: ["getCenter", "getZoom", "getBounds", "getSize", "getPixelBounds", "getPixelOrigin", "flyTo"],
-  docs: ["repo/src/map/Map.js"],
+  docs: ['repo/src/map/Map.js', 'repo/src/geo/LatLngBounds.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

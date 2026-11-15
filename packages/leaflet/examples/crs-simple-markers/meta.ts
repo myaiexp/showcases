@@ -11,6 +11,7 @@ export default defineMeta({
     'repo/docs/examples/crs-simple/index.md',
     'repo/src/geo/LatLng.js',
     'repo/src/layer/vector/CircleMarker.js',
+    'repo/src/map/Map.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

@@ -8,7 +8,12 @@ export default defineMeta({
   section: "Choropleth",
   tags: ["GeoJSON", "LeafletMap", "setView"],
   // The vendored docs files this example was built from (keys of docs/MANIFEST.json).
-  docs: ["repo/docs/examples/choropleth/index.md", "repo/docs/examples/choropleth/us-states.js", "repo/src/layer/GeoJSON.js"],
+  docs: [
+    'repo/docs/examples/choropleth/index.md',
+    'repo/docs/examples/choropleth/us-states.js',
+    'repo/src/layer/GeoJSON.js',
+    'repo/src/map/Map.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

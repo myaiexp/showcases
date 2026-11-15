@@ -12,6 +12,7 @@ export default defineMeta({
     'repo/docs/examples/extending-1-classes/index.md',
     'repo/src/layer/vector/CircleMarker.js',
     'repo/src/layer/Layer.js',
+    'repo/src/map/Map.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

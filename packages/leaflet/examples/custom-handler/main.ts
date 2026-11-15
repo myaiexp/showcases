@@ -55,10 +55,11 @@ const mount: Mount = (el, ctx) => {
   say();
 
   if (stage.preview) {
+    // The three tilts sum to zero, so each loop ends where it began and the card never drifts.
     const script: [number, number, string][] = [
       [8, 0, 'tilt right: gamma 8'],
       [0, 8, 'tilt forward: beta 8'],
-      [-8, -4, 'tilt back and left'],
+      [-8, -8, 'tilt back and left'],
     ];
     let i = 0;
     stage.cycle(

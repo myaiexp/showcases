@@ -7,7 +7,11 @@ export default defineMeta({
     "The same wide canvas video in two square bounds: the left VideoOverlay keeps its aspect ratio (default, letterboxed), the right one has keepAspectRatio: false and stretches to fill.",
   section: "Image, video & SVG overlays",
   tags: ["VideoOverlay", "keepAspectRatio", "muted"],
-  docs: ["repo/src/layer/VideoOverlay.js", "repo/docs/examples/overlays/index.md"],
+  docs: [
+    'repo/src/layer/VideoOverlay.js',
+    'repo/docs/examples/overlays/index.md',
+    'repo/src/layer/vector/Rectangle.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

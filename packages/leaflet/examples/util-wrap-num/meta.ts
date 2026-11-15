@@ -11,6 +11,8 @@ export default defineMeta({
     'repo/src/core/Util.js',
     'repo/src/layer/vector/CircleMarker.js',
     'repo/src/layer/marker/DivIcon.js',
+    'repo/src/map/Map.js',
+    'repo/src/layer/marker/Marker.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

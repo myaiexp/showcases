@@ -7,7 +7,7 @@ export default defineMeta({
     "An AttributionControl built by hand: addAttribution, removeAttribution and setPrefix, including a prefix of false. Texts are counted, so one added twice stays after one removal. The caption prints the control's text after each call.",
   section: "Controls",
   tags: ["AttributionControl", "addAttribution", "removeAttribution", "setPrefix", "attributionControl"],
-  docs: ["repo/src/control/AttributionControl.js"],
+  docs: ['repo/src/control/AttributionControl.js', 'repo/src/layer/LayerBase.js', 'repo/src/map/Map.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

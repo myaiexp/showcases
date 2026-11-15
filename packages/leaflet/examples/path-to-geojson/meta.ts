@@ -7,7 +7,12 @@ export default defineMeta({
     "toGeoJSON on a Polyline, Polygon, Circle and CircleMarker, with a precision argument that rounds the coordinates. A Circle exports only its centre.",
   section: "Vector layers",
   tags: ["Polyline", "Polygon", "Circle", "CircleMarker", "toGeoJSON"],
-  docs: ["repo/src/layer/vector/Polyline.js", "repo/src/layer/vector/Polygon.js", "repo/src/layer/vector/CircleMarker.js"],
+  docs: [
+    'repo/src/layer/vector/Polyline.js',
+    'repo/src/layer/vector/Polygon.js',
+    'repo/src/layer/vector/CircleMarker.js',
+    'repo/src/map/Map.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

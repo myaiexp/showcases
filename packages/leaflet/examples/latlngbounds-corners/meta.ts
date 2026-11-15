@@ -7,7 +7,14 @@ export default defineMeta({
     "One LatLngBounds with its four corners, centre, sides and bbox string read from getNorthWest, getNorthEast, getSouthEast, getSouthWest, getCenter, getNorth, getSouth, getEast, getWest and toBBoxString.",
   section: "Geometry & types",
   tags: ["LatLngBounds", "getNorthWest", "getCenter", "getWest", "toBBoxString"],
-  docs: ["repo/src/geo/LatLngBounds.js"],
+  docs: [
+    'repo/src/geo/LatLngBounds.js',
+    'repo/src/layer/vector/CircleMarker.js',
+    'repo/src/layer/vector/Rectangle.js',
+    'repo/src/layer/Tooltip.js',
+    'repo/src/map/Map.js',
+    'repo/src/layer/Layer.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

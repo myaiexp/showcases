@@ -7,7 +7,7 @@ export default defineMeta({
     "A ScaleControl rebuilt with different maxWidth, metric, imperial and updateWhenIdle options while the map zooms. The caption reads the control's text, a round number of metres or feet that fits in maxWidth pixels.",
   section: "Controls",
   tags: ["ScaleControl", "maxWidth", "metric", "imperial", "updateWhenIdle"],
-  docs: ["repo/src/control/ScaleControl.js"],
+  docs: ['repo/src/control/ScaleControl.js', 'repo/src/map/Map.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

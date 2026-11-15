@@ -11,6 +11,8 @@ export default defineMeta({
     'repo/src/core/Events.js',
     'repo/docs/examples/extending-1-classes/index.md',
     'repo/src/layer/vector/CircleMarker.js',
+    'repo/src/map/Map.js',
+    'repo/src/layer/Layer.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

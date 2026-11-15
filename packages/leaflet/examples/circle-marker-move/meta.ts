@@ -7,7 +7,7 @@ export default defineMeta({
     "A CircleMarker jumps between cities with setLatLng. Each call fires a move event carrying oldLatLng and latlng.",
   section: "Vector layers",
   tags: ["CircleMarker", "setLatLng", "move"],
-  docs: ["repo/src/layer/vector/CircleMarker.js"],
+  docs: ['repo/src/layer/vector/CircleMarker.js', 'repo/src/map/Map.js', 'repo/src/layer/LayerBase.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

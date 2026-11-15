@@ -7,7 +7,7 @@ export default defineMeta({
     "An SVGOverlay from the overlays tutorial: an <svg> element with a viewBox, stretched over map bounds at opacity 0.7, so its rectangles scale with the map.",
   section: "Image, video & SVG overlays",
   tags: ["SVGOverlay", "LatLngBounds", "viewBox", "opacity"],
-  docs: ["repo/src/layer/SVGOverlay.js", "repo/docs/examples/overlays/index.md"],
+  docs: ['repo/src/layer/SVGOverlay.js', 'repo/docs/examples/overlays/index.md', 'repo/src/map/Map.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

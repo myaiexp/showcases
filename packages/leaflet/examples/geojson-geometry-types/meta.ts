@@ -8,7 +8,13 @@ export default defineMeta({
   section: "GeoJSON",
   tags: ["GeoJSON", "Point", "MultiPoint", "LineString", "MultiLineString", "Polygon", "MultiPolygon", "GeometryCollection", "FeatureGroup"],
   // The vendored docs files this example was built from (keys of docs/MANIFEST.json).
-  docs: ["repo/src/layer/GeoJSON.js", "repo/docs/examples/geojson/index.md"],
+  docs: [
+    'repo/src/layer/GeoJSON.js',
+    'repo/docs/examples/geojson/index.md',
+    'repo/src/map/Map.js',
+    'repo/src/geo/LatLng.js',
+    'repo/src/layer/LayerGroup.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

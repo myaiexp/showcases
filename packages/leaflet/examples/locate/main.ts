@@ -20,7 +20,7 @@ const mount: Mount = (el, ctx) => {
   map.on('locationfound', (e: LocationEvent) => {
     const radius = e.accuracy;
     found.clearLayers();
-    new Marker(e.latlng).addTo(found).bindPopup(`You are within ${radius} meters from this point`, { autoPan: stage.preview, maxWidth: 140 }).openPopup();
+    new Marker(e.latlng).addTo(found).bindPopup(`You are within ${radius} meters from this point`, { maxWidth: 140 }).openPopup();
     new Circle(e.latlng, { radius }).addTo(found);
     log(`locationfound: ${e.latlng.lat.toFixed(4)}, ${e.latlng.lng.toFixed(4)} ±${Math.round(radius)} m`);
     stage.say(`locationfound: within ${Math.round(radius)} m of ${e.latlng.lat.toFixed(2)}, ${e.latlng.lng.toFixed(2)}${note}`, 'ok');

@@ -8,7 +8,13 @@ export default defineMeta({
   section: "GeoJSON",
   tags: ["GeoJSON.latLngToCoords", "GeoJSON.latLngsToCoords", "GeoJSON.coordsToLatLng", "GeoJSON.asFeature"],
   // The vendored docs files this example was built from (keys of docs/MANIFEST.json).
-  docs: ["repo/src/layer/GeoJSON.js", "repo/src/layer/GeoJSONUtil.js"],
+  docs: [
+    'repo/src/layer/GeoJSON.js',
+    'repo/src/layer/GeoJSONUtil.js',
+    'repo/src/map/Map.js',
+    'repo/src/layer/vector/Polyline.js',
+    'repo/src/layer/DivOverlay.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

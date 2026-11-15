@@ -7,7 +7,7 @@ export default defineMeta({
     "Seven ways to write the same coordinate (two numbers, with altitude, array, object with lng or lon, numeric strings) all build one LatLng. The card moves a marker through them; the panel also shows clone and toString with a precision.",
   section: "Geometry & types",
   tags: ["LatLng", "LatLngExpression", "clone", "toString"],
-  docs: ["repo/src/geo/LatLng.js"],
+  docs: ['repo/src/geo/LatLng.js', 'repo/src/layer/marker/Marker.js', 'repo/src/map/Map.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

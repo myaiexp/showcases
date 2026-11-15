@@ -12,6 +12,7 @@ export default defineMeta({
     'repo/src/layer/marker/Marker.js',
     'repo/src/map/handler/KeyboardHandler.js',
     'repo/src/control/ZoomControl.js',
+    'repo/src/map/Map.js',
   ],
   provenance: 'pure',
   added: '2026-11-15',

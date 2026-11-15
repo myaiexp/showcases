@@ -8,7 +8,7 @@ export default defineMeta({
   section: "Tile layers",
   tags: ["GridLayer", "opacity", "setOpacity", "TileLayer"],
   // The vendored docs files this example was built from (keys of docs/MANIFEST.json).
-  docs: ["repo/src/layer/tile/GridLayer.js"],
+  docs: ['repo/src/layer/tile/GridLayer.js', 'repo/src/layer/LayerBase.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

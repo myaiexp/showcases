@@ -32,7 +32,11 @@ export interface Stage {
   bar: HTMLElement | null;
   signal: AbortSignal;
   readonly disposed: boolean;
-  /** Calls `map.remove()` (or any `remove()`) on cleanup, before the stage's DOM goes. Returns it. */
+  /**
+   * Calls `map.remove()` (or any `remove()`) on cleanup, before the stage's DOM goes. Returns it.
+   * On a stage already disposed (unmounted while the example awaited data) it removes `thing` at
+   * once and throws STOPPED, which ends the late mount; the host ignores rejections after unmount.
+   */
   own<T extends { remove(): unknown }>(thing: T): T;
   /** Sets the plain-English line under the map. */
   say(text: string, tone?: Tone): void;
@@ -103,6 +107,14 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
       return abort.signal.aborted;
     },
     own(thing) {
+      if (stage.disposed) {
+        try {
+          thing.remove();
+        } catch (err) {
+          console.error('Leaflet remove() failed', err);
+        }
+        throw STOPPED;
+      }
       owned.push(thing);
       return thing;
     },
