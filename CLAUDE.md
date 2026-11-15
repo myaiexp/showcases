@@ -235,3 +235,8 @@ GitHub Pages. No service on the VPS.
   its own module; write `new Application({ backend: backendWebGL2, canvas: stage.canvas, … })` as the docs do. Assets go
   through a MemoryFS (`shared/vfs.ts`, `textures.ts`, models from `shared/gltf/`); physics passes `wasmUrl` from
   `shared/physics.ts`. Load-time globals (`__ZEPHYR3D_REVERSE_Z__`, `__ZEPHYR3D_DEBUG_VIEWS__`) use the frame's `globals`.
+- force-graph / 3d-force-graph (two galleries): build on each one's `shared/stage.ts` (`createStage`, trap list),
+  `stage.own(new ForceGraph(stage.container))` right after construction: it sizes the graph (width/height default to
+  the window) and in 3D frees the WebGL context `_destructor()` keeps. 2D panes are light paper: the defaults are drawn
+  for a white page. Cards hover, click and drag through `stage.ghost(graph)`; drags queue page-wide, since d3-drag and
+  DragControls keep page-wide state. A settled layout stops redrawing, so cards keep something moving.
