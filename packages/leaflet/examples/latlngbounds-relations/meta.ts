@@ -7,7 +7,7 @@ export default defineMeta({
     "A fixed LatLngBounds and a moving one: contains, intersects and overlaps are read as the second box slides from inside, to overlapping, to touching an edge (intersects true, overlaps false), to apart.",
   section: "Geometry & types",
   tags: ["LatLngBounds", "contains", "intersects", "overlaps", "Rectangle"],
-  docs: ["repo/src/geo/LatLngBounds.js"],
+  docs: ['repo/src/geo/LatLngBounds.js', 'repo/src/layer/vector/Rectangle.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

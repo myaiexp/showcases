@@ -8,7 +8,13 @@ export default defineMeta({
   section: "GeoJSON",
   tags: ["GeoJSON", "style", "pointToLayer", "onEachFeature", "Icon", "CircleMarker"],
   // The vendored docs files this example was built from (keys of docs/MANIFEST.json).
-  docs: ["repo/src/layer/GeoJSON.js", "repo/docs/examples/geojson/index.md", "repo/docs/examples/geojson/sample-geojson.js", "repo/docs/examples/geojson/baseball-marker.png"],
+  docs: [
+    'repo/src/layer/GeoJSON.js',
+    'repo/docs/examples/geojson/index.md',
+    'repo/docs/examples/geojson/sample-geojson.js',
+    'repo/docs/examples/geojson/baseball-marker.png',
+    'repo/src/layer/marker/Icon.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

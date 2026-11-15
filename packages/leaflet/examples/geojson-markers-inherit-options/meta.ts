@@ -8,7 +8,7 @@ export default defineMeta({
   section: "GeoJSON",
   tags: ["GeoJSON", "markersInheritOptions", "Marker", "opacity", "draggable"],
   // The vendored docs files this example was built from (keys of docs/MANIFEST.json).
-  docs: ["repo/src/layer/GeoJSON.js"],
+  docs: ['repo/src/layer/GeoJSON.js', 'repo/src/layer/ImageOverlay.js', 'repo/src/layer/marker/Marker.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

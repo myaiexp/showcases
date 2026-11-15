@@ -7,7 +7,7 @@ export default defineMeta({
     "A FeatureGroup holding a marker, a polyline, a polygon, a circle and a nested LayerGroup. getBounds drives fitBounds and an outline rectangle; setStyle recolours every path; adding a far circle grows the bounds.",
   section: "Layer groups",
   tags: ["FeatureGroup", "getBounds", "setStyle", "fitBounds", "LayerGroup"],
-  docs: ["repo/src/layer/FeatureGroup.js", "repo/src/layer/LayerGroup.js"],
+  docs: ['repo/src/layer/FeatureGroup.js', 'repo/src/layer/LayerGroup.js', 'repo/src/map/Map.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

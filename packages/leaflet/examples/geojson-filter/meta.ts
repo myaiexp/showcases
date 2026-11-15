@@ -8,7 +8,12 @@ export default defineMeta({
   section: "GeoJSON",
   tags: ["GeoJSON", "filter", "addData", "clearLayers", "bindTooltip"],
   // The vendored docs files this example was built from (keys of docs/MANIFEST.json).
-  docs: ["repo/src/layer/GeoJSON.js", "repo/docs/examples/geojson/index.md"],
+  docs: [
+    'repo/src/layer/GeoJSON.js',
+    'repo/docs/examples/geojson/index.md',
+    'repo/src/layer/LayerGroup.js',
+    'repo/src/layer/Layer.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

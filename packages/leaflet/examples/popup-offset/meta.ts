@@ -7,7 +7,7 @@ export default defineMeta({
     "A popup's offset option as [x, y] pixels, moved on a bound popup by changing options.offset and calling update(). The default is [0, 7]; a bigger y lifts the popup, x slides it sideways.",
   section: "Popups & tooltips",
   tags: ["offset", "update", "bindPopup", "CircleMarker"],
-  docs: ["repo/src/layer/Popup.js", "repo/src/layer/DivOverlay.js"],
+  docs: ['repo/src/layer/Popup.js', 'repo/src/layer/DivOverlay.js', 'repo/src/layer/vector/CircleMarker.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });

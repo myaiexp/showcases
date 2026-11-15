@@ -7,7 +7,11 @@ export default defineMeta({
     "setBounds moves and resizes an existing ImageOverlay: buttons shift, squash and double the Newark map, and an outline rectangle shows the bounds that getBounds returns.",
   section: "Image, video & SVG overlays",
   tags: ["ImageOverlay", "setBounds", "getBounds", "Rectangle"],
-  docs: ["repo/src/layer/ImageOverlay.js", "repo/docs/examples/overlays/index.md"],
+  docs: [
+    'repo/src/layer/ImageOverlay.js',
+    'repo/docs/examples/overlays/index.md',
+    'repo/src/layer/vector/Rectangle.js',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

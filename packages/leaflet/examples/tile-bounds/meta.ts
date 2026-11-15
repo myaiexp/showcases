@@ -8,7 +8,7 @@ export default defineMeta({
   section: "Tile layers",
   tags: ["TileLayer", "bounds", "LatLngBounds", "Rectangle", "tileloadstart"],
   // The vendored docs files this example was built from (keys of docs/MANIFEST.json).
-  docs: ["repo/src/layer/tile/GridLayer.js"],
+  docs: ['repo/src/layer/tile/GridLayer.js', 'repo/src/layer/vector/Rectangle.js'],
   provenance: 'pure',
   added: '2026-11-15',
 });
