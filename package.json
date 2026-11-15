@@ -117,6 +117,7 @@
     "pizzicato": "^0.6.4",
     "playcanvas": "^2.24.1",
     "plotly.js": "4.3.0",
+    "postprocessing": "6.39.6",
     "prismjs": "^1.30.0",
     "sigma": "4.0.6",
     "sortablejs": "^1.15.7",

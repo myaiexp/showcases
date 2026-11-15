@@ -203,3 +203,6 @@ GitHub Pages. No service on the VPS.
 - cobe: build on `packages/cobe/shared/stage.ts` (`createStage`, trap list). `stage.own(createGlobe(…))` right after
   creating: 2.0.1's `destroy()` keeps the WebGL context. Wrap every marker/arc id in `stage.id()`, since anchor names and
   `--cobe-visible-*` vars are page-wide. No loop or `onRender` in v2: animate with `stage.loop` + `update()`.
+- postprocessing: build on `packages/postprocessing/shared/stage.ts` (`createStage`; traps in `shared/traps.md`). The manual's
+  getting-started and custom-effects pages describe v7 (RenderPipeline, GData): follow the README and the src JSDoc. Each main.ts
+  builds its own `stage.own(new EffectComposer(...))`; disabling the last pass needs `renderToScreen` moved by hand.

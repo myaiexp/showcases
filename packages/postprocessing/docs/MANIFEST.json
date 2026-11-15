@@ -1,0 +1,1029 @@
+{
+  "fetched": "2026-11-15T10:22:56.312Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/pmndrs/postprocessing",
+      "ref": "v6.39.6",
+      "paths": [
+        "LICENSE.md",
+        "README.md",
+        "manual/content/_index.en.md",
+        "manual/content/getting-started.en.md",
+        "manual/content/custom-effects.en.md",
+        "manual/content/migration-guide.en.md",
+        "manual/content/plugins-tools.en.md",
+        "src/**/*.js",
+        "src/**/*.frag",
+        "src/**/*.vert"
+      ],
+      "commit": "a1f103559d15cf56cbcbb15d4373711b09418f3f"
+    }
+  ],
+  "files": {
+    "repo/LICENSE.md": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/LICENSE.md",
+      "sha256": "b7650918449bd5fb011ce30ce0e5bcda27aa9639db1fb3aef8c67c32945237f2"
+    },
+    "repo/manual/content/_index.en.md": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/manual/content/_index.en.md",
+      "sha256": "cb6b98090cc4507e84dbcd629cef97db78760b13dacddf8a819f41bb6e5e1004"
+    },
+    "repo/manual/content/custom-effects.en.md": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/manual/content/custom-effects.en.md",
+      "sha256": "5ac075d4f1d0ab60b62156ef70dfeb7a1772e5e30479beacc6405de00a2dc4cd"
+    },
+    "repo/manual/content/getting-started.en.md": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/manual/content/getting-started.en.md",
+      "sha256": "98590a8d9845dd1991bf356df880a433797eb4f9367982b1d68545c9838b0c72"
+    },
+    "repo/manual/content/migration-guide.en.md": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/manual/content/migration-guide.en.md",
+      "sha256": "4a04afd267fe9955f935195fed73baf659778a0bc57198f04709d427fa152296"
+    },
+    "repo/manual/content/plugins-tools.en.md": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/manual/content/plugins-tools.en.md",
+      "sha256": "eca9ddbc23f11f2afb6a661b64b62d22decfc7a034b170d6f071cd2a0851b394"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/README.md",
+      "sha256": "60c29babcde00d7cd6052f2e4d7cfbb276ece8f761358928bc04420b9b4fee21"
+    },
+    "repo/src/core/Disposable.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/Disposable.js",
+      "sha256": "8cf5fe543f69e16980b56acf884a7ccb8947fe8c6fbba007a490b8803a7d1dd4"
+    },
+    "repo/src/core/EffectComposer.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/EffectComposer.js",
+      "sha256": "6492e29dc0f880d824d93042f1d115055024fa72e3652e6f33c6665cf6a5123a"
+    },
+    "repo/src/core/EffectShaderData.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/EffectShaderData.js",
+      "sha256": "6662e393811aaa9836faa9bd66122ca84a1acc0074600ff81b7d1222c4dbb5b2"
+    },
+    "repo/src/core/GaussKernel.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/GaussKernel.js",
+      "sha256": "7410119d91e996cb28dfcf12414fb02dde701b6e0690e6c3fd35774755f58195"
+    },
+    "repo/src/core/ImmutableTimer.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/ImmutableTimer.js",
+      "sha256": "a945f665597c7aeddd5e655602256510c588b91bd53856a91e9bfcd39f555d24"
+    },
+    "repo/src/core/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/index.js",
+      "sha256": "0d67e61b42aec37f7575765c50ac074f8cc5cd174488f8623430076bf0a43c7c"
+    },
+    "repo/src/core/Initializable.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/Initializable.js",
+      "sha256": "01804e91a28368524b48b2115bf0d2b65f6edb772bfb32dbb76d8763d9c20547"
+    },
+    "repo/src/core/OverrideMaterialManager.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/OverrideMaterialManager.js",
+      "sha256": "ec76c6ab812a08dfe7d03a7d59bacd00f4c90af48283868d22665b8294c084dd"
+    },
+    "repo/src/core/Resizable.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/Resizable.js",
+      "sha256": "3052e399dc73d98bef4f2a2840f9db91a5cb413a80ccd6de6ce193b23c98619f"
+    },
+    "repo/src/core/Resolution.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/Resolution.js",
+      "sha256": "f5145ad5126bdd8e8c8c1699903997af428b30b9060c0771d300c23ce4978b60"
+    },
+    "repo/src/core/Selection.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/Selection.js",
+      "sha256": "b6af9783a0e1a4ea5a095c676c642712499fadb34a8fd0319fcd20466741dc21"
+    },
+    "repo/src/core/Timer.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/core/Timer.js",
+      "sha256": "52a87c5de7289be828bceb248c1bbf4edd19fe943a956b6f89209882385f8ef3"
+    },
+    "repo/src/effects/ASCIIEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/ASCIIEffect.js",
+      "sha256": "10ec5ef19e49e423442c3758b4b28e89579eafc10ddb1afde97ab4d72632dafe"
+    },
+    "repo/src/effects/blending/BlendMode.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/BlendMode.js",
+      "sha256": "c3ece72a980795ac2f775550e672b10518f0c4f19f573167cf72643be8937ed8"
+    },
+    "repo/src/effects/blending/glsl/add.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/add.frag",
+      "sha256": "ec0603243e36711198d32fe799bf9db071d07ec6bedc7fde5cc797acb9b91c67"
+    },
+    "repo/src/effects/blending/glsl/alpha.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/alpha.frag",
+      "sha256": "fe5858d4f97057375cefaf8e80a56972d7abb9d54194bc9329b3853d6dae7222"
+    },
+    "repo/src/effects/blending/glsl/average.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/average.frag",
+      "sha256": "75bb9bd7fd035630b4ae649b20abc40a37f40f993323bb422cb927ace2ca98c2"
+    },
+    "repo/src/effects/blending/glsl/color-burn.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/color-burn.frag",
+      "sha256": "4a1d8c513c431bf18e99c524eeeab9f8c9191cbcfc240dc9725113e56f5317a3"
+    },
+    "repo/src/effects/blending/glsl/color-dodge.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/color-dodge.frag",
+      "sha256": "5c1a30e9b1b4c87d60b857441175c3485a5a27bee09dceb7beb3aa45aa491751"
+    },
+    "repo/src/effects/blending/glsl/color.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/color.frag",
+      "sha256": "ebbc77d5edcf1e7ae891cb483d0efe7141f192e0e062d0a16059178f0399f1b8"
+    },
+    "repo/src/effects/blending/glsl/darken.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/darken.frag",
+      "sha256": "7b55bf36921a93e89dae9300fb91a879b48003c6fc11342454f686ae17beb8b2"
+    },
+    "repo/src/effects/blending/glsl/difference.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/difference.frag",
+      "sha256": "97fbabceebd9728c22690c250506e000fa7157a30bc0ff9e9a0d420d7847f5ce"
+    },
+    "repo/src/effects/blending/glsl/divide.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/divide.frag",
+      "sha256": "111c4c05e7271be3319119d38efa95ea335d808f31e3a4a1f1f34defd8faf750"
+    },
+    "repo/src/effects/blending/glsl/exclusion.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/exclusion.frag",
+      "sha256": "a0c5abab4f7755d67f959b624650982b1913e15fc19b6b6afd0dd751737964e4"
+    },
+    "repo/src/effects/blending/glsl/hard-light.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/hard-light.frag",
+      "sha256": "7c641cd4316681c04970360e178227177793aabdd897ef89b67c41753e64846a"
+    },
+    "repo/src/effects/blending/glsl/hard-mix.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/hard-mix.frag",
+      "sha256": "40752540d6ad307162c0efc49c357052111eaab0c26ea661fc139ce75b6361e2"
+    },
+    "repo/src/effects/blending/glsl/hue.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/hue.frag",
+      "sha256": "b4354207085c451fc7c0c6dbd27500d39543a3145b55ce63ea1dc8e79852fee6"
+    },
+    "repo/src/effects/blending/glsl/invert-rgb.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/invert-rgb.frag",
+      "sha256": "16c1667a7541572ed8011010796c595abf765ed1a6be64c2e51a2851aaa7ce06"
+    },
+    "repo/src/effects/blending/glsl/invert.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/invert.frag",
+      "sha256": "eb07c361ea2486dffe81841e697b6c59c8a7242f4d197e9945f82b7c07dedb1e"
+    },
+    "repo/src/effects/blending/glsl/lighten.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/lighten.frag",
+      "sha256": "95a6ff2fb8dea9da8cc76ba180a3e4599cd51cd7d3ae9683fe8a1a57e6ea5641"
+    },
+    "repo/src/effects/blending/glsl/linear-burn.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/linear-burn.frag",
+      "sha256": "85809c142eee2c0e6d8e9acfe32bde86a3bee98c86862ae7a2efcb4e7d7b58f0"
+    },
+    "repo/src/effects/blending/glsl/linear-dodge.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/linear-dodge.frag",
+      "sha256": "5ecf4c3c94ae64f7d8d80a30f978788ee9b56e5c6a0e7807821527326c025a3a"
+    },
+    "repo/src/effects/blending/glsl/linear-light.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/linear-light.frag",
+      "sha256": "f5cf5eaf5b2c52baa50d461a464b37ede430b4773e0fb93d6ffec8e7a3e4bbae"
+    },
+    "repo/src/effects/blending/glsl/luminosity.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/luminosity.frag",
+      "sha256": "bd173d3ce4cc1991012b55cb191a250d703b0993984a948b0e00666e234ede18"
+    },
+    "repo/src/effects/blending/glsl/multiply.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/multiply.frag",
+      "sha256": "1bee182c936859a862150e6d775f0fcbbc29c74ed5a061f24c53de554c54cbcf"
+    },
+    "repo/src/effects/blending/glsl/negation.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/negation.frag",
+      "sha256": "367af03db83ad69a505e9d0bc495d06e0a87bddc8d47112673c285a6a30ee0ca"
+    },
+    "repo/src/effects/blending/glsl/normal.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/normal.frag",
+      "sha256": "1c5785b20743920a71ed3744d9544af6de5930efcbfd0dbb49bd7e5ab16adf14"
+    },
+    "repo/src/effects/blending/glsl/overlay.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/overlay.frag",
+      "sha256": "1477aa5f4f9021782bf28fe184b6f244d0e27e1e60165ef5b20aea398b8261a8"
+    },
+    "repo/src/effects/blending/glsl/pin-light.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/pin-light.frag",
+      "sha256": "b31c9c6e7af834b0200590b3104124eeb495ef8c397ecbef457e24ead93291a2"
+    },
+    "repo/src/effects/blending/glsl/reflect.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/reflect.frag",
+      "sha256": "07554746d1f29bacff96ff07bce195fc5107f2d13ea459adc801026ff86d4dcb"
+    },
+    "repo/src/effects/blending/glsl/saturation.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/saturation.frag",
+      "sha256": "e6e3e7af97ae24b9ca24fce1238b3ee81c712686c6a4f27e5bbdf24018a22e37"
+    },
+    "repo/src/effects/blending/glsl/screen.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/screen.frag",
+      "sha256": "a67e64c2277c646d2fee0a20a0201856b4d592d237a76198e3a6d471841ee234"
+    },
+    "repo/src/effects/blending/glsl/soft-light.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/soft-light.frag",
+      "sha256": "d10d5a99f484e9486562b8e9a673332f48540354de70283dd6bf24c8dee64b49"
+    },
+    "repo/src/effects/blending/glsl/src.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/src.frag",
+      "sha256": "050186549cb57abb58e459d27cc13cc6a1612e432557f2af8c5d5ffbddcfcf54"
+    },
+    "repo/src/effects/blending/glsl/subtract.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/subtract.frag",
+      "sha256": "86a9556134392a9ac9941b186baaafc04cf793447ad4d369d8c582a5573634a8"
+    },
+    "repo/src/effects/blending/glsl/vivid-light.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/glsl/vivid-light.frag",
+      "sha256": "0e309fe1a6d414ea125a152bc8cc9637cce19caa4045284b09d27bdd79e5a4f7"
+    },
+    "repo/src/effects/blending/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/blending/index.js",
+      "sha256": "9c14fcce87cc0a1b2a1b5038c73db4c51c046d126a585667ddd8ed423296ee0e"
+    },
+    "repo/src/effects/BloomEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/BloomEffect.js",
+      "sha256": "b7dffc82f73744da16ebd41c763733d0420453bf3ce1ebc4eb6892ed706b2f03"
+    },
+    "repo/src/effects/BokehEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/BokehEffect.js",
+      "sha256": "25062d94af5261d647401ae1fbbdd9a4837f38e7201b8a9539d752e471657132"
+    },
+    "repo/src/effects/BrightnessContrastEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/BrightnessContrastEffect.js",
+      "sha256": "6d6512deab1a16bd6e74e91970d5c09be09be348da5083f78acc5210e7109822"
+    },
+    "repo/src/effects/ChromaticAberrationEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/ChromaticAberrationEffect.js",
+      "sha256": "7ce73bd07d2732972c799b5acc615cfbde147c9352c67c42c684968f5bed8889"
+    },
+    "repo/src/effects/ColorAverageEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/ColorAverageEffect.js",
+      "sha256": "a5f92e19214d7fda118d0128f9711880638c358ac7d85c454b20c652b621703d"
+    },
+    "repo/src/effects/ColorDepthEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/ColorDepthEffect.js",
+      "sha256": "fa40f93a5e2b389fc5f4ef826001f981a9ac556a8fca7d3a61230db494135b43"
+    },
+    "repo/src/effects/DepthEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/DepthEffect.js",
+      "sha256": "8fd45d456b3ee99569e43ca477d2665b39c074a0f259c3c39703c9cc71e0da80"
+    },
+    "repo/src/effects/DepthOfFieldEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/DepthOfFieldEffect.js",
+      "sha256": "81bf0c0622a50438b358c759c121042821ecb6961572d0060c5b59d6dbdd0acd"
+    },
+    "repo/src/effects/DotScreenEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/DotScreenEffect.js",
+      "sha256": "2d6884dff653d14b827ab5e473aff2f0bfcb2c371714659e4a3cf7aa27b3f2ac"
+    },
+    "repo/src/effects/Effect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/Effect.js",
+      "sha256": "0f16026eaf6c000ab25708ef4254ddc6f957376a0796d318be1f35f748fbb5c8"
+    },
+    "repo/src/effects/FXAAEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/FXAAEffect.js",
+      "sha256": "2793754c9b1e0345d4ace17de0d148a693ea828fd11ccffc2a3def9aa82e6798"
+    },
+    "repo/src/effects/GammaCorrectionEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/GammaCorrectionEffect.js",
+      "sha256": "042537c0074cc464ec83ccb52e270a2297626d46db754d17adfb48b454f4597a"
+    },
+    "repo/src/effects/GlitchEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/GlitchEffect.js",
+      "sha256": "f2be527512d80905c64d22b40a37b1dc030404558a075c25fdee37dc6d852443"
+    },
+    "repo/src/effects/glsl/ascii.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/ascii.frag",
+      "sha256": "10a8be71c08d164285022edd026c8c2fe69c30910fd1ba5c778c04e3f2f5a734"
+    },
+    "repo/src/effects/glsl/bloom.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/bloom.frag",
+      "sha256": "df997e530af66f1e3bda61435d039cff64fd0b39c8ca2cae8fc611d25c1f9ad4"
+    },
+    "repo/src/effects/glsl/bokeh.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/bokeh.frag",
+      "sha256": "93eb0c18492121c889dc2efaa8c84056f4a6e248b36999e181dc33147b75a961"
+    },
+    "repo/src/effects/glsl/brightness-contrast.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/brightness-contrast.frag",
+      "sha256": "c256d8a6984e9df1ef11b754124d35590d3096e6022e97b185671a6ef80da8d6"
+    },
+    "repo/src/effects/glsl/chromatic-aberration.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/chromatic-aberration.frag",
+      "sha256": "27f31ce7274ee139b8959cac7e47d4b8adbbd47fae0fdce4c2c1780249fb46f1"
+    },
+    "repo/src/effects/glsl/chromatic-aberration.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/chromatic-aberration.vert",
+      "sha256": "3defaabc8b99885cc6ec8bd647f9c381296066cb2d42990a762d4c00ccc6e424"
+    },
+    "repo/src/effects/glsl/color-average.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/color-average.frag",
+      "sha256": "f25af8279c0982f2fadc7a93c53b235faf905c27f72ad137b027978f5b5b36b4"
+    },
+    "repo/src/effects/glsl/color-depth.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/color-depth.frag",
+      "sha256": "f6faacaf225fbf276d98fc76b0003d26e82fd22bc28cbf4f90fc0d0b7d10015e"
+    },
+    "repo/src/effects/glsl/depth-of-field.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/depth-of-field.frag",
+      "sha256": "b5a4a4c548ecc71ca7be123633533bc5a28baf19928e2b6e6aa94d923da53b89"
+    },
+    "repo/src/effects/glsl/depth.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/depth.frag",
+      "sha256": "df9746ab041ac7131a13295ca20b9532b78ac118282fe2f64ee5f418af86162b"
+    },
+    "repo/src/effects/glsl/dot-screen.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/dot-screen.frag",
+      "sha256": "97bc90a0cabd853aa16d8e71157c9b2d11ca01b08956de9d6df88e22895504b7"
+    },
+    "repo/src/effects/glsl/fxaa.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/fxaa.frag",
+      "sha256": "c75e7b9cd22ba0fa3373d80d7d466d1236feed7a6e2ef014599e67d861c7da4a"
+    },
+    "repo/src/effects/glsl/fxaa.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/fxaa.vert",
+      "sha256": "c01d3b161479d5213b3ff82c99e2b4a11f3f2da079d86f87518d1ea9f8be5de4"
+    },
+    "repo/src/effects/glsl/gamma-correction.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/gamma-correction.frag",
+      "sha256": "35568cc1ca6bf7370d72654eed41eb4d164817421d4eedf24e7359238b2aedb2"
+    },
+    "repo/src/effects/glsl/glitch.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/glitch.frag",
+      "sha256": "3af632196e1acca70cbcdf0e2cabb3b94474fe9cf9a381bb8e4c827d6f7edfad"
+    },
+    "repo/src/effects/glsl/god-rays.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/god-rays.frag",
+      "sha256": "a1d13f6c7f633f535f88b74ed97021db13df519bac6aa7fb60b77194892835d6"
+    },
+    "repo/src/effects/glsl/grid.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/grid.frag",
+      "sha256": "428c96d148ae2a0c3a2389dff3daefe3b5f11a50158ba5056a211e9709ad604e"
+    },
+    "repo/src/effects/glsl/hue-saturation.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/hue-saturation.frag",
+      "sha256": "d9ef74a29671dc7476d146d785dd5b15b1603fef10140429c1e1089795dca074"
+    },
+    "repo/src/effects/glsl/lens-distortion.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/lens-distortion.frag",
+      "sha256": "04932deb71c7e4cac9d7cbce94341f15c389c584601d3e80cfa2312222c97630"
+    },
+    "repo/src/effects/glsl/lut-1d.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/lut-1d.frag",
+      "sha256": "d1d2e18b4e1f4e253429f2626e3bae488461444465eefe1627ee2f97007232e9"
+    },
+    "repo/src/effects/glsl/lut-3d.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/lut-3d.frag",
+      "sha256": "4c59725de5e6945aa27dc23659acab5143ce70099005d37a60728be81909d151"
+    },
+    "repo/src/effects/glsl/noise.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/noise.frag",
+      "sha256": "bd0efefc2bac66c76a7603c92e44a15ae610314e671c967fe71c092a2571c27f"
+    },
+    "repo/src/effects/glsl/outline.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/outline.frag",
+      "sha256": "4e37cee31e18efa29d94eb00d724a1a54b06133f03509eaaffe527670e0e20ee"
+    },
+    "repo/src/effects/glsl/outline.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/outline.vert",
+      "sha256": "b8db2000f506f5754ffb2303cae61fc691a7323436d1383a8970ae354a057750"
+    },
+    "repo/src/effects/glsl/pixelation.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/pixelation.frag",
+      "sha256": "36b93105b0eb6af8cc34f6d2382e3196238e9df8179a91c6353f853881927cb7"
+    },
+    "repo/src/effects/glsl/realistic-bokeh.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/realistic-bokeh.frag",
+      "sha256": "f0471fbf5055e49ad69044779db7b88ddbde74f10f0402800d847d7a21bba874"
+    },
+    "repo/src/effects/glsl/scanlines.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/scanlines.frag",
+      "sha256": "4cefac707ca7899144f7fadac2ca17f9c85db3de2cd71bb63be768b0465993be"
+    },
+    "repo/src/effects/glsl/sepia.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/sepia.frag",
+      "sha256": "77b1616c793099c84747156e5abb463621f19605a609b89e866b745fb785b1a1"
+    },
+    "repo/src/effects/glsl/shock-wave.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/shock-wave.frag",
+      "sha256": "fa6e3a7b16e978037cd3692ec6d35209d53e3ce33b52d358f71553a00f89ad6b"
+    },
+    "repo/src/effects/glsl/shock-wave.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/shock-wave.vert",
+      "sha256": "affaa2658b5f5a263ece7c95b2c1a564cd4c431d6e374beb824a6f2c1b03ee27"
+    },
+    "repo/src/effects/glsl/smaa.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/smaa.frag",
+      "sha256": "bd0e92453e102484cd67f8fe35a92d2a1d5b65c2c8b2449d2b984db21c31f783"
+    },
+    "repo/src/effects/glsl/smaa.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/smaa.vert",
+      "sha256": "f131cce3237fb64dc15dbb5d0fd2ed8132e697641d9f1173f049bb867b60de76"
+    },
+    "repo/src/effects/glsl/ssao.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/ssao.frag",
+      "sha256": "e615a3c633009897cbdaf23100e0342f35d146ca8261bdb194c6ee19ec75f0f8"
+    },
+    "repo/src/effects/glsl/texture.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/texture.frag",
+      "sha256": "12472840c75b29221913b5ed47da08bda2f33a07c52640136c3ea4f6993e411b"
+    },
+    "repo/src/effects/glsl/texture.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/texture.vert",
+      "sha256": "fe0beed4687ec47acb4f91375cef73d87552a4f3664a34807ae51fcfdea95ef6"
+    },
+    "repo/src/effects/glsl/tilt-shift.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/tilt-shift.frag",
+      "sha256": "d58b6e8291b47b6874e1c4e6c94dee6af0a585c27289e9798b47c96a9e1fa7fc"
+    },
+    "repo/src/effects/glsl/tilt-shift.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/tilt-shift.vert",
+      "sha256": "23d060f634dcc217b29beb5ef6dc92a92bbcec35ea3093c31a545cf6f3c2b706"
+    },
+    "repo/src/effects/glsl/tone-mapping.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/tone-mapping.frag",
+      "sha256": "ea1c74c7c5d4af77655b9e9cfab324e4838b8ec168e9dc03d17de7d60a9975fb"
+    },
+    "repo/src/effects/glsl/vignette.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/glsl/vignette.frag",
+      "sha256": "6fda6961b2bb0a5a381abd37a5a5127bc8cf9b5f8019e6b4d308052f84350174"
+    },
+    "repo/src/effects/GodRaysEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/GodRaysEffect.js",
+      "sha256": "68786747905201de3e8118e89a50ccca72aa59536693b3cd1312cf0bb8345f97"
+    },
+    "repo/src/effects/GridEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/GridEffect.js",
+      "sha256": "86f66fecc2620578208e90c3dcf3f27c911f32e2ec970b82f392aff6ec405102"
+    },
+    "repo/src/effects/HueSaturationEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/HueSaturationEffect.js",
+      "sha256": "cc1d9ad08a40640e442eed900997de7232cde661c939195453fdcf293b7221f8"
+    },
+    "repo/src/effects/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/index.js",
+      "sha256": "831efe48a328e1fcd72420a4a23ab1f9723d806af7a055fde2f601d5757d8b9b"
+    },
+    "repo/src/effects/LensDistortionEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/LensDistortionEffect.js",
+      "sha256": "a6df27977c316851651da9afab769409739fd2884474e108076cc69afdc86b3a"
+    },
+    "repo/src/effects/LUT1DEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/LUT1DEffect.js",
+      "sha256": "f23bef1e22784ddd6aa6b7b46f8b5265cadb49ceed3a7de3439031dd2bdcd38b"
+    },
+    "repo/src/effects/LUT3DEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/LUT3DEffect.js",
+      "sha256": "97aef3066aacaad962686a007b007cbf513d772b0131a910c71777cb8628d183"
+    },
+    "repo/src/effects/NoiseEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/NoiseEffect.js",
+      "sha256": "530a175fbd7f53694e8fe9d70ad5d3c696b67af2088ce4014d4f66ed658f7b2e"
+    },
+    "repo/src/effects/OutlineEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/OutlineEffect.js",
+      "sha256": "3f60e1ed6faf82bcdc1bbb58b7d8aadf4d2655732e5e0879de833a4eaf696c08"
+    },
+    "repo/src/effects/PixelationEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/PixelationEffect.js",
+      "sha256": "253db9b1f237459e6529574ed3c1d0016b79f8f45c7006f4637a7a513162441f"
+    },
+    "repo/src/effects/RealisticBokehEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/RealisticBokehEffect.js",
+      "sha256": "812cb74ebe7810bcc0dd84672860abf3c914ab8ff5a1216cd9d0cd4d0c9dfcbb"
+    },
+    "repo/src/effects/ScanlineEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/ScanlineEffect.js",
+      "sha256": "df598e9666d7d08c734e69db5a5c6abf737a1a760219ecb295fbed4b7df947e4"
+    },
+    "repo/src/effects/SelectiveBloomEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/SelectiveBloomEffect.js",
+      "sha256": "68c72adf41210e06f968d277d3c819938cfbe87462f1f3bfa1eb4a798f4a1f67"
+    },
+    "repo/src/effects/SepiaEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/SepiaEffect.js",
+      "sha256": "27748704de121dae68f5ea6920c3848204b36ac78752f7615c09e4f38f0574cd"
+    },
+    "repo/src/effects/ShockWaveEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/ShockWaveEffect.js",
+      "sha256": "08ed9c08c86e242b459b6646a7aff08df078afbbbb97b726e8335aa1949548db"
+    },
+    "repo/src/effects/SMAAEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/SMAAEffect.js",
+      "sha256": "65b61aa6e6b65d7f9853d6d18c2810bb34723ec3711fc5068de72ebfea9e41c9"
+    },
+    "repo/src/effects/SSAOEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/SSAOEffect.js",
+      "sha256": "c6cfe2de04d070bc37d0c4d708a03c46d0531a19f6f692b8ff73c4dd12de0961"
+    },
+    "repo/src/effects/TextureEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/TextureEffect.js",
+      "sha256": "6912477d6165e2a030e3592196f227edc15c409124f6be683d7d536371813398"
+    },
+    "repo/src/effects/TiltShiftEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/TiltShiftEffect.js",
+      "sha256": "1b1a155becb2fb3031bb4b86561482ea2af57249ba4a2347374b37df303f7308"
+    },
+    "repo/src/effects/ToneMappingEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/ToneMappingEffect.js",
+      "sha256": "14c5e6db08486f249165f46841b48b7feab41cf0b5f08b559f96361cb1d48a9e"
+    },
+    "repo/src/effects/VignetteEffect.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/effects/VignetteEffect.js",
+      "sha256": "5d5a8fe34274089e74533ccdb14f13c8220b46703df5a39ebf165ca12ef5bf7d"
+    },
+    "repo/src/enums/BlendFunction.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/BlendFunction.js",
+      "sha256": "4ef3a85c858b47fcb1cd70e782db5da37745d07de6070ab0617d16d87b7c06c5"
+    },
+    "repo/src/enums/ColorChannel.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/ColorChannel.js",
+      "sha256": "b9b2fdf6af7776e46e566bb923da3635d790b2ee02047c679317bc235417dbb0"
+    },
+    "repo/src/enums/DepthCopyMode.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/DepthCopyMode.js",
+      "sha256": "3c1ad9dde1c93d5a9b5450ec206ef6d4bb95d7170dc6ba6d8e106ab138830b30"
+    },
+    "repo/src/enums/DepthTestStrategy.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/DepthTestStrategy.js",
+      "sha256": "e7eaaeba3d106e0d80d1074f02b9beb19f1141a828e4e0bf36395cee40fd93a3"
+    },
+    "repo/src/enums/EdgeDetectionMode.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/EdgeDetectionMode.js",
+      "sha256": "5bc0ad79ee65740340dffb7a62ad6dbebcb3a1d26ab81e7a38a43affc9e830b3"
+    },
+    "repo/src/enums/EffectAttribute.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/EffectAttribute.js",
+      "sha256": "205fa6083e00542caefbaa7c0e3c3d3456a6dbefb5e6bdebb2db5e742716ab62"
+    },
+    "repo/src/enums/EffectShaderSection.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/EffectShaderSection.js",
+      "sha256": "36f9117fbd25a97b7498a0c302845fb97c3c137022a44c07a535e332048ae45f"
+    },
+    "repo/src/enums/GlitchMode.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/GlitchMode.js",
+      "sha256": "06bf27d4622c1f9e7c4a56974db15580a46e035d6f0661882c4344b8802d67b1"
+    },
+    "repo/src/enums/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/index.js",
+      "sha256": "43005e2698593750bea87d3923eef9436ab0311bccee5fe899f7e78a6964498b"
+    },
+    "repo/src/enums/KernelSize.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/KernelSize.js",
+      "sha256": "3a7a9889f33e49bf89dd3923a608f8e944791795cc2821ed1c1aa7814e461d23"
+    },
+    "repo/src/enums/LUTOperation.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/LUTOperation.js",
+      "sha256": "4ee24a59ea8e76f6e40e28ccc65c5448dfc2d09cd166f168124a3a2414f19075"
+    },
+    "repo/src/enums/MaskFunction.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/MaskFunction.js",
+      "sha256": "8d6a63fda4e3de9f21e69a7cb84c8f14ed81d08520111f22f463d8ae805f2c83"
+    },
+    "repo/src/enums/PredicationMode.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/PredicationMode.js",
+      "sha256": "5bf39783829587da0d4948e0781470c7c7eba8354761026b7cb41d30b1798942"
+    },
+    "repo/src/enums/SMAAPreset.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/SMAAPreset.js",
+      "sha256": "9a2c21d9241fb839621b8e456838393c569c7a0e2fb66ad79105f730db7de240"
+    },
+    "repo/src/enums/ToneMappingMode.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/ToneMappingMode.js",
+      "sha256": "bcb0852187204df5b97576040dd3404ee24159f4dd501ee0623cff95b44d575c"
+    },
+    "repo/src/enums/VignetteTechnique.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/VignetteTechnique.js",
+      "sha256": "73cfeeecfb2f8cf0b3c324b41a65e95ffb7b9452abaca78e1d3360d3b082387c"
+    },
+    "repo/src/enums/WebGLExtension.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/enums/WebGLExtension.js",
+      "sha256": "3e51969fea7fd3d09ebe11d7d952fc9d700b6a2c49617bf9e5d9a530b2e6f1bc"
+    },
+    "repo/src/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/index.js",
+      "sha256": "8fd06018b4e9ccc89b30cb599bb583f671d3a006ec097bfcd58a28e7c0eb7c31"
+    },
+    "repo/src/loaders/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/loaders/index.js",
+      "sha256": "14d6b5be5c5205db1e3de5e354bbba0cc10435333a7d4844ac71b69fb2f7e88d"
+    },
+    "repo/src/loaders/LUT3dlLoader.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/loaders/LUT3dlLoader.js",
+      "sha256": "bf1af2360529337c0c0b59899f3fbaa31516856c487eafcc7744cff9ae52b35a"
+    },
+    "repo/src/loaders/LUTCubeLoader.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/loaders/LUTCubeLoader.js",
+      "sha256": "dbfc961ecf3eb1c8474a778706aa063035214e274e7cee60c0ab54aa6f43eed9"
+    },
+    "repo/src/loaders/SMAAImageLoader.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/loaders/SMAAImageLoader.js",
+      "sha256": "baf25cd3a449653993cabad46b61deb2b1ee295b8bd959bd1a25bbed735ea461"
+    },
+    "repo/src/materials/AdaptiveLuminanceMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/AdaptiveLuminanceMaterial.js",
+      "sha256": "9b22da761dccf0473b60b029a13da1e88462ca3bfb4d6a21ab9b0080c2dcaba6"
+    },
+    "repo/src/materials/BokehMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/BokehMaterial.js",
+      "sha256": "7340c643b6e238f2a2544084ddda944bcff68589ab74ad6b6a78365473c20120"
+    },
+    "repo/src/materials/BoxBlurMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/BoxBlurMaterial.js",
+      "sha256": "d204374156100a13e7b15dd36123ab688c3a3157fc6594636a81cd1e3ee3beb3"
+    },
+    "repo/src/materials/CircleOfConfusionMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/CircleOfConfusionMaterial.js",
+      "sha256": "cbd42579a75e4378b86739c3e4bfaef7e47726226c49599f0c755d5fadf9dfec"
+    },
+    "repo/src/materials/CopyMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/CopyMaterial.js",
+      "sha256": "56201c09eab5fb70aa17075581c2a2e6056d15ce520ea888719dc769c7cba149"
+    },
+    "repo/src/materials/DepthComparisonMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/DepthComparisonMaterial.js",
+      "sha256": "6e4127314eaa8ee64ac328238cbb1c528f51329d2ba02790d69d290656fb338e"
+    },
+    "repo/src/materials/DepthCopyMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/DepthCopyMaterial.js",
+      "sha256": "253afd21d53e684806055bd79a9e3cabe0321a1b30a97ef1b8297af478e6ec3e"
+    },
+    "repo/src/materials/DepthDownsamplingMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/DepthDownsamplingMaterial.js",
+      "sha256": "738edad48f05a0cc98813ea8841668fb69f1db43b6f982f5be0f59b9531e01e4"
+    },
+    "repo/src/materials/DepthMaskMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/DepthMaskMaterial.js",
+      "sha256": "ce9ceb9ef59aad13c845e3dbeeb4e4a27077906f6e8c02a0633a0117c9ca2cd1"
+    },
+    "repo/src/materials/DownsamplingMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/DownsamplingMaterial.js",
+      "sha256": "c4f2baa493545bde5a78ceaa88404c6a00826c2430768dd129804ce436073583"
+    },
+    "repo/src/materials/EdgeDetectionMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/EdgeDetectionMaterial.js",
+      "sha256": "2678ea273aefe6a39c8588b56bddf01b975a3097a33eff183d2bf88e3ee5b4eb"
+    },
+    "repo/src/materials/EffectMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/EffectMaterial.js",
+      "sha256": "ca38b9defc44e9fd8a576b87a86278a68484933b1ab928ff8b5af72155473523"
+    },
+    "repo/src/materials/GaussianBlurMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/GaussianBlurMaterial.js",
+      "sha256": "940e0ddc713d80fe50608809fbf2be9df32c54a3e464be78009b98bcd98d50fd"
+    },
+    "repo/src/materials/glsl/adaptive-luminance.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/adaptive-luminance.frag",
+      "sha256": "4a8df629ae25d5f3f4703b079fd15fd94452d960c36f0eafcb495be4a348867d"
+    },
+    "repo/src/materials/glsl/circle-of-confusion.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/circle-of-confusion.frag",
+      "sha256": "2c0f8e7b13be4d8371bd4340828bed15f7a6851d4083ef2ed926806847c55261"
+    },
+    "repo/src/materials/glsl/common.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/common.vert",
+      "sha256": "29d97daa666d58e513a36cdbc63e9158aa350c8b71bc67b601668d2b8c6b1061"
+    },
+    "repo/src/materials/glsl/convolution.bokeh.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.bokeh.frag",
+      "sha256": "6d3dbd9e034d83628109cbc822a866f4dd33d9432bb7cfde0f6931299750a0d7"
+    },
+    "repo/src/materials/glsl/convolution.box.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.box.frag",
+      "sha256": "9e7d355e6efde1c15074623f8739523c6d2285d74655e6692f5890237044b33e"
+    },
+    "repo/src/materials/glsl/convolution.box.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.box.vert",
+      "sha256": "c2f13eaa2fb66e9e6788d620295ac39006a70c58fcd160c99cb35a82000f339e"
+    },
+    "repo/src/materials/glsl/convolution.downsampling.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.downsampling.frag",
+      "sha256": "37c7bb2c45e58a5338344e960a68d1c8aab0c3a66f3a8b1f0040ac219ccff48f"
+    },
+    "repo/src/materials/glsl/convolution.downsampling.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.downsampling.vert",
+      "sha256": "6e38b1227aed1015b2321f2a71b9b9d0faefe625b42993d3e64143b291f3fbba"
+    },
+    "repo/src/materials/glsl/convolution.gaussian.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.gaussian.frag",
+      "sha256": "e1f956da436f70d3c3994064df75378dc7c2a29c2a863509793b43ef98ddc91a"
+    },
+    "repo/src/materials/glsl/convolution.gaussian.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.gaussian.vert",
+      "sha256": "00eb5c2a5b2c211b2da693a357c02411c7afc7e7c931adcf0043a9b8605ad433"
+    },
+    "repo/src/materials/glsl/convolution.god-rays.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.god-rays.frag",
+      "sha256": "41f9e7c4780d164488d42fb915a0183a319581a20207e3cd11711d41e13648fa"
+    },
+    "repo/src/materials/glsl/convolution.kawase.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.kawase.frag",
+      "sha256": "f7ffd3d8302db5aab1bb1c8b7df866d20809ae4c8855980c6946a2392e5cae7e"
+    },
+    "repo/src/materials/glsl/convolution.kawase.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.kawase.vert",
+      "sha256": "fbdbdef0cea35f9a1ca231b493adb01c15cc22216d037a43afded2dce9ad0189"
+    },
+    "repo/src/materials/glsl/convolution.tilt-shift.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.tilt-shift.frag",
+      "sha256": "aaeeccbdb3740848f55ca655a4c3e3c7fd3e8aed655950faa958c7168786e7aa"
+    },
+    "repo/src/materials/glsl/convolution.tilt-shift.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.tilt-shift.vert",
+      "sha256": "e5b612e2640d1294cce2e70b6bda23d65aac91000f8217fd631c720a089bf9d9"
+    },
+    "repo/src/materials/glsl/convolution.upsampling.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.upsampling.frag",
+      "sha256": "b6fc2e876671a0a7ad67bf16dc37ba2c3eafb9912b942a2a94f47bd0c1490047"
+    },
+    "repo/src/materials/glsl/convolution.upsampling.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/convolution.upsampling.vert",
+      "sha256": "90a63b6bbe68b425beefa6f24ede988df0c00c05ccbcbb41784790973d20ce2d"
+    },
+    "repo/src/materials/glsl/copy.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/copy.frag",
+      "sha256": "80a4bfda0235f4d39ad6588c2acc4d79fa89469b507e30f12526056a95d4201a"
+    },
+    "repo/src/materials/glsl/depth-comparison.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/depth-comparison.frag",
+      "sha256": "b7ceb320843dd9ef28896aa73cdd8eecba2d6ce5975c94ca91591be2e208176e"
+    },
+    "repo/src/materials/glsl/depth-comparison.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/depth-comparison.vert",
+      "sha256": "4b24680fe49b055e332d8b02d708ca996c69653d9ad1d5dbf6d8e1d020982145"
+    },
+    "repo/src/materials/glsl/depth-copy.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/depth-copy.frag",
+      "sha256": "0846440ef0b8c14c86df5e40378ff0936126e957f84567b2eb1b7476fb4b4b17"
+    },
+    "repo/src/materials/glsl/depth-copy.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/depth-copy.vert",
+      "sha256": "cccaa1d2905546845b36a4c2581e0fb4f5382c7b3c793d63e11a367d7054ebac"
+    },
+    "repo/src/materials/glsl/depth-downsampling.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/depth-downsampling.frag",
+      "sha256": "36382b9f339050c8bab4e31ba13e6ea367894f11cd44ea03ebfbe3ff3ee04702"
+    },
+    "repo/src/materials/glsl/depth-downsampling.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/depth-downsampling.vert",
+      "sha256": "04ffe00fdd9499a3e8100094d7bc71441810bc6522825298f260fa58190578c7"
+    },
+    "repo/src/materials/glsl/depth-mask.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/depth-mask.frag",
+      "sha256": "f7befee8ba2dc95f573c8a296fc33689ac2f070826a387bcba8bc35f609729a0"
+    },
+    "repo/src/materials/glsl/edge-detection.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/edge-detection.frag",
+      "sha256": "c442199f5d411540c8db90f365739878f2b25719e813c29def76d1b34af9cc93"
+    },
+    "repo/src/materials/glsl/edge-detection.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/edge-detection.vert",
+      "sha256": "3c620adb8192884ef2f2851da8194c55ecbb376386fc590c6bcb8c640a75f51e"
+    },
+    "repo/src/materials/glsl/effect.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/effect.frag",
+      "sha256": "8c7932d96e41e9739430e192c52297b27c6546c36e02be0071f4791399e59f94"
+    },
+    "repo/src/materials/glsl/effect.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/effect.vert",
+      "sha256": "f6bf336331821e5202e52b19a768202e7c036162ebefaa647ecced8117262644"
+    },
+    "repo/src/materials/glsl/luminance.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/luminance.frag",
+      "sha256": "711ebd2fc2a688a8d6afdbb4ecfc587ad7250f80e9122089ab203c276d737381"
+    },
+    "repo/src/materials/glsl/mask.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/mask.frag",
+      "sha256": "656730de7186f5439d9a3acdb324170a85caa0ef8bcd6990a408c5ecb6f749e7"
+    },
+    "repo/src/materials/glsl/outline.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/outline.frag",
+      "sha256": "793a783fb497467a220c3fffea7610b57ff351ac7fa21b0d2768ca837c9b2d56"
+    },
+    "repo/src/materials/glsl/outline.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/outline.vert",
+      "sha256": "f561912e64f646c9eed742c21290324f3c3ea1083cba5361e8f293af4155feed"
+    },
+    "repo/src/materials/glsl/smaa-weights.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/smaa-weights.frag",
+      "sha256": "939895cb4df64c803f0f14f9c6f065582d98e92f7bdcf97eb13fdafef1d8f77f"
+    },
+    "repo/src/materials/glsl/smaa-weights.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/smaa-weights.vert",
+      "sha256": "bb2da9752fa73f551cb49143a621dd73891333fd5ed113b74bc84a0a32735603"
+    },
+    "repo/src/materials/glsl/ssao.frag": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/ssao.frag",
+      "sha256": "0fb500a20d36818d751996da4d60ad3b062afdab0b7826b72d0d1fa187b50d4d"
+    },
+    "repo/src/materials/glsl/ssao.vert": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/glsl/ssao.vert",
+      "sha256": "fd57eaa812aea96f2e14778c983381fe5b2cf7f4ae15a1c51582f75d9466ef70"
+    },
+    "repo/src/materials/GodRaysMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/GodRaysMaterial.js",
+      "sha256": "fb56737080dfc647689dec3a84123cf063d9459384b8469360442a75427cba23"
+    },
+    "repo/src/materials/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/index.js",
+      "sha256": "4e95b2298fbb26f6791a120254ebfe33104658372e036f68dad506855754c7d2"
+    },
+    "repo/src/materials/KawaseBlurMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/KawaseBlurMaterial.js",
+      "sha256": "e66496f4ce5410b9ef7beaacbb471fb646175e404ceb17843f6140636a2e18cd"
+    },
+    "repo/src/materials/LuminanceMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/LuminanceMaterial.js",
+      "sha256": "b2dbbea0e6b086444f7122692613ae16e361fa2003014c3d46a688f286851b2e"
+    },
+    "repo/src/materials/MaskMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/MaskMaterial.js",
+      "sha256": "7217bb67d513ce66227fbec8148da1db746ebc9cd392eae806037d16650a0a5f"
+    },
+    "repo/src/materials/OutlineMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/OutlineMaterial.js",
+      "sha256": "554d160d78340e9315deb52cb3d5942f6c0d5292c4a21a5e34d290e902beeb1e"
+    },
+    "repo/src/materials/SMAAWeightsMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/SMAAWeightsMaterial.js",
+      "sha256": "67c8a243eb715e24838d379b284491d029177f6a369223dd6c99e1be8f8f2fda"
+    },
+    "repo/src/materials/SSAOMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/SSAOMaterial.js",
+      "sha256": "aee953e3998c4864b405e613b8c19cc36df80539805c603e491fcff7474cdb98"
+    },
+    "repo/src/materials/TiltShiftBlurMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/TiltShiftBlurMaterial.js",
+      "sha256": "931007238c05fb25c10faf0c52046b29bed0395d3ba6d997eb1e0a2f33e2703d"
+    },
+    "repo/src/materials/UpsamplingMaterial.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/materials/UpsamplingMaterial.js",
+      "sha256": "c2faaa4de5779b97195600b5e7f67feac89d16a6c4af5b5c63bb0f46efd4be7c"
+    },
+    "repo/src/passes/AdaptiveLuminancePass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/AdaptiveLuminancePass.js",
+      "sha256": "19f8866e4519ad33777f4429ec4ef3111b7674327a26f8bcac29c666bbc3976c"
+    },
+    "repo/src/passes/BoxBlurPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/BoxBlurPass.js",
+      "sha256": "b9b0d6cd2ebb83e9676c1145b22379b5106096444cf90f78324a7944bed5472a"
+    },
+    "repo/src/passes/ClearMaskPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/ClearMaskPass.js",
+      "sha256": "f09b102369dc879563b4ac6b1bfa1c9fded3bd6036b1089f528c4437547d4f67"
+    },
+    "repo/src/passes/ClearPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/ClearPass.js",
+      "sha256": "9acdf485e53897fc54042419bced491f4cd9b53fe0098aab3dce2180509d29de"
+    },
+    "repo/src/passes/CopyPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/CopyPass.js",
+      "sha256": "3ae9f17ba9adcb9d245c1f0bb9e28baa40e9f96716f98ac85b06473682fe00e1"
+    },
+    "repo/src/passes/DepthCopyPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/DepthCopyPass.js",
+      "sha256": "63ef0b22e865099dacd1573d5d5ebd11e573692ebd864baf1e8898ea849dbd4e"
+    },
+    "repo/src/passes/DepthDownsamplingPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/DepthDownsamplingPass.js",
+      "sha256": "857413f0dde9ab7f7b7e41c90c847e9e96554384b650014c3df2c53764ea0548"
+    },
+    "repo/src/passes/DepthPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/DepthPass.js",
+      "sha256": "e8e919a36af469d6cd5ff71e852ae8fb37c53d40acd91e1d15f97e9d36bd79c4"
+    },
+    "repo/src/passes/DepthPickingPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/DepthPickingPass.js",
+      "sha256": "68c119b3bad4400f37f91ae8ba9050503a7d54734b12e077d5007b954c9b6047"
+    },
+    "repo/src/passes/EffectPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/EffectPass.js",
+      "sha256": "f76cdb28df5a4633cbea13a8bd9a0692201378797bb4283de4d88e7553eae129"
+    },
+    "repo/src/passes/GaussianBlurPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/GaussianBlurPass.js",
+      "sha256": "a6da0e3ebd1ba9bdf7a9a9ae7633252292d5ea615aeb46fcabd003d65bafd94a"
+    },
+    "repo/src/passes/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/index.js",
+      "sha256": "87fdaafa6ceb1638505f46193350ad1b75335ef863ca8ff07419852fce269abc"
+    },
+    "repo/src/passes/KawaseBlurPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/KawaseBlurPass.js",
+      "sha256": "a4f23cbc3e44ec8019a2e15bdf5776566b43eb15e3823b6bece545848683766c"
+    },
+    "repo/src/passes/LambdaPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/LambdaPass.js",
+      "sha256": "45b8fe69da887f4a71cd21ff509e552a9e349be13c42c5038ae80f5c7df2cae2"
+    },
+    "repo/src/passes/LuminancePass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/LuminancePass.js",
+      "sha256": "d18203d7607feba4168601468f6a1c2c8ac79a49ef769ba8490dccd37b0f60eb"
+    },
+    "repo/src/passes/MaskPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/MaskPass.js",
+      "sha256": "89076ff75b35c390d4d8de38ec8c92ea39b85a2e0b5702ad6f757f11923fea12"
+    },
+    "repo/src/passes/MipmapBlurPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/MipmapBlurPass.js",
+      "sha256": "7b39a4f1baa2688a70a7dcbb6eb8fa11aaba00f06afa9ff62ae52b04dfb92115"
+    },
+    "repo/src/passes/NormalPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/NormalPass.js",
+      "sha256": "db6a183a1706f0f5bdf504e4193add74d5aadd76d7294c06b50309db1beea1ad"
+    },
+    "repo/src/passes/Pass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/Pass.js",
+      "sha256": "a0a1eac58aabca064b0bf5b28e73cb001abb1317fcb8567b2ef13a6d7bd1a3a1"
+    },
+    "repo/src/passes/RenderPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/RenderPass.js",
+      "sha256": "14002396382747b5ae6be2b0c39d9b20aac5d3fda31e2c5c7c96f2b802d6ed8b"
+    },
+    "repo/src/passes/ShaderPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/ShaderPass.js",
+      "sha256": "9b3131f1eb6e051dde3e1463e7c56b41dca593f58551080d4860feebc7842080"
+    },
+    "repo/src/passes/TiltShiftBlurPass.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/passes/TiltShiftBlurPass.js",
+      "sha256": "a0774acfa79dd711376c0c4985270aa5d416b05c354f96976d487be605d1a62d"
+    },
+    "repo/src/textures/ASCIITexture.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/ASCIITexture.js",
+      "sha256": "5cf523b3e88455962635d9f9d957d3ba600cb5361700ae11892c0cbf97bc948d"
+    },
+    "repo/src/textures/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/index.js",
+      "sha256": "53215ded227ec1331167ad5d1b229153af12d8130e33eb06048c34b2fd043db8"
+    },
+    "repo/src/textures/lut/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/lut/index.js",
+      "sha256": "019f4843fa141a7721ab370e823267ba0ae0ed8b8b49f4c60ea1ec61b811268b"
+    },
+    "repo/src/textures/lut/LookupTexture.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/lut/LookupTexture.js",
+      "sha256": "6c53f67469b8bb906a215b460aa6d3d9b399fa75fbf3b1b9ce9f40b0516d0221"
+    },
+    "repo/src/textures/lut/TetrahedralUpscaler.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/lut/TetrahedralUpscaler.js",
+      "sha256": "81a4a5485d9d5d80a674c92d9d1d03145974bd7d3597f3c12bdf513ab0d6b6b0"
+    },
+    "repo/src/textures/lut/worker.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/lut/worker.js",
+      "sha256": "ec2feb30a1f07f7f817d57629f94848230adf6893fd430db176016fe9243a0c3"
+    },
+    "repo/src/textures/NoiseTexture.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/NoiseTexture.js",
+      "sha256": "7bbf92235812451a34582313d0631876b6361262f0ac7515114a6066308dbce9"
+    },
+    "repo/src/textures/RawImageData.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/RawImageData.js",
+      "sha256": "7f85d196b6d9c389e1f87cde1b2665f7dab76843974318f2bdceb2233eb150c7"
+    },
+    "repo/src/textures/smaa/areaImageDataURL.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/smaa/areaImageDataURL.js",
+      "sha256": "0a2749ac74424442a820d12af680781b21cc2cb2935121a4d0f15bdce4bb1aba"
+    },
+    "repo/src/textures/smaa/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/smaa/index.js",
+      "sha256": "15c62a91e40baea5b8c512028ff9125d64770cf2165c5dd699f49be662fb48a6"
+    },
+    "repo/src/textures/smaa/searchImageDataURL.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/smaa/searchImageDataURL.js",
+      "sha256": "f854713a4ea35443059e0b3d640003306321364e559344113bb99a307168673b"
+    },
+    "repo/src/textures/smaa/SMAAAreaImageData.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/smaa/SMAAAreaImageData.js",
+      "sha256": "6574db1e65b888b2b7bab7df811ebb46563147c09b9abbcdd517c33a58efa72d"
+    },
+    "repo/src/textures/smaa/SMAAImageGenerator.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/smaa/SMAAImageGenerator.js",
+      "sha256": "9c6c3ecbe98f82fd73a180059ffff2a135f60cb316b06ef3932de165f47207ca"
+    },
+    "repo/src/textures/smaa/SMAASearchImageData.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/smaa/SMAASearchImageData.js",
+      "sha256": "b79b2895ab23dab412bee36f76ee8cc65d7aff39ea882aa001d4325badafb80c"
+    },
+    "repo/src/textures/smaa/worker.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/textures/smaa/worker.js",
+      "sha256": "39e338142ae342c82ba72aa8273a429cb63ff3b02971534db7fa6f551b06ad87"
+    },
+    "repo/src/utils/compatibility/webgl2.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/utils/compatibility/webgl2.js",
+      "sha256": "7e685459fc504227514f01c096071c20393c519cad9ded26f06773eeb69e60af"
+    },
+    "repo/src/utils/IdManager.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/utils/IdManager.js",
+      "sha256": "31adfe627c2d4cd269e1615d616ae68b0c6106ea18673ba9ac76f018a8bf680a"
+    },
+    "repo/src/utils/index.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/utils/index.js",
+      "sha256": "93c59d03491a6d806e8a5fec92b514a8ae66067f5d31f0505db413e777fa626b"
+    },
+    "repo/src/utils/orthographicDepthToViewZ.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/utils/orthographicDepthToViewZ.js",
+      "sha256": "61b1b3e8f7b8bba45361d49e493f0a5af7779d356cda2cce4ea4aa772549bdc0"
+    },
+    "repo/src/utils/viewZToOrthographicDepth.js": {
+      "url": "https://github.com/pmndrs/postprocessing/blob/a1f103559d15cf56cbcbb15d4373711b09418f3f/src/utils/viewZToOrthographicDepth.js",
+      "sha256": "d9728a788b6fdbaa5c4c20fcb661e53964863b01b3be94400cbc6d354bc6f01e"
+    }
+  }
+}
