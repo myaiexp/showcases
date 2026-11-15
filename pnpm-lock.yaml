@@ -260,6 +260,9 @@ importers:
       ky:
         specifier: ^2.2.0
         version: 2.2.0
+      leaflet:
+        specifier: 2.0.0-beta.4
+        version: 2.0.0-beta.4
       maplibre-gl:
         specifier: ^6.18.0
         version: 6.18.0
@@ -3232,6 +3235,9 @@ packages:
 
   layout-base@2.0.1:
     resolution: {integrity: sha512-dp3s92+uNI1hWIpPGH3jK2kxE2lMjdXdr+DH8ynZHpd6PUlH6x6cbuXnoMmiNumznqaNO31xu9e79F0uuZ0JFg==}
+
+  leaflet@2.0.0-beta.4:
+    resolution: {integrity: sha512-l+3bBeiDgUYGCc4ZWbmjIxfog+dgtd7cdUIINgc1MQtRuWIzxmNM+GF6TL0tA1+/oTEe+4md/neywDfNeIQLlw==}
 
   leb128@0.0.5:
     resolution: {integrity: sha512-elbNtfmu3GndZbesVF6+iQAfVjOXW9bM/aax9WwMlABZW+oK9sbAZEXoewaPHmL34sxa8kVwWsru8cNE/yn2gg==}
@@ -7546,6 +7552,10 @@ snapshots:
   layout-base@1.0.2: {}
 
   layout-base@2.0.1: {}
+
+  leaflet@2.0.0-beta.4:
+    dependencies:
+      '@types/geojson': 7946.0.16
 
   leb128@0.0.5:
     dependencies:
