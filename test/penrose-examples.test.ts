@@ -151,6 +151,19 @@ beforeAll(() => {
     fontBoundingBoxAscent: size * 0.8,
     fontBoundingBoxDescent: size * 0.2,
   });
+  // @penrose/core/bundle fetches its optimizer WASM from a data: URL, which happy-dom's
+  // fetch cannot load; answer those from the URL itself. WebAssembly.instantiateStreaming
+  // takes only Node's own Response, so the WASM goes out untyped: wasm-bindgen then falls
+  // back to instantiating the bytes.
+  const pageFetch = globalThis.fetch;
+  globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+    const url = String(input instanceof Request ? input.url : input);
+    const data = /^data:([^;,]*)(;base64)?,(.*)$/s.exec(url);
+    if (!data) return pageFetch(input, init);
+    const bytes = data[2] ? Buffer.from(data[3]!, 'base64') : Buffer.from(decodeURIComponent(data[3]!));
+    const type = data[1] === 'application/wasm' ? 'application/octet-stream' : data[1] || 'text/plain';
+    return new Response(bytes, { headers: { 'content-type': type } });
+  }) as typeof fetch;
   HTMLCanvasElement.prototype.getContext = function getContext() {
     const ctx = { font: '12px sans-serif', textBaseline: 'alphabetic' };
     return Object.assign(ctx, {

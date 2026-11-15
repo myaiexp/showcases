@@ -28,6 +28,8 @@ export interface Stage {
   paper: HTMLElement;
   /** Control bar above the scene, or null in a card. */
   bar: HTMLElement | null;
+  /** This stage's id prefix for toSVG's third argument; unique on the page. */
+  namespace: string;
   /** Renders a state with toSVG (this stage's namespace and image resolver) onto the paper. */
   render(state: PenroseState): Promise<SVGSVGElement | null>;
   /** Puts an svg on the paper, scaled to fit. */
@@ -118,6 +120,7 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
     root,
     paper,
     bar,
+    namespace,
     async render(state) {
       const svg = await toSVG(state, resolveImage, namespace);
       return stage.disposed ? null : stage.show(svg);

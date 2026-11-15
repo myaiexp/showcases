@@ -39,4 +39,21 @@ Found while building this gallery. Read before building an example, and add to i
 ## Docs vs 3.3.1
 
 - api.md's `isOptimized` example calls `optimize(trio)`; optimize takes the compiled state.
+- api.md's `stepMillis` flips a flag from setTimeout inside `until`, but step() is synchronous:
+  the timer cannot fire until step returns, so it runs to the end of the round. Read a
+  deadline (`performance.now() > deadline`) in `until` instead (api-step-millis).
+- A Style field named `x.label` is the Substance label (a string) of `x`; assigning a shape
+  to it is "cyclic variable assignments". Name label shapes `x.text` or similar.
 - `diagram()`'s declared type requires `excludeWarnings` in its first argument.
+- ref/domain/predicates.md opens with `type FirstType, SecondType`. On 3.3.1 a comma in a type
+  declaration is a syntax error (the error text points at the wrong line); declare one `type` per line.
+  Substance's `Set A, B, C` is fine. Domain's `predicate P3 ()` (empty list, space before the parens) parses.
+- A Style block must start with `forall` (or `collect`/`layout`): a bare `where P3() { … }` is a syntax
+  error. A zero-argument predicate is matched with `forall T x where P3()`.
+- An `Equation` whose label is empty is a fatal error ("Label 'string' and 'fontSize' must be non-empty"),
+  so `NoLabel D` with `D.text = Equation { string : D.label … }` fails; a `Text` shape accepts it.
+- ref/substance/statements.md says an argument list may hold "other predicate applications", but Domain has
+  no type for a predicate result (`predicate Not(Prop p)` fails: type Prop does not exist), so nesting
+  cannot be declared on 3.3.1.
+- `AutoLabel A, C` (a list of names, not just `All`) works though ref/substance/statements.md lists only All.
+- Inline shape bodies need newlines between fields: `Text { string : "7" center : (0, 0) }` is a syntax error.
