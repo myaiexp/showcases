@@ -214,3 +214,8 @@ GitHub Pages. No service on the VPS.
   shader names are page-wide statics, so every engine shares one ShaderLab and one PhysXPhysics (`physics: true`; never
   physics-lite) and custom shaders use `Shader.find(name) ?? Shader.create(…)`. PhysX's wasm comes from the package
   (`shared/physx.ts`), ambient light from a `.env` built in code (`shared/env.ts`): nothing loads from the CDN.
+- AntV L7: build on `packages/l7/shared/stage.ts` (`createStage`; traps in `shared/traps.md`). Every example writes its
+  whole `new Scene({ id: stage.container, logoVisible: false, map: new Map({...}) })` (the built-in Map from
+  `@antv/l7-maps`: no tiles, no token) and `await stage.ready(scene)`, which frees the WebGL context on dispose. The
+  basemap is `shared/world.ts`, images are data: URLs (`shared/images.ts`), cards fake input with `stage.ghost(scene)`.
+  `vite.config.ts` aliases `@antv/l7-component` to its es build (its browser field is a UMD bundle with no exports).

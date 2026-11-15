@@ -116,6 +116,40 @@ means the vendored pages under `docs/repo/site/docs/`.
   layer has initialised. With `getCustomData` the URL is never fetched; `callback(err)` leaves
   a hole and does not retry.
 
+## Tiles
+
+- Tiles are served from code with `Scene.addProtocol` (`shared/tile-serve.ts`; MVT encoded by
+  hand in `shared/tile-mvt.ts`). Give the source a bare `name://x` URL: L7 appends
+  `/{z}/{x}/{y}` itself, and a template with placeholders doubles them. Protocols are
+  page-wide, so each example uses its own name.
+- A `.color('id', [...])` field scale is rebuilt per vector tile, so colours differ between
+  tiles: use a callback. Translucent fills double-blend where tile buffers overlap. A
+  PointLayer on a geojsonvt source draws nothing (polygons and lines work; points on mvt work).
+
+## Image and raster layers
+
+- `setData` on a live ImageLayer races its texture upload: add a new layer and remove the old
+  one on `inited`.
+- `clampLow`/`clampHigh` are inverted against the docs: `false` hides cells outside the domain,
+  `true` (the default) paints them in the end colour; clampHigh falls back to clampLow.
+- Linear ramp `positions` are normalised by the domain: a position outside it throws in
+  addColorStop. `format(data, bands)` must return one `{rasterData, width, height}` per band
+  (missing bands read as zeros, silently). Operations: `['-', a, b]` is a − b, a function
+  operation returns `{ rasterData }`, `{type: 'rgb'}` needs 0–255 bands, `log10` is ln.
+- Plane terrain's `rgb2height(r, g, b)` gets 0–255 bytes.
+
+## Other layers and experiments
+
+- CityBuildingLayer draws nothing in any variant tried; post-processing passes
+  (`enableMultiPassRenderer`, pass.en.md, custom passes too) throw "reading 'r'" and the layer
+  draws nothing. Neither is in the gallery.
+- Earth: `Scene`/`EarthLayer` import from `@antv/l7`; `rotateY` lives on
+  `scene.getMapService()` and takes `{ force, reg }` (the docs' `{ option }` wrapper is
+  ignored). Point layers on Earth draw nothing; fly lines work.
+- SIMPLE coordinates: `setCenter` and `ghost.moveTo` still take geographic values (convert with
+  `shared/exp-simple.ts` `toLngLat`); `mapSize: 1000` spans the world width.
+- The canvas layer's `ctx` is typed RenderingContext: cast to CanvasRenderingContext2D.
+
 ## Polygon layers
 
 - `shape('circle' | 'dot' | <icon>)` on a PolygonLayer builds a point model but draws
