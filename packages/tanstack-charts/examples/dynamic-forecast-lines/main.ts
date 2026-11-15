@@ -20,7 +20,7 @@ const mount: Mount = (el, ctx) => {
         lineY(rows, { id: 'actual', x: 'month', y: 'actual', key: 'id', stroke: '#60a5fa', strokeWidth: 2.5 }),
         lineY(rows, { id: 'forecast', x: 'month', y: 'forecast', key: 'id', stroke: '#fb923c', strokeWidth: 2.5, motion: { transition: { type: 'spring', mass: 1.25 } } }),
       ],
-      scales: { x: { scale: scaleLinear }, y: { scale: () => scaleLinear().domain([20, 110]), grid: true } },
+      scales: { x: { scale: scaleLinear }, y: { scale: scaleLinear().domain([20, 110]), grid: true } },
     });
   };
   const options = () => ({

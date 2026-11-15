@@ -16,7 +16,7 @@ const mount: Mount = (el, ctx) => {
     definition: defineChart({
       motion: { transition: { type: 'spring', stiffness: 60, damping: 7, mass: 1 } },
       marks: [barY(barStep(step), { x: 'label', y: 'value', key: 'id', fill: '#818cf8' })],
-      scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: () => scaleLinear().domain([0, 110]), grid: true } },
+      scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: scaleLinear().domain([0, 110]), grid: true } },
     }),
     renderer: motion(),
     height: stage.height,

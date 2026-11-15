@@ -26,7 +26,7 @@ const mount: Mount = (el, ctx) => {
         transition: { type: 'tween', duration: 900, easing: 'ease-in-out' },
       },
       marks: [lineY(forecastRows(variant), { id: 'actual', x: 'month', y: 'actual', key: 'id', stroke: '#60a5fa', strokeWidth: 3 })],
-      scales: { x: { scale: () => scaleLinear().domain([0, 11]) }, y: { scale: () => scaleLinear().domain([30, 100]), grid: true } },
+      scales: { x: { scale: scaleLinear().domain([0, 11]) }, y: { scale: scaleLinear().domain([30, 100]), grid: true } },
       clip: true,
     }),
     renderer: motion(),

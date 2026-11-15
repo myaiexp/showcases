@@ -31,7 +31,13 @@
 // - differenceY on a log y works only when both scales invert (d3 `scaleLog` does).
 // - A position scale ignores a `domain` key (`{ scale: scaleLinear, domain: [0, 10] }` type-checks
 //   and does nothing): fix a domain on an instance, `scale: scaleLinear().domain([0, 10])`. The
-//   `color` block's `domain` is real.
+//   `color` block's `domain` is real. A factory re-infers its domain from the marks even when it
+//   sets one: `() => scaleLinear().domain([0, 10])` fits the data, so fixed domains are instances.
+// - The docs' group callback `({ datum }) => …` is wrong for 1.5.0: accessors are `(datum, ctx)`.
+// - StackOffset has no 'expand' ('diverging' | 'normalize' | 'center' | 'wiggle'); text() aligns
+//   with `anchor`, not `textAnchor`.
+// - treeLayout returns raw coordinates (root at 0,0, negative y for 'top'): set scale domains from
+//   the node extent.
 // - Facets with shared outer axes throw "cannot share outer axes" unless every cell resolves the
 //   same scales (fixed equal domains); the parent needs `scales: { x: null, y: null }`, and child
 //   specs are plain `{ marks, scales }` objects, not defineChart results.

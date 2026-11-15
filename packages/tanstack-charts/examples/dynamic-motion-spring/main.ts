@@ -15,7 +15,7 @@ const mount: Mount = (el, ctx) => {
   const build = () =>
     defineChart({
       marks: [barY(barStep(step), { x: 'label', y: 'value', key: 'id', fill: '#60a5fa' })],
-      scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: () => scaleLinear().domain([0, 120]), grid: true } },
+      scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: scaleLinear().domain([0, 120]), grid: true } },
     });
   const options = () => ({
     definition: build(),

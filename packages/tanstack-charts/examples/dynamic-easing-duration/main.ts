@@ -19,7 +19,7 @@ const mount: Mount = (el, ctx) => {
     defineChart({
       svgAnimation: { duration, easing },
       marks: [barY(barStep(flip % 2), { x: 'label', y: 'value', key: 'id', fill: '#f472b6' })],
-      scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: () => scaleLinear().domain([0, 110]), grid: true } },
+      scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: scaleLinear().domain([0, 110]), grid: true } },
     });
   const options = () => ({ definition: build(), height: stage.height, ariaLabel: 'Six values that alternate' });
   const host = stage.own(mountChart(stage.box, options()));

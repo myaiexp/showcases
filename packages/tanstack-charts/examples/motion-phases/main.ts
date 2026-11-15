@@ -31,8 +31,8 @@ const mount: Mount = (el, ctx) => {
           }),
         ],
         scales: {
-          x: { scale: () => scaleBand<string>().domain(revenue.map((r) => r.month)).padding(0.2) },
-          y: { scale: () => scaleLinear().domain([0, 100_000]), grid: true },
+          x: { scale: scaleBand<string>().domain(revenue.map((r) => r.month)).padding(0.2) },
+          y: { scale: scaleLinear().domain([0, 100_000]), grid: true },
         },
       }),
       renderer: motion(),

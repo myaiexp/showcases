@@ -20,7 +20,7 @@ const mount: Mount = (el, ctx) => {
   const options = () => ({
     definition: defineChart({
       marks: [barY(barStep(step), { x: 'label', y: 'value', key: 'id', fill: '#4ade80' })],
-      scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: () => scaleLinear().domain([0, 110]), grid: true } },
+      scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: scaleLinear().domain([0, 110]), grid: true } },
     }),
     renderer: motionLite({ duration, easing }),
     height: stage.height,

@@ -19,7 +19,7 @@ const mount: Mount = (el, ctx) => {
   const build = () =>
     defineChart({
       marks: [lineY(downloads, { x: 'week', y: 'downloads', color: 'package', strokeWidth: 2.5 })],
-      scales: { x: { scale: () => scalePoint<string>().padding(0.2) }, y: { scale: () => scaleLinear().domain([0, 1700]), grid: true } },
+      scales: { x: { scale: () => scalePoint<string>().padding(0.2) }, y: { scale: scaleLinear().domain([0, 1700]), grid: true } },
       color: {
         scale: scaleOrdinal<string, string>().domain(packageNames).range(packageColors),
         legend: interactiveColorLegend<string>({

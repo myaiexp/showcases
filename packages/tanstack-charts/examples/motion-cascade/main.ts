@@ -21,7 +21,7 @@ const mount: Mount = (el, ctx) => {
         ],
         scales: {
           x: { scale: scaleLinear, axis: { ticks: { motion: { transition: { type: 'tween', duration: 180 } } }, tickLabels: { motion: { delay: 40 } } } },
-          y: { scale: () => scaleLinear().domain([30, 110]), grid: true },
+          y: { scale: scaleLinear().domain([30, 110]), grid: true },
         },
       }),
       renderer: motion(),

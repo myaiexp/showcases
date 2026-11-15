@@ -28,8 +28,8 @@ const mount: Mount = (el, ctx) => {
       },
       marks: [lineY(samples, { id: 'trace', x: 't', y: 'v', key: 'id', stroke: '#4ade80', strokeWidth: 2.5 })],
       scales: {
-        x: { scale: () => scaleLinear().domain([head - visible, head]), axis: false },
-        y: { scale: () => scaleLinear().domain([0, 100]), grid: true },
+        x: { scale: scaleLinear().domain([head - visible, head]), axis: false },
+        y: { scale: scaleLinear().domain([0, 100]), grid: true },
       },
       margin: { top: 10, right: 12, bottom: 12, left: 36 },
       clip: true,

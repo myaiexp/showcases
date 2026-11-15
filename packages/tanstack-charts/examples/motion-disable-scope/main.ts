@@ -22,7 +22,7 @@ const mount: Mount = (el, ctx) => {
           barY(rows, { x: 'label', y: 'value', key: 'id', fill: '#475569', motion: false }),
           lineY(rows, { id: 'line', x: 'label', y: 'value', key: 'id', stroke: '#facc15', strokeWidth: 3, motion: { transition: { type: 'tween', duration: 900, easing: 'ease-in-out' } } }),
         ],
-        scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: () => scaleLinear().domain([0, 110]), grid: true } },
+        scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: scaleLinear().domain([0, 110]), grid: true } },
       }),
       renderer: motion(),
       height: stage.height,

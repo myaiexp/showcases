@@ -24,7 +24,7 @@ const mount: Mount = (el, ctx) => {
       ],
       scales: {
         x: { scale: scaleLinear, axis: { label: 'elapsed (ms)' } },
-        y: { scale: () => scaleLinear().domain([0, 120]), grid: true },
+        y: { scale: scaleLinear().domain([0, 120]), grid: true },
       },
     });
   };

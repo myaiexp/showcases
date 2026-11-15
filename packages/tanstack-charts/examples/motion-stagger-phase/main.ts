@@ -23,7 +23,7 @@ const mount: Mount = (el, ctx) => {
         ...stagger({ each: 80, phase: ['enter', 'update'] }),
       },
       marks: [barY(barStep(step, 8), { x: 'label', y: 'value', key: 'id', fill: '#2dd4bf' })],
-      scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: () => scaleLinear().domain([0, 110]), grid: true } },
+      scales: { x: { scale: () => scaleBand<string>().padding(0.2) }, y: { scale: scaleLinear().domain([0, 110]), grid: true } },
     }),
     renderer: motion(),
     height: stage.height,

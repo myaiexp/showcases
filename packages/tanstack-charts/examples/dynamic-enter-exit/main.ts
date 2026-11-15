@@ -15,8 +15,8 @@ const mount: Mount = (el, ctx) => {
       svgAnimation: { duration: 600, easing: 'ease-out' },
       marks: [barY(revenue.slice(0, count), { x: 'month', y: 'revenue', key: 'id', fill: '#34d399' })],
       scales: {
-        x: { scale: () => scaleBand<string>().domain(revenue.map((r) => r.month)).padding(0.2) },
-        y: { scale: () => scaleLinear().domain([0, 80_000]), grid: true },
+        x: { scale: scaleBand<string>().domain(revenue.map((r) => r.month)).padding(0.2) },
+        y: { scale: scaleLinear().domain([0, 80_000]), grid: true },
       },
     });
   const options = () => ({ definition: build(), height: stage.height, ariaLabel: 'Monthly revenue' });
