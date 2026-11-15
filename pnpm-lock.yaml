@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  '@tanstack/charts>d3-selection': 3.0.1
+
 importers:
 
   .:
@@ -2356,10 +2359,6 @@ packages:
 
   d3-scale@4.0.3:
     resolution: {integrity: sha512-66cWobCNzcMvlfoaDHCxuIv9TBUWG1BLOWdv9kHHFuCr1JdqAWPvTmsaEYDD5NRMyWZ5+7u0GqiCDfMXMqh3hg==}
-    engines: {node: '>=12'}
-
-  d3-selection@3.0.0:
-    resolution: {integrity: sha512-fmTRWbNMmsmWq6xJV8D19U/gw/bwrHfNXxrIN+HfZgnzqTHp9jOmKMhsTUjXOJnZOdZY9Q28y4yebKzqDKlxlQ==}
     engines: {node: '>=12'}
 
   d3-selection@3.0.1:
@@ -4982,7 +4981,7 @@ snapshots:
       d3-hierarchy: 3.1.2
       d3-sankey: 0.12.3
       d3-scale: 4.0.2
-      d3-selection: 3.0.0
+      d3-selection: 3.0.1
       d3-shape: 3.2.0
       d3-zoom: 3.0.0
       tslib: 2.9.1
@@ -6009,8 +6008,6 @@ snapshots:
       d3-interpolate: 3.0.2
       d3-time: 3.1.1
       d3-time-format: 4.1.1
-
-  d3-selection@3.0.0: {}
 
   d3-selection@3.0.1: {}
 

@@ -1,0 +1,9 @@
+/* The calm-rows class turns off the shaded active row through its CSS variables */
+[data-example='tanstack-charts/tooltip-active-row'] {
+  .calm-rows {
+    --ts-chart-tooltip-active-row-font-weight: 600;
+    --ts-chart-tooltip-active-row-background: transparent;
+    --ts-chart-tooltip-active-row-border-radius: 0;
+    --ts-chart-tooltip-active-row-shadow: none;
+  }
+}

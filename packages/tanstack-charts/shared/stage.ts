@@ -63,6 +63,15 @@
 //   needs `x = -width`, or the margin never grows.
 // - Layered hosts (canvas, mixed, mountCanvasChart) all need `stage.box.style.height`.
 // - Card captions: one short line, and take ~34px off the chart height for it.
+// - Brush, handle and zoom listen on hit targets inside the chart, not the container: cards drive
+//   them with keydown/wheel on `[data-chart-brush-handle="end"]`, `[data-chart-handle-surface]`,
+//   `[data-chart-zoom-surface]` (`interact-drive.ts`); brush handles want `handleSize: 10` there.
+// - zoomX needs one d3-selection: package.json overrides charts' pinned 3.0.0 to the 3.0.1 that
+//   d3-transition patches, or zoom throws "selection.interrupt is not a function".
+// - continuousCursor labels default to a white box with transparent text: give xLabel/yLabel
+//   explicit `background` and `color`.
+// - A document capture listener dismisses pinned tooltips on any pointerdown: cards send `click`.
+// - `focus: false` (or focusDisabled) still leaves a tab stop until `keyboard: false`.
 // - A first visit to a new subpath (polar, hierarchy/*, spatial/*) makes Vite re-optimise and
 //   reload the dev page: a blank chart for a while is that, not a bug.
 import type { MountContext } from '@/types.ts';
