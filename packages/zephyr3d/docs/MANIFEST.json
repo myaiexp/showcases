@@ -1,0 +1,483 @@
+{
+  "fetched": "2026-11-15T15:49:13.456Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/gavinyork/zephyr3d",
+      "ref": "main",
+      "paths": [
+        "LICENSE",
+        "README.md",
+        "apps/doc/web/en/*.md",
+        "apps/doc/src/tut-0/main.js",
+        "apps/doc/src/tut-1/main.js",
+        "apps/doc/src/tut-2/main.js",
+        "apps/doc/src/tut-4/main.js",
+        "apps/doc/src/tut-5/main.js",
+        "apps/doc/src/tut-6/main.js",
+        "apps/doc/src/tut-7/main.js",
+        "apps/doc/src/tut-8/main.js",
+        "apps/doc/src/tut-9/main.js",
+        "apps/doc/src/tut-10/main.js",
+        "apps/doc/src/tut-11/main.js",
+        "apps/doc/src/tut-12/main.js",
+        "apps/doc/src/tut-13/main.js",
+        "apps/doc/src/tut-16/main.js",
+        "apps/doc/src/tut-32/main.js",
+        "apps/doc/src/tut-33/main.js",
+        "apps/doc/src/tut-34/main.js",
+        "apps/doc/src/tut-50/main.js",
+        "apps/doc/src/tut-54/main.js",
+        "apps/doc/src/tut-70/main.js",
+        "apps/doc/src/tut-76/main.js",
+        "apps/doc/src/tut-77/main.js",
+        "apps/doc/src/tut-78/main.js",
+        "apps/doc/src/tut-79/main.js",
+        "apps/doc/src/tut-80/main.js",
+        "apps/doc/src/tut-81/main.js",
+        "apps/doc/src/tut-82/main.js",
+        "apps/doc/src/tut-83/main.js",
+        "apps/doc/src/tut-84/main.js"
+      ],
+      "commit": "79012082930bfb7759e1bd819378b874267c2dd9"
+    }
+  ],
+  "files": {
+    "repo/apps/doc/src/tut-0/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-0/main.js",
+      "sha256": "ed58c5bf6985743765ae56085e3c9a8fed7ec83803d0667e6036c9a781544d57"
+    },
+    "repo/apps/doc/src/tut-1/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-1/main.js",
+      "sha256": "4e466e8f0c0f97c33a119c3605a26f379c961b3248f89825cfaf6cc09ceac20b"
+    },
+    "repo/apps/doc/src/tut-10/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-10/main.js",
+      "sha256": "2f768991b6ed05e6871c9a2848ee3a9a3bade67c13a26baae400ac1c8bead9a7"
+    },
+    "repo/apps/doc/src/tut-11/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-11/main.js",
+      "sha256": "0448bf9f8b5a9c30a8b98ef7666409312997c3a64782f6512eb87b6f543bc84e"
+    },
+    "repo/apps/doc/src/tut-12/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-12/main.js",
+      "sha256": "d8ad827664a0b60f6090cb91d1d2a8e1e087d9dbe81d0d27b327a736f39ce9b7"
+    },
+    "repo/apps/doc/src/tut-13/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-13/main.js",
+      "sha256": "35c4f52f049b70a1c69fc2ee86de9cf8dedefd3c348a5e36a2fcd533738919b8"
+    },
+    "repo/apps/doc/src/tut-16/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-16/main.js",
+      "sha256": "e1daf0ec2fd2372b8472bff9e6adfcfd0ac2c887cd5343b3fd037c7c906f6731"
+    },
+    "repo/apps/doc/src/tut-2/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-2/main.js",
+      "sha256": "36457a078570b69f48389fcc30378634f9154b87253cd7948517617a0b25319d"
+    },
+    "repo/apps/doc/src/tut-32/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-32/main.js",
+      "sha256": "f8fca1c6161c11732ad5d4c8528e5a78d2b634e43766422f7400221d7bd40496"
+    },
+    "repo/apps/doc/src/tut-33/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-33/main.js",
+      "sha256": "39588e043362cfba940abe4da5c90d13e78bb04f563218004028f2a6fef1811b"
+    },
+    "repo/apps/doc/src/tut-34/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-34/main.js",
+      "sha256": "b60a475d78cf41fd7fa551b2af00a83351cce8b4a20edb1af5c02722e9bae586"
+    },
+    "repo/apps/doc/src/tut-4/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-4/main.js",
+      "sha256": "9b2f45793679f45574965a84b2b7a666d03dbb570ec6f482fb26c4753c1e07d9"
+    },
+    "repo/apps/doc/src/tut-5/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-5/main.js",
+      "sha256": "be07c0627d1f92727211e38b42de98eaacb7b9df7a00d588361abd17dd26f399"
+    },
+    "repo/apps/doc/src/tut-50/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-50/main.js",
+      "sha256": "b6033f8ef482e1757e7b75d66e660fb4a0205d408b4319b1d1ef03f62226d85f"
+    },
+    "repo/apps/doc/src/tut-54/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-54/main.js",
+      "sha256": "937ca43306e33cf2a0813ab0dfffe98b8b089d21044871660631af1288454073"
+    },
+    "repo/apps/doc/src/tut-6/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-6/main.js",
+      "sha256": "c2bce0c61a2e625807c043484a269960d13e874e5cfd5e6bd78fa96697b9077f"
+    },
+    "repo/apps/doc/src/tut-7/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-7/main.js",
+      "sha256": "e84ab9cebc46e5cccb22a61f92f851243d80c6d2b94d33d5817f8ed9b276ccaa"
+    },
+    "repo/apps/doc/src/tut-70/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-70/main.js",
+      "sha256": "01ad0c1a6babba1b7cd25893802c428b5d12cb6ba8784d35820f05d038fed043"
+    },
+    "repo/apps/doc/src/tut-76/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-76/main.js",
+      "sha256": "ade147e95af4cd351460b805f827782ca62e0f1a0f6ff5f807afb9d41190edde"
+    },
+    "repo/apps/doc/src/tut-77/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-77/main.js",
+      "sha256": "aa0f8af838314730f1ba1d5e9478fa367a3806a09b2f660b351549fe03e5d54b"
+    },
+    "repo/apps/doc/src/tut-78/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-78/main.js",
+      "sha256": "3dc093ca2308c695ce27d6a592f53017dc22a971d661802f973ea1f884a5e27a"
+    },
+    "repo/apps/doc/src/tut-79/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-79/main.js",
+      "sha256": "02a521c1259320c82036bfafbe6b902e4fd8d782a2f570499938efef429e8c48"
+    },
+    "repo/apps/doc/src/tut-8/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-8/main.js",
+      "sha256": "62762e91bc78cb826644b1c7a7973ab6c8892517a27f3e6fa3b5ff447751d2c9"
+    },
+    "repo/apps/doc/src/tut-80/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-80/main.js",
+      "sha256": "2c3c5fba38ba45e042335949e1041843fe3cdd1d664b201e31143a5b6f8b870e"
+    },
+    "repo/apps/doc/src/tut-81/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-81/main.js",
+      "sha256": "ce70c056ad042b21d617fe0231a636b7f19fa83af335cee19370f00d204f19c5"
+    },
+    "repo/apps/doc/src/tut-82/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-82/main.js",
+      "sha256": "c513e61813332de4c5c30eaccab902b385739e86886cd6112e0fae67cde094c6"
+    },
+    "repo/apps/doc/src/tut-83/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-83/main.js",
+      "sha256": "f10233931962913f9affe4992b8cf5b56a730482fa01debe2f7bad8b06f56eba"
+    },
+    "repo/apps/doc/src/tut-84/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-84/main.js",
+      "sha256": "7aae10af4c3064795ba0ed4288c8e7a79aa71a197a8af40e3b5855c2a2a490c0"
+    },
+    "repo/apps/doc/src/tut-9/main.js": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/src/tut-9/main.js",
+      "sha256": "be01e5ef1de9691583f7023d2922ad3e0974d3ceee14377edc1250a9bcfb81ac"
+    },
+    "repo/apps/doc/web/en/_sidebar.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/_sidebar.md",
+      "sha256": "91d72de5bdfd0f0ed7727d2327936f1ef9c9cc290991c1e5559e4f779c8efef5"
+    },
+    "repo/apps/doc/web/en/animation-blending.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/animation-blending.md",
+      "sha256": "0ac5c4521dbeb693edca054d6eca3fab77cdb5a31302322c72443cb57e3c48d9"
+    },
+    "repo/apps/doc/web/en/animation-controller.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/animation-controller.md",
+      "sha256": "af2b88f6a2b7a7bd6795ce59f6ff8fae35b4732cb7ab87903c2d692e9f62c653"
+    },
+    "repo/apps/doc/web/en/animation-custom.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/animation-custom.md",
+      "sha256": "a233756e0db6487c874aee9c69097e5d754a0efe7ed403bd970865a72a30867d"
+    },
+    "repo/apps/doc/web/en/animation-ik.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/animation-ik.md",
+      "sha256": "3a767c63b04926ba14d68040c8bb90798114122e62812c503abc3f97526a0d8a"
+    },
+    "repo/apps/doc/web/en/animation-intro.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/animation-intro.md",
+      "sha256": "489cd9f647f9c0846545023b357096a6946f6db6da6d884855234060504e2046"
+    },
+    "repo/apps/doc/web/en/animation-joint-dynamics.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/animation-joint-dynamics.md",
+      "sha256": "06225f79965be5414a604edfeb6f5e363b2d28bb7dafda275a6aa2743d6388f1"
+    },
+    "repo/apps/doc/web/en/animation-keyframe.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/animation-keyframe.md",
+      "sha256": "196a2268a12f56f19f1ce7dedb480eda4c6e37f2cb5971a0f09c0f8daebb53ce"
+    },
+    "repo/apps/doc/web/en/animation-morph-target.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/animation-morph-target.md",
+      "sha256": "80ab90db1749c2ac31547d781d5a7e68e4f303aa31758304689850ab9d1cefc8"
+    },
+    "repo/apps/doc/web/en/animation-skeleton.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/animation-skeleton.md",
+      "sha256": "a8ea79b188309d46f526cee348aa5ce9f34dcb9aa9271fc847edea3a6e1f384b"
+    },
+    "repo/apps/doc/web/en/asset-loading.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/asset-loading.md",
+      "sha256": "5e0a707c0da6e462d79b931e93829f5d491afb6af8ceb68fc5cfa9206aad3e0a"
+    },
+    "repo/apps/doc/web/en/backend-support.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/backend-support.md",
+      "sha256": "ab7e709eb8d449617851cf17445762428481b4d5c0ee6b32e1885715cda636fc"
+    },
+    "repo/apps/doc/web/en/buffer.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/buffer.md",
+      "sha256": "5541d4db128f2b348968500f2f80584fa21e52a634a0fb29baeba3932dd9956e"
+    },
+    "repo/apps/doc/web/en/device-intro.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/device-intro.md",
+      "sha256": "0769b4a20be8773a9c9052822cec9c73537f76b5b838f3d6e7268587663367f9"
+    },
+    "repo/apps/doc/web/en/device.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/device.md",
+      "sha256": "63b2bea8d9f719379cb5ce4fea1139c077d75fdbb5c70d8599ca492df4a68bff"
+    },
+    "repo/apps/doc/web/en/devicesamples.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/devicesamples.md",
+      "sha256": "3f20735beb6a6d2e864e610995c03fca9c9cd46c3b4f5909a127d51b9290bfa2"
+    },
+    "repo/apps/doc/web/en/drawcall.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/drawcall.md",
+      "sha256": "319cc322f78bfaf826b6c642304860ffc09fc199117c783a1f44c166ea6338f1"
+    },
+    "repo/apps/doc/web/en/first-app.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/first-app.md",
+      "sha256": "a4b610de51b72c6cbfd81e2cbb2f51f21b089307018be0143c8becc3b422f52d"
+    },
+    "repo/apps/doc/web/en/first-polish.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/first-polish.md",
+      "sha256": "2d0596b73322f926c8d689ba2e66679752b629d6b718076da89c50dc7762aa56"
+    },
+    "repo/apps/doc/web/en/first-scene.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/first-scene.md",
+      "sha256": "ca6a414897827a9e18a2124fae8a63aa3c4ddaa9bec82f245e52873efd07f49b"
+    },
+    "repo/apps/doc/web/en/gltf.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/gltf.md",
+      "sha256": "73406fabea946d76bb1bc1a79d2d62b4efd73016a0466fb748fbf11135a3e1ad"
+    },
+    "repo/apps/doc/web/en/index.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/index.md",
+      "sha256": "7acf1a02683bf6ec11955480baf2f32f47a73db114d87c75079d65f8d114cc38"
+    },
+    "repo/apps/doc/web/en/installation.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/installation.md",
+      "sha256": "d37389cf4136591d37bd42f73a066f97e82679e15cd0e9bb65839a34dc458feb"
+    },
+    "repo/apps/doc/web/en/instancing-intro.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/instancing-intro.md",
+      "sha256": "e806ed7738559b8f9e543a3fefe45977c9be85cc148572c688d3afbffb498623"
+    },
+    "repo/apps/doc/web/en/instancing-skinned.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/instancing-skinned.md",
+      "sha256": "7fb1420ac92879aa1eb81259e22c130039140e11b421be733228f9ab5d9a238e"
+    },
+    "repo/apps/doc/web/en/intro.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/intro.md",
+      "sha256": "d3e43232b2b1fd1a6d63e823e40cf202f9fa4d21fcb2a07bfd5e9d0bdda6baa5"
+    },
+    "repo/apps/doc/web/en/lifetime.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/lifetime.md",
+      "sha256": "90420a32130febce4eb0ab3537fdbae1b466d6995470ab7c6253fccf96bce529"
+    },
+    "repo/apps/doc/web/en/lighting-direct.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/lighting-direct.md",
+      "sha256": "498837c73f911b08db97fabd92855ec24a058b5ee0b149dd4f91d75cc576e2cd"
+    },
+    "repo/apps/doc/web/en/lighting-indirect.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/lighting-indirect.md",
+      "sha256": "e5b6b6b340ed9e5cf9eca53d674900c3bc6044ac5b424bc5d626784a97c67c90"
+    },
+    "repo/apps/doc/web/en/lighting-intro.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/lighting-intro.md",
+      "sha256": "a71c962014b468c4e516a85009d13397e6666575b7ed9981fc59ef828f3ea2cb"
+    },
+    "repo/apps/doc/web/en/lighting-physical.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/lighting-physical.md",
+      "sha256": "dde498794535da92a24694b4d5d2d5a02a32b5b9bd192cefe422d1871c1ac529"
+    },
+    "repo/apps/doc/web/en/material-eye.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/material-eye.md",
+      "sha256": "226c2c27dff7b01bc8b81b0e58a4a4b74da6b68bf25569c2bfe41f4c7b862e1e"
+    },
+    "repo/apps/doc/web/en/material-hair.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/material-hair.md",
+      "sha256": "96f885e5beb16495b1574eb695afd1c7e9eb8ef2adfcb7511713d3962717da7e"
+    },
+    "repo/apps/doc/web/en/material-skin.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/material-skin.md",
+      "sha256": "42bf373d1b74fcc2d3746f529b9995b567075d146690ac72c2ada6fae92530ad"
+    },
+    "repo/apps/doc/web/en/mesh-lod.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/mesh-lod.md",
+      "sha256": "59067a6e2c7ba255100deda947b19092f9034c65b478a48fa9dc2518dd2811d4"
+    },
+    "repo/apps/doc/web/en/mesh-material.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/mesh-material.md",
+      "sha256": "544d577e446676ab1696103f1e9056d7c669ef2addfde880e77c33f8ba0e8117"
+    },
+    "repo/apps/doc/web/en/multi-views.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/multi-views.md",
+      "sha256": "e12db3c0cdf27bb2699d5adf87d00807e73b0cd9f83da2a0ba2715430b2050db"
+    },
+    "repo/apps/doc/web/en/oit.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/oit.md",
+      "sha256": "9e46a1a797c362d09b65a4e4fcc6d61af993e04bacb69b15a59b9c23459c76d0"
+    },
+    "repo/apps/doc/web/en/particles-sprites.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/particles-sprites.md",
+      "sha256": "eef4295eff8d47fbc0219f2efbeb2cc76f0b48ee0a277a94ca0ab7690e3cb829"
+    },
+    "repo/apps/doc/web/en/performance.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/performance.md",
+      "sha256": "df2661eda7759e09206755701a1ec7a64d250cbbaa0deacd9446a16b9d7a4c57"
+    },
+    "repo/apps/doc/web/en/physics-camera.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/physics-camera.md",
+      "sha256": "64d4e1c3f3a166d961b3ebee406bc284b93e3f1aaa39c0b83eaad33de6c786b1"
+    },
+    "repo/apps/doc/web/en/physics-character.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/physics-character.md",
+      "sha256": "ef82e88a3a7bd81151ad76e47ef5a254a754f9cb381e6b91ec66b794e852027f"
+    },
+    "repo/apps/doc/web/en/physics-colliders.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/physics-colliders.md",
+      "sha256": "ff7b955fc2cdc66a740a9905e51c50890fb42fd0d62a3350b0e2c00d96adae30"
+    },
+    "repo/apps/doc/web/en/physics-intro.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/physics-intro.md",
+      "sha256": "f2762e5164a4413af14d805444a342fd5a4f38772f924e2e1b04364d0f52dd51"
+    },
+    "repo/apps/doc/web/en/physics-joints.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/physics-joints.md",
+      "sha256": "46e006a1f19f97e9ab61f3cc13f517b0ebfc50c45a837983476f8d262c3161fc"
+    },
+    "repo/apps/doc/web/en/physics-scripting.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/physics-scripting.md",
+      "sha256": "39984dfe5f20ec641e572dc1785fe2c1f2bcd7c31fce5819baf3578ab3427587"
+    },
+    "repo/apps/doc/web/en/physics-vehicle.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/physics-vehicle.md",
+      "sha256": "53818aa9d19e6bb72d8cb11995da373c06cd2e512c1a009d66bb1c445c055aa4"
+    },
+    "repo/apps/doc/web/en/picking.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/picking.md",
+      "sha256": "7ed41a7ffe57672d9fef3615b0b4104a2dca2ee6639b3d9bf128e031e8c64c9e"
+    },
+    "repo/apps/doc/web/en/posteffect-bloom.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/posteffect-bloom.md",
+      "sha256": "43d9542fece509d2dca3dc7291f22b1eea8ffbfaa7d8a527fdefef397040a3b4"
+    },
+    "repo/apps/doc/web/en/posteffect-fxaa.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/posteffect-fxaa.md",
+      "sha256": "f36c5de9f8f98e3fb5128a887a05c6ffa56a29b568bec6bdefd85d2e3e312b55"
+    },
+    "repo/apps/doc/web/en/posteffect-intro.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/posteffect-intro.md",
+      "sha256": "508f429192fa6abb074609336955860e7d31647167c0567bfd897cf1e3f60a18"
+    },
+    "repo/apps/doc/web/en/posteffect-motionblur.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/posteffect-motionblur.md",
+      "sha256": "a6c57a9e829d18c3ba95fc652e622a3bdff205da1c12debd2892325fe989718e"
+    },
+    "repo/apps/doc/web/en/posteffect-sao.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/posteffect-sao.md",
+      "sha256": "6ed5f2da11e2052d69c53c961c2e2dc373acfd5bb454048edcbacd994c6e8f07"
+    },
+    "repo/apps/doc/web/en/posteffect-ssgi.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/posteffect-ssgi.md",
+      "sha256": "f7d155c7e6c26d521e490e02185b1885483bb7bab16ee1d7da905729530b0db7"
+    },
+    "repo/apps/doc/web/en/posteffect-ssr.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/posteffect-ssr.md",
+      "sha256": "31c04f69d5190ed779a8e8ee74d12ec11061c6bc904d45ce4dbc977cfe113e06"
+    },
+    "repo/apps/doc/web/en/posteffect-taa.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/posteffect-taa.md",
+      "sha256": "57cad0bc9d19652b7722a6fb7ef18939103e215acdafd8722d6d88bbfe2e8f45"
+    },
+    "repo/apps/doc/web/en/posteffect-tonemap.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/posteffect-tonemap.md",
+      "sha256": "f12e5256c54e9c475c580cb807eaf79abf054af620cf6c7ad106d8e205316dd8"
+    },
+    "repo/apps/doc/web/en/rendergraph.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/rendergraph.md",
+      "sha256": "def5709b317e0357720e245b346e08d69d4bf9e0e36d2d7f886d87efab89a51f"
+    },
+    "repo/apps/doc/web/en/renderstate.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/renderstate.md",
+      "sha256": "052c88073ead5d5b519557c3cbc6984a181a7ffe678323685eee754f89ac64ba"
+    },
+    "repo/apps/doc/web/en/reverse-z.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/reverse-z.md",
+      "sha256": "11f5af71d5e8e8cb7719d8512751e8cb62d32d91d92b8943c822d74c0642ed4b"
+    },
+    "repo/apps/doc/web/en/scene-basic.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/scene-basic.md",
+      "sha256": "e508a9aaf690418b9cf22cc5da05fd9993137d6d37069111abcbcc8ff92f5227"
+    },
+    "repo/apps/doc/web/en/scene-graph.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/scene-graph.md",
+      "sha256": "4b655dd829ca8e1c83910d9d6d4569a34ee1aec45d34652c4e0c7fec997708c2"
+    },
+    "repo/apps/doc/web/en/sdf.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/sdf.md",
+      "sha256": "3cfed576897dc51c8ea6c62b7e4bbd14dc42583eec847bb9389f288fa573b3c4"
+    },
+    "repo/apps/doc/web/en/serialization.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/serialization.md",
+      "sha256": "4637f7fe93ce119bc536c6194937ad97fbe4dd83ae0d005afffecd5e759609c2"
+    },
+    "repo/apps/doc/web/en/shader.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/shader.md",
+      "sha256": "236b1bcf3d4bc16cc3c45568018e6bf97b81f45ab08e4b56a0fd221beb4e45a3"
+    },
+    "repo/apps/doc/web/en/shadow-aa.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/shadow-aa.md",
+      "sha256": "6f0a2f0d08f343c138700dd916403113a7c6dc6ad093c90f64ca00dbae20bde7"
+    },
+    "repo/apps/doc/web/en/shadow-intro.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/shadow-intro.md",
+      "sha256": "0a650beda5afa574b483901511339da456f6b3a876d8ee9157190ffc4be9c395"
+    },
+    "repo/apps/doc/web/en/sky.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/sky.md",
+      "sha256": "3b973921015ade559b70db679a0d21146443237b74f4d015e81c44a0432e959f"
+    },
+    "repo/apps/doc/web/en/terrain-runtime.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/terrain-runtime.md",
+      "sha256": "3edee5072151c35050231a166ce7bd397257f505eb4f65440e2cc0e2da8563d7"
+    },
+    "repo/apps/doc/web/en/text-rendering.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/text-rendering.md",
+      "sha256": "0a760505708259af03065cfad8b6d67c0c817101954f9f2b18e0cd9a0bacbbae"
+    },
+    "repo/apps/doc/web/en/texture.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/texture.md",
+      "sha256": "8ef345aaa4dd642725447120f9d54ddc201d9f63aadb73b0eba4ec1cef7d5bc8"
+    },
+    "repo/apps/doc/web/en/user-material-lit.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/user-material-lit.md",
+      "sha256": "b8a16c33b0a3cae35d4196e0613ba4e3508878c8a4ccde35947772eeab5f0b5b"
+    },
+    "repo/apps/doc/web/en/user-material-multipass.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/user-material-multipass.md",
+      "sha256": "6050fdde322adf5ed3d99d4c01cfa205f47469fa1efb14f7dbad198e3f9affc9"
+    },
+    "repo/apps/doc/web/en/user-material-unlit.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/user-material-unlit.md",
+      "sha256": "883c3b6df1bece8c03e726545f89e891eabada440d0978c1e8297b8aa52e79d2"
+    },
+    "repo/apps/doc/web/en/user-material-var.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/user-material-var.md",
+      "sha256": "94d91fd61be2ab11042052e9fa398e1794339d4f9acebd173cff0eec474b0f4c"
+    },
+    "repo/apps/doc/web/en/user-material.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/user-material.md",
+      "sha256": "202627ef4be3bb75761c35ea79b9bd252d0d96bdadb3095782be5af6d1f268f0"
+    },
+    "repo/apps/doc/web/en/vfs.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/vfs.md",
+      "sha256": "a580df5dc7d614d8bab9552e25cb56927a253092b06455ff89acf2f77c620db0"
+    },
+    "repo/apps/doc/web/en/water.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/apps/doc/web/en/water.md",
+      "sha256": "5ce5c5be778a9c4d1926d53997d0e62580b8ec3bde823f3bd025ef48cc47c1c1"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/LICENSE",
+      "sha256": "193b5dc2971e0bde1b85ca0024c18db356f725724c8310d9e5d84dec7fd797c7"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/gavinyork/zephyr3d/blob/79012082930bfb7759e1bd819378b874267c2dd9/README.md",
+      "sha256": "dd705981ca4b80a1ae4d410ca5d7931e1342dc6fce741549eaca32d501b4b8db"
+    }
+  }
+}
