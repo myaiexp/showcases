@@ -159,3 +159,7 @@ GitHub Pages. No service on the VPS.
   `stage.own(mountChart(stage.box, …))`; the box's currentColor and `--ts-chart-N` tokens are the dark theme. A fixed
   scale domain needs an instance (`scaleLinear().domain(…)`): factories and a `domain` key re-infer it. Cards fake input
   with `stage.ghost()` on the container; package.json overrides charts' d3-selection so `zoomX` works.
+- Vizzu: build on `packages/vizzu/shared/stage.ts` (`createStage`, trap list). Every chart is
+  `stage.own(new Vizzu(stage.element, { style: darkStyle }))`; steps run through `stage.story()`,
+  which loops and rewinds via `chart.store()`. tsconfig `paths` maps `vizzu` to the type-only
+  `shared/vizzu-types.d.ts`, because the library's own shorthand `animate()` types never apply.

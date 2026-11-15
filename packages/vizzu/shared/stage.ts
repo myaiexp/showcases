@@ -8,6 +8,12 @@
 // - Vizzu's own look is light (white background, dark text). Every example passes
 //   `{ style: darkStyle }` (shared/theme.ts) as the constructor's initial state. `style: null`
 //   resets to Vizzu's light defaults, not to that dark state.
+// - `isContiguous: true` on a dimension changes nothing visible in 0.18.
+// - A measure's `unit` shows on axis and marker labels ("60 k$"), not in the axis title.
+//   chart.data gives `unit: undefined` for a measure without one.
+// - Presets never reset `sort`; waterfall colours by a gradient of the y measure, not by sign.
+// - The y-axis of a measure starts at 0: a measure in a narrow high band squashes its markers.
+// - Tooltips need a real pointer over the canvas: synthetic events and caxi hovers show none.
 import type Vizzu from 'vizzu';
 import type { MountContext } from '@/types.ts';
 import { vizzuReady } from './setup.ts';
@@ -47,6 +53,8 @@ export interface Stage {
   after(ms: number, fn: () => void): void;
   /** Resolves after `ms`; rejects when the stage is disposed. */
   wait(ms: number): Promise<void>;
+  /** Adds a text panel beside the chart (full view only); returns its <pre>, or null in a card. */
+  side(): HTMLPreElement | null;
   /** Adds a button to the control bar (full view only); returns it, or null in a card. */
   button(label: string, onClick: () => void): HTMLButtonElement | null;
   onDispose(fn: () => void): void;
@@ -143,6 +151,15 @@ export async function createStage(el: HTMLElement, ctx: MountContext, opts: Stag
         timers.add(id);
         waiters.add(reject);
       });
+    },
+    side() {
+      if (preview) return null;
+      const panel = document.createElement('div');
+      panel.className = 'vz-side';
+      const pre = document.createElement('pre');
+      panel.append(pre);
+      root.append(panel);
+      return pre;
     },
     button(label, onClick) {
       if (!bar) return null;
