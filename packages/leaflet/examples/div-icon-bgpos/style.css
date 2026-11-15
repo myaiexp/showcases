@@ -1,0 +1,7 @@
+/* Sprite markers: the sheet comes from --sprite, set on the map box */
+[data-example='leaflet/div-icon-bgpos'] {
+  .sprite-icon {
+    background: var(--sprite) no-repeat;
+    border: 0;
+  }
+}

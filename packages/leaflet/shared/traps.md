@@ -38,9 +38,12 @@ add to it when something bites.
   target element for layers: `g.click(latlng, circle.getElement())`, `g.over(latlng,
   marker.getElement())`. Map-level events go to the container (the default target). Remove it on
   cleanup (`stage.onDispose(() => g.remove())`).
-- A card is an `<a>`: a scripted click that bubbles out of the map opens the example. `ghost()`
-  stops untrusted click, dblclick and contextmenu at the map container (Leaflet's own listeners
-  there still see them). Dispatch anything else that bubbles through ghost or `gestures()`.
+- A card is an `<a>`: a scripted click anywhere inside it opens the example, even if propagation
+  stops (link activation is decided from the event path). `ghost()` stops and `preventDefault()`s
+  untrusted click, dblclick and contextmenu at the map container, after Leaflet's own listeners
+  there have run. A card that dispatches clicks creates a ghost first.
+- Marker drags and key presses on a marker's icon: `markerInput(stage, map, ghost)`
+  (`marker-input.ts`). It and `gestures()` share one drag queue (`drag-lane.ts`).
 - More card input in `gestures(stage, map, ghost)` (`gestures.ts`): dblclick, wheel, keys, drag,
   shift box-drag, touch long-press. Synthetic pointerdown/move/up drive `Draggable` (Leaflet skips
   `setPointerCapture` for untrusted events); drags share one page-wide queue because `Draggable`
@@ -83,6 +86,12 @@ add to it when something bites.
 - A popup or non-sticky tooltip on a path opens at its `getCenter()`; a clicked path's popup
   opens at the click point.
 - A card fits markers plus popups or tooltips at about zoom 7, not 8.
+- `marker.getIcon()` is typed `Icon`: cast to `DefaultIcon` to read `color`. A subclass's
+  `static defaultOptions` needs tuple types (`as PointTuple`). `marker.dragging` may be undefined.
+- `DivIcon` sets inline width and height from `iconSize`; CSS can't override `[0, 0]`. `bgPos`
+  only sets `background-position`: the image comes from the icon's CSS class.
+- `riseOnHover` is wired when the icon is created: toggling it needs the marker re-added.
+- A popup opening near a card's edge autoPans the map and can push other markers out of view.
 - `.lf-map` has `flex: 1`: an example that sets the map box's width also sets `flex: none`.
 - In a card, `stage.log()` writes the caption, so a `stage.say()` in a cycle overwrites it.
 

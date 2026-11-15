@@ -1,6 +1,7 @@
 // Scripted card gestures: double click, wheel, keys, box drag, drag and long touch
 import type { LatLngExpression, LeafletMap } from 'leaflet';
 import type { Ghost } from './ghost.ts';
+import { inDragLane } from './drag-lane.ts';
 import { STOPPED, type Stage } from './stage.ts';
 
 export interface Gestures {
@@ -18,8 +19,6 @@ export interface Gestures {
   touchHold(latlng: LatLngExpression, ms?: number, drift?: number): Promise<void>;
 }
 
-// Draggable keeps one drag per page (a static), so scripted drags from every card share one lane.
-let lane: Promise<unknown> = Promise.resolve();
 
 /**
  * Cards have no pointer, so these send the same DOM events a pointer would, at the map's container.
@@ -54,10 +53,9 @@ export function gestures(stage: Stage, map: LeafletMap, g: Ghost): Gestures {
     );
   };
   const queue = (job: () => Promise<void>): Promise<void> => {
-    const run = lane.then(async () => {
+    const run = inDragLane(async () => {
       if (!stage.disposed) await job();
     });
-    lane = run.catch(() => undefined);
     return run.catch((err: unknown) => {
       if (err !== STOPPED && !stage.disposed) throw err;
     });

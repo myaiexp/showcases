@@ -1,0 +1,6 @@
+/* Marker color (DefaultIcon): styles, all nested under this example's own selector */
+[data-example='leaflet/marker-color'] {
+  .box {
+    color: var(--fg-1);
+  }
+}

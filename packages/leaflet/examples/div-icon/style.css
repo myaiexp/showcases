@@ -1,0 +1,28 @@
+/* DivIcon examples: label, badge and ring */
+[data-example='leaflet/div-icon'] {
+  .tag {
+    background: #1d2530;
+    color: #e5e9f0;
+    border: 1px solid #7cb7ff;
+    border-radius: 4px;
+        text-align: center;
+    line-height: 20px;
+    box-sizing: border-box;
+    font: 600 12px var(--font, sans-serif);
+  }
+  .badge {
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #f58a3d;
+    color: #1a1208;
+    border: 3px solid rgb(245 138 61 / 0.35);
+    background-clip: padding-box;
+    box-sizing: border-box;
+    font: 700 13px var(--font, sans-serif);
+  }
+  .ring {
+    background: none;
+    border: 0;
+  }
+}
