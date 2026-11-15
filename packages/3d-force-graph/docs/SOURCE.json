@@ -1,0 +1,12 @@
+{
+  "license": "MIT (vasturiano/3d-force-graph LICENSE, which covers the README, the library's only docs)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/vasturiano/3d-force-graph",
+      "ref": "v1.80.2",
+      "paths": ["README.md", "LICENSE"]
+    }
+  ]
+}

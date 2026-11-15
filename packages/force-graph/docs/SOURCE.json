@@ -1,0 +1,12 @@
+{
+  "license": "MIT (vasturiano/force-graph LICENSE, which covers the README, the library's only docs)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/vasturiano/force-graph",
+      "ref": "v1.52.0",
+      "paths": ["README.md", "LICENSE"]
+    }
+  ]
+}

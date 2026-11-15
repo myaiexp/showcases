@@ -1,24 +1,6 @@
 // Leaflet examples stay offline: no plain tile layers, no fetch, no URLs off *.example hosts
-import { readdirSync, readFileSync } from 'node:fs';
-import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-
-const ROOT = join(import.meta.dirname, '../packages/leaflet/examples');
-
-/** Every .ts file of every example, as [example/file, source]. */
-function sources(): [string, string][] {
-  const out: [string, string][] = [];
-  for (const slug of readdirSync(ROOT)) {
-    let files: string[];
-    try {
-      files = readdirSync(join(ROOT, slug));
-    } catch {
-      continue;
-    }
-    for (const f of files) if (f.endsWith('.ts')) out.push([`${slug}/${f}`, readFileSync(join(ROOT, slug, f), 'utf8')]);
-  }
-  return out;
-}
+import { exampleSources } from './example-sources.ts';
 
 /**
  * The plain classes would request their URLs from the network, even an unresolvable one;
@@ -27,7 +9,7 @@ function sources(): [string, string][] {
  * a card. XML namespace URIs are allowed. meta.ts files are skipped: they hold no running code.
  */
 describe('leaflet examples make no network requests', () => {
-  const files = sources().filter(([name]) => !name.endsWith('/meta.ts'));
+  const files = exampleSources('leaflet');
 
   it.each(files)('%s', (_name, src) => {
     const code = src.replace(/^\s*\/\/.*$/gm, '');

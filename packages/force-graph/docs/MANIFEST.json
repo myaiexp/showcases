@@ -1,0 +1,25 @@
+{
+  "fetched": "2026-11-15T20:54:23.215Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/vasturiano/force-graph",
+      "ref": "v1.52.0",
+      "paths": [
+        "README.md",
+        "LICENSE"
+      ],
+      "commit": "0f059c894bf5b7504460b7028b00bc6e4d95f0d9"
+    }
+  ],
+  "files": {
+    "repo/LICENSE": {
+      "url": "https://github.com/vasturiano/force-graph/blob/0f059c894bf5b7504460b7028b00bc6e4d95f0d9/LICENSE",
+      "sha256": "5b6dc9ce44c7b73620b191c567339212bd00537af46fdedaf98304c34214cc9c"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/vasturiano/force-graph/blob/0f059c894bf5b7504460b7028b00bc6e4d95f0d9/README.md",
+      "sha256": "40c7336ee016c3c7b1006244dfdeee3bb4473fe4f5ea7aeb30c54f33864783d3"
+    }
+  }
+}

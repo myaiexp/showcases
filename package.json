@@ -22,6 +22,7 @@
     "new-example": "node scripts/new-example.ts"
   },
   "dependencies": {
+    "3d-force-graph": "^1.80.2",
     "@antv/g6": "5.1.1",
     "@antv/infographic": "^0.2.20",
     "@antv/l7": "2.29.1",
@@ -124,6 +125,7 @@
     "easeljs": "^1.0.2",
     "echarts": "6.1.0",
     "embedding-atlas": "0.26.0",
+    "force-graph": "^1.52.0",
     "fuse.js": "^7.5.0",
     "globe.gl": "2.46.2",
     "graphology": "^0.26.0",
