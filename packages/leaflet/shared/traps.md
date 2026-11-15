@@ -38,6 +38,14 @@ add to it when something bites.
   target element for layers: `g.click(latlng, circle.getElement())`, `g.over(latlng,
   marker.getElement())`. Map-level events go to the container (the default target). Remove it on
   cleanup (`stage.onDispose(() => g.remove())`).
+- A card is an `<a>`: a scripted click that bubbles out of the map opens the example. `ghost()`
+  stops untrusted click, dblclick and contextmenu at the map container (Leaflet's own listeners
+  there still see them). Dispatch anything else that bubbles through ghost or `gestures()`.
+- More card input in `gestures(stage, map, ghost)` (`gestures.ts`): dblclick, wheel, keys, drag,
+  shift box-drag, touch long-press. Synthetic pointerdown/move/up drive `Draggable` (Leaflet skips
+  `setPointerCapture` for untrusted events); drags share one page-wide queue because `Draggable`
+  allows one drag per page. `KeyboardHandler` listens only after the container gets `focus`, so
+  `key()` sends a FocusEvent first. `tapHold` ignores `pointerType: 'mouse'`.
 - Cards: no `map.locate()` (permission prompt), no `setFullscreen()` (needs a gesture, and it
   would take over the page). Full views run those from a button.
 - `stage.css` recolours Leaflet's chrome dark (container background, bar buttons, layers control,
@@ -48,7 +56,18 @@ add to it when something bites.
 - **Class defaults are page-wide.** `Marker.mergeOptions()`, `DefaultIcon.defaultOptions`,
   `Class.include()`, `addInitHook()` on a Leaflet class change every map on the page, every card
   included. Subclass first and change the subclass (`class Pin extends Marker {}`,
-  `Pin.mergeOptions({...})`), as the extending tutorial does.
+  `Pin.mergeOptions({...})`), as the extending tutorial does. `KeyboardHandler.keys` is static
+  too: an example that rebinds it restores it on cleanup.
+
+## Options: read once or live
+
+- Read when the map is created, so changing them needs a new map: `zoomAnimation`,
+  `fadeAnimation`, `markerZoomAnimation`, `trackResize`.
+- Read each time they're used, so assigning `map.options.x` works: inertia and wheel options,
+  `keyboardPanDelta`, `worldCopyJump`, `doubleClickZoom` (each dblclick), `closePopupOnClick`
+  (when a popup opens), `zoomAnimationThreshold`, `maxBoundsViscosity` (when a drag starts).
+- `.lf-map` has `flex: 1`: an example that sets the map box's width also sets `flex: none`.
+- In a card, `stage.log()` writes the caption, so a `stage.say()` in a cycle overwrites it.
 
 ## Leaflet 2 behaviour worth knowing
 

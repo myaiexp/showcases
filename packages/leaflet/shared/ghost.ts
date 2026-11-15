@@ -29,6 +29,13 @@ export function ghost(map: LeafletMap): Ghost {
     'background:rgb(255 255 255 / 0.85);box-shadow:0 0 0 2px rgb(0 0 0 / 0.45);pointer-events:none;' +
     'transition:left 0.45s ease, top 0.45s ease, transform 0.15s;display:none';
   container.append(dot);
+  // A card is an <a>: a scripted click that bubbled out of the map would open the example.
+  // Leaflet's own listeners on the container still see it; this only stops it at the container.
+  const keep = (e: Event): void => {
+    if (!e.isTrusted) e.stopPropagation();
+  };
+  const KEPT = ['click', 'dblclick', 'contextmenu'] as const;
+  for (const type of KEPT) container.addEventListener(type, keep);
 
   const client = (latlng: LatLngExpression): { clientX: number; clientY: number } => {
     const p = map.latLngToContainerPoint(latlng);
@@ -71,6 +78,7 @@ export function ghost(map: LeafletMap): Ghost {
       dot.style.display = 'none';
     },
     remove() {
+      for (const type of KEPT) container.removeEventListener(type, keep);
       dot.remove();
     },
   };
