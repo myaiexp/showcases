@@ -155,3 +155,7 @@ GitHub Pages. No service on the VPS.
 - css-doodle: build on `packages/css-doodle/shared/stage.ts` (`createStage`, trap list): `stage.doodle(code)` frames a
   `<css-doodle>` (code says `@grid: N / 100%`, not the docs' `60vmin`) with a live editor in full views; cards stay alive
   with `reroll` or `variants`. Addons are imported from `@css-doodle/addons/<name>` so `@use` never hits a CDN.
+- TanStack Charts: build on `packages/tanstack-charts/shared/stage.ts` (`createStage`, trap list) and mount with
+  `stage.own(mountChart(stage.box, …))`; the box's currentColor and `--ts-chart-N` tokens are the dark theme. A fixed
+  scale domain needs an instance (`scaleLinear().domain(…)`): factories and a `domain` key re-infer it. Cards fake input
+  with `stage.ghost()` on the container; package.json overrides charts' d3-selection so `zoomX` works.
