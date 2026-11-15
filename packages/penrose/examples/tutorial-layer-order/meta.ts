@@ -7,7 +7,11 @@ export default defineMeta({
     'Two overlapping circles from an `Intersecting` predicate, drawn with `A.icon above B.icon` on one tab and `A.icon below B.icon` on the other. Only the stacking order changes, since layering is a separate statement from `ensure`.',
   section: 'Tutorial: Predicates & Constraints',
   tags: ['above', 'below', 'layer', 'overlapping'],
-  docs: ['repo/packages/docs-site/docs/tutorial/predicates.md'],
+  docs: [
+    'repo/packages/docs-site/docs/tutorial/predicates.md',
+    'repo/packages/core/src/lib/Functions.ts',
+    'repo/packages/core/src/lib/Constraints.ts',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

@@ -7,7 +7,10 @@ export default defineMeta({
     'For a literal, `nameof n` returns its string form, so a number can be glued to words with `+`. Each circle is sized by its Number and captioned "radius 40", "radius 65" and so on, built from the same value.',
   section: 'Style: Literals',
   tags: ['literal', 'nameof', 'string', 'Number', 'Text'],
-  docs: ['repo/packages/docs-site/docs/ref/style/literals.md', 'repo/packages/docs-site/docs/ref/style/expressions.md'],
+  docs: [
+    'repo/packages/docs-site/docs/ref/style/literals.md',
+    'repo/packages/docs-site/docs/ref/style/expressions.md',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

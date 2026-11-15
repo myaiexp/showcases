@@ -7,7 +7,11 @@ export default defineMeta({
     'With `Subset(A, B)` and `Subset(B, C)` in Substance, the header `forall Set x; Set y where Subset(x, y)` considers six possible mappings and keeps two. Each kept match draws one arrow, from the subset to the superset, and no arrow joins A and C.',
   section: 'Style: Selectors',
   tags: ['forall', 'where', 'predicate', 'mapping', 'Line'],
-  docs: ['repo/packages/docs-site/docs/ref/style/selectors.md'],
+  docs: [
+    'repo/packages/docs-site/docs/ref/style/selectors.md',
+    'repo/packages/core/src/lib/Functions.ts',
+    'repo/packages/core/src/lib/Constraints.ts',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

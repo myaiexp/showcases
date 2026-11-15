@@ -7,7 +7,11 @@ export default defineMeta({
     'A zigzag Polyline made of five points around an unknown offset, drawn with a wide stroke. `strokeLinecap` is `butt` (the default), `round` or `square`; only the two ends differ.',
   section: 'Shape: Polyline',
   tags: ['Polyline', 'strokeLinecap', 'points', 'strokeWidth'],
-  docs: ['repo/packages/docs-site/docs/ref/style/shapes/polyline.md', 'repo/packages/core/src/shapes/Polyline.ts'],
+  docs: [
+    'repo/packages/docs-site/docs/ref/style/shapes/polyline.md',
+    'repo/packages/core/src/shapes/Polyline.ts',
+    'repo/packages/core/src/lib/Functions.ts',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

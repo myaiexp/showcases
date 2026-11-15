@@ -7,7 +7,12 @@ export default defineMeta({
     '`elasticEnergy` is the integral of curvature squared, the bending energy of a thin rod. A polyline is pinned at three points (black) and the six others (red) start at random heights. Minimising `elasticEnergy` lets the free points settle into the smooth, evenly bending curve through the pins.',
   section: 'Computation: Curve Measures',
   tags: ['elasticEnergy', 'minimal', 'Polyline'],
-  docs: ['repo/packages/docs-site/docs/ref/style/functions.md', 'repo/packages/core/src/lib/Functions.ts', 'repo/packages/core/src/lib/Curves.ts'],
+  docs: [
+    'repo/packages/docs-site/docs/ref/style/functions.md',
+    'repo/packages/core/src/lib/Functions.ts',
+    'repo/packages/core/src/lib/Curves.ts',
+    'repo/packages/core/src/lib/Objectives.ts',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

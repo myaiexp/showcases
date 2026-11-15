@@ -7,7 +7,11 @@ export default defineMeta({
     'Each square\'s `fillColor` is `rgba(unitRandom(), unitRandom(), unitRandom(), 0.9)`: every call is its own constant in [0, 1), so every square and every variation gets a new colour.',
   section: 'Random Sampling',
   tags: ['unitRandom', 'fillColor', 'rgba', 'Rectangle'],
-  docs: ['repo/packages/docs-site/docs/ref/style/random-sampling.md', 'repo/packages/core/src/lib/Functions.ts'],
+  docs: [
+    'repo/packages/docs-site/docs/ref/style/random-sampling.md',
+    'repo/packages/core/src/lib/Functions.ts',
+    'repo/packages/core/src/lib/Constraints.ts',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

@@ -7,7 +7,10 @@ export default defineMeta({
     'In `Edge(hub, n_i) for i in [1, 5]` the name `hub` has no underscore, so it is an ordinary object, while `n_i` is templated. Five edges fan out from one centre.',
   section: 'Substance',
   tags: ['indexed', 'predicate', 'template', 'for'],
-  docs: ['repo/packages/docs-site/docs/ref/substance/indexed-statements.md'],
+  docs: [
+    'repo/packages/docs-site/docs/ref/substance/indexed-statements.md',
+    'repo/packages/core/src/lib/Functions.ts',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

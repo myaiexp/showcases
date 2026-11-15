@@ -17,6 +17,8 @@
         "packages/core/src/lib/Functions.ts",
         "packages/core/src/lib/Curves.ts",
         "packages/core/src/lib/Queries.ts",
+        "packages/core/src/utils/Util.ts",
+        "packages/core/src/utils/InteractionUtils.ts",
         "packages/docs-site/docs/**",
         "packages/docs-site/public/vanilla-js-demo.html",
         "packages/docs-site/blog/staged-layout.md",

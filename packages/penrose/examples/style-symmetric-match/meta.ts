@@ -10,6 +10,8 @@ export default defineMeta({
   docs: [
     'repo/packages/docs-site/docs/ref/style/selectors.md',
     'repo/packages/docs-site/blog/new-language-features.md',
+    'repo/packages/core/src/lib/Functions.ts',
+    'repo/packages/core/src/lib/Constraints.ts',
   ],
   provenance: 'pure',
   added: '2026-11-15',

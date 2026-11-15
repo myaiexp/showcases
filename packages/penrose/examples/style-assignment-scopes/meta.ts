@@ -7,7 +7,12 @@ export default defineMeta({
     'A bare name (`side = …`) is local to one match, `b.icon = …` is bound to the Substance object and `n.arrow = …` to the predicate application. Local `side` sizes each box, a later block reads the bound `icon` of both boxes, and the arrow belongs to `Next(a, b)`.',
   section: 'Style: Selector Blocks',
   tags: ['assignment', 'local variable', 'alias', 'field', 'Line'],
-  docs: ['repo/packages/docs-site/docs/ref/style/selector-blocks.md', 'repo/packages/docs-site/docs/ref/style/selectors.md'],
+  docs: [
+    'repo/packages/docs-site/docs/ref/style/selector-blocks.md',
+    'repo/packages/docs-site/docs/ref/style/selectors.md',
+    'repo/packages/core/src/lib/Functions.ts',
+    'repo/packages/core/src/lib/Constraints.ts',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

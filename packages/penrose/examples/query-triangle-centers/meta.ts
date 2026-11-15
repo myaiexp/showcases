@@ -7,7 +7,11 @@ export default defineMeta({
     'A sampled triangle with its three centres: `barycenter` (red, where the medians meet), `circumcenter` (blue, equidistant from the corners) and `incenter` (green, equidistant from the sides). In a flat triangle they drift apart; in a regular one they coincide.',
   section: 'Computation: Geometry Queries',
   tags: ['barycenter', 'circumcenter', 'incenter'],
-  docs: ['repo/packages/docs-site/docs/ref/style/functions.md', 'repo/packages/core/src/lib/Functions.ts', 'repo/packages/core/src/lib/Queries.ts'],
+  docs: [
+    'repo/packages/docs-site/docs/ref/style/functions.md',
+    'repo/packages/core/src/lib/Functions.ts',
+    'repo/packages/core/src/lib/Queries.ts',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

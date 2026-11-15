@@ -11,6 +11,7 @@ export default defineMeta({
     'repo/packages/docs-site/docs/ref/using.md',
     'repo/packages/core/src/index.ts',
     'repo/packages/docs-site/docs/ref/api.md',
+    'repo/packages/core/src/lib/Functions.ts',
   ],
   provenance: 'pure',
   added: '2026-11-15',

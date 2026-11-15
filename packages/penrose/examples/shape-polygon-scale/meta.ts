@@ -7,7 +7,11 @@ export default defineMeta({
     'A fixed square next to its faint outline. `scale : 0.5` halves its size, but the SVG scales about the top-left corner of the diagram, so the square also slides towards that corner. Scale is not a way to resize a Polygon in place.',
   section: 'Shape: Polygon',
   tags: ['Polygon', 'scale', 'points', 'trap'],
-  docs: ['repo/packages/docs-site/docs/ref/style/shapes/polygon.md', 'repo/packages/core/src/shapes/Polygon.ts'],
+  docs: [
+    'repo/packages/docs-site/docs/ref/style/shapes/polygon.md',
+    'repo/packages/core/src/shapes/Polygon.ts',
+    'repo/packages/core/src/lib/Functions.ts',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

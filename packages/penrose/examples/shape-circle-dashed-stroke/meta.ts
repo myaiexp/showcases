@@ -7,7 +7,12 @@ export default defineMeta({
     'Outlined circles whose stroke is solid, `strokeStyle : "dashed"` (the renderer\'s default dash), or a `strokeDasharray` such as `"2 8"` or `"14 4 2 4"`. The dasharray wins over strokeStyle when both are set.',
   section: 'Shape: Circle',
   tags: ['Circle', 'strokeStyle', 'strokeDasharray', 'strokeWidth'],
-  docs: ['repo/packages/docs-site/docs/ref/style/shapes/circle.md', 'repo/packages/core/src/shapes/Circle.ts'],
+  docs: [
+    'repo/packages/docs-site/docs/ref/style/shapes/circle.md',
+    'repo/packages/core/src/shapes/Circle.ts',
+    'repo/packages/core/src/lib/Functions.ts',
+    'repo/packages/core/src/lib/Constraints.ts',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

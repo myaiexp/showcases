@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-15T08:28:52.448Z",
+  "fetched": "2026-11-15T09:00:12.828Z",
   "sources": [
     {
       "kind": "git",
@@ -16,6 +16,8 @@
         "packages/core/src/lib/Functions.ts",
         "packages/core/src/lib/Curves.ts",
         "packages/core/src/lib/Queries.ts",
+        "packages/core/src/utils/Util.ts",
+        "packages/core/src/utils/InteractionUtils.ts",
         "packages/docs-site/docs/**",
         "packages/docs-site/public/vanilla-js-demo.html",
         "packages/docs-site/blog/staged-layout.md",
@@ -125,6 +127,14 @@
     "repo/packages/core/src/shapes/Text.ts": {
       "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Text.ts",
       "sha256": "1f4a541f64f022f86985e301ee72e1f217f78f4836e95173750d147a66fb89d2"
+    },
+    "repo/packages/core/src/utils/InteractionUtils.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/utils/InteractionUtils.ts",
+      "sha256": "a7e21908919f1b801080254fba3303ff2d0dc7126b09315774eba6cf947383c6"
+    },
+    "repo/packages/core/src/utils/Util.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/utils/Util.ts",
+      "sha256": "e67ee18bbb509179a3f0e8f993d26d1d3d1f7d48ec8318e3dfdf959104d082e7"
     },
     "repo/packages/docs-site/.vitepress/config.ts": {
       "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/.vitepress/config.ts",
