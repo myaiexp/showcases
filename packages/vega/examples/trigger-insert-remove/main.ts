@@ -14,7 +14,7 @@ const mount: Mount = async (el, ctx) => {
       enter: { fill: { value: "#222c44" }, stroke: { value: "#56658a" } },
     },
     signals: [
-      // The pointer position in the data rectangle (x() and y() count from the view's corner),
+      // The pointer position in the data rectangle (x() and y() already count from its corner),
       // with a radius that varies a little. force makes a press on the same spot count too.
       {
         name: "press",
@@ -23,7 +23,7 @@ const mount: Mount = async (el, ctx) => {
           {
             events: "mousedown",
             update:
-              "{x: x() - padding.left, y: y() - padding.top, r: 5 + round(x() + y()) % 5 * 3}",
+              "{x: x(), y: y(), r: 5 + round(x() + y()) % 5 * 3}",
             force: true,
           },
         ],

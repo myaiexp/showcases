@@ -36,11 +36,11 @@ const mount: Mount = async (el, ctx) => {
         on: [
           {
             events: "symbol:mousedown",
-            update: "{x: x() - padding.left, y: y() - padding.top}",
+            update: "{x: x(), y: y()}",
           },
           {
             events: "[symbol:mousedown, window:mouseup] > window:mousemove",
-            update: "{x: x() - padding.left, y: y() - padding.top}",
+            update: "{x: x(), y: y()}",
           },
         ],
       },
