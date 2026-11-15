@@ -1,0 +1,212 @@
+---
+order: 1
+title: AnimationClip
+type: Animation
+label: Animation
+---
+
+`AnimationClip` ([API](/apis/core/#AnimationClip)) is one of the core elements of the Galacean animation system. Galacean supports importing model animations designed with external design software. Each animation in the model output by the designer will be parsed into an `AnimationClip` asset in Galacean. We can also create additional animations through the animation clip editor.
+
+There are two common ways to obtain `AnimationClip`:
+
+1. Import models with animations created using third-party tools (such as Autodesk® 3ds Max®, Autodesk® Maya®, Blender), see [Creating Animation Clips for Artists](/en/docs/animation/clip-for-artist) for details.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*Qc8sQ6iJd8IAAAAAAAAAAAAADsJ_AQ/original" />
+
+2. Create `AnimationClip` in Galacean (the following will introduce both editor and script creation methods).
+
+## Animation Panel Introduction
+
+The animation clip editor currently supports editing all interpolable properties except for physics-related components. If you need to edit other properties, you need to add the corresponding component to the entity.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*NRHNTIhBA18AAAAAAAAAAAAADsJ_AQ/original" />
+
+| No.  | Description                     | Remarks     |
+| ---- | -------------------------| ------- |
+| 1    | Switch AnimationClip      |                  |
+| 2    | Enable/Disable Recording Mode  |                  |
+| 3    | Play/Pause AnimationClip  |                  |
+| 4    | Replay AnimationClip   |                  |
+| 5    | Add Animation Event      |                  |
+| 6    | Current Frame           | Frame number of the timeline     |
+| 7    | Switch to Keyframe Mode   |                 |
+| 8    | Switch to Curve Mode     | Curve mode is used to adjust how keyframes change |
+| 9    | Added Animation Properties     |                             |
+| 10   | Add Keyframe        |                                           |
+| 11   | Add Animation Property      |                                           |
+| 12   | Keyframe           | Keyframes are used to describe the value of the animation property at a specified frame number    |
+| 13   | Timeline           | When adding keyframes or animation events, their time is the frame number of the timeline |
+| 14   | Frame Number            | `:` The left side is the number of seconds, and the right side is the number of frames less than 1 second. The animation editor is based on 60FPS. The time `0:30` shown in the figure above is at 30 frames. If the timeline scale is `1:30`, it is at 90 frames. |
+
+## Usage Introduction
+
+1. In the **[Asset Panel](/en/docs/assets/interface)**, right-click or click `+` to create an `AnimationClip` asset.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*j4FMRKx91nEAAAAAAAAAAAAADsJ_AQ/original" />
+
+2. Double-click the `AnimationClip` asset and select an entity as the editing object of the `AnimationClip`.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*_E1kRqt8LroAAAAAAAAAAAAADsJ_AQ/original" />
+
+Click the `Create` button, and the editor will automatically add an `Animator` ([detailed introduction](/en/docs/animation/animator)) to your `entity` and add the `AnimationClip` to the `AnimatorController`.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*q46SRrV6WfsAAAAAAAAAAAAADsJ_AQ/original" />
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*C2a4SZDGG_4AAAAAAAAAAAAADsJ_AQ/original" />
+
+3. Add the properties you want to animate (here I added two).
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*69xIS7ABJJkAAAAAAAAAAAAADsJ_AQ/original" />
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*-4bnQI-LcLsAAAAAAAAAAAAADsJ_AQ/original" />
+
+4. Add keyframes to the properties.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*QnQwR6tLRYMAAAAAAAAAAAAADsJ_AQ/original" />
+
+When we click the add keyframe button, the keyframe will store the current value of the specified property. So when we haven't changed anything, the keyframe stores the `position` value of the entity at this moment. We want it to move to the position (3, 0, 0) after 60 frames, so first modify the cube to (3, 0, 0) through the property panel and then add a keyframe.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*ClTgSriu4-8AAAAAAAAAAAAADsJ_AQ/original" />
+Similarly, we also add keyframes for the `rotation` property.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*hOkoRKlNfeYAAAAAAAAAAAAADsJ_AQ/original" />
+
+
+### Recording Mode
+
+We provide a recording mode to facilitate developers to quickly add keyframes. When recording mode is enabled, keyframes will be automatically added when the corresponding property is modified.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*sFwtSLOlyhoAAAAAAAAAAAAADsJ_AQ/original" />
+
+
+### Operating Keyframes
+
+#### Modify Keyframe Time
+
+Select the keyframe and drag it.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*_vZSR4YEDqMAAAAAAAAAAAAADsJ_AQ/original" />
+
+You can zoom the timeline by scrolling the `mouse wheel`.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*BTgPS45hkNYAAAAAAAAAAAAADsJ_AQ/original" />
+
+#### Modify Keyframe Value
+
+Enable recording mode, move the timeline to the specified keyframe, and then re-enter the value. If recording mode is not enabled, you need to click the add keyframe button again.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*MiSXQZ4q7DMAAAAAAAAAAAAADsJ_AQ/original" />
+
+#### Delete Keyframe
+
+Select the keyframe, right-click and select delete, or press the delete key/backspace key on the keyboard.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*MpPMRK2WaEMAAAAAAAAAAAAADsJ_AQ/original" />
+
+### Editing Child Entities
+
+`AnimationClip` can not only act on the `entity` that adds the `Animator` ([detailed introduction](/en/docs/animation/animator)), but also on its child `entities`.
+
+1. Add a child `entity` to the cube.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*6RYIQpG7DPwAAAAAAAAAAAAADsJ_AQ/original" />
+
+2. Click add property, and you can see that the properties of the child `entity` can be added.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*j7rfRq0REKIAAAAAAAAAAAAADsJ_AQ/original" />
+
+3. Enable recording mode, edit the child `entity`, and add keyframes.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*j7rfRq0REKIAAAAAAAAAAAAADsJ_AQ/original" />
+
+
+### Editing Animation Curves
+
+The `AnimationClip` editor supports animation curve editing. Click the curve icon in the upper right corner to switch.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*luV0QaDUAQAAAAAAAAAAAAAADsJ_AQ/original" />
+
+The vertical axis of the curve mode is the value of the property.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*luV0QaDUAQAAAAAAAAAAAAAADsJ_AQ/original" />
+
+
+You can adjust the vertical axis scale by pressing `shift + mouse wheel`.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*SjO2TaubiuIAAAAAAAAAAAAADsJ_AQ/original" />
+
+The color of the curve corresponding to the property is the same as the color of the button.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*OS3uSbdB36AAAAAAAAAAAAAADsJ_AQ/original" />
+
+Selecting a keyframe will show two control points. Adjust the control points to adjust the curve.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*kikYQoiYMLoAAAAAAAAAAAAADsJ_AQ/original" />
+
+You can also directly set the built-in preset values by right-clicking the keyframe.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*KRzoT5Pocc4AAAAAAAAAAAAADsJ_AQ/original" />
+
+Select the property panel's property to edit only the curve of the specified property.
+
+## More Examples
+
+- **Text Animation**: In addition to the `Transform` component, Galacean also supports editing animations of other components. You can read the [Text Animation](/en/docs/animation/examples/text-animation) document to learn more.
+- **Frame Animation**: In addition to numerical types, Galacean also supports reference type `animation curves`. You can read the [Frame Animation](/en/docs/animation/examples/sprite-sheet) document to learn more.
+- **Material Animation**: Galacean also supports animation editing of asset properties in components. You can read the [Material Animation](/en/docs/animation/examples/material-animation) document to learn more.
+
+## Script Usage
+
+Before using scripts, it is recommended to read the following documents:
+
+- [Script](/en/docs/script/script)
+- [Animation System Composition](/en/docs/animation/system)
+
+You can create an `AnimationClip` ([API](/apis/core/#AnimationClip)) yourself and add `AnimationCurve` ([API](/apis/core/#AnimationCurve)) to it through the [addCurveBinding](/apis/core/#AnimationClip-addCurveBinding) method.
+
+```typescript
+//custom rotate clip
+const rotateClip = new AnimationClip("rotate");
+const rotateState =
+  animator.animatorController.layers[0].stateMachine.addState("rotate");
+rotateState.clip = rotateClip;
+
+const rotateCurve = new AnimationVector3Curve();
+const key1 = new Keyframe<Vector3>();
+key1.time = 0;
+key1.value = new Vector3(0, 0, 0);
+const key2 = new Keyframe<Vector3>();
+key2.time = 10;
+key2.value = new Vector3(0, 360, 0);
+rotateCurve.addKey(key1);
+rotateCurve.addKey(key2);
+rotateClip.addCurveBinding("", Transform, "rotation", rotateCurve);
+
+//custom color clip
+const colorClip = new AnimationClip("color");
+const colorState =
+  animator.animatorController.layers[0].stateMachine.addState("color");
+colorState.clip = colorClip;
+
+const colorCurve = new AnimationFloatCurve();
+const key1 = new Keyframe<number>();
+key1.time = 0;
+key1.value = 0;
+const key2 = new Keyframe<number>();
+key2.time = 10;
+key2.value = 1;
+colorCurve.addKey(key1);
+colorCurve.addKey(key2);
+colorClip.addCurveBinding("/light", DirectLight, "color.r", colorCurve);
+```
+
+You can also add `AnimationCurve` to your child entity `/light`, as shown in the code example above. At the same time, the third parameter of `addCurveBinding` is not limited to the properties of the component; it is a path that can index the value.
+
+### Animation Events
+
+You can use [AnimationEvent](/apis/core/#AnimationEvent) to add events to `AnimationClip`. Animation events will call the specified callback function of the component bound to the same entity at the specified time.
+
+```typescript
+const event = new AnimationEvent();
+event.functionName = "test";
+event.time = 0.5;
+clip.addEvent(event);
+```

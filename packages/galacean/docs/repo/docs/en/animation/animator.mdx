@@ -1,0 +1,156 @@
+---
+order: 3
+title: Animator Component
+type: Animation
+label: Animation
+---
+
+## Introduction
+The `Animator` Component ([API](/apis/core/#Animator)) is responsible for reading the data from the `AnimatorController` ([detailed introduction](/en/docs/animation/animatorController/)) and playing its content.
+
+### Parameter Description
+
+| Property               | Description                       |
+| :----------------- | :----------------------------- |
+| animatorController | Bind the `AnimatorController` asset |
+
+## Editor Usage
+
+When you drag a model into the scene, the model is displayed in its initial pose and does not play any animation. At this time, you need to find the `Animator` Component on the model entity and bind an `AnimatorController` asset to it.
+
+1. Find or create an `Animator` Component
+
+<Callout type="info">
+The `Animator` Component of the model is on the root entity of the glTF instance, which is the first child `entity` under the model entity in the editor.
+
+If the model has animations, a read-only `AnimatorController` will be automatically bound for you.
+</Callout>
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*WkafRagPFo8AAAAAAAAAAAAADsJ_AQ/original" />
+
+If there is no `Animator` Component, you can create it as shown below
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*WFRXQIjZa0MAAAAAAAAAAAAADsJ_AQ/original" />
+
+2. Create an `AnimatorController` asset and bind it to the model. There are two ways to create an `AnimatorController`:
+    1. Right-click on the blank space in the **[Asset Panel](/en/docs/assets/interface)** and select `Create` -> `Animation Controller`
+
+      <Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*61Q7S62IZxQAAAAAAAAAAAAADsJ_AQ/original" /> 
+
+    2. Click the add asset button `+` and select `Animation Controller`
+
+      <Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*QqpxS6I9D90AAAAAAAAAAAAADsJ_AQ/original" /> 
+
+3. Replace the `AnimatorController` property of the `Animator` Component with the `AnimatorController` just created
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*Y0pBQae4UWQAAAAAAAAAAAAADsJ_AQ/original" />
+
+4. After editing the `AnimatorController` (you can refer to the [AnimatorController](/en/docs/animation/animatorController) document), you can play the animations in it
+
+## Script Usage
+
+Before using scripts, it is recommended to read the following documents:
+
+- [Script](/en/docs/script/script)
+- [Animation System Composition](/en/docs/animation/system)
+
+### Play Specified Animation State
+
+You can use the [animator.play](/apis/core/#Animator-play) method to play the specified `AnimatorState` . For parameter descriptions, see the [API documentation](/apis/core/#Animator-play).
+
+```typescript
+import { Script, Animator, Keys } from '@galacean/engine';
+
+export default class extends Script {
+  onStart() {
+    const animator = this.entity.getComponent(Animator);
+    animator.play("State Name");
+  }
+}
+```
+
+If you need to start playing at a certain point in the animation, you can do so as follows
+
+```typescript
+import { Script, Animator, Keys } from '@galacean/engine';
+
+export default class extends Script {
+  onStart() {
+    const animator = this.entity.getComponent(Animator);
+    const layerIndex = 0;
+    const normalizedTimeOffset = 0.5; // Normalized time
+    animator.play("State Name", layerIndex, normalizedTimeOffset);
+  }
+}
+```
+
+### Control Playback Speed
+
+You can control the playback speed of the animation through the [speed](/apis/core/#Animator-speed) property. The default value of `speed` is `1.0`, the larger the value, the faster the playback, the smaller the value, the slower the playback. When the value is negative, it plays in reverse.
+
+```typescript
+animator.speed = 2.0;
+```
+
+### Stop/Resume Playback
+
+You can stop and resume the animation by setting [animator.enabled](/apis/core/#Animator-enabled).
+
+```typescript
+// Stop
+animator.enabled = false;
+// Resume
+animator.enabled = true;
+```
+
+### Pause/Resume Playback
+You can pause and resume playback by setting [animator.speed](/apis/core/#Animator-speed).
+
+```typescript
+// Pause
+animator.speed = 0;
+// Resume
+animator.speed = 1;
+```
+
+If you only want to pause a specific `AnimatorState` , you can do so by setting its speed to 0.
+
+```typescript
+const state = animator.findAnimatorState("xxx");
+state.speed = 0;
+```
+
+### Transition to Specified Animation State
+
+You can use the [animator.crossfade](/apis/core/#Animator-crossfade) method to transition to the specified `AnimatorState` . For parameter descriptions, see the [API documentation](/apis/core/#Animator-crossFade).
+
+```typescript
+animator.crossFade("OtherStateName", 0.3);
+```
+
+### Get Current Playing Animation State
+
+You can use the [getCurrentAnimatorState](/apis/core/#Animator-getCurrentAnimatorState) method to get the currently playing `AnimatorState` . The parameter is the index `layerIndex` of the `AnimatorControllerLayer` where the `AnimatorState` is located. For details, see the [API documentation](/apis/core/#Animator-getCurrentAnimatorState). After obtaining it, you can set the properties of the `AnimatorState` , such as changing the default loop playback to play once.
+
+```typescript
+const currentState = animator.getCurrentAnimatorState(0);
+// Play once
+currentState.wrapMode = WrapMode.Once;
+// Loop playback
+currentState.wrapMode = WrapMode.Loop;
+```
+
+### Get Animation State
+
+You can use the [findAnimatorState](/apis/core/#Animator-findAnimatorState) method to get the specified `AnimatorState` . After obtaining it, you can set the properties of the  `AnimatorState` , such as changing the default loop playback to play once.
+
+```typescript
+const state = animator.findAnimatorState("xxx");
+// Play once
+state.wrapMode = WrapMode.Once;
+// Loop playback
+state.wrapMode = WrapMode.Loop;
+```
+
+### Animation Culling
+You can set whether the animation is calculated when the `entity` is not visible by setting the [cullingMode](/apis/core/#Animator-cullingMode) of the `Animator` Component. When the animation is culled, the animation will not be calculated and applied to the `entity`, but the state of the animation will still be updated over time, so that it is correctly displayed when it becomes visible again.

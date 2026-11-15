@@ -1,0 +1,42 @@
+// Galacean: Ant Group's TypeScript web engine for interactive 3D and 2D on WebGL
+import { definePackage } from '@/types.ts';
+
+export default definePackage({
+  name: 'Galacean',
+  npm: '@galacean/engine',
+  tagline: 'A TypeScript web engine for interactive 3D and 2D: entities, components, PBR, physics, animation and ShaderLab.',
+  about:
+    "Galacean is Ant Group's open-source engine for the web. A scene is a tree of entities, and everything an entity does comes from components on it: a camera, a light, a mesh renderer, a collider, an animator or your own Script class with lifecycle hooks. It renders on WebGL with PBR, Blinn-Phong and unlit materials, shadows, particles, post-processing and 2D sprites and text, and adds physics (PhysX in WebAssembly), a state-machine animator, a UI system and ShaderLab, its own shader language. These examples are built from the official docs, script usage only, with every model, texture and sound generated in code.",
+  category: 'Graphics',
+  homepage: 'https://galacean.antgroup.com/',
+  docsUrl: 'https://galacean.antgroup.com/engine/docs/',
+  repo: 'https://github.com/galacean/engine',
+  added: '2026-11-15',
+  sections: [
+    'Basics',
+    'Core',
+    'Assets',
+    'Camera',
+    'Background',
+    'Light',
+    'Renderer',
+    'Model',
+    'Mesh',
+    'Material',
+    'ShaderLab',
+    'Texture',
+    '2D',
+    'Particle',
+    'Post Process',
+    'Quality',
+    'Animation',
+    'Physics',
+    'Script',
+    'UI',
+    'XR',
+    'Audio',
+    'Input',
+    'Device',
+    'Performance',
+  ],
+});

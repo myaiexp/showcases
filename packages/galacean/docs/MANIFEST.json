@@ -1,0 +1,766 @@
+{
+  "fetched": "2026-11-15T10:26:43.404Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/galacean/engine",
+      "ref": "v1.6.13",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "docs/en",
+        "!docs/en/interface",
+        "!docs/en/how-to-contribute.mdx",
+        "!docs/en/AI",
+        "!docs/en/art"
+      ],
+      "commit": "39dcd8a49db3b1f01286b2bf0ec982662aa69a78"
+    }
+  ],
+  "files": {
+    "repo/docs/en/_meta.json": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/_meta.json",
+      "sha256": "2f7c5ba9b4c1b2d74d1f6c0207c35f70eafe30570d465f7b02f9306ea677b0c3"
+    },
+    "repo/docs/en/animation/_meta.json": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/_meta.json",
+      "sha256": "083bbeefe0b9ed8dc2df81127b82719f3ad38e3cc0d6b79b3c2abaa11bb53caf"
+    },
+    "repo/docs/en/animation/animator.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/animator.mdx",
+      "sha256": "acd3822ad94351f9f07938afd04ce4c89abbc9070e76f0f9d7fcfcbfc524789d"
+    },
+    "repo/docs/en/animation/animatorController.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/animatorController.mdx",
+      "sha256": "67ee29cef4b82fab40f2d5bc369a12fedfe6bb4e4404b3be324be33f919485fe"
+    },
+    "repo/docs/en/animation/clip-for-artist.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/clip-for-artist.mdx",
+      "sha256": "3096e7efb9067d14c2606718da622604bade1bf07b90d98a851b4d352cf8cab4"
+    },
+    "repo/docs/en/animation/clip.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/clip.mdx",
+      "sha256": "826f502ad653aa03bda22afd4b1022f12f695a69876c0ed60999f8a6cd413a07"
+    },
+    "repo/docs/en/animation/examples/blending.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/examples/blending.mdx",
+      "sha256": "f887613e4832c1e3ffff250a0c0c7fd5c4401f05701cf0c316c1db19c958df4d"
+    },
+    "repo/docs/en/animation/examples/controlAnimationByInput.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/examples/controlAnimationByInput.mdx",
+      "sha256": "a497d5f555f667763dba108fe950ee2791d16b0f700e32d66af40d696c2344bf"
+    },
+    "repo/docs/en/animation/examples/crossFade.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/examples/crossFade.mdx",
+      "sha256": "8f5f172b450dbb11a1baa2b7e986c89bd23023406398cea5671ac217e98398e1"
+    },
+    "repo/docs/en/animation/examples/material-animation.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/examples/material-animation.mdx",
+      "sha256": "34fc41c67e0bc58e6910984ff19d81fa3f1332747f094538e510f4d5d4f86df1"
+    },
+    "repo/docs/en/animation/examples/playAnimation.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/examples/playAnimation.mdx",
+      "sha256": "3804a86c755ddc5c5a81b4ec4235d5ddd4dff6ae98377c74852f558f19bf6a69"
+    },
+    "repo/docs/en/animation/examples/reuseAnimation.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/examples/reuseAnimation.mdx",
+      "sha256": "39c6cf78494d75dd0d200b8faf540616fe70b98dd57bcadd2508fd85f507e7f8"
+    },
+    "repo/docs/en/animation/examples/sprite-sheet.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/examples/sprite-sheet.mdx",
+      "sha256": "4019b78300d383576acbd6b7f88dccc2f783df68b6495c18ce646e91fbdd0639"
+    },
+    "repo/docs/en/animation/examples/text-animation.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/examples/text-animation.mdx",
+      "sha256": "1ebb1c8644545a8fe45163e51e35e72ec4bb2006d233419a91dacd01e7daac14"
+    },
+    "repo/docs/en/animation/layer.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/layer.mdx",
+      "sha256": "065074546a364aade88eeed31f951b21886dbe691ac07d299a957ffbb7324953"
+    },
+    "repo/docs/en/animation/overview.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/overview.mdx",
+      "sha256": "1e4ea5d098593b31af9b1c8c0bbb24f141d157e052e0a587b76325f4f59387cc"
+    },
+    "repo/docs/en/animation/state-machine.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/state-machine.mdx",
+      "sha256": "e35395e470e2daacb20f233a254597d33ab5ba97de85dc3723a6f59ad8164422"
+    },
+    "repo/docs/en/animation/system.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/animation/system.mdx",
+      "sha256": "0aff31de32513a8134f0005dc0553e0fc923efef17e783e04346bf9e01b53606"
+    },
+    "repo/docs/en/assets/custom.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/assets/custom.mdx",
+      "sha256": "afcbbe6d72a383ca989c9954350450f843be0e9797e78eeda1440fa050118eb0"
+    },
+    "repo/docs/en/assets/gc.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/assets/gc.mdx",
+      "sha256": "4beed58f378a1f0f94aa0b30c9666b4f801366f8cd4e096c5f673726be6ded76"
+    },
+    "repo/docs/en/assets/interface.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/assets/interface.mdx",
+      "sha256": "8aad5a2bd1aca99e023166cf00d8a37e676c712f6bd85de5740b3b223df8fd02"
+    },
+    "repo/docs/en/assets/load.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/assets/load.mdx",
+      "sha256": "fbe129c01f37205310bb392b3f17d198dddeec633a802968907ad7ebd148224d"
+    },
+    "repo/docs/en/assets/overall.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/assets/overall.mdx",
+      "sha256": "1d5f1e2441cbac6dedc76783988b14eebd3fe7ce891731d668f073bfd9d6d408"
+    },
+    "repo/docs/en/audio/assets.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/audio/assets.mdx",
+      "sha256": "7321f747959781fcf781dd34a014be4b441d4f5e7e0bae5ae9286872dab01714"
+    },
+    "repo/docs/en/audio/component.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/audio/component.mdx",
+      "sha256": "a6558804d14a7c3f2dedfb7853467b803555d6464f6f1151b45a0f29ee69de72"
+    },
+    "repo/docs/en/audio/overview.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/audio/overview.mdx",
+      "sha256": "e858ca5dc94746974eb0cb5cf3f14d229f108776061f4d335e07a72e1fcbc74d"
+    },
+    "repo/docs/en/basics/_meta.json": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/basics/_meta.json",
+      "sha256": "00992314d18c0f3fed4775dfce1e7c96f1d8a6311bc522338804f0298c216112"
+    },
+    "repo/docs/en/basics/benchmark.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/basics/benchmark.mdx",
+      "sha256": "c14918f9ee01f8676cedeeca706c0568c1078682e9e6a140d1c16ae44e679c8e"
+    },
+    "repo/docs/en/basics/overview.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/basics/overview.mdx",
+      "sha256": "a6d30c05c805da374d3720a4be28023fd1ded835d1d31ecaad25b66c926495db"
+    },
+    "repo/docs/en/basics/quickStart/flappy-bird.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/basics/quickStart/flappy-bird.mdx",
+      "sha256": "39a0f2ac5f54f48f08697de6dd1fa014d293e57cd388fe5279113ef0120d0caf"
+    },
+    "repo/docs/en/basics/quickStart/quick-start.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/basics/quickStart/quick-start.mdx",
+      "sha256": "60395854f1f2d180747f78029759487080dc7c6fe1008a8c240b154c0d7e1aac"
+    },
+    "repo/docs/en/basics/version.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/basics/version.mdx",
+      "sha256": "db54d4310d46bd1623d49cd5eaad32795abb8623d72eadb1bb6d6718e13cd503"
+    },
+    "repo/docs/en/core/canvas.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/canvas.mdx",
+      "sha256": "64767197affae103f431d263512729ec22e53f3ac01c87e2f3f2fa32616b529e"
+    },
+    "repo/docs/en/core/clone.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/clone.mdx",
+      "sha256": "85561522773fcd7266db2de713b6d666a2f5242d95853a7a48dc734e3aa04ae4"
+    },
+    "repo/docs/en/core/color.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/color.mdx",
+      "sha256": "1df86a2f7d1475309c49c11b7f208a41b934c371e034bdcbcd9772307974fb95"
+    },
+    "repo/docs/en/core/component.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/component.mdx",
+      "sha256": "77d4643f36e9576703588da0defba52c21937af748cddebd23f611b91ccd71b1"
+    },
+    "repo/docs/en/core/engine.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/engine.mdx",
+      "sha256": "dc3f509b6cac36284341618afed8f42180b5509aec28ba780f620bd11a3910a8"
+    },
+    "repo/docs/en/core/entity.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/entity.mdx",
+      "sha256": "a9993d5ac564881a8652810cdfc61cd092ec8ca00ad7cf6ebf4743314c599011"
+    },
+    "repo/docs/en/core/math.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/math.mdx",
+      "sha256": "af665ccb58b8e791dfe1f82b2a7a27d86a12ff3f1b1fe1a4b87af88fc2860f01"
+    },
+    "repo/docs/en/core/prefab.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/prefab.mdx",
+      "sha256": "ca834a183e1bc13bab2db6aa493769b5d0dc21be9309e50986696506cbb96316"
+    },
+    "repo/docs/en/core/scene.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/scene.mdx",
+      "sha256": "6d3e081d7a31ab0cdb15a524fd55c4ea744e71e0b1ab26c5b674615d2309a5b0"
+    },
+    "repo/docs/en/core/space.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/space.mdx",
+      "sha256": "02da734b25320743d047c5f8d120fdbc8eb85ca871ef7f5543cc79f949067248"
+    },
+    "repo/docs/en/core/time.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/time.mdx",
+      "sha256": "30218951287b337643bf1b605a3ddbb543bc1a761596c3d1e6e36456fcbedea2"
+    },
+    "repo/docs/en/core/transform.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/core/transform.mdx",
+      "sha256": "7cb95274c677bfa33f0e7b9d80b771cd0719967e765d1ca2a6011284ca0de221"
+    },
+    "repo/docs/en/device/restore.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/device/restore.mdx",
+      "sha256": "aa0de5437315b8eb0a6c5872b5e0268b7e545fbdcb5df7af4970f059666eba8b"
+    },
+    "repo/docs/en/graphics/_meta.json": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/_meta.json",
+      "sha256": "750138a83198132c6f7194f0f3f6d4c1c86d66000c3f491196889c9864f022c7"
+    },
+    "repo/docs/en/graphics/2D/2d.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/2d.mdx",
+      "sha256": "112cea07565b86cb8884d30be628cf3fcd835ffc473acd2d385bce932e57c996"
+    },
+    "repo/docs/en/graphics/2D/lottie.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/lottie.mdx",
+      "sha256": "03c1542f7eeea6a3d85d21671726cfd2fdce33418f4d6e699d2596eaf1c40c1b"
+    },
+    "repo/docs/en/graphics/2D/spine/add-and-use.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/spine/add-and-use.mdx",
+      "sha256": "034243ee1ceb0caf482deb09c4584a702ccdf766c522e3d5a5695a88f26570cb"
+    },
+    "repo/docs/en/graphics/2D/spine/editor.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/spine/editor.mdx",
+      "sha256": "e887e52e36f1ba87ab0cbf9e1ef33b264ef1c7e8ec6873d7d35ea84bdd662928"
+    },
+    "repo/docs/en/graphics/2D/spine/example.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/spine/example.mdx",
+      "sha256": "1df4cc5019094903a8092bd746362f5cad7b4c7ea1bbf75abf6b33b440af1ec1"
+    },
+    "repo/docs/en/graphics/2D/spine/other.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/spine/other.mdx",
+      "sha256": "51e6358d0ffaeae82203d20842d6673c14f27d12219aba931eadd714d243c66f"
+    },
+    "repo/docs/en/graphics/2D/spine/overview.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/spine/overview.mdx",
+      "sha256": "efc1189956ff057f21eb0f2c9598359830b4194a44b1f529810c64580c31faeb"
+    },
+    "repo/docs/en/graphics/2D/sprite.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/sprite.mdx",
+      "sha256": "22253f66208bb3dcfcade39a40c74fe3421b547c688f896618338c842b2e1d52"
+    },
+    "repo/docs/en/graphics/2D/spriteAtlas.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/spriteAtlas.mdx",
+      "sha256": "4d4cb74116bd153dc4760ea44cb3e6111912d617222a88d0070a63e987f0225a"
+    },
+    "repo/docs/en/graphics/2D/spriteMask.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/spriteMask.mdx",
+      "sha256": "ff056a0b257bddb11433c3b701c069acab5911dfd04cd36bf0e9a23ce4288876"
+    },
+    "repo/docs/en/graphics/2D/spriteRenderer.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/spriteRenderer.mdx",
+      "sha256": "68d4951cd95698048f6f369be8c069acaecc4bd29331524edb09b567e076d91d"
+    },
+    "repo/docs/en/graphics/2D/text.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/2D/text.mdx",
+      "sha256": "5208a032e7ef62b1942b51c2017e68927af1a33da20c1357f80666818508847f"
+    },
+    "repo/docs/en/graphics/background/background.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/background/background.mdx",
+      "sha256": "441be01fcff7adf2e29618619c35597198da5d467b67177e46e91b98b3ae045d"
+    },
+    "repo/docs/en/graphics/background/sky.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/background/sky.mdx",
+      "sha256": "add70ce6870f7f52be8178d3c68853e9df56e7eeac1a935d86f05a9bdd3a435e"
+    },
+    "repo/docs/en/graphics/background/solidColor.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/background/solidColor.mdx",
+      "sha256": "6ad011259b6bd75a85f98ed0730902e518325fefdb52448adbca7b1d34b68672"
+    },
+    "repo/docs/en/graphics/background/texture.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/background/texture.mdx",
+      "sha256": "11225a684ec426a95d69855f974cf1c36af6ec1f589891a51393d390f01bc310"
+    },
+    "repo/docs/en/graphics/camera/camera.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/camera/camera.mdx",
+      "sha256": "d7f8ec36506112de4217d3082191d2f3f49ded34846b5fbf7fa409c2d8fd98a9"
+    },
+    "repo/docs/en/graphics/camera/component.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/camera/component.mdx",
+      "sha256": "126386c58b0ff4e6c064d1f3cb16ec757a42cbec7220332867206a5891509674"
+    },
+    "repo/docs/en/graphics/camera/control.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/camera/control.mdx",
+      "sha256": "7635b384d3e3401fc5acb4ca58755c7f4ba1a8d94ee1455d5da4a1e486a50c7e"
+    },
+    "repo/docs/en/graphics/camera/multiCamera.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/camera/multiCamera.mdx",
+      "sha256": "4e953d795caf1d781d3ed25c99d2f23fa9a73f0df0bd2c324ecf83655b16065f"
+    },
+    "repo/docs/en/graphics/camera/texture.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/camera/texture.mdx",
+      "sha256": "de3eee933943dd6d5f2b650f8dd8987913e376f2db6c116105255419df331ca5"
+    },
+    "repo/docs/en/graphics/light/ambient.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/light/ambient.mdx",
+      "sha256": "70e105b1757092f664e19632cbc8a61d09349e8569967b53de9856928737aeb0"
+    },
+    "repo/docs/en/graphics/light/ambientOcclusion.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/light/ambientOcclusion.mdx",
+      "sha256": "7ae469c7b1b7c74ce9afda121c499765aa645ffaeedfed95e2e38bc93415802d"
+    },
+    "repo/docs/en/graphics/light/bake.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/light/bake.mdx",
+      "sha256": "fa7eaf93fbe2d84fbbdb99a0c4286bfe4a5b006c1f2f3e47826910168a567540"
+    },
+    "repo/docs/en/graphics/light/directional.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/light/directional.mdx",
+      "sha256": "13c65cd04136f778a0ec3e7e3f27e7c4c9f0436102ebd73450e8a1731206b402"
+    },
+    "repo/docs/en/graphics/light/light.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/light/light.mdx",
+      "sha256": "662c4b7b1591678853a4502996c0e72f92a230890c8a734f9b51c02554b4c192"
+    },
+    "repo/docs/en/graphics/light/point.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/light/point.mdx",
+      "sha256": "7863519b4773748239f7980924c7e057e28623d573ab5332f775772c2e0cbd82"
+    },
+    "repo/docs/en/graphics/light/shadow.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/light/shadow.mdx",
+      "sha256": "c1c729cc86a04a88abe37045355e36194e0336b23108315d422619b1073b27e6"
+    },
+    "repo/docs/en/graphics/light/spot.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/light/spot.mdx",
+      "sha256": "57ade2c77e36eb57764f1e045e7965eecd91f08c15e71bc61895e35dc4784db4"
+    },
+    "repo/docs/en/graphics/material/_meta.json": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/_meta.json",
+      "sha256": "60c6055145bc75a36f7b1ca18f7c95e8cccfc54cb4ee928142cd95bd320a82ee"
+    },
+    "repo/docs/en/graphics/material/baseUse.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/baseUse.mdx",
+      "sha256": "d1069750cd2c906622052da001bb51c965292fbec232445a3184d05d8daf66b7"
+    },
+    "repo/docs/en/graphics/material/builtinShaders/_meta.json": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/builtinShaders/_meta.json",
+      "sha256": "739743c153a8987787df34f776668fb90c868650dc609f53c5979758f5ab389e"
+    },
+    "repo/docs/en/graphics/material/builtinShaders/blinnPhong.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/builtinShaders/blinnPhong.mdx",
+      "sha256": "f114f0fdb0310c2c52bb6c4f020667af8b6a305246d6872dc0c4802db5b26e37"
+    },
+    "repo/docs/en/graphics/material/builtinShaders/digitalHuman/eye.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/builtinShaders/digitalHuman/eye.mdx",
+      "sha256": "9705669cae2ad616b10202bbf2b27ad9ebef2cca14e09c23a593c632f6c6655c"
+    },
+    "repo/docs/en/graphics/material/builtinShaders/digitalHuman/hair.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/builtinShaders/digitalHuman/hair.mdx",
+      "sha256": "d7ab1d3e8ae53e48b875ea513f6e9f6cdd29cf998a13fa9ba23c454d4ef189cb"
+    },
+    "repo/docs/en/graphics/material/builtinShaders/digitalHuman/skin.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/builtinShaders/digitalHuman/skin.mdx",
+      "sha256": "ba5efa426fb7a399b35e1ddcf07ec80068237869d5b4d08b051703506233bf70"
+    },
+    "repo/docs/en/graphics/material/builtinShaders/pbr.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/builtinShaders/pbr.mdx",
+      "sha256": "9f71755debc6a303984e6e60cbcf002d64b0763d9786b53d0669dd34d85d012e"
+    },
+    "repo/docs/en/graphics/material/builtinShaders/unlit.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/builtinShaders/unlit.mdx",
+      "sha256": "29cf4752310334b8478a0c3e3cce065c57b601c274c88acae683c82f201666a5"
+    },
+    "repo/docs/en/graphics/material/examples/_meta.json": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/examples/_meta.json",
+      "sha256": "b43622af0425b1f74f6c38f012b47bd9d388420d10fe98cb1b170da03afe559f"
+    },
+    "repo/docs/en/graphics/material/examples/shaderlab-01-basic-shader.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/examples/shaderlab-01-basic-shader.mdx",
+      "sha256": "eb6a130adf457307a3983a0ba0d4242dd0774796509c3deb001e870ea5f4972f"
+    },
+    "repo/docs/en/graphics/material/examples/shaderlab-02-render-state.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/examples/shaderlab-02-render-state.mdx",
+      "sha256": "d1b8653201f50b9ec8da2ce63cf78cd88d5b5278314b935a11b7b80ce3b22c2d"
+    },
+    "repo/docs/en/graphics/material/examples/shaderlab-03-ui-script.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/examples/shaderlab-03-ui-script.mdx",
+      "sha256": "031ab2466bb41403c6140f97c4e09e83635b4690d0f9494200e3d7a10fc566f9"
+    },
+    "repo/docs/en/graphics/material/examples/shaderlab-04-multi-pass.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/examples/shaderlab-04-multi-pass.mdx",
+      "sha256": "88ad9b5ce30d83f0b57cf0be2e6d33f9fa3ba94ed7796de139eca426aaf8debc"
+    },
+    "repo/docs/en/graphics/material/examples/shaderlab-05-advance.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/examples/shaderlab-05-advance.mdx",
+      "sha256": "1b0763e7e9c9ae379dbd9e31159f101f82061b31294b204505eafdcdb013fd57"
+    },
+    "repo/docs/en/graphics/material/overview.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/overview.mdx",
+      "sha256": "60cf1b507a3555dfe4883b0952c2b3616c151a16be504e9d087f681f14f24fdb"
+    },
+    "repo/docs/en/graphics/material/shader.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/shader.mdx",
+      "sha256": "85f162c2d8994f697486b1391820525bbe908e43de23a06d8c976a0ec378acec"
+    },
+    "repo/docs/en/graphics/material/shaderAPI.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/shaderAPI.mdx",
+      "sha256": "acf83b9b7a1141c5e63848fc8117fadfdce9623e731035c03080744292ecee05"
+    },
+    "repo/docs/en/graphics/material/variables.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/material/variables.mdx",
+      "sha256": "d12f6f85191d5b134c4bd8e42be35f64b218493a41f2281f01b5bf877b69a188"
+    },
+    "repo/docs/en/graphics/mesh/bufferMesh.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/mesh/bufferMesh.mdx",
+      "sha256": "6cf7d9cbef55b31ae55ada6c8b890e76e41a109a492318652ef787a51485ffd0"
+    },
+    "repo/docs/en/graphics/mesh/mesh.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/mesh/mesh.mdx",
+      "sha256": "2dc6f73e8e10b57b5b536fd5768d9fca66478a1e5851b613c9d582b4bbc4421f"
+    },
+    "repo/docs/en/graphics/mesh/modelMesh.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/mesh/modelMesh.mdx",
+      "sha256": "2022cca6e8ecf194c30fb938913c9a8a3cc9c5fcc05746b66bee53230f7dff71"
+    },
+    "repo/docs/en/graphics/mesh/primitiveMesh.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/mesh/primitiveMesh.mdx",
+      "sha256": "ffa379d4da821e85082826f28d88315938e473266214aa90e1c3009eda903029"
+    },
+    "repo/docs/en/graphics/model/assets.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/model/assets.mdx",
+      "sha256": "8f05d01cafc3289c7e4f56540dd96d3271e2675e7716a6d4ed9ce687de0547ca"
+    },
+    "repo/docs/en/graphics/model/glTF.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/model/glTF.mdx",
+      "sha256": "155c5adbc758802d2ee2aba280de5929a1675ee6e7dfc7802d481b1409814c07"
+    },
+    "repo/docs/en/graphics/model/importGlTF.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/model/importGlTF.mdx",
+      "sha256": "5342ce22939019ee50f73f7a57d1d06b9bcbd5767254be08b2498309ec903409"
+    },
+    "repo/docs/en/graphics/model/model.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/model/model.mdx",
+      "sha256": "c0dac42f1654a3e70c07d393d88e8e32d5c386190039295355ba098d8d6b2817"
+    },
+    "repo/docs/en/graphics/model/opt.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/model/opt.mdx",
+      "sha256": "86909e1fc2017a1646cac64658538b6dbb2057388115f2e99d6e715c68d197d9"
+    },
+    "repo/docs/en/graphics/model/restoration.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/model/restoration.mdx",
+      "sha256": "3701f68287b5f03321ef7bd09662a62b63782131d8e4ef9a8c1cc11d1f7ec202"
+    },
+    "repo/docs/en/graphics/model/use.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/model/use.mdx",
+      "sha256": "a55e122e8ade64e48f637366a8d82bcc3313558f79b13a16af65decefeda50cc"
+    },
+    "repo/docs/en/graphics/particle/renderer-animation-module.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/particle/renderer-animation-module.mdx",
+      "sha256": "7d3fd47c1394450f9c4c5e8e3975c1d26861a78a385e5b9508bf5e58cb0a2f34"
+    },
+    "repo/docs/en/graphics/particle/renderer-color-module.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/particle/renderer-color-module.mdx",
+      "sha256": "074bfdbe27d5d223c3bc3b3246e6e92681ddf31d0a56c9a60bd25be0a44a50e7"
+    },
+    "repo/docs/en/graphics/particle/renderer-emission-module.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/particle/renderer-emission-module.mdx",
+      "sha256": "73a0ea371a3a63b8d27263f4db6a8908b600156b4e2f4cce4447d0160e8db33c"
+    },
+    "repo/docs/en/graphics/particle/renderer-force-module.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/particle/renderer-force-module.mdx",
+      "sha256": "152384ef4992930d0d44ded766cfdfe142dbde9351e20cab625042d01bfb9f83"
+    },
+    "repo/docs/en/graphics/particle/renderer-main-module.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/particle/renderer-main-module.mdx",
+      "sha256": "ba7dff54be44896b5f5ac3652075da35d33d87208b2da50518803cee3322ba23"
+    },
+    "repo/docs/en/graphics/particle/renderer-rotation-module.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/particle/renderer-rotation-module.mdx",
+      "sha256": "531115b033e87c28cd37dcd219b1367ad0aaba5a09399783b820ca007b6a73da"
+    },
+    "repo/docs/en/graphics/particle/renderer-size-module.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/particle/renderer-size-module.mdx",
+      "sha256": "f8dbdc06ac02bc3dba0701e78ba3ce456d59a7e68c3fb9a00ad488a4ffd619ab"
+    },
+    "repo/docs/en/graphics/particle/renderer-velocity-module.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/particle/renderer-velocity-module.mdx",
+      "sha256": "da1292715bae3d72119b17b857da8adf9c8886923467a7e9b5b3630c16676746"
+    },
+    "repo/docs/en/graphics/particle/renderer.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/particle/renderer.mdx",
+      "sha256": "996d63b78193a5b11749ac54ecdaf498ecdfd40e47391c838d5eb743b4d5cb55"
+    },
+    "repo/docs/en/graphics/postProcess/customPostProcess.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/postProcess/customPostProcess.mdx",
+      "sha256": "47411195a7752b113f6dddc73e4c14fc493c6ad514e9eee86d660c97c8727529"
+    },
+    "repo/docs/en/graphics/postProcess/effects.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/postProcess/effects.mdx",
+      "sha256": "c14e5988a6034c68e46b5e31a3d1c8533b7ff31827ff98bd23ecbb523a7a2c06"
+    },
+    "repo/docs/en/graphics/postProcess/postProcess.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/postProcess/postProcess.mdx",
+      "sha256": "99396cbf256e360b5fe95c2a26f8e051555c19f7b79423071c2bb7da6017283d"
+    },
+    "repo/docs/en/graphics/quality/antiAliasing.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/quality/antiAliasing.mdx",
+      "sha256": "373533d3f2400443a980519590bc897502f52df7214aaa016d8c99d6e1750717"
+    },
+    "repo/docs/en/graphics/renderer/meshRenderer.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/renderer/meshRenderer.mdx",
+      "sha256": "60c49ceb842c86e1b112848161e90ad516da05289617b11c2ba1d466683829e5"
+    },
+    "repo/docs/en/graphics/renderer/order.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/renderer/order.mdx",
+      "sha256": "040dc9fc6f48e10f18ce7a410cf2956ecd468b8cb4329fe9c76fd5f471fa969d"
+    },
+    "repo/docs/en/graphics/renderer/renderer.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/renderer/renderer.mdx",
+      "sha256": "db2b78110c932028b0e6d1851e4de6260ad1c8e26c9f1d9318fe4ffe11fca9f2"
+    },
+    "repo/docs/en/graphics/renderer/skinnedMeshRenderer.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/renderer/skinnedMeshRenderer.mdx",
+      "sha256": "19b320ad9a0ff2500cbfcbab650ee1b010051911a718283125bfeeade36359c9"
+    },
+    "repo/docs/en/graphics/texture/2d.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/texture/2d.mdx",
+      "sha256": "e094a8bc4d974bc37051e836ba6b24e49943179a39cf427b8fc3e43f31793d68"
+    },
+    "repo/docs/en/graphics/texture/compression.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/texture/compression.mdx",
+      "sha256": "82a8908c0b5efc1a6cc1351dfa103fd29cee5a98f14e5273e56d1f4ec403d827"
+    },
+    "repo/docs/en/graphics/texture/cube.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/texture/cube.mdx",
+      "sha256": "08848e964a41006d5776e2bde611ded1c790f975f0df9499dca834e4138acb66"
+    },
+    "repo/docs/en/graphics/texture/rtt.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/texture/rtt.mdx",
+      "sha256": "f3715702a22f1a23267d8ac9ba29e821f03b8a1cad0c91bbfefd70a92a6871a5"
+    },
+    "repo/docs/en/graphics/texture/texture.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/graphics/texture/texture.mdx",
+      "sha256": "ceeb61fa78a2fce27d9b192e40ed4eafcefbca079f4fbc06c20a4b80f3fd2589"
+    },
+    "repo/docs/en/input/framebuffer-picker.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/input/framebuffer-picker.mdx",
+      "sha256": "166e233231526496ff8af153e342f082cc843b466a76dec26ffb855691fcd1e4"
+    },
+    "repo/docs/en/input/input.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/input/input.mdx",
+      "sha256": "6bf33d82c58fb1090ce7e0629a68676f3c7aad5a811a4c09546930e637ea63f5"
+    },
+    "repo/docs/en/input/keyboard.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/input/keyboard.mdx",
+      "sha256": "f8ba8dcde1d5978274906a98ef74e48bab74af32908fdd67c5e630ba78c5dbff"
+    },
+    "repo/docs/en/input/pointer.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/input/pointer.mdx",
+      "sha256": "25f48f0e3d3df9e560def9fbd5b8b91ac738ee138cf835f31400f357df20da4a"
+    },
+    "repo/docs/en/input/wheel.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/input/wheel.mdx",
+      "sha256": "6f884b92149190dc14d09f57e83744121e239ef287447a458c7c8fd41948751d"
+    },
+    "repo/docs/en/performance/scene-standard.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/performance/scene-standard.mdx",
+      "sha256": "952e6e6de62fc133980573b9de64c0b6fbb9aca70d28a55c87a77408a8984345"
+    },
+    "repo/docs/en/performance/stats.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/performance/stats.mdx",
+      "sha256": "6bbc09c0a8dc111b1d2c98669f0f4217c01313338726db5eedd8951964731a04"
+    },
+    "repo/docs/en/physics/_meta.json": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/_meta.json",
+      "sha256": "0afd36b2240567d143d23bb1f63eb756f4fd61b4ffe5febbd16a4584bf06be0e"
+    },
+    "repo/docs/en/physics/collider/characterController.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/collider/characterController.mdx",
+      "sha256": "df615fe11b78d593af8d3bd0c0efee5438e2ac167dc54fe4cfd93680ef947e17"
+    },
+    "repo/docs/en/physics/collider/colliderShape.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/collider/colliderShape.mdx",
+      "sha256": "ce8cbd7cb86be9fcfb1a10d2b6f4204761f1e32578a6a3955a4cba5652049e74"
+    },
+    "repo/docs/en/physics/collider/collisionLayer.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/collider/collisionLayer.mdx",
+      "sha256": "627b658c54d046d0ec7ff6364879110997a922a2d49ef31edabe445458b7e1cb"
+    },
+    "repo/docs/en/physics/collider/dynamicCollider.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/collider/dynamicCollider.mdx",
+      "sha256": "08f16648ef1c0339bf531405d9f929c6da99d1bbfa30e9c6911168e539c329f0"
+    },
+    "repo/docs/en/physics/collider/event.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/collider/event.mdx",
+      "sha256": "ff86aba31767c2d4d7584f8de3d9b0ba26fb925680b57deb1cef8df500de0277"
+    },
+    "repo/docs/en/physics/collider/overview.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/collider/overview.mdx",
+      "sha256": "b4142ae1a5500a9fc5d3ea33c74e338fb030efa638eacca79a91b36e46e0778d"
+    },
+    "repo/docs/en/physics/collider/staticCollider.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/collider/staticCollider.mdx",
+      "sha256": "56198701fe856f8f66be3c70bdcb73946039c03c60f4fcbe441895890315a82a"
+    },
+    "repo/docs/en/physics/debug.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/debug.mdx",
+      "sha256": "2763831861806b19c5f90b5e63d19edc3b8d75a03e0e9a4c2d2a31c7dc502bf1"
+    },
+    "repo/docs/en/physics/joint/fixedJoint.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/joint/fixedJoint.mdx",
+      "sha256": "983286a349a069108792872113641271f9775d69945f01ce5d191f0e24ffcc18"
+    },
+    "repo/docs/en/physics/joint/hingeJoint.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/joint/hingeJoint.mdx",
+      "sha256": "e477619192157cd8f914a0376dbb65ad98e061cdf2253dc8910a75d461d48244"
+    },
+    "repo/docs/en/physics/joint/overview.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/joint/overview.mdx",
+      "sha256": "3cc70105c69d6753deb47641c42a9322f26a37078794494ba4778348c6adac4b"
+    },
+    "repo/docs/en/physics/joint/springJoint.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/joint/springJoint.mdx",
+      "sha256": "fafa85adfaf53380e7894453e16ca55e29c0f9817ee7807f53da1e445f577fb9"
+    },
+    "repo/docs/en/physics/manager.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/manager.mdx",
+      "sha256": "746b67a1a5af42f5bb9a2d67c0b50cc59851e7bc96f7ed218e343b439f0795f1"
+    },
+    "repo/docs/en/physics/overall.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/overall.mdx",
+      "sha256": "101b8e5c8b49ef7c85603e57049220666a8705373dd8b0bb6dfcce1eba21c1ff"
+    },
+    "repo/docs/en/physics/query/_meta.json": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/query/_meta.json",
+      "sha256": "a8e0787f601e04123451653d3b63585db37522251708b634ef2f167ed00075a6"
+    },
+    "repo/docs/en/physics/query/overlap.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/query/overlap.mdx",
+      "sha256": "48fe5d395fcd440b291eaddc8288c5e9673325e993d1494b3532e6e99e135aaa"
+    },
+    "repo/docs/en/physics/query/raycast.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/query/raycast.mdx",
+      "sha256": "7bb62b5412e8e01e5ae5c23376b6e52f3ad57196f955055c25683a3246f4b0f2"
+    },
+    "repo/docs/en/physics/query/sweep.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/physics/query/sweep.mdx",
+      "sha256": "e86b2d1c0d787eee1c5a69cc882d68b63fabe0e9eaa83abe54a509250e19821a"
+    },
+    "repo/docs/en/platform/h5.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/platform/h5.mdx",
+      "sha256": "a5b02fff414eff561a400bd97a4dddb8726784fded71462387bf9953d9ee926c"
+    },
+    "repo/docs/en/platform/platform.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/platform/platform.mdx",
+      "sha256": "bc3e9dd1bd8a345268ad7d9d3411bedabcd7f38d7ea2f4b55497e60aeecfb606"
+    },
+    "repo/docs/en/platform/wechatMiniGame.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/platform/wechatMiniGame.mdx",
+      "sha256": "09e1492feb6dd2d84537c443ea92d4e251455c4eec90d6335079cbb8fe5ba716"
+    },
+    "repo/docs/en/script/attributes.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/script/attributes.mdx",
+      "sha256": "9eee572cc75cb5f30e27bd624410ca9b5d39d8f979ee676a00b24e786609005b"
+    },
+    "repo/docs/en/script/class.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/script/class.mdx",
+      "sha256": "4ad64f3a21b19dd55918c8140383b9ac7044cd3805dca7e2dd6cd6906fab2146"
+    },
+    "repo/docs/en/script/communication.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/script/communication.mdx",
+      "sha256": "406d822f7caa79564a114df1b394d37fab4dc6cf994d6c82707c64a918a667cf"
+    },
+    "repo/docs/en/script/create.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/script/create.mdx",
+      "sha256": "2806c3ce90218f5595495e6ee423c4089fef93dd23d9cc216a66476161c12bd7"
+    },
+    "repo/docs/en/script/edit.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/script/edit.mdx",
+      "sha256": "35af3055634ed3e6f85ae152b2a1f2ce4ac501aa2810644c0aac2ae403ae0a45"
+    },
+    "repo/docs/en/script/script.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/script/script.mdx",
+      "sha256": "1d621047178cd56c6f1125c451b0550c5c451db26e26eeac15da1a4c4d4e0702"
+    },
+    "repo/docs/en/UI/_meta.json": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/UI/_meta.json",
+      "sha256": "87cf7f6c2ee8a3618a7dbdb6aea7347ebceea53a9124edf3d56b4d497b902851"
+    },
+    "repo/docs/en/UI/overall.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/UI/overall.mdx",
+      "sha256": "010dfda95b0d7f7c1667f6b3c464e2ed11c39f61ab6b56d45963e8ec62291497"
+    },
+    "repo/docs/en/UI/quickStart/button.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/UI/quickStart/button.mdx",
+      "sha256": "dde0672efaa43e9e89a9c24a21c8348280483737d1452eec7b31e219d041f84b"
+    },
+    "repo/docs/en/UI/quickStart/canvas.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/UI/quickStart/canvas.mdx",
+      "sha256": "4470c4f701704cd63d832b5a5ecf9077b39355ef31cc1991e4de65d2d2ba2807"
+    },
+    "repo/docs/en/UI/quickStart/event.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/UI/quickStart/event.mdx",
+      "sha256": "cbcbc35f1db03031c5f234de065fb197f8e666d1b5333db9597d5f8fe07ac0d2"
+    },
+    "repo/docs/en/UI/quickStart/group.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/UI/quickStart/group.mdx",
+      "sha256": "3fb8d5dee67e214b45903400ebcd78311ed67ccfca715756f1e4407ff34c38e9"
+    },
+    "repo/docs/en/UI/quickStart/image.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/UI/quickStart/image.mdx",
+      "sha256": "032990b3ba6f879ae12c952accaa3a1a2e94ed9b76df696172cce465b552ae2d"
+    },
+    "repo/docs/en/UI/quickStart/order.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/UI/quickStart/order.mdx",
+      "sha256": "f6331b0f0d7cb20f14bf75dd94db8aeaa0edf3cd3f822a9baabeb5302540302a"
+    },
+    "repo/docs/en/UI/quickStart/text.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/UI/quickStart/text.mdx",
+      "sha256": "5641dd8b56b51d418ed4e623bfee8955b1f2df339c558efad1a53dbb6ebc157a"
+    },
+    "repo/docs/en/UI/quickStart/transform.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/UI/quickStart/transform.mdx",
+      "sha256": "4c2058fc72446ff00c576a363a72ee5af9e96ea12f9d5e240166a2e1b4d34c8e"
+    },
+    "repo/docs/en/UI/system.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/UI/system.mdx",
+      "sha256": "2810e60d11f3f7991d452894be1df5cbd5564ed5b471a6d31403c4d44e357079"
+    },
+    "repo/docs/en/xr/_meta.json": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/xr/_meta.json",
+      "sha256": "cf8231970b33a6c5b4a47d82c5e67e6dffde3762ec077ddfe2cd3055fde6e6ba"
+    },
+    "repo/docs/en/xr/compatibility.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/xr/compatibility.mdx",
+      "sha256": "740a294b7af5558b212b2f0db32fcb81c5af0ecafd8a4e7e0022a1acb7d5112e"
+    },
+    "repo/docs/en/xr/overall.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/xr/overall.mdx",
+      "sha256": "08166bcdb78663f8dc8c48f4afc95de3f54819669fed1149a4b4492a94765c93"
+    },
+    "repo/docs/en/xr/quickStart/debug.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/xr/quickStart/debug.mdx",
+      "sha256": "2ccd48f385576674247abc583d9162d8a9bc0297b36ab02aecf5469c52c97dc8"
+    },
+    "repo/docs/en/xr/quickStart/develop.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/xr/quickStart/develop.mdx",
+      "sha256": "35e3159285f0e2f35e22bde7d158e388ff6141cc9fd518e44f1bf0b95c47486c"
+    },
+    "repo/docs/en/xr/system/camera.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/xr/system/camera.mdx",
+      "sha256": "b222c21cc8e765727b3d5cd48363d4d0ca65c7c14bf08ee84ceb4a81dfbbb971"
+    },
+    "repo/docs/en/xr/system/features.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/xr/system/features.mdx",
+      "sha256": "ac05eaffd5405a8959a8c9eaff9df0abb824b6102b78493a388101a427b80519"
+    },
+    "repo/docs/en/xr/system/input.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/xr/system/input.mdx",
+      "sha256": "6ddc3e13f2e3e5eeca5110145cb6f9856c13dfd4d3a3a80a684b785e6f4b02bf"
+    },
+    "repo/docs/en/xr/system/manager.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/xr/system/manager.mdx",
+      "sha256": "2205cc91c0edf78b73a54b04af3b0fdfd3f39299729acc4eba10ecafa70654d0"
+    },
+    "repo/docs/en/xr/system/session.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/xr/system/session.mdx",
+      "sha256": "b21fa8afb9190b9ef6cd150478c7f15437a624745c8c66785aa622f3c94b6158"
+    },
+    "repo/docs/en/xr/system/toolkit.mdx": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/docs/en/xr/system/toolkit.mdx",
+      "sha256": "ecaf08fcb8d7a24f386c866be18d4c73747a8441b8842c59474d1a33592df385"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/LICENSE",
+      "sha256": "fabc1236d6d0e9bc85a45d810b66f5c01fd5003a7470582b05a4e13ed84f61d5"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/galacean/engine/blob/39dcd8a49db3b1f01286b2bf0ec982662aa69a78/README.md",
+      "sha256": "ce51dd18d285cc69abb862215a1a99123a20ea60cd8d3b5dc14f9679ea6ae68f"
+    }
+  }
+}

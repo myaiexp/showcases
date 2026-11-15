@@ -1,0 +1,187 @@
+---
+order: 3
+title: Entity
+type: Core
+label: Core
+---
+
+## Entity Management
+
+### Adding an Entity
+
+You can click the "+" button in the hierarchy tree panel to add a new entity. Note that if an entity is currently selected, the new entity will become a **child of the selected entity**; otherwise, it will be a child of the scene:
+
+<Image
+  src="https://gw.alipayobjects.com/zos/OasisHub/3d808a9c-429c-4c45-91c4-5d7cb12a2fee/image-20250515120040706.png" style={{zoom:"50%"}} />
+
+You can also right-click an entity to add a child entity to it:
+
+<Image
+  src="https://gw.alipayobjects.com/zos/OasisHub/f4bfef7e-cff3-4fe7-a4d5-2dc253501206/image-20250515120159840.png" style={{zoom:"50%"}} />
+
+You can add empty entities or quickly add entities with relevant functional components attached, such as entities with camera components, light components, and 3D/2D basic rendering components.
+
+After adding, you can edit the properties of the new entity in the **[Inspector Panel](/en/docs/interface/inspector)**.
+
+### Deleting an Entity
+
+To delete an entity, you can use the following methods:
+
+1. Select the entity to be deleted -> Click the delete button, the shortcut key is <Kbd>Delete</Kbd>
+
+2. Right-click an entity -> Delete
+
+<Image
+  src="https://gw.alipayobjects.com/zos/OasisHub/1e46a6d6-3591-4e16-88b6-e1adbaa38712/image-20250515113606200.png" style={{zoom:"50%"}} />
+
+<Callout type="warning">
+  Deleting an entity will remove the entity and all its child entities. Therefore, when deleting an entity, you need to be aware of whether the deletion will affect other entities in the scene.
+</Callout>
+
+### Copying an Entity
+
+Copying an entity will duplicate the selected entity and all its child entities, along with their components.
+
+1. Select an entity, then use `Duplicated` to quickly clone the entity in the same hierarchy level, or use the shortcut <Kbd>⌘ + D</Kbd> to quickly copy the selected entity.
+
+2. You can also choose `copy` and `paste` separately to achieve cross-hierarchy copying.
+
+<Image
+  src="https://gw.alipayobjects.com/zos/OasisHub/7be3ac6a-2b4e-44c5-b8cc-fbeba7794830/image-20250515113457918.png" style={{zoom:"50%"}} />
+
+### Sorting Entities
+
+To better organize entities, you can sort them by dragging. After selecting an entity, you can change its position in the hierarchy tree by dragging with the left mouse button.
+
+### Search
+
+There is a search box at the top of the hierarchy panel where users can enter the name of an entity to search for it in the scene. The search box supports fuzzy search, allowing you to enter part of the entity's name to find it.
+
+### Hiding Entities
+
+Every entity has an eye button on its right side, which can be clicked to toggle the entity's display/hide state in the scene.
+
+<Callout type="info">
+Please note that the adjustment of the entity's display state here is only a modification in the workspace, not the `isActive` attribute in the **[Inspector Panel](/en/docs/interface/inspector)**.
+</Callout>
+
+### Shortcut Keys
+
+The following operations take effect after selecting an entity.
+
+| Operation          | Shortcut Keys                               |
+| :----------------- | :------------------------------------------ |
+| `Delete Entity`    | <Kbd>Backspace</Kbd> or <Kbd>Delete</Kbd>   |
+| `Copy Entity`      | <Kbd>⌘ + D</Kbd>                            |
+| `Select Previous Entity` | <Kbd>↑</Kbd>                         |
+| `Select Next Entity` | <Kbd>↓</Kbd>                             |
+| `Expand Entity`    | <Kbd>→</Kbd>                                |
+| `Collapse Entity`  | <Kbd>←</Kbd>                                |
+
+## Editing Entities
+
+Clicking an entity allows you to edit it in the **[Inspector Panel](/en/docs/interface/inspector)** on the right, where you can edit the following attributes:
+
+### Basic Information
+
+<Image
+  src="https://gw.alipayobjects.com/zos/OasisHub/12d4148a-f670-443b-8eb2-12c9a837eaea/image-20250515114745494.png" style={{zoom:"50%"}} />
+
+| No. | Name     | Description                                                    |
+| ---- | -------- | -------------------------------------------------------------- |
+| 1    | Name     | The name of the entity, can be fetched using `scene.findEntityByName("entityName")` in scripts |
+| 2    | Is Active | Whether the entity is active in the scene                    |
+| 3    | Layer    | Layer management for entities, used for [culling masks](/en/docs/graphics/camera/component/#裁剪遮罩) (to control which layers are culled during rendering), [raycasting](/en/docs/physics/query/raycast) (to control which layers' entities can be detected by rays), etc. Supports multiple selection. |
+
+### Component Management
+
+Components of entities are displayed tiled in the Inspector panel, such as the most common **Transform** component. For detailed usage, please refer to the [Component](/en/docs/core/component) documentation.
+
+<Image
+  src="https://gw.alipayobjects.com/zos/OasisHub/2a670e89-a8de-44b9-b978-5a25e9689fd0/image-20250515153549864.png"
+    style={{zoom:"50%"}}
+/>
+
+## Script Usage
+
+### Creating New Entities
+
+As introduced in [Scenes](/en/docs/core/scene) on how to access the active scene. In a new scene, we usually start by adding a root entity:
+
+```typescript
+const scene = engine.sceneManager.activeScene;
+const rootEntity = scene.createRootEntity();
+```
+
+Typically, new entities are created by adding child entities:
+
+```typescript
+const newEntity = rootEntity.createChild("firstEntity");
+```
+
+Of course, entities can also be created directly. However, such entities are detached and will not appear in the scene until associated with an entity hierarchy tree.
+
+```typescript
+const newEntity = new Entity(engine, "firstEntity");
+rootEntity.addChild(newEntity);
+```
+
+### Deleting Entities
+
+When an entity is no longer needed in the scene, we can delete it:
+
+```typescript
+rootEntity.removeChild(newEntity);
+```
+
+It is worth noting that this method simply releases the object from the hierarchy tree and it will not be shown in the scene. To completely destroy it, additionally:
+
+```typescript
+newEntity.destroy();
+```
+### Finding Entities in the Scene
+
+#### Finding Entities by Name
+
+  ```typescript
+  const entity = scene.findEntityByName("entityName");
+  ```
+#### Finding Entities by Path
+
+  ```typescript
+  const entity = scene.findEntityByPath("parent/child/grandson");
+  ```
+
+### Finding Child Entities
+
+When the parent entity is known, we typically obtain child entities through the parent entity:
+
+```typescript
+const childrenEntity = newEntity.children;
+```
+
+If you know the specific index of the child entity within the parent, you can directly use [getChild](/apis/core/#Entity-getChild):
+
+```typescript
+newEntity.getChild(0);
+```
+
+If the index of the child entity is unclear, [findByName](/apis/core/#Entity-findByName) can be used to find by name. `findByName` searches not only for child entities but also for grandchild entities.
+
+```typescript
+newEntity.findByName("model");
+```
+
+If there are entities with the same name, [findByPath](/apis/core/#Entity-findByPath) can be used to search step by step by inputting the path. Utilizing this API can also enhance search efficiency to some extent.
+
+```typescript
+newEntity.findByPath("parent/child/grandson");
+```
+
+### Status
+
+When temporarily not using an entity, it can be deactivated by calling the entity's [isActive](/apis/core/#Entity-isActive), and all components under the entity will be **disabled**.
+
+```typescript
+newEntity.isActive = false;
+```

@@ -1,0 +1,20 @@
+{
+  "license": "MIT (galacean/engine LICENSE, which covers the docs/ folder in the same repo)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/galacean/engine",
+      "ref": "v1.6.13",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "docs/en",
+        "!docs/en/interface",
+        "!docs/en/how-to-contribute.mdx",
+        "!docs/en/AI",
+        "!docs/en/art"
+      ]
+    }
+  ]
+}
