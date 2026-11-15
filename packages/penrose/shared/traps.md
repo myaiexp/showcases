@@ -122,3 +122,28 @@ Found while building this gallery. Read before building an example, and add to i
   nothing without `repeatable`: non-repeatable matching refuses two style variables on one Substance literal.
 - ref/style/selectors.md says `match_id` and `match_total` can be overwritten. `override match_id = match_total + 1 - match_id`
   is "cyclic variable assignments" on 3.3.1; read them into a new local (`rank = match_total + 1 - match_id`) instead.
+
+## Computation functions (3.3.1)
+
+- `round` throws "rounding not supported" in `optimize()`, even on a constant. `floor`, `ceil`, `trunc` and `sign` work, also on
+  sampled values. `asin` crashes the compiled energy (`WebAssembly.compile(): … expected 1 elements on the stack`), so no example
+  uses it; `acos`, `atan` and the hyperbolic ones are fine. `acos`/`atanh` give NaN outside their domain, so bound the argument.
+- `rotateBy(v, theta)` says degrees, counterclockwise; it takes radians and turns clockwise. `atan2(x, y)` is the angle of the
+  point (x, y) (it calls `atan2(y, x)`), `angleOf(v)` the same for a vector. `rot90` turns counterclockwise.
+- `count` takes a plain number list: a list of points fails ("expects ℝⁿ"). Bracket lists `[a, b]` are lists, not vectors: they
+  cannot be added to `repeat(n, k)`; write a tuple `(a, b, c, d, e)` for that. A call cannot be indexed: `f(x)[0]` is a
+  syntax error, assign the result to a field first.
+- `in`, `out`-style words: `t.in = …` is a syntax error (`in` is a keyword). `t.from` is too. A shape field named like an earlier
+  vector field (`t.u` the vector, then `t.u = Line {…}`) is "cyclic variable assignments".
+- A number cannot become a string in Style, so a computed value cannot go in a `Text`; draw it (a bar, a radius, a marker).
+- `signedDistance` accepts no Group; use `signedDistanceGroup([a, b, c], p)`. `closestPoint`, `closestSilhouettePoint`, `rayIntersect`
+  and `rayIntersectNormal` accept Group, Ellipse (not `signedDistance`) and Polyline. A ray that misses returns its own start
+  point (`rayIntersectNormal`: (0, 0), `rayIntersectDistance`: Infinity, so wrap it in `min(…, cap)`). `closestPointCircle` and
+  `closestSilhouettePoint` of a circle give NaN for a query point at its centre.
+- `unitMark(line, normalLine, padding)` shifts away from the *negated* direction of `normalLine`; `unitMark2(pts, "start"|"end", size)`
+  caps one end. `connectPaths` adds a line between the pieces, `concatenatePaths` keeps the second `M` (a gap), `joinPaths` drops it
+  (so it only suits paths that already meet). `normalVectors` of a 2D curve is the tangent turned a quarter-turn to the left;
+  `offsetCurve` with a positive magnitude is inward for a counterclockwise curve. `binormalVectors` and 3D `normalVectors` need
+  3-vectors, and a Polyline cannot hold 3-vectors (project them first).
+- Curve measures: `encourage minimal(elasticEnergy(pts, false))` and the like work on a list of free points; start a polygon as
+  free radii at fixed angles (always simple) rather than free points. `curvatures` is signed (positive counterclockwise).
