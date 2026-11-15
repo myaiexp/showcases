@@ -1,4 +1,4 @@
-// css-doodle example: 2400 letter cells scattered over a curve with @plot.scatter
+// 2400 letter cells scattered over a curve with @plot.scatter
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

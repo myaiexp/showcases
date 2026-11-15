@@ -1,4 +1,4 @@
-// css-doodle example: beforeUpdate records the outgoing seed; Back restores it
+// beforeUpdate records the outgoing seed; Back restores it
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';
 import { createStage } from '../../shared/stage.ts';

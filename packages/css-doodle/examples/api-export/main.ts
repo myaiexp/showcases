@@ -1,4 +1,4 @@
-// css-doodle example: export() gives SVG markup and, with detail, a PNG blob
+// export() gives SVG markup and, with detail, a PNG blob
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';
 import { createStage } from '../../shared/stage.ts';

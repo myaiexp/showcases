@@ -54,6 +54,8 @@ declare module 'css-doodle/parser' {
 declare module 'css-doodle/component' {
   export const CSSDoodle: CustomElementConstructor;
   export function define(name: string, element?: CustomElementConstructor): void;
+  /** Registers css-doodle if needed and returns a new element with `code` as its content. */
+  export function create(code?: string): HTMLElement;
 }
 
 declare module '@css-doodle/addons/*';

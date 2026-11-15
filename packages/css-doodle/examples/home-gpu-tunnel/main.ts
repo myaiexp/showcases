@@ -1,4 +1,4 @@
-// css-doodle example: a raymarched tunnel written in @pattern, animated by time t
+// a raymarched tunnel written in @pattern, animated by time t
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 

@@ -1,4 +1,4 @@
-// css-doodle example: pause() and resume() a doodle's CSS animations
+// pause() and resume() a doodle's CSS animations
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';
 import { createStage } from '../../shared/stage.ts';
