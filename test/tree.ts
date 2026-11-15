@@ -41,8 +41,17 @@ async function importDefault<T>(path: string): Promise<T> {
   return mod.default;
 }
 
-export function packageSlugs(): string[] {
-  return dirs(PACKAGES);
+/**
+ * Every package on disk, or only the comma-separated ones in `only`. `pnpm check:pkg`
+ * passes its scope through SHOWCASES_PACKAGES, so the integrity test checks just those.
+ */
+export function packageSlugs(only: string = process.env['SHOWCASES_PACKAGES'] ?? ''): string[] {
+  const all = dirs(PACKAGES);
+  const wanted = only.split(',').map((s) => s.trim()).filter(Boolean);
+  if (wanted.length === 0) return all;
+  const missing = wanted.filter((slug) => !all.includes(slug));
+  if (missing.length > 0) throw new Error(`SHOWCASES_PACKAGES names no such package: ${missing.join(', ')}`);
+  return all.filter((slug) => wanted.includes(slug));
 }
 
 export async function loadPackage(slug: string): Promise<PackageOnDisk> {

@@ -1,0 +1,22 @@
+/* makeTemplate: source figure and templated figure side by side */
+[data-example='plotly-js/fn-make-template'] {
+  .pair {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    width: 100%;
+  }
+  .pair > .pl-graph {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+  @media (min-width: 720px) {
+    .pair {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .pair > .pl-bar {
+      flex-basis: 100%;
+    }
+  }
+}

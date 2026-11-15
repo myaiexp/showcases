@@ -11,7 +11,8 @@ from. Comparisons with notable community examples live apart, in
 ```sh
 pnpm install
 pnpm dev        # local gallery
-pnpm check      # types, tests, build
+pnpm check:pkg <pkg>  # one package: types and tests
+pnpm check      # whole repo: types, tests, build
 ```
 
 How a package and its examples are laid out: [docs/pattern.md](docs/pattern.md).

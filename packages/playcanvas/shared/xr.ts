@@ -7,8 +7,12 @@ import type { Panel } from './panel.ts';
 import { createStage, type Stage, type StageOptions } from './stage.ts';
 import { checkerTexture } from './textures.ts';
 
-/** True when the browser exposes WebXR at all. Reading navigator.xr never throws. */
-export const hasWebXr = (): boolean => typeof navigator !== 'undefined' && !!navigator.xr;
+/**
+ * True when the browser exposes WebXR at all. An `in` test, because `navigator.xr` is
+ * typed only by @types/webxr, which this package does not import: the full repo check
+ * saw it through another package's dependency, the playcanvas-only check does not.
+ */
+export const hasWebXr = (): boolean => typeof navigator !== 'undefined' && 'xr' in navigator;
 
 export interface XrSceneOptions extends StageOptions {
   /** Orbit target, in metres above the floor; default the middle of the play area. */

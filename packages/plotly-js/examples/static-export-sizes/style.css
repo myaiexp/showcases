@@ -1,0 +1,11 @@
+[data-example='plotly-js/static-export-sizes'] {
+  .se-holder {
+    margin-top: 0.6rem;
+    overflow: auto;
+  }
+  .se-holder img {
+    display: block;
+    height: auto;
+    border: 1px solid rgba(160, 170, 190, 0.35);
+  }
+}

@@ -39,7 +39,13 @@ const pizzicatoEntry = {
 export default defineConfig({
   plugins: [threeAddonsOnWebgpu, pizzicatoEntry],
   resolve: {
-    alias: { '@/': fileURLToPath(new URL('./src/', import.meta.url)) },
+    alias: [
+      { find: '@/', replacement: fileURLToPath(new URL('./src/', import.meta.url)) },
+      // plotly.js's `main` is its CommonJS source tree (hundreds of modules, stackgl shims,
+      // an inlined MapLibre worker). Its own built bundle is what the docs load from a
+      // <script> tag; TypeScript still reads the types from lib/index.d.ts.
+      { find: /^plotly\.js$/, replacement: 'plotly.js/dist/plotly.min.js' },
+    ],
   },
   // Relative asset URLs + hash routing: the build runs under any subpath with no rewrites.
   base: './',

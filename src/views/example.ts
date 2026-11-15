@@ -11,6 +11,7 @@ import {
 } from '../registry.ts';
 import { formatRoute } from '../router.ts';
 import type { DocsManifest } from '../types.ts';
+import { creditLine } from '../ui/credit.ts';
 import { h } from '../ui/dom.ts';
 import { renderSources } from '../ui/source-view.ts';
 import { notFound } from './not-found.ts';
@@ -41,7 +42,7 @@ export function renderExample(
         header(ex),
         stage,
         pager(examples, index),
-        docsRefs(ex, manifest),
+        docsRefs(ex, manifest, pkg),
         sources,
       );
       stop = runExample(stage, `${pkg.slug}/${slug}`, () => loadMount(pkg.slug, slug), false).stop;
@@ -96,12 +97,13 @@ function pager(examples: ExampleEntry[], index: number): HTMLElement {
   );
 }
 
-function docsRefs(ex: ExampleEntry, manifest: DocsManifest): Node {
+function docsRefs(ex: ExampleEntry, manifest: DocsManifest, pkg: PackageEntry): Node {
   if (ex.docs.length === 0) return document.createComment('no docs refs (legacy example)');
   return h(
     'section',
     { class: 'sc-docs-refs' },
     h('h2', { class: 'sc-h2' }, 'Built from'),
+    pkg.credit ? creditLine(pkg.credit) : null,
     h(
       'ul',
       {},

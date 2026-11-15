@@ -41,7 +41,15 @@ Details and the reasoning: [docs/pattern.md](docs/pattern.md) § Purity.
 
 ## Commands
 
-- `pnpm dev`: dev server. `pnpm check` runs types, tests and the build.
+- `pnpm dev`: dev server.
+- `pnpm check:pkg [<pkg>...]`: **what builders run.** It type-checks only those packages
+  (about 0.5 GB at most) and runs their integrity checks and their `test/<pkg>-*.test.ts`
+  files. With no args, it works out the scope from the branch's changes against master;
+  a `src/` or `tsconfig.json` change brings in the whole-repo tsc. It never builds.
+- `pnpm check`: the whole repo (tsc ~4 GB, vite build ~6 GB). Each heavy step queues on a
+  lock shared by every worktree. Run it only after changing shared config. CI and
+  deploy's type-check gate run the whole-repo check on every land. Details:
+  [docs/pattern.md](docs/pattern.md) § Checking.
 - `pnpm new-package <slug> <npm> <Category>`, then `pnpm new-example <pkg> <slug> "<Title>" "<Section>"`.
 - `pnpm vendor-docs <pkg>`: (re)fetch a package's docs from its `docs/SOURCE.json`.
 
@@ -163,6 +171,10 @@ GitHub Pages. No service on the VPS.
   `stage.own(new Vizzu(stage.element, { style: darkStyle }))`; steps run through `stage.story()`,
   which loops and rewinds via `chart.store()`. tsconfig `paths` maps `vizzu` to the type-only
   `shared/vizzu-types.d.ts`, because the library's own shorthand `animate()` types never apply.
+- Plotly.js: build on `packages/plotly-js/shared/stage.ts` (`createStage`, trap list); every example writes
+  its whole `Plotly.newPlot(stage.div, data, {template: stage.template, …}, stage.config)` call. Data comes
+  from `shared/data.ts` (the docs' plotly/datasets files, bundled); geo maps `await loadGeoAssets()`; tile
+  maps use `shared/tiles.ts` (`darkMapStyle`, `landLayers`) and never draw map text (no glyphs offline).
 - AntV Infographic: build on `packages/infographic/shared/stage.ts` (`createStage`, trap list). Setup swaps the
   library's CDN fonts for bundled stand-ins and answers every icon/illus keyword offline; never `ref:search:`
   or an off-page `ref:remote:`. `registerResourceLoader` is page-wide: fall back to `offlineResource` and restore

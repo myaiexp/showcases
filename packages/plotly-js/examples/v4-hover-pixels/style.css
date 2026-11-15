@@ -1,0 +1,13 @@
+/* Hover pixels: a custom tooltip placed from the event payload */
+[data-example='plotly-js/v4-hover-pixels'] {
+  .tip {
+    position: absolute;
+    pointer-events: none;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}

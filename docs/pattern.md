@@ -28,7 +28,9 @@ directory names: kebab-case, and permanent once published.
 
 - **`definePackage`**: `name`, `npm`, `tagline`, optional `about`, `category` (one of
   `CATEGORIES`), `homepage`, `docsUrl`, `repo`, `added`, and `sections`, the official docs'
-  chapter order. The package page groups examples by section in this order.
+  chapter order. The package page groups examples by section in this order. Optional
+  `credit` (text, url, license, licenseUrl) is the attribution a CC BY docs licence asks
+  for; the package page and every example's "Built from" list show it.
 - **`defineMeta`**:
   - `title`, `summary`, `section` (one of the package's sections), `tags`, `added`.
   - `docs`: the vendored files used, as keys of `docs/MANIFEST.json`.
@@ -100,14 +102,43 @@ fails on them. Animate with the library itself or `element.animate()`.
 1. Read the vendored docs for one feature, and only those (§ Purity).
 2. `pnpm new-example <pkg> <slug> "<Title>" "<Section>"`.
 3. Write `main.ts`. In `meta.ts` fill `summary`, `tags` and `docs`, the files you read.
-4. `pnpm check`. The integrity test (`test/integrity.test.ts`) checks the section,
-   that each docs ref is in MANIFEST, that pure examples have refs, CSS scoping and
-   unique titles.
+4. `pnpm check:pkg <pkg>` (§ Checking). The integrity test (`test/integrity.test.ts`)
+   checks the section, that each docs ref is in MANIFEST, that pure examples have refs,
+   CSS scoping and unique titles.
 5. Look at the card and the full view in `pnpm dev`.
 
 A rich package aims at hundreds of examples. Aim for one example per documented feature
 or option, plus combinations the docs describe. Each example should show one idea
 clearly, not a kitchen sink.
+
+## Checking
+
+`pnpm check` over the whole repo costs memory in proportion to the number of galleries.
+With 35 of them, tsc peaks around 4 GB and `vite build` around 6 GB. Two builders
+running it at once pushed the VPS into an out-of-memory kill. So the work is split:
+
+- **`pnpm check:pkg [<pkg>...]`** (`scripts/check.ts`) is the builder's check. Each
+  package gets its own tsconfig, written to `node_modules/.cache/showcases-check/`. That
+  tsconfig extends the root one and includes only `packages/<pkg>` and `src/**/*.d.ts`,
+  so the compiler options are the same and only the file set is smaller. The integrity
+  test then runs for those packages only (`SHOWCASES_PACKAGES`), with any
+  `test/<pkg>-*.test.ts`. With no args, the scope comes from the branch's diff against
+  master plus untracked files. A `packages/<pkg>/` path adds that package. A path under
+  any other root tsconfig `include` entry adds the app-shell type-check and every test.
+  `tsconfig.json`, or anything under a directory the tsconfig `paths` point into (`src`,
+  through `@/*`), brings in the whole-repo tsc, because every package imports it. An
+  empty diff is an error, not a pass. Dependency changes (`package.json`, the lockfile)
+  only print a note; the whole-repo check sees their importers.
+- **`pnpm check`** runs the whole-repo tsc, every test and the build. Each step queues on
+  `flock` over `showcases-check.lock` in the git common dir, which every worktree shares.
+  The tsc step goes through helm's `build-lock` where it exists, which runs it on another
+  machine.
+- **CI** (`check:types`, `test`, `build`) and deploy's type-check gate always check the
+  whole repo. A scoped check never replaces them, so anything it misses still fails there.
+
+What only the whole-repo check sees: one package's global declarations reaching another
+package. That is a hidden dependency, so fix it in the package that relies on it, the way
+`packages/playcanvas/shared/xr.ts` stopped leaning on another package's `@types/webxr`.
 
 ## Purity
 
