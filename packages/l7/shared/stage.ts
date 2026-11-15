@@ -19,6 +19,18 @@ import './stage.css';
  * - The MapTheme control's thumbnails are remote images; it stays out.
  * - Cards have no pointer. Animate with `stage.every()`/`stage.frame()` or layer `animate`,
  *   or fake input with `stage.ghost(scene)` (mousemove for hover, pointerdown/up for click).
+ * - Scene mouse events (`scene.on('mousemove' | 'click' | …)`) are the map engine's events:
+ *   `{ point: {x, y}, lngLat, originalEvent }`, with no `x`/`y` of their own. Layer events
+ *   (`layer.on('click')`) are L7's: `{ x, y, lngLat, feature, featureId }`. Errors thrown in a
+ *   scene handler are caught and logged as "Error in map event handler".
+ * - `scene.addImage` returns a Promise: await it before adding a layer that uses the image.
+ *   `removeImage` only empties the registry (hasImage turns false); icons already drawn stay.
+ * - Line layers, docs claims wrong for 2.29.1: style `arrow` ({enable, arrowWidth, …}) is read
+ *   by no model; `borderWidth`/`borderColor` and `linearDir` work only on shape('line'), not
+ *   arcs; walls have no dashArray. Great circles across ±180° draw a straight band over the
+ *   map (shared/line-data.ts `NO_DATELINE` avoids them). Units: wall size 40 is a sensible wall
+ *   at zoom 3–4 (2000 fills the screen; with heightfixed ~3e6); line size [w, h] and
+ *   raisingHeight lift ~100 visibly. Flowline arrowheads are large: sizes 3–4 read best.
  * - tsconfig has noUncheckedIndexedAccess: guard indexed reads.
  */
 

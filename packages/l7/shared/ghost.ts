@@ -11,6 +11,14 @@ export interface Ghost {
    * lasts 80 ms. Don't move in the same tick: L7 drops a pick while another one is running.
    */
   click(): void;
+  /** Two taps and a DOM dblclick: L7's dblclick and the map engine's dblclick fire. */
+  dblclick(): void;
+  /**
+   * Presses at the first point, moves through the rest every stepMs and releases at the last:
+   * L7's dragstart/dragging/dragend fire, and the map engine pans unless dragging is disabled.
+   * Resolves once released.
+   */
+  drag(path: readonly (readonly [number, number])[], stepMs?: number): Promise<void>;
   /** Leaves the map: hover highlights clear. */
   leave(): void;
   remove(): void;
@@ -19,8 +27,9 @@ export interface Ghost {
 /**
  * L7's InteractionService listens for mousemove on the map container (hover, mousemove,
  * mouseenter/out) and recognises taps with Hammer from pointer events, so a click is a
- * pointerdown and pointerup at the same point. No DOM click is sent, so the card's <a>
- * never sees one. A dot shows where the ghost is.
+ * pointerdown and pointerup at the same point; the map engine's scene click listens for the
+ * DOM click, which is sent too (stage.ghost() cancels untrusted clicks so the card's <a>
+ * never navigates). A dot shows where the ghost is.
  */
 export function createGhost(container: HTMLElement, scene: Scene, visible: boolean): Ghost {
   let x = 0;
@@ -76,9 +85,49 @@ export function createGhost(container: HTMLElement, scene: Scene, visible: boole
         pending.delete(up);
         pointer('pointerup', 0);
         mouse('mouseup');
+        // The map engine's own click (scene.on('click')) listens for the DOM event; the
+        // stage cancels its default so the card's <a> doesn't navigate.
+        mouse('click');
       }, 80);
       pending.add(up);
       dot.animate([{ transform: 'scale(1.8)' }, { transform: 'scale(1)' }], { duration: 300 });
+    },
+    dblclick() {
+      this.click();
+      const second = setTimeout(() => {
+        pending.delete(second);
+        this.click();
+        const dbl = setTimeout(() => {
+          pending.delete(dbl);
+          mouse('dblclick');
+        }, 100);
+        pending.add(dbl);
+      }, 150);
+      pending.add(second);
+    },
+    async drag(path, stepMs = 40) {
+      const [first, ...rest] = path;
+      if (!first) return;
+      this.move(first[0], first[1]);
+      pointer('pointerdown', 1);
+      mouse('mousedown', { buttons: 1 });
+      for (const [nx, ny] of rest) {
+        await new Promise<void>((resolve) => {
+          const t = setTimeout(() => {
+            pending.delete(t);
+            resolve();
+          }, stepMs);
+          pending.add(t);
+        });
+        x = nx;
+        y = ny;
+        dot.style.left = `${x}px`;
+        dot.style.top = `${y}px`;
+        pointer('pointermove', 1);
+        mouse('mousemove', { buttons: 1 });
+      }
+      pointer('pointerup', 0);
+      mouse('mouseup');
     },
     leave() {
       dot.style.opacity = '0';
