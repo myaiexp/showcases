@@ -5,7 +5,7 @@ import { createStage } from '../../shared/stage.ts';
 import { rebuilder } from '../../shared/rebuild.ts';
 import { resetZoom } from '../../shared/reset-zoom.ts';
 import { CENTER, mesh } from '../../shared/data.ts';
-import { load } from '../../shared/load.ts';
+import { colors, paletteColor } from '../../shared/color.ts';
 
 type Mode = 'default' | 'slow' | 'padding' | 'off' | 'rect' | 'indices';
 
@@ -41,7 +41,10 @@ const mount: Mount = (el, ctx) => {
     current = mode;
     resetZoom(stage.div);
     const graph = build.adopt(new Graph(stage.div, { ...base, ...modes[mode].config }, build.device));
-    load(graph, data);
+    graph.setPointPositions(data.positions);
+    graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
+    graph.setLinks(data.links);
+    graph.render();
     stage.say(modes[mode].label);
   };
 

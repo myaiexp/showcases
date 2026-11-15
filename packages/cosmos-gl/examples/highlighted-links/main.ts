@@ -3,7 +3,8 @@ import { Graph } from '@cosmos.gl/graph';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { communities } from '../../shared/data.ts';
-import { linksWithin, keepFramed, load, pointsOf } from '../../shared/load.ts';
+import { linksWithin, keepFramed, pointsOf } from '../../shared/load.ts';
+import { colors, paletteColor } from '../../shared/color.ts';
 
 const mount: Mount = (el, ctx) => {
   const stage = createStage(el, ctx, { hint: 'Links and points are highlighted independently of each other.' });
@@ -22,7 +23,10 @@ const mount: Mount = (el, ctx) => {
       stage.device(),
     ),
   );
-  load(graph, data);
+  graph.setPointPositions(data.positions);
+  graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
+  graph.setLinks(data.links);
+  graph.render();
   keepFramed(stage, graph);
 
   let withPoints = false;

@@ -3,8 +3,8 @@ import { Graph } from '@cosmos.gl/graph';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { communities } from '../../shared/data.ts';
-import { colors } from '../../shared/color.ts';
-import { keepFramed, load } from '../../shared/load.ts';
+import { colors, paletteColor } from '../../shared/color.ts';
+import { keepFramed } from '../../shared/load.ts';
 
 type Mode = 'equal' | 'weak' | 'strong';
 
@@ -28,7 +28,10 @@ const mount: Mount = (el, ctx) => {
       stage.device(),
     ),
   );
-  load(graph, data);
+  graph.setPointPositions(data.positions);
+  graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
+  graph.setLinks(data.links);
+  graph.render();
   graph.setLinkColors(colors(between.length, (l) => (between[l] ? [1, 0.6, 0.25, 0.9] : [0.45, 0.5, 0.6, 0.5])));
   graph.render();
   keepFramed(stage, graph, 3000);

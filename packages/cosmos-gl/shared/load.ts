@@ -1,16 +1,7 @@
-// Loads a GraphData into a graph: positions, group colours, links, first render
+// Group lookups (points, links of a group) and keeping a layout in frame
 import type { Graph } from '@cosmos.gl/graph';
 import type { GraphData } from './data.ts';
 import type { Stage } from './stage.ts';
-import { colors, paletteColor } from './color.ts';
-
-/** Sets positions, one palette colour per `group`, and links, then calls render(). */
-export function load(graph: Graph, data: GraphData, byGroup = true): void {
-  graph.setPointPositions(data.positions);
-  if (byGroup) graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
-  graph.setLinks(data.links);
-  graph.render();
-}
 
 /** Indices of the points whose group is `g`. */
 export function pointsOf(data: GraphData, g: number): number[] {

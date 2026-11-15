@@ -3,7 +3,7 @@ import { Graph } from '@cosmos.gl/graph';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { communities } from '../../shared/data.ts';
-import { load } from '../../shared/load.ts';
+import { colors, paletteColor } from '../../shared/color.ts';
 
 const mount: Mount = (el, ctx) => {
   const stage = createStage(el, ctx, { hint: 'Higher is closer. The reading comes from getZoomLevel().' });
@@ -21,7 +21,10 @@ const mount: Mount = (el, ctx) => {
       stage.device(),
     ),
   );
-  load(graph, data);
+  graph.setPointPositions(data.positions);
+  graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
+  graph.setLinks(data.links);
+  graph.render();
   graph.start(0.4);
 
   let level = 2;

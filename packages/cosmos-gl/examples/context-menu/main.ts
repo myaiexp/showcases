@@ -5,8 +5,8 @@ import { createStage } from '../../shared/stage.ts';
 import { ghost } from '../../shared/ghost.ts';
 import { eventLog } from '../../shared/log.ts';
 import { web } from '../../shared/static-layouts.ts';
-import { load } from '../../shared/load.ts';
 import './style.css';
+import { colors, paletteColor } from '../../shared/color.ts';
 
 interface Item {
   label: string;
@@ -100,7 +100,10 @@ const mount: Mount = (el, ctx) => {
       stage.device(),
     ),
   );
-  load(graph, data);
+  graph.setPointPositions(data.positions);
+  graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
+  graph.setLinks(data.links);
+  graph.render();
   log('Waiting for a right-click');
 
   if (stage.preview) {

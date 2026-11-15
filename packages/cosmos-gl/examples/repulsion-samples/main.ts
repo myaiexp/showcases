@@ -3,8 +3,9 @@ import { Graph } from '@cosmos.gl/graph';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { communities, scatter } from '../../shared/data.ts';
-import { keepFramed, load } from '../../shared/load.ts';
+import { keepFramed } from '../../shared/load.ts';
 import { tune } from '../../shared/tune.ts';
+import { colors, paletteColor } from '../../shared/color.ts';
 
 const mount: Mount = (el, ctx) => {
   const stage = createStage(el, ctx, { hint: 'Above 4,096 points close neighbours are sampled. Fewer samples are cheaper and noisier.' });
@@ -24,7 +25,10 @@ const mount: Mount = (el, ctx) => {
       stage.device(),
     ),
   );
-  load(graph, data);
+  graph.setPointPositions(data.positions);
+  graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
+  graph.setLinks(data.links);
+  graph.render();
   keepFramed(stage, graph, 3500);
 
   tune(stage, graph, {

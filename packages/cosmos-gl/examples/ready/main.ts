@@ -5,7 +5,7 @@ import { createStage } from '../../shared/stage.ts';
 import { eventLog } from '../../shared/log.ts';
 import { rebuilder } from '../../shared/rebuild.ts';
 import { tree } from '../../shared/data.ts';
-import { load } from '../../shared/load.ts';
+import { colors, paletteColor } from '../../shared/color.ts';
 
 const mount: Mount = (el, ctx) => {
   const stage = createStage(el, ctx, { hint: 'Build the graph again: the log shows what happens before and after it is ready.' });
@@ -18,7 +18,10 @@ const mount: Mount = (el, ctx) => {
     const at = (): string => `${Math.round(performance.now() - t0)} ms`;
     const graph = rb.adopt(new Graph(stage.div, { pointDefaultSize: 7, linkDefaultColor: '#5a5f6a', fitViewDelay: 800 }, rb.device));
     log(`${at()}  new Graph(): isReady ${graph.isReady}`);
-    load(graph, data); // queued: the graph is not initialised yet
+    graph.setPointPositions(data.positions); // queued: the graph is not initialised yet
+    graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
+    graph.setLinks(data.links);
+    graph.render();
     log(`${at()}  setPointPositions, setLinks, render() called: isReady ${graph.isReady}`, 'warn');
     graph.ready.then(
       () => {

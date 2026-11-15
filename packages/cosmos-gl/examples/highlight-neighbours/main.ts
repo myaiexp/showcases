@@ -4,7 +4,8 @@ import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { ghost } from '../../shared/ghost.ts';
 import { stars } from '../../shared/data.ts';
-import { keepFramed, load } from '../../shared/load.ts';
+import { keepFramed } from '../../shared/load.ts';
+import { colors, paletteColor } from '../../shared/color.ts';
 
 const mount: Mount = (el, ctx) => {
   const stage = createStage(el, ctx, { hint: 'Click a point. Click the background to clear.' });
@@ -36,7 +37,10 @@ const mount: Mount = (el, ctx) => {
       stage.device(),
     ),
   );
-  load(graph, data);
+  graph.setPointPositions(data.positions);
+  graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
+  graph.setLinks(data.links);
+  graph.render();
   keepFramed(stage, graph);
   stage.say('Click a point to highlight its neighbourhood');
 

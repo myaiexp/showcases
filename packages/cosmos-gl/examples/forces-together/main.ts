@@ -3,7 +3,8 @@ import { Graph } from '@cosmos.gl/graph';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { communities } from '../../shared/data.ts';
-import { keepFramed, load } from '../../shared/load.ts';
+import { keepFramed } from '../../shared/load.ts';
+import { colors, paletteColor } from '../../shared/color.ts';
 
 interface Mix {
   simulationGravity: number;
@@ -45,7 +46,10 @@ const mount: Mount = (el, ctx) => {
       stage.device(),
     ),
   );
-  load(graph, data);
+  graph.setPointPositions(data.positions);
+  graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
+  graph.setLinks(data.links);
+  graph.render();
   keepFramed(stage, graph, 3000);
 
   const sliders = new Map<keyof Mix, HTMLInputElement | null>();

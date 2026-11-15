@@ -3,7 +3,7 @@ import { Graph } from '@cosmos.gl/graph';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { communities } from '../../shared/data.ts';
-import { load } from '../../shared/load.ts';
+import { colors, paletteColor } from '../../shared/color.ts';
 
 type Force = 'none' | 'center' | 'gravity';
 
@@ -35,7 +35,10 @@ const mount: Mount = (el, ctx) => {
     'position:absolute;inset:0;pointer-events:none;background:' +
     'linear-gradient(#fff6,#fff6) center/1px 20px no-repeat,linear-gradient(#fff6,#fff6) center/20px 1px no-repeat';
   stage.div.append(cross);
-  load(graph, { ...data, positions: shifted() });
+  graph.setPointPositions(shifted());
+  graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
+  graph.setLinks(data.links);
+  graph.render();
 
   let force: Force = 'none';
   let strength = 1;

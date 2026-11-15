@@ -3,7 +3,8 @@ import { Graph } from '@cosmos.gl/graph';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 import { tree } from '../../shared/data.ts';
-import { keepFramed, load } from '../../shared/load.ts';
+import { keepFramed } from '../../shared/load.ts';
+import { colors, paletteColor } from '../../shared/color.ts';
 
 const mount: Mount = (el, ctx) => {
   const stage = createStage(el, ctx, { hint: 'The layout is paused. Each step() moves it forward by one tick.' });
@@ -13,7 +14,10 @@ const mount: Mount = (el, ctx) => {
   const graph = stage.own(
     new Graph(stage.div, { pointDefaultSize: 7, linkDefaultColor: '#5a5f6a', simulationDecay: 2500, fitViewDelay: 1200 }, stage.device()),
   );
-  load(graph, data);
+  graph.setPointPositions(data.positions);
+  graph.setPointColors(colors(data.count, (i) => paletteColor(data.group[i] ?? 0)));
+  graph.setLinks(data.links);
+  graph.render();
   keepFramed(stage, graph, 2500);
 
   const say = (): void => stage.say(`Paused: isSimulationRunning ${graph.isSimulationRunning}. step() called ${steps} time${steps === 1 ? '' : 's'}.`);
