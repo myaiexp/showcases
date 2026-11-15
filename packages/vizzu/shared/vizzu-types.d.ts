@@ -8,7 +8,10 @@
 // the plugin class, which declares no preset methods; types/presets.d.ts has them. Data.Set
 // leaves out the data cube form (pivotData plugin) and a filter-only `data: { filter }`, and
 // `initializing` resolves to the unwidened class. animate() always sets `.activated`
-// (vizzu.ts animate), which AnimCompleting types as optional.
+// (vizzu.ts animate), which AnimCompleting types as optional. on()/off() take only the
+// EventType enum, not the event-name strings the docs pass; draw events lack the
+// renderingContext the htmlCanvas plugin adds; feature.rendering lacks its RenderControlApi,
+// whose update() argument defaults to null (plugins/rendercontrol.ts).
 // tsconfig.json `paths` points the bare 'vizzu' specifier here for type checking only; Vite
 // bundles the real package.
 import type * as Anim from '../../../node_modules/vizzu/dist/types/anim.js';
@@ -21,6 +24,8 @@ import type * as Data from '../../../node_modules/vizzu/dist/types/data.js';
 import type * as PresetTypes from '../../../node_modules/vizzu/dist/types/presets.js';
 import type PresetsPlugin from '../../../node_modules/vizzu/dist/plugins/presets.js';
 import type { DataCube } from '../../../node_modules/vizzu/dist/plugins/unpivot.js';
+import type { EventHandler, EventMap, EventType } from '../../../node_modules/vizzu/dist/events.js';
+import type { Features } from '../../../node_modules/vizzu/dist/vizzu.js';
 import Base from '../../../node_modules/vizzu/dist/vizzu.js';
 
 export * from '../../../node_modules/vizzu/dist/index.js';
@@ -55,11 +60,24 @@ export type { DataCube };
 /** animate()'s result: completes with the chart; `activated` gives the AnimControl. */
 export type AnimCompleting = Promise<Vizzu> & { activated: Promise<AnimControl> };
 
+/** An event name as the docs write it: 'click', 'plot-axis-label-draw', … */
+export type EventName = `${EventType}`;
+/** Draw events (names ending in -draw or starting with draw-) carry the canvas context. */
+type WithContext<N extends EventName> = N extends `${string}-draw` | `draw-${string}`
+  ? { renderingContext: CanvasRenderingContext2D }
+  : unknown;
+/** The event object a handler for `N` receives. */
+export type EventOf<N extends EventName> = { [E in EventType]: `${E}` extends N ? EventMap[E] : never }[EventType] &
+  WithContext<N>;
+
 declare class Vizzu extends Base {
   initializing: Promise<Vizzu>;
   static get presets(): PresetsPlugin & PresetTypes.Presets;
   constructor(options: ConstructorParameters<typeof Base>[0], initState?: AnyTarget);
   animate(target: AnyAnimTarget, options?: AnyAnimOptions): AnimCompleting;
+  on<N extends EventName>(eventName: N, handler: EventHandler<EventOf<N>>): void;
+  off<N extends EventName>(eventName: N, handler: EventHandler<EventOf<N>>): void;
+  get feature(): Features & { rendering: { update(timeInMSecs?: number | null): void } };
 }
 
 export { Vizzu };

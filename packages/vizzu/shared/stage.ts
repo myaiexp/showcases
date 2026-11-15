@@ -26,6 +26,16 @@
 // - chart.style reads null for sizes still automatic, then strings like "40.000000px".
 // - config.orientation with measures on both axes and rectangles draws overlapping boxes from
 //   the origin; it reads only with area or line geometry.
+// - chart.on() handlers are not part of store(): a story that adds one removes it in a later
+//   step. A handler added while nothing animates shows after chart.feature.rendering.update().
+//   A handler that throws is swallowed (logged as "exception in event handler").
+// - plot-marker-draw events carry detail.relative: true, so detail.rect is in plot-relative
+//   units: convert with feature.coordSystem.toCanvas. draw-begin / draw-complete fire once per
+//   frame with no target.
+// - With feature('shorthands', false) only the long form runs: keyframe lists of { target },
+//   series as { name } objects. The story's rewind passes a snapshot, which needs them back on.
+// - feature('logging', true) prints nothing in the 0.18.0 npm build. chart.version() returns
+//   "0.18.0-1-d81a7e-[Apr 20 2026 12:43:09]".
 // - Tooltips need a real pointer over the canvas: synthetic events and caxi hovers show none.
 import type Vizzu from 'vizzu';
 import type { MountContext } from '@/types.ts';
