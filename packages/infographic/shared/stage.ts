@@ -49,10 +49,23 @@
 //   'Alibaba PuHuiTi'. The parser's only warning is implicit_template; unknown keys are errors.
 // - An editor adds window/document listeners (keys, wheel, click) that act only once it is
 //   activated by a click inside it; destroy() removes them.
+// - A template's `theme` field is ignored: only its themeConfig is read. A dark template
+//   carries `themeConfig: { ...getTheme('dark'), … }`.
+// - Palette colours must be hex: built-in charts put the colour into gradient ids, so rgb()/
+//   hsl() turn columns black (the custom-palette page's own example does this). A palette
+//   function gets ratio = index / total, so the last item never reaches 1.
+// - loadSVGResource parses XML: an <svg>/<symbol> string without the SVG xmlns draws nothing.
+// - createLayout / cloneElement move a child only if it takes x and y and passes them to a Group.
+// - The struct/item guides import LinearGradient, getColorPrimary, getItemComponent: none is
+//   exported. Use <linearGradient> in <Defs>, getThemeColors, and Items[level].
+// - createStage waits only for the bundled fonts: await a FontFace you add before rendering.
 import type { Infographic } from '@antv/infographic';
 import type { MountContext } from '@/types.ts';
+import { runCycle, STOPPED, type Step } from './cycle.ts';
 import { infographicReady } from './setup.ts';
 import './stage.css';
+
+export { STOPPED, type Step } from './cycle.ts';
 
 export type Tone = 'ok' | 'warn' | 'bad' | 'info';
 
@@ -61,15 +74,6 @@ export interface StageOptions {
   height?: number;
   /** One line under the box in the full view, such as "Double-click a label to edit it". */
   hint?: string;
-}
-
-export interface Step {
-  /** Caption while the step shows. */
-  say?: string;
-  /** Applies the step, usually one render() or update() call. */
-  run: () => unknown;
-  /** How long the step stays, ms. */
-  hold?: number;
 }
 
 export interface Stage {
@@ -99,8 +103,6 @@ export interface Stage {
   onDispose(fn: () => void): void;
   dispose(): void;
 }
-
-export const STOPPED = Symbol('stage disposed');
 
 const describe = (payload: unknown): string => {
   const list = Array.isArray(payload) ? payload : [payload];
@@ -168,25 +170,7 @@ export async function createStage(el: HTMLElement, ctx: MountContext, opts: Stag
       caption.dataset['tone'] = tone;
     },
     cycle(steps, hold) {
-      const pause = hold ?? (preview ? 1800 : 2600);
-      let paused = false;
-      const toggle = stage.button('Pause', () => {
-        paused = !paused;
-        if (toggle) toggle.textContent = paused ? 'Play' : 'Pause';
-      });
-      void (async () => {
-        for (let i = 0; !stage.disposed; i = (i + 1) % steps.length) {
-          const step = steps[i] as Step;
-          if (step.say) stage.say(step.say);
-          await step.run();
-          await stage.wait(step.hold ?? pause);
-          while (paused) await stage.wait(200);
-        }
-      })().catch((err: unknown) => {
-        if (err === STOPPED || stage.disposed) return;
-        console.error('infographic cycle failed', err);
-        stage.say(`Stopped: ${err instanceof Error ? err.message : String(err)}`, 'bad');
-      });
+      runCycle(stage, steps, hold);
     },
     every(ms, fn) {
       if (stage.disposed) return;

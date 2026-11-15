@@ -1,5 +1,5 @@
 // A template holding design, theme and themeConfig, then overridden by the syntax
-import { Infographic, registerTemplate } from '@antv/infographic';
+import { getTheme, Infographic, registerTemplate } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 
@@ -9,8 +9,10 @@ registerTemplate('showcase-sunset-cards', {
     item: 'compact-card',
     title: 'default',
   },
-  theme: 'dark',
+  // 0.2.20 reads only a template's themeConfig (its `theme` field is ignored), so the dark
+  // theme's settings travel inside themeConfig.
   themeConfig: {
+    ...getTheme('dark'),
     palette: ['#ff9f1c', '#ff5a5f', '#c77dff'],
   },
 });
