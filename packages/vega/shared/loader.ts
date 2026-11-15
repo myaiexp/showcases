@@ -12,11 +12,14 @@ import { dataText } from './data.ts';
 export function offlineLoader(): Loader {
   const base = vega.loader();
   const sanitize = base.sanitize.bind(base);
-  base.http = async (uri: string) => {
+  const local = async (uri: string): Promise<string> => {
     const text = await dataText(uri);
     if (text == null) throw new Error(`vega loader: ${uri} is not a vendored data file (no network here)`);
     return text;
   };
+  base.http = local;
+  // Under Node (the headless mount test) vega-loader treats a relative URL as a file path.
+  base.file = local;
   base.sanitize = async (uri, options) => {
     if (/^(data|blob):/.test(uri)) return { href: uri };
     if (/^(https?:)?\/\//.test(uri)) throw new Error(`vega loader: remote URL refused: ${uri}`);
