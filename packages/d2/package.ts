@@ -1,0 +1,51 @@
+// D2: diagram-as-code compiled and laid out in the browser by D2.js's WASM build
+import { definePackage } from '@/types.ts';
+
+export default definePackage({
+  name: 'D2',
+  npm: '@terrastruct/d2',
+  tagline: 'A text language for diagrams, compiled, laid out and rendered to SVG in the browser.',
+  about:
+    'D2 (Declarative Diagramming) turns text such as `x -> y: hello` into a laid-out SVG diagram. Shapes, connections and containers come first; then special objects (Markdown and code labels, SQL tables, UML classes, sequence diagrams, grids), themes, styles, sketch mode, variables, globs, and boards (layers, scenarios and steps) that export as one animated SVG. D2.js is the WASM build of the Go compiler with the dagre and ELK layout engines, run in a Web Worker. Every example here compiles its own D2 source in your browser; in the full view the source is editable and the diagram re-renders as you type. The docs follow D2 0.9 while D2.js 0.1.33 carries D2 0.7, so each feature was checked against the WASM, and the proprietary TALA layout stays out.',
+  category: 'Data/Viz',
+  homepage: 'https://d2lang.com',
+  docsUrl: 'https://d2lang.com/tour/intro',
+  repo: 'https://github.com/terrastruct/d2',
+  added: '2026-11-15',
+  // The tour sidebar's page order (d2-docs sidebars.ts), one section per page, then the
+  // C4 and ASCII feature posts and the D2.js README the tour has no page for.
+  sections: [
+    'Hello World',
+    'Shapes',
+    'Connections',
+    'Containers',
+    'Text & Code',
+    'Icons & Images',
+    'SQL Tables',
+    'UML Classes',
+    'Sequence Diagrams',
+    'Grid Diagrams',
+    'Themes',
+    'Styles',
+    'Classes',
+    'Dimensions',
+    'Positions',
+    'Sketch',
+    'Interactive',
+    'Fonts',
+    'Layouts',
+    'Strings',
+    'Variables',
+    'Globs',
+    'Comments',
+    'Overrides',
+    'Models',
+    'Legend',
+    'Composition',
+    'Linking',
+    'Imports',
+    'Exports',
+    'C4',
+    'D2.js API',
+  ],
+});

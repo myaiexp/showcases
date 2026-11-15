@@ -173,6 +173,9 @@ importers:
       '@tanstack/charts':
         specifier: 1.5.0
         version: 1.5.0(lit@3.3.3)(preact@10.29.8)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+      '@terrastruct/d2':
+        specifier: ^0.1.33
+        version: 0.1.33
       '@vfx-js/core':
         specifier: 1.6.0
         version: 1.6.0
@@ -1480,6 +1483,9 @@ packages:
 
   '@tanstack/virtual-core@3.19.11':
     resolution: {integrity: sha512-/5iHb0RHBvj8Di59FDs4ESNm45jls33aZAi4zccVXZjc/6ZvwQP6nzEYeT6weXjTf9E6/vrp2JhYWRyO+ZP13A==}
+
+  '@terrastruct/d2@0.1.33':
+    resolution: {integrity: sha512-eK5hyfGIJFolC7sUsiKvWdY9xGFctTe3d+PSijo09IYDso8psztC+A4SammizXtlwYZpnnW0AtDjfBYauceSeA==}
 
   '@turf/area@7.4.0':
     resolution: {integrity: sha512-B7q5f6QwKIxxbl4/L59lAYA+FF7h2hv6st96PuKue0TGCYGSxAG/lV8LHSPUSOuOrLywN4jytJcKK3vOFBs7Nw==}
@@ -5568,6 +5574,8 @@ snapshots:
       react-dom: 19.3.1(react@19.3.1)
 
   '@tanstack/virtual-core@3.19.11': {}
+
+  '@terrastruct/d2@0.1.33': {}
 
   '@turf/area@7.4.0':
     dependencies:
