@@ -11,6 +11,10 @@
 // - `isContiguous: true` on a dimension changes nothing visible in 0.18.
 // - A measure's `unit` shows on axis and marker labels ("60 k$"), not in the axis title.
 //   chart.data gives `unit: undefined` for a measure without one.
+// - `Vizzu.presets` is a getter that builds a new Presets object on every read, so it is
+//   never `===` to `chart.constructor.presets`, though both return the same configs.
+// - pie, donut and variableRadiusPie take no y; donut sets only the y range, so a y series
+//   left from the previous state stays and fills the hole: clear it in the step before.
 // - Presets never reset `sort`; waterfall colours by a gradient of the y measure, not by sign.
 // - The y-axis of a measure starts at 0: a measure in a narrow high band squashes its markers.
 // - Tooltips need a real pointer over the canvas: synthetic events and caxi hovers show none.
