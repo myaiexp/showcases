@@ -1,0 +1,49 @@
+/* Zod core kit: label and text rows */
+.zd-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+}
+.zd-fact {
+  display: grid;
+  grid-template-columns: minmax(5em, 11.5em) minmax(0, 1fr);
+  gap: 8px;
+  align-items: baseline;
+  padding: 2px 6px;
+  background: var(--bg-surface);
+  border-left: 2px solid var(--border);
+  overflow-wrap: anywhere;
+  b {
+    font-family: var(--font-mono);
+    color: var(--accent-text);
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+  }
+  small {
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--fg-3);
+  }
+  &[data-tone='bad'] {
+    border-left-color: var(--red);
+  }
+  &[data-tone='ok'] {
+    border-left-color: var(--green);
+  }
+}
+.zd-card .zd-fact {
+  grid-template-columns: var(--zd-label, 10em) minmax(0, 1fr);
+  padding: 1px 5px;
+  font-size: 11px;
+  span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  small {
+    display: none;
+  }
+}

@@ -1,0 +1,47 @@
+/* Zod batch D: schema variants over lists and objects, each input as one inline line */
+.zd-ic {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.zd-ic-row {
+  display: grid;
+  grid-template-columns: 1.4em minmax(0, 1fr);
+  padding: 2px 6px;
+  background: var(--bg-surface);
+  border-left: 2px solid var(--border);
+}
+.zd-ic-row[data-ok='true'] {
+  border-left-color: var(--green);
+}
+.zd-ic-row[data-ok='false'] {
+  border-left-color: var(--red);
+}
+.zd-ic-row b {
+  grid-row: span 2;
+}
+.zd-ic-row[data-ok='true'] b {
+  color: var(--green);
+}
+.zd-ic-row[data-ok='false'] b {
+  color: var(--red);
+}
+.zd-ic-in,
+.zd-ic-out {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.zd-ic-out {
+  color: var(--fg-3);
+  font-size: 0.9em;
+}
+.zd-ic-row[data-ok='true'] .zd-ic-out {
+  color: var(--fg-2);
+}
+.zd-full .zd-ic-in,
+.zd-full .zd-ic-out {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}

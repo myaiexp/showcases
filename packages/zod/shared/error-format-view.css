@@ -1,0 +1,43 @@
+/* Errors kit: formatted-error trees and text blocks */
+.ef-tree {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  line-height: 1.45;
+}
+.ef-row {
+  display: flex;
+  gap: 6px;
+  min-width: 0;
+  b {
+    color: var(--accent-text);
+    font-weight: 500;
+    flex: none;
+  }
+  span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  &[data-tone='bad'] span {
+    color: var(--red);
+  }
+  &[data-tone='dim'] {
+    color: var(--fg-3);
+    b {
+      color: var(--fg-3);
+    }
+  }
+}
+.ef-pre {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: var(--fg-1);
+}
+.zd-card .ef-tree,
+.zd-card .ef-pre {
+  font-size: 10.5px;
+  line-height: 1.35;
+}

@@ -1,0 +1,44 @@
+/* Primitives grid: one row per value, one column per schema */
+[data-example='zod/primitives-matrix'] {
+  .pm-grid {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 12px;
+    text-align: center;
+  }
+  .pm-grid th,
+  .pm-grid td {
+    padding: 2px 4px;
+    border-bottom: 1px solid var(--border);
+  }
+  .pm-grid thead td {
+    color: var(--fg-3);
+    font-size: 10px;
+  }
+  .pm-grid td:first-child {
+    text-align: left;
+    width: 24%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .pm-grid td[data-ok='true'] {
+    color: var(--green);
+    background: color-mix(in srgb, var(--green) 14%, transparent);
+    font-weight: 700;
+  }
+  .pm-grid td[data-ok='false'] {
+    color: var(--fg-3);
+    opacity: 0.5;
+  }
+  .pm-grid tr.pm-on td:first-child {
+    outline: 1px solid var(--accent);
+  }
+  .zd-card .pm-grid {
+    font-size: 10px;
+  }
+  .zd-card .pm-grid td {
+    padding: 0 3px;
+  }
+}

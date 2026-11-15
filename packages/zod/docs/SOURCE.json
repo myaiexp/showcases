@@ -1,5 +1,22 @@
 {
-  "license": "none found",
-  "redistribute": false,
-  "sources": []
+  "license": "MIT (colinhacks/zod LICENSE covers the repo: README and the zod.dev site source in packages/docs/content)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/colinhacks/zod",
+      "ref": "v4.6.7",
+      "paths": [
+        "packages/zod/README.md",
+        "LICENSE",
+        "packages/docs/content/meta.json",
+        "packages/docs/content/*.mdx",
+        "packages/docs/content/packages/*.mdx",
+        "packages/docs/content/v4/*.mdx",
+        "packages/docs/content/blog/zod-4-5.mdx",
+        "packages/docs/content/blog/zod-4-6.mdx",
+        "packages/docs/content/blog/introducing-z-compile.mdx"
+      ]
+    }
+  ]
 }

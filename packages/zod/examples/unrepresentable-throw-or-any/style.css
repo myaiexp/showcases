@@ -1,0 +1,31 @@
+/* A three-column table: the Zod type, what the default does, what "any" does */
+[data-example='zod/unrepresentable-throw-or-any'] {
+  .unr-table {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 3px 8px;
+    width: 100%;
+    font-size: 0.92em;
+    > * {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    code {
+      font-family: var(--font-mono);
+      color: var(--accent-text);
+    }
+    [data-tone='bad'] {
+      color: var(--red);
+    }
+    [data-tone='ok'] {
+      color: var(--green);
+      font-family: var(--font-mono);
+    }
+  }
+  .unr-head {
+    color: var(--fg-3);
+    font-size: 0.9em;
+  }
+}

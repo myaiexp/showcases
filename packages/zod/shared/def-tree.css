@@ -1,0 +1,39 @@
+/* Zod core kit: a schema definition drawn as an indented tree */
+.zd-dtree {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-mono, monospace);
+  font-size: 11.5px;
+  line-height: 1.45;
+  min-height: 0;
+  overflow: hidden;
+}
+.zd-dt-row {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  white-space: nowrap;
+  border-left: 2px solid var(--border);
+  padding-left: 6px;
+}
+.zd-dt-row[data-kind='check'] {
+  border-left-color: var(--yellow, var(--border));
+}
+.zd-dt-key {
+  color: var(--fg-3);
+}
+.zd-dt-key::after {
+  content: ':';
+}
+.zd-dt-type {
+  color: var(--accent, var(--fg));
+  font-weight: 600;
+}
+.zd-dt-row[data-kind='check'] .zd-dt-type {
+  color: var(--yellow, var(--fg-2));
+}
+.zd-dt-detail {
+  color: var(--fg-2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

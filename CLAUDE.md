@@ -148,3 +148,7 @@ GitHub Pages. No service on the VPS.
 - Wretch: build on `packages/wretch/shared/stage.ts` (`createStage`, trap list) and `shared/server.ts`, an
   in-memory server each chain reaches through `.fetchPolyfill(server.fetch)`, so nothing touches the network.
   Show the traffic with `wire` (requests flying), `timeline` (timing), `envelope` (what was sent), `chips`.
+- Zod: build on `packages/zod/shared/stage.ts` (`createStage`, trap list: many docs claims are wrong for
+  4.6.7) with `checkpoint`, `sampleRows`/`schemaTour`, `valueView`. `z.config()` is page-wide and messages
+  are built lazily: call it inside `error-config.ts` `keepConfig()` and read issues with `settle()`. Use
+  `z.registry()` per mount, never ids on `z.globalRegistry`.

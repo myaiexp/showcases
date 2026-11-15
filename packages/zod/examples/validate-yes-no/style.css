@@ -1,0 +1,44 @@
+/* Just yes or no: one validate() call per row */
+[data-example='zod/validate-yes-no'] {
+  .answers {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .answer {
+    display: flex;
+    gap: 2px;
+    align-items: baseline;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 2px 6px;
+    background: var(--bg-surface);
+    border-left: 2px solid var(--border);
+  }
+  .answer b {
+    flex-shrink: 0;
+  }
+  .answer code {
+    color: var(--accent-text);
+  }
+  .data {
+    color: var(--fg-2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .answer[data-ok='true'] {
+    border-left-color: var(--green);
+  }
+  .answer[data-ok='true'] b {
+    color: var(--green);
+  }
+  .answer[data-ok='false'] {
+    border-left-color: var(--red);
+  }
+  .answer[data-ok='false'] b {
+    color: var(--red);
+  }
+  .zd-card .answer code {
+    display: none;
+  }
+}

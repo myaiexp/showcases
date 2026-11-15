@@ -1,0 +1,12 @@
+/* Cyclic input: two trees side by side and what the parse kept of the loop */
+[data-example='zod/cyclic-input-parses'] {
+  .cy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    min-height: 0;
+  }
+  .cy-grid .zd-pane {
+    min-width: 0;
+  }
+}

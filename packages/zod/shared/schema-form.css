@@ -1,0 +1,77 @@
+/* Metadata kit: a small form with labels, hints, help and errors */
+.zd-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  min-width: 0;
+}
+.zd-form-row {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  grid-template-areas: 'label input' '. side';
+  gap: 1px 8px;
+  align-items: center;
+  border-left: 2px solid transparent;
+  padding-left: 4px;
+  &[data-on='true'] {
+    border-left-color: var(--accent);
+    background: var(--accent-glow);
+  }
+  &[data-bad='true'] .zd-form-input {
+    border-color: var(--red);
+  }
+}
+.zd-form-label {
+  grid-area: label;
+  color: var(--fg-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  b {
+    color: var(--red);
+  }
+}
+.zd-form-input {
+  grid-area: input;
+  min-width: 0;
+  font: inherit;
+  background: var(--bg-surface);
+  color: var(--fg-1);
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+  &[type='checkbox'] {
+    justify-self: start;
+  }
+}
+.zd-form-side {
+  grid-area: side;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 8px;
+  font-size: 0.88em;
+  min-width: 0;
+}
+.zd-form-side:empty,
+.zd-form-side:not(:has(:not(:empty))) {
+  display: none;
+}
+.zd-form-hint {
+  color: var(--orange);
+}
+.zd-form-help {
+  color: var(--fg-3);
+}
+.zd-form-err {
+  color: var(--red);
+}
+.zd-card .zd-form {
+  gap: 3px;
+}
+.zd-card .zd-form-side {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.zd-full .zd-form-row {
+  grid-template-columns: 150px minmax(0, 1fr);
+}

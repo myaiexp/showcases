@@ -1,60 +1,61 @@
-// JSON editor validated against a nested Zod schema, with path-aware issues
+// A nested order schema: deep issue paths, and a refine that checks the total
+import * as z from 'zod';
 import type { Mount } from '@/types.ts';
-import { PREVIEW_TEXTS, check } from './schema.ts';
-import './style.css';
+import { checkpoint } from '../../shared/checkpoint.ts';
+import { drive } from '../../shared/drive.ts';
+import { createStage } from '../../shared/stage.ts';
+import { plural } from '../../shared/widgets.ts';
 
-const mount: Mount = (el, { preview }) => {
-  const root = document.createElement('div');
-  root.className = preview ? 'root preview' : 'root';
-  el.append(root);
-  const editor = document.createElement('textarea');
-  editor.className = 'editor';
-  editor.spellcheck = false;
-  editor.readOnly = preview;
-  const output = document.createElement('div');
-  root.append(editor, output);
+const Item = z.object({
+  sku: z.string().min(1),
+  qty: z.number().int().positive(),
+  price: z.number().positive(),
+});
 
-  const render = (): void => {
-    const problems = check(editor.value);
-    output.replaceChildren();
-    if (problems.length === 0) {
-      const ok = document.createElement('div');
-      ok.className = 'all-good';
-      ok.textContent = 'Valid order: passes every rule, including the total check.';
-      output.append(ok);
-      return;
-    }
-    const ul = document.createElement('ul');
-    ul.className = 'issues';
-    for (const p of problems) {
-      const li = document.createElement('li');
-      li.className = 'issue';
-      const path = document.createElement('span');
-      path.className = 'path';
-      path.textContent = p.path;
-      const msg = document.createElement('span');
-      msg.textContent = p.message;
-      li.append(path, msg);
-      ul.append(li);
-    }
-    output.append(ul);
-  };
+const Order = z
+  .object({
+    customer: z.object({ name: z.string(), email: z.email() }),
+    items: z.array(Item).min(1),
+    total: z.number(),
+  })
+  // A rule across fields: the total must equal the sum of the items. `path` puts the
+  // issue on `total` instead of on the order as a whole.
+  .refine((o) => Math.abs(o.total - o.items.reduce((s, i) => s + i.qty * i.price, 0)) < 0.005, {
+    error: 'Total does not match the items',
+    path: ['total'],
+  });
 
-  let timer: ReturnType<typeof setInterval> | undefined;
-  if (preview) {
-    let i = 0;
-    const show = (): void => {
-      editor.value = PREVIEW_TEXTS[i++ % PREVIEW_TEXTS.length] ?? '';
-      render();
-    };
-    show();
-    timer = setInterval(show, 2500);
-  } else {
-    editor.value = PREVIEW_TEXTS[0] ?? '';
-    editor.addEventListener('input', render);
-    render();
-  }
-  return () => clearInterval(timer);
+const good = {
+  customer: { name: 'Ada', email: 'ada@example.com' },
+  items: [
+    { sku: 'TEA', qty: 2, price: 4.5 },
+    { sku: 'MUG', qty: 1, price: 12 },
+  ],
+  total: 21,
+};
+
+const SAMPLES = [
+  { label: 'valid order', value: good },
+  { label: 'bad quantity', value: { ...good, items: [good.items[0], { sku: 'MUG', qty: 1.5, price: 12 }] } },
+  { label: 'wrong total', value: { ...good, total: 25 } },
+  { label: 'bad email, empty sku', value: { ...good, customer: { name: 'Ada', email: 'ada@' }, items: [{ sku: '', qty: 2, price: 4.5 }], total: 9 } },
+];
+
+const mount: Mount = (el, ctx) => {
+  const stage = createStage(el, ctx, { hint: 'Break any field in the JSON: the issue names its exact path.' });
+  const check = checkpoint(stage.root, stage, { label: 'Order.safeParse', messages: !stage.preview });
+  drive(
+    stage,
+    SAMPLES,
+    (input) => {
+      const result = Order.safeParse(input);
+      check.show(input, result);
+      if (result.success) stage.say('✓ Valid order', 'ok');
+      else stage.say(`✗ ${plural(result.error.issues.length, 'issue')} at ${result.error.issues.map((i) => i.path.join('.')).join(', ')}`, 'bad');
+    },
+    { editor: stage.root, ms: 3000 },
+  );
+  return stage.dispose;
 };
 
 export default mount;

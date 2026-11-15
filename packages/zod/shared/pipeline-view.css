@@ -1,0 +1,65 @@
+/* Pipes kit: the stage rows of pipeline-view.ts */
+.pl {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.pl-row {
+  display: grid;
+  grid-template-columns: minmax(0, 11em) 1.4em minmax(0, 1fr);
+  align-items: baseline;
+  padding: 3px 6px;
+  background: var(--bg-surface);
+  border-left: 2px solid var(--border);
+}
+.zd-card .pl-row {
+  grid-template-columns: minmax(0, 8.5em) 1.2em minmax(0, 1fr);
+  padding: 2px 4px;
+}
+.pl-row[data-state='ok'] {
+  border-left-color: var(--green);
+}
+.pl-row[data-state='bad'] {
+  border-left-color: var(--red);
+}
+.pl-row[data-state='skipped'] {
+  opacity: 0.5;
+}
+.pl-start {
+  border-left-color: var(--accent);
+}
+.pl-label {
+  color: var(--accent-text);
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pl-start .pl-label {
+  color: var(--fg-3);
+  font-family: var(--font);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.pl-row[data-state='ok'] .pl-icon {
+  color: var(--green);
+}
+.pl-row[data-state='bad'] .pl-icon {
+  color: var(--red);
+}
+.pl-row[data-state='bad'] .pl-out {
+  color: var(--red);
+}
+.pl-out {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.zd-card .pl-out {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pl-row[data-state='skipped'] .pl-out {
+  color: var(--fg-3);
+}

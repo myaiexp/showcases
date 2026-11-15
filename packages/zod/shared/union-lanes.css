@@ -1,0 +1,54 @@
+/* Zod batch D: one lane per union option, each with its own verdict */
+.zd-lanes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85em;
+}
+.zd-lane-in {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  color: var(--fg-3);
+}
+.zd-lane {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) 1.2em minmax(0, 1.8fr);
+  gap: 6px;
+  align-items: baseline;
+  padding: 3px 6px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-left-width: 3px;
+}
+.zd-lane code {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.zd-lane[data-ok='true'] {
+  border-left-color: var(--green);
+}
+.zd-lane[data-ok='false'] {
+  border-left-color: var(--red);
+}
+.zd-lane[data-ok='skip'] {
+  opacity: 0.45;
+}
+.zd-lane-msg {
+  color: var(--fg-3);
+  overflow-wrap: anywhere;
+}
+.zd-lane[data-ok='true'] .zd-lane-msg {
+  color: var(--fg-1);
+}
+.zd-lane-end {
+  padding: 3px 6px;
+  font-weight: 600;
+}
+.zd-lane-end[data-ok='true'] {
+  color: var(--green);
+}
+.zd-lane-end[data-ok='false'] {
+  color: var(--red);
+}

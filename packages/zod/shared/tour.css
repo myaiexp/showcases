@@ -1,0 +1,85 @@
+/* Zod batch B: number strip and schema tour */
+.zd-strip {
+  display: flex;
+  gap: 2px;
+  align-items: stretch;
+}
+.zd-cell {
+  flex: 1;
+  min-width: 0;
+  height: 34px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 0.8em;
+  color: var(--fg-3);
+  position: relative;
+}
+.zd-full .zd-cell {
+  height: 56px;
+}
+.zd-cell[data-ok='true'] {
+  background: var(--green-bg, rgba(80, 200, 120, 0.25));
+  border-color: var(--green);
+  color: var(--fg-1);
+}
+.zd-cell span {
+  position: absolute;
+  bottom: -1.4em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.zd-strip {
+  margin-bottom: 1.4em;
+}
+.zd-cell.zd-probe {
+  outline: 2px solid var(--fg-1);
+  z-index: 1;
+}
+.zd-cell.zd-probe[data-probe='false'] {
+  outline-color: var(--red);
+}
+.zd-matrix {
+  display: grid;
+  gap: 2px;
+  align-items: stretch;
+}
+.zd-mhead,
+.zd-mlabel,
+.zd-mcell {
+  padding: 2px 6px;
+  background: var(--bg-surface);
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.zd-mhead {
+  color: var(--fg-3);
+  background: none;
+}
+.zd-mlabel {
+  font-family: var(--font-mono, monospace);
+}
+.zd-mcell {
+  border-left: 2px solid var(--border);
+}
+.zd-mcell[data-ok='true'] {
+  border-left-color: var(--green);
+  color: var(--green);
+}
+.zd-mcell[data-ok='false'] {
+  border-left-color: var(--red);
+  color: var(--red);
+}
+.zd-mcell .zd-leaf {
+  color: var(--fg-2);
+}
+.zd-mwhy {
+  display: block;
+  color: var(--fg-2);
+  font-size: 0.85em;
+  white-space: normal;
+}

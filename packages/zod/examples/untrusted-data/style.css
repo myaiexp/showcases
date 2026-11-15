@@ -1,0 +1,56 @@
+/* Guard a program from bad data: the incoming message feed */
+[data-example='zod/untrusted-data'] {
+  .feed {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .msg {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    gap: 8px;
+    align-items: center;
+    padding: 3px 6px;
+    background: var(--bg-surface);
+    border-left: 2px solid var(--border);
+  }
+  .msg[data-ok='true'] {
+    border-left-color: var(--green);
+  }
+  .msg[data-ok='false'] {
+    border-left-color: var(--red);
+  }
+  .raw {
+    color: var(--fg-2);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .out {
+    display: flex;
+    gap: 4px;
+    align-items: baseline;
+    min-width: 0;
+    overflow: hidden;
+  }
+  .msg[data-ok='true'] .out {
+    color: var(--fg-1);
+  }
+  .msg[data-ok='false'] .out {
+    color: var(--red);
+    white-space: nowrap;
+  }
+  .out .zd-issues {
+    min-width: 0;
+    overflow: hidden;
+  }
+  .out .zd-issues li {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .out .zd-where::after {
+    content: ': ';
+  }
+}

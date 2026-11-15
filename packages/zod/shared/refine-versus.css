@@ -1,0 +1,127 @@
+/* Refinements kit: the side-by-side columns of refine-versus.ts */
+.rv-input {
+  padding: 4px 8px;
+  background: var(--bg-surface);
+  border-left: 2px solid var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+}
+.zd-card .rv-input {
+  padding: 2px 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rv-tag {
+  margin-right: 8px;
+  color: var(--fg-3);
+  font-family: var(--font);
+  font-size: 0.78em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.rv-grid {
+  display: grid;
+  gap: 8px;
+  min-height: 0;
+}
+.zd-card .rv-grid {
+  gap: 4px;
+}
+.rv-col {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  padding: 6px 8px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.zd-card .rv-col {
+  padding: 3px 5px;
+}
+.rv-col[data-ok='true'] {
+  border-color: color-mix(in srgb, var(--green) 55%, var(--border));
+}
+.rv-col[data-ok='false'] {
+  border-color: color-mix(in srgb, var(--red) 55%, var(--border));
+}
+.rv-head {
+  color: var(--fg-2);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rv-codeblock {
+  color: var(--accent-text);
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.zd-card .rv-codeblock {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rv-stamp {
+  font-weight: 600;
+}
+.rv-col[data-ok='true'] .rv-stamp {
+  color: var(--green);
+}
+.rv-col[data-ok='false'] .rv-stamp {
+  color: var(--red);
+}
+.rv-out {
+  font-family: var(--font-mono);
+  overflow-wrap: anywhere;
+}
+.rv-issues {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.rv-issues li {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.rv-code {
+  align-self: flex-start;
+  padding: 0 4px;
+  background: var(--bg-elevated, var(--bg));
+  border: 1px solid var(--border);
+  color: var(--fg-3);
+  font-family: var(--font-mono);
+  font-size: 0.75em;
+}
+.rv-msg {
+  color: var(--fg-1);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+}
+.rv-more {
+  color: var(--fg-3);
+  font-size: 0.85em;
+}
+
+.rv-head,
+.rv-codeblock,
+.rv-stamp {
+  flex-shrink: 0;
+}
+.zd-card .rv-msg {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

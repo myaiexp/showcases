@@ -1,0 +1,56 @@
+/* Zod sample rows: one input per row, ✓ or ✗, and the output or the reason */
+/* --- Sample rows --- */
+.zd-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-height: 0;
+}
+.zd-rows-head,
+.zd-sample {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1.4em minmax(0, 1.3fr);
+  gap: 6px;
+  align-items: baseline;
+}
+.zd-rows-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.zd-sample {
+  padding: 1px 6px;
+  background: var(--bg-surface);
+  border-left: 2px solid var(--border);
+}
+.zd-sample[data-ok='true'] {
+  border-left-color: var(--green);
+}
+.zd-sample[data-ok='false'] {
+  border-left-color: var(--red);
+}
+.zd-in,
+.zd-out {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+.zd-sample[data-ok='true'] .zd-icon {
+  color: var(--green);
+}
+.zd-sample[data-ok='false'] .zd-icon {
+  color: var(--red);
+}
+.zd-reason {
+  color: var(--fg-2);
+}
+.zd-note {
+  color: var(--fg-3);
+  margin-left: 6px;
+  font-size: 0.85em;
+}
+.zd-full .zd-in,
+.zd-full .zd-out {
+  white-space: normal;
+}
