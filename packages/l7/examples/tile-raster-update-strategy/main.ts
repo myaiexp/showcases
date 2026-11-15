@@ -17,7 +17,7 @@ const mount: Mount = async (el, ctx) => {
   await stage.ready(scene);
 
   // A pretend latency makes the difference between the strategies visible.
-  serve(stage, 'l7demo-strategy', (url) => pngTile(tileOf(url)), { delay: 600 });
+  serve(stage, 'l7demo-strategy', (url) => pngTile(tileOf(url)), { delay: ctx.preview ? 300 : 600 });
 
   const make = (updateStrategy: 'realtime' | 'overlap' | 'replace'): ILayer =>
     new RasterLayer().source('l7demo-strategy://tiles', { parser: { type: 'rasterTile', updateStrategy } });
@@ -32,7 +32,8 @@ const mount: Mount = async (el, ctx) => {
     slider(stage.bar, 'map zoom', [1.5, 5, 0.2], 2.6, (z) => scene.setZoom(z));
   } else {
     set('overlap');
-    stage.every(1500, (i) => scene.setZoom(i % 2 ? 3.6 : 2.4));
+    // Long enough between zooms for the slow tiles to arrive before the next change.
+    stage.every(3500, (i) => scene.setZoom(i % 2 ? 3.4 : 2.6));
   }
 
   return () => stage.dispose();
