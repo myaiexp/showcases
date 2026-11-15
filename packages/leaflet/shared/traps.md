@@ -113,6 +113,11 @@ add to it when something bites.
   renderer. Group events are `LeafletPointerEvent`: read `e.propagatedFrom`.
 - The layers control fires `overlayadd`/`overlayremove`/`baselayerchange` for any add or remove
   of an entry's layer, from code too. `group-demo.ts` `pressEntry()` clicks an entry in cards.
+- `smoothFactor` is read when a line is projected: `setStyle({smoothFactor})` then `redraw()`.
+- `closestLayerPoint` takes a layer point and returns a `Point` with `.distance`. A Polygon drops
+  a last point equal to the first; a Polyline keeps it.
+- A union of path classes loses `radius` and makes `.on()` uncallable: type each Circle as its
+  own const, and arrays as `Path[]`.
 - `.lf-map` has `flex: 1`: an example that sets the map box's width also sets `flex: none`.
 - In a card, `stage.log()` writes the caption, so a `stage.say()` in a cycle overwrites it.
 
