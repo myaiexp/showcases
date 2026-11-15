@@ -1,0 +1,272 @@
+---
+order: 4
+title: AnimatorStateMachine
+type: Animation
+label: Animation
+---
+## Introduction
+
+The AnimatorStateMachine ([API](/apis/core/#AnimatorStateMachine)) is a tool used to control and manage animation transitions. You can use it to add various animation states and their transition rules, allowing characters or animated objects to switch naturally between different actions.
+
+### Main Components
+
+#### Animation State
+Represents a single state in the `AnimatorStateMachine`, i.e., the animation being played at a certain moment in the animation system, such as "Standing", "Running", or "Jumping". Each state has a corresponding `Animation Clip`. For the complete API, please refer to [AnimatorState](/apis/core/#AnimatorState).
+
+| Property | Description |
+| :------- | :------------------------------------------------------------------- |
+| Name          | Modify the name of the `AnimatorState`, which must be **unique** within the layer.           |
+| AnimationClip | Used to bind the `AnimationClip` asset, which stores the animation data of the model. |
+| WrapMode      | Whether the `AnimatorState` plays in a loop or once, the default is `Once`, which means it plays once.     |
+| Speed         | The playback speed of the `AnimatorState`, the default value is 1.0, the larger the value, the faster the animation speed.          |
+| StartTime     | The time from which the `AnimatorState` starts playing the `AnimationClip`, the time is the normalized time relative to the duration of the `AnimationClip`. The default value is 0, which means it starts playing from the beginning. For example, if the value is 1.0, it is the last frame of the `AnimationClip`.        |
+| EndTime       | The time at which the `AnimatorState` stops playing the `AnimationClip`, the time is the normalized time relative to the duration of the `AnimationClip`. The default value is 1.0, which means it plays to the end.                                                      |
+| [StateMachineScripts](/apis/core/#StateMachineScript)| Allows developers to write custom script logic to execute specific code during different events (such as state enter, exit, update, etc.) of the AnimatorStateMachine. It is similar to Script but specifically for the AnimatorStateMachine. |
+
+##### Three Special AnimatorState in the Editor
+`entry`: Represents the entry point of the AnimatorStateMachine. When entering the AnimatorStateMachine, it always enters `entry` first, and then jumps to other states according to the defined transition conditions. `entry` itself does not play animations; it mainly connects the starting point of the state machine to the initial  `AnimatorState` . Typically, you should connect it to the default state of the character or animated object, such as the character's `Idle` state.
+
+`any`: Allows any state in the AnimatorStateMachine to transition to the target state when specific conditions are met. This is useful for handling global events or emergency animations (such as being injured or dying).
+
+<Callout type="info">
+The `any` state has the highest priority, so use `any` with caution, as it can disrupt the normal flow of the current animation, potentially leading to unnatural animation transitions. Developers need to ensure that `any` is used only under clear conditions.
+</Callout>
+
+`exit`: Represents the exit point of the AnimatorStateMachine. When the state machine enters `exit`, it usually means the state machine ends. The state machine will re-enter the `entry` state.
+
+#### Animation Transition
+Used to define the transition rules and conditions between two `AnimatorState` in the `AnimatorStateMachine`. It determines when and how to switch from one `AnimatorState` to another. For the complete API, please refer to [AnimatorStateTransition](/apis/core/#AnimatorStateTransition).
+
+| Property | Description |
+| :------- | :---------------------------------------------------------|
+| Duration | The transition duration, the time is the normalized time relative to the target state, the default value is 0.25            |
+| Offset   | The forward offset time of the target state, the time is the normalized time relative to the target state, the default value is 0  |
+| ExitTime | The start time of the transition from the initial state, the time is the normalized time relative to the initial state, the default value is 0.75  |
+| Solo     | Makes the selected animation transition the only active state. Other animation transitions will be ignored. |
+| Mute     | Disables the selected animation transition |
+| Conditions | The conditions for the transition to pass. If there are multiple conditions, the transition will only start when all conditions are met. |
+
+Solo and Mute are usually used for debugging, helping developers test and debug the `AnimatorStateMachine` more efficiently.
+
+## Using the AnimatorStateMachine
+### Default Playback
+
+#### Editor Usage
+Connecting the `AnimatorState` to `entry` will automatically play the animation on it when you run the exported project, without needing to call `animator.play`. Click the `entity` bound to the `Animation Control Component` ([detailed introduction](/en/docs/animation/animator)) to preview the animation.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*0_DkSoSAhmUAAAAAAAAAAAAADsJ_AQ/original" />
+
+#### Script Usage
+
+You can use the [animatorStateMachine.addEntryStateTransition](/apis/core/#AnimatorStateMachine-addEntryStateTransition) method to connect the `AnimatorState` to the `entry` of the `AnimatorStateMachine`.
+
+```typescript
+const animatorStateMachine = animator.animatorController.layers[0].stateMachine;
+animatorStateMachine.addEntryStateTransition('Idle');
+```
+
+### Animation Transition
+
+#### Editor Usage
+Connecting two `AnimatorState` will achieve the effect of animation transition. Click the line between the two `AnimatorState` to modify the parameters of the animation transition to adjust the effect.
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*h3I4TZoxtnYAAAAAAAAAAAAADsJ_AQ/original" />
+
+Click the line to set the parameters of the `AnimatorStateTransition`, such as adding conditions:
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*vlmLQqR2k7QAAAAAAAAAAAAADsJ_AQ/original" />
+
+<Callout type="info">
+  If multiple conditions are added, the transition will only start when all conditions are met.
+</Callout>
+
+#### Script Usage
+
+You can add an `AnimatorStateTransition` to the `AnimatorState` to achieve the transition effect between `AnimatorState`.
+
+```typescript
+const walkState = animatorStateMachine.addState('walk');
+walkState.clip = walkClip;
+const runState = animatorStateMachine.addState('run');
+runState.clip = runClip;
+const transition = new AnimatorStateTransition();
+transition.duration = 1;
+transition.offset = 0;
+transition.exitTime = 0.5;
+transition.destinationState = runState;
+walkState.addTransition(transition);
+animator.play("walk");
+```
+In this way, every time you play the `walk` animation in the `animation layer` ([detailed introduction](/en/docs/animation/layer)) where the `AnimatorStateMachine` is located, it will start transitioning to the `run` animation halfway through.
+
+##### Adding Conditions to Animation Transitions
+You can use the [animatorStateTransition.addCondition](/apis/core/#AnimatorStateTransition-addCondition) method to add `transition conditions` to the `AnimatorStateTransition`.
+
+```typescript
+const idleState = animatorStateMachine.addState('idle');
+idleState.clip = idleClip;
+const walkState = animatorStateMachine.findStateByName('walk');
+const transition = new AnimatorStateTransition();
+
+transition.addCondition(AnimatorConditionMode.Greater, 'speed', 0);
+
+transition.destinationState = walkState;
+idleState.addTransition(transition);
+```
+In this way, every time you play the `idle` animation in the layer where the `AnimatorStateMachine` is located and the `speed` parameter is greater than `0`, the animation will transition to the `walk` animation.
+
+##### Adding/Removing Animation Parameters
+`AnimatorControllerParameter` are used to control the `AnimatorState` transitions of the `AnimatorStateMachine`. By setting the value of the `AnimatorControllerParameter` to meet the conditions of the `AnimatorStateTransition`, the `AnimatorStateTransition` will be triggered, switching to the target `AnimatorState`.
+
+You can use the [animatorController.addParameter](/apis/core/#AnimatorController-addParameter) method to add `AnimatorControllerParameter` and the [animatorController.removeParameter](/apis/core/#AnimatorController-removeParameter) method to remove `AnimatorControllerParameter`.
+
+```typescript
+const animatorController = animator.animatorController;
+animatorController.addParameter('speed', 0);
+// Remove parameter
+animatorController.removeParameter('speed');
+```
+
+##### Setting Animation Parameter Values
+You can use the [animator.setParameterValue](/apis/core/#Animator-setParameterValue) method to set the value of `AnimatorControllerParameter`.
+
+```typescript
+class AnimationScriptExample extends Script {
+  animator: Animator;
+  onStart() {
+    this.animator = this.entity.getComponent(Animator);
+  }
+
+  onUpdate(deltaTime: number) {
+    const inputManager = this.engine.inputManager;
+
+    // If the user presses the W key, set the speed parameter value to 1, meeting the condition to switch to the walking state, and the animation switches to walking.
+    if (inputManager.isKeyHeldDown(Keys.KeyW)) {
+      this.animator.setParameterValue('speed', 1);
+    }
+    // If the user releases the W key, set the speed parameter value to 0, meeting the condition to switch to the standing state, and the animation switches to standing.
+    if (inputManager.isKeyUp(Keys.KeyW)) {
+      this.animator.setParameterValue('speed', 0);
+    }
+  }
+}
+```
+
+##### Getting Animation Parameter Values
+You can use the [animator.getParameterValue](/apis/core/#Animator-getParameterValue) method to get the value of `AnimatorControllerParameter`:
+```typescript
+class AnimationScriptExample extends Script {
+  animator: Animator;
+
+  onStart() {
+    this.animator = this.entity.getComponent(Animator);
+  }
+
+  onUpdate(deltaTime: number) {
+    const speed = this.animator.getParameterValue('speed');
+    if (speed === 1) {
+      console.log("The player is walking")
+    }
+  }
+}
+```
+
+##### Getting Animation Parameter Objects
+You can use the [animator.getParameter](/apis/core/#Animator-getParameter) method to get the `AnimatorControllerParameter` object:
+
+```typescript
+class AnimationScriptExample extends Script {
+  animator: Animator;
+
+  onStart() {
+    this.animator = this.entity.getComponent(Animator);
+    const speedParameter = this.animator.getParameter('speed');
+    // Set the default value of speed
+    speedParameter.defaultValue = 0;
+  }
+}
+```
+
+### AnimatorStateMachine Animation Loop
+Connecting the `AnimatorState` to the `exit` state will cause the `AnimatorStateMachine` to exit and re-enter the `entry`, making the overall process loop.
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*1AfgS6S88SYAAAAAAAAAAAAADsJ_AQ/original" /> 
+
+
+#### Script Usage
+
+You can use the [state.addExitTransition](/apis/core/#AnimatorState-addExitTransition) method to connect the `AnimatorState` to the `exit` of the `AnimatorStateMachine`.
+
+```typescript
+const runState = animatorStateMachine.addState('run');
+runState.addExitTransition();
+```
+In this way, every time you play the `Run` animation in the `Animation Layer` where the `AnimatorStateMachine` is located, it will enter the `exit` state after playing and then start again from `entry`.
+
+### State Machine Scripts
+You can add `State Machine Scripts` to each `AnimatorState`, allowing you to receive callbacks during different events (such as state enter, exit, update, etc.) of the `AnimatorStateMachine` [see details](/apis/core/#StateMachineScript).
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*VrCXQqS3w7QAAAAAAAAAAAAADsJ_AQ/original" />
+
+<Image src="https://mdn.alipayobjects.com/huamei_3zduhr/afts/img/A*A7I7QqiDCfkAAAAAAAAAAAAADsJ_AQ/original" />
+
+#### Script Usage
+`StateMachineScript` provide three  `AnimatorState`  cycles:
+
+- `onStateEnter`: Callback when the  `AnimatorState`  starts playing.
+- `onStateUpdate`: Callback when the  `AnimatorState`  updates.
+- `onStateExit`: Callback when the  `AnimatorState`  ends.
+
+```typescript
+class theScript extends StateMachineScript {
+  /**
+   * onStateEnter is called when a transition starts and the state machine starts to evaluate this state.
+   * @param animator - The animator
+   * @param animatorState - The state be evaluated
+   * @param layerIndex - The index of the layer where the state is located
+   */
+  onStateEnter(animator: Animator, animatorState: AnimatorState, layerIndex: number): void {
+    console.log(`Enter ${animatorState.name}`)
+  }
+
+  /**
+   * onStateUpdate is called on each Update frame between onStateEnter and onStateExit callbacks.
+   * @param animator - The animator
+   * @param animatorState - The state be evaluated
+   * @param layerIndex - The index of the layer where the state is located
+   */
+  onStateUpdate(animator: Animator, animatorState: AnimatorState, layerIndex: number): void {
+    console.log(`Update ${animatorState.name}`)
+  }
+
+  /**
+   * onStateExit is called when a transition ends and the state machine finishes evaluating this state.
+   * @param animator - The animator
+   * @param animatorState - The state be evaluated
+   * @param layerIndex - The index of the layer where the state is located
+   */
+  onStateExit(animator: Animator, animatorState: AnimatorState, layerIndex: number): void {
+    console.log(`Exit ${animatorState.name}`)
+  }
+}
+
+animatorState.addStateMachineScript(theScript)
+```
+
+If your script does not need to be reused, you can also write it like this:
+
+```typescript
+state.addStateMachineScript(
+  class extends StateMachineScript {
+    onStateEnter(
+      animator: Animator,
+      animatorState: AnimatorState,
+      layerIndex: number
+    ): void {
+      console.log("onStateEnter: ", animatorState);
+    }
+  }
+);
+```
+
+## Multi-layer AnimatorStateMachine Blending
+Each `Animation Layer` has an `AnimatorStateMachine`, and the final animation performance is blended by multiple `Animation Layer`. For how to use `Animation Layer`, please refer to the [Animation Layer](/en/docs/animation/layer) documentation.
