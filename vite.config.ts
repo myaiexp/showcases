@@ -2,28 +2,10 @@
 import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vitest/config';
 import { packageWatcher } from './scripts/dev/package-watcher.ts';
+import { threeAddonsOnWebgpu } from './scripts/vite/three-addons.ts';
 
 /** `/packages/<pkg>/examples/<ex>/meta.ts` → `<pkg>`. */
 const META = /\/packages\/([^/]+)\/examples\/[^/]+\/meta\.ts$/;
-
-/**
- * three's addons (`three/addons/*`) import the bare `three`, which is the WebGL build.
- * The Three.js gallery runs on `three/webgpu`, so without this an addon would pull in a
- * second copy of the core and its classes would fail `instanceof` against ours. This is
- * what the three.js manual's import map does (`"three": "three.webgpu.js"`), scoped to
- * imports made by the addon files so a WebGL-based package can still import `three`.
- * tsl-textures is a TSL library for `three/webgpu` that imports its Color and Vector
- * classes from the bare `three`, so its files get the same mapping.
- */
-const ON_WEBGPU = /[/\\](three[/\\]examples[/\\]jsm|tsl-textures)[/\\]/;
-const threeAddonsOnWebgpu = {
-  name: 'three-addons-on-webgpu',
-  enforce: 'pre' as const,
-  resolveId(this: { resolve: (id: string, importer?: string) => Promise<unknown> }, id: string, importer?: string) {
-    if (id !== 'three' || !importer || !ON_WEBGPU.test(importer)) return null;
-    return this.resolve('three/webgpu', importer);
-  },
-};
 
 /**
  * Pizzicato replaces AudioNode.prototype.connect page-wide when it loads, dropping
