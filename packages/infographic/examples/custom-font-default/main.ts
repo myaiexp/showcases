@@ -26,7 +26,7 @@ const READY = Promise.all([
 const STEPS = [
   {
     say: 'setDefaultFont(\'showcase-serif\')',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Default family
@@ -44,7 +44,7 @@ data
   },
   {
     say: 'setDefaultFont(\'showcase-hand\')',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Default family
@@ -62,7 +62,7 @@ data
   },
   {
     say: 'setDefaultFont(\'showcase-brush\')',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Default family

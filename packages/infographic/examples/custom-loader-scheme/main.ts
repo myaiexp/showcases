@@ -5,20 +5,21 @@ import { createStage } from '../../shared/stage.ts';
 import { loadSVGResource } from '@antv/infographic';
 import { installOfflineLoader, offlineResource } from '../../shared/setup.ts';
 
-// Hand-made 24x24 icons: paths with no fill, so the theme colours them.
+// Hand-made 24x24 icons: paths with no fill, so the theme colours them. The xmlns is required:
+// loadSVGResource parses XML, and without it nothing is drawn.
 const GLYPHS: Record<string, string> = {
   star: 'M12 2l3 7 7 .7-5.3 4.7 1.6 7.1L12 17.6 5.7 21.5l1.6-7.1L2 9.7 9 9z',
   heart: 'M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.7A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z',
   bolt: 'M13 2 4 14h6l-1 8 9-12h-6z',
   leaf: 'M5 19C5 10 10 5 20 5c0 10-5 15-14 15z',
 };
-const glyph = (d: string) => loadSVGResource('<svg viewBox="0 0 24 24"><path d="' + d + '"/></svg>');
+const glyph = (d: string) => loadSVGResource('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="' + d + '"/></svg>');
 
 // Each step is a whole infographic syntax; the instance re-renders with the next one.
 const STEPS = [
   {
     say: 'icon showcase:star / heart / bolt: drawn by the loader',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons
@@ -35,7 +36,7 @@ data
   },
   {
     say: 'icon rocket: not ours, so the offline icons answer',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons
@@ -52,7 +53,7 @@ data
   },
   {
     say: 'showcase:unknown has no glyph: falls through too',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons

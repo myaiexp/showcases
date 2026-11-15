@@ -1,14 +1,14 @@
 // registerTemplate with a design and a themeConfig palette
-import { Infographic, registerTemplate } from '@antv/infographic';
+import { Infographic, getTheme, registerTemplate } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 
 
 // Page-wide name. The template holds design and theme; data comes from the syntax.
 registerTemplate('showcase-citrus-steps', {
-  design: { structure: 'sequence-steps', title: 'default', item: 'simple' },
-  theme: 'dark',
-  themeConfig: { palette: ['#F9C74F', '#F9844A', '#90BE6D', '#43AA8B'] },
+  design: { structure: { type: 'list-row', gap: 0, zigzag: true }, title: 'default', item: 'horizontal-icon-arrow' },
+  // The theme field of a template is ignored in 0.2.20, so the dark theme is spread into themeConfig.
+  themeConfig: { ...getTheme('dark'), palette: ['#F9C74F', '#F9844A', '#90BE6D', '#43AA8B'] },
 });
 
 // Each step is a whole infographic syntax; the instance re-renders with the next one.
@@ -18,7 +18,7 @@ const STEPS = [
     syntax: `infographic showcase-citrus-steps
 data
   title Paper trail
-  sequences
+  lists
     - label Idea
       desc Sketch it
       icon lightbulb
@@ -34,7 +34,7 @@ data
     syntax: `infographic showcase-citrus-steps
 data
   title Paper trail
-  sequences
+  lists
     - label Idea
       desc Sketch it
       icon lightbulb
@@ -57,7 +57,7 @@ theme dark
     - #38BDF8
 data
   title Paper trail
-  sequences
+  lists
     - label Idea
       desc Sketch it
       icon lightbulb

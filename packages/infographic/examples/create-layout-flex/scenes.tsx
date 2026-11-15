@@ -5,7 +5,7 @@ import { FlexLayout, Rect } from '@antv/infographic';
 
 const COLORS = ['#ef4444', '#f59e0b', '#22c55e', '#3b82f6', '#a855f7'];
 const boxes = (): JSXElement[] =>
-  COLORS.map((fill, i) => <Rect width={44 + (i % 2) * 14} height={44 + (i % 3) * 10} rx={8} fill={fill} />);
+  COLORS.map((fill, i) => <Rect width={40 + (i % 2) * 12} height={34 + (i % 3) * 8} rx={8} fill={fill} />);
 
 export const SCENES: { say: string; node: JSXElement }[] = [
   {
@@ -31,8 +31,8 @@ export const SCENES: { say: string; node: JSXElement }[] = [
     say: 'flexWrap="wrap" in a frame 160 wide, gap 10',
     node: (
       <>
-        <Rect x={80} y={20} width={160} height={160} fill="none" stroke="#64748b" strokeDasharray="6 4" />
-        <FlexLayout x={80} y={20} width={160} height={160} flexWrap="wrap" gap={10}>
+        <Rect x={80} y={10} width={160} height={180} fill="none" stroke="#64748b" strokeDasharray="6 4" />
+        <FlexLayout x={80} y={10} width={160} height={180} flexWrap="wrap" gap={8}>
           {boxes()}
         </FlexLayout>
       </>

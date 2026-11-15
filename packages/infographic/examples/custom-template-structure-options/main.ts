@@ -1,5 +1,5 @@
 // registerTemplate with structure options and design.items
-import { Infographic, registerTemplate } from '@antv/infographic';
+import { Infographic, getTheme, registerTemplate } from '@antv/infographic';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 
@@ -10,7 +10,7 @@ registerTemplate('showcase-org-tree', {
     title: 'default',
     items: [{ type: 'rounded-rect-node' }, { type: 'plain-text' }],
   },
-  theme: 'dark',
+  themeConfig: getTheme('dark'),
 });
 
 // Each step is a whole infographic syntax; the instance re-renders with the next one.

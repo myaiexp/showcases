@@ -8,7 +8,7 @@ registerTheme('showcase-paper', {
   colorBg: '#F4ECD8',
   colorPrimary: '#B45309',
   base: { text: { fill: '#3B2F1E' } },
-  title: { fill: '#7C2D12', 'font-size': 30, 'font-weight': 'bold' },
+  title: { fill: '#7C2D12', 'font-weight': 'bold' },
   desc: { fill: '#7A6A52' },
   item: { label: { fill: '#B45309', 'font-weight': 'bold' }, desc: { fill: '#5B4A33' } },
 });
@@ -16,7 +16,7 @@ registerTheme('showcase-slate', {
   colorBg: '#0F172A',
   colorPrimary: '#38BDF8',
   base: { text: { fill: '#E2E8F0' } },
-  title: { fill: '#38BDF8', 'font-size': 26 },
+  title: { fill: '#38BDF8' },
   item: { label: { fill: '#F1F5F9' }, desc: { fill: '#94A3B8' } },
 });
 
@@ -24,7 +24,7 @@ registerTheme('showcase-slate', {
 const STEPS = [
   {
     say: 'theme showcase-paper',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme showcase-paper
 data
   title Garden
@@ -44,7 +44,7 @@ data
   },
   {
     say: 'theme showcase-slate',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme showcase-slate
 data
   title Garden

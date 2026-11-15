@@ -19,7 +19,7 @@ registerTheme('showcase-lagoon', {
 const STEPS = [
   {
     say: 'theme showcase-ember',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme showcase-ember
 data
   title Garden
@@ -39,7 +39,7 @@ data
   },
   {
     say: 'theme showcase-lagoon',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme showcase-lagoon
 data
   title Garden
@@ -59,7 +59,7 @@ data
   },
   {
     say: 'theme showcase-ember with colorPrimary #A3E635 under it',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme showcase-ember
   colorPrimary #A3E635
 data

@@ -14,7 +14,7 @@ registerTheme('showcase-dark-gold', {
 const STEPS = [
   {
     say: 'theme dark',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Garden
@@ -34,7 +34,7 @@ data
   },
   {
     say: 'theme showcase-dark-gold (title and primary changed)',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme showcase-dark-gold
 data
   title Garden
@@ -54,7 +54,7 @@ data
   },
   {
     say: 'showcase-dark-gold plus palette lines',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme showcase-dark-gold
   palette
     - #F5C542

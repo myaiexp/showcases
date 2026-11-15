@@ -26,7 +26,7 @@ const READY = Promise.all([
 const STEPS = [
   {
     say: 'title serif, label brush, desc sans',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
   title
     font-family showcase-serif
@@ -41,17 +41,17 @@ data
   lists
     - label First
       desc The label and this line differ
-      icon 1
+      icon star
     - label Second
       desc Same again
-      icon 2
+      icon heart
     - label Third
       desc Last one
-      icon 3`,
+      icon bolt`,
   },
   {
     say: 'title brush, label sans, desc serif',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
   title
     font-family showcase-brush
@@ -66,17 +66,17 @@ data
   lists
     - label First
       desc The label and this line differ
-      icon 1
+      icon star
     - label Second
       desc Same again
-      icon 2
+      icon heart
     - label Third
       desc Last one
-      icon 3`,
+      icon bolt`,
   },
   {
     say: 'title sans, label serif, desc brush',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
   title
     font-family showcase-sans
@@ -91,13 +91,13 @@ data
   lists
     - label First
       desc The label and this line differ
-      icon 1
+      icon star
     - label Second
       desc Same again
-      icon 2
+      icon heart
     - label Third
       desc Last one
-      icon 3`,
+      icon bolt`,
   },
 ];
 

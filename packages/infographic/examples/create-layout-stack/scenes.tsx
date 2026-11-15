@@ -15,13 +15,14 @@ const Stack = createLayout<{ gap?: number; x?: number; y?: number }>((children, 
   return <Group {...props}>{placed}</Group>;
 });
 
-const Card = ({ title, w = 200 }: { title: string; w?: number }) => (
-  <>
+// A component placed by a layout must take x and y and pass them on: cloneElement sets them as props.
+const Card = ({ title, w = 200, x, y }: { title: string; w?: number; x?: number; y?: number }) => (
+  <Group x={x} y={y}>
     <Rect width={w} height={34} rx={8} fill="#334155" />
     <Text width={w} height={34} fontSize={15} fill="#e2e8f0" alignHorizontal="center" alignVertical="middle">
       {title}
     </Text>
-  </>
+  </Group>
 );
 
 const stack = (gap: number): JSXElement => (

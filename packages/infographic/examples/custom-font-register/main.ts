@@ -25,7 +25,7 @@ const READY = Promise.all([
 const STEPS = [
   {
     say: 'no font-family: the default font',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Typeset
@@ -42,7 +42,7 @@ data
   },
   {
     say: 'font-family showcase-serif',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
   base
     text
@@ -62,7 +62,7 @@ data
   },
   {
     say: 'font-family showcase-hand',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
   base
     text

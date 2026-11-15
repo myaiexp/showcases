@@ -6,7 +6,7 @@ import { loadSVGResource } from '@antv/infographic';
 import { installOfflineLoader, offlineResource } from '../../shared/setup.ts';
 
 const PLACEHOLDER =
-  '<svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="none" stroke="currentColor" stroke-dasharray="3 2"/><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4M12 16v.5"/></svg>';
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="none" stroke="currentColor" stroke-dasharray="3 2"/><path d="M9.5 9a2.5 2.5 0 1 1 3.4 2.3c-.6.3-.9.8-.9 1.4M12 16v.5"/></svg>';
 
 /** Stands in for a fetch that can fail. */
 async function fetchIcon(name: string) {
@@ -18,7 +18,7 @@ async function fetchIcon(name: string) {
 const STEPS = [
   {
     say: 'all three icons load',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons
@@ -35,7 +35,7 @@ data
   },
   {
     say: 'broken-chart throws: placeholder in its place',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons
@@ -52,7 +52,7 @@ data
   },
   {
     say: 'every name breaks: three placeholders',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons

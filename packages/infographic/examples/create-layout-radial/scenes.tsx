@@ -20,13 +20,14 @@ const Radial = createLayout<{ radius?: number; x?: number; y?: number }>((childr
   );
 });
 
-const Dot = ({ n, fill }: { n: number; fill: string }) => (
-  <>
+// The layout moves children with cloneElement(child, { x, y }), so Dot takes x and y and hands them to a Group.
+const Dot = ({ n, fill, x, y }: { n: number; fill: string; x?: number; y?: number }) => (
+  <Group x={x} y={y}>
     <Rect width={34} height={34} rx={17} fill={fill} />
     <Text width={34} height={34} fontSize={16} fontWeight="bold" fill="#0f172a" alignHorizontal="center" alignVertical="middle">
       {String(n)}
     </Text>
-  </>
+  </Group>
 );
 const COLORS = ['#f87171', '#fbbf24', '#4ade80', '#38bdf8', '#c084fc', '#f472b6', '#a3e635'];
 const radial = (radius: number, n: number): JSXElement => (

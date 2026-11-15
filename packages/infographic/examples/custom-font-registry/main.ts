@@ -25,7 +25,7 @@ const READY = Promise.all([
 const STEPS = [
   {
     say: 'font-family showcase-serif',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
   base
     text
@@ -46,7 +46,7 @@ data
   },
   {
     say: 'font-family showcase-hand',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
   base
     text
@@ -67,7 +67,7 @@ data
   },
   {
     say: 'getFont of a name nobody registered',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
   base
     text

@@ -10,7 +10,7 @@ const cache = new Map<string, SVGSymbolElement>();
 const STEPS = [
   {
     say: 'first render: every icon is loaded',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons
@@ -27,7 +27,7 @@ data
   },
   {
     say: 'the same render again: served from the cache',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons
@@ -44,7 +44,7 @@ data
   },
   {
     say: 'one new name: one more load',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons

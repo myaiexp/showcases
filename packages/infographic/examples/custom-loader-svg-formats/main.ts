@@ -6,8 +6,8 @@ import { loadSVGResource } from '@antv/infographic';
 import { installOfflineLoader, offlineResource } from '../../shared/setup.ts';
 
 const SOURCES: Record<string, string> = {
-  'fmt:svg': '<svg viewBox="0 0 24 24"><path d="M12 3 21 20H3z"/></svg>',
-  'fmt:symbol': '<symbol viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/></symbol>',
+  'fmt:svg': '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 21 20H3z"/></svg>',
+  'fmt:symbol': '<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/></symbol>',
   'fmt:junk': 'this is not svg at all',
 };
 
@@ -15,7 +15,7 @@ const SOURCES: Record<string, string> = {
 const STEPS = [
   {
     say: 'fmt:svg: an <svg> string',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons
@@ -26,7 +26,7 @@ data
   },
   {
     say: 'fmt:symbol: a <symbol> string',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons
@@ -37,7 +37,7 @@ data
   },
   {
     say: 'fmt:junk: not SVG, loadSVGResource gives null',
-    syntax: `infographic list-row-simple-horizontal-arrow
+    syntax: `infographic list-row-horizontal-icon-arrow
 theme dark
 data
   title Icons

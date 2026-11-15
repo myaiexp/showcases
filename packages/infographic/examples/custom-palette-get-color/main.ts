@@ -4,7 +4,12 @@ import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
 
 
-registerPalette('showcase-mint-ramp', (ratio) => 'hsl(160 ' + Math.round(30 + 60 * ratio) + '% ' + Math.round(75 - 35 * ratio) + '%)');
+/** Blends two #rrggbb colours. Charts build gradient ids from the colour, so it must be a hex string. */
+const mix = (a: string, b: string, t: number): string => {
+  const channel = (hex: string, i: number) => parseInt(hex.slice(1 + i * 2, 3 + i * 2), 16);
+  return '#' + [0, 1, 2].map((i) => Math.round(channel(a, i) + (channel(b, i) - channel(a, i)) * t).toString(16).padStart(2, '0')).join('');
+};
+registerPalette('showcase-mint-ramp', (ratio) => mix('#A7F3D0', '#047857', ratio));
 registerPalette('showcase-duo', ['#F472B6', '#60A5FA']);
 
 /** What the library answers for each of `count` items. */
