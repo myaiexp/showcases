@@ -38,6 +38,17 @@
 //   chart-column-grouped-simple template (category is parsed, no built-in chart uses it);
 //   syntax `stylize` accepts only rough and pattern, so gradients need an options object.
 // - No `title` line in a design block means no title is drawn.
+// - render(options) merges onto the constructor's options, not the last render: render({svg})
+//   after render(syntax) drops the data ("Incomplete options"). update() merges design,
+//   themeConfig and svg one level deep and replaces everything else.
+// - svg.className goes through classList.add: one class, no spaces, or the render throws.
+// - Unused in 0.2.20: `elements` renders nothing; BtnAdd/BtnRemove (BtnsGroup) stay hidden.
+// - hand-drawn sets no colorBg, so its dark text needs a paper-coloured box (#f6f1e4).
+// - The default theme is registered as 'light' (getTheme('default') is undefined);
+//   getPalettes() returns an object keyed by name. setDefaultFont has no getter: restore
+//   'Alibaba PuHuiTi'. The parser's only warning is implicit_template; unknown keys are errors.
+// - An editor adds window/document listeners (keys, wheel, click) that act only once it is
+//   activated by a click inside it; destroy() removes them.
 import type { Infographic } from '@antv/infographic';
 import type { MountContext } from '@/types.ts';
 import { infographicReady } from './setup.ts';

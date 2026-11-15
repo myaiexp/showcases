@@ -30,12 +30,13 @@ const mount: Mount = async (el, ctx) => {
         markup.textContent = `-> <${symbol.tagName} viewBox="${symbol.getAttribute('viewBox')}"> with ${symbol.children.length} child nodes`;
         const sizes = ctx.preview ? [28, 48, 72] : [32, 64, 128];
         // The symbol lives once in a defs block; every <use> draws it at its own size.
-        const defs = document.createElementNS(SVGNS, 'svg');
-        defs.setAttribute('width', '0');
-        defs.setAttribute('height', '0');
-        defs.style.position = 'absolute';
         // The returned symbol has no namespace of its own, so it is re-parsed from its markup to be drawn.
-        defs.innerHTML = symbol.outerHTML.replace('<symbol', `<symbol id="${id}"`);
+        const markupText = symbol.outerHTML.replace('<symbol', `<symbol id="${id}"`);
+        const defs = new DOMParser().parseFromString(
+          `<svg xmlns="${SVGNS}" width="0" height="0">${markupText}</svg>`,
+          'image/svg+xml',
+        ).documentElement as unknown as SVGSVGElement;
+        defs.style.position = 'absolute';
         stack.replaceChildren(
           defs,
           ...sizes.map((px) => {
