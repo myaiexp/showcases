@@ -220,3 +220,7 @@ GitHub Pages. No service on the VPS.
   `@antv/l7-maps`: no tiles, no token) and `await stage.ready(scene)`, which frees the WebGL context on dispose. The
   basemap is `shared/world.ts`, images are data: URLs (`shared/images.ts`), cards fake input with `stage.ghost(scene)`.
   `vite.config.ts` aliases `@antv/l7-component` to its es build (its browser field is a UMD bundle with no exports).
+- Embedding Atlas: build on `packages/embedding-atlas/shared/stage.ts` (`createStage`, trap list). The views draw only
+  with WebGPU + `shader-f16` (this VPS has neither; charts, tables and the algorithms work). Mosaic examples use
+  `stage.mosaic()`: the page's one bundled DuckDB (`shared/db.ts`, never Mosaic's CDN loader) and tables per mount.
+  Give every `Label` a `level`; whole-Atlas cards use `cardZoom` and stay small.

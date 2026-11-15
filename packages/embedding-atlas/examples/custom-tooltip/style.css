@@ -1,0 +1,22 @@
+/* Custom tooltip: a bordered card with a coloured heading */
+[data-example='embedding-atlas/custom-tooltip'] {
+  .tip {
+    max-width: 220px;
+    padding: 8px 10px;
+    border: 1px solid;
+    border-radius: 8px;
+    background: rgba(15, 23, 42, 0.95);
+    color: #e2e8f0;
+    font: 12px/1.4 system-ui, sans-serif;
+  }
+  .head {
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 4px;
+  }
+  .pos {
+    margin-top: 4px;
+    color: #94a3b8;
+    font: 11px ui-monospace, monospace;
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "fetched": "2026-11-15T15:41:26.077Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/apple/embedding-atlas",
+      "ref": "v0.26.0",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "packages/docs/*.md",
+        "packages/embedding-atlas/README.md",
+        "packages/embedding-atlas/src/*.ts",
+        "packages/umap/README.md",
+        "packages/umap/umap-wasm/index.d.ts",
+        "packages/density-clustering/README.md",
+        "packages/density-clustering/density_clustering_wasm/js/index.d.ts",
+        "packages/component/src/lib/index.ts",
+        "packages/component/src/lib/utils.ts",
+        "packages/component/src/lib/embedding_view/api.ts",
+        "packages/component/src/lib/embedding_view/embedding_view_api.ts",
+        "packages/component/src/lib/embedding_view/embedding_view_mosaic_api.ts",
+        "packages/component/src/lib/embedding_view/embedding_view_config.ts",
+        "packages/component/src/lib/embedding_view/theme.ts",
+        "packages/component/src/lib/embedding_view/types.ts",
+        "packages/viewer/src/api.ts",
+        "packages/viewer/src/index.ts",
+        "packages/viewer/src/charts/chart_types.ts",
+        "packages/viewer/src/charts/default_charts.ts",
+        "packages/viewer/src/charts/*/types.ts",
+        "packages/viewer/src/charts/common/theme.ts",
+        "packages/viewer/src/layouts/layout_types.ts",
+        "packages/viewer/src/layouts/*/types.ts",
+        "packages/viewer/src/renderers/types.ts",
+        "packages/viewer/src/renderers/renderer_types.ts",
+        "packages/viewer/src/charts/spec/spec.ts",
+        "packages/viewer/src/charts/chart.ts",
+        "packages/viewer/src/layouts/layout.ts"
+      ],
+      "commit": "ef6465664c584ec430a3b1a5ea559b69597cd573"
+    },
+    {
+      "kind": "pages",
+      "urls": [
+        "https://apple.github.io/embedding-atlas/embedding-view.html",
+        "https://apple.github.io/embedding-atlas/embedding-view-mosaic.html",
+        "https://apple.github.io/embedding-atlas/embedding-atlas.html",
+        "https://apple.github.io/embedding-atlas/algorithms.html"
+      ]
+    }
+  ],
+  "files": {
+    "pages/apple-github-io/embedding-atlas/algorithms.md": {
+      "url": "https://apple.github.io/embedding-atlas/algorithms.html",
+      "sha256": "4c6157e23247311e8b0b539eec39c3bebbc767fdf3f15533b1aeaa67f1c7f5dd"
+    },
+    "pages/apple-github-io/embedding-atlas/embedding-atlas.md": {
+      "url": "https://apple.github.io/embedding-atlas/embedding-atlas.html",
+      "sha256": "01af591a5d977954ae46c838c865f53fb9e9445bd893659b17062ee57fb98b09"
+    },
+    "pages/apple-github-io/embedding-atlas/embedding-view-mosaic.md": {
+      "url": "https://apple.github.io/embedding-atlas/embedding-view-mosaic.html",
+      "sha256": "87d439acafa33818d5ad697f0e71d92ccd1cc54f81c3f8a960028b72d15b6636"
+    },
+    "pages/apple-github-io/embedding-atlas/embedding-view.md": {
+      "url": "https://apple.github.io/embedding-atlas/embedding-view.html",
+      "sha256": "62ba2d14b6483d7869acf9f6d9ac5d1d0664adbcbcc89907f3d3a6a3ccd8e76c"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/LICENSE",
+      "sha256": "0526923dfe63e062f2ec8d6ab93c02038d0e76a8868e4a0744470c0e361a81c2"
+    },
+    "repo/packages/component/src/lib/embedding_view/api.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/component/src/lib/embedding_view/api.ts",
+      "sha256": "3bc5312679261ee8b34779fc8ec87165d1ef36c72df508d8f7682332afab41df"
+    },
+    "repo/packages/component/src/lib/embedding_view/embedding_view_api.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/component/src/lib/embedding_view/embedding_view_api.ts",
+      "sha256": "e8abd0f11486783ea40d711d7f2c945335c3c3239553a850df1e705dfd36fc7d"
+    },
+    "repo/packages/component/src/lib/embedding_view/embedding_view_config.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/component/src/lib/embedding_view/embedding_view_config.ts",
+      "sha256": "d74d57788f4ceb51c6f689fadd4e4b35cd22366e7665a1a7f8fe79fa948e4cd0"
+    },
+    "repo/packages/component/src/lib/embedding_view/embedding_view_mosaic_api.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/component/src/lib/embedding_view/embedding_view_mosaic_api.ts",
+      "sha256": "8f2ab0a824bc90e48084bfe3633ec5bbc4e95e912f2865aa91b0f87f87acffb4"
+    },
+    "repo/packages/component/src/lib/embedding_view/theme.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/component/src/lib/embedding_view/theme.ts",
+      "sha256": "557a2e487a21c0631fe2b27edc91468cd168db6a5be0eebf66019185e512e5e5"
+    },
+    "repo/packages/component/src/lib/embedding_view/types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/component/src/lib/embedding_view/types.ts",
+      "sha256": "c91d837da51fd4556cc8ba78467e0cc5ce92281adb9d8b5f587cb3784cd62e1a"
+    },
+    "repo/packages/component/src/lib/index.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/component/src/lib/index.ts",
+      "sha256": "67287d5913372419d121c6c832d321f0625cf4c515421d4bc6939e6854e911bb"
+    },
+    "repo/packages/component/src/lib/utils.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/component/src/lib/utils.ts",
+      "sha256": "4c0c44e0a8ca0c755da6aa63b1f9547f119f1fa1df65c68e4920343b09d3d09f"
+    },
+    "repo/packages/density-clustering/density_clustering_wasm/js/index.d.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/density-clustering/density_clustering_wasm/js/index.d.ts",
+      "sha256": "93a90cd4b2a184ff90a0543d0ff8fe2cbe124867736e7e0169ecebf420acd28a"
+    },
+    "repo/packages/density-clustering/README.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/density-clustering/README.md",
+      "sha256": "e1bed8d1ca91bb9196b14adad8841750e987804e1446998240ee20e77dcf31b1"
+    },
+    "repo/packages/docs/algorithms.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/docs/algorithms.md",
+      "sha256": "4b4de4afdc17d79208719e5162736d297b7b59eabdbddc88b2ea4195640e35ba"
+    },
+    "repo/packages/docs/data-formats.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/docs/data-formats.md",
+      "sha256": "52360750b76eb1c06331d66a7686a1d54e8159b9ea2f8e3a520c502d8b650e7b"
+    },
+    "repo/packages/docs/develop.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/docs/develop.md",
+      "sha256": "51ad531b90fcf9d918ef64e5b0e201e44e5dd0f4cc598d21fc8afde36461f048"
+    },
+    "repo/packages/docs/embedding-atlas.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/docs/embedding-atlas.md",
+      "sha256": "336b335262aa823f75ef7e32d6d54d8b3b916a46f869a2dfcbcc773c451128c2"
+    },
+    "repo/packages/docs/embedding-view-mosaic.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/docs/embedding-view-mosaic.md",
+      "sha256": "8b77ccf0da4b7d1d9852510a33a06f46dd19df4261919a771c6a5127bc92958d"
+    },
+    "repo/packages/docs/embedding-view.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/docs/embedding-view.md",
+      "sha256": "74ccc1827cef1f6b9158cbbe34b8c56f5cd8c321e72a78775bd91db2cb839221"
+    },
+    "repo/packages/docs/index.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/docs/index.md",
+      "sha256": "ea46b4fdfd139ccadf9c6343413ff4c98dabc8d060a708cb1a013da4ae05ce5a"
+    },
+    "repo/packages/docs/overview.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/docs/overview.md",
+      "sha256": "17cbf7b4d5dc1ff3b9f1afa81bbe5ff57d01db25932eabea7a43bca3596c82cb"
+    },
+    "repo/packages/docs/streamlit.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/docs/streamlit.md",
+      "sha256": "1d84e2ff7f8080a32f666fd56d1e81b8487b7300cde0dfe07966c1e4ff781bac"
+    },
+    "repo/packages/docs/tool.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/docs/tool.md",
+      "sha256": "ba0346aedf962ff9d32f4dc039c4964e93da24ba621a28ffbbf9c86411fa0b35"
+    },
+    "repo/packages/docs/widget.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/docs/widget.md",
+      "sha256": "dd2ce5609e0c2d741b580140019c76e91b21917869e935c82fe11bb65efb61cb"
+    },
+    "repo/packages/embedding-atlas/README.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/embedding-atlas/README.md",
+      "sha256": "a660cef73dc01a460402437a711c9b4f87569a2b14ea54ff1abe33fab6e49a0e"
+    },
+    "repo/packages/embedding-atlas/src/component.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/embedding-atlas/src/component.ts",
+      "sha256": "ec34e6cd2e442cdb26a67c031d94ced3f0322009384546a2373ef3e1ce2acbf5"
+    },
+    "repo/packages/embedding-atlas/src/density_clustering.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/embedding-atlas/src/density_clustering.ts",
+      "sha256": "ef261b78bf9f6da12bfbf2be1de65f73c017832fcd30e6cd255e7eafb6eb3a62"
+    },
+    "repo/packages/embedding-atlas/src/index.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/embedding-atlas/src/index.ts",
+      "sha256": "d22ec74a64cf93b869e3452105d2fb9bb1bc250df3e56421e930f81ee858d3a1"
+    },
+    "repo/packages/embedding-atlas/src/react.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/embedding-atlas/src/react.ts",
+      "sha256": "2feedd3f158a75711241028f8654ef9d17b4eb2cf7d3d58851247ae88d6d3f30"
+    },
+    "repo/packages/embedding-atlas/src/umap.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/embedding-atlas/src/umap.ts",
+      "sha256": "bf55dc0a7095a3b2395b83a0da45ec217b907b508f626c10768d79e8b008882c"
+    },
+    "repo/packages/embedding-atlas/src/viewer.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/embedding-atlas/src/viewer.ts",
+      "sha256": "e3041da9ba18fbbaedc1af58fc3d08ee8078e7db420584cbaa61b5a04d35c91e"
+    },
+    "repo/packages/umap/README.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/umap/README.md",
+      "sha256": "5f2a24accc41b009db254b022aaf17b18f2e73435cfd422c53ad2ecb77691e30"
+    },
+    "repo/packages/umap/umap-wasm/index.d.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/umap/umap-wasm/index.d.ts",
+      "sha256": "da37958444c5307e95e3ec93a49b24600e1f75b2a65a25e4701ade718c112f15"
+    },
+    "repo/packages/viewer/src/api.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/api.ts",
+      "sha256": "5f10f5544634fef02bf295950e51ac8706cfdcbab5099f144426f6e09aab285f"
+    },
+    "repo/packages/viewer/src/charts/basic/types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/charts/basic/types.ts",
+      "sha256": "9fc2403362dee7ea6978bd6e910ab333e628a28940c67925eeb4ee24c33b22c1"
+    },
+    "repo/packages/viewer/src/charts/chart_types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/charts/chart_types.ts",
+      "sha256": "b794b79fb006cd6d482d9c12e2a9837ad9c984756e4d3896fd4cc210ca826700"
+    },
+    "repo/packages/viewer/src/charts/chart.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/charts/chart.ts",
+      "sha256": "ecb43d387d7d80816a7eb8f112b4fdc0ec429b347892ab2e5c351b6bd92a0c97"
+    },
+    "repo/packages/viewer/src/charts/common/theme.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/charts/common/theme.ts",
+      "sha256": "4ae3b631e293f4806d973c7e20c73ad1a469c9cf25e4d6a9ebf2e511fce5e7ed"
+    },
+    "repo/packages/viewer/src/charts/common/types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/charts/common/types.ts",
+      "sha256": "5cbe1823f8f98cc6d1edc5f4188fbac03331e3e37333d763444ca92a21e9387d"
+    },
+    "repo/packages/viewer/src/charts/default_charts.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/charts/default_charts.ts",
+      "sha256": "dc4662a0d07fd5288fec8015131a969d2dd656199d34c3cca0886d4f1e06e11e"
+    },
+    "repo/packages/viewer/src/charts/embedding/types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/charts/embedding/types.ts",
+      "sha256": "15814f1462ef835b54554f34c99120ba0f579a026f568ca4036b3da068ebd728"
+    },
+    "repo/packages/viewer/src/charts/features/types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/charts/features/types.ts",
+      "sha256": "bba1847d2d8be38fe0badc98642988cda1353cbe4681953a2bc0d2646e1fd820"
+    },
+    "repo/packages/viewer/src/charts/instances/types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/charts/instances/types.ts",
+      "sha256": "0153fa54e4438887d5c71adf0cba4791170e3590d76e50e8fa1ea6e33000acba"
+    },
+    "repo/packages/viewer/src/charts/parallel_coordinates/types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/charts/parallel_coordinates/types.ts",
+      "sha256": "da38697a67c8b618756fd646fc65af6d3c03da7fd51f7e66bd49150ef1a821f7"
+    },
+    "repo/packages/viewer/src/charts/spec/spec.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/charts/spec/spec.ts",
+      "sha256": "54138424034bb22f84777b3a912c087d99b493aed37cd8ce2ab096183e454556"
+    },
+    "repo/packages/viewer/src/index.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/index.ts",
+      "sha256": "07aeb2d5cbf8c13a51b0d12703292b00de82387666b489c8ce023e8cf522ae6a"
+    },
+    "repo/packages/viewer/src/layouts/dashboard/types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/layouts/dashboard/types.ts",
+      "sha256": "fac56c3f4a5e4da88380154487068d4065d2c51167bb1efcff5923bc79fb42a1"
+    },
+    "repo/packages/viewer/src/layouts/layout_types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/layouts/layout_types.ts",
+      "sha256": "2c68aa32531c5f45fdec43e77388c74ac45d20388df317421a3c6d6c6e4474a6"
+    },
+    "repo/packages/viewer/src/layouts/layout.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/layouts/layout.ts",
+      "sha256": "1a8bc05b1139ddc8621b2e94a4befe6535ce3c09668b3d54687126d91809c6b6"
+    },
+    "repo/packages/viewer/src/layouts/list/types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/layouts/list/types.ts",
+      "sha256": "a395da2c4c2530586d59890a226b5491c0ce7874639a6a1dd3aecb9f4ad390a9"
+    },
+    "repo/packages/viewer/src/renderers/renderer_types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/renderers/renderer_types.ts",
+      "sha256": "6599db5163709484e9a7a9a21bb9f14091c2af141fbac85263bcb83defd7f1e0"
+    },
+    "repo/packages/viewer/src/renderers/types.ts": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/packages/viewer/src/renderers/types.ts",
+      "sha256": "f13ea6d1edb3e1b691d881e4466119ab97dd3ad24f29b0e304aadb207cdbc5b3"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/apple/embedding-atlas/blob/ef6465664c584ec430a3b1a5ea559b69597cd573/README.md",
+      "sha256": "17ed72a8fdc06937ebc4360ba0806f07046bf80857fef8a590fcfbdf3f7f50cc"
+    }
+  }
+}

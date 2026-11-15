@@ -1,0 +1,52 @@
+{
+  "license": "MIT (apple/embedding-atlas LICENSE, which covers packages/docs and the component sources)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/apple/embedding-atlas",
+      "ref": "v0.26.0",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "packages/docs/*.md",
+        "packages/embedding-atlas/README.md",
+        "packages/embedding-atlas/src/*.ts",
+        "packages/umap/README.md",
+        "packages/umap/umap-wasm/index.d.ts",
+        "packages/density-clustering/README.md",
+        "packages/density-clustering/density_clustering_wasm/js/index.d.ts",
+        "packages/component/src/lib/index.ts",
+        "packages/component/src/lib/utils.ts",
+        "packages/component/src/lib/embedding_view/api.ts",
+        "packages/component/src/lib/embedding_view/embedding_view_api.ts",
+        "packages/component/src/lib/embedding_view/embedding_view_mosaic_api.ts",
+        "packages/component/src/lib/embedding_view/embedding_view_config.ts",
+        "packages/component/src/lib/embedding_view/theme.ts",
+        "packages/component/src/lib/embedding_view/types.ts",
+        "packages/viewer/src/api.ts",
+        "packages/viewer/src/index.ts",
+        "packages/viewer/src/charts/chart_types.ts",
+        "packages/viewer/src/charts/default_charts.ts",
+        "packages/viewer/src/charts/*/types.ts",
+        "packages/viewer/src/charts/common/theme.ts",
+        "packages/viewer/src/layouts/layout_types.ts",
+        "packages/viewer/src/layouts/*/types.ts",
+        "packages/viewer/src/renderers/types.ts",
+        "packages/viewer/src/renderers/renderer_types.ts",
+        "packages/viewer/src/charts/spec/spec.ts",
+        "packages/viewer/src/charts/chart.ts",
+        "packages/viewer/src/layouts/layout.ts"
+      ]
+    },
+    {
+      "kind": "pages",
+      "urls": [
+        "https://apple.github.io/embedding-atlas/embedding-view.html",
+        "https://apple.github.io/embedding-atlas/embedding-view-mosaic.html",
+        "https://apple.github.io/embedding-atlas/embedding-atlas.html",
+        "https://apple.github.io/embedding-atlas/algorithms.html"
+      ]
+    }
+  ]
+}
