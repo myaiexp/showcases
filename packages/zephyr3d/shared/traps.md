@@ -67,3 +67,17 @@ Found while building this gallery. Read before building an example; add to it.
 - **`ParticleSystem.worldSpace` defaults to true**; the `rampMap` alpha fades particles over their life.
 - **Files without an extension** load from a MemoryFS with `fetchTexture(path, { mimeType })`.
 - **`SDFSpriteMaterial` and `computeBoundsScreenSize`** are documented but not exported by 0.10.0.
+
+## Environment and render graph
+
+- **Headless Chrome here (software GL, 1.2 GB cap) dies on PBR + IBL + shadow-casting sun + water or
+  terrain.** Real GPUs are fine; verify heavy scenes in a bare full view, one tab, and keep cards light.
+- **`rendergraph.md` lists 13 default modules; 0.10.0 has 17** (`WaterCaustics`, `VirtualTextureUpdate`,
+  `TransmissionThickness`, `Underwater`). Anchor edits with the module objects: `TransmissionThickness`'s
+  type is `'TransmissionThicknessPass'`.
+- **`water.md`'s `shoreFoam*` properties are gone**: `wallFoam*` (from the scene SDF) and `foamFadeRate`
+  replaced them. Shore waves need a terrain plus the scene SDF: WebGPU only.
+- **Terrain heights are r16f**: a PNG through `fetchTexture` bands. `updateHeightPyramid()` is not public:
+  use `heightMap.update(…)` then `updateBoundingBox()`, or `setHeights(Uint16Array)` of half floats.
+  `setSplatMap` takes a 2-layer `Texture2DArray`; layer 0's rgba weight detail layers 0–3.
+- **`PlaneShape` is centred on its node.**

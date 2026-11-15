@@ -10,10 +10,10 @@ export default zephyrExample(import.meta.url, async (stage) => {
   await myApp.ready();
   const scene = new Scene();
 
-  // Look at the sky: straight out, tilted a little up
+  // Look at the sky: the eye sits at the origin, aimed up
   scene.mainCamera = new PerspectiveCamera(scene, Math.PI / 3, 1, 500);
-  scene.mainCamera.controller = new OrbitCameraController({ center: new Vector3(0, 0, 1) });
-  scene.mainCamera.lookAt(new Vector3(0, 0, 0), new Vector3(0, 0.55, -1), Vector3.axisPY());
+  scene.mainCamera.controller = new OrbitCameraController({ center: new Vector3(0, 2, -1) });
+  scene.mainCamera.lookAt(new Vector3(0, 0, 0), new Vector3(0, 2, -1), Vector3.axisPY());
   getInput().use(scene.mainCamera.handleEvent, scene.mainCamera);
 
   const sunLight = new DirectionalLight(scene);
@@ -22,7 +22,7 @@ export default zephyrExample(import.meta.url, async (stage) => {
   const sky = scene.env.sky;
   sky.skyType = 'scatter';
   // Cloud cover, brightness and wind (which drives drift speed and direction)
-  sky.cloudy = 0.5;
+  sky.cloudy = 0.6;
   sky.cloudIntensity = 1.5;
   sky.wind.setXY(600, 0);
   scene.mainCamera.toneMap = true;

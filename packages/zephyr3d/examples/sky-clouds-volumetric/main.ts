@@ -11,8 +11,8 @@ export default zephyrExample(import.meta.url, async (stage) => {
   const scene = new Scene();
 
   scene.mainCamera = new PerspectiveCamera(scene, Math.PI / 3, 1, 500);
-  scene.mainCamera.controller = new OrbitCameraController({ center: new Vector3(0, 0, 1) });
-  scene.mainCamera.lookAt(new Vector3(0, 0, 0), new Vector3(0, 0.55, -1), Vector3.axisPY());
+  scene.mainCamera.controller = new OrbitCameraController({ center: new Vector3(0, 2, -1) });
+  scene.mainCamera.lookAt(new Vector3(0, 0, 0), new Vector3(0, 2, -1), Vector3.axisPY());
   getInput().use(scene.mainCamera.handleEvent, scene.mainCamera);
   new DirectionalLight(scene).lookAt(new Vector3(0, 15, -10), new Vector3(0, 0, 0), Vector3.axisPY());
 
