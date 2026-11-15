@@ -28,6 +28,13 @@
 //   fixed name, so two drags at once on a page break each other: `ghost.drag()` queues page-wide.
 // - The node drag subject is looked up on the hidden canvas from the last pointer position,
 //   so a drag needs a pointer move over the node first (`ghost.drag()` does that).
+// - `nodeAutoColorBy` / `linkAutoColorBy` write the colour into the attribute named by `nodeColor` / `linkColor`,
+//   and only when that prop is still a string (the default `'color'`): give `nodeColor` a function and it does nothing.
+// - Every `graphData()` call copies `link[linkSource]` to `link.source` (and the target likewise) before
+//   resolving ids, so custom `linkSource('from')` links keep `from`/`to` and gain `source`/`target` node objects.
+// - `width()` / `height()` clear the canvas (and keep the view centred); it is redrawn on the next
+//   frame. Resizing every frame, such as from a ResizeObserver during a drag, paints blank frames:
+//   throttle it, or change sizes in steps.
 // - `nodeCanvasObject` draws in graph coordinates under the zoom transform: divide pixel sizes
 //   (font size, line width) by `globalScale` to keep them constant on screen.
 import type { MountContext } from '@/types.ts';

@@ -117,3 +117,27 @@ export function team(): SampleGraph {
 
 /** A palette that reads on the stage's light paper and on dark backgrounds alike. */
 export const PALETTE = ['#e4572e', '#29335c', '#f3a712', '#669bbc', '#a8c686', '#8e5572', '#2a9d8f'] as const;
+
+export interface NetworkLink extends SampleLink {
+  type: 'road' | 'rail' | 'ferry';
+  name: string;
+  value: number;
+}
+
+/**
+ * Towns in clusters, linked by road, rail or ferry: every link has `type`, `name` and a `value`
+ * (1 to 5). The graph for link styling examples that colour, dash or size links by kind.
+ */
+export function network(groups = 3, size = 8, seed = 9): SampleGraph<SampleNode, NetworkLink> {
+  const base = clusters(groups, size, seed);
+  const r = rng(seed + 100);
+  const kinds = ['road', 'rail', 'ferry'] as const;
+  const links = base.links.map((l, i) => {
+    const type = kinds[i % 3]!;
+    return { ...l, type, name: `${type} ${i + 1}`, value: 1 + Math.floor(r() * 5) } as NetworkLink;
+  });
+  return { nodes: base.nodes, links };
+}
+
+/** The colour each link type of `network()` is drawn in, readable on the stage's light paper. */
+export const KIND_COLOR: Record<NetworkLink['type'], string> = { road: '#8d6e63', rail: '#3d5a80', ferry: '#2a9d8f' };
