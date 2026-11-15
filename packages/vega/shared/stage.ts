@@ -23,6 +23,9 @@ import './stage.css';
  *   for data), or fake input with stage.ghost(view), which needs the canvas renderer.
  * - The stage scales the view to fit (cards and narrow full views). Vega maps pointer
  *   coordinates through CSS transforms, so interaction keeps working when scaled.
+ * - A ghost click in a card would bubble into the card's <a> and open the example; the stage
+ *   cancels untrusted clicks at its frame. Specs that need the default action of a ghost click
+ *   (none so far) can't have it in cards.
  * - `view.finalize()` removes the listeners a spec added to window or document; the stage
  *   calls it for every view it rendered or adopted.
  */
@@ -84,6 +87,7 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
   const stops: (() => void)[] = [];
   let animated = false;
   let disposed = false;
+  let ghostGuard: ((e: Event) => void) | null = null;
 
   // Scale the view's natural size into the space it has. Cards may scale a small view up.
   const fit = (): void => {
@@ -162,6 +166,14 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
     adopt,
     ghost: (view) => {
       animated = true;
+      if (!ghostGuard) {
+        // A card is an <a>: a synthetic click bubbling through it would open the example.
+        // Cancelling the default stops that and still lets Vega's own listeners see the click.
+        ghostGuard = (e: Event) => {
+          if (!e.isTrusted) e.preventDefault();
+        };
+        for (const type of ['click', 'dblclick', 'auxclick']) frame.addEventListener(type, ghostGuard);
+      }
       return createGhost(view, () => !disposed);
     },
     every,
