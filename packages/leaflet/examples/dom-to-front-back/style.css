@@ -1,0 +1,15 @@
+/* Three overlapping labels: styles, nested under this example's own selector */
+[data-example='leaflet/dom-to-front-back'] {
+  .stack-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 74px;
+    padding: 14px 0;
+    text-align: center;
+    border-radius: 6px;
+    color: #111;
+    font: 700 13px system-ui, sans-serif;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 0.6);
+  }
+}

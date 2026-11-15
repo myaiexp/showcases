@@ -1,0 +1,6 @@
+/* A glowing path: styles, nested under this example's own selector */
+[data-example='leaflet/polyline-parent-onadd'] {
+  .glow {
+    filter: drop-shadow(0 0 5px #f58a3d) drop-shadow(0 0 2px #f58a3d);
+  }
+}

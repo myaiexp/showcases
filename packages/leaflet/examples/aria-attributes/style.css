@@ -1,0 +1,18 @@
+/* A DivIcon with a visually hidden label: styles, nested under this example's own selector */
+[data-example='leaflet/aria-attributes'] {
+  .dot-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #4ade80;
+    border: 3px solid #14532d;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}

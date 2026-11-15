@@ -1,0 +1,27 @@
+/* A draggable panel over the map: styles, nested under this example's own selector */
+[data-example='leaflet/draggable'] {
+  .drag-panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 800;
+    width: 150px;
+    border-radius: 6px;
+    background: #1f2937;
+    color: #e5e7eb;
+    font: 12px system-ui, sans-serif;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.6);
+    overflow: hidden;
+  }
+  .drag-handle {
+    padding: 5px 8px;
+    background: #f58a3d;
+    color: #111;
+    font-weight: 600;
+    cursor: grab;
+    touch-action: none;
+  }
+  .drag-body {
+    padding: 8px;
+  }
+}

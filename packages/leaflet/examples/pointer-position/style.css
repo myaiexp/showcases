@@ -1,0 +1,10 @@
+/* A bordered map container: styles, nested under this example's own selector */
+[data-example='leaflet/pointer-position'] {
+  .lf-map {
+    border: 14px solid #f58a3d;
+    box-sizing: content-box;
+  }
+  .lf-card .lf-map {
+    height: calc(100% - 28px);
+  }
+}

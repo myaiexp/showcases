@@ -1,0 +1,6 @@
+/* A map with and without inert: styles, nested under this example's own selector */
+[data-example='leaflet/decorative-map'] {
+  .lf-map[inert] {
+    filter: grayscale(0.7) brightness(0.8);
+  }
+}

@@ -1,0 +1,14 @@
+/* A compass needle in a DivIcon: styles, nested under this example's own selector */
+[data-example='leaflet/util-wrap-num'] {
+  .needle {
+    position: absolute;
+    left: -3px;
+    top: -56px;
+    width: 6px;
+    height: 56px;
+    transform-origin: 3px 56px;
+    transition: transform 0.5s ease;
+    background: linear-gradient(#f58a3d 40%, #e5e7eb 40%);
+    clip-path: polygon(50% 0, 100% 35%, 100% 100%, 0 100%, 0 35%);
+  }
+}

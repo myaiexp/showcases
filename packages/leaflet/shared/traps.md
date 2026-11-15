@@ -134,6 +134,15 @@ add to it when something bites.
   star map's measured bounds and stars are in `uqm.ts`.
 - Memory: each Leaflet card costs real browser memory (tiles are decoded images). A probe that
   mounts many cards at once can pass caxi's 1.2 GB cap: probe a dozen or fewer at a time.
+- `Marker` defaults to `bubblingPointerEvents: false`: a marker click never reaches the map's
+  `click`. A plain `LayerGroup` isn't an event parent of its layers; `FeatureGroup` is.
+- `DomEvent.off(el)` removes every listener on the element, `disableClickPropagation`'s too.
+- `static initHooks = true` on a class whose constructor never calls `callInitHooks()` means its
+  hooks never run. A vector layer's `getElement()` is undefined until `super.onAdd` has run.
+- A subclass's `static defaultOptions` that omits parent keys fails to type-check: annotate it
+  `typeof CircleMarker.defaultOptions` (its parent). `erasableSyntaxOnly` forbids constructor
+  parameter properties. The map's `translate` option is applied while rendering: a new language
+  needs a new map.
 - `.lf-map` has `flex: 1`: an example that sets the map box's width also sets `flex: none`.
 - In a card, `stage.log()` writes the caption, so a `stage.say()` in a cycle overwrites it.
 
