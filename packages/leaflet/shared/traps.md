@@ -7,7 +7,9 @@ add to it when something bites.
 
 - **Build on `createStage`** (`stage.ts`): `const map = stage.own(new LeafletMap(stage.box, {...}))`.
   `stage.own` calls `map.remove()` on cleanup, which drops the map's listeners, its
-  ResizeObserver and its panes. Timers go through `stage.every/after/wait/cycle`.
+  ResizeObserver and its panes. Timers go through `stage.every/after/wait/cycle`. An example
+  unmounted while it awaits data finds the stage disposed: `stage.own()` then removes what it is
+  given and throws `STOPPED`, ending the late mount (the host ignores it).
 - **Import `LeafletMap`, not `Map`.** `Map` is exported too, but it shadows the built-in `Map` in
   the module (the docs say the same).
 - **No network, in cards or full views.** Never `new TileLayer(url)` or `new WMSTileLayer(url)`:
@@ -70,6 +72,17 @@ add to it when something bites.
   `keyboardPanDelta`, `worldCopyJump`, `doubleClickZoom` (each dblclick), `closePopupOnClick`
   (when a popup opens), `zoomAnimationThreshold`, `maxBoundsViscosity` (when a drag starts).
 - Also live: `zoomSnap`, `zoomDelta`, `wheelPxPerZoomLevel` (the zoom handlers re-read them).
+- `autoClose` is read from the popup already open when the next one opens.
+- `riseOnHover` is wired when the icon is created: toggling it needs the marker re-added.
+- Tile layer options read when the layer is added: `updateWhenIdle`, `updateInterval`,
+  `className`, `crs` (rebuild the layer). Read live: `maxNativeZoom`/`minNativeZoom` (then
+  `redraw()`), `uppercase`, `zIndex`, `opacity`.
+- A path's `renderer` and a Canvas `tolerance` are read live; a Canvas `padding` needs a new
+  renderer. Group events are `LeafletPointerEvent`: read `e.propagatedFrom`.
+- `smoothFactor` is read when a line is projected: `setStyle({smoothFactor})` then `redraw()`.
+
+## Maps, panes and events
+
 - `map.remove()` then `new LeafletMap(sameBox)` works; own the current map with
   `stage.own({remove: () => map?.remove()})`.
 - `map.getPanes()` includes `mapPane`, the parent of the others.
@@ -79,10 +92,15 @@ add to it when something bites.
   space-separated string.
 - A map `dblclick` also runs `doubleClickZoom`: a card cycle that sends one resets the view.
 - Zoom-control buttons can be pressed in cards with `.click()` on `.leaflet-control-zoom-in`.
+- `Marker` defaults to `bubblingPointerEvents: false`: a marker click never reaches the map's
+  `click`. A plain `LayerGroup` isn't an event parent of its layers; `FeatureGroup` is.
+- `DomEvent.off(el)` removes every listener on the element, `disableClickPropagation`'s too.
+
+## Popups, tooltips and markers
+
 - `unbindPopup()` only removes the listeners: an open popup stays open, so `closePopup()` first.
 - Leaflet ignores a click that comes right after a drag (until the next pointerdown): after a
   scripted drag, open a popup by method, not with a ghost click.
-- `autoClose` is read from the popup already open when the next one opens.
 - A popup or non-sticky tooltip on a path opens at its `getCenter()`; a clicked path's popup
   opens at the click point.
 - A card fits markers plus popups or tooltips at about zoom 7, not 8.
@@ -90,14 +108,13 @@ add to it when something bites.
   `static defaultOptions` needs tuple types (`as PointTuple`). `marker.dragging` may be undefined.
 - `DivIcon` sets inline width and height from `iconSize`; CSS can't override `[0, 0]`. `bgPos`
   only sets `background-position`: the image comes from the icon's CSS class.
-- `riseOnHover` is wired when the icon is created: toggling it needs the marker re-added.
 - A popup opening near a card's edge autoPans the map and can push other markers out of view.
+
+## Tiles and overlays
+
 - Tile events (`tileloadstart`, `loading`…) fire synchronously inside `addTo()` when the map
   already has a view: attach listeners before `addTo`. `tile-urls.ts` has helpers for showing
   requested URLs (`onRequest`, `countTiles`, `shortUrl`, `wmsLines`).
-- Tile layer options read when the layer is added: `updateWhenIdle`, `updateInterval`,
-  `className`, `crs` (rebuild the layer). Read live: `maxNativeZoom`/`minNativeZoom` (then
-  `redraw()`), `uppercase`, `zIndex`, `opacity`.
 - A custom `createTile` is async only if it declares `done`: `createTile(coords: Coords, done:
   DoneCallback)`. In GridLayer's `tileloadstart`, read `e.tile`: it isn't in the container yet.
   An overriding `onRemove` returns `void`.
@@ -109,11 +126,11 @@ add to it when something bites.
   `getElement().srcObject` afterwards. SVG elements: `createElementNS` with the SVG namespace (the
   offline test allows XML namespace URIs).
 - `ImageOverlay.bringToFront()` only reorders the DOM; once `setZIndex` is called, z-index wins.
-- A path's `renderer` and a Canvas `tolerance` are read live; a Canvas `padding` needs a new
-  renderer. Group events are `LeafletPointerEvent`: read `e.propagatedFrom`.
+
+## Vectors, groups and GeoJSON
+
 - The layers control fires `overlayadd`/`overlayremove`/`baselayerchange` for any add or remove
   of an entry's layer, from code too. `group-demo.ts` `pressEntry()` clicks an entry in cards.
-- `smoothFactor` is read when a line is projected: `setStyle({smoothFactor})` then `redraw()`.
 - `closestLayerPoint` takes a layer point and returns a `Point` with `.distance`. A Polygon drops
   a last point equal to the first; a Polyline keeps it.
 - A union of path classes loses `radius` and makes `.on()` uncallable: type each Circle as its
@@ -123,6 +140,9 @@ add to it when something bites.
   no typed `feature`, and `getBounds()` plus typed pointer handlers exist on `Polygon`/`Polyline`,
   not `Layer`: cast state layers `as Polygon`. `GeoJSON.geometryToLayer` doesn't set
   `layer.feature`; `addData` does. Use `instanceof`, never `constructor.name` (minified).
+
+## Controls, geometry and CRS
+
 - Control subclasses in TS: `override onAdd`, `override getEvents`, `static override
   defaultOptions`. `addTo` prepends in bottom corners and appends in top ones. ZoomControl,
   ScaleControl and FullscreenControl options are read at `onAdd` (new control to change them).
@@ -132,17 +152,20 @@ add to it when something bites.
   for SimpleCRS. SimpleCRS maps fit their image better with `zoomSnap: 0.25`.
 - Geometry examples without a map draw on `plane.ts` (an SVG plane, y down like `Point`); the
   star map's measured bounds and stars are in `uqm.ts`.
-- Memory: each Leaflet card costs real browser memory (tiles are decoded images). A probe that
-  mounts many cards at once can pass caxi's 1.2 GB cap: probe a dozen or fewer at a time.
-- `Marker` defaults to `bubblingPointerEvents: false`: a marker click never reaches the map's
-  `click`. A plain `LayerGroup` isn't an event parent of its layers; `FeatureGroup` is.
-- `DomEvent.off(el)` removes every listener on the element, `disableClickPropagation`'s too.
-- `static initHooks = true` on a class whose constructor never calls `callInitHooks()` means its
-  hooks never run. A vector layer's `getElement()` is undefined until `super.onAdd` has run.
+
+## Extending
+
 - A subclass's `static defaultOptions` that omits parent keys fails to type-check: annotate it
   `typeof CircleMarker.defaultOptions` (its parent). `erasableSyntaxOnly` forbids constructor
   parameter properties. The map's `translate` option is applied while rendering: a new language
   needs a new map.
+- `static initHooks = true` on a class whose constructor never calls `callInitHooks()` means its
+  hooks never run. A vector layer's `getElement()` is undefined until `super.onAdd` has run.
+
+## Stage and cards
+
+- Memory: each Leaflet card costs real browser memory (tiles are decoded images). A probe that
+  mounts many cards at once can pass caxi's 1.2 GB cap: probe a dozen or fewer at a time.
 - `.lf-map` has `flex: 1`: an example that sets the map box's width also sets `flex: none`.
 - In a card, `stage.log()` writes the caption, so a `stage.say()` in a cycle overwrites it.
 
