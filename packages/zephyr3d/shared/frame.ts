@@ -38,6 +38,11 @@ export type Run = (stage: Stage) => void | Promise<void>;
 export interface FrameOptions {
   /** Height of the view in the full view, px. Default 480. */
   height?: number;
+  /**
+   * Globals set on the iframe's window before the example's module (and so the engine) is
+   * imported, e.g. `{ __ZEPHYR3D_REVERSE_Z__: false }`, which the engine reads once at load.
+   */
+  globals?: Record<string, unknown>;
 }
 
 /** What the example's module hands the host when it runs inside its iframe. */

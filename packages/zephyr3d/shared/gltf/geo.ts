@@ -42,7 +42,7 @@ export function lathe(rings: [number, number][], opts: LatheOptions = {}): Geo {
     }
     count.push(seg);
   }
-  const at = (i: number, j: number): number => first[i] + (count[i] === 1 ? 0 : j % seg);
+  const at = (i: number, j: number): number => (first[i] ?? 0) + (count[i] === 1 ? 0 : j % seg);
   const tri = (a: number, b: number, c: number): void => {
     if (a !== b && b !== c && a !== c) indices.push(a, b, c);
   };
@@ -90,10 +90,10 @@ export function box(c: Vec3, size: Vec3): Geo {
   const indices: number[] = [];
   for (const [n, u, v] of FACES) {
     const base = positions.length / 3;
-    for (const [su, sv] of [[-1, -1], [1, -1], [1, 1], [-1, 1]]) {
+    for (const [su, sv] of [[-1, -1], [1, -1], [1, 1], [-1, 1]] as [number, number][]) {
       for (let k = 0; k < 3; k++) {
-        positions.push(c[k] + (n[k] + u[k] * su + v[k] * sv) * size[k] * 0.5);
-        normals.push(n[k]);
+        positions.push(c[k]! + (n[k]! + u[k]! * su + v[k]! * sv) * size[k]! * 0.5);
+        normals.push(n[k]!);
       }
     }
     indices.push(base, base + 1, base + 2, base, base + 2, base + 3);
@@ -104,18 +104,22 @@ export function box(c: Vec3, size: Vec3): Geo {
 /** Area-weighted smooth normals from the triangles. */
 export function smoothNormals(positions: ArrayLike<number>, indices: ArrayLike<number>): number[] {
   const out = new Array<number>(positions.length).fill(0);
+  const p = (i: number): number => positions[i] ?? 0;
   for (let t = 0; t < indices.length; t += 3) {
-    const [a, b, c] = [indices[t] * 3, indices[t + 1] * 3, indices[t + 2] * 3];
-    const e1 = [positions[b] - positions[a], positions[b + 1] - positions[a + 1], positions[b + 2] - positions[a + 2]];
-    const e2 = [positions[c] - positions[a], positions[c + 1] - positions[a + 1], positions[c + 2] - positions[a + 2]];
-    const n = [e1[1] * e2[2] - e1[2] * e2[1], e1[2] * e2[0] - e1[0] * e2[2], e1[0] * e2[1] - e1[1] * e2[0]];
-    for (const v of [a, b, c]) for (let k = 0; k < 3; k++) out[v + k] += n[k];
+    const a = (indices[t] ?? 0) * 3;
+    const b = (indices[t + 1] ?? 0) * 3;
+    const c = (indices[t + 2] ?? 0) * 3;
+    const [ux, uy, uz] = [p(b) - p(a), p(b + 1) - p(a + 1), p(b + 2) - p(a + 2)];
+    const [vx, vy, vz] = [p(c) - p(a), p(c + 1) - p(a + 1), p(c + 2) - p(a + 2)];
+    const n = [uy * vz - uz * vy, uz * vx - ux * vz, ux * vy - uy * vx];
+    for (const v of [a, b, c]) for (let k = 0; k < 3; k++) out[v + k] = (out[v + k] ?? 0) + (n[k] ?? 0);
   }
   for (let i = 0; i < out.length; i += 3) {
-    const len = Math.hypot(out[i], out[i + 1], out[i + 2]) || 1;
-    out[i] /= len;
-    out[i + 1] /= len;
-    out[i + 2] /= len;
+    const [x, y, z] = [out[i] ?? 0, out[i + 1] ?? 0, out[i + 2] ?? 0];
+    const len = Math.hypot(x, y, z) || 1;
+    out[i] = x / len;
+    out[i + 1] = y / len;
+    out[i + 2] = z / len;
   }
   return out;
 }
@@ -152,10 +156,11 @@ export const rigid =
  */
 export function blendByY(stops: [number, number][]): Influence {
   return (_x, y) => {
-    if (y >= stops[0][0]) return [[stops[0][1], 1]];
+    const top = stops[0];
+    if (!top || y >= top[0]) return [[top?.[1] ?? 0, 1]];
     for (let i = 0; i + 1 < stops.length; i++) {
-      const [y0, j0] = stops[i];
-      const [y1, j1] = stops[i + 1];
+      const [y0, j0] = stops[i]!;
+      const [y1, j1] = stops[i + 1]!;
       if (y >= y1) {
         if (j0 === j1) return [[j0, 1]];
         const t = (y0 - y) / (y0 - y1);
@@ -166,7 +171,7 @@ export function blendByY(stops: [number, number][]): Influence {
         ];
       }
     }
-    return [[stops[stops.length - 1][1], 1]];
+    return [[stops[stops.length - 1]![1], 1]];
   };
 }
 
@@ -177,7 +182,7 @@ export function skinned(g: Geo, influence: Influence, material: number): Primiti
   const joints = new Uint8Array(n * 4);
   const weights = new Float32Array(n * 4);
   for (let i = 0; i < n; i++) {
-    const list = influence(f.positions[i * 3], f.positions[i * 3 + 1], f.positions[i * 3 + 2]).filter(([, w]) => w > 1e-4);
+    const list = influence(f.positions[i * 3] ?? 0, f.positions[i * 3 + 1] ?? 0, f.positions[i * 3 + 2] ?? 0).filter(([, w]) => w > 1e-4);
     const total = list.reduce((s, [, w]) => s + w, 0) || 1;
     list.slice(0, 4).forEach(([j, w], k) => {
       joints[i * 4 + k] = j;
@@ -209,12 +214,12 @@ export function staticPrim(g: Geo, material: number): PrimitiveDef {
 export function sampleProfile(keys: [number, number][], step: number): [number, number][] {
   const out: [number, number][] = [];
   for (let i = 0; i + 1 < keys.length; i++) {
-    const [y0, r0] = keys[i];
-    const [y1, r1] = keys[i + 1];
+    const [y0, r0] = keys[i]!;
+    const [y1, r1] = keys[i + 1]!;
     const n = Math.max(1, Math.ceil((y1 - y0) / step));
     for (let k = 0; k < n; k++) out.push([y0 + ((y1 - y0) * k) / n, r0 + ((r1 - r0) * k) / n]);
   }
-  out.push(keys[keys.length - 1]);
+  out.push(keys[keys.length - 1]!);
   return out;
 }
 
@@ -226,7 +231,7 @@ export function mergePrims(prims: PrimitiveDef[]): PrimitiveDef {
     positions: new Float32Array(total * 3),
     normals: new Float32Array(total * 3),
     indices: total > 65535 ? new Uint32Array(prims.reduce((s, p) => s + p.indices.length, 0)) : new Uint16Array(prims.reduce((s, p) => s + p.indices.length, 0)),
-    material: prims[0].material,
+    material: prims[0]?.material,
   };
   if (skin) {
     out.joints = new Uint8Array(total * 4);
@@ -241,9 +246,7 @@ export function mergePrims(prims: PrimitiveDef[]): PrimitiveDef {
       out.joints?.set(p.joints ?? [], v * 4);
       out.weights?.set(p.weights ?? [], v * 4);
     }
-    p.indices.forEach((x, k) => {
-      out.indices[i + k] = x + v;
-    });
+    out.indices.set(Array.from(p.indices, (x) => x + v), i);
     v += p.positions.length / 3;
     i += p.indices.length;
   }

@@ -122,8 +122,8 @@ export class Glb {
       const min = new Array<number>(size).fill(Infinity);
       const max = new Array<number>(size).fill(-Infinity);
       for (let i = 0; i < data.length; i++) {
-        min[i % size] = Math.min(min[i % size], data[i]);
-        max[i % size] = Math.max(max[i % size], data[i]);
+        min[i % size] = Math.min(min[i % size]!, data[i]!);
+        max[i % size] = Math.max(max[i % size]!, data[i]!);
       }
       accessor.min = min;
       accessor.max = max;
@@ -179,7 +179,7 @@ export class Glb {
 
   /** Makes `child` a child of `parent`. */
   addChild(parent: number, child: number): void {
-    const node = this.nodes[parent];
+    const node = this.nodes[parent]!;
     node.children = [...(node.children ?? []), child];
   }
 

@@ -17,13 +17,13 @@ export interface Rig {
 /** Adds the joint nodes (local translations from the world rest positions) and a skin. */
 export function addRig(glb: Glb, joints: JointDef[], skinName: string): Rig {
   const nodes = joints.map((j) => {
-    const p = j.parent < 0 ? ([0, 0, 0] as Vec3) : joints[j.parent].world;
+    const p = joints[j.parent]?.world ?? ([0, 0, 0] as Vec3);
     return glb.addNode({ name: j.name, translation: [j.world[0] - p[0], j.world[1] - p[1], j.world[2] - p[2]] });
   });
   joints.forEach((j, i) => {
-    if (j.parent >= 0) glb.addChild(nodes[j.parent], nodes[i]);
+    if (j.parent >= 0) glb.addChild(nodes[j.parent]!, nodes[i]!);
   });
-  const root = nodes[joints.findIndex((j) => j.parent < 0)];
+  const root = nodes[joints.findIndex((j) => j.parent < 0)]!;
   const skin = glb.addSkin({
     name: skinName,
     joints: nodes,
@@ -58,13 +58,13 @@ export function smoothstep(a: number, b: number, t: number): number {
 export function curve(points: [number, number][]): (u: number) => number {
   const n = points.length;
   const at = (i: number): [number, number] => {
-    const [u, v] = points[((i % n) + n) % n];
+    const [u, v] = points[((i % n) + n) % n]!;
     return [u + Math.floor(i / n), v];
   };
   return (u) => {
     const t = u - Math.floor(u);
     let i = n - 1;
-    while (i > 0 && points[i][0] > t) i--;
+    while (i > 0 && points[i]![0] > t) i--;
     const [u0, v0] = at(i);
     const [u1, v1] = at(i + 1);
     const [um, vm] = at(i - 1);
@@ -119,7 +119,7 @@ export function clip(o: ClipOptions): AnimationDef {
     });
     const head = Array.from(values.subarray(0, 4));
     const tail = values.subarray((frames - 2) * 4, (frames - 1) * 4);
-    const flip = head.reduce((s, v, i) => s + v * tail[i], 0) < 0 ? -1 : 1;
+    const flip = head.reduce((s, v, i) => s + v * (tail[i] ?? 0), 0) < 0 ? -1 : 1;
     values.set(head.map((v) => v * flip), (frames - 1) * 4);
     channels.push({ node, path: 'rotation', times, values });
   }
@@ -127,7 +127,7 @@ export function clip(o: ClipOptions): AnimationDef {
     const values = new Float32Array(frames * 3);
     poses.forEach((p, k) => values.set(p.pos?.[joint] ?? [0, 0, 0], k * 3));
     values.set(values.subarray(0, 3), (frames - 1) * 3);
-    channels.push({ node: o.nodes[joint], path: 'translation', times, values });
+    channels.push({ node: o.nodes[joint]!, path: 'translation', times, values });
   }
   return { name: o.name, channels };
 }

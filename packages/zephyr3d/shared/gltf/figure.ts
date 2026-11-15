@@ -117,14 +117,14 @@ export function figureGlb(): ArrayBuffer {
   const byMaterial = new Map<number, PrimitiveDef[]>();
   for (const [m, geo, influence] of bodyParts()) {
     const list = byMaterial.get(m) ?? [];
-    list.push(skinned(geo, influence, materials[m]));
+    list.push(skinned(geo, influence, materials[m]!));
     byMaterial.set(m, list);
   }
   const mesh = glb.addMesh({ name: 'Figure', primitives: [...byMaterial.values()].map(mergePrims) });
-  const joints: JointDef[] = FIGURE_JOINTS.map((name, i) => ({ name, parent: PARENT[i], world: WORLD[i] }));
+  const joints: JointDef[] = FIGURE_JOINTS.map((name, i) => ({ name, parent: PARENT[i]!, world: WORLD[i]! }));
   const rig = addRig(glb, joints, 'FigureSkin');
   const body = glb.addNode({ name: 'FigureBody', mesh, skin: rig.skin });
-  const nodes = Object.fromEntries(FIGURE_KEYS.map((k, i) => [k, rig.nodes[i]]));
+  const nodes: Record<string, number> = Object.fromEntries(FIGURE_KEYS.map((k, i) => [k, rig.nodes[i]!]));
   for (const c of figureClips(nodes)) glb.addAnimation(c);
-  return glb.build([rig.nodes[0], body]);
+  return glb.build([rig.nodes[0]!, body]);
 }

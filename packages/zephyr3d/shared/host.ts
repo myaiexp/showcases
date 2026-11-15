@@ -105,6 +105,7 @@ export async function mountFrame(el: HTMLElement, ctx: MountContext, moduleUrl: 
     const canvas = doc?.querySelector('canvas');
     if (!win || !doc || !canvas) throw new Error('the example iframe has no document');
     tameFocus(win, preview);
+    Object.assign(win, opts.globals);
     win.addEventListener('error', (e) => fail(e.error ?? e.message));
     win.addEventListener('unhandledrejection', (e) => fail(e.reason));
 
