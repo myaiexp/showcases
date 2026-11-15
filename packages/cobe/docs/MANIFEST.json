@@ -1,0 +1,50 @@
+{
+  "fetched": "2026-11-15T09:43:07.557Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/shuding/cobe",
+      "ref": "2.0.1",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "website/app/components/Recipes.tsx",
+        "website/app/components/MarkersArcs.tsx",
+        "website/app/components/CustomLabels.tsx"
+      ],
+      "commit": "1f37b2233a64beda6d114d332e201f6310667d60"
+    },
+    {
+      "kind": "pages",
+      "urls": [
+        "https://cobe.vercel.app/"
+      ]
+    }
+  ],
+  "files": {
+    "pages/cobe-vercel-app.md": {
+      "url": "https://cobe.vercel.app/",
+      "sha256": "41c0f4ad575650ac6a05a5bbe926c0e2aa687cb5a5fbd762d34cb34ebd638427"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/shuding/cobe/blob/1f37b2233a64beda6d114d332e201f6310667d60/LICENSE",
+      "sha256": "226e31827d99b53fe36d8476824a7238056db4c8bd8ac5abe7e73f6004fba24e"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/shuding/cobe/blob/1f37b2233a64beda6d114d332e201f6310667d60/README.md",
+      "sha256": "7706b25aaddc7d511e3267bc26457945740590d136c92cd9921ebe5104513f97"
+    },
+    "repo/website/app/components/CustomLabels.tsx": {
+      "url": "https://github.com/shuding/cobe/blob/1f37b2233a64beda6d114d332e201f6310667d60/website/app/components/CustomLabels.tsx",
+      "sha256": "054f75c4e685bdc20f24dfa67bd57f77de77bfca24791bc32e55e49fd270959e"
+    },
+    "repo/website/app/components/MarkersArcs.tsx": {
+      "url": "https://github.com/shuding/cobe/blob/1f37b2233a64beda6d114d332e201f6310667d60/website/app/components/MarkersArcs.tsx",
+      "sha256": "dbaf7e8bda830cc58acf423eaeb5dd4531a38eb28810e86fb9cbbc81ca4d588f"
+    },
+    "repo/website/app/components/Recipes.tsx": {
+      "url": "https://github.com/shuding/cobe/blob/1f37b2233a64beda6d114d332e201f6310667d60/website/app/components/Recipes.tsx",
+      "sha256": "38554c0098ea0aca566318cb10fedd172535144c81973c0f0d97a5625110d133"
+    }
+  }
+}

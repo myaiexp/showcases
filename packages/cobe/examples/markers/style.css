@@ -1,0 +1,16 @@
+/* Markers: the label that follows the marker with an id */
+[data-example='cobe/markers'] {
+  .tokyo-label {
+    position: absolute;
+    bottom: anchor(top);
+    left: anchor(center);
+    translate: -50% 0;
+    margin-bottom: 6px;
+    padding: 0.15rem 0.4rem;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    pointer-events: none;
+  }
+}

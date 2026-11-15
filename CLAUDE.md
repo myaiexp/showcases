@@ -200,3 +200,6 @@ GitHub Pages. No service on the VPS.
   `new vega.View(vega.parse(spec, stage.config), {...stage.options})` and `stage.adopt`s it. Cards fake input
   with `stage.ghost(view)` (canvas renderer). The mount test (`test/vega-mount.ts`, in four shards) fails on
   any Vega warning.
+- cobe: build on `packages/cobe/shared/stage.ts` (`createStage`, trap list). `stage.own(createGlobe(…))` right after
+  creating: 2.0.1's `destroy()` keeps the WebGL context. Wrap every marker/arc id in `stage.id()`, since anchor names and
+  `--cobe-visible-*` vars are page-wide. No loop or `onRender` in v2: animate with `stage.loop` + `update()`.

@@ -1,0 +1,18 @@
+/* Arc labels: the docs' .arc-label style, a white tag above the arc's peak */
+[data-example='cobe/arc-labels'] {
+  .arc-label {
+    position: absolute;
+    bottom: anchor(top);
+    left: anchor(center);
+    translate: -50% 0;
+    margin-bottom: 8px;
+    padding: 0.3rem 0.6rem;
+    background: #fff;
+    color: #1a1a1a;
+    font-size: 0.7rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+    transition: opacity 0.3s;
+  }
+}

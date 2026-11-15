@@ -1,0 +1,50 @@
+/* Browser support: anchored labels and the docs' two @supports fallbacks */
+[data-example='cobe/browser-support'] {
+  /* No box of its own while anchored, so the labels' containing block is the pane. */
+  .labels {
+    display: contents;
+  }
+  .marker-label {
+    position: absolute;
+    bottom: anchor(top);
+    left: anchor(center);
+    translate: -50% 0;
+    margin-bottom: 8px;
+    padding: 0.25rem 0.5rem;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: var(--visible);
+    transition: opacity 0.3s;
+  }
+
+  /* Hide labels in browsers without anchor positioning */
+  @supports not (anchor-name: --test) {
+    .marker-label {
+      display: none;
+    }
+  }
+  .simulate-hide .marker-label {
+    display: none;
+  }
+
+  /* Alternative: show labels without positioning, as a list */
+  .simulate-list {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .simulate-list .marker-label {
+    position: static;
+    translate: none;
+    margin: 0;
+    opacity: 1;
+  }
+}
