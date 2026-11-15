@@ -7,7 +7,7 @@ export default defineMeta({
     'A line, area and dots over the same points with a curve picked from d3-shape: linear, monotone, step, basis or Catmull-Rom, adapted with d3Curve.',
   section: 'Scales',
   tags: ['d3Curve', 'curve', 'areaY', 'lineY'],
-  docs: ['repo/docs/concepts/scales-and-d3.md'],
+  docs: ['repo/docs/concepts/scales-and-d3.md', 'repo/docs/concepts/marks-and-layering.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

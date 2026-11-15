@@ -7,7 +7,11 @@ export default defineMeta({
     'indicator.render gets the categorical value and the resolved color, label and bounds, and returns scene nodes. This one draws a small rect with a rule through it for every item. The legend still does the measuring, wrapping and placement of each item, so only the symbol is yours.',
   section: 'Legends and Color',
   tags: ['colorLegendItems', 'indicator.render', 'SceneNode', 'ColorLegendIndicatorRenderContext'],
-  docs: ['repo/docs/guides/legends-and-color.md', 'repo/docs/reference/scales-guides-and-color.md'],
+  docs: [
+    'repo/docs/guides/legends-and-color.md',
+    'repo/docs/reference/scales-guides-and-color.md',
+    'repo/docs/reference/marks/bar-and-rect.md',
+  ],
   provenance: 'pure',
   added: '2026-11-14',
 });

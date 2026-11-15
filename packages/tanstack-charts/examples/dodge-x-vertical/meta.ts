@@ -7,7 +7,7 @@ export default defineMeta({
     'dodgeX is the transposed layout: the y value is kept and x is derived. A column of response times fans out sideways around the middle, with y as the only configured scale.',
   section: 'Dodge Layouts',
   tags: ['dot', 'dodgeX', 'layout', 'x: null'],
-  docs: ['repo/docs/reference/marks/dodge.md'],
+  docs: ['repo/docs/reference/marks/dodge.md', 'repo/docs/guides/tooltips-and-focus.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

@@ -7,7 +7,11 @@ export default defineMeta({
     'z splits the rows so each series gets its own fit. Three groups with different slopes sit in one scatter; colour comes from the same z field, so each fitted line and band matches its dots.',
   section: 'Linear Regression Marks',
   tags: ['linearRegressionY', 'z', 'dot', 'color'],
-  docs: ['repo/docs/reference/marks/regression.md'],
+  docs: [
+    'repo/docs/reference/marks/regression.md',
+    'repo/docs/reference/marks/dot-and-hexagon.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-14',
 });

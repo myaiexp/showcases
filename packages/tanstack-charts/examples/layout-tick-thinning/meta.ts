@@ -7,7 +7,7 @@ export default defineMeta({
     'Thirty-six crowded category labels. Thinning drops labels that collide, keep protects chosen ones, priority ends favours the ends and rotation changes the measured bounds.',
   section: 'Layout, Axes, and Coordinates',
   tags: ['tickLabels.thin', 'minGap', 'priority', 'keep', 'rotate'],
-  docs: ['repo/docs/concepts/layout-axes-and-coordinates.md'],
+  docs: ['repo/docs/concepts/layout-axes-and-coordinates.md', 'repo/docs/reference/marks/bar-and-rect.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

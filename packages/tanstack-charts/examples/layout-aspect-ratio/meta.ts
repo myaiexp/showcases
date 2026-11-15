@@ -7,7 +7,7 @@ export default defineMeta({
     'The host option aspectRatio sets the height from the container width. The slider changes the ratio and the caption shows the resulting size.',
   section: 'Layout, Axes, and Coordinates',
   tags: ['aspectRatio', 'initialWidth', 'mountChart'],
-  docs: ['repo/docs/concepts/layout-axes-and-coordinates.md'],
+  docs: ['repo/docs/concepts/layout-axes-and-coordinates.md', 'repo/docs/concepts/scales-and-d3.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

@@ -7,7 +7,7 @@ export default defineMeta({
     "A ChartCurve is two functions that return SVG path data. This one rounds every corner by passing through segment midpoints with quadratic curves, and it is used by both a line and an area. No d3 module is involved.",
   section: "Custom Extensions",
   tags: ['ChartCurve', 'lineY', 'areaY', 'curve'],
-  docs: ['repo/docs/reference/custom-extensions.md'],
+  docs: ['repo/docs/reference/custom-extensions.md', 'repo/docs/concepts/marks-and-layering.md'],
   provenance: 'pure',
   added: '2026-11-15',
 });

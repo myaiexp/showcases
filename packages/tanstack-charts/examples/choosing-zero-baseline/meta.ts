@@ -7,7 +7,11 @@ export default defineMeta({
     'Four scores between 92 and 97. With a zero baseline the bars look similar; a domain of 90 to 100 makes the last bar look five times the first.',
   section: 'Choosing a Chart',
   tags: ['barY', 'scaleLinear', 'domain'],
-  docs: ['repo/docs/guides/choosing-a-chart.md'],
+  docs: [
+    'repo/docs/guides/choosing-a-chart.md',
+    'repo/docs/reference/marks/bar-and-rect.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-14',
 });

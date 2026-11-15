@@ -7,7 +7,10 @@ export default defineMeta({
     "ruleX draws a dashed vertical line for every release row, and ruleY draws horizontal lines for a baseline at 0 and an optional target at 30. A plain number array works as the y source because a rule falls back to the datum itself.",
   section: "Rules, Links, Arrows, Vectors, and Ticks",
   tags: ['ruleX', 'ruleY', 'strokeDasharray', 'strokeOpacity'],
-  docs: ['repo/docs/reference/marks/rules-links-arrows-vectors-and-ticks.md'],
+  docs: [
+    'repo/docs/reference/marks/rules-links-arrows-vectors-and-ticks.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-14',
 });

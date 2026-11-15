@@ -7,7 +7,10 @@ export default defineMeta({
     "A 12 by 8 grid of wind vectors. length reads each cell's speed in pixels and rotate its bearing in clockwise degrees (zero points up). The anchor option chooses whether the tail, middle or head sits on the grid point.",
   section: "Rules, Links, Arrows, Vectors, and Ticks",
   tags: ['vector', 'length', 'rotate', 'anchor', 'color'],
-  docs: ['repo/docs/reference/marks/rules-links-arrows-vectors-and-ticks.md'],
+  docs: [
+    'repo/docs/reference/marks/rules-links-arrows-vectors-and-ticks.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-14',
 });

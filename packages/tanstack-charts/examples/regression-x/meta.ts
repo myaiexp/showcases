@@ -7,7 +7,11 @@ export default defineMeta({
     'linearRegressionX is the transposed fit: the numeric x is the dependent value and y the independent one. The scatter has its explained value on the horizontal axis, so the fitted line is nearly vertical.',
   section: 'Linear Regression Marks',
   tags: ['linearRegressionX', 'dot'],
-  docs: ['repo/docs/reference/marks/regression.md'],
+  docs: [
+    'repo/docs/reference/marks/regression.md',
+    'repo/docs/reference/marks/dot-and-hexagon.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-14',
 });

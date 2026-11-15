@@ -7,7 +7,11 @@ export default defineMeta({
     "The triangulation is made after scaling to pixels, so squeezing or stretching the chart changes which diagonals are Delaunay edges even though the rows and domains stay the same. The slider changes the chart height.",
   section: "Delaunay Link Mark",
   tags: ['delaunayLink', 'host.update', 'height'],
-  docs: ['repo/docs/reference/marks/delaunay.md'],
+  docs: [
+    'repo/docs/reference/marks/delaunay.md',
+    'repo/docs/reference/marks/dot-and-hexagon.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-14',
 });

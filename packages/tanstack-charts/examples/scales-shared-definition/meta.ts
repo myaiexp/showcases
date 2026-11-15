@@ -7,7 +7,7 @@ export default defineMeta({
     'The same module-level definition mounted in two hosts of different size. Each host copies the scales and assigns its own pixel range, so neither affects the other.',
   section: 'Scales',
   tags: ['defineChart', 'scaleUtc', 'mountChart'],
-  docs: ['repo/docs/concepts/scales-and-d3.md'],
+  docs: ['repo/docs/concepts/scales-and-d3.md', 'repo/docs/concepts/marks-and-layering.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

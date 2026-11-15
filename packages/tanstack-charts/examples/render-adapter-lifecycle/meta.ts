@@ -7,7 +7,12 @@ export default defineMeta({
     "createChartAdapter is the lifecycle framework bindings build on: prerender returns markup, mount attaches to a container, update replaces the options, getScene reads the scene and destroy releases everything. Each step runs on its own and the log shows what it returned, including that getScene is undefined until mount and that a second mount throws.",
   section: "SSR and Hydration",
   tags: ['createChartAdapter', 'prerender', 'mount', 'update', 'getScene', 'destroy'],
-  docs: ['repo/docs/reference/adapter-controller.md', 'repo/docs/guides/ssr-and-hydration.md'],
+  docs: [
+    'repo/docs/reference/adapter-controller.md',
+    'repo/docs/guides/ssr-and-hydration.md',
+    'repo/docs/reference/marks/bar-and-rect.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

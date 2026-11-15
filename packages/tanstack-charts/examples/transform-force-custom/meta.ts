@@ -7,7 +7,11 @@ export default defineMeta({
     "A custom descriptor adds any D3-compatible force by name. A forceRadial pulls nodes toward rings by group, built inside create with access to the private node records and key accessor. Built-in forces still apply in the authored order.",
   section: "Data Transforms",
   tags: ["forceLayout", "custom", "forceRadial"],
-  docs: ["repo/docs/reference/transforms.md"],
+  docs: [
+    'repo/docs/reference/transforms.md',
+    'repo/docs/reference/marks/dot-and-hexagon.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

@@ -7,7 +7,11 @@ export default defineMeta({
     "forceLayout runs a D3 force simulation synchronously and returns nodes with x and y plus links with resolved endpoints, so ordinary dot and link marks can draw it. The slider changes the many-body repulsion and the layout is computed again; the simulation never keeps running.",
   section: "Data Transforms",
   tags: ["forceLayout", "manyBody", "link", "dot"],
-  docs: ["repo/docs/reference/transforms.md"],
+  docs: [
+    'repo/docs/reference/transforms.md',
+    'repo/docs/reference/marks/dot-and-hexagon.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

@@ -7,7 +7,11 @@ export default defineMeta({
     "The weight channel scales each observation's contribution. Giving the Gentoo rows a weight of three pulls the estimate toward their cluster compared with the unweighted version.",
   section: "Density Contour Mark",
   tags: ['densityContour', 'weight', 'dot'],
-  docs: ['repo/docs/reference/marks/density.md'],
+  docs: [
+    'repo/docs/reference/marks/density.md',
+    'repo/docs/reference/marks/dot-and-hexagon.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-14',
 });

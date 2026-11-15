@@ -7,7 +7,11 @@ export default defineMeta({
     "Two lines share one x axis and focus mode group-x. The guide gets z and key channels and match 'group', so one rule crosses both lines with a marker on each.",
   section: "Focus Guide Marks",
   tags: ['focusGuideX', 'z', 'match', 'focus group-x', 'tooltip'],
-  docs: ['repo/docs/reference/marks/focus-guide.md'],
+  docs: [
+    'repo/docs/reference/marks/focus-guide.md',
+    'repo/docs/reference/marks/line-and-area.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-14',
 });

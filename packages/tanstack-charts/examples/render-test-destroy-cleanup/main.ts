@@ -35,6 +35,8 @@ const mount: Mount = (el, ctx) => {
     };
     at('pointerenter');
     at('pointermove');
+    // If the example unmounts before the timer below runs, destroy still happens (it is idempotent).
+    stage.onDispose(() => host.destroy());
     stage.after(400, () => {
       const during = `${all()} elements, ${status()} tooltips`;
       host.destroy();

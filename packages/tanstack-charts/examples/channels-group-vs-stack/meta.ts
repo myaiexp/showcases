@@ -7,7 +7,11 @@ export default defineMeta({
     'Two product lines per quarter. Bars stack by default; layout group() places them side by side inside each category.',
   section: 'Data and Channels',
   tags: ['barY', 'z', 'layout', 'group'],
-  docs: ['repo/docs/concepts/data-and-channels.md', 'repo/docs/concepts/marks-and-layering.md'],
+  docs: [
+    'repo/docs/concepts/data-and-channels.md',
+    'repo/docs/concepts/marks-and-layering.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-14',
 });

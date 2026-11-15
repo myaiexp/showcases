@@ -7,7 +7,7 @@ export default defineMeta({
     "With z set, each species gets its own density estimate. A numeric threshold count resolves to one shared set of levels across all groups, so a band means the same density in every cloud.",
   section: "Density Contour Mark",
   tags: ['densityContour', 'z', 'thresholds', 'group'],
-  docs: ['repo/docs/reference/marks/density.md'],
+  docs: ['repo/docs/reference/marks/density.md', 'repo/docs/concepts/scales-and-d3.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

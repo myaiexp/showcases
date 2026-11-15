@@ -7,7 +7,7 @@ export default defineMeta({
     'Area marks do not draw their upper edge, so the usual layering is areaY and lineY with the same channels and scales. The checkbox removes the line to show the area alone.',
   section: 'Line and Area Marks',
   tags: ['areaY', 'lineY', 'layering', 'z'],
-  docs: ['repo/docs/reference/marks/line-and-area.md'],
+  docs: ['repo/docs/reference/marks/line-and-area.md', 'repo/docs/concepts/scales-and-d3.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

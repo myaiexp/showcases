@@ -7,7 +7,7 @@ export default defineMeta({
     "An AreaXCurve has one method, areaX(right, left), that returns path data for a band that runs along the y axis. This version draws the right edge, then the left edge backwards, with a small bevel at each end, and areaX uses it through its curve option.",
   section: "Custom Extensions",
   tags: ['AreaXCurve', 'areaX', 'curve'],
-  docs: ['repo/docs/reference/custom-extensions.md'],
+  docs: ['repo/docs/reference/custom-extensions.md', 'repo/docs/concepts/scales-and-d3.md'],
   provenance: 'pure',
   added: '2026-11-15',
 });

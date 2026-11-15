@@ -7,7 +7,7 @@ export default defineMeta({
     "binTimeX bins dates with a time interval that has floor, offset and range, so bins start on day, week or month boundaries instead of equal-width numbers. The select changes the interval over the same orders and counts per bin follow.",
   section: "Data Transforms",
   tags: ["binTimeX", "utcDay", "utcWeek", "utcMonth", "rect"],
-  docs: ["repo/docs/reference/transforms.md"],
+  docs: ['repo/docs/reference/transforms.md', 'repo/docs/concepts/scales-and-d3.md'],
   provenance: 'pure',
   added: '2026-11-15',
 });

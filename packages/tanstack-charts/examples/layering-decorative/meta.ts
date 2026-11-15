@@ -7,7 +7,7 @@ export default defineMeta({
     'decorative(lineY) keeps the line painted but removes its interaction points, so the dots own focus and the tooltip. The readout counts interaction points.',
   section: 'Marks and Layering',
   tags: ['decorative', 'lineY', 'dot', 'tooltip'],
-  docs: ['repo/docs/concepts/marks-and-layering.md'],
+  docs: ['repo/docs/concepts/marks-and-layering.md', 'repo/docs/concepts/scales-and-d3.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

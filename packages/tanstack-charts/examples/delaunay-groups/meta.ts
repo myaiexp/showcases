@@ -7,7 +7,11 @@ export default defineMeta({
     "With z set to the cylinder group each group is triangulated on its own and the links take the group color. Without z one triangulation joins all cars, including links between different groups.",
   section: "Delaunay Link Mark",
   tags: ['delaunayLink', 'z', 'color'],
-  docs: ['repo/docs/reference/marks/delaunay.md'],
+  docs: [
+    'repo/docs/reference/marks/delaunay.md',
+    'repo/docs/reference/marks/dot-and-hexagon.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-14',
 });

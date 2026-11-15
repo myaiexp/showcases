@@ -7,7 +7,7 @@ export default defineMeta({
     'The box options: inset trims both sides of the box and median, r sets the outlier dot radius, and fill, stroke, fillOpacity and strokeWidth set the paint. Sliders change inset and r, and a toggle thickens every line with strokeWidth.',
   section: 'Box Marks',
   tags: ['boxY', 'inset', 'r', 'strokeWidth', 'fill'],
-  docs: ['repo/docs/reference/marks/box.md'],
+  docs: ['repo/docs/reference/marks/box.md', 'repo/docs/concepts/scales-and-d3.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

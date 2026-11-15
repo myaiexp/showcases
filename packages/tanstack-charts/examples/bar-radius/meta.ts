@@ -7,7 +7,7 @@ export default defineMeta({
     'The radius option takes a number for all corners, a four-value tuple in top-left, top-right, bottom-right, bottom-left order, or { end } for the corners at the value end. The select tries each form, and { end, stack: \'each\' } on a stacked chart.',
   section: 'Bar and Rect Marks',
   tags: ['barY', 'radius', 'end', 'stack each'],
-  docs: ['repo/docs/reference/marks/bar-and-rect.md'],
+  docs: ['repo/docs/reference/marks/bar-and-rect.md', 'repo/docs/concepts/scales-and-d3.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

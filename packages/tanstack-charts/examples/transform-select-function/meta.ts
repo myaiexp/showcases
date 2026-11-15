@@ -7,7 +7,11 @@ export default defineMeta({
     "A select function receives the group's values, rows and indexes and returns one index, several, or none. This one keeps every order above the group's 90th percentile of amounts, so the number of rows kept can differ per region.",
   section: "Data Transforms",
   tags: ["select", "function", "dot"],
-  docs: ["repo/docs/reference/transforms.md"],
+  docs: [
+    'repo/docs/reference/transforms.md',
+    'repo/docs/reference/marks/dot-and-hexagon.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

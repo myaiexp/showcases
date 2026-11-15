@@ -7,7 +7,7 @@ export default defineMeta({
     'A spring that is retargeted while moving keeps its sampled value and its velocity, so there is no jump and no restart. The data changes every 450 ms, much faster than the spring settles, and the bars sweep through the changes like a floating object. A tween retargeted this way would restart its curve.',
   section: 'Motion',
   tags: ['motion', 'spring', 'interruption', 'velocity'],
-  docs: ['repo/docs/reference/motion.md'],
+  docs: ['repo/docs/reference/motion.md', 'repo/docs/reference/marks/bar-and-rect.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

@@ -7,7 +7,11 @@ export default defineMeta({
     "A chart mounted with mountCanvasChart is exported with the same renderChartImage call, which draws the stable base bitmap at the requested scale. Beside it, the surface's own canvas.toDataURL() gives the raw base bitmap at the backing-store size. The readout compares their pixel sizes.",
   section: "Exporting",
   tags: ['renderChartImage', 'CanvasChartSurface.canvas', 'toDataURL', 'mountCanvasChart'],
-  docs: ['repo/docs/guides/exporting.md', 'repo/docs/reference/rendering-and-export.md'],
+  docs: [
+    'repo/docs/guides/exporting.md',
+    'repo/docs/reference/rendering-and-export.md',
+    'repo/docs/reference/marks/bar-and-rect.md',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

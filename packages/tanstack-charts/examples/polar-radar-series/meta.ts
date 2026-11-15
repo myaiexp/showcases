@@ -7,7 +7,7 @@ export default defineMeta({
     "Two players on the same six axes. focusGroupAngle replaces nearest-point focus: the pointer picks the closest spoke by angle and the tooltip lists one row per player at that angle, with the closest radius as primary.",
   section: "Polar Marks",
   tags: ['polar', 'focusGroupAngle', 'radialArea', 'radialDot', 'z', 'defineChart'],
-  docs: ['repo/docs/reference/marks/polar.md'],
+  docs: ['repo/docs/reference/marks/polar.md', 'repo/docs/concepts/scales-and-d3.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

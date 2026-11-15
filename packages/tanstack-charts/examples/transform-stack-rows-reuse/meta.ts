@@ -7,7 +7,11 @@ export default defineMeta({
     "Because stackRowsY returns plain rows, the endpoints can feed more than one mark. Bars use y1 and y2, text labels sit at the middle of each segment, and a line follows the top of the whole stack, which a bar's own layout would not expose.",
   section: "Data Transforms",
   tags: ["stackRowsY", "barY", "text", "lineY"],
-  docs: ["repo/docs/reference/transforms.md"],
+  docs: [
+    'repo/docs/reference/transforms.md',
+    'repo/docs/reference/marks/text-frame-and-facet.md',
+    'repo/docs/concepts/scales-and-d3.md',
+  ],
   provenance: 'pure',
   added: '2026-11-15',
 });

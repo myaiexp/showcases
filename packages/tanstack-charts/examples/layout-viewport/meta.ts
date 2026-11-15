@@ -7,7 +7,7 @@ export default defineMeta({
     'One long line with a viewport: the domain picks a 30-day window, translate shifts content in pixels, and the axes and grid stay fixed.',
   section: 'Layout, Axes, and Coordinates',
   tags: ['viewport.domain', 'viewport.translate', 'clip', 'scaleUtc'],
-  docs: ['repo/docs/concepts/layout-axes-and-coordinates.md'],
+  docs: ['repo/docs/concepts/layout-axes-and-coordinates.md', 'repo/docs/concepts/marks-and-layering.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });

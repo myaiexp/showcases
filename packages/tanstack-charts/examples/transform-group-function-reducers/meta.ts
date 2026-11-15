@@ -7,7 +7,7 @@ export default defineMeta({
     "median, variance, deviation, first, last, delta and ratio are imported as functions, so a bundle only pays for the ones it uses. They go in reduce like a built-in name. The select moves through all seven over the same per-region order amounts and the readout shows the numbers.",
   section: "Data Transforms",
   tags: ["groupBy", "median", "variance", "deviation", "first", "last", "delta", "ratio"],
-  docs: ["repo/docs/reference/transforms.md"],
+  docs: ['repo/docs/reference/transforms.md', 'repo/docs/concepts/scales-and-d3.md'],
   provenance: 'pure',
   added: '2026-11-15',
 });

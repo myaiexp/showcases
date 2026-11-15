@@ -7,7 +7,7 @@ export default defineMeta({
     "The documented small cases: one unique position fills the whole plot, two split it, collinear points give parallel strips, and rows at exactly the same position share one cell owned by the smallest key.",
   section: "Voronoi Mark",
   tags: ['voronoi', 'key', 'coincident'],
-  docs: ['repo/docs/reference/marks/voronoi.md'],
+  docs: ['repo/docs/reference/marks/voronoi.md', 'repo/docs/concepts/scales-and-d3.md'],
   provenance: 'pure',
   added: '2026-11-14',
 });
