@@ -62,6 +62,16 @@
 // - Under `VisibleInsideMask` a sprite whose `maskLayer` no mask influences is hidden, not unmasked.
 // - The atlas loader resolves its image against the .atlas URL, which fails from a blob: base;
 //   give the image as a data: URL.
+// - Animation docs vs 1.6.13: a new AnimatorStateTransition has duration 0 and exitTime 1
+//   (docs: 0.25, 0.75); a new AnimatorState loops (docs: Once); the signature is
+//   `addCondition(parameterName, mode, threshold)`; `addEntryStateTransition` takes a state,
+//   not a name; `animator.playAnimationClip` doesn't exist (use `play`); a new
+//   AnimatorController has no layers. `getCurrentAnimatorState(0)` is undefined before the
+//   first update. Additive layers subtract each curve's first key; layer mask paths are
+//   relative to the Animator's entity.
+// - `registerGLTFExtension` adds to a page-wide list with no unregister: register once per page.
+//   The loader has no parser for KHR_materials_pbrSpecularGlossiness, which glTF.mdx lists.
+//   Only a glTF's default scene root gets an Animator.
 // - `WebGLGraphicDeviceOptions` has no `antialias`: anti-aliasing is `camera.msaaSamples`
 //   and `camera.antiAliasing` (FXAA) only.
 import { Camera, type Entity, type Scene, WebGLEngine, type WebGLEngineConfiguration } from '@galacean/engine';
