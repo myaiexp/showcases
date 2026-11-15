@@ -29,6 +29,20 @@
 //   bilinear filter; set `filterMode = TextureFilterMode.Point`. Depth lands in red.
 // - bufferMesh.mdx's instancing snippet binds the instance buffer with stride 12 while it
 //   holds two Vector3 elements; the stride must be 24.
+// - Docs names that don't exist in 1.6.13: `transform.getWorldUp/Right/Forward()` (use the
+//   `worldUp`/`worldRight`/`worldForward` getters), `DirectLight.intensity`, and the engine's
+//   `colorSpace` option (only Texture2D's `isSRGBColorSpace` is left).
+// - The repo compiles without legacy decorators and with `erasableSyntaxOnly`: call
+//   `ignoreClone(Class.prototype, 'field')` and `resourceLoader(type, exts, false)(Class)`
+//   instead of `@`-decorating, and use const objects in place of enums.
+// - Script fields clone by assignment by default, so a Vector3 field is shared between the
+//   original and its clone until it is marked `deepClone`.
+// - `webCanvas.setScale` is a CSS transform and the docs' snippets assume a canvas with no
+//   CSS size; stage canvases are `width: 100%`, so size by `resizeByClientSize(ratio)`.
+// - `new Texture2D(engine, w, h)` has mipmaps on and `setImageSource` doesn't fill them, so a
+//   minified draw samples empty levels: pass `mipmap: false` or call `generateMipmaps()`.
+// - `engine.destroy()` cancels pending loads; a `.then` that touches engine objects checks
+//   `engine.destroyed` first. Custom loader types (`resourceLoader`) are page-wide for good.
 // - `WebGLGraphicDeviceOptions` has no `antialias`: anti-aliasing is `camera.msaaSamples`
 //   and `camera.antiAliasing` (FXAA) only.
 import { Camera, type Entity, type Scene, WebGLEngine, type WebGLEngineConfiguration } from '@galacean/engine';
@@ -80,7 +94,7 @@ export async function createStage(el: HTMLElement, { preview, signal }: MountCon
   canvas.tabIndex = preview ? -1 : 0;
   const bar = document.createElement('div');
   bar.style.cssText = 'display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:8px 0;width:100%;font-size:13px;color:var(--fg-2)';
-  bar.hidden = preview;
+  if (preview) bar.style.display = 'none';
   if (options.hint) bar.append(options.hint);
   el.append(canvas, bar);
 
