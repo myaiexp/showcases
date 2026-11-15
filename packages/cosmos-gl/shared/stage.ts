@@ -21,6 +21,14 @@
 //   call graph.fitView() later. With rescalePositions, tiny input spreads over the space first.
 // - getPointPositions() and ghost.toPoint() read back from the GPU and stall it: fine on a
 //   timer, never every frame.
+// - Settings read only at construction (randomSeed, attribution) need a new Graph: build it with
+//   shared/rebuild.ts, which reuses one stage device (Graph.destroy() leaves an external device
+//   alone) and so never opens another WebGL context. Call fitView() on the rebuilt graph.
+// - setConfig() puts every omitted key back to its default, enableSimulation (true) included: a
+//   graph that was static starts relaxing. Use setConfigPartial() for live changes.
+// - A NaN in a per-point or per-link array (colors, sizes, shapes, stroke widths) means "use the
+//   config default"; the library resolves it at draw time. Headless software GL draws few frames,
+//   so a 700 ms transition can still look half done in a screenshot.
 // - Headless Chrome (SwiftShader) is slow enough that the gallery benches most cards; check a
 //   card by importing its main.ts and mounting it with { preview: true } by hand.
 import type { Device } from '@luma.gl/core';
