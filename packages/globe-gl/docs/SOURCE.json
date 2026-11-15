@@ -1,0 +1,12 @@
+{
+  "license": "MIT (vasturiano/globe.gl LICENSE, which covers the README, the library's only docs)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/vasturiano/globe.gl",
+      "ref": "v2.46.2",
+      "paths": ["README.md", "LICENSE"]
+    }
+  ]
+}

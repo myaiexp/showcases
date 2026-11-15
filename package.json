@@ -118,6 +118,7 @@
     "echarts": "6.1.0",
     "embedding-atlas": "0.26.0",
     "fuse.js": "^7.5.0",
+    "globe.gl": "2.46.2",
     "graphology": "^0.26.0",
     "graphology-gexf": "^0.13.2",
     "graphology-layout-force": "^0.2.4",

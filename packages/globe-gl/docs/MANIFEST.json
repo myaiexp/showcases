@@ -1,0 +1,25 @@
+{
+  "fetched": "2026-11-15T18:58:34.940Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/vasturiano/globe.gl",
+      "ref": "v2.46.2",
+      "paths": [
+        "README.md",
+        "LICENSE"
+      ],
+      "commit": "6820a9c794bddde8e842bb203eaa698f6ed7adfe"
+    }
+  ],
+  "files": {
+    "repo/LICENSE": {
+      "url": "https://github.com/vasturiano/globe.gl/blob/6820a9c794bddde8e842bb203eaa698f6ed7adfe/LICENSE",
+      "sha256": "c633a0da18abe4208665d9faf574f38084bbe38ce5bf743e9ecc06e50b941b59"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/vasturiano/globe.gl/blob/6820a9c794bddde8e842bb203eaa698f6ed7adfe/README.md",
+      "sha256": "b97060ce9464e31f853609ff078dc3cf1b0fcc93db631ca74e8c2e895115ede3"
+    }
+  }
+}
