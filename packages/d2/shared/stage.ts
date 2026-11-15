@@ -29,6 +29,11 @@
 //   are prohibited in edges").
 // - circle and square with unequal width and height are rejected ("width and height must be
 //   equal"); the docs say the larger value wins, which is 0.9 behaviour.
+// - D2 variables are written `${x}`, which a TS template literal reads as its own: write `\${x}`.
+// - Theme IDs in this build: 0, 1, 3–8, 100–105, 200, 201, 300–303 (others: "theme N not found").
+//   `text-transform: title` is not in it (none, uppercase, lowercase, capitalize are).
+// - Single-quoted strings cannot double a quote ('it''s' fails), and `a: "x" -> b` on one line
+//   is a parse error.
 // - Custom fonts do nothing here: fontRegular etc. (as a number array or base64; a Uint8Array
 //   fails as "invalid JSON input") set diagram.fontFamily to "custom", but the SVG still embeds
 //   Source Sans Pro. The Fonts page has no example for that reason.

@@ -175,3 +175,7 @@ GitHub Pages. No service on the VPS.
   its whole `Plotly.newPlot(stage.div, data, {template: stage.template, …}, stage.config)` call. Data comes
   from `shared/data.ts` (the docs' plotly/datasets files, bundled); geo maps `await loadGeoAssets()`; tile
   maps use `shared/tiles.ts` (`darkMapStyle`, `landLayers`) and never draw map text (no glyphs offline).
+- D2: build on `packages/d2/shared/stage.ts` (`createStage`, trap list) and `shared/playground.ts`; each
+  main.ts writes its D2 source and compile options. Never `new D2()`: `stage.d2()` is the page's one queued
+  engine (22 MB WASM). Icons come from `shared/icons.ts`, quoted (`icon: "${icons.x}"`). `test/d2-examples.test.ts`
+  compiles every variant in Node; a variant that fails on purpose holds the comment `# (deliberate error)`.

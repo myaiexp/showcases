@@ -29,7 +29,7 @@ const mount: Mount = async (el, ctx) => {
       const text = await d2.render(result.diagram, { ...result.renderOptions, ...c.options });
       // raw: keep D2's width, height and preserveAspectRatio instead of fitting the box.
       stage.show(text, { raw: true });
-      pre.textContent = (/<svg[^>]*>/.exec(text.replace(/^<\?xml[^>]*>/, ''))?.[0] ?? '').replace(/ (?=\w+=)/g, '\n  ');
+      pre.textContent = (/<svg[^>]*>/.exec(text.replace(/^<\?xml[^>]*>/, ''))?.[0] ?? '').replace(/ (?=[\w:-]+=)/g, '\n  ');
       stage.say(c.label);
     } catch (err) {
       stage.fail(err);
