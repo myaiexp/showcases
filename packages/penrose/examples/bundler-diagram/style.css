@@ -1,0 +1,17 @@
+/* Penrose.diagram from a bundler: the target element fills the paper */
+[data-example='penrose/bundler-diagram'] {
+  #penrose-diagram {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+  }
+  #penrose-diagram svg {
+    width: 100%;
+    height: 100%;
+  }
+  .pr-full .pr-paper {
+    height: 420px;
+  }
+}

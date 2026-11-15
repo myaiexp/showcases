@@ -1,0 +1,340 @@
+{
+  "fetched": "2026-11-15T09:00:12.828Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/penrose/penrose",
+      "ref": "v3.3.1",
+      "paths": [
+        "LICENSE",
+        "packages/core/README.md",
+        "packages/core/src/index.ts",
+        "packages/core/src/api.ts",
+        "packages/core/src/shapes/*.ts",
+        "packages/core/src/lib/Constraints.ts",
+        "packages/core/src/lib/Objectives.ts",
+        "packages/core/src/lib/Functions.ts",
+        "packages/core/src/lib/Curves.ts",
+        "packages/core/src/lib/Queries.ts",
+        "packages/core/src/utils/Util.ts",
+        "packages/core/src/utils/InteractionUtils.ts",
+        "packages/docs-site/docs/**",
+        "packages/docs-site/public/vanilla-js-demo.html",
+        "packages/docs-site/blog/staged-layout.md",
+        "packages/docs-site/blog/new-language-features.md",
+        "!packages/docs-site/docs/bloom",
+        "!packages/docs-site/docs/team.md",
+        "!packages/docs-site/docs/ref/react.md",
+        "!packages/docs-site/docs/ref/solid.md"
+      ],
+      "commit": "8346c617bc3a56be17f058e1fe68961e282cc4c6"
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/penrose/penrose",
+      "ref": "v3.3.1",
+      "paths": [
+        "packages/docs-site/.vitepress/config.ts"
+      ],
+      "commit": "8346c617bc3a56be17f058e1fe68961e282cc4c6"
+    }
+  ],
+  "files": {
+    "repo/LICENSE": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/LICENSE",
+      "sha256": "afb11426e09da40a1ae4f8fa17ddcc6b6a52d14df04c29bc5bcd06eb8730624d"
+    },
+    "repo/packages/core/README.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/README.md",
+      "sha256": "58a316b0bddc722dfcfedb717767daa46e516d7530864804a1eed393a81f60ca"
+    },
+    "repo/packages/core/src/api.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/api.ts",
+      "sha256": "956531b97de9205b48d6a6b69ba2c147e3e6461462f4c7d035a8aa4c8ba1ee74"
+    },
+    "repo/packages/core/src/index.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/index.ts",
+      "sha256": "336f59dc62a16be6664b26b7a3a2f7f24f0721b5f39db3096554465a751e7110"
+    },
+    "repo/packages/core/src/lib/Constraints.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/lib/Constraints.ts",
+      "sha256": "3530470755c942cd390e22a5878607587adc70555b576c505edd0553f9841d6b"
+    },
+    "repo/packages/core/src/lib/Curves.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/lib/Curves.ts",
+      "sha256": "23038581c8b0024985838e6bf73af44c158c5428d8b8692ed006b7e4f556826e"
+    },
+    "repo/packages/core/src/lib/Functions.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/lib/Functions.ts",
+      "sha256": "ce9301d412ce85251dbd4b0242303f4183e72e67b0b3c3029cc31d41404a2e7b"
+    },
+    "repo/packages/core/src/lib/Objectives.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/lib/Objectives.ts",
+      "sha256": "3e992a6943fd102cbadc4c930246501f1454df156cd33546509e9a69995e4090"
+    },
+    "repo/packages/core/src/lib/Queries.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/lib/Queries.ts",
+      "sha256": "4f981ecc01446ec51986eb97fd903d610bcb87682e8b8f02352736beadd0ef51"
+    },
+    "repo/packages/core/src/shapes/Circle.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Circle.ts",
+      "sha256": "1ef55e457e99d1cbd40ede55333988f439494e1ce73b851d4a39974bffee56d3"
+    },
+    "repo/packages/core/src/shapes/Ellipse.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Ellipse.ts",
+      "sha256": "8656197126eaa6e505bd92cf2ef176043fdaf9c357bc1f74b9338bec84cfdde1"
+    },
+    "repo/packages/core/src/shapes/Equation.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Equation.ts",
+      "sha256": "9ae4b58e93fb9d167a5789bfc6affddec396baaf7a84aef9d5557399825650e2"
+    },
+    "repo/packages/core/src/shapes/Group.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Group.ts",
+      "sha256": "6a7d65e2d3733ba0a8e53190f1d9947aa62f233aa48809756d4477dbcd63b884"
+    },
+    "repo/packages/core/src/shapes/Image.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Image.ts",
+      "sha256": "5544b8e9f33311445ad30ee713efaa8be79740ee134de35a1329ca0607909186"
+    },
+    "repo/packages/core/src/shapes/Line.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Line.ts",
+      "sha256": "128b224a294dc671d973afb7c243c7871daffaedad7cd3e4fb16b34c75ad2e44"
+    },
+    "repo/packages/core/src/shapes/Path.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Path.ts",
+      "sha256": "0ce841e3e5bf4040fb5c967b1b07dc3724a6b01cd27bcfc06c5800ac41225d0e"
+    },
+    "repo/packages/core/src/shapes/Polygon.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Polygon.ts",
+      "sha256": "0eb2dc9a8462031fe17873e5aaf39dc703a1903a46acbe1206535e75d00b2bb0"
+    },
+    "repo/packages/core/src/shapes/Polyline.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Polyline.ts",
+      "sha256": "992f598412ae44004f4d8431487190c296070787625cafc79c7484eeeeb9ae8a"
+    },
+    "repo/packages/core/src/shapes/Rectangle.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Rectangle.ts",
+      "sha256": "07bc707ba5f68f2519b63a99d4e7ad8011466839965c241f8489b600adbadff5"
+    },
+    "repo/packages/core/src/shapes/Samplers.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Samplers.ts",
+      "sha256": "4061f58e08033562615f13596a7c31bf181498a320c883057c6f20024f87c376"
+    },
+    "repo/packages/core/src/shapes/Shapes.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Shapes.ts",
+      "sha256": "154a6690c241023d2b464db58a7ff8661050bffacce38ac1be24502227d9f108"
+    },
+    "repo/packages/core/src/shapes/Text.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Text.ts",
+      "sha256": "1f4a541f64f022f86985e301ee72e1f217f78f4836e95173750d147a66fb89d2"
+    },
+    "repo/packages/core/src/utils/InteractionUtils.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/utils/InteractionUtils.ts",
+      "sha256": "a7e21908919f1b801080254fba3303ff2d0dc7126b09315774eba6cf947383c6"
+    },
+    "repo/packages/core/src/utils/Util.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/utils/Util.ts",
+      "sha256": "e67ee18bbb509179a3f0e8f993d26d1d3d1f7d48ec8318e3dfdf959104d082e7"
+    },
+    "repo/packages/docs-site/.vitepress/config.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/.vitepress/config.ts",
+      "sha256": "3ab7c9af3dbe168377a5631ddef0bf50077a811e0740e0471820d1285f11437f"
+    },
+    "repo/packages/docs-site/blog/new-language-features.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/blog/new-language-features.md",
+      "sha256": "ec45458cc6944d64115c5f27b863db51fd97ed64692862f62ac08efb92a78608"
+    },
+    "repo/packages/docs-site/blog/staged-layout.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/blog/staged-layout.md",
+      "sha256": "cc0dee7b0a7f5ade212478b308866c5df9e85f3c0bd479b13fc2e35e79305dbb"
+    },
+    "repo/packages/docs-site/docs/ref.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref.md",
+      "sha256": "c9d4117867c53bde2830f4f4a96b6b6176ac691c828a6a705ef720c2ae77675b"
+    },
+    "repo/packages/docs-site/docs/ref/api.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/api.md",
+      "sha256": "e290286f0a4bf75770c019d581288df104f3ccd3162cfa31b291a9b092a3cfa4"
+    },
+    "repo/packages/docs-site/docs/ref/bundle.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/bundle.md",
+      "sha256": "d38729eb34db60428cf082596b3722e829effe8276480395acb96eea88993a3c"
+    },
+    "repo/packages/docs-site/docs/ref/constraints.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/constraints.md",
+      "sha256": "971d12b77cd2155dc445004dd6e2735bba6d12fae334f8d239a4488c36593b74"
+    },
+    "repo/packages/docs-site/docs/ref/domain/functions.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/domain/functions.md",
+      "sha256": "94601c981456ec4a35539b36e4e63b880a50caef4e018de3a7c6c3fecdd3e476"
+    },
+    "repo/packages/docs-site/docs/ref/domain/overview.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/domain/overview.md",
+      "sha256": "c1c96948075145297859b2970f1a571b1055cf037d0e1d33fd4fb4f4981f5b4f"
+    },
+    "repo/packages/docs-site/docs/ref/domain/predicates.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/domain/predicates.md",
+      "sha256": "c7c0f70f9cb18e9166e10dd46d6f5cc99c0ea899390546257b2b3c40d1b0c083"
+    },
+    "repo/packages/docs-site/docs/ref/domain/types.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/domain/types.md",
+      "sha256": "dd3278f3e1867b378229aff9715fb8a029e63426d4d3ccc243af0008c547cdcd"
+    },
+    "repo/packages/docs-site/docs/ref/Interactivity.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/Interactivity.md",
+      "sha256": "7124486ec5c1766386a819bdddd609541ebea0524ce28da69992285ee223041b"
+    },
+    "repo/packages/docs-site/docs/ref/optimization-api.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/optimization-api.md",
+      "sha256": "d6fbc163208cabe0d4aa672fc57c7eb92056eeefaa3677c1ea4fbc5b4bddc036"
+    },
+    "repo/packages/docs-site/docs/ref/style/collectors.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/collectors.md",
+      "sha256": "370d3b83283364ad8ae7aad86ea5bcd762db1c193e0d0fedb1dae2fb03fdf04b"
+    },
+    "repo/packages/docs-site/docs/ref/style/expressions.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/expressions.md",
+      "sha256": "aafe272123f002d4d9c58eab5ee811aefa1d3e00cbc515c03f9bdbb78e933ebe"
+    },
+    "repo/packages/docs-site/docs/ref/style/functions.data.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/functions.data.ts",
+      "sha256": "1afbc431d28bde67400dda595499cad9d287d1e13f66e13c9e93fe38cd3ad43a"
+    },
+    "repo/packages/docs-site/docs/ref/style/functions.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/functions.md",
+      "sha256": "9cb206707a763f8073f1599618a1c8258f6efe44acce0cb2114d971ae3b15775"
+    },
+    "repo/packages/docs-site/docs/ref/style/literals.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/literals.md",
+      "sha256": "63109e2b4ab2859de2e1b9924532ed0def9b0dc46b1f981f8c5db72aeece6a91"
+    },
+    "repo/packages/docs-site/docs/ref/style/namespaces.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/namespaces.md",
+      "sha256": "ec39039088abd0ef55c082830fb739901df8db278df6f70c73a0722e4c564c83"
+    },
+    "repo/packages/docs-site/docs/ref/style/overview.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/overview.md",
+      "sha256": "cdb0f004cc6ea839db7d794640c8eacaa91f341f13db1fe9254a5ae7941ff6c8"
+    },
+    "repo/packages/docs-site/docs/ref/style/passthrough.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/passthrough.md",
+      "sha256": "9403b2a90516a0c82d90525d433b7ac7c91dba74a77cdaf4f5deb73e47b5b797"
+    },
+    "repo/packages/docs-site/docs/ref/style/random-sampling.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/random-sampling.md",
+      "sha256": "20a4186e15c612484bfcd8e07083b026804ad13cb32026265a7d2997ca71218f"
+    },
+    "repo/packages/docs-site/docs/ref/style/selector-blocks.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/selector-blocks.md",
+      "sha256": "b7440329ea28eb46344bb1b51655484fc794fb8eb2523df14aa16acdc13e556c"
+    },
+    "repo/packages/docs-site/docs/ref/style/selectors.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/selectors.md",
+      "sha256": "59580ecb63b15d3bc5842b72ccfc16524ff0352af0c6bda2b00135b29fd2d1e0"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes-overview.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes-overview.md",
+      "sha256": "2b5689d71aa11c06b17a0289fde85314bdca2dbdcd6e691763251c029609a8a3"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes/circle.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes/circle.md",
+      "sha256": "086ce025ebffa3f5170cc131f4502e95e6874cf9e83b9d3a7695b34691c8cb73"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes/ellipse.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes/ellipse.md",
+      "sha256": "bf083a938f4c779f97c99bd15b2bd3837f14e0647b75c569386d085a981ecd49"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes/equation.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes/equation.md",
+      "sha256": "8f21857798c6f6ee6d0e5dfcd8f9d60d78d833d6b1798115878d22b57522dd06"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes/group.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes/group.md",
+      "sha256": "c9f43ad35191a1caadf1e6d67ee24e4c972654215dd66b9f3b5457089335290b"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes/image.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes/image.md",
+      "sha256": "a6a41cb4dd99abf7401806907414e87bc7c9e21f377c4c78bc0bf6e73f59ed6d"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes/line.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes/line.md",
+      "sha256": "4a7e50703df88e8d80948ce2300fa47f8270e15daed5fcdae293abdb6a4e1ede"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes/path.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes/path.md",
+      "sha256": "3f7dba85d262ebfd98d75314e2ef687b45b05bf6be1cd17cf4d90321cffe43e4"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes/polygon.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes/polygon.md",
+      "sha256": "f477fbbb510cdd45a2b37e0159e68c0a2d0a065e60bd15882c38896ab3e9bc44"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes/polyline.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes/polyline.md",
+      "sha256": "b09028e9a2abd31a8e92282b465924696b5041b44474c93b879f7354155b5a4a"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes/rectangle.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes/rectangle.md",
+      "sha256": "0f3b83021bffd3a125e3972ebd99e7dcfd9e1463c451da4b86fef53400d86681"
+    },
+    "repo/packages/docs-site/docs/ref/style/shapes/text.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/shapes/text.md",
+      "sha256": "566a52467d037793a082687c0421ecfe4ddbb7779ac0ceb843f717d333c77c44"
+    },
+    "repo/packages/docs-site/docs/ref/style/value-types.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/value-types.md",
+      "sha256": "a248962d49ae06b227d2e72103e8b5c72fecfb550199bd9933ccb86e542480a0"
+    },
+    "repo/packages/docs-site/docs/ref/style/vectors-matrices.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/style/vectors-matrices.md",
+      "sha256": "5795ebafa3ac330c808376764a9c6da039ad95290fa5bb06986ce9def1e9f806"
+    },
+    "repo/packages/docs-site/docs/ref/substance/indexed-statements.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/substance/indexed-statements.md",
+      "sha256": "e48dc5218b68898ae8a1a966337177adc80474ea2bda1b673dd4cca9767ada84"
+    },
+    "repo/packages/docs-site/docs/ref/substance/literal-expressions.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/substance/literal-expressions.md",
+      "sha256": "6287093c98d68339fb64bb3232e5a9a90d2f92690877c4fafbb9328761f3c70f"
+    },
+    "repo/packages/docs-site/docs/ref/substance/overview.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/substance/overview.md",
+      "sha256": "d692c1cb03a79e1e7882f4bf6e281541b3529831794e621e35aa6ee5b0b1c65f"
+    },
+    "repo/packages/docs-site/docs/ref/substance/statements.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/substance/statements.md",
+      "sha256": "e92436e7561cc919b1ae5c7848d9ed2c215b7dd364f8e646d782a5beb5a3b0e9"
+    },
+    "repo/packages/docs-site/docs/ref/using.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/using.md",
+      "sha256": "8db19c55fc0c6cf5379fcc7fa0ed7728d915de669b0b3e8820afde7158675798"
+    },
+    "repo/packages/docs-site/docs/ref/vanilla-demo.data.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/vanilla-demo.data.ts",
+      "sha256": "e23eb8d4a548cc8932c2217aaf9894526d00665548d5891cb43932255a461d7a"
+    },
+    "repo/packages/docs-site/docs/ref/vanilla-js.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/ref/vanilla-js.md",
+      "sha256": "191fa08ffee961ea933a712cb9d8f14c94d8045c21149b8d0a2f409e9565cfd2"
+    },
+    "repo/packages/docs-site/docs/tutorial/basics.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/tutorial/basics.md",
+      "sha256": "2dfb71e926ebda53f0b222fbbb5c900d079bb8c3470d44cfaf254b295d7bd3bc"
+    },
+    "repo/packages/docs-site/docs/tutorial/functions.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/tutorial/functions.md",
+      "sha256": "19b019549cac03fa787827c18b80eab8aec7803eabd87eb84d443a7c3aafdc87"
+    },
+    "repo/packages/docs-site/docs/tutorial/predicates.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/tutorial/predicates.md",
+      "sha256": "bb16570a01d0312360011c053362798a4728adb6c95bdf751eac05993e370207"
+    },
+    "repo/packages/docs-site/docs/tutorial/welcome.md": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/docs/tutorial/welcome.md",
+      "sha256": "2c77fb627f769d89be95b4482053647ba56109e0d05e5333825319205989ab0f"
+    },
+    "repo/packages/docs-site/public/vanilla-js-demo.html": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/docs-site/public/vanilla-js-demo.html",
+      "sha256": "ccd59cfcaa9b062215efde193fe7da0d83d2bc2074db30738e2a8fad89002f84"
+    }
+  }
+}

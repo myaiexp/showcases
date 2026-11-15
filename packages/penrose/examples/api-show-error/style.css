@@ -1,0 +1,17 @@
+/* showError on a broken trio: the error text on the paper */
+[data-example='penrose/api-show-error'] {
+  .pr-error-text {
+    margin: 0;
+    padding: 16px;
+    max-width: 100%;
+    white-space: pre-wrap;
+    font-family: var(--font-mono, monospace);
+    font-size: 14px;
+    line-height: 1.45;
+    color: #a1261b;
+  }
+  .pr-card .pr-error-text {
+    font-size: 10px;
+    padding: 6px;
+  }
+}

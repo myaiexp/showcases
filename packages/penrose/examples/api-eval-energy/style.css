@@ -1,0 +1,21 @@
+/* evalEnergy: the plot sits in the paper's lower right corner */
+[data-example='penrose/api-eval-energy'] {
+  .energy-plot {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    width: 42%;
+    background: rgb(255 255 255 / 0.85);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .energy-plot polyline {
+    fill: none;
+    stroke: #d6336c;
+    stroke-width: 2;
+  }
+  .energy-plot text {
+    font: 10px var(--font-mono, monospace);
+    fill: #666;
+  }
+}
