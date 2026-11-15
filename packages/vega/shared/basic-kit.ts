@@ -1,34 +1,9 @@
-// Helpers shared by the Transforms: Basic examples: seeded data, signal cycling, a text table of a dataset
+// Transforms: Basic helpers: seeded data sets, data reshuffles, a text table of a dataset
 import { changeset } from 'vega';
 import type { Data, Mark, View } from 'vega';
 import { button } from './controls.ts';
+import { normals, rng } from './cards.ts';
 import type { Stage } from './stage.ts';
-
-/** A small deterministic generator (mulberry32), so every mount draws the same data. */
-export function rng(seed: number): () => number {
-  let a = seed >>> 0;
-  return () => {
-    a = (a + 0x6d2b79f5) >>> 0;
-    let t = a;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
-/** Standard normal draws (Box-Muller) from a uniform generator. */
-export function normals(rand: () => number): () => number {
-  return () => Math.sqrt(-2 * Math.log(1 - rand())) * Math.cos(2 * Math.PI * rand());
-}
-
-/** Cards only: step a signal through values on a timer. The full view's controls stay in charge. */
-export function cycle(stage: Stage, view: View, name: string, values: unknown[], ms = 1500): void {
-  if (!stage.preview) return;
-  stage.every(ms, (i) => {
-    view.signal(name, values[i % values.length]);
-    return view.runAsync().then(() => undefined);
-  });
-}
 
 export interface Column {
   field: string;
@@ -120,4 +95,26 @@ export function gaussRows(seed: number, n: number, mean: number, sd: number, lo 
   return Array.from({ length: n }, () => ({
     v: Math.round(Math.min(hi, Math.max(lo, mean + gauss() * sd)) * 100) / 100,
   }));
+}
+
+/** n values per group: `{g, v}` rows from normals with a distinct mean and spread per group. */
+export function groupedRows(seed: number, groups: [string, number, number][], n: number): { g: string; v: number }[] {
+  const gauss = normals(rng(seed));
+  return groups.flatMap(([g, mean, sd]) => Array.from({ length: n }, () => ({ g, v: Math.round((mean + gauss() * sd) * 10) / 10 })));
+}
+
+/** Seeded timestamps over 2022-2023 (UTC ms), weighted to summer and to weekdays, as `{t}` rows. */
+export function dateRows(seed: number, n: number): { t: number }[] {
+  const rand = rng(seed);
+  const start = Date.UTC(2022, 0, 1);
+  const rows: { t: number }[] = [];
+  while (rows.length < n) {
+    const day = Math.floor(rand() * 730);
+    const d = new Date(start + day * 864e5 + Math.floor(rand() * 864e5));
+    const month = d.getUTCMonth();
+    const weekday = d.getUTCDay();
+    const weight = (0.35 + 0.65 * Math.sin(((month - 2) / 12) * Math.PI)) * (weekday === 0 || weekday === 6 ? 0.5 : 1);
+    if (rand() < weight) rows.push({ t: d.getTime() });
+  }
+  return rows;
 }

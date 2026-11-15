@@ -26,6 +26,7 @@ export function tourAirports(
   if (!airports.length) return;
   stage.every(opts.ms ?? 1300, (i) => {
     const at = airports[i % airports.length];
+    if (!at) return;
     ghost.move(at.x, at.y);
     opts.onStep?.(i, at);
   });
