@@ -1,0 +1,25 @@
+{
+  "fetched": "2026-11-15T20:54:24.936Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/vasturiano/3d-force-graph",
+      "ref": "v1.80.2",
+      "paths": [
+        "README.md",
+        "LICENSE"
+      ],
+      "commit": "cf4c8d7f1e2173763fb221c8575dc7139d11881e"
+    }
+  ],
+  "files": {
+    "repo/LICENSE": {
+      "url": "https://github.com/vasturiano/3d-force-graph/blob/cf4c8d7f1e2173763fb221c8575dc7139d11881e/LICENSE",
+      "sha256": "7262e566e874d1ce8cfadace01d4f635f8d704b6bdf7b4345cc028e5faeafded"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/vasturiano/3d-force-graph/blob/cf4c8d7f1e2173763fb221c8575dc7139d11881e/README.md",
+      "sha256": "7966c7b7ea4d8cdbdb963293a5b88d2c215d388465eb06cb16e705fb6edabfa8"
+    }
+  }
+}

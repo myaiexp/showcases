@@ -11,6 +11,9 @@ importers:
 
   .:
     dependencies:
+      3d-force-graph:
+        specifier: ^1.80.2
+        version: 1.80.2
       '@antv/g6':
         specifier: 5.1.1
         version: 5.1.1
@@ -317,6 +320,9 @@ importers:
       embedding-atlas:
         specifier: 0.26.0
         version: 0.26.0(@uwdata/mosaic-core@0.35.0)(@uwdata/mosaic-spec@0.35.0)(@uwdata/mosaic-sql@0.35.0)(@uwdata/vgplot@0.35.0)(react@19.3.1)
+      force-graph:
+        specifier: ^1.52.0
+        version: 1.52.0
       fuse.js:
         specifier: ^7.5.0
         version: 7.5.0
@@ -491,6 +497,10 @@ importers:
         version: 5.1.0(@types/node@24.19.2)(happy-dom@21.0.4)(vite@8.3.8(@types/node@24.19.2))
 
 packages:
+
+  3d-force-graph@1.80.2:
+    resolution: {integrity: sha512-hStm8c4s2yLt0kj9JBLWLgLsJlS+G08AXTNeEw6YBD1kzCu4s1szwAZL9Z1tcPhVOlDkWliUzTuraBF86TmNCQ==}
+    engines: {node: '>=12'}
 
   '@amap/amap-jsapi-loader@1.0.1':
     resolution: {integrity: sha512-nPyLKt7Ow/ThHLkSvn2etQlUzqxmTVgK7bIgwdBRTg2HK5668oN7xVxkaiRe3YZEzGzfV2XgH5Jmu2T73ljejw==}
@@ -2642,6 +2652,9 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
+  bezier-js@6.1.4:
+    resolution: {integrity: sha512-PA0FW9ZpcHbojUCMu28z9Vg/fNkwTj5YhusSAjHHDfHDGLxJ6YUKrAN2vk1fP2MMOxVw4Oko16FMlRGVBGqLKg==}
+
   bidi-js@1.1.0:
     resolution: {integrity: sha512-fX1Onk0tdVPC7obPWB5EbJ1z7NVhLq4m2xZLq2YXBkxzMXIGRpNMU88n0EPgWseKl12J7zXs7qrDxPK4sRs2fg==}
 
@@ -2704,6 +2717,10 @@ packages:
   call-bound@1.0.4:
     resolution: {integrity: sha512-+ys997U96po4Kx/ABpBCqhA9EuxJaQWDQg7295H4hBphv3IZg0boBKuwYpt4YXp6MZ5AmZQnU/tyMTlRpaSejg==}
     engines: {node: '>= 0.4'}
+
+  canvas-color-tracker@1.3.2:
+    resolution: {integrity: sha512-ryQkDX26yJ3CXzb3hxUVNlg1NKE4REc5crLBq661Nxzr8TNd236SaEf2ffYLXyI5tSABSeguHLqcVq4vf9L3Zg==}
+    engines: {node: '>=12'}
 
   cartocolor@5.0.2:
     resolution: {integrity: sha512-Ihb/wU5V6BVbHwapd8l/zg7bnhZ4YPFVfa7quSpL86lfkPJSf4YuNBT+EvesPRP5vSqhl6vZVsQJwCR8alBooQ==}
@@ -3556,6 +3573,10 @@ packages:
   font-measure@1.2.2:
     resolution: {integrity: sha512-mRLEpdrWzKe9hbfaF3Qpr06TAjquuBVP5cHy4b3hyeNdjc9i0PO6HniGsX5vjL5OWv7+Bd++NiooNpT/s8BvIA==}
 
+  force-graph@1.52.0:
+    resolution: {integrity: sha512-0fpxrZzW6qwm9zM7wgh54d7GbxQfQSDV71I0apo+75PVYQPpPHGVPQFLsE9WAu+hOS4VdLd53g0Hua/bxDJKSg==}
+    engines: {node: '>=12'}
+
   frame-ticker@1.0.3:
     resolution: {integrity: sha512-E0X2u2JIvbEMrqEg5+4BpTqaD22OwojJI63K7MdKHdncjtAhGRbCR8nJCr2vwEt9NWBPCPcu70X9smPviEBy8Q==}
 
@@ -4328,6 +4349,21 @@ packages:
   next-tick@1.1.0:
     resolution: {integrity: sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==}
 
+  ngraph.events@1.4.0:
+    resolution: {integrity: sha512-NeDGI4DSyjBNBRtA86222JoYietsmCXbs8CEB0dZ51Xeh4lhVl1y3wpWLumczvnha8sFQIW4E0vvVWwgmX2mGw==}
+
+  ngraph.forcelayout@3.3.1:
+    resolution: {integrity: sha512-MKBuEh1wujyQHFTW57y5vd/uuEOK0XfXYxm3lC7kktjJLRdt/KEKEknyOlc6tjXflqBKEuYBBcu7Ax5VY+S6aw==}
+
+  ngraph.graph@20.1.2:
+    resolution: {integrity: sha512-W/G3GBR3Y5UxMLHTUCPP9v+pbtpzwuAEIqP5oZV+9IwgxAIEZwh+Foc60iPc1idlnK7Zxu0p3puxAyNmDvBd0Q==}
+
+  ngraph.merge@1.0.0:
+    resolution: {integrity: sha512-5J8YjGITUJeapsomtTALYsw7rFveYkM+lBj3QiYZ79EymQcuri65Nw3knQtFxQBU1r5iOaVRXrSwMENUPK62Vg==}
+
+  ngraph.random@1.2.0:
+    resolution: {integrity: sha512-4EUeAGbB2HWX9njd6bP6tciN6ByJfoaAvmVL9QTaZSeXrW46eNGA9GajiXiPBbvFqxUWFkEbyo6x5qsACUuVfA==}
+
   normalize-svg-path@1.1.0:
     resolution: {integrity: sha512-r9KHKG2UUeB5LoTouwDzBy2VxXlHsiM6fyLQvnJa0S5hrhzqElH/CH7TUGhT1fVvIYBIKf3OpY4YJ4CK+iaqHg==}
 
@@ -4900,6 +4936,12 @@ packages:
     peerDependencies:
       three: '>=0.72.0'
 
+  three-forcegraph@1.43.6:
+    resolution: {integrity: sha512-fayF9Cn6XfSUJOcKUcJ1tg8EQEHP9X3wELzNX/Ik3TxnbHTfYuEFspSld7GvK8RwEpsyoJaPbfEGgMTJoiywYg==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      three: '>=0.118.3'
+
   three-geojson-geometry@2.1.2:
     resolution: {integrity: sha512-Nuz03dDVqo0ZggZS9XZJ648nEzqzlPwneEN6fa7EwKRwH69GwvPiPMBan/RxUhhEHOlj38tu5XVSovZdHsIZSw==}
     engines: {node: '>=12'}
@@ -5349,6 +5391,16 @@ packages:
     resolution: {integrity: sha512-v3fyjpK8S/dpY/X5WxqTK3IoCnp/ZOLxn144GZVlNUjtwAchzrVo03h+oMATFhCIiJ5KTr4V3vDQQYz4RU684g==}
 
 snapshots:
+
+  3d-force-graph@1.80.2:
+    dependencies:
+      accessor-fn: 1.5.3
+      kapsule: 1.16.3
+      three: 0.187.0
+      three-forcegraph: 1.43.6(three@0.187.0)
+      three-render-objects: 1.45.0(three@0.187.0)
+    transitivePeerDependencies:
+      - preact-render-to-string
 
   '@amap/amap-jsapi-loader@1.0.1': {}
 
@@ -8058,6 +8110,8 @@ snapshots:
 
   base64-js@1.5.1: {}
 
+  bezier-js@6.1.4: {}
+
   bidi-js@1.1.0:
     dependencies:
       require-from-string: 2.0.2
@@ -8124,6 +8178,10 @@ snapshots:
     dependencies:
       call-bind-apply-helpers: 1.0.2
       get-intrinsic: 1.3.0
+
+  canvas-color-tracker@1.3.2:
+    dependencies:
+      tinycolor2: 1.6.0
 
   cartocolor@5.0.2:
     dependencies:
@@ -9043,6 +9101,26 @@ snapshots:
     dependencies:
       css-font: 1.2.0
 
+  force-graph@1.52.0:
+    dependencies:
+      '@tweenjs/tween.js': 23.1.3
+      accessor-fn: 1.5.3
+      bezier-js: 6.1.4
+      canvas-color-tracker: 1.3.2
+      d3-array: 3.2.5
+      d3-drag: 3.0.1
+      d3-force-3d: 3.0.6
+      d3-scale: 4.0.2
+      d3-scale-chromatic: 3.1.1
+      d3-selection: 3.0.1
+      d3-zoom: 3.0.1
+      float-tooltip: 1.8.0
+      index-array-by: 1.4.2
+      kapsule: 1.16.3
+      lodash-es: 4.18.1
+    transitivePeerDependencies:
+      - preact-render-to-string
+
   frame-ticker@1.0.3:
     dependencies:
       simplesignal: 2.1.7
@@ -9874,6 +9952,22 @@ snapshots:
 
   next-tick@1.1.0: {}
 
+  ngraph.events@1.4.0: {}
+
+  ngraph.forcelayout@3.3.1:
+    dependencies:
+      ngraph.events: 1.4.0
+      ngraph.merge: 1.0.0
+      ngraph.random: 1.2.0
+
+  ngraph.graph@20.1.2:
+    dependencies:
+      ngraph.events: 1.4.0
+
+  ngraph.merge@1.0.0: {}
+
+  ngraph.random@1.2.0: {}
+
   normalize-svg-path@1.1.0:
     dependencies:
       svg-arc-to-cubic-bezier: 3.2.0
@@ -10608,6 +10702,20 @@ snapshots:
       delaunator: 5.1.0
       earcut: 3.2.4
       three: 0.187.0
+
+  three-forcegraph@1.43.6(three@0.187.0):
+    dependencies:
+      accessor-fn: 1.5.3
+      d3-array: 3.2.5
+      d3-force-3d: 3.0.6
+      d3-scale: 4.0.2
+      d3-scale-chromatic: 3.1.1
+      data-bind-mapper: 1.0.3
+      kapsule: 1.16.3
+      ngraph.forcelayout: 3.3.1
+      ngraph.graph: 20.1.2
+      three: 0.187.0
+      tinycolor2: 1.6.0
 
   three-geojson-geometry@2.1.2(three@0.187.0):
     dependencies:
