@@ -1,0 +1,17 @@
+/* DomUtil badges: styles, nested under this example's own selector */
+[data-example='leaflet/dom-position'] {
+  .dom-badge {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: -11px 0 0 -34px;
+    width: 68px;
+    padding: 3px 0;
+    text-align: center;
+    border-radius: 11px;
+    background: #f58a3d;
+    color: #111;
+    font: 600 12px system-ui, sans-serif;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 0.5);
+  }
+}

@@ -1,0 +1,12 @@
+/* className filters for the tile layer, nested under this example's own selector */
+[data-example='leaflet/tile-class-name'] {
+  .tiles-sepia {
+    filter: sepia(1) contrast(1.1);
+  }
+  .tiles-invert {
+    filter: invert(1) hue-rotate(180deg);
+  }
+  .tiles-blur {
+    filter: blur(2px) saturate(2.5);
+  }
+}

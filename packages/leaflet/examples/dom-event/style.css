@@ -1,0 +1,13 @@
+/* A pad control and a draggable panel: styles, nested under this example's own selector */
+[data-example='leaflet/dom-event'] {
+  .pad {
+    width: 120px;
+    padding: 14px 6px;
+    text-align: center;
+    border-radius: 6px;
+    background: #1f2937;
+    color: #e5e7eb;
+    border: 2px solid #f58a3d;
+    font: 12px system-ui, sans-serif;
+  }
+}

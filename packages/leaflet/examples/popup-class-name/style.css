@@ -1,0 +1,21 @@
+/* Popup className: two custom popup styles */
+[data-example='leaflet/popup-class-name'] {
+  .alert .leaflet-popup-content-wrapper {
+    background: #5a1f1f;
+    color: #ffe3e3;
+    border: 2px solid #ff6b6b;
+    border-radius: 2px;
+  }
+  .alert .leaflet-popup-tip {
+    background: #5a1f1f;
+  }
+  .note .leaflet-popup-content-wrapper {
+    background: #f6e7a8;
+    color: #3a3000;
+    border-radius: 14px;
+    font-style: italic;
+  }
+  .note .leaflet-popup-tip {
+    background: #f6e7a8;
+  }
+}

@@ -1,0 +1,464 @@
+{
+  "fetched": "2026-11-15T07:40:56.956Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/Leaflet/Leaflet",
+      "ref": "v2.0.0-beta.4",
+      "paths": [
+        "LICENSE",
+        "README.md",
+        "MIGRATION.md",
+        "FAQ.md",
+        "PLUGIN-GUIDE.md",
+        "docs/index.md",
+        "docs/install.md",
+        "docs/examples.md",
+        "docs/examples/*/index.md",
+        "docs/examples/choropleth/us-states.js",
+        "docs/examples/geojson/sample-geojson.js",
+        "docs/examples/map-panes/eu-countries.js",
+        "docs/examples/custom-icons/leaf-*.png",
+        "docs/examples/geojson/baseball-marker.png",
+        "docs/examples/overlays/newark_nj_1922.jpg",
+        "docs/examples/crs-simple/uqm_map_full.png",
+        "docs/examples/extending-1-classes/class-diagram.svg",
+        "build/reference.json",
+        "src/**/*.js",
+        "src/types.ts",
+        "src/leaflet.css"
+      ],
+      "commit": "0ead6a008e36df51700ceea438400aff17c8dc16"
+    }
+  ],
+  "files": {
+    "repo/build/reference.json": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/build/reference.json",
+      "sha256": "0c5bf704f31fac03f2f953bdf0fdfc14a4ddaed9e23e70a7fe1ac081d0955d97"
+    },
+    "repo/docs/examples.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples.md",
+      "sha256": "7cca81ac4f4fd0079c82c7cfa40c22de01c26b0a6be0a833d133675e3516ddb6"
+    },
+    "repo/docs/examples/accessibility/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/accessibility/index.md",
+      "sha256": "7af0356a560681870f7b97d840354f44913b5ebbaafe1f53d3753ea7257bb408"
+    },
+    "repo/docs/examples/choropleth/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/choropleth/index.md",
+      "sha256": "07af13d9f6dbc15dad419a40bb09e1ab29872e9fca15f0735752a748e7a34b14"
+    },
+    "repo/docs/examples/choropleth/us-states.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/choropleth/us-states.js",
+      "sha256": "49f93e9ca3a034dbff69578bf935e5fd5dcbe419f0ce9dd2030f8b0d405f4ee6"
+    },
+    "repo/docs/examples/crs-simple/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/crs-simple/index.md",
+      "sha256": "ef8468dc3656104b25895a28a202912d920b3ba73c3ab287ac978f5245a124a0"
+    },
+    "repo/docs/examples/crs-simple/uqm_map_full.png": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/crs-simple/uqm_map_full.png",
+      "sha256": "de889354171e03ebb1bbe4f95f5d1cc0b9695373dd5872be92f90b144b4b0678"
+    },
+    "repo/docs/examples/custom-icons/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/custom-icons/index.md",
+      "sha256": "0c8711f94ddf4871e1e372e9103a2c82e93037a318a570212f4cdfcba4dbc126"
+    },
+    "repo/docs/examples/custom-icons/leaf-green.png": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/custom-icons/leaf-green.png",
+      "sha256": "3c9d238fb925766cc060018484afc1906f249137cd84a063ece8a88e816f077f"
+    },
+    "repo/docs/examples/custom-icons/leaf-orange.png": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/custom-icons/leaf-orange.png",
+      "sha256": "df53477367047e7fe248cb6a2c02fd7a3487ca0a698ec5162fc5382808259091"
+    },
+    "repo/docs/examples/custom-icons/leaf-red.png": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/custom-icons/leaf-red.png",
+      "sha256": "f1cc062fcd5b785d937861e3939eec236b49fc0f727b2ee3cbc8ef1ece469d0d"
+    },
+    "repo/docs/examples/custom-icons/leaf-shadow.png": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/custom-icons/leaf-shadow.png",
+      "sha256": "b78359249a175d01fab5aaa214109ea82663971d6ebef65e68a82f9a1b845e48"
+    },
+    "repo/docs/examples/extending-1-classes/class-diagram.svg": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/extending-1-classes/class-diagram.svg",
+      "sha256": "d2847125a29930b3a2ee8cca3cfcfb5aeee54f068ac08ef3fdcd0cf203ca2dc2"
+    },
+    "repo/docs/examples/extending-1-classes/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/extending-1-classes/index.md",
+      "sha256": "60117a23efbb48f8df1eba72525a099216bca6226c4c0ba08fb2f3a5efbc9eaa"
+    },
+    "repo/docs/examples/extending-2-layers/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/extending-2-layers/index.md",
+      "sha256": "a1aed2314a4da821144aed96156ea703d5b7d52c3efb0198322ed721a7723383"
+    },
+    "repo/docs/examples/extending-3-controls/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/extending-3-controls/index.md",
+      "sha256": "f74ba5b0e0705306ad27a5355ca6aac5fc9a606770268fd7de4cfaff755af419"
+    },
+    "repo/docs/examples/geojson/baseball-marker.png": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/geojson/baseball-marker.png",
+      "sha256": "59cf7928316b1d89ed62114048bc53a0dd4c137bf8e9b1a9fdf7b34c41180279"
+    },
+    "repo/docs/examples/geojson/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/geojson/index.md",
+      "sha256": "db8e921572a9705c1e0b085c4fcb057509282ee62501a7cc5177c0807ea8f146"
+    },
+    "repo/docs/examples/geojson/sample-geojson.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/geojson/sample-geojson.js",
+      "sha256": "e5c46c6c2065a6a2c9bbad07c7430f55255189b26273863b2ee2da3d2fd2cfc6"
+    },
+    "repo/docs/examples/layers-control/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/layers-control/index.md",
+      "sha256": "3ba8cf91fc8d390fec28281f2afa6a8f4878a1b47bdc23c1d4c7ab7613039cee"
+    },
+    "repo/docs/examples/map-panes/eu-countries.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/map-panes/eu-countries.js",
+      "sha256": "4aec73a203163fd956e74a4b6c8d99b82b0be754b3e2711efd6e91fcdd5de47d"
+    },
+    "repo/docs/examples/map-panes/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/map-panes/index.md",
+      "sha256": "c43b0e19de73a2a9fc4c91812d2a377b0c76afd02133c855f7b21b15d5a87455"
+    },
+    "repo/docs/examples/mobile/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/mobile/index.md",
+      "sha256": "e9fb8fc71de8eaa9edaf1f783822a2da1c98fb1c77dfeeb888c7d9da6ce421c9"
+    },
+    "repo/docs/examples/overlays/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/overlays/index.md",
+      "sha256": "eba8a1083030c2adee7b73fdfc36edd5563a4ab4e982c441ebeaec9949d4ed7b"
+    },
+    "repo/docs/examples/overlays/newark_nj_1922.jpg": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/overlays/newark_nj_1922.jpg",
+      "sha256": "b23bbc04e14a22800e111c98021754d9362f33ee3469b6458e2e5916e16ae254"
+    },
+    "repo/docs/examples/quick-start/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/quick-start/index.md",
+      "sha256": "67df7b62bd63c5596649ec4fd72750df291b7156f444d2c920f5fce9584c18b6"
+    },
+    "repo/docs/examples/wms/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/wms/index.md",
+      "sha256": "d3e2b8693747b7745e8ed59c93d6848a4cb2600f54c1f7b60b8198c3a388d24d"
+    },
+    "repo/docs/examples/zoom-levels/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/examples/zoom-levels/index.md",
+      "sha256": "db03ebe9487a9ba8b3f6183e4705753378030d8cb5e59282deb279c6f91b7c78"
+    },
+    "repo/docs/index.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/index.md",
+      "sha256": "81b0c4ec6429ff1f349c29d25221f41eef709fbfdc5b07531e224fd9e0c6c9c2"
+    },
+    "repo/docs/install.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/docs/install.md",
+      "sha256": "781bd45137c59a13c71ad5f59411a388dc426bb5409bf80fdbda9bb29a8620ac"
+    },
+    "repo/FAQ.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/FAQ.md",
+      "sha256": "e56078884fd9a13c4066bea9ee59fbb03046410b23d5bbaf7361fc78af3f278e"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/LICENSE",
+      "sha256": "6cca66c5533df4495348243ab440b889831e1fd4bfc002a2845dd74da12c0b29"
+    },
+    "repo/MIGRATION.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/MIGRATION.md",
+      "sha256": "4913bf8a50ea9740e6348fb4f8aeae4d5ef6c4648f5b6ad8e37d0ab80cf394ef"
+    },
+    "repo/PLUGIN-GUIDE.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/PLUGIN-GUIDE.md",
+      "sha256": "434df103cd6bbf8b83ef7783dcb65787a9f57406f34d8faad80198f244e9a7aa"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/README.md",
+      "sha256": "597db9d317706d5e9b4176c2a0d9450ed578e72421f61c74f3eef1bdbfc994aa"
+    },
+    "repo/src/control/AttributionControl.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/control/AttributionControl.js",
+      "sha256": "a7fb120adb3a4185eb4c277a22af9309d315989f9a6f3e99102946a75dad8f7b"
+    },
+    "repo/src/control/Control.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/control/Control.js",
+      "sha256": "1162a66a5e29d60592783daa8999fe09d17c074dccf3919ff84d38851229588f"
+    },
+    "repo/src/control/FullscreenControl.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/control/FullscreenControl.js",
+      "sha256": "332866f33708b9d7d02a092438d7319ee44be5b434829b8ea21c9600c9d61396"
+    },
+    "repo/src/control/LayersControl.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/control/LayersControl.js",
+      "sha256": "47b7dd971390b8c27d274b673a7578e4658a33f1fdc31e2b4d68c2942aa66d2e"
+    },
+    "repo/src/control/ScaleControl.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/control/ScaleControl.js",
+      "sha256": "17e847042eec85e13c48da3f2756f1e5843db9d9efbe6c70fcf39d3a958b3221"
+    },
+    "repo/src/control/ZoomControl.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/control/ZoomControl.js",
+      "sha256": "0dc1db39808ee93c8c76cd90b5f70a0aa0ca2187a50be06aecedc145579efc57"
+    },
+    "repo/src/core/Class.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/core/Class.js",
+      "sha256": "bf2873c3aba48325630cccbf33cf06084b6e2b59b8464a1cae82cf269ea9ed9f"
+    },
+    "repo/src/core/Events.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/core/Events.js",
+      "sha256": "a14df572f23783d59bba40d8a18c49c119f65251cf86e81de272e3d7b4f43638"
+    },
+    "repo/src/core/Handler.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/core/Handler.js",
+      "sha256": "36d544cb6969d4a0a275b210f2524ed51f3961d31c5dcd2aa95ce8ad80db3c87"
+    },
+    "repo/src/core/Util.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/core/Util.js",
+      "sha256": "978e6f17d5cd30dbf20309eafac489ee570d938694a03bd8d5c978eaaf3fb59f"
+    },
+    "repo/src/dom/DomEvent.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/dom/DomEvent.js",
+      "sha256": "bee44f76640da0ef412dd5580756a78f734fd4fac029a3dfc19129d3060618c9"
+    },
+    "repo/src/dom/DomEventUtil.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/dom/DomEventUtil.js",
+      "sha256": "9f0546f47a420f116543ffc2b5ad2363051e74ecae3906b15d511eab19f3d929"
+    },
+    "repo/src/dom/DomUtil.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/dom/DomUtil.js",
+      "sha256": "31cf16d2898f413144381659e4011055b4edde99ca01a7ab63ef41c0cb0ea43b"
+    },
+    "repo/src/dom/Draggable.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/dom/Draggable.js",
+      "sha256": "285a59bc893340c1e98afbf1c3676aabc8efe07fca9197b10f36592ea257e5bc"
+    },
+    "repo/src/dom/PosAnimation.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/dom/PosAnimation.js",
+      "sha256": "dc6e3efe3cf9efc100772eba580cf068e457ae1994c785a707a4edf3e33ae610"
+    },
+    "repo/src/geo/crs/CRS.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geo/crs/CRS.js",
+      "sha256": "8adb57c95f786be9dcaedac3afdfb5633ae6ab2f3aa4ae2c4c345e6114729be7"
+    },
+    "repo/src/geo/crs/EarthCRS.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geo/crs/EarthCRS.js",
+      "sha256": "cce5475e8f14a4076a54e9983acc5a078cf9fe36107899690cb8cc64e280f3e6"
+    },
+    "repo/src/geo/crs/EPSG3395.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geo/crs/EPSG3395.js",
+      "sha256": "47801070cb5e921228ccb212fa88ad846e94fb88efecc35357825d06298ac9d8"
+    },
+    "repo/src/geo/crs/EPSG3857.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geo/crs/EPSG3857.js",
+      "sha256": "4bad1ef784b93a2c24cc8bcdc3ac01a8d201590a0584b4fd190403695f0862b6"
+    },
+    "repo/src/geo/crs/EPSG4326.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geo/crs/EPSG4326.js",
+      "sha256": "a8e8b21692de9622afa783dffb31294705b91d294e6a76f03dde39b5a8d9a82b"
+    },
+    "repo/src/geo/crs/SimpleCRS.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geo/crs/SimpleCRS.js",
+      "sha256": "def4bed77c171fda71cbe42b62d79f6380a9702db022975983ab2376ba331ef7"
+    },
+    "repo/src/geo/LatLng.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geo/LatLng.js",
+      "sha256": "8ff081441c65641dece3c129121797580511815659ce171fabe83334e92480de"
+    },
+    "repo/src/geo/LatLngBounds.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geo/LatLngBounds.js",
+      "sha256": "e7c7cf62d79483a3303e1639f3f49ae44246dd8a1e7c9a8608ec224e6edd9f16"
+    },
+    "repo/src/geo/projection/LonLatProjection.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geo/projection/LonLatProjection.js",
+      "sha256": "d3fde9f9e9c8104c36e27e13568fd49e71e5eae6ffa35a39f79c4d8fdd41991a"
+    },
+    "repo/src/geo/projection/MercatorProjection.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geo/projection/MercatorProjection.js",
+      "sha256": "d03e6053654f0cb6a0a7520cd629b63ee50b05a6fa0c54376ea17f73b65fb14a"
+    },
+    "repo/src/geo/projection/SphericalMercatorProjection.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geo/projection/SphericalMercatorProjection.js",
+      "sha256": "794d2d43e015fd0f8f53f420a1f6a5bc56d7a778503459ba37ae4db51757537a"
+    },
+    "repo/src/geometry/Bounds.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geometry/Bounds.js",
+      "sha256": "6c0b1999737942f4c04acb1f3040d9310bcd3d1093d3e017ff84a306dcb38e08"
+    },
+    "repo/src/geometry/LineUtil.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geometry/LineUtil.js",
+      "sha256": "4d0833e7981e655dd84cd4665ad847afe34a0d3b443d05f7a7f88dfb1183ba9d"
+    },
+    "repo/src/geometry/Point.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geometry/Point.js",
+      "sha256": "e4db5dddd4873d5496b7fd78369ffbf58400b29c3e0e7ac0304d79663608e415"
+    },
+    "repo/src/geometry/PolyUtil.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geometry/PolyUtil.js",
+      "sha256": "2913281a9a8a4c55ee80880a6d96d14e4bcf30699270484e4f726ccffe0cdc4c"
+    },
+    "repo/src/geometry/Transformation.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/geometry/Transformation.js",
+      "sha256": "fa1774030f6a20ba86c3f44e8e5f3763213b183f83c7abb6f9a9b555b62e527f"
+    },
+    "repo/src/layer/BlanketOverlay.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/BlanketOverlay.js",
+      "sha256": "c88fbcce1a32c3e9f8ffbf60d7277eebfe707ef3398dbdaca9b72bc03e2b322b"
+    },
+    "repo/src/layer/DivOverlay.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/DivOverlay.js",
+      "sha256": "0484af29dcd3c0a199242f21e2a96ecd9f22d166a0ee1017db357e07cf1e560a"
+    },
+    "repo/src/layer/FeatureGroup.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/FeatureGroup.js",
+      "sha256": "84760e006ca03942727736c0e8a73f62588fe3076b878a11f1a20b859e4d7eb7"
+    },
+    "repo/src/layer/GeoJSON.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/GeoJSON.js",
+      "sha256": "b95525478b3c2645312164745f7d8e29d7ee402a965bf1c4a00908ac415fa665"
+    },
+    "repo/src/layer/GeoJSONUtil.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/GeoJSONUtil.js",
+      "sha256": "f4f72dcd82d596b405d1c5d1abf21a6c591d1a840d712f27da34d9ce872f7666"
+    },
+    "repo/src/layer/ImageOverlay.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/ImageOverlay.js",
+      "sha256": "165b8f5a66d5df044eacc62d79770f1b07698e4d5684732d679e48edc396b28c"
+    },
+    "repo/src/layer/Layer.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/Layer.js",
+      "sha256": "42db7ced0b5ad669692af03eb4b88551bdf0495294822c48653c781638bc8887"
+    },
+    "repo/src/layer/LayerBase.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/LayerBase.js",
+      "sha256": "c709443e2780c7fc2d2f7ab451a7bd5c5951bad639b58fe8effcac49f8403414"
+    },
+    "repo/src/layer/LayerGroup.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/LayerGroup.js",
+      "sha256": "2e2d58fb273078cbde256c886427257c99927f3f3dbb71815406b9b3207f71d6"
+    },
+    "repo/src/layer/marker/DefaultIcon.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/marker/DefaultIcon.js",
+      "sha256": "edd3767c6fbd9c4fec2a32a6e0bc82c85ca1eac60060dff1cbe5014b0bf4ba9f"
+    },
+    "repo/src/layer/marker/DivIcon.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/marker/DivIcon.js",
+      "sha256": "d3c84c131cbb50efe7271e4e98187f08931a39b33632b69ceec3406423c68275"
+    },
+    "repo/src/layer/marker/Icon.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/marker/Icon.js",
+      "sha256": "d002d8574c50250f4ed31687027b41b3cd424289b59d44ba2aa7aba6cc59f7d2"
+    },
+    "repo/src/layer/marker/Marker.Drag.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/marker/Marker.Drag.js",
+      "sha256": "f260ccfbcf3b8a116c5d6764ac585544dad9f74e2f23a15c2cf48b23fd39be05"
+    },
+    "repo/src/layer/marker/Marker.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/marker/Marker.js",
+      "sha256": "bf39dda5196a12ec008c2c98a0c40e4732b260b519fb9c20a694df02d513b960"
+    },
+    "repo/src/layer/Popup.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/Popup.js",
+      "sha256": "e2ca85bf4f549b279d0b14ffdd29f476172771a73b987caa5255b44c30e723d3"
+    },
+    "repo/src/layer/SVGOverlay.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/SVGOverlay.js",
+      "sha256": "4b91572a9d46c0ca2a9556f73906d5da6b63af5156c41d284246068e8083d464"
+    },
+    "repo/src/layer/tile/GridLayer.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/tile/GridLayer.js",
+      "sha256": "51c672825b0d1fbfa98e613620f3aaa4737049385563501776365cf20514930b"
+    },
+    "repo/src/layer/tile/TileLayer.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/tile/TileLayer.js",
+      "sha256": "5739c6f3b18c71fe5def5478ce6933c5006719fb43181c5a13e733a49ba29f73"
+    },
+    "repo/src/layer/tile/WMSTileLayer.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/tile/WMSTileLayer.js",
+      "sha256": "b26711f9eeafae1bb001a11da7d11cfb81844d38363219a7d94fcc7a5b553aaa"
+    },
+    "repo/src/layer/Tooltip.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/Tooltip.js",
+      "sha256": "35e35481d26ced8b922732dc6be7aded44259888220bfec8d0a26d15aa74e28c"
+    },
+    "repo/src/layer/vector/Canvas.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/vector/Canvas.js",
+      "sha256": "83ab996c791987318b5b06a65196ffb6e5a532d4408d0b306fe544509915547d"
+    },
+    "repo/src/layer/vector/Circle.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/vector/Circle.js",
+      "sha256": "05df33bf2aa0bf92987fa2d859689dba951d781412f48b34223b38ce94e360c0"
+    },
+    "repo/src/layer/vector/CircleMarker.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/vector/CircleMarker.js",
+      "sha256": "ee87b0ad6acaf7226a17dde17b3226486f78234e466e89544a83efacacf5ae82"
+    },
+    "repo/src/layer/vector/Path.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/vector/Path.js",
+      "sha256": "92d0a36f3937fdbb26c9041246a203898e32d979967ba2d57e7af272b6235737"
+    },
+    "repo/src/layer/vector/Polygon.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/vector/Polygon.js",
+      "sha256": "a6ad1d3b62e179347842585fae4b26d04b033beb0fab22389b21a31d89cbe8af"
+    },
+    "repo/src/layer/vector/Polyline.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/vector/Polyline.js",
+      "sha256": "d123173af50040d71ded40fa05d9fb01a72b5f7a2444b03e776835e758c374a2"
+    },
+    "repo/src/layer/vector/Rectangle.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/vector/Rectangle.js",
+      "sha256": "6415cc5fb39a30fdae74c0e8af048387ede4d1fd9c7327530a82cb5049d2ed5a"
+    },
+    "repo/src/layer/vector/Renderer.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/vector/Renderer.js",
+      "sha256": "a1e627ac7047322c48d6d9e1ab6e10a13de2021b18e4bf0678bb3ff51a08ff98"
+    },
+    "repo/src/layer/vector/SVG.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/vector/SVG.js",
+      "sha256": "6f1749566e7eb06a101ce6915901d4aa3cc6417f0854bb91d3b4238141f9c5d4"
+    },
+    "repo/src/layer/VideoOverlay.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/layer/VideoOverlay.js",
+      "sha256": "6c04f38e113e62aec9ddbf87f47349a790077b5512159bd12f6deac05a746a8d"
+    },
+    "repo/src/leaflet.css": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/leaflet.css",
+      "sha256": "da7ac3595217ca73d48a98901c491b07b8879eb19709efbb5b860a72696f5961"
+    },
+    "repo/src/Leaflet.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/Leaflet.js",
+      "sha256": "6cafacff720d321fc3e9db1ddd3ee29a92600262b07ff4b618eddb0f5b7b16a8"
+    },
+    "repo/src/map/handler/BoxZoomHandler.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/map/handler/BoxZoomHandler.js",
+      "sha256": "ff7c1e15d473d9ae07812a76ec581bc16b221dc4126422061510003dbaf23f21"
+    },
+    "repo/src/map/handler/DoubleClickZoomHandler.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/map/handler/DoubleClickZoomHandler.js",
+      "sha256": "c74997aaee83adca1b0b63e956be95b452d866b128a4d70555b7c94bb9a3e4b0"
+    },
+    "repo/src/map/handler/DragHandler.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/map/handler/DragHandler.js",
+      "sha256": "4c58800ae858bb14b2481142c66c9920c8b2a3c62a2e0576d7dadc67e2636b03"
+    },
+    "repo/src/map/handler/KeyboardHandler.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/map/handler/KeyboardHandler.js",
+      "sha256": "f13dc9c04d03d1036c74897e93812251641f4bee30a8fe3640abdba9b5cb971a"
+    },
+    "repo/src/map/handler/PinchZoomHandler.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/map/handler/PinchZoomHandler.js",
+      "sha256": "853a492ef2742eba92299081cc4c439aa664ee385e27d6a0fe8c41a2b88bb1af"
+    },
+    "repo/src/map/handler/ScrollWheelZoomHandler.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/map/handler/ScrollWheelZoomHandler.js",
+      "sha256": "b487dd108b67f6e2e9392bc730e41cfbaaa241a529f996764d194d1a8193ae61"
+    },
+    "repo/src/map/handler/TapHoldHandler.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/map/handler/TapHoldHandler.js",
+      "sha256": "248239c7241f0ed668bf052f6945a69a497d4695dc5a459a64e6abdb39ea855a"
+    },
+    "repo/src/map/Map.js": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/map/Map.js",
+      "sha256": "b3cb8986ba7e58cc9907cb50c29c80488a90e8272796aa26968690089ee1448b"
+    },
+    "repo/src/types.ts": {
+      "url": "https://github.com/Leaflet/Leaflet/blob/0ead6a008e36df51700ceea438400aff17c8dc16/src/types.ts",
+      "sha256": "686fae6a4271e90fb072e05a5723b4cfbec7dc68f0218e999eb798091a828a3c"
+    }
+  }
+}

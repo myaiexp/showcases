@@ -1,0 +1,17 @@
+/* A callout pinned to a point: styles, nested under this example's own selector */
+[data-example='leaflet/custom-layer'] {
+  .callout {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: 0 0;
+    white-space: nowrap;
+    padding: 5px 9px;
+    margin: -40px 0 0 -10px;
+    border-radius: 6px 6px 6px 0;
+    background: #f58a3d;
+    color: #111;
+    font: 600 12px system-ui, sans-serif;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 0.55);
+  }
+}

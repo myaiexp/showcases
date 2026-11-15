@@ -93,7 +93,7 @@ the gallery today are marked *(legacy in gallery)*.
 | # | Package | Vis | Line since | Docs | ~Ex | Note |
 |---|---|---|---|---|---|---|
 | 49 | Paper.js (`paper`) | 4 | 0.17 2026-11 | repo ✗lic | 100 | Vector path scripting, just revived |
-| 50 | Leaflet (`leaflet`) | 4 | 2.0 beta 2026-11 | repo ✓ BSD-2 | 60 | `latest` is still 1.9.4 (2023-05); build on the 2.0 `beta` tag. Raster tiles are network, so cards stay on GeoJSON |
+| 50 | **Leaflet** (`leaflet`) ✅ built | 4 | 2.0 beta 2026-11 | repo ✓ BSD-2 | 60 | `latest` is still 1.9.4 (2023-05); built on 2.0.0-beta.4. Tiles come from a pretend tile server in the page, so nothing is fetched |
 | 51 | Mosaic vgplot (`@uwdata/vgplot`) | 4 | 0.35 2026-11 | repo ✓ BSD-3 | 60 | Cross-filtered plots on DuckDB-WASM. Heavy, and 0.x moves fast |
 | 52 | dotLottie (`@lottiefiles/dotlottie-web`) | 4 | 0.83 2026-11 | README MIT | 30 | Lottie with state machines and themes; needs assets |
 | 53 | party.js (`party-js`) | 4 | 3.0 2026-11 | repo ✓ MIT | 15 | Confetti and sparkles from shapes, samplers and behaviours; v3 is a rewrite. Docs are `docs/src/content/docs` (13 pages). Thin |

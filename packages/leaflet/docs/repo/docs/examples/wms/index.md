@@ -1,0 +1,162 @@
+---
+layout: tutorial_v2
+title: WMS and TMS
+---
+
+<style>
+iframe {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+</style>
+
+<br/>
+
+WMS, short for [*web map service*](https://en.wikipedia.org/wiki/Web_Map_Service), is a popular way of publishing maps by professional GIS software (and seldom used by non-GISers). This format is similar to map tiles, but more generic and not so well optimized for use in web maps. A WMS image is defined by the coordinates of its corners - a calculation that Leaflet does under the hood.
+
+TMS stands for [*tiled map service*](https://en.wikipedia.org/wiki/Tile_Map_Service), and is a map tiling standard more focused on web maps, very similar to the map tiles that Leaflet expects in a `TileLayer`.
+
+WMTS, for [*web map tile service*](https://en.wikipedia.org/wiki/Web_Map_Tile_Service), is the standard protocol for map tiles and serves map tiles directly usable in a `TileLayer`.
+
+
+## WMS in Leaflet
+
+When somebody publishes a WMS service, most likely they link to something called a `GetCapabilities` document. For this tutorial, we'll use the WMS offered by [*Mundialis*](https://www.mundialis.de) at https://ows.mundialis.de/osm/service? . The service capabilities are described at the following URL:
+
+```text
+https://ows.mundialis.de/osm/service?request=GetCapabilities
+```
+
+Leaflet does not understand WMS `GetCapabilities` documents. Instead, you have to create a `WMSTileLayer` layer, provide the base WMS URL, and specify whatever WMS options you need.
+
+The base WMS URL is simply the `GetCapabilities` URL, without any parameters, like so:
+
+```text
+https://ows.mundialis.de/osm/service?
+```
+
+And the way to use that in a Leaflet map is simply:
+
+	const map = new LeafletMap(mapDiv, mapOptions);
+
+	const wmsLayer = new WMSTileLayer('https://ows.mundialis.de/osm/service?', wmsOptions).addTo(map);
+
+An instance of `WMSTileLayer` needs at least one option: `layers`. Be careful, as the concept of "layer" in Leaflet is different from the concept of "layer" in WMS!
+
+WMS servers define a set of *layers* in the service. These are defined in the `GetCapabilities` XML document, which most times is tedious and difficult to understand. Usually it's a good idea to use software such as [QGIS to see what layers are available in a WMS server](https://www.qgistutorials.com/en/docs/3/working_with_wms.html) to see the layer names available:
+
+![Discovering WMS layers with QGIS](qgis-wms-layers.png)
+
+We can see that the *Mundialis* WMS has a WMS layer named `TOPO-OSM-WMS` with a basemap. Let's see how it looks:
+
+	const wmsLayer = new WMSTileLayer('https://ows.mundialis.de/osm/service?', {
+		layers: 'TOPO-OSM-WMS'
+	}).addTo(map);
+
+{% include frame.html url="wms-example1.html" %}
+
+
+Or we can try the `SRTM30-Colored-Hillshade` WMS layer:
+
+	const wmsLayer = new WMSTileLayer('https://ows.mundialis.de/osm/service?', {
+		layers: 'SRTM30-Colored-Hillshade'
+	}).addTo(map);
+
+{% include frame.html url="wms-example2.html" %}
+
+
+The `layers` option is a comma-separated list of layers. If a WMS service has defined several layers, then a request for a map image can refer to more than one layer.
+
+For the example WMS server we're using, there is a `TOPO-WMS` WMS layer showing the world topography, and a `OSM-Overlay-WMS` WMS layer showing the names of places. The WMS server will compose both layers in one image if we request both, separated with a comma:
+
+	const topographyAndPlaces = new WMSTileLayer('https://ows.mundialis.de/osm/service?', {
+		layers: 'TOPO-WMS,OSM-Overlay-WMS'
+	}).addTo(map);
+
+Note this will request *one* image to the WMS server. This is different than creating a `WMSTileLayer` for the topography, another one for the places, and adding them both to the map. In the first case, there is one image request and it's the WMS server who decides how to compose (put on top of each other) the image. In the second case, there would be two image requests and it's the Leaflet code running in the web browser who decides how to compose them.
+
+If we combine this with the [layers control](../layers-control/), then we can build a simple map to see the difference:
+
+	const basemaps = {
+		Topography: new WMSTileLayer('https://ows.mundialis.de/osm/service?', {
+			layers: 'TOPO-WMS'
+		}),
+
+		Places: new WMSTileLayer('https://ows.mundialis.de/osm/service?', {
+			layers: 'OSM-Overlay-WMS'
+		}),
+
+		'Topography, then places': new WMSTileLayer('https://ows.mundialis.de/osm/service?', {
+			layers: 'TOPO-WMS,OSM-Overlay-WMS'
+		}),
+
+		'Places, then topography': new WMSTileLayer('https://ows.mundialis.de/osm/service?', {
+			layers: 'OSM-Overlay-WMS,TOPO-WMS'
+		})
+	};
+
+	new LayersControl(basemaps).addTo(map);
+
+	basemaps.Topography.addTo(map);
+
+Change to the "Topography, then places" option, so you can see the places "on top" of the topography, but the WMS server is clever enough to display building labels on top of that. It's up to the WMS server how to compose layers when asked for many.
+
+{% include frame.html url="wms-example3.html" %}
+
+
+### Notes to GIS Users of WMS Services
+
+From a GIS point of view, WMS handling in Leaflet is quite basic. There's no `GetCapabilities` support, no legend support, and no `GetFeatureInfo` support.
+
+`WMSTileLayer` has extra options, which can be found in [Leaflet's API documentation](/reference.html#wmstilelayer). Any option not described there will be passed to the WMS server in the `GetMap` URLs.
+
+Also note that Leaflet supports very few [coordinate systems](https://en.wikipedia.org/wiki/Spatial_reference_system): `EPSG3857`, `EPSG3395` and `EPSG4326` (see the documentation for `CRS`). If your WMS service doesn't serve images in those coordinate systems, you might need to use [Proj4Leaflet](https://github.com/kartena/Proj4Leaflet) to use a different coordinate system in Leaflet. Other than that, just use the right CRS when initializing your map, and any WMS layers added will use it:
+
+	const map = new LeafletMap('map', {
+		crs: EPSG4326
+	});
+
+	const wmsLayer = new WMSTileLayer('https://ows.mundialis.de/osm/service?', {
+		layers: 'TOPO-OSM-WMS'
+	}).addTo(map);
+
+{% include frame.html url="wms-example-crs.html" %}
+	
+	
+## TMS in Leaflet
+
+Leaflet doesn't have explicit support for TMS services, but the tile naming structure is so similar to the common `TileLayer` naming scheme, that displaying a TMS service is almost trivial.
+
+Let's consider a TMS server with the following endpoint:
+
+```text
+http://base_url/tms/1.0.0
+```
+
+Checking the [MapCache help about TMS](https://mapserver.org/mapcache/services.html) and the [TMS specification](https://wiki.osgeo.org/wiki/Tile_Map_Service_Specification) you can see that the URL for a map tile in TMS looks like:
+
+```text
+http://base_url/tms/1.0.0/ {tileset} / {z} / {x} / {y} .png
+```
+
+To use the TMS services as a `TileLayer`, we can check the capabilities document (the same as the base endpoint, in our case `http://base_url/tms/1.0.0`) to see what `tileset`s are available, and build our base URLs:
+
+```text
+http://base_url/tms/1.0.0/{example_layer}@png/{z}/{x}/{y}.png
+```
+
+
+And use the `tms:true` option when instantiating the layers, like so:
+
+	const tmsLayer = new TileLayer('http://base_url/tms/1.0.0/example_layer@png/{z}/{x}/{y}.png', {
+		tms: true
+	}).addTo(map);
+
+
+In Leaflet you also have the option to use `{-y}` in the URL instead of a `tms: true` option, e.g.:
+
+	const layer = new TileLayer('http://base_url/tms/1.0.0/tileset/{z}/{x}/{-y}.png');
+
+The `tms: true` option or `{-y}` are needed because the origin of coordinates of vanilla `TileLayer`s is the top left corner, so the Y coordinate goes *down*. In TMS, the origin of coordinates is the *bottom* left corner so the Y coordinate goes *up*.
+
+Besides the difference in the `y` coordinate and the discovery of tilesets, TMS services serve tiles exactly in the way that `TileLayer` expects.

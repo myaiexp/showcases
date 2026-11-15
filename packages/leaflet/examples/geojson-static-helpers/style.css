@@ -1,0 +1,6 @@
+/* GeoJSON coordinate helpers: styles, all nested under this example's own selector */
+[data-example='leaflet/geojson-static-helpers'] {
+  .box {
+    color: var(--fg-1);
+  }
+}

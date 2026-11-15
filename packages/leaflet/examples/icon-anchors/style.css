@@ -1,0 +1,9 @@
+/* Anchors: the red dot that marks the marker position */
+[data-example='leaflet/icon-anchors'] {
+  .anchor-dot {
+    background: #ff3b3b;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+}

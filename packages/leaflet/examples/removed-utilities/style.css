@@ -1,0 +1,16 @@
+/* The marker the steps work on: styles, nested under this example's own selector */
+[data-example='leaflet/removed-utilities'] {
+  .ru-box {
+    background: #1f2937;
+    color: #e5e7eb;
+    border: 2px solid #f58a3d;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 30px;
+    font: 600 13px system-ui, sans-serif;
+  }
+  .ru-box.hot {
+    border-color: #f87171;
+    color: #f87171;
+  }
+}

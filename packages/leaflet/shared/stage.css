@@ -1,0 +1,190 @@
+/* Shared Leaflet chrome: stage layout, plus Leaflet's own controls, popups and tooltips in dark */
+.lf-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font);
+}
+.lf-card {
+  height: 100%;
+  gap: 0;
+  font-size: 11px;
+  line-height: 1.3;
+  position: relative;
+}
+.lf-full {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.lf-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  font-size: 13px;
+}
+.lf-bar:empty {
+  display: none;
+}
+.lf-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.lf-bar input[type='range'] {
+  width: 120px;
+}
+.lf-bar output {
+  min-width: 3ch;
+  color: var(--fg-2);
+  font-variant-numeric: tabular-nums;
+}
+.lf-scene {
+  display: flex;
+  gap: 12px;
+  min-height: 0;
+  flex: 1;
+}
+.lf-map {
+  flex: 1;
+  min-width: 0;
+  border-radius: 6px;
+}
+.lf-card .lf-map {
+  height: 100%;
+  border-radius: 0;
+}
+.lf-caption {
+  color: var(--fg-2);
+  min-height: 1.3em;
+}
+.lf-card .lf-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  padding: 2px 6px;
+  background: rgb(0 0 0 / 0.6);
+  color: #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: none;
+}
+.lf-card .lf-caption:empty {
+  display: none;
+}
+.lf-caption[data-tone='ok'] {
+  color: var(--green, #4ade80);
+}
+.lf-caption[data-tone='warn'] {
+  color: var(--accent);
+}
+.lf-caption[data-tone='bad'] {
+  color: var(--red, #f87171);
+}
+.lf-hint {
+  color: var(--fg-3);
+  font-size: 13px;
+}
+.lf-side {
+  width: 250px;
+  flex: none;
+  font-size: 12.5px;
+  color: var(--fg-2);
+  overflow: auto;
+  max-height: 520px;
+}
+.lf-side-title {
+  font-weight: 600;
+  color: var(--fg-1);
+  margin-bottom: 4px;
+}
+.lf-side pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 12px;
+}
+
+/* Leaflet's light chrome, recoloured for the dark gallery */
+.lf-wrap .leaflet-container {
+  background: #0f1720;
+  font-family: var(--font);
+}
+.lf-wrap .leaflet-container a {
+  color: #7cb7ff;
+}
+.lf-wrap .leaflet-bar a,
+.lf-wrap .leaflet-bar :where([role='button']) {
+  background-color: #1d2530;
+  color: #e5e9f0;
+  border-bottom-color: #2f3a48;
+}
+.lf-wrap .leaflet-bar a:hover,
+.lf-wrap .leaflet-bar :where([role='button']):hover {
+  background-color: #2a3442;
+}
+.lf-wrap .leaflet-bar a.leaflet-disabled,
+.lf-wrap .leaflet-bar :where([role='button']).leaflet-disabled {
+  background-color: #161c25;
+  color: #55606f;
+}
+.lf-wrap .leaflet-control-layers,
+.lf-wrap .leaflet-control-layers-expanded {
+  background: #1d2530;
+  color: #e5e9f0;
+}
+.lf-wrap .leaflet-control-layers-separator {
+  border-top-color: #2f3a48;
+}
+.lf-wrap .leaflet-control-attribution,
+.lf-wrap .leaflet-control-scale-line {
+  background: rgb(15 20 28 / 0.8);
+  color: #a3adbb;
+}
+.lf-wrap .leaflet-control-scale-line {
+  border-color: #8995a6;
+}
+.lf-wrap .leaflet-zoom-box {
+  border-color: #7cb7ff;
+  background: rgb(124 183 255 / 0.15);
+}
+.lf-wrap .leaflet-popup-content-wrapper,
+.lf-wrap .leaflet-popup-tip {
+  background: #1d2530;
+  color: #e5e9f0;
+}
+.lf-wrap .leaflet-container a.leaflet-popup-close-button {
+  color: #9aa5b4;
+}
+.lf-wrap .leaflet-tooltip {
+  background-color: #1d2530;
+  border-color: #1d2530;
+  color: #e5e9f0;
+}
+.lf-wrap .leaflet-tooltip-top::before {
+  border-top-color: #1d2530;
+}
+.lf-wrap .leaflet-tooltip-bottom::before {
+  border-bottom-color: #1d2530;
+}
+.lf-wrap .leaflet-tooltip-left::before {
+  border-left-color: #1d2530;
+}
+.lf-wrap .leaflet-tooltip-right::before {
+  border-right-color: #1d2530;
+}
+.lf-card .leaflet-control-attribution {
+  font-size: 9px;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* A card's caption covers the map's bottom edge: lift the bottom controls above it */
+.lf-card:has(.lf-caption:not(:empty)) .leaflet-bottom {
+  bottom: 18px;
+}

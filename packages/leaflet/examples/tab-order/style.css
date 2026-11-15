@@ -1,0 +1,7 @@
+/* A visible focus ring on everything focusable in the map: styles, nested under this example's own selector */
+[data-example='leaflet/tab-order'] {
+  .leaflet-container :focus {
+    outline: 3px solid #f58a3d;
+    outline-offset: 2px;
+  }
+}

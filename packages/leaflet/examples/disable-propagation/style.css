@@ -1,0 +1,23 @@
+/* Two custom controls: styles, nested under this example's own selector */
+[data-example='leaflet/disable-propagation'] {
+  .pad {
+    width: 140px;
+    height: 70px;
+    padding: 6px;
+    border-radius: 6px;
+    background: #1f2937;
+    color: #e5e7eb;
+    font: 12px system-ui, sans-serif;
+    overflow: auto;
+    border: 2px solid #6b7280;
+  }
+  .pad.shielded {
+    border-color: #4ade80;
+  }
+  .lf-card .pad {
+    width: 100px;
+    height: 52px;
+    font-size: 10px;
+    padding: 4px;
+  }
+}
