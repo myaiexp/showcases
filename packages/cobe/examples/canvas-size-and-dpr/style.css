@@ -1,0 +1,6 @@
+/* canvas-size-and-dpr: styles, all nested under this example's own selector */
+[data-example='cobe/canvas-size-and-dpr'] {
+  .box {
+    color: var(--fg-1);
+  }
+}

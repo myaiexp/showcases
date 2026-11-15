@@ -1,0 +1,60 @@
+// Penrose: diagrams from math notation, laid out by a constraint-based optimizer
+import { definePackage } from '@/types.ts';
+
+export default definePackage({
+  name: 'Penrose',
+  npm: '@penrose/core',
+  tagline: 'Write what a diagram means in plain notation; an optimizer works out where everything goes.',
+  about:
+    'Penrose splits a diagram into three programs. Domain declares the types, predicates and functions of a field (sets, vectors, graphs). Substance states the objects and facts of one diagram, such as `Set A, B` and `Subset(A, B)`. Style says how every match should look, and which constraints (`ensure contains(B.icon, A.icon)`) and objectives (`encourage`) the layout must meet. `@penrose/core` compiles the trio into an optimization problem and solves it with automatic differentiation, so every layout is one solution among many: change the variation string and a new one appears. Each example here compiles its own trio in your browser and animates the solve; in the full view all three programs are editable and the diagram re-solves as you type. The developer chapters cover the Language API (compile, step, optimize, toSVG) and the Optimization API, which solves any problem written with its autodiff functions.',
+  category: 'Data/Viz',
+  homepage: 'https://penrose.cs.cmu.edu',
+  docsUrl: 'https://penrose.cs.cmu.edu/docs/ref',
+  repo: 'https://github.com/penrose/penrose',
+  added: '2026-11-15',
+  // The docs sidebar (.vitepress/config.ts): Tutorial, then Reference (Domain, Substance,
+  // Style and its Function Library and Shapes pages), then For Developers. The Function
+  // Library's computation functions are split by kind, and each shape keeps its own page.
+  // Layout stages come from the staged-layout blog post. Bloom, React and SolidJS are
+  // other packages and stay out.
+  sections: [
+    'Tutorial: Basics',
+    'Tutorial: Predicates & Constraints',
+    'Tutorial: Functions',
+    'Domain',
+    'Substance',
+    'Style: Namespaces',
+    'Style: Selectors',
+    'Style: Selector Blocks',
+    'Style: Collectors',
+    'Style: Literals',
+    'Style: Expressions',
+    'Style: Vectors & Matrices',
+    'Constraint Functions',
+    'Objective Functions',
+    'Computation: Math',
+    'Computation: Paths & Curves',
+    'Computation: Geometry Queries',
+    'Computation: Curve Measures',
+    'Computation: Colors & Sampling',
+    'Shape: Circle',
+    'Shape: Ellipse',
+    'Shape: Equation',
+    'Shape: Group',
+    'Shape: Image',
+    'Shape: Line',
+    'Shape: Path',
+    'Shape: Polygon',
+    'Shape: Polyline',
+    'Shape: Rectangle',
+    'Shape: Text',
+    'Random Sampling',
+    'Passthrough SVG',
+    'Layout Stages',
+    'Interactivity',
+    'Language API',
+    'Optimization API',
+    'Writing Constraints & Objectives',
+    'Vanilla JS & Bundlers',
+  ],
+});

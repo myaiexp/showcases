@@ -1,0 +1,6 @@
+/* offset: styles, all nested under this example's own selector */
+[data-example='cobe/offset'] {
+  .box {
+    color: var(--fg-1);
+  }
+}

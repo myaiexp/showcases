@@ -1,0 +1,41 @@
+{
+  "license": "MIT (penrose/penrose LICENSE, vendored alongside). The core sources are the definitions the docs' Shapes and Function Library pages render (ShapeProps.vue, functions.data.ts)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/penrose/penrose",
+      "ref": "v3.3.1",
+      "paths": [
+        "LICENSE",
+        "packages/core/README.md",
+        "packages/core/src/index.ts",
+        "packages/core/src/api.ts",
+        "packages/core/src/shapes/*.ts",
+        "packages/core/src/lib/Constraints.ts",
+        "packages/core/src/lib/Objectives.ts",
+        "packages/core/src/lib/Functions.ts",
+        "packages/core/src/lib/Curves.ts",
+        "packages/core/src/lib/Queries.ts",
+        "packages/core/src/utils/Util.ts",
+        "packages/core/src/utils/InteractionUtils.ts",
+        "packages/docs-site/docs/**",
+        "packages/docs-site/public/vanilla-js-demo.html",
+        "packages/docs-site/blog/staged-layout.md",
+        "packages/docs-site/blog/new-language-features.md",
+        "!packages/docs-site/docs/bloom",
+        "!packages/docs-site/docs/team.md",
+        "!packages/docs-site/docs/ref/react.md",
+        "!packages/docs-site/docs/ref/solid.md"
+      ]
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/penrose/penrose",
+      "ref": "v3.3.1",
+      "paths": [
+        "packages/docs-site/.vitepress/config.ts"
+      ]
+    }
+  ]
+}

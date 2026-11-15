@@ -1,0 +1,101 @@
+/* Shared tsl-textures chrome: canvas box, side panel, parameter rows, preset buttons */
+.tt-stage {
+  width: 100%;
+  display: flex;
+  gap: var(--space-3);
+  font-family: var(--font);
+}
+.tt-card {
+  height: 100%;
+}
+.tt-full {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.tt-canvas {
+  position: relative;
+  flex: 1 1 360px;
+  min-width: 0;
+  height: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.tt-label {
+  position: absolute;
+  transform: translate(-50%, 0);
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: rgb(0 0 0 / 0.55);
+  color: #fff;
+  font-family: var(--font-mono, monospace);
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.tt-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.tt-panel {
+  flex: 0 1 300px;
+  max-height: 440px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  background: var(--bg-surface);
+  border-radius: 6px;
+  color: var(--fg-1);
+  font-size: 13px;
+}
+.tt-panel:empty {
+  display: none;
+}
+.tt-panel h4 {
+  margin: var(--space-2) 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--fg-2);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.tt-row {
+  display: grid;
+  grid-template-columns: 7.5em 1fr 3.5em;
+  gap: var(--space-2);
+  align-items: center;
+}
+.tt-row > span:first-child {
+  font-family: var(--font-mono, monospace);
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tt-row input[type='range'] {
+  width: 100%;
+}
+.tt-row input[type='color'] {
+  width: 100%;
+  height: 24px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.tt-row output {
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+  color: var(--fg-2);
+  text-align: right;
+}
+.tt-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.tt-note {
+  color: var(--fg-2);
+  font-size: 12px;
+  line-height: 1.4;
+}

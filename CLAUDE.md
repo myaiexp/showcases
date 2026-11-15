@@ -187,3 +187,26 @@ GitHub Pages. No service on the VPS.
   `stage.own(new Graph(stage.div, config, stage.device()))`: the stage's own luma device, because
   `Graph.destroy()` never frees the WebGL context. It runs on the repo's one luma.gl (9.4.2) although it
   declares ~9.3. Cards fake hover and clicks with `shared/ghost.ts`; layouts centre on `CENTER` (2048).
+- AntV Infographic: build on `packages/infographic/shared/stage.ts` (`createStage`, trap list). Setup swaps the
+  library's CDN fonts for bundled stand-ins and answers every icon/illus keyword offline; never `ref:search:`
+  or an off-page `ref:remote:`. `registerResourceLoader` is page-wide: fall back to `offlineResource` and restore
+  `installOfflineLoader()` on cleanup. JSX lives in a sibling `.tsx` with the docs' `@jsxImportSource` pragma.
+- Penrose: build on `packages/penrose/shared/playground.ts` (traps in `shared/traps.md`); each main.ts writes its whole
+  trio. Solves go through `shared/solver.ts`, one rAF loop with a frame budget, since `optimize()` blocks. Diagrams sit
+  on light paper. `test/penrose-examples.test.ts` fails degenerate layouts (negative sizes, off canvas) for every card
+  variation; `test/penrose-citations.test.ts` wants every Style function called to appear in a cited docs file.
+- tsl-textures: build on `packages/tsl-textures/shared/stage.ts` (`createStage`, trap list) with `params()` (every
+  parameter a uniform, the docs' snapshots as presets) and `model()`/`lineup()`. `vite.config.ts` maps the library's
+  bare `three` to `three/webgpu`. The docs' parameter lists drift from the source: `shared/tsl-textures.d.ts` types
+  each texture from its src `defaults`, and `test/tsl-textures-types.test.ts` fails when a bump changes them.
+- Vega: build on `packages/vega/shared/stage.ts` (`createStage`, trap list); every example writes its whole
+  spec and calls `stage.render(spec)` (dark config, offline loader for the docs' `data/*` files) or builds
+  `new vega.View(vega.parse(spec, stage.config), {...stage.options})` and `stage.adopt`s it. Cards fake input
+  with `stage.ghost(view)` (canvas renderer). The mount test (`test/vega-mount.ts`, in four shards) fails on
+  any Vega warning.
+- cobe: build on `packages/cobe/shared/stage.ts` (`createStage`, trap list). `stage.own(createGlobe(…))` right after
+  creating: 2.0.1's `destroy()` keeps the WebGL context. Wrap every marker/arc id in `stage.id()`, since anchor names and
+  `--cobe-visible-*` vars are page-wide. No loop or `onRender` in v2: animate with `stage.loop` + `update()`.
+- postprocessing: build on `packages/postprocessing/shared/stage.ts` (`createStage`; traps in `shared/traps.md`). The manual's
+  getting-started and custom-effects pages describe v7 (RenderPipeline, GData): follow the README and the src JSDoc. Each main.ts
+  builds its own `stage.own(new EffectComposer(...))`; disabling the last pass needs `renderToScreen` moved by hand.

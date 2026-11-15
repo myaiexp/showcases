@@ -1,0 +1,169 @@
+/* Shared Penrose chrome: stage, control bar, paper, caption, side panel, trio editor */
+.pr-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font);
+}
+.pr-card {
+  height: 100%;
+  padding: 4px 6px;
+  gap: 2px;
+  font-size: 11px;
+  line-height: 1.3;
+}
+.pr-full {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.pr-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  font-size: 13px;
+}
+.pr-bar:empty {
+  display: none;
+}
+.pr-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.pr-bar button.pr-on,
+.pr-tabs button.pr-on {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.pr-scene {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-height: 0;
+  flex: 1;
+  position: relative;
+}
+/* Penrose draws for a white page (black text and strokes by default), so diagrams sit on paper. */
+.pr-paper {
+  flex: 3 1 360px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #fbfaf6;
+  color: #222;
+  border-radius: 6px;
+  position: relative;
+}
+.pr-full .pr-paper {
+  min-height: 200px;
+}
+.pr-card .pr-paper {
+  height: 100%;
+}
+.pr-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  flex: 1;
+}
+.pr-caption {
+  color: var(--fg-2);
+  white-space: pre-line;
+  min-height: 1.3em;
+}
+.pr-card .pr-caption {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 0;
+}
+.pr-caption:empty {
+  display: none;
+}
+.pr-caption[data-tone='ok'] {
+  color: var(--green, #6c6);
+}
+.pr-caption[data-tone='warn'] {
+  color: var(--yellow, #db3);
+}
+.pr-caption[data-tone='bad'] {
+  color: var(--red, #e66);
+  font-family: var(--font-mono, monospace);
+  font-size: 13px;
+}
+.pr-card .pr-caption[data-tone='bad'] {
+  font-size: 10px;
+}
+.pr-hint,
+.pr-readout {
+  color: var(--fg-3);
+  font-size: 12px;
+}
+.pr-readout {
+  font-family: var(--font-mono, monospace);
+  font-variant-numeric: tabular-nums;
+}
+.pr-side {
+  flex: 2 1 300px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.pr-side > div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+.pr-side-title {
+  color: var(--fg-3);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.pr-tabs {
+  display: flex;
+  gap: 6px;
+}
+.pr-editor {
+  flex: 1;
+  /* The mono font would join -> and == into ligatures; Penrose is typed as plain characters. */
+  font-variant-ligatures: none;
+  min-height: 260px;
+  width: 100%;
+  resize: vertical;
+  font-family: var(--font-mono, monospace);
+  font-size: 13px;
+  line-height: 1.4;
+  tab-size: 2;
+  background: var(--bg-surface);
+  color: var(--fg-1);
+  border: 1px solid var(--border, #333);
+  border-radius: 6px;
+  padding: 8px;
+}
+.pr-out {
+  margin: 0;
+  font-family: var(--font-mono, monospace);
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  color: var(--fg-2);
+  background: var(--bg-surface);
+  border-radius: 6px;
+  padding: 8px;
+  overflow: auto;
+  max-height: 320px;
+}
+.pr-card .pr-out {
+  font-size: 9px;
+  padding: 4px;
+  max-height: none;
+}

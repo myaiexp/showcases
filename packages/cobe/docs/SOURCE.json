@@ -1,0 +1,19 @@
+{
+  "license": "MIT (shuding/cobe LICENSE, which covers the README and the website/ source the docs site is built from)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/shuding/cobe",
+      "ref": "2.0.1",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "website/app/components/Recipes.tsx",
+        "website/app/components/MarkersArcs.tsx",
+        "website/app/components/CustomLabels.tsx"
+      ]
+    },
+    { "kind": "pages", "urls": ["https://cobe.vercel.app/"] }
+  ]
+}

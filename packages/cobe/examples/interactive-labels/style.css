@@ -1,0 +1,42 @@
+/* Interactive labels: anchored buttons that expand when selected */
+[data-example='cobe/interactive-labels'] {
+  .city-label {
+    position: absolute;
+    bottom: anchor(top);
+    left: anchor(center);
+    translate: -50% 0;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.25rem 0.55rem;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #1a1a1a;
+    color: #fff;
+    font: inherit;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    cursor: pointer;
+    pointer-events: auto;
+    transition:
+      opacity 0.3s,
+      background 0.2s;
+  }
+  .city-label:hover {
+    background: #2a2a2a;
+  }
+  .city-label.selected {
+    z-index: 1;
+    border-color: #ff7399;
+    background: #2a1a20;
+  }
+  .detail {
+    display: none;
+    color: #ff9ab5;
+    font-size: 0.7rem;
+  }
+  .selected .detail {
+    display: block;
+  }
+}

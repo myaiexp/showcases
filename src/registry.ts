@@ -30,7 +30,7 @@ const mountLoaders = import.meta.glob<Mount>('/packages/*/examples/*/main.ts', {
   import: 'default',
 });
 const sourceLoaders = import.meta.glob<string>(
-  ['/packages/*/examples/*/*.ts', '/packages/*/examples/*/*.css'],
+  ['/packages/*/examples/*/*.ts', '/packages/*/examples/*/*.tsx', '/packages/*/examples/*/*.css'],
   { query: '?raw', import: 'default' },
 );
 

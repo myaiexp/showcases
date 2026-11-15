@@ -1,0 +1,474 @@
+{
+  "fetched": "2026-11-15T08:01:07.468Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/boytchev/tsl-textures",
+      "ref": "v3.0.5",
+      "paths": [
+        "LICENSE",
+        "README.md",
+        "CHANGELOG.md",
+        "index.html",
+        "docs/*.md",
+        "src/*.js",
+        "!src/melter.js"
+      ],
+      "commit": "a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6"
+    }
+  ],
+  "files": {
+    "repo/CHANGELOG.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/CHANGELOG.md",
+      "sha256": "368a9552664aa254174015d5efe98ce7ac789dcbf69e96a3203a8e772a35d7e9"
+    },
+    "repo/docs/brain.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/brain.md",
+      "sha256": "c742e41e50c89b120f86dfd1521c2aca559e99dc2222d6504204ea8d6d43f106"
+    },
+    "repo/docs/bricks.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/bricks.md",
+      "sha256": "6bcce6ba215484f298b168f299810915ece2a5e31e79c86af66ecae4cc4cb3a0"
+    },
+    "repo/docs/camouflage.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/camouflage.md",
+      "sha256": "e5b5ed93061fc1619efc60eca323c73974e1d09b5b4c1c94553e5f87941dacc7"
+    },
+    "repo/docs/caustics.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/caustics.md",
+      "sha256": "0d579fe65fed87e2d95c254433f3073aa85b8f96ba83c439bea67aca186841dc"
+    },
+    "repo/docs/cave-art.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/cave-art.md",
+      "sha256": "6690f67dc6abfa6410ced194f1fd7f926b1b0788ed6e5a425fb52eb82838263b"
+    },
+    "repo/docs/circle-decor.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/circle-decor.md",
+      "sha256": "1d930994159159ddebfd69d2c81c17087a19a0e2c1202c09d0825887a7ecdb6b"
+    },
+    "repo/docs/circles.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/circles.md",
+      "sha256": "ce6729c8d0caaaf885fc9c96017ee54e14458f4cdb98637d3ed17f4053399779"
+    },
+    "repo/docs/clouds.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/clouds.md",
+      "sha256": "614e7642ba1a195d6a9e36ca0d726355285415c53c6d704dc27ae03e46e27735"
+    },
+    "repo/docs/concrete.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/concrete.md",
+      "sha256": "0e8c396110ba78451bedaf96261a934a2e86842cdb4a5652d444de948af5b12e"
+    },
+    "repo/docs/cookies.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/cookies.md",
+      "sha256": "98c498656ab127179be0e825a6dda34509b6ba6e769d7d7bcf67800a9e175ddc"
+    },
+    "repo/docs/cork.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/cork.md",
+      "sha256": "a75df2d9cc162d144e698342fa2c21c9b7fa03bccafd743b447d7dfa50d06441"
+    },
+    "repo/docs/crumpled-fabric.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/crumpled-fabric.md",
+      "sha256": "46eb538fd8fe01fea7e18bde4bf70c0b5713b6297241aa0d736571876441872f"
+    },
+    "repo/docs/dalmatian-spots.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/dalmatian-spots.md",
+      "sha256": "e2fdaeeba37d5fce2cdc8910e3338b608dea688ae8a016528cf446d040b83cba"
+    },
+    "repo/docs/darth-maul.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/darth-maul.md",
+      "sha256": "55b893c03f18e6ec7239abb4f476898e960a07f16a097be8157ef15a6de2d03d"
+    },
+    "repo/docs/dyson-sphere.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/dyson-sphere.md",
+      "sha256": "90914d8b5004cfcd3169b82c1327693eefea2093f59d8e829398ebe3b3f61622"
+    },
+    "repo/docs/entangled.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/entangled.md",
+      "sha256": "90ff59e685f872af974f4f1a0010a6b790287ddfdb2622f990bff2652f03a6e8"
+    },
+    "repo/docs/faq.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/faq.md",
+      "sha256": "dec2ce255bc4e3989caefd5b7bf3c4c06067b797db54e0f1b6b92f6a6369d74a"
+    },
+    "repo/docs/fordite.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/fordite.md",
+      "sha256": "2e3554a0b1bedc8ee136869fec3aacc15cce3a67def798c246aa3e4022f242dc"
+    },
+    "repo/docs/gas-giant.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/gas-giant.md",
+      "sha256": "044607b4ef68f681c66c5f9e97936e2e24b1a99ccf9302a83cd2b1b48764aae4"
+    },
+    "repo/docs/grid.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/grid.md",
+      "sha256": "918d0a7e5ef10d8df06ef264c10176b85d791b19c66b139b73767b475b6907a9"
+    },
+    "repo/docs/halftone.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/halftone.md",
+      "sha256": "01eb81475a5c4dc8cbf9f5b8470e11e5cae7233330a4f3fe460936c6dc1e7b6f"
+    },
+    "repo/docs/isolayers.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/isolayers.md",
+      "sha256": "881a91d710992902ec14defd5308e1caf6f619ac878a310f332a80c865b3ef03"
+    },
+    "repo/docs/isolines.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/isolines.md",
+      "sha256": "888923926394e4ef7eb931a182f3df784b026c6fc0d2ceda8ae71725abf00f58"
+    },
+    "repo/docs/karst-rock.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/karst-rock.md",
+      "sha256": "b808e958a153ce124a7c500730c8ab0ce852192c44fc237a9204c7ac60c9753f"
+    },
+    "repo/docs/licence.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/licence.md",
+      "sha256": "7efb1bc49b119bce74dc42c09c7221fd526641c0e039743e0b4f445e2b79e319"
+    },
+    "repo/docs/marble.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/marble.md",
+      "sha256": "be61802191b341e85722b7a55ca4e4730a81cb873a5f6fbdae0b7409b8034bac"
+    },
+    "repo/docs/neon-lights.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/neon-lights.md",
+      "sha256": "9aaefb2430d99ecdbe0e6e40142351d9ae4616d3fed887a8058a93282b9a8bc6"
+    },
+    "repo/docs/perlin-noise.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/perlin-noise.md",
+      "sha256": "e16109d91bed209bf7e1d8f8321c8c3b54abbcd78d2d368a52a7ed058fbd65e1"
+    },
+    "repo/docs/photosphere.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/photosphere.md",
+      "sha256": "d17453c9022725d928ca80fb0a40c449fa9ad659f6a27ae5adf7b96c625de894"
+    },
+    "repo/docs/planet.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/planet.md",
+      "sha256": "80c9d739ae8e1ed962bf9536eacbac2d0b7413e9373a31bd30188ffd3a5a21fd"
+    },
+    "repo/docs/polka-dots.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/polka-dots.md",
+      "sha256": "ee2157157c99c4bd42512fd61e70c29887973b707e34e86f26154da5925e85cb"
+    },
+    "repo/docs/processed-wood.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/processed-wood.md",
+      "sha256": "dc812f6cf84c9eabacfc9f07c566f20a2a68b755f5039e8d692a8ba5e73b2906"
+    },
+    "repo/docs/protozoa.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/protozoa.md",
+      "sha256": "e7c317ee217908310055a115b7203a788d39746c20d0f592de59bdfce2d425e5"
+    },
+    "repo/docs/reticular-veins.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/reticular-veins.md",
+      "sha256": "6522f96d37918168ecd9bc3c7b2182bfa50ef7f15b0a507eccd3bd2682d04d0a"
+    },
+    "repo/docs/roman-paving.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/roman-paving.md",
+      "sha256": "79bb298a42ba1e081703872121affdb6298b428cd7dbebeba0a057eef95446d9"
+    },
+    "repo/docs/rotator.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/rotator.md",
+      "sha256": "cefca94590039b5d68f8d4bc55fae0ba0cb002aa4ba17378a7770b6d08f8d1b7"
+    },
+    "repo/docs/rough-clay.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/rough-clay.md",
+      "sha256": "98ec66e0d8365f2edadadbd1167dd41b0200d833c342e1b2955a83b60c436311"
+    },
+    "repo/docs/runny-eggs.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/runny-eggs.md",
+      "sha256": "8cf490d81aa02a0fe60755891a847dc7b68bb1d4bb16360eb904d41ca3658117"
+    },
+    "repo/docs/rust.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/rust.md",
+      "sha256": "e874658e80ae399d2beba1f54636f7b5c40756f53ebb2015b05719555017898d"
+    },
+    "repo/docs/satin.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/satin.md",
+      "sha256": "6b13e08c1823b95772231de9a141c21591c7d4328d5bc90ae31a1a0d387cc5b0"
+    },
+    "repo/docs/scaler.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/scaler.md",
+      "sha256": "345fad9dfe8b98f08d3a30233a081767c36ff47d0df745757611b702d3053bf6"
+    },
+    "repo/docs/scepter-head.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/scepter-head.md",
+      "sha256": "37da0d4dd500f419b6a97ff0ae9a4cf47892b70b5ae7600fd236c66492b09333"
+    },
+    "repo/docs/scream.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/scream.md",
+      "sha256": "bdab0d6d65296d9b711e91ae2dbce25159b838cf1fc4d32ffd119a31114009e9"
+    },
+    "repo/docs/stars.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/stars.md",
+      "sha256": "c0755d3cef49a33599c9f2ab1355e6abb43cbbffa9abad915fd877cd7a110649"
+    },
+    "repo/docs/static-noise.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/static-noise.md",
+      "sha256": "b519a3db77adb5882dcef3788dacd595ced3683911f7402528ce8c9593c217b5"
+    },
+    "repo/docs/supersphere.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/supersphere.md",
+      "sha256": "40f6ee217750b7deb09cd2774aff73117341aab90e7de38ac5dadef22fb4c85d"
+    },
+    "repo/docs/tiger-fur.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/tiger-fur.md",
+      "sha256": "d20ca96a9996415d934ddfe3e89e1334857583ce7b0a25ff6a8170af7582f3a9"
+    },
+    "repo/docs/translator.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/translator.md",
+      "sha256": "4408ed5d12726e2721817d15f11f03fa2bb3df1a97572315719a404f1644c525"
+    },
+    "repo/docs/turbulent-smoke.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/turbulent-smoke.md",
+      "sha256": "6ecd95598d636f7a1861a07c84b5245a3b3834304f5747221cf59966cd40ee4c"
+    },
+    "repo/docs/voronoi-cells.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/voronoi-cells.md",
+      "sha256": "2038759dea490d5e8243533b3508a5a4e2a4336b0d3579d663632ae58d4b1e37"
+    },
+    "repo/docs/water-drops.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/water-drops.md",
+      "sha256": "db38ddbb52eba5f9e62496bed8f5ec9e30cc6d01cd316884f6e2ffef35645564"
+    },
+    "repo/docs/watermelon.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/watermelon.md",
+      "sha256": "68871301ce754dc68975cc4fe0c74b33ea7563d7e1cabc3997869762673754af"
+    },
+    "repo/docs/waves.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/waves.md",
+      "sha256": "fce0557e3e8e7d309d6d015eba8b50a218023234f62e91a45139aa569539cd39"
+    },
+    "repo/docs/wood.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/wood.md",
+      "sha256": "5e3fe6f9bb16a2df6a5be5b9e8a92b3daaaa20c1ee8b2fb467825d0820fdefaa"
+    },
+    "repo/docs/zebra-lines.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/docs/zebra-lines.md",
+      "sha256": "37ce79a2ea2de3a96688b6f76c23546a02b915c7f0f83affff221c568dc8575d"
+    },
+    "repo/index.html": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/index.html",
+      "sha256": "6f20c33ed38b1f7a622b505918641a996f3a4b575ccd83dad697c2080b89fb4f"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/LICENSE",
+      "sha256": "9b78f997e3b1bd7271c84912933ffbe538d112d651bd6ac8b9b3fe61cfb016f1"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/README.md",
+      "sha256": "e64caffdaf42f12e01fd15f89525a195da361b52fd8658b405071a19f66ce96d"
+    },
+    "repo/src/brain.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/brain.js",
+      "sha256": "af71678f683052f7488b29afdd92c4cf2530c43e95006488d49427c251894e10"
+    },
+    "repo/src/bricks.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/bricks.js",
+      "sha256": "2b60e643af022103b1a465dc0909ad33d1f3b6c8317cc6e8f18ea1615f821f63"
+    },
+    "repo/src/camouflage.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/camouflage.js",
+      "sha256": "17ac089575dd51ccb6f7c87da05d041249c514b65ee057d2a320814aa0321b2f"
+    },
+    "repo/src/caustics.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/caustics.js",
+      "sha256": "b7a821bb11eb875a2bb9cdf622fe64336f215e38e56bcc7036ed390180a09d84"
+    },
+    "repo/src/cave-art.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/cave-art.js",
+      "sha256": "19e467f83338d89c923d13e8c0eeaf8a7fc0c6c4157b4eebd3b1af4fb2ddafd1"
+    },
+    "repo/src/circle-decor.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/circle-decor.js",
+      "sha256": "268b3caece786de07e07bd2e8296c23e51d3c0f9653b94707aa46c8c6ec74127"
+    },
+    "repo/src/circles.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/circles.js",
+      "sha256": "63f456917e4d7f76f27931913427cfdb69ae13fca0149f00fb069b5c603ee90d"
+    },
+    "repo/src/clouds.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/clouds.js",
+      "sha256": "3b9f903ca184dfc340ab2d4c3507e6de0c86a68bfe1a6963419d9a67fe5eb9dc"
+    },
+    "repo/src/concrete.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/concrete.js",
+      "sha256": "e566e22590df76a974b3b3744c6228589c279adc50076fc9bbd7475d4e1909ca"
+    },
+    "repo/src/cork.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/cork.js",
+      "sha256": "4c023c5d7af537c002052c1b2a208e4aeb09f010c91c570905ef414b0526372a"
+    },
+    "repo/src/crumpled-fabric.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/crumpled-fabric.js",
+      "sha256": "a3ec0fe4ae49da167d9157a8479debfc4bf4574e0a82116bf037c8b64568e586"
+    },
+    "repo/src/dalmatian-spots.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/dalmatian-spots.js",
+      "sha256": "2df4977445ea50e2b5b2139e33cfa074c4cbb699296f5b0923c6f80f19d519fe"
+    },
+    "repo/src/darth-maul.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/darth-maul.js",
+      "sha256": "a7720e35cb34eaa739174517ac3b08f9680494fd9848de79be0aeecb8ca4f6bf"
+    },
+    "repo/src/dyson-sphere.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/dyson-sphere.js",
+      "sha256": "755b8e62eca40ab959027d5d22c91c07f44a5f927994608b37a0936306c12f01"
+    },
+    "repo/src/entangled.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/entangled.js",
+      "sha256": "3dd1905527511a61ddca2f8e104e06d586251bd44a9171ef12ef7641f0f810e1"
+    },
+    "repo/src/fordite.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/fordite.js",
+      "sha256": "d6e02597eb830c611bbe6a9290acde73510e63286106ec22233b8180e8398d7d"
+    },
+    "repo/src/gas-giant.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/gas-giant.js",
+      "sha256": "3f8140d12225f1df2ab1ed5b80e2f63254e8e0bc7a7ed72655b18d756df71b85"
+    },
+    "repo/src/grid.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/grid.js",
+      "sha256": "0007c3055e3692df71560a5837674cf3e4ae34cc87af39bddf4d609f68ccfc69"
+    },
+    "repo/src/halftone.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/halftone.js",
+      "sha256": "28b2ee69b6aa63488e1391931af0b9b7fd7b302766b91b52f6d8057acce3b9f6"
+    },
+    "repo/src/isolayers.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/isolayers.js",
+      "sha256": "6e81a771d2bf366ee42d0101617ade8e42ceeaf32de9fe658a72888f92f7258f"
+    },
+    "repo/src/isolines.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/isolines.js",
+      "sha256": "4cbbf704bf09cdd09ab8039ed68e7079f198384256ae67c8357815724fef9eeb"
+    },
+    "repo/src/karst-rock.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/karst-rock.js",
+      "sha256": "7d9f2f50591a2d586de23bad02c24949d6cf67043991b7408db7eddd0b08e79a"
+    },
+    "repo/src/marble.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/marble.js",
+      "sha256": "e6217b3bd4846fa335884106a48368968fc8922c6ff37d6562846108a9c7d002"
+    },
+    "repo/src/neon-lights.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/neon-lights.js",
+      "sha256": "827a3c9df0befe079a93bab0e802f6782c93a982325e9d8a558453509c499423"
+    },
+    "repo/src/perlin-noise.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/perlin-noise.js",
+      "sha256": "5e0826293dc31470ca5dcd12be1db4c2004033bbb6bc7e51407f11c17fecc76f"
+    },
+    "repo/src/photosphere.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/photosphere.js",
+      "sha256": "9e22a862ae1acb03af64d7dc25e081f90a4b97dea31f18f3960fef2dc92242cc"
+    },
+    "repo/src/planet.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/planet.js",
+      "sha256": "2b91bf8b2a7a507959b67527a06a86010313355d88f6d867f69b1e83453cb994"
+    },
+    "repo/src/polka-dots.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/polka-dots.js",
+      "sha256": "618668960d1d57033bdf5d307ba63352bb468277740f22019b2bd6dc3aaa484e"
+    },
+    "repo/src/processed-wood.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/processed-wood.js",
+      "sha256": "7d28085bfe2425ea9b5d6a923c184047572cd2e05551be8e3cf479294d2cce13"
+    },
+    "repo/src/protozoa.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/protozoa.js",
+      "sha256": "c8608b7e2c5e490a3ae9741c65b103c0fc21895bf1ef0d30d9c0752729f4c79e"
+    },
+    "repo/src/reticular-veins.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/reticular-veins.js",
+      "sha256": "6da1329f8280d74c53d05796d8502d8947a55df5021c684eff44652f563cf151"
+    },
+    "repo/src/roman-paving.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/roman-paving.js",
+      "sha256": "13fc203014bc8f1bdef7e8b55ec660b013cb2a5383b94d406b84cdecc8980c21"
+    },
+    "repo/src/rotator.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/rotator.js",
+      "sha256": "cb1d09a0b70171d34e412881ec2cf1b5e62bbc454f4f04f47b5a6c78e8bdb8eb"
+    },
+    "repo/src/rough-clay.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/rough-clay.js",
+      "sha256": "a312665ebf66b472e3991c967a28d2e5257b942c8cb0b0c53c847414cc8d2ffb"
+    },
+    "repo/src/runny-eggs.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/runny-eggs.js",
+      "sha256": "cc5eb5482b03b09cb2b75dce4e7dff24b8ec0b393579d455134cc59bbf071750"
+    },
+    "repo/src/rust.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/rust.js",
+      "sha256": "62cd527d8456f9b04659c4fe7be31c4d1b55bb767ef6c11a240757f48693ec48"
+    },
+    "repo/src/satin.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/satin.js",
+      "sha256": "7442706f7df0729b42208845399f0e0f2fc73297c82d60c7daecb6fc358ff589"
+    },
+    "repo/src/scaler.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/scaler.js",
+      "sha256": "590a9f28e6fe696cd5ccee0258317962b90158c3fd0a06701862ae3b96df2986"
+    },
+    "repo/src/scepter-head.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/scepter-head.js",
+      "sha256": "81fbeadd54393035ca7890134980eef8927462980d372a0b09d70bf6cf54c0e0"
+    },
+    "repo/src/scream.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/scream.js",
+      "sha256": "73e9fb7478662ce60d9b79a7daa70f5ed1920a13b06bacb105949da4fefab5c6"
+    },
+    "repo/src/stars.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/stars.js",
+      "sha256": "d015cacad5e8339e79140a3cba0530bbc9cadf3c912867f10515998d5b2d4479"
+    },
+    "repo/src/static-noise.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/static-noise.js",
+      "sha256": "f3487060720026e9988bde027f95fa4ebf58333442cb9a159163adae711d5d4a"
+    },
+    "repo/src/supersphere.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/supersphere.js",
+      "sha256": "a21e3292b7f101b48edd6f20377bce937218f5e85f712ba648c68b71b710b8ea"
+    },
+    "repo/src/tiger-fur.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/tiger-fur.js",
+      "sha256": "cb23899daf31d689f465e47edfea2c4678b9010e5d80b62bd3c5513c53985be4"
+    },
+    "repo/src/translator.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/translator.js",
+      "sha256": "b265ba67bdebfd55a9fafed9c8f5aa00b29d3688275aec0aa5906fb07cc744d0"
+    },
+    "repo/src/tsl-textures.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/tsl-textures.js",
+      "sha256": "563d897765eff859f578015ade1385915ac9f2cd22f834b62b3a2aaf9ee24754"
+    },
+    "repo/src/tsl-utils.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/tsl-utils.js",
+      "sha256": "3d0ffac463da3d24e28250b73d9feb6646e2ce1b67dba1e9813bd40e83a07597"
+    },
+    "repo/src/turbulent-smoke.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/turbulent-smoke.js",
+      "sha256": "5fd7ea8925ebe28ee8e921ca6c2f561c32fa9c47f2cca7d71b24156e45c8101e"
+    },
+    "repo/src/voronoi-cells.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/voronoi-cells.js",
+      "sha256": "5b8811d17e7b9d93263b399ad18961c84a59c61b2c9585f86147f382bcedd788"
+    },
+    "repo/src/water-drops.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/water-drops.js",
+      "sha256": "a08138b499b7d0c172e1054f0313e4082865aa1adb667b9739582c369e90e0ea"
+    },
+    "repo/src/watermelon.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/watermelon.js",
+      "sha256": "015e683a2390dc2b05a2e805cbd4ed8c4e17107f2457cd783d1a1ec3ceb80c6e"
+    },
+    "repo/src/waves.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/waves.js",
+      "sha256": "9b4c604d57bcb7e889dc122284b4ac9a951cdd82a9bd4325822553ba6fd19f16"
+    },
+    "repo/src/wood.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/wood.js",
+      "sha256": "604e50b2e3579f9f92e9e4472d5b705e5a5ded6e053412d2f0e7596f3caaaf07"
+    },
+    "repo/src/zebra-lines.js": {
+      "url": "https://github.com/boytchev/tsl-textures/blob/a7d5da1bb69a27df1f0d9f47cbe428e79d13a1c6/src/zebra-lines.js",
+      "sha256": "f77a02b0343095e8906436acef014129ec10be9955a67ccf8b838e1f27ba49c3"
+    }
+  }
+}

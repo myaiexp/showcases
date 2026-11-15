@@ -1,0 +1,23 @@
+{
+  "license": "Zlib (postprocessing repo LICENSE.md, vendored alongside; covers the manual and the JSDoc in src/)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/pmndrs/postprocessing",
+      "ref": "v6.39.6",
+      "paths": [
+        "LICENSE.md",
+        "README.md",
+        "manual/content/_index.en.md",
+        "manual/content/getting-started.en.md",
+        "manual/content/custom-effects.en.md",
+        "manual/content/migration-guide.en.md",
+        "manual/content/plugins-tools.en.md",
+        "src/**/*.js",
+        "src/**/*.frag",
+        "src/**/*.vert"
+      ]
+    }
+  ]
+}
