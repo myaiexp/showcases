@@ -76,6 +76,13 @@ add to it when something bites.
   space-separated string.
 - A map `dblclick` also runs `doubleClickZoom`: a card cycle that sends one resets the view.
 - Zoom-control buttons can be pressed in cards with `.click()` on `.leaflet-control-zoom-in`.
+- `unbindPopup()` only removes the listeners: an open popup stays open, so `closePopup()` first.
+- Leaflet ignores a click that comes right after a drag (until the next pointerdown): after a
+  scripted drag, open a popup by method, not with a ghost click.
+- `autoClose` is read from the popup already open when the next one opens.
+- A popup or non-sticky tooltip on a path opens at its `getCenter()`; a clicked path's popup
+  opens at the click point.
+- A card fits markers plus popups or tooltips at about zoom 7, not 8.
 - `.lf-map` has `flex: 1`: an example that sets the map box's width also sets `flex: none`.
 - In a card, `stage.log()` writes the caption, so a `stage.say()` in a cycle overwrites it.
 

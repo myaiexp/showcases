@@ -1,0 +1,13 @@
+/* Popup stacking: two coloured popups */
+[data-example='leaflet/popup-stacking'] {
+  .red .leaflet-popup-content-wrapper,
+  .red .leaflet-popup-tip {
+    background: #b3342f;
+    color: #fff;
+  }
+  .blue .leaflet-popup-content-wrapper,
+  .blue .leaflet-popup-tip {
+    background: #2f6db3;
+    color: #fff;
+  }
+}
