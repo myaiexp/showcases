@@ -61,8 +61,11 @@ export function model(stage: Stage, material: THREE.Material, opts: ModelOptions
   stage.own(material);
   stage.onDispose(() => mesh.geometry.dispose());
   const spin = ((opts.spin ?? 2) * Math.PI * 2) / 60;
-  stage.frame((_t, dt) => {
-    mesh.rotation.y += spin * dt;
+  stage.frame((t, dt) => {
+    // A plane is single-sided: a full turn would show its culled back half the time,
+    // so it rocks to either side instead.
+    if (shape === 'plane') mesh.rotation.y = spin === 0 ? 0 : Math.sin(t * spin * 2) * 0.6;
+    else mesh.rotation.y += spin * dt;
   });
   if (stage.panel && opts.picker !== false) {
     heading(stage.panel, 'Model');
