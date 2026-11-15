@@ -317,6 +317,9 @@ importers:
       topojson-client:
         specifier: ^3.1.0
         version: 3.1.0
+      tsl-textures:
+        specifier: 3.0.5
+        version: 3.0.5
       vizzu:
         specifier: 0.18.0
         version: 0.18.0
@@ -4160,6 +4163,9 @@ packages:
   ts-dedent@2.3.0:
     resolution: {integrity: sha512-JfJeIHke7y2egdGGgRAvpCwYFUsHlM2gPcrVOxFkznt/4uzQ7HFmvE63iFHVLBJNDuyDOQgijDK/tXH/f6Msjg==}
     engines: {node: '>=6.10'}
+
+  tsl-textures@3.0.5:
+    resolution: {integrity: sha512-bxuQ31fZDjO4KZIb5X7Pf1Ajhsl15lxu+xNGQ+7JPHBmv0KvQ+V5NnWSxOdp798K7M723qiNaFmHJddUaSXFcw==}
 
   tslib@2.3.0:
     resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
@@ -8802,6 +8808,8 @@ snapshots:
   true-myth@4.1.1: {}
 
   ts-dedent@2.3.0: {}
+
+  tsl-textures@3.0.5: {}
 
   tslib@2.3.0: {}
 
