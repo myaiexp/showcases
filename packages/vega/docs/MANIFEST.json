@@ -1,0 +1,623 @@
+{
+  "fetched": "2026-11-15T05:45:33.561Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/vega/vega",
+      "ref": "v6.4.0",
+      "paths": [
+        "LICENSE",
+        "docs/index.md",
+        "docs/docs/**",
+        "docs/tutorials/**",
+        "docs/usage/**",
+        "docs/about/index.md",
+        "docs/about/vega-and-d3.md",
+        "docs/vega-schema.json",
+        "docs/data/airports.csv",
+        "docs/data/flights-airport.csv",
+        "docs/data/us-10m.json",
+        "docs/data/world-110m.json",
+        "docs/data/miserables.json",
+        "docs/data/stocks.csv",
+        "docs/data/us-state-capitals.json",
+        "docs/data/points.json"
+      ],
+      "commit": "adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f"
+    }
+  ],
+  "files": {
+    "repo/docs/about/index.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/about/index.md",
+      "sha256": "7df5e82a4fb19cb38a192f281628e73bfad73ddc370ca12771f7acf5272cd6c7"
+    },
+    "repo/docs/about/vega-and-d3.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/about/vega-and-d3.md",
+      "sha256": "41e0e672a53b1ca8f5aa9ffca2ece084e74926b723e3656c767daba5c75dfedf"
+    },
+    "repo/docs/data/airports.csv": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/data/airports.csv",
+      "sha256": "903c7169e6d558eefb95295fe2947ec8503135fbb855ea5c737cf4a90ea603ad"
+    },
+    "repo/docs/data/flights-airport.csv": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/data/flights-airport.csv",
+      "sha256": "f9f66bc27adebf459e39fbdb6d71402c4355584f27ea1062606219d771ea4bcf"
+    },
+    "repo/docs/data/miserables.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/data/miserables.json",
+      "sha256": "8141048828e66a539c6915ea8c8a2eef4ba2e014e371ad614cddf37281cb88b6"
+    },
+    "repo/docs/data/points.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/data/points.json",
+      "sha256": "bcecf05f3025e82ed5048cc130896b7cccc5ad50d6ef2253ddcee86e6bf36327"
+    },
+    "repo/docs/data/stocks.csv": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/data/stocks.csv",
+      "sha256": "f9953ac6693e587476b4ebf2f0b00d9bb95371ca8c39da4cc6155077b3e417cd"
+    },
+    "repo/docs/data/us-10m.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/data/us-10m.json",
+      "sha256": "1f20340f18e02998937e1b086405ca6a16e6529e50af75d397452b695180164d"
+    },
+    "repo/docs/data/us-state-capitals.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/data/us-state-capitals.json",
+      "sha256": "070b12ff2db958b12c2df2287330f4598611404d7e7ef8211a3b578a26c0827f"
+    },
+    "repo/docs/data/world-110m.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/data/world-110m.json",
+      "sha256": "d635dc07cb126f61c21f06b503cc60462d2418b7d3ed8913dbb5a271a4c34135"
+    },
+    "repo/docs/docs/api/debugging.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/api/debugging.md",
+      "sha256": "f4621a746d3751031638a9d506616f82f4181ac6276a434fc1001b9e8023641d"
+    },
+    "repo/docs/docs/api/extensibility.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/api/extensibility.md",
+      "sha256": "6b53ba02fad13ba347e01cf1f888addad2fe535465c6a83d0f67c2a8d9d4665b"
+    },
+    "repo/docs/docs/api/locale.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/api/locale.md",
+      "sha256": "552686e5591f5895d63da02559e85819c44164dcbdbaceb01493e46880ad52f3"
+    },
+    "repo/docs/docs/api/parser.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/api/parser.md",
+      "sha256": "e96626678cf86ca06633ee55070f0d5085fa76e7437135fac4f66b9cee3f6f4d"
+    },
+    "repo/docs/docs/api/statistics.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/api/statistics.md",
+      "sha256": "33455c84e9580aa9fd7f4d1f11db364a63d9745f12d4a6e4e68182c55a857bb6"
+    },
+    "repo/docs/docs/api/time.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/api/time.md",
+      "sha256": "01033b36515e4f8e184c6bf819dcb1691ef3c66d65c295055fcf6cc082719bd1"
+    },
+    "repo/docs/docs/api/util.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/api/util.md",
+      "sha256": "2a12081e261113d995108800890a29c79e5981ecabba688d803c0690b7fa2c40"
+    },
+    "repo/docs/docs/api/view.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/api/view.md",
+      "sha256": "b43810f1bacdba899c01a9d2948bbcb627d41dce4c2730459fa940099d89fac4"
+    },
+    "repo/docs/docs/axes.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/axes.md",
+      "sha256": "6bf442f25d7ad40620bd77ae510a899f19e30bf9f7e575c7b78bd1301cc8cb6f"
+    },
+    "repo/docs/docs/config.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/config.md",
+      "sha256": "df00ac2707c25d108f63ba8c2f09825354e7ba641231c7167ea356f04cacef15"
+    },
+    "repo/docs/docs/data.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/data.md",
+      "sha256": "1610d2964c087beed07e2874c7d1ef49cce49524ea1e2633a87395149df3f433"
+    },
+    "repo/docs/docs/event-streams.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/event-streams.md",
+      "sha256": "8f3432ba2bbb6a845636d5be802a5ef5db7cc410efdef0f8a72742ebd41ae5d2"
+    },
+    "repo/docs/docs/expressions.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/expressions.md",
+      "sha256": "c3e9249bd97fef08878e070e857b92657b4be17098d5fbd35738443eebc9328e"
+    },
+    "repo/docs/docs/index.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/index.md",
+      "sha256": "a990e152545cc1635cd439961def55e62ed99441f08f1159d67d382e4a446e40"
+    },
+    "repo/docs/docs/layout.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/layout.md",
+      "sha256": "e392000e20c78c12156115ca59bc8ed8db6844b1294909048eea940a0d0037ca"
+    },
+    "repo/docs/docs/legends.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/legends.md",
+      "sha256": "c947f115d643200e780196082758ca667c00f3b7e718b9dc1f3d064702a14e1a"
+    },
+    "repo/docs/docs/marks.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks.md",
+      "sha256": "b4fc9cb5eea9f99703e660fc0259baec5bd7cb2641ff4e000df34aeeb7d35323"
+    },
+    "repo/docs/docs/marks/arc.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/arc.md",
+      "sha256": "2e2472fd2e382559b693cb22d9b4f8f948f8700090994d3a5941d22b211c7caa"
+    },
+    "repo/docs/docs/marks/arc.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/arc.vg.json",
+      "sha256": "29f1922140fb336269005f37e5599cb15b145bfcc1df91ef822591cf012a70a5"
+    },
+    "repo/docs/docs/marks/area.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/area.md",
+      "sha256": "08381f6021bb92ae59e0c0b130e296026eeb2e4296b7140a9dcb6e035d782dcb"
+    },
+    "repo/docs/docs/marks/area.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/area.vg.json",
+      "sha256": "a3f21f92bbf934fd819f43b73c694397e9a4e615d29d762a34704fbd04593318"
+    },
+    "repo/docs/docs/marks/group.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/group.md",
+      "sha256": "a039975c1f704f185657ecc2fb20bd3c6147a4a6ad52112639fdd471e2c49db8"
+    },
+    "repo/docs/docs/marks/group.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/group.vg.json",
+      "sha256": "3f3c403f8912813e78c2c2ccb8501b836f05adcaa82ee4278a7201b2beaaff1c"
+    },
+    "repo/docs/docs/marks/image.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/image.md",
+      "sha256": "01fd8b90710fb0521accb55bd1eb177f739b99e7b902f187f72b5be8260cd60b"
+    },
+    "repo/docs/docs/marks/image.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/image.vg.json",
+      "sha256": "2934147ab6fef054954f6acee9d15c8ec3a71ca5ede4b4b93362fe2ebf7cab38"
+    },
+    "repo/docs/docs/marks/line.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/line.md",
+      "sha256": "c637356b7580c40a97011ab36961ceadb13109685068038860d9cd83e43b1952"
+    },
+    "repo/docs/docs/marks/line.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/line.vg.json",
+      "sha256": "d7c617882b97052825aa3e015d31a90c6e1898bb9a65d43273364dd689242ebc"
+    },
+    "repo/docs/docs/marks/path.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/path.md",
+      "sha256": "59b157941afd3763a3994dec233058ead12784137baad213cb32361a81339dd2"
+    },
+    "repo/docs/docs/marks/path.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/path.vg.json",
+      "sha256": "d1b5308cbc2f9f0a22effee17af3906aa01fb904f791d4325c82873d0573abf9"
+    },
+    "repo/docs/docs/marks/rect.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/rect.md",
+      "sha256": "b99795405fcb6d1b43347841ae107257508a1278ea9717946325314668bef3f9"
+    },
+    "repo/docs/docs/marks/rect.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/rect.vg.json",
+      "sha256": "ddecbf5280bd1b432e374175ce73006c3ae1cf063cf75afd807f67ede92645c4"
+    },
+    "repo/docs/docs/marks/rule.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/rule.md",
+      "sha256": "1a3d5d5db4efa8864c043b43410660fb6ddb3c1cf379cdb6274dda6562166d68"
+    },
+    "repo/docs/docs/marks/rule.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/rule.vg.json",
+      "sha256": "87bb72ed380e8b5b0893710f5b09f1b377ab07523cfaba74eac6119e34ef971f"
+    },
+    "repo/docs/docs/marks/shape.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/shape.md",
+      "sha256": "06dddf3e8449da7923ba9e681d6d05b749d225627aacef178765a753e7ba9007"
+    },
+    "repo/docs/docs/marks/symbol.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/symbol.md",
+      "sha256": "e668185cba987f40b9ba72997829e830c95f68026950e56d28f8d1ec0c1f0e79"
+    },
+    "repo/docs/docs/marks/symbol.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/symbol.vg.json",
+      "sha256": "0568c41c5181ed96cad3074ed4c6c7818d5ab1c622d641c9c898a84a2cd35948"
+    },
+    "repo/docs/docs/marks/text.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/text.md",
+      "sha256": "546f667ef5ee71c715d0fe1187f791f436350e747d5903251b6e1ed731d9f216"
+    },
+    "repo/docs/docs/marks/text.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/text.vg.json",
+      "sha256": "6236891cb630f5632604487743d7e93588ffb4492b2c60331b9cd50f091678a5"
+    },
+    "repo/docs/docs/marks/trail.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/trail.md",
+      "sha256": "bc0c59595f77c8c3d635c271d2294ed451e0a6ec85c0e380bd0bab058c53ef60"
+    },
+    "repo/docs/docs/marks/trail.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/marks/trail.vg.json",
+      "sha256": "c303a35c010f8ef618ef3a779c59ecc200be6226a624009a5756328c8268d454"
+    },
+    "repo/docs/docs/porting-guide.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/porting-guide.md",
+      "sha256": "ea000c350e35c40c6f976019e51209cc1162454af85a772f00936c8af290f2ba"
+    },
+    "repo/docs/docs/projections.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/projections.md",
+      "sha256": "c44b6fb9e8f0134fd06971ed5e0646a7a2d8310c51b9cded158d7016eb5e160c"
+    },
+    "repo/docs/docs/scales.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/scales.md",
+      "sha256": "6b4d62b0859601fb4da723a4e4b90076682d1b59b152c8150dbe04af7c1a07cb"
+    },
+    "repo/docs/docs/schemes.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/schemes.md",
+      "sha256": "24435248d840d5c50831f38b0794ac10a44cb31cb5c36d97d400d82792fe7ffc"
+    },
+    "repo/docs/docs/signals.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/signals.md",
+      "sha256": "002dda10758d99d954f312cd34f9ea40062fd4a4b316eecf79edda1c3f76e185"
+    },
+    "repo/docs/docs/specification.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/specification.md",
+      "sha256": "4460563818ec700179f8f12747c245d4dd7d29c39038517ebc442cb7553d53a7"
+    },
+    "repo/docs/docs/title.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/title.md",
+      "sha256": "15a7ba19ed991dcc9bd0466d210dbd8c60b5cb9fe4ed6e5a3ad2796c319a92a4"
+    },
+    "repo/docs/docs/transforms.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms.md",
+      "sha256": "7031635ec5de42176693e954db54a374176b2d979e8bab533a68e05dc19ad38a"
+    },
+    "repo/docs/docs/transforms/aggregate.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/aggregate.md",
+      "sha256": "104582cbe6942fe9d442e71109aa6df76ed7634b4b54d47605e58326679a492d"
+    },
+    "repo/docs/docs/transforms/bin.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/bin.md",
+      "sha256": "4641c2eb4302290f1f85fa57f7914c3baef412da44814d07aec4e1a3f06517f8"
+    },
+    "repo/docs/docs/transforms/collect.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/collect.md",
+      "sha256": "c2ddec772a2fed3254c893284160d4134443d4f5c627d4516fce274b90e6665b"
+    },
+    "repo/docs/docs/transforms/contour.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/contour.md",
+      "sha256": "cea3ae1d9d085c92cdf8017bf2f31bedddb2a77fe67100cf35589a8bf84f749a"
+    },
+    "repo/docs/docs/transforms/countpattern.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/countpattern.md",
+      "sha256": "3932f133b1e77c81cde5262bf14e77dfd8d2dea98d74e78fbe4528c66b74034b"
+    },
+    "repo/docs/docs/transforms/cross.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/cross.md",
+      "sha256": "b0e6ca456584574d9a7412721f8827297a742b6d720155d8782fec90f59d1746"
+    },
+    "repo/docs/docs/transforms/crossfilter.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/crossfilter.md",
+      "sha256": "fac15da402d89910411f06bc0ed2af4afcf31ecfc485bb32230b80b33d98e0e8"
+    },
+    "repo/docs/docs/transforms/density.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/density.md",
+      "sha256": "8363b0c15014e682a83b36110c8211bee584cbbe29b73eedb0c8dbf0b855d50b"
+    },
+    "repo/docs/docs/transforms/dotbin.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/dotbin.md",
+      "sha256": "e397cbca02716e98f99f8fdc2ac164cfc0117b10e8a810343f9b6ee83de95543"
+    },
+    "repo/docs/docs/transforms/extent.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/extent.md",
+      "sha256": "51b87d2e17b716fec96b5852e11d917f951c81d455558a3d22783e2fa4b08b63"
+    },
+    "repo/docs/docs/transforms/filter.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/filter.md",
+      "sha256": "4ac1a251de34f095ee77858c34f7e4eab11422e444862d916a54a4e253a00d98"
+    },
+    "repo/docs/docs/transforms/flatten.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/flatten.md",
+      "sha256": "ad769f4cb82bac301768704242f1ab50ff328c731df6ea3117db0c1d0b6215f0"
+    },
+    "repo/docs/docs/transforms/fold.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/fold.md",
+      "sha256": "9ae0763dceaccf6fc417e599bd89de221f33010d4163c9198876fa95789eff61"
+    },
+    "repo/docs/docs/transforms/force.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/force.md",
+      "sha256": "020651c9ae6a932f39b2667a15f0216e727528ed0fddd9cfb9cb7c8f0477df60"
+    },
+    "repo/docs/docs/transforms/force.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/force.vg.json",
+      "sha256": "0a79e15002ac94243e00b90eadaa907b12a603a61bfac90ba5cbad0ed2b763fc"
+    },
+    "repo/docs/docs/transforms/formula.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/formula.md",
+      "sha256": "7df5b2bea9bd99fb5870efa43be602dd1109a5e6eccfa3fde0c081d3deb4fe40"
+    },
+    "repo/docs/docs/transforms/geojson.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/geojson.md",
+      "sha256": "58cb5bf03a8a1ce762518b3d7503fe914edaf705978cc7bd55be54f9022e12b2"
+    },
+    "repo/docs/docs/transforms/geopath.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/geopath.md",
+      "sha256": "eccee0c3bf8d18343d4dfe43b27599d3ad1d7cae896fdd44b49f3bd02888fc38"
+    },
+    "repo/docs/docs/transforms/geopath.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/geopath.vg.json",
+      "sha256": "1663ef065f9e7e14dcd530fd8d8aa4db80057af57cdb5f9fb31254a2fae42efb"
+    },
+    "repo/docs/docs/transforms/geopoint.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/geopoint.md",
+      "sha256": "c00e79db66742da26fbca4355c929346c7e6f6c604b123d65325d18861f07bca"
+    },
+    "repo/docs/docs/transforms/geopoint.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/geopoint.vg.json",
+      "sha256": "09c6673fb071bd35845e94d3bc7ce65634f9a9f31b6de31e6af10fa8c804adb4"
+    },
+    "repo/docs/docs/transforms/geoshape.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/geoshape.md",
+      "sha256": "9b1321db9b83616ea2c5764326dee2eb5790dfc3a5d95e2b99533f52d95eef88"
+    },
+    "repo/docs/docs/transforms/geoshape.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/geoshape.vg.json",
+      "sha256": "2daa9d0d6bee246b96aa22c81017e34bf9b76b9fddfcd0b48a1838cdcc137d03"
+    },
+    "repo/docs/docs/transforms/graticule.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/graticule.md",
+      "sha256": "9d829ea387de6296793e84981333c0737a200869af20641565f05f3a8606d41f"
+    },
+    "repo/docs/docs/transforms/graticule.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/graticule.vg.json",
+      "sha256": "4c3c0b6346cbc28ef2eeeb5e01156f9faf3857fc803421e332b2e648c9d95acb"
+    },
+    "repo/docs/docs/transforms/heatmap.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/heatmap.md",
+      "sha256": "bc782783cbbe2f9e582eb5ad0325725896449ecb57e73c57f9dffa0d84836e04"
+    },
+    "repo/docs/docs/transforms/identifier.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/identifier.md",
+      "sha256": "b9637d32edc37d17914a9f537cb9e65cdc57897186f94d08b4bbe5f28bd76443"
+    },
+    "repo/docs/docs/transforms/impute.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/impute.md",
+      "sha256": "07d5276e6d3d7ff5d738aa5d21824de11492621b1b7aa60abbe76c9c23533965"
+    },
+    "repo/docs/docs/transforms/isocontour.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/isocontour.md",
+      "sha256": "15ca6c7dfb12ff4509221d26557f1e36b4668aedd4dbae4124e56901888cb1d1"
+    },
+    "repo/docs/docs/transforms/joinaggregate.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/joinaggregate.md",
+      "sha256": "a163bf90e3241823770732bc875fb6c3e3879a7314ef4991f03b0f145956a9df"
+    },
+    "repo/docs/docs/transforms/kde.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/kde.md",
+      "sha256": "ed500059f3c300490902e1f2f3546ddba9bb6f96ec2f167a0d9f54134479d48b"
+    },
+    "repo/docs/docs/transforms/kde2d.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/kde2d.md",
+      "sha256": "6910cbcf56d419f113dc97d841ec633816dbfe7a633a53f706ca7431d3a895ed"
+    },
+    "repo/docs/docs/transforms/label.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/label.md",
+      "sha256": "fb87936a348958fe7fc54063cf014bad7abea46d36f7807ecb5b0231860e7ca6"
+    },
+    "repo/docs/docs/transforms/linkpath.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/linkpath.md",
+      "sha256": "b3e812b0667744249b91f2c6af6cb5ff07e132c1421de17f06e1d0e2629085b4"
+    },
+    "repo/docs/docs/transforms/linkpath.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/linkpath.vg.json",
+      "sha256": "1bb8ae824394a7728be2112934ebb10c41e55d5cd6a7f6363c3a96d109af3581"
+    },
+    "repo/docs/docs/transforms/loess.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/loess.md",
+      "sha256": "b2974af50c10a049ceeb68d6f50de1a7e078e1b98951a95290c188e60d2f804d"
+    },
+    "repo/docs/docs/transforms/lookup.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/lookup.md",
+      "sha256": "c2afc11a3a289f0d543e9525eac6f7cb007ac56d045549d057dc95ea6de4e477"
+    },
+    "repo/docs/docs/transforms/nest.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/nest.md",
+      "sha256": "1d42c721547eb64e216514b3343aa75011b5a702f8debc9c49bdfead7cfdf947"
+    },
+    "repo/docs/docs/transforms/nest.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/nest.vg.json",
+      "sha256": "aee4c66bb8a556b3e3850d2ef205af0a93cb2c0b5fc65ed93fed30f0d90f3043"
+    },
+    "repo/docs/docs/transforms/pack.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/pack.md",
+      "sha256": "e26c0da24580574058ea258cfe06f26e7850bd2834cd881c34cee9dab884665a"
+    },
+    "repo/docs/docs/transforms/pack.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/pack.vg.json",
+      "sha256": "b67e202d4aa16bf51f64f22bb26bdab77df8f5c496d0261b5231380f4ad99a35"
+    },
+    "repo/docs/docs/transforms/partition.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/partition.md",
+      "sha256": "70b4464c3b3a553e18c7e11b48abf6ebce3f66c7dfe1924add70c7692bd79be0"
+    },
+    "repo/docs/docs/transforms/partition.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/partition.vg.json",
+      "sha256": "cad06c2e34569a388cfd25d9ab424027daa5914c11455b4bdb8325e2e8be9430"
+    },
+    "repo/docs/docs/transforms/pie.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/pie.md",
+      "sha256": "3e31776a19b1d96f4892d9c1808e7eee3ee580abbfc73c4dc7c2f9f50e9d6244"
+    },
+    "repo/docs/docs/transforms/pie.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/pie.vg.json",
+      "sha256": "2e0ce725f942701dc21368a0ac769653274be7ced22a2489a8102a9afe30eb8b"
+    },
+    "repo/docs/docs/transforms/pivot.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/pivot.md",
+      "sha256": "9e9e33ca5807aea491066549fd2c0518bcb1c89c96555733dc1c41891724ae1d"
+    },
+    "repo/docs/docs/transforms/project.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/project.md",
+      "sha256": "55bd3a08288c922a1b5d03ecd29a50df0b7a7f10e0459679554ceb0cfebccc86"
+    },
+    "repo/docs/docs/transforms/quantile.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/quantile.md",
+      "sha256": "ff3c112f45addbdf66bd4730bf8f7950841ab8edb8783083ecb3c6ff2f5d00d2"
+    },
+    "repo/docs/docs/transforms/regression.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/regression.md",
+      "sha256": "9b95b2f9b0b20038f09445f6f41a2f19d18c1dbb7cd05252132a6d4495fa55f1"
+    },
+    "repo/docs/docs/transforms/resolvefilter.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/resolvefilter.md",
+      "sha256": "ac14e25e9ef77fa7570c5331c5ec9d28368ef278103246025d84d9b5607ad57a"
+    },
+    "repo/docs/docs/transforms/sample.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/sample.md",
+      "sha256": "e976ede38f075ad7e9de19bd8c737fc6f37f57f09e12f542c0e020df339510a3"
+    },
+    "repo/docs/docs/transforms/sequence.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/sequence.md",
+      "sha256": "904dbb051c1fbc149e0ea1354f199d3791b3b33f5af4c150469999c7a40f5d52"
+    },
+    "repo/docs/docs/transforms/stack.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/stack.md",
+      "sha256": "36c6682139d553adeceb90aaf341fb5104c021cd2896ea418ba9658c42d0e234"
+    },
+    "repo/docs/docs/transforms/stack.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/stack.vg.json",
+      "sha256": "1ea9caa47dd9432888ac5a8ec478db4e5368af677fc04e7b1d2f3ecb9f27eefc"
+    },
+    "repo/docs/docs/transforms/stratify.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/stratify.md",
+      "sha256": "2d2ab5bbfb0f5f6517cda804fce34f67b820f1b3cce887a77aec5e6b4eeaec3a"
+    },
+    "repo/docs/docs/transforms/timeunit.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/timeunit.md",
+      "sha256": "298e7a581b73ba968225b62e689a76dff53d2fdb1e5a536dfb16e21522c42f0e"
+    },
+    "repo/docs/docs/transforms/tree.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/tree.md",
+      "sha256": "fc7f92235d0048e3b15ed0fc94487c7ba4b62f828d40c1734978ffdfa2857562"
+    },
+    "repo/docs/docs/transforms/tree.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/tree.vg.json",
+      "sha256": "a027af1a2a4c8d83610134bb3b54a199c9bf697e0f18be3914f9b3b222d9ac96"
+    },
+    "repo/docs/docs/transforms/treelinks.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/treelinks.md",
+      "sha256": "2ad474bec11637edcd8ed3954f1d6b4a1144ba266df8e2ad8d62b981e301ae1b"
+    },
+    "repo/docs/docs/transforms/treemap.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/treemap.md",
+      "sha256": "8c2ee13984c33de671fa2d0d993ff8535e825017ace25c83cc7ff51fa548b545"
+    },
+    "repo/docs/docs/transforms/treemap.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/treemap.vg.json",
+      "sha256": "a016ce0335e80fb512d24084bd18f0c7dbad8544ab6b321728fe0466fa93dd1b"
+    },
+    "repo/docs/docs/transforms/voronoi.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/voronoi.md",
+      "sha256": "33c99059a8edf68d33c4d8f415e2a45a0439142f106019eb64182dc7e302c2cf"
+    },
+    "repo/docs/docs/transforms/voronoi.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/voronoi.vg.json",
+      "sha256": "24cce306dbf0906a1e5cd09e6ebe1ee961a1d0f1d941297aa634cf736955c6cf"
+    },
+    "repo/docs/docs/transforms/window.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/window.md",
+      "sha256": "b0a685f611907c5abcf0e7e21612a8cd877a39cddea329ebe50ec5e9739e9ff7"
+    },
+    "repo/docs/docs/transforms/window.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/window.vg.json",
+      "sha256": "d20260ee15ad38611dec896b45dde652cae85fb8d69ad42f6ac4320ad1c1c064"
+    },
+    "repo/docs/docs/transforms/wordcloud.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/wordcloud.md",
+      "sha256": "e7a5da5a1cf131cdcadc8534c9465f625a6128570caf355f9b72669d6a6b97d1"
+    },
+    "repo/docs/docs/transforms/wordcloud.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/transforms/wordcloud.vg.json",
+      "sha256": "047ff0f27227f95cc6919d096be3f4f0d217ce2f4d9db3e1e362447cd669f925"
+    },
+    "repo/docs/docs/triggers.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/triggers.md",
+      "sha256": "1de1bf8cd44696944d9821c48149945badc00ba32722341c0181a883c2dd0470"
+    },
+    "repo/docs/docs/types.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/docs/types.md",
+      "sha256": "29a8b47f1c4f0fdc8bf6f09588b714e8299a0f837fb8e57f407a673597699d8b"
+    },
+    "repo/docs/index.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/index.md",
+      "sha256": "01b7f4709a9053be556dc743cc0ad24e702c8bafda32de6eef6689ecab5a13b1"
+    },
+    "repo/docs/tutorials/airports/airports-all.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/airports-all.vg.json",
+      "sha256": "db77f769f27a9d63a7ebc88e2fa620de80fb3360d6170355d0b0e20494cd0332"
+    },
+    "repo/docs/tutorials/airports/airports-connect-all.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/airports-connect-all.vg.json",
+      "sha256": "2aa5e8c4d90dcc427e3e47d94580b80b24caf74118250604b64022b71fb1c53d"
+    },
+    "repo/docs/tutorials/airports/airports-connect-hover.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/airports-connect-hover.vg.json",
+      "sha256": "462239c75acdba536731d51e61ce089db5de3eb70dd6df62c3eab634cbaa879d"
+    },
+    "repo/docs/tutorials/airports/airports-filtered.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/airports-filtered.vg.json",
+      "sha256": "2ff270a379c43dbd6b5c59119ba28fb771c5be0e6b7f70f2e0a1e44bfa1357ff"
+    },
+    "repo/docs/tutorials/airports/airports-hover.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/airports-hover.vg.json",
+      "sha256": "32339b05f5f5de613f985243b8da6ad6be68a0f69b6aa424d86066352e20fa9e"
+    },
+    "repo/docs/tutorials/airports/airports-map.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/airports-map.vg.json",
+      "sha256": "87d145de16adc9ccfc642a027006569ef07c1fa5d9d86338606aa8bfca020010"
+    },
+    "repo/docs/tutorials/airports/airports-size.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/airports-size.vg.json",
+      "sha256": "32339b05f5f5de613f985243b8da6ad6be68a0f69b6aa424d86066352e20fa9e"
+    },
+    "repo/docs/tutorials/airports/airports-sized.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/airports-sized.vg.json",
+      "sha256": "d139488d3b2280549ed817a966de56868eb7a1fe6439efbbef5aa27592d7acf8"
+    },
+    "repo/docs/tutorials/airports/airports-sort.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/airports-sort.vg.json",
+      "sha256": "7913edea7e9039b1169ca881e0bb35c4d2b373b9490e4f3fb39be4893a2e3feb"
+    },
+    "repo/docs/tutorials/airports/airports-voronoi.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/airports-voronoi.vg.json",
+      "sha256": "f13e40bb7132de0f7c005b7b3ca134e921c3b47a8ebd85ae7752954db69a642a"
+    },
+    "repo/docs/tutorials/airports/airports.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/airports.vg.json",
+      "sha256": "1fe7ec0144e8ecf73152080744cb608a2af47bafdf7261bc95638c5b17c9ae1a"
+    },
+    "repo/docs/tutorials/airports/index.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/airports/index.md",
+      "sha256": "fbe925ef7a7aa23b496ede8258c3bd8243a546ab811178829fcf8cd5cfbfaf56"
+    },
+    "repo/docs/tutorials/bar-chart/bar-chart-axes.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/bar-chart/bar-chart-axes.vg.json",
+      "sha256": "3eeb396b12096957b03613f94b131304b0db4930f02a78a6d19e46ecd709828e"
+    },
+    "repo/docs/tutorials/bar-chart/bar-chart.vg.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/bar-chart/bar-chart.vg.json",
+      "sha256": "46f64937615e3586d6542431af26bde8876e2a0078f54a496800a15d12b12072"
+    },
+    "repo/docs/tutorials/bar-chart/index.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/bar-chart/index.md",
+      "sha256": "af9b0b3d560e8cb3c81a8d76f0453508c0a62cc2a2092025d13d56edbdc305e8"
+    },
+    "repo/docs/tutorials/index.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/tutorials/index.md",
+      "sha256": "70cf21e8104e2015ab239a4597ff76103015fab56fa3c92b03d6d14a1190463d"
+    },
+    "repo/docs/usage/index.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/usage/index.md",
+      "sha256": "099658525a626a65fdcc77f006acd94cf1313542a23306cfa8b3ace03b0224e3"
+    },
+    "repo/docs/usage/interpreter.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/usage/interpreter.md",
+      "sha256": "28ee751e8944b70fbc427a63870c065706d58238e357d422ecc9746417d74f5f"
+    },
+    "repo/docs/vega-schema.json": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/vega-schema.json",
+      "sha256": "6fc0d0a574b26ebf650e94c6b25b60ef35a7bdc1f73f572ed74cfa7392901651"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/LICENSE",
+      "sha256": "63727832aaf62004a2b249c933e327f3c90caf49e41a72f4bf436edf632cbda8"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "license": "BSD-3-Clause (LICENSE at the root of vega/vega, which holds the vega.github.io/vega site source under docs/ and the sample data the docs load under docs/data/). The licence asks that redistributions keep its copyright notice, so LICENSE is vendored alongside. docs/examples/ (the example gallery) and docs/_data/examples.json (its index) stay out; only the data files the docs pages and tutorials cite are taken.",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/vega/vega",
+      "ref": "v6.4.0",
+      "paths": [
+        "LICENSE",
+        "docs/index.md",
+        "docs/docs/**",
+        "docs/tutorials/**",
+        "docs/usage/**",
+        "docs/about/index.md",
+        "docs/about/vega-and-d3.md",
+        "docs/vega-schema.json",
+        "docs/data/airports.csv",
+        "docs/data/flights-airport.csv",
+        "docs/data/us-10m.json",
+        "docs/data/world-110m.json",
+        "docs/data/miserables.json",
+        "docs/data/stocks.csv",
+        "docs/data/us-state-capitals.json",
+        "docs/data/points.json"
+      ]
+    }
+  ]
+}

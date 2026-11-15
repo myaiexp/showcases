@@ -1,0 +1,57 @@
+/* Shared Vega chrome: card fit, control bar, signal bindings, read-outs */
+.vg-frame {
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.vg-view {
+  width: max-content;
+  transform-origin: 0 0;
+}
+.vg-bar:empty {
+  display: none;
+}
+.vg-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 10px;
+  font-size: 13px;
+}
+.vg-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.vg-bindings {
+  width: 100%;
+  padding-top: 10px;
+  font-size: 13px;
+  color: var(--fg-2);
+}
+.vg-bindings .vega-bind {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.vg-bindings .vega-bind-name {
+  min-width: 110px;
+  color: var(--fg-1);
+}
+.vg-bindings .vega-bind-radio label {
+  margin-right: 8px;
+}
+.vg-readout {
+  margin: 8px 0 0;
+  font-size: 12px;
+  white-space: pre-wrap;
+  width: 100%;
+  max-height: 200px;
+  overflow: auto;
+  color: var(--fg-2);
+}

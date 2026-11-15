@@ -125,6 +125,7 @@
     "tone": "^15.1.22",
     "topojson-client": "^3.1.0",
     "tsl-textures": "3.0.5",
+    "vega": "6.4.0",
     "vizzu": "0.18.0",
     "world-atlas": "^2.0.2",
     "wretch": "^3.0.9",
