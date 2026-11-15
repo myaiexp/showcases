@@ -28,7 +28,9 @@ directory names: kebab-case, and permanent once published.
 
 - **`definePackage`**: `name`, `npm`, `tagline`, optional `about`, `category` (one of
   `CATEGORIES`), `homepage`, `docsUrl`, `repo`, `added`, and `sections`, the official docs'
-  chapter order. The package page groups examples by section in this order.
+  chapter order. The package page groups examples by section in this order. Optional
+  `credit` (text, url, license, licenseUrl) is the attribution a CC BY docs licence asks
+  for; the package page and every example's "Built from" list show it.
 - **`defineMeta`**:
   - `title`, `summary`, `section` (one of the package's sections), `tags`, `added`.
   - `docs`: the vendored files used, as keys of `docs/MANIFEST.json`.

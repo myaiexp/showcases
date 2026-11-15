@@ -44,6 +44,15 @@ import './stage.css';
  *   only (the stage's ResizeObserver covers its own box).
  * - A splom costs ~350MB in a software-WebGL browser (released on dispose): keep card
  *   sploms to a few dimensions and a sample of the rows.
+ * - Docs values that are not schema values: textposition 'top'/'bottom' (write 'top center'),
+ *   layout.orientation on polar plots (use polar.angularaxis.rotation), layout.marker.
+ * - Carpet x/y and contourcarpet z grids are indexed [b][a]: rows follow b, columns a.
+ * - Tile maps: scattermap.cluster counts and `below: 'water'`-style layer ids need a hosted
+ *   style (glyphs, named layers); on darkMapStyle use below: 'traces' and no clusters.
+ * - A plotly_relayout handler that adds shapes or annotations fires itself again: act only
+ *   on axis keys (xaxis.range[0], xaxis.autorange). plotly_afterplot fires after them too.
+ * - A dragged 3D camera reports `scene.camera` (whole object); a scripted relayout of
+ *   `scene2.camera.eye` reports that narrower key, so syncing two scenes does not loop.
  * - Mount is async: await Plotly.newPlot, then check ctx.signal before starting loops.
  */
 
