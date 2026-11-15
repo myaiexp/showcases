@@ -66,6 +66,16 @@ add to it when something bites.
 - Read each time they're used, so assigning `map.options.x` works: inertia and wheel options,
   `keyboardPanDelta`, `worldCopyJump`, `doubleClickZoom` (each dblclick), `closePopupOnClick`
   (when a popup opens), `zoomAnimationThreshold`, `maxBoundsViscosity` (when a drag starts).
+- Also live: `zoomSnap`, `zoomDelta`, `wheelPxPerZoomLevel` (the zoom handlers re-read them).
+- `map.remove()` then `new LeafletMap(sameBox)` works; own the current map with
+  `stage.own({remove: () => map?.remove()})`.
+- `map.getPanes()` includes `mapPane`, the parent of the others.
+- `euCountries()` (map-panes tutorial data) includes Russia, so its `getBounds()` is nearly the
+  whole world: fit Europe by hand.
+- `map.on()` is typed per event name: loop over an array of names rather than passing a
+  space-separated string.
+- A map `dblclick` also runs `doubleClickZoom`: a card cycle that sends one resets the view.
+- Zoom-control buttons can be pressed in cards with `.click()` on `.leaflet-control-zoom-in`.
 - `.lf-map` has `flex: 1`: an example that sets the map box's width also sets `flex: none`.
 - In a card, `stage.log()` writes the caption, so a `stage.say()` in a cycle overwrites it.
 
