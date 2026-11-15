@@ -7,7 +7,7 @@ export default defineMeta({
     "enableBoxSelect turns drags into a selection box (map dragging is off meanwhile); boxselectend reports the box as lng/lat bounds, and the points inside turn yellow.",
   section: 'Scene',
   tags: ["enableBoxSelect", "disableBoxSelect", "boxselectend"],
-  docs: ["repo/site/docs/api/scene.en.md"],
+  docs: ["repo/site/docs/api/scene.en.md", "repo/site/docs/api/common/layer/layer_update.en.md"],
   provenance: 'pure',
   added: '2026-11-15',
 });
