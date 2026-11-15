@@ -175,6 +175,14 @@ GitHub Pages. No service on the VPS.
   its whole `Plotly.newPlot(stage.div, data, {template: stage.template, …}, stage.config)` call. Data comes
   from `shared/data.ts` (the docs' plotly/datasets files, bundled); geo maps `await loadGeoAssets()`; tile
   maps use `shared/tiles.ts` (`darkMapStyle`, `landLayers`) and never draw map text (no glyphs offline).
+- D2: build on `packages/d2/shared/stage.ts` (`createStage`, trap list) and `shared/playground.ts`; each
+  main.ts writes its D2 source and compile options. Never `new D2()`: `stage.d2()` is the page's one queued
+  engine (22 MB WASM). Icons come from `shared/icons.ts`, quoted (`icon: "${icons.x}"`). `test/d2-examples.test.ts`
+  compiles every variant in Node; a variant that fails on purpose holds the comment `# (deliberate error)`.
+- cosmos.gl: build on `packages/cosmos-gl/shared/stage.ts` (`createStage`; traps in `shared/traps.md`). Every graph is
+  `stage.own(new Graph(stage.div, config, stage.device()))`: the stage's own luma device, because
+  `Graph.destroy()` never frees the WebGL context. It runs on the repo's one luma.gl (9.4.2) although it
+  declares ~9.3. Cards fake hover and clicks with `shared/ghost.ts`; layouts centre on `CENTER` (2048).
 - AntV Infographic: build on `packages/infographic/shared/stage.ts` (`createStage`, trap list). Setup swaps the
   library's CDN fonts for bundled stand-ins and answers every icon/illus keyword offline; never `ref:search:`
   or an off-page `ref:remote:`. `registerResourceLoader` is page-wide: fall back to `offlineResource` and restore

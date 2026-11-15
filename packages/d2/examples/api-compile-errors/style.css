@@ -1,0 +1,14 @@
+/* Compile errors: the error list in place of the diagram */
+[data-example='d2/api-compile-errors'] {
+  .errors {
+    margin: 0;
+    padding-left: 1.6em;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--red);
+    align-self: flex-start;
+  }
+  .dd-card .errors {
+    font-size: 10px;
+  }
+}

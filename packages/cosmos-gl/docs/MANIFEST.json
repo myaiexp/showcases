@@ -1,0 +1,238 @@
+{
+  "fetched": "2026-11-15T05:45:23.820Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/cosmosgl/graph",
+      "ref": "v3.6.0",
+      "paths": [
+        "LICENCE",
+        "README.md",
+        "migration-notes.md",
+        "src/stories/welcome.mdx",
+        "src/stories/configuration.mdx",
+        "src/stories/api-reference.mdx",
+        "docs/*/README.md",
+        "docs/many-body-force/*.svg",
+        "docs/picking/*.svg",
+        "history/README.md",
+        "history/2026/*.md"
+      ],
+      "commit": "738431aecf20be7a93f6e7692f7dc0acfc8c6fd9"
+    }
+  ],
+  "files": {
+    "repo/docs/collision-force/README.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/collision-force/README.md",
+      "sha256": "253d91093ac3f753e4a295ac6603fd9039ff63085e4237e34bd95ce413cb0ccd"
+    },
+    "repo/docs/host-embedding/README.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/host-embedding/README.md",
+      "sha256": "f9c6d7e2327ee5061871e8ce9edb4cfee07803b11ead67e56d327747208214b4"
+    },
+    "repo/docs/many-body-force/a-near-field-old-vs-new.svg": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/many-body-force/a-near-field-old-vs-new.svg",
+      "sha256": "74771e9d26113136ab6d14830d6dfb356d5e10b250be23d8e6d4b6217234413a"
+    },
+    "repo/docs/many-body-force/b-grid-pyramid.svg": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/many-body-force/b-grid-pyramid.svg",
+      "sha256": "8888097eeca9cb37e3341b19af0fa3b69b0dd41a984906bbbce035bc5044ac8d"
+    },
+    "repo/docs/many-body-force/c-depth-peeling.svg": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/many-body-force/c-depth-peeling.svg",
+      "sha256": "0f6db731c315952f95d5c2a5957684e30b17f3f0958d2df790e00befc28c9071"
+    },
+    "repo/docs/many-body-force/d-gpu-pipeline.svg": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/many-body-force/d-gpu-pipeline.svg",
+      "sha256": "a4cc0c703bc67a83b3feee34c049bc4012c5a819c143071ec92828340b185aa1"
+    },
+    "repo/docs/many-body-force/e-old-theta-bands.svg": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/many-body-force/e-old-theta-bands.svg",
+      "sha256": "0bfc9e328832a0d50fc5568226e605557ae6359f87d6d8b7b38b0a84a84886be"
+    },
+    "repo/docs/many-body-force/f-resample-jitter.svg": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/many-body-force/f-resample-jitter.svg",
+      "sha256": "7b929a95a7ef2f050f4c038454849895cd681d44eae9db14688e78d215ed58fc"
+    },
+    "repo/docs/many-body-force/g-two-paths.svg": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/many-body-force/g-two-paths.svg",
+      "sha256": "028acc03f45ce74c640d2843cf0633f28037bc73c59ed727201c87fbfa52e32e"
+    },
+    "repo/docs/many-body-force/h-pingpong-peel.svg": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/many-body-force/h-pingpong-peel.svg",
+      "sha256": "b08db2ea072794bb256d135bce560ecc6b58d8cd35daa2550345c0166ab2791a"
+    },
+    "repo/docs/many-body-force/i-grid-follows-data.svg": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/many-body-force/i-grid-follows-data.svg",
+      "sha256": "07753763e20e9881bfcd3fe845cb0c164bd7379afeff40f846dfcae6584bfbf4"
+    },
+    "repo/docs/many-body-force/j-grid-seams.svg": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/many-body-force/j-grid-seams.svg",
+      "sha256": "d133b346cbb282ee404316c00409afc9d296b0752c531b23c14a712e80a90cfb"
+    },
+    "repo/docs/many-body-force/README.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/many-body-force/README.md",
+      "sha256": "f861534a91a250c059a66a3d7631f614b39920b3c914f52f6fe17223d201d4e1"
+    },
+    "repo/docs/picking/picking-scheme.svg": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/picking/picking-scheme.svg",
+      "sha256": "7fc47c5afc2d068fc4500077582ef163f0394a9066422ad8cac0f90ee17d085a"
+    },
+    "repo/docs/picking/README.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/docs/picking/README.md",
+      "sha256": "0898bf643b290cae96a82a76ca5b04da777861697313975caa2bd5be73f73e8c"
+    },
+    "repo/history/2026/2026-04-22-gpu-transitions.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-04-22-gpu-transitions.md",
+      "sha256": "834b583710500212d2584cdef7196fd71a6dfb7017aaef483bad5454160d5953"
+    },
+    "repo/history/2026/2026-06-03-touch-input.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-06-03-touch-input.md",
+      "sha256": "f1796c2c1c3434746cf51dc293993033ca5167cbf5107a32c7934c339d591d0e"
+    },
+    "repo/history/2026/2026-06-13-collision-force.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-06-13-collision-force.md",
+      "sha256": "a40c749065a26f22f9b6ef98bb6067ddceed656c262e6a4b141d025ead20649b"
+    },
+    "repo/history/2026/2026-06-27-nan-point-removal.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-06-27-nan-point-removal.md",
+      "sha256": "7d6b6acb2bd7ecd688e6fe1c8422e0609ab174a876e5c2094995275458c1d756"
+    },
+    "repo/history/2026/2026-07-07-on-demand-rendering.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-07-07-on-demand-rendering.md",
+      "sha256": "2a9843f4cbea685ae10dd062812db68b5cb194e98df1c77ec76058610ff76661"
+    },
+    "repo/history/2026/2026-07-07-point-occlusion-culling.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-07-07-point-occlusion-culling.md",
+      "sha256": "ea98bcac3f21de582974831e806d709bf5c9e921975535aa31789ae69156736d"
+    },
+    "repo/history/2026/2026-07-08-link-styles.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-07-08-link-styles.md",
+      "sha256": "9b984ab7d3e48fda5f45d65bce6e73ff7758566d1d632a398bc195bf4a83ea5a"
+    },
+    "repo/history/2026/2026-07-08-many-body-repulsion.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-07-08-many-body-repulsion.md",
+      "sha256": "f74834279ac7eaca0e571e567ab00630bae1cae27ebee27ca7f1ffcf51126e75"
+    },
+    "repo/history/2026/2026-07-09-picking.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-07-09-picking.md",
+      "sha256": "4e7f1778f8d22ab9b59170cf0fd825f65be84dc60f9f530485f65882cc650f56"
+    },
+    "repo/history/2026/2026-07-30-data-texture-addressing.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-07-30-data-texture-addressing.md",
+      "sha256": "03558b0a0c0c5c59015cbc8f6a83c2987679879fe15f70a102cdcaf51349e678"
+    },
+    "repo/history/2026/2026-08-14-nearfield-jitter.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-08-14-nearfield-jitter.md",
+      "sha256": "b884f7bec0ba782f5a8e32a4e66ad26e4ca00cada35545550b7e14626d9fe47b"
+    },
+    "repo/history/2026/2026-08-18-host-embedding.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-08-18-host-embedding.md",
+      "sha256": "3ece955a684b5b5a608104e2e0e2ea13b5ed0225692c44e7ded4f5c85b8b456d"
+    },
+    "repo/history/2026/2026-09-07-deck-layers.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-09-07-deck-layers.md",
+      "sha256": "f0bd56d56f1e23d87404e4053107b1bf6349f7519a34b6c8384a5d85de485ad7"
+    },
+    "repo/history/2026/2026-09-10-attractor-force.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-09-10-attractor-force.md",
+      "sha256": "e546612c13c352f7ed1a56880d57806d450d0180abd9791cb3818028c7091d48"
+    },
+    "repo/history/2026/2026-09-10-edge-ramps.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-09-10-edge-ramps.md",
+      "sha256": "eeffa34ff2b6951d4c6f4dfc1a9ef65ced64714339d2c25bf126f24c69c3a699"
+    },
+    "repo/history/2026/2026-09-15-point-stroke.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-09-15-point-stroke.md",
+      "sha256": "268d7835cac2693eeab7c1c8165e2c037dbcc9d1d2ad3b738bade1db3df20103"
+    },
+    "repo/history/2026/2026-09-17-init-readiness.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-09-17-init-readiness.md",
+      "sha256": "38e9af25502faeb8fb51a85b5be8f792553342892940ca615022dee5d5897e64"
+    },
+    "repo/history/2026/2026-09-24-links-by-point.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-09-24-links-by-point.md",
+      "sha256": "58aa4d89bdc24b4ffdc9fc165400dc97b0880bf84adedba1efc0abcbe696eb18"
+    },
+    "repo/history/2026/2026-09-28-nonblocking-position-reads.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-09-28-nonblocking-position-reads.md",
+      "sha256": "ce6010551c3747c391592131ff05194dee9f2eda0ae03762fa7d49a090ed264e"
+    },
+    "repo/history/2026/2026-09-30-point-render-order.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-09-30-point-render-order.md",
+      "sha256": "d6317851f897088d5dc359ae0fd8ac95ca48830f930e04e581325a26f59d79b4"
+    },
+    "repo/history/2026/2026-10-05-host-state-restore.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-10-05-host-state-restore.md",
+      "sha256": "1506a50f017e8fadc7c3c1a9e87b2004d8d48c01ba43c3e194cf2f7aeb55261c"
+    },
+    "repo/history/2026/2026-10-07-collision-constraint.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-10-07-collision-constraint.md",
+      "sha256": "5cf87ee890c0ed91ee76e5138753b621493e1a08bb6aac4d6a114be97446fc0a"
+    },
+    "repo/history/2026/2026-10-07-deck-layers-cosmos-rendering.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-10-07-deck-layers-cosmos-rendering.md",
+      "sha256": "4809a9c2733445be317e385e3725403b9140e15eb2d7d418437d0baa6509af07"
+    },
+    "repo/history/2026/2026-10-07-host-picking.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-10-07-host-picking.md",
+      "sha256": "37cc82dd49a880cb8b82732414249fb59bde02534485f8d2ddc64c45453700bf"
+    },
+    "repo/history/2026/2026-10-14-unbounded-space.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-10-14-unbounded-space.md",
+      "sha256": "74b120356f4af713ec57f6f28bd3c9985d17219a27f945a9baf6f36a6bcdc9a2"
+    },
+    "repo/history/2026/2026-10-15-many-body-grid-seams.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-10-15-many-body-grid-seams.md",
+      "sha256": "41c6c6ca6d82db21fd6e7e9483a0e702dfbdf98865d340e9039825bcafcf0547"
+    },
+    "repo/history/2026/2026-10-21-nearfield-sample-count.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-10-21-nearfield-sample-count.md",
+      "sha256": "0c12b3bfc8dcba293492c6fd8cf95b57815199ad9933e7e231c85a041e248af8"
+    },
+    "repo/history/2026/2026-10-21-point-stroke-force-stack.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-10-21-point-stroke-force-stack.md",
+      "sha256": "d22c6d8ae50893b706a9893063ba710e8f6ed298946576f61e241f0515509931"
+    },
+    "repo/history/2026/2026-11-04-link-defaults.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-11-04-link-defaults.md",
+      "sha256": "742819d88c67fdfe739420a7be5de678bfb1ef9269fedf22386a2b51ba8fcabb"
+    },
+    "repo/history/2026/2026-11-04-sampled-point-readback.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-11-04-sampled-point-readback.md",
+      "sha256": "925f297931c5ff5357986c91ac893b9709c466b4132e238c4f46d74ee5d0fb8f"
+    },
+    "repo/history/2026/2026-11-04-stroke-contrast.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/2026/2026-11-04-stroke-contrast.md",
+      "sha256": "4dfca300076f74b265bc2b83f810a7fdb5b2edf2cc2ff4e774ce31b7f43a60a7"
+    },
+    "repo/history/README.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/history/README.md",
+      "sha256": "3f164745f18d422d283957b0c941a8a80b86dfedc17372f0bea26575ad57c986"
+    },
+    "repo/LICENCE": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/LICENCE",
+      "sha256": "b26731c49be8775660663bf06987b38e0432519586dd577115c66ce3e17dedcf"
+    },
+    "repo/migration-notes.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/migration-notes.md",
+      "sha256": "955125179f180e2b511eba7c77bc021e03e8f600889f3aa22bf156998c69f6ab"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/README.md",
+      "sha256": "128452b886b05042643407c6a3ba9c53a42499fd4fc7b14602e99e343a60ec1c"
+    },
+    "repo/src/stories/api-reference.mdx": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/src/stories/api-reference.mdx",
+      "sha256": "7de3e3981d5c9167d844c63b9d32639365dfb11b17638a6a793af8d538da58e9"
+    },
+    "repo/src/stories/configuration.mdx": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/src/stories/configuration.mdx",
+      "sha256": "ff378ab23ae87e3f99709cd07fa5aad7b5a6c305f1a75be2ee2e8e750432da76"
+    },
+    "repo/src/stories/welcome.mdx": {
+      "url": "https://github.com/cosmosgl/graph/blob/738431aecf20be7a93f6e7692f7dc0acfc8c6fd9/src/stories/welcome.mdx",
+      "sha256": "ab965d2445da38a340dfd65a0dca769fd0da612e5f78b0eb683bf9065d0de49c"
+    }
+  }
+}

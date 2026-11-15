@@ -1,0 +1,46 @@
+{
+  "license": "BSD-3-Clause (terrastruct/d2-docs LICENSE.txt, vendored alongside); the D2.js README and types are MPL-2.0 (its README states the licence)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/terrastruct/d2-docs",
+      "ref": "master",
+      "paths": [
+        "LICENSE.txt",
+        "sidebars.ts",
+        "docs/tour/*.md",
+        "docs/tour/*.d2",
+        "docs/releases/*.md",
+        "blog/c4.md",
+        "blog/ascii.md",
+        "blog/animation.md",
+        "blog/dark_mode.md",
+        "blog/sketch.md",
+        "static/d2/**",
+        "static/bespoke-d2/animated.d2",
+        "static/bespoke-d2/c4-code.d2",
+        "static/bespoke-d2/cat.d2",
+        "static/bespoke-d2/chicken.d2",
+        "static/bespoke-d2/classes-3.d2",
+        "static/bespoke-d2/data.d2",
+        "static/bespoke-d2/grid-row-dominant.d2",
+        "static/bespoke-d2/imports-nested.d2",
+        "static/bespoke-d2/lotr.d2",
+        "static/bespoke-d2/serviceB.d2",
+        "static/bespoke-d2/styles-animated.d2",
+        "static/bespoke-d2/terminal-theme.d2",
+        "static/bespoke-d2/tiktok.d2"
+      ]
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/terrastruct/d2",
+      "ref": "v0.7.1",
+      "paths": [
+        "d2js/js/README.md",
+        "d2js/js/index.d.ts"
+      ]
+    }
+  ]
+}
