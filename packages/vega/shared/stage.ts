@@ -28,6 +28,26 @@ import './stage.css';
  *   (none so far) can't have it in cards.
  * - `view.finalize()` removes the listeners a spec added to window or document; the stage
  *   calls it for every view it rendered or adopted.
+ * - test/vega-examples.test.ts mounts every example headlessly and fails on Vega warnings.
+ *   Async or signal-driven `url` data is empty on the first pass, so a domain read from it
+ *   warns "Infinite extent": give those scales a fixed domain.
+ * - x()/y() in event handlers are already relative to the data rectangle (vega-view
+ *   subtracts padding and the autosize origin); don't subtract padding again.
+ * - Nested arrays of signals (`extent: [[{signal}, …], …]`, clipExtent, voronoi extent) are
+ *   ignored or throw; give the whole array as one signal expression. Flat arrays are fine.
+ * - Read at parse time, so a signal there does nothing: scale `interpolate` (throws), legend
+ *   `direction` and `type`, every config setting. Re-render to show another value.
+ * - Docs claims wrong for 6.4: a mark-level `transform` cannot `filter` (throws); a `cross`
+ *   filter cannot read signals; regression `order` is the degree (order + 1 coefficients);
+ *   countpattern's default pattern is [\w"]+; there is no `endsWith` expression function.
+ * - crossfilter output only feeds resolvefilter (its rows are indices): bin before the
+ *   crossfilter, aggregate after; resolvefilter `ignore` from a signal returns stale rows.
+ * - geoshape's `field` is read from the scenegraph item: write `datum.geo`, not `geo`.
+ * - x and x2 (or y and y2) split across enter and update collapse a rect without a warning.
+ *   A group sized only through `encode` has no width signal for its own `range: 'width'`.
+ * - The Spec types lag the docs in places (signal-valued axis booleans and format.type, CSV
+ *   string values, layout `center`, bind min/max on number inputs): cast only that fragment.
+ * - tsconfig has noUncheckedIndexedAccess: guard indexed reads in card loops.
  */
 
 export interface StageOptions {
