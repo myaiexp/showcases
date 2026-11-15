@@ -51,6 +51,11 @@
 //   empty slots frames only the filled ones, so use fitViewOnInit: false and fitViewByPointPositions.
 // - findPointsInRect/Polygon, getSampledLinkPositionsMap and getTrackedPointPositionsArray read
 //   synchronously (no nonBlocking form for the last two): call them on a timer, not every frame.
+// - enableDrag defaults to false, so a host-driven drag needs no switch-off, but enableZoom must be
+//   false or the same drag pans the view. A headless Graph (`new Graph(null, …)`) still needs the
+//   stage device; its view-dependent calls (fitView, zoom) do nothing, so draw it on a plain 2D canvas.
+// - showFPSMonitor keeps the render loop running (it never idles). To see on-demand rendering, count
+//   `device.beginRenderPass` calls on the example's own device (and put it back on cleanup).
 // - Headless Chrome (SwiftShader) is slow enough that the gallery benches most cards; check a
 //   card by importing its main.ts and mounting it with { preview: true } by hand.
 import type { Device } from '@luma.gl/core';
