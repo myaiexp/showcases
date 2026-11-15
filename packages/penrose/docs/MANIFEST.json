@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-15T07:43:22.639Z",
+  "fetched": "2026-11-15T08:28:52.448Z",
   "sources": [
     {
       "kind": "git",
@@ -14,6 +14,8 @@
         "packages/core/src/lib/Constraints.ts",
         "packages/core/src/lib/Objectives.ts",
         "packages/core/src/lib/Functions.ts",
+        "packages/core/src/lib/Curves.ts",
+        "packages/core/src/lib/Queries.ts",
         "packages/docs-site/docs/**",
         "packages/docs-site/public/vanilla-js-demo.html",
         "packages/docs-site/blog/staged-layout.md",
@@ -56,6 +58,10 @@
       "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/lib/Constraints.ts",
       "sha256": "3530470755c942cd390e22a5878607587adc70555b576c505edd0553f9841d6b"
     },
+    "repo/packages/core/src/lib/Curves.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/lib/Curves.ts",
+      "sha256": "23038581c8b0024985838e6bf73af44c158c5428d8b8692ed006b7e4f556826e"
+    },
     "repo/packages/core/src/lib/Functions.ts": {
       "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/lib/Functions.ts",
       "sha256": "ce9301d412ce85251dbd4b0242303f4183e72e67b0b3c3029cc31d41404a2e7b"
@@ -63,6 +69,10 @@
     "repo/packages/core/src/lib/Objectives.ts": {
       "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/lib/Objectives.ts",
       "sha256": "3e992a6943fd102cbadc4c930246501f1454df156cd33546509e9a69995e4090"
+    },
+    "repo/packages/core/src/lib/Queries.ts": {
+      "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/lib/Queries.ts",
+      "sha256": "4f981ecc01446ec51986eb97fd903d610bcb87682e8b8f02352736beadd0ef51"
     },
     "repo/packages/core/src/shapes/Circle.ts": {
       "url": "https://github.com/penrose/penrose/blob/8346c617bc3a56be17f058e1fe68961e282cc4c6/packages/core/src/shapes/Circle.ts",

@@ -15,6 +15,8 @@
         "packages/core/src/lib/Constraints.ts",
         "packages/core/src/lib/Objectives.ts",
         "packages/core/src/lib/Functions.ts",
+        "packages/core/src/lib/Curves.ts",
+        "packages/core/src/lib/Queries.ts",
         "packages/docs-site/docs/**",
         "packages/docs-site/public/vanilla-js-demo.html",
         "packages/docs-site/blog/staged-layout.md",
