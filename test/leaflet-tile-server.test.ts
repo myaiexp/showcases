@@ -86,6 +86,17 @@ describe('WMS', () => {
     near(last().project(-180, 0), [0, 128]);
   });
 
+  it('reads an EPSG:3395 BBOX on the ellipsoid, and inverts its northing for the bounds', () => {
+    const r = 20037508.342789244;
+    // World Mercator northing of 60°N on WGS84 (R·ln(tan(π/4+φ/2)·((1−e·sinφ)/(1+e·sinφ))^(e/2))).
+    const n60 = 8362698.548500749;
+    serveTile(`${base}&VERSION=1.1.1&SRS=EPSG:3395&BBOX=${-r},0,${r},${n60}`);
+    near(last().project(0, 0), [128, 256]);
+    near(last().project(0, 60), [128, 0]);
+    expect(last().bounds[2]).toBeCloseTo(60, 6);
+    expect(last().bounds[0]).toBeCloseTo(0, 6);
+  });
+
   it('orders EPSG:4326 axes lat,lng in 1.3.0 and lng,lat in 1.1.1', () => {
     serveTile(`${base}&VERSION=1.3.0&CRS=EPSG:4326&BBOX=0,10,20,30`);
     expect(last().bounds).toEqual([0, 10, 20, 30]);
