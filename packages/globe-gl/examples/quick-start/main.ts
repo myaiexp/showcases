@@ -1,4 +1,4 @@
-// Quick start: new Globe(element), a globe image and a points layer, the README's first lines
+// Quick start: new Globe(element), a globe image and points layer, per the README
 import Globe from 'globe.gl';
 import type { Mount } from '@/types.ts';
 import { cities } from '../../shared/places.ts';

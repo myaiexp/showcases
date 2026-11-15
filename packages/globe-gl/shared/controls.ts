@@ -1,4 +1,4 @@
-// Full-view inputs for globe.gl examples: sliders, selects, toggles, colours, readouts
+// Full-view inputs for globe.gl examples: sliders, selects, toggles, colours
 const ROW = 'display:flex;gap:6px;align-items:center;font-size:13px';
 
 export function slider(

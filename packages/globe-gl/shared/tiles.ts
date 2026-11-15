@@ -1,6 +1,6 @@
 // Slippy-map tiles painted in code: a tile URL function with no network
-import { geoGraticule10, geoMercator, geoPath } from 'd3-geo';
-import type { FeatureCollection } from 'geojson';
+import { geoBounds, geoGraticule10, geoMercator, geoPath } from 'd3-geo';
+import type { Feature, FeatureCollection, Polygon } from 'geojson';
 import type { GeometryCollection, Topology } from 'topojson-specification';
 import { feature } from 'topojson-client';
 import land50 from 'world-atlas/land-50m.json';
@@ -12,6 +12,48 @@ import { land as land110 } from './world.ts';
 
 const topo = land50 as unknown as Topology<{ land: GeometryCollection }>;
 const land50Geo = feature(topo, topo.objects.land) as FeatureCollection;
+
+/** One land polygon and its bounds: west, south, east, north (west > east when it wraps). */
+interface Piece {
+  feature: Feature<Polygon>;
+  box: [number, number, number, number];
+}
+
+/**
+ * Land split into single polygons with their bounds, so a tile draws only the polygons that
+ * reach it. Drawing all of 1:50m land into every tile cost ~40 ms a tile and hundreds of MB
+ * of garbage once the engine asked for dozens of tiles at a time.
+ */
+function pieces(land: FeatureCollection): Piece[] {
+  const out: Piece[] = [];
+  for (const f of land.features) {
+    const g = f.geometry;
+    const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : [];
+    for (const coordinates of polys) {
+      const feature: Feature<Polygon> = { type: 'Feature', properties: {}, geometry: { type: 'Polygon', coordinates } };
+      const [[w, s], [e, n]] = geoBounds(feature);
+      out.push({ feature, box: [w, s, e, n] });
+    }
+  }
+  return out;
+}
+
+const PIECES: Record<'coarse' | 'fine', Piece[] | null> = { coarse: null, fine: null };
+
+/** The land polygons that may touch a tile's lng/lat box (with a small margin). */
+function landFor(l: number, x: number, y: number): FeatureCollection {
+  const kind = l >= 3 ? 'fine' : 'coarse';
+  const all = (PIECES[kind] ??= pieces(kind === 'fine' ? land50Geo : land110));
+  const n = 2 ** l;
+  const lat = (t: number): number => (Math.atan(Math.sinh(Math.PI * (1 - (2 * t) / n))) * 180) / Math.PI;
+  const m = 1;
+  const [w, e] = [(x / n) * 360 - 180 - m, ((x + 1) / n) * 360 - 180 + m];
+  const [north, south] = [lat(y) + m, lat(y + 1) - m];
+  const features = all
+    .filter(({ box: [pw, ps, pe, pn] }) => ps <= north && pn >= south && (pw > pe || (pw <= e && pe >= w)))
+    .map((p) => p.feature);
+  return { type: 'FeatureCollection', features };
+}
 
 export type TileStyle = 'dark' | 'light' | 'grid';
 
@@ -63,7 +105,7 @@ function paintTile(style: TileStyle, x: number, y: number, l: number): string {
   ctx.lineWidth = 1;
   ctx.stroke();
   ctx.beginPath();
-  path(l >= 3 ? land50Geo : land110);
+  path(landFor(l, x, y));
   ctx.fillStyle = s.land;
   ctx.fill();
   ctx.strokeStyle = s.coast;

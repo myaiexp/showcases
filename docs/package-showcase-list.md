@@ -85,7 +85,7 @@ the gallery today are marked *(legacy in gallery)*.
 | 44 | A-Frame (`aframe`) | 5 | 1.0 2019-12 (1.8 2026-06) | repo ✓ MIT | 100 | HTML 3D and XR on a bundled three.js; 105 pages in `docs/`. Primitives and shaders need no assets; XR needs a headset |
 | 45 | postprocessing (`postprocessing`) ✅ built | 5 | 6.0 2019-03 (6.39 2026-11) | repo ✓ Zlib | 50 | three.js effects: bloom, god rays, SMAA, SSAO, DoF, LUT. Docs are the JSDoc API (esdoc over `src/`) plus the four prose pages in `manual/content` (getting-started, custom-effects, migration-guide, plugins-tools). `manual/content/demos/` pages are empty stubs that load scripts from `manual/assets/js/src/demos/`, the demo gallery; that and the legacy `demo/` app stay out |
 | 46 | force-graph / 3d-force-graph (`force-graph`, `3d-force-graph`) | 5 | 1.x 2018 (1.52 2026-09, 1.80 2026-11) | README MIT | 30 | globe.gl's siblings: canvas 2D and three.js 3D force-directed graphs. Each README is the whole docs (long API tables); `example/` stays out. The 3D one imports `three`, which `vite.config.ts` resolves to `three/webgpu` |
-| 47 | globe.gl (`globe.gl`) | 5 | v2 (2026-08) | README MIT | 30 | Data globes on Three.js |
+| 47 | globe.gl (`globe.gl`) ✅ built | 5 | v2 (2026-08) | README MIT | 30 | Data globes on Three.js. Docs are the README alone (its API tables); the `example/` folder shipped in the npm package and the README's demo list stay out. The README's images and tiles are URLs, so the gallery paints its globe skins, bump, clouds, stars and slippy tiles in code from Natural Earth land |
 | 48 | CesiumJS (`cesium`) | 5 | 1.147 2026-11 | repo ✓ Apache | 100 | 3D globe; Ion token for some data. Docs are the JSDoc plus `Documentation/` guides; Sandcastle stays out |
 
 ## Tier 4: strongly visual

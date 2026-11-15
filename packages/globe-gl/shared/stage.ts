@@ -1,8 +1,9 @@
 // globe.gl stage: sized panes, card tuning, a fake pointer and full cleanup
 //
 // Traps found while building the gallery against globe.gl 2.46.2 / three-globe 2.45.6 (add to this list):
-// - `width` and `height` default to the window's size, read when the module loads. A globe
-//   that is never given a size covers the page. `stage.own(globe)` sets both to the pane's size.
+// - `width` and `height` default to the window's size, read when the module loads, and the
+//   setters apply on Kapsule's next async digest. `stage.own(globe)` sets both and also sizes
+//   the renderer, composer and camera at once, so no frame is drawn window-sized.
 // - `new Globe(el)` empties `el` (`innerHTML = ''`) and builds its own container inside, so every
 //   globe needs an element of its own: one pane per globe (`panes` option).
 // - `_destructor()` disposes the renderer but keeps its WebGL context alive, so cards would run
@@ -13,19 +14,38 @@
 //   and `onGlobeReady` fires after that. With no `globeImageUrl` it is ready at once.
 // - Images load through Three's TextureLoader, which also takes data: and blob: URLs: cards
 //   never fetch, so every image comes from `shared/textures.ts`, drawn in code.
-// - The heatmaps layer computes its density on the GPU through a new WebGPURenderer per update
-//   when `navigator.gpu` exists, and on the CPU (with a console warning per update) otherwise.
-//   The CPU path costs points × sphere vertices: keep card heatmaps small and their updates rare.
+// - The heatmaps layer computes its density through a new WebGPURenderer per update when
+//   `navigator.gpu` exists, and on the CPU (a console warning per update) otherwise. With
+//   `navigator.gpu` but no adapter it returns all-zero density: blank heatmaps. Await
+//   `heatmapBackend()` (`shared/gpu.ts`) before the first `heatmapsData`. The CPU path costs
+//   points × sphere vertices, and the sphere's resolution is bandwidth / 3.5 degrees: keep
+//   card heatmaps small, their bandwidth at 4 or more and their updates rare. A heatmap
+//   transition rebuilds the surface every frame; cards skip it unless it is the subject.
+// - `heatmapColorFn` is an accessor of the heatmap datum that returns the interpolator:
+//   `() => (t) => colour`, not `(t) => colour`.
+// - Hex bin objects are `{ h3Idx, points, sumWeight }` in 2.45.6: the `center` the README and
+//   the typings promise is missing. Average the points for a centre; key hexagons by `h3Idx`.
+// - h3-js throws ("operation failed (code 1)") on North Korea's 1:110m outline at hexed-polygon
+//   resolutions 1 to 3; world-wide hexed examples leave that one country out.
+// - Layers tag each datum with its Three.js object (`__threeObjLabel`, `__threeObjHtml`, …), so
+//   two globes must not share datum objects: copy the data per pane.
+// - `polygonGeoJsonGeometry`'s typings say `coordinates: number[]`; nested GeoJSON needs a cast.
 // - Pointer interaction raycasts the whole scene every 50 ms. Cards have no pointer, so
 //   `stage.own()` switches it off there; `stage.ghost(globe)` switches it back on.
 // - Hover and click are read from pointer events on the globe's own `.scene-container`;
 //   OrbitControls listens on the canvas. `stage.ghost()` sends non-bubbling events to the
 //   container only, so a card's fake pointer never drags the camera or reaches other cards.
 // - `pointOfView()` with no argument is the getter: `pointOfView({})` returns, not chains.
+// - Colour and stroke accessors are typed as unions, so a bare `(d) =>` loses its parameter type
+//   (TS7006) once the chain also refers to `globe` inside a callback: write `(d: object) =>`.
+// - Arcs are cubic Béziers with control points above `arcAltitude`, so the curve's middle is
+//   not at that altitude: aim a card's fake pointer with `ghost.arc()`.
 // - The layer accessors are read again only when a layer prop is set: change an accessor's
 //   inputs (a hover state, a slider) and then set the accessor again to repaint.
 import type { MountContext } from '@/types.ts';
 import type { GlobeInstance } from 'globe.gl';
+import type { PerspectiveCamera } from 'three';
+import { createGhost, type Ghost } from './ghost.ts';
 
 export interface StageOptions {
   /** Captions for several globes side by side; one globe with no caption when left out. */
@@ -43,17 +63,6 @@ export interface Pane {
   width: number;
   height: number;
   caption: HTMLDivElement | null;
-}
-
-export interface Ghost {
-  /** Moves the fake pointer over a place on the globe (lat, lng, altitude in globe radii). */
-  at(lat: number, lng: number, altitude?: number): void;
-  /** Moves the fake pointer to container pixels. */
-  px(x: number, y: number): void;
-  /** Presses and releases where the pointer is (`button` 2 is a right-click). */
-  click(button?: 0 | 2): void;
-  /** Moves the pointer off the globe. */
-  leave(): void;
 }
 
 export interface Stage extends Pane {
@@ -146,6 +155,13 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
     },
     own(globe, pane = panes[0]!) {
       globe.width(pane.width).height(pane.height);
+      // Those setters apply on Kapsule's next (async) digest; until then the renderer is the
+      // window's size. Size it now so no frame is drawn at the wrong size.
+      globe.renderer().setSize(pane.width, pane.height);
+      globe.postProcessingComposer().setSize(pane.width, pane.height);
+      const camera = globe.camera() as PerspectiveCamera;
+      camera.aspect = pane.width / pane.height;
+      camera.updateProjectionMatrix();
       if (preview) {
         // Cards stay light: one pixel per CSS pixel and no hover raycasting.
         globe.renderer().setPixelRatio(1);
@@ -165,38 +181,7 @@ export function createStage(el: HTMLElement, ctx: MountContext, opts: StageOptio
     ghost(globe) {
       globe.enablePointerInteraction(true);
       const pane = panes.find((p) => p.container.contains(globe.renderer().domElement)) ?? panes[0]!;
-      let x = -10;
-      let y = -10;
-      const send = (type: string, button = 0): void => {
-        const target = pane.container.querySelector('.scene-container');
-        if (!target) return;
-        const r = target.getBoundingClientRect();
-        target.dispatchEvent(
-          new PointerEvent(type, { clientX: r.left + x, clientY: r.top + y, button, pointerType: 'mouse', bubbles: false }),
-        );
-      };
-      return {
-        at(lat, lng, altitude = 0) {
-          const p = globe.getScreenCoords(lat, lng, altitude);
-          x = p.x;
-          y = p.y;
-          send('pointermove');
-        },
-        px(px, py) {
-          x = px;
-          y = py;
-          send('pointermove');
-        },
-        click(button = 0) {
-          send('pointerdown', button);
-          send('pointerup', button);
-        },
-        leave() {
-          x = -10;
-          y = -10;
-          send('pointermove');
-        },
-      };
+      return createGhost(globe, pane.container);
     },
     loop(frame) {
       let last = performance.now();

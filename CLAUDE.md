@@ -224,3 +224,8 @@ GitHub Pages. No service on the VPS.
   with WebGPU + `shader-f16` (this VPS has neither; charts, tables and the algorithms work). Mosaic examples use
   `stage.mosaic()`: the page's one bundled DuckDB (`shared/db.ts`, never Mosaic's CDN loader) and tables per mount.
   Give every `Label` a `level`; whole-Atlas cards use `cardZoom` and stay small.
+- globe.gl: build on `packages/globe-gl/shared/stage.ts` (`createStage`, trap list). Every globe is
+  `stage.own(new Globe(pane.container))` right after construction: it sizes it (width/height default to the
+  window) and frees the WebGL context `_destructor()` keeps. Images come from `shared/textures.ts`, tiles from
+  `shared/tiles.ts`, both painted in code (`test/globe-gl-offline.test.ts` fails any URL). Cards hover and click
+  through `stage.ghost(globe)`; arcs need `ghost.arc()`.

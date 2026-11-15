@@ -1,4 +1,4 @@
-// globe.gl: a Three.js globe component with fifteen data layers and an orbit camera
+// globe.gl: a Three.js globe component with fifteen data layers, orbit camera
 import { definePackage } from '@/types.ts';
 
 export default definePackage({

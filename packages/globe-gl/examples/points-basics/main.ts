@@ -1,4 +1,4 @@
-// Points layer: each accessor as an attribute name, a constant or a function of the datum
+// Points layer: each accessor as an attribute name, a constant or a function
 import Globe from 'globe.gl';
 import type { Mount } from '@/types.ts';
 import { cities, type City } from '../../shared/places.ts';

@@ -1,4 +1,4 @@
-// Points: onPointHover lights the column under the pointer, onPointClick flies to it
+// Points: onPointHover lights the column under the pointer, onPointClick flies in
 import Globe from 'globe.gl';
 import type { Mount } from '@/types.ts';
 import { readout } from '../../shared/controls.ts';
