@@ -17,6 +17,15 @@
 //   left from the previous state stays and fills the hole: clear it in the step before.
 // - Presets never reset `sort`; waterfall colours by a gradient of the y measure, not by sign.
 // - The y-axis of a measure starts at 0: a measure in a narrow high band squashes its markers.
+// - Range strings: 'Nmax' / 'Nmin' offset from the data's largest / smallest value (0 for
+//   stacked bars), 'N%' is relative to the largest. A range on a dimension axis drops the
+//   categories outside it, like a filter.
+// - The cssProperties plugin lists custom property names from top-level stylesheet rules only,
+//   and example CSS is nested under [data-example]: declare each --vizzu-… name empty on the
+//   scope block (an empty value is ignored), then set it on a nested class.
+// - chart.style reads null for sizes still automatic, then strings like "40.000000px".
+// - config.orientation with measures on both axes and rectangles draws overlapping boxes from
+//   the origin; it reads only with area or line geometry.
 // - Tooltips need a real pointer over the canvas: synthetic events and caxi hovers show none.
 import type Vizzu from 'vizzu';
 import type { MountContext } from '@/types.ts';
