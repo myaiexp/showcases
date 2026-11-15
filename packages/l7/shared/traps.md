@@ -89,6 +89,26 @@ means the vendored pages under `docs/repo/site/docs/`.
   heightfixed ~3e6). Line size [w, h] and raisingHeight lift ~100 visibly. Flowline
   arrowheads are large: sizes 3–4 read best.
 
+## Polygon layers
+
+- `shape('circle' | 'dot' | <icon>)` on a PolygonLayer builds a point model but draws
+  nothing; the column shapes (cylinder, …) do draw, at each polygon's centroid, and
+  `shape('name', 'text')` labels work. `calculateCentroid` throws "当前数据不支持标注" for
+  some coordinate shapes.
+- Extrude: `topsurface: false` on the plain shader discards every face (with `pickLight:
+  true` it removes only the roofs); `sidesurface` needs `pickLight: true`.
+- `heightfixed: true` heights are in the map's own scale: ~300 per floor at zoom 11, and they
+  double per zoom level.
+
+## Heatmap layers
+
+- `angle` is in radians (0 to ~6.3 is a full turn), not degrees.
+- Grid/hexagon transform `size: 250000` gives 40–100 px cells at zoom 3.5; the docs' 15000–20000
+  is far too small for continent-scale data. Aggregated fields are named after the method
+  (`count`, `sum`, `max`, `min`, `mean`).
+- `.source(data)` without a parser needs GeoJSON points; a plain array draws nothing.
+  `shape('heatmap3D')` works: anything but exactly `'heatmap'` takes the 3D branch.
+
 ## TypeScript
 
 - tsconfig has noUncheckedIndexedAccess: guard indexed reads. Chained layer calls return
