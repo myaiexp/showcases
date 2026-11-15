@@ -1,0 +1,13 @@
+// l7 example: Point shape: square
+import { defineMeta } from '@/types.ts';
+
+export default defineMeta({
+  title: "Point shape: square",
+  summary:
+    "A square lying on the map, rotated by style.rotation. shape('square') is one of the IFillShape values; the full view's slider sets style.rotation.",
+  section: "Point Layer",
+  tags: ['PointLayer', 'shape', 'square', 'IFillShape', 'rotation'],
+  docs: ['repo/site/docs/api/point_layer/shape.en.md', 'repo/site/docs/api/point_layer/style.en.md'],
+  provenance: 'pure',
+  added: '2026-11-15',
+});

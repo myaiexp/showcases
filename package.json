@@ -24,6 +24,8 @@
   "dependencies": {
     "@antv/g6": "5.1.1",
     "@antv/infographic": "^0.2.20",
+    "@antv/l7": "2.29.1",
+    "@antv/l7-maps": "2.29.1",
     "@babylonjs/addons": "9.36.0",
     "@babylonjs/controls": "2.0.0-alpha.1",
     "@babylonjs/core": "9.36.0",

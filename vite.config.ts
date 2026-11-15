@@ -48,6 +48,10 @@ export default defineConfig({
       // an inlined MapLibre worker). Its own built bundle is what the docs load from a
       // <script> tag; TypeScript still reads the types from lib/index.d.ts.
       { find: /^plotly\.js$/, replacement: 'plotly.js/dist/plotly.min.js' },
+      // @antv/l7-component's `browser` field points at its UMD bundle, which has no ESM
+      // exports, so `export * from '@antv/l7-component'` in @antv/l7 would export no
+      // Marker, Popup or controls in the browser build. Its `module` build has them.
+      { find: /^@antv\/l7-component$/, replacement: '@antv/l7-component/es/index.js' },
     ],
   },
   // Relative asset URLs + hash routing: the build runs under any subpath with no rewrites.

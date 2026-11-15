@@ -1,0 +1,19 @@
+/* exportPng: the strip of captured thumbnails over the map */
+[data-example='l7/scene-export-png'] {
+  .shots {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    pointer-events: none;
+  }
+  .shots img {
+    width: 72px;
+    border: 2px solid #ffd166;
+    border-radius: 3px;
+    background: #000;
+  }
+}
