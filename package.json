@@ -76,6 +76,7 @@
     "@sigma/utils": "^4.0.0",
     "@sparkjsdev/spark": "2.4.0",
     "@tanstack/charts": "1.5.0",
+    "@terrastruct/d2": "^0.1.33",
     "@vfx-js/core": "1.6.0",
     "@vfx-js/effects": "1.4.4",
     "@vfx-js/transitions": "0.1.2",

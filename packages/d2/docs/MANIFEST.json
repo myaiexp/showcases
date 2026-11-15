@@ -1,0 +1,1165 @@
+{
+  "fetched": "2026-11-15T06:24:06.905Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/terrastruct/d2-docs",
+      "ref": "master",
+      "paths": [
+        "LICENSE.txt",
+        "sidebars.ts",
+        "docs/tour/*.md",
+        "docs/tour/*.d2",
+        "docs/releases/*.md",
+        "blog/c4.md",
+        "blog/ascii.md",
+        "blog/animation.md",
+        "blog/dark_mode.md",
+        "blog/sketch.md",
+        "static/d2/**",
+        "static/bespoke-d2/animated.d2",
+        "static/bespoke-d2/c4-code.d2",
+        "static/bespoke-d2/cat.d2",
+        "static/bespoke-d2/chicken.d2",
+        "static/bespoke-d2/classes-3.d2",
+        "static/bespoke-d2/data.d2",
+        "static/bespoke-d2/grid-row-dominant.d2",
+        "static/bespoke-d2/imports-nested.d2",
+        "static/bespoke-d2/lotr.d2",
+        "static/bespoke-d2/serviceB.d2",
+        "static/bespoke-d2/styles-animated.d2",
+        "static/bespoke-d2/terminal-theme.d2",
+        "static/bespoke-d2/tiktok.d2"
+      ],
+      "commit": "5530a5ec52f8df7b8a6557a4d554c18fbfe08227"
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/terrastruct/d2",
+      "ref": "v0.7.1",
+      "paths": [
+        "d2js/js/README.md",
+        "d2js/js/index.d.ts"
+      ],
+      "commit": "6408af31df469e7f1d84d3349eeaa1281fb5d57e"
+    }
+  ],
+  "files": {
+    "repo/blog/animation.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/blog/animation.md",
+      "sha256": "5ce0980e4c9af53ba64aaed780aa335d84ff57e8b532e7757c69c7dcee3141d8"
+    },
+    "repo/blog/ascii.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/blog/ascii.md",
+      "sha256": "fef5c990ef1a9c6629e11b9fa277004674c8f2edccac8573f350872d3d3f6d92"
+    },
+    "repo/blog/c4.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/blog/c4.md",
+      "sha256": "47d050093c36a22342ccbc7c8945f6885847b87cf443a05008679de7d8f0abda"
+    },
+    "repo/blog/dark_mode.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/blog/dark_mode.md",
+      "sha256": "5ca91d667398c57960f199e8cac5cdaf15500296b4b60a8835a49aede3ca7116"
+    },
+    "repo/blog/sketch.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/blog/sketch.md",
+      "sha256": "5aa91023b1cdf39c57977b4a549e5796467b076027858ea99d4d44189e824288"
+    },
+    "repo/d2js/js/index.d.ts": {
+      "url": "https://github.com/terrastruct/d2/blob/6408af31df469e7f1d84d3349eeaa1281fb5d57e/d2js/js/index.d.ts",
+      "sha256": "3c25fd3de0a2f2c64f1d1e2d7cf0841ef88085ccaba51f1b2b88b4591efed71b"
+    },
+    "repo/d2js/js/README.md": {
+      "url": "https://github.com/terrastruct/d2/blob/6408af31df469e7f1d84d3349eeaa1281fb5d57e/d2js/js/README.md",
+      "sha256": "b99e821c8d92efa982fc6b25880f80272bb57b25ca31b829e476a81dab9201cf"
+    },
+    "repo/docs/releases/0.0.13.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.0.13.md",
+      "sha256": "b59bd40c5e41977756f5bd95c74531a0d0c0dab0fac0c8a23397d733704f48be"
+    },
+    "repo/docs/releases/0.1.0.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.1.0.md",
+      "sha256": "e6d162959b66f1bf2a95fb8324087d699a3e13c85b04cae7ebd372ba2bbc733f"
+    },
+    "repo/docs/releases/0.1.1.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.1.1.md",
+      "sha256": "918a76d38949775871e75cd361a13d04a70f3181cdd4ee06c5e02631bb5f1aef"
+    },
+    "repo/docs/releases/0.1.2.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.1.2.md",
+      "sha256": "e5581909717d72bd18e24bf9b6fbb11fc13d10e299c7fb4f17f7e28a8811f60e"
+    },
+    "repo/docs/releases/0.1.3.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.1.3.md",
+      "sha256": "1b8760d9de5af394e5fe384813ecc70d5d29415c7bf8fff4d93dfca0a6856278"
+    },
+    "repo/docs/releases/0.1.4.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.1.4.md",
+      "sha256": "2434f35b6f2910b49747f2f3de9c38141d2c84abea5f04bf4731eb1cc678fa52"
+    },
+    "repo/docs/releases/0.1.5.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.1.5.md",
+      "sha256": "51f4871d75ac95c56e4a387d91336b9dd87daeb78cf08544d0131f60bc090afa"
+    },
+    "repo/docs/releases/0.1.6.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.1.6.md",
+      "sha256": "0d8e6bad33b05a5c22bc0341a6df70c0848c080e7485eaecf94ebf5f88696094"
+    },
+    "repo/docs/releases/0.2.0.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.2.0.md",
+      "sha256": "5121c1213ff06f6e398fed61b7eecffc73576fe276b79827d51455d4284f6fcc"
+    },
+    "repo/docs/releases/0.2.1.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.2.1.md",
+      "sha256": "175649d8ee27a679105a4d564b688e8f454c1d883b203fd4aaf70b90cde7925d"
+    },
+    "repo/docs/releases/0.2.2.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.2.2.md",
+      "sha256": "c4bfbdc024708b3976e3d43256eab14bd1131bae8dc8711545d4018d1f4d26d2"
+    },
+    "repo/docs/releases/0.2.3.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.2.3.md",
+      "sha256": "bd0daa4cb8dbab9f387daa8de4ed59f6623f766dca0b8a20fb075a706680c429"
+    },
+    "repo/docs/releases/0.2.4.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.2.4.md",
+      "sha256": "8940e5412a1e7c7e405f9415de92766605439b48ed6290212b514b40da8ef99e"
+    },
+    "repo/docs/releases/0.2.5.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.2.5.md",
+      "sha256": "2e35fd5d3a6da5a0cc77a2c8f6df0b09fc68395908d7192db974f92055922774"
+    },
+    "repo/docs/releases/0.2.6.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.2.6.md",
+      "sha256": "6daa312aa6ad9d4c05b2f0bccfbf5c36e53b6aec201275f0563764da1dfe1ae2"
+    },
+    "repo/docs/releases/0.3.0.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.3.0.md",
+      "sha256": "9413937c2573a529aac0c6604c1379051c3a9d7d61c2fa4da2fcf07b413354d2"
+    },
+    "repo/docs/releases/0.4.0.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.4.0.md",
+      "sha256": "c4962dbeb18e76a32ec960e618b259fb46028035dd104d794e98d767bcafadd3"
+    },
+    "repo/docs/releases/0.4.1.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.4.1.md",
+      "sha256": "e11da3c24747072982a1b076d10737010cc44aa3b0f108a32ab9a2c99d3dbb2d"
+    },
+    "repo/docs/releases/0.4.2.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.4.2.md",
+      "sha256": "206590c23b9a3141d07f3b4bc0088ab22bc769ead1fa3d1edf9c142a4a6ac5e0"
+    },
+    "repo/docs/releases/0.5.0.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.5.0.md",
+      "sha256": "a9f957f43245ce3339e242295ba815e4ffec64d883809c79fee0f76b9b6ce24b"
+    },
+    "repo/docs/releases/0.5.1.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.5.1.md",
+      "sha256": "5e7c18982c7ebb1981078dc748408146cd5d7f6f45e98b61496cea3ae91c17c5"
+    },
+    "repo/docs/releases/0.6.0.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.6.0.md",
+      "sha256": "8466bb6f885c39c81cad576a609de2348c0c3c37ca0bfc4e6f4407611f24ed29"
+    },
+    "repo/docs/releases/0.6.1.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.6.1.md",
+      "sha256": "708fecb18acb92ccce9881c759b762feda80cad97b10f2b5536a66efa61ced37"
+    },
+    "repo/docs/releases/0.6.2.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.6.2.md",
+      "sha256": "884f42ff8d07bf5a7c1d2dad2bb599df2f87121272ebf8f8ca417a5ed6ad05db"
+    },
+    "repo/docs/releases/0.6.3.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.6.3.md",
+      "sha256": "b2af70e34bb643405d9a62538274712f9f4ad3e79074951fb4f87cd06e0c5f73"
+    },
+    "repo/docs/releases/0.6.4.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.6.4.md",
+      "sha256": "4fc46ba44d82399f53c47284944b528c980da46be642f5bb307f170017110bde"
+    },
+    "repo/docs/releases/0.6.5.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.6.5.md",
+      "sha256": "1b7101f44cf34f9fb6837705cfa0ea8fd33a3a9ee62ef1f56f31f8a3d98e5adc"
+    },
+    "repo/docs/releases/0.6.6.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.6.6.md",
+      "sha256": "96c83731f48d54f1f74da745cd7731f732424f89ce699affded19c2db1e6cc3f"
+    },
+    "repo/docs/releases/0.6.7.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.6.7.md",
+      "sha256": "ffd6385881762edf8de6ba93dbc1cbdfec265a987e0b490f36e2924f92582b8c"
+    },
+    "repo/docs/releases/0.6.8.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.6.8.md",
+      "sha256": "5c99c4158fefc006bc75c2e068c083899ffda1590ff853fb22e81cbbe4fbb50e"
+    },
+    "repo/docs/releases/0.6.9.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.6.9.md",
+      "sha256": "ebd08716e4adb1a89c66585965595c32b512973703d6d19ac92893bfb29a6790"
+    },
+    "repo/docs/releases/0.7.0.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.7.0.md",
+      "sha256": "fae592189b4fc1badedb4359e225603cd627a52ba1805ece4d79b09e70725d67"
+    },
+    "repo/docs/releases/0.7.1.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.7.1.md",
+      "sha256": "b7e3d34c56cde8b7b201f222c0d5e690bc42731777e29a7bb47871279c015caf"
+    },
+    "repo/docs/releases/0.8.2.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.8.2.md",
+      "sha256": "30587aca58ce49aaf11a058457004dc1842682fcfb6709539fe755060f0d73ff"
+    },
+    "repo/docs/releases/0.9.0.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/0.9.0.md",
+      "sha256": "0130d1d40809893c02a572bfc79acfabcc5893cb3e84ed55535d758b37bd9521"
+    },
+    "repo/docs/releases/intro.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/releases/intro.md",
+      "sha256": "74f7023b3866b2ab3840927d133d5a6f90dc2f3b057264485cd43dea1e292a1a"
+    },
+    "repo/docs/tour/api.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/api.md",
+      "sha256": "5de1b2c32e59db97793c7ab443658093616b68131f58eb1e7ce7b1996f818b98"
+    },
+    "repo/docs/tour/auto-formatter.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/auto-formatter.md",
+      "sha256": "324ba75425f302aa4c3d32cd9d090b6bfb819af431ac7465f4619a30be4d2687"
+    },
+    "repo/docs/tour/cheat-sheet.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/cheat-sheet.md",
+      "sha256": "726a7621110e1bb162c5a071b24767bbf28fe55a64ad1c606e4b044f409d9cbe"
+    },
+    "repo/docs/tour/classes.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/classes.md",
+      "sha256": "f5bfda23929a2c9cd3f6646037374455722cd177cfef4b3a5b41613fe76f25a1"
+    },
+    "repo/docs/tour/comments.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/comments.md",
+      "sha256": "ced2a5c09519ff81a6a1383694fd0a6f9e9d44e6bbe3f7239ef46b71f52e0b18"
+    },
+    "repo/docs/tour/community.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/community.md",
+      "sha256": "fec1c6e2799f74af2f725eef785839b4c031a1e4c114a66e227e9c915a2a471e"
+    },
+    "repo/docs/tour/composition-formats.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/composition-formats.md",
+      "sha256": "d2599ece464543c0022ee78895d38751cc3c080132a91a529113ae1c5192fe99"
+    },
+    "repo/docs/tour/composition.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/composition.md",
+      "sha256": "7b1756efefb6fbdd4d931f3d2bb8f885f3992e182e337f86d531731d7e32aa9b"
+    },
+    "repo/docs/tour/connections.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/connections.md",
+      "sha256": "17d36f29a84917c97e63952eaa2f4cac5c12bb2f5705f3ddfb1db95e77d1dd62"
+    },
+    "repo/docs/tour/containers.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/containers.md",
+      "sha256": "cd1aae6e40f6e61f9c99d8459bd1015decafb09992ac080561cf76553dbea57f"
+    },
+    "repo/docs/tour/dagre.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/dagre.md",
+      "sha256": "3ffc8383bd9b6e0ad5a520d5d315446d02178be0da231073028b94333b431510"
+    },
+    "repo/docs/tour/design.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/design.md",
+      "sha256": "0736bce5f2130d79bd4c9e189e63c4c4f2f4fde13dbdf064d2a5e36c641f653e"
+    },
+    "repo/docs/tour/dimensions.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/dimensions.md",
+      "sha256": "a83a036304918e46c6bc233c88b6b4e5f42e8fd716cc98403bbb1566241de650"
+    },
+    "repo/docs/tour/editor-support.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/editor-support.md",
+      "sha256": "8396b73aba96cd897784408a7d41fccf5f5f328e2e13f942dedf916757a68739"
+    },
+    "repo/docs/tour/elk.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/elk.md",
+      "sha256": "9d2064acd26f641cd20fa9db160849b01c241068d16fa7f0f4e0f4b42f501d76"
+    },
+    "repo/docs/tour/experience.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/experience.md",
+      "sha256": "807ea6d352b850e44c00a07a02ee3dc0f9b81142e746e8d86c83d6f38aa88feb"
+    },
+    "repo/docs/tour/exports.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/exports.md",
+      "sha256": "fc3cf3996efc65cd5c906f8c6950a302bc82ee36fd05b4ba6f1ff5416ed4dd94"
+    },
+    "repo/docs/tour/extensions.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/extensions.md",
+      "sha256": "c34020c55d220434e2165c65442f1492731b5445705b98d5f7a3172058e773a5"
+    },
+    "repo/docs/tour/faq.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/faq.md",
+      "sha256": "bdd4109a93d94ad1a2d55d569d4cae36e9ff23fd5a7812fa6a0cdadb0f2887f3"
+    },
+    "repo/docs/tour/fonts.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/fonts.md",
+      "sha256": "f3797dda1c66079c036d5b71319cd2a60afa2d35e63a61ba2abaf889eac6e693"
+    },
+    "repo/docs/tour/future.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/future.md",
+      "sha256": "20a51ddcb5590b7565589f3d219eec5fcf8fedf8f038ad145a1c33b1495e05cd"
+    },
+    "repo/docs/tour/globs.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/globs.md",
+      "sha256": "fe1cad62d0c12d7d2b2e4158526800ca507e4782a04281fa9c817e2416ee1099"
+    },
+    "repo/docs/tour/grid-diagrams.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/grid-diagrams.md",
+      "sha256": "72a692cd1015c533f312f4823fee3dc869b11963164952f57dc5b6b0373cd7c9"
+    },
+    "repo/docs/tour/hello-world.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/hello-world.md",
+      "sha256": "dbed3a0e57a7134fbf0bcc0663468b1bb783246324bab34cc0c9da02af87a238"
+    },
+    "repo/docs/tour/help.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/help.md",
+      "sha256": "380c6cd5a75e5e7a3ba270b7eac6b4d60d9ecf5766bd8eaf9294f5e2e48fc656"
+    },
+    "repo/docs/tour/icons.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/icons.md",
+      "sha256": "7ae50170fba4f5070eab0477ac70993ca57e59e54cc2cb6360424175dd041a45"
+    },
+    "repo/docs/tour/imported-template.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/imported-template.d2",
+      "sha256": "338468e66effd66f17adce09f28260126f5f502f3623e7aea481622c0e20f6a3"
+    },
+    "repo/docs/tour/imported-template.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/imported-template.md",
+      "sha256": "29d654200fe48e6bcccc8e8cdabb562da1c6e0c4a007885d68f336ceb9755e4a"
+    },
+    "repo/docs/tour/imports-use-cases.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/imports-use-cases.md",
+      "sha256": "92a21b41691ec6402db70dc9eb90475a1e735824792474bd8e5d9c4c8e4b8860"
+    },
+    "repo/docs/tour/imports.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/imports.md",
+      "sha256": "0493d000e30410e49d519dee0c4f2210bf28df9e8ebfd4b5956dd2f1e8f37467"
+    },
+    "repo/docs/tour/install.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/install.md",
+      "sha256": "3ba6def2f464e307b34dcbd9d514678af5f19ddc03dbe8c67e9b3df3869eb492"
+    },
+    "repo/docs/tour/interactive.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/interactive.md",
+      "sha256": "aa2c1b47409500f95aa918c90748fef145d87c34594cdb347c02fa17b50a317b"
+    },
+    "repo/docs/tour/intro.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/intro.md",
+      "sha256": "676af769d1e8fd4306a57b94a4e7690c4e8c26a0df3d9bc3475e3ba6275de32c"
+    },
+    "repo/docs/tour/layers.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/layers.md",
+      "sha256": "877daab7227b71c0939bec5bcae641f3ab1114572329381e41ec7753d8c8c7bf"
+    },
+    "repo/docs/tour/layouts.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/layouts.md",
+      "sha256": "531b52be022374d575951a37d6592bc1d4275de01716502af1184e2a3e11b54e"
+    },
+    "repo/docs/tour/legend.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/legend.md",
+      "sha256": "020c33d6920c6d28a00d1e87e35a527647cfad133f51875c15d3289072bd22e4"
+    },
+    "repo/docs/tour/linking.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/linking.md",
+      "sha256": "4c53a422be2865a7edce5c6996111dea5319809e8343bae80a170ee0dc88886b"
+    },
+    "repo/docs/tour/man.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/man.md",
+      "sha256": "ce0aeb6ad254e7fcf3dce25015c84788a88bcc878dca37c64d80715db62ba1b9"
+    },
+    "repo/docs/tour/model-view.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/model-view.md",
+      "sha256": "1307afe7d61ab0cc9e2dd8fb8d680e1b5f397a63620bc3aee886aca907f1fd48"
+    },
+    "repo/docs/tour/models.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/models.md",
+      "sha256": "6ac44525fef0e3836630068d22ef55154f1b39049b6163b7f1deb837883590f5"
+    },
+    "repo/docs/tour/modular-classes.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/modular-classes.md",
+      "sha256": "bffc0aaec7ceb12bb5c78877951d29d0a9815f238e3558bc94e43550b1a1bb78"
+    },
+    "repo/docs/tour/nested-composition.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/nested-composition.md",
+      "sha256": "f4cef444bc3e29993432440275711179fd8dbc081539bcc9b0b74c7d558ce5db"
+    },
+    "repo/docs/tour/obsidian.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/obsidian.md",
+      "sha256": "18af6300c4c46a8592fea9b8bc0ab05d7e213300df84f4bfe46df7acee540d3a"
+    },
+    "repo/docs/tour/overrides.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/overrides.md",
+      "sha256": "085c3d8245c94d430f44e4bbb2f857d3911858cf5b4f878d7a96f6fdbc2bcec0"
+    },
+    "repo/docs/tour/positions.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/positions.md",
+      "sha256": "46a5525b25fe02219203fe9c079f6ee757e2486c6068d84e89532249704e457a"
+    },
+    "repo/docs/tour/scenarios.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/scenarios.md",
+      "sha256": "89027fa23288ec69f81bfd5bf716f9a926dbb0baa40e0ee373f5b7571b2bac6e"
+    },
+    "repo/docs/tour/sequence-diagrams.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/sequence-diagrams.md",
+      "sha256": "d27267656bdd243249b320b32d4d6ae5c33f984a418566bfa17028747cf5e5af"
+    },
+    "repo/docs/tour/shapes.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/shapes.md",
+      "sha256": "cbd29ece92aa910d8e1fecaa5057f2945941a6e6bcd5c726444b817fefc71734"
+    },
+    "repo/docs/tour/sketch.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/sketch.md",
+      "sha256": "8aea20079ff19a2968589dd4ae4f5b25777ebd54c0784ea21a62147a74a8c3d2"
+    },
+    "repo/docs/tour/sql-tables.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/sql-tables.md",
+      "sha256": "1266842b918a61c92e246baa0c93ae577fdaf3d56a2555bf045a2eceb4e2165f"
+    },
+    "repo/docs/tour/steps.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/steps.md",
+      "sha256": "f7f3abd100ff9c8c6da58f5459d49e71011cf35392c227c67a37b7272bf4b642"
+    },
+    "repo/docs/tour/strings.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/strings.md",
+      "sha256": "fbc3e6d9c2a5bd46203517069b32e3044ec58798048ff8d4ac817b4d77fb2b3b"
+    },
+    "repo/docs/tour/style.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/style.md",
+      "sha256": "98561e11056a66dc6dc8858160a3f51488c381c2ba968c9318f02cb30cea0a98"
+    },
+    "repo/docs/tour/tala.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/tala.md",
+      "sha256": "7b3dcba39bdd1ca5fb08c34ad811cb43617c58aa6be73e8ac9fc02319080b83e"
+    },
+    "repo/docs/tour/text.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/text.md",
+      "sha256": "be91e75fbe99e5e42c38902729785008b841649a0fb39e91ecd800b82c7f2733"
+    },
+    "repo/docs/tour/themes.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/themes.md",
+      "sha256": "3808df3c004310a793865a66457d27f129437ceb09b65b35e55589fd6d3e36b9"
+    },
+    "repo/docs/tour/troubleshoot.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/troubleshoot.md",
+      "sha256": "c7b005b5c934d9d8025c862481c89568f047f1e5290961ac18432bc81fe34edd"
+    },
+    "repo/docs/tour/uml-classes.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/uml-classes.md",
+      "sha256": "dc37bdb376beb92eb5bb3ec8d619b7430a0784cc0b94103a2ff3812b6a5fa0e0"
+    },
+    "repo/docs/tour/vars.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/vars.md",
+      "sha256": "37a1303b819717e58a027f52a561af8e6f60ce4e1938b8ad80fc71722dd79f50"
+    },
+    "repo/docs/tour/version-visualization.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/version-visualization.md",
+      "sha256": "fa518d61b2dae3222162b2ddc953af66d2c5445475f367e416c9d8a36ebfc9e6"
+    },
+    "repo/docs/tour/vim.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/vim.md",
+      "sha256": "59202186b655aa220e49281eb818c553013b8ba43e1e3566934604078fe32b68"
+    },
+    "repo/docs/tour/vscode.md": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/docs/tour/vscode.md",
+      "sha256": "784ac351ee6e4fbf3286de767f3b93056f8d24a040a26002fbb241ee9fb05b8d"
+    },
+    "repo/LICENSE.txt": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/LICENSE.txt",
+      "sha256": "cfa65f1e9cc7e5c9d3481df774b073608c0742c0aa3d64fa64e8e920d862bd60"
+    },
+    "repo/sidebars.ts": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/sidebars.ts",
+      "sha256": "2dd0266363c7ebee8dfae699504fee01304624695dfa07dec9ee3d0ba4ca5b0c"
+    },
+    "repo/static/bespoke-d2/animated.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/animated.d2",
+      "sha256": "d6b1de4d9a9175f7e54de56fd82ce30732d048088e2de3092f737e41fc77fc80"
+    },
+    "repo/static/bespoke-d2/c4-code.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/c4-code.d2",
+      "sha256": "0f29aa51fab8297d61b3354a915502affa716c26a6b1d7891a9466cf6f1ab605"
+    },
+    "repo/static/bespoke-d2/cat.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/cat.d2",
+      "sha256": "88ea7e70907d47b1bfc1165bd039f451a7cecc2c4dc78e817fae2d0eab7402bc"
+    },
+    "repo/static/bespoke-d2/chicken.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/chicken.d2",
+      "sha256": "e2f4841160cfbdafe769b22c78e02d9b90a1ca554b1ce8b143e6b9bdb0895e7c"
+    },
+    "repo/static/bespoke-d2/classes-3.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/classes-3.d2",
+      "sha256": "14aae1103b42ba2c78949866806f48d78fd64f22dc31dd061f1d3bda4984101e"
+    },
+    "repo/static/bespoke-d2/data.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/data.d2",
+      "sha256": "f82d1c41d9535a5b2cfe667644c1a3ba053a8ea9cafcf7f330abfd95d35877ea"
+    },
+    "repo/static/bespoke-d2/grid-row-dominant.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/grid-row-dominant.d2",
+      "sha256": "526bc0eeca5b673405819e638022cabfc077606b8f8952ea0fa31e857129d548"
+    },
+    "repo/static/bespoke-d2/imports-nested.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/imports-nested.d2",
+      "sha256": "5ef07eb69e35816f08b97f24acce6943548371af3f63a5d72944e7d1f0ae13f2"
+    },
+    "repo/static/bespoke-d2/lotr.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/lotr.d2",
+      "sha256": "abf9a303a0556755cc1bd44a265fe288c42b435f5359d101b93703f7c683f4a5"
+    },
+    "repo/static/bespoke-d2/serviceB.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/serviceB.d2",
+      "sha256": "a2d4c77375f101afd4b00ea1c03b0f556a898bff943b2df12b0fda701bf3d434"
+    },
+    "repo/static/bespoke-d2/styles-animated.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/styles-animated.d2",
+      "sha256": "ae2407073c215139c43346c94d9e6054daf325cb4aa805c0b9e7b3cbd07e85b6"
+    },
+    "repo/static/bespoke-d2/terminal-theme.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/terminal-theme.d2",
+      "sha256": "f3030ffbd8eeec6256d3d970b61c7030414d23ddce95bd082a4625b330de6e91"
+    },
+    "repo/static/bespoke-d2/tiktok.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/bespoke-d2/tiktok.d2",
+      "sha256": "0312439daab6da2d9ef1eba90ce3eb06e3fb7f091ddc1cca29b585380ebd3cfd"
+    },
+    "repo/static/d2/ascii-ex.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/ascii-ex.d2",
+      "sha256": "918e933251a2a8ee8f30acfdea66ca4f18636b6a58a656f4cd7cec6fcf3cfdda"
+    },
+    "repo/static/d2/border-label.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/border-label.d2",
+      "sha256": "a2dca03b1a020fcb58d202ce32a2326a522e647cd38e6bc2e9c5af74f87d9737"
+    },
+    "repo/static/d2/c4-code1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/c4-code1.d2",
+      "sha256": "99c92f47e98060f4f334340eb5d1c5d3acb39d4ad9e578c965198e15f91a596b"
+    },
+    "repo/static/d2/c4-code2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/c4-code2.d2",
+      "sha256": "d7b2b42be4017ef5bc76689101a0d050f0127d0d4c503481a7fc1a9d070f72b3"
+    },
+    "repo/static/d2/c4-legend.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/c4-legend.d2",
+      "sha256": "8e7ea92a33ad89684e8a2a159bb396c2b1be45f9857bfe04e85a31e93548290e"
+    },
+    "repo/static/d2/c4-models.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/c4-models.d2",
+      "sha256": "98ab2f3b224fd537b4714e904c2a3fb51ab928b0709123f53152a2dea6425829"
+    },
+    "repo/static/d2/c4-tags2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/c4-tags2.d2",
+      "sha256": "b30cf6f9584a7fb799ad53eeb759cc1c9b093b25ce608c0f232271061668bdc6"
+    },
+    "repo/static/d2/c4-tags3.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/c4-tags3.d2",
+      "sha256": "23a63af9849ff6f1e1a4f32a39e91da4c6d6dd4d0a18d5b3e479cc0f15fc3381"
+    },
+    "repo/static/d2/c4-view1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/c4-view1.d2",
+      "sha256": "eb178259219b94f653330f522454a9fed4172c5bcaca4c51fabd12eb0b94d4ef"
+    },
+    "repo/static/d2/c4-view2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/c4-view2.d2",
+      "sha256": "df6946ddc56931d0f6a61afbc1667b5baf401a7d2809431f8ec9c32f40273d36"
+    },
+    "repo/static/d2/c4.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/c4.d2",
+      "sha256": "e23580759198226fc3f8b44c0adef317d288c7dff1ecc0993ab137d48fc2c9e8"
+    },
+    "repo/static/d2/classes-1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/classes-1.d2",
+      "sha256": "880761006cc729a8c457e19d397a54ddde08baf40e35ee8367057edd4122893c"
+    },
+    "repo/static/d2/classes-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/classes-2.d2",
+      "sha256": "5ac9431bb121892b5a99d9cf283e860dc0ef8fa10f099483560903d61126fffb"
+    },
+    "repo/static/d2/classes.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/classes.d2",
+      "sha256": "41f982ad0139dcd84307e8761029176a024709226adcdfed54473298a78f8631"
+    },
+    "repo/static/d2/code-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/code-2.d2",
+      "sha256": "412b6a55bf0ba435e0ee7b56884541a39bb7d5ebab4e8d52052902b46fdf9dab"
+    },
+    "repo/static/d2/code.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/code.d2",
+      "sha256": "b74cb5b5c20e7d6da16412b1e1b3de7690fcc84041517391a1fa3d14eac633bc"
+    },
+    "repo/static/d2/connections-1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/connections-1.d2",
+      "sha256": "c2c10d2e71465cc97020b88ee6fdb53706f85b87b5fb6604e7fc47a08ad3718b"
+    },
+    "repo/static/d2/connections-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/connections-2.d2",
+      "sha256": "1409cbf203776f148ac40c9aba2f5a28df5a5e43fdc653860b3da0f4fa10003d"
+    },
+    "repo/static/d2/connections-3.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/connections-3.d2",
+      "sha256": "3c3c8c842b15a2973fa0b69044ecc31993c96cac30c302d072f582427bd90255"
+    },
+    "repo/static/d2/connections-4.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/connections-4.d2",
+      "sha256": "02cd1a28b92006bc3bea3531886ebeaf56acab9b4417ea6cebff666b0a9b47eb"
+    },
+    "repo/static/d2/connections-5.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/connections-5.d2",
+      "sha256": "ad3299ff48be3e07323e847facedf9f647de00323fc0b0b9ed8d6d43cbc18f2b"
+    },
+    "repo/static/d2/connections-reference.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/connections-reference.d2",
+      "sha256": "5a9f77a33fbb4606669e468e6e01ffc416032c64c70d0b06e915c196af7e4557"
+    },
+    "repo/static/d2/containers-1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/containers-1.d2",
+      "sha256": "607d8bdc8aa1039227d21c790f90626f20813e97a251cbd7f783c615a389c1ed"
+    },
+    "repo/static/d2/containers-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/containers-2.d2",
+      "sha256": "82958f85f0aaed5da80e55f83a09e6d0ac49509263196fefab3585f86cb5dc90"
+    },
+    "repo/static/d2/containers-3.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/containers-3.d2",
+      "sha256": "7ad8947b08b95be2f9a6c550ad584f9b508f704a0bba3b16fb8b545a97e9ae03"
+    },
+    "repo/static/d2/containers-underscore.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/containers-underscore.d2",
+      "sha256": "ab014b2fa1ca68045beadf25fe8ef1f05d994fe650bf3c011504f02d8e88be21"
+    },
+    "repo/static/d2/defaults.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/defaults.d2",
+      "sha256": "cff68539726375387ed13aa6f815d47a4e27c91a33c8385bced5b7c9497f54ce"
+    },
+    "repo/static/d2/dimensions.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/dimensions.d2",
+      "sha256": "40b257972d73f9dc534848531b0b1c4ccd633f6f7b7af2fa1e8b241ddd48d7b7"
+    },
+    "repo/static/d2/direction-right.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/direction-right.d2",
+      "sha256": "90f728f3bc52212035eaa2577af7c5ae5290e34c5fe7110e8ccb49dd6817d8dc"
+    },
+    "repo/static/d2/direction-up.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/direction-up.d2",
+      "sha256": "28cc913095ffdaf526fcb17d3b2c4cf978357d1e46b794c1741b19544ee7ad92"
+    },
+    "repo/static/d2/globs-casing.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-casing.d2",
+      "sha256": "be8735f6e26377851c374c3d9507fdf6e92585eab18e1db72b7ede21d5742a4c"
+    },
+    "repo/static/d2/globs-connections.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-connections.d2",
+      "sha256": "59439543a39aa73e124667642782a68f806cea642bd49337a02da41bb213be5b"
+    },
+    "repo/static/d2/globs-filter-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-filter-2.d2",
+      "sha256": "3df69b7b4ab32c792e619f66bfb3a7ccd939520b16706232739dd013f642f04c"
+    },
+    "repo/static/d2/globs-filter-3.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-filter-3.d2",
+      "sha256": "03f0329e8509d036ca83e30155270f2c92b03ebc547d703e1642def266cd6842"
+    },
+    "repo/static/d2/globs-filter-and.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-filter-and.d2",
+      "sha256": "0c501d762cac8ad0da5b8d49c28403888e9f8464b71e8d88862a66594d2e620a"
+    },
+    "repo/static/d2/globs-filter-endpoints.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-filter-endpoints.d2",
+      "sha256": "6960aefc2ea5e1fa49fab1be9c48c562d86811c3ab2416fceb4a0999ca4d4b34"
+    },
+    "repo/static/d2/globs-filter-glob-value.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-filter-glob-value.d2",
+      "sha256": "5cbcec429eb77cc47f7f3fc138ab1cf306bb774b8b9fe3ac4956f1e37cb4ba24"
+    },
+    "repo/static/d2/globs-filter.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-filter.d2",
+      "sha256": "f4ffb8852a3a8a8916d601bee9532367ab96ea558a5e543bdc77200cf18be269"
+    },
+    "repo/static/d2/globs-indexed-connections.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-indexed-connections.d2",
+      "sha256": "964df2a6e00c09137b375aae49b88f26896c2464e7f9b7356ddd5e80aee65a0a"
+    },
+    "repo/static/d2/globs-intro.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-intro.d2",
+      "sha256": "8fc6de1ee55d624e3fd0e3d03689a224566a01d8c9c8b10b4ec2e27245c4a5da"
+    },
+    "repo/static/d2/globs-inverse-filter.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-inverse-filter.d2",
+      "sha256": "bda0a2fe37c06cef19fddac47ae643e4dff3c3f148f0915e320fea115d0f7b5f"
+    },
+    "repo/static/d2/globs-lazy.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-lazy.d2",
+      "sha256": "d9dbb19eafa8fa159f71c8d8a9e0fc1a1c7c69a67b40b3de67564ff50b49c211"
+    },
+    "repo/static/d2/globs-multiple.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-multiple.d2",
+      "sha256": "da3c97942be92827629c50dd290fe98978d024b14031b2e6f48cc377e4d80bfb"
+    },
+    "repo/static/d2/globs-nested.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-nested.d2",
+      "sha256": "2d5c9f94e7681baba533366420ea0b8977b6f6d84deeac8494d4099d0871e0fc"
+    },
+    "repo/static/d2/globs-recursive-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-recursive-2.d2",
+      "sha256": "d9d0ef8b0e90c2ccc47a42f1d5db3c13d0df957b7a9e793517665d5d690119fa"
+    },
+    "repo/static/d2/globs-recursive.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-recursive.d2",
+      "sha256": "d8a22980b2d7704d55ceab2d3488c5c3e5d0bf86fe24115708b3f4f16d78e2b7"
+    },
+    "repo/static/d2/globs-scope.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/globs-scope.d2",
+      "sha256": "e75b73d8c949c7c6d7f326b7a9a2c1dd608c6d25952ba80ee24127e484a4816f"
+    },
+    "repo/static/d2/grid-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-2.d2",
+      "sha256": "c8cda4c35effcbf9d9533c11c32cbcf25d7203597249b6fb6534a214c159d1c4"
+    },
+    "repo/static/d2/grid-3.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-3.d2",
+      "sha256": "f3f5f70886e5730b64d68b36e9eb8fbe49bb6bf608b05b769c3f43a1613d23b2"
+    },
+    "repo/static/d2/grid-4.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-4.d2",
+      "sha256": "cf86df758f611abb1bedde6c47efe64297e53f3e642927482615b30c22bf7c2b"
+    },
+    "repo/static/d2/grid-aligned.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-aligned.d2",
+      "sha256": "6ba260dfc1d74d03146cb30f1cfc451da2a1fb2b85165a9ed6fb5ac749177090"
+    },
+    "repo/static/d2/grid-connected.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-connected.d2",
+      "sha256": "f4241cd74e24740a92928593661ac36862d3beaab2c1444b91d8a1bea2fea8a7"
+    },
+    "repo/static/d2/grid-connections.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-connections.d2",
+      "sha256": "23aa7984559b52c393a093f89a2d486bf4d66fd4e365846172696bc899864a91"
+    },
+    "repo/static/d2/grid-dimensions.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-dimensions.d2",
+      "sha256": "ba7065a37b240837b7ae5ef4d42bdfa6f6be67a3ba23cbcf3f77c37bd6fcf753"
+    },
+    "repo/static/d2/grid-fill.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-fill.d2",
+      "sha256": "7c529981a66bb19ac58fa8da6b402ca8d44347b966c60e06d4a82aaaccf5cf61"
+    },
+    "repo/static/d2/grid-nested-grid.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-nested-grid.d2",
+      "sha256": "34908c5f6fa37366cf2e7792285d1335e6094330b0fda5c49af39637e37421be"
+    },
+    "repo/static/d2/grid-padding-1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-padding-1.d2",
+      "sha256": "ab195ea07c4043da4c73434c0b2c924dd4a3d5c5d7544f345302c1de95c0f1de"
+    },
+    "repo/static/d2/grid-padding-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-padding-2.d2",
+      "sha256": "57456ca66f37b755a1102ee39dc262dd5456282d5d0d0b8ab31cad1b89210242"
+    },
+    "repo/static/d2/grid-unaligned.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid-unaligned.d2",
+      "sha256": "9399d6887951dae271554e2f1793dcda6b771b5acc034118c8de7e2ade1d2c69"
+    },
+    "repo/static/d2/grid.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/grid.d2",
+      "sha256": "d87717272623eb9f6b55920f843b1808b7bde0e75beb9ee730b669e500fea262"
+    },
+    "repo/static/d2/hello-world.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/hello-world.d2",
+      "sha256": "be0e07b77de7b0e733a5392683e074e335c7ec2100b8c044738412f39b841695"
+    },
+    "repo/static/d2/icon-placement.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/icon-placement.d2",
+      "sha256": "c3d24308bf49984b17813d30ae94c9f7a453416b85a9a2dfa7e2effeb7fe914e"
+    },
+    "repo/static/d2/icons-1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/icons-1.d2",
+      "sha256": "7edf96edeb0a50ab960c96440883a0b9da9ff6d881e471c871cc5480be325b91"
+    },
+    "repo/static/d2/icons-image.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/icons-image.d2",
+      "sha256": "458506d05a19f8648978d40f54632c068f1424a97f6a12a2a783a62f2303300c"
+    },
+    "repo/static/d2/imports-classes-main.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/imports-classes-main.d2",
+      "sha256": "adbda5113c44ac6f7093abc64ee105d34080c5cf04f157770d0a789489059005"
+    },
+    "repo/static/d2/imports-mv-access-view.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/imports-mv-access-view.d2",
+      "sha256": "77d494d5c3902a47433e5df1f8d5d4609afe5c71a2c55d83fbe5bde055a9a17e"
+    },
+    "repo/static/d2/imports-mv-ssh-view.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/imports-mv-ssh-view.d2",
+      "sha256": "58aaa1ebe69faaedcd7a56211257ce87b3e739c7ee46dd763d96fd3486bbcb3f"
+    },
+    "repo/static/d2/imports-normal-x.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/imports-normal-x.d2",
+      "sha256": "9b5dbe9dd0070a98f37c928d294578c6bfd65353a08518bd51cd8d625e06e05f"
+    },
+    "repo/static/d2/imports-normal.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/imports-normal.d2",
+      "sha256": "ad152710bd3ac51af2dc47fb3a510dfaec65c1b9771ea60d1fa1e2978ed13c53"
+    },
+    "repo/static/d2/imports-targeted.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/imports-targeted.d2",
+      "sha256": "d05ffea471db1550c7cef8caf72d80e6ddf8221791c332bccb1a2c096e44b63c"
+    },
+    "repo/static/d2/imports-template.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/imports-template.d2",
+      "sha256": "c75c4fe8e349611640581790a3bbf5a579dfb10edbd6c5068b56de76956d4956"
+    },
+    "repo/static/d2/imports-vv-history.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/imports-vv-history.d2",
+      "sha256": "95faf8ff1d81df9e1918a0dc912c521d69b73dd74293578b70f226fb9bedd569"
+    },
+    "repo/static/d2/imports-wrapper-template.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/imports-wrapper-template.d2",
+      "sha256": "f083d77a6b53988f6692b06b6c5cd82e861f06dbd1bd857fb29611e2b24bc4a1"
+    },
+    "repo/static/d2/japan.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/japan.d2",
+      "sha256": "2cac4f655476af50273e9b1085e8b56eff9105a47b3c73bc974d3f7d86a978c0"
+    },
+    "repo/static/d2/language.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/language.d2",
+      "sha256": "050c2fb85554e70824644db34d7f31a229e5ffccf13edae4737cc8423f507941"
+    },
+    "repo/static/d2/latex.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/latex.d2",
+      "sha256": "ee222658b9411a54accc805c6f70ec51255b69244e49ba1e28c3ca988e3b9a7f"
+    },
+    "repo/static/d2/legend-hidden.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/legend-hidden.d2",
+      "sha256": "5c5455f4f750f505cba66046e444c9a05f4c7760474a6c369bf8d6a037ef6dfb"
+    },
+    "repo/static/d2/legend.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/legend.d2",
+      "sha256": "c5d8450df00f5368c1d80fea80be61168805e50f523191d3e8963c9862b2533a"
+    },
+    "repo/static/d2/links.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/links.d2",
+      "sha256": "46d53c847102a726b2227e1cc4eaed13134c08849bfe3bb89363035c4cb41efe"
+    },
+    "repo/static/d2/markdown-label.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/markdown-label.d2",
+      "sha256": "14bb209ce7d688d184db74b318cd4121b698fb70e17f8f07180b4bc693a632ca"
+    },
+    "repo/static/d2/markdown.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/markdown.d2",
+      "sha256": "6ac09218844b04376006a1bc5fc397327254a1997aa72ee141696efe506a7e73"
+    },
+    "repo/static/d2/md-table.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/md-table.d2",
+      "sha256": "bec6708b296c3e2c2a0e0c622070d948b398f96cd867f4e16bf8d01a6a20a291"
+    },
+    "repo/static/d2/models.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/models.d2",
+      "sha256": "33e19b9779cdd790d26aed092996306eaf0062cc1583ec59d31192e869d351c0"
+    },
+    "repo/static/d2/multiple-classes.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/multiple-classes.d2",
+      "sha256": "79bc740eff5902c8763d6cbc2fcb8ef67f4f7a5e67b49b333826703268ff7b37"
+    },
+    "repo/static/d2/near-constant.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/near-constant.d2",
+      "sha256": "d77437a1081a4b2d0a5c4fb09c5dd7f5a825eb67490972bd1f110559c68aa4a4"
+    },
+    "repo/static/d2/near-container.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/near-container.d2",
+      "sha256": "a68822bae2b820b3fc71761f5176fa378febadcbb51a340634f89b538ff8febf"
+    },
+    "repo/static/d2/near-explanation.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/near-explanation.d2",
+      "sha256": "9c84c89d99c8bbbb383b5b82a13aeee049d968e723f27568d13d8e585b855b0d"
+    },
+    "repo/static/d2/near-label-icon.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/near-label-icon.d2",
+      "sha256": "3b147acfe38a82a7c39740247fedb6b5bf1d3573d013db03736f56bd244804f7"
+    },
+    "repo/static/d2/non-markdown-text.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/non-markdown-text.d2",
+      "sha256": "306c392ca23e79511236f31fd1258142eb089e94c3bb3ba5d35da3fd37a12bbb"
+    },
+    "repo/static/d2/null-attribute.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/null-attribute.d2",
+      "sha256": "dccf50088e2ca6c4e144ce233e0734d7fc79446cac968b969c25d69fbf0688f8"
+    },
+    "repo/static/d2/null-basic.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/null-basic.d2",
+      "sha256": "69b8b9c2bee084b6a6dfc7840e7c8836dc1c55efd592f3711b99a61c6288e884"
+    },
+    "repo/static/d2/null-connection.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/null-connection.d2",
+      "sha256": "12e83c99bd0b7281899612daa371a42c6658d625d0f59cc2e0a9229c92c6840c"
+    },
+    "repo/static/d2/null-implicit-connection.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/null-implicit-connection.d2",
+      "sha256": "26182b6ae1ae0919beadc89c58365e8a389b8155bf32f94e55bc3e2460c4d14b"
+    },
+    "repo/static/d2/null-implicit-descendant.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/null-implicit-descendant.d2",
+      "sha256": "fff8a408539588719ea2a53cdba51af84b24873fa9dc8797c60eecb3879b7edb"
+    },
+    "repo/static/d2/ordered-classes.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/ordered-classes.d2",
+      "sha256": "1c5ca76073b49c67b0c292d4faa364db27fa50615b77863d68485898ed68c16a"
+    },
+    "repo/static/d2/overrides-1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/overrides-1.d2",
+      "sha256": "39fd44841d7504c6454d222fb01bc26570455b4252c8eed880a24bec4e38ee62"
+    },
+    "repo/static/d2/overrides-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/overrides-2.d2",
+      "sha256": "87986dd4323ffb40f52590e0571463e473fc352a7f52f1fe23c427decd2a7bfa"
+    },
+    "repo/static/d2/people.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/people.d2",
+      "sha256": "58cac7e1987c8c53ad9b936d4634cd4f4495b240e1255c13d00e93a5a8717ccb"
+    },
+    "repo/static/d2/pill.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/pill.d2",
+      "sha256": "3459166fe914d22ad6ca22a1fddc4a5542766e7530fa1d8cd522a4993642d371"
+    },
+    "repo/static/d2/sequence-diagrams-1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/sequence-diagrams-1.d2",
+      "sha256": "3324ada0e70fcd644125ee7349fa43ad924ba58853e47c10878789ae5d03e2f1"
+    },
+    "repo/static/d2/sequence-diagrams-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/sequence-diagrams-2.d2",
+      "sha256": "6bc9a06327c79f4da91ab01beaa8e8f462207e2d9302fc2e854b67e1736f0e7a"
+    },
+    "repo/static/d2/sequence-diagrams-3.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/sequence-diagrams-3.d2",
+      "sha256": "2c6faf17ec14bf811ef4d5d90c6d90bb96e82a48183bfd40304a586f29a7f722"
+    },
+    "repo/static/d2/sequence-diagrams-4.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/sequence-diagrams-4.d2",
+      "sha256": "9cdbee1882fb89d32e06d054dfbfff9da7bf12b9d82c2e9a27b200fe01c14c5c"
+    },
+    "repo/static/d2/sequence-diagrams-group.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/sequence-diagrams-group.d2",
+      "sha256": "12d621907da3c1f9d8910bed579f74daf56c5a47900a212a625d81703d1e7fae"
+    },
+    "repo/static/d2/sequence-diagrams-lifeline.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/sequence-diagrams-lifeline.d2",
+      "sha256": "fe6c584b168a0e47ef70fe4d014e7343c68a428c3d6d016e38534beb623e8d5c"
+    },
+    "repo/static/d2/sequence-diagrams-note.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/sequence-diagrams-note.d2",
+      "sha256": "0b5aa18d7ce0362cdfdad72e57431b33aa9711d864a4669d2e01de36cbae0f67"
+    },
+    "repo/static/d2/sequence-diagrams-scope.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/sequence-diagrams-scope.d2",
+      "sha256": "43c212abd37be438134a8c40950ddd83e8320feb286d86073bce4643fd6efa65"
+    },
+    "repo/static/d2/sequence-diagrams-self.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/sequence-diagrams-self.d2",
+      "sha256": "3819475e356c6059f5ed7c9131ccb828a557841d98b5755294475968a124362f"
+    },
+    "repo/static/d2/shapes-1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/shapes-1.d2",
+      "sha256": "8cecc9be9d535a25a65fc9c2830e234f1c259fe30e4c0c76b8fecf174a27e958"
+    },
+    "repo/static/d2/shapes-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/shapes-2.d2",
+      "sha256": "76f735944226b2249f55b87ef75b6c7163dadcae4b2858634c3d51a556073e7e"
+    },
+    "repo/static/d2/shapes-3.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/shapes-3.d2",
+      "sha256": "51cd6e26327719e7bc598fe3237d39f4f071567e3424d0f53d1487e30d028e0e"
+    },
+    "repo/static/d2/strings-1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/strings-1.d2",
+      "sha256": "bd3f84f462d946264214a22c8b37255773d6de841b3e9844c1103468dd70de98"
+    },
+    "repo/static/d2/strings-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/strings-2.d2",
+      "sha256": "f57e7e312d83ab699ffe72887332ca49b9aaa05c3dfced55fda774208924ab09"
+    },
+    "repo/static/d2/style-classes-1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/style-classes-1.d2",
+      "sha256": "b589613332f3c1f4fe52d1ebeeeb6b850c0ee23bdfb140bf7615c1ae129af6a3"
+    },
+    "repo/static/d2/style-classes-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/style-classes-2.d2",
+      "sha256": "c0cfc24e6a063a1522fb5d79e67e9f665d986dc1abf29c4b038f29ba9f1e7b8b"
+    },
+    "repo/static/d2/styles-3d.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-3d.d2",
+      "sha256": "1624ceae386f12e8350f86ccc42c5581b95ae6b5ffb7c159416fb66c5b0b4d9b"
+    },
+    "repo/static/d2/styles-base.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-base.d2",
+      "sha256": "1576a2314c7fcd5156713c340cb032810f3287db72636d64f9645695a5a290d6"
+    },
+    "repo/static/d2/styles-border-radius.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-border-radius.d2",
+      "sha256": "112893eb464b086dec18c04f283727b066ae5f65c918650b4c25ba732daf6819"
+    },
+    "repo/static/d2/styles-double-border.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-double-border.d2",
+      "sha256": "7561df234ae12208e28b50785d60e7cbab5e6c0670990b9cf97c848fa61fa0bc"
+    },
+    "repo/static/d2/styles-fill-pattern.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-fill-pattern.d2",
+      "sha256": "2245bb1b521b713a9f78da8244330282e280ee0c4f6e9829a342f0ff2a0d27ae"
+    },
+    "repo/static/d2/styles-fill-transparent.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-fill-transparent.d2",
+      "sha256": "1e22f0a0430367f516ff5ce38c4bc40a04147911de9967ab234d02a205bb387b"
+    },
+    "repo/static/d2/styles-fill.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-fill.d2",
+      "sha256": "a355a4f0a053d7d9c45df584de836a43b8bb6963a1e5c29839e27d8067bf8e82"
+    },
+    "repo/static/d2/styles-font-color.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-font-color.d2",
+      "sha256": "fbb5b843b0c426de3e929e758e952c79e9da36623312e1a6b5b73aad10e1e8ef"
+    },
+    "repo/static/d2/styles-font-size.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-font-size.d2",
+      "sha256": "c35ee877fddb1e4773c54297435f99d83cba8977f13b31d0520d34c67c30f78b"
+    },
+    "repo/static/d2/styles-font.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-font.d2",
+      "sha256": "c93f130b51189be3e90e7a0d1fe02d585dd407d8d5a453d8c5717b581cc2a73e"
+    },
+    "repo/static/d2/styles-multiple.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-multiple.d2",
+      "sha256": "6787cd093c1261f1881052acad709e9c58102ec7e11e8c126d5f5fdfcf9d41d4"
+    },
+    "repo/static/d2/styles-opacity.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-opacity.d2",
+      "sha256": "d1e3551fa412d1e94ceb9dba61d0a8eaff1ef3ecae360066b92fb63b67131499"
+    },
+    "repo/static/d2/styles-root.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-root.d2",
+      "sha256": "b41dcaa15b16dfafe749bc3e2fb6ce8e0bb513a34778389ae5bfc8c32c696b2a"
+    },
+    "repo/static/d2/styles-shadow.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-shadow.d2",
+      "sha256": "c307219d6b39a1af3ccd753ace2646adfe076c25a95f4f46b3f87d7cf9a10c44"
+    },
+    "repo/static/d2/styles-stroke-dash.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-stroke-dash.d2",
+      "sha256": "9af92828d3aa2b98d7a2a5e6ce8e3926d8f556df9d6f83bf7be13af9d180fd11"
+    },
+    "repo/static/d2/styles-stroke-width.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-stroke-width.d2",
+      "sha256": "36b63f40578814152e6d4a0b8a94e68360b1d6265cf4a2a61736445814d60070"
+    },
+    "repo/static/d2/styles-stroke.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-stroke.d2",
+      "sha256": "2f97cf008b1daa535f6e5cdd48b612084683f8f2f762069e75aec269773a962b"
+    },
+    "repo/static/d2/styles-table-color.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-table-color.d2",
+      "sha256": "74c6e4d883ade8f84436dc15cb7d291c3167b6242e7486651ea57ff2db687908"
+    },
+    "repo/static/d2/styles-table-fill.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-table-fill.d2",
+      "sha256": "0f9843af831ce15cba89829f276007b56a9be3180bddd9169d4ba7b88ae69170"
+    },
+    "repo/static/d2/styles-table-stroke.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-table-stroke.d2",
+      "sha256": "21fbcb77398581a1789c703b5ae89e7f7f6ad28604431a6419adf372c15440fd"
+    },
+    "repo/static/d2/styles-text-decoration.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-text-decoration.d2",
+      "sha256": "6f2f12477f00760b365cce16229a74913ffb6ec785d73b2fb3cc5174805b07a4"
+    },
+    "repo/static/d2/styles-text-transform.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/styles-text-transform.d2",
+      "sha256": "53bb02a4c2b9e47c419067c0debaa2ed65c42017682637f1fa5f4078ff32acc5"
+    },
+    "repo/static/d2/suspend-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/suspend-2.d2",
+      "sha256": "a88d3222a486217dc6c6372956080b4e9775c7c160778edfceb61c0036c3967f"
+    },
+    "repo/static/d2/suspend-3.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/suspend-3.d2",
+      "sha256": "5c98661f0c03decdfcb948402eafa87efcbf16f8c3661300025e194db8e4b378"
+    },
+    "repo/static/d2/suspend-4.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/suspend-4.d2",
+      "sha256": "80daa8bdc9abbfe153035ab156ca07937b5721ae8dedcea6f4fd3b2394a3a199"
+    },
+    "repo/static/d2/suspend.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/suspend.d2",
+      "sha256": "7f7f30fe90c15443b1a0ca24f1973e2ae96d02cd60491682cc936f24033b53a5"
+    },
+    "repo/static/d2/table.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/table.d2",
+      "sha256": "64c0076817350aa42ae6878f205b986d59947a961657768b49a651abf571c240"
+    },
+    "repo/static/d2/tables-1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/tables-1.d2",
+      "sha256": "77e90c8e81d36454c2a0e1bba05821e266447e00d24626f131b8fc17d59873e1"
+    },
+    "repo/static/d2/tables-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/tables-2.d2",
+      "sha256": "fdaea7e889bf4a667a033a2f21c0c28dfdff8f54f2e64fabe0c73c2fe3024ea3"
+    },
+    "repo/static/d2/tables-3.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/tables-3.d2",
+      "sha256": "f4a59fb5ba91e546bfc5373512556210c07b4062774722a342519ca5f908db10"
+    },
+    "repo/static/d2/text-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/text-2.d2",
+      "sha256": "2d37bc1037c339a7d0621db5e336813b13830adcbdd2099fbc8e74dec537de9d"
+    },
+    "repo/static/d2/theme-table-2.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/theme-table-2.d2",
+      "sha256": "4572bb0b697e1c026b5f0a0401e8b79ca8f0958c3fc0c16e319e362cf457c199"
+    },
+    "repo/static/d2/theme-table.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/theme-table.d2",
+      "sha256": "7177a051713a306062ada5be883ef28d39f1a69ee6d147ec5c90d334a26d1805"
+    },
+    "repo/static/d2/tooltip-near.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/tooltip-near.d2",
+      "sha256": "160133bcf82d472d3bdfa88850fff5c619b15e1601c53c7ef84bd858e639226b"
+    },
+    "repo/static/d2/tooltip.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/tooltip.d2",
+      "sha256": "4e67ff88fb181a632f12d3495a887bc19805c05b8cc6f3c783d19acae203d2b3"
+    },
+    "repo/static/d2/unicode.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/unicode.d2",
+      "sha256": "1d320eca2afc5aee9c186db361291ec6cbf88b10705cdbb3028bd8860fd19aad"
+    },
+    "repo/static/d2/users-current.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/users-current.d2",
+      "sha256": "ebead20ba778152b638e5d72cb170b2e4404fff05163b75e9d3e0efab3cf7ba3"
+    },
+    "repo/static/d2/users-v0.1.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/users-v0.1.d2",
+      "sha256": "fc26a9848a5bbba4055e5ba9a7da1bb93ced931d665c567791b23599187fcb70"
+    },
+    "repo/static/d2/vars-config.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/vars-config.d2",
+      "sha256": "d0798a9c21fc281e57be070867de58721eb4187e4d4e77eaddf3db40a4e64e78"
+    },
+    "repo/static/d2/vars-escaped.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/vars-escaped.d2",
+      "sha256": "775a375ed7fa0946ad2465033e2e9115e3d45afdcef36c26abfffdb873804cbc"
+    },
+    "repo/static/d2/vars-intro.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/vars-intro.d2",
+      "sha256": "b5816d2d6f43d729a8711aeebef9a4cd6914436772035ee30141ca338e9a3413"
+    },
+    "repo/static/d2/vars-nested.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/vars-nested.d2",
+      "sha256": "4a57c80e35f60be0110f42002b3fc5e9cc7524d61a75de8d65fc88ece05ef236"
+    },
+    "repo/static/d2/vars-scoped.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/vars-scoped.d2",
+      "sha256": "7662f9125eedec84a93ce7bfce0979cdc3688438f5224a903cba0c1700b7bc53"
+    },
+    "repo/static/d2/vars-spread.d2": {
+      "url": "https://github.com/terrastruct/d2-docs/blob/5530a5ec52f8df7b8a6557a4d554c18fbfe08227/static/d2/vars-spread.d2",
+      "sha256": "11ce0c48678628866f3d9bc1d1d58e66a8fd43fe2931588a2b7ebd529c166399"
+    }
+  }
+}

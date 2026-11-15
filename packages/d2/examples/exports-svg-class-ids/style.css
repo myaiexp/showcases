@@ -1,0 +1,6 @@
+/* SVG class IDs: the shape picked by its base64 class gets an outline glow */
+[data-example='d2/exports-svg-class-ids'] {
+  .dd-picked > .shape {
+    filter: drop-shadow(0 0 6px var(--accent)) drop-shadow(0 0 2px var(--accent));
+  }
+}
