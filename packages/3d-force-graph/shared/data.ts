@@ -111,9 +111,49 @@ export function team(): SampleGraph {
   ];
   return {
     nodes: people.map(([name, group]) => ({ id: name, name, group, val: name === 'Ada' || name === 'Fay' || name === 'Kai' ? 6 : 1 })),
-    links: pairs.map(([source, target, name]) => ({ source, target, name })),
+    links: pairs.map(([source, target, name], i) => ({ source, target, name, value: 1 + ((i * 7) % 4) })),
   };
 }
 
 /** A palette that reads on the dark scene background. */
 export const PALETTE = ['#e4572e', '#29335c', '#f3a712', '#669bbc', '#a8c686', '#8e5572', '#2a9d8f'] as const;
+
+/** How many links touch each node id. Call it before `graphData`, while link ends are still ids. */
+export function degrees(data: { links: { source: unknown; target: unknown }[] }): Map<string | number, number> {
+  const deg = new Map<string | number, number>();
+  const end = (e: unknown): string | number => (typeof e === 'object' && e !== null ? (e as SampleNode).id : (e as string | number));
+  for (const l of data.links) {
+    for (const e of [end(l.source), end(l.target)]) deg.set(e, (deg.get(e) ?? 0) + 1);
+  }
+  return deg;
+}
+
+/** The id of a link end, whether the library has already replaced it with the node object or not. */
+export function endId(e: unknown): string | number {
+  return typeof e === 'object' && e !== null ? (e as SampleNode).id : (e as string | number);
+}
+
+/** Node and link shapes for typing a graph: `new ForceGraph3D(el) as ForceGraph3DInstance<TNode, TLink>`. */
+export interface TNode {
+  index?: number;
+  id: string | number;
+  name?: string;
+  group?: number;
+  val?: number;
+  color?: string;
+  x?: number;
+  y?: number;
+  z?: number;
+}
+export interface TLink {
+  source: string | number | TNode;
+  target: string | number | TNode;
+  value?: number;
+  name?: string;
+  type?: string;
+  color?: string;
+}
+export interface TData {
+  nodes: TNode[];
+  links: TLink[];
+}

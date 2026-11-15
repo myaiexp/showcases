@@ -24,6 +24,19 @@
 //   200 px card, `zoomToFit` once the layout has settled (`onEngineStop`) or after `warmupTicks`.
 // - `new ForceGraph3D()` takes no type arguments (the generics sit on the interface): type the
 //   data with a cast, `new ForceGraph3D(el) as ForceGraph3DInstance<Node, Link>`.
+// - `cameraPosition()` in a frame loop ends a running `zoomToFit` tween (it jumps to the tween's
+//   end first, then the loop's own position wins), so an orbiting card that also fits would keep
+//   the library's 1000-unit start distance. `shared/camera.ts` `spin()` fits at once, then sways.
+// - `zoomToFit` reads each object's `matrixWorld`, which only a render updates: right after nodes
+//   or links were rebuilt (a prop change) it measures a bbox at the origin and zooms in on nothing.
+//   Call `graph.scene().updateMatrixWorld(true)` first (`spin().fit()` does).
+// - `linkDirectionalParticleOffset` is read once per particle, when it first moves: changing it
+//   later does nothing. Set `linkDirectionalParticles(0)`, then the count again on a later tick.
+// - `linkDirectionalParticleThreeObject`: the cycling particles take only the returned object's
+//   `geometry` and `material` and build their own Mesh (so a Sprite or a Group does not work);
+//   `emitParticle` adds the returned object itself. Return plain Meshes.
+// - `zoomToFit` measures geometries only: nodes that are pure CSS2D/CSS3D objects have none, so
+//   nothing fits (a CSS2D label on an extended sphere does count the sphere).
 // - The nav info footer ("Left-click: rotate, …") shows by default: cards hide it.
 import type { MountContext } from '@/types.ts';
 import type { PerspectiveCamera } from 'three';
