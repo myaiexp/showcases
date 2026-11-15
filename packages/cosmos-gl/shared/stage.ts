@@ -29,6 +29,20 @@
 // - A NaN in a per-point or per-link array (colors, sizes, shapes, stroke widths) means "use the
 //   config default"; the library resolves it at draw time. Headless software GL draws few frames,
 //   so a 700 ms transition can still look half done in a screenshot.
+// - Hover, click and context-menu picking go to a point first: a point's pick area is wider than
+//   it is drawn, so a link between two close points can never be hit. Link examples use a sparse,
+//   fixed layout (static-layouts.ts `web`) and cards aim the ghost at the middle of long links.
+// - d3-zoom keeps its transform on the canvas element, and a rebuilt graph reuses the device's
+//   canvas, so it starts from the previous graph's pan: call shared/reset-zoom.ts before build().
+// - spaceToScreenRadius converts a point radius, not a world distance: it ignores the zoom unless
+//   scalePointsOnZoom is on. enableZoom: false only blocks wheel, double-click and pinch; dragging
+//   still pans, and zoom()/fitView() still work.
+// - The per-call `enableSimulation` argument defaults to true for fitView, fitViewBy* and
+//   zoomToPointByIndex (the docs are right), but setZoomLevel()/zoom() pass nothing and follow the
+//   enableSimulationDuringZoom config. Wheel zoom (userDriven) always follows the config.
+// - fitViewByPointPositions takes a plain number[], not a Float32Array, in the type definitions.
+// - Cards fake a mouse drag with shared/fake-drag.ts (mousedown on the canvas, then window moves),
+//   and the held right button with shared/right-hold.ts (pointermove with buttons = 2).
 // - Headless Chrome (SwiftShader) is slow enough that the gallery benches most cards; check a
 //   card by importing its main.ts and mounting it with { preview: true } by hand.
 import type { Device } from '@luma.gl/core';

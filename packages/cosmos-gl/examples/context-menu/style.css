@@ -1,0 +1,37 @@
+[data-example='cosmos-gl/context-menu'] {
+  .cm-menu {
+    position: absolute;
+    z-index: 5;
+    min-width: 140px;
+    padding: 4px;
+    border-radius: 6px;
+    background: #14161c;
+    border: 1px solid #3a3f4b;
+    box-shadow: 0 6px 18px rgb(0 0 0 / 0.5);
+    font-size: 12px;
+    color: #e6e8ee;
+  }
+  .cm-title {
+    padding: 3px 8px 4px;
+    color: #8c93a3;
+    font-size: 11px;
+    border-bottom: 1px solid #2a2e38;
+    margin-bottom: 3px;
+  }
+  .cm-item {
+    display: block;
+    width: 100%;
+    padding: 4px 8px;
+    border: 0;
+    border-radius: 4px;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+  .cm-item:hover,
+  .cm-item[data-active] {
+    background: #2d3342;
+  }
+}

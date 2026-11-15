@@ -1,5 +1,5 @@
 // A shared device and graph hand-over for examples that rebuild their graph
-import { Graph, type GraphConfig } from '@cosmos.gl/graph';
+import type { Graph } from '@cosmos.gl/graph';
 import type { Device } from '@luma.gl/core';
 import type { Stage } from './stage.ts';
 
@@ -8,8 +8,6 @@ export interface Rebuilder {
   readonly device: Promise<Device>;
   /** Destroys the previous graph, remembers `graph` as the current one and returns it. */
   adopt(graph: Graph): Graph;
-  /** Same as adopt(new Graph(stage.div, config, device)). */
-  build(config: GraphConfig): Graph;
   readonly current: Graph | undefined;
 }
 
@@ -27,9 +25,6 @@ export function rebuilder(stage: Stage): Rebuilder {
       current?.destroy();
       current = graph;
       return graph;
-    },
-    build(config) {
-      return self.adopt(new Graph(stage.div, config, device));
     },
     get current() {
       return current;
