@@ -54,3 +54,16 @@ Found while building this gallery. Read before building an example; add to it.
 - **`Vector3` has no `setX`/`setY`/`setZ`**: use `setXYZ` or `.x =`.
 - **Every file write in the worktree makes the dev server reload open pages**: re-open before
   judging a blank stage.
+- **Debug views (`camera.wireframe`, `lodColoration`) need `__ZEPHYR3D_DEBUG_VIEWS__`** set before the
+  engine loads: pass it through `zephyrExample(url, run, { globals: { __ZEPHYR3D_DEBUG_VIEWS__: true } })`.
+
+## Framework, lighting, shadows
+
+- **Hand-built `Primitive`s have no bounding volume**: `setBoundingVolume(new BoundingBox(…))`, and
+  `invalidateBoundingVolume()` when the vertices change, or culling and picking misbehave.
+- **Generated LOD levels switch early at the default `lodPixelError: 8`**; `1` shows the full chain.
+- **`fetchTexture` and `fetchFontAsset` cache by path**: changing `samplerOptions` needs
+  `resourceManager.clearCache()`; a `FontAsset` takes `pageSize`/`glyphSize` only on a path's first load.
+- **`ParticleSystem.worldSpace` defaults to true**; the `rampMap` alpha fades particles over their life.
+- **Files without an extension** load from a MemoryFS with `fetchTexture(path, { mimeType })`.
+- **`SDFSpriteMaterial` and `computeBoundsScreenSize`** are documented but not exported by 0.10.0.
