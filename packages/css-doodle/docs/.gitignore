@@ -1,0 +1,5 @@
+# Docs licence does not allow republishing: re-run pnpm vendor-docs
+*
+!SOURCE.json
+!MANIFEST.json
+!.gitignore

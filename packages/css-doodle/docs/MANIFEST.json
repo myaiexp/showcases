@@ -1,0 +1,1024 @@
+{
+  "fetched": "2026-11-14T22:55:57.811Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/css-doodle/css-doodle",
+      "ref": "v0.69.0",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "docs/*.md",
+        "changelog/*.md",
+        "src/**"
+      ],
+      "commit": "0df625e7be6a15d56d12788123286b98d0a18935"
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/css-doodle/addons",
+      "ref": "v1.1.0",
+      "paths": [
+        "src/*/README.md",
+        "src/*/index.js"
+      ],
+      "commit": "82cc0a0a79f012f20741e3ac5c4068118d5e0e7f"
+    },
+    {
+      "kind": "pages",
+      "urls": [
+        "https://css-doodle.com/",
+        "https://css-doodle.com/getting-started",
+        "https://css-doodle.com/start-from-grid",
+        "https://css-doodle.com/avatars",
+        "https://css-doodle.com/syntax-overview",
+        "https://css-doodle.com/addons",
+        "https://github.com/css-doodle/addons/blob/v1.1.0/README.md",
+        "https://css-doodle.com/reference",
+        "https://css-doodle.com/reference/attribute-grid",
+        "https://css-doodle.com/reference/attribute-seed",
+        "https://css-doodle.com/reference/attribute-use",
+        "https://css-doodle.com/reference/attribute-cells",
+        "https://css-doodle.com/reference/attribute-click-update",
+        "https://css-doodle.com/reference/attribute-auto-update",
+        "https://css-doodle.com/reference/attribute-experimental",
+        "https://css-doodle.com/reference/attribute-ignore-reduced-motion",
+        "https://css-doodle.com/reference/attribute-loading",
+        "https://css-doodle.com/reference/selector-doodle",
+        "https://css-doodle.com/reference/selector-container",
+        "https://css-doodle.com/reference/selector-nth",
+        "https://css-doodle.com/reference/selector-at",
+        "https://css-doodle.com/reference/selector-row",
+        "https://css-doodle.com/reference/selector-col",
+        "https://css-doodle.com/reference/selector-depth",
+        "https://css-doodle.com/reference/selector-even",
+        "https://css-doodle.com/reference/selector-odd",
+        "https://css-doodle.com/reference/selector-random",
+        "https://css-doodle.com/reference/selector-match",
+        "https://css-doodle.com/reference/selector-cell",
+        "https://css-doodle.com/reference/selector-nesting",
+        "https://css-doodle.com/reference/selector-at-rules",
+        "https://css-doodle.com/reference/property-grid",
+        "https://css-doodle.com/reference/property-size",
+        "https://css-doodle.com/reference/property-place",
+        "https://css-doodle.com/reference/property-gap",
+        "https://css-doodle.com/reference/property-content",
+        "https://css-doodle.com/reference/property-shape",
+        "https://css-doodle.com/reference/property-seed",
+        "https://css-doodle.com/reference/property-use",
+        "https://css-doodle.com/reference/function-i",
+        "https://css-doodle.com/reference/function-x",
+        "https://css-doodle.com/reference/function-y",
+        "https://css-doodle.com/reference/function-z",
+        "https://css-doodle.com/reference/function-ii",
+        "https://css-doodle.com/reference/function-xx",
+        "https://css-doodle.com/reference/function-yy",
+        "https://css-doodle.com/reference/function-dx",
+        "https://css-doodle.com/reference/function-m",
+        "https://css-doodle.com/reference/function-n",
+        "https://css-doodle.com/reference/function-nn",
+        "https://css-doodle.com/reference/function-nd",
+        "https://css-doodle.com/reference/function-r",
+        "https://css-doodle.com/reference/function-r-upper",
+        "https://css-doodle.com/reference/function-p",
+        "https://css-doodle.com/reference/function-pn",
+        "https://css-doodle.com/reference/function-pd",
+        "https://css-doodle.com/reference/function-pn-upper",
+        "https://css-doodle.com/reference/function-lp",
+        "https://css-doodle.com/reference/function-cycle",
+        "https://css-doodle.com/reference/function-mirror",
+        "https://css-doodle.com/reference/function-reverse",
+        "https://css-doodle.com/reference/function-stripe",
+        "https://css-doodle.com/reference/function-palette",
+        "https://css-doodle.com/reference/function-once",
+        "https://css-doodle.com/reference/function-match",
+        "https://css-doodle.com/reference/function-dollar",
+        "https://css-doodle.com/reference/function-define",
+        "https://css-doodle.com/reference/function-var",
+        "https://css-doodle.com/reference/function-raw",
+        "https://css-doodle.com/reference/function-code",
+        "https://css-doodle.com/reference/function-math",
+        "https://css-doodle.com/reference/function-google-font",
+        "https://css-doodle.com/reference/function-svg",
+        "https://css-doodle.com/reference/function-svg-filter",
+        "https://css-doodle.com/reference/function-svg-polygon",
+        "https://css-doodle.com/reference/function-svg-gradient",
+        "https://css-doodle.com/reference/function-arc",
+        "https://css-doodle.com/reference/function-invert",
+        "https://css-doodle.com/reference/function-flip",
+        "https://css-doodle.com/reference/function-shape",
+        "https://css-doodle.com/reference/function-plot",
+        "https://css-doodle.com/reference/function-tile",
+        "https://css-doodle.com/reference/function-doodle",
+        "https://css-doodle.com/reference/function-shaders",
+        "https://css-doodle.com/reference/function-pattern",
+        "https://css-doodle.com/reference/function-scene",
+        "https://css-doodle.com/reference/function-t",
+        "https://css-doodle.com/reference/function-ux",
+        "https://css-doodle.com/reference/function-uw",
+        "https://css-doodle.com/reference/function-udx",
+        "https://css-doodle.com/reference/js-api-update",
+        "https://css-doodle.com/reference/js-api-export",
+        "https://css-doodle.com/reference/js-api-pause",
+        "https://css-doodle.com/reference/js-api-current-time",
+        "https://css-doodle.com/reference/js-api-auto-update",
+        "https://css-doodle.com/reference/js-api-grid",
+        "https://css-doodle.com/reference/js-api-seed",
+        "https://css-doodle.com/reference/js-api-use",
+        "https://css-doodle.com/reference/js-api-diagnostics",
+        "https://css-doodle.com/reference/js-api-modules",
+        "https://css-doodle.com/reference/js-api-svg",
+        "https://css-doodle.com/reference/js-api-shape",
+        "https://css-doodle.com/reference/js-api-prerender",
+        "https://css-doodle.com/reference/js-api-image",
+        "https://css-doodle.com/reference/event-render",
+        "https://css-doodle.com/reference/event-beforeupdate",
+        "https://css-doodle.com/reference/event-update",
+        "https://css-doodle.com/reference/event-click-cell",
+        "https://css-doodle.com/reference/event-warn"
+      ]
+    }
+  ],
+  "files": {
+    "pages/css-doodle-com.md": {
+      "url": "https://css-doodle.com/",
+      "sha256": "68bbeb3cb4c8fa513f241eb459b507b0898abd7c1fe97cc6827e2fe5f792dd59"
+    },
+    "pages/css-doodle-com/addons.md": {
+      "url": "https://css-doodle.com/addons",
+      "sha256": "0095cfd7071b9ee7adc8bcaa0cd0eee7aa4cb59a0f19c5ea2a26f13ef672587c"
+    },
+    "pages/css-doodle-com/avatars.md": {
+      "url": "https://css-doodle.com/avatars",
+      "sha256": "ce6960451bf66b9c2dfe973cf6e2c45601183068773f3c06c156b04867483277"
+    },
+    "pages/css-doodle-com/getting-started.md": {
+      "url": "https://css-doodle.com/getting-started",
+      "sha256": "beebeea116b750c43371800487a9d698b436ac2829abbac81105445d96399647"
+    },
+    "pages/css-doodle-com/reference.md": {
+      "url": "https://css-doodle.com/reference",
+      "sha256": "59ed4273eed9d33d31f423bff3f7982467412d57da1d98bfb3d96cfed60a06ac"
+    },
+    "pages/css-doodle-com/reference/attribute-auto-update.md": {
+      "url": "https://css-doodle.com/reference/attribute-auto-update",
+      "sha256": "327b079fd07f843be0c44dfd66bafc5401373d10072294c3676808d9576e8dbd"
+    },
+    "pages/css-doodle-com/reference/attribute-cells.md": {
+      "url": "https://css-doodle.com/reference/attribute-cells",
+      "sha256": "e6265264f6f95cfe903a6c72b1faa7cf1513dfc04a28fcf481e9c77d15692c67"
+    },
+    "pages/css-doodle-com/reference/attribute-click-update.md": {
+      "url": "https://css-doodle.com/reference/attribute-click-update",
+      "sha256": "52b45c260d0a3ad19f7e2e6413f550a1f8e5ceb3612f8c6746c91026aa6230ba"
+    },
+    "pages/css-doodle-com/reference/attribute-experimental.md": {
+      "url": "https://css-doodle.com/reference/attribute-experimental",
+      "sha256": "269dd46d49fc0906eff0fad36db224d1fe0a737751db44d7fe902a71bfa846aa"
+    },
+    "pages/css-doodle-com/reference/attribute-grid.md": {
+      "url": "https://css-doodle.com/reference/attribute-grid",
+      "sha256": "f75a58a91fa471f3ca69e91bd499cb59252f6463a9b9cc08632f012aaba95264"
+    },
+    "pages/css-doodle-com/reference/attribute-ignore-reduced-motion.md": {
+      "url": "https://css-doodle.com/reference/attribute-ignore-reduced-motion",
+      "sha256": "e6af35135ef3eb14e827e05f5b224b4ec43e123641de8a71964fb72ed9a0241e"
+    },
+    "pages/css-doodle-com/reference/attribute-loading.md": {
+      "url": "https://css-doodle.com/reference/attribute-loading",
+      "sha256": "7539cd90311a8aac6c5afe4664d4b87b045316d9c43df0adc235451aa2ec609b"
+    },
+    "pages/css-doodle-com/reference/attribute-seed.md": {
+      "url": "https://css-doodle.com/reference/attribute-seed",
+      "sha256": "8e44a300fc3560e36df35f9c3d138495a5de1c18105fa3c75253fb004f1140fd"
+    },
+    "pages/css-doodle-com/reference/attribute-use.md": {
+      "url": "https://css-doodle.com/reference/attribute-use",
+      "sha256": "80898674e362b6ef42fe00c9f5bdedc9a11f21c368bb0873d3577214656d5841"
+    },
+    "pages/css-doodle-com/reference/event-beforeupdate.md": {
+      "url": "https://css-doodle.com/reference/event-beforeupdate",
+      "sha256": "b3c959f65991142d3d80b5090721570b4eac539bb7c9c1a5fe842aa9a3892c0f"
+    },
+    "pages/css-doodle-com/reference/event-click-cell.md": {
+      "url": "https://css-doodle.com/reference/event-click-cell",
+      "sha256": "73b5c147b642c1bdccf4da18f5aee1b21949d650faf2216d3385cb7cd55e3e32"
+    },
+    "pages/css-doodle-com/reference/event-render.md": {
+      "url": "https://css-doodle.com/reference/event-render",
+      "sha256": "9d5017610c235313390afd26dd3534c5d6cbbe1c5866df5a47205b7a1ae85a67"
+    },
+    "pages/css-doodle-com/reference/event-update.md": {
+      "url": "https://css-doodle.com/reference/event-update",
+      "sha256": "ee78599183fbc795df136d2ceba18e4db6e9ea6d1dccdaafef5d030ab08b22da"
+    },
+    "pages/css-doodle-com/reference/event-warn.md": {
+      "url": "https://css-doodle.com/reference/event-warn",
+      "sha256": "00b219f584405fe81e7da775a22abbe997cde05cd61fb74a71be926fb5654973"
+    },
+    "pages/css-doodle-com/reference/function-arc.md": {
+      "url": "https://css-doodle.com/reference/function-arc",
+      "sha256": "96ae002a9709af83ffa50f307b3a3d7e60093ea7facc0498060d2f8c259356f2"
+    },
+    "pages/css-doodle-com/reference/function-code.md": {
+      "url": "https://css-doodle.com/reference/function-code",
+      "sha256": "92829f28be27a93ef47eaf95210e7dd3a55af595f71342fb8defb5c6dd6feb54"
+    },
+    "pages/css-doodle-com/reference/function-cycle.md": {
+      "url": "https://css-doodle.com/reference/function-cycle",
+      "sha256": "ee726a563bb24dfbcf1e8dd17c06f10acc6f83fb7f7946f1aa5c719db8ef729c"
+    },
+    "pages/css-doodle-com/reference/function-define.md": {
+      "url": "https://css-doodle.com/reference/function-define",
+      "sha256": "d7b82bf4a8184fb933c918bf9e61381381f68343df02a231e9eec8135893aedf"
+    },
+    "pages/css-doodle-com/reference/function-dollar.md": {
+      "url": "https://css-doodle.com/reference/function-dollar",
+      "sha256": "dc1e6a3bebf38311c0faf1335250b3cb8a057bd01f55aae38383e89f7f269bd3"
+    },
+    "pages/css-doodle-com/reference/function-doodle.md": {
+      "url": "https://css-doodle.com/reference/function-doodle",
+      "sha256": "85c00382e38b17c2cc4b668c092ee443fcaaf16f8f59384fb16f1ab0a7a240e4"
+    },
+    "pages/css-doodle-com/reference/function-dx.md": {
+      "url": "https://css-doodle.com/reference/function-dx",
+      "sha256": "1f3b2c96ee354cbcf39b5095f11cc2375629adb19dbb40cbb23df2ff248469f6"
+    },
+    "pages/css-doodle-com/reference/function-flip.md": {
+      "url": "https://css-doodle.com/reference/function-flip",
+      "sha256": "3f23308a641bcc747b22011cf22048f699f213f098a467cc350f4214dedbb541"
+    },
+    "pages/css-doodle-com/reference/function-google-font.md": {
+      "url": "https://css-doodle.com/reference/function-google-font",
+      "sha256": "16dc70b3aa73acb403515a15b4ed7b92fd0e56dee09d99ee36b8ebc1f0b8facd"
+    },
+    "pages/css-doodle-com/reference/function-i.md": {
+      "url": "https://css-doodle.com/reference/function-i",
+      "sha256": "a1c86a85d22e1809e4400317dae694c775841f6ff7655a63e2b90960d84c0266"
+    },
+    "pages/css-doodle-com/reference/function-ii.md": {
+      "url": "https://css-doodle.com/reference/function-ii",
+      "sha256": "9ea4b205cc739772d4d0d9260e9748096a662537f6f1c8923ff8e2041eccaae4"
+    },
+    "pages/css-doodle-com/reference/function-invert.md": {
+      "url": "https://css-doodle.com/reference/function-invert",
+      "sha256": "9a8b0dafdabf83b4138e2b47d886bb66d1579cf6f63c1b8ccf2ef05f55ae0a05"
+    },
+    "pages/css-doodle-com/reference/function-lp.md": {
+      "url": "https://css-doodle.com/reference/function-lp",
+      "sha256": "9a36375e6732a3b23e4da0203f92e3d503806efcf1162c112bfd14ea01776086"
+    },
+    "pages/css-doodle-com/reference/function-m.md": {
+      "url": "https://css-doodle.com/reference/function-m",
+      "sha256": "4d17fb5b6b30ebc16f2e10f72b73bee7d27788853c9ae81345f0fed4f241deca"
+    },
+    "pages/css-doodle-com/reference/function-match.md": {
+      "url": "https://css-doodle.com/reference/function-match",
+      "sha256": "22c2936f294f188ec56040ce6d91f9abbae87bc2da0ba4319b9a60e209e6a72f"
+    },
+    "pages/css-doodle-com/reference/function-math.md": {
+      "url": "https://css-doodle.com/reference/function-math",
+      "sha256": "259a027324c5a091b5a3f368377266c975115ac16363071dc71bd9c41f90ee67"
+    },
+    "pages/css-doodle-com/reference/function-mirror.md": {
+      "url": "https://css-doodle.com/reference/function-mirror",
+      "sha256": "04d192931e649f062bb11d36dda7883b3b9311435417ddbabd7decdbf6c14721"
+    },
+    "pages/css-doodle-com/reference/function-n.md": {
+      "url": "https://css-doodle.com/reference/function-n",
+      "sha256": "66adde7b17e7bb4c6ac09106775b4cbe1ae1870abc7c13fbc5b24d319fd3743a"
+    },
+    "pages/css-doodle-com/reference/function-nd.md": {
+      "url": "https://css-doodle.com/reference/function-nd",
+      "sha256": "01c2a5320a71ad41dbb20f931ccdc9e9566f5d96d375a6b3dfa3e8f075a04f82"
+    },
+    "pages/css-doodle-com/reference/function-nn.md": {
+      "url": "https://css-doodle.com/reference/function-nn",
+      "sha256": "75242d1e20c24dfcedf68faa4256da801fdb75548424ce3fe88489fc1f2007ff"
+    },
+    "pages/css-doodle-com/reference/function-once.md": {
+      "url": "https://css-doodle.com/reference/function-once",
+      "sha256": "fb7594198c3e5469cd5e3b9e028ec25904fc825e5bfe9dd3e95593785bdcd5ed"
+    },
+    "pages/css-doodle-com/reference/function-p.md": {
+      "url": "https://css-doodle.com/reference/function-p",
+      "sha256": "8433d7be8108e4de332e4d56507dcbd2308a400de83fc88ef851e2b3a7513a54"
+    },
+    "pages/css-doodle-com/reference/function-palette.md": {
+      "url": "https://css-doodle.com/reference/function-palette",
+      "sha256": "a538526c25ae77dc80f20d9e2f01301f1e6c0e8902c933a43e94ed1c05d8f57a"
+    },
+    "pages/css-doodle-com/reference/function-pattern.md": {
+      "url": "https://css-doodle.com/reference/function-pattern",
+      "sha256": "74dbdcc69287371ad1ecc1d044830993a0d7c2fb94fe6afdf385924547798a70"
+    },
+    "pages/css-doodle-com/reference/function-pd.md": {
+      "url": "https://css-doodle.com/reference/function-pd",
+      "sha256": "980e6d8a4881cf1b99240936492accea5ae7e1b0c7b1316053ba69355440f988"
+    },
+    "pages/css-doodle-com/reference/function-plot.md": {
+      "url": "https://css-doodle.com/reference/function-plot",
+      "sha256": "00434872ca3eb6cc42cf91af133d48cd561df1f52a70f0b76bc7386904f46a55"
+    },
+    "pages/css-doodle-com/reference/function-pn-upper.md": {
+      "url": "https://css-doodle.com/reference/function-pn-upper",
+      "sha256": "f6e95014ecf22959829f18717e4922128cc3b4d597746583f7d5929df33b0abb"
+    },
+    "pages/css-doodle-com/reference/function-pn.md": {
+      "url": "https://css-doodle.com/reference/function-pn",
+      "sha256": "7676a2781c8c70ab5604e8da591a28bb919664d15e83b835ba6d418cc035639f"
+    },
+    "pages/css-doodle-com/reference/function-r-upper.md": {
+      "url": "https://css-doodle.com/reference/function-r-upper",
+      "sha256": "79d8741c68767ebf22be7d125f4fc666e1edd13ddc60baee5a286198c65f9ec9"
+    },
+    "pages/css-doodle-com/reference/function-r.md": {
+      "url": "https://css-doodle.com/reference/function-r",
+      "sha256": "1e87f413d2e9c7e400977e25da878a8592092856b444a24c353565db0bf2cac4"
+    },
+    "pages/css-doodle-com/reference/function-raw.md": {
+      "url": "https://css-doodle.com/reference/function-raw",
+      "sha256": "db8b3088ac2801e8325d4b994833fa76ddd0a63740a845786e1e49d01a520943"
+    },
+    "pages/css-doodle-com/reference/function-reverse.md": {
+      "url": "https://css-doodle.com/reference/function-reverse",
+      "sha256": "01edbfd34263b0b873869564e95283f3d03393de915f6c3ec2addc4e58b2a738"
+    },
+    "pages/css-doodle-com/reference/function-scene.md": {
+      "url": "https://css-doodle.com/reference/function-scene",
+      "sha256": "eac3ad3ea87ddfcb86e6c0d54189dbf5634c53e4452bb5dd2f4ba618c016c7d1"
+    },
+    "pages/css-doodle-com/reference/function-shaders.md": {
+      "url": "https://css-doodle.com/reference/function-shaders",
+      "sha256": "4289917aa2410ccfd1377d18947a31ffdd259619746c714cf4516c79d2fb9ba1"
+    },
+    "pages/css-doodle-com/reference/function-shape.md": {
+      "url": "https://css-doodle.com/reference/function-shape",
+      "sha256": "d1ee6fba4785456cb5cbb1c25931e5b4651c19d6cf476563a5d97f41b29f4ca4"
+    },
+    "pages/css-doodle-com/reference/function-stripe.md": {
+      "url": "https://css-doodle.com/reference/function-stripe",
+      "sha256": "6e53c69a881f24cf3c10383d8d573d494015a1caca3ef39461d749cf88afa08d"
+    },
+    "pages/css-doodle-com/reference/function-svg-filter.md": {
+      "url": "https://css-doodle.com/reference/function-svg-filter",
+      "sha256": "0fac5bc9e40038b344f9dc347ff21ca663badbafc6f6819b18aaf55a69206df5"
+    },
+    "pages/css-doodle-com/reference/function-svg-gradient.md": {
+      "url": "https://css-doodle.com/reference/function-svg-gradient",
+      "sha256": "78b8c17cea74b5bdadbdb9f9f9254c6351905c0098594d97d8c8eaedeb5232da"
+    },
+    "pages/css-doodle-com/reference/function-svg-polygon.md": {
+      "url": "https://css-doodle.com/reference/function-svg-polygon",
+      "sha256": "31fdddbc6fc631fc7728be56b5eb5503d91387ca0908b92e176eb8ec398b8717"
+    },
+    "pages/css-doodle-com/reference/function-svg.md": {
+      "url": "https://css-doodle.com/reference/function-svg",
+      "sha256": "b430f09441eed33b28991280d683015edaf2db9a58078c97619100b13f57e8b3"
+    },
+    "pages/css-doodle-com/reference/function-t.md": {
+      "url": "https://css-doodle.com/reference/function-t",
+      "sha256": "54f208ecb8df3d78725c0afa1cd520687e042ea3d5ed9e50c4033844b9ad4f91"
+    },
+    "pages/css-doodle-com/reference/function-tile.md": {
+      "url": "https://css-doodle.com/reference/function-tile",
+      "sha256": "fb82f505edd9ce958209f173ff8d0f7e58ac2f0f3adc5b037b8a8ea84c056b5b"
+    },
+    "pages/css-doodle-com/reference/function-udx.md": {
+      "url": "https://css-doodle.com/reference/function-udx",
+      "sha256": "af4fd272dc02cdc7a5d1069d4a199a23462e629e0b61ffb9219a269374b90f4d"
+    },
+    "pages/css-doodle-com/reference/function-uw.md": {
+      "url": "https://css-doodle.com/reference/function-uw",
+      "sha256": "eed24844f7f12c124e3ade1b8dcdf58554a468ff65918eb68a35e4a7292888c9"
+    },
+    "pages/css-doodle-com/reference/function-ux.md": {
+      "url": "https://css-doodle.com/reference/function-ux",
+      "sha256": "5fdcedb0cd6f0c41bf8cfd5d86b3d419076c743a37f80a87e3d9d43aa837ce53"
+    },
+    "pages/css-doodle-com/reference/function-var.md": {
+      "url": "https://css-doodle.com/reference/function-var",
+      "sha256": "e24092ee732592df7ed9c1addf8a88faf7de67b093a23a4899872753266ff148"
+    },
+    "pages/css-doodle-com/reference/function-x.md": {
+      "url": "https://css-doodle.com/reference/function-x",
+      "sha256": "4cb5b86541ea61b16fcf11175002a5affb8045353e83e7ac73a9aebf3a952601"
+    },
+    "pages/css-doodle-com/reference/function-xx.md": {
+      "url": "https://css-doodle.com/reference/function-xx",
+      "sha256": "fb499c9e93f2299c2e9546b403d4495bc15555cbabbaa0e079c4921390e954b9"
+    },
+    "pages/css-doodle-com/reference/function-y.md": {
+      "url": "https://css-doodle.com/reference/function-y",
+      "sha256": "5f1e845bfd8791e9eb238857b4b02572d3bdc55d16d8fca560bd7d21f360f324"
+    },
+    "pages/css-doodle-com/reference/function-yy.md": {
+      "url": "https://css-doodle.com/reference/function-yy",
+      "sha256": "64170bd4d62bea974e1377b8d54d0c603273bfe546f8a2a07891c82fcc5ffe34"
+    },
+    "pages/css-doodle-com/reference/function-z.md": {
+      "url": "https://css-doodle.com/reference/function-z",
+      "sha256": "9c05ca7f80a662d06629de9dba89300abcb300444e7118c62578a1983b041921"
+    },
+    "pages/css-doodle-com/reference/js-api-auto-update.md": {
+      "url": "https://css-doodle.com/reference/js-api-auto-update",
+      "sha256": "3a6d609c9e483fbebdac0cacf65d79976279ee901a14d59db11ade9d3eda357e"
+    },
+    "pages/css-doodle-com/reference/js-api-current-time.md": {
+      "url": "https://css-doodle.com/reference/js-api-current-time",
+      "sha256": "0c552f12bb27e814e2a40063829c46c4b9b1de0883a4b3028e75447a1b309a95"
+    },
+    "pages/css-doodle-com/reference/js-api-diagnostics.md": {
+      "url": "https://css-doodle.com/reference/js-api-diagnostics",
+      "sha256": "9893594255200c1b53267ce9a1d916416dbf0ec73bafeadbb4058cc1c833caa1"
+    },
+    "pages/css-doodle-com/reference/js-api-export.md": {
+      "url": "https://css-doodle.com/reference/js-api-export",
+      "sha256": "145848a57b2155f03b2b7b8f5a1a14a465981f222c6c56f034f4ee643d3a67b8"
+    },
+    "pages/css-doodle-com/reference/js-api-grid.md": {
+      "url": "https://css-doodle.com/reference/js-api-grid",
+      "sha256": "147c0f6122ecbaae795267d4aab200526dc4351a38eff9a0104f2f8dda140032"
+    },
+    "pages/css-doodle-com/reference/js-api-image.md": {
+      "url": "https://css-doodle.com/reference/js-api-image",
+      "sha256": "13b96a18fc3d4f76485aafdd2eecc3c8f06e49fef05623cb2623d7a34664795c"
+    },
+    "pages/css-doodle-com/reference/js-api-modules.md": {
+      "url": "https://css-doodle.com/reference/js-api-modules",
+      "sha256": "b2df0a2a1bad7997add907c240092cb099dfa5e8014980147d5483ceaf04085d"
+    },
+    "pages/css-doodle-com/reference/js-api-pause.md": {
+      "url": "https://css-doodle.com/reference/js-api-pause",
+      "sha256": "a40f3c338da5325e52746e913ee35415da493a6d9bfce84184e896f0da9e5cee"
+    },
+    "pages/css-doodle-com/reference/js-api-prerender.md": {
+      "url": "https://css-doodle.com/reference/js-api-prerender",
+      "sha256": "8eccfd27d59d5589df5b10d6caf2fa7b0c0cbe6f6b1a90d23190e3ddf2520551"
+    },
+    "pages/css-doodle-com/reference/js-api-seed.md": {
+      "url": "https://css-doodle.com/reference/js-api-seed",
+      "sha256": "01f5bee8932cd4d9db34b8f6498f95ba81c2a8bf2f9757b92bf895637ff1df76"
+    },
+    "pages/css-doodle-com/reference/js-api-shape.md": {
+      "url": "https://css-doodle.com/reference/js-api-shape",
+      "sha256": "7d4066fa9d3b5609130b9a26aac149ae9dde8c5f5e626c6f7b860c975c47942b"
+    },
+    "pages/css-doodle-com/reference/js-api-svg.md": {
+      "url": "https://css-doodle.com/reference/js-api-svg",
+      "sha256": "bca9caa6303f7d65e74da341de8efcfd7b0ba1b0d71e62bebacc3e8158d41e8d"
+    },
+    "pages/css-doodle-com/reference/js-api-update.md": {
+      "url": "https://css-doodle.com/reference/js-api-update",
+      "sha256": "439a65ba0de72c678360c76290e9d8bcbeefdff85bb90e6a98526c9a6e6cd61d"
+    },
+    "pages/css-doodle-com/reference/js-api-use.md": {
+      "url": "https://css-doodle.com/reference/js-api-use",
+      "sha256": "8b3e46e26e8b614722fab6ee3726e49a7b83383d249e80b50a6ca9d3f079d7e4"
+    },
+    "pages/css-doodle-com/reference/property-content.md": {
+      "url": "https://css-doodle.com/reference/property-content",
+      "sha256": "b2c3329f49713fdcdde136c1d0eaadd76514dcecd07d68041c8a67c0e1db50e3"
+    },
+    "pages/css-doodle-com/reference/property-gap.md": {
+      "url": "https://css-doodle.com/reference/property-gap",
+      "sha256": "19c43508196d83617de9d1b8a25fa95fcf8fc3d3ba00c1d785942204ec1c9110"
+    },
+    "pages/css-doodle-com/reference/property-grid.md": {
+      "url": "https://css-doodle.com/reference/property-grid",
+      "sha256": "37dd10f4ff6e521cef576a54828345285b1b0073dbf2bca8bbfd76fed14f43d4"
+    },
+    "pages/css-doodle-com/reference/property-place.md": {
+      "url": "https://css-doodle.com/reference/property-place",
+      "sha256": "75d656d5128ab8575d3423112a095145f7b4631573b3bf83b93b03e553c426ac"
+    },
+    "pages/css-doodle-com/reference/property-seed.md": {
+      "url": "https://css-doodle.com/reference/property-seed",
+      "sha256": "7a3dff4c9c6cf740f7de3640804b3645685eccd37ecfcf48472e6940a7c315aa"
+    },
+    "pages/css-doodle-com/reference/property-shape.md": {
+      "url": "https://css-doodle.com/reference/property-shape",
+      "sha256": "628db474d7398142ada94ff4a782290934d6f8e06462fabb72fc32a9cad90ae7"
+    },
+    "pages/css-doodle-com/reference/property-size.md": {
+      "url": "https://css-doodle.com/reference/property-size",
+      "sha256": "8dd9ad460112e2a1b97848a6bdabe87aeb37c7c8ed525436bfd4a055d82e2116"
+    },
+    "pages/css-doodle-com/reference/property-use.md": {
+      "url": "https://css-doodle.com/reference/property-use",
+      "sha256": "904a62333c2c48c4fc490f5164dcd2ef3698f69cbeb0c416be3245e6d4363be2"
+    },
+    "pages/css-doodle-com/reference/selector-at-rules.md": {
+      "url": "https://css-doodle.com/reference/selector-at-rules",
+      "sha256": "e8be97a406d81398b099d3baefadb0ce681d5ea70b6f480948e8f8f8ccfc9259"
+    },
+    "pages/css-doodle-com/reference/selector-at.md": {
+      "url": "https://css-doodle.com/reference/selector-at",
+      "sha256": "892eee36aaa8bf239b3fa8fc3534028459ad103ac8046db06a21a01e99cd37b8"
+    },
+    "pages/css-doodle-com/reference/selector-cell.md": {
+      "url": "https://css-doodle.com/reference/selector-cell",
+      "sha256": "7312fcc8a773c60c632f566bf801b8c27cc7d42eacea05140a83137e6381d5d3"
+    },
+    "pages/css-doodle-com/reference/selector-col.md": {
+      "url": "https://css-doodle.com/reference/selector-col",
+      "sha256": "38abe17cafac09fef49becfa1194cafa887b521e062c5e6b1a6248d9990aae09"
+    },
+    "pages/css-doodle-com/reference/selector-container.md": {
+      "url": "https://css-doodle.com/reference/selector-container",
+      "sha256": "18fd35fc8d2dc3007b026421edc6138ee7bd93ee44a6b94a3f29e6e4f3f30e32"
+    },
+    "pages/css-doodle-com/reference/selector-depth.md": {
+      "url": "https://css-doodle.com/reference/selector-depth",
+      "sha256": "97fe1b9ece93ba6774a522ad2d140fbaf18aa6cd1df4ba6881265bcac38addf2"
+    },
+    "pages/css-doodle-com/reference/selector-doodle.md": {
+      "url": "https://css-doodle.com/reference/selector-doodle",
+      "sha256": "0b6e2cfc65b84b9eb81078fdc95a752e23f011199ee282aee32626c1e9619f5b"
+    },
+    "pages/css-doodle-com/reference/selector-even.md": {
+      "url": "https://css-doodle.com/reference/selector-even",
+      "sha256": "4d3d19b6a03cfe6541aa01dbf1e52e8d781edecd7742d82290ec215b993b9a9f"
+    },
+    "pages/css-doodle-com/reference/selector-match.md": {
+      "url": "https://css-doodle.com/reference/selector-match",
+      "sha256": "81c047f074d268c4d4b40ef8599b7c27e1508c82ef38ff28371f37fcf00b742c"
+    },
+    "pages/css-doodle-com/reference/selector-nesting.md": {
+      "url": "https://css-doodle.com/reference/selector-nesting",
+      "sha256": "5c2ecf915c9304f74037d260ad5bcb88b70727a6acfeb364c254316c41b59f6d"
+    },
+    "pages/css-doodle-com/reference/selector-nth.md": {
+      "url": "https://css-doodle.com/reference/selector-nth",
+      "sha256": "f3546b64d6ccb77caf035f8662ef50935da39acc2133556dbba8c97776ee30e1"
+    },
+    "pages/css-doodle-com/reference/selector-odd.md": {
+      "url": "https://css-doodle.com/reference/selector-odd",
+      "sha256": "969f7cd567d90c0763593171ba5635e3f9c195d952a099a3579abbee9ed474f9"
+    },
+    "pages/css-doodle-com/reference/selector-random.md": {
+      "url": "https://css-doodle.com/reference/selector-random",
+      "sha256": "01e378222cec3757b8dbe39647053094eeb85639c9a067e6c6bf756953790328"
+    },
+    "pages/css-doodle-com/reference/selector-row.md": {
+      "url": "https://css-doodle.com/reference/selector-row",
+      "sha256": "358e4db9b062fe29f5e3e11418e6fe32e4a8b771274aad0813ea2b5c952a43df"
+    },
+    "pages/css-doodle-com/start-from-grid.md": {
+      "url": "https://css-doodle.com/start-from-grid",
+      "sha256": "9fe34fa2f0dde0bd62f96a0c7ba7341ba7176c88407c2fb1a9b9a936f71a1cf5"
+    },
+    "pages/css-doodle-com/syntax-overview.md": {
+      "url": "https://css-doodle.com/syntax-overview",
+      "sha256": "f441a2260bc66920c0bde0a62d72f81ee7719f8755833152ce4345487a059b90"
+    },
+    "pages/github-com/css-doodle/addons/blob/v1-1-0/README-md.md": {
+      "url": "https://github.com/css-doodle/addons/blob/v1.1.0/README.md",
+      "sha256": "8b1e65bfd3b9ce52fc8c1700b7c3cba06baba315fb3fe6aeeba7bc7b19807c1f"
+    },
+    "repo/changelog/0.52.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.52.0.md",
+      "sha256": "d8c345453bd0c891ec3e2069750f24f2e9445ec142814f6b9e3449d326d824a7"
+    },
+    "repo/changelog/0.52.1.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.52.1.md",
+      "sha256": "8875b5f206d664fc7bc40278d94563bacca8ab9c1ede539eee969f580e0e9ff1"
+    },
+    "repo/changelog/0.53.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.53.0.md",
+      "sha256": "b8fcf7c140bc14078d966663c4dad7976e5d68422f088a734cdc870b4b389d0d"
+    },
+    "repo/changelog/0.53.1.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.53.1.md",
+      "sha256": "3624681f5da76fb1ae9cfc18debdb2c68ff40080ed7500adff0579d2c94c484b"
+    },
+    "repo/changelog/0.54.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.54.0.md",
+      "sha256": "5da05e5140707c6c615b82db9a87deb4344ec81c3ba813e44ee54dd29ed2cb30"
+    },
+    "repo/changelog/0.55.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.55.0.md",
+      "sha256": "a76e022b9863372cea9e9749333ec82044cd1b01e0c56cd5b81f09eb98231c5c"
+    },
+    "repo/changelog/0.56.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.56.0.md",
+      "sha256": "bff2d3fb3e3e63609988a4d0a3a4a83cb6509b0f54795c57669bf1be35108c74"
+    },
+    "repo/changelog/0.57.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.57.0.md",
+      "sha256": "b4b12adf3a46164240a2d337b840e0de98a8dc92e186650a017af5d4e2f4bc1d"
+    },
+    "repo/changelog/0.57.1.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.57.1.md",
+      "sha256": "b6923b1f733ac2b29bd3d7ec78bcfae808ffe7b9d8b8e71e37b46afccad3f0e7"
+    },
+    "repo/changelog/0.58.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.58.0.md",
+      "sha256": "6fea1c126d639a54dbf13e0b3ec869ef3037575623dc2d19a762d43f1afc06e1"
+    },
+    "repo/changelog/0.59.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.59.0.md",
+      "sha256": "7081a33ad46647d624e32bc0edd8c1a1cc5ea0df940f623013bce90e127a56b8"
+    },
+    "repo/changelog/0.60.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.60.0.md",
+      "sha256": "117ed6662159bb7824996b7674582af0ea97d23b795322beb45f193c21d5d054"
+    },
+    "repo/changelog/0.61.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.61.0.md",
+      "sha256": "db9251b35ac3fa702569078c8cfa37511abdaf6bc2b9fa6f9557a92d8c6411ab"
+    },
+    "repo/changelog/0.62.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.62.0.md",
+      "sha256": "e420d2246e41ce27557a9443c9150081b96e316ce1337bc6840280677f55c949"
+    },
+    "repo/changelog/0.63.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.63.0.md",
+      "sha256": "22840e90abbfa34507ba1e2e5ae467fd53ecff6474c52d12a50d4eabfbfcb9b6"
+    },
+    "repo/changelog/0.63.1.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.63.1.md",
+      "sha256": "fbd359f3640d3f9545f5fa14a5a705cce7ef623f0d26ddabbe35904b3b60bafb"
+    },
+    "repo/changelog/0.64.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.64.0.md",
+      "sha256": "889dccf3d5544974409bfa6c836762f5dbdb00b55e0851518c83845529750d34"
+    },
+    "repo/changelog/0.65.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.65.0.md",
+      "sha256": "40a7a8c354318e53a3e777ba363dfbbc45bf17224b4cb1c1d898e2312a0b62a6"
+    },
+    "repo/changelog/0.66.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.66.0.md",
+      "sha256": "2fb5e59b6840c049b72f0af9b42e970a42f89b8f4ad06dcb801817ae1817ebea"
+    },
+    "repo/changelog/0.67.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.67.0.md",
+      "sha256": "19c0f6f91e63905f1152bb9d4dafbc67aa1b428fae8e9f097133d105091854a9"
+    },
+    "repo/changelog/0.67.1.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.67.1.md",
+      "sha256": "e08b8027167a403ecce2f6fb8798f9f71be4b711486309de4da5ae5615526fa0"
+    },
+    "repo/changelog/0.68.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.68.0.md",
+      "sha256": "637bfddca3f9a9cf0f8f233b4f3105d4d888c59e1b20d64daa6cf286ff91bdca"
+    },
+    "repo/changelog/0.69.0.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/0.69.0.md",
+      "sha256": "652fc9e95cb4bb40566db82d594b2df3b8d837b8396ebffc34773a60efa58301"
+    },
+    "repo/changelog/legacy.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/changelog/legacy.md",
+      "sha256": "d50e23ea6dc503b2bdfedc9ebab99aacf78c0fd69752bf18a53983a717848059"
+    },
+    "repo/docs/grammar.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/docs/grammar.md",
+      "sha256": "09ffa1d045a3a8a336fa02dc299a73db9e279c04e11aba9e0f41e3f1c49d8906"
+    },
+    "repo/docs/languages.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/docs/languages.md",
+      "sha256": "007036887726533204cb28e613934da658b316b907d203c53635fe0bb5f1927f"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/LICENSE",
+      "sha256": "6a3bfd2b5099860379fa3d20f457f984f894c9bfd3d360e16ad8a961ea51c399"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/README.md",
+      "sha256": "7fb7bd64c0fd58f8714559b4c452737c4a27a32396e027712697fa61bd052e73"
+    },
+    "repo/src/component/animation.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/component/animation.js",
+      "sha256": "b73ae94d02723d3a32fe3c3b05f2222e7948c1219c064c8d7938c72e1a87b934"
+    },
+    "repo/src/component/clock.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/component/clock.js",
+      "sha256": "d227c81e6cbe39086b70b66c98e2b77b586b4091955833de9db2ca7600a29f7b"
+    },
+    "repo/src/component/computed-style.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/component/computed-style.js",
+      "sha256": "e52ea72c7226c8deae07a19b420aa4b41f80deec85cfcad26777145252ecdaf1"
+    },
+    "repo/src/component/doodle-image.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/component/doodle-image.js",
+      "sha256": "ea489234b117834f81e7f8f552c406db9509a304d6126f4015a1857746b5cfbc"
+    },
+    "repo/src/component/embedded.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/component/embedded.js",
+      "sha256": "3c4e08e64a7b65c24ef7ccd7efb6a74a87e65ffc9f0e0a0cf1e0fba47f3e0de0"
+    },
+    "repo/src/component/google-font.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/component/google-font.js",
+      "sha256": "e7f782d05ccae73595c2bc92158e20e818673e32330f65428e37a21f0ea3873f"
+    },
+    "repo/src/component/index.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/component/index.js",
+      "sha256": "c4583e22396123442e1e9ca1f83586119c255906e7dea9c4d2646763308bb87f"
+    },
+    "repo/src/component/markup.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/component/markup.js",
+      "sha256": "4320cb1d8fc84f36ab2f33cb61080192fb28cf78bbe53c4eaeb86e7c379e83dc"
+    },
+    "repo/src/component/uniforms.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/component/uniforms.js",
+      "sha256": "ac96651b5de2689ba7382ab1889f3d805fd806a29763713fa99eb2f5b3f4e46e"
+    },
+    "repo/src/core/arguments.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/core/arguments.js",
+      "sha256": "cd097648e6f93dc68e0171d2f33ceff0705c12004708fc5c60193ae3a67cf3c2"
+    },
+    "repo/src/core/calc.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/core/calc.js",
+      "sha256": "68bc073edf32c7829a7c845ac142fb430f85a70b283ac4cf3fe1132a5afbc63b"
+    },
+    "repo/src/core/easing.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/core/easing.js",
+      "sha256": "a878a67ebc5831481366d6a0e1196c73f779a2dc4be2aa937da610ef40f5cd84"
+    },
+    "repo/src/core/function.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/core/function.js",
+      "sha256": "170c943f9414ad2a9b62d416523187f91639d0f3948b6a360c7c7c14696f5cd3"
+    },
+    "repo/src/core/preset-size.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/core/preset-size.js",
+      "sha256": "2e91245583801f18964fbdbae9964876c8d690cfc44bfc1cdb77cbd8e767387e"
+    },
+    "repo/src/core/property.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/core/property.js",
+      "sha256": "d5f5f76b94a3e4db4d6f5ed72c1af13048540a3006eaa9be365ce02d3ac86fa6"
+    },
+    "repo/src/core/random.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/core/random.js",
+      "sha256": "c4ecb942c03ed4e90eaf60c9ea65bfa875b455dce28b5ac3f17d0cac6ca34618"
+    },
+    "repo/src/core/selector.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/core/selector.js",
+      "sha256": "487c59593df6b4ab8e15f368670196954ba8eb3f51f398c8d13a737180494f7e"
+    },
+    "repo/src/core/uniforms.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/core/uniforms.js",
+      "sha256": "7679a5b7815f2a9b3f5f07375a209c6f64d615470e91da280e73b7abdca4e3e7"
+    },
+    "repo/src/exports/component/index.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/exports/component/index.js",
+      "sha256": "9894b195aa82d1b1bd5d0b0ee1efb1de440fb07cd8c2a9d5f4d1de7dc9476d26"
+    },
+    "repo/src/exports/generator/image.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/exports/generator/image.js",
+      "sha256": "d5d54ad1cae578d7395f8be8d4030013abcadb7d66831cbe74abbf0e0207c988"
+    },
+    "repo/src/exports/generator/index.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/exports/generator/index.js",
+      "sha256": "6054934d9e2808691c4422d8bea6daaa6d9b488412a53eaa067aa4d8f312d22b"
+    },
+    "repo/src/exports/generator/prerender.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/exports/generator/prerender.js",
+      "sha256": "76a2ded84c2613e8c51094c6b15fc4cbfd697f84f12444d7c3c2822290b91e78"
+    },
+    "repo/src/exports/generator/shape.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/exports/generator/shape.js",
+      "sha256": "89c3fb2e56cc882a5e011bcf1238195f615ef3e6f65ff1364f09a462db7d5cb8"
+    },
+    "repo/src/exports/generator/svg.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/exports/generator/svg.js",
+      "sha256": "9ea245bb30789293d09c5a537296b2ee0f885fd970ddf655131755126ae81fd8"
+    },
+    "repo/src/exports/meta/index.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/exports/meta/index.js",
+      "sha256": "2b9fc543264df776f9cac517fb8db712a6db6a84e7dccdf361dfb583f6abc356"
+    },
+    "repo/src/exports/parser/index.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/exports/parser/index.js",
+      "sha256": "8ea25ec2d41959b7492cfe8a959405baecc77cf66022236772bdf03ef483eb03"
+    },
+    "repo/src/generator/color-matrix.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/color-matrix.js",
+      "sha256": "601e7856e90eabe9005056d7e8b0f2f81a99b7b33b24e56e096d6cd27cffa5ab"
+    },
+    "repo/src/generator/css.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/css.js",
+      "sha256": "c48faca4124dddf78fff529889172374a502507bb59dc1a262b5f750fda7d3d7"
+    },
+    "repo/src/generator/glsl-math-transformer.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/glsl-math-transformer.js",
+      "sha256": "830645ba564f5b6eecc196648acee5bbcb87a214219f8d3644cee22addae9596"
+    },
+    "repo/src/generator/grid-style.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/grid-style.js",
+      "sha256": "4c100d11f4945f3929f9bd17ff4effd78c1b0b59f7343cfd213584b029670ab6"
+    },
+    "repo/src/generator/pattern.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/pattern.js",
+      "sha256": "7c845f344087f914e3c1edb851780376da3e3081e31dc634c3b4306890ca0061"
+    },
+    "repo/src/generator/polygon.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/polygon.js",
+      "sha256": "2d0db9ba7fff96befa7f9f1dc254a77018a3d6696fb1d93d9a09492a8ad3f9ee"
+    },
+    "repo/src/generator/scene.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/scene.js",
+      "sha256": "bb8eee68de7489d133d61ede66864f794887b6d5f906020e4f4897bccc806d9c"
+    },
+    "repo/src/generator/shaders.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/shaders.js",
+      "sha256": "dc008d2a60584fed2b6d18f7d25b65cab848ee640826839114ab5b741618d873"
+    },
+    "repo/src/generator/shapes.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/shapes.js",
+      "sha256": "490e2b1907c0fdbdaf5f3b9fc39aa4ccda6427d47ee249997133bee1848643a1"
+    },
+    "repo/src/generator/svg-filter.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/svg-filter.js",
+      "sha256": "9175bdb1c749e251c9485eaeb92cd44c7a5c786ffa6dd5aafbdc47e6d63b2acd"
+    },
+    "repo/src/generator/svg-gradient.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/svg-gradient.js",
+      "sha256": "4c2dcb5bf233dc0a06ce1b35884d48ce4d8bb4722ef2f8d2e6aa72ba9de3def2"
+    },
+    "repo/src/generator/svg-to-png.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/svg-to-png.js",
+      "sha256": "419a9afa1635c2ef0617926664c6a94d7ffd7f5b577588f69982f5f04c6e1b3e"
+    },
+    "repo/src/generator/svg.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/svg.js",
+      "sha256": "ec99ff272650c0e1cd9b9e7c25a861bc7fa312c67f8f75b030d5c92188296501"
+    },
+    "repo/src/generator/tiling.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/tiling.js",
+      "sha256": "874419d6821a97c953e1493b76ccbf858f5edcf8fcc3a78a209df7fa8a572c6a"
+    },
+    "repo/src/generator/trace.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/generator/trace.js",
+      "sha256": "cd5086fdd2d8a60d22db6fe446afc25892f2803c996048371b549f75059247d4"
+    },
+    "repo/src/gradient-2d/index.js": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/gradient-2d/index.js",
+      "sha256": "ca857afd5bc4eca9554267c23752fec15a5966fb1d1156f5ae64aa04ebcead85"
+    },
+    "repo/src/gradient-2d/README.md": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/gradient-2d/README.md",
+      "sha256": "aaab810e42d6abced450ed8afd4d374829f48bdee1e5e1ee314cfe7b52dd7188"
+    },
+    "repo/src/index.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/index.js",
+      "sha256": "7531083e921d997316ce2b29bcbcdf4d21b2b68adccff4c2f98cfbca554d5e50"
+    },
+    "repo/src/lib/browser.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/browser.js",
+      "sha256": "098687acb4a6d784d166088aed0f89a47077d48ede38d46c2eb84c48cfc32655"
+    },
+    "repo/src/lib/cache.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/cache.js",
+      "sha256": "30cb9d06c3afe4e147cd117174ed8814e6e04ed512dbbc3427130484b98ee86d"
+    },
+    "repo/src/lib/cell.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/cell.js",
+      "sha256": "a25349f899ab7dc3aeea9e497e7f34ace35c2a2677b70a534312245a0fbb6dcb"
+    },
+    "repo/src/lib/fn.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/fn.js",
+      "sha256": "8b15f43689a26fb27d98e3963c84b79eeb8ac9afc461ad49a09c6cf8dab8f77b"
+    },
+    "repo/src/lib/list.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/list.js",
+      "sha256": "9dee6a0b856aa159439232bce51a25266ec45e6497d8627cbf08aeee984cd618"
+    },
+    "repo/src/lib/math.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/math.js",
+      "sha256": "97fea94afddb61874be595b47e42ce15ff0ea4930a63af769d23684bba655ee8"
+    },
+    "repo/src/lib/noise.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/noise.js",
+      "sha256": "cb4a3eb886835da8213247345b1cb1c7d4ef99e0cf43d062b09aaf809a6712dd"
+    },
+    "repo/src/lib/placeholder.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/placeholder.js",
+      "sha256": "bf2d982380cd48532528231ecd789c155775f1cae8b55c67a246bc5604eaeb07"
+    },
+    "repo/src/lib/seedrandom.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/seedrandom.js",
+      "sha256": "2ad7a0c91e021181521e843967763035f71d4795fa4f7b143c808665914a15e1"
+    },
+    "repo/src/lib/selector.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/selector.js",
+      "sha256": "6008efa3f91a249a15c2000f5b1f25b5c4640dc709fa1d9e6623163ea42e0ccf"
+    },
+    "repo/src/lib/svg.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/svg.js",
+      "sha256": "9ad1e96b915cf060de6488ac744bb3601b1bb1e6c754b55d46ae06cf1ff357fa"
+    },
+    "repo/src/lib/tagged-template.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/tagged-template.js",
+      "sha256": "07fcd32431454bdbc1c9acc0265a5a82a098d40e129ed4c89ca987c256e757ad"
+    },
+    "repo/src/lib/type.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/lib/type.js",
+      "sha256": "a8912584319d9a0a4dcb30dbdcf08d26ca40023971d0fa7808d818e6388283fd"
+    },
+    "repo/src/marble/index.js": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/marble/index.js",
+      "sha256": "5c24dbd634024a7d468d1e044d58a1709aa40b0190720cb7376734852128d6e7"
+    },
+    "repo/src/marble/README.md": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/marble/README.md",
+      "sha256": "9c0e104720adc7fe0b5b76d9728253506f24e676f9addae4d00a6268c1f65f03"
+    },
+    "repo/src/parser/parse-body.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-body.js",
+      "sha256": "2d38c46e109fe73fd31715e318e80e13d722243f9f2f7bf088e6d6cf170f9480"
+    },
+    "repo/src/parser/parse-compound-value.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-compound-value.js",
+      "sha256": "43935fd0741763f343901a81a9c76a0290885112f72dcf8592704b526e312071"
+    },
+    "repo/src/parser/parse-css.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-css.js",
+      "sha256": "be932b16e6f0d9a97d4ab9e8f7469f8599234b8fe4f18685cfdab789830b42de"
+    },
+    "repo/src/parser/parse-direction.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-direction.js",
+      "sha256": "2a9e27cb99135610cc8777a52c8dd1926a9617c2fe95cdf6ef267a607b1c943c"
+    },
+    "repo/src/parser/parse-filter-region.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-filter-region.js",
+      "sha256": "9f638e0abfcf5bdaf57c0365c11e2f09fca3cd37d422eb1f2b6e92aa1ab3501d"
+    },
+    "repo/src/parser/parse-grid.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-grid.js",
+      "sha256": "49da2e75b4becb6b894b97fd440a9634aee4acf7a92cd55d22dc7d6ae1f6dbc5"
+    },
+    "repo/src/parser/parse-linear-expr.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-linear-expr.js",
+      "sha256": "b6bab6b5eaa1ae9d48dee086da8e79f967a0455dd482641e92bbcf01a4c5d26d"
+    },
+    "repo/src/parser/parse-pattern.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-pattern.js",
+      "sha256": "fef5d96b7b24f15754f075667d45ccdb030bc97232c707ab45f9dfbd71a69d17"
+    },
+    "repo/src/parser/parse-shaders.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-shaders.js",
+      "sha256": "383ed3a950552f705c841cf553120b46e39d9e315bc4fda4942ca5140eda9848"
+    },
+    "repo/src/parser/parse-shape-commands.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-shape-commands.js",
+      "sha256": "65d840199d0c9830eac76d4c9e47c0a57ada43097ceee23d32209b120aa35613"
+    },
+    "repo/src/parser/parse-svg-path.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-svg-path.js",
+      "sha256": "cdedcfe5b6ea8d05574a09e113e19601c949efbb786f0f02cb63f8ad41b6d6d7"
+    },
+    "repo/src/parser/parse-svg.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-svg.js",
+      "sha256": "2351f242a18bd873d52b810dee6faf5b7d1f42f0fbeae9a5cf4245052ef791a4"
+    },
+    "repo/src/parser/parse-value-group.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-value-group.js",
+      "sha256": "b20d7c77f40a005cf033496413040f0d109d933c7b3c5a224b944b37fdd4be4b"
+    },
+    "repo/src/parser/parse-var.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/parse-var.js",
+      "sha256": "1f7f065c78048ba56b89944e6e9b795846fa6925c042523f3254227e9bb344f8"
+    },
+    "repo/src/parser/svg-source.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/svg-source.js",
+      "sha256": "f4b8e9efc5fae58de7c15f16ec6c022ad9c6677449cadbe7cb70c795772922b5"
+    },
+    "repo/src/parser/tokenizer.js": {
+      "url": "https://github.com/css-doodle/css-doodle/blob/0df625e7be6a15d56d12788123286b98d0a18935/src/parser/tokenizer.js",
+      "sha256": "c6f2d861e7d24529f1fa21307ab761c0fbae04e6941f95f4790a0aaa0e18cd6d"
+    },
+    "repo/src/pigment/index.js": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/pigment/index.js",
+      "sha256": "067b7a22668ccb55b38b4cabcc941beacb98953206526da58df43bd92adbfc8f"
+    },
+    "repo/src/pigment/README.md": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/pigment/README.md",
+      "sha256": "a7b4a5c6f29dc10f467c033bfd77e34eabbbc1605f17914f2738b9738266b6f2"
+    },
+    "repo/src/spring/index.js": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/spring/index.js",
+      "sha256": "79f563d3384888e6cd0de6cdf1c605800c396c9351bf99e7c8ea15ca177f6843"
+    },
+    "repo/src/spring/README.md": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/spring/README.md",
+      "sha256": "ccbf80282442191faa7afffaa506fcbfb31782fb6a54dc9df3bbf049f5b06b5c"
+    },
+    "repo/src/trace/index.js": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/trace/index.js",
+      "sha256": "9b799051020cda6ff1a3eb0ca0036799ce31a31ced0a3cce8db7a6d7a8d056e5"
+    },
+    "repo/src/trace/README.md": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/trace/README.md",
+      "sha256": "577816a302216ed5a9a2502c466ec64e63b63e3acca2478a360e2aa8ef343a9b"
+    },
+    "repo/src/wfc/index.js": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/wfc/index.js",
+      "sha256": "7fba8e45fde74933d5f506a58cbee53187bee39c7426e30d90ec2ac28624f10d"
+    },
+    "repo/src/wfc/README.md": {
+      "url": "https://github.com/css-doodle/addons/blob/82cc0a0a79f012f20741e3ac5c4068118d5e0e7f/src/wfc/README.md",
+      "sha256": "c715337f40f2f69d37b3ad66aa5df9d8b5d6a1a91fbf58c2bdd89ec0b80995a5"
+    }
+  }
+}
