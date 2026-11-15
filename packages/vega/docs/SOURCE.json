@@ -10,6 +10,7 @@
         "LICENSE",
         "docs/index.md",
         "docs/docs/**",
+        "docs/_includes/properties.md",
         "docs/tutorials/**",
         "docs/usage/**",
         "docs/about/index.md",

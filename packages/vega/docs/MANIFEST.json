@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-15T05:45:33.561Z",
+  "fetched": "2026-11-15T07:04:59.342Z",
   "sources": [
     {
       "kind": "git",
@@ -9,6 +9,7 @@
         "LICENSE",
         "docs/index.md",
         "docs/docs/**",
+        "docs/_includes/properties.md",
         "docs/tutorials/**",
         "docs/usage/**",
         "docs/about/index.md",
@@ -27,6 +28,10 @@
     }
   ],
   "files": {
+    "repo/docs/_includes/properties.md": {
+      "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/_includes/properties.md",
+      "sha256": "f8e296aa2f8023a19adac9478f5bb831dad6afd59605133899072aeb4b737802"
+    },
     "repo/docs/about/index.md": {
       "url": "https://github.com/vega/vega/blob/adf0ae7cd5dbc5bd0d7b4fb5566a68adf14cac3f/docs/about/index.md",
       "sha256": "7df5e82a4fb19cb38a192f281628e73bfad73ddc370ca12771f7acf5272cd6c7"
