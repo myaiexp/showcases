@@ -16,7 +16,7 @@ const { serveTile, NOT_FOUND } = await import('../packages/leaflet/shared/tile-s
 
 beforeEach(() => {
   painted.length = 0;
-  vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue({} as CanvasRenderingContext2D);
+  vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue({} as never);
   vi.spyOn(HTMLCanvasElement.prototype, 'toDataURL').mockImplementation(function (this: HTMLCanvasElement) {
     return `data:image/png;base64,${this.width}x${this.height}-${Math.random()}`;
   });
