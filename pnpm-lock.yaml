@@ -323,6 +323,9 @@ importers:
       vega:
         specifier: 6.4.0
         version: 6.4.0
+      vega-interpreter:
+        specifier: 2.3.2
+        version: 2.3.2
       vizzu:
         specifier: 0.18.0
         version: 0.18.0
@@ -4258,6 +4261,9 @@ packages:
 
   vega-hierarchy@5.1.3:
     resolution: {integrity: sha512-bDWDNGuUA4WcOD5CMh9Mahs3CwKxSU3W1XAnDGCpAwfJVoWp7vlVMt1paoTczPFTXtXGxIa3vJu94xWGmI3/og==}
+
+  vega-interpreter@2.3.2:
+    resolution: {integrity: sha512-JDAoi3taFcCDLujZG84TNNUXdkAZ5WsSHssx8lWVYaxb9Slsjk7v7PtRIYXpSlUwLaKGRBqoJ9KDs36Z0eMEIw==}
 
   vega-label@2.1.3:
     resolution: {integrity: sha512-UcaGgrVr2Gb0sUj4j3L5tZuL6GOn7tyauYsfXsS0hURoIbHCfQI4SnRq89vl5ub5DL1SEWaJTKag4GdAm1hcGw==}
@@ -9045,6 +9051,10 @@ snapshots:
     dependencies:
       d3-hierarchy: 3.1.3
       vega-dataflow: 6.1.3
+      vega-util: 2.1.3
+
+  vega-interpreter@2.3.2:
+    dependencies:
       vega-util: 2.1.3
 
   vega-label@2.1.3:

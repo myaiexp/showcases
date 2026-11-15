@@ -198,4 +198,5 @@ GitHub Pages. No service on the VPS.
 - Vega: build on `packages/vega/shared/stage.ts` (`createStage`, trap list); every example writes its whole
   spec and calls `stage.render(spec)` (dark config, offline loader for the docs' `data/*` files) or builds
   `new vega.View(vega.parse(spec, stage.config), {...stage.options})` and `stage.adopt`s it. Cards fake input
-  with `stage.ghost(view)` (canvas renderer). `test/vega-examples.test.ts` fails on any Vega warning.
+  with `stage.ghost(view)` (canvas renderer). The mount test (`test/vega-mount.ts`, in four shards) fails on
+  any Vega warning.

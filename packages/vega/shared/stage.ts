@@ -28,7 +28,7 @@ import './stage.css';
  *   (none so far) can't have it in cards.
  * - `view.finalize()` removes the listeners a spec added to window or document; the stage
  *   calls it for every view it rendered or adopted.
- * - test/vega-examples.test.ts mounts every example headlessly and fails on Vega warnings.
+ * - test/vega-mount.ts mounts every example headlessly and fails on Vega warnings.
  *   Async or signal-driven `url` data is empty on the first pass, so a domain read from it
  *   warns "Infinite extent": give those scales a fixed domain.
  * - x()/y() in event handlers are already relative to the data rectangle (vega-view
@@ -39,7 +39,9 @@ import './stage.css';
  *   `direction` and `type`, every config setting. Re-render to show another value.
  * - Docs claims wrong for 6.4: a mark-level `transform` cannot `filter` (throws); a `cross`
  *   filter cannot read signals; regression `order` is the degree (order + 1 coefficients);
- *   countpattern's default pattern is [\w"]+; there is no `endsWith` expression function.
+ *   countpattern's default pattern is [\w"]+; there is no `endsWith` expression function;
+ *   zoomLinear & co. take a domain value as anchor (invert("x", x())); toDate returns a number;
+ *   vega.timeFormat is not exported (use vega.defaultLocale().timeFormat).
  * - crossfilter output only feeds resolvefilter (its rows are indices): bin before the
  *   crossfilter, aggregate after; resolvefilter `ignore` from a signal returns stale rows.
  * - geoshape's `field` is read from the scenegraph item: write `datum.geo`, not `geo`.

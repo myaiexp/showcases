@@ -1,5 +1,4 @@
-// @vitest-environment happy-dom
-// Mounts every Vega example, card and full view, so a spec Vega rejects or warns about fails here
+// Mount harness for the Vega examples: card and full view, failing on throws and Vega warnings
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
@@ -52,41 +51,48 @@ beforeAll(() => {
 });
 
 const dir = join(import.meta.dirname, '..', 'packages', 'vega', 'examples');
-const slugs = readdirSync(dir, { withFileTypes: true })
+const allSlugs = readdirSync(dir, { withFileTypes: true })
   .filter((d) => d.isDirectory())
   .map((d) => d.name)
   .sort();
 
-const problems: string[] = [];
-afterEach(() => {
-  problems.length = 0;
-  vi.restoreAllMocks();
-});
-
-describe.each(slugs)('vega/%s', (slug) => {
-  it('mounts a card and a full view, runs them a second, unmounts cleanly', async () => {
-    const record = (...args: unknown[]): void => {
-      problems.push(args.map((a) => (a instanceof Error ? a.message : String(a))).join(' '));
-    };
-    vi.spyOn(console, 'error').mockImplementation(record);
-    vi.spyOn(console, 'warn').mockImplementation(record);
-    const mod = (await import(`../packages/vega/examples/${slug}/main.ts`)) as { default: Mount };
-    // Both modes at once, so the file stays fast with hundreds of examples.
-    const runs = [true, false].map(async (preview) => {
-      const el = document.createElement('div');
-      document.body.append(el);
-      const ac = new AbortController();
-      const cleanup: Cleanup = await mod.default(el, { preview, signal: ac.signal });
-      return { el, ac, cleanup };
-    });
-    const mounted = await Promise.all(runs);
-    // Let loaders, timers and the first card-loop steps run.
-    await new Promise((r) => setTimeout(r, 1000));
-    for (const { el, ac, cleanup } of mounted) {
-      ac.abort();
-      cleanup();
-      el.remove();
-    }
-    expect(problems, problems.join('\n')).toEqual([]);
-  }, 20_000);
-});
+/**
+ * Registers the mount test for one shard of the examples (every `count`th slug from
+ * `index`). The examples are split over test/vega-examples-<n>.test.ts files so vitest runs
+ * them in parallel workers: each mount mostly waits on timers, so shards overlap well.
+ */
+export function mountShard(index: number, count: number): void {
+  const slugs = allSlugs.filter((_, i) => i % count === index);
+  const problems: string[] = [];
+  afterEach(() => {
+    problems.length = 0;
+    vi.restoreAllMocks();
+  });
+  describe.each(slugs)('vega/%s', (slug) => {
+    it('mounts a card and a full view, runs them briefly, unmounts cleanly', async () => {
+      const record = (...args: unknown[]): void => {
+        problems.push(args.map((a) => (a instanceof Error ? a.message : String(a))).join(' '));
+      };
+      vi.spyOn(console, 'error').mockImplementation(record);
+      vi.spyOn(console, 'warn').mockImplementation(record);
+      const mod = (await import(`../packages/vega/examples/${slug}/main.ts`)) as { default: Mount };
+      // Both modes at once, so the file stays fast with hundreds of examples.
+      const runs = [true, false].map(async (preview) => {
+        const el = document.createElement('div');
+        document.body.append(el);
+        const ac = new AbortController();
+        const cleanup: Cleanup = await mod.default(el, { preview, signal: ac.signal });
+        return { el, ac, cleanup };
+      });
+      const mounted = await Promise.all(runs);
+      // Let loaders and the first fast timers run (the first render is already awaited).
+      await new Promise((r) => setTimeout(r, 500));
+      for (const { el, ac, cleanup } of mounted) {
+        ac.abort();
+        cleanup();
+        el.remove();
+      }
+      expect(problems, problems.join('\n')).toEqual([]);
+    }, 20_000);
+  });
+}
