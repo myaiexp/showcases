@@ -141,3 +141,21 @@ export function network(groups = 3, size = 8, seed = 9): SampleGraph<SampleNode,
 
 /** The colour each link type of `network()` is drawn in, readable on the stage's light paper. */
 export const KIND_COLOR: Record<NetworkLink['type'], string> = { road: '#8d6e63', rail: '#3d5a80', ferry: '#2a9d8f' };
+
+/** A sample node once the layout has given it a position, and `fx`/`fy` for pinning it. */
+export type GNode = SampleNode & { x?: number; y?: number; vx?: number; vy?: number; fx?: number; fy?: number };
+
+/** A link whose ends are ids before the layout and node objects after it. */
+export type GLink = {
+  source: string | number | GNode;
+  target: string | number | GNode;
+  value?: number;
+  name?: string;
+  type?: string;
+  [key: string]: unknown;
+};
+
+/** The id of a link end, whether the layout has swapped it for the node object or not. */
+export function endId(end: GLink['source']): string | number {
+  return typeof end === 'object' ? (end.id as string | number) : end;
+}

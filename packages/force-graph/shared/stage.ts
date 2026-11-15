@@ -25,7 +25,8 @@
 //   only when the matching `on…Click` is set. A pointer move with the button pressed counts as
 //   a drag and swallows the click, but only when `onBackgroundClick` is set.
 // - d3-drag starts on `mousedown` on the canvas and listens for moves on `window` under one
-//   fixed name, so two drags at once on a page break each other: `ghost.drag()` queues page-wide.
+//   fixed name, and d3-zoom pans on the same window moves, so two fake gestures at once on a page
+//   move each other: `ghost.drag()` and `ghost.pan()` queue page-wide. Never dispatch them by hand.
 // - The node drag subject is looked up on the hidden canvas from the last pointer position,
 //   so a drag needs a pointer move over the node first (`ghost.drag()` does that).
 // - `nodeAutoColorBy` / `linkAutoColorBy` write the colour into the attribute named by `nodeColor` / `linkColor`,
@@ -35,6 +36,13 @@
 // - `width()` / `height()` clear the canvas (and keep the view centred); it is redrawn on the next
 //   frame. Resizing every frame, such as from a ResizeObserver during a drag, paints blank frames:
 //   throttle it, or change sizes in steps.
+// - `dagMode` keeps the old axis fixed when you switch between `td`/`bu` and `lr`/`rl` (it only clears the axis the new
+//   mode owns), so nodes end up pinned on both axes. Call `dagMode(null)` first, which unfixes every node.
+// - The default `dagLevelDistance` is `nodes / depth × ratio`: a small DAG comes out as a thin band; set `dagLevelDistance` (about 40 to 50) for
+//   anything under a hundred nodes. (`radialout`/`radialin` use 0.7 of it.)
+// - Right-click callbacks fire on `pointerup` with `button` 2 (the ghost's `click(2)`); a `contextmenu` listener only
+//   cancels the browser's menu, and only when a right-click handler is set.
+// - `showPointerCursor` only matters for objects with a matching `on…Click` handler: the canvas gets a `clickable` class.
 // - `nodeCanvasObject` draws in graph coordinates under the zoom transform: divide pixel sizes
 //   (font size, line width) by `globalScale` to keep them constant on screen.
 import type { MountContext } from '@/types.ts';

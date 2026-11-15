@@ -56,3 +56,22 @@ export function linkTour<L extends Ended>(
     stage.every(every, step);
   });
 }
+
+/**
+ * Runs `run` over and over, starting `start` ms after mount, for scripted card sequences. `wait(ms)`
+ * pauses inside it; after dispose a pending wait never settles, which ends the loop.
+ */
+export function script(stage: Stage, run: (wait: (ms: number) => Promise<void>) => Promise<void>, start = 3200): void {
+  const wait = (ms: number): Promise<void> => new Promise((res) => stage.after(ms, res));
+  stage.after(start, async () => {
+    while (!stage.disposed) await run(wait);
+  });
+}
+
+/** The middle of a link whose ends the layout has turned into node objects, in graph coordinates. */
+export function linkMid(link: Ended | undefined): { x: number; y: number } | null {
+  const a = link?.source as NodeObject | undefined;
+  const b = link?.target as NodeObject | undefined;
+  if (!a || !b || typeof a !== 'object' || typeof b !== 'object') return null;
+  return { x: ((a.x ?? 0) + (b.x ?? 0)) / 2, y: ((a.y ?? 0) + (b.y ?? 0)) / 2 };
+}
