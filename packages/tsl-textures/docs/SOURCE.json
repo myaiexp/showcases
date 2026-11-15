@@ -1,0 +1,12 @@
+{
+  "license": "MIT (tsl-textures repo LICENSE, vendored alongside)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/boytchev/tsl-textures",
+      "ref": "v3.0.5",
+      "paths": ["LICENSE", "README.md", "CHANGELOG.md", "index.html", "docs/*.md", "src/*.js", "!src/melter.js"]
+    }
+  ]
+}
