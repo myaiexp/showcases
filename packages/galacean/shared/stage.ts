@@ -43,6 +43,25 @@
 //   minified draw samples empty levels: pass `mipmap: false` or call `generateMipmaps()`.
 // - `engine.destroy()` cancels pending loads; a `.then` that touches engine objects checks
 //   `engine.destroyed` first. Custom loader types (`resourceLoader`) are page-wide for good.
+// - ShaderLab in 1.6.13 drops the docs' anonymous `BlendState { … }` blocks silently (the body
+//   leaks into the pass): declare `BlendState name { … }` and assign `BlendState = name;`, with
+//   enum prefixes (`BlendFactor.SourceAlpha`). Tags take unquoted keys (`Tags { pipelineStage =
+//   "Forward" }`). `ColorWriteMask.X` names and `FillMode` don't parse; write the number.
+// - A ShaderLab function-like macro called on a member access (`saturate(v.uv.x)`) throws
+//   `GSErrorName is not defined` every frame. Assign to a local first.
+// - pbr.mdx's `specular`/`specularTexture` are `specularIntensity`/`specularIntensityTexture`;
+//   normal strength is `normalTextureIntensity` (PBR) and `normalIntensity` (Blinn-Phong).
+// - A stencil "window" that writes no colour still writes depth: set DepthState.WriteEnabled false.
+// - Importing `@galacean/engine-ui` registers its pointer emitter for every engine on the page.
+//   UI pointer events need no physics. `onPointerEnter` fires on every nested UI element crossed.
+//   A UI Image with no sprite draws nothing. A WorldSpace canvas is 1 world unit per canvas
+//   unit whatever `referenceResolutionPerUnit` says, and faces -Z.
+// - TextRenderer `OverflowMode.Truncate` clips nothing in 1.6.13 (only the layout height).
+// - `ParticleRenderMode.HorizontalBillboard`/`VerticalBillboard` throw "Not implemented";
+//   `TextureSheetAnimationType` isn't exported (0 WholeSheet, 1 SingleRow).
+// - Under `VisibleInsideMask` a sprite whose `maskLayer` no mask influences is hidden, not unmasked.
+// - The atlas loader resolves its image against the .atlas URL, which fails from a blob: base;
+//   give the image as a data: URL.
 // - `WebGLGraphicDeviceOptions` has no `antialias`: anti-aliasing is `camera.msaaSamples`
 //   and `camera.antiAliasing` (FXAA) only.
 import { Camera, type Entity, type Scene, WebGLEngine, type WebGLEngineConfiguration } from '@galacean/engine';
