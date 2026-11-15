@@ -210,3 +210,7 @@ GitHub Pages. No service on the VPS.
 - postprocessing: build on `packages/postprocessing/shared/stage.ts` (`createStage`; traps in `shared/traps.md`). The manual's
   getting-started and custom-effects pages describe v7 (RenderPipeline, GData): follow the README and the src JSDoc. Each main.ts
   builds its own `stage.own(new EffectComposer(...))`; disabling the last pass needs `renderToScreen` moved by hand.
+- Galacean: build on `packages/galacean/shared/stage.ts` (`createStage`, trap list). The physics backend, ShaderLab and
+  shader names are page-wide statics, so every engine shares one ShaderLab and one PhysXPhysics (`physics: true`; never
+  physics-lite) and custom shaders use `Shader.find(name) ?? Shader.create(…)`. PhysX's wasm comes from the package
+  (`shared/physx.ts`), ambient light from a `.env` built in code (`shared/env.ts`): nothing loads from the CDN.

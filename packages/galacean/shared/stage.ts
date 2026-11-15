@@ -20,6 +20,17 @@
 //   the physics scene. Pass `physics: true` for those.
 // - The keyboard listens on `window` by default, so every engine on the page would see every
 //   key. The stage passes `input.keyboardTarget: canvas` (focusable in the full view).
+// - Material and light colours are linear. An sRGB pick passed straight in looks washed out;
+//   `gfx-kit.ts` `lin()` converts. A plain-GLSL `Shader.create` shader writes to the screen
+//   as-is, so it gamma-encodes its own output (`pow(c, vec3(1.0 / 2.2))`).
+// - The skybox shader flips x ("TextureCube is left-hand"), so the cube's px face shows on
+//   the world's -X side, mirrored from the docs' "px = right".
+// - A `TextureFormat.Depth` Texture2D in a RenderTarget samples as black with the default
+//   bilinear filter; set `filterMode = TextureFilterMode.Point`. Depth lands in red.
+// - bufferMesh.mdx's instancing snippet binds the instance buffer with stride 12 while it
+//   holds two Vector3 elements; the stride must be 24.
+// - `WebGLGraphicDeviceOptions` has no `antialias`: anti-aliasing is `camera.msaaSamples`
+//   and `camera.antiAliasing` (FXAA) only.
 import { Camera, type Entity, type Scene, WebGLEngine, type WebGLEngineConfiguration } from '@galacean/engine';
 import { ShaderLab } from '@galacean/engine-shaderlab';
 import type { MountContext } from '@/types.ts';
