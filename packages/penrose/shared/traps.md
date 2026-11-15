@@ -57,3 +57,21 @@ Found while building this gallery. Read before building an example, and add to i
   cannot be declared on 3.3.1.
 - `AutoLabel A, C` (a list of names, not just `All`) works though ref/substance/statements.md lists only All.
 - Inline shape bodies need newlines between fields: `Text { string : "7" center : (0, 0) }` is a syntax error.
+
+## Constraint and objective functions (3.3.1)
+
+- `overlappingEllipses` and `overlappingCircleEllipse` throw "polynomial roots not supported" in
+  `optimize()` (the compiled energy uses `PolyRoots`), so no example uses them.
+- `bboxPts` and `rectPts` describe their order as top-left first, but `bboxPts` returns
+  top-right, top-left, bottom-left, bottom-right, which is what the `contains*Rect*` functions
+  expect. Pass `bboxPts(shape)` to them. `containsCircleRect` ignores padding and treats the rectangle
+  as a circle of radius max(width, height), so it is conservative.
+- Objective `below(bottom, top)` and `leftwards(left, right)` have their sign flipped: they send the first
+  shape above, respectively to the right of, the second. `above` and `rightwards` are right.
+- Objective `nearVec` and `near` minimise distance^2 minus offset^2, lowest at distance 0, so their offset
+  does nothing; `centerLabel`'s `padding` is likewise a constant. `notTooClose`'s `weight` only applies to Lines.
+- `repelScalar` has no weight, so pixel-sized inputs give a negligible push; divide the arguments by 10000.
+- `nonDegenerateAngle` is stationary at a perfectly flat angle: the default strength of 20 never leaves it.
+- Constraints and objectives are soft penalties; a free pull (`encourage nearPt(...)`) shows a constraint
+  working. `inDirection` is an equality on the projection, not a bound.
+- Free polygon points need a start (`(?[x], ?[y])`); with random ones the optimizer often tangles the polygon.
