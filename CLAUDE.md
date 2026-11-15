@@ -163,3 +163,7 @@ GitHub Pages. No service on the VPS.
   `stage.own(new Vizzu(stage.element, { style: darkStyle }))`; steps run through `stage.story()`,
   which loops and rewinds via `chart.store()`. tsconfig `paths` maps `vizzu` to the type-only
   `shared/vizzu-types.d.ts`, because the library's own shorthand `animate()` types never apply.
+- Plotly.js: build on `packages/plotly-js/shared/stage.ts` (`createStage`, trap list); every example writes
+  its whole `Plotly.newPlot(stage.div, data, {template: stage.template, …}, stage.config)` call. Data comes
+  from `shared/data.ts` (the docs' plotly/datasets files, bundled); geo maps `await loadGeoAssets()`; tile
+  maps use `shared/tiles.ts` (`darkMapStyle`, `landLayers`) and never draw map text (no glyphs offline).

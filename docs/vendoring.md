@@ -43,7 +43,8 @@ The repo is public, so vendored files are republished. Check the licence of the
 **docs** (the docs repo's LICENSE, or the site's terms), not just the library's:
 
 - An explicit permissive licence (MIT, Apache-2.0, BSD, ISC, CC-BY) means
-  `redistribute: true`, and the files are committed.
+  `redistribute: true`, and the files are committed. A CC BY licence also needs
+  `credit` in `package.ts` (pattern.md § Contracts), which the gallery displays.
 - No licence found, all rights reserved, or copyleft (AGPL/GPL/LGPL docs) means
   `redistribute: false`. The script writes `docs/.gitignore` so that only `SOURCE.json`,
   `MANIFEST.json` and the `.gitignore` are tracked. Builders re-run `pnpm vendor-docs`

@@ -1,0 +1,69 @@
+{
+  "license": "CC BY 3.0 (LICENSE at the root of plotly/graphing-library-docs, which holds the plotly.com/javascript pages and the figure reference schema). Credit: Plotly, Inc., Plotly JavaScript Open Source Graphing Library documentation, https://plotly.com/javascript/, licensed under CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/). Vendored unmodified; only the JavaScript posts are taken from a repo that also holds the Python, R and other languages' docs. The sample data the pages load comes from plotly/datasets (MIT, per its repo licence); its LICENSE is not vendored because the path collides with the docs' own LICENSE.",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/plotly/graphing-library-docs",
+      "ref": "master",
+      "paths": [
+        "LICENSE",
+        "README.md",
+        "_posts/plotly_js/**",
+        "_posts/reference_pages/2015-08-19-plotly_js-reference.html",
+        "_posts/reference_pages/2020-07-20-plotly_js-ref_index.html",
+        "_posts/reference_pages/javascript/**",
+        "_data/plotschema.json",
+        "_data/jsversion.json"
+      ]
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/plotly/datasets",
+      "ref": "master",
+      "paths": [
+        "2010_alcohol_consumption_by_country.csv",
+        "2011_february_aa_flight_paths.csv",
+        "2011_february_us_airport_traffic.csv",
+        "2011_us_ag_exports.csv",
+        "2014_apple_stock.csv",
+        "2014_usa_states.csv",
+        "2014_us_cities.csv",
+        "2014_world_gdp_with_codes.csv",
+        "2015_06_30_precipitation.csv",
+        "2016-weather-data-seattle.csv",
+        "3d-line1.csv",
+        "_3d-line-plot.csv",
+        "3d-ribbon.json",
+        "3d-scatter.csv",
+        "alpha_shape.csv",
+        "api_docs/mt_bruno_elevation.csv",
+        "clebsch-cubic.csv",
+        "coffee-flavors.csv",
+        "custom_heatmap_colorscale.json",
+        "diabetes.csv",
+        "earthquakes-23k.csv",
+        "finance-charts-apple.csv",
+        "florida-blue-data.json",
+        "florida-red-data.json",
+        "gapminderDataFiveYear.csv",
+        "gapminder_with_codes.csv",
+        "globe_contours.csv",
+        "hobbs-pearson-trials.csv",
+        "imports-85.csv",
+        "iris-data.csv",
+        "iris-id.csv",
+        "Mining-BTC-180.csv",
+        "normal-clusters.csv",
+        "polar_dataset.csv",
+        "stockdata.csv",
+        "streamtube-basic.csv",
+        "streamtube-wind.csv",
+        "titanic.csv",
+        "violin_data.csv",
+        "volcano_db.csv",
+        "wind_speed_laurel_nebraska.csv"
+      ]
+    }
+  ]
+}
