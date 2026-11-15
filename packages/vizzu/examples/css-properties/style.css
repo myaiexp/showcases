@@ -1,0 +1,12 @@
+/* Custom properties that Vizzu's cssProperties plugin reads while animating */
+[data-example='vizzu/css-properties'] {
+  /* The plugin lists custom properties from the stylesheet's top-level rules only, so the
+     names are declared empty here (an empty value is ignored) and filled in by .themed. */
+  --vizzu-plot-marker-colorPalette: ;
+  --vizzu-title-fontSize: ;
+
+  .themed {
+    --vizzu-plot-marker-colorPalette: #9355e8ff #1f9bd1ff #bdaf10ff;
+    --vizzu-title-fontSize: 50;
+  }
+}

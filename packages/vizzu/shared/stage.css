@@ -1,0 +1,97 @@
+/* Shared Vizzu chrome: stage, control bar, chart box, caption, step list */
+.vz-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font);
+}
+.vz-card {
+  height: 100%;
+  padding: 4px 6px;
+  gap: 2px;
+  font-size: 11px;
+  line-height: 1.3;
+}
+.vz-full {
+  font-size: 14px;
+  line-height: 1.45;
+}
+.vz-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: center;
+  font-size: 13px;
+}
+.vz-bar:empty {
+  display: none;
+}
+.vz-bar label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.vz-bar input[type='range'] {
+  width: 120px;
+}
+.vz-scene {
+  display: flex;
+  gap: 12px;
+  min-height: 0;
+  flex: 1;
+}
+.vz-chart {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
+.vz-card .vz-chart {
+  height: 100%;
+}
+.vz-chart canvas {
+  display: block;
+}
+.vz-caption {
+  color: var(--fg-2);
+  min-height: 1.3em;
+}
+.vz-card .vz-caption {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.vz-caption[data-tone='ok'] {
+  color: var(--green, #4ade80);
+}
+.vz-caption[data-tone='warn'] {
+  color: var(--accent);
+}
+.vz-caption[data-tone='bad'] {
+  color: var(--red, #f87171);
+}
+.vz-hint {
+  color: var(--fg-3);
+  font-size: 13px;
+}
+.vz-steps {
+  margin: 0;
+  padding-left: 1.6em;
+  color: var(--fg-3);
+  font-size: 13px;
+}
+.vz-steps li.vz-now {
+  color: var(--fg-1);
+}
+.vz-side {
+  width: 240px;
+  flex: none;
+  font-size: 13px;
+  color: var(--fg-2);
+  overflow: auto;
+}
+.vz-side pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
