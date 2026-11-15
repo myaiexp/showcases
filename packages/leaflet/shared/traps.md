@@ -118,6 +118,11 @@ add to it when something bites.
   a last point equal to the first; a Polyline keeps it.
 - A union of path classes loses `radius` and makes `.on()` uncallable: type each Circle as its
   own const, and arrays as `Path[]`.
+- GeoJSON typing: the constructor takes the `geojson` package's `GeoJSON` type (alias it:
+  `import type { GeoJSON as GeoJSONData } from 'geojson'`), `getLayers()` returns `Layer[]` with
+  no typed `feature`, and `getBounds()` plus typed pointer handlers exist on `Polygon`/`Polyline`,
+  not `Layer`: cast state layers `as Polygon`. `GeoJSON.geometryToLayer` doesn't set
+  `layer.feature`; `addData` does. Use `instanceof`, never `constructor.name` (minified).
 - `.lf-map` has `flex: 1`: an example that sets the map box's width also sets `flex: none`.
 - In a card, `stage.log()` writes the caption, so a `stage.say()` in a cycle overwrites it.
 

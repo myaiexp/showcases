@@ -1,0 +1,6 @@
+/* GeoJSON round trip with toGeoJSON: styles, all nested under this example's own selector */
+[data-example='leaflet/geojson-round-trip'] {
+  .box {
+    color: var(--fg-1);
+  }
+}
