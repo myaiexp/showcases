@@ -92,6 +92,17 @@ add to it when something bites.
   only sets `background-position`: the image comes from the icon's CSS class.
 - `riseOnHover` is wired when the icon is created: toggling it needs the marker re-added.
 - A popup opening near a card's edge autoPans the map and can push other markers out of view.
+- Tile events (`tileloadstart`, `loading`…) fire synchronously inside `addTo()` when the map
+  already has a view: attach listeners before `addTo`. `tile-urls.ts` has helpers for showing
+  requested URLs (`onRequest`, `countTiles`, `shortUrl`, `wmsLines`).
+- Tile layer options read when the layer is added: `updateWhenIdle`, `updateInterval`,
+  `className`, `crs` (rebuild the layer). Read live: `maxNativeZoom`/`minNativeZoom` (then
+  `redraw()`), `uppercase`, `zIndex`, `opacity`.
+- A custom `createTile` is async only if it declares `done`: `createTile(coords: Coords, done:
+  DoneCallback)`. In GridLayer's `tileloadstart`, read `e.tile`: it isn't in the container yet.
+  An overriding `onRemove` returns `void`.
+- `tileSize: 512` against the pretend server needs a literal `@2x` in the URL (`{r}` is empty at
+  pixel ratio 1), with `zoomOffset: -1` and `minZoom: 1`. The WMS server always answers PNG.
 - `.lf-map` has `flex: 1`: an example that sets the map box's width also sets `flex: none`.
 - In a card, `stage.log()` writes the caption, so a `stage.say()` in a cycle overwrites it.
 

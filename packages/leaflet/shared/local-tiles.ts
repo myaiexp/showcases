@@ -2,9 +2,8 @@
 import { TileLayer, WMSTileLayer, type Coords } from 'leaflet';
 import { serveTile } from './tile-server.ts';
 
-/** Attribution for tiles the pretend server paints. */
-export const LAND_ATTRIBUTION =
-  'Land: <a href="https://www.naturalearthdata.com/">Natural Earth</a> (world-atlas), painted in the page';
+/** Attribution for tiles the pretend server paints (Natural Earth land via world-atlas). */
+export const LAND_ATTRIBUTION = 'Land: <a href="https://www.naturalearthdata.com/">Natural Earth</a>';
 
 /**
  * A real `TileLayer`: Leaflet builds every tile URL from the template and options exactly as

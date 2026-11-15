@@ -179,4 +179,12 @@
 }
 .lf-card .leaflet-control-attribution {
   font-size: 9px;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* A card's caption covers the map's bottom edge: lift the bottom controls above it */
+.lf-card:has(.lf-caption:not(:empty)) .leaflet-bottom {
+  bottom: 18px;
 }
