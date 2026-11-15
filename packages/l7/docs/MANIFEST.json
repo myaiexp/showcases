@@ -1,0 +1,767 @@
+{
+  "fetched": "2026-11-15T09:59:41.445Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/antvis/L7",
+      "ref": "@antv/l7@2.29.1",
+      "paths": [
+        "LICENSE.md",
+        "README.en-US.md",
+        "site/docs/**/*.en.md",
+        "site/docs/api/common/style.md"
+      ],
+      "commit": "b8127c30f03e098a49fe9222925fa36004c41b7f"
+    }
+  ],
+  "files": {
+    "repo/LICENSE.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/LICENSE.md",
+      "sha256": "2bd132691d5fe5f4c7f5981ef43d7382e08ca0faeb0caf3ea765c8671f0b5b45"
+    },
+    "repo/README.en-US.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/README.en-US.md",
+      "sha256": "84b6b5dad0f6ad9c87c5e1ba580c9a4a2652815110c344783274476722e9b999"
+    },
+    "repo/site/docs/api/base_layer/base.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/base_layer/base.en.md",
+      "sha256": "b50cd745f1d435233096f4ee079e5ebc769c287a1254203fd5d5f7036fdec87e"
+    },
+    "repo/site/docs/api/common/control/api.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/control/api.en.md",
+      "sha256": "840f590c9795e6e35ac8b4333aa0e2223bb2e9ecf66d9d950f1b5221172387b0"
+    },
+    "repo/site/docs/api/common/control/btn-api.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/control/btn-api.en.md",
+      "sha256": "a3245e1976924c623afaac07ff45717d3bb35ec5fde4e06c208363a7a26349af"
+    },
+    "repo/site/docs/api/common/control/event.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/control/event.en.md",
+      "sha256": "ff4396623b1d68ded443612e21230bbb3c9bf88ff910fd62ff99456be337c87f"
+    },
+    "repo/site/docs/api/common/control/method.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/control/method.en.md",
+      "sha256": "08b8c0caed4058d813a26e4df780ac738579ee242b4d13d4ccecd1a1fc4d53b3"
+    },
+    "repo/site/docs/api/common/control/popper-api.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/control/popper-api.en.md",
+      "sha256": "f38080ebd74ca624da5155074358f791580a4100ad85f6ebd7e705032a477b3b"
+    },
+    "repo/site/docs/api/common/control/popper-event.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/control/popper-event.en.md",
+      "sha256": "5302cc00b1d5bb3caa7c7a254eb668c4e547c8b6ff48f464b91881e4515c5bdc"
+    },
+    "repo/site/docs/api/common/control/select-event.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/control/select-event.en.md",
+      "sha256": "95c40755f8cce684fb6c3588399fc23f1c1d424daa0f7f1e735b591c9c0ce94b"
+    },
+    "repo/site/docs/api/common/features/animate.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/features/animate.en.md",
+      "sha256": "909595e59e1c5ddc5ad66982b625783fea6ae788f043c9e3cc9ebfb51da4c450"
+    },
+    "repo/site/docs/api/common/features/border.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/features/border.en.md",
+      "sha256": "d84d82d60f681faf12b0d73938080175373436912b4fa02bdb869c115a1a4466"
+    },
+    "repo/site/docs/api/common/features/dash.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/features/dash.en.md",
+      "sha256": "e08f049fe9892d6ee93a8ce118a4a61b6bfe28b88b7b745ecf0a53403b4fb691"
+    },
+    "repo/site/docs/api/common/features/linear.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/features/linear.en.md",
+      "sha256": "9c344f3dfc37abb1502e71712b8d6ae5ed1b2fcb6d469b97200cd9f52ffebd93"
+    },
+    "repo/site/docs/api/common/features/segment_number.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/features/segment_number.en.md",
+      "sha256": "4e96555c70687a61843ea71c70cec1edfb57a10c59a97956c84358116559ed78"
+    },
+    "repo/site/docs/api/common/features/texture.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/features/texture.en.md",
+      "sha256": "ba63fc35fd368cadf46f0b596c42804c33dfc8a62b5493307322de1a554db38b"
+    },
+    "repo/site/docs/api/common/features/theta_offset.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/features/theta_offset.en.md",
+      "sha256": "0fdc5ada431cae627f49dee190545731841ad2a7d9ad06bf8f0c3a4b5104dfbc"
+    },
+    "repo/site/docs/api/common/features/vertex_height.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/features/vertex_height.en.md",
+      "sha256": "3b969770add8589d0102515c09991f190b2d57b21161377585a6c1c27f566188"
+    },
+    "repo/site/docs/api/common/layer/base.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/base.en.md",
+      "sha256": "75944a22d7164b0f02d3aab9567cdfd2c57dc257ba120c8a95cb26a4be580e1c"
+    },
+    "repo/site/docs/api/common/layer/color.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/color.en.md",
+      "sha256": "896cd473fbf95ad18b305a9d36be5b737bb9edcd6d5ce05424fa01ff1a2c030c"
+    },
+    "repo/site/docs/api/common/layer/layer_ctr.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/layer_ctr.en.md",
+      "sha256": "380c7b5278c3d90e7891d76247552d951134862496da1c45aca6fb2a87bca10f"
+    },
+    "repo/site/docs/api/common/layer/layer_encode.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/layer_encode.en.md",
+      "sha256": "80313bc392ac5bcc5ea8db23a61e851a88a19e69d87b2e90a7180d9788fb6926"
+    },
+    "repo/site/docs/api/common/layer/layer_event.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/layer_event.en.md",
+      "sha256": "fb82e7b3eafa190401ce975ec9bf125c1c47a91b0c0fdfa3b4a8085bb765450a"
+    },
+    "repo/site/docs/api/common/layer/layer_interaction.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/layer_interaction.en.md",
+      "sha256": "72130bdbf858b543997fbcad3e93723bd4085e419b54b8804121ca76fcb69c49"
+    },
+    "repo/site/docs/api/common/layer/layer_style.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/layer_style.en.md",
+      "sha256": "b9d5119a0a2a47bf9e913cb05c7d6c436e7d1ca404d97c6b145abedaece8dfa4"
+    },
+    "repo/site/docs/api/common/layer/layer_texture.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/layer_texture.en.md",
+      "sha256": "1f19e3a444de45e338e664011cb8f7d41b6a7dd4fdf09ae97a59a4c6778dd74d"
+    },
+    "repo/site/docs/api/common/layer/layer_update.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/layer_update.en.md",
+      "sha256": "2646abfe0fa36653ce1c729988a363dc9e017f49d1a094f49f876d2055f2aee9"
+    },
+    "repo/site/docs/api/common/layer/mask_method.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/mask_method.en.md",
+      "sha256": "ab1d678ce437030a1c4853f0a7234bc9aefd43e47d6b1bb2dff31fd7e9624e05"
+    },
+    "repo/site/docs/api/common/layer/mask_options.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/mask_options.en.md",
+      "sha256": "a3e6c2600a6f303bece71bc18d072e9e8c0a41897f71806235be97778ae687ae"
+    },
+    "repo/site/docs/api/common/layer/mouse_event.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/mouse_event.en.md",
+      "sha256": "45c9e1e6ce85eb4e1ff296bfe788dba7039aa8fa1518cc33f383aa743a788d46"
+    },
+    "repo/site/docs/api/common/layer/options.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/options.en.md",
+      "sha256": "7d3cf95d8d176336bb1cacb32f38cbd2a4d50ccef6f9047cec9754a44ba2f764"
+    },
+    "repo/site/docs/api/common/layer/raster/rampcolors.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/raster/rampcolors.en.md",
+      "sha256": "f73e984f25dbf11b465a1f88b87413f17976ba3e19b6720c1afe6c4908aec53a"
+    },
+    "repo/site/docs/api/common/layer/raster/style_single.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/raster/style_single.en.md",
+      "sha256": "b0832d0cc1d66b88f5f3b2632772c9075e3abd4997ef9c7070986aabaa8bb774"
+    },
+    "repo/site/docs/api/common/layer/raster/style.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/raster/style.en.md",
+      "sha256": "88e5e1a195795653a32b98eb3c8c99e99de2e14b0e1f6c3a8f9e8809b26d043f"
+    },
+    "repo/site/docs/api/common/layer/scale.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/scale.en.md",
+      "sha256": "be50a2d3cc63e81c1f347801618c0299a777c1ef50538eb9495d66e1cb1416f5"
+    },
+    "repo/site/docs/api/common/layer/source.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/source.en.md",
+      "sha256": "4aa0b790660b9e1922f1d3a4c0ce10811aacaf0b973880d7623a36231ff63c62"
+    },
+    "repo/site/docs/api/common/layer/style_encode.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/layer/style_encode.en.md",
+      "sha256": "e7d4444f5a411bb0f1fbf585dd748a1517501860f1d27b65fac70cbf52b41bab"
+    },
+    "repo/site/docs/api/common/map.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/map.en.md",
+      "sha256": "b936c9408853fa5388ab99a9caba556df51562570325a891a3637428defcfe3c"
+    },
+    "repo/site/docs/api/common/source/raster/raster_band_calc.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/source/raster/raster_band_calc.en.md",
+      "sha256": "4520a807ef4a5d0a883abe26f503bc5ce9aac15c36c1d9569b7d8cb978d01719"
+    },
+    "repo/site/docs/api/common/source/raster/raster_data.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/source/raster/raster_data.en.md",
+      "sha256": "945f189dc321756ecf8030619bed2c7646a8bddc41a1253dfdfeff824a7a6522"
+    },
+    "repo/site/docs/api/common/source/raster/raster_multi.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/source/raster/raster_multi.en.md",
+      "sha256": "02f889c6ca8f206de42dcfa249db9ee61e392b5ee73aecb5c89040fdbd40c7f1"
+    },
+    "repo/site/docs/api/common/source/raster/raster_ndi.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/source/raster/raster_ndi.en.md",
+      "sha256": "ea0dca7d66ba7a11f661a1dbe777cc7ce7f220c06edb78b9d57268ceec23600b"
+    },
+    "repo/site/docs/api/common/source/raster/raster_rgb.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/source/raster/raster_rgb.en.md",
+      "sha256": "c013ad35bc2fa7e4bc782a057d62e59a771b9d39ec4636f6a40e7e46c82b9b4d"
+    },
+    "repo/site/docs/api/common/source/tile/method.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/source/tile/method.en.md",
+      "sha256": "3de08924f50af61da9fa69c368a7bc9c2979dc4ff27f07d13c54192399456e68"
+    },
+    "repo/site/docs/api/common/style.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/common/style.md",
+      "sha256": "0f0d21a1ddb13b66fd62dbd8039dcc6700ba69d7dd59a6789d8d010cd367db6d"
+    },
+    "repo/site/docs/api/component/control.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/control.en.md",
+      "sha256": "523dcf2af1c63581aa9cd216a6e2f0154ef1ad8ae59e244b7a39f3658ac703e9"
+    },
+    "repo/site/docs/api/component/export-image.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/export-image.en.md",
+      "sha256": "d0a41bddbc153385331e563585f93d5e4b3eb1201d747bff19d55b8fa3e3b887"
+    },
+    "repo/site/docs/api/component/fullscreen.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/fullscreen.en.md",
+      "sha256": "479d0c47dfa5f61071fbbbad58533645ff84258d0f8e9ac12af5db41e8e8dcc2"
+    },
+    "repo/site/docs/api/component/geolocate.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/geolocate.en.md",
+      "sha256": "3e137a26019ea85c6f2afdbd7af70a75958bf1b0036be0af2f330a84d62d3019"
+    },
+    "repo/site/docs/api/component/layer_popup.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/layer_popup.en.md",
+      "sha256": "9c34ee9d5618f10b3f9db2b00569077e03fd7d054716b98414941fcc8e2de7dd"
+    },
+    "repo/site/docs/api/component/layer_switch.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/layer_switch.en.md",
+      "sha256": "5176a23298612c12aca464d25e36ceeedf4fbb00c61ff12aa7a70129b5c85897"
+    },
+    "repo/site/docs/api/component/logo.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/logo.en.md",
+      "sha256": "fe31e4d252bf44fef411dac402f72373255d0c4c25e078cf785e8aed31c435f0"
+    },
+    "repo/site/docs/api/component/map_theme.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/map_theme.en.md",
+      "sha256": "120cba8c0b3c53b039f392ffafebc4d4723451e31c1e7118a4cea2ea3c5c663c"
+    },
+    "repo/site/docs/api/component/marker_layer.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/marker_layer.en.md",
+      "sha256": "03e44b1813d2a6d3e581d07f3ab15e756c6fab0a5d50cb301668ff9d5b7ee575"
+    },
+    "repo/site/docs/api/component/marker.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/marker.en.md",
+      "sha256": "2c40378156e89527f7f79644dce0779cfb0a83603143adb7dc598f6250c70087"
+    },
+    "repo/site/docs/api/component/mouse_location.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/mouse_location.en.md",
+      "sha256": "c1619ea00ba77f054d205afaec62c89aa78c354385a268d91d12f326f7cee517"
+    },
+    "repo/site/docs/api/component/popup.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/popup.en.md",
+      "sha256": "25145d26ee7495b0c6992d54697a1b816d094a40466fd0c4ec01c0bb67fb1b2a"
+    },
+    "repo/site/docs/api/component/scale.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/scale.en.md",
+      "sha256": "6fb1582f608d66a03f3a1524be07e877c3ecaf661c3d3157b9cfe2580bb614e0"
+    },
+    "repo/site/docs/api/component/swipe.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/swipe.en.md",
+      "sha256": "3b4b827bf9d5fe9d9f6327265ba67974bb495487ecb3e0834f41d4a995805d15"
+    },
+    "repo/site/docs/api/component/zoom.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/component/zoom.en.md",
+      "sha256": "0afbe0e74657b71fa3c31cc8627d91e8af58e9c7311d2d61bb916c4943316011"
+    },
+    "repo/site/docs/api/debug/debugservice.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/debug/debugservice.en.md",
+      "sha256": "160b91c88f59def1f18cc612473ce20a609ac4ee4b9f86b7ca18567387381405"
+    },
+    "repo/site/docs/api/experiment/earth.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/experiment/earth.en.md",
+      "sha256": "ff1e9cf8378e85e2c06a1ea82f188f93e5194847a0601585ab4244ec9002ed38"
+    },
+    "repo/site/docs/api/experiment/flyline.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/experiment/flyline.en.md",
+      "sha256": "9d499a66fff7e820aa47f6d408014b2e1ca7827fe4157ebeda3feca6eb90d672"
+    },
+    "repo/site/docs/api/experiment/pass.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/experiment/pass.en.md",
+      "sha256": "c298f7a842e3faa71743521a672942d2b85a6e9f0efd7f0055e54864b44d6c1e"
+    },
+    "repo/site/docs/api/experiment/point.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/experiment/point.en.md",
+      "sha256": "049e7e240092b2d54663e05684b93b8dbc0fdb7519b340081bd5e93c8cff7533"
+    },
+    "repo/site/docs/api/experiment/simple_coordinates.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/experiment/simple_coordinates.en.md",
+      "sha256": "054a7c4a410c85a9411c85894fdde68371eb26dddb4c527f1c294f4f6c6f3bc9"
+    },
+    "repo/site/docs/api/experiment/three.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/experiment/three.en.md",
+      "sha256": "8a4b973bdb095e87731d1779a67de523385f480523069e875769bc8fb5435273"
+    },
+    "repo/site/docs/api/heatmap_layer/heatmap.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/heatmap_layer/heatmap.en.md",
+      "sha256": "d754e48a68292c2b77516a6ca80cd0f571b3550768dd692f5f5cb1d7efe66bce"
+    },
+    "repo/site/docs/api/heatmap_layer/options.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/heatmap_layer/options.en.md",
+      "sha256": "649a9889c08db9608f0e4ea8e19f487886b1d468b7fb96fbe6b026f4e6a1c51c"
+    },
+    "repo/site/docs/api/heatmap_layer/scale.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/heatmap_layer/scale.en.md",
+      "sha256": "a52aca26d11bba2feeb2dc9af2a1177765c357adb69fd0fe9bd83d1b7c127348"
+    },
+    "repo/site/docs/api/heatmap_layer/shape.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/heatmap_layer/shape.en.md",
+      "sha256": "13dc79e416b69a9c35a71c448e198fd10043f3b2136f8311a6939ef00a565d48"
+    },
+    "repo/site/docs/api/heatmap_layer/source.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/heatmap_layer/source.en.md",
+      "sha256": "12906d711e5d575333a21ab7b036137de3d560b697f6e6de03d03daac94f08f7"
+    },
+    "repo/site/docs/api/heatmap_layer/style.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/heatmap_layer/style.en.md",
+      "sha256": "8582f7ebe26b151b33b8399e898059f34396803a589d92e5d3173f50db24181e"
+    },
+    "repo/site/docs/api/image_layer/imagelayer.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/image_layer/imagelayer.en.md",
+      "sha256": "cba633fca3c710b92163755831e0f0d4adebd221227c6902c29b200c5dcb805b"
+    },
+    "repo/site/docs/api/image_layer/options.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/image_layer/options.en.md",
+      "sha256": "954978afbd97668502343b37e8dfaa096a9e1445b623981f01ac200c01cda339"
+    },
+    "repo/site/docs/api/image_layer/source.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/image_layer/source.en.md",
+      "sha256": "fef71b37717457c6e5ede944e84abf6478979c9facef00d1753d3b41b7a7a198"
+    },
+    "repo/site/docs/api/image_layer/style.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/image_layer/style.en.md",
+      "sha256": "810e26a8545743323d62146de40730456ea5085a2fcacd59cb6a8ca3894d5a7e"
+    },
+    "repo/site/docs/api/line_layer/animate.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/line_layer/animate.en.md",
+      "sha256": "172567b175abb11a1d4d3114980dcf4c2bcfebde83218219d664f2bcd4515ee1"
+    },
+    "repo/site/docs/api/line_layer/color.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/line_layer/color.en.md",
+      "sha256": "07171ad3d03be741a8f111e7db7f91bfb2edf3b0d94f858813a53de50347d818"
+    },
+    "repo/site/docs/api/line_layer/linelayer.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/line_layer/linelayer.en.md",
+      "sha256": "a4fe4c5a1f74cec9a78f02639309eada006d3f9fcc532b5a6ecb53c5d00ea3ba"
+    },
+    "repo/site/docs/api/line_layer/options.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/line_layer/options.en.md",
+      "sha256": "649a9889c08db9608f0e4ea8e19f487886b1d468b7fb96fbe6b026f4e6a1c51c"
+    },
+    "repo/site/docs/api/line_layer/scale.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/line_layer/scale.en.md",
+      "sha256": "a52aca26d11bba2feeb2dc9af2a1177765c357adb69fd0fe9bd83d1b7c127348"
+    },
+    "repo/site/docs/api/line_layer/shape.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/line_layer/shape.en.md",
+      "sha256": "009d0a826469bc8bb6666f32f5b66934c493fe314fe4186d6a023d8b36a492ac"
+    },
+    "repo/site/docs/api/line_layer/size.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/line_layer/size.en.md",
+      "sha256": "be05cca0ed603633aa66c38a1ab449445858c21e63c9075a3bee40488014d95b"
+    },
+    "repo/site/docs/api/line_layer/source.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/line_layer/source.en.md",
+      "sha256": "41b9a1242cc5e30f954138dab8e4a3353ec26572f67a37fec473ad96cdc1789f"
+    },
+    "repo/site/docs/api/line_layer/style.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/line_layer/style.en.md",
+      "sha256": "ae3d19b8e635c342f7d43d19c90f50fb7925822d871a2c29a75195a78baa4939"
+    },
+    "repo/site/docs/api/line_layer/texture.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/line_layer/texture.en.md",
+      "sha256": "bca458740c6f12426d5390160bae2a2afd9bf3a32822b13bfc946fb9dbd93245"
+    },
+    "repo/site/docs/api/map/bmap.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/map/bmap.en.md",
+      "sha256": "3a3661af0843923354a1ca6bd1ef346928ad22c02a56a9e1e2b621ce30ce0e1f"
+    },
+    "repo/site/docs/api/map/gaode.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/map/gaode.en.md",
+      "sha256": "c16b988a826b74e9ab62841745b3b121130fd4daffa6d0ff1db23b83dbdbbe73"
+    },
+    "repo/site/docs/api/map/leaflet.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/map/leaflet.en.md",
+      "sha256": "09779a40cc8ab245304b85bf241673aee89c5fc03bf7c786bd756d19b9daa7d6"
+    },
+    "repo/site/docs/api/map/map.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/map/map.en.md",
+      "sha256": "9b3f5b627b1b8bc9470c46d8069aa6ca1aaef835a8b4efca67b95d7919dc905a"
+    },
+    "repo/site/docs/api/map/mapbox.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/map/mapbox.en.md",
+      "sha256": "177b44e06c0b9b4dc6af01fc8e3910708ac41257cfe93fdafea73cd8e783be7d"
+    },
+    "repo/site/docs/api/map/maplibre.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/map/maplibre.en.md",
+      "sha256": "7e648be2ceab72a5d5e24daae698c8f2d69956f42649ebc5a2014ee187d8f33b"
+    },
+    "repo/site/docs/api/map/tencent.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/map/tencent.en.md",
+      "sha256": "7a8cd80a768e913018e643fc87065694971d77b0154177fca44e826e55a3d94e"
+    },
+    "repo/site/docs/api/map/tianditu.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/map/tianditu.en.md",
+      "sha256": "e91469f43b0abcbdfc24e4892178b8e1f147f33e828e177c49b5331edcbd43d2"
+    },
+    "repo/site/docs/api/other/canvas.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/other/canvas.en.md",
+      "sha256": "2ab61c467db7020ee9954ae5c062d43fde147bca64e545dad49f2e8dbdd2ca06"
+    },
+    "repo/site/docs/api/other/city_building.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/other/city_building.en.md",
+      "sha256": "67eae26a4dbb358eb11bd11b688c69e5ffbd67c56ceedee1a1d617a363d94cd3"
+    },
+    "repo/site/docs/api/other/plane.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/other/plane.en.md",
+      "sha256": "8f0e81ec0286c59cec5c2c5c4655bcdc82a24ac6f99e06f55c17d4bd31f4e471"
+    },
+    "repo/site/docs/api/other/sprite.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/other/sprite.en.md",
+      "sha256": "fee99ffb5ae1a7b55de2249fd649495c010ad496830b092b75764d30a6bc5034"
+    },
+    "repo/site/docs/api/point_layer/animate.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/point_layer/animate.en.md",
+      "sha256": "c4d38d73923e622c225c601c842eded7ac78dafc753aca780890b21e32dc2c0b"
+    },
+    "repo/site/docs/api/point_layer/color.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/point_layer/color.en.md",
+      "sha256": "07171ad3d03be741a8f111e7db7f91bfb2edf3b0d94f858813a53de50347d818"
+    },
+    "repo/site/docs/api/point_layer/options.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/point_layer/options.en.md",
+      "sha256": "649a9889c08db9608f0e4ea8e19f487886b1d468b7fb96fbe6b026f4e6a1c51c"
+    },
+    "repo/site/docs/api/point_layer/pointlayer.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/point_layer/pointlayer.en.md",
+      "sha256": "84f731ba8c684d3a6a7330c83203e923c17299f263313cc828f24db8fda144fe"
+    },
+    "repo/site/docs/api/point_layer/scale.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/point_layer/scale.en.md",
+      "sha256": "a52aca26d11bba2feeb2dc9af2a1177765c357adb69fd0fe9bd83d1b7c127348"
+    },
+    "repo/site/docs/api/point_layer/shape.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/point_layer/shape.en.md",
+      "sha256": "f95ba6bda3487a629f3079d53e4ee03bc78f65f0a48b8e4cf734c5d76df85b48"
+    },
+    "repo/site/docs/api/point_layer/size.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/point_layer/size.en.md",
+      "sha256": "6435c1cc13d33bba491cf1e21c35be8b901ab76cfd1dda3c720ed1cfd8320307"
+    },
+    "repo/site/docs/api/point_layer/source.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/point_layer/source.en.md",
+      "sha256": "162a545cdb9ba15cad6e7209f104fba3cb9e18084ca664d817b8c05aa156361a"
+    },
+    "repo/site/docs/api/point_layer/style.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/point_layer/style.en.md",
+      "sha256": "fa4e46e99814301059b16e5a74271af89c87ef9eaa8498b3b875a563ae5f0d85"
+    },
+    "repo/site/docs/api/polygon_layer/animate.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/polygon_layer/animate.en.md",
+      "sha256": "c6d39d68aaab3aa902714b4ccb1b20977d2a2956bb966a268f8209d8cbea8680"
+    },
+    "repo/site/docs/api/polygon_layer/color.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/polygon_layer/color.en.md",
+      "sha256": "07171ad3d03be741a8f111e7db7f91bfb2edf3b0d94f858813a53de50347d818"
+    },
+    "repo/site/docs/api/polygon_layer/options.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/polygon_layer/options.en.md",
+      "sha256": "649a9889c08db9608f0e4ea8e19f487886b1d468b7fb96fbe6b026f4e6a1c51c"
+    },
+    "repo/site/docs/api/polygon_layer/polygonlayer.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/polygon_layer/polygonlayer.en.md",
+      "sha256": "3f181043fba6fcc0b207146f23901b3a9046f0ad11f45df79d42b7d1f3a29fcb"
+    },
+    "repo/site/docs/api/polygon_layer/scale.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/polygon_layer/scale.en.md",
+      "sha256": "a52aca26d11bba2feeb2dc9af2a1177765c357adb69fd0fe9bd83d1b7c127348"
+    },
+    "repo/site/docs/api/polygon_layer/shape.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/polygon_layer/shape.en.md",
+      "sha256": "243eefffb46578af68f6a64bea0e53c63a70d4f7ab62978e51a90e0223b2f86f"
+    },
+    "repo/site/docs/api/polygon_layer/size.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/polygon_layer/size.en.md",
+      "sha256": "56d0caa09059f2797e2e8e516163e69b172c90053263aec86343c313e7a3e707"
+    },
+    "repo/site/docs/api/polygon_layer/source.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/polygon_layer/source.en.md",
+      "sha256": "6279ce2d194306481dd55c7508013568188148db83bae9a4e2e33eda747d2995"
+    },
+    "repo/site/docs/api/polygon_layer/style.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/polygon_layer/style.en.md",
+      "sha256": "d23263492b8cfc3497760b31c161ac6d717297d950c0fc6d371072134e090d14"
+    },
+    "repo/site/docs/api/raster_layer/options.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/raster_layer/options.en.md",
+      "sha256": "649a9889c08db9608f0e4ea8e19f487886b1d468b7fb96fbe6b026f4e6a1c51c"
+    },
+    "repo/site/docs/api/raster_layer/raster_data.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/raster_layer/raster_data.en.md",
+      "sha256": "811d9b27a3f75d8544f39455355d5b8cd1e6e6f8b95688006a9bbb42cd3b0be2"
+    },
+    "repo/site/docs/api/raster_layer/raster_ndi.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/raster_layer/raster_ndi.en.md",
+      "sha256": "4af2692ef4d3112e5434f0971218c8abf932f4f8694fe374f7d7e7a0784b28cf"
+    },
+    "repo/site/docs/api/raster_layer/raster_rgb.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/raster_layer/raster_rgb.en.md",
+      "sha256": "9439616954a5b9c21c53c8b9af14dc1c3b5535513e224fcc9beca3a52b41b2a4"
+    },
+    "repo/site/docs/api/raster_layer/raster.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/raster_layer/raster.en.md",
+      "sha256": "66bc2be0d9dc81c70b57fa0bab0faefb4b8c1f3ce13d279eb844efd49669167b"
+    },
+    "repo/site/docs/api/react/react.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/react/react.en.md",
+      "sha256": "967c1c9d32b76ffec3bbdff476582d614b9b618237e4f00d55289772e40f3a04"
+    },
+    "repo/site/docs/api/scene.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/scene.en.md",
+      "sha256": "b1e76e8d18212090d9ee3cef713dc6a0c9b94f3bcaf320dd5b79056d4a7b44fe"
+    },
+    "repo/site/docs/api/source/csv.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/source/csv.en.md",
+      "sha256": "c1eec6505ff5f680b3537c6ecb2ab22bc3e8d274fc3415d022255957d13ff93b"
+    },
+    "repo/site/docs/api/source/geojson.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/source/geojson.en.md",
+      "sha256": "0f51e80694a6f0b49866ef1e199f19fc20af691e7adaebda2deb1e55bf363445"
+    },
+    "repo/site/docs/api/source/image.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/source/image.en.md",
+      "sha256": "668823a1bbc58452c1d4935b748adca885d0d40858ec052d7c2f459ba51c2dc1"
+    },
+    "repo/site/docs/api/source/json.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/source/json.en.md",
+      "sha256": "8d4bd9dba9047c329caff7aec1cbb896336a5b9f3b3c69a1241e626d0fab485b"
+    },
+    "repo/site/docs/api/source/mvt.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/source/mvt.en.md",
+      "sha256": "ab6326e421024db85333f9b430028be2daac269c8f152c65d09848b6b477ec7b"
+    },
+    "repo/site/docs/api/source/raster_ndi.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/source/raster_ndi.en.md",
+      "sha256": "e47c31511176dcdc1ff94304853010b8d7e722e383d30bf26e1480d91e1f63be"
+    },
+    "repo/site/docs/api/source/raster_rgb.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/source/raster_rgb.en.md",
+      "sha256": "43418f50aac3a40f807244ae97b596b47e61cc4f2de86c9ec82802b549d9f830"
+    },
+    "repo/site/docs/api/source/raster_tile.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/source/raster_tile.en.md",
+      "sha256": "4bc02014e04069576b98370fa72105319cd1d4383b6b58c7b5dcc8a873c7a667"
+    },
+    "repo/site/docs/api/source/raster.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/source/raster.en.md",
+      "sha256": "1aff8c9ae01cc15845a93bf0a5226b34ded37b7927de9f817dd41a2bd457aae5"
+    },
+    "repo/site/docs/api/source/source.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/source/source.en.md",
+      "sha256": "38bbf95485a2033f18556a5d996318bc5c84c9c70481c569d4d7eed593325989"
+    },
+    "repo/site/docs/api/tile/common/options.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/tile/common/options.en.md",
+      "sha256": "69502de0da29401d0dd8c4cd275996e3be335ed028bb2b7321cb581632e33db5"
+    },
+    "repo/site/docs/api/tile/common/style.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/tile/common/style.en.md",
+      "sha256": "f07d31caddd51a00b5c753f2e255296b582a8410f71ac14b829ca65eb08f68b4"
+    },
+    "repo/site/docs/api/tile/geojsonvt_tile_layer.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/tile/geojsonvt_tile_layer.en.md",
+      "sha256": "830af44e102e80ddda08c8a4496ff17260f1203a739fc217c3770053dca80139"
+    },
+    "repo/site/docs/api/tile/raster_tile_layer.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/tile/raster_tile_layer.en.md",
+      "sha256": "613789e083f588f7ca6597e21996e973d5516b8744a9c1e7793b1e08e262814b"
+    },
+    "repo/site/docs/api/tile/tile_debug_layer.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/tile/tile_debug_layer.en.md",
+      "sha256": "31577d21d682509e9b8747e45cf9955be2946b36ae306d4ea84e30f5d8481d38"
+    },
+    "repo/site/docs/api/tile/vector_tile_layer.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/api/tile/vector_tile_layer.en.md",
+      "sha256": "fd4c580ec78b8476d62bd6ea4368614f7350c9e62af4e0ca476527c276877ade"
+    },
+    "repo/site/docs/tutorial/data.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/data.en.md",
+      "sha256": "ef4449587174f6c1e0486657bdbb10a37ded0e89487dae69383b99626ff1c8b2"
+    },
+    "repo/site/docs/tutorial/demo.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/demo.en.md",
+      "sha256": "801c5e91675f83bdb768303c7fd5524754615ba693991bc0cabd5b89a8ef50f2"
+    },
+    "repo/site/docs/tutorial/develop.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/develop.en.md",
+      "sha256": "288d8d30c28475f79699e82d303a82de5b49815140489d2a58d20585e47d435d"
+    },
+    "repo/site/docs/tutorial/FAQ.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/FAQ.en.md",
+      "sha256": "2b9cc1d95eb2651688a8067a3f461867932685f5dc193bd6dcfae8d06dc7b94b"
+    },
+    "repo/site/docs/tutorial/heatmap/grid.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/heatmap/grid.en.md",
+      "sha256": "94f4a3895dfd61dd8918bdc299fcd24a8d6eac20e30dce50df03c0d7e8634754"
+    },
+    "repo/site/docs/tutorial/heatmap/hexagon.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/heatmap/hexagon.en.md",
+      "sha256": "377bf72b26bae075f0d79459efe4aee4dfa9f4c93bada993853d8f08869ff87e"
+    },
+    "repo/site/docs/tutorial/heatmap/normal.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/heatmap/normal.en.md",
+      "sha256": "69c0904d304c560d4a123a5eec1b017e7905b64ac1f1a33a24544423720464a0"
+    },
+    "repo/site/docs/tutorial/interactive/hightlight.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/interactive/hightlight.en.md",
+      "sha256": "bac779192fdd8abdd61be9dab7efbd6f2503c46a55344dea7faa9c0f03393350"
+    },
+    "repo/site/docs/tutorial/l7.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/l7.en.md",
+      "sha256": "593a3ae80e73256b55e87c95954ef7420920b6fecbb915512f17fd880891d75f"
+    },
+    "repo/site/docs/tutorial/line/arc.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/line/arc.en.md",
+      "sha256": "13fd3e1cdbc1eb86a694c55f9f2dedf82cd62dba58317941e7f85e99bf9df40d"
+    },
+    "repo/site/docs/tutorial/line/arc3d.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/line/arc3d.en.md",
+      "sha256": "33ef197fccb99830adb0c106f08c1f2e41b8e2bd68c37a2e0b163dc6a8e7140f"
+    },
+    "repo/site/docs/tutorial/line/greatcircle.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/line/greatcircle.en.md",
+      "sha256": "3e6f06b6aec315da8ea0d676da30fdc1c0efbdcdf7e081711b20f2b3b6b33cb6"
+    },
+    "repo/site/docs/tutorial/line/path.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/line/path.en.md",
+      "sha256": "69192caae7a84a6433ff542005586163fec7408f104434f9e426a9bd82cbbc97"
+    },
+    "repo/site/docs/tutorial/line/simple.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/line/simple.en.md",
+      "sha256": "97806a7860e32c42b1e88c4bfaebaa43a9c6b987b2e78340a651507cfa507a8d"
+    },
+    "repo/site/docs/tutorial/line/wall.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/line/wall.en.md",
+      "sha256": "3fd902b3aebd4bbd9452889ddda4a76434e26a33e45b98ca2b6a2afc49eb0b43"
+    },
+    "repo/site/docs/tutorial/map/amap.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/map/amap.en.md",
+      "sha256": "bde55b6d4e6fe68ebe5a308ac182fc83a4de9b0bedce5e8499941bb312df5d49"
+    },
+    "repo/site/docs/tutorial/map/amapplugin.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/map/amapplugin.en.md",
+      "sha256": "a6f4f833d002206496ff32b719e422e3f538d53d3584c53f11e0fcce28ec6ede"
+    },
+    "repo/site/docs/tutorial/map/blankmap.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/map/blankmap.en.md",
+      "sha256": "ef20c81d2407877d312a9b43aaebd3df179e8b17b08596f8f059868a0a30ad02"
+    },
+    "repo/site/docs/tutorial/map/leaflet.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/map/leaflet.en.md",
+      "sha256": "3a722bf9f70a4af3875f15d7575164963967f068f1d1fa5c8485627e85547b06"
+    },
+    "repo/site/docs/tutorial/map/mapbox.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/map/mapbox.en.md",
+      "sha256": "ed3ac15399276c4e2ef7063dd3cfd93ae0ea119a5ca40b0356346c946415cf02"
+    },
+    "repo/site/docs/tutorial/map/offline.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/map/offline.en.md",
+      "sha256": "d20af7a6e1658b14627d8d7028f152cb20bf2e97b80aa909bf3eef2ad210982f"
+    },
+    "repo/site/docs/tutorial/map/tianditu.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/map/tianditu.en.md",
+      "sha256": "a3b55421a3585d0955c1b7bd70d5798845ef19ff4432bac2ee8c00109de7aae3"
+    },
+    "repo/site/docs/tutorial/monitor/layer_init.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/monitor/layer_init.en.md",
+      "sha256": "bd8dd4894ffca33d54f0648eb5602e10afcfce1f7f8249e01f76c451ab675a2d"
+    },
+    "repo/site/docs/tutorial/monitor/map_init.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/monitor/map_init.en.md",
+      "sha256": "a338b2fcff6157d185f0651d0188f8d34c06d5cf0deb8b06b1e57c9016a5e240"
+    },
+    "repo/site/docs/tutorial/monitor/render.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/monitor/render.en.md",
+      "sha256": "cc55212aabe5eff41e68a986d780c7b8a66fd901805f2925d3a312546530e5d3"
+    },
+    "repo/site/docs/tutorial/point/bubble.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/bubble.en.md",
+      "sha256": "5a22f24de09d2006f6a607f4f28f1c7ee7b1302c38555f0b17eca80a919bf713"
+    },
+    "repo/site/docs/tutorial/point/chart.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/chart.en.md",
+      "sha256": "12755be49d2591f052a0ade1a1f88c0d444939003b43990e72c42be32b4dcdb7"
+    },
+    "repo/site/docs/tutorial/point/cluster.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/cluster.en.md",
+      "sha256": "cdf334f45803aa6bcce3e29e319b6258f0edd75d396c9eac97a76040c6477cd7"
+    },
+    "repo/site/docs/tutorial/point/column.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/column.en.md",
+      "sha256": "1aaeca78dd76ad1c880a0cd67c3483eb6dc930d3ec212d9c03e5a5b6a2ee431e"
+    },
+    "repo/site/docs/tutorial/point/dot.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/dot.en.md",
+      "sha256": "30f2b12cffda8ea203bcd3520d5faec924bd40d36bf87066174ec9ec81d89b7c"
+    },
+    "repo/site/docs/tutorial/point/iconfont.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/iconfont.en.md",
+      "sha256": "bfd8fdde077fef6d15c059028d879d3bb5ccce559b0780743a2b7234e5a79a94"
+    },
+    "repo/site/docs/tutorial/point/mark.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/mark.en.md",
+      "sha256": "8748d1abe644094ff9661a5b51d7340f1d363bd759f15318da56cb476104ea71"
+    },
+    "repo/site/docs/tutorial/point/radar.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/radar.en.md",
+      "sha256": "53f23c31d611e3d12d65d4155409ae90cc69c9a54cd748cc38cd71db2e6b4033"
+    },
+    "repo/site/docs/tutorial/point/scatter.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/scatter.en.md",
+      "sha256": "54dabc8bac659f70b8492fe72ae8a0b2247f82be95efa9e97e59e0539ef13b6f"
+    },
+    "repo/site/docs/tutorial/point/simple.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/simple.en.md",
+      "sha256": "0d2148ca53f430b88a1feb367f5412b7b337848156386f1e4b1eae1f72993959"
+    },
+    "repo/site/docs/tutorial/point/symbol.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/symbol.en.md",
+      "sha256": "52519d69138802f6321a52b619f215005c5b2b6d4c48cdbc220e719de86c7ff2"
+    },
+    "repo/site/docs/tutorial/point/text.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/text.en.md",
+      "sha256": "9b28039887084bca657b3a1ee120240f91633349747df4c194c103f4a839e045"
+    },
+    "repo/site/docs/tutorial/point/wave.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/point/wave.en.md",
+      "sha256": "cee49dadfff2ed7cb74f25c816b2c66eeab87462c0e325266ac6e635e1337924"
+    },
+    "repo/site/docs/tutorial/polygon/extrude.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/polygon/extrude.en.md",
+      "sha256": "329c773e23af3f412f05fd67fd89f1bfc7467fe7b2c2ab10f6384e6f100a7592"
+    },
+    "repo/site/docs/tutorial/polygon/fill.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/polygon/fill.en.md",
+      "sha256": "fced202c6233e1a488780619b743de06c5b826061ff2b4aad2272a8014c22053"
+    },
+    "repo/site/docs/tutorial/polygon/water.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/polygon/water.en.md",
+      "sha256": "41243f6dd9c6be898040b7ec752b075166ac7076784783f960962cb0b45153e2"
+    },
+    "repo/site/docs/tutorial/quick_issue.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/quick_issue.en.md",
+      "sha256": "747f5ebc6fb935bb55c57566fd4c65109f8929cf3d677548ec3565e625dffbf1"
+    },
+    "repo/site/docs/tutorial/quickstart.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/quickstart.en.md",
+      "sha256": "e9cd956b5f135fd20bfa04ba45a90c3a3593900fb1723419fc52f135b989fd20"
+    },
+    "repo/site/docs/tutorial/scale.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/scale.en.md",
+      "sha256": "f2946207d8b5c02ddaaefaa8e74fa02d96902d3136717a8ec5a3f2f63f173e1b"
+    },
+    "repo/site/docs/tutorial/tile/raster_tile.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/tile/raster_tile.en.md",
+      "sha256": "7c66663778b7d6c815fbb726156a67a3e5cdee9ad76e44e1afceecbedda10a14"
+    },
+    "repo/site/docs/tutorial/tile/tile.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/tile/tile.en.md",
+      "sha256": "584d615d4b112b29feefa404db983c6e9dc659a5ce29ab94a5179582968efafe"
+    },
+    "repo/site/docs/tutorial/tile/vector_tile.en.md": {
+      "url": "https://github.com/antvis/L7/blob/b8127c30f03e098a49fe9222925fa36004c41b7f/site/docs/tutorial/tile/vector_tile.en.md",
+      "sha256": "f842b9ae691bfa7a78aaa867031cbc8f6203f809ab8679e2f0c0711fe73e8138"
+    }
+  }
+}

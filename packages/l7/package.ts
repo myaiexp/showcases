@@ -1,0 +1,50 @@
+// @antv/l7: WebGL geospatial layers (points, lines, polygons, heatmaps) on a map
+import { definePackage } from '@/types.ts';
+
+export default definePackage({
+  name: 'AntV L7',
+  npm: '@antv/l7',
+  tagline: 'WebGL geospatial visualization: point, line, polygon, heatmap and raster layers on a map.',
+  about:
+    'L7 draws geographic data with WebGL. A Scene holds a map and its layers; each layer takes data through source(), then maps fields to visuals with chained shape(), size(), color() and style() calls, and can animate, highlight on hover and fire mouse events. Every example here runs on 2.29.1 with the built-in Map engine from @antv/l7-maps, which needs no tiles or token, and draws on an offline Natural Earth outline instead of a basemap. The data the docs load from their CDN is generated in code, so nothing fetches. The site\'s demo gallery stays out: these are built from the tutorial and API pages alone.',
+  category: 'Data/Viz',
+  homepage: 'https://l7.antv.antgroup.com/',
+  docsUrl: 'https://l7.antv.antgroup.com/api',
+  repo: 'https://github.com/antvis/L7',
+  added: '2026-11-15',
+  // The docs site's sidebar order: the tutorial chapters, then the API chapters. The API's
+  // BaseLayer page embeds a dozen shared pages (encoding, style, events, interaction, mask,
+  // update), so it is split by those topics, and the shared layer features get their own.
+  sections: [
+    'Getting Started',
+    'Tutorial: Map',
+    'Tutorial: Interaction',
+    'Tutorial: Point',
+    'Tutorial: Line',
+    'Tutorial: Polygon',
+    'Tutorial: Heatmap',
+    'Tutorial: Tile',
+    'Tutorial: Monitor',
+    'Scene',
+    'Map',
+    'Source',
+    'Component',
+    'Layer: Basics',
+    'Layer: Encoding',
+    'Layer: Style',
+    'Layer: Events',
+    'Layer: Interaction',
+    'Layer: Mask',
+    'Layer: Features',
+    'Point Layer',
+    'Line Layer',
+    'Polygon Layer',
+    'Heatmap Layer',
+    'Image Layer',
+    'Raster Layer',
+    'Tile Layer',
+    'Other Layers',
+    'Debug',
+    'Experiment',
+  ],
+});

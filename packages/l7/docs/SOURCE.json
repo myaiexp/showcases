@@ -1,0 +1,17 @@
+{
+  "license": "MIT (LICENSE.md at the root of antvis/L7, which holds the l7.antv.antgroup.com site source under site/docs). The English pages are taken; the Chinese twins and site/examples (the demo gallery) stay out.",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/antvis/L7",
+      "ref": "@antv/l7@2.29.1",
+      "paths": [
+        "LICENSE.md",
+        "README.en-US.md",
+        "site/docs/**/*.en.md",
+        "site/docs/api/common/style.md"
+      ]
+    }
+  ]
+}
