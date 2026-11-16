@@ -1,0 +1,13 @@
+// leafer-ui example: Arrow: endArrow "arrow"
+import { defineMeta } from '@/types.ts';
+
+export default defineMeta({
+  title: "Arrow: endArrow \"arrow\"",
+  summary:
+    "'arrow' is the standard head: a filled shape with notched back.",
+  section: "Official plugins",
+  tags: ["Arrow", "@leafer-in/arrow", "endArrow"],
+  docs: ["pages/www-leaferjs-com/ui/en/plugin/in/arrow.md"],
+  provenance: 'pure',
+  added: '2026-11-16',
+});

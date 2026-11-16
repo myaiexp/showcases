@@ -249,3 +249,7 @@ GitHub Pages. No service on the VPS.
   (ES imports, promises; `left`/`top` place the centre). Cards drive pointer input with `stage.ghost(canvas)`, which calls
   fabric's handlers directly, since a real mousedown listens on the document. Never change `ownDefaults`, prototypes,
   `config` or the filter backend without restoring them in the same tick; pictures come from `shared/images.ts`.
+- Leafer UI: build on `packages/leafer-ui/shared/stage.ts` (`createStage`; traps in `shared/traps.md`):
+  `stage.own(new Leafer({ view: stage.view, … }))` (or `App`), which destroys it synchronously. Cards drive input with
+  `stage.ghost(engine)` (the engine's own `interaction.pointerDown/Move/Up`, never DOM events) and have document key
+  events off. Images come from `shared/images.ts`; `test/leafer-ui-offline.test.ts` fails any non-data: `url:`.
