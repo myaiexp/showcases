@@ -94,3 +94,16 @@ Found while building the gallery against leafer-ui 2.3.4 and its `@leafer-in/*` 
 - Shared helpers: `shared/basics.ts` (`sizer` scales docs coordinates to the pane, `fakeWheel`,
   `wheelTour`, `hoverLoop`, `dragToAndFro`, `cycle`), `export-view.ts` (export result panel),
   `sprites.ts` (a 20-frame arrow sprite sheet for Robot).
+
+## Data and layout (2.3.4)
+
+- `position: { id }` needs `@leafer-in/find` as well as `@leafer-in/position` (it logs "please
+  install and import plugin" and does nothing otherwise). The position plugin lays out on the next
+  frame: read `x`/`y`/`width`/`height` about 80 ms after assigning `position`.
+- `proxyData` has no getter until a framework adapter defines one; the data-proxy examples install
+  a plain-Proxy adapter on `UI.prototype`, reference-counted on globalThis so it comes off only
+  with the last of them. Restore in a microtask after dispose: the destroying engine still calls
+  `setProxyAttr`.
+- Types reject two documented forms: `rect.path = null` (use `null as never`) and
+  `getInnerPoint(p, null, true)` (pass `undefined`).
+- `caxi js` / `caxi eval` time out after 60 s: probe at most about 25 examples per call.
