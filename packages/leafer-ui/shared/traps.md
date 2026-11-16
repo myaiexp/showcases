@@ -199,3 +199,18 @@ Found while building the gallery against leafer-ui 2.3.4 and its `@leafer-in/*` 
 - Robot treats any truthy `loop` as forever (a count is not honoured).
 - Shared helper: `plugin-kit.ts` (view replay, text-editor typing into `editDom`, linker boxes,
   scroller content, robot frames).
+- Film and Video: the docs' `/film/color.gif` and `/video/forest.mp4` are replaced by
+  `media-kit.ts`: a GIF89a encoder (3-3-2 palette, so backgrounds must be palette colours such as
+  `#242455`) and a canvas clip recorded once per page (`clipBlob`). Resource shares one decoder
+  per URL: `blobUrl()` gives each mount its own blob URL and removes the Resource on dispose.
+  `Video.play()` before `ImageEvent.LOADED` does nothing; call it about 50 ms after. A recorded
+  WebM reads `ended: false` at its end: count `playerOptions.loop` instead (`loopClip`). The
+  `Film` type lacks `decoder`/`playerOptions`: read them through `new PaintFilm(film)`.
+- `Group` ignores `filter` (use `Box`); `Filter.register` is page-wide (module level, unique name).
+- image-filter builds a shader, buffer and texture per new filter key and never deletes them;
+  the filtered copy stays in the source image's `childrenMap` until the context is lost. Free the
+  contexts on dispose (`gpu.ts` `freeFilterContexts`) and change values in coarse steps in cards
+  (`driveSlow`). Filter names may only contain letters.
+- A `PathBox` with `scale` scales its child too: scale the path string instead.
+- `BackgroundRunner.maxFPS` and `disabled` are page-wide: restore on dispose.
+- Browser probes: more than about 6 image-filter or video full views per eval hit caxi's memory cap.
