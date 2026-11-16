@@ -185,3 +185,17 @@ Found while building the gallery against leafer-ui 2.3.4 and its `@leafer-in/*` 
 - Keep browser probes to 12-15 card mounts per eval (memory cap).
 - Shared helpers: `editor-kit.ts` (card layout, `pair`/`trio`/`solo`, `spot`, `watch`, `actions`,
   `variants`, `tune`, `pull`, `holding`/`dragWith`, `cursorTile`).
+
+## Official plugins (2.3.4)
+
+- `new App({ view })` with no `editor` needs `tree: {}`, or `app.tree` is undefined.
+- A draggable Box's drag wins over a child's `DragEvent.START` with `e.stop()`: a dot that starts
+  a Linker drag needs a non-draggable box. A Linker with no `endPoint` draws nothing;
+  `createStartPoint`/`createEndPoint` assign the point, `createLinkerPoint` only returns data.
+  `ILinkerPointData` comes from `leafer-ui`.
+- Arrow heads registered on `PathArrow.list` are page-wide: unique names, deleted on dispose.
+  `HTMLText.addUnicodeEntity` has no remove (names persist); restore any
+  `HTMLText.prototype.decodeText` override on dispose.
+- Robot treats any truthy `loop` as forever (a count is not honoured).
+- Shared helper: `plugin-kit.ts` (view replay, text-editor typing into `editDom`, linker boxes,
+  scroller content, robot frames).
