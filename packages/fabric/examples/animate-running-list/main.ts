@@ -1,4 +1,4 @@
-// Animation: runningAnimations lists live animations; cancel them by target or canvas
+// runningAnimations lists live animations; cancel them by target or canvas
 import { Canvas, Circle, runningAnimations } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// A parser lab: SVG source text, the browser's own drawing of it, and a canvas for fabric's parse
+// A parser lab: SVG source, the browser's drawing of it, fabric's canvas
 import { Canvas, type FabricObject } from 'fabric';
 import type { MountContext } from '@/types.ts';
 import { briefStatus, svgPanel } from './code-panel.ts';

@@ -1,4 +1,4 @@
-// Canvas: StaticCanvas draws the same objects as Canvas but has no selection, dragging or events
+// StaticCanvas draws the same objects as Canvas but has no selection
 import { Canvas, Circle, Point, Rect, StaticCanvas } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

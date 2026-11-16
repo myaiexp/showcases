@@ -1,4 +1,4 @@
-// Paths: new Path(d) draws any SVG path data string; edit the string and the Path is rebuilt
+// new Path(d) draws any SVG path data string
 import { Canvas, Path } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Canvas: overlayColor paints a colour over everything, and controlsAboveOverlay keeps the controls clickable
+// overlayColor paints a colour over everything on the canvas
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, color } from '../../shared/controls.ts';

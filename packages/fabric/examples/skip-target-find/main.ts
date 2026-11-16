@@ -1,4 +1,4 @@
-// Canvas: skipTargetFind true makes the pointer ignore every object, so nothing can be picked or dragged
+// skipTargetFind true makes the pointer ignore every object
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

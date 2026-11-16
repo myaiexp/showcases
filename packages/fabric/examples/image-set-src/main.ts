@@ -1,4 +1,4 @@
-// Images: setSrc(url) swaps the picture an existing FabricImage shows, keeping its position and options
+// setSrc(url) swaps the picture an existing FabricImage shows
 import { Canvas, FabricImage } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

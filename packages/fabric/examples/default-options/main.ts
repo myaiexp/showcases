@@ -1,4 +1,4 @@
-// Objects: new Rect() with no options has defaults: black fill, no stroke, and 0 by 0 size
+// new Rect() with no options has defaults: black fill, no stroke, and 0 by 0 size
 import { Canvas, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

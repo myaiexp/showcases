@@ -1,4 +1,4 @@
-// Canvas: uniformScaling keeps the aspect ratio when a corner is dragged; uniScaleKey flips that while held
+// uniformScaling keeps the aspect ratio when a corner is dragged
 import { Canvas, Point, Rect, type TOptionalModifierKey } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, select } from '../../shared/controls.ts';

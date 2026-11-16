@@ -1,4 +1,4 @@
-// Text: stroke and strokeWidth outline the letters; paintFirst chooses what is drawn first
+// stroke and strokeWidth outline the letters
 import { Canvas, FabricText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select, slider } from '../../shared/controls.ts';

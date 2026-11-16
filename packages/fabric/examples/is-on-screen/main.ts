@@ -1,4 +1,4 @@
-// Objects: isOnScreen() and isPartiallyOnScreen() check an object against the visible canvas area
+// isOnScreen() and isPartiallyOnScreen() check against the visible area
 import { Canvas, Circle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

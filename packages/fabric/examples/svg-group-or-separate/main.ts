@@ -1,4 +1,4 @@
-// SVG: loadSVGFromString, then groupSVGElements to one object or add the parts one by one
+// loadSVGFromString: one group with groupSVGElements, or separate objects
 import { loadSVGFromString, util, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

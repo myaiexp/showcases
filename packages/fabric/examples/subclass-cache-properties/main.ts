@@ -1,4 +1,4 @@
-// Subclassing: a custom property left out of cacheProperties draws from a stale cache
+// A custom property left out of cacheProperties draws from a stale cache
 import { Canvas, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { briefStatus } from '../../shared/code-panel.ts';

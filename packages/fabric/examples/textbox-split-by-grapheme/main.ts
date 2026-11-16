@@ -1,4 +1,4 @@
-// Text: splitByGrapheme breaks a Textbox between any two characters, not only at spaces
+// splitByGrapheme breaks a Textbox between any two characters, not only at spaces
 import { Canvas, Textbox } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

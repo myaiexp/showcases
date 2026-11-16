@@ -1,4 +1,4 @@
-// Serialization: excludeFromExport keeps helper objects out of the JSON and the SVG
+// excludeFromExport keeps helper objects out of the JSON and the SVG
 import { Canvas, Line, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { briefStatus, codePanel, pretty } from '../../shared/code-panel.ts';

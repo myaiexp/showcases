@@ -1,4 +1,4 @@
-// Bundled fonts for text examples: loaded into document.fonts once, never from a CDN
+// Bundled fonts for text examples, loaded once without a CDN
 import inter from '@fontsource-variable/inter/files/inter-latin-wght-normal.woff2?url';
 import lora400 from '@fontsource/lora/files/lora-latin-400-normal.woff2?url';
 import lora700 from '@fontsource/lora/files/lora-latin-700-normal.woff2?url';

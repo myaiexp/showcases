@@ -1,4 +1,4 @@
-// Canvas: setDimensions() resizes the canvas element, and cssOnly changes only how large it is shown
+// setDimensions() resizes the canvas element
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select, slider } from '../../shared/controls.ts';

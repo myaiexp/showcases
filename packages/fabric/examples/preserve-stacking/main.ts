@@ -1,4 +1,4 @@
-// Canvas: preserveObjectStacking false lifts the selected object above the others while it is selected
+// preserveObjectStacking false lifts the selected object above the others
 import { Canvas, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Objects: a Circle is a radius around a centre; the slider changes it with set('radius')
+// A Circle is a radius around a centre; the slider changes it with set('radius')
 import { Canvas, Circle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

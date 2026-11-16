@@ -1,4 +1,4 @@
-// Objects: stroke sets the outline colour and strokeWidth its thickness, centred on the edge
+// stroke sets the outline colour and strokeWidth its thickness
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { color, slider } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Objects: Circle startAngle and endAngle (degrees) cut the circle into an arc or pie slice
+// Circle startAngle and endAngle (degrees) cut the circle into an arc or pie slice
 import { Canvas, Circle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Text: setSuperscript and setSubscript shrink a range and shift its baseline through styles
+// setSuperscript and setSubscript shrink a range and shift its baseline
 import { Canvas, FabricText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

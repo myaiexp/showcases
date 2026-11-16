@@ -1,4 +1,4 @@
-// Canvas: backgroundImage draws a FabricImage behind the objects, and backgroundVpt lets it follow zoom
+// backgroundImage draws a picture behind the objects; backgroundVpt follows zoom
 import { Canvas, FabricImage, Point, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

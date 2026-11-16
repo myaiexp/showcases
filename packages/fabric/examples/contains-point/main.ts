@@ -1,4 +1,4 @@
-// Objects: containsPoint(point) tests a point against the object's rotated bounding box
+// containsPoint(point) tests a point against the object's rotated bounding box
 import { Canvas, Circle, Point, Polygon } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

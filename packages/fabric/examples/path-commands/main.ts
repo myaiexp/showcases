@@ -1,4 +1,4 @@
-// Paths: the commands M, L, Q, C, A and Z, drawn one at a time with their control points
+// The commands M, L, Q, C, A and Z, drawn one at a time with their control points
 import { Canvas, Circle, Line, Path, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

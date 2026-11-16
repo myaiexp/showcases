@@ -1,4 +1,4 @@
-// Canvas: hoverCursor and moveCursor set the CSS cursor over objects and while dragging them
+// hoverCursor and moveCursor set the CSS cursor over and while dragging objects
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Images: a <video> is a valid FabricImage source; here it plays a canvas through captureStream()
+// A <video> fed by captureStream() is a FabricImage source, repainted per frame
 import { Canvas, FabricImage } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

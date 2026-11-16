@@ -1,4 +1,4 @@
-// Canvas: centeredScaling scales around the centre; centeredRotation false rotates around the origin corner
+// centeredScaling scales around the centre; centeredRotation picks the pivot
 import { Canvas, Point, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

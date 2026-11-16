@@ -1,4 +1,4 @@
-// Paths: transformPath() applies a matrix to every command of a simplified path and returns new commands
+// transformPath() applies a matrix to every command of a simplified path
 import { Canvas, Path, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

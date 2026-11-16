@@ -1,4 +1,4 @@
-// Paths: after editing a Polyline's points, setDimensions() recomputes its size so controls and hit area match
+// After editing a Polyline's points, setDimensions() re-fits its box
 import { Canvas, Polyline } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

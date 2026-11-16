@@ -1,4 +1,4 @@
-// Text: IText selection API: selectAll, selectWord, selectLine, selectionStart and selectionEnd
+// IText selection API: selectionStart/End, selectAll, selectWord, selectLine
 import { Canvas, IText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, slider } from '../../shared/controls.ts';

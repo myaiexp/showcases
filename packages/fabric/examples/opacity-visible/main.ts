@@ -1,4 +1,4 @@
-// Objects: opacity fades an object and visible hides it completely, taking it out of hit testing
+// opacity fades an object and visible hides it completely
 import { Canvas, Circle, Rect, Triangle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

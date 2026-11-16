@@ -1,4 +1,4 @@
-// Text: the styles object gives single characters their own colour, size, weight and decoration
+// The styles object gives single characters their own colour, size and font
 import { Canvas, FabricText, type TextStyle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Serialization: loadFromJSON with an image that fails to load, and a reviver fallback
+// loadFromJSON with an image that fails to load, and a reviver fallback
 import { Canvas, Rect, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { briefStatus, codePanel } from '../../shared/code-panel.ts';

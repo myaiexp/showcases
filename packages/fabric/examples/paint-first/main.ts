@@ -1,4 +1,4 @@
-// Objects: paintFirst 'stroke' paints the outline before the fill, so the fill covers its inner half
+// paintFirst 'stroke' paints the outline before the fill
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

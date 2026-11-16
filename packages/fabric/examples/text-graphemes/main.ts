@@ -1,4 +1,4 @@
-// Text: fabric splits text into graphemes with Intl.Segmenter, so emoji and accents stay whole
+// fabric splits text into graphemes with Intl.Segmenter, emoji included
 import { Canvas, FabricText, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

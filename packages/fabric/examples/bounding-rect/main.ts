@@ -1,4 +1,4 @@
-// Objects: getBoundingRect() returns the axis-aligned box around an object, rotation included
+// getBoundingRect() returns the axis-aligned box around an object
 import { Canvas, Rect, Triangle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

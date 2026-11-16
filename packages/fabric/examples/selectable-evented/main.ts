@@ -1,4 +1,4 @@
-// Canvas: per-object selectable false and evented false opt single objects out of interaction
+// Per-object selectable and evented opt single objects out of interaction
 import { Canvas, Circle, Rect, Triangle, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

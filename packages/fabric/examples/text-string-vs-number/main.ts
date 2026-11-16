@@ -1,4 +1,4 @@
-// Text: input fields give strings, fabric wants numbers: a string left makes left + 10 concatenate
+// Input fields give strings, fabric wants numbers
 import { Canvas, FabricText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

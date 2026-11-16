@@ -1,4 +1,4 @@
-// SVG: the toSVG reviver gets each object's markup and returns the text to use instead
+// The toSVG reviver gets each object's markup and returns the text to use instead
 import { Canvas } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { breakSvg, briefStatus, codePanel, svgPanel } from '../../shared/code-panel.ts';

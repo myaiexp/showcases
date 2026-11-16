@@ -1,4 +1,4 @@
-// SVG: canvas.toSVG() as markup, and as a picture the browser draws from that markup
+// canvas.toSVG() as markup, and as a picture the browser draws from that markup
 import { Canvas } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { breakSvg, briefStatus, codePanel, svgPanel } from '../../shared/code-panel.ts';

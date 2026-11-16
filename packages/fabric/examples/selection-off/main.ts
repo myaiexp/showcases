@@ -1,4 +1,4 @@
-// Canvas: selection false turns off the drag-to-select marquee; objects can still be picked one by one
+// selection false turns off the drag-to-select marquee
 import { Canvas, Circle, Rect, Triangle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

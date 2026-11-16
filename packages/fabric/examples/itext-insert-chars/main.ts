@@ -1,4 +1,4 @@
-// Text: insertChars and removeChars edit an IText from code, with styles kept in step
+// insertChars and removeChars edit an IText from code, with styles kept in step
 import { Canvas, IText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, slider } from '../../shared/controls.ts';

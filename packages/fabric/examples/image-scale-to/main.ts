@@ -1,4 +1,4 @@
-// Images: scaleToWidth(px) and scaleToHeight(px) scale an image uniformly to a target size
+// scaleToWidth(px) and scaleToHeight(px) scale an image uniformly to a target size
 import { Canvas, FabricImage } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select, slider } from '../../shared/controls.ts';

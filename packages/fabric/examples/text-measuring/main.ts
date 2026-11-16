@@ -1,4 +1,4 @@
-// Text: measuring: every character gets a box in __charBounds, and the lines a width
+// Measuring: every character gets a box in __charBounds, and the lines a width
 import { Canvas, FabricText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select, slider } from '../../shared/controls.ts';

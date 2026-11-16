@@ -1,4 +1,4 @@
-// Canvas: renderAll() draws at once, requestRenderAll() asks for one draw on the next frame
+// renderAll() draws at once; requestRenderAll() batches into one frame
 import { Canvas, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

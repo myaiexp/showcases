@@ -1,4 +1,4 @@
-// Colors: toGrayscale() and toBlackWhite(threshold) turn a palette to grey or 1-bit
+// toGrayscale() and toBlackWhite(threshold) turn a palette to grey or 1-bit
 import { Canvas, Color } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

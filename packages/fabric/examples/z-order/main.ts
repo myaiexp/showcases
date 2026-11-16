@@ -1,4 +1,4 @@
-// Objects: the stacking order is the order of canvas.getObjects(); bringObjectToFront and friends change it
+// The stacking order is getObjects() order; bringObjectToFront and kin change it
 import { Canvas, Rect, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Images: imageSmoothing false keeps the hard pixel edges when a small image is scaled up
+// imageSmoothing false keeps the hard pixel edges when a small image is scaled up
 import { Canvas, FabricImage } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

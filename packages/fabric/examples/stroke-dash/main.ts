@@ -1,4 +1,4 @@
-// Objects: strokeDashArray cuts the outline into dashes and strokeDashOffset slides them along it
+// strokeDashArray cuts the outline into dashes, strokeDashOffset slides them
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, select, slider } from '../../shared/controls.ts';

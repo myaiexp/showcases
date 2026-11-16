@@ -1,4 +1,4 @@
-// Paths: makePathSimpler() rewrites parsed path data as absolute M, L, C, Q and Z commands only
+// makePathSimpler() rewrites parsed path data as absolute M, L, C
 import { Canvas, Path, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

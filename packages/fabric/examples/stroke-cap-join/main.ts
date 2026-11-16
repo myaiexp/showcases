@@ -1,4 +1,4 @@
-// Objects: strokeLineCap shapes the ends of an open stroke, strokeLineJoin its corners
+// strokeLineCap shapes the ends of an open stroke, strokeLineJoin its corners
 import { Canvas, Polyline } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

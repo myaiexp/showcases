@@ -1,4 +1,4 @@
-// SVG: the parser reviver sees each svg element and its new object, and can edit the object
+// The parser reviver sees each svg element and its new object
 import { loadSVGFromString, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { showParsed, svgLab } from '../../shared/svg-lab.ts';

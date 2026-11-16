@@ -1,4 +1,4 @@
-// Paths: getSmoothPathFromPoints() turns a list of points into a path of quadratic curves
+// getSmoothPathFromPoints() turns a list of points into a path of quadratic curves
 import { Canvas, Circle, Path, Point, Polyline, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

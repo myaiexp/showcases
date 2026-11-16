@@ -1,4 +1,4 @@
-// Text: a Textbox wraps its text at its width, and the side handles resize that width
+// A Textbox wraps its text at its width, and the side handles resize that width
 import { Canvas, Point, Textbox } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { controlPoint } from '../../shared/ghost.ts';

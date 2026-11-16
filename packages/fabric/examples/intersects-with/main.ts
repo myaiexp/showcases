@@ -1,4 +1,4 @@
-// Objects: intersectsWithObject() and isContainedWithinObject() compare two objects' rotated boxes
+// intersectsWithObject() and isContainedWithinObject() compare rotated boxes
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

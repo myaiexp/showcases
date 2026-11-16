@@ -1,4 +1,4 @@
-// Subclassing: getDefaults() says what counts as a default when includeDefaultValues is false
+// getDefaults() says what counts as a default when includeDefaultValues is false
 import { Canvas, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { briefStatus, codePanel, pretty } from '../../shared/code-panel.ts';

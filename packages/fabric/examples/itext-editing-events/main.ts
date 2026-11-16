@@ -1,4 +1,4 @@
-// Text: editing events: editing:entered, editing:exited, selection:changed and text:changed in a log
+// IText editing events: text:changed, editing:entered/exited, selection:changed
 import { Canvas, IText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { loadFonts } from '../../shared/fonts.ts';

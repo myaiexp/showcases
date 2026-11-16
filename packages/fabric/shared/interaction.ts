@@ -1,4 +1,4 @@
-// Event log, palette and named sample shapes for event, selection and group examples
+// Event log, palette and named sample shapes for interaction examples
 import { Circle, Rect, Triangle, type FabricObject, type Point } from 'fabric';
 import type { Pane, Stage } from './stage.ts';
 

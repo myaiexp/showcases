@@ -1,4 +1,4 @@
-// Canvas: objects on a fabric.Canvas can be selected, moved, scaled and rotated with no extra code
+// Objects on a fabric.Canvas can be selected, moved, scaled and rotated
 import { Canvas, Circle, Point, Rect, Triangle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { controlPoint } from '../../shared/ghost.ts';

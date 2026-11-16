@@ -1,4 +1,4 @@
-// Paths: getPathSegmentsInfo() measures each segment and getPointOnPath() finds the point at a distance
+// getPathSegmentsInfo() measures segments; getPointOnPath() walks the path
 import { Canvas, Circle, Line, Path, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

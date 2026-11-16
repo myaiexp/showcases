@@ -1,4 +1,4 @@
-// Serialization: serialize, clear, then restore a canvas with loadFromJSON and a reviver
+// Serialize, clear, then restore a canvas with loadFromJSON and a reviver
 import { Canvas, FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { briefStatus, codePanel } from '../../shared/code-panel.ts';

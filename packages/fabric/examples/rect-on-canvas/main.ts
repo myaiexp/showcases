@@ -1,4 +1,4 @@
-// Objects: wrap a <canvas> in fabric.Canvas, then add a Rect object and change it later
+// Wrap a <canvas> in fabric.Canvas, then add a Rect object and change it later
 import { Canvas, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

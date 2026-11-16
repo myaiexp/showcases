@@ -1,4 +1,4 @@
-// SVG: FabricImage from an SVG data URL is a raster picture; parsed objects stay vector
+// FabricImage from an SVG data URL is a raster picture; parsed objects stay vector
 import { Canvas, FabricImage, loadSVGFromString, util, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { briefStatus } from '../../shared/code-panel.ts';

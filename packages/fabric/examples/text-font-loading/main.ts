@@ -1,4 +1,4 @@
-// Text: text made before its font loaded has a wrong box until clearFontCache and initDimensions
+// Text made before its font loaded is wrong until clearFontCache + initDimensions
 import { Canvas, FabricText, cache } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

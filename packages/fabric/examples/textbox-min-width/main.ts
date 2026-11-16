@@ -1,4 +1,4 @@
-// Text: a Textbox never gets narrower than minWidth or its longest word (dynamicMinWidth)
+// A Textbox never gets narrower than minWidth or its longest word
 import { Canvas, Textbox } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

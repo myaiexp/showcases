@@ -1,4 +1,4 @@
-// Objects: a Polyline joins points without closing the shape; its fill still covers the area
+// A Polyline joins points without closing the shape
 import { Canvas, Polyline } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

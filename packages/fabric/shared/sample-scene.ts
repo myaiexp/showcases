@@ -1,4 +1,4 @@
-// A small named scene (rect, circle, triangle) in a 160x200 space for serialization examples
+// A small named scene of shapes for the Serialization examples
 import { Circle, Rect, Triangle, type FabricObject } from 'fabric';
 
 export const SCENE: readonly [number, number] = [160, 200];

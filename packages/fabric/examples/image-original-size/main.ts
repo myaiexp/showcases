@@ -1,4 +1,4 @@
-// Images: getOriginalSize() is the source's pixel size, whatever scale or crop the object has
+// getOriginalSize() is the source's pixel size
 import { Canvas, FabricImage } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

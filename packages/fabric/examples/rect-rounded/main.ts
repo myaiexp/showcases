@@ -1,4 +1,4 @@
-// Objects: Rect rx and ry round the corners with a horizontal and a vertical radius
+// Rect rx and ry round the corners with a horizontal and a vertical radius
 import { Canvas, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

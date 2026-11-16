@@ -1,4 +1,4 @@
-// A line of live status: the bar's readout in a full view, a small badge over the pane in a card
+// A line of live status: a bar readout or a card badge
 import { readout } from './controls.ts';
 import type { Pane, Stage } from './stage.ts';
 

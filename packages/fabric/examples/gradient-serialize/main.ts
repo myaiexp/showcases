@@ -1,4 +1,4 @@
-// Gradients: toObject() writes a gradient to plain data, new Gradient() reads it back
+// toObject() writes a gradient to plain data, new Gradient() reads it back
 import { Canvas, Gradient, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

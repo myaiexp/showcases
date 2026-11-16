@@ -1,4 +1,4 @@
-// Images: an image takes stroke, strokeWidth and strokeDashArray like any other object (default width 0)
+// An image takes a stroke once strokeWidth is set (images default to 0)
 import { Canvas, FabricImage } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { color, select, slider } from '../../shared/controls.ts';

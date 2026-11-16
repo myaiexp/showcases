@@ -1,4 +1,4 @@
-// Canvas: centerObject, centerObjectH and centerObjectV move an object to the middle of the canvas
+// centerObject, centerObjectH and centerObjectV move an object to the middle
 import { Canvas, Rect, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

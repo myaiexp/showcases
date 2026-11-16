@@ -1,4 +1,4 @@
-// Text: textDecorationColor and textDecorationThickness restyle the decoration lines (new in v7)
+// textDecorationColor and textDecorationThickness restyle the decoration lines
 import { Canvas, FabricText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { color, slider } from '../../shared/controls.ts';

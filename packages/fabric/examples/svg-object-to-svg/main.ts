@@ -1,4 +1,4 @@
-// SVG: object.toSVG() returns the markup of one object, wrapped here in an svg element
+// object.toSVG() returns the markup of one object, wrapped here in an svg element
 import { Canvas, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { breakSvg, briefStatus, codePanel, svgPanel } from '../../shared/code-panel.ts';

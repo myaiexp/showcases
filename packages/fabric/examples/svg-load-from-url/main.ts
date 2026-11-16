@@ -1,4 +1,4 @@
-// SVG: loadSVGFromURL reads a blob: URL made from a string, so nothing leaves the page
+// loadSVGFromURL reads a blob: URL made from a string, so nothing leaves the page
 import { loadSVGFromURL, util, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { showParsed, svgLab } from '../../shared/svg-lab.ts';

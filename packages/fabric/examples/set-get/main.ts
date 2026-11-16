@@ -1,4 +1,4 @@
-// Objects: set() and get() change any property; flipX, flipY, skewX and skewY reshape the object
+// set() and get() change and read any property, flips and skews included
 import { Canvas, Polygon } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

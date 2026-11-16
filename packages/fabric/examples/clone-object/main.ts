@@ -1,4 +1,4 @@
-// Objects: clone() returns a promise of an independent copy with the same properties
+// clone() returns a promise of an independent copy with the same properties
 import { Canvas, Circle, Rect, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

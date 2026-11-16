@@ -1,4 +1,4 @@
-// Images: FabricImage.fromURL(url) loads an image and resolves with a ready FabricImage
+// FabricImage.fromURL(url) loads an image and resolves with a ready FabricImage
 import { Canvas, FabricImage } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

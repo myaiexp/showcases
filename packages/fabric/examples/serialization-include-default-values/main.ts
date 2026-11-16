@@ -1,4 +1,4 @@
-// Serialization: includeDefaultValues false leaves out values equal to the class defaults
+// includeDefaultValues false leaves out values equal to the class defaults
 import { Canvas } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { briefStatus, codePanel, pretty } from '../../shared/code-panel.ts';

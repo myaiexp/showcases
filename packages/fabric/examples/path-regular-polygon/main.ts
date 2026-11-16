@@ -1,4 +1,4 @@
-// Paths: getRegularPolygonPath(sides, radius) returns the commands for a regular polygon
+// getRegularPolygonPath(sides, radius) returns the commands for a regular polygon
 import { Canvas, Path, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

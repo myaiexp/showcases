@@ -1,4 +1,4 @@
-// Paths: a Path takes fill and stroke like any shape, and fillRule decides what counts as inside
+// A Path takes fill and stroke like any shape
 import { Canvas, Path } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { color, select, slider } from '../../shared/controls.ts';

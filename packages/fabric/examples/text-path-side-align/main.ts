@@ -1,4 +1,4 @@
-// Text: pathSide puts the text on either side of the path, pathAlign picks the glyph anchor
+// pathSide and pathAlign place text on either side of, or across, the path
 import { Canvas, FabricText, Path } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

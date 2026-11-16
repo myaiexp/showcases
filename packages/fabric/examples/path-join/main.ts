@@ -1,4 +1,4 @@
-// Paths: joinPath(commands, digits) turns path commands back into a d string, rounded to the digits you ask for
+// joinPath(commands, digits) turns path commands back into a d string
 import { Canvas, Path, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

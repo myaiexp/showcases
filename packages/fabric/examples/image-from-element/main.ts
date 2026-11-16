@@ -1,4 +1,4 @@
-// Images: new FabricImage(element, options) turns an img or canvas element into an object
+// new FabricImage(element, options) turns an img or canvas element into an object
 import { Canvas, FabricImage } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

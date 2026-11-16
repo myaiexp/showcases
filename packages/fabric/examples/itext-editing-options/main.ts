@@ -1,4 +1,4 @@
-// Text: cursorColor, cursorWidth, selectionColor and editingBorderColor style the editing state
+// IText editing looks: cursorColor, cursorWidth, selectionColor, borders
 import { Canvas, IText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, color, slider } from '../../shared/controls.ts';

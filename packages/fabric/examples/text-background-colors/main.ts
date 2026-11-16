@@ -1,4 +1,4 @@
-// Text: backgroundColor fills the whole box, textBackgroundColor only the lines of text
+// backgroundColor fills the whole box, textBackgroundColor only the lines of text
 import { Canvas, FabricText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

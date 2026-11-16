@@ -1,4 +1,4 @@
-// Objects: strokeUniform keeps the stroke width constant while the object is scaled
+// strokeUniform keeps the stroke width constant while the object is scaled
 import { Canvas, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

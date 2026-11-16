@@ -1,4 +1,4 @@
-// Serialization: canvas.toJSON() printed next to the canvas, updated as objects change
+// canvas.toJSON() printed next to the canvas, updated as objects change
 import { Canvas, Circle, Rect, Triangle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { briefStatus, codePanel, pretty } from '../../shared/code-panel.ts';

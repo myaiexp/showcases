@@ -1,4 +1,4 @@
-// Canvas: overlayImage draws a picture above the objects, such as a frame with a see-through window
+// overlayImage draws a picture above the objects
 import { Canvas, Circle, FabricImage, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

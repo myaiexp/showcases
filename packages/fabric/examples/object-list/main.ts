@@ -1,4 +1,4 @@
-// Canvas: getObjects, item, add, insertAt, remove and clear manage the list of objects
+// getObjects, item, add, insertAt, remove and clear manage the list of objects
 import { Canvas, Circle, Rect, Triangle, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

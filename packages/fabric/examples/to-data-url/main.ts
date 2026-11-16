@@ -1,4 +1,4 @@
-// Canvas: toDataURL() exports the canvas as an image; format, multiplier, quality and a crop box are options
+// toDataURL() exports the canvas as a PNG or JPEG data URL
 import { Canvas, Circle, Rect, Triangle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, select, slider } from '../../shared/controls.ts';

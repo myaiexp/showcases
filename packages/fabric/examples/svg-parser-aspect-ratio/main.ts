@@ -1,4 +1,4 @@
-// SVG: viewBox and preserveAspectRatio decide how the parser fits the drawing into width and height
+// viewBox and preserveAspectRatio decide how parsed SVG fits its size
 import { loadSVGFromString, util, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

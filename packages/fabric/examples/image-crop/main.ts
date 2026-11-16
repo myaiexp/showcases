@@ -1,4 +1,4 @@
-// Images: cropX, cropY, width and height select a window of the source picture to show
+// cropX, cropY, width and height select a window of the source picture to show
 import { Canvas, FabricImage } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

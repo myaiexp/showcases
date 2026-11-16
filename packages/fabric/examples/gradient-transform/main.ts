@@ -1,4 +1,4 @@
-// Gradients: gradientTransform rotates, scales or skews the fill without changing coords
+// gradientTransform rotates, scales or skews the fill without changing coords
 import { Canvas, Gradient, Rect, util, type TMat2D } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

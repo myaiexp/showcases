@@ -1,4 +1,4 @@
-// Text: setSelectionStyles styles a character range and getSelectionStyles reads it back
+// setSelectionStyles styles a character range and getSelectionStyles reads it back
 import { Canvas, FabricText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, slider } from '../../shared/controls.ts';
