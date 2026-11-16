@@ -93,3 +93,37 @@ The general list (v7 vs the guides, page-wide state, cleanup, cards) is at the t
   Alt-drag over a shape pans; undo both on `mouse:up`.
 - Ghost points are scene points: in a card that moves the view, convert fixed screen spots
   with `sceneAt` / `wheelAt` from `shared/zoom-world.ts`.
+
+## Clip paths
+
+- The clip-path guides assume a top-left origin: their `top: -40, left: -40` offsets become
+  centre coordinates in v7.
+- Changing a `clipPath` (size, position, text, `inverted`) doesn't invalidate the parent's
+  cache: `obj.set('dirty', true)` after each change. A clipPath isn't a canvas object, so
+  `canvas.dispose()` doesn't abort its animations: abort them in `stage.onDispose`.
+- `canvas.clipPath` is placed by its own origin (centre) and drawn through the
+  viewportTransform, so zoom scales it.
+
+## Controls
+
+- Control positions are cached in `oCoords`: `setCoords()` after changing a Control's x, y,
+  offset or size, or the object's size.
+- `obj.clone()` rebuilds the default controls: re-assign custom ones on the copy.
+- `touchCornerSize` / `touchSizeX/Y` apply to touch events only (the guide's `touchSize` is
+  gone); mouse hit-testing, and so the ghost, uses the corner size.
+- `Control.render` is a prototype method: assign `controlsUtils.renderCircleControl` to one
+  control's `render`, `delete control.render` to restore it.
+- `changeHeight` and `createPathControls` exist in 7.4.0 but have no docs page.
+
+## Transformations
+
+- `setCenterPoint` / `setRelativeCenterPoint` (transformations.md) don't exist in 7.4.0: use
+  `setXY`, `setRelativeXY`, `setPositionByOrigin`, `getCenterPoint`.
+- `sendPointToPlane(p, from, to)`: a plane's matrix maps its own points to the viewport, so
+  `(scenePoint, vpt)` gives viewport pixels and `(scenePoint, undefined,
+  obj.calcTransformMatrix())` object-local coordinates.
+- `group.add(obj)` reads the object's position in the group's plane, so it jumps: call
+  `util.sendObjectToPlane(obj, undefined, group.calcTransformMatrix())` first (and back
+  before `remove`).
+- `o.set(qrDecompose(m))` no longer moves the object (translateX/Y aren't properties): use
+  `util.applyTransformToObject`. `composeMatrix` lives on `util`, not the top level.
