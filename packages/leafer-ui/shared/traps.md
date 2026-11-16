@@ -58,3 +58,19 @@ Found while building the gallery against leafer-ui 2.3.4 and its `@leafer-in/*` 
 - The repo's tsconfig has no `experimentalDecorators`, and Leafer's decorators (`@registerUI()`,
   `@dataProcessor`, `@boundsType`) are the legacy kind. Use the docs' JS forms instead:
   `Custom.registerUI()`, `Custom.registerData(CustomData)`, `Custom.addAttr('left', 0, boundsType)`.
+
+## Custom elements and API drift (2.3.4)
+
+- The tsconfig has `noImplicitOverride`: custom classes need `override` on `get __tag`,
+  `__updatePath`, `__updateBoxBounds`, `__drawHitPath`, `__draw`, and on data-class members.
+  Custom attributes are `declare` fields; `registerData` needs `Data as never`.
+- In the docs but not in 2.3.4: `aliasType` (not exported), `Image.load()` (not in the types),
+  `Group.resizeChildren` (only Box and Frame read it), percent sizes (`width: '70%'` on a Rect in
+  a Box gives NaN and draws nothing). `leafer.find(fn)` callbacks return an `IAnswer` (0 to 3),
+  not a boolean.
+- `canvas.draw()` leaves the Canvas element's context transformed: clear with
+  `canvas.canvas?.clear()`, not `context.clearRect`, or the redraw smears.
+- The editor's resize handles sit exactly on the selection's corners: aim a ghost drag at
+  `bounds.x + width, bounds.y + height`.
+- Shared helpers: `shared/shapes.ts` (`size`, `mid`, `drive`, `pick`, `toggle`, `caption`) gives a
+  control in the full view and a sweep or cycle in a card.
