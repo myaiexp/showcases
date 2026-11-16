@@ -107,3 +107,28 @@ Found while building the gallery against leafer-ui 2.3.4 and its `@leafer-in/*` 
 - Types reject two documented forms: `rect.path = null` (use `null as never`) and
   `getInnerPoint(p, null, true)` (pass `undefined`).
 - `caxi js` / `caxi eval` time out after 60 s: probe at most about 25 examples per call.
+
+## Animation, events and utilities (2.3.4)
+
+- `killAnimate()`, and an `animate(...)` that replaces a running one, jump the element to its end
+  style. To stop mid-way use `rect.animate()?.kill(false)` or `anim.pause()`. A second
+  `rect.animate()` call stacks into an `AnimateList` unless the first is killed; `animate()` with
+  no argument returns the last one even if it completed, and `.time` is undefined before it starts.
+- `animation.attrs` limits which keys interpolate; other keys of the style jump at start and end.
+- `motionPrecision` changes only how a distance on a Bézier is solved, not `getMotionTotal()`;
+  it shows on a very uneven curve.
+- `PointerEvent.MENU` comes from `interaction.menu(data)` (the browser's contextmenu); a ghost
+  right-click gives only down and up, so a card calls `menu()` itself.
+- `PointerEvent.changeName` and `Resource.set` keys are page-wide: change names only in the full
+  view and restore on dispose; give resources unique keys and `Resource.remove` them on dispose.
+- `changeAttr` rewrites the shared data class: subclass first, `registerData` its own data class,
+  then `changeAttr` on the subclass.
+- `Group` already has `selected`; a plugin class needs other member names. Constructor parameter
+  properties are not allowed (`erasableSyntaxOnly`).
+- The Leafer config has no `rotation`/`scale`: set them after construction. `pick()` can return
+  a result with no `target`.
+- `Matrix.toOuterPoint`/`toInnerPoint` return void: pass the output point as the second
+  argument. `box.getFitMatrix(region)` fits the region into the box, not the box into the region.
+- The dev server's example glob can stop seeing new example folders ("No such example"):
+  `touch src/registry.ts` refreshes it.
+- Shared helpers: `event-kit.ts` (event log, lanes, `probe`), `motion-kit.ts`, `math-kit.ts`.
