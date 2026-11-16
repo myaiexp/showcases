@@ -127,3 +127,29 @@ The general list (v7 vs the guides, page-wide state, cleanup, cards) is at the t
   before `remove`).
 - `o.set(qrDecompose(m))` no longer moves the object (translateX/Y aren't properties): use
   `util.applyTransformToObject`. `composeMatrix` lives on `util`, not the top level.
+
+## Object caching
+
+- `statefullCache` is gone; the size limits (`perfLimitSizeTotal`, `maxCacheSideLimit`,
+  `minCacheSideLimit`) live on `config`; `cacheProperties` now includes `paintFirst`,
+  `strokeUniform` and `clipPath`.
+- A cache side is never under `minCacheSideLimit` (256 px), so drawing past `width × height`
+  is only cut when the object is near 256 screen px; a card never gets there without
+  lowering the limit around its own synchronous `renderAll()`.
+- `getCoords()` is an array `[tl, tr, br, bl]` (the aligning README's `getCoords().tl` is v5).
+
+## Extensions and utilities
+
+- `fabric/extensions` imports `westures`, a dev dependency of fabric: it's installed here.
+  `addGestures` adds window listeners and returns nothing to remove them with.
+- `installOriginWrapperUpdater` replaces `fromObject` on BaseFabricObject, FabricImage and
+  Group (page-wide), and the wrapper deletes originX/originY from the object it's given.
+- Cropping handlers move `left`/`top` (fixed anchor): a reset restores them too.
+- `util.isTransparent` reads device pixels: scale point and tolerance by `getRetinaScaling()`.
+- `util.rotatePoint` isn't exported in 7.4.0: use `Point.rotate`.
+
+## Gotchas (gotchas.md vs 7.4.0)
+
+- The default stroke is `stroke: null` with `strokeWidth: 1`: nothing painted, but the box is
+  still 1 px larger. `util.object.clone` is gone and `clone()` returns a promise.
+  `NUM_FRACTION_DIGITS` defaults to 4, not 2.

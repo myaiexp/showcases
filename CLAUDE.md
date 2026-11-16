@@ -244,3 +244,8 @@ GitHub Pages. No service on the VPS.
   `shared/traps.md`). Custom elements, registries and leaked window listeners are page-wide, so each example runs in its own
   iframe that re-imports its module; `setup(AFRAME)` registers, `scene` is the docs' markup, `run(stage)` drives it. The
   iframe's CDN root is a pretend host serving fonts made in code (`fonts.ts`); any other remote URL throws.
+- Fabric.js (`packages/fabric`): build on `shared/stage.ts` (`createStage`; traps there and in `shared/traps.md`):
+  `stage.own(new Canvas(stage.el))`, sized by the element. The guides are v2–v5 and the API pages v6-rc4: write v7
+  (ES imports, promises; `left`/`top` place the centre). Cards drive pointer input with `stage.ghost(canvas)`, which calls
+  fabric's handlers directly, since a real mousedown listens on the document. Never change `ownDefaults`, prototypes,
+  `config` or the filter backend without restoring them in the same tick; pictures come from `shared/images.ts`.
