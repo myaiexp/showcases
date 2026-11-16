@@ -1,4 +1,4 @@
-// leafer-ui example: EditBox: dragPoint and enterPoint name the control point in use
+// EditBox: dragPoint and enterPoint name the control point in use
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

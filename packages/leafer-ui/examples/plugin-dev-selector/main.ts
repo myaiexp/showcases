@@ -1,4 +1,4 @@
-// Plugin: a Selector class extending Group, kept in its own file like a package would be
+// Plugin: a Selector class extending Group, kept in its own file
 import { Leafer, Rect } from 'leafer-ui';
 import type { Mount } from '@/types.ts';
 import { createStage, script } from '../../shared/stage.ts';

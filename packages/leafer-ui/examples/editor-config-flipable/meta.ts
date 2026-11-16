@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: flipable lets a handle drag past the opposite edge
+// Editor config: flipable lets a handle drag past the opposite edge
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

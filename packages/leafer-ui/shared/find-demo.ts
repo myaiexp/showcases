@@ -1,4 +1,4 @@
-// A row of shapes and a select of queries: the matches of the chosen query get a red outline
+// A row of shapes and a query select; matches get a red outline
 import { Leafer, type IUI } from 'leafer-ui';
 import '@leafer-in/find'; // find(), findOne(), findId()
 import type { MountContext } from '@/types.ts';

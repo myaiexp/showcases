@@ -1,4 +1,4 @@
-// leafer-ui example: Editor: updateEditBox() refits the box after the selection moved
+// Editor: updateEditBox() refits the box after the selection moved
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

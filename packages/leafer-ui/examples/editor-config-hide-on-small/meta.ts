@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: hideOnSmall hides the handles of small elements
+// Editor config: hideOnSmall hides the handles of small elements
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

@@ -1,4 +1,4 @@
-// leafer-ui example: EditTool: editConfig restyles the editor while the tool is open
+// EditTool: editConfig restyles the editor while the tool is open
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: resizeCursor draws the resize cursor from an SVG
+// Editor config: resizeCursor draws the resize cursor from an SVG
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: multipleSelectKey chooses the multi-select modifier
+// Editor config: multipleSelectKey chooses the multi-select modifier
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

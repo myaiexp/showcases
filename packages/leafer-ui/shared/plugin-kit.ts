@@ -1,4 +1,4 @@
-// Plugin kit: the docs' two-rect scene, replayable view calls, scripted text edits, sprite frames
+// Plugin kit: two-rect scene, replayable view calls, scripted text edits
 import { Box, Ellipse, Rect, type IUI } from 'leafer-ui';
 import { button } from './controls.ts';
 import { script, type Stage } from './stage.ts';

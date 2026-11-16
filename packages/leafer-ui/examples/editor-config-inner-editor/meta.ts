@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: an inner editor's own settings keyed by its tag
+// Editor config: an inner editor's own settings keyed by its tag
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

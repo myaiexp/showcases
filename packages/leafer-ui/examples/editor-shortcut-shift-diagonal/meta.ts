@@ -1,4 +1,4 @@
-// leafer-ui example: Editor shortcut: Ctrl and Shift rotate around the diagonal corner
+// Editor shortcut: Ctrl and Shift rotate around the diagonal corner
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

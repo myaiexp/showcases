@@ -1,4 +1,4 @@
-// EllipseBox: the docs' App form, hitChildren false so the box is selected as a unit
+// EllipseBox: the docs' App form, selected as a unit
 import { App, Ellipse } from 'leafer-ui';
 import '@leafer-in/editor';
 import '@leafer-in/viewport';

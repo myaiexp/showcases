@@ -1,4 +1,4 @@
-// Scaffolding for the Animate plugin examples: a slide track, a live readout, an easing curve plot
+// Animate plugin scaffolding: a slide track, a live readout, an easing plot
 import { Line, Path, Rect, type Leafer } from 'leafer-ui';
 import { GREEN } from './event-kit.ts';
 import { label } from './basics.ts';

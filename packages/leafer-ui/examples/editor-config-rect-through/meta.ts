@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: rectThrough lets clicks pass through the edit box
+// Editor config: rectThrough lets clicks pass through the edit box
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

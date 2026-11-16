@@ -1,4 +1,4 @@
-// A painted sprite sheet for the Robot examples: 20 frames, 5 per row, one row per arrow direction
+// A painted 20-frame sprite sheet for the Robot examples, one row per direction
 //
 // The docs use `/image/arrows.png` (500 x 400, frames of 100 x 100: up 0-4, right 5-9, down 10-14,
 // left 15-19). Frame 0 of each row is the still arrow; frames 1-4 slide chevrons along the arrow.

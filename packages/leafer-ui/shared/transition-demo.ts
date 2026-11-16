@@ -1,4 +1,4 @@
-// The transition argument of the incremental methods: one control for the four forms the docs use
+// One control for the four transition argument forms of the incremental methods
 import { button, select } from './controls.ts';
 import { caption } from './shapes.ts';
 import type { Stage } from './stage.ts';

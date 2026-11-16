@@ -1,4 +1,4 @@
-// leafer-ui example: Editor: the element proxy takes layout properties for a multiple selection
+// Editor: the element proxy takes layout properties for a multiple selection
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

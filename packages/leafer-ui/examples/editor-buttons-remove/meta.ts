@@ -1,4 +1,4 @@
-// leafer-ui example: Editor: buttons holds custom buttons, here a fixed Remove button
+// Editor: buttons holds custom buttons, here a fixed Remove button
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: dragLimitAnimate eases a dragBounds element back
+// Editor config: dragLimitAnimate eases a dragBounds element back
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

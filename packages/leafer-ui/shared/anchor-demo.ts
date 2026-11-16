@@ -1,4 +1,4 @@
-// Scene for origin and around: the docs' red 100 px Frame with a 50 px rect inside, scaled to the pane
+// Scene for origin and around: the docs' red Frame with a rect inside
 import { DragEvent, Frame, Leafer, Rect } from 'leafer-ui';
 import type { MountContext } from '@/types.ts';
 import { marker, placeMarker, RED } from './layout-kit.ts';

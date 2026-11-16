@@ -1,4 +1,4 @@
-// The *OfWorld methods: a rect in a rotated group, a red dot for the world origin, a tap to move it
+// Scene for the *OfWorld methods: a rect in a rotated group, a world-origin dot
 import { Group, Leafer, PointerEvent, Rect } from 'leafer-ui';
 import type { MountContext } from '@/types.ts';
 import { drive, caption } from './shapes.ts';

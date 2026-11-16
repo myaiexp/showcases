@@ -1,4 +1,4 @@
-// Five lanes for the animate docs' five call forms: animation, transition (hover), set, animate, Animate
+// Five lanes for the animate docs' five call forms of one option
 import type { Leafer, Rect } from 'leafer-ui';
 import { lanes, runner, type Lanes } from './event-kit.ts';
 import { script, type Stage } from './stage.ts';

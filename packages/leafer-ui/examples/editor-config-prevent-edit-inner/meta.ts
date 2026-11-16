@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: preventEditInner stops the double-click inner editor
+// Editor config: preventEditInner stops the double-click inner editor
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

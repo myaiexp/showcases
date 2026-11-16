@@ -1,4 +1,4 @@
-// A tiny plugin in the shape the docs describe: a class extending Group, with its own event
+// A tiny plugin as the docs describe: a Group subclass with its own event
 import { Bounds, DragEvent, Group, Rect, type ILeafer, type IUI } from 'leafer-ui';
 
 export const SelectEvent = { SELECT: 'selector.select' };

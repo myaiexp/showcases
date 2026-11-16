@@ -1,4 +1,4 @@
-// Scaffolding for the Flow examples: the docs' numbered tiles, a scaled pane, container-size sweeps
+// Flow scaffolding: numbered tiles, a scaled pane, container-size sweeps
 import { Box, type Leafer, type UI } from 'leafer-ui';
 import { slider } from './controls.ts';
 import { label } from './basics.ts';

@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: skipNested drops elements nested in other selected ones
+// Editor config: skipNested drops elements nested in other selected ones
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

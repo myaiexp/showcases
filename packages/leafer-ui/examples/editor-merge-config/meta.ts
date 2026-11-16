@@ -1,4 +1,4 @@
-// leafer-ui example: Editor: mergeConfig combines config with an element's editConfig
+// Editor: mergeConfig combines config with an element's editConfig
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

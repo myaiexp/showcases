@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: middlePoint pointType gives each edge handle a role
+// Editor config: middlePoint pointType gives each edge handle a role
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

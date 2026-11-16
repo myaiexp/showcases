@@ -1,4 +1,4 @@
-// Full-view inputs for Leafer UI examples: sliders, selects, toggles, buttons, colours
+// Full-view inputs for Leafer UI examples: sliders, selects, toggles, buttons
 const ROW = 'display:flex;gap:6px;align-items:center;font-size:13px';
 
 export function slider(

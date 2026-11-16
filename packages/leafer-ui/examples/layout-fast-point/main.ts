@@ -1,4 +1,4 @@
-// Layout: worldToLocal, worldToInner, innerToWorld and localToWorld rewrite the point you pass
+// Layout: worldToLocal and friends rewrite the point you pass
 import { Group, Leafer, Rect } from 'leafer-ui';
 import type { IPointData } from 'leafer-ui';
 import type { Mount } from '@/types.ts';

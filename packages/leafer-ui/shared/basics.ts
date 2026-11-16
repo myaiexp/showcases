@@ -1,4 +1,4 @@
-// Helpers for the guide and config examples: card scaling, an on-pane label, a fake wheel
+// Guide and config helpers: card scaling, an on-pane label, a fake wheel
 import type { ILeaferBase, IUI, IWheelEvent } from 'leafer-ui';
 import { script, type Stage } from './stage.ts';
 import type { Point } from './ghost.ts';

@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: diagonalRotateKey rotates around the opposite corner
+// Editor config: diagonalRotateKey rotates around the opposite corner
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

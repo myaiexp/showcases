@@ -1,4 +1,4 @@
-// leafer-ui example: EditBox: flippedX, flippedY, flipped and flippedOne follow mirroring
+// EditBox: flippedX, flippedY, flipped and flippedOne follow mirroring
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

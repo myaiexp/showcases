@@ -1,4 +1,4 @@
-// Basics: a Leafer with a fixed width and height, its own fill, and a draggable rect
+// Basics: a fixed-size Leafer with its own fill and a draggable rect
 import { Leafer, Rect } from 'leafer-ui';
 import type { Mount } from '@/types.ts';
 import { createStage, script } from '../../shared/stage.ts';

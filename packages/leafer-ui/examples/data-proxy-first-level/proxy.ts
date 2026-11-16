@@ -1,4 +1,4 @@
-// A tiny stand-in for the docs' Vue proxyData.ts: a reactive proxy over an element's data, page-wide while mounted
+// A plain-Proxy stand-in for the docs' Vue proxyData adapter
 import { defineKey, UI, type IUIInputData } from 'leafer-ui';
 import type { Stage } from '../../shared/stage.ts';
 

@@ -1,4 +1,4 @@
-// leafer-ui example: Animate easing: ease, ease-in, ease-out, ease-in-out and linear
+// Animate easing: ease, ease-in, ease-out, ease-in-out and linear
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

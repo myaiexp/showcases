@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: multipleSelect false allows one element at a time
+// Editor config: multipleSelect false allows one element at a time
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

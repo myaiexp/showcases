@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: circleDirection and circleMargin place the rotation handle
+// Editor config: circleDirection and circleMargin place the rotation handle
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

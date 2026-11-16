@@ -1,4 +1,4 @@
-// Motion: reading a point and a heading off the path, then placing a shape with set()
+// Motion: read a point and heading off the path, place a shape there
 import { Group, Leafer, Ellipse } from 'leafer-ui';
 import '@leafer-in/motion-path'; // the motion path plugin
 import type { Mount } from '@/types.ts';

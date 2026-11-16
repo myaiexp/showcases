@@ -1,4 +1,4 @@
-// Animate: calling rect.animate with a style and options, easing picked from a list
+// Animate: rect.animate with a style and options, easing from a list
 import { Leafer, Rect } from 'leafer-ui';
 import '@leafer-in/animate'; // the animation plugin
 import type { Mount } from '@/types.ts';

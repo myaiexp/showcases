@@ -1,4 +1,4 @@
-// Layout: setTransform takes a matrix and splits it into x, y, scale, rotation and skew
+// Layout: setTransform splits a matrix into x, y, scale, rotation, skew
 import { Box, Leafer, Rect, Text } from 'leafer-ui';
 import type { IMatrixData } from 'leafer-ui';
 import type { Mount } from '@/types.ts';

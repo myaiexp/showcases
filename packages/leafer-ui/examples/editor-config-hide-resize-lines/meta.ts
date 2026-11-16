@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: hideResizeLines removes the edge resize hit areas
+// Editor config: hideResizeLines removes the edge resize hit areas
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

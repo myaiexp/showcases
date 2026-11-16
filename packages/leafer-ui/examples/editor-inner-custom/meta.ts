@@ -1,4 +1,4 @@
-// leafer-ui example: InnerEditor: a custom inner editor with a handle and a Done button
+// InnerEditor: a custom inner editor with a handle and a Done button
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

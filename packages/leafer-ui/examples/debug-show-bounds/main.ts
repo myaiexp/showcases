@@ -1,4 +1,4 @@
-// Debug: wireframes of element bounds (the real flag in the full view, a local overlay in cards)
+// Debug: wireframes of element bounds (real flag in the full view)
 import { Debug, Ellipse, Group, Leafer, Rect, Star, type IUI } from 'leafer-ui';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

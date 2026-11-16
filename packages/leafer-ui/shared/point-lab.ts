@@ -1,4 +1,4 @@
-// The coordinate-conversion methods of an element: a moving point in one system, converted by each method
+// Scene for an element's coordinate conversions: a point shown in each system
 import { Group, Leafer, Rect } from 'leafer-ui';
 import type { IPointData } from 'leafer-ui';
 import type { MountContext } from '@/types.ts';

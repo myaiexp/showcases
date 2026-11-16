@@ -1,4 +1,4 @@
-// Event: renaming enter and leave to pointerenter and pointerleave (full view only)
+// Event: renaming enter and leave to pointerenter/pointerleave
 import { Leafer, PointerEvent, Rect } from 'leafer-ui';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

@@ -1,4 +1,4 @@
-// A result panel for the export examples: the exported image and/or text, shown beside the canvas
+// Result panel for export examples: the exported image or text beside the canvas
 import type { IUI } from 'leafer-ui';
 import type { Stage } from './stage.ts';
 

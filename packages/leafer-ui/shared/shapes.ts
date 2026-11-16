@@ -1,4 +1,4 @@
-// Helpers for the element reference examples: centre a shape, sweep one property, caption a pane
+// Element reference helpers: centre a shape, sweep a property, caption
 import { Text, type Leafer } from 'leafer-ui';
 import { checkbox, select, slider } from './controls.ts';
 import type { Stage } from './stage.ts';

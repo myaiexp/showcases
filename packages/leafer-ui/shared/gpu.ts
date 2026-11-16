@@ -1,4 +1,4 @@
-// Frees the WebGL contexts that @leafer-in/image-filter creates for filtered images
+// Frees the WebGL contexts that @leafer-in/image-filter creates
 //
 // Each filtered paint owns a <canvas> with a WebGL context (`paint.image.view`), kept in the source
 // image's `childrenMap` until the source image itself is destroyed. A page that mounts many cards

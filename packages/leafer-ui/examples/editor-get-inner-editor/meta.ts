@@ -1,4 +1,4 @@
-// leafer-ui example: Editor: getInnerEditor() returns the inner editor to configure
+// Editor: getInnerEditor() returns the inner editor to configure
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

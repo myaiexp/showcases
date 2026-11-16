@@ -1,4 +1,4 @@
-// The common scene of the export option examples: the element on the left, the exported image beside it
+// Scene for export options: the element left, the exported image beside it
 import { Leafer, Rect, type IUI } from 'leafer-ui';
 import '@leafer-in/export'; // the export element plugin
 import type { MountContext } from '@/types.ts';

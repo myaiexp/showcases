@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: rotateKey picks the key that turns handles into rotation
+// Editor config: rotateKey picks the key that turns handles into rotation
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

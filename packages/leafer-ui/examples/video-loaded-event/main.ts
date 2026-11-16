@@ -1,4 +1,4 @@
-// Video: listen for ImageEvent.LOADED, then for canplaythrough on the HTMLVideoElement
+// Video: ImageEvent.LOADED, then canplaythrough on the video element
 import { Leafer, ImageEvent } from 'leafer-ui';
 import { Video } from '@leafer-in/video';
 import type { Mount } from '@/types.ts';

@@ -1,4 +1,4 @@
-// Layout: reaching an absolute rotation, scale or skew with the incremental methods
+// Layout: absolute rotation, scale or skew through incremental methods
 import { Box, Leafer, Rect, Text } from 'leafer-ui';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

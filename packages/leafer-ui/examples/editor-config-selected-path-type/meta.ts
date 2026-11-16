@@ -1,4 +1,4 @@
-// leafer-ui example: Editor config: selectedPathType picks the selected outline path
+// Editor config: selectedPathType picks the selected outline path
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({
