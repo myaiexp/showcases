@@ -41,6 +41,13 @@
 // - backgroundImage/overlayImage are plain properties in v7 (the guides' setBackgroundImage is gone).
 // - The `shadow` option is typed as a Shadow: pass `new Shadow('green -5px -5px 3px')`, not the string.
 // - The `after:render` context is untransformed: apply viewportTransform, then the object's matrix.
+// - v7 animate() takes end values only (numbers, arrays, colours; one type per call): no '+=100',
+//   and the guide's `from` is `startValue`. It never redraws: onChange calls requestRenderAll().
+//   runningAnimations is page-wide (filter by target.canvas); its findAnimation* helpers are gone.
+// - Gradient/Pattern edits in place (coords, stops, offsetX, transforms, a repainted source) need
+//   `obj.dirty = true`; a changing Pattern source also `objectCaching: false`. Stops are only
+//   { offset, color } (fade with rgba). Coords and transforms pivot at the object's top left.
+// - Shadow.affectStroke defaults to false; use one new Shadow per object.
 import { Canvas, StaticCanvas } from 'fabric';
 import type { MountContext } from '@/types.ts';
 import { createGhost, type Ghost } from './ghost.ts';
