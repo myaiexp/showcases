@@ -132,3 +132,22 @@ Found while building the gallery against leafer-ui 2.3.4 and its `@leafer-in/*` 
 - The dev server's example glob can stop seeing new example folders ("No such example"):
   `touch src/registry.ts` refreshes it.
 - Shared helpers: `event-kit.ts` (event log, lanes, `probe`), `motion-kit.ts`, `math-kit.ts`.
+
+## Appearance and interaction (2.3.4)
+
+- `blur` and `backgroundBlur` are empty stubs in `@leafer-ui/effect` (the docs say planned).
+- Leafer writes cursors as an unquoted CSS `url(...)`: escape `'`, `(` and `)` in data URLs
+  (`images.ts` `cursorSvg()` does).
+- `interaction.pointerUp()` with no data fires `pointer.up` only on the leafer (no `drag.end`, no
+  tap for other buttons): always pass the release point.
+- With `@leafer-in/color` loaded, `hsl()` strings with a fractional hue do not render in a solid
+  paint: round the hue. `{ r, g, b }` colour objects need `{ type: 'solid', color }`.
+- A Text `boxStyle` with a `fill` already makes the padding hit, hiding `hitBox`.
+- A disabled element ignores `hoverStyle`/`pressStyle`/`focusStyle`.
+- A `mask` or `eraser` Group is one mask or eraser for all its children. `source-*` and
+  `destination-*` blend modes act on everything drawn before: isolate each pair in a Group with
+  `blendMode: 'normal'`.
+- `shapes.ts` `drive()` sweeps from the minimum; for several sliders in a card use
+  `appearance.ts` `knobs()`, which swings around the starting values.
+- Shared helpers: `appearance.ts` (stripes backdrop, `cells`, `note`, `knobs`),
+  `interaction-demo.ts` (`tryDrag`, `tour`, `logLines`, `visit`).

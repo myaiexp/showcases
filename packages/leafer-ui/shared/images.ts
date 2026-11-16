@@ -90,12 +90,15 @@ export function arrows(): string {
   });
 }
 
-/** An arrow cursor drawn as SVG, the docs' `cursor.svg`, as a data: URL. */
+/**
+ * An arrow cursor drawn as SVG, the docs' `cursor.svg`, as a data: URL. Leafer writes cursors as
+ * an unquoted CSS `url(...)`, so quotes and brackets are escaped too.
+ */
 export function cursorSvg(): string {
   const svg =
     "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>" +
     "<path d='M3 2 L3 20 L8 15 L12 23 L15 21.5 L11 14 L18 14 Z' fill='#32cd79' stroke='#000' stroke-width='1.5'/></svg>";
-  return `data:image/svg+xml,${encodeURIComponent(svg)}`;
+  return `data:image/svg+xml,${encodeURIComponent(svg).replace(/'/g, '%27').replace(/\(/g, '%28').replace(/\)/g, '%29')}`;
 }
 
 /** An image that fails to decode without any request: the docs' missing `leafer-error.jpg`. */
