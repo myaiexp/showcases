@@ -2,8 +2,8 @@
 import { Leafer, Rect } from 'leafer-ui';
 import '@leafer-in/viewport'; // the viewport plugin
 import type { Mount } from '@/types.ts';
-import { createStage } from '../../shared/stage.ts';
-import { GREEN, cycle, sizer, viewReadout, wheelTour } from '../../shared/basics.ts';
+import { createStage, script } from '../../shared/stage.ts';
+import { GREEN, fakeWheel, label, sizer, viewReadout } from '../../shared/basics.ts';
 import { select } from '../../shared/controls.ts';
 
 const mount: Mount = (el, ctx) => {
@@ -22,11 +22,29 @@ const mount: Mount = (el, ctx) => {
   leafer.add(Rect.one({ fill: '#4B7BFF' }, u(120), u(260), u(100), u(100)));
   viewReadout(stage, leafer);
 
-    const setMode = (m: boolean | 'mouse'): void => void (leafer.config.wheel!.zoomMode = m);
+  const setMode = (m: boolean | 'mouse'): void => void (leafer.config.wheel!.zoomMode = m);
 
   if (stage.preview) {
-    cycle(stage, ['mouse', false] as const, setMode, 5200);
-    wheelTour(stage, leafer, { ctrl: false, hold: 300 });
+    // The same plain wheel turns (no ctrl) under each mode: 'mouse' zooms, false pans.
+    const say = label(stage);
+    const turn = async (deltaY: number): Promise<void> => {
+      for (let i = 0; i < 4; i++) {
+        fakeWheel(leafer, { x: stage.width / 2, y: stage.height / 2, deltaY });
+        await stage.wait(80);
+      }
+    };
+    script(stage, async () => {
+      for (const m of ['mouse', false] as const) {
+        leafer.set({ x: 0, y: 0, scaleX: 1, scaleY: 1 });
+        setMode(m);
+        say(`zoomMode: ${String(m)}`);
+        await stage.wait(700);
+        await turn(-20);
+        await stage.wait(600);
+        await turn(20);
+        await stage.wait(900);
+      }
+    });
   } else select(stage.bar!, 'zoomMode', ['false', 'true', 'mouse'], (m) => setMode(m === 'mouse' ? 'mouse' : m === 'true'), 'true');
 
   return stage.dispose;

@@ -3,7 +3,7 @@ import { Leafer, Rect } from 'leafer-ui';
 import '@leafer-in/viewport'; // the viewport plugin
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
-import { GREEN, cycle, sizer, viewReadout, wheelTour } from '../../shared/basics.ts';
+import { GREEN, sizer, viewReadout, wheelTour } from '../../shared/basics.ts';
 import { checkbox } from '../../shared/controls.ts';
 
 const mount: Mount = (el, ctx) => {
@@ -24,8 +24,9 @@ const mount: Mount = (el, ctx) => {
 
   const setDisabled = (on: boolean): void => void (leafer.config.zoom!.disabled = on);
   if (stage.preview) {
-    cycle(stage, [false, true], setDisabled, 5200);
-    wheelTour(stage, leafer, { pan: false, hold: 300 });
+    const values = [false, true];
+    const apply = setDisabled;
+    wheelTour(stage, leafer, { pan: false, hold: 300, reset: leafer, round: (n) => apply(values[n % values.length]!) });
   } else checkbox(stage.bar!, 'zoom.disabled', false, setDisabled);
 
   return stage.dispose;

@@ -3,7 +3,7 @@ import { Leafer, Rect } from 'leafer-ui';
 import '@leafer-in/viewport'; // the viewport plugin
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
-import { GREEN, cycle, sizer, viewReadout, wheelTour } from '../../shared/basics.ts';
+import { GREEN, sizer, viewReadout, wheelTour } from '../../shared/basics.ts';
 import { slider } from '../../shared/controls.ts';
 
 const mount: Mount = (el, ctx) => {
@@ -23,8 +23,9 @@ const mount: Mount = (el, ctx) => {
   viewReadout(stage, leafer);
 
   if (stage.preview) {
-    cycle(stage, [0.1, 0.9], (s) => ((leafer.config.wheel!.zoomSpeed = s), (leafer.config.wheel!.moveSpeed = s)), 5600);
-    wheelTour(stage, leafer, { hold: 300 });
+    const values = [0.1, 0.9];
+    const apply = (s: (typeof values)[number]) => ((leafer.config.wheel!.zoomSpeed = s), (leafer.config.wheel!.moveSpeed = s));
+    wheelTour(stage, leafer, { hold: 300, reset: leafer, round: (n) => apply(values[n % values.length]!) });
   } else {
     slider(stage.bar!, 'zoomSpeed', 0, 1, 0.05, 0.5, (s) => (leafer.config.wheel!.zoomSpeed = s));
     slider(stage.bar!, 'moveSpeed', 0, 1, 0.05, 0.5, (s) => (leafer.config.wheel!.moveSpeed = s));

@@ -89,6 +89,9 @@ Found while building the gallery against leafer-ui 2.3.4 and its `@leafer-in/*` 
   DOM events must not import them under those names.
 - A `<pre>` in an example inherits the page's dark `pre` style: reset background, border, padding
   and colour inline.
+- A card that compares a wheel or move setting switches it in `wheelTour`'s `round` option, never on
+  its own timer: a switch mid-round makes the undo turns act differently and the view drifts to
+  the zoom floor. `reset: leafer` puts the layer back each round.
 - Vite fully reloads the page the first time a plugin is imported, so a page left open loses its
   state mid-run: re-open it before judging.
 - Shared helpers: `shared/basics.ts` (`sizer` scales docs coordinates to the pane, `fakeWheel`,

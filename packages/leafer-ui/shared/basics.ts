@@ -114,6 +114,14 @@ export interface TourOptions {
   /** Wheel turns per pan leg (default 6) and their delta (default 30). */
   panSteps?: number;
   panDelta?: number;
+  /**
+   * Called at the start of every round with the round number, before any wheel turn: the place to
+   * switch the setting a card compares. Switching it on a separate timer lands mid-round, so the
+   * turns that should undo a zoom or pan act differently and the view drifts round after round.
+   */
+  round?: (n: number) => void;
+  /** The zoom layer to put back to x 0, y 0, scale 1 at the start of every round. */
+  reset?: { set(data: { x: number; y: number; scaleX: number; scaleY: number }): void };
   /** Pan along both axes at once (deltaX and deltaY), to show the scroll constraints. */
   diagonal?: boolean;
 }
@@ -129,7 +137,10 @@ export function wheelTour(stage: Stage, engine: { interaction?: ILeaferBase['int
   };
   const steps = o.panSteps ?? 6;
   const d = o.panDelta ?? 30;
+  let n = 0;
   script(stage, async () => {
+    o.reset?.set({ x: 0, y: 0, scaleX: 1, scaleY: 1 });
+    o.round?.(n++);
     await stage.wait(700);
     if (o.zoom !== false) {
       await turn(3, { deltaY: -15, ctrlKey: o.ctrl !== false });

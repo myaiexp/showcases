@@ -3,7 +3,7 @@ import { Leafer, Rect } from 'leafer-ui';
 import '@leafer-in/viewport'; // the viewport plugin
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';
-import { GREEN, cycle, sizer, viewReadout, wheelTour } from '../../shared/basics.ts';
+import { GREEN, sizer, viewReadout, wheelTour } from '../../shared/basics.ts';
 import { checkbox } from '../../shared/controls.ts';
 
 const mount: Mount = (el, ctx) => {
@@ -28,8 +28,9 @@ const mount: Mount = (el, ctx) => {
     };
 
   if (stage.preview) {
-    cycle(stage, [false, true], setReverse, 5200);
-    wheelTour(stage, leafer, { zoom: false, hold: 400 });
+    const values = [false, true];
+    const apply = setReverse;
+    wheelTour(stage, leafer, { zoom: false, hold: 400, reset: leafer, round: (n) => apply(values[n % values.length]!) });
   } else checkbox(stage.bar!, 'reverse (-1)', false, setReverse);
 
   return stage.dispose;
