@@ -151,3 +151,17 @@ Found while building the gallery against leafer-ui 2.3.4 and its `@leafer-in/*` 
   `appearance.ts` `knobs()`, which swings around the starting values.
 - Shared helpers: `appearance.ts` (stripes backdrop, `cells`, `note`, `knobs`),
   `interaction-demo.ts` (`tryDrag`, `tour`, `logLines`, `visit`).
+
+## Auto layout and the animate plugin (2.3.4)
+
+- `hoverStyle` (and every interactive state) needs `@leafer-in/state`; `@leafer-in/animate` does
+  not pull it in.
+- `flow: 'x-reverse'`/`'y-reverse'` and `flowWrap: 'reverse'` only reverse the order; the flow
+  still starts top-left. A Flow with no `width`/`height` is auto-sized: give both when sweeping.
+- `AnimateEasing.register(name, factory)` takes `(value) => (t) => number`; the registry is
+  page-wide, so delete the name from `AnimateEasing.list` on dispose. A shared options object
+  needs `satisfies IAnimateOptions` (a literal infers `easing: string`).
+- A ghost `move()` onto an element sets hover until the next pointer event: call `ghost.leave()`
+  to end it. `seek(time, true)` counts the delay as part of the timeline.
+- Shared helpers: `flow-kit.ts`, `forms-kit.ts` (the docs' five call forms of an animate option
+  side by side), `animate-kit.ts`.
