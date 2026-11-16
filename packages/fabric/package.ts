@@ -1,0 +1,45 @@
+// Fabric.js: an interactive object model on top of the HTML5 canvas, with SVG and JSON in and out
+import { definePackage } from '@/types.ts';
+
+export default definePackage({
+  name: 'Fabric.js',
+  npm: 'fabric',
+  tagline: 'Interactive objects on an HTML5 canvas: shapes, text, images and paths you can select, move, scale and rotate.',
+  about:
+    'Fabric.js keeps a scene graph of objects (rectangles, circles, polygons, paths, text, images, groups) over a canvas element and redraws it for you. Every object comes with selection, controls for scaling, rotating and skewing, and events; objects animate, take gradients, patterns, shadows and clip paths, and images run through WebGL or Canvas2D filters. A whole canvas goes out to JSON or SVG and comes back again, SVG files parse into objects, and brushes draw free-hand paths. Version 7 is a typed ES module; subclasses, custom controls and layout managers extend it.',
+  category: 'Graphics',
+  homepage: 'https://fabricjs.com/',
+  docsUrl: 'https://fabricjs.com/docs/',
+  repo: 'https://github.com/fabricjs/fabric.js',
+  added: '2026-11-16',
+  // The intro guide's chapter order (parts 1 to 5), then the topic guides, then API-only areas.
+  sections: [
+    'Objects',
+    'Canvas',
+    'Images',
+    'Paths',
+    'Animation',
+    'Image filters',
+    'Colors',
+    'Gradients',
+    'Patterns and shadows',
+    'Text',
+    'Events',
+    'Groups',
+    'Layout managers',
+    'Serialization',
+    'SVG',
+    'Subclassing',
+    'Free drawing',
+    'Customization',
+    'Selection',
+    'Zoom and pan',
+    'Clip paths',
+    'Controls',
+    'Transformations',
+    'Object caching',
+    'Extensions',
+    'Utilities',
+    'Gotchas',
+  ],
+});

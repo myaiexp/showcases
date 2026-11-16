@@ -1,0 +1,2013 @@
+{
+  "fetched": "2026-11-16T00:31:38.817Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/fabricjs/fabricjs.com",
+      "ref": "main",
+      "paths": [
+        "src/content/docs/docs/**",
+        "src/content/docs/api/**"
+      ],
+      "commit": "c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991"
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/fabricjs/fabric.js",
+      "ref": "v740",
+      "paths": [
+        "README.md",
+        "CHANGELOG.md",
+        "extensions/**/README.md",
+        "extensions/**/README.MD"
+      ],
+      "commit": "ce64f450bad811750cb5a75aa749fc1502c644be"
+    }
+  ],
+  "files": {
+    "repo/CHANGELOG.md": {
+      "url": "https://github.com/fabricjs/fabric.js/blob/ce64f450bad811750cb5a75aa749fc1502c644be/CHANGELOG.md",
+      "sha256": "94c56e067f99e3680c33b81e3a02fbd5cbe4fca24f82069a7d63c8292982781c"
+    },
+    "repo/extensions/aligning_guidelines/README.MD": {
+      "url": "https://github.com/fabricjs/fabric.js/blob/ce64f450bad811750cb5a75aa749fc1502c644be/extensions/aligning_guidelines/README.MD",
+      "sha256": "9434def782fd450e05bde692fb51ede7c6263533afd109c116d5b340cc1b787c"
+    },
+    "repo/extensions/data_updaters/origins/README.md": {
+      "url": "https://github.com/fabricjs/fabric.js/blob/ce64f450bad811750cb5a75aa749fc1502c644be/extensions/data_updaters/origins/README.md",
+      "sha256": "35d825c63ceec3c04e3cbd1808c87cc5ae8cb54598c57d575fb791ec2b07f859"
+    },
+    "repo/extensions/data_updaters/README.md": {
+      "url": "https://github.com/fabricjs/fabric.js/blob/ce64f450bad811750cb5a75aa749fc1502c644be/extensions/data_updaters/README.md",
+      "sha256": "f34c4c4b6b9e88a88fcbc3c7b3f2072ae30d3cb4ac73b20a0bbccdadb47f34c6"
+    },
+    "repo/extensions/README.MD": {
+      "url": "https://github.com/fabricjs/fabric.js/blob/ce64f450bad811750cb5a75aa749fc1502c644be/extensions/README.MD",
+      "sha256": "263c8843e44e64446b52ad54bb6635440223b67ce85aafc68226318467442d2f"
+    },
+    "repo/README.md": {
+      "url": "https://github.com/fabricjs/fabric.js/blob/ce64f450bad811750cb5a75aa749fc1502c644be/README.md",
+      "sha256": "b34ef759c4e791ab31a2b733199539c02ce91e0935d95c097a0678c0521c0340"
+    },
+    "repo/src/content/docs/api/classes/ActiveSelection.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/ActiveSelection.md",
+      "sha256": "cd5ede01d188c397f0d9a6b268e96624eae3c3fc8ac47d66159fc79816f672f0"
+    },
+    "repo/src/content/docs/api/classes/BaseBrush.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/BaseBrush.md",
+      "sha256": "d5aef4d5fcaaf2d3705d37147c8ea2650467e1a2a3f1f642534eff65bc0c8a04"
+    },
+    "repo/src/content/docs/api/classes/BaseFabricObject.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/BaseFabricObject.md",
+      "sha256": "68688cce067a956edcda519ecb7562242d4cf8c160f116a83363742541296cc3"
+    },
+    "repo/src/content/docs/api/classes/Canvas.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Canvas.md",
+      "sha256": "c2a5be2bcf19f33397de6318cf2cb7273a71b1ecfc86fdf61412595a8c5f42e5"
+    },
+    "repo/src/content/docs/api/classes/Canvas2dFilterBackend.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Canvas2dFilterBackend.md",
+      "sha256": "0524390d78ff63291f7e04257c742f9ba2956d5939dbd4cfec0d8649848df980"
+    },
+    "repo/src/content/docs/api/classes/CanvasDOMManager.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/CanvasDOMManager.md",
+      "sha256": "aadea7c0f69726ce75dd214a0c5ab271b67947c25bed47901b1543aabb8ae62b"
+    },
+    "repo/src/content/docs/api/classes/Circle.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Circle.md",
+      "sha256": "141b72b6b5ccca8d05590d73202833691e759d8a3d27f27b8c39af29ffd7752c"
+    },
+    "repo/src/content/docs/api/classes/CircleBrush.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/CircleBrush.md",
+      "sha256": "142de175e0bc72711fcc8a019bbb04d77fcd4662b35399a915a826c2fbd7a52e"
+    },
+    "repo/src/content/docs/api/classes/ClipPathLayout.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/ClipPathLayout.md",
+      "sha256": "56c864f8a4e8f7a0a3fe1ef28c1a52196fdf9288533f2496012ab2afab754bdb"
+    },
+    "repo/src/content/docs/api/classes/Color.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Color.md",
+      "sha256": "860c9af56b5bd147ce3064ad713592e3c3c1b16d36fcdae6dc5ce4676e619ef4"
+    },
+    "repo/src/content/docs/api/classes/Control.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Control.md",
+      "sha256": "1034ec6878a9a9440d8ea25568ece7ded3ce97be015fe6f8f9f42482cabeab89"
+    },
+    "repo/src/content/docs/api/classes/Ellipse.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Ellipse.md",
+      "sha256": "3fa2ec2566db4165b85f3b6d3fc7c47ce0163adb392fe3a5ab07fbfa40e42449"
+    },
+    "repo/src/content/docs/api/classes/FabricImage.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/FabricImage.md",
+      "sha256": "95ac796840c1cae67428ab3bd6a1d40fd58caa1116382ec69e1843b8831ddd93"
+    },
+    "repo/src/content/docs/api/classes/FabricObject.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/FabricObject.md",
+      "sha256": "f47b0a37d0c364defb1fd27e359bb9a52e5a9c93438ecc81b2597976029df868"
+    },
+    "repo/src/content/docs/api/classes/FabricText.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/FabricText.md",
+      "sha256": "62c1b2eaa8596c3449ad4e6e93e46b39c3a32e2a3bddcf2a42d039dcb08370cd"
+    },
+    "repo/src/content/docs/api/classes/FitContentLayout.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/FitContentLayout.md",
+      "sha256": "361e25bd78da286bda92b459e3790e1649cfafea52d966fc7a34c4be256a028a"
+    },
+    "repo/src/content/docs/api/classes/FixedLayout.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/FixedLayout.md",
+      "sha256": "cccc9db52c72db336e6aea5bb1c54b48f07d5f8dc1a5244c1c841efad5e5998b"
+    },
+    "repo/src/content/docs/api/classes/Gradient.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Gradient.md",
+      "sha256": "6719027f4772324a1db6b5cfc3ac20efdd11646819a6784e2c00696efe061586"
+    },
+    "repo/src/content/docs/api/classes/Group.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Group.md",
+      "sha256": "55edc87bb7a9122e5d73be3ab777344e15de9aea138cc32aa90fd9fc38eeea96"
+    },
+    "repo/src/content/docs/api/classes/Intersection.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Intersection.md",
+      "sha256": "31d8b7ef52dc8f6bac429fa31db73bee92bfa74495546cc866868af19658692c"
+    },
+    "repo/src/content/docs/api/classes/IText.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/IText.md",
+      "sha256": "9f96e1fa665d9d88ff6ab111c36af085c30ee882661abb364d376d50a9134dd2"
+    },
+    "repo/src/content/docs/api/classes/LayoutManager.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/LayoutManager.md",
+      "sha256": "de7f992afee673f004dafcf6e2e2f7b8cb911d8b6d72842b544ef930c4a2eaa4"
+    },
+    "repo/src/content/docs/api/classes/LayoutStrategy.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/LayoutStrategy.md",
+      "sha256": "032e5c324f86a97e1919f8270a287fd97484434f36ed1b1a677ee2996058ed68"
+    },
+    "repo/src/content/docs/api/classes/Line.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Line.md",
+      "sha256": "ab3927684e2fc999f32b20d95f4c4a36810cd2f738a2e722f031d1b9029abf0f"
+    },
+    "repo/src/content/docs/api/classes/Observable.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Observable.md",
+      "sha256": "c2348689ffe82a618500d54d3c639ec2605c59eb23d74a5a958699bd7b69d694"
+    },
+    "repo/src/content/docs/api/classes/Path.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Path.md",
+      "sha256": "5f2654bae9b59fe4f96fc8214063078dabd3d03552d2d10d3b2cf40d85c89094"
+    },
+    "repo/src/content/docs/api/classes/Pattern.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Pattern.md",
+      "sha256": "0c2b75e3fe55c90e108b965666885f9fa66415e91dc44e86c8e72e1f8f8e354a"
+    },
+    "repo/src/content/docs/api/classes/PatternBrush.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/PatternBrush.md",
+      "sha256": "310283776500f763a7e5e370bbdc7ad68c53dc07259246d7b6d426b3f8f11e66"
+    },
+    "repo/src/content/docs/api/classes/PencilBrush.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/PencilBrush.md",
+      "sha256": "8269a4bc2406608c104974258303d8325832e705b5778b15e3407b54a6960ff7"
+    },
+    "repo/src/content/docs/api/classes/Point.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Point.md",
+      "sha256": "33dd473f91ce3635fb7a3d1eb4277f80cb09ef75067b450c2c8f9a72b603b24d"
+    },
+    "repo/src/content/docs/api/classes/Polygon.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Polygon.md",
+      "sha256": "a1b7e23a4f5d1ad22d064824f36c9b7d31769410490381198c04c0c66df857dd"
+    },
+    "repo/src/content/docs/api/classes/Polyline.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Polyline.md",
+      "sha256": "4dec0d6ddb44ce13e8ff9d9df3800eeb22ab77377aa94666e13c781ba423dfd4"
+    },
+    "repo/src/content/docs/api/classes/Rect.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Rect.md",
+      "sha256": "3b4d8b9f78d433fc7fcd764512763d021ec69463e4b7a321913cf388324dc8e8"
+    },
+    "repo/src/content/docs/api/classes/Shadow.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Shadow.md",
+      "sha256": "e55494d7afa039982b9fb4ec1365303820e81c17cfd903fd368fb8d86d1b44a5"
+    },
+    "repo/src/content/docs/api/classes/SprayBrush.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/SprayBrush.md",
+      "sha256": "ecb1610517f40c9e1863a56045e72b542979255d93b9c2be0b53fc0ef8bb7cbf"
+    },
+    "repo/src/content/docs/api/classes/StaticCanvas.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/StaticCanvas.md",
+      "sha256": "25c33c6653d2da453f4abaa53393cb92a6c33db67fe9de531eea9f7a687c82c3"
+    },
+    "repo/src/content/docs/api/classes/StaticCanvasDOMManager.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/StaticCanvasDOMManager.md",
+      "sha256": "24a21ba8a3f25c6dd7bf75ff21b72be0f1634a2ad45b2d8c1ab5a932330dbcc4"
+    },
+    "repo/src/content/docs/api/classes/Textbox.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Textbox.md",
+      "sha256": "dc117248cf0b2897f9daa162b346034a59c810eefb6d641e4afdc6745e8172bb"
+    },
+    "repo/src/content/docs/api/classes/Triangle.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/Triangle.md",
+      "sha256": "814428abf1ff2b42403ee2bf0dd5cbbc34647afc922c78edde2ddf3ed7daff95"
+    },
+    "repo/src/content/docs/api/classes/WebGLFilterBackend.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/classes/WebGLFilterBackend.md",
+      "sha256": "7a85b8226e005abf46a2001f25c18ee78520e2e5131440b9ec200ae659bcbc4b"
+    },
+    "repo/src/content/docs/api/functions/createCollectionMixin.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/createCollectionMixin.md",
+      "sha256": "cff0960775cc6d390fbd5d726f7c05dbb093caf9b3d95697eab09bff8585a8fa"
+    },
+    "repo/src/content/docs/api/functions/getCSSRules.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/getCSSRules.md",
+      "sha256": "012708e2c39b58c6adf7aeb9f1175267046c526db8a19c251cc432dd81225ddb"
+    },
+    "repo/src/content/docs/api/functions/getEnv.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/getEnv.md",
+      "sha256": "6a5a913a327a4dc25ea4e2cff43fec05945a344bcc897d573724ea2c9f2b258a"
+    },
+    "repo/src/content/docs/api/functions/getFabricDocument.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/getFabricDocument.md",
+      "sha256": "6ffd60a005f48d9b5601761fda3866cf4e9024f8666c603955283cbe3a6129bc"
+    },
+    "repo/src/content/docs/api/functions/getFabricWindow.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/getFabricWindow.md",
+      "sha256": "18204aa4d75c6ba4e2b4bc4197d3c811f86dfd82c5720146692dbfa903165e8f"
+    },
+    "repo/src/content/docs/api/functions/getFilterBackend.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/getFilterBackend.md",
+      "sha256": "97ae8f361126ba04bd9a5a1b55b331c8a62081d656e8720eaacd3ac0fda511de"
+    },
+    "repo/src/content/docs/api/functions/initFilterBackend.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/initFilterBackend.md",
+      "sha256": "383f4dfcc362d4a3bdb070fbbecaac7814804b986a40754224208fa6a2e53a01"
+    },
+    "repo/src/content/docs/api/functions/isPutImageFaster.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/isPutImageFaster.md",
+      "sha256": "678f676de0f6345ba7773376008954d9b3f37a56514798eae87192047adc4974"
+    },
+    "repo/src/content/docs/api/functions/isWebGLPipelineState.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/isWebGLPipelineState.md",
+      "sha256": "189b167bb0c6197faced88dc4c579b053facc8db6d21dc17f32d9c8492ee714c"
+    },
+    "repo/src/content/docs/api/functions/loadSVGFromString.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/loadSVGFromString.md",
+      "sha256": "60abc87aeca10bb28b6c6122c5514aaca3e6dc41bf7678ae0037e6f09df2cc06"
+    },
+    "repo/src/content/docs/api/functions/loadSVGFromURL.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/loadSVGFromURL.md",
+      "sha256": "23c4f5dab96b80fa2863a712d2d6317ef0d251e291ba3c5ef56c0d165b2cf802"
+    },
+    "repo/src/content/docs/api/functions/parseAttributes.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/parseAttributes.md",
+      "sha256": "fda8b9ad427d61670f2d46caab0e1e9aac77e8cf74078175464f82d95be6963c"
+    },
+    "repo/src/content/docs/api/functions/parseFontDeclaration.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/parseFontDeclaration.md",
+      "sha256": "81e3d066dc342d4d794d062cc441496eb6755deee5133f759931bafe7e53a4dd"
+    },
+    "repo/src/content/docs/api/functions/parsePointsAttribute.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/parsePointsAttribute.md",
+      "sha256": "21e81e20f3f2774bc65500d3b21f8a57138e363c7d43a7ca879e148a3deb9214"
+    },
+    "repo/src/content/docs/api/functions/parseStyleAttribute.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/parseStyleAttribute.md",
+      "sha256": "4fe78f3eb7ae25072f64380a3fbd1f6e144fcbbb74760bdf5e9246bf5c170a16"
+    },
+    "repo/src/content/docs/api/functions/parseSVGDocument.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/parseSVGDocument.md",
+      "sha256": "3aeef7d8d613bc547d7646f9eeadaa6b18f2490057b783ee93b12cdaef512bb1"
+    },
+    "repo/src/content/docs/api/functions/parseTransformAttribute.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/parseTransformAttribute.md",
+      "sha256": "8ef4b37c8bf4b2d599103d2df12359705fcc744f6fd6a1da5433400a4cdcdba9"
+    },
+    "repo/src/content/docs/api/functions/setEnv.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/setEnv.md",
+      "sha256": "ecf9c5b7bb3d8262d67febbbe6c8c74ab27a4cb36bb456991adfa9fb0aacab06"
+    },
+    "repo/src/content/docs/api/functions/setFilterBackend.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/functions/setFilterBackend.md",
+      "sha256": "674a73c870fddc36bc43ece2791c5a0216ec6905813dcba48b28c623db22d10b"
+    },
+    "repo/src/content/docs/api/index.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/index.md",
+      "sha256": "e19ceb27ceedb2412f35542fde2df9282f5a024b1726dc6e74055de1ecd33f58"
+    },
+    "repo/src/content/docs/api/interfaces/ActiveSelectionOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/ActiveSelectionOptions.md",
+      "sha256": "642e89d51dab51e3fbcc0509a5498913639bad5733120b8163cdcd0c9a490ef8"
+    },
+    "repo/src/content/docs/api/interfaces/BasicTransformEvent.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/BasicTransformEvent.md",
+      "sha256": "a501fdd3a3dd83ef6f5ba72e1327787408963942c8d5e71eee676e6596266b95"
+    },
+    "repo/src/content/docs/api/interfaces/CanvasEvents.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/CanvasEvents.md",
+      "sha256": "f0fba92decefdd58ddd2f31ca1a74c6e8acde5d3add65ca1e6d360667a385abf"
+    },
+    "repo/src/content/docs/api/interfaces/CanvasOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/CanvasOptions.md",
+      "sha256": "9c4d1d7713f613c6553bcec597cc785881b59230d11a2b43100092dce32abda6"
+    },
+    "repo/src/content/docs/api/interfaces/CircleProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/CircleProps.md",
+      "sha256": "13754433cb3ef336a7befaa55cbc0afb560799df237639e513ab80a7f7c92b92"
+    },
+    "repo/src/content/docs/api/interfaces/CollectionEvents.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/CollectionEvents.md",
+      "sha256": "db07ca71cb2a0881b0f5fa74f00c7f84af4ca5df65f34abee405bcb6345f6e5f"
+    },
+    "repo/src/content/docs/api/interfaces/DragEventData.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/DragEventData.md",
+      "sha256": "d7c09790e3e0c51cdcab134b640377ec2448014ebf5bc54f156dd4a62611fc0f"
+    },
+    "repo/src/content/docs/api/interfaces/DropEventData.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/DropEventData.md",
+      "sha256": "312fcc0cde25520f734f25d92605f7376f891e1cda34cc79159ac4374de4df16"
+    },
+    "repo/src/content/docs/api/interfaces/EllipseProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/EllipseProps.md",
+      "sha256": "daedcbf73427c6128d5cd486bcea549a6d53bca6d2784a753b7bf089baa57f31"
+    },
+    "repo/src/content/docs/api/interfaces/FabricObjectProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/FabricObjectProps.md",
+      "sha256": "95545a86aebb3a9026597da7ca7ca7b78e831ac7bb4f28b9c7091a6547d8df99"
+    },
+    "repo/src/content/docs/api/interfaces/GroupEvents.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/GroupEvents.md",
+      "sha256": "3e36f89bd65386b2a1ee3a65fee91f82591e53b9355e3dacb1aac6edd1c565aa"
+    },
+    "repo/src/content/docs/api/interfaces/GroupOwnProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/GroupOwnProps.md",
+      "sha256": "90868b2d68aee9c0a7e49b104cc5b4bdabeda0a5306c03b824ed237a044a0332"
+    },
+    "repo/src/content/docs/api/interfaces/GroupProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/GroupProps.md",
+      "sha256": "44333570060f7de3263139bdbd60281fc84bbf53e62b88f785d93bfe5beb8af4"
+    },
+    "repo/src/content/docs/api/interfaces/ImageProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/ImageProps.md",
+      "sha256": "60f7204569204c52b65490f6c57f9dc66e4ceaad61290615e8d37fb1dd0701ef"
+    },
+    "repo/src/content/docs/api/interfaces/ITextProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/ITextProps.md",
+      "sha256": "d693b1b5b7379d51ab83e4c888606d302fe8b4decd2a148450a1c81f2f9988f8"
+    },
+    "repo/src/content/docs/api/interfaces/MiscEvents.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/MiscEvents.md",
+      "sha256": "85ce5da8b1eadee98798ebdb19987c14173f0c710cbc44bbfb4a98f2aaecb6ad"
+    },
+    "repo/src/content/docs/api/interfaces/ModifiedEvent.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/ModifiedEvent.md",
+      "sha256": "fd893d53ca14bfe4302bdf4c1739559db09ce583e68e53709c4e009ef10d0646"
+    },
+    "repo/src/content/docs/api/interfaces/ObjectEvents.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/ObjectEvents.md",
+      "sha256": "5ff1954bb1952bb7ce426ac6d8b2453214016dbd1d7c34ecdc8f4a556d9c7414"
+    },
+    "repo/src/content/docs/api/interfaces/PathProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/PathProps.md",
+      "sha256": "34ab34da4505a0e6d9e28b3f426e82476009058b9f605c89faf10817fa7dc8fa"
+    },
+    "repo/src/content/docs/api/interfaces/RectProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/RectProps.md",
+      "sha256": "f25669f571e1261fd7d45a38f6f3e9ade4517cb7b914d1e13228988c36091b62"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedCircleProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedCircleProps.md",
+      "sha256": "9bcdd30e4d33a61255125a181bcbdb3a5bf0704c03eef47a440ae3fcf6991ba3"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedEllipseProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedEllipseProps.md",
+      "sha256": "891ad496d1ed073849c9087096c99b72abb4f056c0dc3d117712ae198a05981d"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedGroupProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedGroupProps.md",
+      "sha256": "643021853e45eeaa68dbb5bf6fc6c8b1e540fe0601510e440746bcafdaaa0665"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedImageProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedImageProps.md",
+      "sha256": "9d7f6d638b2900602e7b45410995cb5fa3c0a03c7d5dd5e691cdc1cc0f546db7"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedITextProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedITextProps.md",
+      "sha256": "5f32a0fc8024a123f0ee9bbe7b65196ad2b07e770472b2efad3444148c21d917"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedLineProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedLineProps.md",
+      "sha256": "1a7b8d96cbdb0d27461bc36844a12f49f0d82eac185818f507bdb21e557ad843"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedObjectProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedObjectProps.md",
+      "sha256": "49df85d104c0a5d59a2bbb926c69e4733da1e3e38f681f7a2730d054a83bd638"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedPathProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedPathProps.md",
+      "sha256": "85ba3dbca10da772258c3f67eb23915e1d24a3605e33a22f368f91fe2d63f488"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedPolylineProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedPolylineProps.md",
+      "sha256": "ebc9f9830cee7ebd822216d56481cc65548c7cbf3db813aefdcbd84682a35958"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedRectProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedRectProps.md",
+      "sha256": "39841a9dd75a9fd19bc2a9ff6725bc75ef80ae354fcce0af463684598414f74c"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedTextboxProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedTextboxProps.md",
+      "sha256": "6dc594f65e1f8c6f623cdbe476641783e40405ab4fcb65040dc971ed427d1bfa"
+    },
+    "repo/src/content/docs/api/interfaces/SerializedTextProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/SerializedTextProps.md",
+      "sha256": "b0e7151591e156f5dc63d649d868bfee3402f3bb6217646a24a29c15aaebc829"
+    },
+    "repo/src/content/docs/api/interfaces/StaticCanvasEvents.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/StaticCanvasEvents.md",
+      "sha256": "b5a94278d099d7754de797c31e346643ea40d4a004f9d79ceacf0ba0f31dfc3d"
+    },
+    "repo/src/content/docs/api/interfaces/StaticCanvasOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/StaticCanvasOptions.md",
+      "sha256": "37131d5a361f1880d79a98d42863edf451f44623dae002bdef7210b41bd25bd9"
+    },
+    "repo/src/content/docs/api/interfaces/TEvent.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/TEvent.md",
+      "sha256": "2dab93d60678e09d2a6888e324c029160e57306207bd134de1517cb94c594e54"
+    },
+    "repo/src/content/docs/api/interfaces/TextboxProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/TextboxProps.md",
+      "sha256": "afc50150748d242c0c28998d12a77b965e504801b3f41117e45e49926a7f9c91"
+    },
+    "repo/src/content/docs/api/interfaces/TextProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/TextProps.md",
+      "sha256": "bab6361dc7aa509849fd7c9962dc1919a6d36334ec1acfebfe6d59130b61af2f"
+    },
+    "repo/src/content/docs/api/interfaces/TPointerEventInfo.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/TPointerEventInfo.md",
+      "sha256": "8b1052bcfe1a4c3805e432c84b90e70c781e1dc2a350124270f327a7010f3767"
+    },
+    "repo/src/content/docs/api/interfaces/XY.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/interfaces/XY.md",
+      "sha256": "800e52aed74263c6b0b3563362ae59830fac74a7e93e3d238e77f782a9dd1963"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/changeWidth.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/changeWidth.md",
+      "sha256": "06d125261cb7287bd4b6dc7b676ecb0a7ac198a5f84bd50d16355725db5b4773"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/createObjectDefaultControls.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/createObjectDefaultControls.md",
+      "sha256": "5e8f7cdadae73d6414f445053eea6864e885e59c00725aee5ee4eca6b2e67ccb"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/createPolyActionHandler.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/createPolyActionHandler.md",
+      "sha256": "94a8ef1b8b41f48940f41ecfcad1e354f8242b3d5f76e7db3189a9cf5589070c"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/createPolyControls.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/createPolyControls.md",
+      "sha256": "0a991585345c40c40908455d4d4dec5832ccd8fc4e2384c2b11fdf2e9426e801"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/createPolyPositionHandler.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/createPolyPositionHandler.md",
+      "sha256": "972a674686a0cdfb91cb5b05a17e3f7ffc02e22fd87cfd4fb2fa80db01886559"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/createResizeControls.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/createResizeControls.md",
+      "sha256": "1e42a470c7d363e59f766d04e432fd15b6e95f8a269c385c852809ee3001ac2b"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/createTextboxDefaultControls.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/createTextboxDefaultControls.md",
+      "sha256": "7228a1fc9ec38ae0ba476fb513abd0c7f9f2d5ad5afa882db53ce1674b16b727"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/factoryPolyActionHandler.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/factoryPolyActionHandler.md",
+      "sha256": "99d11204c7c6717d937e4165db4c66466bb209954193c2e936185e5481fb0f29"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/getLocalPoint.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/getLocalPoint.md",
+      "sha256": "8a8b59bd1d867f6a94711dda9749e43d2b7697d70d253ddf9cbe6fcfeba2112a"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/polyActionHandler.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/polyActionHandler.md",
+      "sha256": "901cdfa27d02ebd3a99ee13437c3fcbde176f4f8fff0562f49cd2cbdda981ea8"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/renderCircleControl.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/renderCircleControl.md",
+      "sha256": "39d13b0d95b09a2ec868a5641d092f0ce1e00667f66b50d7a82d0d4511c4c327"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/renderSquareControl.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/renderSquareControl.md",
+      "sha256": "6dc94bbdae890d3796bc9b14d5cf9bb929f3e560ae16bec31ff6bdf7b29650b0"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/rotationStyleHandler.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/rotationStyleHandler.md",
+      "sha256": "1866d8afa23ae7db2deaa16d853a3b242d680fa5140c8103dad2f557c6300751"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/rotationWithSnapping.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/rotationWithSnapping.md",
+      "sha256": "429984879ae04352637a0836c0181c0bd71bca1a8c75a81ecb07d28db91db8f4"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/scaleCursorStyleHandler.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/scaleCursorStyleHandler.md",
+      "sha256": "0bf921ac54f87b2e073f4d258c3b05f508fab60e93ee61b04d536e7a558d8c32"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/scaleOrSkewActionName.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/scaleOrSkewActionName.md",
+      "sha256": "75947eb3aed0e3e3ee8f170cd0f209e8a653386e4c89c66e0b91236919d7d7d3"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/scaleSkewCursorStyleHandler.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/scaleSkewCursorStyleHandler.md",
+      "sha256": "510511a1a75564808568bbc6ee1ea60f9c75c0bf681fa11f117f6fdaa805bdd5"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/scalingEqually.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/scalingEqually.md",
+      "sha256": "ed3ca9a095f225bef5e7f82e8679c12617843623cac817743c7eba35050d405c"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/scalingX.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/scalingX.md",
+      "sha256": "fd5870fdad0eea0b75b4eae777443f5985d4709c01f562dd3ae4045d9c8799f3"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/scalingXOrSkewingY.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/scalingXOrSkewingY.md",
+      "sha256": "0c7848ce21ca9508d6343ed067c3e00276a81643d28787f54fbcdf2878b67a24"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/scalingY.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/scalingY.md",
+      "sha256": "35535386c8b2e576a562b90ff929ffac041888b1ccf16760ab0695ef6ef64c89"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/scalingYOrSkewingX.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/scalingYOrSkewingX.md",
+      "sha256": "cc81e2b207af53e9841e727ac014f44f7a08f4db86f990f811ccea58aa1af888"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/skewCursorStyleHandler.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/skewCursorStyleHandler.md",
+      "sha256": "7d89e6cf3ba5c36ae46dd971c1be91d962e76a4476b35b4ae2c496aef64da7b4"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/skewHandlerX.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/skewHandlerX.md",
+      "sha256": "b8bc39d076d8df1ee555a62a46447eee7bb977445ec041cfebb3b2a89944e5ec"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/skewHandlerY.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/skewHandlerY.md",
+      "sha256": "c79ba9231f85db2ffad86cc75badb18246169d6a8b7ca27e01258916d8b72277"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/wrapWithFireEvent.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/wrapWithFireEvent.md",
+      "sha256": "1ca72af43c7abdb52b2bab3728bf0b61c16559b8a209bdbf888828ae9f6dc374"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/functions/wrapWithFixedAnchor.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/functions/wrapWithFixedAnchor.md",
+      "sha256": "b4f39a51c084f746e437eb3ee3de5e4c28ea175f4baeebffa93cb9b150deef12"
+    },
+    "repo/src/content/docs/api/namespaces/controlsUtils/index.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/controlsUtils/index.md",
+      "sha256": "dae74e223248063e15dc841b41f0b205156e3d2b71aa7c2943e7a5ade7925e8b"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/BaseFilter.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/BaseFilter.md",
+      "sha256": "6b550a5067407dcd83f07f9bd254f6c7ce714f6dd84e6d68fb1f16a3a3826be1"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/BlendColor.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/BlendColor.md",
+      "sha256": "55e55bbed5f55bf7811f00ae1171f02bd6f8cbb0479163e555d1445b6f54d8a3"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/BlendImage.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/BlendImage.md",
+      "sha256": "c13765e5b22a680fb67152453b2462a18bbfb05ba8a21190baad9acdb1ff4a91"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Blur.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Blur.md",
+      "sha256": "daa463f7ed49a238d82616a0764fb330029941eecb89f71ec11f2ffd78eafa79"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Brightness.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Brightness.md",
+      "sha256": "c50ad9ed0bbc920c13acb71aa2721fe27af29282efc0afb5403afd0b7e0a56c3"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/ColorMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/ColorMatrix.md",
+      "sha256": "24b883027673e4c79fee1f258565d6eab61cb065862df19b634c13dcb84aea31"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Composed.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Composed.md",
+      "sha256": "eec782795fea43d6af7e0313f654849edfda64155f7c67e4b70cf23810f4ae7a"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Contrast.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Contrast.md",
+      "sha256": "980a316eb5a9ad2096232ea00cddc17213d39257cd815265a3752fc8d9cb68ad"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Convolute.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Convolute.md",
+      "sha256": "03f60e192d302f1d55e76c25742b90d37da07cc0f998bff1f3b57bb873f820b7"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Gamma.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Gamma.md",
+      "sha256": "44602abf5e40c9990e13de6ac7a941f37f938483a07bb0f646afd90b0c50a57e"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Grayscale.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Grayscale.md",
+      "sha256": "c0475cbfd3e6bc1881aae90a196c9d71a0657558ec13e3ea513043d7da7b15d7"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/HueRotation.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/HueRotation.md",
+      "sha256": "6ab100d1ee6b361ec2b91601e7a21877609ea05fd8b299672fa5d48cf35dc015"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Invert.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Invert.md",
+      "sha256": "13512afcde54908c51b2e8a8023d8cad377241237c02989474f861fe33919e7a"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Noise.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Noise.md",
+      "sha256": "85ffbec82bf07638ea0acc35815cdd4107bf89ec7477825bbef16f844db8d379"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Pixelate.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Pixelate.md",
+      "sha256": "13323b26e7e9ad97b1a3aa374a1a7a6f9ceda578b3c458037c25f38e7869628d"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/RemoveColor.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/RemoveColor.md",
+      "sha256": "40594a19cab0affe001bbd14d7c414bd93b3cda721f423a28fbbb973f25d9158"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Resize.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Resize.md",
+      "sha256": "378c6a1293f72cfe02cf2dc2c67502b194fbed3ab8b7d6dd90881ac439b8a924"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Saturation.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Saturation.md",
+      "sha256": "563af79190dc2551a3938678f7ac934074471312cf3a93c2966a7a047b39db3b"
+    },
+    "repo/src/content/docs/api/namespaces/filters/classes/Vibrance.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/classes/Vibrance.md",
+      "sha256": "31f6af6a2df17ab680ecf4436f84d4f685a9ca3b0150beca24386f2edf1ec24f"
+    },
+    "repo/src/content/docs/api/namespaces/filters/index.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/index.md",
+      "sha256": "d69eee99f596e49467504f8ad0c8148c2b84a1965d087038780e2f85d3783823"
+    },
+    "repo/src/content/docs/api/namespaces/filters/type-aliases/TBlendMode.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/type-aliases/TBlendMode.md",
+      "sha256": "80de0a4c5f4bba6e8f1550c7792e18788c0894ea55e80e3d142c554024d49261"
+    },
+    "repo/src/content/docs/api/namespaces/filters/type-aliases/TResizeType.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/type-aliases/TResizeType.md",
+      "sha256": "e70685dab3460820d91ca2b3cbcd80092be874cea065e75481523b2d4b3a6d86"
+    },
+    "repo/src/content/docs/api/namespaces/filters/variables/BlackWhite.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/variables/BlackWhite.md",
+      "sha256": "1b3e75f8a40ee564707cc5a96f0cff42ee2745ecb7a46bc4f429c768a440627a"
+    },
+    "repo/src/content/docs/api/namespaces/filters/variables/Brownie.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/variables/Brownie.md",
+      "sha256": "5bc3de05e06aafa196658b9fdb9273ec1a42fa85fe1e3165bcf59038a3edf90e"
+    },
+    "repo/src/content/docs/api/namespaces/filters/variables/Kodachrome.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/variables/Kodachrome.md",
+      "sha256": "a96bfd542ab5cc88d85e4d7c3c7ed47741a5ce07357437b85de8b97d4de1ddd3"
+    },
+    "repo/src/content/docs/api/namespaces/filters/variables/Polaroid.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/variables/Polaroid.md",
+      "sha256": "6c3dd51f85de90db3e3410e767eabc86ebf511539a59b637639a90bdf6320d47"
+    },
+    "repo/src/content/docs/api/namespaces/filters/variables/Sepia.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/variables/Sepia.md",
+      "sha256": "6386be0e3b0f1da3c7326910b2a9e311b6a74633ca306db3f9a058a398633309"
+    },
+    "repo/src/content/docs/api/namespaces/filters/variables/Technicolor.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/variables/Technicolor.md",
+      "sha256": "f86234d8c3f06bf6c24506d88344e8ee6b1362c31bf64edb026e79385bfbe585"
+    },
+    "repo/src/content/docs/api/namespaces/filters/variables/Vintage.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/filters/variables/Vintage.md",
+      "sha256": "857a8f640b0e3e89031f32b32f8225f1e737c1224fc631768e1799107aa13a32"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/addTransformToObject.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/addTransformToObject.md",
+      "sha256": "d60bc5301ce83648f7a43fa195121eb5cf00b20e6fd547a7843be4d3914ce1f0"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/animate.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/animate.md",
+      "sha256": "a1b781cc8a292c91876afb09cc94933cbf0ea03d1f2810865bd8d4e860d098e1"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/animateColor.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/animateColor.md",
+      "sha256": "b5607fe0f087d98fcd17d988915d0c47cd392c48d67151ddd0673c6c6eb3a22b"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/applyTransformToObject.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/applyTransformToObject.md",
+      "sha256": "9ea9f65d5ff407df6ac4d88a594faa214efca6a9cc754114b81fe17a46b9a783"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/calcAngleBetweenVectors.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/calcAngleBetweenVectors.md",
+      "sha256": "1ba96d5819c19257179be351494788c23263e4a520c13a3a973af8d31d6452db"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/calcDimensionsMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/calcDimensionsMatrix.md",
+      "sha256": "11771fd7ff9d62c23861d2a30083ba1a673ef30aa619737ec287bddd5b6f9e17"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/calcPlaneChangeMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/calcPlaneChangeMatrix.md",
+      "sha256": "9b775b36a485a0c7a87b15b7125c37097d076d3e669aa225a20ade64a4c636b2"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/calcVectorRotation.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/calcVectorRotation.md",
+      "sha256": "2ec5d40402c675b8366a1e0eea5d4671fc17b128b0f1a79f23f5bf20a0d78fda"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/cancelAnimFrame.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/cancelAnimFrame.md",
+      "sha256": "9be3155a4c8a5c47ca6450a0a6e637fc6505d36b500795ba853f493a0d172237"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/capValue.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/capValue.md",
+      "sha256": "3f11f69c4205a7c4c72a01b64bf5638443e6e26e41749a0b5557b950a72c0a8d"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/composeMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/composeMatrix.md",
+      "sha256": "e3eaba17bb09a303b9239f1c65162c8b63af42bddaefbf56d3684e67a7ef1b1c"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/copyCanvasElement.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/copyCanvasElement.md",
+      "sha256": "70b23066bf5305d908e824df6c8f89995d2bd5858d4256a1a670da25f0123581"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/cos.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/cos.md",
+      "sha256": "5a60d041045ca3fc6a9864d433c0b39034150eb048a70fa7baa2ac480fa3b03a"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/createCanvasElement.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/createCanvasElement.md",
+      "sha256": "e51fe628459413a54a09097d9f38a8e44c4327fba7864d5ba4403a6ce9341cd9"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/createImage.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/createImage.md",
+      "sha256": "0808de991df76e1a4ddf6b32d796e8796664678391bffd0016e45cb88db480fe"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/createRotateMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/createRotateMatrix.md",
+      "sha256": "c8f87e26fa7c0ea13e513722010030e3ceb93528d5a10dcdf9741e91f0d537c0"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/createScaleMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/createScaleMatrix.md",
+      "sha256": "b657437482c20fe7a4f2a95543d64ddf72461f69bd54229f52b74368bb61836f"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/createSkewXMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/createSkewXMatrix.md",
+      "sha256": "e06d198a93f2f147edc218a9bd742e96ea497148efcf2358fdce5432d0a3f03c"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/createSkewYMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/createSkewYMatrix.md",
+      "sha256": "e34b89518d2872460b1c4ca789df9116d8fa4fe5d79ef7eb3b904987132b1d98"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/createTranslateMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/createTranslateMatrix.md",
+      "sha256": "e41b48364ea388b66a8e4dbc5f9bdb7a09156c19cd462ef605f1ed7b64b23879"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/createVector.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/createVector.md",
+      "sha256": "dde2480cb10ebae5176be68419c088fc3b8922dad8db97e9ef6b0c96dabc9e0c"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/crossProduct.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/crossProduct.md",
+      "sha256": "82fcb8c9386a557b00d80725be1ee319c7ba2fecaee4440c70f0dd3e119fa367"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/degreesToRadians.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/degreesToRadians.md",
+      "sha256": "b359c8d80176100408c2cbb7a165ef3774f7b8508df95d8ddec1c703420a2584"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/dotProduct.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/dotProduct.md",
+      "sha256": "212ca7a69ff7c6111334ea67c6079fb445fee93a262776694fa3c9d7b2bd09fd"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/enlivenObjectEnlivables.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/enlivenObjectEnlivables.md",
+      "sha256": "e4deeda9988495d5e834c6f9d53fa6178699b0466a804f4e5bd8760c8cba89ad"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/enlivenObjects.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/enlivenObjects.md",
+      "sha256": "abbab82633c5b1ea83f2bde4bb91ab61b5d01d5e6236214bef91903f5207d833"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/findScaleToCover.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/findScaleToCover.md",
+      "sha256": "6903d75e6f2902883ab7c3f15319ac0de56b6236dba739ec4dee89cb1fa0459b"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/findScaleToFit.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/findScaleToFit.md",
+      "sha256": "310843b49861e97294473761d39ade4c011de20ce628efc1604f042457217f89"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/getBoundsOfCurve.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/getBoundsOfCurve.md",
+      "sha256": "905ca4be5689278bb22a34261339cf2abb28b22b8689ab32b6c8cbe7b7224ef4"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/getOrthonormalVector.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/getOrthonormalVector.md",
+      "sha256": "3529c37f098c5e1a956d6daf2a4fc356644d12391bcc330be4ac14461e04caa9"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/getPathSegmentsInfo.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/getPathSegmentsInfo.md",
+      "sha256": "8df886ef6bbb8cd903e9efc6b52fd9a1c00bfe3b18ee946f8347fbcc167dc0a4"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/getPointer.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/getPointer.md",
+      "sha256": "ed453b6c91406ba7ba9e314b509c5640067d277e13159f7cd35aa53bbb0a65ce"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/getPointOnPath.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/getPointOnPath.md",
+      "sha256": "93385054033950dc4ec7e64952963887d90dd12a8343a3a6fb13937b337c52c6"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/getRandomInt.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/getRandomInt.md",
+      "sha256": "be3dce5bafacc31f5feba3b3b039fa05a15430e8225fb2199b11beff6457d90f"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/getRegularPolygonPath.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/getRegularPolygonPath.md",
+      "sha256": "f6cdecb618c84627d78656ca2f792b3c3b5bb047f379af0ac8f4419d526a2136"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/getSmoothPathFromPoints.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/getSmoothPathFromPoints.md",
+      "sha256": "316dc8d82ad70fc12039b7e0342e5407f0ee6063650c6abf4f6685522fce8a11"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/getSvgAttributes.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/getSvgAttributes.md",
+      "sha256": "51f363b44413210620461d6f240aa24c005b0fdb0abc45664e39e2801de05001"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/getUnitVector.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/getUnitVector.md",
+      "sha256": "b614270d849121d11400ad37750ff2db4f197a4e94749f228a4e9aa7046041ec"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/groupSVGElements.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/groupSVGElements.md",
+      "sha256": "5fb45549e8978884bb6cf9e9906fea938ba001b820f0c6654f7a327afebc9bf9"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/hasStyleChanged.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/hasStyleChanged.md",
+      "sha256": "ae45a7721f1363a066f7848476413001717940c4815a73b177db7a635ceda804"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/invertTransform.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/invertTransform.md",
+      "sha256": "105659909b3c6ac410f39def8cd95777702946153f5a9eb45664ec1ede70e302"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/isBetweenVectors.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/isBetweenVectors.md",
+      "sha256": "fd341d01f3cd3c2f15691baf0e5fcd410b38e0458c4b51f7d2f89649cdc66f06"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/isIdentityMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/isIdentityMatrix.md",
+      "sha256": "dfc2a97e4b6b7ef00b095480088b5c72eca5939964da032391e405fad6249cbf"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/isTouchEvent.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/isTouchEvent.md",
+      "sha256": "7a9e8beff6513eb2fbaed72bdb28c8db963764fb3355bb60be68bc5c57980e49"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/isTransparent.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/isTransparent.md",
+      "sha256": "bf8610fb4f717b97b875793fbb227b5b1fba612dc4c601d2f8fb4c88c2a01b8f"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/joinPath.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/joinPath.md",
+      "sha256": "cba538c6aef80eb25942578407dd07af5a159e96956244892c80d785047141d0"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/loadImage.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/loadImage.md",
+      "sha256": "9ab69c50568670fdfd7488eca6280c2d7c0b183888e287e9a1c681b15e3bab8f"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/magnitude.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/magnitude.md",
+      "sha256": "ee14a2b7269a8abfc82eea6e8da4585da0d0e4187f795f3d528e64eeeb0a5251"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/makeBoundingBoxFromPoints.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/makeBoundingBoxFromPoints.md",
+      "sha256": "57bdc0e453f747a495d423a3064d819ccefbb1cdb2029df2a6cae993599c05f8"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/makePathSimpler.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/makePathSimpler.md",
+      "sha256": "2ea744dfd79e50d9f301a309644f5480cef36d8162ed12f642811030234812a1"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/matrixToSVG.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/matrixToSVG.md",
+      "sha256": "72fa7c9aa59827c28ca0d790d1a09e929a4a2a33a6d0ff25335e6f47b9b4e29d"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/mergeClipPaths.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/mergeClipPaths.md",
+      "sha256": "01e15f2cb437159105aba7cc21d1b0d4ca5fd86884c23e2d3fa0ec4acb889299"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/multiplyTransformMatrices.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/multiplyTransformMatrices.md",
+      "sha256": "35ab472e3f0c3d7d7c75b41ab775f1372d74a5ee95aa20c8ccbaa040cf477416"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/multiplyTransformMatrixArray.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/multiplyTransformMatrixArray.md",
+      "sha256": "72109938886de34b03feccd7e8104aceae1250fcaf2151a244ab4c63414bbda8"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/parsePath.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/parsePath.md",
+      "sha256": "a5964895e882a90bd00ce810cdf3a786bbccf539f3a2ae057f3b9999b3c2c9b0"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/parsePreserveAspectRatioAttribute.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/parsePreserveAspectRatioAttribute.md",
+      "sha256": "3a92a95f3547b948ee663e469f8a5db43076bb4d9b5933dd3e1e04261f1de7e3"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/parseUnit.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/parseUnit.md",
+      "sha256": "04e84974aeffe55256000a55a39e55961faecf0a6bb44ca6d838626c963c62ac"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/pick.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/pick.md",
+      "sha256": "b2eb2d4fd9c5e113dd1f327a44c6cca9cadbbd20c6e9024ff9875d833717f0ba"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/projectStrokeOnPoints.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/projectStrokeOnPoints.md",
+      "sha256": "e4e05b9c18ec7e5b131a4a9a4322f065ff36f05b2fcaf9b89b9a65b4c24519af"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/qrDecompose.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/qrDecompose.md",
+      "sha256": "c4874bda65996616ca4740d6a0e1628bd11c79cfe90e983851afe23895eff8dd"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/radiansToDegrees.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/radiansToDegrees.md",
+      "sha256": "1f9758d961336e941116294d5c59a89ebd77c5a244b9f7a1b9954d0458bca8ac"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/removeFromArray.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/removeFromArray.md",
+      "sha256": "f4b6b9027172734561254e7d5f483a2cdb51b09c1dbf0f6e33f2939ae1d92837"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/removeTransformFromObject.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/removeTransformFromObject.md",
+      "sha256": "23e6969603b0b44c86680636a02af2208c09d3b021017848e8efabb2132dc39b"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/request.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/request.md",
+      "sha256": "fbc9afd7e389c718c1bb1b582d5a083087ccc76f5304f941416b6d3834efd839"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/requestAnimFrame.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/requestAnimFrame.md",
+      "sha256": "168538764869b6e2feafb846ac9279be6b71d50c496c1774dcb51910cb1a18d3"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/resetObjectTransform.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/resetObjectTransform.md",
+      "sha256": "4dc73e12a6749a15bf868a59d0b75877db3b64cc262bc5457d7bc48f44a3779c"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/rotatePoint.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/rotatePoint.md",
+      "sha256": "16807ebcc7c259dcca77228b9e43bf3ca1b9406e4038dcc4a847863d6ee6df52"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/rotateVector.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/rotateVector.md",
+      "sha256": "30370dc7b4b37b53239e6e1e3d92bc35fef9c18522793cf03fa81e97f96bc614"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/saveObjectTransform.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/saveObjectTransform.md",
+      "sha256": "f5cbac064da0d0cfbab602d2fbb8936f34e7b33c7e7bf2d95f7eb03c0193a3b3"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/sendObjectToPlane.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/sendObjectToPlane.md",
+      "sha256": "ea5565af7d9ec33c5cbedbede1ca6d9a3fff4eca57892bbe61caa747c45bff9f"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/sendPointToPlane.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/sendPointToPlane.md",
+      "sha256": "09c4b1e6567bdf8ceaa1b7d2167df33662896b6173447e322491ddc145460611"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/sendVectorToPlane.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/sendVectorToPlane.md",
+      "sha256": "fbc20d00d0558854eb5035df3e3a85f74bb02304276b79cdc64e4ca0b024bf79"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/setStyle.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/setStyle.md",
+      "sha256": "224ea7327deaa24b74bd80982c7d0eafb62da61a466eeef3824781ed3bdd258b"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/sin.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/sin.md",
+      "sha256": "9ae011e3d10c5909b63c5e90fe7ecfd9a53a1d1670d07c996b5a197900455724"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/sizeAfterTransform.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/sizeAfterTransform.md",
+      "sha256": "5bc632fd746ac018d94e711863d7d786982440eb1967c80222f903f8b3e10cd6"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/stylesFromArray.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/stylesFromArray.md",
+      "sha256": "3acb5edae103bb16722bfc8a6be4ae8edd01f80a895ecb57c6a749c79016f96f"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/stylesToArray.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/stylesToArray.md",
+      "sha256": "ee7749f282140e55956ede2f6fb17aae802f447c61f42256ef5a77beaf53da7b"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/toDataURL.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/toDataURL.md",
+      "sha256": "2588dd0fa9fe65851725a706e7d585076091b27e1029ed327defc9ba9f2905d3"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/toFixed.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/toFixed.md",
+      "sha256": "418e50de8acc2454237c61dce06f285c500d5245b0aaa5a45986a55f31bae2cb"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/transformPath.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/transformPath.md",
+      "sha256": "87f52b670c1f5bd6288c654a3c7f0d59a459db771b800ba28600ec3cc0e4e88b"
+    },
+    "repo/src/content/docs/api/namespaces/util/functions/transformPoint.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/functions/transformPoint.md",
+      "sha256": "1c76ac949138a57b804173dd4656344c27f53ea90db0c715bb782f626a595205"
+    },
+    "repo/src/content/docs/api/namespaces/util/index.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/index.md",
+      "sha256": "9c839bb54660c3bc62117b493dc45b80a719f59addf4976165d7477b908a4edf"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/defaultEasing.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/defaultEasing.md",
+      "sha256": "ea1a993dcb6820432752dcd1986956912c3a86bf7176eb728ee6d66f43e3fde2"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInBack.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInBack.md",
+      "sha256": "ca6fed6ade50ebb2ec16fe9a8febea109e91e3be05ed3eabfa7e601feee11826"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInBounce.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInBounce.md",
+      "sha256": "929ade7d71a1e5986d83cae4bbaee5ce25716716c8d7ee7332244414d0eeedb3"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInCirc.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInCirc.md",
+      "sha256": "f86231fdd246ce087ce059f04495ed2bd4e69d0251556001d58b78969fa32a8d"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInCubic.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInCubic.md",
+      "sha256": "af550fba2af94f51c945003ce85207b45ffd47db99c63fd3643f07df75a8e58f"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInElastic.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInElastic.md",
+      "sha256": "54a1db7b9883f2f46b2d1b2fd555ea95724f776a3d0bfd24623c30a664a8078f"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInExpo.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInExpo.md",
+      "sha256": "2e27e55b21c12fa80fa4d5d26224b1fce44221cb505a2c9bbe5aad06ff2ad19f"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutBack.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutBack.md",
+      "sha256": "08b7579316d2d70e9deb10abe7cb97d3eefc6a92ab5c89b24818088d9b643501"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutBounce.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutBounce.md",
+      "sha256": "0e6311426005bde4d892c2bc1f79c64f930ad8b5cdae646945c6a431118f2c9d"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutCirc.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutCirc.md",
+      "sha256": "361fa6db7e31e387cbd73ba2417c0e82e62eec8e04dad789fa18372503ac6f76"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutCubic.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutCubic.md",
+      "sha256": "7045763c6154eac40cab21dd3d24f4b02883b49005f6a3f5f649bb93bb34730f"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutElastic.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutElastic.md",
+      "sha256": "13fe9969224a6bc82fc758dcfd0788190ec5eb9fdc23f5976c9b5ac1ed6f0f27"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutExpo.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutExpo.md",
+      "sha256": "30feb4353f97889636492739921f7b2ae415d1424864411facd4b850a2a3eebf"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutQuad.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutQuad.md",
+      "sha256": "d7473d0e990ac56265df45c49ed877b34603b9ace7430d73a63bb294d4235a6a"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutQuart.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutQuart.md",
+      "sha256": "02c77d742192697ada2a38cd154fbe642245b65eb0a3174188c627af80f074ba"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutQuint.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutQuint.md",
+      "sha256": "32c450badad80bd7e20e3c89ab9044685d96ea36302b14c0ac470ea66334afde"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutSine.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInOutSine.md",
+      "sha256": "096c8dd5a6d50c4c336f2dd3f13624a2cb9494ddf62d18e6725b8312ea5dfcf8"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInQuad.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInQuad.md",
+      "sha256": "049e4e5c40c95243daee253ab1c09454e75a296c641b8aa6724233ff8364c130"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInQuart.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInQuart.md",
+      "sha256": "94d88776ed4ed433483da84d66ae27e4b1e025de0420c265b75fe84a206a1fe5"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInQuint.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInQuint.md",
+      "sha256": "f56e3ea935c8c75999cd29d964af0ec7fb7cd614062d7f33712e70f6366dac64"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInSine.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeInSine.md",
+      "sha256": "cba620bf026ad19d9da83a99665d99f9daa7935b4d9f7465b0e21f906c627869"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutBack.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutBack.md",
+      "sha256": "04bcef8c08dea21ef64727f6e1f70f4640b1bf7dc442d63dcac240361ffc1905"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutBounce.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutBounce.md",
+      "sha256": "96b05b5e70e151d5451f4d908d7dbd605f093742da4ca045b2d16e1b1d32be1e"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutCirc.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutCirc.md",
+      "sha256": "e6b3a5dce4d6e200480ba5842ed12423c016dc527f58501bc4e9d6dcc5c58b1f"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutCubic.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutCubic.md",
+      "sha256": "25ff6bb84decb07e88758d8c90297e852c4c5742168b4fe45d115c0ed6bac6eb"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutElastic.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutElastic.md",
+      "sha256": "95f674e10568ae3800a0a2126fc9b5e6bb9eba72d5d8ccd6df6e06d97600670f"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutExpo.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutExpo.md",
+      "sha256": "89b6e6661b49d7569c3d58ad02d000f140d8520cc13095b81033f73902cdca29"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutQuad.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutQuad.md",
+      "sha256": "b481102e36be4a907cd89f34f9c04adb877a31c8ff51210e979d27af7fa6c722"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutQuart.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutQuart.md",
+      "sha256": "2e4cf3679462fa0673b85a6e21dcf7b8d640c1bbb6592d3b723f9daf0de8edba"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutQuint.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutQuint.md",
+      "sha256": "5bdbaefa67ec1251c4d1cb4736c52966185218b00be1688ac6ee08b7061d325c"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutSine.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/functions/easeOutSine.md",
+      "sha256": "8ec0dc63b8a21be3e00390975acd0460498e1e9fcc866643944e10a6200e406a"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/ease/index.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/ease/index.md",
+      "sha256": "1538e05723a52dea01d7adc54883d6d6f0e9e77942a0309b82c9e236d57816ed"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/string/functions/capitalize.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/string/functions/capitalize.md",
+      "sha256": "60208ff7a1acb42a9e2a06904c6b514c0dcb5a3d7b2310762c4592e817e33dcc"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/string/functions/escapeXml.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/string/functions/escapeXml.md",
+      "sha256": "7aaf3fbfa023a0265d1025a8c5ef130005288abb6498ea3420916e68822d9701"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/string/functions/graphemeSplit.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/string/functions/graphemeSplit.md",
+      "sha256": "21bf8d40998c4f7cf0635165cd7c0220a6da7e4145edde2c0e29df57e1af7344"
+    },
+    "repo/src/content/docs/api/namespaces/util/namespaces/string/index.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/namespaces/string/index.md",
+      "sha256": "279ae822ec0cf1a4f22d43e9dc69cd2ff2670986d3b6c17c53519c7f004d4ea7"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/AnimationOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/AnimationOptions.md",
+      "sha256": "1bcf0b544c92616733a8373bc154672acce9c576b3c58df242992f0f14bf7eb3"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/AnimationState.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/AnimationState.md",
+      "sha256": "71be97fade7b835b248ab78913696a4b5525b98dbbe725e47b7668ab4d03608d"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/ArrayAnimationOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/ArrayAnimationOptions.md",
+      "sha256": "a4cc69c744efd5739a5ccf1444a3f4f7c7ea7d08b0bc3a1f66ccf10f34dc3cad"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/ColorAnimationOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/ColorAnimationOptions.md",
+      "sha256": "bc3f1373c68fc2935a50bd5bbd3532e1284bb4c22b25de37777fb0dfbb55f9f6"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/EnlivenObjectOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/EnlivenObjectOptions.md",
+      "sha256": "9ae9b5c41d42f3d0018a62249fe367a78db1db605a96bf223f82b500be80a7c0"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/LoadImageOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/LoadImageOptions.md",
+      "sha256": "f5de6b15537d4e5ff99e99e4d902cdf18498b147d84c6db4cac934c17a54f9e6"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TAbortCallback.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TAbortCallback.md",
+      "sha256": "42cac2fe72962ca6b3931480f31bd4ec76b9eaa3151193c9ce7a4a2ab4e54281"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TAnimation.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TAnimation.md",
+      "sha256": "cafbde57e5c131b17cb6b7a0bf2971a7059d3048e44adce5bbadd9d8127c9306"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TAnimationBaseOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TAnimationBaseOptions.md",
+      "sha256": "efc479a6bc105b7466b98fc9db939cf073b713af666d9431a02e637d89b89445"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TAnimationCallbacks.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TAnimationCallbacks.md",
+      "sha256": "b25fd5f5ecf1daf19a8d4d0d0a36593f4e48a58146d1d08aeaeb6bf23f0dda98"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TAnimationOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TAnimationOptions.md",
+      "sha256": "0d8a759b6168cf58ac36dc51112322fca038c37740e826c51457a99df885131f"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TArcCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TArcCommand.md",
+      "sha256": "553c317fe825d94464702d613324f5d4201aa03686b2f8ef9bcdd313c867f836"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TArcCommandSingleFlag.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TArcCommandSingleFlag.md",
+      "sha256": "d1db338b43869c3175366c3118a5b9a93752602d5ab31f1724ffd90a81191956"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TBaseAnimationOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TBaseAnimationOptions.md",
+      "sha256": "045ce77063041d241105159df0b634a0b3ac696e1586c1d4a20dafcbbe2aed44"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TClosePathCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TClosePathCommand.md",
+      "sha256": "e837831481b9f2a810682291de046ebe176dad155b348d4a59c33e8cca7c1926"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TComplexParsedCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TComplexParsedCommand.md",
+      "sha256": "35ce70083d7f67a2151149ea5e24ee107b9a585306f5c747c2f605c779c8df65"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TComplexPathData.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TComplexPathData.md",
+      "sha256": "8d7f889becd729c5de35e674048ce500e2b196a3db707806bf76e2659429e9e6"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TComposeMatrixArgs.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TComposeMatrixArgs.md",
+      "sha256": "6cf3bfdfe55b4b195730a6d42a66de4b4db58af727c26222e6cd43cc5ff0fd88"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TCubicCurveCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TCubicCurveCommand.md",
+      "sha256": "082809a2ecd68626e7c6a546ebb0e6c93e2da2e78fcadff6f6c6e3e3aa0c5988"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TCubicCurveShortcutCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TCubicCurveShortcutCommand.md",
+      "sha256": "965e67fc0ec437823093d4fe7e24e79fcb7786ccd0ecda43c8a94d2e560632b2"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TCurveInfo.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TCurveInfo.md",
+      "sha256": "b35b93449147afa2414b70f3a5d59136ac028d5f13fb553665d74cc411de91e3"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TEasingFunction.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TEasingFunction.md",
+      "sha256": "ce77eedc854aa1084629f34d4edae62bc600769d7529a7179e943279e4c5e94f"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TEndPathInfo.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TEndPathInfo.md",
+      "sha256": "a5af2ad64b7f2f67fada3302e93b3779810e1c116db334037587c3f2a5ed2883"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TextStyleArray.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TextStyleArray.md",
+      "sha256": "5d01520103dc0ea3024574e20850fe5d48ef3a6e03d5d79dcc1f91a34b99295e"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/THorizontalLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/THorizontalLineCommand.md",
+      "sha256": "8ca4a2ab252501f166b7a635022adfc5d39e50c7a5a3c8a0d8ed7a6999d4e388"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TLineCommand.md",
+      "sha256": "a80318d8bd2676fa4032cc8fa7c1aa37716ac3e7263589ede807c45065995bf5"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TMoveToCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TMoveToCommand.md",
+      "sha256": "dc1dc6fce23e9414b9796ed668a219f8d63298afde2bf974c41ee96958fecf04"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TOnAnimationChangeCallback.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TOnAnimationChangeCallback.md",
+      "sha256": "ed17c92d055b7ed2969b3c34f8cbb381dd64b94b69e5067d26f665675140065c"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteArcCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteArcCommand.md",
+      "sha256": "aec2a7e31c4591fb7d5394df5fed20def33bea865d654a3ad0db3971129c1c23"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteClosePathCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteClosePathCommand.md",
+      "sha256": "b9d007cfe458291762264a1844c71c370720968761bd2a9c4df0f3fc384b0fc7"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteCubicCurveCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteCubicCurveCommand.md",
+      "sha256": "811194fa1f0d80d9c5f932d79a62d9601aaf1d0e4b5649764dab2299a8997218"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteCubicCurveShortcutCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteCubicCurveShortcutCommand.md",
+      "sha256": "65e4c398f763e78db67c4de06f84ebd6978fed5b60bbce9bccd28934343aedbb"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteHorizontalLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteHorizontalLineCommand.md",
+      "sha256": "e10830cfc3dbbec1db5aae8e19ae2be162cd36cc2863005e0d322e046ae5bf56"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteLineCommand.md",
+      "sha256": "efe7c8dcaba21121a756fc6848732541460d39573bcb5ce75bf109fc082bb654"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteMoveToCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteMoveToCommand.md",
+      "sha256": "f446b3241300ecb3f08dbaf8e1f9356afe1c545559619d153b6fbb8163576b28"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteQuadraticCurveCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteQuadraticCurveCommand.md",
+      "sha256": "e9ea188ff2c8677c7e9092a74a2fcbc7fac36f7d02dc99f9da17d9a3996f7aa0"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteQuadraticCurveShortcutCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteQuadraticCurveShortcutCommand.md",
+      "sha256": "a1279d7563a2c1ab8b1e0a244bd7d04324f511d04b1b346839fb5fa8707900b0"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteVerticalLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedAbsoluteVerticalLineCommand.md",
+      "sha256": "e7bab3eb38139b4a3364c2dfeb4486f5153c59740aeb3124368cfb19801635fe"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedArcCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedArcCommand.md",
+      "sha256": "d1d0e9d13edd73fc32f3665da044c80641828f1f05d406cfa9fbd77ff86e8c5b"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedClosePathCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedClosePathCommand.md",
+      "sha256": "d2360c1e485196a230937c1863bddff6d17f231443ec357076b6ae9733173582"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedCommand.md",
+      "sha256": "2fbab8270e2e9a57cb02abaddd8715869eadb58ea7ea99220db1058ba1dbccc6"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedCubicCurveCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedCubicCurveCommand.md",
+      "sha256": "775f0383c0f880657b7289ffdd56b4f11141c473eda327fd5ac2f46985dfe1d2"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedCubicCurveShortcutCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedCubicCurveShortcutCommand.md",
+      "sha256": "574f1e443eaff3b979271bf392afbd4065323ae7eb553f3fead05628fd9fdf45"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedHorizontalLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedHorizontalLineCommand.md",
+      "sha256": "47fab3dc9741536c92c5f0018bdd199c0ad3939bba29c203c2063f7033477ce5"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedLineCommand.md",
+      "sha256": "c4981991620e77301e48a16ecc97b5a1a9081b2207811cce1ceb5e9e2f373623"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedMoveToCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedMoveToCommand.md",
+      "sha256": "bf09891752f1f4869e9465279a46080fd0a9544cf783532c92f500426f0947b4"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedQuadraticCurveCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedQuadraticCurveCommand.md",
+      "sha256": "23d92c91835ab18b345ec1cc87187868e5d2551eba0d425cdc296eec54068ffe"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedQuadraticCurveShortcutCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedQuadraticCurveShortcutCommand.md",
+      "sha256": "e9629c65abe18fb88274d659b3fd476b195ac2eedc7c7aab0c87d621f78e2b24"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeArcCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeArcCommand.md",
+      "sha256": "10fe46394732dd529fedc3f1ee3b0c9ac87accd95ca998f6885aee99184a1a4d"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeClosePathCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeClosePathCommand.md",
+      "sha256": "e1f79589a80e9bc8c01564ec2d6a60091bc6bedc009244f0d100a56a1a50c0b6"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeCubicCurveCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeCubicCurveCommand.md",
+      "sha256": "4b4f867396d31eac4883da5def2d329af9b84631d00a5b55aab696b9c8fbd869"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeCubicCurveShortcutCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeCubicCurveShortcutCommand.md",
+      "sha256": "3253719c85b9dc3303062a1921b26b8004e21d58584a16efabcf4d5cd4802694"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeHorizontalLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeHorizontalLineCommand.md",
+      "sha256": "0a5b485445793cc740078c195ab58c5e3256bd492514012b2b172052add6ad3e"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeLineCommand.md",
+      "sha256": "64bb2d2dd101846eae1322d334ba27a66a6fa16ce2bc7a48659e2bdcd47500a7"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeMoveToCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeMoveToCommand.md",
+      "sha256": "873724ee55109c49f8ab669d95d7ca85aaaadd4adef89d26bbe6686744a97e83"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeQuadraticCurveCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeQuadraticCurveCommand.md",
+      "sha256": "a63b1e31e29df9962e8c0bd13cd4f618b24dbb3b07176608e0dff4db371bca76"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeQuadraticCurveShortcutCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeQuadraticCurveShortcutCommand.md",
+      "sha256": "96ee588ab7f0ccc5028e8561a5cec2e665eedbb49bfbcba7deaeb56c802ece96"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeVerticalLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedRelativeVerticalLineCommand.md",
+      "sha256": "6b040817e21e2a1954a9f65ee51bbd93cdcdae3ee2f84fec369111c5b9231faa"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TParsedVerticalLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TParsedVerticalLineCommand.md",
+      "sha256": "bacfe2bc57a731964cd1cc6cdfbf4bff63d46a5fe0f3dc07a40e374b180fd698"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TPathSegmentCommandInfo.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TPathSegmentCommandInfo.md",
+      "sha256": "64371f9bf9eb2a272e4433b037e1bf9753ebd84dce065d086344982d3d215b06"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TPathSegmentInfo.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TPathSegmentInfo.md",
+      "sha256": "d97a5d7abefb4914407882c1c8db1ab7038b23286ff95d67bfc916b772cd043d"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TPathSegmentInfoCommon.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TPathSegmentInfoCommon.md",
+      "sha256": "96cca0814f64827c63b8dbc56a57c5c41f5e25d06ad34e0cf47e230cf7b3f94e"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TPointAngle.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TPointAngle.md",
+      "sha256": "8047e0159820013cc4433c6722241ff51e5269d1f7e69c8ba17d40f229511b6b"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TProjection.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TProjection.md",
+      "sha256": "8f25b110e37d662f5e3e1dbae47030dd5fa26ca446a7bc3afb47d0483e36afdc"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TProjectStrokeOnPointsOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TProjectStrokeOnPointsOptions.md",
+      "sha256": "dd9db083b573cf04dc474133747aade4d9b5919d064c4e09ce622d79c2939d6a"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TQrDecomposeOut.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TQrDecomposeOut.md",
+      "sha256": "ab6599718ab5976307661cdb5ecd34f4dd644ba487d8c2b53fa8996af417c1cc"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TQuadraticCurveCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TQuadraticCurveCommand.md",
+      "sha256": "6117dd5f81b84ab89d4b99b0e2bf7ff76c9959096a5c2d155e1a9803d4775835"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TQuadraticCurveShortcutCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TQuadraticCurveShortcutCommand.md",
+      "sha256": "a691f13dfff84e73f608bd259486c1a6308d33b5fdf6bafac75fa21bc5f0ee7b"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TRotateMatrixArgs.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TRotateMatrixArgs.md",
+      "sha256": "d77812c221c69e641ae8e2cac3e39069cc2e3421c9ed53428ad01472f84d46f1"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TScaleMatrixArgs.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TScaleMatrixArgs.md",
+      "sha256": "7f964c6e6231b28d70e6ff198435a1fc02141248b34797cd5775e349037ef194"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TSimpleParsedCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TSimpleParsedCommand.md",
+      "sha256": "0457b3df4492516b0e98c003c4f35e447163d63624270de742e2c0797ad9bd8c"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TSimplePathData.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TSimplePathData.md",
+      "sha256": "822549419a30c00f3484cdaf9d3cb64be588d00d25193b9217ada56119a3ce2a"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TTranslateMatrixArgs.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TTranslateMatrixArgs.md",
+      "sha256": "6181503b35c89b083ceb5494e0220204a1def01d3bb8c33b290001e911dd9e55"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/TVerticalLineCommand.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/TVerticalLineCommand.md",
+      "sha256": "9f19a7e0b1edf8c5befb48bb961f6e6b655c6bf8533a85816ce31dd2ebafbe24"
+    },
+    "repo/src/content/docs/api/namespaces/util/type-aliases/ValueAnimationOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/namespaces/util/type-aliases/ValueAnimationOptions.md",
+      "sha256": "f7d9c0ce71a4f1d7696932dee515ee5c1a205c1d26cb6d9f53369bedca5d56f8"
+    },
+    "repo/src/content/docs/api/type-aliases/Abortable.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/Abortable.md",
+      "sha256": "b501f3c7de1a2cda5352b904c19f9e06eb4bae529a672cb5340178ceaff67a85"
+    },
+    "repo/src/content/docs/api/type-aliases/CanvasPointerEvents.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/CanvasPointerEvents.md",
+      "sha256": "a7599a905df52496dcd71afcddd9bc04a8f92ac1cf3d84edc012b25251407a71"
+    },
+    "repo/src/content/docs/api/type-aliases/CircleBrushPoint.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/CircleBrushPoint.md",
+      "sha256": "fe00d870fce67133f76cfdeb6fee6a2230d2adb99d6bd109972aa0d1266faae4"
+    },
+    "repo/src/content/docs/api/type-aliases/CollectionChangeLayoutContext.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/CollectionChangeLayoutContext.md",
+      "sha256": "9ccb0a8019d99ab9cf96882278e52251ed914cf7b66b0e19e35a886e45661556"
+    },
+    "repo/src/content/docs/api/type-aliases/ColorStop.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ColorStop.md",
+      "sha256": "2f3787d5293e52a772a66322e59ebaa9df7e78bee0ea99169e497f5ef951707e"
+    },
+    "repo/src/content/docs/api/type-aliases/CommonLayoutContext.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/CommonLayoutContext.md",
+      "sha256": "6bbf67925103c23071d691080289dbb224768517943ea077f56714a922d1eb26"
+    },
+    "repo/src/content/docs/api/type-aliases/CompleteTextStyleDeclaration.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/CompleteTextStyleDeclaration.md",
+      "sha256": "40473de15d0c98d3d3370ff6a103d90517a9b7d25efbe00a1ca4e2c8d23a055b"
+    },
+    "repo/src/content/docs/api/type-aliases/Constructor.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/Constructor.md",
+      "sha256": "1c07bdf7841d3e95c802c0cdb692ab0c04191579538f1d3184983a3fdde0035a"
+    },
+    "repo/src/content/docs/api/type-aliases/ControlActionHandler.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ControlActionHandler.md",
+      "sha256": "432122d679dce17a8853c803d324be1faed61fb1a50a0375d1a91d8218f67bf1"
+    },
+    "repo/src/content/docs/api/type-aliases/ControlCallback.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ControlCallback.md",
+      "sha256": "c17c8bd0a5bb5d06aa962d18b75d04ae233c5ce378396e737144c980c974df6c"
+    },
+    "repo/src/content/docs/api/type-aliases/ControlCursorCallback.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ControlCursorCallback.md",
+      "sha256": "f2f976f3b9e43b6db03aeb4b41fea4550a6c1a421366084d04597bb5270ccc80"
+    },
+    "repo/src/content/docs/api/type-aliases/GradientCoords.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/GradientCoords.md",
+      "sha256": "d09b3b371953cacf4db0541f29d8027af539b7606d983f74537e23d62712c8c0"
+    },
+    "repo/src/content/docs/api/type-aliases/GradientCoordValue.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/GradientCoordValue.md",
+      "sha256": "cebdfd206a805494205856a653a9f817ab24a19d296d22e1d98edc49b6040e5d"
+    },
+    "repo/src/content/docs/api/type-aliases/GradientOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/GradientOptions.md",
+      "sha256": "e60e074d403a4dcb66b6ac0912500e7abe10285ee86ef50a7429cd851c85d685"
+    },
+    "repo/src/content/docs/api/type-aliases/GradientType.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/GradientType.md",
+      "sha256": "8603d68643d93ae4c8806d1f285fdd90231dadc684eaa88ab68749801c05fdad"
+    },
+    "repo/src/content/docs/api/type-aliases/GradientUnits.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/GradientUnits.md",
+      "sha256": "da131af3c230c5867b6b0197be092c6b1d6ef1c644548c433e235d228a9c6d95"
+    },
+    "repo/src/content/docs/api/type-aliases/GraphemeBBox.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/GraphemeBBox.md",
+      "sha256": "0d7227d238e59f2f53b0dcc32ab82780dfa85c90e342078a29ae1efed2d1f979"
+    },
+    "repo/src/content/docs/api/type-aliases/GraphemeData.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/GraphemeData.md",
+      "sha256": "7591ca6e1c82308a8eda339152adff340247a211759642f622dca90e833c1e5b"
+    },
+    "repo/src/content/docs/api/type-aliases/ImageFormat.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ImageFormat.md",
+      "sha256": "c109a075af03b3d72b2e8f790cfeddf883979e6621d6c70afb568c2ca4c9e8ea"
+    },
+    "repo/src/content/docs/api/type-aliases/ImageSource.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ImageSource.md",
+      "sha256": "83681815e0523b8ec8f71a6d661743eaebf76572de144fd926ab1742f8ed23a0"
+    },
+    "repo/src/content/docs/api/type-aliases/ImperativeLayoutContext.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ImperativeLayoutContext.md",
+      "sha256": "0241a486133ed79db5b22dc49fcc7b1172179c86cddc52c995c4a08ea610bb26"
+    },
+    "repo/src/content/docs/api/type-aliases/ImperativeLayoutOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ImperativeLayoutOptions.md",
+      "sha256": "38b4652425e44224e08c569d3b0f213673bb39d84361d1e36089f0042818a4f3"
+    },
+    "repo/src/content/docs/api/type-aliases/InitializationLayoutContext.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/InitializationLayoutContext.md",
+      "sha256": "885904d499d18a76845ad422f39a6f46489c147247541e8fc3290e8d9a3aef9e"
+    },
+    "repo/src/content/docs/api/type-aliases/IntersectionType.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/IntersectionType.md",
+      "sha256": "ffae188e3572a813b4ba863068e2801bfa1e39e9fa1660312566903fbf596bc1"
+    },
+    "repo/src/content/docs/api/type-aliases/LayoutAfterEvent.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/LayoutAfterEvent.md",
+      "sha256": "39295b799d739e4fc6f788b46dc0f7396c300a8bf22330e34245fe84a20ce8ce"
+    },
+    "repo/src/content/docs/api/type-aliases/LayoutBeforeEvent.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/LayoutBeforeEvent.md",
+      "sha256": "e674ffd1863b1b3cc4fcbdbdb6e46ec2b67dc87b1a4fb99e5f66785be375aade"
+    },
+    "repo/src/content/docs/api/type-aliases/LayoutContext.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/LayoutContext.md",
+      "sha256": "e91103f3de25d4dc0cfef2c6ca3a576ca6e02f5e931790837d3652bf7e12ef12"
+    },
+    "repo/src/content/docs/api/type-aliases/LayoutResult.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/LayoutResult.md",
+      "sha256": "efd34ca21ec507c0fb15d849ca1d681410a84390d282ff2f3e46cf798f115cf0"
+    },
+    "repo/src/content/docs/api/type-aliases/LayoutStrategyResult.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/LayoutStrategyResult.md",
+      "sha256": "c63fbccaafa3855603be334fd474898dd82d04b1e0fc0b1b29506c3f0e5da75d"
+    },
+    "repo/src/content/docs/api/type-aliases/LayoutTrigger.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/LayoutTrigger.md",
+      "sha256": "faba9ba001198d0d3bb966e6bf0131edbc9a6ea74223d9c0b95311050943668e"
+    },
+    "repo/src/content/docs/api/type-aliases/LinearGradientCoords.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/LinearGradientCoords.md",
+      "sha256": "5f055ef8016c5df52ccd077a03cd4f92c39f04a99735a29d67a185299990d459"
+    },
+    "repo/src/content/docs/api/type-aliases/ModifierKey.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ModifierKey.md",
+      "sha256": "92c1808001b0ae3d5b58fe98773a83cd637d02ac7863fd516cc8eb3063992216"
+    },
+    "repo/src/content/docs/api/type-aliases/MultiSelectionStacking.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/MultiSelectionStacking.md",
+      "sha256": "d626e60e81e21111c074caa0fdbf4a917cd842dce690bd73ad9226bb7b60e0b7"
+    },
+    "repo/src/content/docs/api/type-aliases/ObjectModifiedLayoutContext.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ObjectModifiedLayoutContext.md",
+      "sha256": "64a163e617a66b0830c4255156a4004ba25d94a88f8732e3220d8af5d945bf2d"
+    },
+    "repo/src/content/docs/api/type-aliases/ObjectModifyingLayoutContext.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ObjectModifyingLayoutContext.md",
+      "sha256": "d716812149cbbbf3fb32677e77a300b41ad1fc0917f66c6ab1a0eaa4d0cb1230"
+    },
+    "repo/src/content/docs/api/type-aliases/ObjectPointerEvents.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/ObjectPointerEvents.md",
+      "sha256": "529b4181d3f92005987887e6645ffd1feda8549a6d7131dc0326567d02e21e44"
+    },
+    "repo/src/content/docs/api/type-aliases/PatternOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/PatternOptions.md",
+      "sha256": "9ba922fb64f0cbf64e119a5aa173b3d4681c0d3e0b4530a726cc9cdedc241279"
+    },
+    "repo/src/content/docs/api/type-aliases/PatternRepeat.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/PatternRepeat.md",
+      "sha256": "83e197c37a0c91bf55f2bf36b11d0be03d824fb5ee086a87eb2d4630ea669178"
+    },
+    "repo/src/content/docs/api/type-aliases/Percent.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/Percent.md",
+      "sha256": "6ac4d6e25e78dc4ee0f6894a0ec8336ffad65efbc814b11dff0cbd01d91262b7"
+    },
+    "repo/src/content/docs/api/type-aliases/RadialGradientCoords.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/RadialGradientCoords.md",
+      "sha256": "eeadf3fd714e9d48dd930458365bb0a7755945f02277b5afcc57556b00070644"
+    },
+    "repo/src/content/docs/api/type-aliases/RegistrationContext.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/RegistrationContext.md",
+      "sha256": "151392f70a98ccc82ceefdb0d6805a2f44f801170b7dbd71a0eff8e239f1792f"
+    },
+    "repo/src/content/docs/api/type-aliases/SerializedLayoutManager.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/SerializedLayoutManager.md",
+      "sha256": "ce66c2fc5d4ca1614f30b91d493dc70c3947c568922ba7dac56c303fd2a616a3"
+    },
+    "repo/src/content/docs/api/type-aliases/SerializedPatternOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/SerializedPatternOptions.md",
+      "sha256": "619db26b21322099d9f215ee3fc789d6724dcd34f0c3253a6ab923de711eaa8a"
+    },
+    "repo/src/content/docs/api/type-aliases/SerializedShadowOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/SerializedShadowOptions.md",
+      "sha256": "58c9f68e03d44e82772b49d38b74ced1adfad21648c448d3d1cebfbeb1227583"
+    },
+    "repo/src/content/docs/api/type-aliases/SprayBrushPoint.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/SprayBrushPoint.md",
+      "sha256": "ece3bf78dd7dcc1df51ba3677677c6a31bc855b978d95baa76da4093a3571209"
+    },
+    "repo/src/content/docs/api/type-aliases/StrictLayoutContext.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/StrictLayoutContext.md",
+      "sha256": "1c3d198d5172f533a179b24dbed573459e03f0ad6cb3daf2e3ed5b9c38106014"
+    },
+    "repo/src/content/docs/api/type-aliases/SupportedSVGUnit.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/SupportedSVGUnit.md",
+      "sha256": "4ddf14960fba2bae8706e2f72b8eda8b750e4698caf6fbd57dc43e71800ec2a6"
+    },
+    "repo/src/content/docs/api/type-aliases/SVGElementName.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/SVGElementName.md",
+      "sha256": "740d0fbbc1678920c8b8e5a1e7445a9a71ae4b59359b2250bccf7080d9e7c843"
+    },
+    "repo/src/content/docs/api/type-aliases/SVGOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/SVGOptions.md",
+      "sha256": "f61511475f9d28a0e19061ad52b67cef6a477e050b4570333f5acdbfcefed03e"
+    },
+    "repo/src/content/docs/api/type-aliases/T2DPipelineState.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/T2DPipelineState.md",
+      "sha256": "7f8d4b40535745c6c7ded3c6698e600ae5dfe24268bef4e87f3e9d66c11c22e0"
+    },
+    "repo/src/content/docs/api/type-aliases/TApplyFilterArgs.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TApplyFilterArgs.md",
+      "sha256": "53f4b5279e746a3326889890c7a8109826e85f6b22013ad3b9ead40aad8151c2"
+    },
+    "repo/src/content/docs/api/type-aliases/TAxis.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TAxis.md",
+      "sha256": "e4ad17fb60d45ae518d107603f6d1c28afac654271d7fe3c195fd7cf23c96930"
+    },
+    "repo/src/content/docs/api/type-aliases/TAxisKey.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TAxisKey.md",
+      "sha256": "c554cb3af49054f4b4706f2073d6ad22a6f555b22b5eba4aeca4ded5655ed275"
+    },
+    "repo/src/content/docs/api/type-aliases/TBBox.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TBBox.md",
+      "sha256": "eb4e962b74866046a66fde57b893a560e35bac2e0ecd47757a3c3e239a16152d"
+    },
+    "repo/src/content/docs/api/type-aliases/TBrushEventData.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TBrushEventData.md",
+      "sha256": "29d030ba2f0a579a4c1f804d0b2ede2206280955a922dc19ee582c9ab8172755"
+    },
+    "repo/src/content/docs/api/type-aliases/TCacheCanvasDimensions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TCacheCanvasDimensions.md",
+      "sha256": "c55c08fdc16bf9375f4f337a7cf8c4b10926cd428182c2b7862389d541ffa38c"
+    },
+    "repo/src/content/docs/api/type-aliases/TCanvasSizeOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TCanvasSizeOptions.md",
+      "sha256": "3633584b9b0be4ccd5a212a9f211b88c60f983bdec4eaa59d2b4f5d9c34ca7cd"
+    },
+    "repo/src/content/docs/api/type-aliases/TClassProperties.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TClassProperties.md",
+      "sha256": "b51be1d13cb37be413dc3296276454ec76dbd717b39bb53ccea29082475e2e70"
+    },
+    "repo/src/content/docs/api/type-aliases/TColorArg.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TColorArg.md",
+      "sha256": "b084d17975f06ff81c4269fa8260f6803802050ee84b37810a86786f064d73f6"
+    },
+    "repo/src/content/docs/api/type-aliases/TCornerPoint.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TCornerPoint.md",
+      "sha256": "1cfc041990080fa5e41d4d15898d9d211e9c8a64563be81f76276a0ed286969f"
+    },
+    "repo/src/content/docs/api/type-aliases/TCrossOrigin.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TCrossOrigin.md",
+      "sha256": "eca417f5664d60720bc683cb60a18832c8b1d3e3f81b558ec66d819f132271b4"
+    },
+    "repo/src/content/docs/api/type-aliases/TDataUrlOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TDataUrlOptions.md",
+      "sha256": "86c07f743266c03079d4f75f77aef203d4b90334cf1a4cf9f381e0e4ee27cad6"
+    },
+    "repo/src/content/docs/api/type-aliases/TDegree.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TDegree.md",
+      "sha256": "ca5c7e4105550beb9c69ea67aeb68ce91ca4eab47296d2a003aed78c9aaed4d7"
+    },
+    "repo/src/content/docs/api/type-aliases/TextStyle.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TextStyle.md",
+      "sha256": "6b83777b62b52cd803e96dfecb832243deb87ec7275dfb2b5f099b59ce3cf4fc"
+    },
+    "repo/src/content/docs/api/type-aliases/TextStyleDeclaration.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TextStyleDeclaration.md",
+      "sha256": "1268a452c626d6e97d92bef023b036ecc1e143fb1a99750cf11e0c9f9f957cff"
+    },
+    "repo/src/content/docs/api/type-aliases/TFabricObjectProps.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TFabricObjectProps.md",
+      "sha256": "21b8bcf002d33eaca37a1140ee15d7d4477fb410089caff723ac2d867285c33a"
+    },
+    "repo/src/content/docs/api/type-aliases/TFiller.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TFiller.md",
+      "sha256": "6a358fde7a866d77aeeeb42330e10f102b7d8a72b9e55ce17a55ee39dc406ed6"
+    },
+    "repo/src/content/docs/api/type-aliases/TMat2D.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TMat2D.md",
+      "sha256": "8b9a64283f17a19f5ded310b07ed401419ed5ca90a77f9f65bcfd946ff0101fc"
+    },
+    "repo/src/content/docs/api/type-aliases/TMatColorMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TMatColorMatrix.md",
+      "sha256": "685fa9f81900ff62bac699a241dd60e8d6abeff8fe69e4a6aca03fcf4f08ecdd"
+    },
+    "repo/src/content/docs/api/type-aliases/TModificationEvents.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TModificationEvents.md",
+      "sha256": "a9bd7aadae12936c6dcdc75921450250d9361338625a645cdc750a3d73b32869"
+    },
+    "repo/src/content/docs/api/type-aliases/TOptionalModifierKey.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TOptionalModifierKey.md",
+      "sha256": "ada33ac4d18fa342f889727572d5ab462e255388f68087185b198b9a90b926cc"
+    },
+    "repo/src/content/docs/api/type-aliases/TOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TOptions.md",
+      "sha256": "0ed049dd5271ddfdcf39512ec3a50d617c464ddff35790615339630f23e23797"
+    },
+    "repo/src/content/docs/api/type-aliases/TOriginX.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TOriginX.md",
+      "sha256": "c9f53983bebb78ac12c6a8b7cc2d07fd8b9ee2f076816cc15dbb742d6e681894"
+    },
+    "repo/src/content/docs/api/type-aliases/TOriginY.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TOriginY.md",
+      "sha256": "92e2a0704bc274cccee651e0a9786823fc6387e15d7ee75304912ae85d84002f"
+    },
+    "repo/src/content/docs/api/type-aliases/TPathAlign.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TPathAlign.md",
+      "sha256": "34cd77db29f61fd4d4233ca95c42c6ca3869aabefd3171a6078b103fe245abe0"
+    },
+    "repo/src/content/docs/api/type-aliases/TPathSide.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TPathSide.md",
+      "sha256": "79d4a1190855fbc9e41f97769fbc436b6b52f6e111f44cb9d04f31e9c33a7e99"
+    },
+    "repo/src/content/docs/api/type-aliases/TPipelineResources.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TPipelineResources.md",
+      "sha256": "88c7625d7fca49f76a1c779de1e26bac6a9d6edf56432e1785d88e3a0104d4d4"
+    },
+    "repo/src/content/docs/api/type-aliases/TPointerEvent.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TPointerEvent.md",
+      "sha256": "ae98ffb25471a02af232e4cae18548082da085d6f4e955e381b46cb20a40ba05"
+    },
+    "repo/src/content/docs/api/type-aliases/TPointerEventNames.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TPointerEventNames.md",
+      "sha256": "939262accdb690340fbd999fe08cb363c6319776c6b9124238b5c7e96a47b374"
+    },
+    "repo/src/content/docs/api/type-aliases/TProgramCache.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TProgramCache.md",
+      "sha256": "8a972e4d11d5effded0c52a658812e82009aa7556016321be09ef0de473e1ffd"
+    },
+    "repo/src/content/docs/api/type-aliases/TRadian.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TRadian.md",
+      "sha256": "7817d12f000142c10e6664741a0d8f9023c47bd14c3a86b2f39d132b4aaaff0e"
+    },
+    "repo/src/content/docs/api/type-aliases/Transform.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/Transform.md",
+      "sha256": "9daa6cfd31d8de0dbb76f0cfac2fc5ce5ebe96a71228d5845ac09db7b8cfc4f2"
+    },
+    "repo/src/content/docs/api/type-aliases/TransformAction.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TransformAction.md",
+      "sha256": "c37234dd1743ca5d8e28ca1ff7fc4be5edeb793f9f1c65d92a1b8fa1324bf41b"
+    },
+    "repo/src/content/docs/api/type-aliases/TransformActionHandler.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TransformActionHandler.md",
+      "sha256": "e25a67f7b9240086162aaa8e09f0984ab2f80f1cf516a24a2f7f2615eaefb8e6"
+    },
+    "repo/src/content/docs/api/type-aliases/TRectBounds.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TRectBounds.md",
+      "sha256": "40cf2cd45e369dcb56df44064651e4cc10f5dd065e77b1506addf7ad0a23a5e3"
+    },
+    "repo/src/content/docs/api/type-aliases/TRGBAColorSource.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TRGBAColorSource.md",
+      "sha256": "0f97599a68659757e18531c3c0b331488a69bcdc2e22f8506f16a023d3ffb521"
+    },
+    "repo/src/content/docs/api/type-aliases/TRGBColorSource.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TRGBColorSource.md",
+      "sha256": "53935becb95257125083b958a3b3c50a7903734c0af5015a988ccfa48b9da18f"
+    },
+    "repo/src/content/docs/api/type-aliases/TSize.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TSize.md",
+      "sha256": "b3e1c48c0fedfed9b408b4b50f74659b518d6def06e584664cbc4f86982cf320"
+    },
+    "repo/src/content/docs/api/type-aliases/TSVGExportOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TSVGExportOptions.md",
+      "sha256": "d2f61008905cf5e34d9e2c0d81aa12d3ecad5ae29cf4c18d0c9ae94808e8a9e5"
+    },
+    "repo/src/content/docs/api/type-aliases/TSVGReviver.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TSVGReviver.md",
+      "sha256": "3ec77b42403dde51ec49522afb5dc8cefaf44b1b763b619f8d49daf2bdd51add"
+    },
+    "repo/src/content/docs/api/type-aliases/TTextureCache.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TTextureCache.md",
+      "sha256": "9c4f8a2d6d7c53d6862b0785fae14b383c8a33f9a63dbdbff7044c23118a1cd5"
+    },
+    "repo/src/content/docs/api/type-aliases/TToCanvasElementOptions.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TToCanvasElementOptions.md",
+      "sha256": "fe0b3df0d3579174d4d7fc607128cdace213ef434dd5c236b4818c09aba71289"
+    },
+    "repo/src/content/docs/api/type-aliases/TValidToObjectMethod.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TValidToObjectMethod.md",
+      "sha256": "6ae00574dfdffd044e3edb70f115ed5b8f07aeaaad661b87f47d20df6670bfe5"
+    },
+    "repo/src/content/docs/api/type-aliases/TWebGLAttributeLocationMap.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TWebGLAttributeLocationMap.md",
+      "sha256": "1c61a711032d829cec0deabd38fccc83a0c2dcbdb72725dd4ddaa56bd51b0ed0"
+    },
+    "repo/src/content/docs/api/type-aliases/TWebGLPipelineState.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TWebGLPipelineState.md",
+      "sha256": "008486897441ad24db102a8d6d86a7496d835d99e4c6c15b431f556de6fbe214"
+    },
+    "repo/src/content/docs/api/type-aliases/TWebGLProgramCacheItem.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TWebGLProgramCacheItem.md",
+      "sha256": "067c12576088eaf14b8224031a4b4aaea0b926993b6de9ab3a8cd58326c3f4f0"
+    },
+    "repo/src/content/docs/api/type-aliases/TWebGLUniformLocationMap.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/type-aliases/TWebGLUniformLocationMap.md",
+      "sha256": "a07be9e7b8888327c28fc4357e7067770d227966daabd0aa43291b929ab0e670"
+    },
+    "repo/src/content/docs/api/variables/cache.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/variables/cache.md",
+      "sha256": "41c2551b3063a58b0b15332b3fecd1daed10d18aea27b507f33bfb166ca24451"
+    },
+    "repo/src/content/docs/api/variables/classRegistry.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/variables/classRegistry.md",
+      "sha256": "639ff0ff24ed11556003ec562249c14279fb2fbdc8d3868713130774ec074d88"
+    },
+    "repo/src/content/docs/api/variables/config.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/variables/config.md",
+      "sha256": "96300541a2a2b450729e5d8732c08f0ad5a7cb6adfae545d53e8c855c3ed7227"
+    },
+    "repo/src/content/docs/api/variables/iMatrix.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/variables/iMatrix.md",
+      "sha256": "7fa4789e055ca134bbfcd046f58cc75c89a78c6e90f99c0222b0ca4e91c51064"
+    },
+    "repo/src/content/docs/api/variables/runningAnimations.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/variables/runningAnimations.md",
+      "sha256": "dc0aa6d8226b837a0be55b00650d434e68549be7c2e5c786ca0f4fb17ea69d00"
+    },
+    "repo/src/content/docs/api/variables/version.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/api/variables/version.md",
+      "sha256": "243d536dd9e53c7d67b4dc44c933a4e0942ac6a9b8af1234450b5f049dbb9933"
+    },
+    "repo/src/content/docs/docs/core-concepts.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/core-concepts.md",
+      "sha256": "75c4bb08ffc308e2c2231a1071ec1eb8c45596b31113781d805bc7b94ce00680"
+    },
+    "repo/src/content/docs/docs/Getting started/index.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Getting started/index.md",
+      "sha256": "1a41b94c06b4407f0bd9b454fa0c6fd883bff96e29d51b5bf6ad5865e7d53f80"
+    },
+    "repo/src/content/docs/docs/index.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/index.md",
+      "sha256": "0fc7f75ecad35da59b4def360f042f1456bf0a7fc5dce77fa126e14174019613"
+    },
+    "repo/src/content/docs/docs/Old docs/changelog-v1.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/changelog-v1.md",
+      "sha256": "ae5781c4c9e2e46719409afc6aa097bee17419f166a58d4fefc2e38222ed29eb"
+    },
+    "repo/src/content/docs/docs/Old docs/changelog.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/changelog.md",
+      "sha256": "de7e00889c51a6a872ef58f8a15305ec9796a0fdb8423dae6c2426a840aee76a"
+    },
+    "repo/src/content/docs/docs/Old docs/clippath-part1.mdx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/clippath-part1.mdx",
+      "sha256": "5bfdc1e3e58a9ebf74e5662671a9f5e65daee6db525e66e5ccc818a447ffcf16"
+    },
+    "repo/src/content/docs/docs/Old docs/clippath-part1/clippath-part1.jsx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/clippath-part1/clippath-part1.jsx",
+      "sha256": "c00a7ae554208f90c9b6a4fdc224ef7173f4e4a90bd979604c4da1c48e105ddb"
+    },
+    "repo/src/content/docs/docs/Old docs/clippath-part1/example1.js": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/clippath-part1/example1.js",
+      "sha256": "ab76ba8053bf145e7a529fe6bba2555a0f01fce3cae3c98eb414d790c4907854"
+    },
+    "repo/src/content/docs/docs/Old docs/clippath-part1/example2.js": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/clippath-part1/example2.js",
+      "sha256": "838026b0bff44a2f6a5af7740806df3c1be08b31de990440f3d5e8b8673fa446"
+    },
+    "repo/src/content/docs/docs/Old docs/clippath-part1/example3.js": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/clippath-part1/example3.js",
+      "sha256": "c418ea6ef784d61352663a30eb7c8b0384185488d9c0956df2854c94de75302c"
+    },
+    "repo/src/content/docs/docs/Old docs/clippath-part2.jsx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/clippath-part2.jsx",
+      "sha256": "0691ae1ff43038bdb395023344afab2da6a2de6e2abbd46b2ca7d8fb82bc40e5"
+    },
+    "repo/src/content/docs/docs/Old docs/clippath-part2.mdx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/clippath-part2.mdx",
+      "sha256": "525adeac5c49cbe65897b469a594c75c94a529c720c1b655976d18311308cc82"
+    },
+    "repo/src/content/docs/docs/Old docs/clippath-part3.jsx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/clippath-part3.jsx",
+      "sha256": "c2ebb56ac5a5f877ccbaea8b91b9219d6b74f101219d9cf3cdad23fced9bc76b"
+    },
+    "repo/src/content/docs/docs/Old docs/clippath-part3.mdx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/clippath-part3.mdx",
+      "sha256": "25114447730d16b32452c78f8a3edec8ddb0d62b56ea81f6ff359248991ca970"
+    },
+    "repo/src/content/docs/docs/Old docs/clippath-part4.jsx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/clippath-part4.jsx",
+      "sha256": "6ed0264e2a8a4fbf756c8563a39b40a7775306bd66ac284f85b27b59a548d518"
+    },
+    "repo/src/content/docs/docs/Old docs/clippath-part4.mdx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/clippath-part4.mdx",
+      "sha256": "5ca5d83a51caf20a25dedc75acdf97645ff33c9779cefa6c6536691d3bfe58b7"
+    },
+    "repo/src/content/docs/docs/Old docs/control-api.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/control-api.md",
+      "sha256": "a2edc818f28f5c8950bc04ba6be9459736dbd8a9356c5cdbcbada616c9ae3905"
+    },
+    "repo/src/content/docs/docs/Old docs/fabric-filters.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/fabric-filters.md",
+      "sha256": "2cff02e88e822497486097d4abbbf6615653fde581bcd1e9f03f23c0569d811b"
+    },
+    "repo/src/content/docs/docs/Old docs/fabric-intro-part-1.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/fabric-intro-part-1.md",
+      "sha256": "348b4aa22105d674118f44de336b658d54a886863f3f748ebdb9f931020a4e0d"
+    },
+    "repo/src/content/docs/docs/Old docs/fabric-intro-part-2.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/fabric-intro-part-2.md",
+      "sha256": "67e6b23bf784703a2d0dc8d1097bf03b6dd7f2eb40a648a20869041387f94901"
+    },
+    "repo/src/content/docs/docs/Old docs/fabric-intro-part-3.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/fabric-intro-part-3.md",
+      "sha256": "5a63a280fd696c7e5e56d8378b5422fe33a7a3cb4149a3a6916e98e42b57cde8"
+    },
+    "repo/src/content/docs/docs/Old docs/fabric-intro-part-4.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/fabric-intro-part-4.md",
+      "sha256": "cb38a820fe272d8f45d75cfaddaf2b996be30e9a03cbd2ddbbf9c766f616ddf4"
+    },
+    "repo/src/content/docs/docs/Old docs/fabric-intro-part-5.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/fabric-intro-part-5.md",
+      "sha256": "216ce5d7dd3707f9771fdc64055efea3b68f6932c556ddd4dc26df8586f137a3"
+    },
+    "repo/src/content/docs/docs/Old docs/fabric-object-caching.jsx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/fabric-object-caching.jsx",
+      "sha256": "73773fc82500b3cc0777547da47488ac0db8a02992e77b1068c8cabf8406690c"
+    },
+    "repo/src/content/docs/docs/Old docs/fabric-object-caching.mdx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/fabric-object-caching.mdx",
+      "sha256": "90cbd1834cb2e297135c4c23557bbb825de337a42d62f1fe424bf074d3ecc26d"
+    },
+    "repo/src/content/docs/docs/Old docs/fabric-text.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/fabric-text.md",
+      "sha256": "c5b29d825cd985eef52b5aac8f6be8e8eda23bc043f662ba319b6fa121b70af0"
+    },
+    "repo/src/content/docs/docs/Old docs/gotchas.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/gotchas.md",
+      "sha256": "b0f7e30ddff123d9cbf424f23af36f1680a7fbf31c887e95693d7f8cdc399242"
+    },
+    "repo/src/content/docs/docs/Old docs/gradients.mdx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/gradients.mdx",
+      "sha256": "52e20e5914e8d903989c4e5f18e306f878bf82d40b07d0bf03183eaeb3c56bca"
+    },
+    "repo/src/content/docs/docs/Old docs/subclassing-example.js": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/subclassing-example.js",
+      "sha256": "b503f7dc08b6abcee050fc61ff4ccb833fe6a9ee809d63e30a3a3d7704b59e9d"
+    },
+    "repo/src/content/docs/docs/Old docs/subclassing-example.mdx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/subclassing-example.mdx",
+      "sha256": "cfa411684f12d6da42899e974fd86e6af9d89348dadb1e272c846629d5d450e5"
+    },
+    "repo/src/content/docs/docs/Old docs/upgrade-guide.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/upgrade-guide.md",
+      "sha256": "584d3bddffb33857ed47ab5af23c97958a7718fe1c3b19aed32fb4619b7913bb"
+    },
+    "repo/src/content/docs/docs/Old docs/using-transformations.jsx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/using-transformations.jsx",
+      "sha256": "3832dd58501ba4594c396d0c09ed38f2084df96e2df9e29bba575517f45b4fe2"
+    },
+    "repo/src/content/docs/docs/Old docs/using-transformations.mdx": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/using-transformations.mdx",
+      "sha256": "931be96b144373ce3eb64f73106c97ceaccf18eef94e22fc6956b2c22e7049a6"
+    },
+    "repo/src/content/docs/docs/Old docs/v2-breaking-changes.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/v2-breaking-changes.md",
+      "sha256": "7530f0244f95c0f9b341fb8f228331f53752facc1dc05133c719f9d332016487"
+    },
+    "repo/src/content/docs/docs/Old docs/v4-breaking-changes.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/v4-breaking-changes.md",
+      "sha256": "8693dcb252aa80071a848e4705d0266611cce44ab3003fea4b3176fe057a8278"
+    },
+    "repo/src/content/docs/docs/Old docs/v5-breaking-changes.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Old docs/v5-breaking-changes.md",
+      "sha256": "5303ddfa3ac85e3d56bc942ffd7e7a4671037ae88e6dbc51b2bcc8ff72db30a4"
+    },
+    "repo/src/content/docs/docs/Understanding FabricJS/index.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Understanding FabricJS/index.md",
+      "sha256": "408c767296f457e24306271cd4c8b78e80217b13e544f9a2eca47c0f00202ac3"
+    },
+    "repo/src/content/docs/docs/Understanding FabricJS/transformations.md": {
+      "url": "https://github.com/fabricjs/fabricjs.com/blob/c1b5669a0d3d6dc7cfcd7230913bc9e4255bb991/src/content/docs/docs/Understanding FabricJS/transformations.md",
+      "sha256": "2fd58ffdc52b7be49d45456dd2c42ffc5b4da29ac39a1202dbc07aaf4251a687"
+    }
+  }
+}

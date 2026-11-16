@@ -1,0 +1,18 @@
+{
+  "license": "none found: fabricjs/fabricjs.com (the Astro source of fabricjs.com; guides in src/content/docs/docs, TypeDoc API in src/content/docs/api) has no LICENSE. The fabric.js repo files (README, CHANGELOG, extension READMEs) are MIT, but one flag covers the folder",
+  "redistribute": false,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/fabricjs/fabricjs.com",
+      "ref": "main",
+      "paths": ["src/content/docs/docs/**", "src/content/docs/api/**"]
+    },
+    {
+      "kind": "git",
+      "repo": "https://github.com/fabricjs/fabric.js",
+      "ref": "v740",
+      "paths": ["README.md", "CHANGELOG.md", "extensions/**/README.md", "extensions/**/README.MD"]
+    }
+  ]
+}
