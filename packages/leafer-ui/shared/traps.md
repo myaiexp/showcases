@@ -74,3 +74,23 @@ Found while building the gallery against leafer-ui 2.3.4 and its `@leafer-in/*` 
   `bounds.x + width, bounds.y + height`.
 - Shared helpers: `shared/shapes.ts` (`size`, `mid`, `drive`, `pick`, `toggle`, `caption`) gives a
   control in the full view and a sweep or cycle in a card.
+
+## Engine config and input (2.3.4)
+
+- `interaction.wheel(data)` exists at runtime once `@leafer-in/viewport` is imported but is missing
+  from the `IInteraction` type; `shared/basics.ts` `fakeWheel` casts and calls it for cards.
+  Fake integer wheel deltas fail the trackpad check that `zoomMode: true` relies on: cards use
+  `zoomMode: 'mouse'`.
+- `Debug.showRepaint` is page-wide and flashes every card on screen: draw `RenderEvent.END`'s
+  `e.renderBounds` in a sky layer instead.
+- `leafer.config.pointer/move/wheel/zoom` are optional in the types (use `!`); `robot.x/y` may be
+  undefined, so write `robot.x = (robot.x ?? 0) + n`.
+- `DragEvent` and `PointerEvent` from leafer-ui shadow the DOM types: an example handling native
+  DOM events must not import them under those names.
+- A `<pre>` in an example inherits the page's dark `pre` style: reset background, border, padding
+  and colour inline.
+- Vite fully reloads the page the first time a plugin is imported, so a page left open loses its
+  state mid-run: re-open it before judging.
+- Shared helpers: `shared/basics.ts` (`sizer` scales docs coordinates to the pane, `fakeWheel`,
+  `wheelTour`, `hoverLoop`, `dragToAndFro`, `cycle`), `export-view.ts` (export result panel),
+  `sprites.ts` (a 20-frame arrow sprite sheet for Robot).
