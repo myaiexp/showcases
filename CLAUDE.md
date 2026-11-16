@@ -240,3 +240,7 @@ GitHub Pages. No service on the VPS.
   the window) and in 3D frees the WebGL context `_destructor()` keeps. 2D panes are light paper: the defaults are drawn
   for a white page. Cards hover, click and drag through `stage.ghost(graph)`; drags queue page-wide, since d3-drag and
   DragControls keep page-wide state. A settled layout stops redrawing, so cards keep something moving.
+- A-Frame: build on `packages/aframe/shared/frame.ts` (`aframeExample(import.meta.url, { setup, scene, run })`; traps in
+  `shared/traps.md`). Custom elements, registries and leaked window listeners are page-wide, so each example runs in its own
+  iframe that re-imports its module; `setup(AFRAME)` registers, `scene` is the docs' markup, `run(stage)` drives it. The
+  iframe's CDN root is a pretend host serving fonts made in code (`fonts.ts`); any other remote URL throws.

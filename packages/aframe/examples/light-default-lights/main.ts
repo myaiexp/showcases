@@ -1,4 +1,4 @@
-// A-Frame's injected default lights, and the two ways they go away
+// A-Frame's injected default lights, removed when the page adds a light
 import { sway } from '../../shared/card.ts';
 import { qa } from '../../shared/comp-dom.ts';
 import { button } from '../../shared/controls.ts';
@@ -18,18 +18,18 @@ export default aframeExample(import.meta.url, {
       if (out) out.textContent = text;
     };
     stage.every(300, report);
-    if (stage.preview) {
-      sway(stage, { yaw: 8 });
-      stage.every(2600, (i) => stage.scene.setAttribute('light', 'defaultLightsEnabled', i % 2 === 0));
-      return;
-    }
-    let enabled = true;
-    button(stage.bar!, 'defaultLightsEnabled: toggle', () => stage.scene.setAttribute('light', 'defaultLightsEnabled', (enabled = !enabled)));
-    button(stage.bar!, 'add a point light', () => {
+    // Any light the page adds registers with the light system, which removes the defaults.
+    const addPointLight = (): void => {
       const el = document.createElement('a-entity');
       el.setAttribute('light', 'type: point; color: #ffd9a0; intensity: 1.2; distance: 12');
       el.setAttribute('position', '0 3 -1');
       stage.scene.append(el);
-    });
+    };
+    if (stage.preview) {
+      sway(stage, { yaw: 8 });
+      stage.every(3000, (i) => i === 1 && addPointLight());
+      return;
+    }
+    button(stage.bar!, 'add a point light', addPointLight);
   },
 });

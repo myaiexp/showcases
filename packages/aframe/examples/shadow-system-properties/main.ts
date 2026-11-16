@@ -1,6 +1,6 @@
-// The scene's shadow system: type, autoUpdate and enabled
+// The scene's shadow system: type set in markup, enabled switched live
 import { sway } from '../../shared/card.ts';
-import { select, toggle } from '../../shared/controls.ts';
+import { toggle } from '../../shared/controls.ts';
 import { aframeExample } from '../../shared/frame.ts';
 
 export default aframeExample(import.meta.url, {
@@ -16,9 +16,8 @@ export default aframeExample(import.meta.url, {
   run(stage) {
     stage.caption('<a-scene shadow="type: pcf">  (shadow map kept small to show the filtering)');
     if (stage.preview) return sway(stage, { yaw: 5, pitch: 6 });
-    const set = (prop: string) => (v: string | boolean) => stage.scene.setAttribute('shadow', prop, v);
-    select(stage.bar!, 'type', ['pcf', 'basic'], 'pcf', set('type'));
-    toggle(stage.bar!, 'autoUpdate', true, set('autoUpdate'));
-    toggle(stage.bar!, 'enabled', true, set('enabled'));
+    // A system's data is replaced as a whole (System.updateProperties), so pass every property.
+    // Only enabled is applied after load; type and autoUpdate are read once, at init.
+    toggle(stage.bar!, 'enabled', true, (enabled) => stage.scene.setAttribute('shadow', { type: 'pcf', autoUpdate: true, enabled }));
   },
 });

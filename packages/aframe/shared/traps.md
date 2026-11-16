@@ -77,3 +77,24 @@ Found while building this gallery. Read before building an example; add to it.
 - **An `<img>` with no src in `<a-assets>` does not delay loading**; an `<audio preload="auto">` with no source
   holds the scene until the assets `timeout`, which is how a loading screen stays up long enough to see.
 - **A `<style>` in `scene` markup** is moved into the iframe's `<head>` by the host; other head elements are dropped.
+
+## Found building Core API, Introduction and Guides
+
+- **`scene.setAttribute(system, prop, value)` does nothing useful**: a-scene's override passes only `prop` to
+  `System.updateProperties`, which also replaces the data instead of merging. Pass the whole object:
+  `scene.setAttribute('renderer', { sortTransparentObjects: true })`. Many system properties are read once at
+  init anyway (`light.defaultLightsEnabled`, `shadow.type`/`autoUpdate`); check the system's `update`.
+- **A custom property type's `parse` also gets the default value** (e.g. `[]`), not only strings; the docs'
+  `value.split('/')` throws and blocks the scene. Guard with `typeof value === 'string'`.
+- **`updateSchema` runs only when a `schemaChange: true` property changes** (or on clobber), with the data
+  being applied, so comparing it to `this.data` never differs.
+- **`THREE.Euler` has no `divideScalar`**, although the docs list `object3D.rotation.divideScalar(2)`.
+- **The `map` property type returns the `<img>` element** for an id selector, not a URL string.
+- **Markup attached after load (the host's path) lets `run()` start before `<a-asset-item>` data is set**:
+  `<a-assets>` misses children that upgrade after it. Wait with `itemsLoaded()` from `core-log.ts`.
+- **`getAttribute('color')` on a primitive returns the DOM attribute at once; `material.color` updates a frame later.**
+- **`registerComponent<D>` with an explicit `D` rejects extra methods on the definition** (no partial type
+  inference): leave the generic off and narrow `this.data` locally, or put helpers on `this` in `init`.
+- **The package page has ~270 cards**: headless Chrome here hits its memory cap there. Check full views one at a time.
+- **A component's `tock(time, timeDelta)` gets no camera** in 1.8.0 (`callComponentBehaviors('tock', time, timeDelta)`);
+  only a system's `tock` receives the third argument that `component.md` documents.

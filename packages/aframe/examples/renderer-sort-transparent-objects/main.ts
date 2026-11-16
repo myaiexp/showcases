@@ -15,7 +15,7 @@ export default aframeExample(import.meta.url, {
   run(stage) {
     const show = (): void => stage.caption(`sortTransparentObjects: ${stage.scene.getAttribute('renderer').sortTransparentObjects}`);
     show();
-    if (stage.bar) toggle(stage.bar, 'sortTransparentObjects', false, (v) => (stage.scene.setAttribute('renderer', 'sortTransparentObjects', v), show()));
-    if (stage.preview) stage.every(2200, (i) => (stage.scene.setAttribute('renderer', 'sortTransparentObjects', i % 2 === 1), show()));
+    if (stage.bar) toggle(stage.bar, 'sortTransparentObjects', false, (v) => (stage.scene.setAttribute('renderer', { sortTransparentObjects: v }), show()));
+    if (stage.preview) stage.every(2200, (i) => (stage.scene.setAttribute('renderer', { sortTransparentObjects: i % 2 === 1 }), show()));
   },
 });

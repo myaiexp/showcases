@@ -28,6 +28,8 @@ export interface PropertyDef {
   min?: number;
   max?: number;
   parse?: (value: any) => any;
+  /** updateSchema runs when a property marked schemaChange changes (component.md). */
+  schemaChange?: boolean;
   stringify?: (value: any) => string;
 }
 
@@ -98,6 +100,10 @@ export interface Entity extends HTMLElement {
   getDOMAttribute(name: string): any;
   setAttribute(name: string, value?: any): void;
   setAttribute(name: string, property: string, value: any): void;
+  /** clobber true replaces the component's data instead of merging (entity.md). */
+  setAttribute(name: string, value: object, clobber: boolean): void;
+  /** Removes the entity from its parent (entity.md). */
+  destroy(): void;
   getObject3D(type: string): THREE_NS.Object3D | undefined;
   setObject3D(type: string, obj: THREE_NS.Object3D): void;
   removeObject3D(type: string): void;
@@ -124,6 +130,8 @@ export interface Scene extends Entity {
   time: number;
   delta: number;
   renderStarted: boolean;
+  isMobile: boolean;
+  behaviors: Record<string, any>;
   audioListener?: THREE_NS.AudioListener;
   enterVR(useAR?: boolean): Promise<void>;
   exitVR(): Promise<void>;
