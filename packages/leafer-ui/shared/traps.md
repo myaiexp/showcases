@@ -165,3 +165,23 @@ Found while building the gallery against leafer-ui 2.3.4 and its `@leafer-in/*` 
   to end it. `seek(time, true)` counts the delay as part of the timeline.
 - Shared helpers: `flow-kit.ts`, `forms-kit.ts` (the docs' five call forms of an animate option
   side by side), `animate-kit.ts`.
+
+## Graphic editor (2.3.4)
+
+- `editor.select(app.tree.children)` passes the live array: the multi-select proxy joins
+  `tree.children` and the box goes stale after `removeItem`. Pass a copy (`[rect1, rect2]`).
+- Ghost moves carry no modifier keys, but the editor reads Ctrl/Alt/Shift during a drag: use
+  `editor-kit.ts` `holding()` / `dragWith()`, which add the keys to every pointer move.
+- Custom `EditTool`/`InnerEditor` classes: the base constructor calls `onCreate()`, so a plain field
+  is reset afterwards; write `declare point: Box`. `Rect.setEditOuter()`/`setEditInner()` rewrite
+  the shared data class: subclass with its own data class first (as for `changeAttr`).
+- Inner-editor config is keyed by the editor's tag (`editor: { TextEditor: { selectAll: false } }`).
+  The text inner editor adds window listeners until it closes: call
+  `app.editor.closeInnerEditor()` in `stage.onDispose`.
+- `getEditTool('LineEditTool').config` is undefined. A string `moveable`/`resizeable`/`rotateable`
+  (`'gesture'`) only adds touch gestures; `resizeable: false` turns corners into rotate handles.
+  `IShortcutKeysCheck` hooks need `!!event.altKey`.
+- A handle's `cursor` is a quoted data URL: strip the quotes before using it in an `<img>`.
+- Keep browser probes to 12-15 card mounts per eval (memory cap).
+- Shared helpers: `editor-kit.ts` (card layout, `pair`/`trio`/`solo`, `spot`, `watch`, `actions`,
+  `variants`, `tune`, `pull`, `holding`/`dragWith`, `cursorTile`).
