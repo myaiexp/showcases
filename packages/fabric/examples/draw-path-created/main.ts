@@ -1,4 +1,4 @@
-// Free drawing: the path:created event hands over each new Path to restyle or post-process
+// The path:created event hands over each new Path to restyle or post-process
 import { Canvas, PencilBrush, type Path } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

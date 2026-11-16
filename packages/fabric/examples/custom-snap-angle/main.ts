@@ -1,4 +1,4 @@
-// Customization: snapAngle and snapThreshold make the rotate handle stick to steps of an angle
+// snapAngle and snapThreshold make the rotate handle stick to steps of an angle
 import { Canvas, Point, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

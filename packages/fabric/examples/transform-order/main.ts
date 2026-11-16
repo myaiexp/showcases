@@ -1,4 +1,4 @@
-// Transformations: translate, rotate, scale, skewX, skewY multiplied one more at a time
+// Translate, rotate, scale, skewX, skewY multiplied one more at a time
 import { Canvas, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select, slider } from '../../shared/controls.ts';

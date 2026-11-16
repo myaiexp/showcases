@@ -1,4 +1,4 @@
-// Transformations: transformPoint carries a grid of object-space points through calcTransformMatrix
+// transformPoint carries a grid of object-space points through calcTransformMatrix
 import { Canvas, Point, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// A 1000 x 640 world of shapes, grid lines and coordinate labels for zoom and pan examples
+// A 1000 x 640 world of shapes and grid labels for zoom and pan examples
 import { Circle, FabricText, Line, Point, Rect, Triangle, util, type Canvas, type FabricObject, type XY } from 'fabric';
 import type { Ghost, GhostKeys } from './ghost.ts';
 

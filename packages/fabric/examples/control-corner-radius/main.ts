@@ -1,4 +1,4 @@
-// Controls: a Control that edits a Rect's own rx/ry property instead of transforming it
+// A Control that edits a Rect's own rx/ry property instead of transforming it
 import { Canvas, Control, Point, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

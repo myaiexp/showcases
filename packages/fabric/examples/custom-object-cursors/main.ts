@@ -1,4 +1,4 @@
-// Customization: hoverCursor and moveCursor on single objects override the canvas defaults
+// hoverCursor and moveCursor on single objects override the canvas defaults
 import { Canvas, Circle, Point, Rect, Triangle, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

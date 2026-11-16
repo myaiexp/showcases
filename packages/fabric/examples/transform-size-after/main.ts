@@ -1,4 +1,4 @@
-// Transformations: sizeAfterTransform(width, height, matrix) gives the box a transformed rectangle fills
+// sizeAfterTransform gives the box a transformed rectangle fills
 import { Canvas, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

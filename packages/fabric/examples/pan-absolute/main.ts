@@ -1,4 +1,4 @@
-// Zoom and pan: absolutePan puts a canvas pixel at the top-left corner, relativePan nudges by a vector
+// absolutePan puts a canvas pixel at the top left; relativePan nudges
 import { Canvas, Point } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, slider } from '../../shared/controls.ts';

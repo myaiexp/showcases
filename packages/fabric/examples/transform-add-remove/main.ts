@@ -1,4 +1,4 @@
-// Transformations: addTransformToObject, removeTransformFromObject and applyTransformToObject with one matrix
+// addTransformToObject, removeTransformFromObject, applyTransformToObject
 import { Canvas, Circle, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

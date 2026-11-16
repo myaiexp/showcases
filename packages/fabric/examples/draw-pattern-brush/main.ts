@@ -1,4 +1,4 @@
-// Free drawing: PatternBrush strokes with a tile you paint yourself, set as brush.source
+// PatternBrush strokes with a tile you paint yourself, set as brush.source
 import { Canvas, PatternBrush } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, select, slider } from '../../shared/controls.ts';

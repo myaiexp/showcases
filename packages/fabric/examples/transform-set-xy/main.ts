@@ -1,4 +1,4 @@
-// Transformations: setXY (canvas plane) and setRelativeXY (parent plane) put any origin point on a target
+// setXY (canvas plane) vs setRelativeXY (parent plane) on a target point
 import { Canvas, Circle, Group, Point, Rect, type TOriginX, type TOriginY } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Free drawing: PencilBrush.straightLineKey turns a held modifier key into a straight line
+// PencilBrush.straightLineKey turns a held modifier key into a straight line
 import { Canvas, PencilBrush } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, select } from '../../shared/controls.ts';

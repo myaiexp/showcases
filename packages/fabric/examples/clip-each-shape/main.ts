@@ -1,4 +1,4 @@
-// Clip paths: the same picture clipped by a Circle, Rect, Triangle, Ellipse, Polygon or Path
+// The same picture clipped by a Circle, Rect, Triangle, Ellipse, Polygon or Path
 import { Canvas, FabricImage } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { CLIP_SHAPES, clipShape, type ClipShape } from '../../shared/clip.ts';

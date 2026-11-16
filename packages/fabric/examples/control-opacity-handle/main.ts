@@ -1,4 +1,4 @@
-// Controls: a Control whose handler edits opacity, riding the right edge like a slider knob
+// A Control whose handler edits opacity, riding the right edge like a slider knob
 import { Canvas, Control, Point, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

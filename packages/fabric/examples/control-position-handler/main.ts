@@ -1,4 +1,4 @@
-// Controls: a Control with its own positionHandler that rides the rim of a Circle and sets its radius
+// A Control with its own positionHandler riding a Circle's rim, setting radius
 import { Canvas, Circle, Control, Point } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

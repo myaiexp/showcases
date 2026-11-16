@@ -1,4 +1,4 @@
-// Controls: the rotate handle is a Control using rotationWithSnapping, which obeys snapAngle and lockRotation
+// The rotate handle uses rotationWithSnapping: snapAngle and lockRotation
 import { Canvas, Control, Point, Rect, controlsUtils } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

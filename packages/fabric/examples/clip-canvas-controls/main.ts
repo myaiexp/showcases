@@ -1,4 +1,4 @@
-// Clip paths: the canvas clip also clips controls, unless controlsAboveOverlay is true
+// The canvas clip also clips controls, unless controlsAboveOverlay is true
 import { Canvas, Circle, Point } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { quad } from '../../shared/clip.ts';

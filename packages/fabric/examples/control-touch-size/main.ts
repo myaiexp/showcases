@@ -1,4 +1,4 @@
-// Controls: cornerSize, touchCornerSize and per-control sizeX/touchSizeX, with the touch areas drawn
+// cornerSize, touchCornerSize and per-control sizeX/touchSizeX, drawn
 import { Canvas, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

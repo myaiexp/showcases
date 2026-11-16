@@ -1,4 +1,4 @@
-// Transformations: util.composeMatrix(values) against the matrix a Rect computes from the same values
+// util.composeMatrix(values) against the matrix a Rect computes
 import { Canvas, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

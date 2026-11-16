@@ -1,4 +1,4 @@
-// Free drawing: overriding PatternBrush.getPatternSrc to paint a tile that follows the brush color
+// Overriding PatternBrush.getPatternSrc: a tile in the brush colour
 import { Canvas, PatternBrush } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, color, slider } from '../../shared/controls.ts';

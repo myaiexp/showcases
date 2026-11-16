@@ -1,4 +1,4 @@
-// Clip paths: canvas.clipPath clips everything the canvas draws, and follows zoom and pan
+// canvas.clipPath clips everything the canvas draws, and follows zoom and pan
 import { Canvas, Point } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { CLIP_SHAPES, clipShape, type ClipShape } from '../../shared/clip.ts';

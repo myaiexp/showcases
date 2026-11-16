@@ -1,4 +1,4 @@
-// Clip paths: an inverted circle and a normal rectangle combined, nested or through util.mergeClipPaths
+// An inverted circle and a rectangle: nested, or util.mergeClipPaths
 import { Canvas, Circle, FabricImage, Rect, util, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

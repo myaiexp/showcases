@@ -1,4 +1,4 @@
-// Customization: controlsAboveOverlay draws handles over an overlay or clipPath that would hide them
+// controlsAboveOverlay draws handles over an overlay or clipPath
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, select } from '../../shared/controls.ts';

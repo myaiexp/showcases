@@ -1,4 +1,4 @@
-// Clip paths: a canvas clip path moved by object.animate(), chained back and forth like the guide
+// A canvas clip path moved by object.animate(), chained back and forth
 import { Canvas, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { quad } from '../../shared/clip.ts';

@@ -1,4 +1,4 @@
-// Clip paths: a FabricText as the clip path of a group, so the colours show through the letters
+// A FabricText as a group's clip path: the colours show through the letters
 import { Canvas, FabricText } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { quad } from '../../shared/clip.ts';

@@ -1,4 +1,4 @@
-// Zoom and pan: getVpCenter and viewportCenterObject place objects in the middle of what you see
+// getVpCenter and viewportCenterObject place objects in the middle of what you see
 import { Canvas, Circle, Point, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

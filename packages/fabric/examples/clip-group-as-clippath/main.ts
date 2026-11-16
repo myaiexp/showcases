@@ -1,4 +1,4 @@
-// Clip paths: a Group of three circles used as one clip path (the shapes are OR-ed together)
+// A Group of three circles used as one clip path (the shapes are OR-ed together)
 import { Canvas, Circle, Group } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { quad } from '../../shared/clip.ts';

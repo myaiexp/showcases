@@ -1,4 +1,4 @@
-// Zoom and pan: vptCoords and calcViewportBoundaries tell which objects are on screen
+// vptCoords and calcViewportBoundaries tell which objects are on screen
 import { Canvas, Point } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

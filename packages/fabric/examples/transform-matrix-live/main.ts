@@ -1,4 +1,4 @@
-// Transformations: calcOwnMatrix vs calcTransformMatrix of an object inside a group, live as things move
+// calcOwnMatrix vs calcTransformMatrix of a grouped object, live
 import { Canvas, Circle, Group, Point, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

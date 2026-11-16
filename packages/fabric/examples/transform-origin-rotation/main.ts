@@ -1,4 +1,4 @@
-// Transformations: the origin point is the pivot of rotation, so originX and originY change how it turns
+// The origin is the pivot of rotation: originX/originY change the turn
 import { Canvas, Circle, Point, Rect, type TOriginX, type TOriginY } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select, slider } from '../../shared/controls.ts';

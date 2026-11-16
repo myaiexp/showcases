@@ -1,4 +1,4 @@
-// Controls: mouseDownHandler and mouseUpHandler turn controls into one-shot buttons (flip, recolour)
+// mouseDownHandler and mouseUpHandler make controls one-shot buttons
 import { Canvas, Control, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { controlPoint } from '../../shared/ghost.ts';

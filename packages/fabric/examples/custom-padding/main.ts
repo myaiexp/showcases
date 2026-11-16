@@ -1,4 +1,4 @@
-// Customization: padding moves the selection frame and controls away from the object
+// padding moves the selection frame and controls away from the object
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

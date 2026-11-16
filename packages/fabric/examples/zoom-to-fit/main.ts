@@ -1,4 +1,4 @@
-// Zoom and pan: fit an object or the whole content in view by animating the viewportTransform
+// Fit an object or the whole content in view by animating the viewportTransform
 import { Canvas, util, type FabricObject, type TMat2D } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

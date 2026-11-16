@@ -1,4 +1,4 @@
-// Transformations: sendPointToPlane moves one point between the viewport, canvas and a group's plane
+// sendPointToPlane moves a point between viewport, canvas and group planes
 import { Canvas, Circle, Group, Point, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

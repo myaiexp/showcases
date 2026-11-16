@@ -1,4 +1,4 @@
-// Transformations: minions keep their matrix relative to a boss, using invertTransform and multiplyTransformMatrices
+// Minions keep their matrix relative to a boss (invert and multiply)
 import { Canvas, Point, Rect, util, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Controls: a new Control on a Rect, shaped by x, y, offsetX, offsetY, sizeX, sizeY and withConnection
+// A new Control on a Rect: x, y, offsetX/Y, sizeX/Y and withConnection
 import { Canvas, Control, Rect, controlsUtils } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

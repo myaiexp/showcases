@@ -1,4 +1,4 @@
-// Controls: one custom Control wired to each controlsUtils action handler, at a position you choose
+// One custom Control wired to each controlsUtils action handler
 import { Canvas, Control, Point, Rect, controlsUtils, type TransformActionHandler } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, select } from '../../shared/controls.ts';

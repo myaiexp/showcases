@@ -1,4 +1,4 @@
-// Controls: a delete button built from a Control with a custom render() and a mouseUpHandler
+// A delete button built from a Control with a custom render() and a mouseUpHandler
 import { Canvas, Circle, Control, Rect, Triangle, util, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

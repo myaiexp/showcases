@@ -1,4 +1,4 @@
-// Zoom and pan: wheel zoom with zoomToPoint around the pointer, with a clamp you can change
+// Wheel zoom with zoomToPoint around the pointer, with a clamp you can change
 import { Canvas } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, slider } from '../../shared/controls.ts';

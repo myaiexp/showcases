@@ -1,4 +1,4 @@
-// Clip paths: an inverted Group clip path cuts four holes in a picture instead of keeping the circles
+// An inverted Group clip path cuts four holes in a picture
 import { Canvas, Circle, FabricImage, Group } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, slider } from '../../shared/controls.ts';

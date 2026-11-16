@@ -1,4 +1,4 @@
-// Zoom and pan: a minimap StaticCanvas with the visible area drawn from vptCoords; click it to jump
+// A minimap StaticCanvas showing the visible area from vptCoords
 import { Canvas, Point, Rect, StaticCanvas } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

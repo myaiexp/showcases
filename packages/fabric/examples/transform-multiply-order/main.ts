@@ -1,4 +1,4 @@
-// Transformations: multiplyTransformMatrices(A, B) and (B, A) give different matrices
+// multiplyTransformMatrices(A, B) and (B, A) give different matrices
 import { Canvas, Circle, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

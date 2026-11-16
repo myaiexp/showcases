@@ -1,4 +1,4 @@
-// Customization: lockRotation, lockSkewingX and lockSkewingY on rotate and skew handles
+// lockRotation, lockSkewingX and lockSkewingY on rotate and skew handles
 import { Canvas, Point, Rect, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

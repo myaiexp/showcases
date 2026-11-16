@@ -1,4 +1,4 @@
-// Controls: skewHandlerX and skewHandlerY on the side handles, replacing the default scale-or-skew
+// skewHandlerX and skewHandlerY on the side handles instead of scale-or-skew
 import { Canvas, Point, Rect, controlsUtils } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, checkbox } from '../../shared/controls.ts';

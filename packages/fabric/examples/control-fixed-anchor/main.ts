@@ -1,4 +1,4 @@
-// Controls: a width handle with and without wrapWithFixedAnchor, and wrapWithFireEvent for its event
+// A width handle with and without wrapWithFixedAnchor, plus wrapWithFireEvent
 import { Canvas, Control, Point, Rect, controlsUtils, type TransformActionHandler } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

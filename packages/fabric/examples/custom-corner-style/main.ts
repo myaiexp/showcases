@@ -1,4 +1,4 @@
-// Customization: transparentCorners, cornerColor, cornerStrokeColor, cornerSize, cornerStyle on one object
+// transparentCorners, cornerColor, cornerStrokeColor, cornerSize, cornerStyle
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, color, select, slider } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Customization helpers: a small caption text under a shape, and a reset for scripted card drags
+// Customization helpers: a caption under a shape, a reset for card drags
 import { FabricText, type FabricObject } from 'fabric';
 
 /** A grey monospace caption centred at x, y that the pointer ignores. */

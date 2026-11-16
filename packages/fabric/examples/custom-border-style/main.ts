@@ -1,4 +1,4 @@
-// Customization: borderColor, borderScaleFactor and borderDashArray change the selection frame
+// borderColor, borderScaleFactor and borderDashArray change the selection frame
 import { Canvas, Rect, Triangle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { color, select, slider } from '../../shared/controls.ts';

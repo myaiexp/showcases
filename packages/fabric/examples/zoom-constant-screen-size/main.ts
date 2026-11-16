@@ -1,4 +1,4 @@
-// Zoom and pan: objects that keep their screen size while zooming, with an inverse scale and strokeUniform
+// Objects that keep their screen size while zooming
 import { Canvas, Circle, Point, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, checkbox } from '../../shared/controls.ts';

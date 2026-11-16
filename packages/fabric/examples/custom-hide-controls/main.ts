@@ -1,4 +1,4 @@
-// Customization: hasControls and hasBorders switch an object's handles and frame off
+// hasControls and hasBorders switch an object's handles and frame off
 import { Canvas, Circle, Rect, Triangle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

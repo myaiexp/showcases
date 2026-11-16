@@ -1,4 +1,4 @@
-// Customization: lockScalingX, lockScalingY and lockScalingFlip limit what the scale handles do
+// lockScalingX, lockScalingY and lockScalingFlip limit what the scale handles do
 import { Canvas, Point, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Controls: createObjectDefaultControls, createResizeControls and createTextboxDefaultControls as sets
+// createObjectDefaultControls, createResizeControls and Textbox sets
 import { Canvas, Point, Rect, Textbox, controlsUtils } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

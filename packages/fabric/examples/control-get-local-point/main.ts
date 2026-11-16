@@ -1,4 +1,4 @@
-// Controls: getLocalPoint turns a pointer position into the object's own axes inside an action handler
+// getLocalPoint turns the pointer into the object's own axes in a handler
 import { Canvas, Control, Point, Rect, controlsUtils } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { controlPoint } from '../../shared/ghost.ts';

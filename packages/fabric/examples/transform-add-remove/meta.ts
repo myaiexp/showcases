@@ -1,4 +1,4 @@
-// fabric example: Transformations: addTransformToObject and removeTransformFromObject
+// fabric example: addTransformToObject and removeTransformFromObject
 import { defineMeta } from '@/types.ts';
 
 export default defineMeta({

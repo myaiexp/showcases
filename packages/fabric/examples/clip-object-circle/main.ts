@@ -1,4 +1,4 @@
-// Clip paths: a Circle assigned to rect.clipPath shows only the part of the rectangle inside it
+// A Circle as rect.clipPath shows only the part of the rect inside it
 import { Canvas, Circle, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

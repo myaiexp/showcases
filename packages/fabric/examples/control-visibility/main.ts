@@ -1,4 +1,4 @@
-// Controls: setControlsVisibility and setControlVisible hide handlers on one object
+// setControlsVisibility and setControlVisible hide handlers on one object
 import { Canvas, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, checkbox } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Zoom and pan: the guide's limits, keeping the view inside the content while zooming and panning
+// The guide's limits keep the view inside the content while zooming
 import { Canvas, Point } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

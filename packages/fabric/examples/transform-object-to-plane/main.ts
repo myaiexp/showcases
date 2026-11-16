@@ -1,4 +1,4 @@
-// Transformations: sendObjectToPlane converts an object's transform so it can join a group without jumping
+// sendObjectToPlane lets an object join a group without jumping
 import { Canvas, Circle, Group, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, checkbox } from '../../shared/controls.ts';

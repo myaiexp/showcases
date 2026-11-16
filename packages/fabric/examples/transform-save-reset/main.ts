@@ -1,4 +1,4 @@
-// Transformations: saveObjectTransform keeps the values, resetObjectTransform clears them, set() restores them
+// saveObjectTransform, resetObjectTransform, and set() to restore
 import { Canvas, Point, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

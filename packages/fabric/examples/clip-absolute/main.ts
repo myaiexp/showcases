@@ -1,4 +1,4 @@
-// Clip paths: absolutePositioned clip paths stay fixed on the canvas while their images move
+// absolutePositioned clip paths stay fixed on the canvas while their images move
 import { Canvas, FabricImage, Point, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

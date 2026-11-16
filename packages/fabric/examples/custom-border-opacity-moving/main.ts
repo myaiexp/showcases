@@ -1,4 +1,4 @@
-// Customization: borderOpacityWhenMoving sets how visible the frame is while the object is dragged
+// borderOpacityWhenMoving: how visible the frame is during a drag
 import { Canvas, Point, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

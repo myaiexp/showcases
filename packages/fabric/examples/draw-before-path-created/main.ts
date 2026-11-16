@@ -1,4 +1,4 @@
-// Free drawing: before:path:created fires first, while the Path is not yet on the canvas
+// before:path:created fires first, while the Path is not yet on the canvas
 import { Canvas, PencilBrush, type Path } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, checkbox } from '../../shared/controls.ts';

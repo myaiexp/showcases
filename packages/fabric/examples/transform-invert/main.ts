@@ -1,4 +1,4 @@
-// Transformations: invertTransform undoes viewport and object matrices to find a click inside the object
+// invertTransform maps a click back through viewport and object matrices
 import { Canvas, Circle, Point, Rect, util } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

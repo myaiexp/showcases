@@ -1,4 +1,4 @@
-// Zoom and pan: setZoom and zoomToPoint side by side, driven by the same wheel turns
+// setZoom and zoomToPoint side by side, driven by the same wheel turns
 import { Canvas, type Point } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

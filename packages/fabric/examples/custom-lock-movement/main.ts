@@ -1,4 +1,4 @@
-// Customization: lockMovementX and lockMovementY pin an object to one axis or hold it still
+// lockMovementX and lockMovementY pin an object to one axis or hold it still
 import { Canvas, Circle, Point, Rect, Triangle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox } from '../../shared/controls.ts';

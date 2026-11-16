@@ -1,4 +1,4 @@
-// Zoom and pan: hold Alt and drag to pan with relativePan, wheel to zoom, plain drags still select
+// Alt-drag pans with relativePan, the wheel zooms, plain drags still select
 import { Canvas, Point } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button, checkbox } from '../../shared/controls.ts';

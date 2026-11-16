@@ -1,4 +1,4 @@
-// Controls: a clone button, a Control whose mouseUpHandler clones the object and selects the copy
+// A clone button: a Control whose mouseUpHandler clones the object
 import { Canvas, Control, Rect, util, type FabricObject } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { button } from '../../shared/controls.ts';

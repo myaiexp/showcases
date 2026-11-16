@@ -1,4 +1,4 @@
-// Free drawing: switch isDrawingMode off and the drawn Paths select, move and scale like any object
+// With isDrawingMode off, drawn Paths select, move and scale like any object
 import { Canvas, PencilBrush, Point, type Path } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, button } from '../../shared/controls.ts';

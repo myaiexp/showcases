@@ -1,4 +1,4 @@
-// Customization: new defaults for every object, set on FabricObject.ownDefaults around the constructors only
+// New defaults for every object, via ownDefaults around the constructors only
 import { Canvas, Circle, FabricObject, Rect } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { select } from '../../shared/controls.ts';

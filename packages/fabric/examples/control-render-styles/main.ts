@@ -1,4 +1,4 @@
-// Controls: renderCircleControl vs renderSquareControl, set for all handlers or per Control
+// renderCircleControl vs renderSquareControl, set for all handlers or per Control
 import { Canvas, Rect, controlsUtils } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { checkbox, color, select, slider } from '../../shared/controls.ts';

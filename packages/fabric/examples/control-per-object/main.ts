@@ -1,4 +1,4 @@
-// Controls: replacing obj.controls on single objects, never on the shared prototype
+// Replacing obj.controls on single objects, never on the shared prototype
 import { Canvas, FabricText, Rect, controlsUtils } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { createStage } from '../../shared/stage.ts';

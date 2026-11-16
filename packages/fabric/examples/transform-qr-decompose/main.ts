@@ -1,4 +1,4 @@
-// Transformations: qrDecompose turns any invertible matrix into angle, scales, skewX and a translation
+// qrDecompose splits a matrix into angle, scales, skewX and translation
 import { Canvas, Rect, util, type TMat2D } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { slider } from '../../shared/controls.ts';

@@ -1,4 +1,4 @@
-// Clip paths: an object's own clipPath inside a clipped group, each one isolated from the other
+// An object's own clipPath inside a clipped group, each isolated
 import { Canvas, Circle } from 'fabric';
 import type { Mount } from '@/types.ts';
 import { quad } from '../../shared/clip.ts';
