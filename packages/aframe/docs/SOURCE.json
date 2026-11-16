@@ -1,0 +1,12 @@
+{
+  "license": "MIT (aframevr/aframe LICENSE, which covers the repo's docs/ folder)",
+  "redistribute": true,
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/aframevr/aframe",
+      "ref": "v1.8.0",
+      "paths": ["docs", "LICENSE"]
+    }
+  ]
+}

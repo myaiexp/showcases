@@ -1,0 +1,441 @@
+{
+  "fetched": "2026-11-15T22:31:04.828Z",
+  "sources": [
+    {
+      "kind": "git",
+      "repo": "https://github.com/aframevr/aframe",
+      "ref": "v1.8.0",
+      "paths": [
+        "docs",
+        "LICENSE"
+      ],
+      "commit": "77f0513107e00e4738628a2ca8e8f19a38474857"
+    }
+  ],
+  "files": {
+    "repo/docs/components/anchored.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/anchored.md",
+      "sha256": "a2a363398d1d75bea9132d46e123955d9b2ff40c9eb02b49b70d7ca1e249abd1"
+    },
+    "repo/docs/components/animation.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/animation.md",
+      "sha256": "edbb021a25984b1f6a0d408061e7a2ca7372b2fa2b21f81cda4bb886b4835af8"
+    },
+    "repo/docs/components/ar-hit-test.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/ar-hit-test.md",
+      "sha256": "7b56b89c69376faea3248c747219090092b8e3b5403f010a2ac14b6762eb0e21"
+    },
+    "repo/docs/components/background.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/background.md",
+      "sha256": "b3ac7af3cadc03654e48b53a177f94fa22843e767ce1f26f75afb7a66df581fb"
+    },
+    "repo/docs/components/camera.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/camera.md",
+      "sha256": "8fe6225304414363ead4bdd699b5611a391193de557ad9e69f10a81a10da4c9e"
+    },
+    "repo/docs/components/cursor.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/cursor.md",
+      "sha256": "f942736ef155b026cc963b55a49df1a1e289d7687dd6c9fec3661b4958d0478f"
+    },
+    "repo/docs/components/debug.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/debug.md",
+      "sha256": "a400414559e981e5d21bced8c5f0c4e493219e24c5c4583bea6e504bd73e8b74"
+    },
+    "repo/docs/components/device-orientation-permission-ui.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/device-orientation-permission-ui.md",
+      "sha256": "41d13ec096c992f8fdad0d5334824ccaf8e865db98448ed1102acd16a1d88025"
+    },
+    "repo/docs/components/embedded.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/embedded.md",
+      "sha256": "96ff76b594e5945c9c9cae8f1ed492e6cd92691e31727ba3563cda57f6b5f8c4"
+    },
+    "repo/docs/components/fog.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/fog.md",
+      "sha256": "97f588219113187c86a65b281b1c3734cedc481933f8cca91734c4eb2edab0d0"
+    },
+    "repo/docs/components/geometry.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/geometry.md",
+      "sha256": "b15fcc16d0670b6e9275229e94e6569fccf66b4016050ef7801a606c5cc04f72"
+    },
+    "repo/docs/components/gltf-model.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/gltf-model.md",
+      "sha256": "fafc10031fb9693fdbd7c68a251b9ed04ffa5a03abd81aa680dc36169ab2b1c4"
+    },
+    "repo/docs/components/hand-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/hand-controls.md",
+      "sha256": "b77302aa86ff43c0331c63ca6f46b390e06268c2504ad24aee289833d008a503"
+    },
+    "repo/docs/components/hand-tracking-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/hand-tracking-controls.md",
+      "sha256": "9c76998d55ea2aab1a29ab4d746f5e7f8e11bdf6b78c09cfa5fc8e28f53f11e3"
+    },
+    "repo/docs/components/hand-tracking-grab-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/hand-tracking-grab-controls.md",
+      "sha256": "8b9d529c614609d8dc23b1017bfe9f24a35e83da53500357373c73822d794f74"
+    },
+    "repo/docs/components/hide-on-enter-ar.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/hide-on-enter-ar.md",
+      "sha256": "9099d599a2c2968ef8e23a16a31a286251a72bd37fc2ec531d29429a8f88f2f7"
+    },
+    "repo/docs/components/hide-on-enter-vr.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/hide-on-enter-vr.md",
+      "sha256": "a24fa1bc0a334d79d5ef35553fc3fc267472d81be9d1c85cdb92fd55ff6bc16e"
+    },
+    "repo/docs/components/keyboard-shortcuts.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/keyboard-shortcuts.md",
+      "sha256": "c14590bcfb3d785e91117de2efa74df042187bce2c099dc2b6ced3371d49ba4e"
+    },
+    "repo/docs/components/laser-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/laser-controls.md",
+      "sha256": "c431143997e0c611d608da08ed37131a94836168887bc1ae41f59d6aa9d91a1e"
+    },
+    "repo/docs/components/layer.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/layer.md",
+      "sha256": "0de36f369bc7a4c319d5af05c4a8c60128ca40eb37d5b11951c03aa7b83058ac"
+    },
+    "repo/docs/components/light.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/light.md",
+      "sha256": "9d0e33d048dad49f107bc61cc62af3922b833e1206348647278f13119f78c25d"
+    },
+    "repo/docs/components/line.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/line.md",
+      "sha256": "2d795cdc39f1ddb50d99a4222181b8079c0b8dd2a21b3f2f3a197b7564ad1d3d"
+    },
+    "repo/docs/components/link.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/link.md",
+      "sha256": "7ccc80d9e36efad5e7baebaade9a26ff8cb20960539c6abf3711b1cb20e6af46"
+    },
+    "repo/docs/components/loading-screen.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/loading-screen.md",
+      "sha256": "8085722824ef5b7e441c211fa896afc5bd7fc0a62cb9affb61ad455b4a899ed4"
+    },
+    "repo/docs/components/logitech-mx-ink-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/logitech-mx-ink-controls.md",
+      "sha256": "c6fde026b7c776f7cd029dff131e50a80c12e0b1fe502ea2e717bf5bf6b665c7"
+    },
+    "repo/docs/components/look-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/look-controls.md",
+      "sha256": "a49414aaba89d3756027f7f8ca6c2761accabd08f8dcc632cf4545ffb6637c20"
+    },
+    "repo/docs/components/magicleap-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/magicleap-controls.md",
+      "sha256": "be66177fa762cf0219d3f33e85fa9d2ab0865d2b8e1938b451b8916b45da2fb7"
+    },
+    "repo/docs/components/material.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/material.md",
+      "sha256": "02bc96b16beaf3d8dbce5fe4b931a1b465381dd037eb6631e892e92f1ead495c"
+    },
+    "repo/docs/components/meta-touch-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/meta-touch-controls.md",
+      "sha256": "a89c315671c6f08ebd9d9dabc1c2466db4230b9174c9996462f48b6bade2fecb"
+    },
+    "repo/docs/components/obb-collider.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/obb-collider.md",
+      "sha256": "10820394aeeba0dacd1614cb29b75b5669014838fc148ccc1ee7d9283cdf8f7b"
+    },
+    "repo/docs/components/obj-model.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/obj-model.md",
+      "sha256": "65c1d243e9b1a8b05bae0293c36f7203a42babef5e4f3b7eb8fa54ab5a8b7e6b"
+    },
+    "repo/docs/components/pool.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/pool.md",
+      "sha256": "574250d043c866a228fce67178bbcf10167fba927a1298b8e95db628fd27d38f"
+    },
+    "repo/docs/components/position.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/position.md",
+      "sha256": "e7c09e307230441265f1c8f3d850ed0b619b5832ed013154c6d793638fc0bb5e"
+    },
+    "repo/docs/components/raycaster.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/raycaster.md",
+      "sha256": "96e36176f131bdcf7844ab87238f5290303e754e0300b8d269a5885cd78cebaf"
+    },
+    "repo/docs/components/real-world-meshing.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/real-world-meshing.md",
+      "sha256": "c22dba4cc7b8bf01213485f4d48b40cc174e0c77b249333aa957bd80e3830754"
+    },
+    "repo/docs/components/reflection.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/reflection.md",
+      "sha256": "48023b921a4fe80f3c4ce9c37ee71119f5219714e3cc26a4100cf1e7b604f1a2"
+    },
+    "repo/docs/components/renderer.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/renderer.md",
+      "sha256": "c3c8404b83f3c3de8326571ee9457a8261000f00f1432dd9b613c1bb59d001f7"
+    },
+    "repo/docs/components/rotation.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/rotation.md",
+      "sha256": "76dd7d5766ab3d93350534eb55e8035d297ae80324882922fef8a99401c4cba2"
+    },
+    "repo/docs/components/scale.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/scale.md",
+      "sha256": "635e4ff2e0ae84bdc91c5a077a4bba4bfb788481ae86cd43ef2caa431e59643c"
+    },
+    "repo/docs/components/screenshot.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/screenshot.md",
+      "sha256": "eb91d83b459c1af4fb4d52491707c9d5a60765f0b7ab07be58087a17695f2d08"
+    },
+    "repo/docs/components/shadow.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/shadow.md",
+      "sha256": "d01eecc20b8c00fcf845895fb822cfd3862b1fe1cfd6d2f1cfa42c06c4c46cbb"
+    },
+    "repo/docs/components/sound.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/sound.md",
+      "sha256": "26e74db23711eeabf695e82798ed183a6096d7f4f2430824dcdf48fb8c5f7d09"
+    },
+    "repo/docs/components/stats.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/stats.md",
+      "sha256": "85904f2e7d365e62b42bae1c3d6fd06b54def2a24fb8516e242edf7773f261dc"
+    },
+    "repo/docs/components/text.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/text.md",
+      "sha256": "bc5cb6987ef32ea50464eae916650a8651d441a5a4bf4ec584f9eff6850e182c"
+    },
+    "repo/docs/components/tracked-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/tracked-controls.md",
+      "sha256": "c7a80cdb2bd448bec605c369ec80d07a73c43a5542e5597fd5cc4539aee20952"
+    },
+    "repo/docs/components/visible.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/visible.md",
+      "sha256": "59b7299830147d066568e49ec71c0717f3a8c4084dc8567167b3caa1b43f385a"
+    },
+    "repo/docs/components/vive-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/vive-controls.md",
+      "sha256": "a9d78eae36bebb61b20859f122cfee218a5eb11c2d14c4957631aef6297fa7a6"
+    },
+    "repo/docs/components/vive-focus-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/vive-focus-controls.md",
+      "sha256": "62cb24703b1c0a6208b4aa28f6190100d945eed6b7bedac6a7d504bf8a8bb6a4"
+    },
+    "repo/docs/components/wasd-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/wasd-controls.md",
+      "sha256": "9d69553dbf89095e0a406198a012c4e96da24f7f5fc5bf87930a316fa2abaf74"
+    },
+    "repo/docs/components/webxr.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/webxr.md",
+      "sha256": "2fe16426c11afebdda51c161b792651ed4451b6d3c8092019daa22b0663315fa"
+    },
+    "repo/docs/components/windows-motion-controls.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/windows-motion-controls.md",
+      "sha256": "8014a8f6ae50abc245d21fb3a8e124b858382ff5f8c23862535bf34761d42a82"
+    },
+    "repo/docs/components/xr-mode-ui.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/components/xr-mode-ui.md",
+      "sha256": "013a5d2ef723a4e863273564691f9ba2e04471429a08ca54f869eb594c8a6212"
+    },
+    "repo/docs/core/asset-management-system.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/core/asset-management-system.md",
+      "sha256": "cd5a1abea082626dd0a42db15c80c0e77e9be1cebdd29207685c0be534218742"
+    },
+    "repo/docs/core/component.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/core/component.md",
+      "sha256": "f6227e7c85ecf02a36c95c0501b82f37859d9dad9cae2e7046661e84f69cf76e"
+    },
+    "repo/docs/core/entity.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/core/entity.md",
+      "sha256": "82f9668d8aa20c2c910a89fa5e323d09961324f77db177f96cdc272aeec2514d"
+    },
+    "repo/docs/core/globals.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/core/globals.md",
+      "sha256": "20483e20b45da2b5bce40b52aef6cb6070de2959f9f02b10a4e61472fdb91a58"
+    },
+    "repo/docs/core/mixins.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/core/mixins.md",
+      "sha256": "6224291b8bcb49ee257515b0e6c1817853d7749d3925d110cb8eda8f799820c8"
+    },
+    "repo/docs/core/scene.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/core/scene.md",
+      "sha256": "373cc9e73591b89b041eeda186594628cb6f14c418ad9a8033ee773247e9aa44"
+    },
+    "repo/docs/core/systems.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/core/systems.md",
+      "sha256": "8597bae407bd430bde0d0ca55d02feaa6edea5baf3fb5501db86d374b8e84d03"
+    },
+    "repo/docs/core/utils.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/core/utils.md",
+      "sha256": "08a199a0225be000b0879580d2a1c03309b74e793388153650a8d308685a3221"
+    },
+    "repo/docs/guides/building-a-360-image-gallery.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/guides/building-a-360-image-gallery.md",
+      "sha256": "c19f3b618fc63f92fec44b847fc55b127d719c644e3d4f0b50f36552c95aab95"
+    },
+    "repo/docs/guides/building-a-basic-scene.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/guides/building-a-basic-scene.md",
+      "sha256": "a3f311763868beb5ecd59616247740f48b5d33fbd9b45ed9cc4262fac966238b"
+    },
+    "repo/docs/guides/building-a-minecraft-demo.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/guides/building-a-minecraft-demo.md",
+      "sha256": "3be7f2addf6f7f8b7caf37fd6b00de93ec9b4bfdb0e708d87424a334361843a1"
+    },
+    "repo/docs/introduction/best-practices.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/best-practices.md",
+      "sha256": "385f8d4137c19e568dd9334f2bceb4ac3357420b3a6423e2534ab09d47489d87"
+    },
+    "repo/docs/introduction/developing-with-threejs.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/developing-with-threejs.md",
+      "sha256": "f7f73080f19fde314f5a574219f8a5fd8268758c8c6ad7d1b07703e7e5cdbe45"
+    },
+    "repo/docs/introduction/entity-component-system.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/entity-component-system.md",
+      "sha256": "94b8f72c7f24cb08586f2e263b4c3f6b8ded093ca9c6a1424b39b0793b1550ee"
+    },
+    "repo/docs/introduction/faq.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/faq.md",
+      "sha256": "7a58e5d8a9632f89172d63a57090d7c463dcb001749c10fce0a99809fe1ca76b"
+    },
+    "repo/docs/introduction/hosting-and-publishing.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/hosting-and-publishing.md",
+      "sha256": "1f90700eeb7efcf0cc3a64608e6709b77fe3b40a733ab3f812259ec58713883e"
+    },
+    "repo/docs/introduction/html-and-primitives.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/html-and-primitives.md",
+      "sha256": "ebb2cbf4522359cd5db465473e7a1cc559ca9f8fb760c7e12a6cf22bd1fb8074"
+    },
+    "repo/docs/introduction/index.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/index.md",
+      "sha256": "bf4c111f0fb4fdbfa51a971faaeab7f6795315bc93a64247fbcec6ec3748beab"
+    },
+    "repo/docs/introduction/installation.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/installation.md",
+      "sha256": "4d5e9366cf46234e8bfdc174969dae0c814bf00ea7981f88c4a363381e236f31"
+    },
+    "repo/docs/introduction/interactions-and-controllers.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/interactions-and-controllers.md",
+      "sha256": "b38269eab50a7f987ec002efc16b8efbafab6282abe2bf945991e34bc9bfe164"
+    },
+    "repo/docs/introduction/javascript-events-dom-apis.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/javascript-events-dom-apis.md",
+      "sha256": "083bbe4ea6d21adba838e3ddee594600a66481762ef36e255ffcd2808083d69b"
+    },
+    "repo/docs/introduction/models.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/models.md",
+      "sha256": "ce508b5ebe5d12476d3ef376ef08dc2f7196370532057be2da4caff23c2dfa33"
+    },
+    "repo/docs/introduction/visual-inspector-and-dev-tools.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/visual-inspector-and-dev-tools.md",
+      "sha256": "f243c85aebff0f5a59e99558327eef0df2f88d9806fc79a85d33e20934f24704"
+    },
+    "repo/docs/introduction/vr-headsets-and-webxr-browsers.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/vr-headsets-and-webxr-browsers.md",
+      "sha256": "e7e82bdb15368fa1672c319ea7fe1790e98ccf52b5a4a19a681548279b9a7d67"
+    },
+    "repo/docs/introduction/writing-a-component.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/introduction/writing-a-component.md",
+      "sha256": "57fc17faa4ac9c951470a661587a0154fb34611f141ec77f91fffd3fab5733a0"
+    },
+    "repo/docs/primitives/a-box.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-box.md",
+      "sha256": "d7a4d236ec5370fa7c3a9a69adfd5adf79e5cddabefaf1fd1d7878a1fadf562c"
+    },
+    "repo/docs/primitives/a-camera.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-camera.md",
+      "sha256": "1407dddd7cf4861a187525de18a5791abb1e921ba5bf42e89ee728810786b180"
+    },
+    "repo/docs/primitives/a-circle.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-circle.md",
+      "sha256": "a286ff39d22d620d652a297bc65abc998c047192fa146a344cd433924f2736af"
+    },
+    "repo/docs/primitives/a-cone.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-cone.md",
+      "sha256": "99e69cbbf73eac92c26e323f9ecde754cbdc42b89b3a0a3a2f89ab87d491b458"
+    },
+    "repo/docs/primitives/a-cubemap.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-cubemap.md",
+      "sha256": "f5269877d81a476e402c2dc8c4c60a727bc6f7855f4bee61c1ae5a1de1d8f61d"
+    },
+    "repo/docs/primitives/a-cursor.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-cursor.md",
+      "sha256": "182139196d89081a254f707e6792ec54eca00fefeb7c55d2b9db533663695bdb"
+    },
+    "repo/docs/primitives/a-curvedimage.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-curvedimage.md",
+      "sha256": "a1395da8397944909eae9aaa40495b830519ecffb11a2a7d2b5b05f5f8279456"
+    },
+    "repo/docs/primitives/a-cylinder.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-cylinder.md",
+      "sha256": "52ee009463a5249ca9d29270a0fd8d0325df738e815395680ff13ddaf08a698b"
+    },
+    "repo/docs/primitives/a-dodecahedron.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-dodecahedron.md",
+      "sha256": "c3d6e74a1f797ae0657e3c8b5b2ae7eeb474f7d2b9791634d85cdc20245e7cdd"
+    },
+    "repo/docs/primitives/a-gltf-model.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-gltf-model.md",
+      "sha256": "b343db0a222113d7f175d440f9a75c19afce611c835c48b5211dc1d3a2f8cb88"
+    },
+    "repo/docs/primitives/a-icosahedron.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-icosahedron.md",
+      "sha256": "84e793af2bbffcc0e07d5f8b15f66f734be481f92beeb7dea13b0fa78ac89a91"
+    },
+    "repo/docs/primitives/a-image.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-image.md",
+      "sha256": "d2bb7dafa85cc1190bbcf8284ed30b0f98b1c90de42733c350d3794f303a86ac"
+    },
+    "repo/docs/primitives/a-light.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-light.md",
+      "sha256": "f8ea6746c726504e7ecedb3ea0bd7349aa46350262b62102405a1b5c7198a648"
+    },
+    "repo/docs/primitives/a-link.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-link.md",
+      "sha256": "1447e991aaa272376cbcbcb01e8f1d4ff4e2933ff70d9c773920fc01c8070936"
+    },
+    "repo/docs/primitives/a-obj-model.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-obj-model.md",
+      "sha256": "d6e928aa81c00ea83320bd9d137b1dd5a01ad2b5e2dcf82a64d04bb65655e3be"
+    },
+    "repo/docs/primitives/a-octahedron.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-octahedron.md",
+      "sha256": "94bc9120ef4a74528e7c8814dcc7100c1363d2449cb292e933ee3eb8d70815f0"
+    },
+    "repo/docs/primitives/a-plane.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-plane.md",
+      "sha256": "f4cff0f7241dff9d9c4677435500d0c19866d497520df0e3e526236f536a24f6"
+    },
+    "repo/docs/primitives/a-ring.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-ring.md",
+      "sha256": "36e1587ed3a0eed330e63aa4766b5ed817e038d1dea295549b8b349639a33253"
+    },
+    "repo/docs/primitives/a-sky.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-sky.md",
+      "sha256": "b4b68a3e79cb14a9dde3d7539715a906d213acbcb95c976df8ae28b6933fe9bc"
+    },
+    "repo/docs/primitives/a-sound.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-sound.md",
+      "sha256": "ea080c27de4551ff341b824b0ca01952ccf4704bce6d3247fa5ef9a89c47d8db"
+    },
+    "repo/docs/primitives/a-sphere.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-sphere.md",
+      "sha256": "c9d766803369c98f0805fd3958f2812e53cc1dfc29d05d7f9de2881e5e9110f2"
+    },
+    "repo/docs/primitives/a-tetrahedron.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-tetrahedron.md",
+      "sha256": "958219ee3aae6ed4dca317845127ee87cf0f05296c87b1bcbebc069e96032f6e"
+    },
+    "repo/docs/primitives/a-text.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-text.md",
+      "sha256": "263fee58e9cb48d1782d9d74c41d207473f401497ef15c096ed0d90cdec61bc4"
+    },
+    "repo/docs/primitives/a-torus-knot.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-torus-knot.md",
+      "sha256": "7dac8077e758fbe23b1d72fd42f6ba16ec31ade9267e8a63982a302a23dd38df"
+    },
+    "repo/docs/primitives/a-torus.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-torus.md",
+      "sha256": "304e4412103e2ed94fd94137439e3ae6dffc3201ffdec38b5b9622a0a1ed7322"
+    },
+    "repo/docs/primitives/a-triangle.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-triangle.md",
+      "sha256": "9b79e81c8490aaf72d84b069fef48b30e5996639e31dceae848ba4d3f85026c0"
+    },
+    "repo/docs/primitives/a-video.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-video.md",
+      "sha256": "3324cddd7d09fccf3c396a45154e7f51e6876ebd6d57a22481e596010d4190af"
+    },
+    "repo/docs/primitives/a-videosphere.md": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/docs/primitives/a-videosphere.md",
+      "sha256": "474ac1cf88c29b6cfda59b1ae545b84eacc76815348f2a45f66df0964bfa67a7"
+    },
+    "repo/LICENSE": {
+      "url": "https://github.com/aframevr/aframe/blob/77f0513107e00e4738628a2ca8e8f19a38474857/LICENSE",
+      "sha256": "b95e475bf6ac9fe406e46cb49474194e425c4eff2c480701e4d314ab886e394f"
+    }
+  }
+}
