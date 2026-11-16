@@ -28,6 +28,17 @@
 // - Fabric's default object fill is black and selection colours are made for a white page; panes
 //   are light paper (`PAPER`, CSS only, so it never shows up in toJSON/toSVG/toDataURL).
 // - `fireRightClick`, `fireMiddleClick` and `stopContextMenu` default to true in v7 (deprecated).
+// - `skipTargetFind` leaves the drag-to-select marquee on: pair it with `selection: false`.
+// - containsPoint() and intersectsWithObject() test the (rotated) bounding box, not the outline.
+// - The canvas `centeredRotation` is OR-ed with each object's own flag (default true).
+// - The object cache can clip miter joins and scaled `strokeUniform` paths: `objectCaching: false`.
+// - Line's x1..y2 are not safe to set() after construction: build a new Line. Polyline fills
+//   black by default (`fill: 'transparent'` for an open line); FabricImage has strokeWidth 0.
+// - A <video> source has no naturalWidth: give FabricImage width/height, `objectCaching: false`,
+//   and repaint every frame (`stage.loop` + requestRenderAll): fabric never sees new frames.
+// - `scene` letterboxes the pane with the viewportTransform, so isOnScreen() examples skip it.
+// - util.transformPath works relative to `pathOffset`: compose a translation of it in the matrix.
+// - backgroundImage/overlayImage are plain properties in v7 (the guides' setBackgroundImage is gone).
 import { Canvas, StaticCanvas } from 'fabric';
 import type { MountContext } from '@/types.ts';
 import { createGhost, type Ghost } from './ghost.ts';
