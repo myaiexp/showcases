@@ -1,6 +1,7 @@
 // Fabric.js stage: canvas panes on paper, scene fit, fake pointer, cleanup
 //
-// Traps found while building the gallery against fabric 7.4.0 (add to this list):
+// Traps found while building the gallery against fabric 7.4.0 (add to this list; topic lists
+// for events, groups, serialization, SVG and subclassing are in shared/traps.md):
 // - The guides ("Old docs", the intro parts 1-5) are written for v2-v5: a global `fabric` namespace
 //   and callbacks. In v7 import names from 'fabric': fabric.Object → FabricObject, fabric.Image →
 //   FabricImage, fabric.Text → FabricText, fabric.Image.filters.X → filters.X, fabric.util.x → util.x.
