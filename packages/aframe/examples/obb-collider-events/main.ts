@@ -1,7 +1,6 @@
 // Oriented bounding box collisions between a spinning bar and a block
 import { sway } from '../../shared/card.ts';
 import { q } from '../../shared/comp-dom.ts';
-import { toggle } from '../../shared/controls.ts';
 import { aframeExample } from '../../shared/frame.ts';
 import { logger } from '../../shared/comp-log.ts';
 
@@ -24,7 +23,7 @@ export default aframeExample(import.meta.url, {
       block.setAttribute('material', 'emissive', '#000000');
       log(`obbcollisionended: withEl #${e.detail.withEl.id}`);
     });
-    if (stage.preview) return sway(stage, { yaw: 5, pitch: 6 });
-    toggle(stage.bar!, 'showColliders', true, (v) => stage.scene.setAttribute('obb-collider', 'showColliders', v));
+    // showColliders is read when a collider is added, so it is set once, in the markup.
+    if (stage.preview) sway(stage, { yaw: 5, pitch: 6 });
   },
 });

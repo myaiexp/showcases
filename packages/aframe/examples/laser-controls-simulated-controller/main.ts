@@ -22,9 +22,9 @@ export default aframeExample(import.meta.url, {
     <a-scene background="color: #10151c">
       <!-- The "hand": a laser-controls entity that we swing by animation, since no controller tracks it here. -->
       <a-entity id="hand" laser-controls="hand: right; model: false" raycaster="objects: .links; far: 8" position="0.4 1.3 -0.5"
-                animation="property: rotation; from: 0 25 0; to: 0 -25 0; dur: 4000; dir: alternate; easing: easeInOutSine; loop: true"></a-entity>
-      <a-box id="left" class="links" toggle-colour position="-1.8 1.4 -4" color="#EF2D5E"></a-box>
-      <a-box id="right" class="links" toggle-colour position="1.8 1.4 -4" color="#EF2D5E"></a-box>
+                animation="property: rotation; from: 0 40 0; to: 0 -40 0; dur: 4000; dir: alternate; easing: easeInOutSine; loop: true"></a-entity>
+      <a-box id="left" class="links" toggle-colour position="-1.4 1.4 -4" color="#EF2D5E"></a-box>
+      <a-box id="right" class="links" toggle-colour position="2.2 1.4 -4" color="#EF2D5E"></a-box>
     </a-scene>`,
   run(stage) {
     const hand = q(stage, '#hand');

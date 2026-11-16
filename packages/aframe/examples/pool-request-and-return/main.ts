@@ -46,6 +46,6 @@ export default aframeExample(import.meta.url, {
       button(stage.bar, 'returnEntity() oldest', giveBack);
       toggle(stage.bar, 'dynamic', false, (v) => stage.scene.setAttribute('pool__enemy', 'dynamic', v));
     }
-    if (stage.preview) stage.every(500, (i) => (i % 8 < 5 ? spawn() : giveBack()));
+    if (stage.preview) stage.every(500, (i) => (i % 2 ? spawn() : giveBack()));
   },
 });

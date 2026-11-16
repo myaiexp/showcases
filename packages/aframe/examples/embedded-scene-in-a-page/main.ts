@@ -2,20 +2,20 @@
 import { aframeExample } from '../../shared/frame.ts';
 import { q } from '../../shared/comp-dom.ts';
 
-const css = `
-  body { margin: 0; padding: 14px; font: 14px system-ui, sans-serif; color: #cfd8e3; background: #1b2430; }
+const css = (preview: boolean): string => `
+  body { margin: 0; padding: ${preview ? 6 : 14}px; font: 14px system-ui, sans-serif; color: #cfd8e3; background: #1b2430; }
   h2 { margin: 0 0 6px; font-size: 16px; }
   p { margin: 0 0 8px; }
-  #myEmbeddedScene { width: 100%; height: 230px; max-width: 560px; border: 2px solid #3a4a5c; }
+  #myEmbeddedScene { width: 100%; height: ${preview ? 110 : 230}px; max-width: 560px; border: 2px solid #3a4a5c; }
   a-scene { height: 100%; width: 100%; }
   button { margin-top: 8px; padding: 4px 10px; }
 `;
 
 export default aframeExample(import.meta.url, {
-  setup() {
-    // The page's own CSS: a <style> in <head>, as in the docs. (Leading <style> in the scene markup would land in <head> of a parsed document and be dropped.)
+  setup(_AFRAME, { preview }) {
+    // The page's own CSS: a <style> in <head>, as in the docs. A card gets a shorter scene so it fits 200px.
     const style = document.createElement('style');
-    style.textContent = css;
+    style.textContent = css(preview);
     document.head.append(style);
   },
   scene: `

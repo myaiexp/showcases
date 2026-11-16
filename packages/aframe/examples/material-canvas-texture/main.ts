@@ -34,7 +34,7 @@ export default aframeExample(import.meta.url, {
   scene: `
     <a-scene background="color: #10151c">
       <a-assets><canvas id="scope" width="256" height="160" crossorigin="anonymous"></canvas></a-assets>
-      <a-plane position="0 1.7 -3.2" width="3.2" height="2" material="shader: flat; src: #scope" draw-canvas="scope"></a-plane>
+      <a-plane position="0 1.7 -3.2" width="3.2" height="2" material="shader: flat; src: #scope" draw-canvas="canvas: scope"></a-plane>
     </a-scene>`,
   run(stage) {
     stage.caption('draw on the canvas, then map.needsUpdate = true');

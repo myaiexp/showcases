@@ -6,8 +6,8 @@ import type { Entity } from '../../shared/types.ts';
 
 export default aframeExample(import.meta.url, {
   scene: `
-    <a-scene background="color: #10151c" raycaster="objects: .hit">
-      <a-entity id="cursor" cursor="rayOrigin: mouse"></a-entity>
+    <a-scene background="color: #10151c">
+      <a-entity id="cursor" cursor="rayOrigin: mouse" raycaster="objects: .hit"></a-entity>
       <a-box id="box" class="hit" position="-2 1.6 -4" color="#EF2D5E"></a-box>
       <a-sphere id="sphere" class="hit" position="0 1.6 -4" radius="0.7" color="#4CC3D9"></a-sphere>
       <a-cone id="cone" class="hit" position="2 1.6 -4" radius-bottom="0.7" radius-top="0" color="#FFC65D"></a-cone>
@@ -20,7 +20,7 @@ export default aframeExample(import.meta.url, {
         const d = evt.detail as { intersectedEl?: Entity; mouseEvent?: MouseEvent; intersection?: { point: { x: number; y: number; z: number } } };
         const button = d.mouseEvent ? ` button ${d.mouseEvent.button === 2 ? 'right' : d.mouseEvent.button === 0 ? 'left' : d.mouseEvent.button}` : '';
         const point = name === 'click' && d.intersection ? ` at ${d.intersection.point.x.toFixed(1)} ${d.intersection.point.y.toFixed(1)}` : '';
-        log(`${name}: ${d.intersectedEl?.id ?? '-'}${button}${point}   states [${cursor.states.join(', ')}]`);
+        log(`${name}: ${d.intersectedEl?.id ?? '-'}${button}${point}   cursor [${cursor.states.join(', ')}]  target [${(d.intersectedEl as Entity | undefined)?.states.join(', ') ?? ''}]`);
       });
     }
     for (const el of Array.from(stage.scene.querySelectorAll('.hit')) as Entity[]) {

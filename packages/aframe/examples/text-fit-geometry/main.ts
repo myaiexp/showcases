@@ -15,7 +15,7 @@ export default aframeExample(import.meta.url, {
                 text="width: 2.4; value: The plane's width and height follow the text."></a-entity>
       <a-entity position="3.1 2.6 -2.5"
                 geometry="primitive: plane" material="color: #2a4a9b"
-                text="value: 1-wide\ndefault."></a-entity>
+                text="value: 1-wide\\ndefault."></a-entity>
       <a-text value="text scales to geometry" position="-2.6 1.2 -2.5" width="2.6" align="center" color="#cfd8e3"></a-text>
       <a-text value="geometry scales to text" position="0.6 1.2 -2.5" width="2.6" align="center" color="#cfd8e3"></a-text>
       <a-text value="neither has a width" position="3.1 1.2 -2.5" width="2.6" align="center" color="#cfd8e3"></a-text>
@@ -23,6 +23,10 @@ export default aframeExample(import.meta.url, {
   run(stage) {
     if (stage.preview) return sway(stage, { yaw: 5 });
     const fit = q(stage, '#fit');
-    slider(stage.bar!, 'geometry width', [1, 3.5, 0.1], 2.4, (v) => fit.setAttribute('geometry', 'width', v));
+    slider(stage.bar!, 'geometry width', [1, 3.5, 0.1], 2.4, (v) => {
+      fit.setAttribute('geometry', 'width', v);
+      // text lays out only when its own data changes, so touch it after resizing the plane.
+      fit.setAttribute('text', 'value', fit.getAttribute('text').value);
+    });
   },
 });
