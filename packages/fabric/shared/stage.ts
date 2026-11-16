@@ -39,6 +39,8 @@
 // - `scene` letterboxes the pane with the viewportTransform, so isOnScreen() examples skip it.
 // - util.transformPath works relative to `pathOffset`: compose a translation of it in the matrix.
 // - backgroundImage/overlayImage are plain properties in v7 (the guides' setBackgroundImage is gone).
+// - The `shadow` option is typed as a Shadow: pass `new Shadow('green -5px -5px 3px')`, not the string.
+// - The `after:render` context is untransformed: apply viewportTransform, then the object's matrix.
 import { Canvas, StaticCanvas } from 'fabric';
 import type { MountContext } from '@/types.ts';
 import { createGhost, type Ghost } from './ghost.ts';
