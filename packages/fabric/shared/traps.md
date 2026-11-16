@@ -60,3 +60,36 @@ The general list (v7 vs the guides, page-wide state, cleanup, cards) is at the t
 - A custom property drawn in `_render` belongs in `static cacheProperties`, or `set()`
   redraws a stale bitmap. Drawing outside `width` × `height` is clipped by the cache.
 - `constructor.name` is minified in the build; use the class's `static type`.
+
+## Free drawing
+
+- v7 has no default `freeDrawingBrush`: set `canvas.freeDrawingBrush = new PencilBrush(canvas)`
+  before `isDrawingMode = true`. There is no eraser brush (`EraserBrush` is not exported).
+- CircleBrush and SprayBrush hand `path:created` a `Group`, not a `Path`. PencilBrush sets
+  `affectStroke = true` on its own Shadow.
+- `limitedToCanvasSize` compares scene points with the canvas pixel size: no `scene` fit.
+- `ghost.stroke` sends no modifier keys; pan cards use a plain-drag mode instead of Alt.
+
+## Customization
+
+- `lockSkewingX` blocks the top and bottom handles, `lockSkewingY` the side ones; skewing is
+  Shift + a side handle (`altActionKey`).
+- `canvas.clipPath` and `overlayColor` draw over the controls unless `controlsAboveOverlay`.
+- `minScaleLimit` applies on the next scaleX/scaleY set: re-set the scale after changing it.
+- The interactive constructor reads `InteractiveFabricObject.ownDefaults`: changing defaults
+  means mutating that object's keys in place and restoring them in a `finally`.
+- `hasRotatingPoint` / `rotatingPointOffset` (part 4) are gone; the `mtr` control replaced them.
+
+## Zoom and pan
+
+- Part 5 reads `opt.e.offsetX`; v7 gives `opt.viewportPoint`. `setViewportTransform` keeps
+  `vptCoords` current, so the guide's in-place `vpt[4]` edits plus a refresh aren't needed.
+- `zoomToPoint` / `setZoom` overwrite `vpt[0]` and `vpt[3]`, destroying a rotated viewport:
+  rebuild the matrix and call `setViewportTransform`.
+- `calcViewportBoundaries` maps only two corners back to the scene, so under a rotated
+  viewport `vptCoords` misses most of the view and off-screen culling hides visible objects:
+  `skipOffscreen: false`.
+- A pan handler sets `skipTargetFind` (and `selection = false`) in `mouse:down:before`, so an
+  Alt-drag over a shape pans; undo both on `mouse:up`.
+- Ghost points are scene points: in a card that moves the view, convert fixed screen spots
+  with `sceneAt` / `wheelAt` from `shared/zoom-world.ts`.
